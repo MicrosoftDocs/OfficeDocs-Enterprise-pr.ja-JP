@@ -1,0 +1,114 @@
+---
+title: "Office 365 PowerShell でライセンスとサービスを確認する"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 12/15/2017
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom:
+- Ent_Office_Other
+- O365ITProTrain
+- DecEntMigration
+- LIL_Placement
+- PowerShell
+ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
+description: "ライセンスの計画、サービス、および Office 365 の組織で使用可能なライセンスに関する情報を表示するのには Office 365 の PowerShell を使用する方法について説明します。"
+ms.openlocfilehash: dc9ea5ad5077062a05c0070ffecbf580d3aacc49
+ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/15/2017
+---
+# <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
+
+**の概要:**ライセンスの計画、サービス、および Office 365 の組織で使用可能なライセンスに関する情報を表示するのには Office 365 の PowerShell を使用する方法について説明します。
+  
+Office 365 サブスクリプションは、すべて以下の要素で構成されます。
+- **ライセンス プラン**ライセンス プランまたは Office 365 プランとも呼ばれます。ライセンス プランでは、ユーザーが利用可能な Office 365 サービスを定義します。Office 365 サブスクリプションには、複数のライセンス プランが含まれる場合があります。たとえば、Office 365 Enterprise E3 というライセンス プランがあります。
+    
+- **サービス**サービス プランとも呼ばれます。サービスとは、各ライセンス プランで利用可能な Office 365 製品および機能のことで、たとえば、Exchange Online や Office Professional Plus があります。ユーザーは、さまざまなサービスへのアクセスを許可するさまざまなライセンス プランから割り当てられた複数のライセンスを持つことができます。
+    
+- **ライセンス** すべてのライセンス プランには、購入した数のライセンスが含まれています。ライセンスをユーザーに割り当てると、ライセンス プランで定義した Office 365 サービスが使えるようになります。それぞれのユーザー アカウントに、少なくとも 1 つのライセンス プランからの 1 つのライセンスが必要です。これにより、ユーザーが Office 365 にログオンして、サービスを利用することができます。
+    
+Office 365 PowerShell を使って、Office 365 組織で利用可能なライセンス プラン、ライセンス、およびサービスに関する詳細を確認することができます。別の Office 365 サブスクリプションで利用可能な製品、機能、サービスについての詳細は、「[Office 365 プランのオプション](https://go.microsoft.com/fwlink/p/?LinkId=691147)」を参照してください。
+## <a name="before-you-begin"></a>開始する前に
+<a name="RTT"> </a>
+
+- このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
+    
+- このトピックで説明されている手順を自動化する PowerShell スクリプトが利用可能です。具体的に言うと、このスクリプトにより、Office 365 組織のサービス (Sway を含む) を表示し、無効化できます。詳細については、「[Office 365 PowerShell を使った Sway へのアクセスを無効にする](disable-access-to-sway-with-office-365-powershell.md)」をご覧ください。
+    
+## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>ライセンス プランと利用可能なライセンスに関する情報を確認する
+<a name="ShortVersion"> </a>
+
+現在のライセンス プランおよび各プランで利用可能なライセンスについての概要を確認するには、Office 365 PowerShell で以下のコマンドを実行します。
+  
+```
+Get-MsolAccountSku
+```
+
+結果には次の情報が含まれます。
+  
+- **AccountSkuId:**構文を使用して、組織の利用可能なライセンス プランを表示する`<CompanyName>:<LicensingPlan>`。 _<CompanyName>_は、Office 365 に登録し、組織の一意では、指定した値です。_<LicensingPlan>_値は、すべてのユーザーに対して同じです。値で、 `litwareinc:ENTERPRISEPACK`、会社名は、 `litwareinc`、およびライセンスの計画の名前`ENTERPRISEPACK`、Office 365 エンタープライズ E3 のシステム名であります。
+    
+- **ActiveUnits:**特定のライセンスについては購入したライセンスの数。
+    
+- **WarningUnits:**次の情報を更新していないと 30 日の猶予期間後に期限切れにするライセンスの計画中のライセンスの数です。
+    
+- **ConsumedUnits:**特定のライセンスについてのユーザーに割り当てられているライセンスの数です。
+    
+すべてのライセンス プランで利用できる Office 365 サービスの詳細を参照するには、次のコマンドを実行します。
+  
+```
+Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
+```
+
+次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート](https://support.office.com/home/contact)にお問い合わせください。
+  
+|****サービス プラン****|****説明****|
+|:-----|:-----|
+| `SWAY` <br/> |Sway  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
+| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
+   
+特定のライセンス プランで利用可能な Office 365 サービスの詳細を確認するには、次の構文を使用します。
+  
+```
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq " <AccountSkuId>"}).ServiceStatus
+```
+
+この例では、litwareinc:ENTERPRISEPACK (Office 365 エンタープライズ E3) ライセンス プランで利用可能な Office 365 サービスを使用します。
+  
+```
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
+```
+
+## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
+<a name="ShortVersion"> </a>
+
+||
+|:-----|
+|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
+   
+## <a name="see-also"></a>See also
+<a name="ShortVersion"> </a>
+
+#### 
+
+[ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+  
+[Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
+#### 
+
+[Get MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
+
