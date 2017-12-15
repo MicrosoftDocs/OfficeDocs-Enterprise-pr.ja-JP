@@ -1,0 +1,77 @@
+---
+title: "エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 12/15/2017
+ms.audience: ITPro
+ms.topic: overview
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Ent_O365_Visuals
+ms.custom:
+- DecEntMigration
+- Strat_O365_Enterprise
+- Ent_Architecture
+ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
+description: "概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。"
+ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
+ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/15/2017
+---
+# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
+
+ **概要:** Microsoft クラウド サービスとプラットフォームのネットワークを設計します。
+  
+この記事には、Microsoft のクラウド サービスとプラットフォームを使用して、組織のためのネットワークを設計する上で IT アーキテクトが知る必要のある事柄について説明する一連の記事へのリンクがあります。この情報を 12 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、A3 としても表される) で印刷することもできます。
+  
+[![マイクロソフト クラウド ネットワーク モデルのイメージをつまみ](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+](https://go.microsoft.com/fwlink/p/?linkid=842073)
+  
+![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54425)
+  
+すべての[マイクロソフトのクラウドの IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)でモデルを表示しを機械に通す[マイクロソフトのエンタープライズ ・ クラウド ・ ロードマップ: IT 意思決定者のためのリソース](https://aka.ms/cloudarchitecture)。
+  
+次のセクションを参照してください。
+  
+- [クラウド接続のためにネットワークを進化させる](evolving-your-network-for-cloud-connectivity.md)
+    
+    クラウド移行によって、企業ネットワークの内外でのトラフィック フローの容量と特性が変化します。また、セキュリティ リスクを軽減するためのアプローチにも影響します。
+    
+- [Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)
+    
+    ネットワーキングと Microsoft クラウドの統合によって、広範なサービスへの最適なアクセスが提供されます。
+    
+- [Microsoft クラウド接続のためのExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
+    
+    ExpressRoute は、Microsoft のクラウドへのプライベート、専用、高スループットのネットワーク接続を提供します。
+    
+- [Microsoft SaaS のためのネットワーク デザイン](designing-networking-for-microsoft-saas.md)
+    
+    Microsoft SaaS サービス向けにネットワークを最適化するには、インターネット エッジ、クライアント デバイス、および標準の IT 運用を慎重に分析する必要があります。
+    
+- [Microsoft Azure PaaS のためのネットワーク デザイン](designing-networking-for-microsoft-azure-paas.md)
+    
+    Azure PaaS アプリ用のネットワーキングを最適化するには、適切なインターネット帯域幅が必要であり、複数のサイトまたはアプリにまたがるネットワーク トラフィックの分散が必要とされる可能性があります。
+    
+- [Microsoft Azure IaaS のためのネットワークの設計](designing-networking-for-microsoft-azure-iaas.md)
+    
+    サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。
+    
+このポスターの主なポイントの 30 分間の概要、[マイクロソフトのクラウド サービスのネットワークの最適化](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)の Microsoft 仮想アカデミー コースを参照してください。
+  
+> [!NOTE]
+> これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2017 年 6 月** リリースを反映しています。
+  
+## <a name="see-also"></a>See Also
+
+[Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
+
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+
+
+

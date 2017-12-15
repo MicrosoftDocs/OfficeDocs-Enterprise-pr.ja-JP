@@ -1,0 +1,149 @@
+---
+title: "Contoso Corporation のセキュリティ"
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 12/15/2017
+ms.audience: ITPro
+ms.topic: overview
+ms.service: o365-solutions
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom:
+- DecEntMigration
+- Ent_Architecture
+ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
+description: "概要: Contoso 社がどのように Microsoft のクラウド製品の機能にセキュリティ要件をマップし、クラウド セキュリティの準備計画を決定したかについて理解します。"
+ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
+ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 12/15/2017
+---
+# <a name="security-for-the-contoso-corporation"></a>Contoso Corporation のセキュリティ
+
+ **概要:** Contoso 社がどのように Microsoft のクラウド製品の機能にセキュリティ要件をマップし、クラウド セキュリティの準備計画を決定したかについて理解します。
+  
+Contoso 社は、情報セキュリティと保護について真剣に取り組んでいます。IT インフラストラクチャを、クラウドを含むインフラストラクチャに移行する際に、オンプレミスのセキュリティ要件がサポートされ、Microsoft のクラウド製品に実装されていることを確認しました。
+  
+## <a name="contosos-security-requirements-in-the-cloud"></a>Contoso 社のクラウド内のセキュリティ要件
+
+Contoso 社のクラウドのセキュリティ要件は次のとおりです。
+  
+- クラウド リソースに対する強力な認証
+    
+    クラウド リソースへのアクセスは認証される必要があり、可能であれば多要素認証を活用します。
+    
+- インターネット経由でのトラフィックのための暗号化
+    
+    インターネット経由で送信されるデータはプレーンテキスト形式ではありません。常に HTTPS 接続、IPsec、その他のエンド ツー エンドのデータ暗号化方式を使用します。
+    
+- クラウド内の保存データの暗号化
+    
+    ディスク上またはクラウド内の別の場所に格納されているすべてのデータは、暗号化された形式である必要があります。
+    
+- 最小限の特権を持つアクセスの ACL
+    
+    クラウド内のリソースにアクセスするためのアカウントのアクセス許可と、許可されているアクションは、最小限の特権のガイドラインに従う必要があります。
+    
+## <a name="contosos-data-sensitivity-classification"></a>Contoso 社のデータ秘密度の分類
+
+Contoso 社は、Microsoft の[データ分類ツールキット](https://msdn.microsoft.com/library/hh204743.aspx)の情報を使用し、データの分析を行って次のレベルを決定しました。
+  
+|**レベル 1:低いビジネス価値**|**レベル 2:中程度のビジネス価値**|**レベル 3:高いビジネス価値**|
+|:-----|:-----|:-----|
+|データは暗号化され、認証されたユーザーのみが使用できる  <br/> オンプレミスとクラウドベースのストレージとワークロード (Office 365 など) に格納されているすべてのデータに提供されます。データは、サービス内に存在している間、およびサービスとクライアント デバイス間の転送中は暗号化されます。  <br/> レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。  <br/> |レベル 1 以上の強力な認証とデータ損失保護  <br/> 強力な認証には、SMS 検証を使用した多要素認証が含まれています。データ損失の防止により、機密情報または重要な情報がオンプレミス ネットワークの外部に漏出しないようにします。  <br/> レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。  <br/> |レベル 2 以上の最高レベルの暗号化、認証、監査  <br/> 保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する多要素認証と組み合わされています。  <br/> レベル 3 のデータの例には、顧客およびパートナーの個人を特定できる情報や、製品のエンジニアリング仕様と独自の製造技術があります。  <br/> |
+   
+## <a name="mapping-microsoft-cloud-offerings-and-features-to-contosos-data-levels"></a>Contoso 社のデータ レベルへの Microsoft クラウド製品および機能のマッピング
+
+次の表は、Microsoft のクラウド製品の機能への Contoso 社のデータ レベルのマッピングを示しています。
+  
+||**SaaS**|**Azure PaaS**|**Azure IaaS**|
+|:-----|:-----|:-----|:-----|
+|レベル 1:低いビジネス価値  <br/> | すべての接続の HTTPS <br/>  暗号化 <br/> | HTTPS 接続のみをサポート <br/>  Azure に格納されたファイルを暗号化 <br/> | サーバー アクセスに HTTPS または IPsec が必要 <br/>  Azure ディスク暗号化 <br/> |
+|レベル 2:中程度のビジネス価値  <br/> | SMS による Azure AD 多要素認証 (MFA) <br/> | 暗号化キーに Azure Key Vault を使用 <br/>  SMS による Azure AD MFA <br/> | SMS による MFA <br/> |
+|レベル 3:高いビジネス価値  <br/> | Azure Rights Management System (RMS) <br/>  スマート カードによる Azure AD MFA <br/>  Intune 条件付きアクセス <br/> | Azure RMS <br/>  スマート カードによる Azure AD MFA <br/> | スマート カードによる MFA <br/> |
+   
+## <a name="contosos-information-policies"></a>Contoso 社の情報ポリシー
+
+次の表に、Contoso 社の情報ポリシーを示します。
+  
+||**アクセス**|**データ保存期間**|**情報保護**|
+|:-----|:-----|:-----|:-----|
+|レベル 1:低いビジネス価値  <br/> | すべてのユーザーに対してアクセスを許可 <br/> |6 か月  <br/> |暗号化を使用  <br/> |
+|レベル 2:中程度のビジネス価値  <br/> | Contoso 社の従業員、下請業者、パートナーに対してアクセスを許可 <br/>  MFA、TLS、MAM を使用 <br/> |2 年  <br/> |データ整合性のためにハッシュ値を使用  <br/> |
+|レベル 3:高いビジネス価値  <br/> | エグゼクティブ、およびエンジニアリングと製造の潜在顧客に対してアクセスを許可 <br/>  管理されたネットワーク デバイスのみの RMS <br/> |7 年  <br/> |否認防止のためにデジタル署名を使用  <br/> |
+   
+## <a name="contosos-path-to-cloud-security-readiness"></a>Contoso 社のクラウド セキュリティ準備完了までのプロセス
+
+Contoso 社は、Microsoft クラウド用に自社のセキュリティを準備するために、次の手順を行いました。
+  
+1. クラウドの管理者アカウントを最適化する
+    
+    Contoso 社では、既存の Windows Server AD 管理者アカウントの広範なレビューを行い、一連のクラウド管理者アカウントおよびグループを設定しました。
+    
+2. データ分析を行い 3 つのレベルに分類する
+    
+    Contoso 社は慎重なレビューを行い、3 つのレベルを決定しました。これらのレベルは、Contoso 社の最も重要なデータを保護するための Microsoft クラウド製品の機能の決定に使用されました。
+    
+3. 各データ レベルについてアクセス、保持、情報保護ポリシーを決定する
+    
+    データ レベルに基づき、Contoso 社は詳細な要件を決定しました。これらの要件は、クラウドに移動する将来の IT ワークロードを制限するために使用されます。
+    
+## <a name="contosos-use-of-office-365-security-best-practices"></a>Contoso 社における Office 365 のセキュリティのベスト プラクティスの使用
+
+Office 365 のセキュリティのベスト プラクティスに基づき、Contoso 社のセキュリティ管理者と IT 部門は以下を展開しました。
+  
+- **非常に強力なパスワードを設定した全体管理者専用アカウント**
+    
+    Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、非常に強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成しました。全体管理者アカウントでサインインするのは特定の管理タスクを実行するときのみで、パスワードは指定されたスタッフにのみ知らされています。Contoso 社のセキュリティ管理者は、IT 担当者の職務と責任に従って、各アカウントに管理者ロールを割り当てました。
+    
+    詳細については、「[Office 365 の管理者ロールについて](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)」を参照してください。
+    
+- **重要なユーザー アカウントに対する多要素認証 (MFA)**
+    
+    MFA を使用すると、サインイン プロセスの保護の層が厚くなり、パスワードを正しく入力した後、ユーザーに対して、電話、テキスト メッセージ、スマートフォンのアプリ通知のいずれかを通して確認が求められます。MFA を使用すれば、アカウント パスワードが漏えいした場合であっても、Office 365 ユーザー アカウントは承認されていないサインイン イベントから保護されます。
+    
+  - Contoso 社では、Office 365 サブスクリプションが危害を受けるのを防ぐため、3 つの全体管理者アカウントすべてで MFA を有効にしました。
+    
+  - 組織内の信頼されている人の資格情報が漏えいし、攻撃者が悪意のある電子メールを送信するというフィッシング攻撃からの保護を目的として、Contoso 社では経営幹部を含む管理職のすべてのユーザー アカウントで MFA を有効にしました。
+    
+    詳細については、「[Office 365 展開用の多要素認証の計画](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)」を参照してください。
+    
+- **高度なセキュリティ管理 (ASM)**
+    
+    ASM では、構成済みのポリシーを使用して異常な動作を監視します。Contoso 社のセキュリティ管理者は ASM を使用して警告をセットアップし、大量のデータのダウンロード、サインインしようとして繰り返される失敗、不明なまたは危険な IP アドレスからのサインインなど、通常とは異なるユーザー動作や危険なユーザー動作があると、IT 管理者が通知を受けるようにします。
+    
+    詳細については、「[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
+    
+- **セキュリティで保護されたメール フローとメールボックス監査ログ**
+    
+    Contoso 社のセキュリティ専門家は、電子メール経由で送信される不明なマルウェア、ウイルス、悪意のある URL からの保護を目的として、Exchange Online Protection と Advanced Threat Protection (ATP) を使用しています。Contoso 社では、メールボックス監査ログを有効にして、ユーザーのメールボックスにログインしてメッセージを送信したのはだれかや、メールボックス所有者、委任ユーザー、管理者が実行した他の操作を判別しています。
+    
+    詳細については、次のトピックを参照してください。 
+    
+  - [Office 365 メールのスパム対策保護](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
+    
+  - [安全な添付ファイルと安全なリンクのための Advanced Threat Protection](https://technet.microsoft.com/library/mt148491.aspx)
+    
+  - [Office 365 でメールボックスの監査を有効にする](https://go.microsoft.com/fwlink/p/?LinkID=626109)
+    
+- **データ損失防止 (DLP)**
+    
+    Contoso 社は機密性の高いデータを識別し、故意か偶然かを問わずユーザーがデータを共有することがないように、Exchange Online、SharePoint Online、OneDrive 用の DLP ポリシーを構成しています。 
+    
+    詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
+    
+## <a name="see-also"></a>See Also
+
+[Microsoft Cloud の Contoso](contoso-in-the-microsoft-cloud.md)
+  
+[Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
+
+[Microsoft のエンタープライズ クラウド ロードマップ:IT 意思決定者のリソース](https://sway.com/FJ2xsyWtkJc2taRD)
+  
+[Office 365 のセキュリティのベスト プラクティス](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+
+
+
+
