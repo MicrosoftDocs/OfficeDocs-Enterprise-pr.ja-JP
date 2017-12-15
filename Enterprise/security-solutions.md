@@ -22,39 +22,39 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="security-solutions"></a>セキュリティ ソリューション
+# <a name="security-solutions"></a><span data-ttu-id="3ad78-103">セキュリティ ソリューション</span><span class="sxs-lookup"><span data-stu-id="3ad78-103">Security solutions</span></span>
 
- **概要:** これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。
+ <span data-ttu-id="3ad78-104">**概要:** これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。</span><span class="sxs-lookup"><span data-stu-id="3ad78-104">**Summary:** Use these articles to deploy security solutions with Microsoft's cloud offerings.</span></span>
   
-Microsoft Office 365、Microsoft Azure、Microsoft Dynamics 365、Microsoft Enterprise Mobility + Security (EMS) スイートでの、セキュリティで保護されたアクセス、共同作業、およびデータのためのソリューションを以下に示します。
+<span data-ttu-id="3ad78-105">Microsoft Office 365、Microsoft Azure、Microsoft Dynamics 365、Microsoft Enterprise Mobility + Security (EMS) スイートでの、セキュリティで保護されたアクセス、共同作業、およびデータのためのソリューションを以下に示します。</span><span class="sxs-lookup"><span data-stu-id="3ad78-105">Here are solutions for secure access, collaboration, and data with Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365, and the Microsoft Enterprise Mobility + Security (EMS) suite:</span></span>
 
-- [GDPR の office 365 の情報の保護](office-365-information-protection-for-gdpr.md)
+- [<span data-ttu-id="3ad78-106">GDPR の office 365 の情報の保護</span><span class="sxs-lookup"><span data-stu-id="3ad78-106">Office 365 Information Protection for GDPR</span></span>](office-365-information-protection-for-gdpr.md)
   
-- [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+- [<span data-ttu-id="3ad78-107">選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス</span><span class="sxs-lookup"><span data-stu-id="3ad78-107">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
     
-- [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
+- [<span data-ttu-id="3ad78-108">SharePoint Online サイトとファイルをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="3ad78-108">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
     
-- [分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-sites.md)
+- [<span data-ttu-id="3ad78-109">分離した SharePoint Online チーム サイト</span><span class="sxs-lookup"><span data-stu-id="3ad78-109">Isolated SharePoint Online team sites</span></span>](isolated-sharepoint-online-team-sites.md)
 <br/>
     
-**ディスカッションへの参加**
+<span data-ttu-id="3ad78-110">**ディスカッションへの参加**</span><span class="sxs-lookup"><span data-stu-id="3ad78-110">**Join the discussion**</span></span>
 
-|**お問い合わせ**|**説明**|
+|<span data-ttu-id="3ad78-111">**お問い合わせ**</span><span class="sxs-lookup"><span data-stu-id="3ad78-111">**Contact us**</span></span>|<span data-ttu-id="3ad78-112">**説明**</span><span class="sxs-lookup"><span data-stu-id="3ad78-112">**Description**</span></span>|
 |:-----|:-----|
-|**必要なソリューション** <br/> |複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。<br/> |
-|**ソリューションのディスカッションへの参加** <br/> |クラウド ・ ベースのソリューションに熱心である場合、クラウド採用アドバイザリー ボード (CAAB) Microsoft コンテンツ開発者、業界の専門家、および世界中のお客様より大規模で活気のあるコミュニティに接続するために参加を検討してください。参加するには、マイクロソフトのテクニカル コミュニティの[CAAB (クラウド導入の諮問委員会) の空き領域](https://aka.ms/caab)のメンバーとして自分自身を追加し、 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)でのクイック メールを送信します。[CAAB のブログ](https://blogs.technet.com/b/solutions_advisory_board/)上のコミュニティに関連するコンテンツをだれでも読み取ることができます。ただし、CAAB のメンバーは、新しいクラウド導入リソースとソリューションについて説明するプライベートのウェビナーへの招待を取得します。<br/> |
-|**記載されているアートの取得方法** <br/> |参照してくださいアートの編集可能なコピーを実行する場合に、私たちに送信するようになります。[Cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)に、アートのタイトルと URL を含む、要求を電子メールで送信します。<br/> |
+|<span data-ttu-id="3ad78-113">**必要なソリューション**</span><span class="sxs-lookup"><span data-stu-id="3ad78-113">**What cloud adoption content do you need?**</span></span> <br/> |<span data-ttu-id="3ad78-p101">複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。</span><span class="sxs-lookup"><span data-stu-id="3ad78-p101">We are creating content for cloud adoption that spans multiple Microsoft cloud platforms and services. Let us know what you think about our cloud adoption content, or ask for specific content by sending email to [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).  </span></span><br/> |
+|<span data-ttu-id="3ad78-116">**ソリューションのディスカッションへの参加**</span><span class="sxs-lookup"><span data-stu-id="3ad78-116">**Join the cloud adoption discussion**</span></span> <br/> |<span data-ttu-id="3ad78-p102">クラウド ・ ベースのソリューションに熱心である場合、クラウド採用アドバイザリー ボード (CAAB) Microsoft コンテンツ開発者、業界の専門家、および世界中のお客様より大規模で活気のあるコミュニティに接続するために参加を検討してください。参加するには、マイクロソフトのテクニカル コミュニティの[CAAB (クラウド導入の諮問委員会) の空き領域](https://aka.ms/caab)のメンバーとして自分自身を追加し、 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)でのクイック メールを送信します。[CAAB のブログ](https://blogs.technet.com/b/solutions_advisory_board/)上のコミュニティに関連するコンテンツをだれでも読み取ることができます。ただし、CAAB のメンバーは、新しいクラウド導入リソースとソリューションについて説明するプライベートのウェビナーへの招待を取得します。</span><span class="sxs-lookup"><span data-stu-id="3ad78-p102">If you are passionate about cloud-based solutions, consider joining the Cloud Adoption Advisory Board (CAAB) to connect with a larger, vibrant community of Microsoft content developers, industry professionals, and customers from around the globe. To join, add yourself as a member of the [CAAB (Cloud Adoption Advisory Board) space](https://aka.ms/caab) of the Microsoft Tech Community and send us a quick email at [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Anyone can read community-related content on the [CAAB blog](https://blogs.technet.com/b/solutions_advisory_board/). However, CAAB members get invitations to private webinars that describe new cloud adoption resources and solutions.  </span></span><br/> |
+|<span data-ttu-id="3ad78-120">**記載されているアートの取得方法**</span><span class="sxs-lookup"><span data-stu-id="3ad78-120">**Get the art you see here**</span></span> <br/> |<span data-ttu-id="3ad78-p103">参照してくださいアートの編集可能なコピーを実行する場合に、私たちに送信するようになります。[Cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)に、アートのタイトルと URL を含む、要求を電子メールで送信します。</span><span class="sxs-lookup"><span data-stu-id="3ad78-p103">If you want an editable copy of the art you see in this article, we'll be glad to send it to you. Email your request, including the URL and title of the art, to [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  </span></span><br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="3ad78-123">See Also</span><span class="sxs-lookup"><span data-stu-id="3ad78-123">See Also</span></span>
 
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="3ad78-124">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="3ad78-124">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="3ad78-125">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="3ad78-125">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="3ad78-126">クラウド導入のテスト ラボ ガイド (TLG)</span><span class="sxs-lookup"><span data-stu-id="3ad78-126">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[<span data-ttu-id="3ad78-127">SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル</span><span class="sxs-lookup"><span data-stu-id="3ad78-127">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
-[ハイブリッド ソリューション](hybrid-solutions.md)
+[<span data-ttu-id="3ad78-128">ハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="3ad78-128">Hybrid solutions</span></span>](hybrid-solutions.md)
 
 

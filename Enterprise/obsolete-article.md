@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-article"></a>使用されなくなった記事
+# <a name="obsolete-article"></a><span data-ttu-id="a6daf-104">使用されなくなった記事</span><span class="sxs-lookup"><span data-stu-id="a6daf-104">Obsolete article</span></span>
 
-この記事は使用されていません。現在の情報については [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md) を参照してください。
+<span data-ttu-id="a6daf-p102">この記事は使用されていません。現在の情報については [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6daf-p102">This article is obsolete. See [Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md) for current information.</span></span>
   
 

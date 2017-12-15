@@ -19,17 +19,17 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="office-365-cross-tenant-collaboration"></a>Office 365 テナント間コラボレーション
+# <a name="office-365-cross-tenant-collaboration"></a><span data-ttu-id="cb8eb-103">Office 365 テナント間コラボレーション</span><span class="sxs-lookup"><span data-stu-id="cb8eb-103">Office 365 cross-tenant collaboration</span></span>
 
-Office 365 のテナント全体においてセキュリティで保護された方法で、組織が共同作業できるようにする方法を説明します。
+<span data-ttu-id="cb8eb-104">Office 365 のテナント全体においてセキュリティで保護された方法で、組織が共同作業できるようにする方法を説明します。</span><span class="sxs-lookup"><span data-stu-id="cb8eb-104">Learn how organizations can collaborate in a secure manner across Office 365 tenants.</span></span>
   
-組織は Office 365 を使用してプロジェクト上で共同で作業できます。たとえば、Skype for Business では、ユーザーはオンライン会議、ファイル共有、インスタント メッセージングによるチャットができます。または、ユーザーは Office 365 グループを使用して、会話、ファイル、および予定表アイテムのすべてを 1 か所にまとめることができます。
+<span data-ttu-id="cb8eb-p101">組織は Office 365 を使用してプロジェクト上で共同で作業できます。たとえば、Skype for Business では、ユーザーはオンライン会議、ファイル共有、インスタント メッセージングによるチャットができます。または、ユーザーは Office 365 グループを使用して、会話、ファイル、および予定表アイテムのすべてを 1 か所にまとめることができます。</span><span class="sxs-lookup"><span data-stu-id="cb8eb-p101">Organizations can use Office 365 to collaborate on projects. For example, Skype for Business enables people to meet online, share files, and chat via instant messaging. Or, people can use Office 365 groups to have conversations, files, and calendar items all in one place.</span></span>
   
-企業組織では、別の Office 365 テナントを使用している別の組織と共同作業を行う業務上のニーズが発生する場合もあります。たとえば、次のような場合です。
+<span data-ttu-id="cb8eb-p102">企業組織では、別の Office 365 テナントを使用している別の組織と共同作業を行う業務上のニーズが発生する場合もあります。たとえば、次のような場合です。</span><span class="sxs-lookup"><span data-stu-id="cb8eb-p102">Sometimes, an enterprise organization has a business need to collaborate with another organization using a different Office 365 tenant. Examples include: ___</span></span>
   
-## <a name="what-is-office-365-cross-tenant-collaboration"></a>Office 365 テナント間コラボレーションとは
-<a name="whatisctc"> </a>
+## <a name="what-is-office-365-cross-tenant-collaboration"></a><span data-ttu-id="cb8eb-110">Office 365 テナント間コラボレーションとは</span><span class="sxs-lookup"><span data-stu-id="cb8eb-110">What is Office 365 cross-tenant collaboration?</span></span>
+<span data-ttu-id="cb8eb-111"><a name="whatisctc"> </a></span><span class="sxs-lookup"><span data-stu-id="cb8eb-111"><a name="whatisctc"> </a></span></span>
 
-Office 365 テナント間コラボレーションとは、ある Office 365 テナントを使用しているユーザーが別の Office 365 テナントを使用している別のユーザーと、セキュリティで保護された方法で共同作業できることを意味します。たとえば、次のような場合が考えられます。 
+<span data-ttu-id="cb8eb-p103">Office 365 テナント間コラボレーションとは、ある Office 365 テナントを使用しているユーザーが別の Office 365 テナントを使用している別のユーザーと、セキュリティで保護された方法で共同作業できることを意味します。たとえば、次のような場合が考えられます。</span><span class="sxs-lookup"><span data-stu-id="cb8eb-p103">Office 365 cross-tenant collaboration refers to people who are using one Office 365 tenant being able to collaborate in a secure manner with others who are using a different Office 365 tenant. For example, suppose</span></span> 
   
 

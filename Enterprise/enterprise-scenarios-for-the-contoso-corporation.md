@@ -20,27 +20,27 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズのシナリオ
+# <a name="enterprise-scenarios-for-the-contoso-corporation"></a><span data-ttu-id="7b92d-103">Contoso Corporation のエンタープライズのシナリオ</span><span class="sxs-lookup"><span data-stu-id="7b92d-103">Enterprise scenarios for the Contoso Corporation</span></span>
 
- **概要:** 架空の代表的なグローバル組織が、Enterprise Cloud のシナリオを使用して、業務上の必要に取り組んでいる方法を示します。
+ <span data-ttu-id="7b92d-104">**概要:** 架空の代表的なグローバル組織が、Enterprise Cloud のシナリオを使用して、業務上の必要に取り組んでいる方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7b92d-104">**Summary:** How a fictional but representative global organization is addressing its business needs with enterprise cloud scenarios.</span></span>
   
-Contoso 社は、ネットワーク、ID、適所のセキュリティ インフラストラクチャを使用して次のような Enterprise Cloud のシナリオを配置しました。
+<span data-ttu-id="7b92d-105">Contoso 社は、ネットワーク、ID、適所のセキュリティ インフラストラクチャを使用して次のような Enterprise Cloud のシナリオを配置しました。</span><span class="sxs-lookup"><span data-stu-id="7b92d-105">With the networking, identity, and security infrastructure in place, Contoso deployed the following enterprise cloud scenarios:</span></span>
   
-- [トランザクション履歴データのクラウドへの移動](moving-historical-transaction-data-to-the-cloud.md)
+- [<span data-ttu-id="7b92d-106">トランザクション履歴データのクラウドへの移動</span><span class="sxs-lookup"><span data-stu-id="7b92d-106">Moving historical transaction data to the cloud</span></span>](moving-historical-transaction-data-to-the-cloud.md)
     
-    Contoso 社は Stretch Database を実装して、オンプレミスのデータ ストレージの必要性と毎日の運営コストを縮小しました。
+    <span data-ttu-id="7b92d-107">Contoso 社は Stretch Database を実装して、オンプレミスのデータ ストレージの必要性と毎日の運営コストを縮小しました。</span><span class="sxs-lookup"><span data-stu-id="7b92d-107">Contoso implemented stretch database to reduce its on-premises data storage needs and daily running costs.</span></span>
     
-- [センシティブなアセットや機密性の高いアセット用のセキュアな SharePoint Online チームサイト](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
+- [<span data-ttu-id="7b92d-108">センシティブなアセットや機密性の高いアセット用のセキュアな SharePoint Online チームサイト</span><span class="sxs-lookup"><span data-stu-id="7b92d-108">Secure SharePoint Online team sites for sensitive and highly confidential assets</span></span>](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
     
-    Contoso 社は、幹部や研究所が簡単かつセキュアにコラボレーションできるようにするために、センシティブな情報の保護と機密性の高い SharePoint Online チーム サイトを実装しました。
+    <span data-ttu-id="7b92d-109">Contoso 社は、幹部や研究所が簡単かつセキュアにコラボレーションできるようにするために、センシティブな情報の保護と機密性の高い SharePoint Online チーム サイトを実装しました。</span><span class="sxs-lookup"><span data-stu-id="7b92d-109">Contoso implemented sensitive protection and highly confidential SharePoint Online team sites for easier, yet secure, collaboration for its executives and research centers.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="7b92d-110">See Also</span><span class="sxs-lookup"><span data-stu-id="7b92d-110">See Also</span></span>
 
-[Microsoft Cloud の Contoso](contoso-in-the-microsoft-cloud.md)
+[<span data-ttu-id="7b92d-111">Microsoft Cloud の Contoso</span><span class="sxs-lookup"><span data-stu-id="7b92d-111">Contoso in the Microsoft Cloud</span></span>](contoso-in-the-microsoft-cloud.md)
   
-[Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="7b92d-112">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="7b92d-112">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="7b92d-113">Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース</span><span class="sxs-lookup"><span data-stu-id="7b92d-113">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -23,216 +23,216 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。
+# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a><span data-ttu-id="7cdc1-103">Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-103">Protect SharePoint Online files with Office 365 labels and DLP</span></span>
 
- **の概要:**Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトに適用します。
+ <span data-ttu-id="7cdc1-104">**の概要:**Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトに適用します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-104">**Summary:** Apply Office 365 labels and data loss prevention (DLP) policies for SharePoint Online team sites with various levels of information protection.</span></span>
   
-設計し、Office 365 のラベルと、基準計画と小文字が区別され、機密性の高いの SharePoint Online チーム サイト用の DLP ポリシーを展開するこの資料の手順を使用します。これら 3 つの層の保護の詳細については、 [SharePoint のオンラインのセキュリティで保護されたサイトとファイル](secure-sharepoint-online-sites-and-files.md)を参照してください。
+<span data-ttu-id="7cdc1-p101">設計し、Office 365 のラベルと、基準計画と小文字が区別され、機密性の高いの SharePoint Online チーム サイト用の DLP ポリシーを展開するこの資料の手順を使用します。これら 3 つの層の保護の詳細については、 [SharePoint のオンラインのセキュリティで保護されたサイトとファイル](secure-sharepoint-online-sites-and-files.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-p101">Use the steps in this article to design and deploy Office 365 labels and DLP policies for baseline, sensitive, and highly confidential SharePoint Online team sites. For more information about these three tiers of protection, see [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).</span></span>
   
-## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>SharePoint Online サイト用の Office 365 のラベル
+## <a name="office-365-labels-for-your-sharepoint-online-sites"></a><span data-ttu-id="7cdc1-107">SharePoint Online サイト用の Office 365 のラベル</span><span class="sxs-lookup"><span data-stu-id="7cdc1-107">Office 365 labels for your SharePoint Online sites</span></span>
 
-Office 365 のラベルを作成し、SharePoint Online チーム サイトにラベルを割り当てるためのフェーズは 3 つあります。
+<span data-ttu-id="7cdc1-108">Office 365 のラベルを作成し、SharePoint Online チーム サイトにラベルを割り当てるためのフェーズは 3 つあります。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-108">There are three phases to creating and then assigning Office 365 labels to SharePoint Online team sites.</span></span>
   
-### <a name="phase-1-determine-the-office-365-label-names"></a>フェーズ 1:Office 365 のラベル名を決定する
+### <a name="phase-1-determine-the-office-365-label-names"></a><span data-ttu-id="7cdc1-109">フェーズ 1:Office 365 のラベル名を決定する</span><span class="sxs-lookup"><span data-stu-id="7cdc1-109">Phase 1: Determine the Office 365 label names</span></span>
 
-このフェーズでは、SharePoint Online チーム サイトに適用される 4 つの情報保護レベル用に Office 365 のラベルの名前を決定します。以下の表に、レベルごとの推奨名を示します。
+<span data-ttu-id="7cdc1-p102">このフェーズでは、SharePoint Online チーム サイトに適用される 4 つの情報保護レベル用に Office 365 のラベルの名前を決定します。以下の表に、レベルごとの推奨名を示します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-p102">In this phase, you determine the names of your Office 365 labels for the four levels of information protection applied to SharePoint Online team sites. The following table lists the recommended names for each level.</span></span>
   
-|**オンラインの SharePoint チーム サイトの保護レベル**|**ラベル名**|
+|<span data-ttu-id="7cdc1-112">**オンラインの SharePoint チーム サイトの保護レベル**</span><span class="sxs-lookup"><span data-stu-id="7cdc1-112">**SharePoint Online team site protection level**</span></span>|<span data-ttu-id="7cdc1-113">**ラベル名**</span><span class="sxs-lookup"><span data-stu-id="7cdc1-113">**Label name**</span></span>|
 |:-----|:-----|
-|ベースライン - パブリック  <br/> |内部パブリック  <br/> |
-|ベースライン - プライベート  <br/> |プライベート  <br/> |
-|機密  <br/> |機密  <br/> |
-|高機密  <br/> |高機密  <br/> |
+|<span data-ttu-id="7cdc1-114">ベースライン - パブリック</span><span class="sxs-lookup"><span data-stu-id="7cdc1-114">Baseline-Public</span></span>  <br/> |<span data-ttu-id="7cdc1-115">内部パブリック</span><span class="sxs-lookup"><span data-stu-id="7cdc1-115">Internal public</span></span>  <br/> |
+|<span data-ttu-id="7cdc1-116">ベースライン - プライベート</span><span class="sxs-lookup"><span data-stu-id="7cdc1-116">Baseline-Private</span></span>  <br/> |<span data-ttu-id="7cdc1-117">プライベート</span><span class="sxs-lookup"><span data-stu-id="7cdc1-117">Private</span></span>  <br/> |
+|<span data-ttu-id="7cdc1-118">機密</span><span class="sxs-lookup"><span data-stu-id="7cdc1-118">Sensitive</span></span>  <br/> |<span data-ttu-id="7cdc1-119">機密</span><span class="sxs-lookup"><span data-stu-id="7cdc1-119">Sensitive</span></span>  <br/> |
+|<span data-ttu-id="7cdc1-120">高機密</span><span class="sxs-lookup"><span data-stu-id="7cdc1-120">Highly Confidential</span></span>  <br/> |<span data-ttu-id="7cdc1-121">高機密</span><span class="sxs-lookup"><span data-stu-id="7cdc1-121">Highly Confidential</span></span>  <br/> |
    
-### <a name="phase-2-create-the-office-365-labels"></a>フェーズ 2: Office 365 のラベルを作成する
+### <a name="phase-2-create-the-office-365-labels"></a><span data-ttu-id="7cdc1-122">フェーズ 2: Office 365 のラベルを作成する</span><span class="sxs-lookup"><span data-stu-id="7cdc1-122">Phase 2: Create the Office 365 labels</span></span>
 
-このフェーズでは、さまざまな情報保護レベルに対して決定したラベルを作成し発行します。
+<span data-ttu-id="7cdc1-123">このフェーズでは、さまざまな情報保護レベルに対して決定したラベルを作成し発行します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-123">In this phase, you create and then publish your determined labels for the different levels of information protection.</span></span>
   
-ラベルを作成するには、Office 365 管理センターまたは Microsoft PowerShell を使用できます。
+<span data-ttu-id="7cdc1-124">ラベルを作成するには、Office 365 管理センターまたは Microsoft PowerShell を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-124">To create the labels, you can use the Office 365 Admin center or Microsoft PowerShell.</span></span>
   
-### <a name="create-office-365-labels-with-the-office-365-admin-center"></a>Office 365 管理センターで Office 365 のラベルを作成する
+### <a name="create-office-365-labels-with-the-office-365-admin-center"></a><span data-ttu-id="7cdc1-125">Office 365 管理センターで Office 365 のラベルを作成する</span><span class="sxs-lookup"><span data-stu-id="7cdc1-125">Create Office 365 labels with the Office 365 Admin center</span></span>
 
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. <span data-ttu-id="7cdc1-p103">セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-p103">Sign in to the Office 365 portal with an account that has the Security Administrator or Company Administrator role. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
+2. <span data-ttu-id="7cdc1-128">**[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-128">From the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
     
-3. お使いのブラウザーの新しい**Office 管理者センター** ] タブからをクリックして**管理センター > セキュリティ&amp;準拠**。
+3. <span data-ttu-id="7cdc1-129">お使いのブラウザーの新しい**Office 管理者センター** ] タブからをクリックして**管理センター > セキュリティ&amp;準拠**。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-129">From the new **Office Admin center** tab of your browser, click **Admin centers > Security &amp; Compliance**.</span></span>
     
-4. 新しいから**ホーム ・ セキュリティ&amp;準拠**タブ、ブラウザーのをクリックして**分類 > ラベル**。
+4. <span data-ttu-id="7cdc1-130">新しいから**ホーム ・ セキュリティ&amp;準拠**タブ、ブラウザーのをクリックして**分類 > ラベル**。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-130">From the new **Home - Security &amp; Compliance** tab of your browser, click **Classifications > Labels**.</span></span>
     
-5. **[ホーム] > [ラベル]** ウィンドウで、 **[ラベルの作成]** をクリックします。
+5. <span data-ttu-id="7cdc1-131">**[ホーム] > [ラベル]** ウィンドウで、 **[ラベルの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-131">From the **Home > Labels** pane, click **Create a label**.</span></span>
     
-6. [ウィンドウ] の**名前ラベル**、ラベルの名前を入力し、[**次へ**] をクリックします。
+6. <span data-ttu-id="7cdc1-132">[ウィンドウ] の**名前ラベル**、ラベルの名前を入力し、[**次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-132">On the **Name your label** pane, type the name of the label, and then click **Next**.</span></span>
     
-7. **[ラベル設定]** ウィンドウで、 **[次へ]** をクリックします。
+7. <span data-ttu-id="7cdc1-133">**[ラベル設定]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-133">On the **Label settings** pane, click **Next**.</span></span>
     
-8. **[設定の確認]** ウィンドウで、 **[このラベルを作成する]** をクリックしてから **[閉じる]** をクリックします。
+8. <span data-ttu-id="7cdc1-134">**[設定の確認]** ウィンドウで、 **[このラベルを作成する]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-134">On the **Review your settings** pane, click **Create this label**, and then click **Close**.</span></span>
     
-9. 追加ラベルについて手順 5 から 8 を繰り返します。
+9. <span data-ttu-id="7cdc1-135">追加ラベルについて手順 5 から 8 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-135">Repeat steps 5-8 for your additional labels.</span></span>
     
-### <a name="create-office-365-labels-with-powershell"></a>PowerShell で Office 365 のラベルを作成する
+### <a name="create-office-365-labels-with-powershell"></a><span data-ttu-id="7cdc1-136">PowerShell で Office 365 のラベルを作成する</span><span class="sxs-lookup"><span data-stu-id="7cdc1-136">Create Office 365 labels with PowerShell</span></span>
 
-1. [Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)のセキュリティ管理者や企業の管理者の役割を持つアカウントの資格情報を指定します。
+1. <span data-ttu-id="7cdc1-137">[Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)のセキュリティ管理者や企業の管理者の役割を持つアカウントの資格情報を指定します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-137">[Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409) and specify the credentials of an account that has the Security Administrator or Company Administrator role.</span></span>
     
-2. ラベル名をリストに記入し、PowerShell コマンド プロンプトで次のコマンドを実行します。
+2. <span data-ttu-id="7cdc1-138">ラベル名をリストに記入し、PowerShell コマンド プロンプトで次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-138">Fill out the list of label names, and then run these commands at the PowerShell command prompt:</span></span>
     
   ```
   $labelNames=@(<list of label names, each enclosed in quotes and separated by commas>)
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
-次に、次の手順を使用して新しい Office 365 のラベルを発行します。
+<span data-ttu-id="7cdc1-139">次に、次の手順を使用して新しい Office 365 のラベルを発行します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-139">Next, use these steps to publish the new Office 365 labels.</span></span>
   
-1. **ホーム > ラベル**ウィンドウ セキュリティ&amp;コンプライアンス センターでは、**ラベルの発行**] をクリックします。
+1. <span data-ttu-id="7cdc1-140">**ホーム > ラベル**ウィンドウ セキュリティ&amp;コンプライアンス センターでは、**ラベルの発行**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-140">From the **Home > Labels** pane the Security &amp; Compliance Center, click **Publish labels**.</span></span>
     
-2. **[発行するラベルを選択]** ウィンドウで、 **[発行するラベルを選択]** をクリックします。
+2. <span data-ttu-id="7cdc1-141">**[発行するラベルを選択]** ウィンドウで、 **[発行するラベルを選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-141">On the **Choose labels to publish** pane, click **Choose labels to publish**.</span></span>
     
-3. **[ラベルの選択]** ウィンドウで、 **[追加]** をクリックして 4 つすべてのラベルを選択します。
+3. <span data-ttu-id="7cdc1-142">**[ラベルの選択]** ウィンドウで、 **[追加]** をクリックして 4 つすべてのラベルを選択します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-142">On the **Choose labels** pane, click **Add** and select all four labels.</span></span>
     
-4. [ **完了**] をクリックします。
+4. <span data-ttu-id="7cdc1-143">[ **完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-143">Click **Done**.</span></span>
     
-5. **[発行するラベルを選択]** ウィンドウで、 **[次へ]** をクリックします。
+5. <span data-ttu-id="7cdc1-144">**[発行するラベルを選択]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-144">On the **Choose labels to publish** pane, click **Next**.</span></span>
     
-6. **[場所の選択]** ウィンドウで、 **[次へ]** をクリックします。
+6. <span data-ttu-id="7cdc1-145">**[場所の選択]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-145">On the **Choose locations** pane, click **Next**.</span></span>
     
-7. [ウィンドウ]**のポリシーの名前****名**] で、ラベルのセットの名前を入力し、[**次へ**] をクリックします。
+7. <span data-ttu-id="7cdc1-146">[ウィンドウ]**のポリシーの名前****名**] で、ラベルのセットの名前を入力し、[**次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-146">On the **Name your policy** pane, type a name for your set of labels in **Name**, and then click **Next**.</span></span>
     
-8. **[設定の確認]** ウィンドウで、 **[ラベルの発行]** をクリックしてから **[閉じる]** をクリックします。
+8. <span data-ttu-id="7cdc1-147">**[設定の確認]** ウィンドウで、 **[ラベルの発行]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-147">On the **Review your settings** pane, click **Publish labels**, and then click **Close**.</span></span>
     
-### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>フェーズ 3:Office 365 のラベルを SharePoint Online サイトに適用する 
+### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a><span data-ttu-id="7cdc1-148">フェーズ 3:Office 365 のラベルを SharePoint Online サイトに適用する </span><span class="sxs-lookup"><span data-stu-id="7cdc1-148">Phase 3: Apply the Office 365 labels to your SharePoint Online sites</span></span>
 
-次の手順を使用して、Office 365 のラベルを SharePoint Online チーム サイトのドキュメント フォルダーに適用します。
+<span data-ttu-id="7cdc1-149">次の手順を使用して、Office 365 のラベルを SharePoint Online チーム サイトのドキュメント フォルダーに適用します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-149">Use these steps to apply the Office 365 labels to the documents folders of your SharePoint Online team sites.</span></span>
   
-1. お使いのブラウザーの [ **Microsoft Office のホーム**] タブからは、 **SharePoint**のタイルをクリックします。
+1. <span data-ttu-id="7cdc1-150">お使いのブラウザーの [ **Microsoft Office のホーム**] タブからは、 **SharePoint**のタイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-150">From the **Microsoft Office Home** tab of your browser, click the **SharePoint** tile.</span></span>
     
-2. お使いのブラウザーで新しい**SharePoint** ] タブで、Office 365 ラベルが割り当てられている必要があるサイトをクリックします。
+2. <span data-ttu-id="7cdc1-151">お使いのブラウザーで新しい**SharePoint** ] タブで、Office 365 ラベルが割り当てられている必要があるサイトをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-151">On the new **SharePoint** tab in your browser, click a site that needs an Office 365 label assigned.</span></span>
     
-3. お使いのブラウザーの新しい SharePoint サイト] タブ、[**ドキュメント**] をクリックします。
+3. <span data-ttu-id="7cdc1-152">お使いのブラウザーの新しい SharePoint サイト] タブ、[**ドキュメント**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-152">In the new SharePoint site tab of your browser, click **Documents**.</span></span>
     
-4. [設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。
+4. <span data-ttu-id="7cdc1-153">[設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-153">Click the settings icon, and then click **Library settings**.</span></span>
     
-5. **[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。
+5. <span data-ttu-id="7cdc1-154">**[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-154">Under **Permissions and Management**, click **Apply label to items in this library**.</span></span>
     
-6. **ラベルの設定の適用**] で、適切なラベルを選択し、し、[**保存**] をクリックします。
+6. <span data-ttu-id="7cdc1-155">**ラベルの設定の適用**] で、適切なラベルを選択し、し、[**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-155">In **Settings-Apply Label**, select the appropriate label, and then click **Save**.</span></span>
     
-7. SharePoint Online サイトのタブを閉じます。
+7. <span data-ttu-id="7cdc1-156">SharePoint Online サイトのタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-156">Close the tab for the SharePoint Online site.</span></span>
     
-8. Office 365 のラベルをさらに SharePoint Online サイトに割り当てるには、手順 3 から 8 を繰り返します。
+8. <span data-ttu-id="7cdc1-157">Office 365 のラベルをさらに SharePoint Online サイトに割り当てるには、手順 3 から 8 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-157">Repeat steps 3-8 to assign Office 365 labels to your additional SharePoint Online sites.</span></span>
     
-最終的な構成をここに示します。
+<span data-ttu-id="7cdc1-158">最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-158">Here is your resulting configuration.</span></span>
   
 ![4 種類の SharePoint Online チーム サイト用の Office 365 ラベル。](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
-## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>SharePoint Online サイト用の DLP ポリシー
+## <a name="dlp-policies-for-your-sharepoint-online-sites"></a><span data-ttu-id="7cdc1-160">SharePoint Online サイト用の DLP ポリシー</span><span class="sxs-lookup"><span data-stu-id="7cdc1-160">DLP policies for your SharePoint Online sites</span></span>
 
-組織外の SharePoint Online の機密性の高いチーム サイト上のドキュメントを共有する場合にユーザーに通知する DLP ポリシーを構成するのには次の手順を使用します。
+<span data-ttu-id="7cdc1-161">組織外の SharePoint Online の機密性の高いチーム サイト上のドキュメントを共有する場合にユーザーに通知する DLP ポリシーを構成するのには次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-161">Use these steps to configure a DLP policy that notifies users when they share a document on a SharePoint Online sensitive team site outside the organization.</span></span>
   
-1. お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。
+1. <span data-ttu-id="7cdc1-162">お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-162">From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.</span></span>
     
-2. 新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。
+2. <span data-ttu-id="7cdc1-163">新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-163">On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
     
-3. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
+3. <span data-ttu-id="7cdc1-164">**[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-164">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
     
-4. **[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。
+4. <span data-ttu-id="7cdc1-165">**[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-165">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
     
-5. **名ポリシー**ウィンドウで、[**名**] に、機密性の高いレベルの DLP ポリシーの名前を入力し、[**次へ**] をクリックします。
+5. <span data-ttu-id="7cdc1-166">**名ポリシー**ウィンドウで、[**名**] に、機密性の高いレベルの DLP ポリシーの名前を入力し、[**次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-166">In the **Name your policy** pane, type the name for the sensitive level DLP policy in **Name**, and then click **Next**.</span></span>
     
-6. **[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。
+6. <span data-ttu-id="7cdc1-167">**[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-167">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
     
-7. 場所の一覧で、 **Exchange メール**と **OneDrive アカウント**の場所を無効にし、 **[次へ]** をクリックします。
+7. <span data-ttu-id="7cdc1-168">場所の一覧で、 **Exchange メール**と **OneDrive アカウント**の場所を無効にし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-168">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
     
-8. **[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[編集]** をクリックします。
+8. <span data-ttu-id="7cdc1-169">**[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-169">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
     
-9. **[保護するコンテンツの種類を選択する]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、 **[ラベル]** をクリックします。
+9. <span data-ttu-id="7cdc1-170">**[保護するコンテンツの種類を選択する]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、 **[ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-170">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
     
-10. **[ラベル]** ウィンドウで、 **[+ 追加]** をクリックして、 **[機密]** ラベルを選択し、 **[追加]** をクリックしてから、 **[完了]** をクリックします。
+10. <span data-ttu-id="7cdc1-171">**[ラベル]** ウィンドウで、 **[+ 追加]** をクリックして、 **[機密]** ラベルを選択し、 **[追加]** をクリックしてから、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-171">In the **Labels** pane, click **+ Add**, select the **Sensitive** label, click **Add**, and then click **Done**.</span></span>
     
-11. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
+11. <span data-ttu-id="7cdc1-172">**[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-172">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
     
-12. **[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[次へ]** をクリックします。
+12. <span data-ttu-id="7cdc1-173">**[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-173">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
     
-13. **[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ヒントと電子メールをカスタマイズする]** をクリックします。
+13. <span data-ttu-id="7cdc1-174">**[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ヒントと電子メールをカスタマイズする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-174">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
     
-14. **[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、 **[ポリシー ヒント テキストをカスタマイズする]** をクリックします。
+14. <span data-ttu-id="7cdc1-175">**[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、 **[ポリシー ヒント テキストをカスタマイズする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-175">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
     
-15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
+15. <span data-ttu-id="7cdc1-176">次の内容をテキスト ボックスに入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-176">In the text box, type or paste in the following:</span></span>
     
-  - 組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。
+  - <span data-ttu-id="7cdc1-p104">組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-p104">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
     
-    あるいは、ファイルを共有する方法について組織外のユーザーに指示する独自のポリシー ヒントを入力するか、貼り付けます。
+    <span data-ttu-id="7cdc1-180">あるいは、ファイルを共有する方法について組織外のユーザーに指示する独自のポリシー ヒントを入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-180">Alternately, type or paste in your own policy tip that instructs users on how to share a file outside your organization.</span></span>
     
-16. **[OK]** をクリックします。
+16. <span data-ttu-id="7cdc1-181">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-181">Click **OK**.</span></span>
     
-17. **[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ユーザーが共有できないようにし、共有コンテンツへのアクセスを制限する]** チェックボックスをクリアしてから、 **[次へ]** をクリックします。
+17. <span data-ttu-id="7cdc1-182">**[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ユーザーが共有できないようにし、共有コンテンツへのアクセスを制限する]** チェックボックスをクリアしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-182">In the **What do you want to do if we detect sensitive info?** pane, clear the **Block people from sharing, and restrict access to shared content** check box, and then click **Next**.</span></span>
     
-18. **[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。
+18. <span data-ttu-id="7cdc1-183">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-183">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
     
-19. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
+19. <span data-ttu-id="7cdc1-184">**[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-184">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
     
-機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
+<span data-ttu-id="7cdc1-185">機密 SharePoint Online チーム サイトの最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-185">Here is your resulting configuration for sensitive SharePoint Online team sites.</span></span>
   
 ![機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
-次に、これらの手順を使用して、高機密 SharePoint Online チーム サイトのドキュメントを組織外と共有したときにユーザーをブロックする DLP ポリシーを構成します。
+<span data-ttu-id="7cdc1-187">次に、これらの手順を使用して、高機密 SharePoint Online チーム サイトのドキュメントを組織外と共有したときにユーザーをブロックする DLP ポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-187">Next, use these steps to configure a DLP policy that blocks users when they share a document on a SharePoint Online highly confidential team site outside the organization.</span></span>
   
-1. お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。
+1. <span data-ttu-id="7cdc1-188">お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-188">From the **Microsoft Office Home** tab in your browser, click the **Security &amp; Compliance** tile.</span></span>
     
-2. 新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。
+2. <span data-ttu-id="7cdc1-189">新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-189">On the new **Security &amp; Compliance** tab in your browser, click **Data loss prevention > Policy**.</span></span>
     
-3. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
+3. <span data-ttu-id="7cdc1-190">**[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-190">In the **Data loss prevention** pane, click **+ Create a policy**.</span></span>
     
-4. **[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。
+4. <span data-ttu-id="7cdc1-191">**[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-191">In the **Start with a template or create a custom policy** pane, click **Custom**, and then click **Next**.</span></span>
     
-5. **名ポリシー**ウィンドウで、[**名**] に、機密性の高いレベルの DLP ポリシーの名前を入力し、[**次へ**] をクリックします。
+5. <span data-ttu-id="7cdc1-192">**名ポリシー**ウィンドウで、[**名**] に、機密性の高いレベルの DLP ポリシーの名前を入力し、[**次へ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-192">In the **Name your policy** pane, type the name for the highly sensitive level DLP policy in **Name**, and then click **Next**.</span></span>
     
-6. **[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。
+6. <span data-ttu-id="7cdc1-193">**[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-193">In the **Choose locations** pane, click **Let me choose specific locations**, and then click **Next**.</span></span>
     
-7. 場所の一覧で、 **Exchange メール**と **OneDrive アカウント**の場所を無効にし、 **[次へ]** をクリックします。
+7. <span data-ttu-id="7cdc1-194">場所の一覧で、 **Exchange メール**と **OneDrive アカウント**の場所を無効にし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-194">In the list of locations, disable the **Exchange email** and **OneDrive accounts** locations, and then click **Next**.</span></span>
     
-8. **[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[編集]** をクリックします。
+8. <span data-ttu-id="7cdc1-195">**[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-195">In the **Customize the types of sensitive info you want to protect** pane, click **Edit**.</span></span>
     
-9. **[保護するコンテンツの種類を選択する]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、 **[ラベル]** をクリックします。
+9. <span data-ttu-id="7cdc1-196">**[保護するコンテンツの種類を選択する]** ウィンドウのドロップダウン ボックスで **[追加]** をクリックしてから、 **[ラベル]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-196">In the **Choose the types of content to protect** pane, click **Add** in the drop-down box, and then click **Labels**.</span></span>
     
-10. **[ラベル]** ウィンドウで、 **[+ 追加]** をクリックして、 **[高機密]** ラベルを選択し、 **[追加]** をクリックしてから、 **[完了]** をクリックします。
+10. <span data-ttu-id="7cdc1-197">**[ラベル]** ウィンドウで、 **[+ 追加]** をクリックして、 **[高機密]** ラベルを選択し、 **[追加]** をクリックしてから、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-197">In the **Labels** pane, click **+ Add**, select the **Highly Confidential** label, click **Add**, and then click **Done**.</span></span>
     
-11. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
+11. <span data-ttu-id="7cdc1-198">**[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-198">In the **Choose the types of content to protect** pane, click **Save**.</span></span>
     
-12. **[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[次へ]** をクリックします。
+12. <span data-ttu-id="7cdc1-199">**[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-199">In the **Customize the types of sensitive info you want to protect** pane, click **Next**.</span></span>
     
-13. **[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ヒントと電子メールをカスタマイズする]** をクリックします。
+13. <span data-ttu-id="7cdc1-200">**[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ヒントと電子メールをカスタマイズする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-200">In the **What do you want to do if we detect sensitive info?** pane, click **Customize the tip and email**.</span></span>
     
-14. **[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、 **[ポリシー ヒント テキストをカスタマイズする]** をクリックします。
+14. <span data-ttu-id="7cdc1-201">**[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、 **[ポリシー ヒント テキストをカスタマイズする]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-201">In the **Customize policy tips and email notifications** pane, click **Customize the policy tip text**.</span></span>
     
-15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
+15. <span data-ttu-id="7cdc1-202">次の内容をテキスト ボックスに入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-202">In the text box, type or paste in the following:</span></span>
     
-  - 組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。
+  - <span data-ttu-id="7cdc1-p105">組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-p105">To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.</span></span>
     
-    あるいは、ファイルを共有する方法について組織外のユーザーに指示する独自のポリシー ヒントを入力するか、貼り付けます。
+    <span data-ttu-id="7cdc1-206">あるいは、ファイルを共有する方法について組織外のユーザーに指示する独自のポリシー ヒントを入力するか、貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-206">Alternately, type or paste in your own policy tip that instructs users on how to share a file outside your organization.</span></span>
     
-16. **[OK]** をクリックします。
+16. <span data-ttu-id="7cdc1-207">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-207">Click **OK**.</span></span>
     
-17. **[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[業務の妥当性を要求してオーバーライドする]** をクリックしてから、 **[次へ]** をクリックします。
+17. <span data-ttu-id="7cdc1-208">**[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[業務の妥当性を要求してオーバーライドする]** をクリックしてから、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-208">In the **What do you want to do if we detect sensitive info?** pane, select **Require a business justification to override**, and then click **Next**.</span></span>
     
-18. **[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。
+18. <span data-ttu-id="7cdc1-209">**[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-209">In the **Do you want to turn on the policy or test things out first?** pane, click **Yes, turn it on right away**, and then click **Next**.</span></span>
     
-19. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
+19. <span data-ttu-id="7cdc1-210">**[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-210">In the **Review your settings** pane, click **Create**, and then click **Close**.</span></span>
     
-高機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
+<span data-ttu-id="7cdc1-211">高機密 SharePoint Online チーム サイトの最終的な構成をここに示します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-211">Here is your resulting configuration for high confidentiality SharePoint Online team sites.</span></span>
   
 ![高機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a><span data-ttu-id="7cdc1-213">次の手順</span><span class="sxs-lookup"><span data-stu-id="7cdc1-213">Next step</span></span>
 
-[Azure の情報保護と SharePoint のオンラインのファイルを保護します。](protect-sharepoint-online-files-with-azure-information-protection.md)
+[<span data-ttu-id="7cdc1-214">Azure の情報保護と SharePoint のオンラインのファイルを保護します。</span><span class="sxs-lookup"><span data-stu-id="7cdc1-214">Protect SharePoint Online files with Azure Information Protection</span></span>](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="7cdc1-215">See Also</span><span class="sxs-lookup"><span data-stu-id="7cdc1-215">See Also</span></span>
 
-[SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
+[<span data-ttu-id="7cdc1-216">SharePoint Online サイトとファイルをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="7cdc1-216">Secure SharePoint Online sites and files</span></span>](secure-sharepoint-online-sites-and-files.md)
   
-[開発/テスト環境の SharePoint Online サイトをセキュリティで保護する](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[<span data-ttu-id="7cdc1-217">開発/テスト環境の SharePoint Online サイトをセキュリティで保護する</span><span class="sxs-lookup"><span data-stu-id="7cdc1-217">Secure SharePoint Online sites in a dev/test environment</span></span>](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[<span data-ttu-id="7cdc1-218">選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス</span><span class="sxs-lookup"><span data-stu-id="7cdc1-218">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="7cdc1-219">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="7cdc1-219">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 

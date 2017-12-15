@@ -22,148 +22,148 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Microsoft クラウドのストレージを設計する
+# <a name="designing-storage-for-the-microsoft-cloud"></a><span data-ttu-id="f202d-103">Microsoft クラウドのストレージを設計する</span><span class="sxs-lookup"><span data-stu-id="f202d-103">Designing storage for the Microsoft cloud</span></span>
 
- **概要:** クラウド ストレージが必要な理由を理解し、一連の Microsoft のクラウド ストレージ オプションおよび主要なストレージ シナリオを確認します。
+ <span data-ttu-id="f202d-104">**概要:** クラウド ストレージが必要な理由を理解し、一連の Microsoft のクラウド ストレージ オプションおよび主要なストレージ シナリオを確認します。</span><span class="sxs-lookup"><span data-stu-id="f202d-104">**Summary:** Understand why you need cloud storage and review the list of Microsoft's cloud storage options and the key storage scenarios.</span></span>
   
-ご使用のストレージを Microsoft のクラウド サービスと統合すると、広範なサービスとクラウド プラットフォームのオプションにアクセスできるようになります。
+<span data-ttu-id="f202d-105">ご使用のストレージを Microsoft のクラウド サービスと統合すると、広範なサービスとクラウド プラットフォームのオプションにアクセスできるようになります。</span><span class="sxs-lookup"><span data-stu-id="f202d-105">Integrating your storage with Microsoft cloud services gives you access to a broad range of services and cloud platform options.</span></span>
   
-## <a name="why-cloud-storage"></a>クラウド ストレージを選ぶ理由
+## <a name="why-cloud-storage"></a><span data-ttu-id="f202d-106">クラウド ストレージを選ぶ理由</span><span class="sxs-lookup"><span data-stu-id="f202d-106">Why cloud storage?</span></span>
 
-クラウド ストレージを使用する 2 つの主な理由
+<span data-ttu-id="f202d-107">クラウド ストレージを使用する 2 つの主な理由</span><span class="sxs-lookup"><span data-stu-id="f202d-107">There are two key reasons to use cloud storage.</span></span>
   
-1. 市場投入のスピード：
+1. <span data-ttu-id="f202d-108">市場投入のスピード：</span><span class="sxs-lookup"><span data-stu-id="f202d-108">Speed to market:</span></span>
     
-  - 高可用性および障害復旧のための迅速な構成
+  - <span data-ttu-id="f202d-109">高可用性および障害復旧のための迅速な構成</span><span class="sxs-lookup"><span data-stu-id="f202d-109">Faster configuration for high availability and disaster recovery</span></span>
     
-  - ストレージ ハードウェアの購入が不要
+  - <span data-ttu-id="f202d-110">ストレージ ハードウェアの購入が不要</span><span class="sxs-lookup"><span data-stu-id="f202d-110">No storage hardware to purchase</span></span>
     
-  - Microsoft のクラウド製品による組み込みの設備
+  - <span data-ttu-id="f202d-111">Microsoft のクラウド製品による組み込みの設備</span><span class="sxs-lookup"><span data-stu-id="f202d-111">Built-in plumbing provided by Microsoft's cloud offerings</span></span>
     
-  - 世界中どこからでも利用可能
+  - <span data-ttu-id="f202d-112">世界中どこからでも利用可能</span><span class="sxs-lookup"><span data-stu-id="f202d-112">Available from anywhere in the world</span></span>
     
-2. メンテナンス コストの削減:
+2. <span data-ttu-id="f202d-113">メンテナンス コストの削減:</span><span class="sxs-lookup"><span data-stu-id="f202d-113">Lower costs to maintain:</span></span>
     
-  - ストレージの需要に応じた柔軟な拡大および縮小
+  - <span data-ttu-id="f202d-114">ストレージの需要に応じた柔軟な拡大および縮小</span><span class="sxs-lookup"><span data-stu-id="f202d-114">Elasticity to scale up and down your storage demands</span></span>
     
-  - ストレージ ハードウェアのメンテナンスや移行が不要
+  - <span data-ttu-id="f202d-115">ストレージ ハードウェアのメンテナンスや移行が不要</span><span class="sxs-lookup"><span data-stu-id="f202d-115">No storage hardware to maintain or migrate</span></span>
     
-  - Microsoft はインフラストラクチャのメンテナンスや改善のための組み込みの設備を提供
+  - <span data-ttu-id="f202d-116">Microsoft はインフラストラクチャのメンテナンスや改善のための組み込みの設備を提供</span><span class="sxs-lookup"><span data-stu-id="f202d-116">Microsoft is your built-in plumber to maintain and improve infrastructure</span></span>
     
-  - 継続的な改善による市場で最高のストレージ セキュリティ
+  - <span data-ttu-id="f202d-117">継続的な改善による市場で最高のストレージ セキュリティ</span><span class="sxs-lookup"><span data-stu-id="f202d-117">Best storage security in the marketplace with ongoing improvements</span></span>
     
-## <a name="microsoft-cloud-storage-options"></a>Microsoft クラウドのストレージ オプション
+## <a name="microsoft-cloud-storage-options"></a><span data-ttu-id="f202d-118">Microsoft クラウドのストレージ オプション</span><span class="sxs-lookup"><span data-stu-id="f202d-118">Microsoft cloud storage options</span></span>
 
-さまざまなクラウド ストレージ オプションを理解するために、建設にたとえて表現しています。
+<span data-ttu-id="f202d-119">さまざまなクラウド ストレージ オプションを理解するために、建設にたとえて表現しています。</span><span class="sxs-lookup"><span data-stu-id="f202d-119">To help you understand the wide variety of cloud storage options, we use a construction analogy.</span></span>
   
-### <a name="move-in-ready"></a>いつでも使用可能
+### <a name="move-in-ready"></a><span data-ttu-id="f202d-120">いつでも使用可能</span><span class="sxs-lookup"><span data-stu-id="f202d-120">Move-in ready</span></span>
 
-既存のサービスに付属している、事前にパッケージ化された以下のソリューションを使用します。最小限の構成ですぐに使用できます。
+<span data-ttu-id="f202d-p101">既存のサービスに付属している、事前にパッケージ化された以下のソリューションを使用します。最小限の構成ですぐに使用できます。</span><span class="sxs-lookup"><span data-stu-id="f202d-p101">Use these prepackaged solutions that are bundled with existing services. Use immediately and with minimal configuration.</span></span>
   
-- Office 365
+- <span data-ttu-id="f202d-123">Office 365</span><span class="sxs-lookup"><span data-stu-id="f202d-123">Office 365</span></span>
     
-- Microsoft Intune
+- <span data-ttu-id="f202d-124">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="f202d-124">Microsoft Intune</span></span>
     
-- OneDrive for Business
+- <span data-ttu-id="f202d-125">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="f202d-125">OneDrive for Business</span></span>
     
-- Dynamics 365
+- <span data-ttu-id="f202d-126">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="f202d-126">Dynamics 365</span></span>
     
-- Visual Studio Team Services
+- <span data-ttu-id="f202d-127">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="f202d-127">Visual Studio Team Services</span></span>
     
-- Azure Site Recovery
+- <span data-ttu-id="f202d-128">Azure Site Recovery</span><span class="sxs-lookup"><span data-stu-id="f202d-128">Azure Site Recovery</span></span>
     
-- Yammer Site Sharing
+- <span data-ttu-id="f202d-129">Yammer Site Sharing</span><span class="sxs-lookup"><span data-stu-id="f202d-129">Yammer Site Sharing</span></span>
     
-- Azure Backup
+- <span data-ttu-id="f202d-130">Azure Backup</span><span class="sxs-lookup"><span data-stu-id="f202d-130">Azure Backup</span></span>
     
-各クラウド ストレージ オプションの詳細については、[いつでも使用可能](move-in-ready.md) を参照してください。
+<span data-ttu-id="f202d-131">各クラウド ストレージ オプションの詳細については、[いつでも使用可能](move-in-ready.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f202d-131">For the details of each of these cloud storage options, see [Move-in ready](move-in-ready.md).</span></span>
   
-### <a name="some-assembly-required"></a>いくらかのアセンブリが必要
+### <a name="some-assembly-required"></a><span data-ttu-id="f202d-132">いくらかのアセンブリが必要</span><span class="sxs-lookup"><span data-stu-id="f202d-132">Some assembly required</span></span>
 
-既存のサービスを、カスタム調整用の追加の構成やコーディングを伴うストレージ ソリューションの開始点として使用します。
+<span data-ttu-id="f202d-133">既存のサービスを、カスタム調整用の追加の構成やコーディングを伴うストレージ ソリューションの開始点として使用します。</span><span class="sxs-lookup"><span data-stu-id="f202d-133">Use these existing services as a starting point for your storage solution with additional configuration or coding for a custom fit.</span></span>
   
-- Azure Content Delivery Network
+- <span data-ttu-id="f202d-134">Azure Content Delivery Network</span><span class="sxs-lookup"><span data-stu-id="f202d-134">Azure Content Delivery Network</span></span>
     
-- Azure Media Services
+- <span data-ttu-id="f202d-135">Azure Media Services</span><span class="sxs-lookup"><span data-stu-id="f202d-135">Azure Media Services</span></span>
     
-- HdInsight
+- <span data-ttu-id="f202d-136">HdInsight</span><span class="sxs-lookup"><span data-stu-id="f202d-136">HdInsight</span></span>
     
-- Azure Redis Cache
+- <span data-ttu-id="f202d-137">Azure Redis Cache</span><span class="sxs-lookup"><span data-stu-id="f202d-137">Azure Redis Cache</span></span>
     
-- Azure SQL データベース
+- <span data-ttu-id="f202d-138">Azure SQL データベース</span><span class="sxs-lookup"><span data-stu-id="f202d-138">Azure SQL Database</span></span>
     
-- Azure VM 内の SQL Server
+- <span data-ttu-id="f202d-139">Azure VM 内の SQL Server</span><span class="sxs-lookup"><span data-stu-id="f202d-139">SQL Server on an Azure VM</span></span>
     
-- Azure Cosmos DB
+- <span data-ttu-id="f202d-140">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="f202d-140">Azure Cosmos DB</span></span>
     
-- StorSimple
+- <span data-ttu-id="f202d-141">StorSimple</span><span class="sxs-lookup"><span data-stu-id="f202d-141">StorSimple</span></span>
     
-- Azure SQL Data Warehouse
+- <span data-ttu-id="f202d-142">Azure SQL Data Warehouse</span><span class="sxs-lookup"><span data-stu-id="f202d-142">Azure SQL Data Warehouse</span></span>
     
-- Azure Data Lake Store
+- <span data-ttu-id="f202d-143">Azure Data Lake Store</span><span class="sxs-lookup"><span data-stu-id="f202d-143">Azure Data Lake Store</span></span>
     
-各クラウド ストレージ オプションの詳細については、[いくらかのアセンブリが必要](some-assembly-required.md) を参照してください。
+<span data-ttu-id="f202d-144">各クラウド ストレージ オプションの詳細については、[いくらかのアセンブリが必要](some-assembly-required.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f202d-144">For the details of each of these cloud storage options, see [Some assembly required](some-assembly-required.md).</span></span>
   
-### <a name="build-from-the-ground-up"></a>新規に構築
+### <a name="build-from-the-ground-up"></a><span data-ttu-id="f202d-145">新規に構築</span><span class="sxs-lookup"><span data-stu-id="f202d-145">Build from the ground up</span></span>
 
-これらのストレージ文書パーツとコードを使用して、独自のストレージ ソリューションまたはアプリを最初から作成します。
+<span data-ttu-id="f202d-146">これらのストレージ文書パーツとコードを使用して、独自のストレージ ソリューションまたはアプリを最初から作成します。</span><span class="sxs-lookup"><span data-stu-id="f202d-146">Use these storage building blocks, along with coding, to create your own storage solution or apps from scratch.</span></span>
   
-- Azure Storage (ファイル)
+- <span data-ttu-id="f202d-147">Azure Storage (ファイル)</span><span class="sxs-lookup"><span data-stu-id="f202d-147">Azure Storage (files)</span></span>
     
-- Azure Storage (BLOB)
+- <span data-ttu-id="f202d-148">Azure Storage (BLOB)</span><span class="sxs-lookup"><span data-stu-id="f202d-148">Azure Storage (blobs)</span></span>
     
-- Azure Storage (キュー)
+- <span data-ttu-id="f202d-149">Azure Storage (キュー)</span><span class="sxs-lookup"><span data-stu-id="f202d-149">Azure Storage (queues)</span></span>
     
-- Azure Storage (テーブル)
+- <span data-ttu-id="f202d-150">Azure Storage (テーブル)</span><span class="sxs-lookup"><span data-stu-id="f202d-150">Azure Storage (tables)</span></span>
     
-各クラウド ストレージ オプションの詳細については、[新規に構築](build-from-the-ground-up.md) を参照してください。
+<span data-ttu-id="f202d-151">各クラウド ストレージ オプションの詳細については、[新規に構築](build-from-the-ground-up.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f202d-151">For the details of each of these cloud storage options, see [Build from the ground up](build-from-the-ground-up.md).</span></span>
   
-## <a name="key-storage-scenarios"></a>主要なストレージ シナリオ
+## <a name="key-storage-scenarios"></a><span data-ttu-id="f202d-152">主要なストレージ シナリオ</span><span class="sxs-lookup"><span data-stu-id="f202d-152">Key storage scenarios</span></span>
 
-クラウド ベースのストレージを必要とする主要シナリオは以下のとおりです。
+<span data-ttu-id="f202d-153">クラウド ベースのストレージを必要とする主要シナリオは以下のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f202d-153">Here are the key scenarios that require cloud-based storage:</span></span>
   
-- データのキャッシュ
+- <span data-ttu-id="f202d-154">データのキャッシュ</span><span class="sxs-lookup"><span data-stu-id="f202d-154">Cache data</span></span>
     
-    高速キャッシュで保存することによって、使用頻度の高いデータへのアクセスを促進します。
+    <span data-ttu-id="f202d-155">高速キャッシュで保存することによって、使用頻度の高いデータへのアクセスを促進します。</span><span class="sxs-lookup"><span data-stu-id="f202d-155">Accelerate access to commonly used data by storing it in a high-speed cache.</span></span>
     
-- チーム メンバーとの共同作業
+- <span data-ttu-id="f202d-156">チーム メンバーとの共同作業</span><span class="sxs-lookup"><span data-stu-id="f202d-156">Collaborate with team members</span></span>
     
-    複数のユーザーにクラウド ストレージのデータへアクセス許可を付与します。
+    <span data-ttu-id="f202d-157">複数のユーザーにクラウド ストレージのデータへアクセス許可を付与します。</span><span class="sxs-lookup"><span data-stu-id="f202d-157">Grant permission to multiple users to allow access to data in cloud storage.</span></span>
     
-- データ管理
+- <span data-ttu-id="f202d-158">データ管理</span><span class="sxs-lookup"><span data-stu-id="f202d-158">Manage data</span></span>
     
-    内部または外部のバルク データを保存、移動、または削除します。
+    <span data-ttu-id="f202d-159">内部または外部のバルク データを保存、移動、または削除します。</span><span class="sxs-lookup"><span data-stu-id="f202d-159">Store, move, or delete internal or external bulk data.</span></span>
     
-- ソース コードの管理
+- <span data-ttu-id="f202d-160">ソース コードの管理</span><span class="sxs-lookup"><span data-stu-id="f202d-160">Manage source code</span></span>
     
-    クラウド内のアプリケーション コア ファイルをアップロード、共同作業、および実行します。
+    <span data-ttu-id="f202d-161">クラウド内のアプリケーション コア ファイルをアップロード、共同作業、および実行します。</span><span class="sxs-lookup"><span data-stu-id="f202d-161">Upload, collaborate, and run application code files in the cloud.</span></span>
     
-- ファイルのバックアップ
+- <span data-ttu-id="f202d-162">ファイルのバックアップ</span><span class="sxs-lookup"><span data-stu-id="f202d-162">Backup files</span></span>
     
-    複数のクラウドの場所で、内部データまたはオフサイトの外部データのコピーを保存します。
+    <span data-ttu-id="f202d-163">複数のクラウドの場所で、内部データまたはオフサイトの外部データのコピーを保存します。</span><span class="sxs-lookup"><span data-stu-id="f202d-163">Store copies of internal or external data offsite in multiple cloud locations.</span></span>
     
-- 会社の通信の公開
+- <span data-ttu-id="f202d-164">会社の通信の公開</span><span class="sxs-lookup"><span data-stu-id="f202d-164">Publish company communications</span></span>
     
-    内部または外部メッセージの 1 つの公開ポイントを作成します。
+    <span data-ttu-id="f202d-165">内部または外部メッセージの 1 つの公開ポイントを作成します。</span><span class="sxs-lookup"><span data-stu-id="f202d-165">Create a single point of publication for internal or external messages.</span></span>
     
-- 数百万のイベントの配信
+- <span data-ttu-id="f202d-166">数百万のイベントの配信</span><span class="sxs-lookup"><span data-stu-id="f202d-166">Distribute millions of events</span></span>
     
-    Web サイト、アプリケーション、デバイスからのテレメトリ取り込みのためのストレージを作成します。
+    <span data-ttu-id="f202d-167">Web サイト、アプリケーション、デバイスからのテレメトリ取り込みのためのストレージを作成します。</span><span class="sxs-lookup"><span data-stu-id="f202d-167">Create storage for telemetry ingestion from websites, apps, and devices.</span></span>
     
-- ビデオの管理と提供
+- <span data-ttu-id="f202d-168">ビデオの管理と提供</span><span class="sxs-lookup"><span data-stu-id="f202d-168">Manage/serve videos</span></span>
     
-    顧客または組織ユーザー向けのビデオ コンテンツを保存し、提供します。
+    <span data-ttu-id="f202d-169">顧客または組織ユーザー向けのビデオ コンテンツを保存し、提供します。</span><span class="sxs-lookup"><span data-stu-id="f202d-169">Store and serve video content to customers or organization users.</span></span>
     
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a><span data-ttu-id="f202d-170">次の手順</span><span class="sxs-lookup"><span data-stu-id="f202d-170">Next step</span></span>
 
-[いつでも使用可能](move-in-ready.md) クラウド ストレージ オプションを確認します。
+<span data-ttu-id="f202d-171">[いつでも使用可能](move-in-ready.md) クラウド ストレージ オプションを確認します。</span><span class="sxs-lookup"><span data-stu-id="f202d-171">Review the [Move-in ready](move-in-ready.md) cloud storage options.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="f202d-172">See Also</span><span class="sxs-lookup"><span data-stu-id="f202d-172">See Also</span></span>
 
-[エンタープライズ アーキテクトのための Microsoft クラウド ストレージ](microsoft-cloud-storage-for-enterprise-architects.md)
+[<span data-ttu-id="f202d-173">エンタープライズ アーキテクトのための Microsoft クラウド ストレージ</span><span class="sxs-lookup"><span data-stu-id="f202d-173">Microsoft Cloud Storage for Enterprise Architects</span></span>](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="f202d-174">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="f202d-174">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="f202d-175">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span><span class="sxs-lookup"><span data-stu-id="f202d-175">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

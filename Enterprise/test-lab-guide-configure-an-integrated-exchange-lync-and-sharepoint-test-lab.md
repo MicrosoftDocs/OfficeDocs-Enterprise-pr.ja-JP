@@ -16,45 +16,45 @@ ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成
+# <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a><span data-ttu-id="eacba-103">テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成</span><span class="sxs-lookup"><span data-stu-id="eacba-103">Test Lab Guide: Configure an integrated Exchange, Lync, and SharePoint test lab</span></span>
 
- **の概要:**Exchange Server 2013 を実行するサーバーを Lync Server 2013 を実行しているサーバーと SharePoint Server 2013 を実行するサーバーを含む、統合されたテスト ラボを作成する方法について説明します。
+ <span data-ttu-id="eacba-104">**の概要:**Exchange Server 2013 を実行するサーバーを Lync Server 2013 を実行しているサーバーと SharePoint Server 2013 を実行するサーバーを含む、統合されたテスト ラボを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="eacba-104">**Summary:** Learn how to create an integrated test lab that contains a server that runs Exchange Server 2013, a server that runs Lync Server 2013, and a server that runs SharePoint Server 2013.</span></span>
   
-この構成には全 3 種類のサーバー同士のサーバー間認証が含まれており、この構成で作成されるテスト ラボでは、Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、SharePoint Server 2013 を実行するサーバーを使用する複数製品のシナリオとソリューションを構築して、デモンストレーションすることができます。
+<span data-ttu-id="eacba-105">この構成には全 3 種類のサーバー同士のサーバー間認証が含まれており、この構成で作成されるテスト ラボでは、Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、SharePoint Server 2013 を実行するサーバーを使用する複数製品のシナリオとソリューションを構築して、デモンストレーションすることができます。</span><span class="sxs-lookup"><span data-stu-id="eacba-105">The test lab that results from this configuration, which includes server-to-server authentication between all three types of servers, can be used to build out and demonstrate multi-product scenarios and solutions that use a server that runs Exchange Server 2013, a server that runs Lync Server 2013, and a server that runs SharePoint Server 2013.</span></span>
   
-このドキュメントには、次のことを行うための手順が含まれています。
+<span data-ttu-id="eacba-106">このドキュメントには、次のことを行うための手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="eacba-106">This document contains instructions for the following:</span></span>
   
-1. Windows Server 2012 の基本構成テスト ラボの構成。
+1. <span data-ttu-id="eacba-107">Windows Server 2012 の基本構成テスト ラボの構成。</span><span class="sxs-lookup"><span data-stu-id="eacba-107">Configuring the Windows Server 2012 Base Configuration test lab.</span></span>
     
-2. SQL1 という名前の新しいサーバーのインストールおよび構成。
+2. <span data-ttu-id="eacba-108">SQL1 という名前の新しいサーバーのインストールおよび構成。</span><span class="sxs-lookup"><span data-stu-id="eacba-108">Installing and configuring a new server named SQL1.</span></span>
     
-3. SQL1 サーバーへの SQL Server 2012 のインストール。
+3. <span data-ttu-id="eacba-109">SQL1 サーバーへの SQL Server 2012 のインストール。</span><span class="sxs-lookup"><span data-stu-id="eacba-109">Installing SQL Server 2012 on the SQL1 server.</span></span>
     
-4. CLIENT2 という名前の新しいクライアント コンピューターのインストールおよび構成。
+4. <span data-ttu-id="eacba-110">CLIENT2 という名前の新しいクライアント コンピューターのインストールおよび構成。</span><span class="sxs-lookup"><span data-stu-id="eacba-110">Installing and configuring a new client computer named CLIENT2.</span></span>
     
-5. EX1 への Exchange Server 2013 のインストールおよび構成。
+5. <span data-ttu-id="eacba-111">EX1 への Exchange Server 2013 のインストールおよび構成。</span><span class="sxs-lookup"><span data-stu-id="eacba-111">Installing and configuring Exchange Server 2013 on EX1.</span></span>
     
-6. LYNC1 という名前の新しいサーバーのインストールおよび構成。
+6. <span data-ttu-id="eacba-112">LYNC1 という名前の新しいサーバーのインストールおよび構成。</span><span class="sxs-lookup"><span data-stu-id="eacba-112">Installing and configuring a new server named LYNC1.</span></span>
     
-7. LYNC1 への Lync Server 2013 Standard Edition のインストール。
+7. <span data-ttu-id="eacba-113">LYNC1 への Lync Server 2013 Standard Edition のインストール。</span><span class="sxs-lookup"><span data-stu-id="eacba-113">Installing Lync Server 2013 Standard Edition on LYNC1.</span></span>
     
-8. SP1 への SharePoint Server 2013 のインストール。
+8. <span data-ttu-id="eacba-114">SP1 への SharePoint Server 2013 のインストール。</span><span class="sxs-lookup"><span data-stu-id="eacba-114">Installing SharePoint Server 2013 on SP1.</span></span>
     
-9. EX1、LYNC1、および SP1 間の統合の構成。
+9. <span data-ttu-id="eacba-115">EX1、LYNC1、および SP1 間の統合の構成。</span><span class="sxs-lookup"><span data-stu-id="eacba-115">Configuring integration between EX1, LYNC1, and SP1.</span></span>
     
-**Exchange、Lync、および SharePoint の統合テスト ラボのガイドの概要ビデオを見る**
+<span data-ttu-id="eacba-116">**Exchange、Lync、および SharePoint の統合テスト ラボのガイドの概要ビデオを見る**</span><span class="sxs-lookup"><span data-stu-id="eacba-116">**Watch the integrated Exchange, Lync, and SharePoint test lab guide overview video**</span></span>
 
 ![ビデオ (再生ボタン) アイコン](images/mod_icon_video_M.png)
   
-Hyper-V でこのテスト ラボを構成する方法の詳細については、「[Windows Server 2012 Hyper-V で Exchange、Lync、および SharePoint 統合テスト ラボをホストする](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)」をご覧ください。
+<span data-ttu-id="eacba-118">Hyper-V でこのテスト ラボを構成する方法の詳細については、「[Windows Server 2012 Hyper-V で Exchange、Lync、および SharePoint 統合テスト ラボをホストする](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="eacba-118">For information about how to configure this test lab in Hyper-V, see [Hosting the integrated Exchange, Lync, and SharePoint test lab with Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).</span></span>
   
-## <a name="download-the-test-lab-guide"></a>テスト ラボ ガイドをダウンロードする
+## <a name="download-the-test-lab-guide"></a><span data-ttu-id="eacba-119">テスト ラボ ガイドをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="eacba-119">Download the test lab guide</span></span>
 
-[テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+<span data-ttu-id="eacba-120">[テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)</span><span class="sxs-lookup"><span data-stu-id="eacba-120">[Test Lab Guide: Configure an Integrated Exchange, Lync, and SharePoint Test Lab](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="eacba-121">See Also</span><span class="sxs-lookup"><span data-stu-id="eacba-121">See Also</span></span>
 
-[テスト ラボ ガイド](https://go.microsoft.com/fwlink/p/?LinkId=202817)
+[<span data-ttu-id="eacba-122">テスト ラボ ガイド</span><span class="sxs-lookup"><span data-stu-id="eacba-122">Test Lab Guides</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 
 
 
