@@ -1,7 +1,7 @@
 ---
-title: "選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス"
+title: "GDPR の office 365 の情報の保護"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -11,8 +11,8 @@ localization_priority: Priority
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 
 description: "このソリューションでは、Office 365 サービスに格納されている機密データを保護する方法を示します。"
-ms.openlocfilehash: ef0bfdcd27682b92dd450b424b5feee53c3344da
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 208134e78f7f5c40ee61d678b2f1b42bde738c68
+ms.sourcegitcommit: c5a12b35a475ef4a5a80085e1bb2829d115d7c4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
