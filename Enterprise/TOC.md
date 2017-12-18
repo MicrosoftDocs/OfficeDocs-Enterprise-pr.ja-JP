@@ -81,5 +81,5 @@
 #### [分離した SharePoint Online チーム サイトの展開](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [分離した SharePoint Online チーム サイトの管理](manage-an-isolated-sharepoint-online-team-site.md)
 #### [Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
-## [Office 365 の PowerShell では、Office 365 を管理します。](powershell/manage-office-365-with-office-365-powershell.md)
+## [Office 365 PowerShell による Office 365 の管理](powershell/manage-office-365-with-office-365-powershell.md)
 
