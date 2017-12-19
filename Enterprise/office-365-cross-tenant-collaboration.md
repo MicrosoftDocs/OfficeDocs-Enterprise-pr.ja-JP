@@ -15,7 +15,7 @@ ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: "Office 365 のテナント全体においてセキュリティで保護された方法で、組織が共同作業できるようにする方法を説明します。"
 ms.openlocfilehash: a6b82ab79d6eb2312c33fac488cb21a941831518
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---

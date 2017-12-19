@@ -16,7 +16,7 @@ ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
 description: "概要: 架空の代表的なグローバル組織が、Enterprise Cloud のシナリオを使用して、業務上の必要に取り組んでいる方法を示します。"
 ms.openlocfilehash: ff520c317fe4137b5e683935dc238bd7ff3f05ac
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -34,7 +34,7 @@ Contoso 社は、ネットワーク、ID、適所のセキュリティ インフ
     
     Contoso 社は、幹部や研究所が簡単かつセキュアにコラボレーションできるようにするために、センシティブな情報の保護と機密性の高い SharePoint Online チーム サイトを実装しました。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft Cloud の Contoso](contoso-in-the-microsoft-cloud.md)
   

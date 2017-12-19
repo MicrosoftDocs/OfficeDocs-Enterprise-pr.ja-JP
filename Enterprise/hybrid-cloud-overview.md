@@ -18,7 +18,7 @@ ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: "概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。"
 ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -74,7 +74,7 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
     
     ハイブリッド クラウド シナリオのネットワークには、Microsoft クラウド プラットフォームおよびサービスへの接続と、負荷のピーク時に高パフォーマンスを実現するのに十分な帯域幅とが含まれています。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)」をご覧ください。
     
-- ID
+- Identity
     
     SaaS と Azure PaaS ハイブリッド シナリオの ID には、共通の ID プロバイダーとして Azure AD を含めることができます。このプロバイダーは、オンプレミスの Windows Server AD と同期するか、Windows Server AD またはその他の ID プロバイダーとフェデレーションすることができます。また、オンプレミスの ID インフラストラクチャを Azure IaaS に拡張することもできます。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウド ID](microsoft-cloud-identity-for-enterprise-architects.md)」をご覧ください。
     
@@ -86,7 +86,7 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
     
     ハイブリッド クラウド シナリオの管理には、設定、データ、アカウント、ポリシー、およびアクセス許可を維持し、シナリオの要素の継続的な正常性およびそのパフォーマンスを監視する機能が含まれます。また、Azure IaaS での仮想マシンの管理にも、Systems Management Server などの同じツール セットを使用できます。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

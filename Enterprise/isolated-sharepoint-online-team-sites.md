@@ -19,7 +19,7 @@ ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: "概要: 分離した SharePoint Online チーム サイトの使用方法について説明します。"
 ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -61,7 +61,7 @@ SharePoint Online チーム サイトを試用サブスクリプションで使�
   
 分離した SharePoint Online チーム サイトを実稼働に展開する準備ができたら、「[分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)」にある設計に関するステップバイステップの考慮事項を参照してください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)
   

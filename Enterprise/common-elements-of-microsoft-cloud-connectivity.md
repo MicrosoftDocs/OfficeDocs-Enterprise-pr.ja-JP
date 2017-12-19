@@ -16,7 +16,7 @@ ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "概要: ネットワーク インフラストラクチャの一般的な要素とネットワークを準備する方法を理解します。"
 ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -78,7 +78,7 @@ Microsoft クラウド サービスのいずれかを採用するときは、ネ
     
 - **インターネット DNS:** Microsoft クラウドまたはクラウドでホストされているサービスを検索するための、A、AAAA、CNAME、MX、PTR、その他のレコード。たとえば、Azure PaaS でホストされているアプリのために、CNAME レコードが必要な場合があります。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 <a name="steps"> </a>
 

@@ -16,7 +16,7 @@ ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。"
 ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -241,7 +241,7 @@ Office 365 ベースの ExpressRoute 接続には、ExpressRoute Premium が必�
     
 - [Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
     
-- [Office 365 のパフォーマンス管理](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
+- [Office 365 のパフォーマンス管理](https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>ExpressRoute のオプション
 
@@ -263,7 +263,7 @@ ExpressRoute の展開には、次に示すオプションを組み込むこと�
     
 - [Azure 用 ExpressRoute](https://azure.microsoft.com/services/expressroute/)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   

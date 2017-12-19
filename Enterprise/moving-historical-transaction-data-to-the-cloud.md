@@ -16,7 +16,7 @@ ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "概要: Contoso 社が SQL Server Stretch Database を実装することで、オンプレミスのデータ ストレージの必要性と毎日の運営コストを縮小した方法を示します。"
 ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -69,7 +69,7 @@ Stretch Database の実装後、Contoso 社は次のような状況になりま�
     
 - 毎日の運営コストが大幅に縮小されました。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Contoso Corporation のエンタープライズのシナリオ](enterprise-scenarios-for-the-contoso-corporation.md)
   

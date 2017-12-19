@@ -18,7 +18,7 @@ ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "概要: クラウド ストレージが必要な理由を理解し、一連の Microsoft のクラウド ストレージ オプションおよび主要なストレージ シナリオを確認します。"
 ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/15/2017
     
   - 世界中どこからでも利用可能
     
-2. メンテナンス コストの削減:
+2. メンテナンス コストの削減: 
     
   - ストレージの需要に応じた柔軟な拡大および縮小
     
@@ -118,7 +118,7 @@ ms.lasthandoff: 12/15/2017
     
 各クラウド ストレージ オプションの詳細については、[新規に構築](build-from-the-ground-up.md) を参照してください。
   
-## <a name="key-storage-scenarios"></a>主要なストレージ シナリオ
+## <a name="key-storage-scenarios"></a>キー ストレージのシナリオ
 
 クラウド ベースのストレージを必要とする主要シナリオは以下のとおりです。
   
@@ -158,7 +158,7 @@ ms.lasthandoff: 12/15/2017
 
 [いつでも使用可能](move-in-ready.md) クラウド ストレージ オプションを確認します。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ストレージ](microsoft-cloud-storage-for-enterprise-architects.md)
   

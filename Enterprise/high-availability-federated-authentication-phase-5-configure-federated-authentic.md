@@ -19,7 +19,7 @@ ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。"
 ms.openlocfilehash: 8340058dc93389d4b2b1e843726bc7e8ef30cdde
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -143,7 +143,7 @@ Azure AD Connect ツールは、次に示す手順で、フェデレーション
   
 Azure の Office 365 用の高可用性フェデレーション認証インフラストラクチャが完成しました。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

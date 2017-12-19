@@ -16,7 +16,7 @@ ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "概要: クラウド導入において、新しいアプローチによるネットワーク インフラストラクチャ投資が必要となることを理解します。"
 ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -83,7 +83,7 @@ ExpressRoute は、専用の接続のために既存ネットワーク プロバ
 |内部およびインターネットに接続する IT ワークロードのために、負荷分散を設計し、実装します  <br/> |||適用  <br/> |
 |仮想マシンの接続性およびスループットの問題に関するトラブルシューティングを行います  <br/> |||適用  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   

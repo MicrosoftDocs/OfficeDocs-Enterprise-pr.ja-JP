@@ -16,7 +16,7 @@ ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "概要: Contoso 社がどのように Microsoft のクラウド製品の機能にセキュリティ要件をマップし、クラウド セキュリティの準備計画を決定したかについて理解します。"
 ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -68,7 +68,7 @@ Contoso 社は、Microsoft の[データ分類ツールキット](https://msdn.m
 
 次の表に、Contoso 社の情報ポリシーを示します。
   
-||**アクセス**|**データ保存期間**|**情報保護**|
+||**Access**|**データ保存期間**|**情報保護**|
 |:-----|:-----|:-----|:-----|
 |レベル 1:低いビジネス価値  <br/> | すべてのユーザーに対してアクセスを許可 <br/> |6 か月  <br/> |暗号化を使用  <br/> |
 |レベル 2:中程度のビジネス価値  <br/> | Contoso 社の従業員、下請業者、パートナーに対してアクセスを許可 <br/>  MFA、TLS、MAM を使用 <br/> |2 年  <br/> |データ整合性のためにハッシュ値を使用  <br/> |
@@ -120,7 +120,7 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
     
     Contoso 社のセキュリティ専門家は、電子メール経由で送信される不明なマルウェア、ウイルス、悪意のある URL からの保護を目的として、Exchange Online Protection と Advanced Threat Protection (ATP) を使用しています。Contoso 社では、メールボックス監査ログを有効にして、ユーザーのメールボックスにログインしてメッセージを送信したのはだれかや、メールボックス所有者、委任ユーザー、管理者が実行した他の操作を判別しています。
     
-    詳細については、次のトピックを参照してください。 
+    詳細については、以下を参照してください。 
     
   - [Office 365 メールのスパム対策保護](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     
@@ -134,7 +134,7 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
     
     詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft Cloud の Contoso](contoso-in-the-microsoft-cloud.md)
   

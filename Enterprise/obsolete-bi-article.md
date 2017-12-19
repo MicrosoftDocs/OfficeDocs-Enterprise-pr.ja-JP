@@ -12,7 +12,7 @@ ms.assetid: 40289eab-415e-4d4c-809e-fb1c76df557c
 description: "この記事は、2014 年 3 月 7 日の時点で使用されなくなりました。Content Roadmap: Setup and Configure SharePoint and SQL BI を参照してください。"
 ms.openlocfilehash: 531accb15b160daa409eb1456395ded864b69db9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
