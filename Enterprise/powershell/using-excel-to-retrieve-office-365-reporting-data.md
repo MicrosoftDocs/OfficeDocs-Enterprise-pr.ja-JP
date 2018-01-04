@@ -17,17 +17,17 @@ ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "概要: Microsoft Excel の OData 機能を使用して、Office 365 の展開に関する詳しいレポート情報を取得します。"
 ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Excel を使用して Office 365 レポート データを取得する
 
- **の概要:**Microsoft Excel で oData の機能を使用して、Office 365 の展開の詳細なレポートの情報を取得
+ **概要:** Microsoft Excel の OData 機能を使用して、Office 365 の展開に関する詳しいレポート情報を取得します。
   
 レポートは、システム管理の主要な部分です。Office 365 管理センターには、複数の定義済みのレポートが含まれており、左側のナビゲーションの **レポート**セクションからアクセスできます。利用状況レポートとセキュリティとコンプライアンスのレポートがあります。
   
-入手可能なレポートは、使用している Office 365 のバージョンや有効になっている Office 365 サービスによって異なります。詳細については、「[レポート ページ](https://technet.microsoft.com/en-us/library/office-365-reports.aspx)」を参照してください。
+入手可能なレポートは、使用している Office 365 のバージョンや有効になっている Office 365 サービスによって異なります。詳細については、「[レポート ページ](((https://technet.microsoft.com/ja-JP/library/office-365-reports.aspx)))」を参照してください。
   
 定義済みの管理センターのレポートは優れたリソースです。これらはメールボックスの利用状況や、ユーザーがオンライン会議に費やした時間 (分単位) などを簡単に確認できるようにします。ただし、Office 365 ドメインの詳細な分析に関して言えば、このレポートには制限があります。
   
@@ -87,7 +87,7 @@ DataFeed_3_reports-office365-com ClientSoftwareBrowserDetail.odc
     
 これらの .ODC ファイルはプレーンテキストの XML ファイルです。これらのプレーンテキスト XML ファイルには、Office 365 のユーザー名とパスワードが含まれています。
     
-\<odc:ConnectionString > データ ソース = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;含める名前空間 = * です。受信したメッセージのサイズの最大値 = 4398046511104。 統合セキュリティ = Basic です。**ユーザーの ID=admin@litwareinc.onmicrosoft.com;パスワード = MYpassw0rd!**です。セキュリティ情報の保持 = false です。サービス ドキュメントの Url = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString >
+\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString>
     
 テキスト形式のファイルにユーザー名とパスワードを保存したくない場合には、 **[パスワードをファイルに保存する]** というラベルのボックスをオンにしないでください。ただし、これを行った場合、これらのデータ接続を再利用できなくなることに注意してください。これは、ユーザー名とパスワードがなければ、Office 365 はサービスへのログオンの試行を認証できなくなるためです。
     
@@ -101,7 +101,7 @@ DataFeed_3_reports-office365-com ClientSoftwareBrowserDetail.odc
   
 そのデータを使用して行う処理は、すべてユーザー次第です。いくつかの提案については、「[OData データ フィードを使用して Excel Services ダッシュボードを作成する](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx)」を参照してください。この記事では Office 365 レポート サービスは使用されませんが、フィルターやスライサーを新規のダッシュボードに追加するなどの処理に関する役立つヒントが得られます。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 
