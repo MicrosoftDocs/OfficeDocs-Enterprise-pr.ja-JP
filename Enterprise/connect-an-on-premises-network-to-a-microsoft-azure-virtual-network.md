@@ -21,7 +21,7 @@ ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: "概要: Office サーバーのワークロードのためにクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。"
 ms.openlocfilehash: 83e5842a4b3192ee2f65048cefe57790cd1e2341
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 12/15/2017
   
 クロスプレミス Azure 仮想ネットワークをオンプレミスネットワークに接続することで、Azure インフラサービスにホストされているサブネットや仮想マシンを追加してネットワークを拡張します。この接続により、オンプレミスのネットワークにあるマシンと Azure の仮想マシンが相互に直接アクセスできるようになります。たとえば、Azure 仮想マシンで実行中のディレクトリ同期サーバーは、アカウントへの変更に関してオンプレミスのドメイン コントローラーのクエリを実行し、Office 365 のサブスクリプションにその変更を同期する必要があります。この資料では、Azure 仮想マシンをホストできるようにクロスプレミス Azure 仮想ネットワークを設定する方法を示します。
   
-この記事では、以下の点が取り上げられています。
+この記事の内容
   
 - [概要](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#Overview)
     
@@ -48,11 +48,11 @@ Azure の仮想マシンをオンプレミス環境から分離する必要は�
   
 この図では、サイト間の仮想プライベート ネットワーク (VPN) 接続によって、2 つのネットワーク (オンプレミス ネットワークと Azure 仮想ネットワーク) が接続されています。サイト間の VPN 接続はオンプレミス ネットワークの VPN デバイスと Azure 仮想ネットワークの Azure VPN gatewayで終端されます。Azure 仮想ネットワークには仮想マシンがあります。Azure 仮想ネットワークの仮想マシンで発生したネットワーク トラフィックは VPN gatewayに送信され、次にこのトラフィックはサイト間 VPN 接続を介してオンプレミス ネットワーク上の VPN デバイスに送信されます。その後、オンプレミス ネットワークのルーティング インフラストラクチャによって、宛先にトラフィックが送られます。
   
-Azure 仮想ネットワークとオンプレミス ネットワーク間の VPN 接続を設定するには、次の手順を実行します。 
+Azure Virtual Network とオンプレミス ネットワーク間の VPN 接続を設定するには、次の手順を実行します。 
   
 1. **オンプレミス:** オンプレミスの VPN デバイスをポイントするオンプレミス ネットワーク ルートを、Azure 仮想ネットワークのアドレス空間上で定義して作成します。
     
-2. **Microsoft Azure:**サイト間 VPN 接続では、Azure の仮想ネットワークを作成します。この資料については説明しません[ExpressRoute](https://azure.microsoft.com/services/expressroute/)を使用します。
+2. **Microsoft Azure:** サイト間 VPN 接続を使用して Azure 仮想ネットワークを作成します。この資料では [ExpressRoute]((https://azure.microsoft.com/services/expressroute/)) の使用については説明しません。
     
 3. **オンプレミス:** VPN 接続を終了するようにオンプレミスのハードウェアまたはソフトウェア VPN デバイスを構成します。これには、インターネット プロトコル セキュリティ (IPsec) が使用されます。
     
@@ -64,7 +64,7 @@ Azure 仮想ネットワークとオンプレミス ネットワーク間の VPN
 ### <a name="prerequisites"></a>前提条件
 <a name="Prerequisites"> </a>
 
-- Azure サブスクリプション。Azure サブスクリプションについては、「[Microsoft Azure サブスクリプション ページ](https://azure.microsoft.com/pricing/purchase-options/)」に移動します。
+- Azure サブスクリプション。Azure サブスクリプションについては、「[Microsoft Azure サブスクリプション ページ]((https://azure.microsoft.com/pricing/purchase-options/))」に移動します。
     
 - 仮想ネットワークとサブネットに割り当て可能なプライベート IPv4 アドレス空間。現在、および将来の拡大で必要となる仮想マシン数に対応できる十分な空き領域が必要です。
     
@@ -130,11 +130,11 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
   
 |**必要な仮想マシンの数**|**必要なホスト ビット数**|**サブネットのサイズ**|
 |:-----|:-----|:-----|
-|1 ～ 3  <br/> |3  <br/> |/29  <br/> |
-|4 ～11  <br/> |4  <br/> |/28  <br/> |
-|12 ～27  <br/> |5  <br/> |/27  <br/> |
-|28 ～ 59  <br/> |6  <br/> |/26  <br/> |
-|60 ～123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
+|4-11  <br/> |4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |6  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
 ### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Azure Virtual Network を構成するための計画ワークシート
 <a name="worksheet"> </a>
@@ -145,17 +145,17 @@ Azure Virtual Network のプライベート IP アドレス空間は、仮想ネ
   
  **表 V:クロスプレミスの仮想ネットワーク構成**
   
-|**項目**|**構成要素**|**説明**|**値**|
+|**アイテム**|**構成要素**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |仮想ネットワーク名  <br/> |Azure 仮想ネットワークに割り当てる名前 (DirSyncNet など)。  <br/> |__________________  <br/> |
 |2.  <br/> |仮想ネットワークの場所  <br/> |仮想ネットワークが含まれる Azure データセンター (米国西部など)。  <br/> |__________________  <br/> |
 |3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。IT 部門に尋ねてこのアドレスを特定してください。  <br/> |__________________  <br/> |
 |4.  <br/> |仮想ネットワークのアドレス スペース  <br/> |仮想ネットワークのアドレス スペース (1 つのプライベート アドレス プレフィックスで定義されます)。IT 部門に尋ねてこのアドレス スペースを特定してください。アドレス スペースは、クラスレス ドメイン間ルーティング (CIDR) 形式 (別名、ネットワーク プレフィックス形式) でなければなりません。10.24.64.0/20 などです。  <br/> |__________________  <br/> |
-|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。IT 部門またはセキュリティ部門に尋ねて、このキー値を決定してからそれを安全な場所に格納します。または、「[IPsec 事前共有キーのランダム文字列を作成する](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」をご覧ください。<br/> |__________________  <br/> |
+|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。IT 部門またはセキュリティ部門に尋ねて、このキー値を決定してからそれを安全な場所に格納します。または、「[IPsec 事前共有キーのランダム文字列を作成する]((https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx))」をご覧ください。<br/> |__________________  <br/> |
    
 このソリューションのサブネットに関しては表 S に記入してください。
   
-- 最初のサブネットについて、Azure ゲートウェイ サブネットの 28 ビットのアドレス空間 (プレフィックスの長さ /28) を決定します。このアドレス空間の計算方法については「[Azure 仮想ネットワークのゲートウェイ サブネット アドレス空間の計算](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)」を参照してください。
+- 最初のサブネットについて、Azure ゲートウェイ サブネットの 28 ビットのアドレス空間 (プレフィックスの長さ /28) を決定します。このアドレス空間の計算方法については「[Azure 仮想ネットワークのゲートウェイ サブネット アドレス空間の計算]((https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/))」を参照してください。
     
 - 2 番目のサブネットには、フレンドリ名、仮想ネットワークのアドレス スペースに基づく 1 つの IP アドレス スペース、わかりやすい目的を指定します。
     
@@ -163,7 +163,7 @@ IT 部門に尋ねて、仮想ネットワークのアドレス スペースに�
   
  **表 S:仮想ネットワーク内のサブネット**
   
-|**項目**|**サブネット名**|**サブネット アドレス スペース**|**目的**|
+|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |GatewaySubnet  <br/> |_____________________________  <br/> |Azure ゲートウェイが使用するサブネット。  <br/> |
 |2.  <br/> |_____________________________  <br/> |_____________________________  <br/> |_____________________________  <br/> |
@@ -172,7 +172,7 @@ IT 部門に尋ねて、仮想ネットワークのアドレス スペースに�
   
  **表 D:オンプレミスの DNS サーバー**
   
-|**項目**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
+|**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
 |1.  <br/> |_____________________________  <br/> |_____________________________  <br/> |
 |2.  <br/> |_____________________________  <br/> |_____________________________  <br/> |
@@ -183,7 +183,7 @@ Azure 仮想ネットワークから組織のネットワークにサイト間 V
   
  **表 L:ローカル ネットワークのアドレス プレフィックス**
   
-|**項目**|**ローカル ネットワークのアドレス スペース**|
+|**アイテム**|**ローカル ネットワークのアドレス スペース**|
 |:-----|:-----|
 |1.  <br/> |_____________________________  <br/> |
 |2.  <br/> |_____________________________  <br/> |
@@ -212,10 +212,10 @@ Azure 仮想ネットワークから組織のネットワークにサイト間 V
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>フェーズ 2: Azure でのクロスプレミスの仮想ネットワークの作成
 <a name="Phase2"> </a>
 
-最初に、Azure PowerShell プロンプトを開きます。Azure PowerShell をインストールしていない場合は、「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)」を参照してください。
+最初に、Azure PowerShell プロンプトを開きます。Azure PowerShell をインストールしていない場合は、「[Azure の PowerShell コマンドレットを使う]((https://docs.microsoft.com/powershell/azureps-cmdlets-docs/))」を参照してください。
   
 > [!NOTE]
-> これらのコマンドは Azure PowerShell 1.0 以降を対象としています。この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルについては、[こちら](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)をクリックしてください。 
+> これらのコマンドは Azure PowerShell 1.0 以降を対象としています。この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルについては、[こちら]((https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19))をクリックしてください。 
   
 次に、このコマンドを使用して Azure アカウントにログインします。
   
@@ -334,7 +334,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
   
 ![仮想ネットワークに、ゲートウェイがあるようになりました。](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-次に、Azure VPN gatewayに接続するためのオンプレミス VPN デバイスを構成します。詳しくは、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」をご覧ください。
+次に、Azure VPN gatewayに接続するためのオンプレミス VPN デバイスを構成します。詳しくは、「[サイト間 VPN Gateway 接続の VPN デバイスについて]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices))」をご覧ください。
   
 VPN デバイスを構成するために必要なものを以下に記します。
   
@@ -365,7 +365,7 @@ Azure で必要な仮想マシンを作成します。詳細は「[Azure ポー�
   
 ![仮想ネットワークは、オンプレミスのネットワークからアクセス可能な仮想マシンをホストするようになりました。](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 <a name="DeploymentRoadmap"> </a>
 
@@ -375,7 +375,7 @@ Azure で必要な仮想マシンを作成します。詳細は「[Azure ポー�
 
 [仮想マシンの作成方法](https://go.microsoft.com/fwlink/p/?LinkId=393098)
   
-[サイト間 VPN Gateway 接続の VPN デバイスについて](https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/)
+[サイト間 VPN Gateway 接続の VPN デバイスについて]((https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/))
   
 [Azure PowerShell のインストールおよび構成方法](https://azure.microsoft.com/documentation/articles/powershell-install-configure/#how-to-install-azure-powershell)
 

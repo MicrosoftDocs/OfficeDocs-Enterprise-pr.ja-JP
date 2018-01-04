@@ -11,13 +11,13 @@ ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: "この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: d81fe9947feee64d1dd75278738262d10c802ecc
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>アクセス可能な図 - Microsoft Exchange 2013 プラットフォーム オプション
 
-**の概要:**この資料は、[技術関連の図](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で使用できる Microsoft Exchange 2013 プラットフォームのオプションをという名前のダイアグラムのアクセシブルなテキスト バージョンです。
+**概要:** この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
   
 このポスターは、ビジネスの意思決定者 (Bdm) と設計者が Exchange Online および Exchange Server の展開に関して知る必要のある情報を説明しており、内容は次のとおりです。 
   
@@ -254,29 +254,29 @@ Office 365 環境とオンプレミス環境の両方の IT 技術者の責任�
 
 Exchange Online (Office 365) の詳細については、以下を参照してください:
   
-- [Exchange Online サービスの説明](https://aka.ms/EXOSD)
+- [Exchange Online サービスの説明](((https://aka.ms/EXO)SD))
     
-- [TechNet の Exchange Online のライブラリ](https://aka.ms/EXOTN)
+- [TechNet の Exchange Online のライブラリ](((https://aka.ms/EXO)TN))
     
-- [Exchange Online ポータル](https://aka.ms/EXO)
+- [Exchange Online ポータル]((https://aka.ms/EXO))
     
 Exchange ハイブリッドの詳細については、以下を参照してください:
   
-- [Exchange 2013 ハイブリッド展開](https://aka.ms/ExchangeHybrid)。ハイブリッド サーバーのライセンスが必要になるのは、以下のシナリオの場合だけです: Exchange 2013 のハイブリッド サーバーと共に Exchange 2010 を持つ組織。Exchange 2013 または Exchange 2010 のハイブリッド サーバーと共に Exchange 2007 を持つ組織。
+- [Exchange 2013 ハイブリッド展開]((https://aka.ms/ExchangeHybrid))。ハイブリッド サーバーのライセンスが必要になるのは、以下のシナリオの場合だけです: Exchange 2013 のハイブリッド サーバーと共に Exchange 2010 を持つ組織。Exchange 2013 または Exchange 2010 のハイブリッド サーバーと共に Exchange 2007 を持つ組織。
     
-- [Office 365 へのサインイン](https://aka.ms/HybridKey)
+- [Office 365 へのサインイン]((https://aka.ms/HybridKey))
     
 Exchange Server オンプレミスの詳細については、以下を参照してください:
   
-- [TechNet の Exchange Server 2013 ライブラリ](https://aka.ms/Ex2013TN)
+- [TechNet の Exchange Server 2013 ライブラリ]((https://aka.ms/Ex2013TN))
     
-- [Exchange Server 2013 ポータル](https://aka.ms/Exchange2013)
+- [Exchange Server 2013 ポータル]((https://aka.ms/Exchange2013))
     
-- [Exchange Server 2013 のアーキテクチャ](https://aka.ms/Ex2013SP1ArchPoster)
+- [Exchange Server 2013 のアーキテクチャ]((https://aka.ms/Ex2013SP1ArchPoster))
     
 プロバイダー向けのホスト型 Exchange の詳細については、以下を参照してください:
   
-[Exchange Server 2013 のホスティングおよびマルチ テナント ソリューションとガイダンス](https://aka.ms/Ex2013Hosting)
+[Exchange Server 2013 のホスティングおよびマルチ テナント ソリューションとガイダンス]((https://aka.ms/Ex2013Hosting))
   
 ## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a>Exchange 2013 での 3 つの新規または更新された機能の説明
 

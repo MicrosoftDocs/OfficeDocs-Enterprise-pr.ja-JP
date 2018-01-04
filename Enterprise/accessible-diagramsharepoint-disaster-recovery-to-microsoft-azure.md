@@ -12,13 +12,13 @@ ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: "この資料は、「Microsoft Azure に対する SharePoint の障害復旧」という名前の図のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: 2babb1910b0cd8dcbfe4cc0bf32de7c714c05fc0
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>アクセス可能な図 - Microsoft Azure に対する SharePoint の障害復旧
 
-**の概要:**この資料は、Microsoft Azure に SharePoint の災害復旧ソリューションをという名前のダイアグラムのアクセシブルなテキスト バージョンです。
+**概要:** この資料は、「Microsoft Azure に対する SharePoint の障害復旧」という名前の図のアクセス可能なテキスト バージョンです。
   
 このポスターは、Azure で回復環境を構築するためのアーキテクチャの例を示します。 
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 12/15/2017
   
 - バックエンド サービス 
     
-- 管理 
+- 管理者 
     
 - Workflow Manager 
     
@@ -192,22 +192,22 @@ Azure 仮想ネットワークには 3 つのクラウド サービスがあり�
 
 このソリューションの AD DS の構成は、ハイブリッド展開のシナリオを構成しています。このシナリオでは、AD DS はオンプレミスに部分的にデプロイされ、Azure 仮想マシンに部分的にデプロイされます。 
   
-重要  AD DS を Azure にデプロイする前に、「Microsoft Azure Virtual Machines での Windows Server Active Directory のデプロイ ガイドライン (http://msdn.microsoft.com/ja-jp/library/windowsazure/jj156090.aspx)」をお読みください。 
+重要 — AD DS を Azure にデプロイする前に、「Microsoft Azure Virtual Machines での Windows Server Active Directory のデプロイ ガイドライン  ((http://msdn.microsoft.com/ja-jp/library/windowsazure/jj156090.aspx))」をお読みください。 
   
 Active Directory 環境の設計およびデプロイに関する詳細なガイダンスについては、http://TechNet.microsoft.com を参照してください。 
   
 この参照アーキテクチャには、ドメイン コントローラーとして構成されている 2 つの仮想マシンが含まれています。それぞれ次のように構成されます。 
   
-- サイズ  小。 
+- サイズ — 小。 
     
-- オペレーティング システム  Windows Server 2012。 
+- オペレーティング システム — Windows Server 2012。 
     
-- ロール  グローバル カタログ サーバーとして割り当てられる AD DS ドメイン コントローラー。この構成は、VPN 接続経由の出力トラフィックを減少させます。変更度の高い複数ドメイン環境では、ドメイン コントローラーをオンプレミスで構成して、Azure のグローバル カタログ サーバーと同期しないようにします。 
+- ロール  グローバル カタログ サーバーとして割り当てられる AD DS ドメイン コントローラー。この構成は、VPN 接続経由の出力トラフィックを減少させます。変更度の高い複数ドメイン環境では、ドメイン コントローラーをオンプレミスで構成して、Azure のグローバル カタログ サーバーと同期しないようにします。 
     
-- データ ディスク  AD DS データベース、ログ、SYSVOL を Azure データ ディスクに配置します。オペレーティング システム ディスク、または Azure によって提供される一時ディスクには配置しないでください。これは重要です。 
+- データ ディスク  AD DS データベース、ログ、SYSVOL を Azure データ ディスクに配置します。オペレーティング システム ディスク、または Azure によって提供される一時ディスクには配置しないでください。これは重要です。 
     
-- ロール  ドメイン コントローラーに Windows DNS をインストールして構成します。 
+- ロール  ドメイン コントローラーに Windows DNS をインストールして構成します。 
     
-- IP アドレス  動的 IP アドレスを使用します。そのため、Azure Virtual Network を作成する必要があります。 
+- IP アドレス  動的 IP アドレスを使用します。そのため、Azure Virtual Network を作成する必要があります。 
     
 

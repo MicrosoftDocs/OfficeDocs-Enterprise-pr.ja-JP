@@ -14,19 +14,19 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: "概要:リモート Windows PowerShell で DelegatedOrg パラメーターを使用して、Exchange Online に接続します。"
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
 
- **の概要:**_DelegatedOrg_パラメーターを使用して Exchange Online に接続するには、リモートの Windows PowerShell を使用します。
+ **概要:** リモート Windows PowerShell で _DelegatedOrg_ パラメーターを使用して、Exchange Online に接続します。
   
 リモート Windows PowerShell を使用すると、Exchange Online の設定をコマンド ラインから管理できます。ローカル コンピューターで Windows PowerShell を使用して Exchange Online へのリモート セッションを作成します。これは、Exchange Online 資格情報を入力して、必要な接続設定を指定してから、Exchange Online コマンドレットをローカル Windows PowerShell セッションにインポートしてそれらを使用できるようにするという単純な 3 段階プロセスです。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- 予想所要時間 : 5 分
+- 予想所要時間 : 5 分
     
 - 次の Windows のバージョンを使用できます。
     
@@ -65,7 +65,7 @@ DAP パートナーとは、シンジケート パートナーとクラウド �
 
     **[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、DAP 管理者のユーザー名とパスワードを入力してから **[OK]** をクリックします。
     
-2. 次のコマンドを実行する交換_<customer tenant domain name>_への接続に使用するテナント ドメインの名前を持つ。
+2. _<customer tenant domain name>_ を接続先のテナントのドメイン名に置き換えて、次のコマンドを実行します。
     
   ```
   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid?DelegatedOrg=<customer tenant domain name>-Credential $UserCredential -Authentication Basic -AllowRedirection

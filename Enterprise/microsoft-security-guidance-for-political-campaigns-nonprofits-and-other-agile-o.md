@@ -1,7 +1,7 @@
 ---
 title: "選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -12,12 +12,12 @@ ms.custom:
 - DecEntMigration
 - Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
-description: "概要: 高速移動するため計画および実装ガイド、増加の脅威プロファイルが存在する組織です。"
-ms.openlocfilehash: 632cb63877e159f18707dbf68eb7733082319654
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+description: "概要: 増大する脅威プロファイルを抱え、急速に変化する組織向けの計画および実装のガイダンスです。"
+ms.openlocfilehash: 0177e91ac0cbd7ba6ce7ffe95206036036c43da4
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
 
@@ -47,9 +47,9 @@ ms.lasthandoff: 12/15/2017
     
     SharePoint Online の 4 つのチーム サイトを内部、プライベート、機密、および非常に機密性の高い社外秘のセキュリティ レベルで作成します。
     
-デモのための追加のセキュリティ機能や概念実証については、[Office 365 テスト ラボ ガイド](http://aka.ms/o365tlgs)に関する記事をご覧ください。
+デモのための追加のセキュリティ機能や概念実証については、[Office 365 テスト ラボ ガイド]((http://aka.ms/o365tlgs))に関する記事をご覧ください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [セキュリティ ソリューション](security-solutions.md)
   

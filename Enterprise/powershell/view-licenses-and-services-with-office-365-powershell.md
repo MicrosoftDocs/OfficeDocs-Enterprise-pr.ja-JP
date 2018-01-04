@@ -16,16 +16,16 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: "ライセンスの計画、サービス、および Office 365 の組織で使用可能なライセンスに関する情報を表示するのには Office 365 の PowerShell を使用する方法について説明します。"
+description: "Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。"
 ms.openlocfilehash: dc9ea5ad5077062a05c0070ffecbf580d3aacc49
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
-**の概要:**ライセンスの計画、サービス、および Office 365 の組織で使用可能なライセンスに関する情報を表示するのには Office 365 の PowerShell を使用する方法について説明します。
+**概要:** Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
   
 Office 365 サブスクリプションは、すべて以下の要素で構成されます。
 - **ライセンス プラン**ライセンス プランまたは Office 365 プランとも呼ばれます。ライセンス プランでは、ユーザーが利用可能な Office 365 サービスを定義します。Office 365 サブスクリプションには、複数のライセンス プランが含まれる場合があります。たとえば、Office 365 Enterprise E3 というライセンス プランがあります。
@@ -35,7 +35,7 @@ Office 365 サブスクリプションは、すべて以下の要素で構成さ
 - **ライセンス** すべてのライセンス プランには、購入した数のライセンスが含まれています。ライセンスをユーザーに割り当てると、ライセンス プランで定義した Office 365 サービスが使えるようになります。それぞれのユーザー アカウントに、少なくとも 1 つのライセンス プランからの 1 つのライセンスが必要です。これにより、ユーザーが Office 365 にログオンして、サービスを利用することができます。
     
 Office 365 PowerShell を使って、Office 365 組織で利用可能なライセンス プラン、ライセンス、およびサービスに関する詳細を確認することができます。別の Office 365 サブスクリプションで利用可能な製品、機能、サービスについての詳細は、「[Office 365 プランのオプション](https://go.microsoft.com/fwlink/p/?LinkId=691147)」を参照してください。
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 <a name="RTT"> </a>
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
@@ -53,13 +53,13 @@ Get-MsolAccountSku
 
 結果には次の情報が含まれます。
   
-- **AccountSkuId:**構文を使用して、組織の利用可能なライセンス プランを表示する`<CompanyName>:<LicensingPlan>`。 _<CompanyName>_は、Office 365 に登録し、組織の一意では、指定した値です。_<LicensingPlan>_値は、すべてのユーザーに対して同じです。値で、 `litwareinc:ENTERPRISEPACK`、会社名は、 `litwareinc`、およびライセンスの計画の名前`ENTERPRISEPACK`、Office 365 エンタープライズ E3 のシステム名であります。
+- **AccountSkuId:** 構文 `<CompanyName>:<LicensingPlan>` を使用して、組織で利用可能なライセンス プランを表示します。_<CompanyName>_ は Office 365 に登録するときに指定した値で、組織に対して一意です。_<LicensingPlan>_ の値は、すべてのユーザーに対して同じです。たとえば、値 `litwareinc:ENTERPRISEPACK` では、会社名が `litwareinc`、ライセンス プラン名が `ENTERPRISEPACK` で、これが Office 365 Enterprise E3 のシステム名になります。
     
-- **ActiveUnits:**特定のライセンスについては購入したライセンスの数。
+- **ActiveUnits** 特定のライセンス プランで購入したライセンスの数。
     
-- **WarningUnits:**次の情報を更新していないと 30 日の猶予期間後に期限切れにするライセンスの計画中のライセンスの数です。
+- **WarningUnits:** 更新していないライセンス プランのライセンスの数。30 日の猶予期間を過ぎると有効期限切れになります。
     
-- **ConsumedUnits:**特定のライセンスについてのユーザーに割り当てられているライセンスの数です。
+- **ConsumedUnits:** 特定のライセンス プランでユーザーに割り当てたライセンスの数。
     
 すべてのライセンス プランで利用できる Office 365 サービスの詳細を参照するには、次のコマンドを実行します。
   
@@ -67,7 +67,7 @@ Get-MsolAccountSku
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート](https://support.office.com/home/contact)にお問い合わせください。
+次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート]((https://support.office.com/home/contact))にお問い合わせください。
   
 |****サービス プラン****|****説明****|
 |:-----|:-----|
@@ -87,7 +87,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq " <AccountSkuId>"}).ServiceStatus
 ```
 
-この例では、litwareinc:ENTERPRISEPACK (Office 365 エンタープライズ E3) ライセンス プランで利用可能な Office 365 サービスを使用します。
+この例は、litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3) サービス プランで使用可能な Office 365 サービスを示しています。
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
@@ -98,9 +98,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 ||
 |:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
+|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。 |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 <a name="ShortVersion"> </a>
 
 #### 
@@ -110,5 +110,5 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 [Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
 #### 
 
-[Get MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
+[Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
 

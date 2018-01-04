@@ -1,7 +1,7 @@
 ---
 title: "SharePoint 2013 用の Microsoft Azure アーキテクチャ"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: "概要: SharePoint 2013 ソリューションは、Microsoft Azure 仮想マシンでホストできます。適切なソリューションの種類と、ソリューションをホストするように Microsoft Azure を設定する方法について説明します。"
-ms.openlocfilehash: b21e40351b3d4ae304e0268ad75462c8592e3a69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: ee157ef81101cd51090fff50c972edd37562a179
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
@@ -36,7 +36,7 @@ Azure は SharePoint Server 2013 ソリューションをホストするため�
 
 Azure インフラストラクチャ サービスは、SharePoint ソリューションをホストするための非常に魅力的な選択肢です。このプラットフォームでは、いくつかのソリューションが他のものと比べてより適していると言えます。以下の表では、推奨されているソリューションが示されています。
   
-|**ソリューション**|**Azure でそのソリューションが推奨されている理由**|
+|**解決方法**|**Azure でそのソリューションが推奨されている理由**|
 |:-----|:-----|
 |開発環境とテスト環境  <br/> |これらの環境を簡単に作成して管理できます。  <br/> |
 |Azure に対するオンプレミス SharePoint ファームの障害復旧  <br/> |**ホストされているセカンダリ データセンター** 別の地域にあるセカンダリ データセンターに投資するのではなく、Azure を使用します。 <br/> **低コストの障害復旧環境** オンプレミスの障害復旧環境よりも維持するリソースが少なく、費用も低く抑えられます。リソースの数は、コールド スタンバイ、ウォーム スタンバイ、ホット スタンバイのどの障害復旧環境を選択するかに応じて異なります。<br/> **より柔軟なプラットフォーム** 障害時には、負荷要件を満たすためにご使用の復旧 SharePoint ファームを簡単にスケールアウトできます。それらのリソースが不要になった場合にはスケールインします。<br/> 「[Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)」をご覧ください。  <br/> |
@@ -57,15 +57,15 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
 
 この記事では SharePoint トポロジの例が使用されていますが、こうした設計概念は任意の SharePoint ファーム トポロジで使用できます。Azure 環境を設計する前に、SharePoint ファームを設計するための次のトポロジ、アーキテクチャ、キャパシティ、およびパフォーマンスに関するガイダンスを使用してください。
   
-- [SharePoint 2013 の IT 担当者向けアーキテクチャ設計](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
+- [SharePoint 2013 の IT 担当者向けアーキテクチャ設計]((http://technet.microsoft.com/ja-JP/sharepoint/fp123594.aspx))
     
-- [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Plan for performance and capacity management in SharePoint Server 2013]((http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx))
     
 ## <a name="determine-the-active-directory-domain-type"></a>Active Directory ドメインの種類の決定
 
 各 SharePoint Server ファームは、ファーム セットアップ用の管理アカウントを提供する点で Active Directory に依存しています。この時点では、Azure には SharePoint ソリューション用の 2 つの選択肢があります。それらについて、以下の表で説明します。
   
-|**選択肢**|**説明**|
+|**オプション**|**説明**|
 |:-----|:-----|
 |専用ドメイン  <br/> |Azure に対して専用で独立した Active Directory ドメインを展開し、SharePoint ファームをサポートできます。一般のインターネット サイトに適しています。  <br/> |
 |クロスプレミス接続を使用したオンプレミス ドメインの拡張  <br/> |クロスプレミス接続を使用してオンプレミス ドメインを拡張すると、ユーザーは SharePoint ファームに、オンプレミスでホストされているのと同じようにイントラネットを介してアクセスします。オンプレミスの Active Directory と DNS 実装の利点を生かすことができます。  <br/> オンプレミスのファームとの間でフェールオーバーするために Azure で障害復旧環境を構築するには、クロスプレミス接続が必要になります。  <br/> |
@@ -223,10 +223,10 @@ SharePoint ファームの各層に可用性セットを追加すると、実装
 |**お問い合わせ**|**説明**|
 |:-----|:-----|
 |**必要なソリューション** <br/> |複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。<br/> |
-|**ソリューションのディスカッションへの参加** <br/> |クラウド ・ ベースのソリューションに熱心である場合、クラウド採用アドバイザリー ボード (CAAB) Microsoft コンテンツ開発者、業界の専門家、および世界中のお客様より大規模で活気のあるコミュニティに接続するために参加を検討してください。参加するには、マイクロソフトのテクニカル コミュニティの[CAAB (クラウド導入の諮問委員会) の空き領域](https://aka.ms/caab)のメンバーとして自分自身を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)でのクイック メールを送信します。[CAAB のブログ](https://blogs.technet.com/b/solutions_advisory_board/)上のコミュニティに関連するコンテンツをだれでも読み取ることができます。ただし、CAAB のメンバーは、新しいクラウド導入リソースとソリューションについて説明するプライベートのウェビナーへの招待を取得します。<br/> |
-|**記載されているアートの取得方法** <br/> |参照してくださいアートの編集可能なコピーを実行する場合に、私たちに送信するようになります。[Cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)に、アートのタイトルと URL を含む、要求を電子メールで送信します。<br/> |
+|**ソリューションのディスカッションへの参加** <br/> |クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の [CAAB (Cloud Adoption Advisory Board) スペース]((https://aka.ms/caab))のメンバーとしてご自分を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!) 宛に電子メールを送信してください。[CAAB ブログ]((https://blogs.technet.com/b/solutions_advisory_board/))でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。<br/> |
+|**記載されているアートの取得方法** <br/> |この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記述した電子メールを [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20) に送信してください。<br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
   

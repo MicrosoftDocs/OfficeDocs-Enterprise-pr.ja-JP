@@ -18,7 +18,7 @@ ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "概要: Microsoft クラウド サービスに組み込まれる一連のクラウド ストレージ オプションの詳細について説明します。"
 ms.openlocfilehash: 341b530f3b4348a4111cdd8e9741d0e5696e652e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/15/2017
 
  **概要:** Microsoft クラウド サービスに組み込まれる一連のクラウド ストレージ オプションの詳細について説明します。
   
-"いつでも使用可能" なストレージ ソリューション:
+”いつでも使用可能” なストレージ ソリューション:
   
 - 事前にパッケージ化されたソリューションの即時使用
     
@@ -66,9 +66,9 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)をクリックしてください。
+追加情報については、[こちら]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498))をクリックしてください。
   
-コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
+コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
   
 ## <a name="exchange-online-in-office-365"></a>Exchange Online in Office 365
 
@@ -88,9 +88,9 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](https://technet.microsoft.com/library/exchange-online-limits.aspx)をクリックしてください。
+追加情報については、[こちら]((https://technet.microsoft.com/library/exchange-online-limits.aspx))をクリックしてください。
   
-コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
+コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
   
 ## <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -116,9 +116,9 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)をクリックしてください。
+追加情報については、[こちら]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2))をクリックしてください。
   
-コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
+コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
   
 ## <a name="visual-studio-team-services"></a>Visual Studio Team Services
 
@@ -142,9 +142,9 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)をクリックしてください。
+追加情報については、[こちら]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx))をクリックしてください。
   
-コストの情報については、[こちら](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)をクリックしてください。
+コストの情報については、[こちら]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx))をクリックしてください。
   
 ## <a name="yammer-file-sharing"></a>Yammer のファイル共有
 
@@ -170,9 +170,9 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](https://products.office.com/yammer/yammer-overview)をクリックしてください。
+追加情報については、[こちら]((https://products.office.com/yammer/yammer-overview))をクリックしてください。
   
-コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
+コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
   
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -200,9 +200,9 @@ ms.lasthandoff: 12/15/2017
 
 ### <a name="features"></a>機能
 
-- 展開するすべてのソフトウェアがパッケージ化され、Microsoft Intune クラウド ストレージにアップロードします。
+- 展開するすべてのソフトウェアをパッケージ化し、Microsoft Intune クラウド ストレージにアップロード。
     
-- サブスクリプションには、20 GB 空き容量、さまざまなソフトウェアとハードウェア インベントリ レポート、ポリシーの管理、モバイル アプリケーションの発行、アラート、監視、および 99.99% の稼働時間 SLA を購入するためのオプションを使用してストレージにはが含まれています。
+- サブスクリプションには、20 GB のストレージと、次のようなオプションが含まれる。追加容量の購入、各種ソフトウェアおよびハードウェアのインベントリ レポート、ポリシー管理、モバイル アプリの公開、アラート、監視、99.99% のアップタイム SLA。
     
 ### <a name="common-uses"></a>一般的な使用目的
 
@@ -214,9 +214,9 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](https://www.microsoft.com/server-cloud/products/microsoft-intune/)をクリックしてください。
+追加情報については、[こちら]((https://www.microsoft.com/server-cloud/products/microsoft-intune/))をクリックしてください。
   
-コストの情報については、[こちら](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)をクリックしてください。
+コストの情報については、[こちら]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing))をクリックしてください。
   
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -244,7 +244,7 @@ ms.lasthandoff: 12/15/2017
 
 追加情報については、[こちら](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA)をクリックしてください。
   
-コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/site-recovery/)をクリックしてください。
+コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/site-recovery/))をクリックしてください。
   
 ## <a name="azure-backup"></a>Azure Backup
 
@@ -268,21 +268,21 @@ ms.lasthandoff: 12/15/2017
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら](http://azure.microsoft.com/services/backup/)をクリックしてください。
+追加情報については、[こちら]((http://azure.microsoft.com/services/backup/))をクリックしてください。
   
-コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/backup/)をクリックしてください。
+コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/backup/))をクリックしてください。
   
 ## <a name="next-step"></a>次の手順
 
 [いくらかのアセンブリが必要](some-assembly-required.md) クラウド ストレージ オプションを確認します。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ストレージ](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

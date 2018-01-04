@@ -14,13 +14,13 @@ ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。"
 ms.openlocfilehash: 6c3ed6c0e37f7b99d3f26056dfe1b9d989388ff3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell を使用して Office 365 への段階的な移行を実行する
 
- **の概要:**Office 365 への段階的な移行を実行する Windows PowerShell を使用する方法について説明します。
+ **概要:** Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
   
 段階的な移行を使用すると、ユーザーのメールボックスの内容を、元の電子メール システムから Office 365 に徐々に移行することができます。
   
@@ -58,7 +58,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   
 - 企業ネットワークの外部から Outlook を使用して社内の Exchange メールボックスに接続します。
     
-- [Microsoft Exchange リモート接続アナライザー](https://www.testexchangeconnectivity.com/)を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
+- [Microsoft Exchange リモート接続アナライザー]((https://www.testexchangeconnectivity.com/))を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
     
 - Exchange Online PowerShell で次のコマンドを実行します。
     
@@ -76,11 +76,11 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   
 - 社内組織の Active Directory の **Domain Admins** グループのメンバーであること。
     
-    または
+    or
     
 - 社内の各メールボックスに **FullAccess** のアクセス許可が割り当てられ、社内のユーザー アカウントの **TargetAddress** プロパティを変更するための **WriteProperty** のアクセス許可が割り当てられていること。
     
-    または
+    or
     
 - ユーザー メールボックスを格納する社内のメールボックス データベースに **受信者** のアクセス許可が割り当てられ、社内のユーザー アカウントの **TargetAddress** プロパティを変更するための **WriteProperty** のアクセス許可が割り当てられていること。
     
@@ -105,10 +105,10 @@ Office 365 に移行する社内のメールボックスのユーザーを特定
   
 段階的な移行用の CSV ファイルは、次の 3 つの属性をサポートします。CSV ファイルの各行はメールボックスに対応し、各属性の値を含める必要があります。
   
-|**属性**|**説明**|**必須?**|
+|**属性**|**説明**|**必須**|
 |:-----|:-----|:-----|
 |EmailAddress  <br/> |プライマリ SMTP 電子メール アドレス (たとえば、社内メールボックスの場合は pilarp@contoso.com など) を指定します。  <br/> 社内メールボックスには、プライマリ SMTP アドレスを使用し、Office 365 のユーザー ID は使用しないでください。たとえば、社内ドメインが contoso.com という名前で、Office 365 の電子メール ドメインが service.contoso.com という名前の場合、CSV ファイル内の電子メール アドレスにはドメイン名 contoso.com を使用します。  <br/> |必須  <br/> |
-|パスワード  <br/> |新しい Office 365 メールボックスに設定されるパスワード。Office 365 の組織に適用されるパスワードの制約はすべて、CSV ファイル内のパスワードにも適用されます。  <br/> |省略可能  <br/> |
+|Password  <br/> |新しい Office 365 メールボックスに設定されるパスワード。Office 365 の組織に適用されるパスワードの制約はすべて、CSV ファイル内のパスワードにも適用されます。  <br/> |省略可能  <br/> |
 |ForceChangePassword  <br/> |ユーザーが新しい Office 365 メールボックスに初めてサインインする場合に、パスワードを変更する必要があるかどうかを指定します。このパラメーターの値には **True** または **False** を使用してください。<br/> > [!NOTE]> Active Directory フェデレーション サービス (AD FS) 以上を社内組織に展開してシングル サインオン (SSO) ソリューションを実装した場合、 **ForceChangePassword** 属性の値には **False** を使用する必要があります。          |省略可能  <br/> |
    
  **CSV ファイル形式**
@@ -126,7 +126,7 @@ briant@contoso.com,Pa$$w0rd,False
 
 ヘッダー行の下の各行は個々のユーザーを表します。これらの行には、そのユーザーのメールボックスを移行するための情報が含まれます。各行の属性値は、ヘッダー行の属性名と同じ順序で並んでいる必要があります。 
   
-CSV ファイルの作成には、任意のテキスト エディターや Excel などのアプリケーションを使用します。ファイルは .csv ファイルまたは .txt ファイルとして保存します。
+CSV ファイルの作成には、任意のテキスト エディターや Excel などのアプリケーションを使用します。ファイルは .csv ファイルまたは .txt ファイルとして保存します。
   
 > [!NOTE]
 > CSV ファイルに非 ASCII 文字や特殊文字が含まれている場合は、UTF-8 などの Unicode エンコードで CSV ファイルを保存してください。アプリケーションによっては、コンピューターのシステム ロケールが CSV ファイルで使用されている言語と一致するときに、CSV ファイルを UTF-8 などの Unicode エンコードで保存した方が簡単な場合があります。 
@@ -252,7 +252,7 @@ Get-MigrationBatch StagedBatch1
     
 - **社内の Exchange サーバーの使用を停止します。**すべての電子メールが Office 365 メールボックスに直接ルーティングされていることを確認した後、社内の電子メール組織を維持する必要がもはやないか、SSO ソリューションを実装する予定がない場合は、Exchange をサーバーからアンインストールするとともに、社内の Exchange 組織を削除することができます。
     
-    詳細については、以下のトピックを参照してください。
+    詳細については、以下を参照してください。
     
   - 「[Exchange 2010 の変更または削除](https://go.microsoft.com/fwlink/?LinkId=217936)」
     

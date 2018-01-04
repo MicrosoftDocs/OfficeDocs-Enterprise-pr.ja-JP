@@ -12,13 +12,13 @@ ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: "この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: c927bca4d60fe49f941d9f03177e6fdd64e27389
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品間の機能統合
 
-**の概要:**この資料は、機能の統合で Microsoft Office サーバー製品の SharePoint Server、Exchange Server、Lync Server、および Office オンラインという名前のダイアグラムのアクセシブルなテキスト バージョンです。
+**概要:** この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。
   
 この図は、ドキュメントのセクションのタイトルが示すとおり、いくつかのタブで構成しています。
   
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 機能とタブは次のとおりです。 
   
-- 概要
+- はじめに
     
 - サーバー間認証 
     
@@ -126,7 +126,7 @@ Outlook Web App での Lync のプレゼンス。この機能は以下に適用�
     
 - Lync
     
-### <a name="office-web-apps-server"></a>Office Web Apps Server
+### <a name="office-web-apps-server"></a>Office Web Apps サーバー
 
 Office Web Apps サーバーは、Office ファイル用のブラウザー ベースのファイルの表示と編集サービスを提供する Office サーバー製品です。Office Web Apps サーバーは、Web Application Open Platform Interface (WOPI) プロトコルをサポートする製品とサービスで動作します。ホストとして知られるこれらの製品には、SharePoint 2013、Lync Server 2013、および Exchange Server 2013 などがあります。 
   
@@ -154,7 +154,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
   
 付属図は、双方向の信頼として確立されるサーバー間の信頼関係を示しています。Exchange サーバー、SharePoint サーバー、および Lync サーバーの間で双方向の信頼関係が示されています。各種類のサーバーが、他の 2 種類のサーバーのそれぞれと双方向に信頼しています。 
   
-### <a name="configuration"></a>構成
+### <a name="configuration"></a>Configuration
 
 サーバー間認証の信頼を構成するには、ユーザーのためにリソース要求を送信する各サーバーに対応する、信頼できるセキュリティ トークン発行者を新しく追加する必要があります。それぞれの種類のサーバーには、構成情報およびアクセス トークン署名証明書のパブリックな部分を含む JavaScript Object Notation (JSON) メタデータ エンドポイントがあります。サーバー間認証の信頼を構成することの一環として、他のサーバーの JSON メタデータ エンドポイントを指定します。 
   
@@ -198,7 +198,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 - Lync Server 2013 
     
-### <a name="configuration"></a>構成
+### <a name="configuration"></a>Configuration
 
 サーバー間認証を構成します。 
   
@@ -234,9 +234,9 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 構成スクリプトの使用例については、次の Jens Trier Rasmussen のブログ記事を参照してください。 
   
-- 「SharePoint Server 2013 から Exchange 2013 の高解像度の写真を使用する」(http://aka.ms/Bhr4d2) 
+- 「SharePoint Server 2013 から Exchange 2013 の高解像度の写真を使用する」((http://aka.ms/Bhr4d2)) 
     
-- 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Pn08dw) 
+- 「Exchange 2013 と Lync Server 2013 を統合する」 ((http://aka.ms/Pn08dw)) 
     
 ポスターには、これら 2 つのブログ記事の QR コードも含まれます。 
   
@@ -281,7 +281,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 構成スクリプトの使用例については、Jens Trier Rasmussen のブログ記事 
   
-- 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Oyg7fh) を参照してください。 
+- 「Exchange 2013 と Lync Server 2013 を統合する」 ((http://aka.ms/Oyg7fh)) を参照してください。 
     
  **動作のしくみ**
   
@@ -325,7 +325,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
  **構成**
   
-SharePoint の構成: 
+SharePoint 構成 
   
 - SharePoint ファームでユーザー プロファイルの同期を構成します。 
     
@@ -411,7 +411,7 @@ Exchange 2013 で:
     
 SharePoint Server 2013 で: 
   
-- User Profile Service アプリケーション。 
+- User Profile Service アプリケーション 
     
 - Work Management Service アプリケーション。 
     
@@ -447,9 +447,9 @@ Exchange 同期タイマー ジョブの実行時に、
   
 SharePoint Server 2013 は、次のジョブとアプリケーションを実行します。 
   
-- User Profile Service アプリケーション。 
+- User Profile Service アプリケーション 
     
-- Search Service アプリケーション。 
+- Search Service アプリケーション 
     
 - 作業管理サービス アプリケーション (以下に説明します)。 
     
@@ -495,7 +495,7 @@ Exchange 同期タイマー ジョブ:
     
 - オプトインのみを行うユーザーに対して Exchange Server とタスクを同期する作業管理サービス アプリケーションの呼び出しを開始します。 
     
-オプトイン 
+オプトイン  
   
 - ユーザーは、Exchange タスクを個人用サイトと同期するか、SharePoint Server 2013 および Project Server 2013 のタスクを Exchange Server 2013 と同期するかを選択する必要があります。 
     
@@ -615,9 +615,9 @@ Outlook Web App ユーザーの場合、Exchange CAS は、ユーザーの代わ
     
 前提条件: 
   
-- Lync 2013  ミーティングのレコーディングは、Lync 2013 のクライアント側の機能です。 
+- Lync 2013 — ミーティングのレコーディングは、Lync 2013 のクライアント側の機能です。 
     
-- SharePoint 2013  すでに稼働中のミーティングのレコーディングを保存するチーム サイトがあります。 
+- SharePoint 2013 — すでに稼働中のミーティングのレコーディングを保存するチーム サイトがあります。 
     
  **記録内容**
   
@@ -643,7 +643,7 @@ Outlook Web App ユーザーの場合、Exchange CAS は、ユーザーの代わ
     
 ### <a name="preparing-for-publishing-meeting-recordings"></a>ミーティングのレコーディングを公開するための準備
 
-図は、チーム サイト、中央管理センター、および Internet Information Services (IIS) サーバーでの SharePoint Server 2013 を示しています。 
+図は、チーム サイト、中央管理センター、および  Internet Information Services (IIS) サーバーでの SharePoint Server 2013 を示しています。 
   
 チーム サイトには以下が含まれます。 
   
@@ -665,7 +665,7 @@ IIS サーバーには IIS 設定が含まれます。
     
  **デジタル アセット ライブラリ**
   
-デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」(http://aka.ms/O1vq5w) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」((http://aka.ms/O1vq5w)) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Lync クライアントを使用したミーティングの記録および公開
 
@@ -681,10 +681,10 @@ IIS サーバーには IIS 設定が含まれます。
     
 4. SharePoint アセット ライブラリに、ミーティングのレコーディングをドラッグ アンド ドロップします。 
     
-5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」(http://aka.ms/R61q35) を参照してください。 
+5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」((http://aka.ms/R61q35)) を参照してください。 
     
  **ビデオの縮小表示**
   
-ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」(http://aka.ms/Kupj85) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」((http://aka.ms/Kupj85)) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 

@@ -19,7 +19,7 @@ ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。"
 ms.openlocfilehash: 00b1fc8fea930346f082d3d2302a14dea7ad4309
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/15/2017
 
  **概要:** Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。
   
-Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライン保護 (EOP) を支援するあなたの電子メールからのマルウェアのままです。Exchange 管理センター (EAC) またはセキュリティ ポリシーを作成する ATP、&amp;でない悪意のあるものとして識別される電子メールの添付ファイルまたはリンクのみに、ユーザーがアクセスを保証するためコンプライアンス センターです。詳細については、[高度な脅威保護](https://technet.microsoft.com/library/mt148491%28v=exchg.150%29.aspx)を参照してください。
+Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メールを保護する Exchange Online Protection (EOP) の機能です。ATP を使用して、Exchange 管理センター (EAC) またはセキュリティ/コンプライアンス センターでポリシーを作成し、常にユーザーが電子メール内の悪質なものではないと識別されたリンクまたは添付ファイルのみにアクセスするようにします。詳細については、「[安全な添付ファイルと安全なリンクのための高度な脅威保護](https://technet.microsoft.com/library/mt148491%28v=exchg.150%29.aspx)」を参照してください。
   
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで ATP を構成してテストできます。
   
@@ -48,7 +48,7 @@ Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライ�
     
   - ライトウェイトの Office 365 開発/テスト環境を使用している場合は、Internet Explorer のプライベート セッションを開いてローカル コンピューターからサインインします。
     
-  - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
+  - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル]((https://portal.azure.com)) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
     
 2. メモ帳を起動し、テキストを入力します。
     
@@ -76,7 +76,7 @@ Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライ�
     
 14. **URL** に、 **http://www.spamlink.contoso.com/** と入力して、 **[OK]**、 **[送信]** の順にクリックします。
     
-15. プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+15. プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
     
 16. メイン ポータル ページで、アプリ タイルをクリックし、 **[メール]** をクリックします。
     
@@ -156,9 +156,10 @@ Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライ�
 これで、この環境を使用して、新しいポリシーを作成し ATP を試すことができるようになりました。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
@@ -172,6 +173,6 @@ Office 365 の高度な脅威保護 (ATP) は、機能の Exchange オンライ�
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md) 
 
-[安全な添付ファイルと安全なリンクのための高度な脅威保護](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)
+[安全な添付ファイルと安全なリンクのための高度な脅威保護]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))
 
 

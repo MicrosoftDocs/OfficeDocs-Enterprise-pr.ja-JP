@@ -17,13 +17,13 @@ ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: "概要:Office 365 PowerShell を使用してユーザー アカウントとライセンスを管理する方法について説明します。"
 ms.openlocfilehash: 860fec08199d8897d7caee90d077f2956600972a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。
 
- **の概要:**ユーザー アカウントと Office 365 の PowerShell でライセンスを管理する方法について説明します。
+ **概要:** Office 365 PowerShell を使用してユーザー アカウントとライセンスを管理する方法について説明します。
   
 Office 365 管理者の主要なタスクの 1 つは、ユーザー アカウントとライセンスの管理です。Office 365 管理センター でもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell の方がより早く簡単に行えます。詳細については、以下のトピックをご覧ください。
   

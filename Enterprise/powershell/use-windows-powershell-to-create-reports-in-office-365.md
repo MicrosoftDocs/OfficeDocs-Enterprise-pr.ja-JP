@@ -16,13 +16,13 @@ ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "概要:Office 365 PowerShell を使用して、Office 365 管理センターでは作成できないレポートを作成します。"
 ms.openlocfilehash: b1cbbbef73a266a62a417d2714fefcd630c604c4
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Windows PowerShell を使用して Office 365 でレポートを作成する
 
- **の概要:**Office 365 の PowerShell を使用して、Office 365 の管理センターで作成することはできませんするレポートを作成します。
+ **概要:** Office 365 PowerShell を使用して、Office 365 管理センターでは作成できないレポートを作成します。
   
 Office 365 管理者センターでは、数多くのさまざまなレポートを使用できます。ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。そんなときに、Office 365 PowerShell が必要になります。
   
@@ -48,17 +48,17 @@ Office 365 管理者センターでは、数多くのさまざまなレポート
     
 - SharePoint Online のレポート:
     
-  - [Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
     
 - Exchange Online のレポート:
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx))
     
-  - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx))
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

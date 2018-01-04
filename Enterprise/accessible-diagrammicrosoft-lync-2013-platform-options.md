@@ -11,13 +11,13 @@ ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: "この記事は、Microsoft Lync 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: 79342a30a0391980cf16304f3615f6a7e64d51ff
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>アクセス可能な図 - Microsoft Lync 2013 プラットフォーム オプション
 
-**の概要:**この資料は、という名前の Microsoft Lync 2013 のプラットフォーム ・ オプション、[技術関連の図](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で使用される図のアクセシブルなテキスト バージョンです。
+**概要:** この記事は、Microsoft Lync 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
   
 このポスターは、ビジネスの意思決定者 (BDM) と設計者が Lync Online (Office 365) および Lync Server の展開に関して知る必要のある情報を説明しており、内容は次のとおりです。
   
@@ -185,9 +185,9 @@ Office 365 の利点を Lync 2013 の社内展開と組み合わせることが�
   
 #### <a name="lync-onlineserver-hybrid-split-domain"></a>Lync Online/Server ハイブリッド (ドメインを分割)
 
-- Office 365  サブスクリプション モデル。追加のライセンスは不要です。 
+- Office 365  サブスクリプション モデル。追加のライセンスは不要です。 
     
-- 社内  すべての社内ライセンスが適用されます。 
+- オンプレミス — すべてのオンプレミス ライセンスが適用されます。 
     
 #### <a name="lync-server"></a>Lync Server
 

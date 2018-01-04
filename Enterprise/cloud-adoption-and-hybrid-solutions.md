@@ -1,6 +1,6 @@
 ---
-title: "エンタープライズ ・ クラウド ・ ソリューション"
-description: "マイクロソフトのクラウドを使用してビジネス上の問題を解決します。最新のハイブリッドとクラウド ソリューションのセキュリティ、クラウドの導入に関する情報を検索します。"
+title: "Enterprise Cloud ソリューション"
+description: "Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。"
 services: o365-solutions
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
 ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
 ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-<h1>エンタープライズ ・ クラウド ・ ソリューション</h1>
-<p>マイクロソフトのクラウドを使用してビジネス上の問題を解決します。最新のハイブリッドとクラウド ソリューションのセキュリティ、クラウドの導入に関する情報を検索します。</p>
+<h1>Enterprise Cloud ソリューション</h1>
+<p>Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。</p>
 <p>現代のビジネス上の問題に対する技術的なソリューションにはしばしば複数の製品とプラットフォームが関与します。オンプレミスの既存インフラストラクチャを利用しつつ、Microsoft の各種クラウド サービスとプラットフォームが提供する柔軟性とコスト削減のメリットを享受できます。ここで目標としているのは、お客様が Microsoft 製品とサービスを使用してビジネス目標を実現できるよう、必要な情報を提供することです。</p>
 <ul class="cardsF panelContent">
     <li>
@@ -33,8 +33,8 @@ ms.lasthandoff: 12/15/2017
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>アーキテクチャの IT リソースをクラウドします。</h3>
-                <p>これらのツールのアーキテクチャとポスターを使用して、マイクロソフトのクラウド サービスと Office 365、Microsoft Azure、Microsoft エンタープライズ モビリティとセキュリティ (EMS) を含む、すべてのプラットフォームについて Intune では、Microsoft Dynamics 365 では、プライベート クラウドのデータ ・ センター、および設置型/ハイブリッド クラウド ソリューションです。</p>
+                        <h3>クラウド IT アーキテクチャのリソース</h3>
+                <p>これらのアーキテクチャ ツールとポスターを使用して、Office 365、Microsoft Azure、Microsoft Enterprise Mobility + Security (EMS)/Intune、Microsoft Dynamics 365、プライベート クラウド データセンター、オンプレミス ハイブリッド ソリューション、クラウド ソリューションなどの Microsoft Cloud サービスとプラットフォームについて説明します。</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ ms.lasthandoff: 12/15/2017
                     </div>
                     <div class="cardText">
                         <h3>アーキテクチャ モデル</h3>
-                <p>理想的なプラットフォームと構成を決定するのには、SharePoint、Exchange、ビジネス、および Lync の Skype のこれらのモデルのアーキテクチャと展開オプションを使用します。</p>
+                <p>SharePoint、Exchange、Skype for Business、Lync 向けのこれらのアーキテクチャ モデルと展開オプションを使用して、理想的なプラットフォームおよび構成を決定します。</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/15/2017
                     </div>
                     <div class="cardText">
                         <h3>テスト ラボ ガイド</h3>
-                <p>これらのクラウド導入のテスト ラボ ガイド (TLGs) Office 365、Azure、エンタープライズ ・ モビリティとセキュリティ (EMS) の開発/テスト環境を設定する使用/Intune、Dynamics 365、および Office サーバー製品です。</p>
+                <p>これらのクラウド導入のテスト ラボ ガイド (TLG) を使用して、Office 365、Azure、Enterprise Mobility + Security (EMS)/Intune、Dynamics 365、Office Server 製品の開発/テスト環境を設定します。</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ ms.lasthandoff: 12/15/2017
                     </div>
                     <div class="cardText">
                         <h3>ハイブリッド ソリューション</h3>
-                <p>Azure インフラストラクチャ サービスの Office サーバーのワークロードを配置する方法について説明します。</p>
+                <p>Azure インフラストラクチャ サービスに Office Server ワークロードを展開する方法について説明します。</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ ms.lasthandoff: 12/15/2017
                     </div>
                     <div class="cardText">
                         <h3>セキュリティ ソリューション</h3>
-                <p>マイクロソフトのクラウド サービスとのプラットフォームのセキュリティ ・ ソリューションを展開する方法について説明します。</p>
+                <p>Microsoft のクラウド サービスとプラットフォームを使用するセキュリティ ソリューションを展開する方法について説明します。</p>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ ms.lasthandoff: 12/15/2017
 
 <h2>お問い合わせ</h2>
 <ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">必要なソリューション</a><br>複数のマイクロソフトのクラウド プラットフォームおよびサービスにまたがるクラウド導入のコンテンツを作成しました。教えてどのようなクラウド導入のコンテンツについて考えるか、cloudadopt@microsoft.com に電子メールを送信することによって、特定のコンテンツを求めます。</li><br>
-    <li><a href="https://aka.ms/caab">ソリューションのディスカッションへの参加</a><br>クラウド ・ ベースのソリューションに熱心である場合、クラウド採用アドバイザリー ボード (CAAB) Microsoft コンテンツ開発者、業界の専門家、および世界中のお客様より大規模で活気のあるコミュニティに接続するために参加を検討してください。参加するには、CAAB (クラウド導入の諮問委員会) の容量をマイクロソフトのテクニカル コミュニティのメンバーとして自分自身を追加し、 <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>でのクイック メールを送信します。CAAB の<a href="https://blogs.technet.com/b/solutions_advisory_board/">ブログ</a>のコミュニティに関連するコンテンツをだれでも読み取ることができます。ただし、CAAB のメンバーは、新しいクラウド導入リソースとソリューションについて説明するプライベートのウェビナーへの招待を取得します。</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">記載されているアートの取得方法</a><br>参照してくださいアートの編集可能なコピーを実行する場合に、私たちに送信するようになります。Cloudadopt@microsoft.com に、アートのタイトルと URL を含む、要求を電子メールで送信します。</li>
+    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">どのようなクラウド導入のコンテンツが必要ですか?</a><br>複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。MODAcontent@microsoft.com に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。</li><br>
+    <li><a href="https://aka.ms/caab">クラウド導入のディスカッションに参加する</a><br>クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の CAAB (Cloud Adoption Advisory Board) スペースのメンバーとしてご自分を追加し、<a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a> 宛に電子メールを送信してください。CAAB <a href="https://blogs.technet.com/b/solutions_advisory_board/">ブログ</a>でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。</li><br>
+    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">記載されているアートの取得方法</a><br>この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記述した電子メールを cloudadopt@microsoft.com に送信してください</li>
 </ul>

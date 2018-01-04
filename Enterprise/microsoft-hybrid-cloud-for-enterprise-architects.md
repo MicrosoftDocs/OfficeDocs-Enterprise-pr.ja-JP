@@ -19,7 +19,7 @@ ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "概要: Microsoft クラウド サービスおよびプラットフォームを使用するハイブリッド シナリオについて IT アーキテクトが知る必要のある内容。"
 ms.openlocfilehash: 46e9a6cead44f5392d3ae228dbb5e7f9285bf891
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,13 +29,13 @@ ms.lasthandoff: 12/15/2017
   
 この記事で取り上げられている一連のリンク記事では、Microsoft クラウド サービスとプラットフォームを使用したハイブリッド アーキテクチャと構成について、IT アーキテクトが知る必要のある事柄を説明します。この記事を 7 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、または A3 とも表される) で印刷することもできます。
   
-[![マイクロソフト ハイブリッド クラウド モデルのイメージをつまみ](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-![PDF ファイル](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio ファイルが](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![その他の言語バージョンのページを参照してください](images/Common_Images/GlobeIcon.png)
+![PDF ファイル](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio ファイル](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![他の言語のバージョンのページを参照してください](images/Common_Images/GlobeIcon.png)
 [その他の言語](https://www.microsoft.com/download/details.aspx?id=54424)
   
-すべての[マイクロソフトのクラウドの IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)でモデルを表示しを機械に通す[マイクロソフトのエンタープライズ ・ クラウド ・ ロードマップ: IT 意思決定者のためのリソース](https://aka.ms/cloudarchitecture)。
+すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。
   
 次のセクションを参照してください。
   
@@ -62,11 +62,11 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > これらの記事は、「エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド」のポスターの **2017 年 6 月** リリースを反映しています。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

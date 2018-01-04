@@ -12,13 +12,13 @@ ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
 description: "この記事は、「設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: 1d84900a931bf9a01cd2e757a5fc671455e076f5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>アクセス可能な図 - 設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト
 
-**の概要:**この資料では、アクセス可能なテキスト形式のデザインの sample という名前のダイアグラム: SharePoint 2013 の Microsoft Azure でインターネットのサイトです。
+**概要:** この記事は、「設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。
   
 SharePoint 2013 を使って、インターネットに直接接続されているサイトの開始点としてこの設計例を使用してください。
   
@@ -48,13 +48,13 @@ SharePoint 2013 を使って、インターネットに直接接続されてい�
 
 この設計には、4 種類のユーザー アカウントがあります。各種類のアカウントは、アクセス用のサイト、および特定の種類の認証を使用する領域と関連付けられています。 
   
-- 匿名の顧客  匿名の顧客は、http://www.contoso.com などのサイトを介してアクセスします。使用する領域は、匿名認証を使用する "Internet zone / anonymous" です。
+- 匿名の顧客  匿名の顧客は、http://www.contoso.com などのサイトを介してアクセスします。使用する領域は、匿名認証を使用する "Internet zone / anonymous" です。
     
-- 認証済みの顧客  認証済みの顧客は、https://secure.contoso.com などのサイトを介してアクセスします。使用する領域は、Azure Active Directory および SAML 認証を使用する "Extranet zone / SAML" です。
+- 認証済みの顧客  認証済みの顧客は、https://secure.contoso.com などのサイトを介してアクセスします。使用する領域は、Azure Active Directory および SAML 認証を使用する "Extranet zone / SAML" です。
     
-- サイトの作成者と開発者  サイトの作成者と開発者は、http://authoring.contoso.com:8000 または http://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、Active Directory ドメイン サービス (AD DS) を使用する "Default zone / Windows integrated" です。
+- サイトの作成者と開発者  サイトの作成者と開発者は、http://authoring.contoso.com:8000 または http://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、Active Directory ドメイン サービス (AD DS) を使用する "Default zone / Windows integrated" です。
     
-- 検索クロール アカウント  検索クロール アカウントは、http://authoring.contoso.com:8000 または http://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、AD DS および Windows NTLM 認証を使用する "Default zone / Windows integrated" です。
+- 検索クロール アカウント  検索クロール アカウントは、http://authoring.contoso.com:8000 または http://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、AD DS および Windows NTLM 認証を使用する "Default zone / Windows integrated" です。
     
 ## <a name="server-farm"></a>サーバー ファーム
 
@@ -72,9 +72,9 @@ SharePoint 2013 を使って、インターネットに直接接続されてい�
   
 インターネット サイト向けのサービスに関する注意事項:
   
-> 管理されたメタデータ  必ず " **このサービス アプリケーションは列固有の用語セットの既定の格納場所です**" を選択してください。
+> 管理されたメタデータ  必ず " **このサービス アプリケーションは列固有の用語セットの既定の格納場所です**" を選択してください。
     
-> アプリケーション管理  Azure では、一般向けのインターネット サイトでアプリを使用することはお勧めしていません。
+> アプリケーション管理 — Azure では、一般向けのインターネット サイトでアプリを使用することはお勧めしていません。
     
 ## <a name="application-pools-and-web-applications"></a>アプリケーション プールと Web アプリケーション
 

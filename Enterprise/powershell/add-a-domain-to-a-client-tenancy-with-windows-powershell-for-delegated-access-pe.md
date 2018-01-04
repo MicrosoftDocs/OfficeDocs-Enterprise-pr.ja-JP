@@ -14,13 +14,13 @@ ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "概要:Office 365 の Windows PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。"
 ms.openlocfilehash: 182750a5706dbb23c6207c6bd63334cbf2a2a795
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
- **の概要:**Office 365 用の Windows PowerShell を使用して、既存のお客様のテナントに別のドメイン名を追加します。
+ **概要:** Office 365 の Windows PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。
   
 Office 365 管理センター を使うより短時間で、Office 365 の Windows PowerShell でドメインを新規作成して顧客のテナンシーと関連付けることができます。
   
@@ -112,7 +112,7 @@ Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 | `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
 | `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

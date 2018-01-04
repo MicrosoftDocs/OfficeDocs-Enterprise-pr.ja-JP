@@ -16,10 +16,10 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
-description: "概要: Azure 情報の機密度の高いオンラインの SharePoint チーム サイト内のファイルを保護するために保護を適用します。"
+description: "概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。"
 ms.openlocfilehash: bc2c7dbbcc254270cf2c7db3d3eed98b3f7872f6
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,13 +32,13 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできません。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。データ損失防止 (DLP) ポリシーが操作できるのはメタデータ (Office 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。 
   
-まず、「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある Office 365 サブスクリプションに関する指示を使用します。
+まず、「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365))」にある Office 365 サブスクリプションに関する指示を使用します。
   
 次に、機密性の高い SharePoint Online チーム サイトの保護とアクセス許可用に、新たなスコープ付きポリシーとサブラベルを使用して Azure Information Protection を構成します。
   
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
-2. ブラウザーで別のタブで、[https://portal.azure.com](https://portal.azure.com) の Azure Portal に移動します。
+2. ブラウザーで別のタブで、[(https://portal.azure.com)]((https://portal.azure.com)) の Azure Portal に移動します。
     
 3. 初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。
     
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/15/2017
     
 18. **[サブラベル]** ブレードで、 **[保存]** をクリックします。
     
-19. [新しいスコープ付きポリシー] ブレードを閉じます。
+19. 新しいスコープ付きポリシー ブレードを閉じます。
     
 20. **[Azure Information Protection - スコープ付きポリシー]** ブレードで、 **[発行]** をクリックします。
     
@@ -82,11 +82,11 @@ ms.lasthandoff: 12/15/2017
   
 これで、ドキュメントを作成して、Azure Information Protection および新しいラベルでそれらを保護する準備が整いました。
   
-デバイスまたは Windows ベースのコンピューターに [Azure Information Protection クライアントをインストールする (](https://docs.microsoft.com/information-protection/rms-client/install-client-app)) 必要があります。インストールをスクリプトで記述して自動化するか、ユーザーがクライアントを手動でインストールできます。以下のリソースを参照してください。
+デバイスまたは Windows ベースのコンピューターに [Azure Information Protection クライアントをインストールする (]((https://docs.microsoft.com/information-protection/rms-client/install-client-app))) 必要があります。インストールをスクリプトで記述して自動化するか、ユーザーがクライアントを手動でインストールできます。以下のリソースを参照してください。
   
-- [クライアント側での Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/use-client)
+- [クライアント側での Azure Information Protection]((https://docs.microsoft.com/information-protection/rms-client/use-client))
     
-- [Azure Information Protection クライアント管理者ガイド](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
+- [Azure Information Protection クライアント管理者ガイド]((https://docs.microsoft.com/information-protection/rms-client/client-admin-guide))
     
 - [手動インストールのためのダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=53018)
     
@@ -95,7 +95,7 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > 機密性の高い複数の SharePoint Online チーム サイトが存在する場合、上記の設定を使用して複数の Azure Information Protection スコープ付きポリシーとサブラベルを作成し、特定の SharePoint Online チーム サイトのサイト メンバー アクセス グループに設定されたサブラベルごとにアクセス許可を指定する必要があります。 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
   

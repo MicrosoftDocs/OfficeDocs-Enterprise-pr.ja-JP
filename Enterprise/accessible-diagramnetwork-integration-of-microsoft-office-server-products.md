@@ -12,13 +12,13 @@ ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
 description: "この記事は、「Microsoft Office Server 製品のネットワーク統合」という名前の図のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: 2ced3ae648d07ae00c66b8ede8562df66826e4a9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品のネットワーク統合
 
-**の概要:**この資料は、ネットワークの統合の Microsoft Office サーバー製品をという名前のダイアグラムのアクセシブルなテキスト バージョンです。
+**概要:** この記事は、「Microsoft Office Server 製品のネットワーク統合」という名前の図のアクセス可能なテキスト バージョンです。
   
 このポスターは Lync Server 2013、SharePoint 2013、および Exchange Server 2013 を含むネットワーク環境の概要図を示しています。また、これらの製品に共通のネットワーク要素である、リモート アクセスと内部アクセス、認証、クライアントのトラフィック、共有デバイス経由のトラフィックのルーティングについても説明しています。 
   
@@ -120,11 +120,11 @@ DirectAccess の考慮すべき事項:
 
 4 つの異なる種類のユーザーがあります。ネットワークとクラウド サービスの外部にいる 3 種類のユーザーと内部にいる 1 種類のユーザーがあり、以下のようになっています。 
   
-- パートナー企業 (企業間) - 外部 
+- パートナー企業 (企業間) – 外部 
     
-- 個々のパートナー (SharePoint と匿名 (Lync)) - 外部 
+- 個々のパートナー (SharePoint と匿名 (Lync)) – 外部 
     
-- ローミングとリモートの従業員 - 外部 
+- ローミングとリモートの従業員 – 外部 
     
 - 内部の従業員 
     
@@ -182,7 +182,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 - Exchange メールボックス サーバー。2 つの Exchange メールボックス サーバーを図に示します。 
     
-各 SharePoint サーバーにインストールされているコンポーネントの詳細については、「[SharePoint 2013 の効率化されたトポロジー](https://aka.ms/Ma5cgk)」を参照してください。 
+各 SharePoint サーバーにインストールされているコンポーネントの詳細については、「[SharePoint 2013 の効率化されたトポロジー]((https://aka.ms/Ma5cgk))」を参照してください。 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>トラフィックがコンポーネントを経由して別のサーバー層に移動する方法の説明
 
@@ -192,15 +192,15 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
 
 ネットワークとクラウド サービスの外部に、次の 3 種類の異なるクライアントがあります。 
   
-- パートナー企業 (企業間) - 外部 
+- パートナー企業 (企業間) – 外部 
     
-- 個々のパートナー (SharePoint と匿名 (Lync)) - 外部 
+- 個々のパートナー (SharePoint と匿名 (Lync)) – 外部 
     
-- ローミングとリモートの従業員 - 外部 
+- ローミングとリモートの従業員 – 外部 
     
 外部ユーザーの種類ごとの認証およびルーティング プロセスを個別に説明します。 
   
-#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>パートナー会社 (企業間) (https://partnerweb.contoso.com)
+#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>パートナー会社 (企業間) ((https://partnerweb.contoso.com))
 
 - Lync: 他の組織、Skype、および AOL を使用したパブリック IM 接続のフェデレーション信頼。Lync のフェデレーション トラフィックは、ゲートウェイ ルーターを介して、Lync エッジ サーバー、Lync の VIP (ロード バランサーまたはリバース プロキシ サーバー)、次に Lync Server に移動します。 
     
@@ -210,7 +210,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 - SMTP のトラフィックは、ゲートウェイ ルーターを介して、Exchange の VIP (ロード バランサーまたはリバース プロキシ サーバー)、次に Exchange Server に移動します。 
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>個々のパートナー (SharePoint) と匿名 (Lync) (https://partnerweb.contoso.com および https://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>個々のパートナー (SharePoint) と匿名 (Lync) ((https://partnerweb.contoso.com) および https://meet.contoso.com)
 
 - Lync: 匿名ユーザーは従業員別に整理された Lync 会議のみに参加できます。Lync のフェデレーション トラフィックは、ゲートウェイ ルーターを介して、Lync エッジ サーバー、Lync の VIP (ロード バランサーまたはリバース プロキシ サーバー)、次に Lync Server に移動します。 
     
@@ -228,7 +228,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 3. https://my.contoso.com
     
-4. https://partnerweb.contoso.com 
+4. (https://partnerweb.contoso.com) 
     
 5. https://mail.contoso.com* 
     
@@ -256,7 +256,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 > https://my.contoso.com
     
-> https://partnerweb.contoso.com
+> (https://partnerweb.contoso.com)
     
 > https://mail.contoso.com* 
     
@@ -320,7 +320,7 @@ Exchange は、サーバーからサーバーへの通信に TCP ポート 25 (S
   
 #### <a name="more-on-lync-network-traffic"></a>Lync ネットワーク トラフィックの詳細について
 
-Lync Server が、インスタント メッセージング、web 会議、アプリケーション共有、および音声通信を提供する点で、組織を支援する方法を確認できます。詳細については、「[Microsoft Lync Server 2013 のプロトコル ワークロード ポスター](https://aka.ms/G5jzjo)」を参照してください。 
+Lync Server が、インスタント メッセージング、web 会議、アプリケーション共有、および音声通信を提供する点で、組織を支援する方法を確認できます。詳細については、「[Microsoft Lync Server 2013 のプロトコル ワークロード ポスター]((https://aka.ms/G5jzjo))」を参照してください。 
   
 ポスターには、この情報にアクセスする QR コードもあります。 
   

@@ -14,13 +14,13 @@ ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: "概要:Office 365 PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てます。"
 ms.openlocfilehash: 91916b41ba420a204ecabb27eea2e451a91f6f25
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
 
- **の概要:**Office 365 の PowerShell を使用して、オンライン ビジネス ポリシーの Skype での通信設定をユーザーごとに割り当てます。
+ **概要:** Office 365 PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てます。
   
 Office 365 PowerShell を使用することで、効率的にユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てることができます。
   
@@ -49,7 +49,7 @@ Import-PSSession $sfbSession
 2. その外部アクセス ポリシーを Alex に割り当てる。
     
 > [!NOTE]
->  すべてのカスタム ポリシーを作成することはできません当社の。ビジネス オンラインの Skype はカスタム ポリシーを作成することを許可しないためにです。代わりに、Office 365 用に特別に作成されたポリシーのいずれかを割り当てる必要があります。ポリシーを事前に作成されたものが含まれます: 4 つの異なるクライアント ポリシー、224 のさまざまな会議ポリシー、5 つの異なるダイヤル プラン、5 つの別の外部アクセス ポリシー、1 のホスト ボイスメール ポリシー、および 4 つの別の音声ポリシーです。
+>  自分だけのカスタム ポリシーを作成することはできません。これは、Skype for Business Online がカスタム ポリシーの作成を許可していないためです。代わりに、Office 365 用に特別に作成されたポリシーの 1 つを割り当てる必要があります。このように事前に作成されたポリシーは次のとおりです。4 種類のクライアント ポリシー、224 種類の会議ポリシー、5 種類のダイヤル プラン、5 種類の外部アクセス ポリシー、1 つのホスト型ボイスメール ポリシー、4 種類の音声ポリシー。
   
 Alex に割り当てる外部アクセス ポリシーを特定するにはどうしたらいいでしょうか。次のコマンドは、EnableFederationAccess が True に設定され、EnablePublicCloudAccess が False に設定されたすべての外部アクセス ポリシーを返します。
   
@@ -57,7 +57,7 @@ Alex に割り当てる外部アクセス ポリシーを特定するにはど�
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-コマンドが何では、2 つの条件を満たすすべてのポリシーを返す: EnableFederationAccess プロパティが true に設定し、EnablePublicCloudAccess のポリシーは、False に設定されています。さらに、そのコマンドには、(FederationOnly) 条件を満たしている 1 つのポリシーが返されます。例を以下に示します。
+このコマンドでは、EnableFederationAccess プロパティが True に設定され、EnablePublicCloudAccess プロパティが False に設定されているという 2 つの条件を満たしているすべてのポリシーを返します。こうして、このコマンドは指定された条件を満たす 1 つのポリシー (FederationOnly) を返します。以下に例を示します。
   
 ```
 Identity                          : Tag:FederationOnly
@@ -104,9 +104,9 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 このコマンドでは、Alex に割り当てられた外部アクセス ポリシーの名前を Null 値 ($Null) に設定します。Null は "何もない" という意味です。言い換えれば、どの外部アクセス ポリシーも Alex に割り当てられていないということになります。どの外部アクセス ポリシーもユーザーに割り当てられていなければ、そのユーザーはグローバル ポリシーによって管理されます。
   
-Windows PowerShell を使用してユーザー アカウントを無効にするには、ビジネス オンラインのライセンスの Alex の Skype を削除するのには Azure Active Directory のコマンドレットを使用します。詳細については、 [Office 365 の PowerShell を使用してサービスへのアクセスを無効にする](assign-licenses-to-user-accounts-with-office-365-powershell.md)を参照してください。
+Windows PowerShell を使用してユーザー アカウントを削除するには、Azure Active Directory コマンドレットを使用して Alex の Skype for Business Online ライセンスを削除します。詳しくは、「[Office 365 PowerShell を使ったサービスへのアクセスを無効にする](assign-licenses-to-user-accounts-with-office-365-powershell.md)」をご覧ください。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

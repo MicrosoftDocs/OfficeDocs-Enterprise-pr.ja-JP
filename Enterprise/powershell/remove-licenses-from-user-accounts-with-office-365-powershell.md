@@ -16,18 +16,18 @@ ms.custom:
 - O365ITProTrain
 - DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: "ユーザーに以前割り当てられた Office 365 のライセンスを削除するのには Office 365 の PowerShell を使用する方法について説明します。"
+description: "Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。"
 ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
 
-**の概要:**ユーザーに以前割り当てられた Office 365 のライセンスを削除するのには Office 365 の PowerShell を使用する方法について説明します。
+**概要:** Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
@@ -37,7 +37,7 @@ ms.lasthandoff: 12/15/2017
     
   - [Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- 使用せず、 **Get MsolUser**コマンドレットを使用するかどうかは、_のすべて_パラメーターでは、最初の 500 個のアカウントのみが返されます。
+- _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
 ## <a name="the-short-version-instructions-without-explanations"></a>簡略版 (説明なしの手順)
 <a name="ShortVersion"> </a>
@@ -88,7 +88,7 @@ kakers@contoso.com
   Get-Content "<FileNameAndPath>" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
   ```
 
-この例で削除、 `litwareinc:ENTERPRISEPACK` C:\My Documents\Accounts.txt のテキスト ファイルで定義されているユーザー アカウントからの (Office 365 エンタープライズ E3) のライセンスです。
+この例では、テキスト ファイル C:\My Documents\Accounts.txt で定義されているユーザー アカウントから `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -124,7 +124,7 @@ Set-MsolUserLicense -UserPrincipalName BelindaN@litwareinc.com -RemoveLicenses "
 このコマンドを実行すると、Belinda Newman に Office 365 を使用するライセンスが付与された状態ではなくなります。
   
 > [!NOTE]
-> わかるように、削除するライセンスの名前を指定する必要があります_RemoveLicenses_パラメーターを使用するとします。よいかわからない場合、次のようにコマンドを実行するだけのユーザーにライセンスを割り当てるにはどのライセンス プランが使用されていました。`Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`
+> ご覧のように、_RemoveLicenses_ パラメーターを使用する場合は、削除するライセンスの名前を指定する必要があります。どのライセンス プランを使用してライセンスをユーザーに割り当てたのかわからない場合は、次のようなコマンドを実行します。`Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`
   
 ライセンスが本当に削除されていることを確認するには、Get-MsolUser を使用して対象のユーザー アカウントを確認します。
   
@@ -132,7 +132,7 @@ Set-MsolUserLicense -UserPrincipalName BelindaN@litwareinc.com -RemoveLicenses "
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
-Belinda の**isLicensed**プロパティ設定するプランではすべての場合、 `False`。
+すべてが予定どおりであれば、Belinda の **isLicensed** プロパティは `False` に設定されています。
   
 ```
 UserPrincipalName            DisplayName         isLicensed
@@ -170,6 +170,6 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
 
 ||
 |:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
+|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。 |
    
 

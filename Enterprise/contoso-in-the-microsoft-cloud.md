@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。"
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 この記事のリンクをクリックすると、パリに本社を置く世界規模の製造複合企業の Contoso Corporation が、クラウド包括型の IT インフラストラクチャを採用している方法と、ネットワーク、ID、セキュリティに関する主要な設計決定に対応している方法、およびエンタープライズ クラウド シナリオを導入してビジネスに関する問題に対処している方法を説明した複数の記事へ移動します。この情報を 11 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、または A3 とも表される) で印刷することもできます。
   
-[![マイクロソフト クラウド ポスターの contoso 社のつまみのイメージです。](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Microsoft Cloud ポスターの Contoso のサムネイル画像。](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 ![PDF ファイル](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Visio ファイル](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![他の言語のバージョンのページを参照してください](images/Common_Images/GlobeIcon.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54427)
   
@@ -67,11 +67,11 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > これらの記事は、Microsoft Cloud ポスターの Contoso 社の **2017 年 9 月** のリリースを反映しています。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

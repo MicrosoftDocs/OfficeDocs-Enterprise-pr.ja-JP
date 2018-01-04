@@ -14,13 +14,13 @@ ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "概要:Office 365 PowerShell を使用して、ポリシーが割り当てられている Skype for Business Online ユーザー アカウントのプロパティを管理します。"
 ms.openlocfilehash: 9b3877d2680b2b36d155cb5dd2a69fa21c972fe3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 
- **の概要:**Office 365 の PowerShell を使用すると、ポリシーを使用してオンライン ビジネスのユーザー アカウントのプロパティは、Skype を管理できます。
+ **概要:** Office 365 PowerShell を使用して、ポリシーが割り当てられている Skype for Business Online ユーザー アカウントのプロパティを管理します。
   
 Skype for Business Online のユーザー アカウントの多数のプロパティを管理するには、Office 365 PowerShell を使用してポリシーのプロパティとして指定する必要があります。
   
@@ -49,7 +49,7 @@ Import-PSSession $sfbSession
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
-次に、返されるはずです次のようなもの。
+これにより、次のように表示されるはずです。
   
 ```
 Identity                          : Tag:FederationAndPICDefault
@@ -67,7 +67,7 @@ EnableOutsideAccess               : True
     
 - **EnablePublicCloudAccess** は、ユーザーが Windows Live ユーザーと通信できるかどうかを示します。
     
-したがって、ユーザー アカウント (たとえば、**セット CsUser $True を EnableFederationAccess**) でのフェデレーションに関連するプロパティを直接変更するしません。代わりに、構成済みの目的のプロパティ値が含まれる外部アクセス ポリシー、アカウントを割り当てます。ユーザーがフェデレーション ユーザーおよびユーザーの Windows Live と通信できる場合、そのユーザー アカウント割り当てる必要がありますこれらの種類の通信を許可するポリシーです。
+つまり、ユーザー アカウント上のフェデレーション関連プロパティを直接変更したわけではなく (**Set-CsUser -EnableFederationAccess $True** など)、必要なプロパティ値が事前に構成された外部アクセス ポリシーをアカウントに割り当てただけです。ユーザーがフェデレーション ユーザーおよび Windows Live ユーザーと通信できるようにするには、ユーザー アカウントにこれらの種類の通信を可能にするポリシーを割り当てる必要があります。
   
 特定のユーザーが組織外部のユーザーと通信できるかどうかを知りたい場合は、次のようにする必要があります。
   
@@ -85,13 +85,13 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
   
 ただし、ポリシーを作成または変更するためのコマンドレットは存在しないため、Office 365 から事前に提供されているポリシーを使用する必要があります。他に使用可能なポリシーを調べたい場合は、次のコマンドを使用できます。
   
-- Get CsClientPolicy       
-- Get CsConferencingPolicy        
-- Get CsDialPlan            
-- Get CsExternalAccessPolicy                         
-- Get CsHostedVoicemailPolicy                        
-- Get CsPresencePolicy                               
-- Get CsVoicePolicy                                  
+- Get-CsClientPolicy       
+- Get-CsConferencingPolicy        
+- Get-CsDialPlan            
+- Get-CsExternalAccessPolicy                         
+- Get-CsHostedVoicemailPolicy                        
+- Get-CsPresencePolicy                               
+- Get-CsVoicePolicy                                  
 
 > [!NOTE]
 > Skype for Business Online ダイヤル プランは、名前以外はポリシーそのものです。「ダイヤル プラン」という名前は、Office Communications Server と Exchange との下位互換性を維持するために「ダイヤル ポリシー」の代わりに選択されたものです。 
@@ -103,7 +103,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> 使用可能なすべての音声ポリシーの一覧を返します。注意してください、ただし、すべてのユーザーにすべてのポリシーを割り当てることができます。ライセンスおよび地理的な場所に関連する各種の制限のためです。(いわゆる「[利用場所](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx)です。」)外部アクセス ポリシーおよび特定のユーザーに割り当てることができる会議ポリシーを確認する場合は、次のようにコマンドを使用します。 
+> このコマンドは、使用可能なすべての音声ポリシーのリストを返します。ただし、すべてのポリシーをすべてのユーザーに割り当てられるとは限らない点に注意してください。これは、ライセンスや地理的な位置など、さまざまな制限によります (いわゆる「[使用場所]((https://msdn.microsoft.com/ja-JP/library/azure/dn194136.aspx))」のことです)。特定のユーザーに割り当てることが可能な外部アクセス ポリシーと会議ポリシーを知りたい場合は、次のようなコマンドを使用します。 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -120,7 +120,7 @@ Skype for Business Online を使用している場合は、何らかのポリシ
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

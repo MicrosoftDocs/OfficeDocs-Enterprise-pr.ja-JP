@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Azure での SharePoint Server 2013 の障害復旧"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。"
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/15/2017
   
 ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-この記事では、以下の点が取り上げられています。
+この記事の内容
   
 - [障害復旧のための Azure インフラストラクチャ サービスの使用](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
     
@@ -191,7 +191,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
   
 - オンプレミス SharePoint ファームと Azure 内のウォーム スタンバイ ファームの 2 つの環境が並べて示されています。
     
-- 各環境には、ファイル共有が含まれています。
+- それぞれの環境には、ファイル共有が含まれます。
     
 - それぞれのファームには 4 つの層があります。高可用性を実現するため、各層には、フロント エンド サービス、分散キャッシュ、バック エンド サービス、データベースなど特定のロールに関して同じに構成されている 2 つのサーバーまたは仮想マシンが含まれています。この図では特定のコンポーネントの呼び出しが重要になるわけではありません。2 つのファームは同一に構成されています。
     
@@ -360,7 +360,7 @@ DFSR によるファイル レプリケーションを設定するには、DNS �
   
 **表: DFSR のリファレンス記事**
 
-|**タイトル**|**説明**|
+|**Title**|**説明**|
 |:-----|:-----|
 |[レプリケーション](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |レプリケーションに関するリンクが含まれる DFS 管理のための TechNet トピック  <br/> |
 |[DFS レプリケーション: サバイバル ガイド](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |DFS 情報へのリンクが含まれる Wiki  <br/> |
@@ -371,7 +371,7 @@ DFSR によるファイル レプリケーションを設定するには、DNS �
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>フェーズ 6: 復旧ファームに対するログ配布の設定
 <a name="Phase6"> </a>
 
-ログ配布は、この環境で障害復旧を設定するための重要なコンポーネントです。ログ配布を使用すると、データベースのトランザクション ログ ファイルをプライマリ データベース サーバー インスタンスからセカンダリ データベース サーバー インスタンスに自動的に送信できます。ログ配布を設定するには、「[Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)」をご覧ください。 
+ログ配布は、この環境で障害復旧を設定するための重要なコンポーネントです。ログ配布を使用すると、データベースのトランザクション ログ ファイルをプライマリ データベース サーバー インスタンスからセカンダリ データベース サーバー インスタンスに自動的に送信できます。ログ配布を設定するには、「[Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx))」をご覧ください。 
   
 > [!IMPORTANT]
 > SharePoint Server におけるログ配布サポートは、特定のデータベースに限定されています。詳しくは、「[サポートされている SharePoint データベース用の高可用性と障害復旧のオプション (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)」をご覧ください。 
@@ -448,7 +448,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
   
 フル クロールを開始するには、以下のステップを実行します。
   
-1. SharePoint 2013 のサーバーの管理では、**アプリケーションの管理**に移動 > **サービス アプリケーション**の > **サービス アプリケーションの管理**、検索サービス アプリケーションをクロールする] をクリックします。
+1. SharePoint 2013 サーバーの全体管理で、**[アプリケーション管理]** > **[サービス アプリケーション]** > **[サービス アプリケーションの管理]** と移動し、クロールする Search Service アプリケーションをクリックします。
     
 2. [ **検索管理**] ページで、[ **コンテンツ ソース**] をクリックし、必要なコンテンツ ソースをポイントしてから矢印をクリックし、[ **フル クロールの開始**] をクリックします。
     
@@ -504,7 +504,7 @@ SharePoint ファームに対する外部アクセスの場合には、外部 DN
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft の概念実証環境
 <a name="POC"> </a>
 
-このソリューションの概念実証環境に関して、既に設計とテストが行われてきました。テスト環境の設計目標は、お客様の環境に存在する可能性がある SharePoint ファームを展開して復旧することでした。いくつかの前提条件を設けましたが、ファームはカスタマイズを行わないですぐにすべての機能を使用できる状態で提供される必要があることが分かりました。このトポロジは、フィールドと製品のグループに基づくベスト プラクティス ガイダンスを使用して高可用性を確保するために設計されました。
+このソリューションの概念実証環境に関して、既に設計とテストが行われてきました。テスト環境の設計目標は、お客様の環境に存在する可能性がある SharePoint ファームを展開して復旧することでした。いくつかの前提条件を設けましたが、ファームはカスタマイズを行わないですぐにすべての機能を使用できる状態で提供される必要があることがわかりました。このトポロジは、フィールドと製品のグループに基づくベスト プラクティス ガイダンスを使用して高可用性を確保するために設計されました。
   
 次の表に、オンプレミス テスト環境用に作成して構成した Hyper-V 仮想マシンについて取り上げます。
   
@@ -645,7 +645,7 @@ Web アプリケーションで使用されるアプリケーション プール
   
 ### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>サイト コレクションでカスタム用語セットが使用できない
 
-コンテンツのサイト コレクションと、コンテンツ タイプ ハブの間で不足しているサービス アプリケーションの関連付けを確認します。[さらに、**管理されたメタデータの<site collection name>接続**のプロパティ] 画面で、このオプションが有効になっているかどうかを確認:**このサービス アプリケーションは、列固有の用語セットの既定の保存場所**。
+コンテンツ サイト コレクションとコンテンツ タイプ ハブ間でサービス アプリケーションの関連付けが不足していないか確認します。また、**[管理されたメタデータ] - <site collection name>[接続]** プロパティ画面で、次のオプションが有効になっていることを確認します: **[このサービス アプリケーションは、列固有の用語セットの既定の保存場所です]**。
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell コマンドによって、「用語 'Get-ADForest' は、コマンドレット、関数、スクリプト ファイル、操作可能なプログラムのいずれの名前としても認識されません。」というエラーが生成される
 
@@ -681,14 +681,14 @@ DNS の変更は、必ずしもすべてのクライアントにすぐに表示�
 Ipconfig /flushdns
 ```
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>追加リソース
 <a name="Troubleshooting"> </a>
 
 [サポートされている SharePoint データベース用の高可用性と障害復旧のオプション (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)
   
 [SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 <a name="Troubleshooting"> </a>
 

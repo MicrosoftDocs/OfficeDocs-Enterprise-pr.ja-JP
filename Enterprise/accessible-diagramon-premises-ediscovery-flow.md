@@ -12,13 +12,13 @@ ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: "この記事は、「オンプレミスの電子情報開示のフロー」という名前の図のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: de94fc2af94df47a83f4a7847a84cd18131f637e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>アクセス可能な図 - オンプレミスの電子情報開示のフロー
 
-**の概要:**この資料は、図の設置型電子的証拠開示の流れをという名前のアクセス可能なテキスト バージョンです。
+**概要:** この記事は、「オンプレミスの電子情報開示のフロー」という名前の図のアクセス可能なテキスト バージョンです。
   
 このポスターは、サーバー製品間のデータのアーキテクチャとフローについて詳しく説明しています。 
   

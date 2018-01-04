@@ -20,7 +20,7 @@ ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "概要: Microsoft クラウド サービスとプラットフォームの ID ソリューションを設計します。"
 ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 12/15/2017
   
 この記事では、Microsoft クラウド サービスとプラットフォームを使用して、組織の ID を設計する上で IT アーキテクトが知る必要のある事柄を説明します。この記事を 5 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、または A3 とも表される) で印刷することもできます。
   
-[![マイクロソフト クラウドの識別情報モデルのイメージをつまみ](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+[![Microsoft クラウド ID モデルのサムネイル画像](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54431)
+![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54431)
   
-すべての[マイクロソフトのクラウドの IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)でモデルを表示しを機械に通す[マイクロソフトのエンタープライズ ・ クラウド ・ ロードマップ: IT 意思決定者のためのリソース](https://aka.ms/cloudarchitecture)。
+すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。
   
 > [!NOTE]
-> この資料では、**エンタープライズ設計者向けのマイクロソフトのクラウド id**の投稿者の 2016年 1 月のバージョンが反映されます。2016年 4 月の変更または投稿者のそれ以降のバージョンがありません。
+> この記事は「**エンタープライズ アーキテクトのための Microsoft クラウド ID**」ポスター (2016 年 1 月版) を反映しています。ポスターの 2016 年 4 月以降の版の変更点は含まれていません。
   
 ## <a name="designing-identity-for-the-microsoft-cloud"></a>Microsoft クラウドの ID を設計する
 
@@ -66,7 +66,7 @@ Azure AD には 3 つのエディションがあります。それは、無料�
 ||||
 |:-----|:-----|:-----|
 |**無料** <br/> |**基本** <br/> |**プレミアム** <br/> |
-| ユーザー アカウントの管理 <br/>  オンプレミスのディレクトリと同期する <br/>  Azure、Office 365、何千もの他の人気のある SaaS アプリケーション (Salesforce、Workday、Concur、DocuSign、Google アプリ、Box、ServiceNow、Dropbox など) 間でのシングル サインオン <br/> | 無料エディションのすべての機能に加え、以下が含まれます。 <br/>  会社のブランド化 <br/>  グループベースのアプリケーションへのアクセス <br/>  セルフサービスによるパスワードのリセット <br/>  99.9% のエンタープライズ SLA <br/> | 無料と基本エディションのすべての機能に加え、以下が含まれます。 <br/>  セルフサービスによるグループの管理 <br/>  高度なセキュリティ レポートと警告 <br/>  多要素認証 <br/>  オンプレミス AD DS へのライトバックによるパスワードのリセット <br/>  Azure AD Connect ツールの双方向同期 <br/>  Azure AD アプリケーション プロキシ <br/>  Microsoft Forefront Identity Manager (MIM) <br/> |
+| 	ユーザー アカウントの管理 <br/>  オンプレミスのディレクトリと同期する <br/>  Azure、Office 365、何千もの他の人気のある SaaS アプリケーション (Salesforce、Workday、Concur、DocuSign、Google アプリ、Box、ServiceNow、Dropbox など) 間でのシングル サインオン <br/> | 無料エディションのすべての機能に加え、以下が含まれます。 <br/>  会社のブランド化 <br/>  グループベースのアプリケーションへのアクセス <br/>  セルフサービスによるパスワードのリセット <br/>  99.9% のエンタープライズ SLA  <br/> | 無料と基本エディションのすべての機能に加え、以下が含まれます。 <br/>  セルフサービスによるグループの管理 <br/>  	高度なセキュリティ レポートと警告 <br/>  	多要素認証 <br/>  オンプレミス AD DS へのライトバックによるパスワードのリセット <br/>  Azure AD Connect ツールの双方向同期 <br/>  Azure AD アプリケーション プロキシ <br/>  	Microsoft Forefront Identity Manager (MIM) <br/> |
    
 バージョンについて詳しくは、「[Azure Active Directory のエディション](https://go.microsoft.com/fwlink/p/?LinkId=524280)」をご覧ください。
   
@@ -255,7 +255,7 @@ Azure インフラストラクチャ サービスの仮想マシンで実行さ�
 
 クラウドで実行するアプリケーションを設計および開発する際は、必要な資格情報のセットなど、認証プロセスのユーザー エクスペリエンスが一貫したものになるようにする必要があります。たとえば、Windows の資格情報を使用する場合、Azure AD や拡張 AD DS のどちらであろうと、ユーザーがすばやく認証を行い、タスクに集中できるようにします。
   
-![クラウド ID とのアプリケーションの統合](images/1e6304b0-fa15-4f80-a3b4-7507a28808ae.png)
+![アプリケーションをクラウド ID と統合する](images/1e6304b0-fa15-4f80-a3b4-7507a28808ae.png)
   
  **図 7:アプリケーションをクラウド ID と統合する**
   
@@ -363,11 +363,11 @@ Azure AD Connect ツールは、Azure 仮想ネットワーク上のクラウド
     
 詳しくは「[オンプレミスの ID を Azure Active Directory と統合する](https://go.microsoft.com/fwlink/p/?LinkId=524307)」をご覧ください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

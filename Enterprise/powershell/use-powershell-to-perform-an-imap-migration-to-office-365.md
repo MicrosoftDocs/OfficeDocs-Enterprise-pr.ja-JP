@@ -14,13 +14,13 @@ ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "概要:Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。"
 ms.openlocfilehash: 6187207d57723c9c69fa6fdc7885c91de6d5080f
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell を使用した Office 365 への IMAP 移行の実行
 
- **の概要:**Windows PowerShell を使用して Office 365 に IMAP を移行する方法について説明します。
+ **概要:** Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。
   
 Office 365 を展開するプロセスの一部として、Internet Mail Access Protocol (IMAP) 電子メール サービスから Office 365 に、ユーザーのメールボックスの内容を移行することができます。この記事では、Exchange Online PowerShell を使用した電子メールの IMAP 移行作業を順を追って説明します。 
   
@@ -60,7 +60,7 @@ IMAP の移行には次の制限が適用されます。
     
 - **IMAP 組織内のメールボックスにアクセスする管理者アカウントのアクセス許可を割り当てます**。CSV ファイルで管理者の資格情報を使用する場合は、使用するアカウントに、社内メールボックスへのアクセスに必要なアクセス許可が必要になります。ユーザーのメールボックスへのアクセスに必要なアクセス許可は、特定の IMAP サーバーによって決定されます。 
     
-- **Exchange オンラインの PowerShell コマンドレットを使用するのに**は、サインインして、ローカルの Windows PowerShell セッションにコマンドレットをインポートする必要があります。手順については、[リモート PowerShell を使用して Exchange Online への接続](https://go.microsoft.com/fwlink/p/?LinkId=534121)を参照してください。
+- **Exchange Online PowerShell コマンドレットを使用するには**、サインインしてコマンドレットをローカルの Windows PowerShell セッションにインポートする必要があります。手順については、「[リモート PowerShell による Exchange への接続](https://go.microsoft.com/fwlink/p/?LinkId=534121)」を参照してください。
     
     移行コマンドの完全な一覧については、「[移動と移行のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=534750)」を参照してください。
     
@@ -238,7 +238,7 @@ Get-MigrationBatch IMAPBatch1"
   
 **Get-MigrationBatch** コマンドレットの詳細については、「[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)」を参照してください。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

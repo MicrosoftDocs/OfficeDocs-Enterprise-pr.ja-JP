@@ -19,7 +19,7 @@ ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。"
 ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,12 +29,12 @@ ms.lasthandoff: 12/15/2017
   
 この記事には、Microsoft のクラウド サービスとプラットフォームを使用して、組織のためのネットワークを設計する上で IT アーキテクトが知る必要のある事柄について説明する一連の記事へのリンクがあります。この情報を 12 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、A3 としても表される) で印刷することもできます。
   
-[![マイクロソフト クラウド ネットワーク モデルのイメージをつまみ](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Microsoft クラウドのネットワーク モデルのサムネイル画像](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54425)
   
-すべての[マイクロソフトのクラウドの IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)でモデルを表示しを機械に通す[マイクロソフトのエンタープライズ ・ クラウド ・ ロードマップ: IT 意思決定者のためのリソース](https://aka.ms/cloudarchitecture)。
+すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。
   
 次のセクションを参照してください。
   
@@ -62,16 +62,16 @@ ms.lasthandoff: 12/15/2017
     
     サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。
     
-このポスターの主なポイントの 30 分間の概要、[マイクロソフトのクラウド サービスのネットワークの最適化](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)の Microsoft 仮想アカデミー コースを参照してください。
+このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する]((https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743))」Microsoft Virtual Academy コースをご覧ください。
   
 > [!NOTE]
-> これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2017 年 6 月** リリースを反映しています。
+> これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2017 年 6 月**リリースを反映しています。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

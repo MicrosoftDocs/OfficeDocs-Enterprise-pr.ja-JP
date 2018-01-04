@@ -18,7 +18,7 @@ ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: "概要: Azure Access Control Service を使用して、SharePoint Server 2013 ユーザーを Azure Active Directory で認証する方法について説明します。"
 ms.openlocfilehash: 85db8376aeb06ef6f291b563410c991ea24351d5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -101,9 +101,9 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
 
 以下のステップを使用して、新しい WS-Federation ID プロバイダーを blueskyabove 名前空間に追加します。
   
-1. Azure 管理ポータルでは、 **Active Directory**にアクセス > **アクセス制御名前空間**では、**新規インスタンスの作成**] をクリックし、し、[**管理**] をクリックします。
+1. Azure 管理ポータルで **[Active Directory]** > **[Access Control 名前空間]** と移動し、**[新しいインスタンスの作成]**、**[管理]** の順にクリックします。
     
-2. Azure アクセス制御ポータルの [ **Id プロバイダー**] をクリックします > **追加**、次の図に示すようにします。
+2. Azure Access Control ポータルで、次の図に示されているように **[ID プロバイダー]** > **[追加]** とクリックします。
     
      ![Azure の [ID プロバイダー] ダイアログ ボックス](images/Identity.jpg)
   
@@ -123,7 +123,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
   
 1. Azure Access Control ポータルで、次の図に示されているように [ **証明書利用者アプリケーション**]、[ **追加**] の順にクリックします。
     
-     ![依存しているパーティのアプリケーションの設定](images/RelyingPartyApplications.jpg)
+     ![証明書利用者アプリケーションの設定](images/RelyingPartyApplications.jpg)
   
 ## <a name="create-a-self-signed-certificate-to-use-for-ssl"></a>SSL に使用するための自己署名入り証明書の作成
 
@@ -200,7 +200,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
 5. X509Certificate 情報を、フォルダー C:\\Certificates に **AcsTokenSigning.cer** というファイル名で保存します。
     
     > [!NOTE]
-    > このファイル名は, .cer 拡張子を付けて保存する必要があります。 
+    > このファイル名は、.cer 拡張子を付けて保存する必要があります。 
   
      ![X509Certificate 要素をファイルとして保存する](images/X509Cert_Save.jpg)
   
@@ -208,7 +208,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
 
 以下のステップを使用して、Windows PowerShell によってクレーム マッピングを作成します。
   
-次のメンバーシップがあることを確認してください。
+次のメンバーシップがあることを確認します。
   
 1. SQL Server インスタンスにおける **securityadmin** 固定サーバー ロール。
     
@@ -219,7 +219,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
 管理者は **Add-SPShellAdmin** コマンドレットを使用して、SharePoint 2013のコマンドレットを使用する権限を付与できます。
   
 > [!NOTE]
-> アクセス許可がない場合、セットアップ管理者または SQL Server 管理者に連絡してアクセス許可を要求してください。Windows PowerShell アクセス許可について詳しくは、「[Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)」をご覧ください。 
+> アクセス許可がない場合、セットアップ管理者または SQL Server 管理者に連絡してアクセス許可を要求してください。Windows PowerShell アクセス許可について詳しくは、「[Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx))」をご覧ください。 
   
 1. [ **スタート**] メニューから、[ **すべてのプログラム**] をクリックします。
     
@@ -261,7 +261,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
 
 以下のステップを使用して、ご使用の SharePoint インストール環境を、Azure AD の新しい ID プロバイダーに対して構成します。
   
-1. この手順を実行するユーザー アカウントが、ファーム管理者 SharePoint グループのメンバーであることを確認してください。
+1. この手順を実行しようとしているユーザー アカウントが、Farm Administrators SharePoint グループのメンバーであることを確認します。
     
 2. サーバーの全体管理 のホーム ページで [ **アプリケーション構成の管理**] をクリックします。
     
@@ -311,7 +311,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
     
      ![サインイン ダイアログ ボックスに新しい信頼できるプロバイダーが表示されている図](images/BlueSkyAbove.jpg)
   
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>追加リソース
 
 [WS-Federation について](https://go.microsoft.com/fwlink/p/?linkid=188052)
   
@@ -322,7 +322,7 @@ SharePoint 2013 のアクセシビリティについては、「[SharePoint 2013
 |**お問い合わせ**|**説明**|
 |:-----|:-----|
 |**必要なソリューション** <br/> |複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。<br/> |
-|**ソリューションのディスカッションへの参加** <br/> |クラウド ・ ベースのソリューションに熱心である場合、クラウド採用アドバイザリー ボード (CAAB) Microsoft コンテンツ開発者、業界の専門家、および世界中のお客様より大規模で活気のあるコミュニティに接続するために参加を検討してください。参加するには、マイクロソフトのテクニカル コミュニティの[CAAB (クラウド導入の諮問委員会) の空き領域](https://aka.ms/caab)のメンバーとして自分自身を追加し、 [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!)でのクイック メールを送信します。[CAAB のブログ](https://blogs.technet.com/b/solutions_advisory_board/)上のコミュニティに関連するコンテンツをだれでも読み取ることができます。ただし、CAAB のメンバーは、新しいクラウド導入リソースとソリューションについて説明するプライベートのウェビナーへの招待を取得します。<br/> |
-|**記載されているアートの取得方法** <br/> |参照してくださいアートの編集可能なコピーを実行する場合に、私たちに送信するようになります。[Cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)に、アートのタイトルと URL を含む、要求を電子メールで送信します。<br/> |
+|**ソリューションのディスカッションへの参加** <br/> |クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の [CAAB (Cloud Adoption Advisory Board) スペース]((https://aka.ms/caab))のメンバーとしてご自分を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!) 宛に電子メールを送信してください。[CAAB ブログ]((https://blogs.technet.com/b/solutions_advisory_board/))でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。<br/> |
+|**記載されているアートの取得方法** <br/> |この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記述した電子メールを [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20) に送信してください。<br/> |
    
 

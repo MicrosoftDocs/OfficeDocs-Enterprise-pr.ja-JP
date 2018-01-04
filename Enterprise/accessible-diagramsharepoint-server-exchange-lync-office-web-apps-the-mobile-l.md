@@ -11,13 +11,13 @@ ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: "この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: 4f93ea633d6d93e8a6a3e7828264b6253dfbcf56
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>アクセス可能な図 - SharePoint Server、Exchange、Lync、Office Web Apps - モバイルの展望
 
-**の概要:**この資料は、[技術関連の図](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)で使用できる Microsoft Exchange 2013 プラットフォームのオプションをという名前のダイアグラムのアクセシブルなテキスト バージョンです。
+**概要:** この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
   
 このポスターは、SharePoint Server、Lync、Exchange Server、および Office Web Apps の、アプリケーションとモバイル ブラウザ ベースの展望のレイアウトの詳細を示します。以下の情報も含まれます。 
   
@@ -210,7 +210,7 @@ Exchange のクライアント アクセス サーバー (CAS) は、Exchange Ac
   
 フロント エンド サーバー上で、自動検出サービスはユーザーのホーム プール用の Web サービス URL を取得し、その情報をリバース プロキシ サーバーを経由してモバイル デバイスに返します。自動検出サービスにより、モバイル デバイスはユーザーに手動の URL 入力を求めることなく、Lync Server Web サービスを特定できます。
   
-モバイル デバイスがファイアウォールの内側にログオンする場合、HTTPS Get コマンドは、LyncDiscoverInternal.com などの Lync フロント エンド プールに直接送信されます。要求は、自動検出サービスがモバイル デバイスへの返信に使用するものと同じポートである、443 番ポートで受信されます。
+モバイル デバイスがファイアウォール内にログオンすると、LyncDiscoverInternal.com などの Lync フロント エンド プールへ HTTPS Get コマンドが直接送信されます。この要求は、モバイル デバイスへの返信に自動検出サービスが使用するのと同じポート 443 で受信されます。
   
 モビリティをサポートするために、LyncDiscover.contoso.com 用に 1 つと LyncDiscoverInternal.com 用に 1 つの、2 つの DNS レコードを構成する必要があります。外部 FQDN はファイアウォールの外側のみからアクセス可能にする必要があります。内部 FQDN はファイアウォールの内側のみからアクセス可能にする必要があります。
   

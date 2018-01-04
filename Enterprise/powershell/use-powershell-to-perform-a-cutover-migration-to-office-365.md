@@ -14,13 +14,13 @@ ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "概要:Windows PowerShell を使用して Office 365 の一括移行を実行する方法について説明します。"
 ms.openlocfilehash: be5a3587538c32589c20fe6d27d69a84e0b8e7db
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell を使用して Office 365 へのカットオーバーの移行を実行する
 
- **の概要:**Office 365 にカット オーバー移行を実行する Windows PowerShell を使用する方法について説明します。
+ **概要:** Windows PowerShell を使用して Office 365 の一括移行を実行する方法について説明します。
   
 一括移行を使用すると、移行元の電子メール システムから Office 365 へユーザーのメールボックスの内容を一度に移行できます。この記事では、Exchange Online PowerShell を使用した電子メールの一括移行の作業を順を追って説明します。 
   
@@ -63,7 +63,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
     
   - 企業ネットワークの外部から Microsoft Outlook を使用して、社内 Exchange メールボックスに接続します。
     
-  - Microsoft [Exchange リモート接続アナライザー](https://www.testexchangeconnectivity.com/)を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
+  - Microsoft [Exchange リモート接続アナライザー]((https://www.testexchangeconnectivity.com/))を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
     
   - Exchange Online PowerShell で次のコマンドを実行します。
     
@@ -217,7 +217,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
 - **社内の Exchange サーバーの使用を停止します。**すべての電子メールが Office 365 メールボックスに直接ルーティングされていることを確認した後、社内の電子メール組織を維持する必要がもはやないか、シングル サインオン (SSO) ソリューションを実装する予定がない場合は、Exchange をサーバーからアンインストールするとともに、社内の Exchange 組織を削除することができます。
     
-    詳細については、以下のトピックを参照してください。
+    詳細については、以下を参照してください。
     
   - 「[Exchange 2010 の変更または削除](https://go.microsoft.com/fwlink/?LinkId=217936)」
     

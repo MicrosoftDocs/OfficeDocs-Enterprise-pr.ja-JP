@@ -15,24 +15,24 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Office 365 の PowerShell を使用して削除し、Office 365 ユーザー アカウントを復元する方法について説明します。"
+description: "Office 365 PowerShell を使用した Office 365 ユーザー アカウントの削除と復元の方法について説明します。"
 ms.openlocfilehash: 8404395ea9594cea1a2e772cecbeb011756b7754
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用したユーザー アカウントの削除と復元
 
-**の概要:** Office 365 の PowerShell を使用して削除し、Office 365 ユーザー アカウントを復元する方法について説明します。
+**概要:** Office 365 PowerShell を使用した Office 365 ユーザー アカウントの削除と復元の方法について説明します。
   
 Office 365 PowerShell を使用してユーザー アカウントを削除する場合、アカウントは完全には削除されません。削除されたユーザー アカウントは 30 日以内であれば復元できます。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
-- 使用せず、 **Get MsolUser**コマンドレットを使用するかどうかは、_のすべて_パラメーターでは、最初の 500 個のアカウントのみが返されます。
+- _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
 ## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Office 365 PowerShell を使用して、個々のユーザー アカウントへのアクセスをブロックする
 <a name="ShortVersion"> </a>
@@ -74,7 +74,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>Azure Active Directory V2 PowerShell モジュールを使用したユーザー アカウントの削除
 <a name="ShortVersion"> </a>
 
-Azure Active Directory V2 PowerShell モジュールから**削除 AzureADUser**コマンドレットを使用するには、まずお客様のサブスクリプションに接続する必要があります。この手順では、 [Azure Active Directory V2 PowerShell モジュールを使用して接続](https://go.microsoft.com/fwlink/?linkid=842218)を参照してください。
+Azure Active Directory V2 PowerShell モジュールから **Remove-AzureADUser** コマンドレットを使用するには、まず自分のサブスクリプションに接続してください。手順については、「[Azure Active Directory V2 PowerShell モジュールを使用した接続](https://go.microsoft.com/fwlink/?linkid=842218)」を参照してください。
   
 接続したら、以下の構文を使用してユーザー アカウントを個別に削除します。
   
@@ -115,7 +115,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 ## <a name="see-also"></a>関連項目
 <a name="SeeAlso"> </a>
 
-Office 365 の PowerShell でユーザーを管理する方法は次のトピックを参照してください。
+Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
   
 - [Office 365 PowerShell を使用してユーザー アカウントを作成する](create-user-accounts-with-office-365-powershell.md)
     

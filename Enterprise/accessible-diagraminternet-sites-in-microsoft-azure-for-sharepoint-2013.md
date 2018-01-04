@@ -12,13 +12,13 @@ ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: "この資料は、「SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。"
 ms.openlocfilehash: 7713d4e91f97a1b4139510f6a7c320c69ace43cf
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>アクセス可能な図 - SharePoint 2013 のための Microsoft Azure のインターネット サイト
 
-**の概要:**この資料は、SharePoint 2013 のインターネットのサイトで、Microsoft Azure をという名前のダイアグラムのアクセシブルなテキスト バージョンです。
+**概要:** この資料は、「SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。
   
 このポスターは、一般向けインターネット サイトがクラウドの弾力性と顧客アカウント用の Microsoft Azure AD を活用することで得られるメリットについて説明し、図解しています。Azure からインターネット サイトが得られるメリットを説明する 6 つの異なるシナリオがあります。 
   
@@ -82,7 +82,7 @@ SharePoint ファームを Azure プラットフォームで可用性セット�
     
 - 3 つのアプリケーション サーバーの構成は同一ではありません。これらのサーバー ロールに関しては、Azure で可用性セット用に微調整が必要です。 
     
-### <a name="before"></a>前
+### <a name="before"></a>Before
 
 図の上部は、Azure で可用性セット用に微調整される前の SharePoint ファームを示しています。図の 3 つのホスト アプリケーション サーバーは同一の構成ではありません。コンポーネントの数は、ファームのパフォーマンスとパフォーマンスの目標によって決定されます。3 台のサーバーが次のように構成されています。 
   
@@ -92,7 +92,7 @@ SharePoint ファームを Azure プラットフォームで可用性セット�
     
 - ホスト F アプリケーション サーバーは、クロールおよびコンテンツ処理の役割で構成されます。 
     
-### <a name="after"></a>後
+### <a name="after"></a>After
 
 図のこの部分は、Azure で可用性セット用に微調整された後の SharePoint ファームを示しています。Azure でこのアーキテクチャを採用するには、3 つすべてのサーバーで 4 つのコンポーネントのレプリカを作成します。これにより、パフォーマンスとキャパシティに関して必要とされる以上にコンポーネント数が増えます。これは、これら 3 つの仮想マシンが 1 つの可用性セットに割り当てられる場合に、この設計で Azure プラットフォームの 4 つすべてのコンポーネントの高可用性を確保するためのトレードオフとなります。 
   
@@ -102,7 +102,7 @@ SharePoint ファームを Azure プラットフォームで可用性セット�
 
 すべての SharePoint ソリューションに Windows Active Directory ドメイン サービス (AD DS) が必要です。現在、Azure の SharePoint ソリューションには次の 2 つの選択肢があります。 
   
-- オプション 1: 専用ドメイン  Azure に対して専用で独立したドメインを展開し、SharePoint ファームをサポートできます。一般のインターネット サイトに適しています。 
+- オプション 1: 専用ドメイン  Azure に対して専用で独立したドメインを展開し、SharePoint ファームをサポートできます。一般のインターネット サイトに適しています。 
     
 - オプション 2: サイト間 VPN 接続を使用してオンプレミス ドメインを拡張します。サイト間 VPN 接続を介してオンプレミス ドメインを拡張すると、ユーザーはオンプレミスでホストされている場合と同じように SharePoint ファームにアクセスできます。既存の Active Directory および DNS の実装を活用できます。 
     

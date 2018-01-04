@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "概要:Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online の Office 365 PowerShell コマンドレット リファレンスに関するトピックを示します。"
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Office 365 サービスのコマンドレット リファレンス
 
- **の概要:**Azure Active Directory、Exchange のオンライン、SharePoint Online では、および Skype のオンライン ビジネスで Office 365 の PowerShell コマンドレットのリファレンス トピックを検索します。
+ **概要:** Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online の Office 365 PowerShell コマンドレット リファレンスに関するトピックを示します。
   
-さまざまな Office 365 サービスのコマンドレットのリファレンス トピックでは、各コマンドレットを使用する方法の詳細な情報および指示を提供します。Addiitonally、PowerShell のサポートをされている Office 365 サービスには、別の接続手順が必要です。
+Office 365 のさまざまなサービスのコマンドレット リファレンス トピックでは、各コマンドレットを使用する方法の詳細な情報と手順を提供します。また、PowerShell がサポートされている各 Office 365 サービスには、それぞれ異なる接続手順が必要です。
   
 > [!NOTE]
 > 一度にすべてのサービスに接続する場合、「[単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)」を参照してください。 
@@ -37,9 +37,9 @@ Office 365 PowerShell の接続手順については、「[Office 365 PowerShell
   
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>セキュリティ センターとコンプライアンス センターの PowerShell コマンドレット
 
-Office 365 のセキュリティ&amp;コンプライアンス センター コマンドレットのリファレンス トピックは、セキュリティである&amp;は、TechNet ライブラリのコンプライアンス センター PowerShell の領域です。切り替えるをクリックして[Office 365 のセキュリティ&amp;コンプライアンス センター コマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=627085)。
+Office 365 のセキュリティ センター&amp;コンプライアンス センターのコマンドレット リファレンス トピックは、TechNet ライブラリのセキュリティ センター&amp;コンプライアンス センターの PowerShell 領域にあります。参照するには、「[Office 365 セキュリティ センター&amp;コンプライアンス センターのコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=627085)」をクリックします。
   
-接続手順については、セキュリティの&amp;コンプライアンス センター PowerShell をクリックして[Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](https://go.microsoft.com/fwlink/p/?LinkId=627084)です。
+セキュリティ センター&amp;コンプライアンス センターの PowerShell の接続手順については、「[リモート PowerShell を使用して、Office 365 セキュリティ センター&amp;コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/p/?LinkId=627084)」をクリックします。
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online の PowerShell コマンドレット
 
@@ -62,7 +62,7 @@ Skype for Business Online コマンドレット リファレンス トピック�
   
 Skype for Business Online の PowerShell の接続手順については、「[Windows PowerShell を使用した Lync Online への接続](https://go.microsoft.com/fwlink/p/?LinkId=691607)」をクリックします。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

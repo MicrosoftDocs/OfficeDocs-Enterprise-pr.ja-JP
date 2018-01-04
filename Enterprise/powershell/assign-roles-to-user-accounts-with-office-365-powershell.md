@@ -18,15 +18,15 @@ ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: "概要:Office 365 PowerShell と Add-MsolRoleMember コマンドレットを使用して、ユーザー アカウントにロールを割り当てます。"
 ms.openlocfilehash: 673a71fb2f85515276e94767ed3f9dd40655dfea
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
 
- **の概要:**ユーザー アカウントにロールを割り当てるには、Office 365 の PowerShell および**追加 MsolRoleMember**コマンドレットを使用します。
+ **概要:** Office 365 PowerShell と **Add-MsolRoleMember** コマンドレットを使用して、ユーザー アカウントにロールを割り当てます。
   
-できます迅速かつ容易にロールを割り当てるユーザー アカウントの表示名およびロール名を識別することによって Office 365 の PowerShell を使用してユーザー アカウントにします。
+ユーザー アカウントの表示名とロール名を識別すれば、Office 365 PowerShell を使用してロールをユーザー アカウントに迅速かつ簡単に割り当てることができます。
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/15/2017
   
 - 構成するユーザー アカウント。
     
-    ユーザー アカウントを指定するには、その表示名を決定します。アカウントを完全なリストを取得するには、このコマンドを使用します。
+    ユーザー アカウントを指定するには、その表示名を判別する必要があります。アカウントの完全な一覧を取得するには、次のコマンドを使用します。
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
@@ -68,7 +68,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-コマンドをコピーし、メモ帳に貼り付けます。**$DispName**と**$roleName**の変数の説明のテキストのそれらの値を削除、\<と > 文字、および引用符のままにします。変更後の行をコピーし、それらを実行するのには、Windows Azure Active Directory モジュールを Windows PowerShell のウィンドウに貼り付けます。また、Windows PowerShell 統合スクリプト環境 (ISE) を使用することができます。
+コマンドをコピーし、メモ帳に貼り付けます。**$dispName** 変数と **$roleName** 変数に関しては、説明テキスト部分を値に置き換えて、\< 記号と > 記号を削除します。引用符はそのまま残します。変更後の行をコピーし、[Windows PowerShell 用 Windows Azure Active Directory モジュール] ウィンドウに貼り付けて実行します。または、Windows PowerShell 統合スクリプト環境 (ISE) を使用することができます。
   
 コマンド セットの完成例を以下に示します。
   
@@ -90,7 +90,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    このコマンドは、一度に 1 つの画面の表示名順に並べ替え、すべてのユーザー アカウントの表示名を一覧表示します。**ある**コマンドレットを使用してサイズを小さく設定するリストをフィルター処理できます。例を以下に示します。
+    このコマンドにより、すべてのユーザー アカウントの表示名の一覧が、表示名順に並び替えられて、一度に 1 画面ずつ示されます。**Where** コマンドレットを使用すると、一覧をフィルター処理して、出力するセットを小さくできます。次に例を示します。
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
@@ -123,7 +123,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 
@@ -134,5 +134,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
 #### 
 
-[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
+[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))
 

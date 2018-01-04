@@ -14,13 +14,13 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: "概要:Office 365 の Windows PowerShell を使用して顧客テナンシーを管理します。"
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 テナントを管理する
 
- **の概要:**顧客 tenancies を管理するために Office 365 の Windows PowerShell を使用します。
+ **概要:** Office 365 の Windows PowerShell を使用して顧客テナンシーを管理します。
   
 Windows PowerShell を使うと、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナー は、Office 365 管理センター で使うことができない顧客テナンシー設定を簡単に管理してレポートすることができます。パートナー管理者アカウントが顧客テナンシーに接続するためには、「代理で管理」(AOBO) のアクセス許可が必要であることに注意してください。
   
@@ -56,7 +56,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>テナントのすべてのドメインを一覧表示する
 
-任意の 1 つの顧客のテナントのすべてのドメインを取得するには、このコマンドを実行します。交換_<customer TenantId value>_実際の値とします。
+任意の 1 つの顧客テナントの全ドメインを取得するには、次のコマンドを実行します。_<customer TenantId value>_ を実際の値に置き換えます。
   
 ```
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -74,7 +74,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>テナントの全ユーザーを取得する
 
-特定テナントの**UserPrincipalName**、**表示名**、およびすべてのユーザーの**isLicensed**の状態が表示されます。交換_<customer TenantId value>_実際の値とします。
+これにより、特定のテナントの全ユーザーの **UserPrincipalName**、**DisplayName**、および **isLicensed** の状態が表示されます。_<customer TenantId value>_ を実際の値に置き換えます。
   
 ```
 Get-MsolUser -TenantID <customer TenantId value>
@@ -82,7 +82,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>ユーザーに関するすべての詳細を取得する
 
-特定のユーザーのすべてのプロパティを表示する場合は、このコマンドを実行します。交換_<customer TenantId value>_と_<user principal name value>_実際の値とします。
+特定のユーザーのすべてのプロパティを表示する場合は、次のコマンドを実行します。_<customer TenantId value>_ と _<user principal name value>_ を実際の値に置き換えます。
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -98,7 +98,7 @@ Office 365 ユーザーの一括作成、構成、およびライセンス付与
   
 -  `UserPrincipalName,FirstName,LastName,DisplayName,Password,TenantId,UsageLocation,LicenseAssignment`
     
-ここで
+各部分の意味は次のとおりです。
   
 - **UsageLocation**: この値は、ユーザーの 2 文字の ISO の国や地域コードです。国や地域コードは、[ISO オンライン参照プラットフォーム](https://go.microsoft.com/fwlink/p/?LinkId=532703)で調べることができます。たとえば、米国のコードは US、ブラジルのコードは BR です。 
     
@@ -112,7 +112,7 @@ CSV ファイルを作成したら、次のコマンドを実行して、無期�
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

@@ -12,13 +12,13 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: "概要: Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、および SharePoint Server 2013 を実行するサーバーを持つ、統合テスト ラボの作成方法について説明します。"
 ms.openlocfilehash: 6fc3bc05db0d28bc4de2be77671ccf5e8fc55926
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成
 
- **の概要:**Exchange Server 2013 を実行するサーバーを Lync Server 2013 を実行しているサーバーと SharePoint Server 2013 を実行するサーバーを含む、統合されたテスト ラボを作成する方法について説明します。
+ **概要:** Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、および SharePoint Server 2013 を実行するサーバーを持つ、統合テスト ラボの作成方法について説明します。
   
 この構成には全 3 種類のサーバー同士のサーバー間認証が含まれており、この構成で作成されるテスト ラボでは、Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、SharePoint Server 2013 を実行するサーバーを使用する複数製品のシナリオとソリューションを構築して、デモンストレーションすることができます。
   
@@ -46,13 +46,13 @@ ms.lasthandoff: 12/15/2017
 
 ![ビデオ (再生ボタン) アイコン](images/mod_icon_video_M.png)
   
-Hyper-V でこのテスト ラボを構成する方法の詳細については、「[Windows Server 2012 Hyper-V で Exchange、Lync、および SharePoint 統合テスト ラボをホストする](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)」をご覧ください。
+Hyper-V でこのテスト ラボを構成する方法の詳細については、「[Windows Server 2012 Hyper-V で Exchange、Lync、および SharePoint 統合テスト ラボをホストする]((https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx))」をご覧ください。
   
 ## <a name="download-the-test-lab-guide"></a>テスト ラボ ガイドをダウンロードする
 
 [テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [テスト ラボ ガイド](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

@@ -14,18 +14,18 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "概要:Office 365 の Windows PowerShell を使用すると、顧客のすべてのテナンシーでレポートを取得し、1 つの場所にデータを集約できます。"
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する
 
- **の概要:**顧客 tenancies のすべてのレポートを取得し、1 つの場所にデータを集計するには、Office 365 用の Windows PowerShell を使用します。
+ **概要:** Office 365 の Windows PowerShell を使用すると、顧客のすべてのテナンシーでレポートを取得し、1 つの場所にデータを集約できます。
   
 既定では、Office 365 の Windows PowerShell には、複数の顧客テナンシーからデータをレポートする組み込みの集約がありません。ただし、この Office 365 の Windows PowerShell のサンプル スクリプトを使用すると、顧客のすべてのテナンシーを反復処理して、顧客ごとに 1 つのレポートを取得してから、1 つの場所にレポートのデータを集約することができます。結果として、顧客のテナントすべてを 1 つにしたレポートが得られます。 
   
 委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。それらの企業は、顧客に提供するサービスに Office 365 サブスクリプションをバンドルします。 Office 365 サブスクリプションを販売する際に、顧客テナンシー に対する「代理で管理」(AOBO) 権限が自動的に付与されるため、顧客テナンシーを管理し、顧客テナンシーに関するレポートを作成できます。
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このスクリプトを使用するには、次の変数を実際の特定の値に置き換えます。
   
@@ -137,7 +137,7 @@ foreach ($c in $contracts) {
 
 このサンプル スクリプトでは、集約されたレポートを ReportOutput.csv ファイルに配置します。
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

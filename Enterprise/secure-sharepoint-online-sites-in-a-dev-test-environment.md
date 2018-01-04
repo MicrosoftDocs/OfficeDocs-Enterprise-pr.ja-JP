@@ -12,10 +12,10 @@ ms.custom:
 - DecEntMigration
 - Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
-description: "概要: は、開発/テスト環境でパブリック、プライベート、機密、および機密性の高いオンラインの SharePoint のチーム サイトを作成します。"
+description: "概要: 開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。"
 ms.openlocfilehash: 17abee7a293996194a097693607b4b4d9c117046
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -33,13 +33,14 @@ SharePoint Online チーム サイトを運用環境に展開する前に、こ�
 
 このフェーズでは、架空の組織用の Office 365 と Enterprise Mobility + Security の試用版のサブスクリプションを取得します。
   
-最初に、 [Office 365 の開発/テスト環境](office-365-dev-test-environment.md)の**第 2 段階**の指示に従います。
+まず、[Office 365 開発/テスト環境](office-365-dev-test-environment.md)の**フェーズ 2**に記されている指示に従ってください。
   
 次に、EMS 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。
   
-1. 必要に応じて、Office 365 ポータルに、試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、Office 365 ポータルに、試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
-2. **[管理]** タイルをクリックします。
+2. 
+            **[管理]** タイルをクリックします。
     
 3. ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
     
@@ -63,7 +64,7 @@ SharePoint Online チーム サイトを運用環境に展開する前に、こ�
   
 最初に、Azure Portal で一般的な組織のグループのセットを作成します。
   
-1. ブラウザーで別のタブを作成し、次に [https://portal.azure.com](https://portal.azure.com) の Azure Portal に移動します。必要に応じて、Office 365 E5 の試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
+1. ブラウザーで別のタブを作成し、次に [(https://portal.azure.com)]((https://portal.azure.com)) の Azure Portal に移動します。必要に応じて、Office 365 E5 の試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
     
 2. Azure Portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
     
@@ -192,13 +193,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 このフェーズでは、SharePoint Online チーム サイトのドキュメント フォルダーに対してさまざまなセキュリティ レベルのラベルを作成します。
   
-1. 必要に応じて、インターネット ブラウザーのプライベート インスタンスを使用し、Office 365 E5 の試用版サブスクリプションの全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、インターネット ブラウザーのプライベート インスタンスを使用し、Office 365 E5 の試用版サブスクリプションの全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
 2. **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
     
-3. お使いのブラウザーの新しい**Office 管理者センター** ] タブからをクリックして**管理センター > セキュリティ&amp;準拠**。
+3. ブラウザーの新しい **[Office 管理者センター]** タブで、**[管理センター] > [セキュリティとコンプライアンス]** をクリックします。
     
-4. 新しいから**ホーム ・ セキュリティ&amp;準拠**タブ、ブラウザーのをクリックして**分類 > ラベル**。
+4. ブラウザーの新しい **[ホーム – セキュリティとコンプライアンス]** タブをクリックして、**[分類] > [ラベル]** をクリックします。
     
 5. **[ホーム] > [ラベル]** ウィンドウで、 **[ラベルの作成]** をクリックします。
     
@@ -240,7 +241,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ベースラインのパブリック SharePoint Online チーム サイトを作成するには、次の操作を行います。
   
-1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -274,7 +275,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 組織内のプロジェクト用にベースラインのプライベート SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -308,7 +309,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 マーケティング キャンペーン リソース用の機密レベルの分離した SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -328,9 +329,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 10. **[サイトの権限]** ウィンドウで、 **[高度な権限の設定]** をクリックします。
     
-11. ブラウザーの新しい **[アクセス許可]** タブで、 **[アクセス要求の設定]** をクリックします。
+11. ブラウザーの新しい **[アクセス許可]** タブで、**[アクセス要求の設定]** をクリックします。
     
-12. **アクセス要求の設定**] ダイアログ ボックスで、**サイトと個々 のファイルとフォルダーを共有するメンバーを許可して** **、サイトのメンバー グループの他のユーザーを招待するメンバーを許可する**チェック ボックスをオフ**@ ITAdmin1**を入力\<、組織名 >**. onmicrosoft.com** **アクセスに対するすべての要求を送信**] をクリック、し [ **OK**] をクリックします。
+12. **[アクセス要求の設定]** ダイアログ ボックスで、**[サイトと個別のファイルおよびフォルダーの共有をメンバーに許可します]** および **[メンバーが、他のユーザーをサイト メンバー グループに招待することを許可します]** チェック ボックスをクリアし、**[すべてのアクセス要求を送信する]** に「**ITAdmin1@**\<組織名>**.onmicrosoft.com**」と入力し、**[OK]** をクリックします。
     
 13. 一覧にある **[マーケティング キャンペーン メンバー]** をクリックします。
     
@@ -376,9 +377,9 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 次に、機密ラベルのある SharePoint Online チーム サイト上のドキュメントを共有しようとしているユーザーに通知を行うデータ損失防止 (DLP) ポリシーを構成します。このチーム サイトには、組織外部のマーケティング キャンペーン サイトが含まれます。
   
-1. お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。
+1. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
-2. 新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。
+2. ブラウザーの新しい **[セキュリティとコンプライアンス]** タブで、**[データ損失防止] > [ポリシー]** をクリックします。
     
 3. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
     
@@ -424,7 +425,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 組織の最高責任者の戦略上の会社のリソース用に高機密レベルで分離した SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで Office 365 ポータルにサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -488,11 +489,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 次に、高機密ラベルのある SharePoint Online チーム サイト上のドキュメントをユーザーが共有するのをブロックする DLP ポリシーを構成します。このチーム サイトには、組織外部の会社戦略サイトが含まれます。
   
-1. 必要に応じて、ローカル コンピューターのブラウザーを使用して、セキュリティ管理者または会社管理者の役割のアカウントで、Office 365 ポータルにサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用して、セキュリティ管理者または会社管理者の役割のアカウントで、Office 365 ポータルにサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
-2. お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。
+2. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
-3. 新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。
+3. ブラウザーの新しい **[セキュリティとコンプライアンス]** タブで、**[データ損失防止] > [ポリシー]** をクリックします。
     
 4. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
     
@@ -530,13 +531,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 20. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
     
-次に、「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある指示に従います。
+次に、「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365))」にある指示に従います。
   
 次に、以下の手順に従い、保護とアクセス許可用の新しいスコープ付きポリシーとサブラベルを使用して、Azure Information Protection を構成します。
   
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
     
-2. ブラウザーで別のタブで、[https://portal.azure.com](https://portal.azure.com) の Azure Portal に移動します。
+2. ブラウザーで別のタブで、[(https://portal.azure.com)]((https://portal.azure.com)) の Azure Portal に移動します。
     
 3. 初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。
     
@@ -574,7 +575,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 20. **[Azure Information Protection - スコープ付きポリシー]** ブレードで、 **[発行]** をクリックしてから、 **[はい]** をクリックします。
     
-Azure Information Protection とこの新しいラベルでドキュメントを保護するには、テスト マシンに [Azure Information Protection クライアントをインストール](https://docs.microsoft.com/information-protection/rms-client/install-client-app)し、Office 365 ポータルから Office をインストールしてから、試用版サブスクリプションの **[C スイート]** グループのアカウントを使用して Microsoft Word からサインインする必要があります。
+Azure Information Protection とこの新しいラベルでドキュメントを保護するには、テスト マシンに [Azure Information Protection クライアントをインストール]((https://docs.microsoft.com/information-protection/rms-client/install-client-app))し、Office 365 ポータルから Office をインストールしてから、試用版サブスクリプションの **[C スイート]** グループのアカウントを使用して Microsoft Word からサインインする必要があります。
   
 最終的な構成をここに示します。
   
@@ -590,7 +591,7 @@ Azure Information Protection とこの新しいラベルでドキュメントを
 
 セキュリティで保護された SharePoint Online サイトの本番展開の準備が整ったら、「[SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)」を参照して、詳細情報と、展開を順を追って説明した記事へのリンクをご確認ください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
   

@@ -21,7 +21,7 @@ ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。"
 ms.openlocfilehash: 9cecd13f0ffc3c2822ac6c66a3bde9c9e6a3c798
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -46,7 +46,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 
 以下の手順を使用して、Dynamics 365 と Exchange Online 統合用の全体管理者のメールボックスを構成します。
   
-1. お使いのブラウザーのプライベート ・ セッションを使用するでは、 [http://portal.office.com](http://portal.office.com)に移動し、Office 365 グローバル管理者アカウントを使用してサインインします。
+1. ブラウザーのプライベート セッションを使用して、[(http://portal.office.com)]((http://portal.office.com)) に移動し、Office 365 全体管理者アカウントでサインインします。
     
 2. **Microsoft Office ホーム** ページで、 **[メール]** タイルをクリックします。
     
@@ -74,7 +74,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
     
 13. ツール バーの **[電子メールの承認]** をクリックし、次いで **[OK]** をクリックします。
     
-14. 左側のチェック マーク] 列に Office 365 のグローバル管理者名を選択] をクリックして**テスト&amp;を有効にするメールボックス**ツールのバー、および、[ **OK**] をクリックします。
+14. 左側のチェック マークの列で Office 365 の全体管理者名を選択し、ツール バーの **&amp;[メールボックスのテストと有効化]** をクリックし、次いで **[OK]** をクリックします。
     
 15. 開いている **[メール]** タブをクリックして全体管理者がテスト メッセージを受信したことを確認します。
     
@@ -105,9 +105,9 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 9. **[破棄]** をクリックします。
 
 > [!TIP]
-> クリックしては、[ここで](http://aka.ms/catlgstack)1 つのマイクロソフト クラウド テスト ラボ ガイド スタック内のアーティクルのすべてのビジュアル マップです。
+> [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Office 365 と Dynamics 365 の開発/テスト環境](office-365-and-dynamics-365-dev-test-environment.md)
   
@@ -119,8 +119,8 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
   
 [Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Dynamics 365 (オンライン) のサブスクリプション管理](https://technet.microsoft.com/library/jj679903.aspx)
+[Dynamics 365 (オンライン) のサブスクリプション管理]((https://technet.microsoft.com/library/jj679903.aspx))
   
-[Dynamics 365 の管理](https://technet.microsoft.com/library/dn531101.aspx)
+[Dynamics 365 の管理]((https://technet.microsoft.com/library/dn531101.aspx))
 
 

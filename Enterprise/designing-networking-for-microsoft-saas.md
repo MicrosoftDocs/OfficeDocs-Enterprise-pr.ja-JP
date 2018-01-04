@@ -18,7 +18,7 @@ ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "概要: Office 365、Microsoft Intune、Dynamics 365 を含む Microsoft の SaaS サービスにアクセスするためにネットワークを最適化する方法を理解します。"
 ms.openlocfilehash: 432789d03f5208a379dc2ab4f17f38f95223e10d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,7 +32,7 @@ Microsoft SaaS サービス向けにネットワークを最適化するには�
 
 Microsoft SaaS サービス向けにネットワークを最適化するには、次の手順に従います。
   
-1. [マイクロソフト クラウドの接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)で**マイクロソフトのクラウド サービスのネットワークを準備する手順**のセクションを通過します。
+1. [Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)の「**Microsoft クラウド サービスを利用するためのネットワークの準備の手順**」セクションを読んでください。
     
 2. プロキシ サーバーの推奨事項を使用して、Microsoft SaaS サービス向けにインターネット出口を最適化します。
     
@@ -142,9 +142,9 @@ Office 365 のトラフィックに必要な送信ポートを以下に示しま
     
 さらに、イントラネット接続のスループット (有線、ワイヤレス、または VPN) を最適化します。
   
-詳細については、[Office 365 の NAT サポート](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)をご覧ください。
+詳細については、[Office 365 の NAT サポート]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9))をご覧ください。
   
-ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)」をご覧ください。
+ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))」をご覧ください。
   
 イントラネットのパフォーマンスを最適化するには、次の操作を行います。
   
@@ -154,7 +154,7 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
     
 - 中間デバイスの分析 (使用年数、正常性など) を実行します
     
-詳細については、[PsPing ツール](https://technet.microsoft.com/sysinternals/jj729731.aspx) を参照してください。
+詳細については、[PsPing ツール]((https://technet.microsoft.com/sysinternals/jj729731.aspx)) を参照してください。
   
 ## <a name="it-operations-considerations"></a>IT 運用上の考慮事項
 
@@ -184,19 +184,19 @@ Microsoft SaaS サービスで IT ワークロードを操作する場合の考�
     
 詳細については、以下を参照してください。
   
-- [Office 365 のネットワークと移行の計画](https://aka.ms/tune)
+- [Office 365 のネットワークと移行の計画]((https://aka.ms/tune))
     
-- [Office 365 のパフォーマンス管理 Microsoft Virtual Academy コース](https://aka.ms/o365perf)
+- [Office 365 のパフォーマンス管理 Microsoft Virtual Academy コース]((https://aka.ms/o365perf))
     
-- [Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)
+- [Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

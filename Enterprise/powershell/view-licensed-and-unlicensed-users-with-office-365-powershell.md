@@ -18,21 +18,21 @@ ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Office 365 PowerShell を使って、ライセンスのあるユーザー アカウントとライセンスのないユーザー アカウントを表示する方法について説明します。"
 ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する
 
-**の概要:**ライセンスおよびライセンスのないユーザー アカウントを表示するのには Office 365 の PowerShell を使用する方法について説明します。
+**概要:** Office 365 PowerShell を使って、ライセンスのあるユーザー アカウントとライセンスのないユーザー アカウントを表示する方法について説明します。
   
 Office 365 組織のユーザー アカウントには、組織で使用可能なライセンス プランからユーザー アカウントに割り当てることのできるライセンスが一部またはすべて存在する場合や、まったく存在しない場合があります。Office 365 PowerShell を使うと、組織内でライセンスのあるユーザーとライセンスのないユーザーをすばやく検索できます。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
-- 使用せず、 **Get MsolUser**コマンドレットを使用するかどうかは、_のすべて_パラメーターでは、最初の 500 個のアカウントのみが返されます。
+- _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
 ## <a name="the-short-version-instructions-without-explanations"></a>簡略版 (説明なしの手順)
 
@@ -58,7 +58,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>詳細版 (詳細な説明付きの手順)
 
-Office 365 ユーザー アカウントと Office 365 のライセンスは、1 対 1 対応する必要がある: Office 365 のユーザーが Office 365 のライセンスではありませんすることは、まだ割り当てられていないユーザーに Office 365 のライセンスを所有することができます。(実際には、単一のユーザー アカウントを持つことも*複数*Office 365 のライセンスです。)作成するとき、新しい Office 365 ユーザー アカウント ( [Windows PowerShell でのライセンスの Office 365 ユーザー](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)の詳細についての資料を参照してください)、そのユーザーにライセンスを割り当てる必要はありません: 新しいユーザーは、有効なアカウントが彼または彼女が Offi にサインインすることはできませんce 365 です。サインインしようとする場合、次のようなものが表示されます。
+Office 365 ユーザー アカウントと Office 365 ライセンスは、1 対 1 で対応している必要はありません。Office 365 のライセンスがない Office 365 ユーザーや、どのユーザーにも割り当てられいない Office 365 ライセンスが存在する可能性があります (実際に、単一のユーザー アカウントが*複数の* Office 365 ライセンスを持つこともあります)。新しい Office 365 ユーザー アカウントを作成するとき (詳しくは「[Windows PowerShell による Office 365 ユーザーのライセンス取得]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx))」をご覧ください)、そのユーザーにライセンスを割り当てる必要はありません。この場合、新しいユーザーのアカウントは有効ですが、Office 365 にサインインすることはできません。サインインしようとすると、次のようなメッセージが表示されます。
   
 ![有効な Office 365 ライセンスを持たないユーザー。](images/o365_powershell_no_license.png)
   

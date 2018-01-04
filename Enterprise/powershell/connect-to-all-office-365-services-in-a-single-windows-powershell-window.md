@@ -16,24 +16,24 @@ ms.custom:
 - DecEntMigration
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: "概要: は、Windows PowerShell を 1 つの Windows PowerShell のウィンドウ内のすべての Office 365 サービスに接続します。"
+description: "概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Office 365 サービスに接続します。"
 ms.openlocfilehash: 28016342fff77e33bd18369ae08b773ecea32644
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する
 
- **の概要:**別の PowerShell コンソール ウィンドウで別の Office 365 サービスを管理するには、代わりにすべての Office 365 サービスに接続し、それらを 1 つのコンソール ウィンドウから管理できます。
+ **概要:** 別々の PowerShell コンソール ウィンドウで各種 Office 365 サービスを管理するのではなく、1 つのコンソール ウィンドウからすべての Office 365 サービスに接続して管理できます。
   
-PowerShell を使用して、Office 365 を管理するために、することは最大 5 つの異なる Windows PowerShell セッションとに対応する Office 365 管理センター、SharePoint のオンライン、Exchange オンライン、ビジネス オンラインでは、Skype セキュリティ&amp;コンプライアンス センターです。別の Windows PowerShell セッションで 5 つの別の接続方法、デスクトップ次のようになります。
+PowerShell を使用して Office 365 を管理する場合は、最大 5 つの異なる Windows PowerShell セッション (Office 365 管理センター、SharePoint Online、Exchange Online、Skype for Business Online、およびセキュリティ/コンプライアンス センターに対応する) を同時に開くことができます。別々の Windows PowerShell セッションで 5 つの異なる接続方法を使用すると、デスクトップは以下のようになります。
   
 ![一度に実行している 5 つの Windows PowerShell コンソール](images/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 これは Office 365 の管理に最適な状況ではありません。サービス間管理のために 5 つのウィンドウ間でデータを交換できないからです。このトピックでは、Office 365、Skype for Business Online、Exchange Online、SharePoint Online、および セキュリティ センターとコンプライアンス センター を管理する Windows PowerShell のインスタンスを使用する方法について説明します。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 <a name="BeforeYouBegin"> </a>
 
 Windows PowerShell の単一のインスタンスからすべての Office 365 を管理する前に、次の前提条件を考慮してください。
@@ -54,7 +54,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
     
   - Windows Server 2008 R2 SP1*
     
-    * Microsoft.NET Framework 4.5 をインストールする必要があります。_x_とし、いずれかの Windows Management Framework 3.0 または Windows Management Framework 4.0 です。詳細については、 [ [.NET Framework をインストールして](https://go.microsoft.com/fwlink/p/?LinkId=257868)Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)または[4.0 の Windows Management Framework](https://go.microsoft.com/fwlink/p/?LinkId=391344)を参照してください。
+    * Microsoft .NET Framework 4.5._x_ をインストールしてから、Windows Management Framework 3.0 または Windows Management Framework 4.0 をインストールする必要があります。詳細については、「[.NET Framework のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)」と、「[Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)」または「[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)」を参照してください。
     
     Skype for Business Online モジュール、および Office 365 モジュールの 1 つの要件のため、64 ビット バージョンの Windows を使用する必要があります。
     
@@ -68,7 +68,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
     
   - [Skype for Business Online、Windows PowerShell モジュール](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
--  Windows PowerShell は、Skype のオンライン ビジネス、オンラインの Exchange セキュリティの署名済みスクリプトを実行するように構成する必要があります&amp;コンプライアンス センターです。これを行うには、管理者特権の Windows PowerShell セッションで次のコマンドを実行 (**管理者として実行**を選択して開く Windows PowerShell のウィンドウ) です。
+-  Skype for Business Online、Exchange Online、およびセキュリティ/コンプライアンス センターに対して署名付きスクリプトを実行するよう Windows PowerShell を構成する必要があります。そのためには、管理者特権の Windows PowerShell セッション (Windows PowerShell ウィンドウで **[管理者として実行]** を選択して開きます) で、次のコマンドを実行します。
     
   ```
   Set-ExecutionPolicy RemoteSigned
@@ -87,21 +87,21 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   $credential = Get-Credential
   ```
 
-3. 次のコマンドを実行して、Office 365 に接続します。
+3. 次のコマンドを実行して Office 365 に接続します。
     
   ```
   Import-Module MsOnline
   Connect-MsolService -Credential $credential
   ```
 
-4. SharePoint Online に接続するためのこれらのコマンドを実行します。交換_\<domainhost >_ドメインの実際の値とします。たとえば、 `litwareinc.onmicrosoft.com`、 _ \<domainhost >_の値は、 `litwareinc`。
+4. 次のコマンドを実行して、SharePoint Online に接続します。_\<domainhost>_ は実際のドメイン値に置き換えます。たとえば、`litwareinc.onmicrosoft.com` の場合、_\<domainhost>_ 値は `litwareinc` となります。
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
   Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
   ```
 
-5. オンライン ビジネス用の Skype への接続にこれらのコマンドを実行します。増加についての警告、`WSMan NetworkDelayms`最初に、期待される値に接続し、無視する必要があります。
+5. 次のコマンドを実行して、Skype for Business Online に接続します。初めて接続する場合、`WSMan NetworkDelayms` の値を増やすようにという警告が出ますが、無視してください。
     
   ```
   Import-Module SkypeOnlineConnector
@@ -123,7 +123,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   Import-PSSession $ccSession -Prefix cc
   ```
 > [!NOTE]
-> テキスト プレフィックス"cc"は、*すべて*のセキュリティに追加されます&amp;コンプライアンス センターのコマンドレット名をコマンドレットを実行できるようには、Exchange Online とセキュリティの両方に存在&amp;同じ Windows PowerShell セッションでのコンプライアンスの中心です。たとえば、 **Get RoleGroup**になり、セキュリティでは、 **Get ccRoleGroup** &amp;コンプライアンス センターです。
+> テキスト プレフィックス "cc" が*すべての*セキュリティ/コンプライアンス センターのコマンドレット名に追加され、Exchange Online とセキュリティ/コンプライアンス センターの両方に存在するコマンドレットを同一の Windows PowerShell セッションで実行できるようになります。たとえば、**Get-RoleGroup** は、セキュリティ/コンプライアンス センターでは **Get-ccRoleGroup** となります。
   
 次に 1 つのブロック内のすべてのコマンドを示します。ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
@@ -143,7 +143,7 @@ $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 
 Import-PSSession $ccSession -Prefix cc
 ```
 
-オンライン ビジネス、オンラインの Exchange、SharePoint Online では、およびセキュリティの Skype へのアクティブなセッションを削除するのにはこのコマンドを実行している Windows PowerShell のウィンドウを終了する準備ができたら、&amp;コンプライアンス センター。
+Windows PowerShell ウィンドウを閉じる準備が整った段階でこのコマンドを実行し、Skype for Business Online、Exchange Online、SharePoint Online、セキュリティ/コンプライアンス センターに対するアクティブなセッションを削除します。
   
 ```
 Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $ccSession ; Disconnect-SPOService
@@ -218,7 +218,7 @@ UserName                               Password
 kenmyer@litwareinc.onmicrosoft.com     System.Security.SecureString
 ```
 
-ここで注意することは、[資格情報の Get](https://go.microsoft.com/fwlink/p/?LinkId=389618)コマンドレットでは、資格情報オブジェクトのみを作成ユーザーを認証したりそれ以外の場合、ユーザー名とパスワードが正しいことを確認しません。たとえば、kenmyer@litwareinc.onmicrosoft.com としてユーザー名の入力に誤りがあるとします。**資格情報の取得**がそのユーザー名を使用して、資格情報オブジェクトを作成、操作を行う場合とするが実際に有効なユーザー名であるかどうかをチェックすることがなく。Office 365 サービスに接続しようとするには実際にそのオブジェクトを使用するまで、本当に有効な資格情報オブジェクトを作成したかどうかがわかりません。
+ここで注意すべきことは、[Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618) コマンドレットは資格情報オブジェクトを作成するだけだということです。ユーザーを認証したり、それ以外の方法で指定されたユーザー名とパスワードが正しいことを確認したりすることはありません。たとえば、ユーザー名を kenmyer@litwareinc.onmicrosoft.com のように間違って入力したとします。**Get-Credential** はそのままこのユーザー名を使って資格情報オブジェクトを作成しますが、それが本当に有効なユーザー名かどうかは確認しません。本当に有効な資格情報オブジェクトが作成されたかどうかは、そのオブジェクトを使用して Office 365 サービスに接続するまでわかりません。
   
 ### <a name="step-3-connect-to-office-365"></a>手順 3:Office 365 に接続する
 <a name="Step3"> </a>
@@ -241,7 +241,7 @@ Get-Module
   
 `MSOnline` が表示されていれば、すべてが予定どおり進んだことを意味します。
   
-作成した資格情報オブジェクトに (を参照してください[手順 2: Windows PowerShell の資格情報オブジェクトを作成する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md#Step2)) と、`MsOnline`モジュールをロードすると、今すぐ接続できる Office 365 に[接続 MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)コマンドレットと次のコマンドを使用しています。
+資格情報オブジェクトが作成され (「[手順 2: Windows PowerShell 資格情報オブジェクトを作成する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md#Step2)」を参照)、`MsOnline` モジュールがロードされたので、[Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375) コマンドレットと次のコマンドを使って Office 365 に接続できます。
   
 ```
 Connect-MsolService -Credential $credential
@@ -272,13 +272,13 @@ litwareinc.onmicrosoft.com   Verified        Managed
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 ```
 
-_DisableNameChecking_ スイッチは、次の警告を表示しないようにします。
+_DisableNameChecking_ スイッチにより、次の警告が表示されなくなります。
   
 ```
 WARNING: The names of some imported commands from the module 'Microsoft.Online.SharePoint.PowerShell' include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the Verbose parameter. For a list of approved verbs, type Get-Verb.
 ```
 
-SharePoint Online に接続する 2 つの情報を提供する必要があります: ユーザーの資格情報と、SharePoint Online の管理サイトの URL です。資格情報の一部は簡単: 既に格納されている変数に`$credential`(を参照してください[手順 2: Windows PowerShell の資格情報オブジェクトを作成する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md#Step2))。管理サイトの URL とは調べるには、同様に簡単に行えます。Office 365 にドメイン名があると`litwareinc.onmicrosoft.com`。
+SharePoint Online に接続するには、資格情報と SharePoint Online 管理サイトの URL という 2 種類の情報を指定する必要があります。資格情報の方は簡単です。既に、変数 `$credential` に保存されています (「[手順 2: Windows PowerShell 資格情報オブジェクトを作成する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md#Step2)」を参照)。管理サイトの URL も同様に、簡単に特定できます。Office 365 ドメイン名が `litwareinc.onmicrosoft.com` になっているとします。
   
 管理サイトの URL を特定するには、次の手順を実行します。
   
@@ -304,7 +304,7 @@ Connect-SPOService -Url https://litwareinc-admin.sharepoint.com -credential $cre
 Get-SPOSite
 ```
 
-すべての SharePoint Online サイトの一覧を取得する必要があります。例を以下に示します。
+すべての SharePoint Online サイトの一覧が表示されるはずです。次に例を示します。
   
 ```
 Url                                       Owner          Storage Quota
@@ -365,16 +365,16 @@ Script     1.0        tmp_swc5mp4v.1ck  {Copy-CsVoicePolicy, Disabl...
 ### <a name="step-6-connect-to-exchange-online"></a>ステップ 6: Exchange Online に接続する
 <a name="Step6"> </a>
 
-Exchange Online とのリモート Windows PowerShell セッションを作成する、次のコマンドを実行します。
+次のコマンドを実行すると、Exchange Online を使用してリモート Windows PowerShell セッションが作成されます。
   
 ```
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
 ```
 
 > [!NOTE]
-> Exchange オンライン ビジネス オンラインの Skype に接続するためのコマンドよりも複雑に接続するためのコマンドがなぜですか。技術的には、: 両方のコマンドは、まったく同じことを行います。ただし、ビジネス オンライン チームの Skype は、独自のコマンドレットを作成-**新規 CsOnlineSession** -(「_認証_」、「 _AllowRedirection_」など)、Exchange Online に接続するときに使用されるパラメーターの一部を非表示にします。自分でその情報を入力する必要はありません、_認証_および_AllowRedirection_パラメーターは効果的に組み込まれている**新規 CsOnlineSession**コマンドレットです。Exchange オンライン Office 365 に接続する標準的な[新規 PSSession](https://go.microsoft.com/fwlink/p/?LinkId=389621)コマンドレットを使用するために、Exchange Online に接続するときにこれらのパラメーターを入力する必要が。欠点を実行するのには、もう少し入力があること。利点をダウンロードし、Exchange のオンライン ・ モジュールをインストールすることもできます。
+> なぜ、Exchange Online に接続するためのコマンドは Skype for Business Online に接続するためのコマンドよりも複雑なのでしょうか。技術的には複雑ではなく、どちらのコマンドもまったく同じことを実行します。ただし、Skype for Business Online チームは、Exchange Online に接続するときに使用される一部のパラメーター (_Authentication_ や _AllowRedirection_ など) を隠す独自のコマンドレット (**New-CsOnlineSession**) を作成しました。情報を入力する必要がないように、事実上、_Authentication_ パラメーターと _AllowRedirection_ パラメーターが **New-CsOnlineSession** コマンドレットに組み込まれています。Exchange Online では Office 365 に接続するために標準の [New-PSSession](https://go.microsoft.com/fwlink/p/?LinkId=389621) コマンドレットが使用されるため、Exchange Online に接続するときはこれらのパラメーターを入力する必要があります。少し余分に入力しなければならないという欠点がありますが、Exchange Online モジュールをダウンロードしてインストールする必要はないという利点もあります。
   
-ここでやるべきことは、Skype for Business Online でやったように、このリモート セッションをインポートすることだけです。
+ここでやるべきことは、Skype for Business Online で行ったように、このリモート セッションをインポートすることだけです。
   
 ```
 Import-PSSession $exchangeSession -DisableNameChecking
@@ -405,7 +405,7 @@ litwareinc.com  litwareinc.com      Authoritative   True
 ### <a name="step-7-connect-to-the-security-amp-compliance-center"></a>手順 7: セキュリティ センターとコンプライアンス センターに接続する
 <a name="Step7"> </a>
 
-セキュリティ&amp;コンプライアンス センターはコンプライアンス機能を 1 か所から管理することができる Office 365 のサービスです。詳細については、 [Office 365 のコンプライアンス センター](http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx)を参照してください。
+セキュリティ/コンプライアンス センターは、1 か所からコンプライアンスの機能を管理できるようにする Office 365 のサービスです。詳細については、「[Office 365 コンプライアンス センター]((http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx))」を参照してください。
   
 セキュリティ センターとコンプライアンス センター の接続手順は、Exchange Online の手順とよく似ていますが、ちょっとした違いがあります。これはすぐに説明します。
   
@@ -421,15 +421,15 @@ $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 
 Import-PSSession $ccSession -Prefix cc
 ```
 
-もう一度このコマンドは、Exchange Online のコマンドによく似ています。セキュリティで許可されていない動詞が存在しないため、 _DisableNameChecking_スイッチは必要ありません&amp;コンプライアンス センターです。についてはさらに`-Prefix cc`パラメーターと値ですか。について言いましたねじれの追加です。
+この場合も、このコマンドは Exchange Online のコマンドにとてもよく似ています。_DisableNameChecking_ スイッチは、セキュリティ/コンプライアンス センターで承認されていない動詞がないため不要です。ただし、追加の `-Prefix cc` パラメーターと値についてはどうでしょうか。これが、前述のちょっとした違いです。
   
-Exchange Online とセキュリティ&amp;コンプライアンス センターが正確に同じ名前し、同じ機能を提供するいくつかのコマンドレットを共有します。**Get RoleGroup**は、例です。
+Exchange Online とセキュリティ/コンプライアンス センターは、完全に同じ名前を持ち、同じ機能を提供するいくつかのコマンドレットを共有します。**Get-RoleGroup** は一例です。
   
-同じ名前のコマンドレットが含まれている 2 つのセッションをインポートしようとする場合の動作ですか。競合が発生します。という、大きな黄色い警告メッセージが表示されます`WARNING: Proxy creation has been skipped for the following command:`後にインポートすることができませんでしたが競合しているコマンドレットのリストです。最終的な結果ですか。接続してある 1 つは、セキュリティで**Get RoleGroup**を実行することはできませんので、Exchange Online で**Get RoleGroup**を実行することができます&amp;コンプライアンス ・ センターのため、接続してある最後と競合するコマンドレットがインポートするのには拒否されました。
+それでは、同じ名前のコマンドレットが含まれている 2 つのセッションをインポートしようとすると、何が起きるのでしょうか。競合が発生します。`WARNING: Proxy creation has been skipped for the following command:` という、大きな黄色い警告メッセージに続いて、インポートできなかった競合しているコマンドレットの一覧が表示されます。最終的にはどうなるのでしょう。最初に Exchange Online に接続していたため、その **Get-RoleGroup** は実行できますが、セキュリティ/コンプライアンス センターの **Get-RoleGroup** は実行できません。後からそこに接続して、コマンドレットが競合してインポートできなかったためです。
   
-インポートされたセキュリティを保護する、任意のテキストのプレフィックスを追加するのにはこの問題に対処する最も簡単な方法は、&amp;コンプライアンス センター コマンドレットです。**インポート PSSession**コマンドレットでは、"cc"の値を持つ_プレフィックス_パラメーターを使用することでした。何が行われるのでしょうか。(少しだけ) のセキュリティを変更して、競合を排除して&amp;、このセッションのコマンドレット名のコンプライアンス センターです。すべてのインポートされたセキュリティ&amp;コンプライアンス センター コマンドレットを開始"cc"とコマンドレット名の名詞部分 (の右側に、"-")。たとえば、 **Get RoleGroup**コマンドレットを使わないようになります**Get ccRoleGroup**セキュリティ&amp;コンプライアンス センターの Exchange Online の**Get RoleGroup**と競合しないようにします。
+この問題に対処する最も簡単な方法は、インポートされるセキュリティ/コンプライアンス センター コマンドレットに任意のテキスト プレフィックスを追加することです。**Import-PSSession** コマンドレットに値が "cc" の _Prefix_ パラメーターを使用することで、これを行いました。これは何の役に立つのでしょうか。このセッションのセキュリティ/コンプライアンス センター コマンドレットの名前を (少し) 変更することにより、競合が起きないようにしました。インポートされたセキュリティ/コンプライアンス センター コマンドレットは、コマンドレット名の名詞の部分が ("-" の右側) "cc" から始まるようになりました。たとえば、問題の **Get-RoleGroup** コマンドレットは、セキュリティ/コンプライアンス センターでは **Get-ccRoleGroup** になり、Exchange Online の **Get-RoleGroup** と競合しなくなりました。
   
-欠点でしょうか。 *すべて* セキュリティ&amp;コンプライアンス センター コマンドレット名には"cc"のプレフィックスが表示される、独自のコマンドレットを必要としないのも。たとえば、 **Get ComplianceSearch**がなくてもないこのようなコマンドレット Exchange オンライン**取得 ccComplianceSearch**になります。悩みの種のですが、悪くない 1 つの Windows PowerShell セッションでのすべての Office 365 サービスの管理の利点を検討するとき。セキュリティのすべての手順については、コマンドレット名に"cc"を追加するのには注意してください&amp;コンプライアンス センターです。
+欠点は何でしょうか。*すべて*のセキュリティ/コンプライアンス センター コマンドレット名には、"cc" プレフィックスが追加されます。プレフィックスが必要でない一意のコマンドレットもです。たとえば、Exchange Online にそのようなコマンドレッドがないのに、**Get-ComplianceSearch** は **Get-ccComplianceSearch** になります。少し面倒ですが、すべての Office 365 サービスを単一の WindowsPowerShell セッションで管理することの利点を考慮すると、それほど悪いことではありません。ただし、忘れてならないのは、セキュリティ/コンプライアンス センターでのすべての手順において、"cc" をコマンドレット名に追加することです。
   
 すべてが順調に進めば、次のような画面が表示されます。
   
@@ -452,7 +452,7 @@ Windows PowerShell ウィンドウを閉じても、その後 15 分ぐらいは
 Get-PSSession
 ```
 
-[Get PSSession](https://go.microsoft.com/fwlink/p/?LinkId=532437)コマンドレットかがわかるとがあることには、少なくとも 3 つのリモート セッションを開く、ビジネス オンラインの Skype のいずれか、Exchange のオンラインのいずれかのセキュリティのいずれかの&amp;(ことの可能な場合がありますよりも 3 つのリモート ・ コンプライアンス センターセッションが実行されて、Office 365 のサービスだけでなく他の何かに接続する Windows PowerShell のこのインスタンスを使用したかどうかによって異なります)。次のような画面が表示されます。
+[Get-PSSession](https://go.microsoft.com/fwlink/p/?LinkId=532437) コマンドレットは、少なくとも 3 つのリモート セッションが開いていることを指摘します。Skype for Business Online 用、Exchange Online 用、セキュリティ/コンプライアンス センター用のものです (この Windows PowerShell のインスタンスを Office 365 サービス以外への接続に使用しているかどうかによって、3 つより多いリモート セッションが動作している場合もあります)。表示は次のようになります。
   
 ```
 Id Name     ComputerName     State   ConfigurationName    Availability
@@ -499,16 +499,16 @@ get-sposite : No connection available. Use Connect-SPOService before running thi
 
 もう SharePoint Online には接続されていないため、サイト情報を取得できません。
   
-Office 365 への接続とが**接続する MsolService**コマンドレットは**切断-MsolService**の対応するコマンドレットです。したがって、Office 365 のだけ Windows PowerShell の] ウィンドウを閉じます。これを行うことをお勧めすることがまだそれにもかかわらず、最後のことができます正しく接続を切断する sharepoint サイトからオンラインで Skype オンライン ビジネス、オンラインの Exchange セキュリティのため&amp;コンプライアンス センターです。
+Office 365 への接続に関しては **Connect-MsolService** コマンドレットがありますが、対応する **Disconnect-MsolService** コマンドレットはありません。そのため Office 365 では、Windows PowerShell ウィンドウを閉じます。もちろん、SharePoint Online、Skype for Business Online、Exchange Online、セキュリティ/コンプライアンス センターから正常に切断できるよう、閉じる操作は最後に行うことをお勧めします。
   
 ## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
 <a name="LongVersion"> </a>
 
 ||
 |:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
+|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。 |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 #### 
 

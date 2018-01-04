@@ -16,38 +16,38 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "ライセンスのないユーザーに Office 365 のライセンスの Office 365 の PowerShell の割り当てを使用する方法について説明します。"
+description: "Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法を説明します。"
 ms.openlocfilehash: 7120b5d61b98f401f9ec1830598f20fbcbecdb66
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる
 
-**の概要:** ライセンスのないユーザーに Office 365 のライセンスの Office 365 の PowerShell の割り当てを使用する方法について説明します。
+**概要:** Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法を説明します。
   
-Office 365 のユーザー アカウントのライセンスは重要なユーザーは自分のアカウントのライセンスを取得するまで、Office 365 サービスを使用できません。効率的にライセンスをライセンスのないアカウント、特に複数のアカウントに割り当てるには、Office 365 の PowerShell を使用できます。 
+ユーザーは自分のアカウントにライセンスが供与されるまで Office 365 サービスを一切使用できないため、Office 365 のユーザー アカウントへのライセンス供与は重要です。Office 365 PowerShell を使用することにより、効率的にライセンスをライセンスのないアカウント、特に複数のアカウントに割り当てることができます。 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 <a name="RTT"> </a>
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
-- それぞれの計画、組織内で使用可能なライセンス プランと利用可能なライセンスの数を表示するのには、 **Get MsolAccountSku**コマンドレットを使用します。各プランで利用可能なライセンスの数は、 **ActiveUnits** - **WarningUnits** - **ConsumedUnits**。計画、ライセンス、およびサービスのライセンスの詳細については、[ライセンスを表示し Office 365 の PowerShell を使用してサービス](view-licenses-and-services-with-office-365-powershell.md)を参照してください。
+- **Get-MsolAccountSku** コマンドレットを使用して、利用可能なライセンス プランと組織で利用可能なライセンスのプランごとの数を表示します。各プランで利用可能なライセンスの数は、**ActiveUnits** - **WarningUnits** - **ConsumedUnits** です。ライセンス プラン、ライセンス、サービスの詳細については、「[Office 365 PowerShell でライセンスとサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)」を参照してください。
     
 - 組織内のライセンスのないアカウントを検索するには、コマンド  `Get-MsolUser -All -UnlicensedUsersOnly` を実行します。
     
-- **UsageLocation**プロパティが有効な ISO 3166-1 アルファ 2 国コードに設定されているユーザー アカウントに対してのみライセンスを割り当てることができます。たとえば、アメリカ合衆国およびフランスの FR のことです。いくつかの Office 365 サービスは、特定の国では使用できません。詳細については、[ライセンスによる使用制限の詳細](https://go.microsoft.com/fwlink/p/?LinkId=691730)を参照してください。
+- ライセンスは、**UsageLocation** プロパティが有効な ISO 3166-1 alpha-2 の国別コードに設定されているユーザー アカウントにのみ割り当てることができます。たとえば、米国は US、フランスは FR です。一部の Office 365 サービスは特定の国では使用できません。詳細については、「[ライセンスによる使用制限について](https://go.microsoft.com/fwlink/p/?LinkId=691730)」を参照してください。
     
     **UsageLocation** 値のないアカウントを検索するには、コマンド `Get-MsolUser -All | where {$_.UsageLocation -eq $null}` を実行します。アカウントに **UsageLocation** 値を設定するには、構文 `Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>` を使用します。例: `Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US`。
     
-- 使用せず、 **Get MsolUser**コマンドレットを使用するかどうか、`-All`パラメーターでは、最初の 500 個のアカウントのみが返されます。
+- `-All` パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
 ## <a name="the-short-version-instructions-without-explanations"></a>簡略版 (説明なしの手順)
 <a name="ShortVersion"> </a>
 
-ここでは、詳細な説明のない手順を示します。ご質問があるか、詳細情報を表示した場合は、トピックの残りの部分を読み取ることができます。
+このセクションでは、詳細な説明を省いて手順を示します。ご質問がある場合、または詳細情報が必要な場合には、このトピックの残りの部分をお読みください。
   
 ユーザーにライセンスを割り当てるには、Office 365 PowerShell で次の構文を使用します。
   
@@ -55,7 +55,7 @@ Office 365 のユーザー アカウントのライセンスは重要なユー�
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-この例では、ライセンスの`litwareinc:ENTERPRISEPACK`(Office 365 エンタープライズ E3) のライセンスについて、ライセンスのないユーザーに`belindan@litwareinc.com`。
+この例では、ライセンスを `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンス プランからライセンスのないユーザー `belindan@litwareinc.com` に割り当てます。
   
 ```
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -67,13 +67,13 @@ Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "l
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **注**
+ **メモ**
   
 - 複数のライセンスを同じライセンス プランのユーザーに割り当てることはできません。
     
 - 十分な数の利用可能なライセンスをお持ちでない場合は、使用可能なライセンスがなくなるまで、ライセンスは **Get-MsolUser** コマンドレットによって返される順序でユーザーに割り当てられます。
     
-次の使用例からのライセンスの割り当て、 `litwareinc:ENTERPRISEPACK` (Office 365 エンタープライズ E3) のライセンスについてすべてのライセンスのないユーザーにします。
+この例では、ライセンスを `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンス プランからライセンスのないユーザーすべてに割り当てます。
   
 ```
 $AllUn = Get-MsolUser -All -UnlicensedUsersOnly; $AllUn | foreach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
@@ -106,7 +106,7 @@ BelindaN@litwareinc.com     Belinda Newman                  False
 
 ご覧のように、ライセンスのないユーザーが 1 人表示されています。それは Belinda Newman です。Belinda に Office 365 のライセンスを割り当てるには、どのような方法がありますか?
   
-まず、[ライセンスを表示し Office 365 の PowerShell を使用してサービス](view-licenses-and-services-with-office-365-powershell.md)の記事で説明されている**Get MsolAccountSku**コマンドレットを実行していきます。
+まず、「[Office 365 PowerShell でライセンスとサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)」の記事で説明されている **Get-MsolAccountSku** コマンドレットを実行します。
   
 ```
 Get-MsolAccountSku
@@ -204,7 +204,7 @@ Get-MsolUser -All -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense
 このエラー メッセージは、やや間接的ですが、対象のユーザーに **UsageLocation** が割り当てられていないことを示しています。ご想像のとおり、(ユーザーが通常 Office 365 を使用する地域や国を示す) **UsageLocation** プロパティは、非常に重要です。その理由は、ユーザーが利用できるサービスは、購入したライセンス パックだけでなく、ユーザーの居住地によっても異なるからです。地域の法律や規制により、一部のサービスを利用できないユーザーもいます。ユーザーの **UsageLocation** がない場合、Office 365 はそのユーザーに対してどのサービスを合法的に公開できるのかがわかりません。このため、Office 365 はそのユーザーに対して、少なくとも **UsageLocation** が指定されるまではサービスをまったく提供できません。
   
 > [!NOTE]
-> ユーザー アカウントを構成するときことがわかりますすぐに世界中の指定したパーツに関連付けられているライセンスによる使用制限があるかどうか。イランにライセンスを受けたユーザーの**UsageLocation**を変更した場合の例 ( `IR`)、コマンドは、このエラー メッセージで失敗します: `Set-MsolUser : Unable to update license for this user. One or more of the assigned service plans is not available in this user's country. Prohibited Service Plans: EXCHANGE_S_ENTERPRISE, SHAREPOINTENTERPRISE, SHAREPOINTWAC, MCOSTANDARD, OFFICESUBSCRIPTION, RMS_S_ENTERPRISE. Specific service plans can be disabled for a user by using the licenseoptions parameter.`> Office 365 がイランのユーザーには現在利用できないためにです。詳細については、[ライセンスによる使用制限の詳細](https://go.microsoft.com/fwlink/p/?LinkId=691730)を参照してください。ちなみに、Office 365 は、標準化機構 (ISO) の国際組織によって生成される 2 文字の国コードを使用します。[ISO の web サイト](https://go.microsoft.com/fwlink/p/?LinkId=84073)でこれらのコードが表示されます。 
+> ユーザー アカウントを構成すると、指定した地域に関連付けられたライセンスの規制がないかどうかがすぐにわかります。たとえば、ライセンスが付与されたユーザーの **UsageLocation** をイラン ( `IR`) に変更すると、次のエラー メッセージを表示してコマンドが失敗します。`Set-MsolUser : Unable to update license for this user. One or more of the assigned service plans is not available in this user's country. Prohibited Service Plans: EXCHANGE_S_ENTERPRISE, SHAREPOINTENTERPRISE, SHAREPOINTWAC, MCOSTANDARD, OFFICESUBSCRIPTION, RMS_S_ENTERPRISE. Specific service plans can be disabled for a user by using the licenseoptions parameter.`> これは、現在 Office 365 がイランのユーザーに提供されていないためです。詳細については、「[ライセンスによる使用制限について](https://go.microsoft.com/fwlink/p/?LinkId=691730)」を参照してください。ちなみに、Office 365 は国際標準化機構 (ISO) が作成した 2 文字の国別コードを使用しています。これらのコードについては [ISO の Web サイト](https://go.microsoft.com/fwlink/p/?LinkId=84073)を参照してください。 
   
 特定のユーザーに **UsageLocation** が指定されているかどうかを確認するには、次のようなコマンドを利用できます。
   
@@ -212,22 +212,22 @@ Get-MsolUser -All -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense
 Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.com" | Select-Object UsageLocation
 ```
 
-または、次のコマンドを使用して、 **UsageLocation** のないすべてのユーザーの一覧を取得することもできます。
+または、次のコマンドを使用して、**UsageLocation** のないすべてのユーザーの一覧を取得することもできます。
   
 ```
 Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 ```
 
 > [!NOTE]
-> 割り当てると、ライセンスをユーザーにそのユーザーを既定では、アクセスが与えられます、組織へのアクセスにはすべての Office 365 サービスにします。などの Office 365 エンタープライズ E3 のライセンスを購入した場合、新たにライセンスを受けたユーザーは自動的に付与されます Exchange Online、Skype のようなサービスへのアクセスをビジネス オンライン、および SharePoint Online の。かどうかこれらのサービスへのユーザーのアクセスを制限する場合は (たとえば、*されません*が、SharePoint Online にアクセスするユーザーをする可能性がありますを Exchange のオンライン ビジネスのオンラインの Skype) を参照し、[と Office 365 サービスへのアクセスを無効にします。PowerShell](disable-access-to-services-with-office-365-powershell.md)。 
+> ユーザーにライセンスを割り当てると、既定ではそのユーザーは、所属する組織がアクセスできるすべての Office 365 サービスへのアクセス権を付与されます。たとえば、Office 365 Enterprise E3 のライセンスを購入した場合、新たにライセンスを割り当てられたユーザーは、Exchange Online、Skype for Business Online、および SharePoint Online などサービスへのアクセス権を自動的に付与されます。ユーザーが利用できるサービスを制限したい場合 (たとえば、SharePoint Online を利用できるものの、Exchange Online と Skype for Business Online を*利用できない*ようにする場合)、記事「[Office 365 PowerShell を使ったサービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)」をご覧ください。 
   
 ## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
 
 ||
 |:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
+|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。 |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 <a name="SeeAlso"> </a>
 
 Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
@@ -242,13 +242,13 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
     
 これらの手順で使用するコマンドレットの詳細については、次のトピックをご覧ください。
   
-- [Get MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
+- [Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
     
-- [Get MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-msoluser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
-- [セット MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
+- [Set-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [ForEach オブジェクト](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [Select-Object](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     

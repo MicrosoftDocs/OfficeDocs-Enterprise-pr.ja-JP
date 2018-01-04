@@ -1,7 +1,7 @@
 ---
 title: "SharePoint Online サイトとファイルをセキュリティで保護する"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,12 +16,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "SharePoint Online および Office 365 内のファイルを保護するための概要: 構成の推奨事項です。"
-ms.openlocfilehash: 0657ff5f3b6668d8cd5ae361bd890ef35c23608b
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+description: "概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。"
+ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -59,9 +59,9 @@ SharePoint Online チーム サイトの推奨事項は、Office 365 のさま�
     
 - Office 365 ラベルでは、必要な保護レベルを使用してデータを分類できます。それぞれの SharePoint Online チーム サイトは、サイトの既定ラベルを使用して、ドキュメント ライブラリ内のファイルに自動的にラベルを適用するよう構成されています。4 つのサイト構成に応じて、この例ではラベルを内部パブリック、プライベート、機密、高機密としています。ユーザーはラベルを変更できますが、この構成ではすべてのファイルに既定ラベルが適用されます。
     
-- データ損失防止 (DLP) ポリシーは、Office 365 の機密および高機密ラベル向けに構成されており、これらのタイプのファイルをユーザーが組織外に送信しようとすると警告を表示したり、その処理を防止したりします。
+- データ損失防止 (DLP) ポリシーは、Office 365 の機密および高機密ラベル向けに構成されており、これらのタイプのファイルをユーザーが組織外に送信しようとすると警告を表示したり、その処理を防止したりします。 
     
-- 高機密保護で構成されているサイトの場合、Azure Information Protection はファイルの暗号化とファイルへのアクセス許可の付与を行います。
+- 高機密保護で構成されているサイトの場合、Azure Information Protection はファイルの暗号化とファイルへのアクセス許可の付与を行います。 
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for Business に関するテナント全体の設定
 
@@ -103,7 +103,7 @@ SharePoint Online と OneDrive for Business には、すべてのサイトとユ
 
 SharePoint Online と OneDrive for Business のデバイス アクセスの設定では、アクセスを参照のみ (ファイルをダウンロードすることはできません) に限定するか、アクセスをブロックするかを指定できます。現在これらの設定は先行リリースに含まれ、テナント全体で適用されます。まもなく、デバイス アクセス ポリシーをサイト レベルで構成できるようになります。このソリューションの場合、テナント全体で適用されるデバイス アクセスの設定を使用しないことをお勧めします。
   
-先行リリースのデバイス アクセスの設定を使用するには、「[Office 365 で標準または先行リリース オプションを設定する](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)」を参照してください。
+先行リリースのデバイス アクセスの設定を使用するには、「[Office 365 で標準または先行リリース オプションを設定する]((https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47))」を参照してください。
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -171,11 +171,11 @@ Azure Information Protection 暗号化が Office 365 に格納されているフ
     
 ### <a name="adding-permissions-for-external-users"></a>外部ユーザーに対するアクセス許可の追加
 
-Azure Information Protection で保護されているファイルにアクセス権を外部ユーザーに付与するためには 2 つの方法があります。どちらの場合も、外部ユーザーは Azure AD アカウントが必要です。外部ユーザーが Azure AD を使用する組織のメンバーではない場合、サインアップ ページ ([https://aka.ms/aip-signup](https://aka.ms/aip-signup)) を使用して個人で Azure AD アカウントを取得できます。
+Azure Information Protection で保護されているファイルにアクセス権を外部ユーザーに付与するためには 2 つの方法があります。どちらの場合も、外部ユーザーは Azure AD アカウントが必要です。外部ユーザーが Azure AD を使用する組織のメンバーではない場合、サインアップ ページ ([(https://aka.ms/aip-signup)]((https://aka.ms/aip-signup))) を使用して個人で Azure AD アカウントを取得できます。
   
 - 外部ユーザーを、ラベルの保護の構成に使用する Azure AD グループに追加します。
     
-     最初のディレクトリで B2B のユーザーとしてアカウントを追加する必要があります。いくつかの[グループ メンバーシップのキャッシュ Azure 著作権管理で](https://docs.microsoft.com/information-protection/plan-design/prepare#group-membership-caching-by-azure-rights-management)の時間がかかります。この方法ではラベル (Azure AD グループにユーザーを追加する前に保護されたファイルであっても) で保護されているすべての既存のファイルにアクセス許可が与えられます。
+     最初に、ご使用のディレクトリでアカウントを B2B ユーザーとして追加する必要があります。[Azure Rights Management によるグループ メンバーシップのキャッシュ](https://docs.microsoft.com/information-protection/plan-design/prepare#group-membership-caching-by-azure-rights-management) には、数時間かかることがあります。この方法を使用すると、ラベルで保護された既存のファイルすべてに、アクセス許可が付与されます (ユーザーが Azure AD グループに追加される前に保護されていたファイルも含む)。
     
 - 外部ユーザーを、ラベル保護に直接追加します。
     
@@ -185,7 +185,7 @@ Azure Information Protection で保護されているファイルにアクセス
 
 このソリューションで Azure Information Protection を構成する手順については、「[Azure Information Protection を使用して SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)」を参照してください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

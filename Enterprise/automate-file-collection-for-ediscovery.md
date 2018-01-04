@@ -14,7 +14,7 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 description: "概要:電子情報開示用にユーザーのコンピューターのファイル収集を自動化する方法について説明します。"
 ms.openlocfilehash: 2c2a3d5d217203bb608fcb48f9cc1da8d4b49213
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/15/2017
 |****凡例****||
 |:-----|:-----|
 |![マゼンタの吹き出し 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|グループ ポリシー オブジェクト (GPO) を作成し、コレクションのログオン スクリプトと関連付ける。  <br/> |
-|![マゼンタの吹き出し 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| GPO セキュリティ フィルターを構成して、保管担当者グループにのみ GPO を適用する。 <br/> |
+|![マゼンタの吹き出し 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   GPO セキュリティ フィルターを構成して、管理者グループにのみ GPO を適用する <br/> |
 |![マゼンタの吹き出し 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|保管担当者がログオンし、GPO が実行され、コレクションのログオン スクリプトが呼び出される。  <br/> |
 |![マゼンタの吹き出し 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|コレクションのログオン スクリプトは、保管担当者のコンピューターにローカルにアタッチされたドライブのすべてのインベントリを作成し、目的のファイルを検索し、その場所を記録します。  <br/> |
 |![マゼンタの吹き出し 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|コレクションのログオン スクリプトは、ステージング サーバー上の非表示のファイル共有に、インベントリが作成されたファイルをコピーします。  <br/> |
@@ -270,7 +270,9 @@ Write-Host -ForegroundColor Cyan "Finished."
 |:-----|:-----|:-----|
 |71  <br/> |**$FileTypes** 変数。スクリプトがインベントリ作成と配列変数への収集を行うファイルの種類の拡張子がすべて含まれます。<br/> |省略可能  <br/> |
 |76 と 77  <br/> |**$CaseNo** 変数を構築する方法をニーズに合わせて変更します。スクリプトは、現在の日時をキャプチャし、ユーザー名をそれに追加します。<br/> |省略可能  <br/> |
-|80  <br/> |**$CaseRootLocation** 変数は、ステージング サーバー コレクション ファイル共有に設定する必要があります。例: **\\\\Staging\\Cases$** <br/> |必須  <br/> |
+| 
+80 
+  <br/> |**$CaseRootLocation** 変数は、ステージング サーバー コレクション ファイル共有に設定する必要があります。例: **\\\\Staging\\Cases$** <br/> |必須  <br/> |
    
 4. ドメイン コントローラーの Netlogon ファイル共有に CollectionScript.ps1 ファイルを配置します。 
     
@@ -327,7 +329,7 @@ $AllFiles | ForEach-Object {
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
 |12  <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
-|17  <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> ことを確認、 **$ConnectionUri**は、https ではない http の場所を指しています。Https を使用しない: です。          |必須  <br/> |
+|17  <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
    
 4. Exchange Trusted Subsystem アカウントに、\\\\Staging\\Cases$ 共有に対する読み取り、書き込み、実行のアクセス許可があることを確認します。
     
@@ -442,7 +444,7 @@ Exchange Server 2013 と Exchange Online の両方に PST ファイルをイン�
     
 2. 長期保存用の Azure ファイル共有 (例: \\\\AZFile1\\ContentColdStorage) とオンプレミス コレクション ファイル共有 (例: \\\\Staging\\cases$) を監視します。ファイルとフォルダーがコールド ストレージのファイル共有に表示され、コレクション ファイル共有からは非表示になります。
     
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>電子情報開示
 
 1. コールド ストレージ ファイル共有のフル クロールをスケジュールとして実行できるようにするか、クロールを開始できるようにします。フル クロールまたは増分クロールの開始の詳細については、「[SharePoint Server 2013 でクロールを開始、一時停止、再開、または停止する](https://go.microsoft.com/fwlink/p/?LinkId=615005)」をご覧ください。
     

@@ -16,7 +16,7 @@ ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "概要: Microsoft Azure PaaS へのアクセスのためにネットワークを最適化する方法を理解します。"
 ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,9 +30,9 @@ Azure PaaS アプリ用のネットワーキングを最適化するには、適
 
 ここにセクション本文を挿入します。
   
-1. [マイクロソフト クラウドの接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)で**マイクロソフトのクラウド サービスのネットワークを準備する手順**のセクションを通過します。
+1. [Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)の「**Microsoft クラウド サービスを利用するためのネットワークの準備の手順**」セクションを読んでください。
     
-2. [マイクロソフトの SaaS のためのネットワークを設計](designing-networking-for-microsoft-saas.md)する**マイクロソフトの SaaS サービスのネットワークを準備する手順**」の手順 2 ~ 4 を使用して、インターネットの帯域幅を最適化します。
+2. [Microsoft SaaS のためのネットワーク デザイン](designing-networking-for-microsoft-saas.md)の「**Microsoft SaaS サービスを利用するためのネットワークの準備の手順**」セクションに記載されている手順 2 から 4 を使用して、インターネット帯域幅を最適化します。
     
 3. Azure への ExpressRoute 接続が必要かどうかを判断します。
     
@@ -72,7 +72,7 @@ Azure PaaS においてホストされている組織のアプリケーション
     
 - SSL オフロード
     
-詳細については、[アプリケーション ゲートウェイ](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction) をご覧ください。
+詳細については、[アプリケーション ゲートウェイ]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)) をご覧ください。
   
 ## <a name="azure-traffic-manager"></a>Azure トラフィック マネージャー
 
@@ -98,15 +98,15 @@ Traffic Manager は、次のルーティング方法を使用します。
     
 2. ユーザーは、ヨーロッパの地域の Web アプリケーションによってトラフィックを開始します。
     
-詳細については、[トラフィックのマネージャー](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)を参照してください。
+詳細については、「[Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))」を参照してください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

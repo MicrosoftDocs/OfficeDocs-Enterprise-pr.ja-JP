@@ -18,13 +18,13 @@ ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "概要:Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online でOffice 365 PowerShell を使用する方法について説明します。"
 ms.openlocfilehash: aaea1d5aa83bd01bc1646a11778397936bdb14c9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell による Office 365 の管理
 
- **の概要:**Skype オンライン ビジネス、SharePoint Online では、および Microsoft Exchange Online の Office 365 のユーザーおよびその他の Office 365 の PowerShell を使用する方法について説明します。
+ **概要:** Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online で Office 365 PowerShell を使用する方法について説明します。
   
 Office 365 PowerShell は、Office 365 管理センターを補完する強力な管理ツールです。たとえば、Office 365 PowerShell の自動化機能を使用すると、複数のユーザー アカウントとライセンスをより簡単に管理したり、レポートを作成したりできます。Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online に関するタスクで Office 365 PowerShell を使用する方法について説明します。 
   
@@ -38,7 +38,7 @@ Office 365 PowerShell は、Office 365 管理センターを補完する強力�
     
     Office 365 PowerShell モジュールを既にインストールしてあって、オートメーション コマンドを使用してユーザー アカウントとライセンスを管理する方法の詳細について確認する場合は、ここから開始してください。
     
-- [SharePoint Online 用の Office 365 PowerShell](https://technet.microsoft.com/en-us/library/fp161362.aspx)
+- [SharePoint Online 用の Office 365 PowerShell]((https://technet.microsoft.com/ja-JP/library/fp161362.aspx))
     
     Office 365 PowerShell モジュールをインストールしてあって、オートメーション コマンドを使用して SharePoint Online の管理を実行する場合は、ここから開始してください。
     
@@ -58,7 +58,7 @@ Office 365 PowerShell は、Office 365 管理センターを補完する強力�
     
     Office 365 PowerShell モジュールをインストールしてあって、オートメーション コマンドを使用して Skype for Business Online の管理を実行する場合は、ここから開始してください。
     
-- [Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
+- [Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
     
     Office 365 PowerShell に十分に慣れていて、組織のダイヤルイン会議、クラウド PBX、PSTN 通話の設定を管理したり、Skype for Business Online の使用の監視やレポート作成のためのレポート作成機能を使用したりするための特定のコマンドの詳細を確認する場合は、ここから開始してください。
     
