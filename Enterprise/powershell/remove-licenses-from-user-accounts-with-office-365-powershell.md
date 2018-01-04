@@ -16,65 +16,65 @@ ms.custom:
 - O365ITProTrain
 - DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: "ユーザーに以前割り当てられた Office 365 のライセンスを削除するのには Office 365 の PowerShell を使用する方法について説明します。"
+description: "Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。"
 ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a><span data-ttu-id="3c4be-103">Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する</span><span class="sxs-lookup"><span data-stu-id="3c4be-103">Remove licenses from user accounts with Office 365 PowerShell</span></span>
+# <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a><span data-ttu-id="bf06f-103">Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する</span><span class="sxs-lookup"><span data-stu-id="bf06f-103">Remove licenses from user accounts with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="3c4be-104">**の概要:**ユーザーに以前割り当てられた Office 365 のライセンスを削除するのには Office 365 の PowerShell を使用する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-104">**Summary:** Explains how to use Office 365 PowerShell to remove Office 365 licenses that were previously assigned to users.</span></span>
+<span data-ttu-id="bf06f-104">**概要:** Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-104">[] Explains how to use Office 365 PowerShell to remove Office 365 licenses that were previously assigned to users.</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="3c4be-105">開始する前に</span><span class="sxs-lookup"><span data-stu-id="3c4be-105">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="bf06f-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="bf06f-105">Before you begin</span></span>
 
-- <span data-ttu-id="3c4be-p101">このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p101">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
+- <span data-ttu-id="bf06f-p101">このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p101">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
     
-- <span data-ttu-id="3c4be-108">組織のライセンス プラン ( **AccountSkuID** ) 情報を表示する方法については、以下のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-108">To view the licensing plan ( **AccountSkuID** ) information in your organization, see the following topics:</span></span>
+- <span data-ttu-id="bf06f-108">組織のライセンス プラン ( **AccountSkuID** ) 情報を表示する方法については、以下のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-108">To view the licensing plan ( **AccountSkuID** ) information in your organization, see the following topics:</span></span>
     
-  - [<span data-ttu-id="3c4be-109">Office 365 PowerShell でライセンスとサービスを確認する</span><span class="sxs-lookup"><span data-stu-id="3c4be-109">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+  - [<span data-ttu-id="bf06f-109">Office 365 PowerShell でライセンスとサービスを確認する</span><span class="sxs-lookup"><span data-stu-id="bf06f-109">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
     
-  - [<span data-ttu-id="3c4be-110">Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="3c4be-110">View account license and service details with Office 365 PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
+  - [<span data-ttu-id="bf06f-110">Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="bf06f-110">View account license and service details with Office 365 PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
     
-- <span data-ttu-id="3c4be-111">使用せず、 **Get MsolUser**コマンドレットを使用するかどうかは、_のすべて_パラメーターでは、最初の 500 個のアカウントのみが返されます。</span><span class="sxs-lookup"><span data-stu-id="3c4be-111">If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.</span></span>
+- <span data-ttu-id="bf06f-111">_-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。</span><span class="sxs-lookup"><span data-stu-id="bf06f-111">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 accounts are returned.</span></span>
     
-## <a name="the-short-version-instructions-without-explanations"></a><span data-ttu-id="3c4be-112">簡略版 (説明なしの手順)</span><span class="sxs-lookup"><span data-stu-id="3c4be-112">The short version (instructions without explanations)</span></span>
-<span data-ttu-id="3c4be-113"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="3c4be-113"></span></span>
+## <a name="the-short-version-instructions-without-explanations"></a><span data-ttu-id="bf06f-112">簡略版 (説明なしの手順)</span><span class="sxs-lookup"><span data-stu-id="bf06f-112">The short version (instructions without explanations)</span></span>
+<span data-ttu-id="bf06f-113"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="bf06f-113"></span></span>
 
-<span data-ttu-id="3c4be-p102">このセクションでは、余分な説明を省いて簡潔に手順を示します。ご質問がある場合、または詳細情報が必要な場合には、このトピックの残りの部分をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p102">This section presents the procedures without fanfare or superfluous explanation. If you have questions or want more information, you can read rest of the topic.</span></span>
+<span data-ttu-id="bf06f-p102">このセクションでは、余分な説明を省いて簡潔に手順を示します。ご質問がある場合、または詳細情報が必要な場合には、このトピックの残りの部分をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p102">This section presents the procedures without fanfare or superfluous explanation. If you have questions or want more information, you can read rest of the topic.</span></span>
   
-<span data-ttu-id="3c4be-116">既存のユーザー アカウントからライセンスを削除するには、次の構文を使用します:</span><span class="sxs-lookup"><span data-stu-id="3c4be-116">To remove licenses from an existing user account, use the following syntax:</span></span>
+<span data-ttu-id="bf06f-116">既存のユーザー アカウントからライセンスを削除するには、次の構文を使用します:</span><span class="sxs-lookup"><span data-stu-id="bf06f-116">To remove licenses from an existing user account, use the following syntax:</span></span>
   
 ```
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
-<span data-ttu-id="3c4be-117">次の例では、ユーザー アカウント BelindaN@litwareinc.com から  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-117">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) license from the user account BelindaN@litwareinc.com.</span></span>
+<span data-ttu-id="bf06f-117">次の例では、ユーザー アカウント BelindaN@litwareinc.com から  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-117">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) license from the user account BelindaN@litwareinc.com.</span></span>
   
 ```
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="3c4be-118">ライセンス付与済みの既存のユーザーのグループからライセンスを削除するには、次のいずれかの方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-118">To remove licenses from a group of existing licensed users, use either of the following methods:</span></span>
+<span data-ttu-id="bf06f-118">ライセンス付与済みの既存のユーザーのグループからライセンスを削除するには、次のいずれかの方法を使用します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-118">To remove licenses from a group of existing licensed users, use either of the following methods:</span></span>
   
-- <span data-ttu-id="3c4be-119">**既存のアカウント属性に基づいてアカウントをフィルターする** これを行うには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-119">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
+- <span data-ttu-id="bf06f-119">**既存のアカウント属性に基づいてアカウントをフィルターする** これを行うには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-119">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
     
 ```
 $x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-<span data-ttu-id="3c4be-120">この例では、米国内の販売部門のユーザーのすべてのアカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-120">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) licenses from all accounts for users in the Sales department in the United States.</span></span>
+<span data-ttu-id="bf06f-120">この例では、米国内の販売部門のユーザーのすべてのアカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-120">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) licenses from all accounts for users in the Sales department in the United States.</span></span>
     
 ```
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
 $USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-- <span data-ttu-id="3c4be-121">**特定のアカウントの一覧を使用する** これを行うには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-121">**Use a list of specific accounts** To do this, perform the following steps:</span></span>
+- <span data-ttu-id="bf06f-121">**特定のアカウントの一覧を使用する** これを行うには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-121">**Use a list of specific accounts** To do this, perform the following steps:</span></span>
     
-1. <span data-ttu-id="3c4be-122">次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成し、保存します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-122">Create and save a text file that contains one account on each line like this:</span></span>
+1. <span data-ttu-id="bf06f-122">次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成し、保存します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-122">Create and save a text file that contains one account on each line like this:</span></span>
     
   ```
 akol@contoso.com
@@ -82,57 +82,57 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-2. <span data-ttu-id="3c4be-123">次の構文を使用してください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-123">Use the following syntax:</span></span>
+2. <span data-ttu-id="bf06f-123">次の構文を使用してください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-123">Use the following syntax:</span></span>
     
   ```
   Get-Content "<FileNameAndPath>" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
   ```
 
-<span data-ttu-id="3c4be-124">この例で削除、 `litwareinc:ENTERPRISEPACK` C:\My Documents\Accounts.txt のテキスト ファイルで定義されているユーザー アカウントからの (Office 365 エンタープライズ E3) のライセンスです。</span><span class="sxs-lookup"><span data-stu-id="3c4be-124">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.</span></span>
+<span data-ttu-id="bf06f-124">この例では、テキスト ファイル C:\My Documents\Accounts.txt で定義されているユーザー アカウントから `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-124">This example removes the   (Office 365 Enterprise E3) license from the user accounts defined in the text file C:My DocumentsAccounts.txt.</span></span>
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"
   ```
 
-<span data-ttu-id="3c4be-125">既存のすべてのユーザー アカウントからライセンスを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-125">To remove licenses from all existing user accounts, use the following syntax:</span></span>
+<span data-ttu-id="bf06f-125">既存のすべてのユーザー アカウントからライセンスを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-125">To remove licenses from all existing user accounts, use the following syntax:</span></span>
   
 ```
 $x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-<span data-ttu-id="3c4be-126">次の例では、ライセンスを付与された既存の全ユーザー アカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-126">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) license from all existing licensed user accounts.</span></span>
+<span data-ttu-id="bf06f-126">次の例では、ライセンスを付与された既存の全ユーザー アカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-126">This example removes the  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) license from all existing licensed user accounts.</span></span>
   
 ```
 $x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a><span data-ttu-id="3c4be-127">詳細版 (詳細な説明付きの手順)</span><span class="sxs-lookup"><span data-stu-id="3c4be-127">The long version (instructions with detailed explanations)</span></span>
-<span data-ttu-id="3c4be-128"><a name="LongVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="3c4be-128"></span></span>
+## <a name="the-long-version-instructions-with-detailed-explanations"></a><span data-ttu-id="bf06f-127">詳細版 (詳細な説明付きの手順)</span><span class="sxs-lookup"><span data-stu-id="bf06f-127">The long version (instructions with detailed explanations)</span></span>
+<span data-ttu-id="bf06f-128"><a name="LongVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="bf06f-128"></span></span>
 
-<span data-ttu-id="3c4be-p103">永遠に続くものなどありません。これは Office 365 のライセンスにも該当します。遅かれ早かれユーザー アカウントからライセンスを削除しなければならないときがきます。休暇をとる、ライセンスが必要でなくなるなど、ユーザー ライセンスを削除する理由は無数にあります。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p103">Nothing lasts forever, and that includes Office 365 licenses: sooner or later, there will come a time when you need to remove a license from a user account. Maybe the user is going on leave; maybe the user no longer needs the license; maybe - well, there are obviously any number of reasons why you might want to remove a user license.</span></span>
+<span data-ttu-id="bf06f-p103">永遠に続くものなどありません。これは Office 365 のライセンスにも該当します。遅かれ早かれユーザー アカウントからライセンスを削除しなければならないときがきます。休暇をとる、ライセンスが必要でなくなるなど、ユーザー ライセンスを削除する理由は無数にあります。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p103">Nothing lasts forever, and that includes Office 365 licenses: sooner or later, there will come a time when you need to remove a license from a user account. Maybe the user is going on leave; maybe the user no longer needs the license; maybe - well, there are obviously any number of reasons why you might want to remove a user license.</span></span>
   
-<span data-ttu-id="3c4be-p104">詳しい説明に入る前に、気を付けなければならない重要なポイントは、ライセンスを削除するには、やはりライセンスを削除しなければならないという点です。つまり、ライセンスのすべてのサービスを無効にしても、それはライセンスの削除とはなりません。たとえば、Office 365 のライセンスをすべて使用してしまい、利用できるライセンスが 1 つもないとします。「[Office 365 PowerShell を使ったサービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)」の手順に従って、たとえば Belinda Newman のアカウントのすべてのサービスを無効にすることにします。このコマンドを実行した後、利用できるライセンスの数はいくつになりますか?そうです。ゼロです。このトピックの手順では、Belinda のライセンスのすべてのサービスを *無効*  にしますが、ライセンス自体を無効にする (つまり、削除する) わけではありません。ライセンスは有効のままで、Belinda Newman に割り当てられたままです。Belinda は、このライセンスを使用して Office 365 のサービスにアクセスできなくなるにすぎません。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p104">Before we go any further it's important to note that removing a license requires you to, well, remove the license: disabling all the services on a license is not the same thing as removing a license. For example, suppose we've used up all our Office 365 licenses; in other words, we have no licenses available whatsoever. You decide to follow the procedure in [Disable access to services with Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md) to disable all the services, say, on Belinda Newman's account. After we do that, how many licenses will we have available to us? That's right: zero. Yes, the procedure from that topic will *disable*  all the services on Belinda's license, but it will not disable (i.e., delete) the license itself. The license will still be valid, and it will still be assigned to Belinda Newman. She just won't be able to use that license to access any Office 365 services.</span></span>
+<span data-ttu-id="bf06f-p104">詳しい説明に入る前に、気を付けなければならない重要なポイントは、ライセンスを削除するには、やはりライセンスを削除しなければならないという点です。つまり、ライセンスのすべてのサービスを無効にしても、それはライセンスの削除とはなりません。たとえば、Office 365 のライセンスをすべて使用してしまい、利用できるライセンスが 1 つもないとします。「[Office 365 PowerShell を使ったサービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)」の手順に従って、たとえば Belinda Newman のアカウントのすべてのサービスを無効にすることにします。このコマンドを実行した後、利用できるライセンスの数はいくつになりますか?そうです。ゼロです。このトピックの手順では、Belinda のライセンスのすべてのサービスを *無効*  にしますが、ライセンス自体を無効にする (つまり、削除する) わけではありません。ライセンスは有効のままで、Belinda Newman に割り当てられたままです。Belinda は、このライセンスを使用して Office 365 のサービスにアクセスできなくなるにすぎません。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p104">Before we go any further it's important to note that removing a license requires you to, well, remove the license: disabling all the services on a license is not the same thing as removing a license. For example, suppose we've used up all our Office 365 licenses; in other words, we have no licenses available whatsoever. You decide to follow the procedure in [Disable access to services with Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md) to disable all the services, say, on Belinda Newman's account. After we do that, how many licenses will we have available to us? That's right: zero. Yes, the procedure from that topic will *disable*  all the services on Belinda's license, but it will not disable (i.e., delete) the license itself. The license will still be valid, and it will still be assigned to Belinda Newman. She just won't be able to use that license to access any Office 365 services.</span></span>
   
-<span data-ttu-id="3c4be-p105">これは重要なポイントです。ユーザーからライセンスを削除する場合は、実際にライセンスを *削除*  する必要があります。サービスをすべて無効にすると、ユーザーは Office 365 にログオンできなくなりますが、ライセンスが解放されるわけではありません。ユーザーに現在割り当てられているライセンスを削除する場合は、次のようなコマンドを実行する必要があります。このコマンドでは、 _RemoveLicenses_ パラメーターを使用して、以前に Belinda に割り当てたライセンスを実際に削除します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p105">And that's important: if you want to remove a license from a user you must actually  *remove*  the license. Disabling all the services will prevent the user from logging on to Office 365, but it won't free up his or her license. If you want to take back a license that's currently assigned to a user you need to run a command similar to this one, a command that uses the _RemoveLicenses_ parameter to actually remove the license previously assigned to Belinda:</span></span>
+<span data-ttu-id="bf06f-p105">これは重要なポイントです。ユーザーからライセンスを削除する場合は、実際にライセンスを *削除*  する必要があります。サービスをすべて無効にすると、ユーザーは Office 365 にログオンできなくなりますが、ライセンスが解放されるわけではありません。ユーザーに現在割り当てられているライセンスを削除する場合は、次のようなコマンドを実行する必要があります。このコマンドでは、 _RemoveLicenses_ パラメーターを使用して、以前に Belinda に割り当てたライセンスを実際に削除します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p105">And that's important: if you want to remove a license from a user you must actually  *remove*  the license. Disabling all the services will prevent the user from logging on to Office 365, but it won't free up his or her license. If you want to take back a license that's currently assigned to a user you need to run a command similar to this one, a command that uses the _RemoveLicenses_ parameter to actually remove the license previously assigned to Belinda:</span></span>
   
 ```
 Set-MsolUserLicense -UserPrincipalName BelindaN@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="3c4be-142">このコマンドを実行すると、Belinda Newman に Office 365 を使用するライセンスが付与された状態ではなくなります。</span><span class="sxs-lookup"><span data-stu-id="3c4be-142">Run that command, and Belinda Newman will no longer be licensed to use Office 365.</span></span>
+<span data-ttu-id="bf06f-142">このコマンドを実行すると、Belinda Newman に Office 365 を使用するライセンスが付与された状態ではなくなります。</span><span class="sxs-lookup"><span data-stu-id="bf06f-142">Run that command, and Belinda Newman will no longer be licensed to use Office 365.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="3c4be-p106">わかるように、削除するライセンスの名前を指定する必要があります_RemoveLicenses_パラメーターを使用するとします。よいかわからない場合、次のようにコマンドを実行するだけのユーザーにライセンスを割り当てるにはどのライセンス プランが使用されていました。`Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`</span><span class="sxs-lookup"><span data-stu-id="3c4be-p106">As you can see, when you use the  _RemoveLicenses_ parameter you need to specify the name of the license to be removed. If you aren't sure which licensing plan was used to assign a license to the user just run a command like this:  `Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`</span></span>
+> <span data-ttu-id="bf06f-p106">ご覧のように、_RemoveLicenses_ パラメーターを使用する場合は、削除するライセンスの名前を指定する必要があります。どのライセンス プランを使用してライセンスをユーザーに割り当てたのかわからない場合は、次のようなコマンドを実行します。`Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`</span><span class="sxs-lookup"><span data-stu-id="bf06f-p106">As you can see, when you use the  _RemoveLicenses_ parameter you need to specify the name of the license to be removed. If you aren't sure which licensing plan was used to assign a license to the user just run a command like this:>  `Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Format-List DisplayName,Licenses`</span></span>
   
-<span data-ttu-id="3c4be-145">ライセンスが本当に削除されていることを確認するには、Get-MsolUser を使用して対象のユーザー アカウントを確認します。</span><span class="sxs-lookup"><span data-stu-id="3c4be-145">To verify that the license really was removed, use the Get-MsolUser to check the user account in question:</span></span>
+<span data-ttu-id="bf06f-145">ライセンスが本当に削除されていることを確認するには、Get-MsolUser を使用して対象のユーザー アカウントを確認します。</span><span class="sxs-lookup"><span data-stu-id="bf06f-145">To verify that the license really was removed, use the Get-MsolUser to check the user account in question:</span></span>
   
 ```
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
-<span data-ttu-id="3c4be-146">Belinda の**isLicensed**プロパティ設定するプランではすべての場合、 `False`。</span><span class="sxs-lookup"><span data-stu-id="3c4be-146">If everything went according to plan, Belinda's **isLicensed** property will now be set to `False`:</span></span>
+<span data-ttu-id="bf06f-146">すべてが予定どおりであれば、Belinda の **isLicensed** プロパティは `False` に設定されています。</span><span class="sxs-lookup"><span data-stu-id="bf06f-146">If everything when according to plan, Belinda's **isLicensed** property will now be set to `False`:</span></span>
   
 ```
 UserPrincipalName            DisplayName         isLicensed
@@ -140,36 +140,36 @@ UserPrincipalName            DisplayName         isLicensed
 BelindaN@litwareinc.com      Newman, Belinda     False
 ```
 
-<span data-ttu-id="3c4be-p107">別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。詳細については、「[Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p107">Another way to free up a license is by deleting the user account. For more information, see [Delete and restore user accounts with Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="bf06f-p107">別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。詳細については、「[Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p107">Another way to free up a license is by deleting the user account. For more information, see [Delete and restore user accounts with Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="3c4be-149">関連項目</span><span class="sxs-lookup"><span data-stu-id="3c4be-149">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf06f-149">関連項目</span><span class="sxs-lookup"><span data-stu-id="bf06f-149">See also</span></span>
 
-<span data-ttu-id="3c4be-150">Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-150">See the following additional topics about managing users with Office 365 PowerShell:</span></span>
+<span data-ttu-id="bf06f-150">Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-150">See the following additional topics about managing users with Office 365 PowerShell:</span></span>
   
-- [<span data-ttu-id="3c4be-151">Office 365 PowerShell を使用してユーザー アカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="3c4be-151">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="bf06f-151">Office 365 PowerShell を使用してユーザー アカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="bf06f-151">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3c4be-152">Office 365 PowerShell を使用したユーザー アカウントの削除と復元</span><span class="sxs-lookup"><span data-stu-id="3c4be-152">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="bf06f-152">Office 365 PowerShell を使用したユーザー アカウントの削除と復元</span><span class="sxs-lookup"><span data-stu-id="bf06f-152">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3c4be-153">Office 365 PowerShell でユーザー アカウントをブロックする</span><span class="sxs-lookup"><span data-stu-id="3c4be-153">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="bf06f-153">Office 365 PowerShell でユーザー アカウントをブロックする</span><span class="sxs-lookup"><span data-stu-id="bf06f-153">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3c4be-154">Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる</span><span class="sxs-lookup"><span data-stu-id="3c4be-154">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="bf06f-154">Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる</span><span class="sxs-lookup"><span data-stu-id="bf06f-154">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-<span data-ttu-id="3c4be-155">これらの手順で使用するコマンドレットの詳細については、次のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-155">For more information about the cmdlets that are used in these procedures, see the following topics:</span></span>
+<span data-ttu-id="bf06f-155">これらの手順で使用するコマンドレットの詳細については、次のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-155">For more information about the cmdlets that are used in these procedures, see the following topics:</span></span>
   
-- [<span data-ttu-id="3c4be-156">Get-Content</span><span class="sxs-lookup"><span data-stu-id="3c4be-156">Get-Content</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=289917)
+- [<span data-ttu-id="bf06f-156">Get-Content</span><span class="sxs-lookup"><span data-stu-id="bf06f-156">Get-Content</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=289917)
     
-- [<span data-ttu-id="3c4be-157">Get-MsolUser</span><span class="sxs-lookup"><span data-stu-id="3c4be-157">Get-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [<span data-ttu-id="bf06f-157">Get-MsolUser</span><span class="sxs-lookup"><span data-stu-id="bf06f-157">Get-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
-- [<span data-ttu-id="3c4be-158">Set-MsolUserLicense</span><span class="sxs-lookup"><span data-stu-id="3c4be-158">Set-MsolUserLicense</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691548)
+- [<span data-ttu-id="bf06f-158">Set-MsolUserLicense</span><span class="sxs-lookup"><span data-stu-id="bf06f-158">Set-MsolUserLicense</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691548)
     
-- [<span data-ttu-id="3c4be-159">ForEach-Object</span><span class="sxs-lookup"><span data-stu-id="3c4be-159">ForEach-Object</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [<span data-ttu-id="bf06f-159">ForEach-Object</span><span class="sxs-lookup"><span data-stu-id="bf06f-159">ForEach-Object</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
-- [<span data-ttu-id="3c4be-160">Where-Object</span><span class="sxs-lookup"><span data-stu-id="3c4be-160">Where-Object</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113423)
+- [<span data-ttu-id="bf06f-160">Where-Object</span><span class="sxs-lookup"><span data-stu-id="bf06f-160">Where-Object</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113423)
     
-## <a name="new-to-office-365"></a><span data-ttu-id="3c4be-161">Office 365 を初めて使用する場合</span><span class="sxs-lookup"><span data-stu-id="3c4be-161">New to Office 365?</span></span>
+## <a name="new-to-office-365"></a><span data-ttu-id="bf06f-161">Office 365 を初めて使用する場合</span><span class="sxs-lookup"><span data-stu-id="bf06f-161">New to Office 365?</span></span>
 
 ||
 |:-----|
-|<span data-ttu-id="3c4be-p108">![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="3c4be-p108">![The short icon for LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), brought to you by LinkedIn Learning.</span></span> |
+|<span data-ttu-id="bf06f-p108">![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="bf06f-p108">![The short icon for LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)), brought to you by LinkedIn Learning.</span></span> |
    
 

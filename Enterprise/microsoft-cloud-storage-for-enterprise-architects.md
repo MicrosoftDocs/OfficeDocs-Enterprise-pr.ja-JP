@@ -19,50 +19,50 @@ ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: "概要: Microsoft クラウド サービスとプラットフォームのストレージを設計します。"
 ms.openlocfilehash: 1222fc842d637992d14614b71a339ed98e1491d6
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="microsoft-cloud-storage-for-enterprise-architects"></a><span data-ttu-id="90fae-103">エンタープライズ アーキテクトのための Microsoft クラウド ストレージ</span><span class="sxs-lookup"><span data-stu-id="90fae-103">Microsoft Cloud Storage for Enterprise Architects</span></span>
+# <a name="microsoft-cloud-storage-for-enterprise-architects"></a><span data-ttu-id="22109-103">エンタープライズ アーキテクトのための Microsoft クラウド ストレージ</span><span class="sxs-lookup"><span data-stu-id="22109-103">Microsoft Cloud Storage for Enterprise Architects</span></span>
 
- <span data-ttu-id="90fae-104">**概要:** Microsoft クラウド サービスとプラットフォームのストレージを設計します。</span><span class="sxs-lookup"><span data-stu-id="90fae-104">**Summary:** Design your storage for Microsoft cloud services and platforms.</span></span>
+ <span data-ttu-id="22109-104">**概要:** Microsoft クラウド サービスとプラットフォームのストレージを設計します。</span><span class="sxs-lookup"><span data-stu-id="22109-104">**Summary:** Design your storage for Microsoft cloud services and platforms.</span></span>
   
-<span data-ttu-id="90fae-p101">この記事には、Microsoft のクラウド サービスとプラットフォームを使用して、組織のためのストレージを設計する上で IT アーキテクトが知る必要のある事柄について説明する一連の記事へのリンクがあります。この情報を 6 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、A3 としても表される) で印刷することもできます。</span><span class="sxs-lookup"><span data-stu-id="90fae-p101">This article links you to a set of articles that describe what IT architects need to know about designing storage for organizations using Microsoft cloud services and platforms. You can also view this information as a 6-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+<span data-ttu-id="22109-p101">この記事には、Microsoft のクラウド サービスとプラットフォームを使用して、組織のためのストレージを設計する上で IT アーキテクトが知る必要のある事柄について説明する一連の記事へのリンクがあります。この情報を 6 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、A3 としても表される) で印刷することもできます。</span><span class="sxs-lookup"><span data-stu-id="22109-p101">This article links you to a set of articles that describe what IT architects need to know about designing storage for organizations using Microsoft cloud services and platforms. You can also view this information as a 6-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-<span data-ttu-id="90fae-107">[![つまみのマイクロソフトのクラウド ・ ストレージ ・ モデルのイメージ](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
-](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="90fae-107">[![Thumb image for Microsoft cloud storage model](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+<span data-ttu-id="22109-107">[![Microsoft クラウド ストレージ モデルのサムネイル画像](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="22109-107">[![Thumb image for Microsoft cloud storage model](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-<span data-ttu-id="90fae-108">![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="90fae-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
+<span data-ttu-id="22109-108">![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="22109-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-<span data-ttu-id="90fae-109">すべての[マイクロソフトのクラウドの IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)でモデルを表示しを機械に通す[マイクロソフトのエンタープライズ ・ クラウド ・ ロードマップ: IT 意思決定者のためのリソース](https://aka.ms/cloudarchitecture)。</span><span class="sxs-lookup"><span data-stu-id="90fae-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
+<span data-ttu-id="22109-109">すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。</span><span class="sxs-lookup"><span data-stu-id="22109-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)).</span></span>
   
-<span data-ttu-id="90fae-110">次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="90fae-110">See the following sections:</span></span>
+<span data-ttu-id="22109-110">次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="22109-110">See the following sections:</span></span>
   
-- [<span data-ttu-id="90fae-111">Microsoft クラウドのストレージを設計する</span><span class="sxs-lookup"><span data-stu-id="90fae-111">Designing storage for the Microsoft cloud</span></span>](designing-storage-for-the-microsoft-cloud.md)
+- [<span data-ttu-id="22109-111">Microsoft クラウドのストレージを設計する</span><span class="sxs-lookup"><span data-stu-id="22109-111">Designing storage for the Microsoft cloud</span></span>](designing-storage-for-the-microsoft-cloud.md)
     
-    <span data-ttu-id="90fae-112">クラウド ストレージを利用するとよい理由、クラウド ストレージの主要なシナリオについて説明します。また、さまざまな Microsoft クラウド ストレージ オプションの一覧を紹介します。</span><span class="sxs-lookup"><span data-stu-id="90fae-112">Understand why you should use cloud storage and the key cloud storage scenarios, and then scan the list of the different Microsoft cloud storage options.</span></span>
+    <span data-ttu-id="22109-112">クラウド ストレージを利用するとよい理由、クラウド ストレージの主要なシナリオについて説明します。また、さまざまな Microsoft クラウド ストレージ オプションの一覧を紹介します。</span><span class="sxs-lookup"><span data-stu-id="22109-112">Understand why you should use cloud storage and the key cloud storage scenarios, and then scan the list of the different Microsoft cloud storage options.</span></span>
     
-- [<span data-ttu-id="90fae-113">いつでも使用可能</span><span class="sxs-lookup"><span data-stu-id="90fae-113">Move-in ready</span></span>](move-in-ready.md)
+- [<span data-ttu-id="22109-113">いつでも使用可能</span><span class="sxs-lookup"><span data-stu-id="22109-113">Move-in ready</span></span>](move-in-ready.md)
     
-    <span data-ttu-id="90fae-114">建築の例えを使ってさまざまなクラウド ストレージ オプションをわかりやすく説明します。これらのオプションは他の Microsoft クラウド サービスに組み込まれており、すぐに使用できます。</span><span class="sxs-lookup"><span data-stu-id="90fae-114">Using a construction analogy to organize the wide variety of cloud storage options, these are built-in to other Microsoft cloud offerings and are ready to use immediately.</span></span>
+    <span data-ttu-id="22109-114">建築の例えを使ってさまざまなクラウド ストレージ オプションをわかりやすく説明します。これらのオプションは他の Microsoft クラウド サービスに組み込まれており、すぐに使用できます。</span><span class="sxs-lookup"><span data-stu-id="22109-114">Using a construction analogy to organize the wide variety of cloud storage options, these are built-in to other Microsoft cloud offerings and are ready to use immediately.</span></span>
     
-- [<span data-ttu-id="90fae-115">いくらかのアセンブリが必要</span><span class="sxs-lookup"><span data-stu-id="90fae-115">Some assembly required</span></span>](some-assembly-required.md)
+- [<span data-ttu-id="22109-115">いくらかのアセンブリが必要</span><span class="sxs-lookup"><span data-stu-id="22109-115">Some assembly required</span></span>](some-assembly-required.md)
     
-    <span data-ttu-id="90fae-116">これらのクラウド ストレージ オプションはお客様のストレージ ソリューションの開始点であり、カスタム調整用の追加の構成やコーディングを必要とします。</span><span class="sxs-lookup"><span data-stu-id="90fae-116">These cloud storage options are a starting point for your storage solution, requiring additional configuration or coding for a custom fit.</span></span>
+    <span data-ttu-id="22109-116">これらのクラウド ストレージ オプションはお客様のストレージ ソリューションの開始点であり、カスタム調整用の追加の構成やコーディングを必要とします。</span><span class="sxs-lookup"><span data-stu-id="22109-116">These cloud storage options are a starting point for your storage solution, requiring additional configuration or coding for a custom fit.</span></span>
     
-- [<span data-ttu-id="90fae-117">新規に構築</span><span class="sxs-lookup"><span data-stu-id="90fae-117">Build from the ground up</span></span>](build-from-the-ground-up.md)
+- [<span data-ttu-id="22109-117">新規に構築</span><span class="sxs-lookup"><span data-stu-id="22109-117">Build from the ground up</span></span>](build-from-the-ground-up.md)
     
-    <span data-ttu-id="90fae-118">これらのクラウド ストレージ オプションは基本的なストレージ構成要素であり、独自のストレージ ソリューションやアプリを一から作成するためにこれらを使用できます。</span><span class="sxs-lookup"><span data-stu-id="90fae-118">These cloud storage options are the fundamental storage building blocks, which you can use to create your own storage solution or apps from scratch.</span></span>
+    <span data-ttu-id="22109-118">これらのクラウド ストレージ オプションは基本的なストレージ構成要素であり、独自のストレージ ソリューションやアプリを一から作成するためにこれらを使用できます。</span><span class="sxs-lookup"><span data-stu-id="22109-118">These cloud storage options are the fundamental storage building blocks, which you can use to create your own storage solution or apps from scratch.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="90fae-119">これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ストレージ」のポスターの **2017 年 9 月** リリースを反映しています。</span><span class="sxs-lookup"><span data-stu-id="90fae-119">These articles reflect the **September 2017** release of the Microsoft Cloud Storage for Enterprise Architects poster.</span></span>
+> <span data-ttu-id="22109-119">これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ストレージ」のポスターの **2017 年 9 月** リリースを反映しています。</span><span class="sxs-lookup"><span data-stu-id="22109-119">These articles reflect the **September 2017** release of the Microsoft Cloud Storage for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="90fae-120">See Also</span><span class="sxs-lookup"><span data-stu-id="90fae-120">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="22109-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="22109-120">See Also</span></span>
 
-[<span data-ttu-id="90fae-121">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="90fae-121">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="22109-121">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="22109-121">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[<span data-ttu-id="90fae-122">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span><span class="sxs-lookup"><span data-stu-id="90fae-122">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
+<span data-ttu-id="22109-122">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="22109-122">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
 
 
 
