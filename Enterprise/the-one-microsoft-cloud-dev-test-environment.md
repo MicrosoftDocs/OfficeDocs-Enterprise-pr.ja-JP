@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "概要: ガイドを使用してこのテスト ラボを含むすべてのマイクロソフトのクラウド ソリューションの開発/テスト環境を作成します。"
-ms.openlocfilehash: a6375c60ff6c216f34e2f78850e1afd5ed0c8c80
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2cbfb3e963927f18d2ee46ed1f5076b274a99154
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 開発/テスト環境
 
@@ -60,7 +57,8 @@ ms.lasthandoff: 12/15/2017
   
 1. いずれかのブラウザーを使用して、デスクトップ コンピューター CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインしているか。
     
-2. **[管理]** タイルをクリックします。
+2. 
+            **[管理]** タイルをクリックします。
     
 3. ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
     
@@ -103,7 +101,8 @@ ms.lasthandoff: 12/15/2017
   
 1. デスクトップ コンピューターのいずれかのブラウザーを使用または、CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインします。
     
-2. **[管理]** タイルをクリックします。
+2. 
+            **[管理]** タイルをクリックします。
     
 3. [ **Office 管理者センター** ] タブで、左側のナビゲーションでは、をクリックして**請求 > サービスを購入する**です。
     
@@ -185,7 +184,7 @@ ms.lasthandoff: 12/15/2017
     
 - [Azure インフラストラクチャ サービスをサーバー ベースのワークロードをホストするためにシミュレートされた複数の環境に関するネットワークを作成します。](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

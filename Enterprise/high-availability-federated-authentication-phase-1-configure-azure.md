@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "概要: 高可用性をホストする Microsoft Azure インフラストラクチャを構成する Office 365 のフェデレーション認証します。"
-ms.openlocfilehash: fed6b24af2ba54bef95be22641fd140f7c1be717
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f74e91930f5aef8f10986dcf51db6066c953014d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
@@ -65,7 +60,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**項目**|**サブネット名**|**サブネット アドレス スペース**|**目的**|
+|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |_______________________________  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
 |2.  <br/> |_______________________________  <br/> |_______________________________  <br/> |AD FS VM が使用するサブネット。  <br/> |
@@ -76,7 +71,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。
   
-|**アイテム**|**目的**|**サブネット上の IP アドレス**|**値**|
+|**アイテム**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |_______________________________  <br/> |
 |2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |_______________________________  <br/> |
@@ -91,7 +86,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。
   
-|**項目**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
+|**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |_______________________________  <br/> |
 |2.  <br/> |_______________________________  <br/> |_______________________________  <br/> |
@@ -102,7 +97,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。
   
-|**項目**|**ローカル ネットワークのアドレス スペース**|
+|**アイテム**|**ローカル ネットワークのアドレス スペース**|
 |:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |
 |2.  <br/> |_______________________________  <br/> |
@@ -151,7 +146,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 一意のリソース グループ名のセットについて、次に示す表に必要事項を記入します。
   
-|**アイテム**|**リソース グループ名**|**目的**|
+|**アイテム**|**リソース グループ名**|**用途**|
 |:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |ドメイン コントローラー  <br/> |
 |2.  <br/> |_______________________________  <br/> |AD FS サーバー  <br/> |
@@ -276,7 +271,7 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。 
   
-|**アイテム**|**目的**|**可用性の名前を設定します。**|
+|**アイテム**|**用途**|**可用性の名前を設定します。**|
 |:-----|:-----|:-----|
 |1.  <br/> |ドメイン コントローラー  <br/> |_______________________________  <br/> |
 |2.  <br/> |AD FS サーバー  <br/> |_______________________________  <br/> |
@@ -311,7 +306,7 @@ New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $l
 
 使用[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)、この作業負荷の構成を続行するのには。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

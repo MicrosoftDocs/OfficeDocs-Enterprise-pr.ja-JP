@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "概要: 政治キャンペーンの開発/テスト環境でパブリック、プライベート、機密、および機密性の高いオンラインの SharePoint のチーム サイトを作成します。"
-ms.openlocfilehash: 82e671af271508dfdecac6169a7892a8a12b7865
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4f89fd29103756a33aa15e8e5e2976c521d69baa
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
@@ -37,9 +35,9 @@ ms.lasthandoff: 12/15/2017
     
 2. **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
     
-3. お使いのブラウザーの新しい**Office 管理者センター** ] タブからをクリックして**管理センター > セキュリティ&amp;準拠**。
+3. ブラウザーの新しい **[Office 管理者センター]** タブで、**[管理センター] > [セキュリティとコンプライアンス]** をクリックします。
     
-4. 新しいから**ホーム ・ セキュリティ&amp;準拠**タブ、ブラウザーのをクリックして**分類 > ラベル**。
+4. ブラウザーの新しい **[ホーム – セキュリティとコンプライアンス]** タブをクリックして、**[分類] > [ラベル]** をクリックします。
     
 5. **[ホーム] > [ラベル]** ウィンドウで、 **[ラベルの作成]** をクリックします。
     
@@ -209,9 +207,9 @@ ms.lasthandoff: 12/15/2017
     
 次に、組織外の機密ラベルを持つチームの SharePoint Online サイト上のドキュメントを共有する場合にユーザーに通知するデータ損失防止 (DLP) ポリシーを構成します。この DLP ポリシーは、キャンペーンのマーケティングのサイトのリソースに適用されます。
   
-1. お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。
+1. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
-2. 新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。
+2. ブラウザーの新しい **[セキュリティとコンプライアンス]** タブで、**[データ損失防止] > [ポリシー]** をクリックします。
     
 3. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
     
@@ -319,9 +317,9 @@ ms.lasthandoff: 12/15/2017
   
 1. 必要な場合は、ブラウザーを使用して、ローカル コンピューターにし、セキュリティ管理者または企業の管理者の役割を持つアカウントを使用して Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
     
-2. お使いのブラウザーで [ **Microsoft Office のホーム**] タブをクリックして、**セキュリティ&amp;準拠**を並べて表示します。
+2. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
-3. 新しい**セキュリティ&amp;準拠**お使いのブラウザーのタブをクリックして**データ損失防止 > ポリシー**。
+3. ブラウザーの新しい **[セキュリティとコンプライアンス]** タブで、**[データ損失防止] > [ポリシー]** をクリックします。
     
 4. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
     
@@ -377,7 +375,7 @@ ms.lasthandoff: 12/15/2017
     
 7. をクリックして**このポリシーを取得するユーザーまたはグループを選択 > ユーザー/グループの**、**シニアとスタッフの戦略的な**選択です。
     
-8. **[選択] > [OK]** をクリックします。
+8. **[選択] > [OK]** とクリックします。
     
 9. **[非常に機密性の高い社外秘]** ラベルの場合は、省略記号 (...) をクリックしてから、 **[サブラベルの追加]** をクリックします。
     
@@ -407,7 +405,7 @@ ms.lasthandoff: 12/15/2017
   
 Azure の情報の保護と、この新しいラベル文書を保護するには、 [Azure の情報保護クライアントのインストール](https://docs.microsoft.com/information-protection/rms-client/install-client-app)をテスト コンピューターで行う必要があります、Office 365 ポータルから Office をインストールするサイン インし、Microsoft Word から、**にアカウントを持つシニアとスタッフの戦略的な**の試用版サブスクリプションのグループです。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

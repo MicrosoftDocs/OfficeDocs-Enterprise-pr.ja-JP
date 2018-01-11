@@ -8,22 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- mar17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "概要: Office 365 の開発/テスト環境でスマート フォンに送信されるテキスト メッセージを使用して複数要素の認証を構成します。"
-ms.openlocfilehash: 87fdcc2ccd910e8da399e14d37fe3d0d1f0a66d4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 66b0fadd097e6df940754c28cd7b95549eb3a761
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境用の多要素認証
 
@@ -40,7 +35,8 @@ Office 365 サブスクリプションにサインインする際に追加のレ
 2. User 2 アカウントに対して、多要素認証を有効にしてテストします。
     
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
@@ -105,7 +101,7 @@ Office 365 サブスクリプションにサインインする際に追加のレ
     
     User 2 用の Office 365 ポータルが表示されます。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

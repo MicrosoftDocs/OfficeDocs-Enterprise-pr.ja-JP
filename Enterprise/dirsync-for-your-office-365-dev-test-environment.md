@@ -8,22 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "概要: Office 365 の開発/テスト環境のディレクトリ同期を構成します。"
-ms.openlocfilehash: da9a0070587c50ea9fc2f33612fb4885d6eaf695
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d8a663367e61ac3f01e67f4d3731a0dccdd5a222
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の DirSync
 
@@ -46,7 +42,8 @@ ms.lasthandoff: 12/15/2017
 2. APP1 に Azure AD Connect をインストールして構成します。
     
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>フェーズ 1: Office 365 の開発/テスト環境を作成する
 
@@ -117,11 +114,11 @@ Stop-Process -Name Explorer -Force
     
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。Azure AD Connect は APP1 上で実行され、CORP Windows Server AD ドメインを 30 分ごとに Office 365 に同期します。
     
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 組織のディレクトリ同期を展開する準備ができたら、[展開 Office 365 ディレクトリ同期 (DirSync) で、Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)を参照してください。
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "概要: は、クラウドの設定の詳細については独自のストレージ ・ サービスやソリューションの作成に使用できるストレージ構成要素を取得します。"
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="build-from-the-ground-up"></a>新規に構築
 
@@ -194,7 +190,7 @@ Azure Storage を使用してカスタム ストレージ ソリューション�
     
 - データを垂直 (テーブル単位) または水平 (複数のシャードにおよぶセグメント テーブル) に分割し、負荷を複数のデータベースに分散。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ストレージ](microsoft-cloud-storage-for-enterprise-architects.md)
   

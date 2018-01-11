@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "概要: は、構成し、データのクラス分けと Azure の情報の保護 (AIP) クライアントを使用して、Office 365 の開発/テスト環境でのラベル付けについて説明します。"
-ms.openlocfilehash: 2784f4105903855de89c6c45f7a643279bb4dfbf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a2db6817bea879caeb52ed9b11b40c6c317ea171
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境でのデータ分類とラベルの作成
 
@@ -31,7 +27,8 @@ ms.lasthandoff: 12/15/2017
 Azure の情報保護のクライアントを使用すると、Office 365 で SharePoint Online フォルダーにアップロードする前にドキュメントを分類できます。この資料の手順についてでは、Azure の情報保護のクライアントをインストールして、データのクラス分けを実演します。詳細については、 [Azure の情報の保護](https://www.microsoft.com/cloud-platform/azure-information-protection)を参照してください。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構築する
 
@@ -161,7 +158,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
     
     サポート サイト コレクションのドキュメント フォルダーの AfterAIP.docx を参照してください。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
