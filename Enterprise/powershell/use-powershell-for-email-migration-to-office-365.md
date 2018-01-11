@@ -9,14 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: "概要:Windows PowerShell を使用して Office 365 に電子メールを移行する方法について説明します。"
-ms.openlocfilehash: 520f2b78a32e6393a6999c208017f6752cf4ab50
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Office 365 へのメールの移行に PowerShell を使う
 

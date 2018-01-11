@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。"
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -185,7 +181,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
   
 **図: 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素**
 
-![SharePoint 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素を示します。](images/AZarch_TopWarmStndby.gif)
+![SharePoint 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素を示します。](images/AZarchWarmStndby.gif)
   
 この図では次のようになっています。
   

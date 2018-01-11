@@ -10,16 +10,15 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "概要: Microsoft Excel の OData 機能を使用して、Office 365 の展開に関する詳しいレポート情報を取得します。"
-ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a4245029c337450f5f5ac3655e0b60a301ea80ec
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Excel を使用して Office 365 レポート データを取得する
 
@@ -27,7 +26,7 @@ ms.lasthandoff: 12/15/2017
   
 レポートは、システム管理の主要な部分です。Office 365 管理センターには、複数の定義済みのレポートが含まれており、左側のナビゲーションの **レポート**セクションからアクセスできます。利用状況レポートとセキュリティとコンプライアンスのレポートがあります。
   
-入手可能なレポートは、使用している Office 365 のバージョンや有効になっている Office 365 サービスによって異なります。詳細については、「[レポート ページ](((https://technet.microsoft.com/ja-JP/library/office-365-reports.aspx)))」を参照してください。
+入手可能なレポートは、使用している Office 365 のバージョンや有効になっている Office 365 サービスによって異なります。詳細については、「[レポート ページ]((https://technet.microsoft.com/ja-JP/library/office-365-reports.aspx))」を参照してください。
   
 定義済みの管理センターのレポートは優れたリソースです。これらはメールボックスの利用状況や、ユーザーがオンライン会議に費やした時間 (分単位) などを簡単に確認できるようにします。ただし、Office 365 ドメインの詳細な分析に関して言えば、このレポートには制限があります。
   

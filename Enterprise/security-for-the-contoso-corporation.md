@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "概要: Contoso 社がどのように Microsoft のクラウド製品の機能にセキュリティ要件をマップし、クラウド セキュリティの準備計画を決定したかについて理解します。"
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Contoso Corporation のセキュリティ
 
@@ -48,7 +46,7 @@ Contoso 社のクラウドのセキュリティ要件は次のとおりです。
     
 ## <a name="contosos-data-sensitivity-classification"></a>Contoso 社のデータ秘密度の分類
 
-Contoso 社は、Microsoft の[データ分類ツールキット](https://msdn.microsoft.com/library/hh204743.aspx)の情報を使用し、データの分析を行って次のレベルを決定しました。
+Contoso 社は、Microsoft の[データ分類ツールキット]((https://msdn.microsoft.com/library/hh204743.aspx))の情報を使用し、データの分析を行って次のレベルを決定しました。
   
 |**レベル 1:低いビジネス価値**|**レベル 2:中程度のビジネス価値**|**レベル 3:高いビジネス価値**|
 |:-----|:-----|:-----|
@@ -98,7 +96,7 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
     
     Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、非常に強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成しました。全体管理者アカウントでサインインするのは特定の管理タスクを実行するときのみで、パスワードは指定されたスタッフにのみ知らされています。Contoso 社のセキュリティ管理者は、IT 担当者の職務と責任に従って、各アカウントに管理者ロールを割り当てました。
     
-    詳細については、「[Office 365 の管理者ロールについて](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)」を参照してください。
+    詳細については、「[Office 365 の管理者ロールについて]((https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d))」を参照してください。
     
 - **重要なユーザー アカウントに対する多要素認証 (MFA)**
     
@@ -108,13 +106,13 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
     
   - 組織内の信頼されている人の資格情報が漏えいし、攻撃者が悪意のある電子メールを送信するというフィッシング攻撃からの保護を目的として、Contoso 社では経営幹部を含む管理職のすべてのユーザー アカウントで MFA を有効にしました。
     
-    詳細については、「[Office 365 展開用の多要素認証の計画](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)」を参照してください。
+    詳細については、「[Office 365 展開用の多要素認証の計画]((https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))」を参照してください。
     
 - **高度なセキュリティ管理 (ASM)**
     
     ASM では、構成済みのポリシーを使用して異常な動作を監視します。Contoso 社のセキュリティ管理者は ASM を使用して警告をセットアップし、大量のデータのダウンロード、サインインしようとして繰り返される失敗、不明なまたは危険な IP アドレスからのサインインなど、通常とは異なるユーザー動作や危険なユーザー動作があると、IT 管理者が通知を受けるようにします。
     
-    詳細については、「[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
+    詳細については、「[Office 365 の Advanced Security Management の概要]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))」を参照してください。
     
 - **セキュリティで保護されたメール フローとメールボックス監査ログ**
     
@@ -122,9 +120,9 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
     
     詳細については、以下を参照してください。 
     
-  - [Office 365 メールのスパム対策保護](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
+  - [Office 365 メールのスパム対策保護]((https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586))
     
-  - [安全な添付ファイルと安全なリンクのための Advanced Threat Protection](https://technet.microsoft.com/library/mt148491.aspx)
+  - [安全な添付ファイルと安全なリンクのための Advanced Threat Protection]((https://technet.microsoft.com/library/mt148491.aspx))
     
   - [Office 365 でメールボックスの監査を有効にする](https://go.microsoft.com/fwlink/p/?LinkID=626109)
     
@@ -132,7 +130,7 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
     
     Contoso 社は機密性の高いデータを識別し、故意か偶然かを問わずユーザーがデータを共有することがないように、Exchange Online、SharePoint Online、OneDrive 用の DLP ポリシーを構成しています。 
     
-    詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
+    詳しくは、「[データ損失防止ポリシーの概要]((https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e))」を参照してください。
     
 ## <a name="see-also"></a>関連項目
 
@@ -140,9 +138,9 @@ Office 365 のセキュリティのベスト プラクティスに基づき、Co
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft のエンタープライズ クラウド ロードマップ:IT 意思決定者のリソース](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft のエンタープライズ クラウド ロードマップ:IT 意思決定者のリソース]((https://sway.com/FJ2xsyWtkJc2taRD))
   
-[Office 365 のセキュリティのベスト プラクティス](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+[Office 365 のセキュリティのベスト プラクティス]((https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3))
 
 
 

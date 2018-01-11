@@ -14,14 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: "Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。"
-ms.openlocfilehash: 90cae603a7a7cda0b7318571d3eb045f750fd58d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d419aab9b3287364567e03accdfb2e687eacb0de
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
 

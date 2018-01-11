@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: "概要: 分離した SharePoint Online チーム サイトの使用方法について説明します。"
-ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d4fe03c8e95b78bbd9454bbbd23f6fa27ba39f06
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>分離した SharePoint Online チーム サイト
 

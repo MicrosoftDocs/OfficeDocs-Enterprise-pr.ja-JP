@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
 description: "概要: 架空の代表的なグローバル組織が、Enterprise Cloud のシナリオを使用して、業務上の必要に取り組んでいる方法を示します。"
-ms.openlocfilehash: ff520c317fe4137b5e683935dc238bd7ff3f05ac
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e63e5cdcece24cbffa7a0d6027c7bc28dbff4c7e
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズのシナリオ
 
@@ -40,7 +38,7 @@ Contoso 社は、ネットワーク、ID、適所のセキュリティ インフ
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

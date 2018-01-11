@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
+ms.collection: Ent_O365
 ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: "Office 365 のテナント全体においてセキュリティで保護された方法で、組織が共同作業できるようにする方法を説明します。"
-ms.openlocfilehash: a6b82ab79d6eb2312c33fac488cb21a941831518
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a4de2d6c755b3edd64d835636c59b7cf5d003bf8
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="office-365-cross-tenant-collaboration"></a>Office 365 テナント間コラボレーション
 

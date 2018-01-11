@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: "概要: Microsoft クラウド サービスとプラットフォームのストレージを設計します。"
-ms.openlocfilehash: 1222fc842d637992d14614b71a339ed98e1491d6
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 71b774192e72c4c7e961df8c9258c104e25aea4a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ストレージ
 

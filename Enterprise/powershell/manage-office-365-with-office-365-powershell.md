@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - PowerShell
-- DecEntMigration
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "概要:Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online でOffice 365 PowerShell を使用する方法について説明します。"
-ms.openlocfilehash: aaea1d5aa83bd01bc1646a11778397936bdb14c9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8732d8f6170608e76df25f521ac83feda62b2d2a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell による Office 365 の管理
 

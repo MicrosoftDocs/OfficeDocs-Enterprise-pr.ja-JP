@@ -11,14 +11,13 @@ localization_priority: Normal
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Office 365 PowerShell を使い、ユーザー アカウントへのライセンスの割り当てと、特定のサービス プランの無効化を同時に行う方法を説明します。"
-ms.openlocfilehash: 907314e13b353e5d5ddbcd8fe467db568473d0b3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 96ce12f811ee147a92da6b6928c2f6e3391c9b1f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
 

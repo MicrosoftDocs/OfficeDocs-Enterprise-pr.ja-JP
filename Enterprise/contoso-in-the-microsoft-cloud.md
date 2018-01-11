@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid_Top
-- Ent_O365_Visuals
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。"
-ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4c0969e929851c97c62a3099ff90ce311297413d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft Cloud の Contoso
 

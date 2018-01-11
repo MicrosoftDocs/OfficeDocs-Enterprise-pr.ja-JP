@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "概要: Microsoft Azure IaaS のワークロード用に最適化されたネットワークの設計方法について説明します。"
-ms.openlocfilehash: e4861de51f386af6e142debdafc64f655f010880
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Microsoft Azure IaaS のためのネットワークの設計
 
@@ -381,10 +379,10 @@ Azure ゲートウェイでは要約ルートが許可されないため、オ�
 |**手順**|**結果**|
 |:-----|:-----|
 |1. VNet アドレス空間のルート領域でないプレフィックスを一覧表示する。  <br/> |172.16.0.0/12 および 192.168.0.0/16  <br/> |
-|2.最後に使用した 
-  VNet アドレス空間内のオクテットの直前までの、変数オクテットの重複していないプレフィックスを一覧表示する。  <br/> |10.0.0.0/16, 10.1.0.0/16…10.99.0.0/16, 10.101.0.0/16…10.254.0.0/16, 10.255.0.0/16 (255 個のプレフィックス、10.100.0.0/16 はスキップ)  <br/> |
-|3.  
- VNet アドレス空間の最後に使用したオクテット内の重複していないプレフィックスを一覧表示する。  <br/> |10.100.0.0/24, 10.100.1.0/24…10.100.99.0/24, 10.100.101.0/24…10.100.254.0/24, 10.100.0.255.0/24 (255 個のプレフィックス,10.100.100.0/24 はスキップ)  <br/> |
+|2.　最後に使用したを除く、変数のオクテットの、重複していないプレフィックスを一覧表示する。 
+ VNet アドレス空間のオクテット  <br/> |10.0.0.0/16, 10.1.0.0/16…10.99.0.0/16, 10.101.0.0/16…10.254.0.0/16, 10.255.0.0/16 (255 プレフィックス、10.100.0.0/16 はスキップ)  <br/> |
+|3. 内に重複していないプレフィックスを一覧表示する。 
+ VNet アドレス空間の最後に使用したオクテット  <br/> |10.100.0.0/24, 10.100.1.0/24…10.100.99.0/24, 10.100.101.0/24…10.100.254.0/24, 10.100.0.255.0/24 (255 プレフィックス,10.100.100.0/24はスキップ)  <br/> |
    
  **表 7:ローカル アドレスのネットワーク空間の例**
   

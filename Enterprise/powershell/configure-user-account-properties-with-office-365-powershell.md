@@ -10,18 +10,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
-- apr17entnews
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "概要:Office 365 PowerShell を使用して、Office 365 テナント内の個別のまたは複数のユーザー アカウントのプロパティを構成します。"
-ms.openlocfilehash: d9e817530f3b1554cb757720f01afec5ed3b63ef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eac568d20d1b33e06c37e920f9fd31582c8bb648
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウント プロパティを構成する
 
@@ -210,7 +208,7 @@ Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalNam
 - ユーザー プリンシパル名のリストをアルファベット順に並び替えて (**Sort-Object UserPrincipalName**)、次のコマンドに送信する (**|**)。
     
 - 各アカウントのユーザー プリンシパル名プロパティのみを表示する ( **Select-Object UserPrincipalName** )。
-- 一度に 1 画面ずつ表示する (**More**)。
+- 一度に 1 画面ずつ表示する ( **More** )。
     
 このコマンドにより、使用しているアカウントすべてが表示されます。表示名 (姓と名) を指定してアカウントのユーザー プリンシパル名を表示するには、**$userName** 変数を次のように入力し (\< 記号と > 記号は削除します)、以下のコマンドを実行します。
   
