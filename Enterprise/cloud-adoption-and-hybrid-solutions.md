@@ -1,22 +1,21 @@
 ---
 title: "Enterprise Cloud ソリューション"
 description: "Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。"
-services: o365-solutions
 author: JoeDavies-MSFT
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: landing-page
+localization_priority: Normal
+ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
-ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
+ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 <h1>Enterprise Cloud ソリューション</h1>
 <p>Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。</p>
