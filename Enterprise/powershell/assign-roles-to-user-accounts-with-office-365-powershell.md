@@ -133,5 +133,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [<span data-ttu-id="377e6-143">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="377e6-143">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 #### 
 
-<span data-ttu-id="377e6-144">[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))</span><span class="sxs-lookup"><span data-stu-id="377e6-144">[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))</span></span>
+<span data-ttu-id="377e6-144">[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)</span><span class="sxs-lookup"><span data-stu-id="377e6-144">[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)</span></span>
 

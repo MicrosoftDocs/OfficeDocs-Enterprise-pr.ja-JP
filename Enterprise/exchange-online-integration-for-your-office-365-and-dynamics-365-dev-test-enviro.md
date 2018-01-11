@@ -39,7 +39,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="d34e4-115">以下の手順を使用して、Dynamics 365 と Exchange Online 統合用の全体管理者のメールボックスを構成します。</span><span class="sxs-lookup"><span data-stu-id="d34e4-115">Use these steps to configure the global administrator's mailbox for Dynamics 365 and Exchange Online integration:</span></span>
   
-1. <span data-ttu-id="d34e4-116">ブラウザーのプライベート セッションを使用して、[(http://portal.office.com)]((http://portal.office.com)) に移動し、Office 365 全体管理者アカウントでサインインします。</span><span class="sxs-lookup"><span data-stu-id="d34e4-116">Using a private session of your browser, go to [((http://portal.office.com))]((http://portal.office.com)) and sign in using your Office 365 global administrator account.</span></span>
+1. <span data-ttu-id="d34e4-116">ブラウザーのプライベート セッションを使用して、[(http://portal.office.com)](http://portal.office.com) に移動し、Office 365 全体管理者アカウントでサインインします。</span><span class="sxs-lookup"><span data-stu-id="d34e4-116">Using a private session of your browser, go to [((http://portal.office.com))](http://portal.office.com) and sign in using your Office 365 global administrator account.</span></span>
     
 2. <span data-ttu-id="d34e4-117">**Microsoft Office ホーム** ページで、 **[メール]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d34e4-117">On the **Microsoft Office Home** page, click the **Mail** tile.</span></span>
     
@@ -98,7 +98,7 @@ ms.lasthandoff: 01/11/2018
 9. <span data-ttu-id="d34e4-151">**[破棄]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d34e4-151">Click **Discard**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="d34e4-152">[ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="d34e4-152">Click [here]((http://aka.ms/catlgstack)) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="d34e4-152">[ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="d34e4-152">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="d34e4-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="d34e4-153">See Also</span></span>
 
@@ -112,8 +112,8 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="d34e4-158">Office 365 開発/テスト環境の DirSync</span><span class="sxs-lookup"><span data-stu-id="d34e4-158">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
 
-<span data-ttu-id="d34e4-159">[Dynamics 365 (オンライン) のサブスクリプション管理]((https://technet.microsoft.com/library/jj679903.aspx))</span><span class="sxs-lookup"><span data-stu-id="d34e4-159">[Subscription Management for Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))</span></span>
+<span data-ttu-id="d34e4-159">[Dynamics 365 (オンライン) のサブスクリプション管理](https://technet.microsoft.com/library/jj679903.aspx)</span><span class="sxs-lookup"><span data-stu-id="d34e4-159">[Subscription Management for Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)</span></span>
   
-<span data-ttu-id="d34e4-160">[Dynamics 365 の管理]((https://technet.microsoft.com/library/dn531101.aspx))</span><span class="sxs-lookup"><span data-stu-id="d34e4-160">[Administering Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))</span></span>
+<span data-ttu-id="d34e4-160">[Dynamics 365 の管理](https://technet.microsoft.com/library/dn531101.aspx)</span><span class="sxs-lookup"><span data-stu-id="d34e4-160">[Administering Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)</span></span>
 
 

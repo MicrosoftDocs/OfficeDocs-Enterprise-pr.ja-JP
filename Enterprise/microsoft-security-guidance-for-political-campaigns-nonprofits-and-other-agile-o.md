@@ -45,7 +45,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="ff594-134">SharePoint Online の 4 つのチーム サイトを内部、プライベート、機密、および非常に機密性の高い社外秘のセキュリティ レベルで作成します。</span><span class="sxs-lookup"><span data-stu-id="ff594-134">Create four SharePoint Online team sites with Internal, Private, Sensitive, and Highly Confidential levels of security.</span></span>
     
-<span data-ttu-id="ff594-135">デモのための追加のセキュリティ機能や概念実証については、[Office 365 テスト ラボ ガイド]((http://aka.ms/o365tlgs))に関する記事をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="ff594-135">For additional security features for demonstration or proof of concept, see [Office 365 Test Lab Guides]((http://aka.ms/o365tlgs)).</span></span>
+<span data-ttu-id="ff594-135">デモのための追加のセキュリティ機能や概念実証については、[Office 365 テスト ラボ ガイド](http://aka.ms/o365tlgs)に関する記事をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="ff594-135">For additional security features for demonstration or proof of concept, see [Office 365 Test Lab Guides](http://aka.ms/o365tlgs).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="ff594-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="ff594-136">See Also</span></span>
 

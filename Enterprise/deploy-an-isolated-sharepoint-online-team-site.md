@@ -61,7 +61,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="62048-127">サイト ビューアー (手順 3 のリストが含まれます)</span><span class="sxs-lookup"><span data-stu-id="62048-127">Site viewers (which will contain the list from step 3)</span></span>
     
-1. <span data-ttu-id="62048-128">お使いのブラウザーで、Azure Portal [(https://portal.azure.com)]((https://portal.azure.com)) に移動し、ユーザー管理の管理者または会社管理者のロールに割り当てられたアカウントの資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="62048-128">In your browser, go to the Azure portal at [(https://portal.azure.com)]((https://portal.azure.com)) and sign in with the credentials of an account that has been assigned with User Management Admin or Company Administrator role.</span></span>
+1. <span data-ttu-id="62048-128">お使いのブラウザーで、Azure Portal [(https://portal.azure.com)](https://portal.azure.com) に移動し、ユーザー管理の管理者または会社管理者のロールに割り当てられたアカウントの資格情報でサインインします。</span><span class="sxs-lookup"><span data-stu-id="62048-128">In your browser, go to the Azure portal at [(https://portal.azure.com)](https://portal.azure.com) and sign in with the credentials of an account that has been assigned with User Management Admin or Company Administrator role.</span></span>
     
 2. <span data-ttu-id="62048-129">Azure Portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="62048-129">In the Azure portal, click **Azure Active Directory > Users and groups > All groups**.</span></span>
     
@@ -113,7 +113,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> <span data-ttu-id="62048-154">すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907))をダウンロードしてください。</span><span class="sxs-lookup"><span data-stu-id="62048-154">For a text file that contains all the PowerShell commands and an Excel configuration worksheet that generates PowerShell commands based on your group and user account names, download the [Isolated SharePoint Online Team Site Deployment Kit]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)).</span></span> 
+> <span data-ttu-id="62048-154">すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)をダウンロードしてください。</span><span class="sxs-lookup"><span data-stu-id="62048-154">For a text file that contains all the PowerShell commands and an Excel configuration worksheet that generates PowerShell commands based on your group and user account names, download the [Isolated SharePoint Online Team Site Deployment Kit](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907).</span></span> 
   
 <span data-ttu-id="62048-155">いずれかのアクセス グループのユーザー アカウントの UPN をテキスト ファイルに格納した場合は、次の PowerShell コマンド ブロックを使用して、それらすべてのユーザー アカウントを一度に追加します。</span><span class="sxs-lookup"><span data-stu-id="62048-155">If you stored the UPNs of user accounts for any of the access groups in a text file, you can use the following PowerShell command block to add them all at one time:</span></span>
   
@@ -158,7 +158,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 <span data-ttu-id="62048-166">最初に、次の手順で SharePoint Online チーム サイトを作成します。</span><span class="sxs-lookup"><span data-stu-id="62048-166">First, create the SharePoint Online team site with these steps.</span></span>
   
-1. <span data-ttu-id="62048-p108">SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="62048-p108">Sign in to the Office 365 portal with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).</span></span>
+1. <span data-ttu-id="62048-p108">SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="62048-p108">Sign in to the Office 365 portal with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
 2. <span data-ttu-id="62048-169">タイルのリストで、 **[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="62048-169">In the list of tiles, click **SharePoint**.</span></span>
     

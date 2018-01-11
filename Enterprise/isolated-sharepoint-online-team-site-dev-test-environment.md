@@ -50,7 +50,7 @@ ms.lasthandoff: 01/11/2018
     
 > [!TIP]
 > <span data-ttu-id="fefd2-121">
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="fefd2-121">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="fefd2-121">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a><span data-ttu-id="fefd2-122">フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="fefd2-122">Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment</span></span>
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a><span data-ttu-id="fefd2-127">フェーズ 2: ユーザー アカウントとアクセス グループを作成する</span><span class="sxs-lookup"><span data-stu-id="fefd2-127">Phase 2: Create user accounts and access groups</span></span>
 
-<span data-ttu-id="fefd2-128">「[Office 365 PowerShell への接続]((https://technet.microsoft.com/library/dn975125.aspx))」の手順を使用して、全体管理者アカウントで以下から Office 365 の監査サブスクリプション フォームに接続します。</span><span class="sxs-lookup"><span data-stu-id="fefd2-128">Use the instructions in [Connect to Office 365 PowerShell]((https://technet.microsoft.com/library/dn975125.aspx)) to connect to your Office 365 trail subscription with your global administrator account from:</span></span>
+<span data-ttu-id="fefd2-128">「[Office 365 PowerShell への接続](https://technet.microsoft.com/library/dn975125.aspx)」の手順を使用して、全体管理者アカウントで以下から Office 365 の監査サブスクリプション フォームに接続します。</span><span class="sxs-lookup"><span data-stu-id="fefd2-128">Use the instructions in [Connect to Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) to connect to your Office 365 trail subscription with your global administrator account from:</span></span>
   
 - <span data-ttu-id="fefd2-129">自分のコンピューター (ライトウェイトの Office 365 開発/テスト環境の場合)。</span><span class="sxs-lookup"><span data-stu-id="fefd2-129">Your computer (for the lightweight Office 365 dev/test environment).</span></span>
     
@@ -84,7 +84,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
 > [!TIP]
-> <span data-ttu-id="fefd2-132">この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[こちら]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="fefd2-132">Click [here]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)) for a text file that contains all of the PowerShell commands in this article.</span></span>
+> <span data-ttu-id="fefd2-132">この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[こちら](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="fefd2-132">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1) for a text file that contains all of the PowerShell commands in this article.</span></span>
   
 <span data-ttu-id="fefd2-133">組織名 (例: contosotoycompany)、所属地域に該当する 2 文字の国別コードを入力して、Windows PowerShell 用 Windows Azure Active Directory モジュールのプロンプトから次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="fefd2-133">Fill in your organization name (example: contosotoycompany), the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
@@ -149,7 +149,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 <span data-ttu-id="fefd2-148">ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="fefd2-148">To create a SharePoint Online team site for ProjectX, do the following:</span></span>
   
-1. <span data-ttu-id="fefd2-149">ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-149">Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using your global administrator account.</span></span>
+1. <span data-ttu-id="fefd2-149">ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-149">Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using your global administrator account.</span></span>
     
 2. <span data-ttu-id="fefd2-150">タイルのリストで、 **[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-150">In the list of tiles, click **SharePoint**.</span></span>
     
@@ -217,7 +217,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 2. <span data-ttu-id="fefd2-183">全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-183">Click the name of your global administrator, and then click **Sign out**.</span></span>
     
-3. <span data-ttu-id="fefd2-184">デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-184">Sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using the Lead Designer account name and its password.</span></span>
+3. <span data-ttu-id="fefd2-184">デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-184">Sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using the Lead Designer account name and its password.</span></span>
     
 4. <span data-ttu-id="fefd2-185">タイルのリストで、 **[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-185">In the list of tiles, click **SharePoint**.</span></span>
     
@@ -247,7 +247,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 <span data-ttu-id="fefd2-202">開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-202">Now let's demonstrate access using the Development VP user account:</span></span>
   
-1. <span data-ttu-id="fefd2-203">開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-203">Sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using the Development VP account name and its password.</span></span>
+1. <span data-ttu-id="fefd2-203">開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-203">Sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using the Development VP account name and its password.</span></span>
     
 2. <span data-ttu-id="fefd2-204">タイルのリストで、 **[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-204">In the list of tiles, click **SharePoint**.</span></span>
     
@@ -263,7 +263,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 <span data-ttu-id="fefd2-213">権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-213">Now let's demonstrate access with a user account that has no permissions:</span></span>
   
-1. <span data-ttu-id="fefd2-214">User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-214">Sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using the User 3 account name and its password.</span></span>
+1. <span data-ttu-id="fefd2-214">User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-214">Sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using the User 3 account name and its password.</span></span>
     
 2. <span data-ttu-id="fefd2-215">タイルのリストで、 **[SharePoint]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="fefd2-215">In the list of tiles, click **SharePoint**.</span></span>
     

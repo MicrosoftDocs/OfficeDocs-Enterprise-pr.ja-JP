@@ -46,7 +46,7 @@ ms.lasthandoff: 12/15/2017
 
 ![ビデオ (再生ボタン) アイコン](images/mod_icon_video_M.png)
   
-<span data-ttu-id="752b3-118">Hyper-V でこのテスト ラボを構成する方法の詳細については、「[Windows Server 2012 Hyper-V で Exchange、Lync、および SharePoint 統合テスト ラボをホストする]((https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx))」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="752b3-118">For information about how to configure this test lab in Hyper-V, see [Hosting the integrated Exchange, Lync, and SharePoint test lab with Windows Server 2012 Hyper-V]((https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)).</span></span>
+<span data-ttu-id="752b3-118">Hyper-V でこのテスト ラボを構成する方法の詳細については、「[Windows Server 2012 Hyper-V で Exchange、Lync、および SharePoint 統合テスト ラボをホストする](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="752b3-118">For information about how to configure this test lab in Hyper-V, see [Hosting the integrated Exchange, Lync, and SharePoint test lab with Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).</span></span>
   
 ## <a name="download-the-test-lab-guide"></a><span data-ttu-id="752b3-119">テスト ラボ ガイドをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="752b3-119">Download the test lab guide</span></span>
 

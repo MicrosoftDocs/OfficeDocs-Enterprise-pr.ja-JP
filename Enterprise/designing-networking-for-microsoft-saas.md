@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="0c9e5-162">さらに、イントラネット接続のスループット (有線、ワイヤレス、または VPN) を最適化します。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-162">Additionally, optimize intranet connection throughput (wired, wireless, or VPN).</span></span>
   
-<span data-ttu-id="0c9e5-163">詳細については、[Office 365 の NAT サポート]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9))をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-163">For more information, see [NAT support with Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).</span></span>
+<span data-ttu-id="0c9e5-163">詳細については、[Office 365 の NAT サポート](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-163">For more information, see [NAT support with Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).</span></span>
   
-<span data-ttu-id="0c9e5-164">ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span></span>
+<span data-ttu-id="0c9e5-164">ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
 <span data-ttu-id="0c9e5-165">イントラネットのパフォーマンスを最適化するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-165">To optimize your intranet performance, do the following:</span></span>
   
@@ -150,7 +150,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="0c9e5-168">中間デバイスの分析 (使用年数、正常性など) を実行します</span><span class="sxs-lookup"><span data-stu-id="0c9e5-168">Perform analysis of intermediate devices (age, health, etc.)</span></span>
     
-<span data-ttu-id="0c9e5-169">詳細については、[PsPing ツール]((https://technet.microsoft.com/sysinternals/jj729731.aspx)) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-169">For more information, see the [PsPing tool]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).</span></span>
+<span data-ttu-id="0c9e5-169">詳細については、[PsPing ツール](https://technet.microsoft.com/sysinternals/jj729731.aspx) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-169">For more information, see the [PsPing tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).</span></span>
   
 ## <a name="it-operations-considerations"></a><span data-ttu-id="0c9e5-170">IT 運用上の考慮事項</span><span class="sxs-lookup"><span data-stu-id="0c9e5-170">IT operations considerations</span></span>
 
@@ -180,11 +180,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="0c9e5-183">詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c9e5-183">For more information, see:</span></span>
   
-- <span data-ttu-id="0c9e5-184">[Office 365 のネットワークと移行の計画]((https://aka.ms/tune))</span><span class="sxs-lookup"><span data-stu-id="0c9e5-184">[Network and migration planning for Office 365]((https://aka.ms/tune))</span></span>
+- <span data-ttu-id="0c9e5-184">[Office 365 のネットワークと移行の計画](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="0c9e5-184">[Network and migration planning for Office 365](https://aka.ms/tune)</span></span>
     
-- <span data-ttu-id="0c9e5-185">[Office 365 のパフォーマンス管理 Microsoft Virtual Academy コース]((https://aka.ms/o365perf))</span><span class="sxs-lookup"><span data-stu-id="0c9e5-185">[Office 365 Performance Management Microsoft Virtual Academy course]((https://aka.ms/o365perf))</span></span>
+- <span data-ttu-id="0c9e5-185">[Office 365 のパフォーマンス管理 Microsoft Virtual Academy コース](https://aka.ms/o365perf)</span><span class="sxs-lookup"><span data-stu-id="0c9e5-185">[Office 365 Performance Management Microsoft Virtual Academy course](https://aka.ms/o365perf)</span></span>
     
-- <span data-ttu-id="0c9e5-186">[Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="0c9e5-186">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="0c9e5-186">[Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="0c9e5-186">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="0c9e5-187">関連項目</span><span class="sxs-lookup"><span data-stu-id="0c9e5-187">See Also</span></span>
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="0c9e5-189">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="0c9e5-189">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="0c9e5-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="0c9e5-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="0c9e5-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="0c9e5-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

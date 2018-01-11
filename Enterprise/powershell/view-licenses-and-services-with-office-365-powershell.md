@@ -66,7 +66,7 @@ Get-MsolAccountSku
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-<span data-ttu-id="4f721-p108">次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート]((https://support.office.com/home/contact))にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="4f721-p108">The following table shows the Office 365 service plans and their friendly names for the most common services. Your list of service plans might be different. For a complete list of service plans and their friendly names, contact [Office Support]((https://support.office.com/home/contact)).</span></span>
+<span data-ttu-id="4f721-p108">次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート](https://support.office.com/home/contact)にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="4f721-p108">The following table shows the Office 365 service plans and their friendly names for the most common services. Your list of service plans might be different. For a complete list of service plans and their friendly names, contact [Office Support](https://support.office.com/home/contact).</span></span>
   
 |<span data-ttu-id="4f721-140">****サービス プラン****</span><span class="sxs-lookup"><span data-stu-id="4f721-140">****Service plan****</span></span>|<span data-ttu-id="4f721-141">****説明****</span><span class="sxs-lookup"><span data-stu-id="4f721-141">****Description****</span></span>|
 |:-----|:-----|
@@ -97,7 +97,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 ||
 |:-----|
-|<span data-ttu-id="4f721-p109">![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4f721-p109">![The short icon for LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)), brought to you by LinkedIn Learning.</span></span> |
+|<span data-ttu-id="4f721-p109">![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4f721-p109">![The short icon for LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), brought to you by LinkedIn Learning.</span></span> |
    
 ## <a name="see-also"></a><span data-ttu-id="4f721-157">関連項目</span><span class="sxs-lookup"><span data-stu-id="4f721-157">See also</span></span>
 <span data-ttu-id="4f721-158"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="4f721-158"><a name="ShortVersion"> </a></span></span>

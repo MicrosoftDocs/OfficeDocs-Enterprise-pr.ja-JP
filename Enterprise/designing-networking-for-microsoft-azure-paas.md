@@ -70,7 +70,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="d81e0-130">SSL オフロード</span><span class="sxs-lookup"><span data-stu-id="d81e0-130">SSL offload</span></span>
     
-<span data-ttu-id="d81e0-131">詳細については、[アプリケーション ゲートウェイ]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d81e0-131">For more information, see [Application Gateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).</span></span>
+<span data-ttu-id="d81e0-131">詳細については、[アプリケーション ゲートウェイ](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d81e0-131">For more information, see [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span></span>
   
 ## <a name="azure-traffic-manager"></a><span data-ttu-id="d81e0-132">Azure トラフィック マネージャー</span><span class="sxs-lookup"><span data-stu-id="d81e0-132">Azure Traffic Manager</span></span>
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/11/2018
     
 2. <span data-ttu-id="d81e0-144">ユーザーは、ヨーロッパの地域の Web アプリケーションによってトラフィックを開始します。</span><span class="sxs-lookup"><span data-stu-id="d81e0-144">The user initiates traffic with the regional web app in Europe.</span></span>
     
-<span data-ttu-id="d81e0-145">詳細については、「[Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d81e0-145">For more information, see [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).</span></span>
+<span data-ttu-id="d81e0-145">詳細については、「[Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d81e0-145">For more information, see [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="d81e0-146">関連項目</span><span class="sxs-lookup"><span data-stu-id="d81e0-146">See Also</span></span>
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="d81e0-148">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="d81e0-148">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="d81e0-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="d81e0-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="d81e0-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="d81e0-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

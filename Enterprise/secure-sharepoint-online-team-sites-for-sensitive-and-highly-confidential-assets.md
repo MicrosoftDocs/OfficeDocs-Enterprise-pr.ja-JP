@@ -52,9 +52,9 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="fc44e-p104">最終的に、セキュリティと SharePoint 管理者によってアクセスが厳密に管理される 2 つのコラボレーション サイトが作成されます。高機密 AIP ラベルの付いたファイルは、Research チーム サイト外に配布されたとしても暗号化されているため、研究チームのメンバー以外は開くことができません。</span><span class="sxs-lookup"><span data-stu-id="fc44e-p104">The result is two collaboration sites whose access is tightly controlled by security and SharePoint administrators. For files with the Highly Confidential AIP label, even if they are distributed outside the Research team site, they are encrypted and can only be opened by a member of a research team.</span></span>
   
-<span data-ttu-id="fc44e-124">詳細については、[セキュアな SharePoint Online サイトとファイル]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files))を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc44e-124">For more information, see [Secure SharePoint Online sites and files]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).</span></span>
+<span data-ttu-id="fc44e-124">詳細については、[セキュアな SharePoint Online サイトとファイル](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc44e-124">For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).</span></span>
   
- <span data-ttu-id="fc44e-125">デモや概念実証、開発/テストのために設定する場合は、[開発/テスト環境でのセキュアな SharePoint Online サイト]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test))を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc44e-125">To set this up for demonstration, proof-of-concept, or dev/test, see [Secure SharePoint Online sites in a dev/test environment]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).</span></span>
+ <span data-ttu-id="fc44e-125">デモや概念実証、開発/テストのために設定する場合は、[開発/テスト環境でのセキュアな SharePoint Online サイト](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fc44e-125">To set this up for demonstration, proof-of-concept, or dev/test, see [Secure SharePoint Online sites in a dev/test environment](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="fc44e-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="fc44e-126">See Also</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="fc44e-129">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="fc44e-129">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="fc44e-130">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span><span class="sxs-lookup"><span data-stu-id="fc44e-130">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span></span>
+<span data-ttu-id="fc44e-130">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span><span class="sxs-lookup"><span data-stu-id="fc44e-130">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span></span>
   
-<span data-ttu-id="fc44e-131">[Microsoft の Enterprise Cloud ロードマップ:IT の意思決定者向けのリソース]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="fc44e-131">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="fc44e-131">[Microsoft の Enterprise Cloud ロードマップ:IT の意思決定者向けのリソース](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="fc44e-131">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

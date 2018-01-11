@@ -24,13 +24,13 @@ ms.lasthandoff: 01/11/2018
 
  <span data-ttu-id="35c0e-104">**概要:** Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-104">**Summary:** Configure and demonstrate Office 365 Cloud App Security in your Office 365 dev/test environment.</span></span>
   
-<span data-ttu-id="35c0e-p101">Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリティ管理」と呼ばれていた) を使用すると、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。それによって調査と、是正アクションの実行が可能になります。詳細については、「[Office 365 の Advanced Security Management の概要]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35c0e-p101">Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Cloud App Security in Office 365]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)).</span></span>
+<span data-ttu-id="35c0e-p101">Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリティ管理」と呼ばれていた) を使用すると、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。それによって調査と、是正アクションの実行が可能になります。詳細については、「[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35c0e-p101">Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).</span></span>
   
 <span data-ttu-id="35c0e-107">この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。</span><span class="sxs-lookup"><span data-stu-id="35c0e-107">With the instructions in this article, you enable and test Cloud App Security in your Office 365 trial subscription.</span></span>
   
 > [!TIP]
 > <span data-ttu-id="35c0e-108">
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="35c0e-108">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="35c0e-108">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a><span data-ttu-id="35c0e-109">フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する</span><span class="sxs-lookup"><span data-stu-id="35c0e-109">Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment</span></span>
 
@@ -47,11 +47,11 @@ ms.lasthandoff: 01/11/2018
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a><span data-ttu-id="35c0e-116">Office 365 の既定の通知動作をテストする</span><span class="sxs-lookup"><span data-stu-id="35c0e-116">Test the default notification behavior of Office 365</span></span>
 
-1. <span data-ttu-id="35c0e-117">Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-117">Go to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+1. <span data-ttu-id="35c0e-117">Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-117">Go to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
   - <span data-ttu-id="35c0e-118">ライトウェイトの Office 365 開発/テスト環境を使用している場合は、ローカル コンピューターからサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-118">If you are using the lightweight Office 365 dev/test environment, sign in from your local computer.</span></span>
     
-  - <span data-ttu-id="35c0e-119">シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル]((https://portal.azure.com)) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-119">If you are using the simulated enterprise Office 365 dev/test environment, use the [Azure portal]((https://portal.azure.com)) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
+  - <span data-ttu-id="35c0e-119">シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-119">If you are using the simulated enterprise Office 365 dev/test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
     
 2. <span data-ttu-id="35c0e-120">ポータルのメイン ページで、 **[管理]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-120">From the main portal page, click **Admin**.</span></span>
     
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="enable-and-configure-cloud-app-security"></a><span data-ttu-id="35c0e-134">Cloud App Security を有効にし、構成する</span><span class="sxs-lookup"><span data-stu-id="35c0e-134">Enable and configure Cloud App Security</span></span>
 
-1. <span data-ttu-id="35c0e-135">Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-135">Go to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+1. <span data-ttu-id="35c0e-135">Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-135">Go to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
 2. <span data-ttu-id="35c0e-136">**[セキュリティとコンプライアンス]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-136">Click the **Security &amp; Compliance** tile.</span></span>
     
@@ -109,7 +109,7 @@ ms.lasthandoff: 01/11/2018
 
 1. <span data-ttu-id="35c0e-151">右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-151">In the upper-right, click the user icon, and then click **Sign out**.</span></span>
     
-2. <span data-ttu-id="35c0e-152">[(https://portal.office.com)]((https://portal.office.com))を開きます。</span><span class="sxs-lookup"><span data-stu-id="35c0e-152">Go to [(https://portal.office.com)]((https://portal.office.com)).</span></span>
+2. <span data-ttu-id="35c0e-152">[(https://portal.office.com)](https://portal.office.com)を開きます。</span><span class="sxs-lookup"><span data-stu-id="35c0e-152">Go to [(https://portal.office.com)](https://portal.office.com).</span></span>
     
 3. <span data-ttu-id="35c0e-153">Office 365 のサインイン ページで、 **[別のアカウントを使用する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-153">On the Office 365 sign in page, click **Use another account**.</span></span>
     
@@ -133,7 +133,7 @@ ms.lasthandoff: 01/11/2018
     
 13. <span data-ttu-id="35c0e-164">右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-164">Click the user icon in the upper-right, and then click **Sign out**.</span></span> 
     
-14. <span data-ttu-id="35c0e-165">[(https://portal.office.com)]((https://portal.office.com))を開きます。</span><span class="sxs-lookup"><span data-stu-id="35c0e-165">Go to [(https://portal.office.com)]((https://portal.office.com)).</span></span>
+14. <span data-ttu-id="35c0e-165">[(https://portal.office.com)](https://portal.office.com)を開きます。</span><span class="sxs-lookup"><span data-stu-id="35c0e-165">Go to [(https://portal.office.com)](https://portal.office.com).</span></span>
     
 15. <span data-ttu-id="35c0e-166">**[Office 365 サインイン]** ページで、全体管理者のアカウント名をクリックします。</span><span class="sxs-lookup"><span data-stu-id="35c0e-166">On the **Office 365 sign in** page, click your global administrator account name.</span></span>
     
@@ -153,7 +153,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="35c0e-p109">受信トレイに 2 件の「 **Microsoft Azure AD Notification Service**」という題名の新しい電子メール メッセージが届いているはずです。1 件のメッセージは、User 5 のアカウントが **パスワード管理者**ロール に追加されたことを示しています。別のメッセージは、User 5 のアカウントが **ユーザー管理者**ロール (Office 365 管理センターでのユーザー管理の管理者ロールに等しい) に追加されたことを示しています。</span><span class="sxs-lookup"><span data-stu-id="35c0e-p109">You should see two new email messages in the inbox with the title **Microsoft Azure AD Notification Service**. One message indicates that the User 5 account was added to the **Password Administrator** role and another message indicates that the User 5 account was added to the **User Administrator** role (equal to the User management administrator role in the Office 365 Admin center).</span></span>
     
-<span data-ttu-id="35c0e-p110">この環境を使用して新しいポリシーを作成し、さらに Office 365 Cloud App Security を試すことができます。その他の構成に関する記事へのリンクは、「[高度なセキュリティ管理の使用を開始する]((https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35c0e-p110">You can now use this environment to create new policies and further experiment with Office 365 Cloud App Security. See [Get ready for Office 365 Cloud App Security]((https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)) for links to additional configuration articles.</span></span>
+<span data-ttu-id="35c0e-p110">この環境を使用して新しいポリシーを作成し、さらに Office 365 Cloud App Security を試すことができます。その他の構成に関する記事へのリンクは、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35c0e-p110">You can now use this environment to create new policies and further experiment with Office 365 Cloud App Security. See [Get ready for Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) for links to additional configuration articles.</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="35c0e-179">関連項目</span><span class="sxs-lookup"><span data-stu-id="35c0e-179">See Also</span></span>
 
@@ -163,6 +163,6 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="35c0e-182">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="35c0e-182">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-<span data-ttu-id="35c0e-183">[Office 365 の Advanced Security Management の概要]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))</span><span class="sxs-lookup"><span data-stu-id="35c0e-183">[Overview of Cloud App Security in Office 365]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))</span></span>
+<span data-ttu-id="35c0e-183">[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)</span><span class="sxs-lookup"><span data-stu-id="35c0e-183">[Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)</span></span>
 
 

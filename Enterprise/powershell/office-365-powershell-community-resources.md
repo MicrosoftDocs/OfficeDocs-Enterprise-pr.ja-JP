@@ -26,13 +26,13 @@ ms.lasthandoff: 01/11/2018
   
 - [<span data-ttu-id="514ca-106">PowerShell での Office 365 グループの Office 365 Yammer ネットワーク</span><span class="sxs-lookup"><span data-stu-id="514ca-106">PowerShell for Office 365 group of the Office 365 Yammer Network</span></span>](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- <span data-ttu-id="514ca-107">[Office 365 の管理コミュニティ フォーラム]((https://community.office365.com/ja-JP/f/148.aspx))</span><span class="sxs-lookup"><span data-stu-id="514ca-107">[Manage Office 365 community forum]((https://community.office365.com/ja-JP/f/148.aspx))</span></span>
+- <span data-ttu-id="514ca-107">[Office 365 の管理コミュニティ フォーラム](https://community.office365.com/ja-JP/f/148.aspx)</span><span class="sxs-lookup"><span data-stu-id="514ca-107">[Manage Office 365 community forum](https://community.office365.com/ja-JP/f/148.aspx)</span></span>
     
 - [<span data-ttu-id="514ca-108">Exchange TechCenter コミュニティ フォーラム</span><span class="sxs-lookup"><span data-stu-id="514ca-108">Exchange TechCenter community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- <span data-ttu-id="514ca-109">[Office ブログ]((https://blogs.office.com/))</span><span class="sxs-lookup"><span data-stu-id="514ca-109">[Office Blogs]((https://blogs.office.com/))</span></span>
+- <span data-ttu-id="514ca-109">[Office ブログ](https://blogs.office.com/)</span><span class="sxs-lookup"><span data-stu-id="514ca-109">[Office Blogs](https://blogs.office.com/)</span></span>
     
-- <span data-ttu-id="514ca-110">[Office 365 Wiki の管理]((https://community.office365.com/ja-JP/w/manage/default.aspx))</span><span class="sxs-lookup"><span data-stu-id="514ca-110">[Manage Office 365 Wiki]((https://community.office365.com/ja-JP/w/manage/default.aspx))</span></span>
+- <span data-ttu-id="514ca-110">[Office 365 Wiki の管理](https://community.office365.com/ja-JP/w/manage/default.aspx)</span><span class="sxs-lookup"><span data-stu-id="514ca-110">[Manage Office 365 Wiki](https://community.office365.com/ja-JP/w/manage/default.aspx)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="514ca-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="514ca-111">See also</span></span>
 

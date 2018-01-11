@@ -58,9 +58,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-122">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-122">Resources</span></span>
 
-<span data-ttu-id="5c26a-123">追加情報については、[こちら]((https://azure.microsoft.com/services/cdn/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-123">For additional information, click [here]((https://azure.microsoft.com/services/cdn/)).</span></span>
+<span data-ttu-id="5c26a-123">追加情報については、[こちら](https://azure.microsoft.com/services/cdn/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-123">For additional information, click [here](https://azure.microsoft.com/services/cdn/).</span></span>
   
-<span data-ttu-id="5c26a-124">コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/cdn/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-124">For cost information, click [here]((https://azure.microsoft.com/pricing/details/cdn/)).</span></span>
+<span data-ttu-id="5c26a-124">コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/cdn/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-124">For cost information, click [here](https://azure.microsoft.com/pricing/details/cdn/).</span></span>
   
 ## <a name="hdinsight"></a><span data-ttu-id="5c26a-125">HdInsight</span><span class="sxs-lookup"><span data-stu-id="5c26a-125">HdInsight</span></span>
 
@@ -94,9 +94,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-140">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-140">Resources</span></span>
 
-<span data-ttu-id="5c26a-141">追加情報については、[こちら]((https://azure.microsoft.com/services/hdinsight/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-141">For additional information, click [here]((https://azure.microsoft.com/services/hdinsight/)).</span></span>
+<span data-ttu-id="5c26a-141">追加情報については、[こちら](https://azure.microsoft.com/services/hdinsight/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-141">For additional information, click [here](https://azure.microsoft.com/services/hdinsight/).</span></span>
   
-<span data-ttu-id="5c26a-142">コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/hdinsight/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-142">For cost information, click [here]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span></span>
+<span data-ttu-id="5c26a-142">コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/hdinsight/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-142">For cost information, click [here](https://azure.microsoft.com/pricing/details/hdinsight/).</span></span>
   
 ## <a name="azure-sql-database"></a><span data-ttu-id="5c26a-143">Azure SQL データベース</span><span class="sxs-lookup"><span data-stu-id="5c26a-143">Azure SQL Database</span></span>
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/11/2018
   
 ![Azure SQL Database が提供する水平方向のスケーリング。](images/Storage_Poster/CloudStor-HorizScale.png)
   
-<span data-ttu-id="5c26a-166">詳細情報については、[こちら]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-166">Click [here]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) for more information.</span></span>
+<span data-ttu-id="5c26a-166">詳細情報については、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-166">Click [here](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) for more information.</span></span>
   
 ### <a name="stretch-database-with-sql-server-2016"></a><span data-ttu-id="5c26a-167">Stretch Database および SQL Server 2016</span><span class="sxs-lookup"><span data-stu-id="5c26a-167">Stretch Database with SQL Server 2016</span></span>
 
@@ -160,13 +160,13 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="5c26a-p103">Stretch Database は、長期ストレージ、および履歴データへの透過的アクセスのためのコスト パフォーマンスに優れたオプションを提供します。テーブルが非常に大きくなると発生するパフォーマンスと可用性の問題も解決します。</span><span class="sxs-lookup"><span data-stu-id="5c26a-p103">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="5c26a-176">詳細情報については、[こちら]((https://msdn.microsoft.com/library/dn935011.aspx)) をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-176">Click [here]((https://msdn.microsoft.com/library/dn935011.aspx)) for more information.</span></span>
+<span data-ttu-id="5c26a-176">詳細情報については、[こちら](https://msdn.microsoft.com/library/dn935011.aspx) をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-176">Click [here](https://msdn.microsoft.com/library/dn935011.aspx) for more information.</span></span>
   
 ### <a name="resources"></a><span data-ttu-id="5c26a-177">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-177">Resources</span></span>
 
-<span data-ttu-id="5c26a-178">追加情報については、[こちら]((http://azure.microsoft.com/services/sql-database/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-178">For additional information, click [here]((http://azure.microsoft.com/services/sql-database/)).</span></span>
+<span data-ttu-id="5c26a-178">追加情報については、[こちら](http://azure.microsoft.com/services/sql-database/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-178">For additional information, click [here](http://azure.microsoft.com/services/sql-database/).</span></span>
   
-<span data-ttu-id="5c26a-179">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/sql-database/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-179">For cost information, click [here]((http://azure.microsoft.com/pricing/details/sql-database/)).</span></span>
+<span data-ttu-id="5c26a-179">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/sql-database/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-179">For cost information, click [here](http://azure.microsoft.com/pricing/details/sql-database/).</span></span>
   
 ## <a name="azure-cosmos-db"></a><span data-ttu-id="5c26a-180">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="5c26a-180">Azure Cosmos DB</span></span>
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
   
 ### <a name="resources"></a><span data-ttu-id="5c26a-200">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-200">Resources</span></span>
 
-<span data-ttu-id="5c26a-201">追加情報については、[こちら]((http://azure.microsoft.com/services/documentdb/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-201">For additional information, click [here]((http://azure.microsoft.com/services/documentdb/)).</span></span>
+<span data-ttu-id="5c26a-201">追加情報については、[こちら](http://azure.microsoft.com/services/documentdb/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-201">For additional information, click [here](http://azure.microsoft.com/services/documentdb/).</span></span>
   
-<span data-ttu-id="5c26a-202">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/documentdb/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-202">For cost information, click [here]((http://azure.microsoft.com/pricing/details/documentdb/)).</span></span>
+<span data-ttu-id="5c26a-202">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/documentdb/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-202">For cost information, click [here](http://azure.microsoft.com/pricing/details/documentdb/).</span></span>
   
 ## <a name="azure-media-services"></a><span data-ttu-id="5c26a-203">Azure Media Services</span><span class="sxs-lookup"><span data-stu-id="5c26a-203">Azure Media Services</span></span>
 
@@ -244,9 +244,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-217">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-217">Resources</span></span>
 
-<span data-ttu-id="5c26a-218">追加情報については、[こちら]((https://azure.microsoft.com/services/media-services/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-218">For additional information, click [here]((https://azure.microsoft.com/services/media-services/)).</span></span>
+<span data-ttu-id="5c26a-218">追加情報については、[こちら](https://azure.microsoft.com/services/media-services/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-218">For additional information, click [here](https://azure.microsoft.com/services/media-services/).</span></span>
   
-<span data-ttu-id="5c26a-219">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/media-services/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-219">For cost information, click [here]((http://azure.microsoft.com/pricing/details/media-services/)).</span></span>
+<span data-ttu-id="5c26a-219">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/media-services/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-219">For cost information, click [here](http://azure.microsoft.com/pricing/details/media-services/).</span></span>
   
 ## <a name="azure-redis-cache"></a><span data-ttu-id="5c26a-220">Azure Redis Cache</span><span class="sxs-lookup"><span data-stu-id="5c26a-220">Azure Redis Cache</span></span>
 
@@ -278,9 +278,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-234">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-234">Resources</span></span>
 
-<span data-ttu-id="5c26a-235">追加情報については、[こちら]((http://azure.microsoft.com/services/cache/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-235">For additional information, click [here]((http://azure.microsoft.com/services/cache/)).</span></span>
+<span data-ttu-id="5c26a-235">追加情報については、[こちら](http://azure.microsoft.com/services/cache/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-235">For additional information, click [here](http://azure.microsoft.com/services/cache/).</span></span>
   
-<span data-ttu-id="5c26a-236">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/cache/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-236">For cost information, click [here]((http://azure.microsoft.com/pricing/details/cache/)).</span></span>
+<span data-ttu-id="5c26a-236">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/cache/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-236">For cost information, click [here](http://azure.microsoft.com/pricing/details/cache/).</span></span>
   
 ## <a name="sql-server-on-an-azure-vm"></a><span data-ttu-id="5c26a-237">Azure VM 内の SQL Server</span><span class="sxs-lookup"><span data-stu-id="5c26a-237">SQL Server on an Azure VM</span></span>
 
@@ -300,9 +300,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-245">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-245">Resources</span></span>
 
-<span data-ttu-id="5c26a-246">追加情報については、[こちら]((http://azure.microsoft.com/services/virtual-machines/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-246">For additional information, click [here]((http://azure.microsoft.com/services/virtual-machines/)).</span></span>
+<span data-ttu-id="5c26a-246">追加情報については、[こちら](http://azure.microsoft.com/services/virtual-machines/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-246">For additional information, click [here](http://azure.microsoft.com/services/virtual-machines/).</span></span>
   
-<span data-ttu-id="5c26a-247">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/virtual-machines/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-247">For cost information, click [here]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span></span>
+<span data-ttu-id="5c26a-247">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/virtual-machines/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-247">For cost information, click [here](http://azure.microsoft.com/pricing/details/virtual-machines/).</span></span>
   
 ## <a name="storsimple"></a><span data-ttu-id="5c26a-248">StorSimple</span><span class="sxs-lookup"><span data-stu-id="5c26a-248">StorSimple</span></span>
 
@@ -334,9 +334,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-262">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-262">Resources</span></span>
 
-<span data-ttu-id="5c26a-263">追加情報については、[こちら]((http://azure.microsoft.com/services/storsimple/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-263">For additional information, click [here]((http://azure.microsoft.com/services/storsimple/)).</span></span>
+<span data-ttu-id="5c26a-263">追加情報については、[こちら](http://azure.microsoft.com/services/storsimple/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-263">For additional information, click [here](http://azure.microsoft.com/services/storsimple/).</span></span>
   
-<span data-ttu-id="5c26a-264">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/storsimple/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-264">For cost information, click [here]((http://azure.microsoft.com/pricing/details/storsimple/)).</span></span>
+<span data-ttu-id="5c26a-264">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/storsimple/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-264">For cost information, click [here](http://azure.microsoft.com/pricing/details/storsimple/).</span></span>
   
 ## <a name="azure-sql-data-warehouse"></a><span data-ttu-id="5c26a-265">Azure SQL Data Warehouse</span><span class="sxs-lookup"><span data-stu-id="5c26a-265">Azure SQL Data Warehouse</span></span>
 
@@ -364,9 +364,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-277">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-277">Resources</span></span>
 
-<span data-ttu-id="5c26a-278">追加情報については、[こちら]((https://azure.microsoft.com/services/sql-data-warehouse/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-278">For additional information, click [here]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="5c26a-278">追加情報については、[こちら](https://azure.microsoft.com/services/sql-data-warehouse/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-278">For additional information, click [here](https://azure.microsoft.com/services/sql-data-warehouse/).</span></span>
   
-<span data-ttu-id="5c26a-279">コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-279">For cost information, click [here]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="5c26a-279">コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/sql-data-warehouse/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-279">For cost information, click [here](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span></span>
   
 ## <a name="azure-data-lake-store"></a><span data-ttu-id="5c26a-280">Azure Data Lake Store</span><span class="sxs-lookup"><span data-stu-id="5c26a-280">Azure Data Lake Store</span></span>
 
@@ -398,9 +398,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5c26a-294">リソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-294">Resources</span></span>
 
-<span data-ttu-id="5c26a-295">追加情報については、[こちら]((https://azure.microsoft.com/services/data-lake-store/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-295">For additional information, click [here]((https://azure.microsoft.com/services/data-lake-store/)).</span></span>
+<span data-ttu-id="5c26a-295">追加情報については、[こちら](https://azure.microsoft.com/services/data-lake-store/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-295">For additional information, click [here](https://azure.microsoft.com/services/data-lake-store/).</span></span>
   
-<span data-ttu-id="5c26a-296">コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/data-lake-store/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-296">For cost information, click [here]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span></span>
+<span data-ttu-id="5c26a-296">コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/data-lake-store/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="5c26a-296">For cost information, click [here](https://azure.microsoft.com/pricing/details/data-lake-store/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="5c26a-297">次の手順</span><span class="sxs-lookup"><span data-stu-id="5c26a-297">Next step</span></span>
 
@@ -412,7 +412,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="5c26a-301">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="5c26a-301">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="5c26a-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="5c26a-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="5c26a-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="5c26a-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

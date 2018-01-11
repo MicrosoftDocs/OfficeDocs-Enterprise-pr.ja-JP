@@ -47,9 +47,9 @@ ms.lasthandoff: 01/11/2018
 [<span data-ttu-id="980df-117">Windows PowerShell を使用して Office 365 でレポートを作成する</span><span class="sxs-lookup"><span data-stu-id="980df-117">Use Windows PowerShell to create reports in Office 365</span></span>](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-<span data-ttu-id="980df-118">[Windows PowerShell を使用して Office 365 を管理する利点]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span><span class="sxs-lookup"><span data-stu-id="980df-118">[Advantages of using Windows PowerShell to manage Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))</span></span>
+<span data-ttu-id="980df-118">[Windows PowerShell を使用して Office 365 を管理する利点](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span><span class="sxs-lookup"><span data-stu-id="980df-118">[Advantages of using Windows PowerShell to manage Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)</span></span>
   
-<span data-ttu-id="980df-119">[Office 365 での Windows PowerShell のテクニカル リファレンス]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))</span><span class="sxs-lookup"><span data-stu-id="980df-119">[Windows PowerShell in Office 365 technical reference]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))</span></span>
+<span data-ttu-id="980df-119">[Office 365 での Windows PowerShell のテクニカル リファレンス](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span><span class="sxs-lookup"><span data-stu-id="980df-119">[Windows PowerShell in Office 365 technical reference](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)</span></span>
   
-<span data-ttu-id="980df-120">[Office 365 ライセンスと Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))</span><span class="sxs-lookup"><span data-stu-id="980df-120">[Office 365 Licensing and Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))</span></span>
+<span data-ttu-id="980df-120">[Office 365 ライセンスと Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)</span><span class="sxs-lookup"><span data-stu-id="980df-120">[Office 365 Licensing and Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)</span></span>
 

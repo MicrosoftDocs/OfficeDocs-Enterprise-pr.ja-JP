@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="f40a9-108">![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54425)</span><span class="sxs-lookup"><span data-stu-id="f40a9-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=54425)</span></span>
   
-<span data-ttu-id="f40a9-109">すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。</span><span class="sxs-lookup"><span data-stu-id="f40a9-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)).</span></span>
+<span data-ttu-id="f40a9-109">すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://aka.ms/cloudarchitecture)」でスワイプして見ることもできます。</span><span class="sxs-lookup"><span data-stu-id="f40a9-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
 <span data-ttu-id="f40a9-110">次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f40a9-110">See the following sections:</span></span>
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="f40a9-123">サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。</span><span class="sxs-lookup"><span data-stu-id="f40a9-123">Step through the design process to create an optimal Azure virtual network (VNet) for hosting server-based IT workloads, including subnets, address spaces, routing, DNS, load balancing, and connectivity to your on-premises network, other VNets, and the Internet.</span></span>
     
-<span data-ttu-id="f40a9-124">このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する]((https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743))」Microsoft Virtual Academy コースをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f40a9-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings]((https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) Microsoft Virtual Academy course.</span></span>
+<span data-ttu-id="f40a9-124">このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する](https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)」Microsoft Virtual Academy コースをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f40a9-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings](https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy course.</span></span>
   
 > [!NOTE]
 > <span data-ttu-id="f40a9-125">これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2017 年 6 月**リリースを反映しています。</span><span class="sxs-lookup"><span data-stu-id="f40a9-125">These articles reflect the **June 2017** release of the Microsoft Cloud Networking for Enterprise Architects poster.</span></span>
@@ -69,7 +69,7 @@ ms.lasthandoff: 01/11/2018
 
 [<span data-ttu-id="f40a9-127">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="f40a9-127">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="f40a9-128">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="f40a9-128">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="f40a9-128">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="f40a9-128">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

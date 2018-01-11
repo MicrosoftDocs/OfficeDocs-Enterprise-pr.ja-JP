@@ -46,7 +46,7 @@ ms.lasthandoff: 01/11/2018
     
 ## <a name="contosos-data-sensitivity-classification"></a><span data-ttu-id="551de-118">Contoso 社のデータ秘密度の分類</span><span class="sxs-lookup"><span data-stu-id="551de-118">Contoso's data sensitivity classification</span></span>
 
-<span data-ttu-id="551de-119">Contoso 社は、Microsoft の[データ分類ツールキット]((https://msdn.microsoft.com/library/hh204743.aspx))の情報を使用し、データの分析を行って次のレベルを決定しました。</span><span class="sxs-lookup"><span data-stu-id="551de-119">Using the information in Microsoft's [Data Classification Toolkit]((https://msdn.microsoft.com/library/hh204743.aspx)), Contoso performed an analysis of their data and determined the following levels.</span></span>
+<span data-ttu-id="551de-119">Contoso 社は、Microsoft の[データ分類ツールキット](https://msdn.microsoft.com/library/hh204743.aspx)の情報を使用し、データの分析を行って次のレベルを決定しました。</span><span class="sxs-lookup"><span data-stu-id="551de-119">Using the information in Microsoft's [Data Classification Toolkit](https://msdn.microsoft.com/library/hh204743.aspx), Contoso performed an analysis of their data and determined the following levels.</span></span>
   
 |<span data-ttu-id="551de-120">**レベル 1:低いビジネス価値**</span><span class="sxs-lookup"><span data-stu-id="551de-120">**Level 1: Low business value**</span></span>|<span data-ttu-id="551de-121">**レベル 2:中程度のビジネス価値**</span><span class="sxs-lookup"><span data-stu-id="551de-121">**Level 2: Medium business value**</span></span>|<span data-ttu-id="551de-122">**レベル 3:高いビジネス価値**</span><span class="sxs-lookup"><span data-stu-id="551de-122">**Level 3: High business value**</span></span>|
 |:-----|:-----|:-----|
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="551de-p105">Contoso 社では、日常的に使うユーザー アカウントに全体管理者ロールを割り当てるのではなく、非常に強力なパスワードを設定した全体管理者専用アカウントを 3 つ作成しました。全体管理者アカウントでサインインするのは特定の管理タスクを実行するときのみで、パスワードは指定されたスタッフにのみ知らされています。Contoso 社のセキュリティ管理者は、IT 担当者の職務と責任に従って、各アカウントに管理者ロールを割り当てました。</span><span class="sxs-lookup"><span data-stu-id="551de-p105">Rather than assign the global admin role to everyday user accounts, Contoso has create three, dedicated global administrator accounts with very strong passwords. Signing in with a global administrator account is only done for specific administrative tasks and the passwords are only known to designated staff. Contoso's security administrators have assigned admin roles to accounts that are appropriate to that IT person's job function and responsibility.</span></span>
     
-    <span data-ttu-id="551de-191">詳細については、「[Office 365 の管理者ロールについて]((https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-191">For more information, see [About Office 365 admin roles]((https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)).</span></span>
+    <span data-ttu-id="551de-191">詳細については、「[Office 365 の管理者ロールについて](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-191">For more information, see [About Office 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).</span></span>
     
 - <span data-ttu-id="551de-192">**重要なユーザー アカウントに対する多要素認証 (MFA)**</span><span class="sxs-lookup"><span data-stu-id="551de-192">**Multi-factor authentication (MFA) for important user accounts**</span></span>
     
@@ -106,13 +106,13 @@ ms.lasthandoff: 01/11/2018
     
   - <span data-ttu-id="551de-196">組織内の信頼されている人の資格情報が漏えいし、攻撃者が悪意のある電子メールを送信するというフィッシング攻撃からの保護を目的として、Contoso 社では経営幹部を含む管理職のすべてのユーザー アカウントで MFA を有効にしました。</span><span class="sxs-lookup"><span data-stu-id="551de-196">To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts for managers, including the executive staff.</span></span>
     
-    <span data-ttu-id="551de-197">詳細については、「[Office 365 展開用の多要素認証の計画]((https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-197">For more information, see [Plan for multi-factor authentication for Office 365 Deployments]((https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba))</span></span>
+    <span data-ttu-id="551de-197">詳細については、「[Office 365 展開用の多要素認証の計画](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-197">For more information, see [Plan for multi-factor authentication for Office 365 Deployments](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)</span></span>
     
 - <span data-ttu-id="551de-198">**高度なセキュリティ管理 (ASM)**</span><span class="sxs-lookup"><span data-stu-id="551de-198">**Advanced Security Management (ASM)**</span></span>
     
     <span data-ttu-id="551de-p107">ASM では、構成済みのポリシーを使用して異常な動作を監視します。Contoso 社のセキュリティ管理者は ASM を使用して警告をセットアップし、大量のデータのダウンロード、サインインしようとして繰り返される失敗、不明なまたは危険な IP アドレスからのサインインなど、通常とは異なるユーザー動作や危険なユーザー動作があると、IT 管理者が通知を受けるようにします。</span><span class="sxs-lookup"><span data-stu-id="551de-p107">ASM uses configured policies to monitor for anomalous activity. Contoso security administrators set up alerts with ASM so that IT administrators are notified of unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or sign-ins from unknown or dangerous IP addresses</span></span>
     
-    <span data-ttu-id="551de-201">詳細については、「[Office 365 の Advanced Security Management の概要]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-201">For more information, see [Overview of Advanced Security Management in Office 365 ]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)).</span></span>
+    <span data-ttu-id="551de-201">詳細については、「[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-201">For more information, see [Overview of Advanced Security Management in Office 365 ](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).</span></span>
     
 - <span data-ttu-id="551de-202">**セキュリティで保護されたメール フローとメールボックス監査ログ**</span><span class="sxs-lookup"><span data-stu-id="551de-202">**Secure email flow and mailbox audit logging**</span></span>
     
@@ -120,9 +120,9 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="551de-205">詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-205">For more information, see:</span></span> 
     
-  - <span data-ttu-id="551de-206">[Office 365 メールのスパム対策保護]((https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586))</span><span class="sxs-lookup"><span data-stu-id="551de-206">[Office 365 Email Anti-Spam Protection]((https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586))</span></span>
+  - <span data-ttu-id="551de-206">[Office 365 メールのスパム対策保護](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)</span><span class="sxs-lookup"><span data-stu-id="551de-206">[Office 365 Email Anti-Spam Protection](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)</span></span>
     
-  - <span data-ttu-id="551de-207">[安全な添付ファイルと安全なリンクのための Advanced Threat Protection]((https://technet.microsoft.com/library/mt148491.aspx))</span><span class="sxs-lookup"><span data-stu-id="551de-207">[Advanced threat protection for safe attachments and safe links]((https://technet.microsoft.com/library/mt148491.aspx))</span></span>
+  - <span data-ttu-id="551de-207">[安全な添付ファイルと安全なリンクのための Advanced Threat Protection](https://technet.microsoft.com/library/mt148491.aspx)</span><span class="sxs-lookup"><span data-stu-id="551de-207">[Advanced threat protection for safe attachments and safe links](https://technet.microsoft.com/library/mt148491.aspx)</span></span>
     
   - [<span data-ttu-id="551de-208">Office 365 でメールボックスの監査を有効にする</span><span class="sxs-lookup"><span data-stu-id="551de-208">Enable mailbox auditing in Office 365</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=626109)
     
@@ -130,7 +130,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="551de-210">Contoso 社は機密性の高いデータを識別し、故意か偶然かを問わずユーザーがデータを共有することがないように、Exchange Online、SharePoint Online、OneDrive 用の DLP ポリシーを構成しています。</span><span class="sxs-lookup"><span data-stu-id="551de-210">Contoso has identified its sensitive data and configured DLP policies for Exchange Online, SharePoint Online, and OneDrive to help prevent users from accidentally or intentionally sharing the data.</span></span> 
     
-    <span data-ttu-id="551de-211">詳しくは、「[データ損失防止ポリシーの概要]((https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-211">For more information, see [Overview of data loss prevention policies]((https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)).</span></span>
+    <span data-ttu-id="551de-211">詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="551de-211">For more information, see [Overview of data loss prevention policies](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="551de-212">関連項目</span><span class="sxs-lookup"><span data-stu-id="551de-212">See Also</span></span>
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="551de-214">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="551de-214">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="551de-215">[Microsoft のエンタープライズ クラウド ロードマップ:IT 意思決定者のリソース]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="551de-215">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="551de-215">[Microsoft のエンタープライズ クラウド ロードマップ:IT 意思決定者のリソース](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="551de-215">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
   
-<span data-ttu-id="551de-216">[Office 365 のセキュリティのベスト プラクティス]((https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3))</span><span class="sxs-lookup"><span data-stu-id="551de-216">[Security best practices for Office 365]((https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3))</span></span>
+<span data-ttu-id="551de-216">[Office 365 のセキュリティのベスト プラクティス](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)</span><span class="sxs-lookup"><span data-stu-id="551de-216">[Security best practices for Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)</span></span>
 
 
 

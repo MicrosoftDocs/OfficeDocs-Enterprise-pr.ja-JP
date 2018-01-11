@@ -49,7 +49,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> <span data-ttu-id="2eacd-116">すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907))をダウンロードしてください。</span><span class="sxs-lookup"><span data-stu-id="2eacd-116">For a text file that contains all the PowerShell commands and an Excel configuration worksheet that generates PowerShell commands based on your group and user account names, download the [Isolated SharePoint Online Team Site Deployment Kit]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)).</span></span> 
+> <span data-ttu-id="2eacd-116">すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)をダウンロードしてください。</span><span class="sxs-lookup"><span data-stu-id="2eacd-116">For a text file that contains all the PowerShell commands and an Excel configuration worksheet that generates PowerShell commands based on your group and user account names, download the [Isolated SharePoint Online Team Site Deployment Kit](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907).</span></span> 
 
 <span data-ttu-id="2eacd-117">表示名を使ってユーザー アカウントをアクセス グループに追加するには、次の PowerShell コマンド ブロックを使用します。</span><span class="sxs-lookup"><span data-stu-id="2eacd-117">To add a user account to an access group with its display name, use the following PowerShell command block:</span></span>
 
@@ -146,7 +146,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 <span data-ttu-id="2eacd-153">カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成するには、以下のことを行います。</span><span class="sxs-lookup"><span data-stu-id="2eacd-153">To create a documents subfolder with custom permissions, do the following:</span></span>
   
-1. <span data-ttu-id="2eacd-p105">サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2eacd-p105">Sign in to Office 365 with an account that is a member of the admins access group for the site. For help, see [Where to sign in to Office 365]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).</span></span>
+1. <span data-ttu-id="2eacd-p105">サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2eacd-p105">Sign in to Office 365 with an account that is a member of the admins access group for the site. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
 2. <span data-ttu-id="2eacd-156">分離したチーム サイトに移動し、 **[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2eacd-156">Go to the isolated team site and click **Documents**.</span></span>
     

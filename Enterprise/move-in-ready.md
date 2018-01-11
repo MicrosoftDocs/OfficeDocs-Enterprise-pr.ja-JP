@@ -62,9 +62,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-124">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-124">Resources</span></span>
 
-<span data-ttu-id="0deaa-125">追加情報については、[こちら]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-125">For additional information, click [here]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).</span></span>
+<span data-ttu-id="0deaa-125">追加情報については、[こちら](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-125">For additional information, click [here](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span></span>
   
-<span data-ttu-id="0deaa-126">コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-126">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="0deaa-126">コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-126">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="exchange-online-in-office-365"></a><span data-ttu-id="0deaa-127">Exchange Online in Office 365</span><span class="sxs-lookup"><span data-stu-id="0deaa-127">Exchange Online in Office 365</span></span>
 
@@ -84,9 +84,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-135">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-135">Resources</span></span>
 
-<span data-ttu-id="0deaa-136">追加情報については、[こちら]((https://technet.microsoft.com/library/exchange-online-limits.aspx))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-136">For additional information, click [here]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).</span></span>
+<span data-ttu-id="0deaa-136">追加情報については、[こちら](https://technet.microsoft.com/library/exchange-online-limits.aspx)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-136">For additional information, click [here](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span></span>
   
-<span data-ttu-id="0deaa-137">コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-137">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="0deaa-137">コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-137">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="onedrive-for-business"></a><span data-ttu-id="0deaa-138">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="0deaa-138">OneDrive for Business</span></span>
 
@@ -112,9 +112,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-149">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-149">Resources</span></span>
 
-<span data-ttu-id="0deaa-150">追加情報については、[こちら]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-150">For additional information, click [here]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).</span></span>
+<span data-ttu-id="0deaa-150">追加情報については、[こちら](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-150">For additional information, click [here](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span></span>
   
-<span data-ttu-id="0deaa-151">コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-151">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="0deaa-151">コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-151">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="visual-studio-team-services"></a><span data-ttu-id="0deaa-152">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="0deaa-152">Visual Studio Team Services</span></span>
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-162">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-162">Resources</span></span>
 
-<span data-ttu-id="0deaa-163">追加情報については、[こちら]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-163">For additional information, click [here]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).</span></span>
+<span data-ttu-id="0deaa-163">追加情報については、[こちら](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-163">For additional information, click [here](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span></span>
   
-<span data-ttu-id="0deaa-164">コストの情報については、[こちら]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-164">For cost information, click [here]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).</span></span>
+<span data-ttu-id="0deaa-164">コストの情報については、[こちら](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-164">For cost information, click [here](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span></span>
   
 ## <a name="yammer-file-sharing"></a><span data-ttu-id="0deaa-165">Yammer のファイル共有</span><span class="sxs-lookup"><span data-stu-id="0deaa-165">Yammer file sharing</span></span>
 
@@ -166,9 +166,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-176">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-176">Resources</span></span>
 
-<span data-ttu-id="0deaa-177">追加情報については、[こちら]((https://products.office.com/yammer/yammer-overview))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-177">For additional information, click [here]((https://products.office.com/yammer/yammer-overview)).</span></span>
+<span data-ttu-id="0deaa-177">追加情報については、[こちら](https://products.office.com/yammer/yammer-overview)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-177">For additional information, click [here](https://products.office.com/yammer/yammer-overview).</span></span>
   
-<span data-ttu-id="0deaa-178">コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-178">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="0deaa-178">コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-178">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="dynamics-365"></a><span data-ttu-id="0deaa-179">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="0deaa-179">Dynamics 365</span></span>
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-198">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-198">Resources</span></span>
 
-<span data-ttu-id="0deaa-199">追加情報については、[こちら]((https://www.microsoft.com/server-cloud/products/microsoft-intune/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-199">For additional information, click [here]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).</span></span>
+<span data-ttu-id="0deaa-199">追加情報については、[こちら](https://www.microsoft.com/server-cloud/products/microsoft-intune/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-199">For additional information, click [here](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span></span>
   
-<span data-ttu-id="0deaa-200">コストの情報については、[こちら]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-200">For cost information, click [here]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).</span></span>
+<span data-ttu-id="0deaa-200">コストの情報については、[こちら](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-200">For cost information, click [here](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span></span>
   
 ## <a name="azure-site-recovery"></a><span data-ttu-id="0deaa-201">Azure Site Recovery</span><span class="sxs-lookup"><span data-stu-id="0deaa-201">Azure Site Recovery</span></span>
 
@@ -240,7 +240,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="0deaa-213">追加情報については、[こちら](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-213">For additional information, click [here](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span></span>
   
-<span data-ttu-id="0deaa-214">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/site-recovery/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-214">For cost information, click [here]((http://azure.microsoft.com/pricing/details/site-recovery/)).</span></span>
+<span data-ttu-id="0deaa-214">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/site-recovery/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-214">For cost information, click [here](http://azure.microsoft.com/pricing/details/site-recovery/).</span></span>
   
 ## <a name="azure-backup"></a><span data-ttu-id="0deaa-215">Azure Backup</span><span class="sxs-lookup"><span data-stu-id="0deaa-215">Azure Backup</span></span>
 
@@ -264,9 +264,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="0deaa-225">リソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-225">Resources</span></span>
 
-<span data-ttu-id="0deaa-226">追加情報については、[こちら]((http://azure.microsoft.com/services/backup/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-226">For additional information, click [here]((http://azure.microsoft.com/services/backup/)).</span></span>
+<span data-ttu-id="0deaa-226">追加情報については、[こちら](http://azure.microsoft.com/services/backup/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-226">For additional information, click [here](http://azure.microsoft.com/services/backup/).</span></span>
   
-<span data-ttu-id="0deaa-227">コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/backup/))をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-227">For cost information, click [here]((http://azure.microsoft.com/pricing/details/backup/)).</span></span>
+<span data-ttu-id="0deaa-227">コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/backup/)をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="0deaa-227">For cost information, click [here](http://azure.microsoft.com/pricing/details/backup/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="0deaa-228">次の手順</span><span class="sxs-lookup"><span data-stu-id="0deaa-228">Next step</span></span>
 
@@ -278,7 +278,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="0deaa-232">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="0deaa-232">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="0deaa-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="0deaa-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="0deaa-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="0deaa-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

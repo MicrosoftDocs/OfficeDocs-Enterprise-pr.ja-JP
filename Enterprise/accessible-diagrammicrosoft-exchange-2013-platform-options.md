@@ -258,25 +258,25 @@ ms.lasthandoff: 12/15/2017
     
 - <span data-ttu-id="8bc4d-237">[TechNet の Exchange Online のライブラリ](((https://aka.ms/EXO)TN))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-237">[Exchange Online library on TechNet](((https://aka.ms/EXO)TN))</span></span>
     
-- <span data-ttu-id="8bc4d-238">[Exchange Online ポータル]((https://aka.ms/EXO))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-238">[Exchange Online portal]((https://aka.ms/EXO))</span></span>
+- <span data-ttu-id="8bc4d-238">[Exchange Online ポータル](https://aka.ms/EXO)</span><span class="sxs-lookup"><span data-stu-id="8bc4d-238">[Exchange Online portal](https://aka.ms/EXO)</span></span>
     
 <span data-ttu-id="8bc4d-239">Exchange ハイブリッドの詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="8bc4d-239">To learn more about Exchange Hybrid, see the following:</span></span>
   
-- <span data-ttu-id="8bc4d-p104">[Exchange 2013 ハイブリッド展開]((https://aka.ms/ExchangeHybrid))。ハイブリッド サーバーのライセンスが必要になるのは、以下のシナリオの場合だけです: Exchange 2013 のハイブリッド サーバーと共に Exchange 2010 を持つ組織。Exchange 2013 または Exchange 2010 のハイブリッド サーバーと共に Exchange 2007 を持つ組織。</span><span class="sxs-lookup"><span data-stu-id="8bc4d-p104">[Exchange 2013 hybrid deployments]((https://aka.ms/ExchangeHybrid)). You should note that the Hybrid server license is only required for the following scenarios: Exchange 2010 organization with Exchange 2013 hybrid server and Exchange 2007 organization with Exchange 2013 or Exchange 2010 hybrid server.</span></span>
+- <span data-ttu-id="8bc4d-p104">[Exchange 2013 ハイブリッド展開](https://aka.ms/ExchangeHybrid)。ハイブリッド サーバーのライセンスが必要になるのは、以下のシナリオの場合だけです: Exchange 2013 のハイブリッド サーバーと共に Exchange 2010 を持つ組織。Exchange 2013 または Exchange 2010 のハイブリッド サーバーと共に Exchange 2007 を持つ組織。</span><span class="sxs-lookup"><span data-stu-id="8bc4d-p104">[Exchange 2013 hybrid deployments](https://aka.ms/ExchangeHybrid). You should note that the Hybrid server license is only required for the following scenarios: Exchange 2010 organization with Exchange 2013 hybrid server and Exchange 2007 organization with Exchange 2013 or Exchange 2010 hybrid server.</span></span>
     
-- <span data-ttu-id="8bc4d-242">[Office 365 へのサインイン]((https://aka.ms/HybridKey))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-242">[Office 365 Sign in]((https://aka.ms/HybridKey))</span></span>
+- <span data-ttu-id="8bc4d-242">[Office 365 へのサインイン](https://aka.ms/HybridKey)</span><span class="sxs-lookup"><span data-stu-id="8bc4d-242">[Office 365 Sign in](https://aka.ms/HybridKey)</span></span>
     
 <span data-ttu-id="8bc4d-243">Exchange Server オンプレミスの詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="8bc4d-243">To learn more about Exchange Server on-premises, see the following:</span></span>
   
-- <span data-ttu-id="8bc4d-244">[TechNet の Exchange Server 2013 ライブラリ]((https://aka.ms/Ex2013TN))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-244">[Exchange Server 2013 library on TechNet]((https://aka.ms/Ex2013TN))</span></span>
+- <span data-ttu-id="8bc4d-244">[TechNet の Exchange Server 2013 ライブラリ](https://aka.ms/Ex2013TN)</span><span class="sxs-lookup"><span data-stu-id="8bc4d-244">[Exchange Server 2013 library on TechNet](https://aka.ms/Ex2013TN)</span></span>
     
-- <span data-ttu-id="8bc4d-245">[Exchange Server 2013 ポータル]((https://aka.ms/Exchange2013))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-245">[Exchange Server 2013 portal]((https://aka.ms/Exchange2013))</span></span>
+- <span data-ttu-id="8bc4d-245">[Exchange Server 2013 ポータル](https://aka.ms/Exchange2013)</span><span class="sxs-lookup"><span data-stu-id="8bc4d-245">[Exchange Server 2013 portal](https://aka.ms/Exchange2013)</span></span>
     
-- <span data-ttu-id="8bc4d-246">[Exchange Server 2013 のアーキテクチャ]((https://aka.ms/Ex2013SP1ArchPoster))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-246">[Exchange Server 2013 architecture]((https://aka.ms/Ex2013SP1ArchPoster))</span></span>
+- <span data-ttu-id="8bc4d-246">[Exchange Server 2013 のアーキテクチャ](https://aka.ms/Ex2013SP1ArchPoster)</span><span class="sxs-lookup"><span data-stu-id="8bc4d-246">[Exchange Server 2013 architecture](https://aka.ms/Ex2013SP1ArchPoster)</span></span>
     
 <span data-ttu-id="8bc4d-247">プロバイダー向けのホスト型 Exchange の詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="8bc4d-247">To learn more about Provider-Hosted Exchange, see the following:</span></span>
   
-<span data-ttu-id="8bc4d-248">[Exchange Server 2013 のホスティングおよびマルチ テナント ソリューションとガイダンス]((https://aka.ms/Ex2013Hosting))</span><span class="sxs-lookup"><span data-stu-id="8bc4d-248">[Exchange Server 2013 hosting and multi-tenancy solutions and guidance]((https://aka.ms/Ex2013Hosting))</span></span>
+<span data-ttu-id="8bc4d-248">[Exchange Server 2013 のホスティングおよびマルチ テナント ソリューションとガイダンス](https://aka.ms/Ex2013Hosting)</span><span class="sxs-lookup"><span data-stu-id="8bc4d-248">[Exchange Server 2013 hosting and multi-tenancy solutions and guidance](https://aka.ms/Ex2013Hosting)</span></span>
   
 ## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a><span data-ttu-id="8bc4d-249">Exchange 2013 での 3 つの新規または更新された機能の説明</span><span class="sxs-lookup"><span data-stu-id="8bc4d-249">Descriptions of three new or updated features in Exchange 2013</span></span>
 

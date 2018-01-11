@@ -112,7 +112,7 @@ ms.lasthandoff: 01/11/2018
 <br/><span data-ttu-id="5c9fc-p107">10.119. bbbbbbbb . bbbbbbbb </span><span class="sxs-lookup"><span data-stu-id="5c9fc-p107">10.119. bbbbbbbb . bbbbbbbb </span></span><br/><span data-ttu-id="5c9fc-p108">10.119. VVVVVVVV . VVVVGGGG </span><span class="sxs-lookup"><span data-stu-id="5c9fc-p108">10.119. VVVVVVVV . VVVVGGGG </span></span><br/><span data-ttu-id="5c9fc-p109">10.119. 11111111 . 11110000</span><span class="sxs-lookup"><span data-stu-id="5c9fc-p109">10.119. 11111111 . 11110000 </span></span><br/><br/>
 3. <span data-ttu-id="5c9fc-p110">手順 2 からの結果を 10 進数に変換し、アドレス空間として表現します。この例では、10.119. 11111111 . 11110000 は 10.119.255.240 となり、手順 1 からのプレフィックス長 (この例では 28) により、結果として得られるゲートウェイ サブネット アドレスのプレフィックスは 10.119.255.240/28 となります。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-p110">Convert the result from step 2 to decimal and express as an address space. For our example, 10.119. 11111111 . 11110000 is 10.119.255.240, and with the prefix length from step 1, (28 in our example), the resulting gateway subnet address prefix is 10.119.255.240/28.</span></span>
   
-<span data-ttu-id="5c9fc-177">詳細については、「[Azure ゲートウェイ サブネットのアドレス スペースの計算]((https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-177">See [Address space calculator for Azure gateway subnets]((https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)) for more information.</span></span>
+<span data-ttu-id="5c9fc-177">詳細については、「[Azure ゲートウェイ サブネットのアドレス スペースの計算](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-177">See [Address space calculator for Azure gateway subnets](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) for more information.</span></span>
   
 <span data-ttu-id="5c9fc-178">Azure 仮想マシンは仮想マシン ホスト サブネットに配置します。これは一般的なオンプレミスのガイドライン (一般的なロール、アプリケーション層、サブネットの分離など) に従って行うことができます。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-178">Virtual machine-hosting subnets are where you place Azure virtual machines, which you can do according to typical on-premises guidelines, such as a common role or tier of an application or for subnet isolation.</span></span>
   
@@ -130,7 +130,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="5c9fc-201">サブネットまたは VNet 上の仮想マシンの最大数量の詳細については、「[ネットワークの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-201">For more information about the maximum amount of virtual machines on a subnet or VNet, see [Networking Limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).</span></span>
   
-<span data-ttu-id="5c9fc-202">詳細については、「[Azure 仮想ネットワークの計画と設計]((https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-202">For more information, see [Plan and design Azure Virtual Networks]((https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/)).</span></span>
+<span data-ttu-id="5c9fc-202">詳細については、「[Azure 仮想ネットワークの計画と設計](https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-202">For more information, see [Plan and design Azure Virtual Networks](https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/).</span></span>
   
 ### <a name="step-6-determine-the-dns-server-configuration-and-the-addresses-of-the-dns-servers-to-assign-to-vms-in-the-vnet"></a><span data-ttu-id="5c9fc-203">手順 6:DNS サーバーの構成と DNS サーバーのアドレスを決定して、VNet の VM に割り当てる。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-203">Step 6: Determine the DNS server configuration and the addresses of the DNS servers to assign to VMs in the VNet.</span></span>
 
@@ -149,7 +149,7 @@ ms.lasthandoff: 01/11/2018
    
  <span data-ttu-id="5c9fc-217">**表 4: 異なる 2 つの種類の VNet 用の DNS サーバーのオプション**</span><span class="sxs-lookup"><span data-stu-id="5c9fc-217">**Table 4: DNS server options for the two different types of VNets**</span></span>
   
-<span data-ttu-id="5c9fc-218">詳細については、「[VM とロール インスタンスの名前解決]((https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-218">For more information, see [Name Resolution for VMs and Role Instances]((https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)).</span></span>
+<span data-ttu-id="5c9fc-218">詳細については、「[VM とロール インスタンスの名前解決](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-218">For more information, see [Name Resolution for VMs and Role Instances](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances).</span></span>
   
 ### <a name="step-7-determine-the-load-balancing-configuration-internet-facing-or-internal"></a><span data-ttu-id="5c9fc-219">手順 7:負荷分散の構成 (インターネット接続か内部接続か) を決定する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-219">Step 7: Determine the load balancing configuration (Internet-facing or internal).</span></span>
 
@@ -171,7 +171,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="5c9fc-229">図 5 は、受信 NAT 規則、または負荷分散セット内の仮想マシンへのエンドポイントに着信トラフィックを分散する、Azure の内部ロード バランサーを示しています。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-229">Figure 5 shows an internal load balancer in Azure that distributes incoming traffic on an inbound NAT rule or endpoint to a set of virtual machines in a load-balanced set.</span></span>
   
-<span data-ttu-id="5c9fc-230">詳細については、「[Azure ロード バランサー]((https://docs.microsoft.com/azure/load-balancer/load-balancer-overview))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-230">For more information, see [Azure Load Balancer]((https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)).</span></span>
+<span data-ttu-id="5c9fc-230">詳細については、「[Azure ロード バランサー](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-230">For more information, see [Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview).</span></span>
   
 ### <a name="step-8-determine-the-use-of-virtual-appliances-and-user-defined-routes"></a><span data-ttu-id="5c9fc-231">手順 8:仮想アプライアンスおよびユーザー定義ルートの使用を決定する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-231">Step 8: Determine the use of virtual appliances and user-defined routes.</span></span>
 
@@ -183,7 +183,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="5c9fc-235">図 6 は、仮想アプライアンスを指す仮想マシン ホスト サブネットに割り当てられたクロスプレミスの VNet とユーザー定義のルートを示しています。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-235">Figure 6 shows a cross-premises VNet and a user-defined route assigned to a virtual machine-hosting subnet that points to a virtual appliance.</span></span>
   
-<span data-ttu-id="5c9fc-236">詳細については、「[ユーザー定義のルートおよび IP 転送]((https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-236">For more information, see [User Defined Routes and IP Forwarding]((https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)).</span></span>
+<span data-ttu-id="5c9fc-236">詳細については、「[ユーザー定義のルートおよび IP 転送](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-236">For more information, see [User Defined Routes and IP Forwarding](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview).</span></span>
   
 ### <a name="step-9-determine-how-computers-from-the-internet-will-connect-to-virtual-machines"></a><span data-ttu-id="5c9fc-237">手順 9:インターネットからコンピューターが仮想マシンに接続する方法を決定する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-237">Step 9: Determine how computers from the Internet will connect to virtual machines.</span></span>
 
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="5c9fc-259">Azure DDoS の保護。外部および内部の攻撃を防止するために有用。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-259">Azure DDOS protection, which helps prevent external and internal attacks</span></span>
     
-<span data-ttu-id="5c9fc-260">詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ]((https://aka.ms/cloudarchsecurity))」および「[Azure のネットワーク セキュリティ]((https://azure.microsoft.com/blog/azure-network-security/))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-260">For more information, see [Microsoft Cloud Security for Enterprise Architects]((https://aka.ms/cloudarchsecurity)) and [Azure Network Security]((https://azure.microsoft.com/blog/azure-network-security/)).</span></span>
+<span data-ttu-id="5c9fc-260">詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](https://aka.ms/cloudarchsecurity)」および「[Azure のネットワーク セキュリティ](https://azure.microsoft.com/blog/azure-network-security/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-260">For more information, see [Microsoft Cloud Security for Enterprise Architects](https://aka.ms/cloudarchsecurity) and [Azure Network Security](https://azure.microsoft.com/blog/azure-network-security/).</span></span>
   
 ### <a name="step-10-for-multiple-vnets-determine-the-vnet-to-vnet-connection-topology"></a><span data-ttu-id="5c9fc-261">手順 10:複数の VNet に対して、VNet 間の接続トポロジを決定する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-261">Step 10: For multiple VNets, determine the VNet-to-VNet connection topology.</span></span>
 
@@ -270,9 +270,9 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="5c9fc-292">接続の最大数の詳細については、「[ネットワークの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-292">For more information on the maximum number of connections, see [Networking Limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).</span></span>
   
-<span data-ttu-id="5c9fc-293">VPN デバイスの詳細については、「[サイト対サイトの仮想ネットワーク接続用の VPN デバイス]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-293">For more information about VPN devices, see [VPN devices for site-to-site virtual network connections]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)).</span></span>
+<span data-ttu-id="5c9fc-293">VPN デバイスの詳細については、「[サイト対サイトの仮想ネットワーク接続用の VPN デバイス](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-293">For more information about VPN devices, see [VPN devices for site-to-site virtual network connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).</span></span>
   
-<span data-ttu-id="5c9fc-294">VNet ピアリングの詳細については、「[VNet ピアリング]((https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-294">For more information about VNet peering, see [VNet peering]((https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)).</span></span>
+<span data-ttu-id="5c9fc-294">VNet ピアリングの詳細については、「[VNet ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-294">For more information about VNet peering, see [VNet peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).</span></span>
   
 <span data-ttu-id="5c9fc-295">**図 11: クロスプレミス VNet に接続する 4 つの方法**</span><span class="sxs-lookup"><span data-stu-id="5c9fc-295">**Figure 11: The four ways to connect to a cross-premises VNet**</span></span>
 
@@ -296,7 +296,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="5c9fc-305">ExpressRoute はプライベート WAN 接続。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-305">ExpressRoute is a private WAN connection</span></span>
     
-<span data-ttu-id="5c9fc-306">詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ]((https://aka.ms/cloudarchsecurity))」および「[Azure のネットワーク セキュリティ]((https://azure.microsoft.com/blog/azure-network-security/))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-306">For more information, see [Microsoft Cloud Security for Enterprise Architects]((https://aka.ms/cloudarchsecurity)) and [Azure Network Security]((https://azure.microsoft.com/blog/azure-network-security/)).</span></span>
+<span data-ttu-id="5c9fc-306">詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](https://aka.ms/cloudarchsecurity)」および「[Azure のネットワーク セキュリティ](https://azure.microsoft.com/blog/azure-network-security/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-306">For more information, see [Microsoft Cloud Security for Enterprise Architects](https://aka.ms/cloudarchsecurity) and [Azure Network Security](https://azure.microsoft.com/blog/azure-network-security/).</span></span>
   
 ### <a name="step-2-determine-the-on-premises-vpn-device-or-router"></a><span data-ttu-id="5c9fc-307">手順 2:オンプレミスの VPN デバイスまたはルーターを決定する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-307">Step 2: Determine the on-premises VPN device or router.</span></span>
 
@@ -312,7 +312,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="5c9fc-313">図 12 は、オンプレミスの VPN ルーターまたはデバイスに接続されるクロスプレミスの VNet を示しています。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-313">Figure 12 shows a cross-premises VNet connected to an on-premises VPN router or device.</span></span>
   
-<span data-ttu-id="5c9fc-314">詳細については、「[VPN Gateway について]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-314">For more information, see [About VPN gateway]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)).</span></span>
+<span data-ttu-id="5c9fc-314">詳細については、「[VPN Gateway について](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-314">For more information, see [About VPN gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).</span></span>
   
 ### <a name="step-3-add-routes-to-your-intranet-to-make-the-address-space-of-the-vnet-reachable"></a><span data-ttu-id="5c9fc-315">手順 3: VNet のアドレス空間に到達可能なルートをイントラネットに追加する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-315">Step 3: Add routes to your intranet to make the address space of the VNet reachable.</span></span>
 
@@ -402,7 +402,7 @@ ms.lasthandoff: 01/11/2018
   
 ### <a name="step-7-determine-the-use-of-forced-tunneling"></a><span data-ttu-id="5c9fc-366">手順 7:強制トンネリングの使用を決定する。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-366">Step 7: Determine the use of forced tunneling.</span></span>
 
-<span data-ttu-id="5c9fc-p116">Azure サブネットの既定のシステム ルートは、インターネットをポイントします。仮想マシンからのすべてのトラフィックがクロスプレミス接続全体を移動するようにするには、次ホップ アドレスとして Azure ゲートウェイを使用する既定のルートを指定したルーティング テーブルを作成します。次に、そのルート テーブルをサブネットに関連付けます。これを強制トンネリングといいます。詳細については、「[強制トンネリングの構成]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-p116">The default system route for Azure subnets points to the Internet. To ensure that all traffic from virtual machines travels across the cross-premises connection, create a routing table with the default route that uses the Azure gateway as its next-hop address. You then associate the route table with the subnet. This is known as forced tunneling. For more information, see [Configure forced tunneling]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)).</span></span>
+<span data-ttu-id="5c9fc-p116">Azure サブネットの既定のシステム ルートは、インターネットをポイントします。仮想マシンからのすべてのトラフィックがクロスプレミス接続全体を移動するようにするには、次ホップ アドレスとして Azure ゲートウェイを使用する既定のルートを指定したルーティング テーブルを作成します。次に、そのルート テーブルをサブネットに関連付けます。これを強制トンネリングといいます。詳細については、「[強制トンネリングの構成](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-p116">The default system route for Azure subnets points to the Internet. To ensure that all traffic from virtual machines travels across the cross-premises connection, create a routing table with the default route that uses the Azure gateway as its next-hop address. You then associate the route table with the subnet. This is known as forced tunneling. For more information, see [Configure forced tunneling](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).</span></span>
   
 <span data-ttu-id="5c9fc-372">**図 18: ユーザー定義のルートおよびクロスプレミスの VNet の強制トンネリング**</span><span class="sxs-lookup"><span data-stu-id="5c9fc-372">**Figure 18: User-defined routes and forced tunneling for a cross-premises VNet**</span></span>
 
@@ -424,7 +424,7 @@ ms.lasthandoff: 01/11/2018
 > [!TIP]
 > <span data-ttu-id="5c9fc-382">シミュレートされたクロスプレミス VNet で単一サーバーの SharePoint Server 2016 ファームを作成するには、「[Azure 開発/テスト環境でのイントラネット SharePoint Server 2016](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-382">To create a single-server SharePoint Server 2016 farm in a simulated cross-premises VNet, see [Intranet SharePoint Server 2016 in Azure dev/test environment](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).</span></span> 
   
-<span data-ttu-id="5c9fc-383">クロスプレミスの Azure 仮想ネットワーク内の仮想マシンにデプロイされた IT ワークロードに関するその他の例については、「[Azure IaaS のハイブリッド クラウド シナリオ]((https://technet.microsoft.com/library/mt750502.aspx))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-383">For additional examples of IT workloads deployed on virtual machines in a cross-premises Azure virtual network, see [Hybrid cloud scenarios for Azure IaaS]((https://technet.microsoft.com/library/mt750502.aspx)).</span></span>
+<span data-ttu-id="5c9fc-383">クロスプレミスの Azure 仮想ネットワーク内の仮想マシンにデプロイされた IT ワークロードに関するその他の例については、「[Azure IaaS のハイブリッド クラウド シナリオ](https://technet.microsoft.com/library/mt750502.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9fc-383">For additional examples of IT workloads deployed on virtual machines in a cross-premises Azure virtual network, see [Hybrid cloud scenarios for Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="5c9fc-384">関連項目</span><span class="sxs-lookup"><span data-stu-id="5c9fc-384">See Also</span></span>
 
@@ -434,7 +434,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="5c9fc-387">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="5c9fc-387">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="5c9fc-388">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="5c9fc-388">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="5c9fc-388">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="5c9fc-388">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

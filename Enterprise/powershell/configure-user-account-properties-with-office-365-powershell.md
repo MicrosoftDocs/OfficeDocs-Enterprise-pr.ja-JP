@@ -33,7 +33,7 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="change-properties-for-a-specific-user-account"></a><span data-ttu-id="d01a3-109">特定のユーザー アカウントのプロパティを変更する</span><span class="sxs-lookup"><span data-stu-id="d01a3-109">Change properties for a specific user account</span></span>
 
-<span data-ttu-id="d01a3-p102">特定のユーザー アカウントのプロパティを構成する場合、[Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) コマンドレットを使用して、設定または変更するプロパティを指定します。次の例のコマンドは、Belinda Newman の使用場所をフランスに変更します。</span><span class="sxs-lookup"><span data-stu-id="d01a3-p102">To configure properties for a specific user account, you use the [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) cmdlet and specify the properties to set or change. This example command changes Belinda Newman's usage location to France:</span></span>
+<span data-ttu-id="d01a3-p102">特定のユーザー アカウントのプロパティを構成する場合、[Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) コマンドレットを使用して、設定または変更するプロパティを指定します。次の例のコマンドは、Belinda Newman の使用場所をフランスに変更します。</span><span class="sxs-lookup"><span data-stu-id="d01a3-p102">To configure properties for a specific user account, you use the [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) cmdlet and specify the properties to set or change. This example command changes Belinda Newman's usage location to France:</span></span>
   
 ```
 Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
@@ -75,7 +75,7 @@ Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocat
     
     <span data-ttu-id="d01a3-130">これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。</span><span class="sxs-lookup"><span data-stu-id="d01a3-130">This is the ISO 3166-1 alpha-2 (A2) two-letter country or region code.</span></span>
     
-<span data-ttu-id="d01a3-131">その他のパラメーターについては、[Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d01a3-131">See [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) for additional parameters.</span></span>
+<span data-ttu-id="d01a3-131">その他のパラメーターについては、[Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d01a3-131">See [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) for additional parameters.</span></span>
   
 <span data-ttu-id="d01a3-132">すべてのユーザーのユーザー プリンシパル名を表示するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="d01a3-132">To see the User Principal Names of all your users, run the following command.</span></span>
   

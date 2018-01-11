@@ -182,7 +182,7 @@ ms.lasthandoff: 12/15/2017
     
 - <span data-ttu-id="c6da6-p130">Exchange メールボックス サーバー。2 つの Exchange メールボックス サーバーを図に示します。</span><span class="sxs-lookup"><span data-stu-id="c6da6-p130">Exchange Mailbox server. The diagram shows two Exchange Mailbox servers.</span></span> 
     
-<span data-ttu-id="c6da6-230">各 SharePoint サーバーにインストールされているコンポーネントの詳細については、「[SharePoint 2013 の効率化されたトポロジー]((https://aka.ms/Ma5cgk))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6da6-230">For more information about components installed on each of the SharePoint server roles, see [Streamlined Topologies for SharePoint 2013]((https://aka.ms/Ma5cgk)).</span></span> 
+<span data-ttu-id="c6da6-230">各 SharePoint サーバーにインストールされているコンポーネントの詳細については、「[SharePoint 2013 の効率化されたトポロジー](https://aka.ms/Ma5cgk)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6da6-230">For more information about components installed on each of the SharePoint server roles, see [Streamlined Topologies for SharePoint 2013](https://aka.ms/Ma5cgk).</span></span> 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a><span data-ttu-id="c6da6-231">トラフィックがコンポーネントを経由して別のサーバー層に移動する方法の説明</span><span class="sxs-lookup"><span data-stu-id="c6da6-231">Description of how traffic moves through the components to the different server tiers</span></span>
 
@@ -320,7 +320,7 @@ ms.lasthandoff: 12/15/2017
   
 #### <a name="more-on-lync-network-traffic"></a><span data-ttu-id="c6da6-313">Lync ネットワーク トラフィックの詳細について</span><span class="sxs-lookup"><span data-stu-id="c6da6-313">More on Lync network traffic?</span></span>
 
-<span data-ttu-id="c6da6-p145">Lync Server が、インスタント メッセージング、web 会議、アプリケーション共有、および音声通信を提供する点で、組織を支援する方法を確認できます。詳細については、「[Microsoft Lync Server 2013 のプロトコル ワークロード ポスター]((https://aka.ms/G5jzjo))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6da6-p145">Learn how Lync Server can help your organization provide instant messaging, web conferencing, application sharing, and voice communication. For more information, see [Microsoft Lync Server 2013 Protocol Workloads Poster]((https://aka.ms/G5jzjo)).</span></span> 
+<span data-ttu-id="c6da6-p145">Lync Server が、インスタント メッセージング、web 会議、アプリケーション共有、および音声通信を提供する点で、組織を支援する方法を確認できます。詳細については、「[Microsoft Lync Server 2013 のプロトコル ワークロード ポスター](https://aka.ms/G5jzjo)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c6da6-p145">Learn how Lync Server can help your organization provide instant messaging, web conferencing, application sharing, and voice communication. For more information, see [Microsoft Lync Server 2013 Protocol Workloads Poster](https://aka.ms/G5jzjo).</span></span> 
   
 <span data-ttu-id="c6da6-316">ポスターには、この情報にアクセスする QR コードもあります。</span><span class="sxs-lookup"><span data-stu-id="c6da6-316">The poster also includes a QR code to access this information.</span></span> 
   

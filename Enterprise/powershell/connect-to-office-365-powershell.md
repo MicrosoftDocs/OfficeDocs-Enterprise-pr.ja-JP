@@ -131,7 +131,7 @@ Connect-MsolService -Credential $UserCredential
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a><span data-ttu-id="f5dad-164">Azure Active Directory V2 PowerShell モジュールを使用した接続</span><span class="sxs-lookup"><span data-stu-id="f5dad-164">Connect with the Azure Active Directory V2 PowerShell module</span></span>
 <span data-ttu-id="f5dad-165"><a name="ConnectV2"> </a></span><span class="sxs-lookup"><span data-stu-id="f5dad-165"><a name="ConnectV2"> </a></span></span>
 
-<span data-ttu-id="f5dad-166">[Azure Active Directory V2 PowerShell モジュール]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory))において新しいコマンドレットを必要とするプロシージャについては、以下のステップを実行してモジュールをインストールし、Office 365 のサブスクリプションに接続してください。</span><span class="sxs-lookup"><span data-stu-id="f5dad-166">For procedures that require the new cmdlets in the [Azure Active Directory V2 PowerShell module]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)), use these steps to install the module and connect to your Office 365 subscription:</span></span>
+<span data-ttu-id="f5dad-166">[Azure Active Directory V2 PowerShell モジュール](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)において新しいコマンドレットを必要とするプロシージャについては、以下のステップを実行してモジュールをインストールし、Office 365 のサブスクリプションに接続してください。</span><span class="sxs-lookup"><span data-stu-id="f5dad-166">For procedures that require the new cmdlets in the [Azure Active Directory V2 PowerShell module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), use these steps to install the module and connect to your Office 365 subscription:</span></span>
   
 1. <span data-ttu-id="f5dad-167">管理者特権で Windows PowerShell コマンド プロンプトを開きます (Windows PowerShell を管理者として実行)。</span><span class="sxs-lookup"><span data-stu-id="f5dad-167">Open an elevated Windows PowerShell command prompt (run Windows PowerShell as an administrator).</span></span>
     
@@ -164,7 +164,7 @@ Connect-AzureAD -Credential $UserCredential
     
 <span data-ttu-id="f5dad-175">**[Azure Active Directory PowerShell]** ダイアログ ボックスの手順に従って、検証コードなどの他の認証情報を提供してから、 **[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f5dad-175">Follow the instructions in the **Azure Active Directory PowerShell** dialog box to provide additional authentication information, such as a verification code, and then click **Sign in**.</span></span>
     
-<span data-ttu-id="f5dad-176">接続後は、[Azure Active Directory V2 PowerShell モジュール]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory))の新しいコマンドレットを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f5dad-176">After connecting, you can use the new cmdlets for the [Azure Active Directory V2 PowerShell module]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)).</span></span>
+<span data-ttu-id="f5dad-176">接続後は、[Azure Active Directory V2 PowerShell モジュール](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)の新しいコマンドレットを使用できます。</span><span class="sxs-lookup"><span data-stu-id="f5dad-176">After connecting, you can use the new cmdlets for the [Azure Active Directory V2 PowerShell module](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="f5dad-177">関連項目</span><span class="sxs-lookup"><span data-stu-id="f5dad-177">See also</span></span>
 

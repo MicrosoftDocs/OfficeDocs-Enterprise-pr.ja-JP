@@ -60,9 +60,9 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="f142b-132">詳細については、次に示す追加の技術資料を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f142b-132">See these additional resources for more information:</span></span>
   
-- <span data-ttu-id="f142b-133">[Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="f142b-133">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="f142b-133">[Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="f142b-133">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
-- <span data-ttu-id="f142b-134">[Azure 用 ExpressRoute]((https://azure.microsoft.com/services/expressroute/))</span><span class="sxs-lookup"><span data-stu-id="f142b-134">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))</span></span>
+- <span data-ttu-id="f142b-134">[Azure 用 ExpressRoute](https://azure.microsoft.com/services/expressroute/)</span><span class="sxs-lookup"><span data-stu-id="f142b-134">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)</span></span>
     
 ## <a name="advantages-of-expressroute-for-azure"></a><span data-ttu-id="f142b-135">Azure 用 ExpressRoute の利点</span><span class="sxs-lookup"><span data-stu-id="f142b-135">Advantages of ExpressRoute for Azure</span></span>
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="f142b-p108">ExpressRoute 接続は、すべての構成でパフォーマンスが向上するということを保証するものではありません。地域の Microsoft データセンターから数ホップしか離れていない高帯域幅のインターネット接続よりも、低帯域幅の ExpressRoute 接続のほうがパフォーマンスが低くなる可能性もあります。</span><span class="sxs-lookup"><span data-stu-id="f142b-p108">An ExpressRoute connection is not a guarantee of higher performance in every configuration. It is possible to have lower performance over a low-bandwidth ExpressRoute connection than a high-bandwidth Internet connection that is only a few hops away from a regional Microsoft datacenter.</span></span>
   
-<span data-ttu-id="f142b-145">ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f142b-145">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span></span>
+<span data-ttu-id="f142b-145">ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="f142b-145">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
 ## <a name="expressroute-connectivity-models"></a><span data-ttu-id="f142b-146">ExpressRoute の接続モデル</span><span class="sxs-lookup"><span data-stu-id="f142b-146">ExpressRoute connectivity models</span></span>
 
@@ -235,11 +235,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="f142b-246">詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f142b-246">For more information, see:</span></span>
   
-- <span data-ttu-id="f142b-247">[Azure ExpressRoute for Office 365 のトレーニング]((https://channel9.msdn.com/series/aer/))</span><span class="sxs-lookup"><span data-stu-id="f142b-247">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span></span>
+- <span data-ttu-id="f142b-247">[Azure ExpressRoute for Office 365 のトレーニング](https://channel9.msdn.com/series/aer/)</span><span class="sxs-lookup"><span data-stu-id="f142b-247">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span></span>
     
-- <span data-ttu-id="f142b-248">[Office 365 のネットワーク計画とパフォーマンス チューニング]((https://aka.ms/tune))</span><span class="sxs-lookup"><span data-stu-id="f142b-248">[Network planning and performance tuning for Office 365]((https://aka.ms/tune))</span></span>
+- <span data-ttu-id="f142b-248">[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="f142b-248">[Network planning and performance tuning for Office 365](https://aka.ms/tune)</span></span>
     
-- <span data-ttu-id="f142b-249">[Office 365 のパフォーマンス管理]((https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416))</span><span class="sxs-lookup"><span data-stu-id="f142b-249">[Office 365 Performance Management]((https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416))</span></span>
+- <span data-ttu-id="f142b-249">[Office 365 のパフォーマンス管理](https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416)</span><span class="sxs-lookup"><span data-stu-id="f142b-249">[Office 365 Performance Management](https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416)</span></span>
     
 ## <a name="expressroute-options"></a><span data-ttu-id="f142b-250">ExpressRoute のオプション</span><span class="sxs-lookup"><span data-stu-id="f142b-250">ExpressRoute options</span></span>
 
@@ -255,11 +255,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="f142b-260">詳細については、次に示す追加の技術資料を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f142b-260">See these additional resources for more information:</span></span>
   
-- <span data-ttu-id="f142b-261">[Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="f142b-261">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="f142b-261">[Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="f142b-261">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
-- <span data-ttu-id="f142b-262">[Azure ExpressRoute for Office 365 のトレーニング]((https://channel9.msdn.com/series/aer/))</span><span class="sxs-lookup"><span data-stu-id="f142b-262">[Azure ExpressRoute for Office 365 Training]((https://channel9.msdn.com/series/aer/))</span></span>
+- <span data-ttu-id="f142b-262">[Azure ExpressRoute for Office 365 のトレーニング](https://channel9.msdn.com/series/aer/)</span><span class="sxs-lookup"><span data-stu-id="f142b-262">[Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer/)</span></span>
     
-- <span data-ttu-id="f142b-263">[Azure 用 ExpressRoute]((https://azure.microsoft.com/services/expressroute/))</span><span class="sxs-lookup"><span data-stu-id="f142b-263">[ExpressRoute for Azure]((https://azure.microsoft.com/services/expressroute/))</span></span>
+- <span data-ttu-id="f142b-263">[Azure 用 ExpressRoute](https://azure.microsoft.com/services/expressroute/)</span><span class="sxs-lookup"><span data-stu-id="f142b-263">[ExpressRoute for Azure](https://azure.microsoft.com/services/expressroute/)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="f142b-264">関連項目</span><span class="sxs-lookup"><span data-stu-id="f142b-264">See Also</span></span>
 
@@ -267,7 +267,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="f142b-266">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="f142b-266">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="f142b-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="f142b-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="f142b-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="f142b-267">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

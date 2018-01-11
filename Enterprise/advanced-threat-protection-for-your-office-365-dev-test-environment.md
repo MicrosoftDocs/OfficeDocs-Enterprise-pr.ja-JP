@@ -45,7 +45,7 @@ ms.lasthandoff: 01/11/2018
     
   - <span data-ttu-id="eebc7-117">ライトウェイトの Office 365 開発/テスト環境を使用している場合は、Internet Explorer のプライベート セッションを開いてローカル コンピューターからサインインします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-117">If you are using the lightweight Office 365 dev/test environment, open a private session of Internet Explorer and sign in from your local computer.</span></span>
     
-  - <span data-ttu-id="eebc7-118">シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル]((https://portal.azure.com)) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-118">If you are using the simulated enterprise Office 365 dev/test environment, use the [Azure portal]((https://portal.azure.com)) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
+  - <span data-ttu-id="eebc7-118">シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-118">If you are using the simulated enterprise Office 365 dev/test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
     
 2. <span data-ttu-id="eebc7-119">メモ帳を起動し、テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="eebc7-119">Run Notepad and enter some text.</span></span>
     
@@ -73,7 +73,7 @@ ms.lasthandoff: 01/11/2018
     
 14. <span data-ttu-id="eebc7-131">**URL** に、 **http://www.spamlink.contoso.com/** と入力して、 **[OK]**、 **[送信]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-131">In **URL**, type **http://www.spamlink.contoso.com/**, click **OK**, and then click **Send**.</span></span>
     
-15. <span data-ttu-id="eebc7-132">プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-132">Open a separate instance of Internet Explorer in private browsing mode, go to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))), and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+15. <span data-ttu-id="eebc7-132">プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([(https://portal.office.com)](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-132">Open a separate instance of Internet Explorer in private browsing mode, go to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)), and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
 16. <span data-ttu-id="eebc7-133">メイン ポータル ページで、アプリ タイルをクリックし、 **[メール]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eebc7-133">From the main portal page, click the apps tile, and then click **Mail**.</span></span>
     
@@ -154,7 +154,7 @@ ms.lasthandoff: 01/11/2018
   
 > [!TIP]
 > <span data-ttu-id="eebc7-194">
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="eebc7-194">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。</span><span class="sxs-lookup"><span data-stu-id="eebc7-194">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="eebc7-195">関連項目</span><span class="sxs-lookup"><span data-stu-id="eebc7-195">See Also</span></span>
 
@@ -170,6 +170,6 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="eebc7-201">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="eebc7-201">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md) 
 
-<span data-ttu-id="eebc7-202">[安全な添付ファイルと安全なリンクのための高度な脅威保護]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))</span><span class="sxs-lookup"><span data-stu-id="eebc7-202">[Advanced threat protection for safe attachments and safe links]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))</span></span>
+<span data-ttu-id="eebc7-202">[安全な添付ファイルと安全なリンクのための高度な脅威保護](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)</span><span class="sxs-lookup"><span data-stu-id="eebc7-202">[Advanced threat protection for safe attachments and safe links](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)</span></span>
 
 
