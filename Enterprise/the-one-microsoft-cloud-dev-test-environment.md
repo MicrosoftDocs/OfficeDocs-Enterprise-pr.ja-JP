@@ -8,192 +8,191 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "概要: ガイドを使用してこのテスト ラボを含むすべてのマイクロソフトのクラウド ソリューションの開発/テスト環境を作成します。"
-ms.openlocfilehash: a6375c60ff6c216f34e2f78850e1afd5ed0c8c80
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2cbfb3e963927f18d2ee46ed1f5076b274a99154
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="6a2af-103">One Microsoft Cloud 開発/テスト環境</span><span class="sxs-lookup"><span data-stu-id="6a2af-103">The One Microsoft Cloud dev/test environment</span></span>
+# <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="13bcc-103">One Microsoft Cloud 開発/テスト環境</span><span class="sxs-lookup"><span data-stu-id="13bcc-103">The One Microsoft Cloud dev/test environment</span></span>
 
- <span data-ttu-id="6a2af-104">**の概要:**マイクロソフトのクラウド ソリューションのすべてを含む開発/テスト環境を作成するのにには、このテスト ラボ ガイド 』 を使用します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes all of Microsoft's cloud offerings.</span></span>
+ <span data-ttu-id="13bcc-104">**の概要:**マイクロソフトのクラウド ソリューションのすべてを含む開発/テスト環境を作成するのにには、このテスト ラボ ガイド 』 を使用します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes all of Microsoft's cloud offerings.</span></span>
   
-<span data-ttu-id="6a2af-p101">この記事の手順に従い、Microsoft Azure インフラストラクチャ サービスでシミュレートされたイントラネットを作成し、Microsoft Office 365、Microsoft Enterprise Mobility + Security (EMS)、Microsoft Dynamics 365 のサブスクリプションを追加します。その結果として、1 つの開発/テスト環境で Microsoft のクラウド サービスすべてを同時に使用する、シンプルな組織になります。 </span><span class="sxs-lookup"><span data-stu-id="6a2af-p101">With the instructions in this article, you create a simulated intranet in Microsoft Azure infrastructure services and then add Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS), and Microsoft Dynamics 365 subscriptions. The result is a simplified organization that uses all Microsoft's cloud offerings at the same time in a single dev/test environment.</span></span> 
+<span data-ttu-id="13bcc-p101">この記事の手順に従い、Microsoft Azure インフラストラクチャ サービスでシミュレートされたイントラネットを作成し、Microsoft Office 365、Microsoft Enterprise Mobility + Security (EMS)、Microsoft Dynamics 365 のサブスクリプションを追加します。その結果として、1 つの開発/テスト環境で Microsoft のクラウド サービスすべてを同時に使用する、シンプルな組織になります。 </span><span class="sxs-lookup"><span data-stu-id="13bcc-p101">With the instructions in this article, you create a simulated intranet in Microsoft Azure infrastructure services and then add Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS), and Microsoft Dynamics 365 subscriptions. The result is a simplified organization that uses all Microsoft's cloud offerings at the same time in a single dev/test environment.</span></span> 
   
 ![Azure、Office 365、EMS、Dynamics 365 が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 3](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
-<span data-ttu-id="6a2af-108">最終的な構成を、次の目的に使用できます。</span><span class="sxs-lookup"><span data-stu-id="6a2af-108">You can use the resulting configuration to:</span></span>
+<span data-ttu-id="13bcc-108">最終的な構成を、次の目的に使用できます。</span><span class="sxs-lookup"><span data-stu-id="13bcc-108">You can use the resulting configuration to:</span></span>
   
-- <span data-ttu-id="6a2af-109">Azure Active Directory (AD) で提供される共通 ID インフラストラクチャなどの、Microsoft のクラウド サービス間の統合を体験します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-109">Experience the integration across Microsoft's cloud offerings, such as the common identity infrastructure provided by Azure Active Directory (AD).</span></span>
+- <span data-ttu-id="13bcc-109">Azure Active Directory (AD) で提供される共通 ID インフラストラクチャなどの、Microsoft のクラウド サービス間の統合を体験します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-109">Experience the integration across Microsoft's cloud offerings, such as the common identity infrastructure provided by Azure Active Directory (AD).</span></span>
     
-- <span data-ttu-id="6a2af-110">複数の Microsoft Cloud のサービスを含む、エンド ツー エンドのシナリオを評価します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-110">Evaluate end-to-end scenarios that include multiple Microsoft Cloud offerings.</span></span>
+- <span data-ttu-id="13bcc-110">複数の Microsoft Cloud のサービスを含む、エンド ツー エンドのシナリオを評価します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-110">Evaluate end-to-end scenarios that include multiple Microsoft Cloud offerings.</span></span>
     
-- <span data-ttu-id="6a2af-111">複数の Microsoft Cloud のサービスを使用する、デモ、概念実証、開発/テスト構成などを作成します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-111">Create a demo, proof-of-concept, or dev/test configuration that uses multiple Microsoft Cloud offerings.</span></span>
+- <span data-ttu-id="13bcc-111">複数の Microsoft Cloud のサービスを使用する、デモ、概念実証、開発/テスト構成などを作成します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-111">Create a demo, proof-of-concept, or dev/test configuration that uses multiple Microsoft Cloud offerings.</span></span>
     
-- <span data-ttu-id="6a2af-112">プロフェッショナルな開発のため、Microsoft Cloud のスキルを構築します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-112">Build your Microsoft Cloud skills for professional development.</span></span>
+- <span data-ttu-id="13bcc-112">プロフェッショナルな開発のため、Microsoft Cloud のスキルを構築します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-112">Build your Microsoft Cloud skills for professional development.</span></span>
     
-## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a><span data-ttu-id="6a2af-113">フェーズ 1:シミュレートされたイントラネットを作成し、Office 365 を追加する</span><span class="sxs-lookup"><span data-stu-id="6a2af-113">Phase 1: Create a simulated intranet and add Office 365</span></span>
+## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a><span data-ttu-id="13bcc-113">フェーズ 1:シミュレートされたイントラネットを作成し、Office 365 を追加する</span><span class="sxs-lookup"><span data-stu-id="13bcc-113">Phase 1: Create a simulated intranet and add Office 365</span></span>
 
-<span data-ttu-id="6a2af-114">[Office 365 の開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)の指示に従います。</span><span class="sxs-lookup"><span data-stu-id="6a2af-114">Follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="13bcc-114">[Office 365 の開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)の指示に従います。</span><span class="sxs-lookup"><span data-stu-id="13bcc-114">Follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
   
-<span data-ttu-id="6a2af-115">図 1 は、Office 365 と設置型の Windows サーバー ・ Active Directory (AD) フォレストと Azure インフラストラクチャ サービスとディレクトリ同期を実行しているシミュレートされたイントラネットが含まれています、結果として得られる構成を示しています。</span><span class="sxs-lookup"><span data-stu-id="6a2af-115">Figure 1 shows your resulting configuration, which includes Office 365 and a simulated intranet running in Azure infrastructure services and directory synchronization from an on-premises Windows Server Active Directory (AD) forest.</span></span>
+<span data-ttu-id="13bcc-115">図 1 は、Office 365 と設置型の Windows サーバー ・ Active Directory (AD) フォレストと Azure インフラストラクチャ サービスとディレクトリ同期を実行しているシミュレートされたイントラネットが含まれています、結果として得られる構成を示しています。</span><span class="sxs-lookup"><span data-stu-id="13bcc-115">Figure 1 shows your resulting configuration, which includes Office 365 and a simulated intranet running in Azure infrastructure services and directory synchronization from an on-premises Windows Server Active Directory (AD) forest.</span></span>
   
-<span data-ttu-id="6a2af-116">**図 1: Office 365 で Azure でシミュレートされたイントラネット**</span><span class="sxs-lookup"><span data-stu-id="6a2af-116">**Figure 1: The simulated intranet in Azure with Office 365**</span></span>
+<span data-ttu-id="13bcc-116">**図 1: Office 365 で Azure でシミュレートされたイントラネット**</span><span class="sxs-lookup"><span data-stu-id="13bcc-116">**Figure 1: The simulated intranet in Azure with Office 365**</span></span>
 
 ![DirSync を使用した Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
-> <span data-ttu-id="6a2af-p102">Azure の試用版は、30 日間です。Office 365 エンタープライズ E5 の試用版サブスクリプションは、簡単に拡張できる別の 30 日間 30 日間です。永続的な開発/テスト環境では、作成新しい Azure サブスクリプションとライセンスの数が少ない新しい有料 Office 365 エンタープライズ E5 サブスクリプションを支払います。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p102">The Azure trial is 30 days. The Office 365 Enterprise E5 Trial subscription is 30 days, which can be easily extended for another 30 days. For a permanent dev/test environment, create a new paid Azure subscription and a new paid Office 365 Enterprise E5 subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="13bcc-p102">Azure の試用版は、30 日間です。Office 365 エンタープライズ E5 の試用版サブスクリプションは、簡単に拡張できる別の 30 日間 30 日間です。永続的な開発/テスト環境では、作成新しい Azure サブスクリプションとライセンスの数が少ない新しい有料 Office 365 エンタープライズ E5 サブスクリプションを支払います。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p102">The Azure trial is 30 days. The Office 365 Enterprise E5 Trial subscription is 30 days, which can be easily extended for another 30 days. For a permanent dev/test environment, create a new paid Azure subscription and a new paid Office 365 Enterprise E5 subscription with a small number of licenses.</span></span> 
   
-## <a name="phase-2-add-ems"></a><span data-ttu-id="6a2af-121">フェーズ 2:EMS を追加する</span><span class="sxs-lookup"><span data-stu-id="6a2af-121">Phase 2: Add EMS</span></span>
+## <a name="phase-2-add-ems"></a><span data-ttu-id="13bcc-121">フェーズ 2:EMS を追加する</span><span class="sxs-lookup"><span data-stu-id="13bcc-121">Phase 2: Add EMS</span></span>
 
-<span data-ttu-id="6a2af-122">このフェーズでは、EMS 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-122">In this phase, you sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
+<span data-ttu-id="13bcc-122">このフェーズでは、EMS 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-122">In this phase, you sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
   
-1. <span data-ttu-id="6a2af-123">いずれかのブラウザーを使用して、デスクトップ コンピューター CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインしているか。</span><span class="sxs-lookup"><span data-stu-id="6a2af-123">With a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="13bcc-123">いずれかのブラウザーを使用して、デスクトップ コンピューター CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインしているか。</span><span class="sxs-lookup"><span data-stu-id="13bcc-123">With a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="6a2af-124">**[管理]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-124">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="13bcc-124">
+            **[管理]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-124">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="6a2af-125">ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-125">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="13bcc-125">ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-125">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="6a2af-p103">**[サービスを購入]** ページで、 **[Enterprise Mobility + Security E5]** 項目を探します。その項目の上にマウス ポインターを移動させ、 **[無料試用版を起動する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="13bcc-p103">**[サービスを購入]** ページで、 **[Enterprise Mobility + Security E5]** 項目を探します。その項目の上にマウス ポインターを移動させ、 **[無料試用版を起動する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="6a2af-128">**[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-128">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="13bcc-128">**[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-128">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="6a2af-129">**[注文の受領書]** ページで、 **[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-129">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="13bcc-129">**[注文の受領書]** ページで、 **[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-129">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="6a2af-p104">Enterprise Mobility + Security E5 試用版サブスクリプションの試用期間は 90 日間です。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="13bcc-p104">Enterprise Mobility + Security E5 試用版サブスクリプションの試用期間は 90 日間です。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="6a2af-132">次に、すべてのユーザー アカウントに対して Enterprise Mobility + Security E5 ライセンスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-132">Next, enable the Enterprise Mobility + Security E5 license for all user accounts.</span></span>
+<span data-ttu-id="13bcc-132">次に、すべてのユーザー アカウントに対して Enterprise Mobility + Security E5 ライセンスを有効にします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-132">Next, enable the Enterprise Mobility + Security E5 license for all user accounts.</span></span>
   
-1. <span data-ttu-id="6a2af-133">ブラウザーの **[Office 365 管理センター]** タブの左側のナビゲーションで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-133">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
+1. <span data-ttu-id="13bcc-133">ブラウザーの **[Office 365 管理センター]** タブの左側のナビゲーションで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-133">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
     
-2. <span data-ttu-id="6a2af-134">全体管理者アカウントをクリックしてから、 **[製品ライセンス]** で **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-134">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+2. <span data-ttu-id="13bcc-134">全体管理者アカウントをクリックしてから、 **[製品ライセンス]** で **[編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-134">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. <span data-ttu-id="6a2af-135">**[製品ライセンス]** ウィンドウで、 **Enterprise Mobility + Security E5** の製品ライセンスを **[オン]** にして、 **[保存]** をクリックしてから、 **[閉じる]** を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-135">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="13bcc-135">**[製品ライセンス]** ウィンドウで、 **Enterprise Mobility + Security E5** の製品ライセンスを **[オン]** にして、 **[保存]** をクリックしてから、 **[閉じる]** を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-135">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. <span data-ttu-id="6a2af-136">他のすべてのアカウント (User1、User 2、User 3、User 4、User 5) に対して、手順 2 と 3 を実行します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-136">For all of your other accounts (User1, User 2, User 3, User 4, and User 5), do steps 2 and 3.</span></span>
+4. <span data-ttu-id="13bcc-136">他のすべてのアカウント (User1、User 2、User 3、User 4、User 5) に対して、手順 2 と 3 を実行します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-136">For all of your other accounts (User1, User 2, User 3, User 4, and User 5), do steps 2 and 3.</span></span>
     
-<span data-ttu-id="6a2af-137">開発/テスト環境には、以下が含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="6a2af-137">Your dev/test environment now has:</span></span>
+<span data-ttu-id="13bcc-137">開発/テスト環境には、以下が含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="13bcc-137">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="6a2af-138">Azure インフラストラクチャ サービスで実行されるシミュレートされたイントラネット。</span><span class="sxs-lookup"><span data-stu-id="6a2af-138">A simulated intranet running in Azure infrastructure services.</span></span>
+- <span data-ttu-id="13bcc-138">Azure インフラストラクチャ サービスで実行されるシミュレートされたイントラネット。</span><span class="sxs-lookup"><span data-stu-id="13bcc-138">A simulated intranet running in Azure infrastructure services.</span></span>
     
-- <span data-ttu-id="6a2af-139">Office 365 E5 Enterprise と EMS の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ組織および同じ Azure AD テナントを共有している。</span><span class="sxs-lookup"><span data-stu-id="6a2af-139">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="13bcc-139">Office 365 E5 Enterprise と EMS の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ組織および同じ Azure AD テナントを共有している。</span><span class="sxs-lookup"><span data-stu-id="13bcc-139">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- <span data-ttu-id="6a2af-140">すべてのユーザー アカウントで Office 365 E5 Enterprise と EMS が使用可能になっている。</span><span class="sxs-lookup"><span data-stu-id="6a2af-140">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
+- <span data-ttu-id="13bcc-140">すべてのユーザー アカウントで Office 365 E5 Enterprise と EMS が使用可能になっている。</span><span class="sxs-lookup"><span data-stu-id="13bcc-140">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
     
-<span data-ttu-id="6a2af-141">図 2 は、作成した構成に EMS が追加されたことを示しています。</span><span class="sxs-lookup"><span data-stu-id="6a2af-141">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
+<span data-ttu-id="13bcc-141">図 2 は、作成した構成に EMS が追加されたことを示しています。</span><span class="sxs-lookup"><span data-stu-id="13bcc-141">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
   
-<span data-ttu-id="6a2af-142">**図 2: Office 365 と EMS の Azure でシミュレートされたイントラネット**</span><span class="sxs-lookup"><span data-stu-id="6a2af-142">**Figure 2: The simulated intranet in Azure with Office 365 and EMS**</span></span>
+<span data-ttu-id="13bcc-142">**図 2: Office 365 と EMS の Azure でシミュレートされたイントラネット**</span><span class="sxs-lookup"><span data-stu-id="13bcc-142">**Figure 2: The simulated intranet in Azure with Office 365 and EMS**</span></span>
 
 ![Azure、Office 365、EMS が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 2](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
-## <a name="phase-3-add-dynamics-365"></a><span data-ttu-id="6a2af-144">フェーズ 3: Dynamics 365 を追加します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-144">Phase 3: Add Dynamics 365</span></span>
+## <a name="phase-3-add-dynamics-365"></a><span data-ttu-id="13bcc-144">フェーズ 3: Dynamics 365 を追加します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-144">Phase 3: Add Dynamics 365</span></span>
 
-<span data-ttu-id="6a2af-145">このフェーズでは、Dynamics 365 試用版サブスクリプションにサインアップして、Office 365 と EMS の試用版サブスクリプションと同じ組織に追加します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-145">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 and EMS trial subscriptions.</span></span>
+<span data-ttu-id="13bcc-145">このフェーズでは、Dynamics 365 試用版サブスクリプションにサインアップして、Office 365 と EMS の試用版サブスクリプションと同じ組織に追加します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-145">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 and EMS trial subscriptions.</span></span>
   
-1. <span data-ttu-id="6a2af-146">デスクトップ コンピューターのいずれかのブラウザーを使用または、CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-146">Using a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="13bcc-146">デスクトップ コンピューターのいずれかのブラウザーを使用または、CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-146">Using a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="6a2af-147">**[管理]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-147">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="13bcc-147">
+            **[管理]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-147">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="6a2af-148">[ **Office 管理者センター** ] タブで、左側のナビゲーションでは、をクリックして**請求 > サービスを購入する**です。</span><span class="sxs-lookup"><span data-stu-id="6a2af-148">On the **Office admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="13bcc-148">[ **Office 管理者センター** ] タブで、左側のナビゲーションでは、をクリックして**請求 > サービスを購入する**です。</span><span class="sxs-lookup"><span data-stu-id="13bcc-148">On the **Office admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="6a2af-p105">**購買サービス**ページでは、 **Dynamics 365 1 Enterprise Edition の計画**の項目を検索します。上にマウス ポインターをポイントし、**無料の試用期間の開始**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p105">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="13bcc-p105">**購買サービス**ページでは、 **Dynamics 365 1 Enterprise Edition の計画**の項目を検索します。上にマウス ポインターをポイントし、**無料の試用期間の開始**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p105">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="6a2af-151">**[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-151">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="13bcc-151">**[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-151">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="6a2af-152">**[注文の受領書]** ページで、 **[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-152">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="13bcc-152">**[注文の受領書]** ページで、 **[続行]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-152">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="6a2af-p106">Dynamics 365 Plan 1 Enterprise Edition の試用版サブスクリプションは 30 日間有効です。試用版サブスクリプションは、追加で 30 日間まで簡単に延長できます。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p106">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="13bcc-p106">Dynamics 365 Plan 1 Enterprise Edition の試用版サブスクリプションは 30 日間有効です。試用版サブスクリプションは、追加で 30 日間まで簡単に延長できます。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p106">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="6a2af-156">次の手順を使用して、Dynamics 365 ライセンスをグローバル管理者、User 2、User 3 のアカウントに割り当て、システム管理者とします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-156">Use these steps to assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
+<span data-ttu-id="13bcc-156">次の手順を使用して、Dynamics 365 ライセンスをグローバル管理者、User 2、User 3 のアカウントに割り当て、システム管理者とします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-156">Use these steps to assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
   
-1. <span data-ttu-id="6a2af-157">[ **Office 管理者センター** ] タブをクリックして**ユーザー > アクティブなユーザー**。</span><span class="sxs-lookup"><span data-stu-id="6a2af-157">On the **Office admin center** tab, click **Users > Active users**.</span></span>
+1. <span data-ttu-id="13bcc-157">[ **Office 管理者センター** ] タブをクリックして**ユーザー > アクティブなユーザー**。</span><span class="sxs-lookup"><span data-stu-id="13bcc-157">On the **Office admin center** tab, click **Users > Active users**.</span></span>
     
-2. <span data-ttu-id="6a2af-158">、アクティブなユーザーの一覧で、グローバル管理者アカウント] をクリックし、**製品ライセンス**の**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-158">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+2. <span data-ttu-id="13bcc-158">、アクティブなユーザーの一覧で、グローバル管理者アカウント] をクリックし、**製品ライセンス**の**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-158">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. <span data-ttu-id="6a2af-159">[**製品ライセンス**] ウィンドウで、**上**に**Dynamics 365 計画 1 のエンタープライズ エディション**の製品のライセンスを有効にする**、保存**、**閉じる**を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-159">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="13bcc-159">[**製品ライセンス**] ウィンドウで、**上**に**Dynamics 365 計画 1 のエンタープライズ エディション**の製品のライセンスを有効にする**、保存**、**閉じる**を 2 回クリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-159">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. <span data-ttu-id="6a2af-160">User 2 と User 3 のアカウントに対して、手順 2 と 3 を実行します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-160">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
+4. <span data-ttu-id="13bcc-160">User 2 と User 3 のアカウントに対して、手順 2 と 3 を実行します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-160">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
     
-5. <span data-ttu-id="6a2af-161">**Office 管理者センター** ] タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6a2af-161">Close the **Office admin center** tab.</span></span>
+5. <span data-ttu-id="13bcc-161">**Office 管理者センター** ] タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="13bcc-161">Close the **Office admin center** tab.</span></span>
     
-<span data-ttu-id="6a2af-162">次の手順を使用して、Dynamics 365 のシステム管理者として User 2 と User 3 のアカウントを構成します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-162">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
+<span data-ttu-id="13bcc-162">次の手順を使用して、Dynamics 365 のシステム管理者として User 2 と User 3 のアカウントを構成します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-162">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
   
-1. <span data-ttu-id="6a2af-163">**Office 管理者センター** ] タブで、左側のナビゲーションでは、ブラウザーでの**管理を中央揃え**をクリック**Dynamics 365**です。</span><span class="sxs-lookup"><span data-stu-id="6a2af-163">On the **Office Admin center** tab in your browser, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
+1. <span data-ttu-id="13bcc-163">**Office 管理者センター** ] タブで、左側のナビゲーションでは、ブラウザーでの**管理を中央揃え**をクリック**Dynamics 365**です。</span><span class="sxs-lookup"><span data-stu-id="13bcc-163">On the **Office Admin center** tab in your browser, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
     
-    <span data-ttu-id="6a2af-164">Dynamics 365 がメニューに表示されるまで、Dynamics 365 のプロビジョニングの完了を待つ必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="6a2af-164">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
+    <span data-ttu-id="13bcc-164">Dynamics 365 がメニューに表示されるまで、Dynamics 365 のプロビジョニングの完了を待つ必要がある場合があります。</span><span class="sxs-lookup"><span data-stu-id="13bcc-164">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
     
-2. <span data-ttu-id="6a2af-165">Dynamics 365] タブで**これらのすべて**] をクリックし、**セットアップを完了します**。</span><span class="sxs-lookup"><span data-stu-id="6a2af-165">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
+2. <span data-ttu-id="13bcc-165">Dynamics 365] タブで**これらのすべて**] をクリックし、**セットアップを完了します**。</span><span class="sxs-lookup"><span data-stu-id="13bcc-165">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
     
-    <span data-ttu-id="6a2af-166">セットアップが完了するまで待ちます。</span><span class="sxs-lookup"><span data-stu-id="6a2af-166">Wait for setup to complete.</span></span>
+    <span data-ttu-id="13bcc-166">セットアップが完了するまで待ちます。</span><span class="sxs-lookup"><span data-stu-id="13bcc-166">Wait for setup to complete.</span></span>
     
-    <span data-ttu-id="6a2af-p107">セットアップが完了すると、サブスクリプション記録の一部であるサンプル データに基づく販売活動のダッシュ ボードが表示されます。ビデオの**試用版の開始**を表示するのには、いくつかの時間がかかります。完了時にビデオ ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p107">When setup completes, it displays a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
+    <span data-ttu-id="13bcc-p107">セットアップが完了すると、サブスクリプション記録の一部であるサンプル データに基づく販売活動のダッシュ ボードが表示されます。ビデオの**試用版の開始**を表示するのには、いくつかの時間がかかります。完了時にビデオ ウィンドウを閉じます。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p107">When setup completes, it displays a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
     
-3. <span data-ttu-id="6a2af-170">ツールバーの上部にある、**販売**の横にある下向き矢印をクリックを選択し、**設定**] をクリックし、[**セキュリティ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-170">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
+3. <span data-ttu-id="13bcc-170">ツールバーの上部にある、**販売**の横にある下向き矢印をクリックを選択し、**設定**] をクリックし、[**セキュリティ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-170">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
     
-4. <span data-ttu-id="6a2af-171">[**セキュリティ**] ページで [**ユーザー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-171">On the **Security** page, click **Users**.</span></span>
+4. <span data-ttu-id="13bcc-171">[**セキュリティ**] ページで [**ユーザー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-171">On the **Security** page, click **Users**.</span></span>
     
-5. <span data-ttu-id="6a2af-172">ユーザーの一覧では、**ユーザー 2**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-172">In the list of users, click **User 2**.</span></span>
+5. <span data-ttu-id="13bcc-172">ユーザーの一覧では、**ユーザー 2**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-172">In the list of users, click **User 2**.</span></span>
     
-6. <span data-ttu-id="6a2af-173">ツール ・ バーでは、**ロールの管理**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-173">In the tool bar, click **Manage Roles**.</span></span>
+6. <span data-ttu-id="13bcc-173">ツール ・ バーでは、**ロールの管理**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-173">In the tool bar, click **Manage Roles**.</span></span>
     
-7. <span data-ttu-id="6a2af-174">**ロールの管理**は、**システム管理者**をクリックし、し、[ **OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-174">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
+7. <span data-ttu-id="13bcc-174">**ロールの管理**は、**システム管理者**をクリックし、し、[ **OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-174">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
     
-8. <span data-ttu-id="6a2af-175">上部にあるツールバーの [**セキュリティ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-175">In the tool bar at the top click **Security**.</span></span>
+8. <span data-ttu-id="13bcc-175">上部にあるツールバーの [**セキュリティ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-175">In the tool bar at the top click **Security**.</span></span>
     
-9. <span data-ttu-id="6a2af-176">User 3 アカウントについて、手順 5 から 8 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-176">Repeat steps 5-8 for the User 3 account.</span></span>
+9. <span data-ttu-id="13bcc-176">User 3 アカウントについて、手順 5 から 8 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-176">Repeat steps 5-8 for the User 3 account.</span></span>
     
-10. <span data-ttu-id="6a2af-177">閉じる、**ユーザー: User3**タブします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-177">Close the **User: User3** tab.</span></span>
+10. <span data-ttu-id="13bcc-177">閉じる、**ユーザー: User3**タブします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-177">Close the **User: User3** tab.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="6a2af-178">Office 365 全体管理者アカウントに、Dynamics 365 のシステム管理者ロールが自動的に割り当てられました。</span><span class="sxs-lookup"><span data-stu-id="6a2af-178">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
+> <span data-ttu-id="13bcc-178">Office 365 全体管理者アカウントに、Dynamics 365 のシステム管理者ロールが自動的に割り当てられました。</span><span class="sxs-lookup"><span data-stu-id="13bcc-178">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
   
-<span data-ttu-id="6a2af-179">開発/テスト環境には、以下が含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="6a2af-179">Your dev/test environment now has:</span></span>
+<span data-ttu-id="13bcc-179">開発/テスト環境には、以下が含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="13bcc-179">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="6a2af-180">Azure インフラストラクチャ サービスで実行されるシミュレートされたイントラネット。</span><span class="sxs-lookup"><span data-stu-id="6a2af-180">A simulated intranet running in Azure infrastructure services.</span></span>
+- <span data-ttu-id="13bcc-180">Azure インフラストラクチャ サービスで実行されるシミュレートされたイントラネット。</span><span class="sxs-lookup"><span data-stu-id="13bcc-180">A simulated intranet running in Azure infrastructure services.</span></span>
     
-- <span data-ttu-id="6a2af-181">Office 365 E5 Enterprise、EMS、Dynamics 365 の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ組織および同じ Azure AD テナントを共有している。</span><span class="sxs-lookup"><span data-stu-id="6a2af-181">Office 365 E5 Enterprise, EMS, and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="13bcc-181">Office 365 E5 Enterprise、EMS、Dynamics 365 の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ組織および同じ Azure AD テナントを共有している。</span><span class="sxs-lookup"><span data-stu-id="13bcc-181">Office 365 E5 Enterprise, EMS, and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- <span data-ttu-id="6a2af-182">すべてのユーザー アカウントで Office 365 E5 Enterprise と EMS が使用可能になっている。</span><span class="sxs-lookup"><span data-stu-id="6a2af-182">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
+- <span data-ttu-id="13bcc-182">すべてのユーザー アカウントで Office 365 E5 Enterprise と EMS が使用可能になっている。</span><span class="sxs-lookup"><span data-stu-id="13bcc-182">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
     
-- <span data-ttu-id="6a2af-183">グローバル エンタープライズ管理者、User 2、および User 3 のアカウントが、Dynamics 365 を使用できるようになり、Dynamics 365 のシステム管理者になっている。</span><span class="sxs-lookup"><span data-stu-id="6a2af-183">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use Dynamics 365 and are Dynamics 365 system administrators.</span></span>
+- <span data-ttu-id="13bcc-183">グローバル エンタープライズ管理者、User 2、および User 3 のアカウントが、Dynamics 365 を使用できるようになり、Dynamics 365 のシステム管理者になっている。</span><span class="sxs-lookup"><span data-stu-id="13bcc-183">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use Dynamics 365 and are Dynamics 365 system administrators.</span></span>
     
-<span data-ttu-id="6a2af-184">図 3 は、最終的な構成を示しています。</span><span class="sxs-lookup"><span data-stu-id="6a2af-184">Figure 3 shows your resulting configuration.</span></span>
+<span data-ttu-id="13bcc-184">図 3 は、最終的な構成を示しています。</span><span class="sxs-lookup"><span data-stu-id="13bcc-184">Figure 3 shows your resulting configuration.</span></span>
   
-<span data-ttu-id="6a2af-185">**図 3: Office 365、EMS、Dynamics 365 と Azure でシミュレートされたイントラネット**</span><span class="sxs-lookup"><span data-stu-id="6a2af-185">**Figure 3: The simulated intranet in Azure with Office 365, EMS, and Dynamics 365**</span></span>
+<span data-ttu-id="13bcc-185">**図 3: Office 365、EMS、Dynamics 365 と Azure でシミュレートされたイントラネット**</span><span class="sxs-lookup"><span data-stu-id="13bcc-185">**Figure 3: The simulated intranet in Azure with Office 365, EMS, and Dynamics 365**</span></span>
 
 ![Azure、Office 365、EMS、Dynamics 365 が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 3](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
-## <a name="next-steps"></a><span data-ttu-id="6a2af-187">次の手順</span><span class="sxs-lookup"><span data-stu-id="6a2af-187">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="13bcc-187">次の手順</span><span class="sxs-lookup"><span data-stu-id="13bcc-187">Next steps</span></span>
 
-<span data-ttu-id="6a2af-p108">これで、One Microsoft Cloud 開発/テスト環境を自由に試すことができます。ガイド付き体験のいくつかのアイデアをご紹介します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-p108">You can now experiment with your One Microsoft Cloud dev/test environment. Here are some ideas for guided experiences:</span></span>
+<span data-ttu-id="13bcc-p108">これで、One Microsoft Cloud 開発/テスト環境を自由に試すことができます。ガイド付き体験のいくつかのアイデアをご紹介します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-p108">You can now experiment with your One Microsoft Cloud dev/test environment. Here are some ideas for guided experiences:</span></span>
   
-- [<span data-ttu-id="6a2af-190">Office 365 アプリケーションの EMS でモバイル アプリケーションの管理 (MAM) ポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-190">Configure mobile application management (MAM) policies in EMS for Office 365 applications</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
+- [<span data-ttu-id="13bcc-190">Office 365 アプリケーションの EMS でモバイル アプリケーションの管理 (MAM) ポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-190">Configure mobile application management (MAM) policies in EMS for Office 365 applications</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [<span data-ttu-id="6a2af-191">Dynamics 365 の連絡先との統合を Office 365 で Exchange のオンライン デモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="6a2af-191">Demonstrate Exchange Online in Office 365 integration with Dynamics 365 contacts</span></span>](https://technet.microsoft.com/library/mt798313.aspx)
+- [<span data-ttu-id="13bcc-191">Dynamics 365 の連絡先との統合を Office 365 で Exchange のオンライン デモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="13bcc-191">Demonstrate Exchange Online in Office 365 integration with Dynamics 365 contacts</span></span>](https://technet.microsoft.com/library/mt798313.aspx)
     
-- [<span data-ttu-id="6a2af-192">Azure インフラストラクチャ サービスをサーバー ベースのワークロードをホストするためにシミュレートされた複数の環境に関するネットワークを作成します。</span><span class="sxs-lookup"><span data-stu-id="6a2af-192">Create a simulated cross-premises network in Azure infrastructure services for hosting server-based workloads</span></span>](https://technet.microsoft.com/library/mt745150.aspx)
+- [<span data-ttu-id="13bcc-192">Azure インフラストラクチャ サービスをサーバー ベースのワークロードをホストするためにシミュレートされた複数の環境に関するネットワークを作成します。</span><span class="sxs-lookup"><span data-stu-id="13bcc-192">Create a simulated cross-premises network in Azure infrastructure services for hosting server-based workloads</span></span>](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="6a2af-193">See Also</span><span class="sxs-lookup"><span data-stu-id="6a2af-193">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="13bcc-193">関連項目</span><span class="sxs-lookup"><span data-stu-id="13bcc-193">See Also</span></span>
 
-[<span data-ttu-id="6a2af-194">クラウド導入のテスト ラボ ガイド (TLG)</span><span class="sxs-lookup"><span data-stu-id="6a2af-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="13bcc-194">クラウド導入のテスト ラボ ガイド (TLG)</span><span class="sxs-lookup"><span data-stu-id="13bcc-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[<span data-ttu-id="6a2af-195">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="6a2af-195">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="13bcc-195">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="13bcc-195">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[<span data-ttu-id="6a2af-196">ハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="6a2af-196">Hybrid solutions</span></span>](hybrid-solutions.md)
+[<span data-ttu-id="13bcc-196">ハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="13bcc-196">Hybrid solutions</span></span>](hybrid-solutions.md)
   
-[<span data-ttu-id="6a2af-197">セキュリティ ソリューション</span><span class="sxs-lookup"><span data-stu-id="6a2af-197">Security solutions</span></span>](security-solutions.md)
+[<span data-ttu-id="13bcc-197">セキュリティ ソリューション</span><span class="sxs-lookup"><span data-stu-id="13bcc-197">Security solutions</span></span>](security-solutions.md)
 
 
 
