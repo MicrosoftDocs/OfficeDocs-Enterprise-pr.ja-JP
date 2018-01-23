@@ -16,11 +16,11 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。"
-ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7564da2093bdc9de45e239be8196a626214871ba
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
@@ -66,7 +66,7 @@ Get-MsolAccountSku
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート]((https://support.office.com/home/contact))にお問い合わせください。
+次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート](https://support.office.com/home/contact)にお問い合わせください。
   
 |****サービス プラン****|****説明****|
 |:-----|:-----|
@@ -95,9 +95,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
 <a name="ShortVersion"> </a>
 
-||
-|:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。 |
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>関連項目
 <a name="ShortVersion"> </a>
