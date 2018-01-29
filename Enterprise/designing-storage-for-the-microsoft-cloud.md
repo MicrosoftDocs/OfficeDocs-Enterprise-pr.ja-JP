@@ -8,8 +8,10 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.collection:
+- Ent_O365
+ms.custom:
+- Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "概要: クラウド ストレージが必要な理由を理解し、一連の Microsoft のクラウド ストレージ オプションおよび主要なストレージ シナリオを確認します。"
 ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
@@ -160,6 +162,6 @@ ms.lasthandoff: 01/11/2018
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
