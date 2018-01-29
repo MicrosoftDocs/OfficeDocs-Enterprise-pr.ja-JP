@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Office 365 サービスに接続します。"
-ms.openlocfilehash: 2dccfc73b016cbe97436c822432331ee30ba4bcd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5f97924d141afa4319c761fee86b13cb2b0705fb
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する
 
@@ -404,7 +404,7 @@ litwareinc.com  litwareinc.com      Authoritative   True
 ### <a name="step-7-connect-to-the-security-amp-compliance-center"></a>手順 7: セキュリティ センターとコンプライアンス センターに接続する
 <a name="Step7"> </a>
 
-セキュリティ/コンプライアンス センターは、1 か所からコンプライアンスの機能を管理できるようにする Office 365 のサービスです。詳細については、「[Office 365 コンプライアンス センター]((http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx))」を参照してください。
+セキュリティ/コンプライアンス センターは、1 か所からコンプライアンスの機能を管理できるようにする Office 365 のサービスです。詳細については、「[Office 365 コンプライアンス センター](http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx)」を参照してください。
   
 セキュリティ センターとコンプライアンス センター の接続手順は、Exchange Online の手順とよく似ていますが、ちょっとした違いがあります。これはすぐに説明します。
   
@@ -503,10 +503,8 @@ Office 365 への接続に関しては **Connect-MsolService** コマンドレ�
 ## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
 <a name="LongVersion"> </a>
 
-||
-|:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)) のための無料のビデオ コースをご覧ください。 |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>関連項目
 
 #### 
