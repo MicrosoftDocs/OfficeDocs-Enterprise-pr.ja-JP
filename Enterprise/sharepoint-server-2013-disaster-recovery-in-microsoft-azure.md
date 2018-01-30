@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。"
-ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
+ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -106,7 +106,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **図: Azure におけるウォーム スタンバイ ソリューションの要素**
 
-![Azure の SharePoint ウォーム スタンバイ ソリューションの要素](images/AZarch_AZWarmStndby.png)
+![Azure の SharePoint ウォーム スタンバイ ソリューションの要素](images/AZarch_AZWarmStndby.gif)
   
 分散ファイル システム レプリケーション (DFSR) を使用した SQL Server ログ配布により、データベース バックアップとトランザクション ログを Azure 内の復旧ファームにコピーします。 
   
@@ -367,7 +367,7 @@ DFSR によるファイル レプリケーションを設定するには、DNS �
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>フェーズ 6: 復旧ファームに対するログ配布の設定
 <a name="Phase6"> </a>
 
-ログ配布は、この環境で障害復旧を設定するための重要なコンポーネントです。ログ配布を使用すると、データベースのトランザクション ログ ファイルをプライマリ データベース サーバー インスタンスからセカンダリ データベース サーバー インスタンスに自動的に送信できます。ログ配布を設定するには、「[Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx))」をご覧ください。 
+ログ配布は、この環境で障害復旧を設定するための重要なコンポーネントです。ログ配布を使用すると、データベースのトランザクション ログ ファイルをプライマリ データベース サーバー インスタンスからセカンダリ データベース サーバー インスタンスに自動的に送信できます。ログ配布を設定するには、「[Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)」をご覧ください。 
   
 > [!IMPORTANT]
 > SharePoint Server におけるログ配布サポートは、特定のデータベースに限定されています。詳しくは、「[サポートされている SharePoint データベース用の高可用性と障害復旧のオプション (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)」をご覧ください。 
