@@ -8,17 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "概要:Microsoft Azure で Office 365 サブスクリプションの高可用性フェデレーション認証を構成します。"
-ms.openlocfilehash: 111e52531e45e54b8ce53c3f530e9c9d273f24fc
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 8652b27b51c8a94bd98953d5160faa182523cc93
+ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure に Office 365 の高可用性フェデレーション認証を展開する
 
@@ -43,12 +44,12 @@ ms.lasthandoff: 01/11/2018
 すべての仮想マシンが単一のクロスプレミス Azure 仮想ネットワーク (VNet) に入っています。 
   
 > [!NOTE]
-> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。ただし、クロスプレミス接続が使用できなくなると、Windows Server AD で加えられたユーザー アカウントとグループに対する更新が VNet 内のドメイン コントローラーで受信されなくなります。これを回避するために、クロスプレミス接続で高可用性を構成できます。詳細については、「[高可用性のクロスプレミス接続および VNet 間接続]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable))」を参照してください。
+> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。ただし、クロスプレミス接続が使用できなくなると、Windows Server AD で加えられたユーザー アカウントとグループに対する更新が VNet 内のドメイン コントローラーで受信されなくなります。これを回避するために、クロスプレミス接続で高可用性を構成できます。詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
   
 特定の役割を持つ仮想マシンの各ペアが独自のサブネットと可用性セットに入っています。
   
 > [!NOTE]
-> この VNet はオンプレミスのネットワークに接続されているため、この構成に管理サブネット上の jumpbox や仮想マシンの監視は含まれません。詳細については、「[N 層のアーキテクチャで Windows VM を実行する]((https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm))」を参照してください。 
+> この VNet はオンプレミスのネットワークに接続されているため、この構成に管理サブネット上の jumpbox や仮想マシンの監視は含まれません。詳細については、「[N 層のアーキテクチャで Windows VM を実行する](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)」を参照してください。 
   
 この構成の結果として、すべての Office 365 ユーザーがフェデレーション認証を使用できるようになります。この認証では、Office 365 アカウントではなく、Windows Server Active Directory の資格情報を使用してサインインすることができます。フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
   
@@ -78,13 +79,12 @@ ms.lasthandoff: 01/11/2018
 |6.  <br/> |1 つ目の Web アプリケーション プロキシ サーバー  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |7.  <br/> |2 つ目の Web アプリケーション プロキシ サーバー  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
    
-この構成の見積もりコストを計算するには、「[料金計算ツール]((https://azure.microsoft.com/pricing/calculator/))」を参照してください
+この構成の見積もりコストを計算するには、「[料金計算ツール](https://azure.microsoft.com/pricing/calculator/)」を参照してください
   
 ## <a name="phases-of-deployment"></a>展開のフェーズ
 
 次のフェーズでは、このワークロードを展開します。
   
-<<<<<<< 見出し
 - [高可用性フェデレーション認証のフェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)。リソース グループ、ストレージ アカウント、可用性セット、クロスプレミスの仮想ネットワークを作成します。
     
 - [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバーを作成して構成します。
@@ -93,17 +93,7 @@ ms.lasthandoff: 01/11/2018
     
 - [高可用性フェデレーション認証のフェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
     
-- [高可用性フェデレーション認証のフェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。Office 365 サブスクリプションのフェデレーション認証を構成します。 =======
-- [高可用性フェデレーション認証のフェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)。リソース グループ、ストレージ アカウント、可用性セット、クロスプレミスの仮想ネットワークを作成します。
-    
-- [高可用性フェデレーション認証のフェーズ 2: ドメイン コントローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバーを作成して構成します。
-    
-- [高可用性フェデレーション認証のフェーズ 3 :AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。2 つの AD FS サーバーを作成して構成します。
-    
-- [高可用性フェデレーション認証のフェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
-    
 - [高可用性フェデレーション認証のフェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。Office 365 サブスクリプションのフェデレーション認証を構成します。
->>>>>>> マスター
     
 この記事では、定義済みのアーキテクチャを使用して、Azure インフラストラクチャ サービスに Office 365 の機能的な高可用性フェデレーション認証を作成するためのフェーズごとの規範となるガイドを提供します。以下の点にご注意ください。
   
@@ -118,14 +108,6 @@ ms.lasthandoff: 01/11/2018
 このワークロードの構成を「[高可用性フェデレーション認証のフェーズ 1:Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)」から開始します。 
   
 > [!TIP]
-> Office 365 の高可用性フェデレーション認証を Azure に素早く展開するためのファイル セットについては、「[Azure への Office 365 のフェデレーション認証の展開キット]((https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664))」を参照してください。 
-  
-## <a name="see-also"></a>関連項目
-
-[Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
-  
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
-
-[Office 365 のフェデレーション ID](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
-
+> Office 365 の高可用性フェデレーション認証を Azure に素早く展開するためのファイル セットについては、「[Azure への Office 365 のフェデレーション認証の展開キット](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)」を参照してください。 
+ 
 
