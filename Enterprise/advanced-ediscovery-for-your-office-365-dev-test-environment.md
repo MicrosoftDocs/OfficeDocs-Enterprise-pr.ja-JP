@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "概要: は、構成して、Office 365 の開発/テスト環境でサンプル データを Office 365 の高度な電子的証拠開示を実演します。"
-ms.openlocfilehash: 95eabc3eeb718cb1235848544b41207a94c428c7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c55a466f05eba4e9f06ce2930dfc7c762d7fceae
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境のアドバンスト eDiscovery
 

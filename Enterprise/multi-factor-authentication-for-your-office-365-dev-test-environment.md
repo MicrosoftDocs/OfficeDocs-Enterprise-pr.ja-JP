@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "概要: Office 365 の開発/テスト環境でスマート フォンに送信されるテキスト メッセージを使用して複数要素の認証を構成します。"
-ms.openlocfilehash: 66b0fadd097e6df940754c28cd7b95549eb3a761
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 345ad65a2476f8b25b5f34b281b3f617fa3d48cc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境用の多要素認証
 

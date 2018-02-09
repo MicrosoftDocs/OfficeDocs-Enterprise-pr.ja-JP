@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "概要: は、クラウドの設定の詳細については独自のストレージ ・ サービスやソリューションの作成に使用できるストレージ構成要素を取得します。"
-ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-from-the-ground-up"></a>新規に構築
 
