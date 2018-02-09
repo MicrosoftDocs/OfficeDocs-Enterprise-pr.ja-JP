@@ -2,7 +2,7 @@
 title: "PowerShell を使用して Office 365 へのカットオーバーの移行を実行する"
 ms.author: sirkkuw
 author: sirkkuw
-manager: scotv
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "概要:Windows PowerShell を使用して Office 365 の一括移行を実行する方法について説明します。"
-ms.openlocfilehash: c690789e64af297d2ffc20505bc1a296148d9f1c
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell を使用して Office 365 へのカットオーバーの移行を実行する
 
@@ -63,7 +63,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
     
   - 企業ネットワークの外部から Microsoft Outlook を使用して、社内 Exchange メールボックスに接続します。
     
-  - Microsoft [Exchange リモート接続アナライザー]((https://www.testexchangeconnectivity.com/))を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
+  - Microsoft [Exchange リモート接続アナライザー](https://www.testexchangeconnectivity.com/)を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
     
   - Exchange Online PowerShell で次のコマンドを実行します。
     

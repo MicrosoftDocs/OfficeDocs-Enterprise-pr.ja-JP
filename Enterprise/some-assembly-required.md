@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "概要: 独自のストレージ ソリューションの作成に使用できる、クラウド ストレージ オプションのセットについての詳細を説明します。"
-ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="some-assembly-required"></a>いくらかのアセンブリが必要
 
@@ -58,9 +58,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://azure.microsoft.com/services/cdn/))をクリックしてください。
+追加情報については、[こちら](https://azure.microsoft.com/services/cdn/)をクリックしてください。
   
-コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/cdn/))をクリックしてください。
+コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/cdn/)をクリックしてください。
   
 ## <a name="hdinsight"></a>HdInsight
 
@@ -94,9 +94,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://azure.microsoft.com/services/hdinsight/))をクリックしてください。
+追加情報については、[こちら](https://azure.microsoft.com/services/hdinsight/)をクリックしてください。
   
-コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/hdinsight/))をクリックしてください。
+コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/hdinsight/)をクリックしてください。
   
 ## <a name="azure-sql-database"></a>Azure SQL データベース
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/11/2018
   
 ![Azure SQL Database が提供する水平方向のスケーリング。](images/Storage_Poster/CloudStor-HorizScale.png)
   
-詳細情報については、[こちら]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) をクリックしてください。
+詳細情報については、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) をクリックしてください。
   
 ### <a name="stretch-database-with-sql-server-2016"></a>Stretch Database および SQL Server 2016
 
@@ -160,13 +160,13 @@ Stretch Database は SQL Server 2016 の機能であり、顧客の発注情報�
   
 Stretch Database は、長期ストレージ、および履歴データへの透過的アクセスのためのコスト パフォーマンスに優れたオプションを提供します。テーブルが非常に大きくなると発生するパフォーマンスと可用性の問題も解決します。
   
-詳細情報については、[こちら]((https://msdn.microsoft.com/library/dn935011.aspx)) をクリックしてください。
+詳細情報については、[こちら](https://msdn.microsoft.com/library/dn935011.aspx) をクリックしてください。
   
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((http://azure.microsoft.com/services/sql-database/))をクリックしてください。
+追加情報については、[こちら](http://azure.microsoft.com/services/sql-database/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/sql-database/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/sql-database/)をクリックしてください。
   
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 
@@ -210,9 +210,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
   
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((http://azure.microsoft.com/services/documentdb/))をクリックしてください。
+追加情報については、[こちら](http://azure.microsoft.com/services/documentdb/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/documentdb/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/documentdb/)をクリックしてください。
   
 ## <a name="azure-media-services"></a>Azure Media Services
 
@@ -244,9 +244,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://azure.microsoft.com/services/media-services/))をクリックしてください。
+追加情報については、[こちら](https://azure.microsoft.com/services/media-services/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/media-services/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/media-services/)をクリックしてください。
   
 ## <a name="azure-redis-cache"></a>Azure Redis Cache
 
@@ -278,9 +278,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((http://azure.microsoft.com/services/cache/))をクリックしてください。
+追加情報については、[こちら](http://azure.microsoft.com/services/cache/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/cache/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/cache/)をクリックしてください。
   
 ## <a name="sql-server-on-an-azure-vm"></a>Azure VM 内の SQL Server
 
@@ -300,9 +300,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((http://azure.microsoft.com/services/virtual-machines/))をクリックしてください。
+追加情報については、[こちら](http://azure.microsoft.com/services/virtual-machines/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/virtual-machines/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/virtual-machines/)をクリックしてください。
   
 ## <a name="storsimple"></a>StorSimple
 
@@ -334,9 +334,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((http://azure.microsoft.com/services/storsimple/))をクリックしてください。
+追加情報については、[こちら](http://azure.microsoft.com/services/storsimple/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/storsimple/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/storsimple/)をクリックしてください。
   
 ## <a name="azure-sql-data-warehouse"></a>Azure SQL Data Warehouse
 
@@ -364,9 +364,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://azure.microsoft.com/services/sql-data-warehouse/))をクリックしてください。
+追加情報については、[こちら](https://azure.microsoft.com/services/sql-data-warehouse/)をクリックしてください。
   
-コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/))をクリックしてください。
+コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/sql-data-warehouse/)をクリックしてください。
   
 ## <a name="azure-data-lake-store"></a>Azure Data Lake Store
 
@@ -398,9 +398,9 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://azure.microsoft.com/services/data-lake-store/))をクリックしてください。
+追加情報については、[こちら](https://azure.microsoft.com/services/data-lake-store/)をクリックしてください。
   
-コストの情報については、[こちら]((https://azure.microsoft.com/pricing/details/data-lake-store/))をクリックしてください。
+コストの情報については、[こちら](https://azure.microsoft.com/pricing/details/data-lake-store/)をクリックしてください。
   
 ## <a name="next-step"></a>次の手順
 
@@ -412,7 +412,7 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

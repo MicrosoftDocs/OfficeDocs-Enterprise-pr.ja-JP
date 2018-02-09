@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "概要: これらのクラウド導入のテスト ラボ ガイド (TLG) を使用して、Office 365、Enterprise Mobility + Security (EMS)、Dynamics 365、Office Server 製品のデモンストレーション、概念実証、開発/テスト環境を設定します。"
-ms.openlocfilehash: 2c533129b88783d8ff39dbc5753bdeb26eeafe81
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d13012ebbee05eea903d3ae2d6198b503ad2bf39
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>クラウド導入のテスト ラボ ガイド (TLG)
 
@@ -35,7 +35,7 @@ TLG では短時間で Microsoft 製品について学習できます。ある�
 - Microsoft Virtual Academy セッションの「[クラウド導入のテスト ラボ ガイドを使用した Microsoft Cloud を試す](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 )」(22 分) を視聴してください。
     
 - 
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
     
 ## <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 <a name="O365"> </a>
@@ -91,7 +91,7 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 開発/テスト環境
 <a name="O365"> </a>
 
-これらの記事を利用して [Microsoft 365 Enterprise]((https://docs.microsoft.com/microsoft-365-enterprise/)) シナリオ向けの開発/テスト環境を作成します。
+これらの記事を利用して [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) シナリオ向けの開発/テスト環境を作成します。
   
 - [Microsoft 365 Enterprise 開発/テスト環境](the-microsoft-365-enterprise-dev-test-environment.md)
     
@@ -141,7 +141,7 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
 
 Azure インフラストラクチャ サービス内に作成できる、クラウド ベースのその他の開発/テスト環境は次のとおりです。
   
-- [Azure における SharePoint Server 2016 の開発/テスト環境]((https://technet.microsoft.com/library/mt723354.aspx))
+- [Azure における SharePoint Server 2016 の開発/テスト環境](https://technet.microsoft.com/library/mt723354.aspx)
     
     Azure インフラストラクチャ サービスに単一サーバーの SharePoint Server 2016 ファームを構築します。
     
@@ -149,7 +149,7 @@ Azure インフラストラクチャ サービス内に作成できる、クラ�
     
     単一の Exchange 2016 サーバーを Azure インフラストラクチャ サービスに構築します。
     
-- [SharePoint Server 2013 dev/test environments in Azure]((http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx))
+- [SharePoint Server 2013 dev/test environments in Azure](http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx)
     
     基本および高可用性の SharePoint Server 2013 ファームを Azure インフラストラクチャ サービスに構築します。
     
@@ -158,7 +158,7 @@ Azure インフラストラクチャ サービス内に作成できる、クラ�
 |**お問い合わせ**|**説明**|
 |:-----|:-----|
 |**必要なソリューション** <br/> |複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。<br/> |
-|**ソリューションのディスカッションへの参加** <br/> |クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の [CAAB (Cloud Adoption Advisory Board) スペース]((https://aka.ms/caab))のメンバーとしてご自分を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!) 宛に電子メールを送信してください。[CAAB ブログ]((https://blogs.technet.com/b/solutions_advisory_board/))でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。<br/> |
+|**ソリューションのディスカッションへの参加** <br/> |クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の [CAAB (Cloud Adoption Advisory Board) スペース](https://aka.ms/caab)のメンバーとしてご自分を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!) 宛に電子メールを送信してください。[CAAB ブログ](https://blogs.technet.com/b/solutions_advisory_board/)でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。<br/> |
 |**記載されているアートの取得方法** <br/> |この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記述した電子メールを [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20) に送信してください。<br/> |
    
 ## <a name="see-also"></a>関連項目

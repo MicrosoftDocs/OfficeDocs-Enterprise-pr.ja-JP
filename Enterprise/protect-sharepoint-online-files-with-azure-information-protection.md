@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。"
-ms.openlocfilehash: 03a10c5d856c4c5518f18b9d02ffe76f2c8d2e7a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5beba188cadc88c15ec75ed2adb4899d9b41b8ec
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection を使用して SharePoint Online ファイルを保護する
 
@@ -29,13 +29,13 @@ ms.lasthandoff: 01/11/2018
 > [!NOTE]
 > Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできません。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。データ損失防止 (DLP) ポリシーが操作できるのはメタデータ (Office 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。 
   
-まず、「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365))」にある Office 365 サブスクリプションに関する指示を使用します。
+まず、「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある Office 365 サブスクリプションに関する指示を使用します。
   
 次に、機密性の高い SharePoint Online チーム サイトの保護とアクセス許可用に、新たなスコープ付きポリシーとサブラベルを使用して Azure Information Protection を構成します。
   
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
+1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. ブラウザーで別のタブで、[(https://portal.azure.com)]((https://portal.azure.com)) の Azure Portal に移動します。
+2. ブラウザーで別のタブで、[https://portal.azure.com](https://portal.azure.com) の Azure Portal に移動します。
     
 3. 初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。
     
@@ -55,9 +55,9 @@ ms.lasthandoff: 01/11/2018
     
 11. **[このラベルを含むドキュメントやメールに対するアクセス許可の設定]** で、 **[保護]** をクリックします。
     
-12. **[保護]** セクションで、 **[Azure (クラウド キー)]** をクリックします。
+12. **[保護]** セクションで **[Azure (クラウド キー)]** をクリックします。
     
-13. **[保護]** ブレードの **[保護の設定]** をクリックして **[+ アクセス許可を追加する]** をクリックします。
+13. **[保護]** ブレードで **[保護設定]** の **[+ アクセス許可の追加]** をクリックします。
     
 14. **[アクセス許可を追加する]** ブレードの **[ユーザーとグループの指定]** で、 **[+ ディレクトリを参照]** をクリックします。
     
@@ -79,11 +79,11 @@ ms.lasthandoff: 01/11/2018
   
 これで、ドキュメントを作成して、Azure Information Protection および新しいラベルでそれらを保護する準備が整いました。
   
-デバイスまたは Windows ベースのコンピューターに [Azure Information Protection クライアントをインストールする (]((https://docs.microsoft.com/information-protection/rms-client/install-client-app))) 必要があります。インストールをスクリプトで記述して自動化するか、ユーザーがクライアントを手動でインストールできます。以下のリソースを参照してください。
+デバイスまたは Windows ベースのコンピューターに [Azure Information Protection クライアントをインストールする (](https://docs.microsoft.com/information-protection/rms-client/install-client-app)) 必要があります。インストールをスクリプトで記述して自動化するか、ユーザーがクライアントを手動でインストールできます。以下のリソースを参照してください。
   
-- [クライアント側での Azure Information Protection]((https://docs.microsoft.com/information-protection/rms-client/use-client))
+- [クライアント側での Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/use-client)
     
-- [Azure Information Protection クライアント管理者ガイド]((https://docs.microsoft.com/information-protection/rms-client/client-admin-guide))
+- [Azure Information Protection クライアントのインストール](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
     
 - [手動インストールのためのダウンロード ページ](https://www.microsoft.com/download/details.aspx?id=53018)
     

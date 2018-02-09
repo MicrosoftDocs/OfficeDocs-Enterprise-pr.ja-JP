@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "概要: ここでは、幹部や研究所が簡単かつセキュアにコラボレーションできるようにするために、Contoso 社がセンシティブな情報の保護と、機密性の高い SharePoint Online チーム サイトをどのように構築したかを説明します。"
-ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>センシティブなアセットや機密性の高いアセット用のセキュアな SharePoint Online チームサイト
 
@@ -52,9 +52,9 @@ Contoso 社は次のようなステップで、経営幹部および研究チー
     
 最終的に、セキュリティと SharePoint 管理者によってアクセスが厳密に管理される 2 つのコラボレーション サイトが作成されます。高機密 AIP ラベルの付いたファイルは、Research チーム サイト外に配布されたとしても暗号化されているため、研究チームのメンバー以外は開くことができません。
   
-詳細については、[セキュアな SharePoint Online サイトとファイル]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files))を参照してください。
+詳細については、[セキュアな SharePoint Online サイトとファイル](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)を参照してください。
   
- デモや概念実証、開発/テストのために設定する場合は、[開発/テスト環境でのセキュアな SharePoint Online サイト]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test))を参照してください。
+ デモや概念実証、開発/テストのために設定する場合は、[開発/テスト環境でのセキュアな SharePoint Online サイト](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -64,9 +64,9 @@ Contoso 社は次のようなステップで、経営幹部および研究チー
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))
+[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Microsoft の Enterprise Cloud ロードマップ:IT の意思決定者向けのリソース]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft の Enterprise Cloud ロードマップ:IT の意思決定者向けのリソース](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。"
-ms.openlocfilehash: e54edb0111fd3285030a3074b5ec66a0c9224d29
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 997c5cf236a795f4846718cc8864997799a1d966
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -50,7 +50,7 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
     
 > [!TIP]
 > 
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
@@ -63,7 +63,7 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>フェーズ 2: ユーザー アカウントとアクセス グループを作成する
 
-「[Office 365 PowerShell への接続]((https://technet.microsoft.com/library/dn975125.aspx))」の手順を使用して、全体管理者アカウントで以下から Office 365 の監査サブスクリプション フォームに接続します。
+「[Office 365 PowerShell への接続](https://technet.microsoft.com/library/dn975125.aspx)」の手順を使用して、全体管理者アカウントで以下から Office 365 の監査サブスクリプション フォームに接続します。
   
 - 自分のコンピューター (ライトウェイトの Office 365 開発/テスト環境の場合)。
     
@@ -84,7 +84,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
 > [!TIP]
-> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[こちら]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1))をクリックしてください。
+> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[こちら](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)をクリックしてください。
   
 組織名 (例: contosotoycompany)、所属地域に該当する 2 文字の国別コードを入力して、Windows PowerShell 用 Windows Azure Active Directory モジュールのプロンプトから次のコマンドを実行します。
   
@@ -149,7 +149,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
   
-1. ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。
+1. ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -217,7 +217,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
     
-3. デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。
+3. デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
     
 4. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -247,7 +247,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
   
-1. 開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。
+1. 開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -263,7 +263,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
   
-1. User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) にサインインします。
+1. User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     

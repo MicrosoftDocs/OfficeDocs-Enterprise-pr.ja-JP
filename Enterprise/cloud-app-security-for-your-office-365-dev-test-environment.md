@@ -14,23 +14,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。"
-ms.openlocfilehash: 8d398dcbf1ca5dea5ee790a64829eef55765025a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b13931ca21b440188563feef9236cd70e6df084b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
  **概要:** Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。
   
-Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリティ管理」と呼ばれていた) を使用すると、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。それによって調査と、是正アクションの実行が可能になります。詳細については、「[Office 365 の Advanced Security Management の概要]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))」を参照してください。
+Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリティ管理」と呼ばれていた) を使用すると、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。それによって調査と、是正アクションの実行が可能になります。詳細については、「[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
   
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
 > [!TIP]
 > 
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
@@ -47,11 +47,11 @@ Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリ�
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Office 365 の既定の通知動作をテストする
 
-1. Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+1. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
     
   - ライトウェイトの Office 365 開発/テスト環境を使用している場合は、ローカル コンピューターからサインインします。
     
-  - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル]((https://portal.azure.com)) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
+  - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
     
 2. ポータルのメイン ページで、 **[管理]** をクリックします。
     
@@ -77,7 +77,7 @@ Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリ�
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Cloud App Security を有効にし、構成する
 
-1. Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+1. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
     
 2. **[セキュリティとコンプライアンス]** タイルをクリックします。
     
@@ -109,7 +109,7 @@ Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリ�
 
 1. 右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。
     
-2. [(https://portal.office.com)]((https://portal.office.com))を開きます。
+2. [https://portal.office.com](https://portal.office.com)を開きます。
     
 3. Office 365 のサインイン ページで、 **[別のアカウントを使用する]** をクリックします。
     
@@ -133,7 +133,7 @@ Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリ�
     
 13. 右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。 
     
-14. [(https://portal.office.com)]((https://portal.office.com))を開きます。
+14. [https://portal.office.com](https://portal.office.com)を開きます。
     
 15. **[Office 365 サインイン]** ページで、全体管理者のアカウント名をクリックします。
     
@@ -153,7 +153,7 @@ Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリ�
     
     受信トレイに 2 件の「 **Microsoft Azure AD Notification Service**」という題名の新しい電子メール メッセージが届いているはずです。1 件のメッセージは、User 5 のアカウントが **パスワード管理者**ロール に追加されたことを示しています。別のメッセージは、User 5 のアカウントが **ユーザー管理者**ロール (Office 365 管理センターでのユーザー管理の管理者ロールに等しい) に追加されたことを示しています。
     
-この環境を使用して新しいポリシーを作成し、さらに Office 365 Cloud App Security を試すことができます。その他の構成に関する記事へのリンクは、「[高度なセキュリティ管理の使用を開始する]((https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a))」を参照してください。
+この環境を使用して新しいポリシーを作成し、さらに Office 365 Cloud App Security を試すことができます。その他の構成に関する記事へのリンクは、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -163,6 +163,6 @@ Office 365 Cloud App Security (以前は「Office 365 の高度なセキュリ�
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 の Advanced Security Management の概要]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))
+[Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
 

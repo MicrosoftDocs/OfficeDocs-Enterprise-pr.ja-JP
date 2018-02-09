@@ -6,16 +6,16 @@ manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.topic: landing-page
+ms.topic: hub-page
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 32e15b5d80fd7c7a200987ea55bca927e6e02372
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 <h1>Enterprise Cloud ソリューション</h1>
 <p>Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。</p>

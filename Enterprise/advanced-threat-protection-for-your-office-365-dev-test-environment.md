@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。"
-ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: bc703bd01f3430a01810795b9d2ccea9e4ac9bc0
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Advanced Threat Protection
 
@@ -45,7 +45,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
     
   - ライトウェイトの Office 365 開発/テスト環境を使用している場合は、Internet Explorer のプライベート セッションを開いてローカル コンピューターからサインインします。
     
-  - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル]((https://portal.azure.com)) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
+  - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
     
 2. メモ帳を起動し、テキストを入力します。
     
@@ -73,7 +73,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
     
 14. **URL** に、 **http://www.spamlink.contoso.com/** と入力して、 **[OK]**、 **[送信]** の順にクリックします。
     
-15. プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([(https://portal.office.com)]((https://portal.office.com))) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+15. プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
     
 16. メイン ポータル ページで、アプリ タイルをクリックし、 **[メール]** をクリックします。
     
@@ -154,7 +154,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
   
 > [!TIP]
 > 
-            [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -170,6 +170,6 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md) 
 
-[安全な添付ファイルと安全なリンクのための高度な脅威保護]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))
+[安全な添付ファイルと安全なリンクのための高度な脅威保護](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)
 
 

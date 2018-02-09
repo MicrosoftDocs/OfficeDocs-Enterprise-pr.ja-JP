@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "概要: 管理者が Office 365 PowerShell を使って Office 365 を管理すべき理由を説明します。ある場合は効率のため、他の場合は必要であるためです。"
-ms.openlocfilehash: 22410e167baf94f5f965fcdab060235f09fe7194
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b3715da44c1509ea46e7bb939b5ca0be8b2b9671
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell を使用する必要がある理由
 
@@ -92,7 +92,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> このコマンドを実行するには、[Windows Azure Active Directory モジュール]((https://technet.microsoft.com/ja-JP/library/jj151815.aspx))をインストールする必要があります。 
+> このコマンドを実行するには、[Windows Azure Active Directory モジュール](https://technet.microsoft.com/ja-JP/library/jj151815.aspx)をインストールする必要があります。 
   
 表示例:
   
@@ -241,7 +241,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> このコマンドを実行するには、[SharePoint Online PowerShell に接続する]((https://technet.microsoft.com/library/fp161372.aspx))ための管理シェルをインストールする必要があります。 
+> このコマンドを実行するには、[SharePoint Online PowerShell に接続する](https://technet.microsoft.com/library/fp161372.aspx)ための管理シェルをインストールする必要があります。 
   
 > [!TIP]
 >  この Office 365 PowerShell コマンドの説明: 現在の Office 365 サブスクリプションのすべての SharePoint サイトを取得し (**Get-SPOSite**)、各サイトにアクセス可能なユーザーの一覧から Ken Meyer を削除します (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)。

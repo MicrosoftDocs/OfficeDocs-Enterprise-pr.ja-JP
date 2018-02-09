@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "概要: Microsoft クラウド サービスに組み込まれる一連のクラウド ストレージ オプションの詳細について説明します。"
-ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 174e5a5a9827a1f8a7f8f1640e1987ceaa965968
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="move-in-ready"></a>いつでも使用可能
 
@@ -62,9 +62,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498))をクリックしてください。
+追加情報については、[こちら](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)をクリックしてください。
   
-コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
+コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
   
 ## <a name="exchange-online-in-office-365"></a>Exchange Online in Office 365
 
@@ -84,9 +84,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://technet.microsoft.com/library/exchange-online-limits.aspx))をクリックしてください。
+追加情報については、[こちら](https://technet.microsoft.com/library/exchange-online-limits.aspx)をクリックしてください。
   
-コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
+コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
   
 ## <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -112,9 +112,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2))をクリックしてください。
+追加情報については、[こちら](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)をクリックしてください。
   
-コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
+コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
   
 ## <a name="visual-studio-team-services"></a>Visual Studio Team Services
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx))をクリックしてください。
+追加情報については、[こちら](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)をクリックしてください。
   
-コストの情報については、[こちら]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx))をクリックしてください。
+コストの情報については、[こちら](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)をクリックしてください。
   
 ## <a name="yammer-file-sharing"></a>Yammer のファイル共有
 
@@ -166,9 +166,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://products.office.com/yammer/yammer-overview))をクリックしてください。
+追加情報については、[こちら](https://products.office.com/yammer/yammer-overview)をクリックしてください。
   
-コストの情報については、[こちら]((https://products.office.com/business/compare-office-365-for-business-plans))をクリックしてください。
+コストの情報については、[こちら](https://products.office.com/business/compare-office-365-for-business-plans)をクリックしてください。
   
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((https://www.microsoft.com/server-cloud/products/microsoft-intune/))をクリックしてください。
+追加情報については、[こちら](https://www.microsoft.com/server-cloud/products/microsoft-intune/)をクリックしてください。
   
-コストの情報については、[こちら]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing))をクリックしてください。
+コストの情報については、[こちら](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)をクリックしてください。
   
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -240,7 +240,7 @@ ms.lasthandoff: 01/11/2018
 
 追加情報については、[こちら](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/site-recovery/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/site-recovery/)をクリックしてください。
   
 ## <a name="azure-backup"></a>Azure Backup
 
@@ -264,9 +264,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>リソース
 
-追加情報については、[こちら]((http://azure.microsoft.com/services/backup/))をクリックしてください。
+追加情報については、[こちら](http://azure.microsoft.com/services/backup/)をクリックしてください。
   
-コストの情報については、[こちら]((http://azure.microsoft.com/pricing/details/backup/))をクリックしてください。
+コストの情報については、[こちら](http://azure.microsoft.com/pricing/details/backup/)をクリックしてください。
   
 ## <a name="next-step"></a>次の手順
 
@@ -278,7 +278,7 @@ ms.lasthandoff: 01/11/2018
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

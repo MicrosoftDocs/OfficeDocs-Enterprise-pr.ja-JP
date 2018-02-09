@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。"
-ms.openlocfilehash: 155e40bfe769a8d8771d71e570cab418d4a6b2a0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7fe7fc71825ddbdf485fedece890c87be914d4fc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/11/2018
   
 ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54425)
   
-すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。
+すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://aka.ms/cloudarchitecture)」でスワイプして見ることもできます。
   
 次のセクションを参照してください。
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 01/11/2018
     
     サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。
     
-このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する]((https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743))」Microsoft Virtual Academy コースをご覧ください。
+このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する](https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)」Microsoft Virtual Academy コースをご覧ください。
   
 > [!NOTE]
 > これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2017 年 6 月**リリースを反映しています。
@@ -68,7 +68,7 @@ ms.lasthandoff: 01/11/2018
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

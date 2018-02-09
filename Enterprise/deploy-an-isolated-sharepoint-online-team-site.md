@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: "概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。"
-ms.openlocfilehash: 31a1f588aefccd9e2cb353af86d8aa0d598696af
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b22f9bd6ca5562f6c9632709d8afb54cd7b8d634
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -61,7 +62,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 - サイト ビューアー (手順 3 のリストが含まれます)
     
-1. お使いのブラウザーで、Azure Portal [(https://portal.azure.com)]((https://portal.azure.com)) に移動し、ユーザー管理の管理者または会社管理者のロールに割り当てられたアカウントの資格情報でサインインします。
+1. お使いのブラウザーで、Azure Portal [https://portal.azure.com](https://portal.azure.com) に移動し、ユーザー管理の管理者または会社管理者のロールに割り当てられたアカウントの資格情報でサインインします。
     
 2. Azure Portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
     
@@ -113,7 +114,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907))をダウンロードしてください。 
+> すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)をダウンロードしてください。 
   
 いずれかのアクセス グループのユーザー アカウントの UPN をテキスト ファイルに格納した場合は、次の PowerShell コマンド ブロックを使用して、それらすべてのユーザー アカウントを一度に追加します。
   
@@ -158,7 +159,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 最初に、次の手順で SharePoint Online チーム サイトを作成します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     

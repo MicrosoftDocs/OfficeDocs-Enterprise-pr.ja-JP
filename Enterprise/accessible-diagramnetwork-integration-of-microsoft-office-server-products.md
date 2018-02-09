@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
 description: "この記事は、「Microsoft Office Server 製品のネットワーク統合」という名前の図のアクセス可能なテキスト バージョンです。"
-ms.openlocfilehash: 2ced3ae648d07ae00c66b8ede8562df66826e4a9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品のネットワーク統合
 
@@ -182,7 +183,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 - Exchange メールボックス サーバー。2 つの Exchange メールボックス サーバーを図に示します。 
     
-各 SharePoint サーバーにインストールされているコンポーネントの詳細については、「[SharePoint 2013 の効率化されたトポロジー]((https://aka.ms/Ma5cgk))」を参照してください。 
+各 SharePoint サーバーにインストールされているコンポーネントの詳細については、「[SharePoint 2013 の効率化されたトポロジー](https://aka.ms/Ma5cgk)」を参照してください。 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>トラフィックがコンポーネントを経由して別のサーバー層に移動する方法の説明
 
@@ -200,7 +201,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 外部ユーザーの種類ごとの認証およびルーティング プロセスを個別に説明します。 
   
-#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>パートナー会社 (企業間) ((https://partnerweb.contoso.com))
+#### <a name="partner-companies-business-to-business-httpspartnerwebcontosocom"></a>パートナー会社 (企業間) (https://partnerweb.contoso.com)
 
 - Lync: 他の組織、Skype、および AOL を使用したパブリック IM 接続のフェデレーション信頼。Lync のフェデレーション トラフィックは、ゲートウェイ ルーターを介して、Lync エッジ サーバー、Lync の VIP (ロード バランサーまたはリバース プロキシ サーバー)、次に Lync Server に移動します。 
     
@@ -210,7 +211,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 - SMTP のトラフィックは、ゲートウェイ ルーターを介して、Exchange の VIP (ロード バランサーまたはリバース プロキシ サーバー)、次に Exchange Server に移動します。 
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>個々のパートナー (SharePoint) と匿名 (Lync) ((https://partnerweb.contoso.com) および https://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>個々のパートナー (SharePoint) と匿名 (Lync) (https://partnerweb.contoso.com および https://meet.contoso.com)
 
 - Lync: 匿名ユーザーは従業員別に整理された Lync 会議のみに参加できます。Lync のフェデレーション トラフィックは、ゲートウェイ ルーターを介して、Lync エッジ サーバー、Lync の VIP (ロード バランサーまたはリバース プロキシ サーバー)、次に Lync Server に移動します。 
     
@@ -228,7 +229,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 3. https://my.contoso.com
     
-4. (https://partnerweb.contoso.com) 
+4. https://partnerweb.contoso.com 
     
 5. https://mail.contoso.com* 
     
@@ -256,7 +257,7 @@ SharePoint フロント エンド Web サーバーや Exchange クライアン�
     
 > https://my.contoso.com
     
-> (https://partnerweb.contoso.com)
+> https://partnerweb.contoso.com
     
 > https://mail.contoso.com* 
     
@@ -320,7 +321,7 @@ Exchange は、サーバーからサーバーへの通信に TCP ポート 25 (S
   
 #### <a name="more-on-lync-network-traffic"></a>Lync ネットワーク トラフィックの詳細について
 
-Lync Server が、インスタント メッセージング、web 会議、アプリケーション共有、および音声通信を提供する点で、組織を支援する方法を確認できます。詳細については、「[Microsoft Lync Server 2013 のプロトコル ワークロード ポスター]((https://aka.ms/G5jzjo))」を参照してください。 
+Lync Server が、インスタント メッセージング、web 会議、アプリケーション共有、および音声通信を提供する点で、組織を支援する方法を確認できます。詳細については、「[Microsoft Lync Server 2013 のプロトコル ワークロード ポスター](https://aka.ms/G5jzjo)」を参照してください。 
   
 ポスターには、この情報にアクセスする QR コードもあります。 
   

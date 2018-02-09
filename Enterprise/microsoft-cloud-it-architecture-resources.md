@@ -8,18 +8,17 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection:
-- Ent_O365
+ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: "概要:Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。"
-ms.openlocfilehash: f39625b371290f3bb5ef68441409d436518e43f3
-ms.sourcegitcommit: ca96830b425b3ec5a6387eaae47cdc23c8384456
+ms.openlocfilehash: 94b0e732e84fe7ec47431b7521be4c21a1d858df
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 02/01/2018
 
 業界で最も包括的なクラウド ソリューションを説明しているポスター、アイコン セット、コミュニティの場、その他のリソースを参照してください。
   
-|**アイテム**|**説明**|
+|**項目**|**説明**|
 |:-----|:-----|
 |[![Enterprise Cloud ロードマップのサムネイル](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft のエンタープライズ クラウド ロードマップ](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |この Sway エクスペリエンスを通して、業界で最も包括的なクラウド ソリューションを説明しているリソースをご確認ください。  <br/> |
    
@@ -82,7 +81,7 @@ Microsoft クラウド サービスおよびプラットフォームを使用し
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft クラウド ID モデルのサムネイル画像](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![記事](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[記事](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | このモデルには次のものが含まれています。 <ul><li>Microsoft クラウドでの ID の使用について </li> <li>Azure AD IDaaS 機能 </li><li>オンプレミスの Active Directory ドメイン サービス アカウントと Microsoft Azure Active Directory を統合する </li> <li>ディレクトリ コンポーネントを Azure に配置する </li><li>Azure IaaS のワークロードのドメイン サービス オプション </li></ul> <br/>|
+|[![Microsoft クラウド ID モデルのサムネイル画像](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![記事](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[記事](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | このモデルには次のものが含まれています。 <ul><li>Microsoft のクラウド ID の概要 </li> <li>Azure AD IDaaS 機能 </li><li>オンプレミスの Active Directory Domain Services アカウントと Microsoft Azure Active Directory を統合する </li> <li>ディレクトリ コンポーネントを Azure に配置する </li><li>Azure IaaS のワークロードのドメイン サービス オプション </li></ul> <br/>|
    
 <a name="security"> </a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ
@@ -91,7 +90,7 @@ Microsoft クラウド サービスおよびプラットフォームにおける
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft クラウドのセキュリティ モデルのサムネイル画像](images/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | このモデルには次のものが含まれています。 <ul><li>セキュリティで保護されたサービスとプラットフォームを提供するうえでの Microsoft の役割</li><li>セキュリティ上のリスクを軽減するためのお客様の責任範囲</li><li>最高度のセキュリティ証明 </li><li>Microsoft コンサルティング サービスによって提供されるセキュリティ ソリューション </ul></li>このアーキテクチャ ポスターに基づく Microsoft Virtual Academy コースである「[クラウド対応世界のセキュリティ](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474)」を受講してください。 <br/>|
+|[![Microsoft クラウドのセキュリティ モデルのサムネイル画像](images/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | このモデルには次のものが含まれています。 <ul><li>安全なサービスとプラットフォームを提供することにおける Microsoft の役割</li><li>セキュリティ上のリスクを軽減するというお客様側の責任</li><li>最高位のセキュリティ認定 </li><li>マイクロソフト コンサルティング サービスが提供するセキュリティ サービス </ul></li>このアーキテクチャ ポスターに基づく Microsoft Virtual Academy コースである「[クラウド対応世界のセキュリティ](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474)」を受講してください。 <br/>|
    
 <a name="networking"> </a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
@@ -109,7 +108,7 @@ Microsoft クラウド サービスおよびプラットフォームによるモ
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Office 365 の情報保護ポスターのサムネイル画像](images/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | このモデルには次のものが含まれています。 <ul><li>ビジネス向け上位モバイル アプリ </li><li>モバイル アプリの開発用プラットフォーム、サービス、およびリソース </li><li>モバイル デバイスからクラウドベースのアプリケーションおよびデータへのアクセスの管理 </li><li>Office 365 MDM、Azure Active Directory Premium、および Intune の機能の比較とプラットフォーム サポート </li></ul><br/> |
+|[![Office 365 の情報保護ポスターのサムネイル画像](images/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | このモデルには次のものが含まれています。 <ul><li>最上位のビジネス用モバイル アプリ </li><li>モバイル アプリ開発のためのプラットフォーム、サービス、リソース </li><li>モバイル デバイスからクラウドベースのアプリケーションやデータへのアクセスを管理する </li><li>Office 365 MDM、Azure Active Directory Premium、および Intune の機能の比較とプラットフォーム サポート </li></ul><br/> |
    
 <a name="storage"> </a>
 ### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ストレージ
@@ -118,7 +117,7 @@ Microsoft クラウド サービスおよびプラットフォームにおける
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft クラウド ストレージ モデルのサムネイル画像](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| ![記事](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[記事](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | このモデルには次のものが含まれています。 <ul><li>クラウド ストレージを使用する理由と主なシナリオ </li><li>既存のサービスに付属している、事前にパッケージ化されたクラウド ストレージ オプション </li><li>使用するストレージ ソリューションの開始点として使用できるストレージ オプション </li><li>独自のストレージ ソリューションまたはアプリ用のストレージを作成するためのストレージ構築ブロック</li></ul><br/>|
+|[![Microsoft クラウド ストレージ モデルのサムネイル画像](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| ![記事](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[記事](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | このモデルには次のものが含まれています。 <ul><li>クラウド ストレージを利用する理由と主要なシナリオ </li><li>既存のサービスに付属している、事前にパッケージ化されたクラウド ストレージ オプション </li><li>使用するストレージ ソリューションの開始点として使用できるストレージ オプション </li><li>独自のストレージ ソリューションまたはアプリ用のストレージを作成するためのストレージ構築ブロック</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド

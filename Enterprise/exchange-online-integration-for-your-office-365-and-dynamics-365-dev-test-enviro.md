@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。"
-ms.openlocfilehash: b297c3e461b5695b323c619145df64524989d58a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合
 
@@ -39,7 +39,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 
 以下の手順を使用して、Dynamics 365 と Exchange Online 統合用の全体管理者のメールボックスを構成します。
   
-1. ブラウザーのプライベート セッションを使用して、[(http://portal.office.com)]((http://portal.office.com)) に移動し、Office 365 全体管理者アカウントでサインインします。
+1. ブラウザーのプライベート セッションを使用して、[http://portal.office.com](http://portal.office.com) に移動し、Office 365 全体管理者アカウントでサインインします。
     
 2. **Microsoft Office ホーム** ページで、 **[メール]** タイルをクリックします。
     
@@ -98,7 +98,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 9. **[破棄]** をクリックします。
 
 > [!TIP]
-> [ここ]((http://aka.ms/catlgstack))をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
     
 ## <a name="see-also"></a>関連項目
 
@@ -112,8 +112,8 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
   
 [Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Dynamics 365 (オンライン) のサブスクリプション管理]((https://technet.microsoft.com/library/jj679903.aspx))
+[Dynamics 365 (オンライン) のサブスクリプション管理](https://technet.microsoft.com/library/jj679903.aspx)
   
-[Dynamics 365 の管理]((https://technet.microsoft.com/library/dn531101.aspx))
+[Dynamics 365 の管理](https://technet.microsoft.com/library/dn531101.aspx)
 
 

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: "概要: Azure の仮想マシン上に Azure AD Connect (DirSync) を展開し、オンプレミス ディレクトリと Office 365 サブスクリプションの Azure AD テナントとの間でアカウントを同期します。"
-ms.openlocfilehash: 4160c8b0f1d38c53fdbc1052cc0bc30793cc8ba2
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 496dca01d8478c693cb983adefe9e663d2285279
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開
 
@@ -126,7 +126,7 @@ Azure の仮想マシンへの Azure AD Connect の展開には、3つのフェ�
 構成後、Office 365 の新しいユーザーアカウントに場所とライセンスを割り当てる必要があります。
   
 > [!TIP]
-> 「[Azure デプロイメント キットの DirSync サーバー]((https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded))」には、このソリューションをビルドするためのすべての Azure PowerShell ブロック、Microsoft PowerPoint と Visio 形式のダイヤグラム、ユーザー設定用にカスタマイズされた Azure PowerShell コマンド ブロックを生成する Microsoft Excel 構成ワークブックが含まれています。
+> 「[Azure デプロイメント キットの DirSync サーバー](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)」には、このソリューションをビルドするためのすべての Azure PowerShell ブロック、Microsoft PowerPoint と Visio 形式のダイヤグラム、ユーザー設定用にカスタマイズされた Azure PowerShell コマンド ブロックを生成する Microsoft Excel 構成ワークブックが含まれています。
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>フェーズ 1: Azure 仮想ネットワークを作成および構成する
 
@@ -166,7 +166,7 @@ Azure AD Connect がインターネット リソースにアクセスするに�
   
 1. ローカル管理者権限を持つ Windows Server AD ドメイン アカウントを使用して、リモート デスクトップ接続でディレクトリ同期サーバーに接続します。「[仮想マシンへの接続とサインオン](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)」を参照してください。
     
-2. パスワード同期を使用したディレクトリ同期を行うには、ディレクトリ同期サーバーから「[Office 365 でディレクトリの同期をセットアップする]((https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846))」という記事を開き、指示に従います。
+2. パスワード同期を使用したディレクトリ同期を行うには、ディレクトリ同期サーバーから「[Office 365 でディレクトリの同期をセットアップする](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)」という記事を開き、指示に従います。
     
 > [!CAUTION]
 > セットアップによって、ローカル ユーザー組織単位 (OU) 内に **AAD_xxxxxxxxxxxx** というアカウントが作成されます。このアカウントは移動も削除も行わないでください。移動や削除を行うと、同期が失敗します。
@@ -181,7 +181,7 @@ Azure AD Connect がインターネット リソースにアクセスするに�
 
 Azure AD Connect はオンプレミスの Windows Server AD から Office 365 にアカウントを追加しますが、ユーザーが Office 365 にサインインしてそのサービスを利用するには、アカウントに場所とライセンスが設定されている必要があります。次の手順で、適切なユーザーアカウントに場所を追加し、ライセンス認証を行います。
   
-1. [Office 365 ポータル ページ]((https://portal.office.com)) にサインインして、 **[管理者]** をクリックします。
+1. [Office 365 ポータル ページ](https://portal.office.com) にサインインして、 **[管理者]** をクリックします。
     
 2. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
     
@@ -205,9 +205,9 @@ Azure AD Connect はオンプレミスの Windows Server AD から Office 365 �
 
 [Azure AD Connect をダウンロードする](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[Office 365 のディレクトリ同期をセットアップする]((https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846))
+[Office 365 のディレクトリ同期をセットアップする](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
   
-[Azure デプロイメント キットの DirSync サーバー]((https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded))
+[Azure デプロイメント キットの DirSync サーバー](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
 
 
 

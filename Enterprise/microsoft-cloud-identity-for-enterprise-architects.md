@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "概要: Microsoft クラウド サービスとプラットフォームの ID ソリューションを設計します。"
-ms.openlocfilehash: 601d449937d0b21299f4653aa872e0a3d4bc5337
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 78a975a9d4f22ce6e624983db21dae1a762a3c09
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ID
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 01/11/2018
 [![Microsoft クラウド ID モデルのサムネイル画像](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54431)
+![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=54431)
   
-すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。
+すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://aka.ms/cloudarchitecture)」でスワイプして見ることもできます。
   
 > [!NOTE]
 > この記事は「**エンタープライズ アーキテクトのための Microsoft クラウド ID**」ポスター (2016 年 1 月版) を反映しています。ポスターの 2016 年 4 月以降の版の変更点は含まれていません。
@@ -364,7 +364,7 @@ Azure AD Connect ツールは、Azure 仮想ネットワーク上のクラウド
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: "この資料は、「Microsoft Azure に対する SharePoint の障害復旧」という名前の図のアクセス可能なテキスト バージョンです。"
-ms.openlocfilehash: 2babb1910b0cd8dcbfe4cc0bf32de7c714c05fc0
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>アクセス可能な図 - Microsoft Azure に対する SharePoint の障害復旧
 
@@ -192,7 +193,7 @@ Azure 仮想ネットワークには 3 つのクラウド サービスがあり�
 
 このソリューションの AD DS の構成は、ハイブリッド展開のシナリオを構成しています。このシナリオでは、AD DS はオンプレミスに部分的にデプロイされ、Azure 仮想マシンに部分的にデプロイされます。 
   
-重要 — AD DS を Azure にデプロイする前に、「Microsoft Azure Virtual Machines での Windows Server Active Directory のデプロイ ガイドライン  ((http://msdn.microsoft.com/ja-jp/library/windowsazure/jj156090.aspx))」をお読みください。 
+重要 — AD DS を Azure にデプロイする前に、「Microsoft Azure Virtual Machines での Windows Server Active Directory のデプロイ ガイドライン  (http://msdn.microsoft.com/ja-jp/library/windowsazure/jj156090.aspx)」をお読みください。 
   
 Active Directory 環境の設計およびデプロイに関する詳細なガイダンスについては、http://TechNet.microsoft.com を参照してください。 
   

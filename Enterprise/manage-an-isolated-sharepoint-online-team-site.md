@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: "概要: 以下の手順を使用して、分離した SharePoint Online チーム サイトを管理します。"
-ms.openlocfilehash: 51e3bea35220781303ca6dfb49ce57b60e72ba3a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: bc6a3487f8e7dd6d6c3c0c8a38d2ac85e3565091
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの管理
 
@@ -49,7 +49,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalN
 ```
 
 > [!TIP]
-> すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット]((https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907))をダウンロードしてください。 
+> すべての PowerShell コマンドを記載したテキスト ファイルと、使用しているグループおよびユーザー アカウント名に基づいて PowerShell コマンドを生成する Excel 構成ワークシートについては、[分離した SharePoint Online チーム サイトの展開キット](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)をダウンロードしてください。 
 
 表示名を使ってユーザー アカウントをアクセス グループに追加するには、次の PowerShell コマンド ブロックを使用します。
 
@@ -146,7 +146,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成するには、以下のことを行います。
   
-1. サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4))」を参照してください。
+1. サイト管理者のアクセス グループのメンバーであるアカウントを使用して Office 365 にサインインします。ヘルプを表示するには、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. 分離したチーム サイトに移動し、 **[ドキュメント]** をクリックします。
     

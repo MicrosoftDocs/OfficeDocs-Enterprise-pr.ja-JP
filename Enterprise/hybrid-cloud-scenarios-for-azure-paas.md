@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: "概要: Microsoft のサービスとしてのプラットフォーム (PaaS) ベースの Azure 内クラウド製品のハイブリッド アーキテクチャとシナリオについて説明します。"
-ms.openlocfilehash: 304322e5ad36f0a7f385a41fc3f2e5232dcecd69
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS のハイブリッド クラウド シナリオ
 
@@ -116,7 +116,7 @@ Stretch Database は SQL Server 2016 の機能であり、顧客の発注情報�
   
 Stretch Database は、長期ストレージ、および履歴データへの透過的アクセスのためのコスト パフォーマンスに優れたオプションを提供します。テーブルが非常に大きくなると発生するパフォーマンスと可用性の問題も解決します。
   
-詳細については、「[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))」を参照してください。
+詳細については、「[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -124,7 +124,7 @@ Stretch Database は、長期ストレージ、および履歴データへの透
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

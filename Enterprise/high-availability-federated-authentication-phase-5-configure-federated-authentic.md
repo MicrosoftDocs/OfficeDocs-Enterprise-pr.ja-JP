@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。"
-ms.openlocfilehash: 92e579c325d2cfa18e404d15d6add56fc225eedd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性フェデレーション認証のフェーズ 5:Office 365 のフェデレーション認証を構成する
 
@@ -72,7 +72,7 @@ Azure AD Connect ツールは、次に示す手順で、フェデレーション
   
 1. ローカル管理者特権を持つドメイン アカウントを使用して、DirSync サーバーへのリモート デスクトップ接続を作成します。
     
-2. DirSync サーバーのデスクトップから、Internet Explorer を開き、[(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)) にアクセスします。
+2. DirSync サーバーのデスクトップから、Internet Explorer を開き、[https://aka.ms/aadconnect](https://aka.ms/aadconnect) にアクセスします。
     
 3. **[Microsoft Azure Active Directory Connect]** ページで、 **[ダウンロード]** をクリックしてから **[実行]** をクリックします。
     

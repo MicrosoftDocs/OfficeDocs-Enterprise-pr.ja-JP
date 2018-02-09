@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: office-online-server
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: "概要:Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。"
-ms.openlocfilehash: 9714c197e47222a1f7033478770a2d7d7191525f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 16780c59ec6138ca3252114dd119d083cd9ff73a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 

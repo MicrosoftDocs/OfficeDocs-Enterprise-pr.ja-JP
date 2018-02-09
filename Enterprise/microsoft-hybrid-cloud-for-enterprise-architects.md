@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "概要: Microsoft クラウド サービスおよびプラットフォームを使用するハイブリッド シナリオについて IT アーキテクトが知る必要のある内容。"
-ms.openlocfilehash: 0a2d9e097d976a729492748aa2672146cb8681a7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
 ![PDF ファイル](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio ファイル](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![他の言語のバージョンのページを参照してください](images/Common_Images/GlobeIcon.png)
 [その他の言語](https://www.microsoft.com/download/details.aspx?id=54424)
   
-すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース]((https://aka.ms/cloudarchitecture))」でスワイプして見ることもできます。
+すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://aka.ms/cloudarchitecture)」でスワイプして見ることもできます。
   
 次のセクションを参照してください。
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/11/2018
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

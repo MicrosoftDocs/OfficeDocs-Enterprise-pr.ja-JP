@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: "この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。"
-ms.openlocfilehash: c927bca4d60fe49f941d9f03177e6fdd64e27389
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品間の機能統合
 
@@ -234,9 +235,9 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 構成スクリプトの使用例については、次の Jens Trier Rasmussen のブログ記事を参照してください。 
   
-- 「SharePoint Server 2013 から Exchange 2013 の高解像度の写真を使用する」((http://aka.ms/Bhr4d2)) 
+- 「SharePoint Server 2013 から Exchange 2013 の高解像度の写真を使用する」(http://aka.ms/Bhr4d2) 
     
-- 「Exchange 2013 と Lync Server 2013 を統合する」 ((http://aka.ms/Pn08dw)) 
+- 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Pn08dw) 
     
 ポスターには、これら 2 つのブログ記事の QR コードも含まれます。 
   
@@ -281,7 +282,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 構成スクリプトの使用例については、Jens Trier Rasmussen のブログ記事 
   
-- 「Exchange 2013 と Lync Server 2013 を統合する」 ((http://aka.ms/Oyg7fh)) を参照してください。 
+- 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Oyg7fh) を参照してください。 
     
  **動作のしくみ**
   
@@ -665,7 +666,7 @@ IIS サーバーには IIS 設定が含まれます。
     
  **デジタル アセット ライブラリ**
   
-デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」((http://aka.ms/O1vq5w)) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」(http://aka.ms/O1vq5w) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Lync クライアントを使用したミーティングの記録および公開
 
@@ -681,10 +682,10 @@ IIS サーバーには IIS 設定が含まれます。
     
 4. SharePoint アセット ライブラリに、ミーティングのレコーディングをドラッグ アンド ドロップします。 
     
-5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」((http://aka.ms/R61q35)) を参照してください。 
+5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」(http://aka.ms/R61q35) を参照してください。 
     
  **ビデオの縮小表示**
   
-ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」((http://aka.ms/Kupj85)) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」(http://aka.ms/Kupj85) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 

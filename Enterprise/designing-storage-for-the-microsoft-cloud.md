@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-ms.custom:
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "概要: クラウド ストレージが必要な理由を理解し、一連の Microsoft のクラウド ストレージ オプションおよび主要なストレージ シナリオを確認します。"
-ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Microsoft クラウドのストレージを設計する
 

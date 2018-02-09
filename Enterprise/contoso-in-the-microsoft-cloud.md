@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。"
-ms.openlocfilehash: 4c0969e929851c97c62a3099ff90ce311297413d
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d1d17a307f7f13668897343b69dcaebbedb4a7a4
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft Cloud の Contoso
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/11/2018
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
