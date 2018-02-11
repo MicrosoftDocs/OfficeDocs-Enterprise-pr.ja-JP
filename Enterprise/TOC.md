@@ -64,7 +64,6 @@
 #### [高可用性の統合認証フェーズ 5: Office 365 のフェデレーション認証を構成します。](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 ### [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 ### [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
-### [SharePoint 2013 認証に Microsoft Azure Active Directory を使用する](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)
 ### [証拠開示のためのファイルの収集を自動化します。](automate-file-collection-for-ediscovery.md)
 ## [セキュリティ ソリューション](security-solutions.md)
 ### [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
