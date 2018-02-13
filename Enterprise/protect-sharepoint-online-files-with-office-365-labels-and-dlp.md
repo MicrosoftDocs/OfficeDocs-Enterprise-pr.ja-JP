@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: "概要: Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトを適用します。"
-ms.openlocfilehash: ffc6b662e601ad4732391bfd1a27e38c17c9220a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: f289e2c210f6c55b1adab3a556edb92f97083003
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。
 
@@ -84,7 +82,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 2. **[発行するラベルを選択]** ウィンドウで、 **[発行するラベルを選択]** をクリックします。
     
-3. **[ラベルの選択]** ウィンドウで、 **[追加]** をクリックして 4 つすべてのラベルを選択します。
+3. **[Choose labels]\(ラベルの選択\)** ウィンドウで、**[追加]** をクリックして 4 つのラベルをすべて選択します。
     
 4. [ **完了**] をクリックします。
     
@@ -146,11 +144,11 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 11. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
     
-12. **[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[次へ]** をクリックします。
+12. **[Customize the types of sensitive info you want to protect]\(保護する機密情報の種類のカスタマイズ\)** ウィンドウで、**[次へ]** をクリックします。
     
-13. **[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ヒントと電子メールをカスタマイズする]** をクリックします。
+13. **[What do you want to do if we detect sensitive info?]\(機密情報が検出された場合の処理\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする)** をクリックします。
     
-14. **[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、 **[ポリシー ヒント テキストをカスタマイズする]** をクリックします。
+14. **[Customize policy tips and email notifications]\(ポリシー ヒントと電子メール通知のカスタマイズ\)** ウィンドウで、**[Customize the policy tip text]\(ポリシー ヒントのテキストをカスタマイズする\)** をクリックします。
     
 15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     
@@ -194,11 +192,11 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 11. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
     
-12. **[保護する機密性の高い情報の種類をカスタマイズする]** ウィンドウで、 **[次へ]** をクリックします。
+12. **[Customize the types of sensitive info you want to protect]\(保護する機密情報の種類のカスタマイズ\)** ウィンドウで、**[次へ]** をクリックします。
     
-13. **[機密性の高い情報が検出された場合に実行する操作]** ウィンドウで、 **[ヒントと電子メールをカスタマイズする]** をクリックします。
+13. **[What do you want to do if we detect sensitive info?]\(機密情報が検出された場合の処理\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする)** をクリックします。
     
-14. **[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、 **[ポリシー ヒント テキストをカスタマイズする]** をクリックします。
+14. **[Customize policy tips and email notifications]\(ポリシー ヒントと電子メール通知のカスタマイズ\)** ウィンドウで、**[Customize the policy tip text]\(ポリシー ヒントのテキストをカスタマイズする\)** をクリックします。
     
 15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     

@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "概要: ガイドを使用してこのテスト ラボを含むすべてのマイクロソフトのクラウド ソリューションの開発/テスト環境を作成します。"
-ms.openlocfilehash: 486aabd769461a7e743ac390d633913053b467a8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 8bd3f92abd3752555443534bbe81330727ed3eb5
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 開発/テスト環境
 
@@ -66,7 +64,7 @@ ms.lasthandoff: 02/09/2018
     
 5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
     
-6. **[注文の受領書]** ページで、 **[続行]** をクリックします。
+6. **[注文の受領書]** ページで、**[続行]** をクリックします。
     
 > [!NOTE]
 > Enterprise Mobility + Security E5 試用版サブスクリプションの試用期間は 90 日間です。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。 
@@ -110,7 +108,7 @@ ms.lasthandoff: 02/09/2018
     
 5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
     
-6. **[注文の受領書]** ページで、 **[続行]** をクリックします。
+6. **[注文の受領書]** ページで、**[続行]** をクリックします。
     
 > [!NOTE]
 > Dynamics 365 Plan 1 Enterprise Edition の試用版サブスクリプションは 30 日間有効です。試用版サブスクリプションは、追加で 30 日間まで簡単に延長できます。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。 

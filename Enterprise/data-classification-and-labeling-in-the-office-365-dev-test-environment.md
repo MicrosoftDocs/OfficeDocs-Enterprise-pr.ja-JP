@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- TLG
-- Ent_TLGs
+ms.custom: TLG, Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "概要: は、構成し、データのクラス分けと Azure の情報の保護 (AIP) クライアントを使用して、Office 365 の開発/テスト環境でのラベル付けについて説明します。"
-ms.openlocfilehash: 06f7ebefad8b4d622ab225298155b4f117ff2b75
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 84dc3b8d86a53f7c91d5c226b5c745f5d39731a9
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境でのデータ分類とラベルの作成
 
@@ -52,7 +50,7 @@ Azure の情報保護のクライアントを使用すると、Office 365 で Sh
     
 5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
     
-6. **[注文の受領書]** ページで、 **[続行]** をクリックします。
+6. **[注文の受領書]** ページで、**[続行]** をクリックします。
     
 次に、すべてのユーザー アカウントで Azure Information Protection  ライセンスを有効にします。
   
