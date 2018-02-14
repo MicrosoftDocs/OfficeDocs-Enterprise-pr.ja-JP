@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: "概要:これらのコミュニティから Office 365 PowerShell のヘルプを得られます。"
-ms.openlocfilehash: ab6eb810e856d1d9219e06def078e36074646ce3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell のコミュニティ リソース
 
@@ -26,13 +26,13 @@ ms.lasthandoff: 01/11/2018
   
 - [PowerShell での Office 365 グループの Office 365 Yammer ネットワーク](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- [Office 365 の管理コミュニティ フォーラム]((https://community.office365.com/ja-JP/f/148.aspx))
+- [Office 365 の管理コミュニティ フォーラム](https://community.office365.com/ja-JP/f/148.aspx)
     
 - [Exchange TechCenter コミュニティ フォーラム](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- [Office ブログ]((https://blogs.office.com/))
+- [Office ブログ](https://blogs.office.com/)
     
-- [Office 365 Wiki の管理]((https://community.office365.com/ja-JP/w/manage/default.aspx))
+- [Office 365 Wiki の管理](https://community.office365.com/ja-JP/w/manage/default.aspx)
     
 ## <a name="see-also"></a>関連項目
 
