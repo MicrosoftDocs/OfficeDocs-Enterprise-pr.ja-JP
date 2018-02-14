@@ -3,7 +3,7 @@ title: "Microsoft Azure での SharePoint Server 2013 の障害復旧"
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。"
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -89,7 +89,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 この記事のガイダンスでは、ウォーム スタンバイ環境の実装方法を取り上げます。この方法はコールド スタンバイ環境にも適用できます。ただし、この種類の環境をサポートするには追加手順が必要です。この記事では、ホット スタンバイ環境の実装方法については取り上げません。
   
-障害復旧ソリューションについて詳しくは、「[SharePoint 2013 での高可用性および障害復旧の概念](https://go.microsoft.com/fwlink/p/?LinkID=393114)」および「[SharePoint 2013 用の障害復旧戦略を選択する](https://go.microsoft.com/fwlink/p/?linkid=203228)」をご覧ください。
+障害復旧ソリューションの詳細については、「[High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114)」および「[Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228)」をご覧ください。
   
 ## <a name="solution-description"></a>ソリューションの説明
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **図: Azure におけるウォーム スタンバイ ソリューションの要素**
 
-![Azure の SharePoint ウォーム スタンバイ ソリューションの要素](images/AZarch_AZWarmStndby.gif)
+![Azure の SharePoint ウォーム スタンバイ ソリューションの要素](images/AZarch_AZWarmStndby.png)
   
 分散ファイル システム レプリケーション (DFSR) を使用した SQL Server ログ配布により、データベース バックアップとトランザクション ログを Azure 内の復旧ファームにコピーします。 
   
@@ -181,7 +181,7 @@ Azure の環境は、運用ファームよりも小規模にできます。フ�
   
 **図: 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素**
 
-![SharePoint 運用ファームとウォーム スタンバイ復旧ファームのトポロジと主な要素を示します。](images/AZarchWarmStndby.gif)
+![SharePoint ファームとウォーム スタンバイ復旧ファームのトポロジ](images/AZarch_AZWarmStndby.png)
   
 この図では次のようになっています。
   

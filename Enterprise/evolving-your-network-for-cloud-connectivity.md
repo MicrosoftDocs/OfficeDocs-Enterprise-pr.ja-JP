@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "概要: クラウド導入において、新しいアプローチによるネットワーク インフラストラクチャ投資が必要となることを理解します。"
-ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>クラウド接続のためにネットワークを進化させる
 
@@ -81,15 +81,15 @@ ExpressRoute は、専用の接続のために既存ネットワーク プロバ
 |内部およびインターネットに接続する IT ワークロードのために、負荷分散を設計し、実装します  <br/> |||適用  <br/> |
 |仮想マシンの接続性およびスループットの問題に関するトラブルシューティングを行います  <br/> |||適用  <br/> |
    
+## <a name="next-step"></a>次の手順
+
+[Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Microsoft クラウド接続のためのExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
-  
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

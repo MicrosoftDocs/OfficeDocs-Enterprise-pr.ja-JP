@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "概要: Microsoft Azure IaaS のワークロード用に最適化されたネットワークの設計方法について説明します。"
-ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Microsoft Azure IaaS のためのネットワークの設計
 
@@ -112,7 +112,7 @@ Azure ゲートウェイ サブネットのアドレス空間を決定する場�
 <br/>10.119. bbbbbbbb . bbbbbbbb <br/>10.119. VVVVVVVV . VVVVGGGG <br/>10.119. 11111111 . 11110000<br/><br/>
 3. 手順 2 からの結果を 10 進数に変換し、アドレス空間として表現します。この例では、10.119. 11111111 . 11110000 は 10.119.255.240 となり、手順 1 からのプレフィックス長 (この例では 28) により、結果として得られるゲートウェイ サブネット アドレスのプレフィックスは 10.119.255.240/28 となります。
   
-詳細については、「[Azure ゲートウェイ サブネットのアドレス スペースの計算]((https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed))」を参照してください。
+詳細については、「[Azure ゲートウェイ サブネットのアドレス スペースの計算](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)」を参照してください。
   
 Azure 仮想マシンは仮想マシン ホスト サブネットに配置します。これは一般的なオンプレミスのガイドライン (一般的なロール、アプリケーション層、サブネットの分離など) に従って行うことができます。
   
@@ -130,7 +130,7 @@ Azure では、各サブネットの最初の 3 つのアドレスを使用し�
   
 サブネットまたは VNet 上の仮想マシンの最大数量の詳細については、「[ネットワークの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits)」を参照してください。
   
-詳細については、「[Azure 仮想ネットワークの計画と設計]((https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/))」を参照してください。
+詳細については、「[Azure 仮想ネットワークの計画と設計](https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/)」を参照してください。
   
 ### <a name="step-6-determine-the-dns-server-configuration-and-the-addresses-of-the-dns-servers-to-assign-to-vms-in-the-vnet"></a>手順 6:DNS サーバーの構成と DNS サーバーのアドレスを決定して、VNet の VM に割り当てる。
 
@@ -149,7 +149,7 @@ Azure は DHCP によって、仮想マシンに DNS サーバーのアドレス
    
  **表 4: 異なる 2 つの種類の VNet 用の DNS サーバーのオプション**
   
-詳細については、「[VM とロール インスタンスの名前解決]((https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances))」を参照してください。
+詳細については、「[VM とロール インスタンスの名前解決](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)」を参照してください。
   
 ### <a name="step-7-determine-the-load-balancing-configuration-internet-facing-or-internal"></a>手順 7:負荷分散の構成 (インターネット接続か内部接続か) を決定する。
 
@@ -171,7 +171,7 @@ Azure の内部負荷分散は、他の Azure VM またはイントラネット 
   
 図 5 は、受信 NAT 規則、または負荷分散セット内の仮想マシンへのエンドポイントに着信トラフィックを分散する、Azure の内部ロード バランサーを示しています。
   
-詳細については、「[Azure ロード バランサー]((https://docs.microsoft.com/azure/load-balancer/load-balancer-overview))」を参照してください。
+詳細については、「[Azure ロード バランサー](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)」を参照してください。
   
 ### <a name="step-8-determine-the-use-of-virtual-appliances-and-user-defined-routes"></a>手順 8:仮想アプライアンスおよびユーザー定義ルートの使用を決定する。
 
@@ -183,7 +183,7 @@ Azure の内部負荷分散は、他の Azure VM またはイントラネット 
   
 図 6 は、仮想アプライアンスを指す仮想マシン ホスト サブネットに割り当てられたクロスプレミスの VNet とユーザー定義のルートを示しています。
   
-詳細については、「[ユーザー定義のルートおよび IP 転送]((https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview))」を参照してください。
+詳細については、「[ユーザー定義のルートおよび IP 転送](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)」を参照してください。
   
 ### <a name="step-9-determine-how-computers-from-the-internet-will-connect-to-virtual-machines"></a>手順 9:インターネットからコンピューターが仮想マシンに接続する方法を決定する。
 
@@ -196,8 +196,7 @@ VNet の仮想マシンへのインターネット アクセス (組織ネット
 |1.クラウド サービス上で構成されたエンドポイントおよび ACL  <br/> |クラシック  <br/> |
 |2.ネットワーク セキュリティ グループ  <br/> |リソース マネージャーおよびクラシック  <br/> |
 |3.受信 NAT 規則を使用するインターネット接続ロード バランサー  <br/> |リソース管理者  <br/> |
-|4. Azure でのネットワーク セキュリティ アプライアンス 
- Marketplace (表示しない)  <br/> |リソース マネージャーおよびクラシック  <br/> |
+|4.Azure Marketplace でのネットワーク セキュリティ アプライアンス (表示されていません)  <br/> |リソース マネージャーおよびクラシック  <br/> |
    
  **表 5: 仮想マシンと対応する Azure 展開モデルに接続する方法**
   
@@ -217,7 +216,7 @@ VNet の仮想マシンへのインターネット アクセス (組織ネット
     
 - Azure DDoS の保護。外部および内部の攻撃を防止するために有用。
     
-詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ]((https://aka.ms/cloudarchsecurity))」および「[Azure のネットワーク セキュリティ]((https://azure.microsoft.com/blog/azure-network-security/))」を参照してください。
+詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](https://aka.ms/cloudarchsecurity)」および「[Azure のネットワーク セキュリティ](https://azure.microsoft.com/blog/azure-network-security/)」を参照してください。
   
 ### <a name="step-10-for-multiple-vnets-determine-the-vnet-to-vnet-connection-topology"></a>手順 10:複数の VNet に対して、VNet 間の接続トポロジを決定する。
 
@@ -270,9 +269,9 @@ VNet と VNet は、組織のサイトの接続に使用するトポロジと同
   
 接続の最大数の詳細については、「[ネットワークの制限](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits)」を参照してください。
   
-VPN デバイスの詳細については、「[サイト対サイトの仮想ネットワーク接続用の VPN デバイス]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices))」を参照してください。
+VPN デバイスの詳細については、「[サイト対サイトの仮想ネットワーク接続用の VPN デバイス](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。
   
-VNet ピアリングの詳細については、「[VNet ピアリング]((https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview))」を参照してください。
+VNet ピアリングの詳細については、「[VNet ピアリング](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview)」を参照してください。
   
 **図 11: クロスプレミス VNet に接続する 4 つの方法**
 
@@ -296,7 +295,7 @@ VNet 内の VM には、次の方法で接続できます。
     
 - ExpressRoute はプライベート WAN 接続。
     
-詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ]((https://aka.ms/cloudarchsecurity))」および「[Azure のネットワーク セキュリティ]((https://azure.microsoft.com/blog/azure-network-security/))」を参照してください。
+詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](https://aka.ms/cloudarchsecurity)」および「[Azure のネットワーク セキュリティ](https://azure.microsoft.com/blog/azure-network-security/)」を参照してください。
   
 ### <a name="step-2-determine-the-on-premises-vpn-device-or-router"></a>手順 2:オンプレミスの VPN デバイスまたはルーターを決定する。
 
@@ -312,7 +311,7 @@ VNet 内の VM には、次の方法で接続できます。
   
 図 12 は、オンプレミスの VPN ルーターまたはデバイスに接続されるクロスプレミスの VNet を示しています。
   
-詳細については、「[VPN Gateway について]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways))」を参照してください。
+詳細については、「[VPN Gateway について](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)」を参照してください。
   
 ### <a name="step-3-add-routes-to-your-intranet-to-make-the-address-space-of-the-vnet-reachable"></a>手順 3: VNet のアドレス空間に到達可能なルートをイントラネットに追加する。
 
@@ -379,12 +378,10 @@ Azure ゲートウェイでは要約ルートが許可されないため、オ�
 |**手順**|**結果**|
 |:-----|:-----|
 |1. VNet アドレス空間のルート領域でないプレフィックスを一覧表示する。  <br/> |172.16.0.0/12 および 192.168.0.0/16  <br/> |
-|2.　最後に使用したを除く、変数のオクテットの、重複していないプレフィックスを一覧表示する。 
- VNet アドレス空間のオクテット  <br/> |10.0.0.0/16, 10.1.0.0/16…10.99.0.0/16, 10.101.0.0/16…10.254.0.0/16, 10.255.0.0/16 (255 プレフィックス、10.100.0.0/16 はスキップ)  <br/> |
-|3. 内に重複していないプレフィックスを一覧表示する。 
- VNet アドレス空間の最後に使用したオクテット  <br/> |10.100.0.0/24, 10.100.1.0/24…10.100.99.0/24, 10.100.101.0/24…10.100.254.0/24, 10.100.0.255.0/24 (255 プレフィックス,10.100.100.0/24はスキップ)  <br/> |
+|2.最後に使用した VNet アドレス空間内のオクテットの直前までの、変数オクテットの重複していないプレフィックスを一覧表示する。  <br/> |10.0.0.0/16, 10.1.0.0/16…10.99.0.0/16, 10.101.0.0/16…10.254.0.0/16, 10.255.0.0/16 (255 プレフィックス、10.100.0.0/16 はスキップ)  <br/> |
+|3. VNet アドレス空間の最後に使用したオクテット内の重複していないプレフィックスを一覧表示する。  <br/> |10.100.0.0/24, 10.100.1.0/24…10.100.99.0/24, 10.100.101.0/24…10.100.254.0/24, 10.100.0.255.0/24 (255 プレフィックス、10.100.100.0/24 はスキップ)  <br/> |
    
- **表 7:ローカル アドレスのネットワーク空間の例**
+ **表 7: ローカル アドレスのネットワーク空間の例**
   
 ### <a name="step-6-configure-on-premises-dns-servers-for-dns-replication-with-dns-servers-hosted-in-azure"></a>手順 6: DNS レプリケーション用のオンプレミスの DNS サーバーと Azure でホストされる DNS サーバーを構成する
 
@@ -402,7 +399,7 @@ Azure ゲートウェイでは要約ルートが許可されないため、オ�
   
 ### <a name="step-7-determine-the-use-of-forced-tunneling"></a>手順 7:強制トンネリングの使用を決定する。
 
-Azure サブネットの既定のシステム ルートは、インターネットをポイントします。仮想マシンからのすべてのトラフィックがクロスプレミス接続全体を移動するようにするには、次ホップ アドレスとして Azure ゲートウェイを使用する既定のルートを指定したルーティング テーブルを作成します。次に、そのルート テーブルをサブネットに関連付けます。これを強制トンネリングといいます。詳細については、「[強制トンネリングの構成]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm))」を参照してください。
+Azure サブネットの既定のシステム ルートは、インターネットをポイントします。仮想マシンからのすべてのトラフィックがクロスプレミス接続全体を移動するようにするには、次ホップ アドレスとして Azure ゲートウェイを使用する既定のルートを指定したルーティング テーブルを作成します。次に、そのルート テーブルをサブネットに関連付けます。これを強制トンネリングといいます。詳細については、「[強制トンネリングの構成](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm)」を参照してください。
   
 **図 18: ユーザー定義のルートおよびクロスプレミスの VNet の強制トンネリング**
 
@@ -413,7 +410,7 @@ Azure サブネットの既定のシステム ルートは、インターネッ�
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Azure の SharePoint Server 2016 ファーム
 <a name="cross_prem"> </a>
 
-Azure IaaS でホストされているイントラネット IT ワークロードの一例として、図 19 に示すように、可用性の高い多層 SharePoint Server 2016 ファームがあります。
+Azure IaaS でホストされているイントラネット IT ワークロードの一例として、可用性の高い多層 SharePoint Server 2016 ファームがあります。
   
 **図 19:Azure IaaS の高可用性イントラネット SharePoint Server 2016 ファーム**
 
@@ -424,7 +421,7 @@ Azure IaaS でホストされているイントラネット IT ワークロー�
 > [!TIP]
 > シミュレートされたクロスプレミス VNet で単一サーバーの SharePoint Server 2016 ファームを作成するには、「[Azure 開発/テスト環境でのイントラネット SharePoint Server 2016](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)」を参照してください。 
   
-クロスプレミスの Azure 仮想ネットワーク内の仮想マシンにデプロイされた IT ワークロードに関するその他の例については、「[Azure IaaS のハイブリッド クラウド シナリオ]((https://technet.microsoft.com/library/mt750502.aspx))」を参照してください。
+クロスプレミスの Azure 仮想ネットワーク内の仮想マシンにデプロイされた IT ワークロードに関するその他の例については、「[Azure IaaS のハイブリッド クラウド シナリオ](https://technet.microsoft.com/library/mt750502.aspx)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -434,7 +431,7 @@ Azure IaaS でホストされているイントラネット IT ワークロー�
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

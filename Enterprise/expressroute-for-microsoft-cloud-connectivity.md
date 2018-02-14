@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。"
-ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -60,9 +60,9 @@ ExpressRoute 接続を使用していても、一部のトラフィック (DNS �
   
 詳細については、次に示す追加の技術資料を参照してください。
   
-- [Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))
+- [Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)
     
-- [Azure 用 ExpressRoute]((https://azure.microsoft.com/services/expressroute/))
+- [Azure 用 ExpressRoute](https://azure.microsoft.com/services/expressroute/)
     
 ## <a name="advantages-of-expressroute-for-azure"></a>Azure 用 ExpressRoute の利点
 
@@ -78,7 +78,7 @@ ExpressRoute 接続を使用していても、一部のトラフィック (DNS �
     
 ExpressRoute 接続は、すべての構成でパフォーマンスが向上するということを保証するものではありません。地域の Microsoft データセンターから数ホップしか離れていない高帯域幅のインターネット接続よりも、低帯域幅の ExpressRoute 接続のほうがパフォーマンスが低くなる可能性もあります。
   
-ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))」をご覧ください。
+ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)」をご覧ください。
   
 ## <a name="expressroute-connectivity-models"></a>ExpressRoute の接続モデル
 
@@ -235,11 +235,11 @@ Office 365 ベースの ExpressRoute 接続には、ExpressRoute Premium が必�
     
 詳細については、以下を参照してください。
   
-- [Azure ExpressRoute for Office 365 のトレーニング]((https://channel9.msdn.com/series/aer/))
+- [Azure ExpressRoute for Office 365 のトレーニング](https://channel9.msdn.com/series/aer/)
     
-- [Office 365 のネットワーク計画とパフォーマンス チューニング]((https://aka.ms/tune))
+- [Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
     
-- [Office 365 のパフォーマンス管理]((https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416))
+- [Office 365 のパフォーマンス管理](https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>ExpressRoute のオプション
 
@@ -255,19 +255,23 @@ ExpressRoute の展開には、次に示すオプションを組み込むこと�
     
 詳細については、次に示す追加の技術資料を参照してください。
   
-- [Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))
+- [Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)
     
-- [Azure ExpressRoute for Office 365 のトレーニング]((https://channel9.msdn.com/series/aer/))
+- [Azure ExpressRoute for Office 365 のトレーニング](https://channel9.msdn.com/series/aer/)
     
-- [Azure 用 ExpressRoute]((https://azure.microsoft.com/services/expressroute/))
+- [Azure 用 ExpressRoute](https://azure.microsoft.com/services/expressroute/)
     
+## <a name="next-step"></a>次の手順
+
+[Microsoft SaaS のためのネットワーク デザイン](designing-networking-for-microsoft-saas.md)
+
 ## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

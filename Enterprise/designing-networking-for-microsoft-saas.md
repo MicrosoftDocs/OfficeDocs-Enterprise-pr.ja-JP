@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "概要: Office 365、Microsoft Intune、Dynamics 365 を含む Microsoft の SaaS サービスにアクセスするためにネットワークを最適化する方法を理解します。"
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS のためのネットワーク デザイン
 
@@ -138,9 +138,9 @@ Office 365 のトラフィックに必要な送信ポートを以下に示しま
     
 さらに、イントラネット接続のスループット (有線、ワイヤレス、または VPN) を最適化します。
   
-詳細については、[Office 365 の NAT サポート]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9))をご覧ください。
+詳細については、[Office 365 の NAT サポート](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)をご覧ください。
   
-ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd))」をご覧ください。
+ExpressRoute with Office 365 の使用に関する最新の推奨事項については、「[Office 365 向け Azure ExpressRoute](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)」をご覧ください。
   
 イントラネットのパフォーマンスを最適化するには、次の操作を行います。
   
@@ -150,7 +150,7 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
     
 - 中間デバイスの分析 (使用年数、正常性など) を実行します
     
-詳細については、[PsPing ツール]((https://technet.microsoft.com/sysinternals/jj729731.aspx)) を参照してください。
+詳細については、[PsPing ツール](https://technet.microsoft.com/sysinternals/jj729731.aspx) を参照してください。
   
 ## <a name="it-operations-considerations"></a>IT 運用上の考慮事項
 
@@ -180,11 +180,15 @@ Microsoft SaaS サービスで IT ワークロードを操作する場合の考�
     
 詳細については、以下を参照してください。
   
-- [Office 365 のネットワークと移行の計画]((https://aka.ms/tune))
+- [Office 365 のネットワークと移行の計画](https://aka.ms/tune)
     
-- [Office 365 のパフォーマンス管理 Microsoft Virtual Academy コース]((https://aka.ms/o365perf))
+- [Office 365 のパフォーマンス管理 Microsoft Virtual Academy コース](https://aka.ms/o365perf)
     
-- [Office 365 用 ExpressRoute]((https://aka.ms/expressrouteoffice365))
+- [Office 365 用 ExpressRoute](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>次の手順
+
+[Microsoft Azure PaaS のためのネットワーク デザイン](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>関連項目
 
@@ -192,7 +196,7 @@ Microsoft SaaS サービスで IT ワークロードを操作する場合の考�
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

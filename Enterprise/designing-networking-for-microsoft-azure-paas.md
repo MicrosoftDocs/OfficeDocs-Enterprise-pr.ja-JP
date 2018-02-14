@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "概要: Microsoft Azure PaaS へのアクセスのためにネットワークを最適化する方法を理解します。"
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS のためのネットワーク デザイン
 
@@ -26,8 +26,6 @@ Azure PaaS アプリ用のネットワーキングを最適化するには、適
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Azure において組織の PaaS アプリケーションをホストするための手順の計画
 
-ここにセクション本文を挿入します。
-  
 1. [Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)の「**Microsoft クラウド サービスを利用するためのネットワークの準備の手順**」セクションを読んでください。
     
 2. [Microsoft SaaS のためのネットワーク デザイン](designing-networking-for-microsoft-saas.md)の「**Microsoft SaaS サービスを利用するためのネットワークの準備の手順**」セクションに記載されている手順 2 から 4 を使用して、インターネット帯域幅を最適化します。
@@ -70,7 +68,7 @@ Azure PaaS においてホストされている組織のアプリケーション
     
 - SSL オフロード
     
-詳細については、[アプリケーション ゲートウェイ]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)) をご覧ください。
+詳細については、[アプリケーション ゲートウェイ](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction) をご覧ください。
   
 ## <a name="azure-traffic-manager"></a>Azure トラフィック マネージャー
 
@@ -96,15 +94,19 @@ Traffic Manager は、次のルーティング方法を使用します。
     
 2. ユーザーは、ヨーロッパの地域の Web アプリケーションによってトラフィックを開始します。
     
-詳細については、「[Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview))」を参照してください。
-  
+詳細については、「[Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)」を参照してください。
+
+## <a name="next-step"></a>次の手順
+
+[Microsoft Azure IaaS のためのネットワークの設計](designing-networking-for-microsoft-azure-iaas.md)
+ 
 ## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
