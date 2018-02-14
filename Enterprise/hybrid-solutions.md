@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。"
-ms.openlocfilehash: 5a225acb061da961f27f05fa43317b752f6aba56
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 0bc47f8f9b10d51d801973c719625247be39fa9b
+ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -39,8 +39,7 @@ Microsoft Azure を使用すれば、通常ならオンプレミスで展開さ�
 - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
 - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
-    
-- [SharePoint 2013 認証に Microsoft Azure Active Directory を使用する](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)
+  
     
 **ディスカッションへの参加**
 
