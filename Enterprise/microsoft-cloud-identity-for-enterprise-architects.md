@@ -8,18 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: O365ITProTrain, Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "概要: Microsoft クラウド サービスとプラットフォームの ID ソリューションを設計します。"
-ms.openlocfilehash: 78a975a9d4f22ce6e624983db21dae1a762a3c09
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 08dfb843128839fc6f8b70373335f64b44133ff1
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ID
 
@@ -79,9 +76,9 @@ Azure AD には 3 つのエディションがあります。それは、無料�
   
 多くの組織は、オンプレミスの ID プロバイダーとして AD DS を使用しています。異なる種類のオンプレミスの ID プロバイダー (LDAP を使用する ID プロバイダーなど) を使用し、それらを Azure AD に同期できます。
   
-### <a name="option-2-extend-ad-ds-to-azure"></a>オプション 2:Azure に AD DS を拡張する
+### <a name="option-2-extend-ad-ds-to-azure"></a>オプション 2: Azure に AD DS を拡張する
 
-Azure インフラストラクチャ サービスで実行されている仮想マシンに AD DS を拡張すると、Azure AD との同期とは異なるソリューションとアプケーションのセットがサポートされます。2 つを以下に示します。
+Azure インフラストラクチャ サービスで実行されている仮想マシンに AD DS を拡張すると、Azure AD との同期とは異なるソリューションとアプリケーションのセットがサポートされます。2 つを以下に示します。
   
 - NTLM や Kerberos 認証を必要とするクラウドベースのソリューションや、AD DS ドメインに参加している仮想マシンをサポートします。
     
@@ -91,7 +88,7 @@ Azure インフラストラクチャ サービスで実行されている仮想�
   
  **図 3:Azure に AD DS を拡張する**
   
-図 3 は、オンプレミスの VPN デバイスや Azure VPN ゲートウェイを通じて Azure 仮想ネットワークに接続している AD DS ドメイン コントローラーを示しています。Azure 仮想ネットワークには、基幹業務アプリケーションと その独自の AD DS ドメイン コントローラー セットのサーバーが含まれています。
+図 3 は、オンプレミスの VPN デバイスや Azure VPN ゲートウェイを通じて Azure 仮想ネットワークに接続している AD DS ドメイン コントローラーを示しています。Azure 仮想ネットワークには、基幹業務アプリケーションとその独自の AD DS ドメイン コントローラー セットのサーバーが含まれています。
   
 ### <a name="more-information"></a>詳細
 
@@ -160,7 +157,7 @@ Azure インフラストラクチャ サービスで実行されている仮想�
   
  **図 5: フェデレーション認証に必要なサーバー**
   
-図 5 は、フェデレーション認証用のコンポーネントのセットを示しています。Azure AD は、Active Directory フェデレーション サービス (AD FS) サーバーに認証要求を転送する Web アプリケーション プロキシに接続します。AD FS サーバーは、評価と応答のために AD DS ドメイン コント ローラーに要求を転送します。Azure AD Connect ツールを実行するサーバーは、AD DS から Azure AD にアカウント名のリストを同期します。
+図 5 は、フェデレーション認証用のコンポーネントのセットを示しています。Azure AD は、Active Directory フェデレーション サービス (AD FS) サーバーに認証要求を転送する Web アプリケーション プロキシに接続します。AD FS サーバーは、評価と応答のために AD DS ドメイン コントローラーに要求を転送します。Azure AD Connect ツールを実行するサーバーは、AD DS から Azure AD にアカウント名のリストを同期します。
   
 フェデレーションは、以下の追加のエンタープライズ機能を提供します。
   
@@ -220,7 +217,7 @@ Azure インフラストラクチャ サービスの仮想マシンで実行さ�
   
  **図 6: Azure 仮想ネットワークに AD DS を拡張する**
   
-図 6 は、オンプレミスやプライベート クラウドのデータ センター、Azure 仮想マシンに接続している AD DS、サイト間 VPN や ExpressRoute 接続を示しています。Azure 仮想ネットワークには、基幹業務アプリケーションと その独自の AD DS ドメイン コントローラー セットのサーバーが含まれています。この構成は、オンプレミスの AD DS と Azure インフラストラクチャ サービスのハイブリッド展開です。以下が必要です。
+図 6 は、オンプレミスやプライベート クラウドのデータ センター、Azure 仮想マシンに接続している AD DS、サイト間 VPN や ExpressRoute 接続を示しています。Azure 仮想ネットワークには、基幹業務アプリケーションとその独自の AD DS ドメイン コントローラー セットのサーバーが含まれています。この構成は、オンプレミスの AD DS と Azure インフラストラクチャ サービスのハイブリッド展開です。以下が必要です。
   
 - Azure 仮想ネットワーク。
     
