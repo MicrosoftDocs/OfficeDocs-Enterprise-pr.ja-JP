@@ -15,11 +15,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: "Office 365 PowerShell を使用した Office 365 ユーザー アカウントの削除と復元の方法について説明します。"
-ms.openlocfilehash: fc72d51532780d2ddaaff20ecc6aebab06a001f4
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用したユーザー アカウントの削除と復元
 

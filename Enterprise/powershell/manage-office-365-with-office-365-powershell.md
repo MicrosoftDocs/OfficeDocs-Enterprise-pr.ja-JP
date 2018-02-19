@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "概要:Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online でOffice 365 PowerShell を使用する方法について説明します。"
-ms.openlocfilehash: 8732d8f6170608e76df25f521ac83feda62b2d2a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell による Office 365 の管理
 
@@ -37,7 +37,7 @@ Office 365 PowerShell は、Office 365 管理センターを補完する強力�
     
     Office 365 PowerShell モジュールを既にインストールしてあって、オートメーション コマンドを使用してユーザー アカウントとライセンスを管理する方法の詳細について確認する場合は、ここから開始してください。
     
-- [SharePoint Online 用の Office 365 PowerShell]((https://technet.microsoft.com/ja-JP/library/fp161362.aspx))
+- [SharePoint Online 用の Office 365 PowerShell](https://technet.microsoft.com/ja-JP/library/fp161362.aspx)
     
     Office 365 PowerShell モジュールをインストールしてあって、オートメーション コマンドを使用して SharePoint Online の管理を実行する場合は、ここから開始してください。
     
@@ -57,7 +57,7 @@ Office 365 PowerShell は、Office 365 管理センターを補完する強力�
     
     Office 365 PowerShell モジュールをインストールしてあって、オートメーション コマンドを使用して Skype for Business Online の管理を実行する場合は、ここから開始してください。
     
-- [Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
+- [Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
     
     Office 365 PowerShell に十分に慣れていて、組織のダイヤルイン会議、クラウド PBX、PSTN 通話の設定を管理したり、Skype for Business Online の使用の監視やレポート作成のためのレポート作成機能を使用したりするための特定のコマンドの詳細を確認する場合は、ここから開始してください。
     

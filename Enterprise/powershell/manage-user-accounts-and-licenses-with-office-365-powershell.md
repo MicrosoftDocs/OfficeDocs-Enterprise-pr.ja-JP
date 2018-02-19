@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: "概要:Office 365 PowerShell を使用してユーザー アカウントとライセンスを管理する方法について説明します。"
-ms.openlocfilehash: 89933d0a50e52133df4f107d188221b2f77abf62
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 27bf709fc0daca5c56d9a1c57d3723a09ff49fdc
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。
 

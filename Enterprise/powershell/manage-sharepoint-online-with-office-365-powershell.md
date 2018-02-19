@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: "概要:Office 365 PowerShell を使って SharePoint Online ユーザー、グループ、サイト グループを管理します。"
-ms.openlocfilehash: 2caef048196a2ffdf1d481f728dae05c0c9b3ae9
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d92ddfa82c0d21b9de16439ef1d0108eed6ab63f
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online を管理する
 
@@ -26,11 +26,11 @@ ms.lasthandoff: 01/11/2018
   
 SharePoint Online 管理者の主要なタスクの 1 つは、サイト、サイト グループ、ユーザーを管理することです。Office 365 管理センター でもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早くかつ簡単に実行できます。詳細については、以下のトピックをご覧ください。
   
-- [Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する]((http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx))
+- [Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する](http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx)
     
-- [Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
+- [Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
     
-- [Manage site groups]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
+- [Manage site groups](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
 ## <a name="see-also"></a>関連項目
 

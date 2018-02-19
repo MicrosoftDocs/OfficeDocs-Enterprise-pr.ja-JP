@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "概要: ネットワーク インフラストラクチャの一般的な要素とネットワークを準備する方法を理解します。"
-ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft クラウド接続の一般的な要素
 
@@ -76,6 +76,11 @@ Microsoft クラウド サービスのいずれかを採用するときは、ネ
     
 - **インターネット DNS:** Microsoft クラウドまたはクラウドでホストされているサービスを検索するための、A、AAAA、CNAME、MX、PTR、その他のレコード。たとえば、Azure PaaS でホストされているアプリのために、CNAME レコードが必要な場合があります。
     
+
+## <a name="next-step"></a>次の手順
+
+[Microsoft クラウド接続のための ExpressRoute](expressroute-for-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>関連項目
 
 <a name="steps"> </a>
@@ -83,7 +88,5 @@ Microsoft クラウド サービスのいずれかを採用するときは、ネ
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
