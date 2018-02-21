@@ -13,14 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: "Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。"
-ms.openlocfilehash: 59a6444e0f6618fd837e8eae567661499e795c69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
@@ -28,7 +27,7 @@ ms.lasthandoff: 12/15/2017
   
 、Office 365 では、計画のライセンスからライセンス (も呼び出された Sku または Office 365 プラン) ユーザーにそれらの計画に定義されている Office 365 サービスへのアクセスを提供します。ただし、[ユーザーはそれらに現在割り当てられているライセンスで使用可能なすべてのサービスへのアクセスをいない可能性があります。ユーザー アカウントのサービスの状態を表示するのには、Office 365 の PowerShell を使用できます。 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 <a name="RTT"> </a>
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
@@ -292,7 +291,7 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 非常に複雑に見えるコマンドです。ですが、すべてのユーザーとすべてのサービスのステータスの表示、CSV ファイルを作成します。
 
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 <a name="SeeAlso"> </a>
 
 Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
@@ -313,7 +312,7 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
     
 - [形式リスト](https://go.microsoft.com/fwlink/p/?LinkId=113302)
     
-- [Get MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-msoluser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [Select-Object](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     
@@ -324,8 +323,4 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
 ## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
 
 
-||
-|:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
-   
-
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "概要: SharePoint Online の分離のチーム サイトの設計プロセス ステップ"
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの設計
 
@@ -42,7 +38,7 @@ ms.lasthandoff: 12/15/2017
   
 SharePoint グループのメンバーがサイトで実行できる内容を決定する特定のアクセス許可のセットが、アクセス許可レベルになります。SharePoint Online チーム サイトでは、既定では次の 3 つのアクセス許可レベルがあります。編集、読み取り、フル コントロールです。次の表は、SharePoint グループと割り当てられるアクセス許可レベルとの既定の相関関係を示しています。
   
-|**SharePoint グループ**|**権限レベル**|
+|**SharePoint グループ**|**アクセス許可レベル**|
 |:-----|:-----|
 |\<サイト名 > のメンバー  <br/> |編集  <br/> |
 |\<サイト名 > の訪問者  <br/> |読み取り  <br/> |
@@ -82,7 +78,7 @@ Office 365 の azure の AD グループは、Office 365 のグループとは�
   
 分離した SharePoint Online チーム サイトの場合、推奨されるグループ構造は次のようになります。
   
-|**SharePoint グループ**|**Azure AD ベースのアクセス グループ**|**権限レベル**|
+|**SharePoint グループ**|**Azure AD ベースのアクセス グループ**|**アクセス許可レベル**|
 |:-----|:-----|:-----|
 |\<サイト名 > のメンバー  <br/> |\<サイト名 > のメンバー  <br/> |編集  <br/> |
 |\<サイト名 > の訪問者  <br/> |\<サイト名 > の閲覧者  <br/> |読み取り  <br/> |
@@ -133,7 +129,7 @@ ProjectX メンバー アクセス グループのグループの入れ子にな
 
 作成し、運用環境で分離されたサイトを構成する準備ができたら、 [SharePoint Online の分離のチーム サイトの展開](deploy-an-isolated-sharepoint-online-team-site.md)を参照してください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-sites.md)
   

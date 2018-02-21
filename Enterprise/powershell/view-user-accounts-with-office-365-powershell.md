@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - PowerShell
-- apr17entnews
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: "概要: 表示、リスト、または Office 365 の PowerShell でのさまざまな方法でユーザー アカウントを表示します。"
-ms.openlocfilehash: b27f9045d26d4dabd3ada70766491f722d822a91
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントを表示する
 
@@ -29,7 +27,7 @@ ms.lasthandoff: 12/15/2017
   
 Office 365 の管理センターを使用するには、Office 365 テナントのアカウントを表示するのも Office 365 の PowerShell を使用して Office 365 の管理センターができないことがいくつかの操作を行います。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
   
@@ -79,7 +77,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null}
 
 このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
   
-- すべてのユーザー アカウント ( **Get MsolUser** ) の情報を取得し、次のコマンドを送信する ( **|** )。
+- ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
 - 指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** )。コマンドが UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell を指示する中かっこ、( ** $ \_。UsageLocation** ) は指定されたものであるか ( **eq $Null** ) ではありません。
     
@@ -132,7 +130,7 @@ Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
 
 このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
   
-- すべてのユーザー アカウント ( **Get MsolUser** ) の情報を取得し、次のコマンドを送信する ( **|** )。
+- ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
 - のみユーザー アカウント名、部署、および使用法の場所 (**選択オブジェクトの表示名、部門、UsageLocation** ) を表示します。
     
@@ -165,7 +163,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Display
 
 このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
   
-- すべてのユーザー アカウント ( **Get MsolUser** ) の情報を取得し、次のコマンドを送信する ( **|** )。
+- ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
 - 指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** ) し、結果の情報を次のコマンドを送信する ( **|** )。かっこの中には、コマンドは UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell ように指示する ( ** $ \_。UsageLocation** ) は指定されたものであるか ( **eq $Null** ) ではありません。
     
@@ -206,9 +204,9 @@ Get-AzureADUser
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
+このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。
   
-- すべてのユーザー アカウント ( **Get AzureADUser** ) の情報を取得し、次のコマンドを送信する ( **|** )。
+- ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。
     
 - 指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** )。コマンドが UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell を指示する中かっこ、( ** $ \_。UsageLocation** ) は指定されたものであるか ( **eq $Null** ) ではありません。
     
@@ -235,9 +233,9 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 ```
 
-このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
+このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。
   
-- すべてのユーザー アカウント ( **Get AzureADUser** ) の情報を取得し、次のコマンドを送信する ( **|** )。
+- ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。
     
 - のみユーザー アカウント名、部署、および使用法の場所 (**選択オブジェクトの表示名、部門、UsageLocation** ) を表示します。
     
@@ -247,9 +245,9 @@ Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
 ```
 
-このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
+このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。
   
-- すべてのユーザー アカウント ( **Get AzureADUser** ) の情報を取得し、次のコマンドを送信する ( **|** )。
+- ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。
     
 - 指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** ) し、結果の情報を次のコマンドを送信する ( **|** )。かっこの中には、コマンドは UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell ように指示する ( ** $ \_。UsageLocation** ) は指定されたものであるか ( **eq $Null** ) ではありません。
     
@@ -257,11 +255,9 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Disp
     
 ## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
 
-||
-|:-----|
-|![LinkedIn Learning の小さいアイコン](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5) のための無料のビデオ コースをご覧ください。 |
-   
-## <a name="see-also"></a>See also
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+  
+## <a name="see-also"></a>関連項目
 
 #### 
 

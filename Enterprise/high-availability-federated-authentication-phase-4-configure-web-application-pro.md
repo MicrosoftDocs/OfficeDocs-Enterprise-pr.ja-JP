@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "概要: は、Microsoft Azure 内の Office 365 のフェデレーション認証を高可用性の web アプリケーションのプロキシ サーバーを構成します。"
-ms.openlocfilehash: 02aeac727815a82c15cd602094e945a14ed551af
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性フェデレーション認証のフェーズ 4:Web アプリケーション プロキシを構成する
 
@@ -68,13 +63,13 @@ Write-Host (Get-AzureRMPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $
   
 フェデレーション サービス FDQN を取得後、Azure インターネット接続ロード バランサーのパブリック IP アドレスに解決される、フェデレーション サービス FDQN のパブリック DNS ドメイン A レコードを作成します。
   
-|**名前**|**種類**|**TTL**|**値**|
+|**Name**|**種類**|**TTL**|**値**|
 |:-----|:-----|:-----|:-----|
 |フェデレーション サービス FDQN  <br/> |A  <br/> |3600  <br/> |(前のセクションで、**ホストの書き込み**コマンドが表示されます)、Azure のインターネットに接続するロード バランサーのパブリック IP アドレス <br/> |
    
 次に例を示します。
   
-|**名前**|**種類**|**TTL**|**値**|
+|**Name**|**種類**|**TTL**|**値**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -166,7 +161,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 使用[高可用性の統合認証フェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)この作業負荷の構成を続行します。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

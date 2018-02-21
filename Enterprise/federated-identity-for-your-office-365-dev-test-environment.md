@@ -10,20 +10,18 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: "概要: Office 365 の開発/テスト環境に統合認証を構成します。"
-ms.openlocfilehash: 62d3b5483a405a591038f347af2b9bcc798b1917
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のフェデレーション ID
 
@@ -61,7 +59,8 @@ Azure 内の Office 365 のフェデレーション認証の運用環境の導�
 > Azure の試用版サブスクリプションで、この開発/テスト環境を構成することはできません。 
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>フェーズ 1:DirSync を使用する、シミュレートされたエンタープライズ Office 365 開発/テスト環境を作成する
 
@@ -437,11 +436,11 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 これで、Office 365 試用版のサブスクリプションがフェデレーション認証を行うように構成されました。高度な認証シナリオで、この開発/テスト環境を使用できます。
   
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 本番運用に即応を展開する準備ができたら、Azure で Office 365 のフェデレーション認証の高可用性は[Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   

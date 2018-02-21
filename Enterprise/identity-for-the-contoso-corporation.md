@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Contoso 社の IDaaS を利用して地理的に分散、冗長化されたユーザーと認証の概要を理解します。"
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation の ID
 
@@ -120,15 +118,15 @@ Contoso 社は、モバイル ワーカーやリモート ワーカーのサポ�
     
 - DMZ 認証サーバーを使用できない場合は、Azure IaaS のサーバーの IP アドレスを使用します。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft Cloud の Contoso](contoso-in-the-microsoft-cloud.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 
-[エンタープライズ設計者の識別情報をマイクロソフトのクラウド](http://aka.ms/cloudarchidentity)
+[エンタープライズ アーキテクトのための Microsoft クラウド ID](http://aka.ms/cloudarchidentity)
   
-[Office 365 の ID とデバイス保護](http://aka.ms/o365protect_device)
+[Office 365 の ID とデバイスを保護する](http://aka.ms/o365protect_device)
   
 [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 

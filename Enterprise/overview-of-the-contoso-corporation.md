@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "概要: は、世界中のオフィスの階層型の構造と、企業として Contoso 社を理解します。"
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
@@ -85,7 +83,7 @@ Contoso 社の IT 設計者で次の要素が識別される場合、マイク�
     
     クラウドベースのアプリと SaaS のワークロードの管理には、設定、データ、アカウント、ポリシー、およびアクセス許可を維持し、継続的な正常性とパフォーマンスを監視する機能が必要となります。Azure IaaS での仮想マシンの管理には、既存のサーバー管理ツールが使用されます。
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [Microsoft Cloud の Contoso](contoso-in-the-microsoft-cloud.md)
   

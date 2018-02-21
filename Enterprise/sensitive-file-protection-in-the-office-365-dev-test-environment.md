@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "概要: は、構成し、不適切な SharePoint Online サイト コレクションに投稿される場合でもに Office 365 の情報権利の管理が、機密性の高いファイルを保護する方法をデモンストレーションします。"
-ms.openlocfilehash: a6547cf4327980e3909323d5bda4455dfffd37f4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 236272a90bb6ff7f310c95f1494b68750e363f40
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
@@ -33,7 +29,8 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構築する
 
@@ -141,7 +138,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. SharePoint グループのリストでは、**経営幹部のメンバー**をクリックします。
     
-9. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+9. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
 10. **共有 '経営'**に**経営幹部**を入力、**経営幹部**のグループ、**共有**] をクリックします。
     
@@ -157,7 +154,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. 、SharePoint グループの一覧では、**販売サイトのコレクションのメンバー**をクリックします。
     
-5. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+5. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
 6. **共有 '販売サイト コレクション'**に**Everyone**と入力、**外部のユーザーを除くすべて**] をクリックし、**共有**] をクリックします。
     
@@ -267,7 +264,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 9. **グループの保護および資格情報の間隔を設定**すると、[**グループの保護を許可する**] を選択しの**既定のグループ**を、**経営幹部**を入力します。
     
-10. [ **OK**] をクリックします。
+10. **[OK]** をクリックします。
     
 次に、CEO として新しいドキュメントをエグゼクティブ ドキュメント フォルダーにアップロードし、それをダウンロードして、販売ドキュメント フォルダーに誤ってアップロードします。
   
@@ -331,7 +328,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 IRM による保護を参照する別の方法では、ローカル フォルダー内のファイルを検索します。**SensitiveData AfterIRM.docx** **SensitiveData BeforeIRM.docx**ファイルをはるかに超える必要があります。**SensitiveData AfterIRM.docx**ファイルが暗号化されており、IRM 保護の情報が追加。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
