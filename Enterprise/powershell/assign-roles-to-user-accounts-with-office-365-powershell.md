@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: "概要:Office 365 PowerShell と Add-MsolRoleMember コマンドレットを使用して、ユーザー アカウントにロールを割り当てます。"
-ms.openlocfilehash: dee9aede72a79a32f03c94a0793464e1393edd95
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
 
@@ -133,5 +133,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
 #### 
 
-[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))
+[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
 

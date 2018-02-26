@@ -15,11 +15,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Office 365 PowerShell を使用して Office 365 でユーザー アカウントを作成する方法について学習します。"
-ms.openlocfilehash: 97830f8158f84e6978cf3f2d168aa83d9fc551e6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e5fed572d0b835a42071e77b4aeaf8714f2178bd
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントを作成する
 
@@ -121,7 +121,7 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
   
 - [Export-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- [Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))
+- [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)
     
 - [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     

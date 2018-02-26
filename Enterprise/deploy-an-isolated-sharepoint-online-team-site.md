@@ -9,15 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Solutions
+ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: "概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。"
-ms.openlocfilehash: b22f9bd6ca5562f6c9632709d8afb54cd7b8d634
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 297681b688b43eb02ee4f99f983a0f796312e599
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -30,7 +29,7 @@ ms.lasthandoff: 02/09/2018
 このフェーズでは、3 つの既定の SharePoint グループに対して 3 つの Azure AD ベースのアクセス グループを作成し、それらに適切なユーザー アカウントを設定します。
   
 > [!NOTE]
-> 次の手順は、すべての必要なユーザー アカウントが既に存在し、適切なライセンスが割り当てられていることを前提としています。そうでない場合は、それらを追加して、手順 1 に進む前にライセンスを割り当てます。 
+> 次の手順は、すべての必要なユーザー アカウントが既に存在し、適切なライセンスが割り当てられていることを前提としています。そうでない場合は、手順 1 に進む前にそれらを追加して、ライセンスを割り当てます。 
   
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>手順 1:サイトの SharePoint Online 管理者を一覧表示する
 
@@ -50,7 +49,7 @@ Office 365 を使用してユーザー アカウントとグループを管理�
   
 Office 365 を使用してユーザー アカウントとグループを管理していて、PowerShell を使用する場合は、その UPN の一覧を作成します。サイト メンバーが数多く存在する場合は、UPN の一覧をテキスト ファイルに格納し、PowerShell コマンドを 1 回実行することですべて追加できます。
   
-サイトのビューアーには、経営幹部、弁護士、または部門間の利害関係者などが含まれます。
+サイトのビューアーには、経営幹部、法律顧問、または部門間の利害関係者などが含まれます。
   
 ### <a name="step-4-create-the-three-access-groups-for-the-site-in-azure-ad"></a>手順 4:Azure AD でサイト用の 3 つのアクセス グループを作成する
 
@@ -87,7 +86,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
   
 ![独立した SharePoint Online サイトの展開用の 3 つのアクセス グループ。](images/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>手順 5:アクセス グループにユーザー アカウントを追加する
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>手順 5. アクセス グループにユーザー アカウントを追加する
 
 この手順では、次の操作を行います。
   
@@ -99,7 +98,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 Windows Server AD を使用してユーザー アカウントとグループを管理している場合は、Windows Server AD ユーザーとグループの標準的な管理手順を使用してユーザーを適切なアクセス グループに追加し、Office 365 サブスクリプションと同期されるまで待機します。
   
-Office 365 を使用してユーザー アカウントとグループを管理する場合は、Office 管理者センターまたは PowerShell を使用できます。アクセス グループのいずれかでグループ名が重複している場合、Office 管理者センターをご使用ください。
+Office 365 を使用してユーザー アカウントとグループを管理する場合は、Office 管理者センターまたは PowerShell を使用できます。アクセス グループのいずれかでグループ名が重複している場合は、Office 管理者センターを使用してください。
   
 Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザー アカウントおよびグループを適切なアクセス グループに追加します。
   
@@ -159,9 +158,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 最初に、次の手順で SharePoint Online チーム サイトを作成します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. タイルのリストで、 **[SharePoint]** をクリックします。
+2. タイルのリストで、**[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい **[SharePoint]** タブで、 **[+ サイトの作成]** をクリックします。
     

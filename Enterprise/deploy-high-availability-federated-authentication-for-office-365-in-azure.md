@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "概要:Microsoft Azure で Office 365 サブスクリプションの高可用性フェデレーション認証を構成します。"
-ms.openlocfilehash: ada4533179aa79f7f619f7b0cf04576594283863
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 6cc6f709142bb34587f8383d117540da20a64214
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure に Office 365 の高可用性フェデレーション認証を展開する
 

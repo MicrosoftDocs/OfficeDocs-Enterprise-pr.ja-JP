@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。"
-ms.openlocfilehash: bc703bd01f3430a01810795b9d2ccea9e4ac9bc0
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 6266960287d06ffafdf7ed1f6690396fd4cda9d5
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Advanced Threat Protection
 
