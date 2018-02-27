@@ -1,34 +1,35 @@
 ---
-title: "GDPR の office 365 の情報の保護"
+title: "GDPR のための Office 365 の情報保護"
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 
-description: "このソリューションでは、Office 365 サービスに格納されている機密データを保護する方法を示します。"
-ms.openlocfilehash: 208134e78f7f5c40ee61d678b2f1b42bde738c68
-ms.sourcegitcommit: c5a12b35a475ef4a5a80085e1bb2829d115d7c4a
-ms.translationtype: MT
+description: "このソリューションでは、Office 365 サービスに保存されている機密データを保護する方法を示します。"
+ms.openlocfilehash: 235ff945fbc3f58c8bf102d41d89795ff4e1b64d
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/13/2018
 ---
-# <a name="office-365-information-protection-for-gdpr"></a>GDPR の office 365 の情報の保護
+# <a name="office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護
 
- **の概要:**このソリューションでは、Office 365 サービスに格納されている機密データを保護する方法を示します。
+ **要約:** このソリューションでは、Office 365 サービスに保存されている機密データを保護する方法を示します。
   
-このソリューションには、検出、分類、保護、および個人データを監視するための規範的な推奨事項が含まれています。このソリューションでは、例として、全般的なデータ保護規制 (GDPR) を使用しますが、他の多くの規制へのコンプライアンスを達成するために同じプロセスを適用することができます。
+このソリューションには、個人データの検出、分類、保護、および監視に規定された推奨事項が含まれています。このソリューションでは、例として一般データ保護規制 (GDPR) を使用しますが、その他の多くの規制遵守のためにも同じ手順を適用することができます。
 
-[![GDPR のポスターの Office 365 の情報保護のつまみのイメージです。](images/InfoProtectGDPR_Poster/o365infoprotectforgdpr_thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)
+[![GDPR のための Office 365 の情報保護ポスターのサムネイル画像](images/InfoProtectGDPR_Poster/o365infoprotectforgdpr_thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)
   
 [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.pdf)  | [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information protection for GDPR.vsdx)
   
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [セキュリティ ソリューション](security-solutions.md)
   
