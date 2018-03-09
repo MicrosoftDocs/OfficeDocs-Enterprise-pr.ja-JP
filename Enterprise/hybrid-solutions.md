@@ -3,7 +3,7 @@ title: "ハイブリッド ソリューション"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。"
-ms.openlocfilehash: 0bc47f8f9b10d51d801973c719625247be39fa9b
-ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
+ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
+ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -25,10 +25,12 @@ ms.lasthandoff: 02/11/2018
 Microsoft Azure を使用すれば、通常ならオンプレミスで展開されていた一部の Office Server ワークロードを Azure インフラストラクチャ サービスで展開できるようになります。
   
 以下は Azure の Office 365 ID インフラストラクチャ向けです。
+
+- [Azure AD for SharePoint サーバー認証の使用](using-azure-ad-for-sharepoint-server-authentication.md)
+
+- [Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
-    
-- [Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
     
 - [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
