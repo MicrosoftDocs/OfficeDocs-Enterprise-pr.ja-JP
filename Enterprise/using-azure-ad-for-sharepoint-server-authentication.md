@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "概要: は、Azure アクセス制御サービスを使用しないし、Azure Active Directory で、SharePoint サーバーのユーザーの認証に SAML 1.1 を使用する方法を説明します。"
-ms.openlocfilehash: e346a79fae32c19e14ce852257d5643041faf5d4
-ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
+ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD を使用して SharePoint サーバーの認証
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/05/2018
 > この資料は、カーク Evans、マイクロソフトのプリンシパル プログラム マネージャーの作業に基づいています。 
 
 <blockquote>
-<p>この資料では、Azure Active Directory のグラフと対話するためのコード サンプルを参照します。コード サンプルをダウンロードすることができます[ここ](https://1drv.ms/u/s!AuAlJmH2xI6Kg3ItzF78krMFxJu3)。</p>
+<p>この資料では、Azure Active Directory のグラフと対話するためのコード サンプルを参照します。コード サンプルをダウンロードすることができます[ここ](https://github.com/kaevans/spsaml11/tree/master/scripts)。</p>
 </blockquote>
 
 SharePoint サーバー 2016年には、信頼できるが、他のユーザーを管理する別の id プロバイダーとそれらを認証することによって、ユーザーを管理しやすく、クレーム ベース認証を使用してユーザーを認証する機能が用意されています。たとえば、Active Directory ドメイン サービス (AD DS) を使用したユーザー認証を管理するのではなく Azure Active Directory (AD の Azure) を使用して認証するユーザーを有効にする可能性があります。こうと、ユーザー名で onmicrosoft.com サフィックスを持つクラウド専用のユーザーの認証、ユーザーは、オンプレミスのディレクトリと同期しその他のディレクトリからのゲスト ユーザーを招待します。多要素認証と高度なレポート作成機能など、Azure AD 機能を活用することもできます。
@@ -131,13 +131,12 @@ IIS でサイトのバインド用の証明書を構成する SharePoint ファ�
 $realm = "<Realm from Table 1>"
 $wsfedurl="<SAML single sign-on service URL from Table 1>"
 $filepath="<Full path to SAML signing certificate file from Table 1>"
-$cert = New-Object 
-System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
+$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 $map = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" -IncomingClaimTypeDisplayName "name" -LocalClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
 $map2 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" -IncomingClaimTypeDisplayName "GivenName" -SameAsIncoming
 $map3 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" -IncomingClaimTypeDisplayName "SurName" -SameAsIncoming
-$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim “http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name”
+$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
 ```
 
 次に、以下の手順を実行、アプリケーションの信頼できる id プロバイダーを有効にします。
@@ -173,7 +172,8 @@ Azure AD にログインし、SharePoint にアクセスするユーザーには
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>手順 6: Azure AD で SAML 1.1 トークンの発行ポリシーを追加します。
 
-ポータルで AD の Azure アプリケーションが作成されると、SAML 2.0 を使用して既定になります。SharePoint サーバー 2016年には、SAML 1.1 トークン形式が必要です。次のスクリプトは SAML 2.0 の既定のポリシーを削除し、問題の SAML 1.1 トークンに新しいポリシーを追加します。
+ポータルで AD の Azure アプリケーションが作成されると、SAML 2.0 を使用して既定になります。SharePoint サーバー 2016年には、SAML 1.1 トークン形式が必要です。次のスクリプトは SAML 2.0 の既定のポリシーを削除し、問題の SAML 1.1 トークンに新しいポリシーを追加します。このコードでは、付属の[Azure Active Directory のグラフとの対話を示すサンプル](https://github.com/kaevans/spsaml11/tree/master/scripts)をダウンロードする必要があります。
+
 
 ```
 Import-Module <file path of Initialize.ps1> 
@@ -183,6 +183,8 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+
+Azure AD でトークンの発行ポリシーの詳細については、[ポリシーの操作のためのグラフの API リファレンス](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)を参照してください。
 
 ## <a name="step-7-verify-the-new-provider"></a>手順 7: 新しいプロバイダーを確認します。
 
@@ -197,6 +199,17 @@ Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $obj
 最後に、Azure Active Directory のテナントのユーザーとしてログインしてサイトにアクセスできます。
 
 ![ユーザーが SharePoint に署名](images/SAML11/fig15-signedinsharepoint.png)
+
+## <a name="managing-certificates"></a>証明書の管理
+上記の手順 4 で信頼できる id プロバイダーに対して構成された署名証明書が有効期限の更新が必要であることを理解する重要です。証明書の書き換えでは、[フェデレーション シングル サインオン Azure Active Directory 内の証明書を管理](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs)についての資料を参照してください。Azure AD で証明書が書き換えられている場合後、は、ローカル ファイルへのダウンロードし、更新された署名証明書を信頼できる id プロバイダーを構成するのには次のスクリプトを使用してください。 
+
+```
+$filepath="<Full path to renewed SAML signing certificate file>"
+$cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filePath)
+New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
+Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
+```
+
 
 
 ## <a name="additional-resources"></a>追加リソース
