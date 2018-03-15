@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "概要: は、Azure アクセス制御サービスを使用しないし、Azure Active Directory で、SharePoint サーバーのユーザーの認証に SAML 1.1 を使用する方法を説明します。"
-ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
+ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD を使用して SharePoint サーバーの認証
 
@@ -67,7 +67,7 @@ Azure AD を SharePoint サーバーの 2016年の id プロバイダーとし�
 
 ## <a name="step-1-create-a-new-azure-ad-directory-or-use-your-existing-directory"></a>ステップ 1: 作成、新しい Azure AD ディレクトリか、既存のディレクトリを使用します。
 
-Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) では、新しいディレクトリを作成します。組織名、最初のドメイン名、および国や地域を提供します。
+Azure ポータル ([https://portal.azure.com](https://portal.azure.com))、新しいディレクトリを作成します。組織名、最初のドメイン名、および国や地域を提供します。
 
 ![ディレクトリを作成します。](images/SAML11/fig2-createdirectory.png) 
 
@@ -89,7 +89,7 @@ IIS でサイトのバインド用の証明書を構成する SharePoint ファ�
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>手順 3: Azure AD で新しいエンタープライズ アプリケーションを作成します。
 
-1. Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) では、Azure AD ディレクトリを開きます。**エンタープライズ ・ アプリケーション**をクリックし、[**新しいアプリケーション**] をクリックします。**非ギャラリー アプリケーション**を選択します。*SharePoint SAML の統合*などの名前を指定し、[**追加**] をクリックします。</br>![新しいギャラリーではないアプリケーションを追加します。](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) で、Azure AD ディレクトリを開きます。**エンタープライズ ・ アプリケーション**をクリックし、[**新しいアプリケーション**] をクリックします。**非ギャラリー アプリケーション**を選択します。*SharePoint SAML の統合*などの名前を指定し、[**追加**] をクリックします。</br>![新しいギャラリーではないアプリケーションを追加します。](images/SAML11/fig5-addnongalleryapp.png)</br>
 2. アプリケーションを構成するのにはナビゲーション ウィンドウで 1 つの記号でリンクをクリックします。**SAML ベース サインオン**SAML の構成アプリケーションのプロパティを表示するには、**シングル ・ サインオン ・ モード**のドロップダウン リストを変更します。次のプロパティを構成します。</br>
     - 識別子:`urn:sharepoint:portal.contoso.local`
     - 返信の URL:`https://portal.contoso.local/_trust/default.aspx`
@@ -144,7 +144,7 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 2. リボンでは、[**認証プロバイダー** ] をクリックしを使用するゾーンを選択します。
 3. **信頼できる Id プロバイダー**を選択し、登録した*AzureAD*をという名前を識別するプロバイダーを選択します。  
 4. サインイン ページの URL の設定では、**ユーザー設定のサインイン ページ**を選択し、"/_trust/"の値を提供します。 
-5. **[OK]** をクリックします。
+5. [ **OK**] をクリックします。
 
 ![認証プロバイダーを構成します。](images/SAML11/fig10-configauthprovider.png)
 
@@ -159,7 +159,7 @@ Azure AD にログインし、SharePoint にアクセスするユーザーには
  
 ユーザーは Azure AD は、のアクセス許可が与えられてが、また、SharePoint のアクセス許可を与える必要があります。Web アプリケーションにアクセスするのにアクセス許可を設定するのにには、次の手順を使用します。
 
-1. サーバーの全体管理では、**アプリケーション構成の管理**をクリックします。
+1. サーバーの全体管理で、[ **アプリケーション構成の管理**] をクリックします。
 2. [ **アプリケーション構成の管理**] ページの [ **Web アプリケーション**] セクションで、[ **Web アプリケーションの管理**] をクリックします。
 3. 適切な Web アプリケーションをクリックし、[ **ユーザー ポリシー**] をクリックします。
 4. Web アプリケーションのポリシー]、 **[ユーザーの追加**をクリックします。</br>![その名の要求によって、ユーザーの検索](images/SAML11/fig11-searchbynameclaim.png)</br>
@@ -172,7 +172,7 @@ Azure AD にログインし、SharePoint にアクセスするユーザーには
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>手順 6: Azure AD で SAML 1.1 トークンの発行ポリシーを追加します。
 
-ポータルで AD の Azure アプリケーションが作成されると、SAML 2.0 を使用して既定になります。SharePoint サーバー 2016年には、SAML 1.1 トークン形式が必要です。次のスクリプトは SAML 2.0 の既定のポリシーを削除し、問題の SAML 1.1 トークンに新しいポリシーを追加します。このコードでは、付属の[Azure Active Directory のグラフとの対話を示すサンプル](https://github.com/kaevans/spsaml11/tree/master/scripts)をダウンロードする必要があります。
+ポータルで AD の Azure アプリケーションが作成されると、SAML 2.0 を使用して既定になります。SharePoint サーバー 2016年には、SAML 1.1 トークン形式が必要です。次のスクリプトは SAML 2.0 の既定のポリシーを削除し、問題の SAML 1.1 トークンに新しいポリシーを追加します。このコードでは、付属の[Azure Active Directory のグラフとの対話を示すサンプル](https://github.com/kaevans/spsaml11/tree/master/scripts)をダウンロードする必要があります。 
 
 
 ```
@@ -183,8 +183,9 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+> 実行するのには重要であることに注意してください、`Import-Module`コマンドを次の使用例に示すようにします。これは、表示されるコマンドを含む依存するモジュールをロードします。これらのコマンドを正常に実行するのには管理者特権のコマンド プロンプトを開きする必要があります。
 
-Azure AD でトークンの発行ポリシーの詳細については、[ポリシーの操作のためのグラフの API リファレンス](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)を参照してください。
+次の PowerShell コマンドの例では、グラフの API に対してクエリを実行する方法の例を示します。Azure AD でトークンの発行ポリシーの詳細については、[ポリシーの操作のためのグラフの API リファレンス](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy)を参照してください。
 
 ## <a name="step-7-verify-the-new-provider"></a>手順 7: 新しいプロバイダーを確認します。
 
@@ -210,9 +211,16 @@ New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
 
+## <a name="fixing-people-picker"></a>ユーザー選択ウィンドウを修正します。
+Azure AD からの id を使用して SharePoint 2016 には、ユーザーはログオンできますようになりましたが、ユーザー エクスペリエンスの改善の機会はまだあります。たとえば、ユーザーを検索すると、ユーザー選択ウィンドウで複数の検索結果が表示されます。要求のマッピングで作成された 3 つのクレームの種類ごとに検索結果があります。ユーザー選択ウィンドウを使用してユーザーを選択するには、必要があるには、ユーザー名を正確に入力し、**名前**要求の結果を選択します。
 
+![クレームの検索結果](images/SAML11/fig16-claimssearchresults.png)
 
-## <a name="additional-resources"></a>追加リソース
+スペル ミスにつながることが、検索する値の検証がないか要求の**姓**などを割り当てるの種類を誤って、間違った選択をするユーザーを要求します。正常にリソースへのアクセスをこのユーザーを防ぐことができます。
+
+このシナリオでは、支援するのには、オープン ソース ソリューションが SharePoint 2016 のカスタム クレーム プロバイダーを提供する[AzureCP](https://yvand.github.io/AzureCP/)と呼ばれます。Azure AD グラフを使用すると、解決するにはどのようなユーザーを入力し、実行してが検証されます。[AzureCP](https://yvand.github.io/AzureCP/)で詳しく説明します。 
+
+## <a name="additional-resources"></a>その他の技術情報
 
 [WS-Federation について](https://go.microsoft.com/fwlink/p/?linkid=188052)
   
