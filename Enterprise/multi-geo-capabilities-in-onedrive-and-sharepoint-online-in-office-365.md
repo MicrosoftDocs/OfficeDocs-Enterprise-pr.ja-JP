@@ -1,26 +1,26 @@
 ---
-title: "OneDrive の複数地域機能および Office 365 の SharePoint Online"
+title: OneDrive の複数地域機能および Office 365 の SharePoint Online
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 1/24/2018
+ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: "OneDrive と SharePoint Online での複数地域の機能により、組織は複数の地域や国に加え、既存のテナントに、Office 365 のプレゼンスを展開できます。"
-ms.openlocfilehash: d53da13d5a6a6d5add9da69a3bca9fcdfa39bbd0
-ms.sourcegitcommit: 38d43444cf5e03527aa75f670efb2de0f48f847d
+description: OneDrive と SharePoint Online での複数地域機能を備えた複数の地理的な領域に、Office 365 のプレゼンスを展開します。
+ms.openlocfilehash: 7387b267cbc925916b600a112d6911c97a971c36
+ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive の複数地域機能および Office 365 の SharePoint Online
 
 OneDrive の複数地域機能と SharePoint Online を使用すれば、組織はその組織の Office 365 のプレゼンスを、その既存のテナント内の複数の地域または国に対して展開することができます。この機能は現在プレビューの段階です。お客様の Microsoft アカウント チームと連絡を取って、OneDrive の複数地域プレビューを入手するためにお客様の多国籍の企業をサインアップしてください。
   
-OneDrive 複数の地域でのプロビジョニングしデータ常駐サービスの要件を満たすために選択した地域の場所にデータの両方を格納して、従業員に最新の生産性エクスペリエンスをグローバルの展開のロックを解除を同時にできます。
+OneDrive 複数の地域でのプロビジョニングしデータ常駐サービスの要件を満たすために選択した地域の場所にデータを格納して、従業員に最新の生産性エクスペリエンスをグローバルの展開のロックを解除を同時にできます。
   
 複数地域の機能による組織にとってのメリットを以下に示します。
   
@@ -40,9 +40,7 @@ OneDrive 複数の地域でのプロビジョニングしデータ常駐サー�
     
 - 地域のオンプレミス データを Office 365 の複数地域テナントに統合する。
     
-詳細については、およびデモを参照するには、 [Office 365 の機能を複数の地域の導入とそれを構成する方法](https://youtu.be/3d9-Vt2fArk)」および「[複数地域の概要のポスター](https://technet.microsoft.com/library/dn782272.aspx)を参照してください。
-  
-複数地域構成では、Office 365 テナントは「既定の位置」とも呼ばれる中央の場所と、1 つ以上のサテライトの地理的な場所から構成されます。複数地域の重要な概念は、単一のテナントが複数の地理的な場所全体に及ぶことです。複数地域テナント内では、地理的な場所、グループ、およびユーザー情報に関する情報が、Azure Active Directory (AAD) 内でマスター管理されます。テナント情報が集中的にマスター管理され、個々の地理的な場所に同期されるので、その企業のすべてのユーザーが関わる共有とエクスペリエンスにグローバルな情報が含まれています。
+構成では、複数地域、Office 365 テナントを中央の場所 (既定の場所とも呼ばれます) と 1 つまたは複数のサテライト地域のオフィスで構成されます。複数地域の重要な概念は、単一のテナントにまたがっているいずれかの間で複数の地域の場所です。複数地域のテナントでは、geo の場所、グループ、およびユーザーの情報に関する情報は Azure Active Directory (AAD) でを習得です。テナントについては、集中的にマスターで、各地域の場所に同期するための共有と経験、会社からのすべてのユーザーに関連するが含まれているグローバル認識します。
   
 ## <a name="sample-multi-geo-tenant-configuration"></a>複数地域のテナント構成の例
 
@@ -54,7 +52,7 @@ OneDrive 複数の地域でのプロビジョニングしデータ常駐サー�
 
 複数地域の構成は次のように簡単です。
   
-1. 複数地域用に Office 365 テナントを有効にします。
+1. _Office 365 の機能を複数の地域_のサービス プランを追加するのには、アカウント ・ チームと協力します。必要なライセンス数を追加するには説明します。
     
 2. サテライトの場所を追加します。
     
@@ -72,8 +70,6 @@ OneDrive の複数地域は、現在次の地域と国で提供されていま�
     
 - 欧州連合 (EMEA)
     
-- インド
-    
 - 日本
     
 - 英国
@@ -81,20 +77,12 @@ OneDrive の複数地域は、現在次の地域と国で提供されていま�
 - 米国 (北アメリカ)
     
 - 韓国
-    
-> [!NOTE]
-> インドと韓国は、現在それらの地理的な場所内にライセンスと請求先の住所を持つお客様のみ利用できます。 
-  
+      
 今後提供予定の地理的な場所:
   
 - フランス
+- インド
     
-利用できるサービス:
-  
-- Exchange Online (プレビュー中)
-    
-- OneDrive for Business (プレビュー中)
-    
-- SharePoint Online (開発中)
-    
+## <a name="getting-started"></a>作業の開始
 
+開始する OneDrive を持つ複数の地域のビジネス、最初のステップは、[複数の地域のビジネス環境で、OneDrive を計画](plan-for-multi-geo.md)することです。次へ] は、[複数地域の環境を管理する方法について説明](administering-a-multi-geo-environment.md)、および[、ユーザーが複数の地域の環境を発生する方法](multi-geo-user-experience.md)です。OneDrive のビジネス マルチ ・地域、[複数地域でのテナントを構成する](multi-geo-tenant-configuration.md)ように設定する準備ができたら、[既存の OneDrive サイトの新しい地域の位置を移動](move-onedrive-between-geo-locations.md)し、[検索を設定](configure-search-for-multi-geo.md)します。
