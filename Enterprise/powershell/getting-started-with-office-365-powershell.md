@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell の概要"
+title: Office 365 PowerShell の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "概要:Office 365 PowerShell の重要性を理解し、Office 365 テナントに接続し、ヘルプを取得します。"
+description: 概要:Office 365 PowerShell の重要性を理解し、Office 365 テナントに接続し、ヘルプを取得します。
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

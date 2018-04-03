@@ -1,5 +1,5 @@
 ---
-title: "セキュリティ ソリューション"
+title: セキュリティ ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
-description: "概要: これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。"
+description: '概要: これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。'
 ms.openlocfilehash: 6ba8b623d4073b611a5123e01e7cf5819bd34e4a
 ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: HT

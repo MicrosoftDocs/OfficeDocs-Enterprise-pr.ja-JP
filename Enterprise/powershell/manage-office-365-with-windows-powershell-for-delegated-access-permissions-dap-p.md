@@ -1,5 +1,5 @@
 ---
-title: "委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 を管理する"
+title: 委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 を管理する
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: "概要:シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナー は Windows PowerShell を使用して Office 365 の顧客テナントを管理できます。"
+description: 概要:シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナー は Windows PowerShell を使用して Office 365 の顧客テナントを管理できます。
 ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT

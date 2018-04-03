@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell による Office 365 の管理"
+title: Office 365 PowerShell による Office 365 の管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: "概要:Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online でOffice 365 PowerShell を使用する方法について説明します。"
+description: 概要:Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Microsoft Exchange Online でOffice 365 PowerShell を使用する方法について説明します。
 ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
