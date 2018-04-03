@@ -1,5 +1,5 @@
 ---
-title: "委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する"
+title: 委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
-description: "概要:リモート Windows PowerShell で DelegatedOrg パラメーターを使用して、Exchange Online に接続します。"
-ms.openlocfilehash: 857c97e5d3374f293b98298419932af4ce2dfa19
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: 概要:リモート Windows PowerShell で DelegatedOrg パラメーターを使用して、Exchange Online に接続します。
+ms.openlocfilehash: d8cbb6640419ba2f1de868ae88b0a273c3f71ae7
+ms.sourcegitcommit: f3f81d2c2e8290948d93f3f787a679c804840256
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
 
@@ -40,11 +40,11 @@ ms.lasthandoff: 01/11/2018
     
   - Windows Server 2008 R2 SP1*
     
-    * .NET Framework 4.5.1 や .NET Framework 4.5 をインストールしてから、Windows Management Framework 3.0 と Windows Management Framework 4.0 のどちらかをインストールする必要があります。詳しくは、次のリソースをご覧ください。
+    \* .NET Framework 4.5.1 や .NET Framework 4.5 をインストールしてから、Windows Management Framework 3.0 と Windows Management Framework 4.0 のどちらかをインストールする必要があります。詳しくは、次のリソースをご覧ください。
     
-  - [.NET Framework のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)
+    - [.NET Framework のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)
     
-  - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) か[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
+    - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) または [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
     
 - このトピックの手順に適用されるキーボード ショートカットについては、「[Exchange 管理センターのキーボード ショートカット](https://go.microsoft.com/fwlink/p/?LinkId=534017)」をご覧ください。
     
