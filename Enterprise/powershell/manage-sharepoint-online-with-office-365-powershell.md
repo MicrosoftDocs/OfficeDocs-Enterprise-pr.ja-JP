@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell を使用して SharePoint Online を管理する"
+title: Office 365 PowerShell を使用して SharePoint Online を管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: "概要:Office 365 PowerShell を使って SharePoint Online ユーザー、グループ、サイト グループを管理します。"
+description: 概要:Office 365 PowerShell を使って SharePoint Online ユーザー、グループ、サイト グループを管理します。
 ms.openlocfilehash: d92ddfa82c0d21b9de16439ef1d0108eed6ab63f
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell を使用して Skype for Business Online を管理する"
+title: Office 365 PowerShell を使用して Skype for Business Online を管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: "概要:Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。"
+description: 概要:Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
 ms.openlocfilehash: 16780c59ec6138ca3252114dd119d083cd9ff73a
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT

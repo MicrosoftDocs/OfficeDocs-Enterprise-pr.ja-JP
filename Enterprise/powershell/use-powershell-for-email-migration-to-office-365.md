@@ -1,5 +1,5 @@
 ---
-title: "Office 365 へのメールの移行に PowerShell を使う"
+title: Office 365 へのメールの移行に PowerShell を使う
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: "概要:Windows PowerShell を使用して Office 365 に電子メールを移行する方法について説明します。"
+description: 概要:Windows PowerShell を使用して Office 365 に電子メールを移行する方法について説明します。
 ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT

@@ -1,5 +1,5 @@
 ---
-title: "Windows PowerShell を使用して Office 365 でレポートを作成する"
+title: Windows PowerShell を使用して Office 365 でレポートを作成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "概要:Office 365 PowerShell を使用して、Office 365 管理センターでは作成できないレポートを作成します。"
+description: 概要:Office 365 PowerShell を使用して、Office 365 管理センターでは作成できないレポートを作成します。
 ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT

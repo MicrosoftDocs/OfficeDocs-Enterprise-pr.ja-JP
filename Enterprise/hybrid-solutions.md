@@ -1,5 +1,5 @@
 ---
-title: "ハイブリッド ソリューション"
+title: ハイブリッド ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: "概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。"
+description: '概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。'
 ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
 ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
 ms.translationtype: HT
