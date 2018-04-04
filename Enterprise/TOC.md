@@ -73,7 +73,6 @@
 #### [地域の場所を削除します。](delete-a-geo-location.md)
 #### [マルチ地域環境でのユーザー エクスペリエンス](multi-geo-user-experience.md)
 ### [ビジネスの複数の地域の OneDrive を構成します。](multi-geo-tenant-configuration.md)
-### [ビジネスの複数の地域の OneDrive の検索を構成します。](configure-search-for-multi-geo.md)
 ### [OneDrive ライブラリを別の地理的な場所に移動します。](move-onedrive-between-geo-locations.md)
 ## [セキュリティ ソリューション](security-solutions.md)
 ### [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
