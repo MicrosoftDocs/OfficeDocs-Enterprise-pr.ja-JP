@@ -1,5 +1,5 @@
 ---
-title: "Azure IaaS のハイブリッド クラウド シナリオ"
+title: Azure IaaS のハイブリッド クラウド シナリオ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: "概要: ハイブリッド アーキテクチャと理解シナリオのインフラストラクチャのサービス (IaaS) としてのベースで、Azure クラウド サービスです。"
-ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '概要: ハイブリッド アーキテクチャと理解シナリオのインフラストラクチャのサービス (IaaS) としてのベースで、Azure クラウド サービスです。'
+ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウド シナリオ
+# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウドのシナリオ
 
  **の概要:**サービス (IaaS) としてマイクロソフトのインフラストラクチャのハイブリッド アーキテクチャとシナリオを理解するので、Azure クラウド サービスをベースです。
   
@@ -179,8 +179,6 @@ Azure 内の複数の層、および高可用性の LOB アプリケーション
 これらのその他のリソースを参照してください。
   
 - [ハイブリッド クラウド環境の構築](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [クラウド マイクロソフト仮想アカデミー コースのページに、データ センターを拡張します。](https://mva.microsoft.com/en-US/training-courses/extend-your-datacenter-to-the-cloud-13908?l=7fG3tAouB_7100115881)
     
 - [設計して、Azure で LOB アプリケーションを作成](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     

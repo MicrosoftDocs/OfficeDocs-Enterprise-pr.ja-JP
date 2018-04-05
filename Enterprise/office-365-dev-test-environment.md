@@ -1,9 +1,9 @@
 ---
-title: "Office 365 開発/テスト環境"
+title: Office 365 開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: "概要: ガイドを使用してこのテスト ラボの評価や開発/テスト用の Office 365 の試用版サブスクリプションを作成します。"
-ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: '概要: ガイドを使用してこのテスト ラボの評価や開発/テスト用の Office 365 の試用版サブスクリプションを作成します。'
+ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 
@@ -57,17 +57,17 @@ Azure サブスクリプションを必要があります。この構成では�
 
 Office 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
   
-1. 必須ではありませんが、会社名は、Microsoft のコンテンツのサンプルで使用されている架空の会社である contoso 社の会社名のバリエーションを使用するをお勧めします。ここでは、架空の会社名を記録する: ___
+1. 必須ではありませんが、会社名は、Microsoft のコンテンツのサンプルで使用されている架空の会社である contoso 社の会社名のバリエーションを使用するをお勧めします。ここでは、架空の会社名を記録する: ___。
     
-2. 、新しい Microsoft アカウントにサインアップするには、 [https://outlook.com](https://outlook.com)に移動し、新しい電子メール アカウントとアドレスを持つアカウントを作成します。Office 365 にサインアップするには、このアカウントを使用します。
+2. 新しい Microsoft アカウントにサインアップするには[https://outlook.com](https://outlook.com)と、新しい電子メール アカウントとアドレスを持つアカウントを作成します。Office 365 にサインアップするには、このアカウントを使用します。
     
-  - ここに新しいアカウントの姓名を記録してください: _______________________________
+  - ここで新しいアカウントの最初と最後の名前を記録する: ___。
     
   - ここに新しい電子メール アカウントのアドレスを記録してください: _____________________________@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
-1. 軽量の Office 365 の開発/テスト環境では、お使いのコンピューター上のインターネット ブラウザーを開くし、 [https://aka.ms/e5trial](https://aka.ms/e5trial)に移動します。 
+1. 軽量の Office 365 の開発/テスト環境では、お使いのコンピューター上のインターネット ブラウザーを開くし、には、 [https://aka.ms/e5trial](https://aka.ms/e5trial)。 
     
     シミュレートされたエンタープライズ Office 365 の開発/テスト環境。
     
@@ -84,7 +84,7 @@ Stop-Process -Name Explorer -Force
     > [!TIP]
     > クリックして[ここでは](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)この資料ですべての PowerShell コマンドを含むテキスト ファイルを取得します。
   
-  - 開始] 画面で、[ **Internet Explorer** ] をクリックし、 [https://aka.ms/e5trial](https://aka.ms/e5trial)に移動します。
+  - 開始画面から、[ **Internet Explorer** ] をクリックし、 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
 2. [**ようこそ、認識するようにするを取得**] ページで次のコマンドを指定します。
     
@@ -106,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
     入力したパスワードを安全な場所に記録してください。
     
-    と**組織名**をここに参照される、架空の会社名を記録する: ___
+    と**組織名**をここに参照される、架空の会社名を記録する: ___。
     
 5. **自分のアカウントを作成する**] をクリックします。
     
@@ -114,7 +114,7 @@ Stop-Process -Name Explorer -Force
     
 7. 受信したテキスト メッセージを検証コードを入力し、[**次へ**] をクリックします。
     
-8. ここにサインイン ページの URL を記録してください (選択してコピー): ___________________________________________
+8. サインイン ページの URL は、ここ (選択およびコピー) を記録する: ___。
     
 9. ここにユーザー IDを記録してください (選択してコピー): __________________________________.onmicrosoft.com
     
@@ -260,17 +260,17 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 本番サイトの URL: https://___.sharepoint.com/sites/production
+  - 本番サイトの URL:https://______________________________________________.sharepoint.com/sites/production
     
-  - Sales サイトの URL: https://______________________________________________.sharepoint.com/sites/sales
+  - 販売サイトの URL:https://______________________________________________.sharepoint.com/sites/sales
     
-  - Support サイトの URL: https://______________________________________________.sharepoint.com/sites/support
+  - サイトの URL をサポートしてください。https://______________________________________________.sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>次の手順
 
 Office 365 の開発/テスト環境を構築するのに、これらの追加記事を使用します。
   
-- [Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 の開発/テスト環境のディレクトリの同期](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [Office 365 開発/テスト環境用の多要素認証](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     

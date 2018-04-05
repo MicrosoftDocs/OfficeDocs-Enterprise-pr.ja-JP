@@ -1,9 +1,9 @@
 ---
-title: "Office 365 開発/テスト環境の DirSync"
+title: Office 365 の開発/テスト環境のディレクトリの同期
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,31 +16,29 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: "概要: Office 365 の開発/テスト環境のディレクトリ同期を構成します。"
-ms.openlocfilehash: 8a656ea742af642a8b4dc3e096764f0e8cbde074
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: Office 365 の開発/テスト環境のディレクトリ同期を構成します。'
+ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="dirsync-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の DirSync
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境のディレクトリの同期
 
  **の概要:**Office 365 の開発/テスト環境のディレクトリ同期を構成します。
   
-多くの組織は、Azure AD Connect とディレクトリ同期 (DirSync) を使用して、オンプレミスの Windows Server Active Directory (AD) フォレスト内のアカウントのセットを Office 365 内のアカウントのセットに同期しています。この記事では、Office 365 の開発/テスト環境にパスワード同期を伴う DirSync を追加する方法について説明します。最終的な構成は、次のとおりになります。
+多くの組織 Azure AD 接続および Office 365 のアカウントのセットに、オンプレミスの Windows サーバー ・ Active Directory (AD) フォレストのアカウントの設定を同期するディレクトリ同期します。この資料を追加する方法パスワード ハッシュの同期とのディレクトリ同期を Office 365 の開発/テスト環境では、次の構成の結果について説明します。
   
-![DirSync を使用した Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![ディレクトリ同期によって Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 この構成は、次の内容で成立します。  
   
 - Office 365 E5 試用版サブスクリプション。このサブスクリプションは、作成時から 30 日で有効期限が切れます。
-    
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成されます。Azure AD Connect は、Windows Server AD ドメインを Office 365 に同期するために APP1 で実行します。
     
 この開発/テスト環境は、次に示す 2 つのフェーズで構成します。
   
 1. Office 365 の開発/テスト環境を作成します (Azure 仮想ネットワーク内の仮想マシン DC1、APP1、および CLIENT1 と、Office 365 E5 試用版サブスクリプションによる環境)。
-    
 2. APP1 に Azure AD Connect をインストールして構成します。
     
 > [!TIP]
@@ -56,7 +54,6 @@ ms.lasthandoff: 02/14/2018
 この構成は、次の内容で成立します。  
   
 - Office 365 E5 試用版サブスクリプション。
-    
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>フェーズ 2: APP1 に Azure AD Connect をインストールする
@@ -76,7 +73,7 @@ Stop-Process -Name Explorer -Force
 
   ```
 
-3. タスク バーから [ **Internet Explorer** ] をクリックし、 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)に移動します。
+3. タスク バーから [ **Internet Explorer** ] をクリックしには、 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
     
 4. Microsoft Azure Active Directory に接続] ページで、[**ダウンロード**] をクリックし、[**実行**] をクリックします。
     
@@ -94,13 +91,13 @@ Stop-Process -Name Explorer -Force
     
 11. [**構成の完了**] ページで [**終了**] をクリックします。
     
-12. Internet Explorer のでは、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、Office 365 試用版サブスクリプションのグローバル管理者アカウントでサインインします。
+12. Internet Explorer、Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
     
 13. ポータルのメイン ページで、 **[管理]** をクリックします。
     
 14. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
     
-    **User1**をという名前のアカウントに注意してください。このアカウントは CORP Windows サーバーの AD ドメインとは、ディレクトリ同期が動作していたことの証明です。
+    **User1**をという名前のアカウントに注意してください。このアカウント CORP Windows サーバーの AD ドメインからは、ディレクトリ同期が正常に動作した証拠です。
     
 15. **User1**アカウントをクリックします。製品のライセンスの [**編集**] をクリックします。
     
@@ -108,31 +105,25 @@ Stop-Process -Name Explorer -Force
     
 最終的な構成を示します。
   
-![DirSync を使用した Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![ディレクトリ同期によって Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 この構成は、次の内容で成立します。  
   
 - Office 365 E5 試用版サブスクリプション。
-    
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。Azure AD Connect は APP1 上で実行され、CORP Windows Server AD ドメインを 30 分ごとに Office 365 に同期します。
     
 ## <a name="next-step"></a>次のステップ
 
-組織のディレクトリ同期を展開する準備ができたら、[展開 Office 365 ディレクトリ同期 (DirSync) で、Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)を参照してください。
+組織のディレクトリ同期を展開する準備ができたら、 [Microsoft Azure で Office 365 の展開ディレクトリの同期](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[基本構成開発/テスト環境](base-configuration-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境](office-365-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境の Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境の Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入のテスト ラボ ガイドの (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[の開発/テスト環境の基本構成](base-configuration-dev-test-environment.md)
+[の開発/テスト環境を Office 365](office-365-dev-test-environment.md)
+[、Office 365 の開発/テスト環境のクラウド アプリケーションのセキュリティ](cloud-app-security-for-your-office-365-dev-test-environment.md)
+ [Office 365 の開発/テスト環境の脅威保護を高度な](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[クラウドを採用しハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
 
 
