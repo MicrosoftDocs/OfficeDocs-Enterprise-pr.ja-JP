@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise 開発/テスト環境"
+title: Microsoft 365 Enterprise 開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: "概要: は、Office 365 の E5 とエンタープライズ モビリティ + セキュリティ (EMS) E5 と 10 企業の Windows を実行するコンピューターを含む、開発/テスト環境を作成するのには、このテスト ラボ ガイド 』 を使用します。"
-ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: は、Office 365 の E5 とエンタープライズ モビリティ + セキュリティ (EMS) E5 と 10 企業の Windows を実行するコンピューターを含む、開発/テスト環境を作成するのには、このテスト ラボ ガイド 』 を使用します。'
+ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 開発/テスト環境
 
@@ -44,7 +44,8 @@ ms.lasthandoff: 02/14/2018
   
 1. プライベートのインターネット ブラウザーのインスタンスを表示するには、グローバル管理者アカウントの資格情報を使用して、Office 365 ポータルにサインインします。ヘルプについては、 [Office 365 にサインインするための場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)を参照してください。
     
-2. **[管理者]** タイルをクリックします。
+2. 
+            **[管理]** タイルをクリックします。
     
 3. ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
     
@@ -63,12 +64,11 @@ ms.lasthandoff: 02/14/2018
 > [!NOTE]
 > Enterprise Mobility + Security E5 試用版サブスクリプションの試用期間は 90 日間です。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。 
   
- ***第 3 段階を完了する場合***[Office 365 の開発/テスト環境](office-365-dev-test-environment.md)手順 8 と 9 の前の手順のすべての他のアカウント (ユーザー 2、3 のユーザー、ユーザー 4、およびユーザーの 5)。
+ ***の第 3 段階を完了する場合、***[Office 365 の開発/テスト環境](office-365-dev-test-environment.md)手順 8 と 9 の前の手順のすべての他のアカウント (ユーザー 2、3 のユーザー、ユーザー 4、およびユーザーの 5)。
   
 開発/テスト環境には、以下が含まれるようになりました。
   
 - Office 365 E5 Enterprise と EMS の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ組織および同じ Azure AD テナントを共有している。
-    
 - Office 365 の E5 と E5 の EMS を使用するのには、すべての適切なユーザー アカウント (グローバル管理者のみまたはすべての 5 つのユーザー アカウント) が有効になります。
     
 図 2 は、EMS が追加された結果的な構成を示しています。
@@ -91,7 +91,7 @@ ms.lasthandoff: 02/14/2018
   
 ### <a name="virtual-machine-in-azure"></a>Azure での仮想マシン
 
-***Visual Studio ベースのサブスクリプションを持つ必要があります***、Windows の 10 企業のイメージへのアクセスを持っている、Microsoft Azure で 10 の Windows 仮想マシンを作成します。Azure サブスクリプションの場合、試用版と有料のサブスクリプションなどの他の種類では、このイメージへのアクセスを必要はありません。
+Azure のギャラリーのイメージを使用して Microsoft Azure では、10 の Windows 仮想マシンを作成します。
   
 > [!NOTE]
 > 次のコマンド セットは、Azure の PowerShell の te の最新バージョンを使用します。[Azure の PowerShell コマンドレットの入門](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)を参照してください。WIN10 とすべてのリソース グループ、ストレージ アカウント、および仮想ネットワークを含め、必要なインフラストラクチャは、これらのコマンド セットのビルド 10 企業の Windows 仮想マシンの名前。Azure インフラストラクチャ サービスに慣れている場合は、展開済みのインフラストラクチャに合わせて、次の手順に対応してください。 
@@ -131,27 +131,6 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-リソース マネージャー ベースの仮想マシンでは、リソース マネージャー ・ ベースのストレージ アカウントが必要です。ストレージ アカウントは、*小文字の英字と数字のみを含む*のグローバルに一意の名前を選択する必要があります。既存のストレージ アカウントを一覧表示するのには、このコマンドを使用できます。
-  
-```
-Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
-```
-
-提案されるストレージ アカウントの名前が一意かどうかをテストするには、このコマンドを使用します。
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-これらのコマンドを使用して、新しいテスト環境に新しいストレージ アカウントを作成します。
-  
-```
-$rgName="<your new resource group name>"
-$saName="<storage account name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 次に、これらのコマンドを使用して新しい仮想ネットワークと WIN10 仮想マシンを作成します。ダイアログ ボックスが表示されたら、WIN10 の名前とローカル管理者アカウントのパスワードを指定し、これらを安全な場所に保存します。
   
 ```
@@ -165,19 +144,17 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 $pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
-$storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftVisualStudio -Offer Windows -Skus Windows-10-N-x64 -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + "vhds/WIN10-TestLab-OSDisk.vhd"
-$vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -CreateOption fromImage
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>フェーズ 4:Windows 10 のコンピューターを Azure AD に参加させる
 
-物理マシンまたは仮想マシンを作成すると、Windows 10 Enterprise が構成され、実行されるので、ローカル管理者アカウントでサインインします。
+物理または仮想マシンで Windows の 10 のエンタープライズを作成すると後、は、ローカルの管理者アカウントでサインインします。
   
 > [!NOTE]
 > Azure のバーチャル マシンでは、[次の手順](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)を使用して接続します。ローカル管理者アカウントの資格情報でサインインします。 
@@ -196,7 +173,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 6. [設定] ウィンドウを閉じます。
     
-次に、WIN10 コンピューターに Office 2016 をインストールします。
+WIN10 コンピューター上で Office 2016 を次に、インストールします。
   
 1. マイクロソフトのエッジのブラウザーが開き、グローバル管理者アカウントの資格情報を使用して、Office 365 ポータルにサインインします。ヘルプについては、 [Office 365 にサインインするための場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)を参照してください。
     
@@ -228,10 +205,8 @@ Microsoft 365 Enterprise の機能について確認するには、これらの�
     
 ## <a name="see-also"></a>関連項目
 
-[1 つのマイクロソフトのクラウド開発/テスト環境](the-one-microsoft-cloud-dev-test-environment.md)
+- [Microsoft 365 エンタープライズ ドキュメント](https://docs.microsoft.com/microsoft-365-enterprise/)
 
-[Microsoft 365 エンタープライズ ドキュメント](https://docs.microsoft.com/microsoft-365-enterprise/)
+ - [Microsoft 365 エンタープライズを展開します。](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 
-
-
-
+- [1 つのマイクロソフトのクラウド開発/テスト環境](the-one-microsoft-cloud-dev-test-environment.md)

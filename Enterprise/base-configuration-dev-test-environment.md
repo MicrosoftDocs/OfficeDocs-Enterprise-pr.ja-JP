@@ -1,9 +1,9 @@
 ---
-title: "基本構成開発/テスト環境"
+title: 基本構成開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
-description: "概要: は、Microsoft Azure で開発/テスト環境として、簡略化されたイントラネットを作成します。"
-ms.openlocfilehash: 04da1037dbebed9f9a5d2aa2fb37b03b88218839
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: は、Microsoft Azure で開発/テスト環境として、簡略化されたイントラネットを作成します。'
+ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/14/2018
 
 ![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-図 1 の基本構成開発/テスト環境は、インターネットに接続された簡略化されたプライベート イントラネットをシミュレートする、TestLab というクラウド専用 Azure 仮想ネットワーク内の企業ネットワーク サブネットで構成されています。Windows Server 2016 を実行している次の 3 つの Azure 仮想マシンが含まれます。
+図 1 の基本構成の開発/テスト環境では、クラウド専用 Azure 仮想ネットワークの名前付き、簡略化された、プライベート イントラネットがインターネットに接続をシミュレートするテスト ラボでの社内ネットワークのサブネットで構成されます。Azure の 3 つの仮想マシンが含まれています。
   
 - イントラネット ドメイン コントローラーとドメイン ネーム システム (DNS) サーバーとして構成されている DC1
     
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/14/2018
   
 - アプリケーション開発とテスト。
     
-- 独自設計の拡張されたテスト環境の初期構成としては、追加の仮想マシン、Azure のサービス、またはその他のマイクロソフトのクラウド サービス Office 365 およびエンタープライズ セキュリティ + 移動などを含みます。
+- 独自設計の拡張されたテスト環境の初期構成としては、追加の仮想マシン、Azure のサービス、またはその他のマイクロソフトのクラウド サービス Office 365 とエンタープライズ ・ セキュリティとモビリティ (EMS) などを含みます。
     
 Azure の基本構成テスト環境の設定には次の 4 つのフェーズがあります。
   
@@ -164,7 +164,7 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
   
 ### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>ローカルの管理者アカウントの資格情報を使用して DC1 に接続する
 
-1. [Azure ポータル](https://portal.azure.com)をクリックして**リソース グループ >** <the name of your new resource group> **> DC1 > 接続**。
+1. [Azure ポータル](https://portal.azure.com)をクリックして**リソース グループ >** [新しいリソース グループの名前] **> DC1 > 接続**。
     
 2. 、ダウンロードした DC1.rdp ファイルを開くし、[**接続**] をクリックします。
     
@@ -192,7 +192,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs"
+Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
 
 セーフ モードの管理者パスワードを指定する必要があります。パスワードを安全な場所に保存します。
@@ -203,7 +203,7 @@ DC1 の再起動後に、DC1 仮想マシンに再接続します。
   
 ### <a name="connect-to-dc1-using-domain-credentials"></a>ドメインの資格情報を使用して DC1 に接続する
 
-1. [Azure ポータル](https://portal.azure.com)をクリックして**リソース グループ >** <your resource group name> **> DC1 > 接続**。
+1. [Azure ポータル](https://portal.azure.com)をクリックして**リソース グループ >** [リソース グループ名] **> DC1 > 接続**。
     
 2. 、ダウンロードした DC1.rdp ファイルを実行し、[**接続**] をクリックします。
     
@@ -243,7 +243,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 APP1 は、Web サービスとファイル共有サービスを提供します。
   
-APP1 用の Azure 仮想マシンを作成するには、使用しているリソース グループの名前、Azure の場所、ストレージ アカウント名を入力し、ローカル コンピューターの Azure PowerShell コマンド プロンプトで次のコマンドを実行します。
+APP1 の Azure の仮想マシンを作成するに、リソース グループの名前を入力し、Azure の PowerShell コマンド プロンプトで、ローカル コンピューターでこれらのコマンドを実行します。
   
 ```
 $rgName="<resource group name>"
@@ -284,9 +284,9 @@ Install-WindowsFeature Web-WebServer -IncludeManagementTools
 次に、APP1 で共有フォルダーを次の PowerShell コマンドを使用して作成し、そのフォルダー内にテキスト ファイルを作成します。
   
 ```
-New-Item -path c:\\files -type directory
-Write-Output "This is a shared file." | out-file c:\\files\\example.txt
-New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
+New-Item -path c:\files -type directory
+Write-Output "This is a shared file." | out-file c:\files\example.txt
+New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ```
 
 これは、現在の構成です。
@@ -297,10 +297,7 @@ New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
 
 CLIENT1 は、Contoso イントラネット上の一般的なノート PC、タブレット、デスクトップ コンピューターとして機能します。
   
-> [!NOTE]
-> CLIENT1 を作成する次のコマンド セット Azure サブスクリプションのすべての種類の動作を行うことができます Windows Server 2016 Datacenter を実行しています。Visual Studio ベースの Azure サブスクリプションがある場合は、 [Azure ポータル](https://portal.azure.com)で、CLIENT1 実行している Windows の 10、Windows 8 の場合、または Windows 7 を作成できます。 
-  
-CLIENT1 用の Azure 仮想マシンを作成するには、使用しているリソース グループの名前、Azure の場所、ストレージ アカウント名を入力し、ローカル コンピューターの Azure PowerShell コマンド プロンプトで次のコマンドを実行します。
+CLIENT1 の Azure の仮想マシンを作成するに、リソース グループの名前を入力し、Azure の PowerShell コマンド プロンプトで、ローカル コンピューターでこれらのコマンドを実行します。
   
 ```
 $rgName="<resource group name>"
@@ -311,7 +308,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -344,7 +341,7 @@ CLIENT1 の再起動後は、CORP を使用して接続\\User1 のアカウン�
     
 4. 開始] 画面で、 **Internet Explorer**] をクリックし、[ **OK**] をクリックします。
     
-5. アドレス ・ バーでは、 **http://app1.corp.contoso.com/**を入力し、ENTER キーを押します。APP1 の既定のインターネット インフォメーション サービスの web ページを参照してくださいする必要があります。
+5. アドレス バーに、入力**http://app1.corp.contoso.com/**、し、ENTER キーを押します。APP1 の既定のインターネット インフォメーション サービスの web ページを参照してくださいする必要があります。
     
 6. デスクトップのタスクバーで [ファイル エクスプ ローラー] アイコンをクリックします。
     
@@ -363,8 +360,8 @@ Azure の基本構成は、アプリケーション開発とテスト、追加�
 > [!TIP]
 > [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Azure のテスト環境の仮想マシンのコストを最小限に抑える
 <a name="mincost"> </a>
+## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Azure のテスト環境の仮想マシンのコストを最小限に抑える
 
 テスト環境の仮想マシンを実行するコストを最小限に抑えるには、次のいずれかの操作を行います。
   
@@ -384,9 +381,7 @@ Stop-AzureRMVM -ResourceGroupName $rgName -Name "DC1" -Force
 すべての仮想マシンを停止 (割り当て解除) 状態から起動するときに正常に動作させるには、仮想マシンを次の順序で起動する必要があります。
   
 1. DC1
-    
 2. APP1
-    
 3. CLIENT1
     
 Azure PowerShell で仮想マシンを順番に起動するには、リソース グループ名を入力し、次のコマンドを実行してください。
@@ -400,16 +395,8 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>関連項目
 
-<a name="mincost"> </a>
-
-[Office 365 開発/テスト環境](office-365-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境の Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境の Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
-
-
+- [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
+- [Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)
+- [Office 365 開発/テスト環境の Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Office 365 開発/テスト環境の Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
