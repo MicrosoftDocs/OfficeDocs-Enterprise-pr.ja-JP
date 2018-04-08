@@ -1,5 +1,5 @@
 ---
-title: "高可用性フェデレーション認証のフェーズ 5Office 365 のフェデレーション認証を構成する"
+title: 高可用性フェデレーション認証のフェーズ 5Office 365 のフェデレーション認証を構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: "概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。"
-ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
+ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性フェデレーション認証のフェーズ 5:Office 365 のフェデレーション認証を構成する
 
  **概要:**Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
  
-Azure インフラストラクチャ サービスに Office 365 の高可用性フェデレーション認証を展開するために、この最後のフェーズでは、公開証明機関が発行した証明書を取得してインストールし、構成を確認してから DirSync サーバーに Azure AD Connect をインストールして実行します。Azure AD Connect は、フェデレーション認証用に Office 365 サブスクリプション、Active Directory フェデレーション サービス (AD FS)、Web アプリケーション プロキシ サーバーを構成します。
+Azure インフラストラクチャ サービスに Office 365 の高可用性のフェデレーション認証を展開するのこの最終フェーズで取得し、パブリック証明機関によって発行された証明書をインストール、構成を確認して、インストールおよび実行する Azure ADディレクトリ同期サーバーに接続します。Azure AD 接続では、Office 365 サブスクリプションと、Active Directory フェデレーション サービス (AD FS) とフェデレーションの認証のための web アプリケーションのプロキシ サーバーを構成します。
   
 すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-dirsync-server"></a>公開証明書を取得し、DirSync サーバーにコピーする
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>パブリック証明書を取得し、ディレクトリ同期サーバーにコピー
 
 次のプロパティを使用して、公開証明機関からデジタル証明書を取得します。
   
@@ -40,7 +40,7 @@ Azure インフラストラクチャ サービスに Office 365 の高可用性�
   
 フェデレーション認証の証明書要件に関する詳細については、「[フェデレーションのインストールと構成の前提条件](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)」を参照してください。
   
-証明書を受け取ったら、DirSync サーバーの C: ドライブ上のフォルダーにコピーします。たとえば、ファイル名を SSL.pfx として、DirSync サーバーの C:\\Certs フォルダーに格納します。
+証明書が表示されたら、ディレクトリ同期サーバーの c: ドライブ上のフォルダーにコピーします。たとえば、SSL.pfx ファイルの名前を指定し、c: に保存する\\ディレクトリ同期サーバー上の証明書のフォルダーです。
   
 ## <a name="verify-your-configuration"></a>構成を確認する
 
@@ -56,7 +56,7 @@ Azure インフラストラクチャ サービスに Office 365 の高可用性�
     
 - フェデレーション サービス FQDN のプライベート DNS A レコードが、AD FS サーバー用の内部の Azure ロード バランサーのプライベート IP アドレスを指している。
     
-- フェデレーション サービス FQDN に設定された SAN との SSL 接続に適した公的証明機関が発行したデジタル証明書が、DirSync サーバーに格納されている PFX ファイルである。
+- パブリック証明機関 isssued デジタル証明書、san のフェデレーション サービスに SSL 接続に適している FQDN では、ディレクトリ同期サーバーに格納されている PFX ファイルです。
     
 - 公的証明機関のルート証明書が、コンピューターとデバイスの信頼されたルート証明機関ストアにインストールされている。
     
@@ -70,9 +70,9 @@ Contoso 組織の例を、以下に示します。
 
 Azure AD Connect ツールは、次に示す手順で、フェデレーション認証用の AD FS サーバー、Web アプリケーション プロキシ サーバー、Office 365 を構成します。
   
-1. ローカル管理者特権を持つドメイン アカウントを使用して、DirSync サーバーへのリモート デスクトップ接続を作成します。
+1. ローカル管理者権限を持つドメイン アカウントを使用して、ディレクトリ同期サーバーへのリモート デスクトップ接続を作成します。
     
-2. DirSync サーバーのデスクトップから、Internet Explorer を開き、[https://aka.ms/aadconnect](https://aka.ms/aadconnect) にアクセスします。
+2. ディレクトリ同期サーバーのデスクトップをクリックし、[Internet Explorer を開くには、 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
     
 3. **[Microsoft Azure Active Directory Connect]** ページで、 **[ダウンロード]** をクリックしてから **[実行]** をクリックします。
     

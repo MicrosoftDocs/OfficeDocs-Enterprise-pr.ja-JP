@@ -1,9 +1,9 @@
 ---
-title: "Office 365 開発/テスト環境のフェデレーション ID"
+title: Office 365 開発/テスト環境のフェデレーション ID
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: "概要: Office 365 の開発/テスト環境に統合認証を構成します。"
-ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: Office 365 の開発/テスト環境に統合認証を構成します。'
+ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のフェデレーション ID
 
@@ -64,7 +64,7 @@ Azure 内の Office 365 のフェデレーション認証の運用環境の導�
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>フェーズ 1:DirSync を使用する、シミュレートされたエンタープライズ Office 365 開発/テスト環境を作成する
 
-APP1 でディレクトリ同期サーバーと Office 365 と AD の Windows サーバーとの間の同期の id と Office 365 のシミュレートされたエンタープライズ開発/テスト環境を作成するのには[、Office 365 の開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)の指示をに従ってください。DC1 上のアカウントです。
+APP1 ディレクトリ同期サーバーとしての Office 365 のシミュレートされたエンタープライズ開発/テスト環境を作成するのには[、Office 365 の開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)の指示に従って、Office 365 の間で識別情報を同期し、DC1 上で Windows Server AD のアカウントです。
   
 次に、現在のドメイン名に基づく新しいパブリック DNS ドメイン名を作成し、Office 365 サブスクリプションに追加します。名前を使用することをお勧めします**testlab。** 。\<、パブリック ・ ドメイン >。たとえば、パブリック ドメイン名が contoso.com である場合は、パブリック ・ ドメイン名の testlab.contoso.com を追加します。
   
@@ -74,9 +74,9 @@ DNS プロバイダーで、適切な DNS レコードを作成し、ドメイ�
   
 **Office 365 の開発/テスト環境の図 2: ディレクトリの同期**
 
-![DirSync を使用した Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![ディレクトリ同期によって Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-図 2 は、Office 365 開発/テスト環境の DirSync を示しています。これには、Office 365 と、Azure 仮想ネットワーク内の CLIENT1、APP1、DC1 の各仮想マシンが含まれています。
+Office 365 の開発/テスト環境では、Azure の仮想ネットワーク上の Office 365 と CLIENT1、APP1、および DC1 バーチャル マシンを含むディレクトリの synchronizationc を図 2 に示します。
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>フェーズ 2:AD FS サーバーを作成する
 
@@ -104,7 +104,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> クリックして[ここでは](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0)この資料ですべての PowerShell コマンドを含むテキスト ファイルを取得します。
+> クリックしては、[ここでは](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0)この資料ですべての PowerShell コマンドを含むテキスト ファイルです。
   
 次に、 [Azure ポータル](http://portal.azure.com)を使用して、ADFS1 のローカル管理者のアカウント名とパスワードを使用する ADFS1 の仮想マシンに接続し、Windows PowerShell コマンド プロンプトを開きます。
   
@@ -113,7 +113,7 @@ ADFS1、DC1 との間の名前解決とネットワーク通信を確認する�
 次に、ADFS1 の Windows PowerShell プロンプトで次のコマンドを使用して、ADFS1 仮想マシンを CORP ドメインに参加させます。
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -165,7 +165,7 @@ PROXY1、DC1 との間の名前解決とネットワーク通信を確認する�
 次に、PROXY1 の Windows PowerShell プロンプトで次のコマンドを使用して、PROXY1 仮想マシンを CORP ドメインに参加させます。
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -215,9 +215,9 @@ CORP を使用して、ADFS1 の仮想マシンに接続するのには、 [Azur
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
-New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\\LocalMachine\\My"
-New-Item -path c:\\Certs -type directory
-New-SmbShare -name Certs -path c:\\Certs -changeaccess CORP\\User1
+New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\LocalMachine\My"
+New-Item -path c:\Certs -type directory
+New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
 次いで、次の手順を使用して新しい自己署名証明書をファイルとして保存します。
@@ -402,7 +402,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 フェデレーション認証が機能していることを実証するには、次の操作を実行します。
   
-1. ローカル コンピューター上のブラウザーの場合は、新しいプライベート インスタンスを開き、 [https://portal.office.com](https://portal.office.com)に移動します。
+1. ローカル コンピューター上のブラウザーの場合は、新しいプライベート インスタンスを開きに移動[https://portal.office.com](https://portal.office.com)。
     
 2. **@ User1**を入力して、サインイン資格情報を\<のフェーズ 1 で作成したドメイン >。 
     
