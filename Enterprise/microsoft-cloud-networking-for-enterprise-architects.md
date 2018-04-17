@@ -1,5 +1,5 @@
 ---
-title: "エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク"
+title: エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
-description: "概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。"
-ms.openlocfilehash: 3ad510ff63ec861976804ab62c85213652415bee
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。'
+ms.openlocfilehash: 8b4a31c782abb359f521eb86fae211239bbb80d0
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
 

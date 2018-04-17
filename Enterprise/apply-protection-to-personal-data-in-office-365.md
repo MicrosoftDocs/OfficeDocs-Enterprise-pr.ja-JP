@@ -1,5 +1,5 @@
 ---
-title: "Office 365 の個人データに保護を適用する"
+title: Office 365 の個人データに保護を適用する
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- GDPR
-- Strat_O365_Enterprise
-ms.assetid: 
-description: "DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。"
-ms.openlocfilehash: e3ecb020a569cbf2cdcf50b4aead5cedf962b4d9
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
+ms.openlocfilehash: 8753ffe2b051e18e0790fba14c7a063200a74758
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 
@@ -190,7 +189,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <tr class="even">
 <td align="left">サイトとライブラリ レベルの保護 (SharePoint Online と OneDrive for Business サイトを含む)</td>
 <td align="left"><p>SharePoint と OneDrive for Business のサイトとライブラリに関するアクセス許可</p>
-<p>SharePoint Online と OneDrive for Business に関する外部共有ポリシー (サイトレベル)</p>
+<p>SharePoint Online と OneDrive for Business に関する外部共有ポリシー (サイト レベル)</p>
 <p>サイトレベルのデバイス アクセス ポリシー</p></td>
 </tr>
 <tr class="odd">
@@ -299,7 +298,8 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   [SharePoint Online 環境の外部共有を管理する](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   
+  [SharePoint Online 環境の外部共有を管理する](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/ja-JP/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 

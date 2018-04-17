@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Cloud の Contoso"
+title: Microsoft Cloud の Contoso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
-description: "概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。"
-ms.openlocfilehash: 314fc872e1c5d555b3e412b3ce709d70595aa23b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。'
+ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft Cloud の Contoso
 
