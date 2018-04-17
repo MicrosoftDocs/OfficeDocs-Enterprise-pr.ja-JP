@@ -1,5 +1,5 @@
 ---
-title: "One Microsoft Cloud 開発/テスト環境"
+title: One Microsoft Cloud 開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "概要: ガイドを使用してこのテスト ラボを含むすべてのマイクロソフトのクラウド ソリューションの開発/テスト環境を作成します。"
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: ガイドを使用してこのテスト ラボを含むすべてのマイクロソフトのクラウド ソリューションの開発/テスト環境を作成します。'
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 開発/テスト環境
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 02/14/2018
 
 このフェーズでは、EMS 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。
   
-1. いずれかのブラウザーを使用して、デスクトップ コンピューター CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインしているか。
+1. いずれかのブラウザーを使用して、デスクトップ コンピューター CLIENT1 からには、Office 365 ポータルにサインインまたは[https://portal.office.com](https://portal.office.com)のグローバル管理者アカウントの資格情報を持つ。
     
 2. 
             **[管理]** タイルをクリックします。
@@ -101,7 +100,7 @@ ms.lasthandoff: 02/14/2018
 
 このフェーズでは、Dynamics 365 試用版サブスクリプションにサインアップして、Office 365 と EMS の試用版サブスクリプションと同じ組織に追加します。
   
-1. デスクトップ コンピューターのいずれかのブラウザーを使用または、CLIENT1 からには、グローバル ・ アドミニストレータ ・ アカウントの資格情報を持つ[https://portal.office.com](https://portal.office.com)に Office 365 ポータルにサインインします。
+1. デスクトップ コンピューターのいずれかのブラウザーを使用して、CLIENT1 からには、Office 365 ポータルにサインインまたは[https://portal.office.com](https://portal.office.com)のグローバル管理者アカウントの資格情報を使用します。
     
 2. 
             **[管理]** タイルをクリックします。

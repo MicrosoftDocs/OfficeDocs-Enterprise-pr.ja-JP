@@ -1,5 +1,5 @@
 ---
-title: "SharePoint Online サイトとファイルをセキュリティで保護する"
+title: SharePoint Online サイトとファイルをセキュリティで保護する
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。"
-ms.openlocfilehash: 035c3e69a430269b382ab032387a44cc3cbbbfd6
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
+ms.openlocfilehash: 800d81d657164b2a936b95764d57fd092cfa21cc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -170,7 +169,7 @@ Azure Information Protection 暗号化が Office 365 に格納されているフ
     
 ### <a name="adding-permissions-for-external-users"></a>外部ユーザーに対するアクセス許可の追加
 
-Azure Information Protection で保護されているファイルにアクセス権を外部ユーザーに付与するためには 2 つの方法があります。どちらの場合も、外部ユーザーは Azure AD アカウントが必要です。外部ユーザーが Azure AD を使用する組織のメンバーではない場合、サインアップ ページ ([https://aka.ms/aip-signup](https://aka.ms/aip-signup)) を使用して個人で Azure AD アカウントを取得できます。
+Azure の情報保護で保護されているファイルへのアクセスを外部ユーザーに付与する 2 つの方法もあります。どちらの場合も、外部ユーザーは Azure AD アカウントに必要です。Azure AD を使用する組織のメンバーが外部のユーザー場合は、入手できる Azure AD アカウント個人としてサインアップ ページを使用して: [https://aka.ms/aip-signup](https://aka.ms/aip-signup)。
   
 - 外部ユーザーを、ラベルの保護の構成に使用する Azure AD グループに追加します。
     

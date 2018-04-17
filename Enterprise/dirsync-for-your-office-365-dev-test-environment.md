@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '概要: Office 365 の開発/テスト環境のディレクトリ同期を構成します。'
-ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境のディレクトリの同期
 

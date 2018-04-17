@@ -1,5 +1,5 @@
 ---
-title: "Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。"
+title: Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
-description: "概要: Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトを適用します。"
-ms.openlocfilehash: 808c884818a15dbc4feb8d2e3b0249926bf90b52
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトを適用します。'
+ms.openlocfilehash: a6413ac556cf63cbe7491180d65b4425cd0dba3d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。
 
@@ -34,18 +33,18 @@ Office 365 のラベルを作成し、SharePoint Online チーム サイトに�
   
 ### <a name="phase-1-determine-the-office-365-label-names"></a>フェーズ 1:Office 365 のラベル名を決定する
 
-このフェーズでは、SharePoint Online チーム サイトに適用される 4 つの情報保護レベル用に Office 365 のラベルの名前を決定します。以下の表に、レベルごとの推奨名を示します。
+このフェーズでは、SharePoint Online チーム サイトに適用される 4 レベルの情報保護用に、Office 365 ラベルの名前を決定します。 次の表は、各レベルに推奨される名前の一覧です。
   
-|**オンラインの SharePoint チーム サイトの保護レベル**|**ラベル名**|
+|**SharePoint Online チーム サイトの保護レベル**|**ラベル名**|
 |:-----|:-----|
 |ベースライン - パブリック  <br/> |内部パブリック  <br/> |
 |ベースライン - プライベート  <br/> |プライベート  <br/> |
 |機密  <br/> |機密  <br/> |
-|高機密  <br/> |高機密  <br/> |
+|非常に機密性の高い社外秘  <br/> |非常に機密性の高い社外秘  <br/> |
    
 ### <a name="phase-2-create-the-office-365-labels"></a>フェーズ 2: Office 365 のラベルを作成する
 
-このフェーズでは、さまざまな情報保護レベルに対して決定したラベルを作成し発行します。
+このフェーズでは、さまざまなレベルの情報保護について決定したラベルを作成し、発行します。
   
 ラベルを作成するには、Office 365 管理センターまたは Microsoft PowerShell を使用できます。
   
@@ -73,14 +72,14 @@ Office 365 のラベルを作成し、SharePoint Online チーム サイトに�
 
 1. [Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)のセキュリティ管理者や企業の管理者の役割を持つアカウントの資格情報を指定します。
     
-2. ラベル名をリストに記入し、PowerShell コマンド プロンプトで次のコマンドを実行します。
+2. ラベル名の一覧を入力し、PowerShell コマンド プロンプトで次のコマンドを実行します。
     
   ```
   $labelNames=@(<list of label names, each enclosed in quotes and separated by commas>)
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
-次に、次の手順を使用して新しい Office 365 のラベルを発行します。
+次に、以下の手順で新しい Office 365 ラベルを発行します。
   
 1. **ホーム > ラベル**ウィンドウ セキュリティ&amp;コンプライアンス センターでは、**ラベルの発行**] をクリックします。
     
@@ -98,17 +97,17 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 8. **[設定の確認]** ウィンドウで、 **[ラベルの発行]** をクリックしてから **[閉じる]** をクリックします。
     
-### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>フェーズ 3:Office 365 のラベルを SharePoint Online サイトに適用する 
+### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>フェーズ 3: SharePoint Online サイトに Office 365 ラベルを適用する
 
-次の手順を使用して、Office 365 のラベルを SharePoint Online チーム サイトのドキュメント フォルダーに適用します。
+以下の手順で Office 365 ラベルを SharePoint Online チーム サイトのドキュメント フォルダーに適用します。
   
-1. お使いのブラウザーの [ **Microsoft Office のホーム**] タブからは、 **SharePoint**のタイルをクリックします。
+1. ブラウザーの **Microsoft Office ホーム**のタブで、**[SharePoint]** タイルをクリックします。
     
-2. お使いのブラウザーで新しい**SharePoint** ] タブで、Office 365 ラベルが割り当てられている必要があるサイトをクリックします。
+2. ブラウザーの新しい **SharePoint** タブで、Office 365 ラベルを割り当てる必要があるサイトをクリックします。
     
-3. お使いのブラウザーの新しい SharePoint サイト] タブ、[**ドキュメント**] をクリックします。
+3. ブラウザーの新しい SharePoint サイト タブで、**[ドキュメント]** をクリックします。
     
-4. [設定] アイコンをクリックしてから、 **[ライブラリの設定]** をクリックします。
+4. 設定アイコンをクリックし、**[ライブラリの設定]** をクリックします。
     
 5. **[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。
     
@@ -116,15 +115,15 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 7. SharePoint Online サイトのタブを閉じます。
     
-8. Office 365 のラベルをさらに SharePoint Online サイトに割り当てるには、手順 3 から 8 を繰り返します。
+8. 手順 3 - 8 を繰り返して、その他の SharePoint Online サイトに Office 365 ラベルを割り当てます。
     
 最終的な構成をここに示します。
   
 ![4 種類の SharePoint Online チーム サイト用の Office 365 ラベル。](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
-## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>SharePoint Online サイト用の DLP ポリシー
+## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>SharePoint Online サイトの DLP ポリシー
 
-組織外の SharePoint Online の機密性の高いチーム サイト上のドキュメントを共有する場合にユーザーに通知する DLP ポリシーを構成するのには次の手順を使用します。
+以下の手順で、SharePoint Online の機密チーム サイト上のドキュメントを組織外と共有するときにユーザーに通知する DLP ポリシーを構成します。
   
 1. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
@@ -168,11 +167,11 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 19. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
     
-機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
+機密 SharePoint Online チーム サイトの結果の構成は次のようになります。
   
 ![機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
-次に、これらの手順を使用して、高機密 SharePoint Online チーム サイトのドキュメントを組織外と共有したときにユーザーをブロックする DLP ポリシーを構成します。
+次に、以下の手順で、SharePoint Online の非常に機密性の高い社外秘チーム サイト上のドキュメントを組織外と共有するときにユーザーをブロックする DLP ポリシーを構成します。
   
 1. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
@@ -216,13 +215,13 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 19. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
     
-高機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
+非常に機密性の高い社外秘 SharePoint Online チーム サイトの結果の構成は次のようになります。
   
 ![高機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>次の手順
 
-[Azure の情報保護と SharePoint のオンラインのファイルを保護します。](protect-sharepoint-online-files-with-azure-information-protection.md)
+[Azure Information Protection で SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)
     
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: "Office 365 の開発/テスト環境のアドバンスト eDiscovery"
+title: Office 365 の開発/テスト環境のアドバンスト eDiscovery
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "概要: は、構成して、Office 365 の開発/テスト環境でサンプル データを Office 365 の高度な電子的証拠開示を実演します。"
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: は、構成して、Office 365 の開発/テスト環境でサンプル データを Office 365 の高度な電子的証拠開示を実演します。'
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境のアドバンスト eDiscovery
 
@@ -45,11 +45,11 @@ Office 365 の高度な電子情報開示をすばやく検索して、電子メ
 
 この手順では、電子メール メッセージを作成します。このメッセージをアドバンスト eDiscovery のケースで分析することになります。
   
-1. Internet Explorer を開き、[Office 365 の開発/テスト環境](office-365-dev-test-environment.md)の第 2 フェーズで作成した Outlook のアカウントを[https://outlook.com](https://outlook.com)にサインインします。
+1. Internet Explorer を開き、サインイン[https://outlook.com](https://outlook.com)[の開発/テスト環境を Office 365](office-365-dev-test-environment.md)の第 2 フェーズで作成した Outlook のアカウントにします。
     
   - ライトウェイトの開発/テスト環境を使用している場合は、Internet Explorer のプライベート セッションを開いて、ローカル コンピューターからサインインします。
     
-  - シミュレートされたエンタープライズ開発/テスト環境を使用する場合は、CLIENT1 バーチャル マシンに接続して、CLIENT1 からサインインし、Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) を使用します。
+  - シミュレートされたエンタープライズ開発/テスト環境を使用する場合は、Azure ポータルを使用して ([https://portal.azure.com](https://portal.azure.com)) CLIENT1 バーチャル マシンに接続し、CLIENT1 からサインインします。
     
 2. **Outlook のメール**] タブで [**新規**を] をクリックします。
     
@@ -77,7 +77,7 @@ Office 365 の高度な電子情報開示をすばやく検索して、電子メ
     
 14. 右上隅で [ユーザー] アイコンをクリックし、[**サインアウト**] をクリックします。
     
-15. 新しいタブを開くし、アカウント名と、試用版サブスクリプションの User6 のアカウントのパスワードを Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+15. 新しいタブを開くし、Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com))、試用版サブスクリプションの User6 のアカウントのパスワードとアカウント名とします。
     
 16. **Office 365 ポータル**] タブで、[**メール**] をクリックします。
     

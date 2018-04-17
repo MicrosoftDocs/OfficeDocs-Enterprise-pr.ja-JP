@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection を使用して SharePoint Online ファイルを保護する"
+title: Azure Information Protection を使用して SharePoint Online ファイルを保護する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
-description: "概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。"
-ms.openlocfilehash: 0b83b3d17a9b61eac359338389051f7354fb6af4
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
+ms.openlocfilehash: 84bd1f48c7051f945e7b851f829421364de2a557
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection を使用して SharePoint Online ファイルを保護する
 
@@ -37,7 +36,7 @@ ms.lasthandoff: 02/14/2018
   
 1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. ブラウザーで別のタブで、[https://portal.azure.com](https://portal.azure.com) の Azure Portal に移動します。
+2. お使いのブラウザーの別のタブで、Azure ポータルに移動 ([https://portal.azure.com](https://portal.azure.com))。
     
 3. 初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。
     

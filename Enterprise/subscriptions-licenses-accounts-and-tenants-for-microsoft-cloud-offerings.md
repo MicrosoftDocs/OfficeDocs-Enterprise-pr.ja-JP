@@ -1,5 +1,5 @@
 ---
-title: "ライセンス、サブスクリプション、アカウント、およびマイクロソフトのクラウド サービスのテナント"
+title: ライセンス、サブスクリプション、アカウント、およびマイクロソフトのクラウド サービスのテナント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "概要: は、マイクロソフトのクラウド サービスの間で、組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナント間の関係を理解します。"
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: は、マイクロソフトのクラウド サービスの間で、組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナント間の関係を理解します。'
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>ライセンス、サブスクリプション、アカウント、およびマイクロソフトのクラウド サービスのテナント
 
@@ -150,7 +149,7 @@ Azure AD テナントは、アカウントおよびグループを収容する A
    
 Microsoft SaaS ベース サービスの場合は、Office 365 管理センターを使用すると、組織にサブスクリプションを簡単に追加できます。
   
-1. グローバル管理者アカウントを Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインし、し、[**管理**] をクリックします。
+1. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com))、グローバル管理者アカウント、し、[**管理**] をクリックします。
     
 2. **管理センター**ホーム ページの左側のナビゲーションから、**請求**、および、**購買サービス**をクリックします。
     
@@ -160,7 +159,7 @@ Office 365 管理センターは、Office 365 サブスクリプションの組�
   
 Office 365 サブスクリプションと同じ組織および Azure AD テナントに Azure サブスクリプションを追加するには
   
-1. Azure ポータル ([https://portal.azure.com](https://portal.azure.com))、Office 365 のグローバル管理者アカウントでサインインします。
+1. Azure ポータルにサインイン ([https://portal.azure.com](https://portal.azure.com))、Office 365 のグローバル管理者アカウントを使用しています。
     
 2. 左側のナビゲーションでは、**サブスクリプション**をクリックし、し、[**追加**] をクリックします。
     

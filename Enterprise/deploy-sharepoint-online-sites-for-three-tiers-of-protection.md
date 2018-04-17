@@ -1,5 +1,5 @@
 ---
-title: "保護の 3 つの層を SharePoint Online サイトを展開します。"
+title: 保護の 3 つの層を SharePoint Online サイトを展開します。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
-description: "概要: は、作成し、情報保護のさまざまなレベルの SharePoint Online のチーム サイトを構成します。"
-ms.openlocfilehash: f015ce8d7c91d02ce5dc0a7791ba22a53bc2933f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: は、作成し、情報保護のさまざまなレベルの SharePoint Online のチーム サイトを構成します。'
+ms.openlocfilehash: ddeb1885cbc74be6e7098660eb1d9906d43739fd
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>保護の 3 つの層を SharePoint Online サイトを展開します。
 
@@ -36,7 +35,7 @@ ms.lasthandoff: 02/14/2018
 
 パブリック アクセスとアクセス許可を使用するベースライン SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -56,11 +55,11 @@ ms.lasthandoff: 02/14/2018
   
 ![パブリック SharePoint Online チーム サイトのベースライン レベルの保護。](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
-### <a name="private"></a>Kirkland
+### <a name="private"></a>プライベート
 
 プライベート アクセスとアクセス許可を使用するベースライン SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -124,13 +123,13 @@ ms.lasthandoff: 02/14/2018
   
 次に、次の手順で SharePoint Online チーム サイトを作成します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい **[SharePoint]** タブで、 **[+ サイトの作成]** をクリックします。
     
-4. **[サイトの作成]** ページで、**[チーム サイト]** をクリックします。
+4. **[サイトの作成]** ページで、 **[チーム サイト]** をクリックします。
     
 5. **[サイト名]** にプライベート チーム サイト名を入力します。
     

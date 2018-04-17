@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: は、Microsoft Azure で開発/テスト環境として、簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 04/06/2018
 
 ![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-図 1 の基本構成の開発/テスト環境では、クラウド専用 Azure 仮想ネットワークの名前付き、簡略化された、プライベート イントラネットがインターネットに接続をシミュレートするテスト ラボでの社内ネットワークのサブネットで構成されます。Azure の 3 つの仮想マシンが含まれています。
+図 1 の基本構成の開発/テスト環境では、クラウド専用 Azure 仮想ネットワークの名前付き、簡略化された、プライベート イントラネットがインターネットに接続をシミュレートするテスト ラボでの社内ネットワークのサブネットで構成されます。WIndows Server 2016 を実行している 3 つの Azure 仮想マシンが含まれています。
   
 - イントラネット ドメイン コントローラーとドメイン ネーム システム (DNS) サーバーとして構成されている DC1
     
@@ -242,7 +241,10 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 ## <a name="phase-3-configure-app1"></a>フェーズ 3:APP1 を構成する
 
 APP1 は、Web サービスとファイル共有サービスを提供します。
-  
+
+-> [!NOTE]  
+メニューの [次のコマンド セットは、CLIENT1 を作成 Azure サブスクリプションのすべての種類の動作を行うことができます Windows Server 2016 Datacenter を実行しています。CLIENT1 を作成するには、Visual Studio ベースの Azure サブスクリプションがあれば、 [Azure ポータル](https://portal.azure.com)と 10 の Windows を実行しています。 
+
 APP1 の Azure の仮想マシンを作成するに、リソース グループの名前を入力し、Azure の PowerShell コマンド プロンプトで、ローカル コンピューターでこれらのコマンドを実行します。
   
 ```
@@ -308,7 +310,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm

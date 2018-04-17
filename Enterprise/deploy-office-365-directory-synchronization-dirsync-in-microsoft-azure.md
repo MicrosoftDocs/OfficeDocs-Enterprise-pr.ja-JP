@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開"
+title: Microsoft Azure で Office 365 のディレクトリ同期を展開します。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -12,19 +12,18 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: "概要: Azure の仮想マシン上に Azure AD Connect (DirSync) を展開し、オンプレミス ディレクトリと Office 365 サブスクリプションの Azure AD テナントとの間でアカウントを同期します。"
-ms.openlocfilehash: 07ec310c50635afd70b0342d2e0547aab0e95d01
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: '概要: は、設置ディレクトリと、Office 365 サブスクリプションの Azure AD テナントとの間のアカウントを同期するのには Azure の仮想マシン上の Azure AD 接続を展開します。'
+ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開
+# <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure で Office 365 のディレクトリ同期を展開します。
 
- **概要:** Azure の仮想マシン上に Azure AD Connect (DirSync) を展開し、オンプレミス ディレクトリと Office 365 サブスクリプションの Azure AD テナントとの間でアカウントを同期します。
+ **の概要:**Azure の AD 接続、設置ディレクトリと、Office 365 サブスクリプションの Azure AD テナントとの間のアカウントを同期するのには Azure の仮想マシン上に配置します。
   
 Azure Active Directory (AD) Connect (以前のディレクトリ同期ツール、Directory 同期ツール、DirSync.exe ツール) は、ドメインに参加しているサーバー上にインストールするサーバーベースのアプリケーションで、オンプレミスの Windows Server Active Directory ユーザーを Office 365 サブスクリプションの Azure Active Directory テナントと同期するために使用します。Azure AD Connect はオンプレミスのサーバーにインストールできますが、次の理由により、Azure の仮想マシンにもインストールできます。
   
@@ -46,15 +45,15 @@ Azure Active Directory (AD) Connect (以前のディレクトリ同期ツール�
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Azure における Office 365 ディレクトリ同期の展開に関する概要
 <a name="Overview"> </a>
 
-次の図は、オンプレミスの Windows Server AD フォレストを Office 365 サブスクリプションに同期する Azure AD Connect を示したものです。Azure AD Connect は Azure (DirSync サーバー) の仮想マシンで実行されています。
+AnOffice 365 サブスクリプションへの設置型 Windows サーバーの AD フォレストを同期する (ディレクトリ同期サーバー) の Azure の仮想マシンで実行されている Azure の AD 接続を次の図に示します。
   
 ![Azure 内の仮想マシン上の Azure AD 接続ツールが、トラフィック フローを伴う Office 365 サブスクリプションの Azure AD テナントに、オンプレミス アカウントを同期しています](images/CP_DirSyncOverview.png)
   
-この図には、サイト間 VPN または ExpressRoute 接続で接続されている 2 つのネットワークがあります。Windows Server AD ドメイン コントローラーがあるオンプレミス ネットワークと、[Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) を実行している仮想マシンであるディレクトリ同期サーバーが含まれる Azure 仮想ネットワークです。ディレクトリ同期サーバーを発信元とする 2 つの主要なトラフィック フローがあります。
+ダイアグラムでは、サイト間の VPN または ExpressRoute の接続で接続された 2 つのネットワークがあります。設置ネットワーク、Windows サーバーの AD ドメイン コント ローラーの位置と、ディレクトリ同期サーバー、仮想マシンと Azure の仮想ネットワークがある[Azure AD 接続](https://www.microsoft.com/download/details.aspx?id=47594)を実行します。ディレクトリ同期サーバーから送信された 2 つのメインのトラフィック フローがあります。
   
 -  Azure AD Connect は、アカウントとパスワードの変更に関してオンプレミス ネットワーク上のドメイン コントローラーにクエリを実行します。
     
--  Azure AD Connect は、アカウントとパスワードの変更を Office 365 サブスクリプションの Azure ADインスタンスに送信します。ディレクトリ同期サーバーはオンプレミス ネットワークの拡張部分であるため、これらの変更はオンプレミス ネットワークのプロキシ サーバーを経由して送信されます。
+-  Azure AD 接続では、アカウントおよびパスワードには、Office 365 サブスクリプションの Azure AD インスタンスに変更を送信します。ディレクトリ同期サーバーは、オンプレミスのネットワークの拡張部分であるために、設置型ネットワークのプロキシ サーバーをこれらの変更が送信されます。
     
 > [!NOTE]
 > このソリューションでは、1 つの Active Directory フォレスト内の単一 Active Directory ドメインの同期について説明します。Azure AD Connect は、Active Directory フォレスト内のすべての Active Directory ドメインを Office 365 と同期します。複数の Active Directory フォレストを Office 365 と同期する場合には、「[シングル サインオン シナリオでの Multi-forest ディレクトリ同期](https://go.microsoft.com/fwlink/p/?LinkId=393091)」をご覧ください。 
@@ -73,7 +72,7 @@ Azure Active Directory (AD) Connect (以前のディレクトリ同期ツール�
     
     Azure AD Connect の設定には、Azure AD 管理者アカウントの資格情報 (ユーザー名とパスワード) と、Windows Server AD エンタープライズ管理者アカウントが必要です。Azure AD Connect ツールはすぐに実行され、オンプレミスの Windows Server AD フォレストを Office 365 に継続的に同期します。
     
-運用でこのソリューションを展開する前に、「[Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)」の手順を使用して、概念実証、デモンストレーション、実験用にこの構成を設定します。
+実稼働環境でこのソリューションを展開する前に、デモ、または実験のための概念実証としてこの構成をセットアップするのには[、Office 365 の開発/テスト環境のディレクトリ同期処理](dirsync-for-your-office-365-dev-test-environment.md)の指示を使用します。
   
 > [!IMPORTANT]
 > Azure AD Connect の設定が完了しても、Windows Server AD エンタープライズ管理者アカウントの資格情報は保存されません。 
@@ -81,7 +80,7 @@ Azure Active Directory (AD) Connect (以前のディレクトリ同期ツール�
 > [!NOTE]
 > このソリューションは、1 つの Windows Server AD フォレストを Office 365 と同期する方法について説明しています。この記事で取り上げられているトポロジは、このソリューションを実装する 1 つの方法に過ぎません。組織のトポロジは、固有のネットワーク要件とセキュリティに関する考慮事項によって異なる可能性があります。 
   
-## <a name="plan-for-hosting-a-dirsync-server-for-office-365-in-azure"></a>Azure の Office 365 向けに DirSync サーバーをホストするための計画
+## <a name="plan-for-hosting-a-directory-sync-server-for-office-365-in-azure"></a>Azure 内の Office 365 のディレクトリ同期サーバーをホストするための計画
 <a name="PlanningVirtual"> </a>
 
 ### <a name="prerequisites"></a>前提条件
@@ -102,17 +101,17 @@ Azure Active Directory (AD) Connect (以前のディレクトリ同期ツール�
 
 次の一覧では、このソリューションで採用された設計方針について説明します。
   
-- このソリューションでは、サイト間 VPN 接続を伴う 1 つの Azure Virtual Network を使用します。Azure Virtual Network は 1 つのサブネットをホストし、このサブネットには Azure AD Connect を実行する 1 つのディレクトリ同期サーバーが含まれます。 
+- このソリューションでは、サイト間 VPN 接続で 1 つの Azure 仮想ネットワークを使用します。Azure の仮想ネットワークは、1 つのサーバーを含むサブネットが 1 つ、Azure AD 接続を実行してディレクトリ同期サーバーをホストします。 
     
 - オンプレミス ネットワークには、ドメイン コントローラーと DNS サーバーが存在します。
     
-- Azure AD Connect は、シングル サインオンではなくパスワード同期を実行します (Active Directory フェデレーション サービス (AD FS) インフラストラクチャを展開する必要はありません)。パスワード同期とシングル サインオンのオプションについて詳しくは、「[使用するディレクトリ統合シナリオを確認する](https://go.microsoft.com/fwlink/p/?LinkId=393094)」をご覧ください。
+- Azure AD 接続では、シングル サインオンではなくパスワード ハッシュの同期を実行します。Active Directory フェデレーション サービス (AD FS) インフラストラクチャを導入する必要はありません。パスワード ハッシュの同期とシングル サインオンのオプションに関する詳細について[を使用するディレクトリの統合シナリオを決定する](https://go.microsoft.com/fwlink/p/?LinkId=393094)を参照してください。
     
 ご使用の環境でこのソリューションを展開する場合に考慮できるその他の設計に関する選択内容があります。それらには以下が含まれます。
   
-- 既存の Azure Virtual Network 内に既存の DNS サーバーがある場合、オンプレミス ネットワークの DNS サーバーではなく、それらをディレクトリ同期サーバーで使用して名前解決を行うかどうかを決定します。
+- Azure の既存の仮想ネットワーク内の DNS サーバーが既に存在する場合は、オンプレミスのネットワーク上の DNS サーバーではなく、名前解決に使用するディレクトリ同期サーバーにするかどうかを決定します。
     
-- 既存の Azure Virtual Network にドメイン コントローラーがある場合、Active Directory サイトとサービスを構成するのが優れた選択肢となるかどうかを判別します。DirSync サーバーは、オンプレミス ネットワークのドメイン コントローラーではなく Azure Virtual Network 内のドメイン コントローラーをクエリして、アカウントとパスワードの変更内容を調べます。
+- Azure の既存の仮想ネットワーク内のドメイン コント ローラーがある場合は、Active Directory サイトとサービスを構成するとするのに適して可能性があるかどうかを決定します。ディレクトリ同期サーバーは、アカウントと、オンプレミスのネットワーク上のドメイン コント ローラーではなくパスワードの変更の Azure の仮想ネットワークのドメイン コント ローラーを照会できます。
     
 ## <a name="deployment-roadmap"></a>展開のロードマップ
 <a name="DeploymentRoadmap"> </a>
@@ -128,7 +127,7 @@ Azure の仮想マシンへの Azure AD Connect の展開には、3つのフェ�
 構成後、Office 365 の新しいユーザーアカウントに場所とライセンスを割り当てる必要があります。
   
 > [!TIP]
-> 「[Azure デプロイメント キットの DirSync サーバー](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)」には、このソリューションをビルドするためのすべての Azure PowerShell ブロック、Microsoft PowerPoint と Visio 形式のダイヤグラム、ユーザー設定用にカスタマイズされた Azure PowerShell コマンド ブロックを生成する Microsoft Excel 構成ワークブックが含まれています。
+> [Azure 展開キットのディレクトリ同期サーバー](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)には、このソリューション、PowerPoint や Visio 形式で図を生成する Microsoft Excel の構成のブックを構築するための Azure PowerShell ブロックのすべてが含まれていますAzure PowerShell コマンド ブロックの設定をカスタマイズします。
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>フェーズ 1: Azure 仮想ネットワークを作成および構成する
 
@@ -136,7 +135,7 @@ Azure 仮想ネットワークを作成および構成するには、「[オン�
   
 以下が最終的な構成です。
   
-![Azure でホストされている Office 365 のディレクトリ同期サーバーのフェーズ 1](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Azure でホストされている Office 365 のディレクトリ同期サーバーの第 1 フェーズ](images/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 この図は、サイト間 VPN や ExpressRoute 接続を介してAzure 仮想ネットワークに接続しているオンプレミスネットワークを示しています。
   
@@ -148,27 +147,27 @@ Azure 仮想ネットワークを作成および構成するには、「[オン�
     
 - **[サイズの選択]** ウィンドウで、 **A2 標準** サイズを選択します。
     
-- **[設定]** ウィンドウの **[ストレージ]** セクションで、 **[標準]** ストレージ タイプを選択します。 **[ネットワーク]** セクションで、(ゲートウェイ サブネットではなく) ディレクトリ同期サーバーをホストするための仮想ネットワークの名前とサブネットを選択します。他のすべての設定は、既定値のままにします。
+- **設定**] ウィンドウで [**ストレージ**] セクションで、**標準的な**ストレージ ・ タイプを選択します。[**ネットワーク**] セクションでは、ディレクトリ同期サーバー (GatewaySubnet ではない) をホストするため、仮想ネットワークとサブネットの名前を選択します。その他のすべての設定を既定値のままにします。
     
-内部 DNS をチェックして、ディレクトリ同期サーバーが DNS を正しく使用していることを検証し、仮想マシンに IP アドレスのアドレス (A) レコードが追加されたことを確認します。 
+ディレクトリ同期サーバーは正しく使用している DNS、内部の DNS を確認することによって、IP アドレスを持つ仮想マシンのアドレス (A) レコードが追加されたことを確認することを確認します。 
   
-「[仮想マシンへの接続とサインオン](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)」の説明を参照してリモートデスクトップ接続で DirSync サーバーに接続します。サインイン後、仮想マシンをオンプレミス Windows Server AD ドメインに参加させます。
+リモート デスクトップ接続を使用してディレクトリ同期サーバーに接続するため[の記号、仮想マシンに接続](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)することで指示を使用します。サインイン後、仮想マシンを設置型の Windows サーバーの AD ドメインに参加します。
   
-Azure AD Connect がインターネット リソースにアクセスするには、オンプレミス ネットワークのプロキシ サーバーを使用するようディレクトリ同期サーバーを構成する必要があります。実行する追加の構成手順は、ネットワーク管理者に問い合わせてください。
+Azure AD 接続でインターネット リソースにアクセスできるように、設置型ネットワークのプロキシ サーバーを使用するディレクトリ同期サーバーを構成する必要があります。追加の構成手順を実行するネットワーク管理者に問い合わせてください。
   
 以下が最終的な構成です。
   
-![Azure でホストされている Office 365 のディレクトリ同期サーバーのフェーズ 2](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Azure でホストされている Office 365 のディレクトリ同期サーバーの第 2 段階](images/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
-この図に、クロスプレミス Azure 仮想ネットワークにある DirSync サーバーの仮想マシンを示します。
+この図のディレクトリ同期サーバーの仮想マシン間の施設内で Azure の仮想ネットワークです。
   
 ### <a name="phase-3-install-and-configure-azure-ad-connect"></a>フェーズ 3: Azure AD Connect をインストールして構成する
 
 次の手順を実行します。
   
-1. ローカル管理者権限を持つ Windows Server AD ドメイン アカウントを使用して、リモート デスクトップ接続でディレクトリ同期サーバーに接続します。「[仮想マシンへの接続とサインオン](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)」を参照してください。
+1. ローカル管理者権限を持つ Windows サーバーの AD ドメインのアカウントでリモート デスクトップ接続を使用してディレクトリ同期サーバーに接続します。[サインオン、仮想マシンへの接続](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on)を参照してください。
     
-2. パスワード同期を使用したディレクトリ同期を行うには、ディレクトリ同期サーバーから「[Office 365 でディレクトリの同期をセットアップする](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)」という記事を開き、指示に従います。
+2. ディレクトリ同期サーバーから[Office 365 のディレクトリ同期を設定する](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)文書を開くし、パスワード ハッシュの同期とのディレクトリ同期の指示に従います。
     
 > [!CAUTION]
 > セットアップによって、ローカル ユーザー組織単位 (OU) 内に **AAD_xxxxxxxxxxxx** というアカウントが作成されます。このアカウントは移動も削除も行わないでください。移動や削除を行うと、同期が失敗します。
@@ -177,7 +176,7 @@ Azure AD Connect がインターネット リソースにアクセスするに�
   
 ![Azure でホストされている Office 365 のディレクトリ同期サーバーのフェーズ 3](images/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
-この図に、クロスプレミス Azure 仮想ネットワークにある Azure AD Connect を使った DirSync サーバーを示します。
+この図の Azure AD 接続で、ディレクトリ同期サーバーで複数の環境に関する Azure の仮想ネットワークです。
   
 ### <a name="assign-locations-and-licenses-to-users-in-office-365"></a>Office 365 のユーザーに場所とライセンスを割り当てます。
 
@@ -209,7 +208,7 @@ Azure AD Connect はオンプレミスの Windows Server AD から Office 365 �
   
 [Office 365 のディレクトリ同期をセットアップする](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
   
-[Azure デプロイメント キットの DirSync サーバー](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+[Azure 展開キットのディレクトリ同期サーバー](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
 
 
 

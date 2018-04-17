@@ -1,5 +1,5 @@
 ---
-title: "SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル"
+title: SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
-description: "概要: モデルのアーキテクチャ、展開、および SharePoint、Exchange、Skype のビジネス、および Lync のプラットフォーム ・ オプションを説明する IT のポスターを取得します。"
-ms.openlocfilehash: 94f33ec4460758276cfada3ef9fcc4a444e9133a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: '概要: モデルのアーキテクチャ、展開、および SharePoint、Exchange、Skype のビジネス、および Lync のプラットフォーム ・ オプションを説明する IT のポスターを取得します。'
+ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 
@@ -177,7 +176,7 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![設計サンプルのイメージ: Microsoft Azure for SharePoint 2013 のインターネット サイト](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |独自アーキテクチャのインターネットに接続するサイトで、SharePoint Server 2013 を使用して、Azure の開始点としてこの設計サンプルを使用します。アクセシブルなテキストには、このポスターのバージョンが、次を参照してください。[アクセス可能な図の設計サンプル: インターネットのサイトで、SharePoint 2013 の Microsoft Azure](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md)。<br/><br/> 詳細については、次の各資料を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用して Microsoft Azure 内のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![デザイン サンプルの図:SharePoint 2013 用の Microsoft Azure のインターネット サイト](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |独自アーキテクチャのインターネットに接続するサイトで、SharePoint Server 2013 を使用して、Azure の開始点としてこの設計サンプルを使用します。アクセシブルなテキストには、このポスターのバージョンが、次を参照してください。[アクセス可能な図の設計サンプル: インターネットのサイトで、SharePoint 2013 の Microsoft Azure](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md)。<br/><br/> 詳細については、次の各資料を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用して Microsoft Azure 内のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Microsoft Azure に対する SharePoint の障害復旧
 <a name="sharepoint_recovery_Azure"> </a>

@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '概要: ガイドを使用してこのテスト ラボの評価や開発/テスト用の Office 365 の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 
@@ -26,7 +29,7 @@ Office 365 試用版サブスクリプションを使用できます。また、
   
 - ライトウェイトの Office 365 開発/テスト環境は、メイン コンピューターからアクセスする Office 365 試用版サブスクリプションで構成されています。
     
-    機能をすばやくデモンストレーションする場合には、この環境を使用してください。ライトウェイトの Office 365 開発/テスト環境の場合は、この記事のフェーズ 2 と 3 を完了します。
+    機能を簡単にデモンストレーションする場合に、このような環境を使用します。軽量の Office 365 の開発/テスト環境では、この資料の 2 および 3 のフェーズのみを実行します。
     
 - シミュレーションのエンタープライズ Office 365 開発/テスト環境は、Office 365 試用版サブスクリプションと、Microsoft Azure インフラストラクチャ サービスでホストされる、インターネットに接続されたシンプルな組織のイントラネットで構成されています。この構成は Microsoft クラウドで完全に構築できます。
     
@@ -57,13 +60,13 @@ Azure サブスクリプションを必要があります。この構成では�
 
 Office 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
   
-1. 必須ではありませんが、会社名は、Microsoft のコンテンツのサンプルで使用されている架空の会社である contoso 社の会社名のバリエーションを使用するをお勧めします。ここでは、架空の会社名を記録する: ___。
+1. 必須ではありませんが、会社名は、Microsoft のコンテンツのサンプルで使用されている架空の会社である contoso 社の会社名のバリエーションを使用するをお勧めします。ここでは、架空の会社名を記録します。![](./images/Common_Images/TableLine.png)
     
 2. 新しい Microsoft アカウントにサインアップするには[https://outlook.com](https://outlook.com)と、新しい電子メール アカウントとアドレスを持つアカウントを作成します。Office 365 にサインアップするには、このアカウントを使用します。
     
-  - ここで新しいアカウントの最初と最後の名前を記録する: ___。
+  - ここで新しいアカウントの姓と名を記録します。![](./images/Common_Images/TableLine.png)
     
-  - ここに新しい電子メール アカウントのアドレスを記録してください: _____________________________@outlook.com
+  - 新しい電子メール アカウントのアドレスは、ここの記録: ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
@@ -106,7 +109,7 @@ Stop-Process -Name Explorer -Force
     
     入力したパスワードを安全な場所に記録してください。
     
-    と**組織名**をここに参照される、架空の会社名を記録する: ___。
+    と**組織名**をここに参照される、架空の会社名を記録します。![](./images/Common_Images/TableLine.png)
     
 5. **自分のアカウントを作成する**] をクリックします。
     
@@ -114,9 +117,9 @@ Stop-Process -Name Explorer -Force
     
 7. 受信したテキスト メッセージを検証コードを入力し、[**次へ**] をクリックします。
     
-8. サインイン ページの URL は、ここ (選択およびコピー) を記録する: ___。
+8. サインイン ページの URL は、ここ (選択およびコピー) を記録します。![](./images/Common_Images/TableLine.png)
     
-9. ここにユーザー IDを記録してください (選択してコピー): __________________________________.onmicrosoft.com
+9. ユーザー id は、ここ (選択およびコピー): ![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     この値は、 **Office 365 の管理者がグローバルの名前**と呼びます。
     
@@ -230,11 +233,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 この環境で作業する場合や、この環境に追加のテスト ラボ ガイドラインを展開するために、次に示す値を記録しておきます。
   
-- Office 365 全体管理者名: ____________________________________.onmicrosoft.com (フェーズ 2 の手順 9 で入力したもの)
+- Office 365 のグローバル管理者名: ![](./images/Common_Images/TableLine.png). onmicrosoft.com (から第 2 段階の手順 9.)
     
     このアカウントのパスワードも安全な場所に記録してください。
     
-- 試用版サブスクリプションの組織名: _______________________________________________ (フェーズ 2 の手順 4 で入力したもの)
+- 試用版サブスクリプション組織名: ![](./images/Common_Images/TableLine.png) (からのステップ 4 フェーズ 2)
     
 - User 2、User 3、User 4、および User 5 のアカウントを一覧表示するには、次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
     
@@ -244,13 +247,13 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     ここにアカウント名を記録してください:
     
-  - User 2 のアカウント名: user2@_______________________________________________.onmicrosoft.com
+  - 2 のユーザー アカウント名: @ user2![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - User 3 のアカウント名: user3@_______________________________________________.onmicrosoft.com
+  - 3 のユーザー アカウント名: @ user3![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - User 4 のアカウント名: user4@_______________________________________________.onmicrosoft.com
+  - 4 のユーザー アカウント名: @ user4![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - User 5 のアカウント名: user5@_______________________________________________.onmicrosoft.com
+  - 5 のユーザー アカウント名: @ user5![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     これらのアカウントのパスワードも安全な場所に記録してください。
     
@@ -260,11 +263,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - 本番サイトの URL:https://______________________________________________.sharepoint.com/sites/production
+  - 本番サイトの URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - 販売サイトの URL:https://______________________________________________.sharepoint.com/sites/sales
+  - 販売サイトの URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - サイトの URL をサポートしてください。https://______________________________________________.sharepoint.com/sites/support
+  - サポート サイトの URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>次の手順
 
@@ -296,10 +299,10 @@ Office 365 の開発/テスト環境を構築するのに、これらの追加�
     
 ## <a name="see-also"></a>関連項目
 
-[クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+- [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Office 365 と Dynamics 365 の開発/テスト環境](office-365-and-dynamics-365-dev-test-environment.md)
+- [Office 365 と Dynamics 365 の開発/テスト環境](office-365-and-dynamics-365-dev-test-environment.md)
   
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+ - [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
 

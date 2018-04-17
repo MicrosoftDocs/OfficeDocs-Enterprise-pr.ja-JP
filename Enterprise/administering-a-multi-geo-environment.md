@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: マルチ geo 環境で SharePoint と OneDrive のサービスの管理について説明します。
-ms.openlocfilehash: f49cf35503ee6495b5982dc7d72f9b1936f564c6
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域の環境を管理します。
 

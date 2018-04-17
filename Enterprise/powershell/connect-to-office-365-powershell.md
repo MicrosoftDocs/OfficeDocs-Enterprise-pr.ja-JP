@@ -3,7 +3,7 @@ title: Office 365 PowerShell への接続
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/02/2018
+ms.date: 04/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから Office 365 管理センター タスクを実行します。'
-ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
-ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
-ms.translationtype: HT
+ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -30,7 +30,7 @@ Office 365 PowerShell を使用して、コマンド ラインから Office 365 
 なお、これらの接続手順は、「[Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113)」というトピックで説明されているのと同じ手順です。
   
 > [!TIP]
-> **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/ja-JP/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn Learning にアクセスしてください。 
+> **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn Learning にアクセスしてください。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -45,7 +45,7 @@ Office 365 PowerShell を使用して、コマンド ラインから Office 365 
     > [!NOTE]
     >64 ビット バージョンの Windows を使用してください。Microsoft PowerShell の Microsoft Azure Active Directory モジュールの 32 ビット バージョンのサポートは 2014 年 10 月に終了しました。
     
--  これらの手順に使用する Office 365 職場または学校のアカウントは、Office 365 管理者役割のメンバーである必要があります。詳細については、「[Office 365 の管理者の役割](https://go.microsoft.com/fwlink/p/?LinkId=532367)」を参照してください。
+-  これらの手順は、Office 365 の管理者ロールのメンバーであるユーザーを意図しています。詳細については、 [Office 365 の管理者の役割](https://go.microsoft.com/fwlink/p/?LinkId=532367)を参照してください。
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Microsoft PowerShell の Microsoft Azure Active Directory モジュールとの接続
 
@@ -102,7 +102,7 @@ Connect-MsolService
   
 - **よくある原因は、正しくないパスワードです** 。手順 3 をもう一度実行して、ユーザー名とパスワードの入力に注意します。
     
-- **Microsoft PowerShell の Microsoft Azure Active Directory モジュール では、Microsoft .NET Framework 3.5. _x_ 機能がお使いのコンピューターで有効になっている必要があります** 。お使いのコンピューターに、より新しいバージョン (たとえば、4 または 4.5. _x_)がインストールされている場合でも, .NET Framework の古いバージョンとの下位互換性を有効または無効にすることができます。詳細については、以下のトピックをご覧ください。
+- * *、Microsoft Azure Active ディレクトリ モジュールを Windows PowerShell には、Microsoft.NET Framework 3.5* 。上のコンピューター * * x * 機能を有効にします。お使いのコンピューターがインストールされている新しいバージョンを持っている可能性があります (たとえば、4 または 4.5* 。x *)、.NET Framework の以前のバージョンとの互換性を有効または無効になっている下位ですが。詳細については、次のトピックを参照してください。
     
   - Windows Server 2012 または Windows Server 2012 R2 の場合、「[役割と機能の追加ウィザードを使用して .NET Framework 3.5 を有効にする](https://go.microsoft.com/fwlink/p/?LinkId=532368)」をご覧ください
     
@@ -125,7 +125,11 @@ Connect-MsolService
 
 Azure Active Directory V2 PowerShell モジュールのコマンドには、コマンドレット名に"AzureAD"が含まれています。
 
-[Azure Active Directory V2 PowerShell モジュール](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)において新しいコマンドレットを必要とするプロシージャについては、以下のステップを実行してモジュールをインストールし、Office 365 サブスクリプションに接続してください。
+Azure Active Directory V2 PowerShell モジュールの新しいコマンドレットを必要とする手順は、モジュールをインストールし、Office 365 サブスクリプションに接続する手順を使用します。
+
+>[!Note]
+>異なるバージョンの Microsoft Windows のサポートについては、 [Azure Active Directory V2 PowerShell モジュール](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)を参照してください。
+>
 
 ### <a name="step-1-install-required-software"></a>手順 1: 必要なソフトウェアをインストールします
 
@@ -168,13 +172,9 @@ Connect-AzureAD
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
-  
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
-  
-[単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-
-[Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-  
-[Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+- [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+- [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+- [単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
+- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 

@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: OneDrive サイトを別の地理的な場所に移動する方法について説明します。
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>OneDrive サイトを別の地理的な場所に移動します。 
 
@@ -76,9 +77,9 @@ OneDrive は、移動するか、法的保持義務または移動を妨げる�
 
 後の地域の移動をスケジュールするのには次のパラメーターのいずれかの手順に従います。
 
--   _PreferredMoveBeginDate_ – 移動は、この指定された時点で開始します。
+-   _PreferredMoveBeginDate_ – 移動は、この指定された時点で開始します。時刻を世界協定時刻 (UTC) で指定してください。
 
--   _PreferredMoveEndDate_ – 移動は、最善努力原則に基づいて、指定された時刻によって完了します。
+-   _PreferredMoveEndDate_ – 移動は、最善努力原則に基づいて、指定された時刻によって完了します。時刻を世界協定時刻 (UTC) で指定してください。 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>OneDrive 地域の移動をキャンセルします。 
 
@@ -97,7 +98,7 @@ Geo Get SPOUserAndContentMoveState コマンドレットを使用して接続し
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>ステータス</strong></th>
+<th align="left"><strong>状態</strong></th>
 <th align="left"><strong>説明</strong></th>
 </tr>
 </thead>

@@ -1,5 +1,5 @@
 ---
-title: "エンタープライズ アーキテクトのための Microsoft クラウド ストレージ"
+title: エンタープライズ アーキテクトのための Microsoft クラウド ストレージ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
-description: "概要: Microsoft クラウド サービスとプラットフォームのストレージを設計します。"
-ms.openlocfilehash: 98da5eed1bd14e65175a260bf129d4d29df28be7
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: '概要: Microsoft クラウド サービスとプラットフォームのストレージを設計します。'
+ms.openlocfilehash: e6edaae9d575babff3c85e87cac5ea65b5a8407b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ストレージ
 
