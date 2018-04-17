@@ -11,11 +11,11 @@ ms.topic: hub-page
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 3d8d7f89395c7cb84953e75de48cde71d2e7327a
-ms.sourcegitcommit: 990ca49b20ae70a3b57ca8293d22deb04defa958
-ms.translationtype: HT
+ms.openlocfilehash: 500c86c4fa0accf1c8fb98e6e639d8171ae9b0d4
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 <h1>Enterprise Cloud ソリューション</h1>
 <p>Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。</p>
