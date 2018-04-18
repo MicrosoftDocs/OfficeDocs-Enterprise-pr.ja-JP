@@ -1,0 +1,314 @@
+---
+title: Exchange オンラインで複数の地域の機能
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: 4/11/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+ms.custom: ''
+localization_priority: Normal
+ms.assetid: ''
+description: Exchange Online の機能を複数地域での複数の地理的な領域に、Office 365 のプレゼンスを展開します。
+ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/18/2018
+---
+# <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange オンラインで複数の地域の機能
+
+Office 365 に複数の地域の機能は、複数の地理的な場所 (地域) にまたがる 1 つのテナントを有効にします。複数地域を有効にすると、お客様は、ユーザーごとに Exchange Online のメールボックスの内容 (データ) の場所を選択できます。
+
+(、「既定値」または「場所」と呼ばれる)、初期のテナントの場所は、住所に基づいて決まります。複数地域を有効にすると、「サテライト」の他の場所でのメールボックスを格納することができます。
+
+- サテライトに直接新しいオンラインの Exchange メールボックスを作成しています。
+
+- サテライトに既存の Exchange Online メールボックスを移動します。
+
+- サテライトに直接、オンプレミスの Exchange 組織からメールボックスを契約時。
+
+複数地域の構成で使用する以下の地域があります。
+
+- アジア太平洋地域
+
+- オーストラリア
+
+- カナダ
+
+- 欧州連合
+
+- インド (現在インドでの請求先住所を持つ顧客にのみ使用可能)
+
+- 日本
+
+- 韓国
+
+- 英国
+
+- 米国
+
+## <a name="prerequisite-configuration"></a>前提条件の構成
+機能を使用して複数の地域では、Exchange オンラインを開始する前にマイクロソフトは複数地域のサポートのため、Exchange Online のテナントを構成する必要があります。複数地域のライセンスを注文すると 30 日未満で完了を実行する必要があります通常は、この 1 回限りの構成プロセスがトリガーされます。
+
+構成が開始して完了したときに[Office 365 のメッセージ センター](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093)に通知が表示されます。構成は、複数地域のライセンスを購入するときに自動的にトリガーされます。
+
+## <a name="mailbox-placement-and-moves"></a>メールボックスの配置と移動
+マイクロソフトでは、複数地域の必須の構成手順が完了すると、Exchange Online を優先、ユーザー オブジェクトの**PreferredDataLocation**属性が Azure AD にします。
+
+Exchange Online は、オンラインの Exchange のディレクトリ サービス内の**MailboxRegion**プロパティに Azure AD から**PreferredDataLocation**のプロパティを同期します。**MailboxRegion**の値は、地域のユーザーのメールボックスと関連付けられているアーカイブ メールボックスの配置場所を決定します。ユーザーのプライマリ メールボックスとアーカイブ メールボックスを別の地域に存在するを構成することはできません。ユーザー オブジェクト 1 つにつき 1 つだけの地域に設定できます。
+
+- **PreferredDataLocation**が既存のメールボックスを持つユーザーで構成されると、指定した地域に、メールボックスを自動的に移動されます。 
+
+- **PreferredDataLocation**が構成すると、既存のメールボックスにユーザーのメールボックスが指定した地域に準備されます。 
+
+- 地域が指定されていない場合は、既定の地域で、メールボックスが配置されます。
+
+**注**: 複数地域の機能と Skype を地域ごとにホストされているビジネス オンラインの会議のプロパティを使用して**PreferredDataLocation**ユーザー オブジェクトのサービスを検索します。地域ごとにホストされている会議のためのユーザー オブジェクトの**PreferredDataLocation**の値を構成する場合、メールボックスとユーザーのための OneDrive に自動的に移動されます指定した地域に複数地域を有効にした後 Office 365 テナントに。
+
+## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange オンラインで複数の地域の機能の制限
+1. ユーザーのメールボックス、リソース メールボックス (部屋・備品のメールボックス)、および共有メールボックスは、複数地域の機能をサポートします。パブリック フォルダーのメールボックスと Office 365 のグループは、お客様の自宅の地域にのみ配置できます。
+ 
+2. セキュリティとコンプライアンスの機能 (たとえば、監査および電子的証拠開示) は、Exchange 管理センター (EAC) で使用されるは、複数地域の組織では使用できません。代わりに、セキュリティとコンプライアンスの機能を構成するのには、 [Office 365 のセキュリティとコンプライアンスのセンター](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)を使用する必要があります。
+
+3. Mac ユーザーは、outlook は、自分のメールボックスを新しい地域に移動するときに、そのオンライン ・ アーカイブのフォルダーへのアクセスの一時的な損失にすることがあります。この条件では、ユーザーのプライマリとアーカイブ メールボックスが別の地域では地域間のメールボックスの移動は、異なる時間に完了可能性がありますのでに発生します。
+
+4. ユーザーは、Outlook (Outlook Web App または OWA と呼ばれていました)、web 上での地域間で*メールボックス フォルダー*を共有できません。たとえば、欧州連合内のユーザーは、米国内にあるメールボックス内の共有フォルダーを開くに web 上で Outlook を使用できません。ただし、web ユーザーに Outlook は、 [Outlook Web App で別のブラウザー ウィンドウ内の他のユーザーのメールボックスを開く](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)で説明したように別のブラウザー ウィンドウを使用して、別の地域で*その他のメールボックス*を開くことができます。
+
+    **注**: Windows 上の Outlook ではサポートされて間 Geo メールボックス フォルダーを共有します。
+
+5. 現在、web 上の Outlook でクロス地域カレンダーの委任がサポートされていません。クロス地域カレンダーの委任は、Windows 上の Outlook でサポートされてです。
+
+## <a name="administration"></a>管理 
+リモート PowerShell は、表示して、Office 365 環境内の地域に関連するプロパティを構成する必要があります。Office 365 の管理に使用される各種の PowerShell モジュールについては、 [Office 365 の管理、および Windows PowerShell で Exchange のオンライン](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6)を参照してください。
+
+- [Microsoft Azure Active Directory の PowerShell モジュール](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx)の v1.1.166.0 または後での v1.x ユーザー オブジェクトの**PreferredDataLocation**プロパティを表示する必要があります。Azure AD PowerShell に接続するには、 [Office 365 の PowerShell への接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)を参照してください。 
+
+- オンライン PowerShell を Exchange に接続するには、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)を参照してください。 
+
+### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a>Exchange オンライン PowerShell を使用して特定の地域に直接接続します。
+通常、Exchange オンライン PowerShell では、既定の地域に接続されます。既定以外の地域に直接接続することもできます。パフォーマンスの向上のためだけにその地域のユーザーを管理するときに、既定以外の地域への直接接続をお勧めします。
+
+特定の地域に接続するには*ConnectionUri*パラメーターは通常の接続手順とは異なるです。コマンドと値の残りの部分は、同じです。手順は次のとおりです。
+
+1. ローカル コンピューターに Windows PowerShell を開き次のコマンドを実行します。
+    
+    ```
+    $UserCredential = Get-Credential
+    ```
+   **Windows PowerShell の資格情報の要求**] ダイアログ ボックスで、作業時間や学校のアカウントとパスワードを入力し、し、[ **OK**] をクリックします。
+    
+2. 交換`<emailaddress>`、電子メールのアドレスでターゲット地域内のメールボックス**、**および次のコマンドを実行します。メールボックスとの関連性のステップ 1 で資格情報のアクセス許可は、ファクターではありません。電子メール アドレスだけで位置を通知 Exchange オンライン接続します。
+  
+   ```
+   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   ```
+
+   などの olga@contoso.onmicrosoft.com に接続する地域で有効なメールボックスの電子メール アドレスがある場合は、次のコマンドを実行します。
+
+   ```
+   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   ```
+3. 次のコマンドを実行します。
+    
+    ```
+    Import-PSSession $Session
+    ```
+
+### <a name="azure-ad-connect-version-requirements"></a>Azure AD 接続バージョン要件
+AAD の接続のバージョン 1.1.524.0 または後でのみサポートされているメソッド、オンプレミスの Active Directory から同期されるユーザー オブジェクトの**PreferredDataLocation**プロパティを設定するためです。詳細についてを参照してください[Azure Active Directory 接続の同期: Office 365 のリソースの優先データのパスを構成する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)です。
+
+### <a name="geo-codes"></a>地域コード
+**PreferredDataLocation**プロパティで、地域を指定するのにには、3 文字のコードを使用します。次の表は、使用可能な地域のコードを一覧します。
+
+|geo |コード |
+|---------|---------|
+|アジア/太平洋地域 |APC |
+|オーストラリア |オーストラリア |
+|カナダ |できます。 |
+|欧州連合 |EUR |
+|インド |IND |
+|日本 |日本語版 |
+|韓国 |KOR |
+|英国 |GBR |
+|米国 |名 |
+
+**注**: **PreferredDataLocation**および**MailboxRegion**プロパティは、エラーのチェックなしで文字列です。無効な値 (たとえば、NAN) を入力する場合は、既定の地域で、メールボックスが配置されます。
+
+### <a name="view-the-available-geos-that-are-configured-in-your-exchange-online-organization"></a>オンラインの Exchange 組織で構成されている使用可能な地域を表示します。
+オンラインの Exchange 組織で構成されている地域の一覧を表示するには、次のコマンドを実行 Exchange オンライン PowerShell:
+
+```
+Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table Region
+```
+
+コマンドの出力は次のようになります。
+
+```
+Region
+------
+APC
+AUS
+CAN
+EUR
+GBR
+JPN
+KOR
+NAM
+```
+
+### <a name="find-the-geo-location-of-a-mailbox"></a>メールボックスの地域の場所を検索します。
+Exchange オンライン PowerShell で**Get メールボックス**コマンドレットでは、メールボックスには次の地域に関連するプロパティが表示されます。
+
+- **データベース**: データベース名の最初の 3 つの文字が、メールボックスが置かれている場所を表示する地域コードに対応します。
+
+- **MailboxRegion**: (Azure AD では、 **PreferredDataLocation**の同期) の管理者によって設定された地域コードを指定します。
+
+- **MailboxRegionLastUpdateTime**: MailboxRegion が最終更新日時 (自動または手動のいずれか) を示します。
+
+メールボックスのこれらのプロパティを表示するには、次の構文を使用します。
+
+```
+Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
+```
+
+などのメールボックスの chris@contoso.onmicrosoft.com の地域情報を表示するには、次のコマンドを実行します。
+
+```
+Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
+```
+
+コマンドの出力は次のようになります。
+
+```
+Database                    : EURPR03DG077-db007 
+MailboxRegion               : EUR 
+MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM 
+```
+
+> [!NOTE]
+> 地域コードは、データベース名が**MailboxRegion**の値に一致しない場合 (これらのプロパティ値の間の不一致の Exchange Online の検索) **MailboxRegion**の値で指定された地域に、メールボックスを自動的に移動されます。
+
+### <a name="move-an-existing-cloud-mailbox-to-a-specific-geo"></a>既存のクラウドのメールボックスを特定の地域に移動します。
+Windows PowerShell の Azure AD モジュールで**Get MsolUser**と**セット MsolUser**コマンドレットを使用して、表示、またはユーザーのメールボックスを格納する地域を指定します。
+
+ユーザーの**PreferredDataLocation**の値を表示するには、Azure AD PowerShell でこの構文を使用します。
+
+```
+Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalName,PreferredDataLocation
+```
+
+たとえば、ユーザーの michelle@contoso.onmicrosoft.com の**PreferredDataLocation**の値を表示するには、次のコマンドを実行します。
+
+```
+Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
+```
+
+コマンドの出力は次のようになります。
+
+```
+UserPrincipalName     : michelle@contoso.onmicrosoft.com
+PreferredDataLocation : EUR
+```
+
+クラウド専用のユーザー オブジェクトの**PreferredDataLocation**の値を変更するには、Azure AD PowerShell で次の構文を使用します。
+
+``` 
+Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoCode>
+```
+
+などに、欧州連合 (EUR) ユーザーの michelle@contoso.onmicrosoft.com の**PreferredDataLocation**値を設定するには、次のコマンドを実行します。
+
+``` 
+Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
+```
+
+**注**:
+
+- 説明したように、オンプレミスの Active Directory からユーザーの同期オブジェクトには、この手順を使用できません。AAD の接続を使用して**PreferredDataLocation**の値を変更する必要があります。詳細についてを参照してください[Azure Active Directory 接続の同期: Office 365 のリソースの優先データのパスを構成する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)です。 
+
+- メールボックスの移動にかかる時間は、いくつかの要因によって異なります。
+ 
+  - サイズとメールボックスの種類。
+ 
+  - 移動中のメールボックスの数です。
+ 
+  - リソースの可用性の移動します。
+
+#### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>移動には、証拠保全上にあるメールボックスが無効になっています。
+電子証拠開示の目的が無効になっている状態で、 **PreferredDataLocation**の値を変更することで移動できないのは、証拠保全上のメールボックスを無効にします。保留中の訴訟で無効になっているメールボックスを移動するのには
+
+1. 一時的にメールボックスにライセンスを割り当てます。
+
+2. **PreferredDataLocation**を変更します。
+
+3. 無効の状態に戻すことを選択した地域に移動した後、メールボックスからライセンスを削除します。
+
+### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>特定の地域で新しいクラウドのメールボックスを作成します。 
+特定地域での新しいメールボックスを作成するには次の手順のいずれかを実行する必要があります。
+
+- 前で説明したように**PreferredDataLocation**の値を構成するセクションの*前に*(たとえば、ユーザーにライセンスを割り当てる前に**PreferredDataLocation**値を設定) によって、Exchange Online のメールボックスを作成します。 
+
+- **PreferredDataLocation**値を設定すると同時にライセンスを割り当てます。
+
+特定の地域で、新しいクラウド専用ライセンスを受けたユーザー (AAD 接続の同期) を作成するには、Azure AD PowerShell で次の構文を使用します。
+
+```
+New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoCode> 
+```
+次の使用例は、次の値を持つエリザベス Brunner の新しいユーザー アカウントを作成します。
+
+- ユーザー プリンシパル名: ebrunner@contoso.onmicrosoft.com
+
+- 名: エリザベス
+
+- 姓、名: Brunner
+
+- エリザベス Brunner の名前を表示します。
+
+- パスワード: は、ランダムに生成され、(*パスワード*パラメーターは使用しない) ために、コマンドの結果に示すように
+
+- ライセンス: contoso:ENTERPRISEPREMIUM (E5)
+
+3 場所: オーストラリア (オーストラリア)
+
+```
+New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "Elizabeth Brunner" -FirstName Elizabeth -LastName Brunner -LicenseAssignment contoso:ENTERPRISEPREMIUM -PreferredDataLocation AUS
+```
+
+新しいユーザー アカウントを作成して、Azure AD PowerShell で LicenseAssignment の値を検索する方法の詳細については、 [Office 365 の PowerShell でユーザー アカウントを作成](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)し、[ライセンスを表示し Office 365 の PowerShell を使用してサービス](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell)を参照してください。
+
+> [!NOTE]
+> メールボックスを有効にし、 **PreferredDataLocation**で指定されている地域で直接作成するメールボックスが必要な Exchange の PowerShell を使用する場合は、**有効にするメールボックス**や**新規メールボックス**などの Exchange Online のコマンドレットを使用する必要があります。直接、クラウド サービスに対して。**有効にする RemoteMailbox**オンプレミスの Exchange コマンドレットを使用する場合は、既定の地域で、メールボックスが作成されます。
+
+### <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo"></a>既存のオンボード設置特定地域内のメールボックス
+など[、EAC での移行のダッシュ ボード](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)の[新規 MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch)コマンドレットでは、Exchange オンライン Exchange オンライン、オンプレミスの Exchange 組織からメールボックスを移行するのには、契約時の標準的なツールとプロセスを使用することができます。PowerShell。
+
+最初のステップでは、onboarded では、Azure AD では、適切な**PreferredDataLocation**値を設定することを確認するには、各メールボックスのユーザー オブジェクトが存在することを確認します。契約時のツールは、 **PreferredDataLocation**の値が反映され、指定の地域に直接メールボックスが移行されます。
+
+または、Exchange オンライン PowerShell の[新規 MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest)コマンドレットを使用して特定の地域で直接オンボードのメールボックスに次の手順を使用することができます。
+
+1. Onboarded と**PreferredDataLocation**は、Azure AD で目的の値に設定されている各メールボックスのユーザー オブジェクトが存在することを確認します。**PreferredDataLocation**の値が同期されます、対応するメール ユーザー オブジェクトの**MailboxRegion**属性に Exchange オンライン。
+
+2. 特定の衛星からの接続方法を使用して、このトピックで前述した地域に直接接続します。
+
+3. Exchange オンラインの PowerShell で次のコマンドを実行して、変数にメールボックスの移行を実行するために使用される設置管理者の資格情報を格納します。
+
+    ```
+    $RC = Get-Credential
+    ```
+
+4. Exchange オンラインの PowerShell で次の例のような新しい**新しい MoveRequest**を作成します。 
+
+    ```
+    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
+    ```
+
+5. サテライトに現在接続している地域に、オンプレミスの Exchange から移行する必要がありますすべてのメールボックスに対して、手順 4 を繰り返します。
+
+6. 異なるサテライト地域を追加のメールボックスを移行する場合は、それぞれ固有のサテライト Geo の手順 2 4 からを繰り返します。
+
+### <a name="multi-geo-reporting"></a>複数地域のレポート
+Office 365 管理センターの**利用状況レポートの複数の地域**では、Geo でユーザー数が表示されます。レポートでは、当月のユーザーの分散を表示し、過去 6 か月の履歴データを提供します。
+ 
