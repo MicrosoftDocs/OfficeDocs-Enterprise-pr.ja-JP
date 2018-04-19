@@ -3,7 +3,7 @@ title: SharePoint、Exchange、Skype for Business、Lync のアーキテクチ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: '概要: モデルのアーキテクチャ、展開、および SharePoint、Exchange、Skype のビジネス、および Lync のプラットフォーム ・ オプションを説明する IT のポスターを取得します。'
-ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 
@@ -98,7 +98,7 @@ Office 365 では、コラボレーションと通信サービスが、ユーザ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Office 365 のモデルでは複数地域の OneDrive](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | このモデルは、Office 365 は、プライベートのプレビューでは、現在の複数の地域の OneDrive の 1 ページの概要です。このモデルが含まれています。<br/><br/> メリット <br/> 導入のステップ <br/> -構成の例 <br/><br/>  Office 365 の OneDrive の複数地域のプレビューの詳細についてをクリックして[ここ](https://aka.ms/onedrivemultigeo)。  <br/> |
+|[![Office 365 のモデルでは複数地域の OneDrive](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | このポスターは、Office 365 は、プレビューでは、現在の複数の地域の OneDrive の 1 ページの概要です。このモデルが含まれています。<br/><br/> メリット <br/> 導入のステップ <br/> -構成の例 <br/><br/>  Office 365 の OneDrive の複数地域のプレビューの詳細についてをクリックして[ここ](https://aka.ms/onedrivemultigeo)。  <br/> |
    
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 Database
 <a name="SP2016_Databases"> </a>
@@ -167,7 +167,7 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![SharePoint を使用した Azure のインターネット サイトのイメージ](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |このポスターは、主要な設計活動の概要について説明し、Azure でインターネットに接続するサイトのアーキテクチャの選択肢をお勧めします。アクセシブルなテキストには、このポスターのバージョンが、[アクセス可能なダイアグラム - SharePoint 2013 の Microsoft Azure 内のインターネット サイト](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md)を参照してください。<br/><br/> 詳細については、次の各資料を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用して Microsoft Azure 内のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![SharePoint を使用した Azure のインターネット サイトのイメージ](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |このポスターは、主要な設計活動の概要について説明し、Azure でインターネットに接続するサイトのアーキテクチャの選択肢をお勧めします。アクセシブルなテキストには、このポスターのバージョンが、[アクセス可能なダイアグラム - SharePoint 2013 の Microsoft Azure 内のインターネット サイト](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md)を参照してください。<br/><br/> Hardware and software requirements (Project Server 2013)  <br/><br/> - [SharePoint Server 2013 を使用して Microsoft Azure 内のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト
 <a name="DesignSampleInternetSites"> </a>
@@ -176,7 +176,7 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![デザイン サンプルの図:SharePoint 2013 用の Microsoft Azure のインターネット サイト](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |独自アーキテクチャのインターネットに接続するサイトで、SharePoint Server 2013 を使用して、Azure の開始点としてこの設計サンプルを使用します。アクセシブルなテキストには、このポスターのバージョンが、次を参照してください。[アクセス可能な図の設計サンプル: インターネットのサイトで、SharePoint 2013 の Microsoft Azure](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md)。<br/><br/> 詳細については、次の各資料を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用して Microsoft Azure 内のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![デザイン サンプルの図:SharePoint 2013 用の Microsoft Azure のインターネット サイト](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |独自アーキテクチャのインターネットに接続するサイトで、SharePoint Server 2013 を使用して、Azure の開始点としてこの設計サンプルを使用します。アクセシブルなテキストには、このポスターのバージョンが、次を参照してください。[アクセス可能な図の設計サンプル: インターネットのサイトで、SharePoint 2013 の Microsoft Azure](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md)。<br/><br/> Hardware and software requirements (Project Server 2013)  <br/><br/> - [SharePoint Server 2013 を使用して Microsoft Azure 内のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Microsoft Azure に対する SharePoint の障害復旧
 <a name="sharepoint_recovery_Azure"> </a>
@@ -185,9 +185,9 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Azure に SharePoint 災害復旧のプロセス](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |この IT のポスターは、Azure での災害復旧環境のアーキテクチャの原則を示しています。アクセシブルなテキストには、このポスターのバージョンが、[アクセス可能なダイアグラム - Microsoft Azure に SharePoint の災害復旧](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)を参照してください。<br/><br/> 詳細については、次の各資料を参照してください。  <br/><br/> - [Microsoft Azure では SharePoint Server 2013 の災害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Azure に SharePoint 災害復旧のプロセス](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |この IT のポスターは、Azure での災害復旧環境のアーキテクチャの原則を示しています。アクセシブルなテキストには、このポスターのバージョンが、[アクセス可能なダイアグラム - Microsoft Azure に SharePoint の災害復旧](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)を参照してください。<br/><br/> Hardware and software requirements (Project Server 2013)  <br/><br/> - [Microsoft Azure では SharePoint Server 2013 の災害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>Concepts
 
 <a name="Lync2013_Options"> </a>
 

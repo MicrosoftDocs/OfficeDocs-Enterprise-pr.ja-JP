@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: '概要: は、設置ディレクトリと、Office 365 サブスクリプションの Azure AD テナントとの間のアカウントを同期するのには Azure の仮想マシン上の Azure AD 接続を展開します。'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azure で Office 365 のディレクトリ同期を展開します。
 
@@ -105,7 +105,7 @@ AnOffice 365 サブスクリプションへの設置型 Windows サーバーの 
     
 - オンプレミス ネットワークには、ドメイン コントローラーと DNS サーバーが存在します。
     
-- Azure AD 接続では、シングル サインオンではなくパスワード ハッシュの同期を実行します。Active Directory フェデレーション サービス (AD FS) インフラストラクチャを導入する必要はありません。パスワード ハッシュの同期とシングル サインオンのオプションに関する詳細について[を使用するディレクトリの統合シナリオを決定する](https://go.microsoft.com/fwlink/p/?LinkId=393094)を参照してください。
+- Azure AD 接続では、シングル サインオンではなくパスワード ハッシュの同期を実行します。Active Directory フェデレーション サービス (AD FS) インフラストラクチャを導入する必要はありません。パスワード ハッシュの同期とシングル サインオンのオプションに関する詳細については、 [Azure Active Directory ハイブリッドの id ソリューションの適切な認証方法を選択する](http://aka.ms/auth-options)を参照してください。
     
 ご使用の環境でこのソリューションを展開する場合に考慮できるその他の設計に関する選択内容があります。それらには以下が含まれます。
   

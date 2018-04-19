@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise 開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: '概要: は、Office 365 の E5 とエンタープライズ モビリティ + セキュリティ (EMS) E5 と 10 企業の Windows を実行するコンピューターを含む、開発/テスト環境を作成するのには、このテスト ラボ ガイド 』 を使用します。'
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 開発/テスト環境
 
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/16/2018
 **図 1: Azure Active Directory (AD) のテナントとユーザー アカウントを Office 365 の E5 サブスクリプション**
 
 ![Microsoft 3656 Enterprise 開発/テスト環境のフェーズ 1](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> Office 365 の E5 の試用版サブスクリプションは、60 日間を簡単に拡張可能な 30 日間です。永続的な開発/テスト環境では、作成新しい有料サブスクリプションのライセンスの数が少ない。 
   
 ## <a name="phase-2-add-ems"></a>フェーズ 2: EMS を追加する
 
@@ -67,7 +70,7 @@ ms.lasthandoff: 04/16/2018
   
 開発/テスト環境には、以下が含まれるようになりました。
   
-- Office 365 E5 Enterprise と EMS の試用版サブスクリプションが、ユーザー アカウントの一覧と同じ組織および同じ Azure AD テナントを共有している。
+- Office 365 E5 エンタープライズおよび EMS E5 試用版サブスクリプションはユーザー アカウントの一覧と同じ Azure AD テナントの共有します。
 - Office 365 の E5 と E5 の EMS を使用するのには、すべての適切なユーザー アカウント (グローバル管理者のみまたはすべての 5 つのユーザー アカウント) が有効になります。
     
 図 2 は、EMS が追加された結果的な構成を示しています。
@@ -202,8 +205,9 @@ Microsoft 365 Enterprise の機能について確認するには、これらの�
     
 - [構成および高度な脅威保護をテストします。](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>Concepts
 
 - [Microsoft 365 エンタープライズ ドキュメント](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Microsoft 365 エンタープライズを展開します。](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [1 つのマイクロソフトのクラウド開発/テスト環境](the-one-microsoft-cloud-dev-test-environment.md)
+- [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)

@@ -3,7 +3,7 @@ title: Office 365 開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '概要: ガイドを使用してこのテスト ラボの評価や開発/テスト用の Office 365 の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 
@@ -72,22 +72,9 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
 
 1. 軽量の Office 365 の開発/テスト環境では、お使いのコンピューター上のインターネット ブラウザーを開くし、には、 [https://aka.ms/e5trial](https://aka.ms/e5trial)。 
     
-    シミュレートされたエンタープライズ Office 365 の開発/テスト環境。
-    
-  - [Azure ポータル](https://portal.azure.com)では、CORP と CLIENT1 を接続\\User1 のアカウントです。
-    
-  - 管理者レベルの Windows PowerShell コマンド プロンプトを起動して、次に示すコマンドを実行します。
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    シミュレートされたエンタープライズ Office 365 の開発/テスト環境に接続 CLIENT1 CORP\User1 アカウントで Azure ポータルから。
 
-    > [!TIP]
-    > クリックして[ここでは](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)この資料ですべての PowerShell コマンドを含むテキスト ファイルを取得します。
-  
-  - 開始画面から、[ **Internet Explorer** ] をクリックし、 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
+    開始画面では、マイクロソフトのエッジを実行し、 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
 2. [**ようこそ、認識するようにするを取得**] ページで次のコマンドを指定します。
     
@@ -162,6 +149,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> クリックして[ここでは](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)この資料ですべての PowerShell コマンドを含むテキスト ファイルを取得します。
 
 **新しい MsolUser**コマンドの表示から、生成されたアカウントのパスワード、ユーザー 2 に注意してくださいし、安全な場所に記録します。
   
@@ -303,6 +292,6 @@ Office 365 の開発/テスト環境を構築するのに、これらの追加�
   
 - [Office 365 と Dynamics 365 の開発/テスト環境](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+- [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
 
