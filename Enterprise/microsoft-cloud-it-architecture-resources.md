@@ -12,19 +12,18 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
-description: '概要: Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。'
-ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 概要:Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
+ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
- **概要:** Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
+ **概要:**Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
   
 以下のアーキテクチャ ツールおよびポスターでは、Office 365、Microsoft Azure、Microsoft Intune、Microsoft Dynamics 365、プライベート クラウドのデータ センター、オンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスおよびプラットフォームについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードの最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。 
   
@@ -60,7 +59,7 @@ ms.lasthandoff: 02/14/2018
   
 |**項目**|**説明**|
 |:-----|:-----|
-|[![Enterprise Cloud ロードマップのサムネイル](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft のエンタープライズ クラウド ロードマップ](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |この Sway エクスペリエンスを通して、業界で最も包括的なクラウド ソリューションを説明しているリソースをご確認ください。  <br/> |
+|[![Enterprise Cloud ロードマップのサムネイル](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft の Enterprise Cloud ロードマップ](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |この Sway エクスペリエンスを通して、業界で最も包括的なクラウド ソリューションを説明しているリソースをご確認ください。  <br/> |
    
 <a name="cloudarch"> </a>
 ## <a name="microsoft-cloud-for-enterprise-architects-series"></a>エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド
