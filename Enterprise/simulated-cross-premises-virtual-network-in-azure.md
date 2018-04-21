@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '概要: は、Microsoft Azure で開発/テスト環境とシミュレーションの間、設置型の仮想ネットワークを作成します。'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure でのシミュレートされたクロスプレミスの仮想ネットワーク
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 04/16/2018
 最初に、ローカル コンピューターで Azure PowerShell プロンプトを起動します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure の PowerShell の最新バージョンを使用します。[Azure の PowerShell コマンドレットの入門](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 次のコマンドを使用して Azure アカウントにログインします。
   
@@ -86,7 +86,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> クリックして[ここで](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)すべての PowerShell コマンドは、この資料に含まれているテキスト ファイルを取得します。
+> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[こちら](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)をクリックしてください。
   
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
@@ -174,7 +174,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 CORP の両方を指定するように求められますことに注意してください\\User1 のパスワードとディレクトリ サービス復元モード (DSRM) のパスワードでは、DC2 を再起動するとします。 

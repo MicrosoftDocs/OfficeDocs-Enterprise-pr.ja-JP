@@ -1,9 +1,9 @@
 ---
-title: "Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する"
+title: Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: "Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。"
-ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。
+ms.openlocfilehash: 5286a581a67b39d5d5ca921b998d6ea14b3ff50f
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
@@ -44,8 +44,8 @@ ms.lasthandoff: 02/14/2018
     
 - _All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
-## <a name="the-short-version-instructions-without-explanations"></a>簡略版 (説明なしの手順)
 <a name="ShortVersion"> </a>
+## <a name="the-short-version-instructions-without-explanations"></a>簡略版 (説明なしの手順)
 
 ユーザーへのアクセス権を持っている Office 365 の PowerShell のすべてのサービスを表示するには、次の構文を使用します。
   
@@ -89,8 +89,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceSt
 Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>詳細版 (詳細な説明付きの手順)
 <a name="LongVersion"> </a>
+## <a name="the-long-version-instructions-with-detailed-explanations"></a>詳細版 (詳細な説明付きの手順)
 
 ### <a name="find-the-office-365-powershell-services-that-a-user-has-access-to"></a>Office 365 の PowerShell サービスへのアクセスを持つユーザーを見つける
 
@@ -282,17 +282,21 @@ Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceSta
   
 、言うまでもなく、あるため、Windows PowerShell がある: Windows PowerShell を節約するなどの手間と時間のかかるタスクからです。
   
-そう思いますが、最終的なサービスの情報を表示するコマンドです。
+ここでは、Office 365 の E5 のサブスクリプションをライセンス、サービス ステータスのインデックスで識別される、指定された一連のサービスのサービスの情報を表示するためのコマンドの例です。
   
 ```
-Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[0].ProvisioningStatus}}, @{Name="MDM";Expression={$_.Licenses[0].ServiceStatus[1].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[2].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[3].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[4].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[5].ProvisioningStatus}}, @{Name="OfficeWeb";Expression={$_.Licenses[0].ServiceStatus[6].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[8].ProvisioningStatus}} | ConvertTo-Html > "C:\\My Documents\\Service Info.html"
+Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[12].ProvisioningStatus}}, @{Name="Teams";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[20].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[19].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[21].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[22].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[24].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[23].ProvisioningStatus}} | ConvertTo-CSV > "C:\Service Info.csv"
 ```
 
-非常に複雑に見えるコマンドです。ですが、すべてのユーザーとすべてのサービスのステータスの表示、CSV ファイルを作成します。
+このコマンドは、すべてのユーザーおよびサービス (チーム、Yammer、AD RMS、OfficePro、Skype、SharePoint、および Exchange) の指定されたセットの場合は、そのサービス ステータスを表示、CSV ファイルを作成します。
+
+>[!Note]
+>サブスクリプションのサービスの一覧を取得することができます、`(Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus`コマンドです。出力では、0 からインデックス サービスの番号付けを開始します。上記のコマンドは、単なる例です。サービスのインデックス番号は、時間の経過とともに変更できます。
+>
 
   
-## <a name="see-also"></a>関連項目
 <a name="SeeAlso"> </a>
+## <a name="see-also"></a>関連項目
 
 Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
   
@@ -312,7 +316,7 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
     
 - [形式リスト](https://go.microsoft.com/fwlink/p/?LinkId=113302)
     
-- [Get-msoluser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [Select-Object](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     

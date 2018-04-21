@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: '概要: は、Microsoft Azure 内のドメイン コント ローラーと高可用性のフェデレーション認証が Office 365 のディレクトリ同期サーバーを構成します。'
-ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 9713e6b0f5241ece4e0f90aa5e0343582e38cdaa
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性フェデレーション認証のフェーズ 2:ドメイン コントローラーを構成する
 
@@ -31,9 +31,9 @@ Azure インフラストラクチャ サービスに Office 365 フェデレー�
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Azure にドメイン コントローラー仮想マシンを作成する
 
-まず、テーブル M の**仮想マシンの名前**] 列に入力し、[**最小サイズ**] 列で、必要に応じて仮想マシンのサイズを変更する必要があります。
+まず、「表 M」の「 **仮想マシン名** 」列に必要事項を入力し、必要に応じて、「 **最小サイズ** 」列で仮想マシンのサイズを変更します。
   
-|**アイテム**|**バーチャル マシンの名前**|**ギャラリーの画像**|**記憶域の種類**|**最小サイズ**|
+|**項目**|**仮想マシン名**|**ギャラリー イメージ**|**ストレージの種類**|**最小サイズ**|
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)(最初のドメイン コント ローラー、DC1 の使用例)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)(2 番目のドメイン コント ローラー、DC2 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
@@ -45,7 +45,7 @@ Azure インフラストラクチャ サービスに Office 365 フェデレー�
    
  **M - Azure 内の Office 365 の高可用性のフェデレーション認証のための仮想マシンの表**
   
-、仮想マシンのサイズの完全な一覧は、[仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)を参照してください。
+仮想マシンのサイズの一覧については、「[Azure の仮想マシンのサイズ](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes)」を参照してください。
   
 Azure PowerShell の次のコマンド ブロックでは、2 つのドメイン コント ローラーの仮想マシンを作成します。削除して、変数の値を指定します\<と > の文字。Azure の PowerShell コマンド ブロックが次のテーブルから値を使用することに注意してください。
   
@@ -64,7 +64,7 @@ Azure PowerShell の次のコマンド ブロックでは、2 つのドメイン
 テーブル R、V、S、I、および A で定義したことを思い出して[高可用性の統合認証フェーズ 1: 構成の Azure](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure の PowerShell の最新バージョンを使用します。[Azure の PowerShell コマンドレットの入門](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 すべてに適切な値を指定したら、その結果のブロックを Azure PowerShell プロンプト、またはローカル コンピューターの PowerShell 統合スクリプト環境 (ISE) で実行します。
   
@@ -155,7 +155,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-次に、名前と組織のネットワーク上のリソースの IP アドレスに対して ping を実行するのには、 **ping**コマンドを使用して、組織のネットワーク上の場所への最初のドメイン コント ローラーの接続をテストします。
+次に、最初のドメイン コントローラーから組織ネットワーク上の場所への接続をテストします。テストには、組織ネットワーク上のリソースの名前と IP アドレスを探索する **ping** コマンドを使用します。
   
 この手順により、DNS の名前解決が正常に動作していること (仮想マシンがオンプレミスの DNS サーバーで正しく構成されていること) を確認します。また、クロスプレミスの仮想ネットワークでパケットが送受信できることを確認します。この基本的なテストに失敗した場合は、IT 部門に問い合わせて、DNS の名前解決とパケット配信に関する問題のトラブルシューティングを実施してください。
   
@@ -165,7 +165,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
 ドメイン管理者アカウントの資格情報の入力を求めるダイアログが表示されます。コンピューターが再起動されます。
@@ -186,7 +186,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 
 ```
 

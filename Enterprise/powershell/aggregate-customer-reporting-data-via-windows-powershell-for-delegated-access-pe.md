@@ -1,5 +1,5 @@
 ---
-title: "委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する"
+title: 委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
-description: "概要:Office 365 の Windows PowerShell を使用すると、顧客のすべてのテナンシーでレポートを取得し、1 つの場所にデータを集約できます。"
-ms.openlocfilehash: 825f0519b97522f664c34462c441d190cac4bb8e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
-ms.translationtype: HT
+description: 概要:Office 365 の Windows PowerShell を使用すると、顧客のすべてのテナンシーでレポートを取得し、1 つの場所にデータを集約できます。
+ms.openlocfilehash: eba2c3be848b878670321485718317b5552b2db3
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する
 
@@ -54,9 +54,9 @@ $UserName = "admin@contoso.onmicrosoft.com"
 
 # These are the locations for the report output and error log.
 
-$OutputFile = ".\\ReportOutput.csv"
+$OutputFile = ".\ReportOutput.csv"
 
-$ErrorFile = ".\\Errors.txt"
+$ErrorFile = ".\Errors.txt"
 
 # This is the report to run and all the necessary parameters.
 
@@ -132,7 +132,7 @@ foreach ($c in $contracts) {
 3. 次の構文に従って、スクリプトをリモートの Windows PowerShell で実行します。
     
   ```
-  &amp; "C:\\O365 Scripts\\GetMailboxActivityReport.ps1"
+  &amp; "C:\O365 Scripts\GetMailboxActivityReport.ps1"
   ```
 
 このサンプル スクリプトでは、集約されたレポートを ReportOutput.csv ファイルに配置します。
