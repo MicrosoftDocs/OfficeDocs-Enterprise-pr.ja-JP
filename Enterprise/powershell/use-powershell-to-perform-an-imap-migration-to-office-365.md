@@ -1,5 +1,5 @@
 ---
-title: "PowerShell を使用した Office 365 への IMAP 移行の実行"
+title: PowerShell を使用した Office 365 への IMAP 移行の実行
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: "概要:Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。"
-ms.openlocfilehash: 50f97d858b7e7f00ac3cb1e0a239928badca215a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 概要:Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。
+ms.openlocfilehash: 7f50097cc918d0c334ab34ba48624df8c43c5d1e
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell を使用した Office 365 への IMAP 移行の実行
 
@@ -183,7 +183,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 次の Exchange Online PowerShell コマンドは、"IMAPEndpoint" という IMAP エンドポイントを使用して "IMAPBatch1" という移行バッチを自動的に開始します。
   
 ```
-New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\\Users\\Administrator\\Desktop\\IMAPmigration_1.csv")) -AutoStart
+New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
 ```
 
 #### <a name="verify-it-worked"></a>機能していることを確認する
