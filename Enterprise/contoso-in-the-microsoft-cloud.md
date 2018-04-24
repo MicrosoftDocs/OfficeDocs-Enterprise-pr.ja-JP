@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: '概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。'
-ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft Cloud の Contoso
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 次のセクションを参照してください。
   
-- [ハイブリッド クラウドの概要](hybrid-cloud-overview.md)
+- [Contoso Corporation の概要](overview-of-the-contoso-corporation.md)
     
     グローバルな企業である Contoso Corporation は、100,000 を超える製品を製造、販売、およびサポートする複合組織です。
     
