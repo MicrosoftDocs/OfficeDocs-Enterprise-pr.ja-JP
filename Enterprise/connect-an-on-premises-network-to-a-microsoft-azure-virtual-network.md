@@ -3,7 +3,7 @@ title: オンプレミス ネットワークを Microsoft Azure 仮想ネット�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,18 +14,20 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: '概要: Office サーバーのワークロードのためにクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
-ms.openlocfilehash: 559c1330c3f39ea52b1cf5c3127782dddf37f95b
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: '概要: 設置型の間の Azure を構成する方法を学習するサイト間の VPN 接続での Office サーバーのワークロードを仮想ネットワークです。'
+ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
  **概要:** Office サーバーのワークロードのためにクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。
   
-クロスプレミス Azure 仮想ネットワークをオンプレミスネットワークに接続することで、Azure インフラサービスにホストされているサブネットや仮想マシンを追加してネットワークを拡張します。この接続により、オンプレミスのネットワークにあるマシンと Azure の仮想マシンが相互に直接アクセスできるようになります。たとえば、Azure 仮想マシンで実行中のディレクトリ同期サーバーは、アカウントへの変更に関してオンプレミスのドメイン コントローラーのクエリを実行し、Office 365 のサブスクリプションにその変更を同期する必要があります。この資料では、Azure 仮想マシンをホストできるようにクロスプレミス Azure 仮想ネットワークを設定する方法を示します。
+複数の環境に関する Azure の仮想ネットワークは、Azure インフラストラクチャ サービスは、サブネットとホストの仮想マシンにネットワークを拡張する、設置型のネットワークに接続されています。この接続では、Azure およびその逆に、仮想マシンに直接アクセスするのには、設置型のネットワーク上のコンピューターを使用します。 
+
+たとえば、Azure の仮想マシンで実行されている、ディレクトリ同期サーバーは、アカウントへの変更、設置型のドメイン コント ローラーのクエリを実行し、Office 365 のサブスクリプションにその変更を同期する必要があります。この資料では、設定方法、設置型の間の Azure 仮想 Azure の仮想マシンをホストする準備が整っているサイト間仮想プライベート ネットワーク (VPN) 接続を使用してネットワークです。
 
 ## <a name="overview"></a>概要
 
@@ -33,13 +35,22 @@ Azure の仮想マシンをオンプレミス環境から分離する必要は�
   
 ![サイト間 VPN 接続を使用して Microsoft Azure に接続されているオンプレミスのネットワーク](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-この図では、サイト間の仮想プライベート ネットワーク (VPN) 接続によって、2 つのネットワーク (オンプレミス ネットワークと Azure 仮想ネットワーク) が接続されています。サイト間の VPN 接続はオンプレミス ネットワークの VPN デバイスと Azure 仮想ネットワークの Azure VPN gatewayで終端されます。Azure 仮想ネットワークには仮想マシンがあります。Azure 仮想ネットワークの仮想マシンで発生したネットワーク トラフィックは VPN gatewayに送信され、次にこのトラフィックはサイト間 VPN 接続を介してオンプレミス ネットワーク上の VPN デバイスに送信されます。その後、オンプレミス ネットワークのルーティング インフラストラクチャによって、宛先にトラフィックが送られます。
+ダイアグラムでは、サイト間 VPN 接続で接続されている 2 つのネットワーク: オンプレミスのネットワークと Azure の仮想ネットワークです。サイト間 VPN 接続は、次のとおりです。
+
+- 2 つのエンドポイント間でアドレス指定可能なパブリック インターネット上に配置されます。
+- 設置型のネットワーク上の VPN デバイスと Azure の仮想ネットワークに、Azure の VPN ゲートウェイで終了します。
+
+Azure の仮想ネットワークは、仮想マシンをホストします。Azure の仮想ネットワーク上の仮想マシンからのネットワーク トラフィックは、VPN ゲートウェイは、設置型のネットワーク上の VPN デバイスにサイト間 VPN 接続を介してトラフィックを転送するに転送を取得します。設置型ネットワークのルーティング インフラストラクチャは、その宛先へのトラフィックを転送します。
+
+>[!Note]
+>使用することも[ExpressRoute](https://azure.microsoft.com/services/expressroute/)組織とのネットワークとの間の直接接続であります。ExpressRoute 上のトラフィックは、パブリック インターネット経由では送信されません。この資料については説明しません ExpressRoute を使用します。
+>
   
 Azure Virtual Network とオンプレミス ネットワーク間の VPN 接続を設定するには、次の手順を実行します。 
   
 1. **オンプレミス:** オンプレミスの VPN デバイスをポイントするオンプレミス ネットワーク ルートを、Azure 仮想ネットワークのアドレス空間上で定義して作成します。
     
-2. **Microsoft Azure:** サイト間 VPN 接続を使用して Azure 仮想ネットワークを作成します。この資料では [ExpressRoute](https://azure.microsoft.com/services/expressroute/) の使用については説明しません。
+2. **Microsoft Azure:** サイト間 VPN 接続では、Azure の仮想ネットワークを作成します。 
     
 3. **オンプレミス:** VPN 接続を終了するようにオンプレミスのハードウェアまたはソフトウェア VPN デバイスを構成します。これには、インターネット プロトコル セキュリティ (IPsec) が使用されます。
     
@@ -51,7 +62,7 @@ Azure Virtual Network とオンプレミス ネットワーク間の VPN 接続�
 ### <a name="prerequisites"></a>前提条件
 <a name="Prerequisites"></a>
 
-- Azure サブスクリプション。Azure サブスクリプションについては、「[Microsoft Azure サブスクリプション ページ](https://azure.microsoft.com/pricing/purchase-options/)」に移動します。
+- Azure サブスクリプションの場合。Azure サブスクリプションについては、[どのようにして購入 Azure のページ](https://azure.microsoft.com/pricing/purchase-options/)に移動します。
     
 - 仮想ネットワークとサブネットに割り当て可能なプライベート IPv4 アドレス空間。現在、および将来の拡大で必要となる仮想マシン数に対応できる十分な空き領域が必要です。
     
@@ -328,7 +339,7 @@ VPN デバイスを構成するために必要なものを以下に記します�
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>フェーズ 3 (省略可能)：仮想マシンの追加
 
-Azure で必要な仮想マシンを作成します。詳細は「[Azure ポータルで最初の Windows 仮想マシンを作成する](https://go.microsoft.com/fwlink/p/?LinkId=393098)」を参照してください。
+Azure にする必要がある仮想マシンを作成します。詳細については、 [Windows Azure ポータルでバーチャル マシンの作成](https://go.microsoft.com/fwlink/p/?LinkId=393098)を参照してください。
   
 以下の設定を使用します。
   
@@ -347,6 +358,4 @@ Azure で必要な仮想マシンを作成します。詳細は「[Azure ポー�
 ## <a name="next-step"></a>次の手順
   
 [Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
- 
-
 

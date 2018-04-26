@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: '概要: Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから Office 365 管理センター タスクを実行します。'
-ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
+ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
- **概要:** Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから Office 365 管理タスクを実行します。
+ **の概要:** コマンドラインから管理タスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。
   
 Office 365 PowerShell を使用して、コマンド ラインから Office 365 設定を管理します。Office 365 PowerShell への接続は、必要なソフトウェアのインストール、必要なソフトウェアの実行、Office 365 組織への接続という、シンプルな 3 段階のプロセスです。 
 
@@ -64,8 +64,7 @@ Microsoft PowerShell の Microsoft Azure Active Directory モジュールには�
   - PSGallery からモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
   - インストール後、PowerShell コマンド ウィンドウを閉じます。
     
-### <a name="step-2-connect-to-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションに接続する
-<a name="step3"> </a>
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
 
 *アカウント名とパスワード* のみを使用して接続する場合:
   
@@ -93,7 +92,6 @@ Connect-MsolService
 4. **[Azure Active Directory PowerShell]** ダイアログ ボックスの手順に従って、検証コードなどの他の認証情報を提供してから、 **[サインイン]** をクリックします。
     
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
-<a name="step3"> </a>
 
 何もエラーが表示されなければ、正常に接続されています。簡単に確かめるには、Office 365 コマンドレット ( **Get-MsolUser** など) を実行して結果を確認します。
   
@@ -119,10 +117,10 @@ Connect-MsolService
     
 - **接続エラーが発生した場合、次のトピックをご覧ください: **["Connect-MsolService:型の例外がスローされました" というエラー](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>グラフ モジュールの Azure Active Directory PowerShell を使用して接続します。
 <a name="ConnectV2"> </a>
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>グラフ モジュールの Azure Active Directory PowerShell を使用して接続します。
 
-グラフ モジュールの Azure Active Directory PowerShell のコマンドでは、そのコマンドレットの名前に"AzureAD"があります。
+[グラフ モジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)のモジュール内のコマンドでは、そのコマンドレットの名前に"AzureAD"があります。
 
 グラフ モジュール用の新しい Azure Active Directory の PowerShell コマンドレットを必要とする手順は、モジュールをインストールし、Office 365 サブスクリプションに接続する手順を使用します。
 
@@ -146,7 +144,7 @@ Connect-MsolService
 信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
 
 
-### <a name="step-2-connect-to-office-365"></a>手順 2: Office 365 に接続する
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
 
 *アカウント名とパスワード*を使用して Office 365 サブスクリプションに接続するには、以下の操作を実行します。
     
