@@ -7,7 +7,7 @@ ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,15 +15,15 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: '概要: モデルのアーキテクチャ、展開、および SharePoint、Exchange、Skype のビジネス、および Lync のプラットフォーム ・ オプションを説明する IT のポスターを取得します。'
-ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 
- **の概要:**モデルのアーキテクチャ、展開、および SharePoint、Exchange、Skype のビジネス、および Lync のプラットフォーム ・ オプションを説明する IT のポスターを取得します。
+ **の概要:** モデルのアーキテクチャ、展開、および SharePoint、Exchange、Skype のビジネス、および Lync のプラットフォーム ・ オプションを説明する IT のポスターを取得します。
   
 これらの IT ポスターは、SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデルと展開オプションについて説明し、Microsoft Azure で SharePoint を展開するための設計情報を提供します。
   
@@ -91,7 +91,7 @@ Office 365 では、コラボレーションと通信サービスが、ユーザ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![SharePoint 2016 設計モデルのポスターの縮小版](images/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | この IT ポスターでは、ビジネスの意思決定者とソリューション設計担当者が知っておく必要のある SharePoint Online、Microsoft Azure、SharePoint のオンプレミス構成について説明しています。 <br/><br/> - **SharePoint Online (SaaS)**のサービス (SaaS) のサブスクリプション モデルとソフトウェアを SharePoint を消費します。 <br/> - **SharePoint のハイブリッド**に、SharePoint サイトおよびアプリケーションを自分のペースでクラウドに移行します。 <br/> - **Azure (IaaS) で SharePoint**の Microsoft Azure に設置環境を拡張し、ある 2016年の SharePoint のサーバーを展開します。(これは推奨高可用性/災害復旧/開発/テスト環境で)<br/> - **SharePoint 設置**の計画、展開、管理および保存されているデータ ・ センターの SharePoint 環境をカスタマイズします。 <br/> |
+|[![SharePoint 2016 設計モデルのポスターの縮小版](images/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | この IT ポスターでは、ビジネスの意思決定者とソリューション設計担当者が知っておく必要のある SharePoint Online、Microsoft Azure、SharePoint のオンプレミス構成について説明しています。 <br/><br/> - **SharePoint Online (SaaS)** のサービス (SaaS) のサブスクリプション モデルとソフトウェアを SharePoint を消費します。 <br/> - **SharePoint のハイブリッド**に、SharePoint サイトおよびアプリケーションを自分のペースでクラウドに移行します。 <br/> - **Azure (IaaS) で SharePoint**の Microsoft Azure に設置環境を拡張し、ある 2016年の SharePoint のサーバーを展開します。(これは推奨高可用性/災害復旧/開発/テスト環境で)<br/> - **SharePoint 設置**の計画、展開、管理および保存されているデータ ・ センターの SharePoint 環境をカスタマイズします。 <br/> |
    
 ### <a name="multi-geo-preview-for-onedrive-in-office-365"></a>Office 365 の OneDrive の複数の地域のプレビュー
 <a name="MultiGeoO365ODB"> </a>
@@ -187,7 +187,7 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 |:-----|:-----|
 |[![Azure に SharePoint 災害復旧のプロセス](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![他の言語のバージョンのページを参照してください](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[その他の言語](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |この IT のポスターは、Azure での災害復旧環境のアーキテクチャの原則を示しています。アクセシブルなテキストには、このポスターのバージョンが、[アクセス可能なダイアグラム - Microsoft Azure に SharePoint の災害復旧](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)を参照してください。<br/><br/> Hardware and software requirements (Project Server 2013)  <br/><br/> - [Microsoft Azure では SharePoint Server 2013 の災害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013 の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Concepts
+## <a name="see-also"></a>関連項目
 
 <a name="Lync2013_Options"> </a>
 

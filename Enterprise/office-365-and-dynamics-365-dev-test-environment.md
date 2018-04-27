@@ -7,22 +7,22 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: '概要: は、Dynamics 365 を Office 365 の開発/テスト環境に追加するのには、このテスト ラボ ガイド 』 を使用します。'
-ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: ccf0615befe2ba74f85177dc252516f685655ed6
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境
 
- **の概要:**Dynamics 365 を Office 365 の開発/テスト環境に追加するのにには、このテスト ラボ ガイド 』 を使用します。
+ **の概要:** Dynamics 365 を Office 365 の開発/テスト環境に追加するのにには、このテスト ラボ ガイド 』 を使用します。
   
 この記事の手順を使用して、Dynamics 365 試用版サブスクリプションを Office 365 開発/テスト環境と同じ組織に追加し、Office 365 と Dynamics 365 の開発/テスト環境を作成します。
   

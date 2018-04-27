@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,15 +15,15 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '概要: は、Microsoft Azure で開発/テスト環境とシミュレーションの間、設置型の仮想ネットワークを作成します。'
-ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure でのシミュレートされたクロスプレミスの仮想ネットワーク
 
- **の概要:**Microsoft Azure で開発/テスト環境としてのシミュレーションの間、設置型の仮想ネットワークを作成します。
+ **の概要:** Microsoft Azure で開発/テスト環境としてのシミュレーションの間、設置型の仮想ネットワークを作成します。
   
 この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。   
   
