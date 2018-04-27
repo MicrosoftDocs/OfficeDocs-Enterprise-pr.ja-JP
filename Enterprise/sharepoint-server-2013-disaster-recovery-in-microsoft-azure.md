@@ -1,9 +1,9 @@
 ---
-title: "Microsoft Azure での SharePoint Server 2013 の障害復旧"
+title: Microsoft Azure での SharePoint Server 2013 の障害復旧
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/5/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,28 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: "概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。"
-ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。'
+ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
  **概要:** Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。
+
+ **SharePoint Server 2013 障害復旧の概要ビデオをご覧ください**
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
  SharePoint オンプレミス環境に障害が発生する場合、最も優先すべきことは、システムを稼働状態に迅速に戻すことです。Microsoft Azure でバックアップ環境が既に稼働している場合には、SharePoint の障害復旧は迅速かつ簡単に行えます。このビデオは、SharePoint ウォーム フェールオーバー環境の主要な概念について取り上げ、この記事に記されている詳細情報を補完するものとなっています。
   
-![ビデオ (再生ボタン) アイコン](images/mod_icon_video_M.png)
-  
 この記事では、ソリューション モデル「 **Microsoft Azure における SharePoint 障害復旧** 」を使用します。
   
-[![Azure への SharePoint 障害回復プロセス](images/SP_DR_Azure.png)
+[![Azure への SharePoint 障害回復プロセス](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-](https://go.microsoft.com/fwlink/p/?LinkId=392555)
-  
-![PDF ファイル](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |![Visio ファイル](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+![PDF ファイル](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Visio ファイル](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 この記事の内容
   
@@ -487,7 +486,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
   
 通常、ネットワーク負荷分散を設定する場合、クラスターが単一の IP アドレスに割り当てられます。その後、そのクラスターを指すネットワーク用に、DNS プロバイダーで DNS ホスト レコードを作成します (このプロジェクトでは、オンプレミス データセンターで障害が発生した場合の回復性を確保するために Azure に DNS サーバーを配置しています)。たとえば、負荷分散クラスターの IP アドレスを指す  `http://sharepoint.contoso.com` という DNS レコードを、Active Directory の DNS マネージャーで作成できます。
   
-SharePoint ファームに対する外部アクセスの場合には、外部 DNS サーバー上にホスト レコードを作成できます。その際、ファイアウォール内で外部 IP アドレスを指すイントラネットでクライアントが使用するのと同じ URL (http://sharepoint.contoso.com など) を使用します (この例でのベスト プラクティスは、別の DNS を設定して内部 DNS サーバーが contoso.com に対して権限を持つようにして、DNS 要求を外部 DNS サーバーにルーティングするのではなく、要求を SharePoint ファーム クラスターに直接ルーティングできるようにする方法です)。その後、外部 IP アドレスをオンプレミス クラスターの内部 IP アドレスにマップし、クライアントが探しているリソースを見つけられるようにします。
+SharePoint ファームに対する外部アクセスの場合には、外部 DNS サーバー上にホスト レコードを作成できます。その際、ファイアウォール内で外部 IP アドレスを指すイントラネットでクライアントが使用するのと同じ URL (http://sharepoint.contoso.com) など) を使用します (この例でのベスト プラクティスは、別の DNS を設定して内部 DNS サーバーが contoso.com に対して権限を持つようにして、DNS 要求を外部 DNS サーバーにルーティングするのではなく、要求を SharePoint ファーム クラスターに直接ルーティングできるようにする方法です)。その後、外部 IP アドレスをオンプレミス クラスターの内部 IP アドレスにマップし、クライアントが探しているリソースを見つけられるようにします。
   
 以下に、考えられるいくつかの異なる障害復旧シナリオを記します。
   
@@ -495,7 +494,7 @@ SharePoint ファームに対する外部アクセスの場合には、外部 DN
   
  **シナリオ例: オンプレミス データセンターが完全に消失しました。**このシナリオは、火災や洪水などの自然災害によって生じる恐れがあります。その場合、企業であれば、別の地域にセカンダリ データセンターがあったり、独自のディレクトリ サービスと DNS を持つ Azure サブネットがあったりする可能性があります。前述の障害シナリオと同様、内部と外部の DNS レコードを、Azure SharePoint ファームを指すようにリダイレクトできます。この場合も、DNS レコードの伝達には若干時間がかかる可能性があります。
   
-「[ホスト名付きサイト コレクションのアーキテクチャと展開 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120)」でお勧めするホスト名付きサイト コレクションを使用する場合、一意の DNS 名 (http://sales.contoso.com や http://marketing.contoso.com など) を使用した、SharePoint ファーム内の同じ Web アプリケーションによってホストされているサイト コレクションが複数存在する場合があります。その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
+[ホスト名付きサイト コレクションのアーキテクチャと展開 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120)でお勧めするホスト名付きサイト コレクションを使用する場合、一意の DNS 名 (http://sales.contoso.com や http://marketing.contoso.com) など) を使用した、SharePoint ファーム内の同じ Web アプリケーションによってホストされているサイト コレクションが複数存在する場合があります。その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft の概念実証環境
 <a name="POC"> </a>
