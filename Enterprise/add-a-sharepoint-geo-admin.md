@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: 追加または複数の地域のビジネス OneDrive の地域の管理者を削除する方法について説明します。
-ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
-ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
+ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>追加または Busniess 複数の地域の OneDrive の地域の管理者を削除します。
 
@@ -49,6 +49,14 @@ ms.lasthandoff: 04/30/2018
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 オブジェクト Id を使用してグループを削除するのには次のように実行します。`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>特定の地理的な場所の管理センターへのアクセス
+
+地理的な場所の OneDrive の設定を管理するには、管理者は次の URL 形式を使用して直接 OneDrive 管理センターにアクセスする必要があります。
+
+https://admin.onedrive.com/?geo=<*地域*>
+
+たとえば、カナダの OneDrive の管理の中心にある: https://admin.onedrive.com/?geo=CAN。
 
 ## <a name="see-also"></a>関連項目
 

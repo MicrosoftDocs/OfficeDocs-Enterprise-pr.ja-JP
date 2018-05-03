@@ -12,15 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '概要: 高可用性をホストする Microsoft Azure インフラストラクチャを構成する Office 365 のフェデレーション認証します。'
-ms.openlocfilehash: aea4fb5b8645f18381b9b9391b91925ffed00aab
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
- **の概要:**Office 365 のホストの高可用性の統合認証に Microsoft Azure インフラストラクチャを構成します。
+ **の概要:** Office 365 のホストの高可用性の統合認証に Microsoft Azure インフラストラクチャを構成します。
   
 このフェーズでは、リソース グループ、2、3、および 4 の段階で仮想マシンをホストする Azure 内の仮想ネットワーク (VNet)、および可用性を設定を作成します。上に移動する前に、このフェーズを完了する必要があります[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)です。フェーズのすべては、 [Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
   
@@ -38,13 +38,13 @@ Azure は、これらの基本的なコンポーネントを準備する必要�
 
 Azure のコンポーネントの構成を開始する前に、次の表に入力します。Azure の構成の手順を支援する、このセクションを印刷する必要な情報をメモまたはこのセクションをドキュメントにコピーしで塗りつぶします。VNet の設定、テーブル V を入力します。
   
-|**アイテム**|**構成の設定**|**説明**|**値**|
+|**項目**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet アドレス空間  <br/> |仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共有キー  <br/> |サイト間 VPN 接続の両方の側を認証するために使用される 32 文字のランダムな英数字文字列。It 機能またはこのキーの値を決定するセキュリティ部門。代わりに、 [IPsec の事前共有キーのランダムな文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)を参照してください。<br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
  **表 V:クロスプレミスの仮想ネットワーク構成**
   
@@ -60,7 +60,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
+|**項目**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
@@ -71,7 +71,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。
   
-|**アイテム**|**用途**|**サブネット上の IP アドレス**|**値**|
+|**項目**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
@@ -80,9 +80,9 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
 |5.  <br/> |最初の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |6.  <br/> |2 番目の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |7.  <br/> |最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|8。  <br/> |2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|8.  <br/> |2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **仮想ネットワーク内の表 i: 静的 IP アドレス**
+ **表 I: 仮想ネットワークの静的 IP アドレス**
   
 仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。
   
@@ -108,7 +108,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
 ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure の PowerShell の最新バージョンを使用します。[Azure の PowerShell コマンドレットの入門](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
@@ -146,14 +146,14 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 一意のリソース グループ名のセットについて、次に示す表に必要事項を記入します。
   
-|**アイテム**|**リソース グループ名**|**用途**|
+|**項目**|**リソース グループ名**|**用途**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |ドメイン コントローラー  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS サーバー  <br/> |
 |3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Web アプリケーション プロキシ サーバー  <br/> |
 |4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |インフラストラクチャの要素  <br/> |
    
- **テーブル r: リソース グループ**
+ **表 R: リソース グループ**
   
 次に示すコマンドで、新しいリソース グループを作成します。
   
@@ -198,7 +198,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-次に、ネットワークを作成するセキュリティ グループを各サブネットに仮想マシンが含まれています。サブネットの分離を実行するのには、トラフィックを許可または拒否するサブネットのネットワークのセキュリティ グループの特定の種類の規則を追加できます。
+次に、仮想マシンが含まれているサブネットごとにネットワーク セキュリティ グループを作成します。サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。
   
 ```
 # Create network security groups
@@ -259,25 +259,25 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-次に、Azure の VPN ゲートウェイに接続するのには、設置型の VPN デバイスを構成します。詳細については、 [VPN デバイスの構成](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)を参照してください。
+次に、Azure VPN ゲートウェイに接続するようにオンプレミスの VPN デバイスを構成します。詳細については、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。
   
 オンプレミス VPN デバイスを構成するには、次のものが必要になります。
   
 - Azure VPN ゲートウェイのパブリック IPv4 アドレス。
     
-- サイト間 VPN 接続 (テーブル V 項目 5: [値] 列) の IPsec 事前共有キーです。
+- サイト間 VPN 接続の IPsec 事前共有キー (「表 V」-「項目 5」-「値」列)。
     
 次に、仮想ネットワークのアドレス空間がオンプレミスのネットワークからアクセスできることを確認します。一般に、これは、仮想ネットワークのアドレス空間から VPN デバイスに対応するルートを追加してから、そのルートを組織ネットワークの残りのルーティング インフラストラクチャに公示することで実行します。IT 部門と協議して、この方法について決定してください。
   
 次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。 
   
-|**アイテム**|**用途**|**可用性の名前を設定します。**|
+|**項目**|**用途**|**可用性セット名**|
 |:-----|:-----|:-----|
 |1.  <br/> |ドメイン コントローラー  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS サーバー  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |Web アプリケーション プロキシ サーバー  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **表 a: 可用性を設定します。**
+ **表 A: 可用性セット**
   
 これらの名前は、フェーズ 2、3、および 4 で仮想マシンを作成する際に必要になります。
   
@@ -287,13 +287,13 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
 次に、このフェーズが正常に完了した結果の構成を示します。
