@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用して SharePoint Online のユーザー�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,17 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '使用して Office 365 PowerShell を概要: SharePoint Online のユーザー、グループ、およびサイトを管理します。'
-ms.openlocfilehash: 8ed40d2c736853145e21f0f9852bdb18c7842075
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: a04bf1538d6f56b760932b5be89b1953fcaa33d5
+ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する
 
  **の概要:** Office 365 の PowerShell を使用すると、SharePoint Online のユーザー、グループ、およびサイトを管理できます。
 
-SharePoint Online ユーザー アカウントまたはグループの大規模なリストで動作し、それを管理する簡単な方法を希望する場合は、Office 365 の PowerShell を使用することができます。 
+SharePoint Online 管理者ユーザー アカウントまたはグループの大規模なリストで動作し、それを管理する簡単な方法を希望する場合は、Office 365 の PowerShell を使用することができます。 
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -47,30 +47,29 @@ Get-SPOSite
 次のコマンドを使用して、テナント内のグループの一覧を取得します。
 
 ```
-Get-SPOSite | ForEach-Object {Get-SPOSiteGroup -Site $_.Url} |Format-Table
+Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 ```
 
 ### <a name="get-a-list-of-users"></a>ユーザーの一覧を取得する
 
 次のコマンドを使用して、テナント内のユーザーの一覧を取得します。
 
-```Get-SPOSite | ForEach-Object {Get-SPOUser -Site $_.Url}```
+```
+Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
+```
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>サイト コレクション管理者グループにユーザーを追加する
 
 **セット SPOUser**コマンドを使用するにはサイト コレクションのサイト コレクションの管理者のリストにユーザーを追加します。これは、構文は次の方法です。
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks. Example: "Contoso01"-->
-$site = "site"
-<!--# This is the Site name. Value must be enclosed in double quotation marks. Example: "contosotest"-->
-$user = "loginname"
-<!--This is the users login name. Value must be enclosed in double quotation marks. Example "opalc"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
  ```
 
-この例は、値を格納する変数を使用し、スクリプトのメモには (たとえば"<!--This is the Tenant Name…-->") これらの値である必要がありますを理解するため。
+これらのコマンドを使用するには、置換を置換など、二重引用符内のすべての < および > 文字は、正しい名前を持つ。
 
 この一連のコマンドを追加するなど Opal Castillo (ユーザー名 opalc) サイト コレクションの管理者の一覧 contoso1 テナント内の ContosoTest のサイト コレクションにします。
 
@@ -81,21 +80,17 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
 ```
 
-これらのコマンドは実際に切り取ってメモ帳に貼り付け、$tenant、$site、および $user の変数の値をそれぞれの環境の実際の値に変更して、SharePoint Online Management Shell ウィンドウに貼り付けることができます。
+コピーしこれらのコマンドをメモ帳に貼り付けます、$tenant、$site、$user のお客様の環境からの実際の値に変数の値を変更して、これをそれらを実行するのには、SharePoint のオンライン管理シェルのウィンドウに貼り付けます。
 
 ## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>他のサイト コレクション管理者グループにユーザーを追加する
 
-このタスクでのサイト コレクションで SharePoint グループにユーザーを追加するのには、**追加 SPOUser**コマンド使用します。これは、構文は次の方法です。
+このタスクでのサイト コレクションで SharePoint グループにユーザーを追加するのには、**追加 SPOUser**コマンド使用します。
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks. Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotation marks. Example: "contosotest"-->
-$user = "loginname"
-<!--This is the users login name. Value must be enclosed in double quotation marks. Example: "opalc"-->
-$group = "group"
-<!--This is the SharePoint security Group name. Value must be enclosed in double quotation marks. Example: "Auditors"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$user = "<user account name, such as opalc>"
+$group = "<group name name, such as Auditors>"
 Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
 
 ```
@@ -112,30 +107,24 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>サイト コレクション グループを作成する
 
-**セット SPOSiteGroup**コマンドを使用するには、新しい SharePoint グループを作成し、ContosoTest のサイト コレクションに追加します。これは、構文は次の方法です。
+**セット SPOSiteGroup**コマンドを使用するには、新しい SharePoint グループを作成し、ContosoTest のサイト コレクションに追加します。
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks, Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotation marks, Example: "contosotest"-->
-$group = "group"
-<!--This is the SharePoint security Group name. Value must be enclosed in double quotation marks, Example: "Auditors"-->
-$level = "permission level"
-<!--This is the level of permissions to assign to the group. Value must be enclosed in double quotation marks, Example: "View Only"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$group = "<group name name, such as Auditors>"
+$level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-
-> [!IMPORTANT]
-> 引用符で囲まれたスペースを含む任意の文字列を囲む必要があります。**セット SPOSiteGroup**コマンドレットを使用してアクセス許可レベルなど、グループのプロパティを後で更新できます。
+**セット SPOSiteGroup**コマンドレットを使用してアクセス許可レベルなど、グループのプロパティを後で更新できます。
 
 など contoso1 テナントの contoso 社のテスト サイト コレクションを見て表示のみのアクセス許可と監査人グループを追加します。
 
 ```
 $tenant = "contoso1"
 $site = "Contoso Test"
-$level = "View Only"
 $group = "Auditors"
+$level = "View Only"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
@@ -148,17 +137,12 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 ようにコマンドの構文を参照してください、サイト コレクションのグループから 1 つの Office 365 ユーザーを削除するのに**削除 SPOUser**コマンドを使用しています。構文は次の方法を以下に示します。
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotation marks, Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotation marks, Example: "contosotest"-->
-$group = "group"
-<!--This is the SharePoint security Group name. Value must be enclosed in double quotation marks, Example: "Auditors"-->
-$user = "loginname"
-<!--This is the user’s login name. Value must be enclosed in double quotation marks, Example: "opalc"-->
-Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
+$user = "<user account name, such as opalc>"
+$group = "<group name name, such as Auditors>"
+Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-
 たとえば、contoso1 テナントの contoso 社のテスト サイト コレクションのサイト コレクションの監査人グループから見て村中 Overby を削除します。
 
 ```
@@ -174,11 +158,11 @@ Bobby を現在彼が所属しているすべてのグループから削除す�
 ```
 $tenant = "contoso1"
 $user = "bobbyo"
-Get-SPOSite | ForEach-Object {Get-SPOSiteGroup –Site $_.Url} | ForEach-Object {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
+Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
 ```
 
 > [!WARNING]
-> これは、方法を示すためだけのものです。たとえば、ユーザーが退職した場合など、ユーザーをすべてのグループから実際に削除しなければならないのでない限り、このコマンドを使用しないでください。
+> これは、単なる例です。ユーザーが会社を辞める場合など、すべてのグループからユーザーを削除する必要がある本当にしない限りは、このコマンドを実行する必要があります。
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>ユーザーおよびグループの大規模なリストの管理を自動化する
 
@@ -199,7 +183,7 @@ Site,Group,PermissionLevels
 ### <a name="item"></a>項目:
 
 ```
-https://tenant.sharepoint.com/sites/site,site collection,group,level
+https://tenant.sharepoint.com/sites/site,group,level
 ```
 
 以下は、サンプル ファイルです。
@@ -244,19 +228,19 @@ Contoso Blog Editors,opalc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.
 Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Project01
 ```
 
-次の手順では、2 つの CSV ファイルをドライブに保存する必要があります。次のコマンドは両方の CSV ファイルを使用し、アクセス許可とグループ メンバーシップを追加します。
+次の手順では、2 つの CSV ファイルをドライブに保存する必要があります。両方の CSV ファイルを使用するコマンドの例を挙げますとグループ メンバーシップをアクセス許可を追加するとします。
 
 ```
-Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
-Import-Csv C:\O365Admin\Users.csv | ForEach-Object {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
+Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
+Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-スクリプトでは、CSV ファイルの内容をインポートし、(太字) で列の値を使用して、**新規 SPOSiteGroup**および**追加 SPOUser**コマンドのパラメーターを設定します。例では、C ドライブにこれを保存していますが、任意の場所に保存することができます。
+スクリプトでは、CSV ファイルの内容をインポートし、**新規 SPOSiteGroup**および**追加 SPOUser**コマンドのパラメーターを設定するのには、列の値を使用します。例では、私たちはこのフォルダーに保存 theO365Admin、C ドライブには任意の場所に保存することができます。
 
-ここでは、同じ CSV ファイルを使用して、異なる複数のサイトの複数のグループから、ユーザーをまとめて削除します。コマンドを以下に示します。
+ここで、同じ CSV ファイルを使用して別のサイト内のいくつかのグループのユーザーを削除します。コマンドの例を以下に示します。
 
 ```
-Import-Csv C:\O365Admin\Users.csv | ForEach-Object {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
+Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}
 ```
 
 ## <a name="generate-user-reports"></a>ユーザー レポートを生成する
@@ -264,10 +248,8 @@ Import-Csv C:\O365Admin\Users.csv | ForEach-Object {Remove-SPOUser -LoginName $_
 いくつかのサイトに関する単純なレポートを取得して、該当するサイトのユーザーと各ユーザーのアクセス許可レベルやその他のプロパティを表示しなければならない場合があります。以下に、構文の一例を示します。
 
 ```
-$tenant = "tenant"
-<!--This is the Tenant Name. Value must be enclosed in double quotes, Example: "Contoso01"-->
-$site = "site"
-<!--This is the Site name. Value must be enclosed in double quotes, Example: "contosotest"-->
+$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
 
@@ -290,14 +272,14 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wra
 一方、この操作をすべてのサイトに対して行うとしたら、どうなるでしょうか。以下のコードを使用すれば、すべての Web サイトを入力することなく、このコマンドを使用できます。
 
 ```
-Get-SPOSite | ForEach-Object {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
+Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
 このレポートは非常に簡単で、および特定のレポートまたは詳細な情報を含むレポートを作成するコードを追加することができます。ことができるよう環境を SharePoint Online でユーザーを管理するために SharePoint のオンライン管理シェルを使用する方法のことをお勧めします。
    
 ## <a name="see-also"></a>関連項目
 
-[SharePoint のオンライン PowerShell への接続します。](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[SharePoint のオンライン PowerShell への接続します。](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Office 365 PowerShell を使用して SharePoint Online を管理する](create-sharepoint-sites-and-add-users-with-powershell.md)
 
