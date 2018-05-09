@@ -1,5 +1,5 @@
 ---
-title: "Azure AD を使用して SharePoint サーバーの認証"
+title: Azure AD を使用して SharePoint サーバーの認証
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -16,17 +16,17 @@ ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
-ms.assetid: 
-description: "概要: は、Azure アクセス制御サービスを使用しないし、Azure Active Directory で、SharePoint サーバーのユーザーの認証に SAML 1.1 を使用する方法を説明します。"
-ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
-ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
+ms.assetid: ''
+description: '概要: は、Azure アクセス制御サービスを使用しないし、Azure Active Directory で、SharePoint サーバーのユーザーの認証に SAML 1.1 を使用する方法を説明します。'
+ms.openlocfilehash: 1ab0bb3215531ca8b2d0fda8d70874f966438759
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD を使用して SharePoint サーバーの認証
 
- **の概要:**SharePoint サーバー 2016 Azure Active Directory でユーザーを認証する方法について説明します。
+ **の概要:** SharePoint サーバー 2016 Azure Active Directory でユーザーを認証する方法について説明します。
   
 > [!NOTE]
 > この資料は、カーク Evans、マイクロソフトのプリンシパル プログラム マネージャーの作業に基づいています。 
@@ -99,13 +99,13 @@ IIS でサイトのバインド用の証明書を構成する SharePoint ファ�
 3. 次の行を含むテーブルを (次の表 1 のような) を設定します。</br> 
     - レルム
     - SAML の署名証明書ファイルへの完全パス
-    - SAML シングル サインオン サービスの URL ( */wsfed*と*/saml2*を置き換え)
+    - SAML シングル サインオン サービスの URL ( */wsfed*と */saml2*を置き換え)
     - アプリケーション オブジェクトの id です。 </br>
 *識別子*の値をテーブル (「表 1 の下) に*領域*のプロパティにコピーします。
 4. 変更を保存します。
-5. サインオンの構成] ページにアクセスする**(アプリケーション名) を構成する**] リンクをクリックします。</br>![ページで、シングル ・ サインオンを構成します。](images/SAML11/fig7-configssopage.png)</br> 
+5. サインオンの構成] ページにアクセスする **(アプリケーション名) を構成する**] リンクをクリックします。</br>![ページで、シングル ・ サインオンを構成します。](images/SAML11/fig7-configssopage.png)</br> 
     -  SAML の署名証明書を .cer の拡張子が付いたファイルとしてダウンロードする**SAML の署名証明書の生**のリンクをクリックします。コピーし、テーブルにダウンロードしたファイルへの完全パスを貼り付けます。
-    - コピーし、SAML シングル サインオン サービスの URL リンクを貼り付けるには、URL の*/saml2*の部分を*/wsfed*に置き換えます。</br>
+    - コピーし、SAML シングル サインオン サービスの URL リンクを貼り付けるには、URL の */saml2*の部分を */wsfed*に置き換えます。</br>
 6.  アプリケーションの [**プロパティ**] ウィンドウに移動します。コピーし、手順 3 で設定したテーブルにオブジェクト ID の値を貼り付けます。</br>![アプリケーションのプロパティ] ウィンドウ](images/SAML11/fig8-propertiespane.png)</br>
 7. キャプチャした値を使用して、手順 3 で設定した表次の表 1 のようになるかどうかを確認します。
 
@@ -118,7 +118,7 @@ IIS でサイトのバインド用の証明書を構成する SharePoint ファ�
 |アプリケーションのオブジェクト ID | `a812f48b-d1e4-4c8e-93be-e4808c8ca3ac` |
 
 > [!IMPORTANT]
-> URL に*/saml2*の値を*/wsfed*に置き換えます。*/Saml2*エンドポイントでは、SAML 2.0 トークンを処理します。*/Wsfed*エンドポイントでは、処理 SAML 1.1 トークンを有効にし、SharePoint 2016 SAML フェデレーションに必要です。
+> URL に */saml2*の値を */wsfed*に置き換えます。*/Saml2*エンドポイントでは、SAML 2.0 トークンを処理します。*/Wsfed*エンドポイントでは、処理 SAML 1.1 トークンを有効にし、SharePoint 2016 SAML フェデレーションに必要です。
 
 ## <a name="step-4-configure-a-new-trusted-identity-provider-in-sharepoint-server-2016"></a>ステップ 4: SharePoint サーバーの 2016年の新しい信頼できる id プロバイダーを構成します。
 
@@ -144,7 +144,7 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 2. リボンでは、[**認証プロバイダー** ] をクリックしを使用するゾーンを選択します。
 3. **信頼できる Id プロバイダー**を選択し、登録した*AzureAD*をという名前を識別するプロバイダーを選択します。  
 4. サインイン ページの URL の設定では、**ユーザー設定のサインイン ページ**を選択し、"/_trust/"の値を提供します。 
-5. [ **OK**] をクリックします。
+5. **[OK]** をクリックします。
 
 ![認証プロバイダーを構成します。](images/SAML11/fig10-configauthprovider.png)
 
@@ -159,14 +159,14 @@ Azure AD にログインし、SharePoint にアクセスするユーザーには
  
 ユーザーは Azure AD は、のアクセス許可が与えられてが、また、SharePoint のアクセス許可を与える必要があります。Web アプリケーションにアクセスするのにアクセス許可を設定するのにには、次の手順を使用します。
 
-1. サーバーの全体管理で、[ **アプリケーション構成の管理**] をクリックします。
+1. サーバーの全体管理で、 **[アプリケーション構成の管理]** をクリックします。
 2. [ **アプリケーション構成の管理**] ページの [ **Web アプリケーション**] セクションで、[ **Web アプリケーションの管理**] をクリックします。
 3. 適切な Web アプリケーションをクリックし、[ **ユーザー ポリシー**] をクリックします。
 4. Web アプリケーションのポリシー]、 **[ユーザーの追加**をクリックします。</br>![その名の要求によって、ユーザーの検索](images/SAML11/fig11-searchbynameclaim.png)</br>
 5. [ **ユーザーの追加**] ダイアログ ボックスの [ **領域**] で適切な領域をクリックし、[ **次へ**] をクリックします。
 6. **Web アプリケーションのポリシー** ] ダイアログ ボックスの [**ユーザーの選択**] セクションで、[**参照**] アイコンをクリックします。
 7. [**検索**] ボックスで、ディレクトリ内のユーザーのサインイン名を入力し、[**検索**] をクリックします。 </br>例: *demouser@blueskyabove.onmicrosoft.com*。
-8. リスト ビューで [AzureAD] 見出しの下 name プロパティを選択して [**追加**] をクリックし、ダイアログ ボックスを閉じます**[ok]**をクリックします。
+8. リスト ビューで [AzureAD] 見出しの下 name プロパティを選択して [**追加**] をクリックし、ダイアログ ボックスを閉じます **[ok]** をクリックします。
 9. アクセス許可] では、**フル コントロール**をクリックします。</br>![クレーム ユーザーにフル コントロールを付与します。](images/SAML11/fig12-grantfullcontrol.png)</br>
 10. [ **完了**]、[ **OK**] の順にクリックします。
 
@@ -210,6 +210,22 @@ $cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
+## <a name="configuring-one-trusted-identity-provider-for-multiple-web-applications"></a>複数の web アプリケーションの 1 つの信頼できる id プロバイダーを構成します。
+構成は、単一の web アプリケーションの動作ですが、複数の web アプリケーションに対して同じ信頼できる id プロバイダーを使用する場合は、追加の構成が必要です。たとえば、URL を使用する web アプリケーションを拡張していた`https://portal.contoso.local`にユーザーを認証したい場合、`https://sales.contoso.local`もします。これを行うには、WReply パラメーターを受け入れるし、返信の URL を追加するのには Azure AD でアプリケーションの登録を更新する id プロバイダーを更新する必要があります。
+
+1. Azure ポータルでは、Azure AD ディレクトリを開きます。**アプリケーションの登録**] をクリックし、**すべてのアプリケーションを表示**] をクリックします。以前に作成したアプリケーションをクリックして (SharePoint SAML 統合)。
+2. [**設定**] をクリックします。
+3. 設定ブレード、**返信の Url**をクリックします。 
+4. 追加の web アプリケーションの URL を追加 (次のように`https://sales.contoso.local`)**を保存**] をクリックします。 
+5. SharePoint サーバーで、 **SharePoint 2016 管理シェル**を開くし、以前に使用した信頼できる id トークンの発行元の名前を使用して、次のコマンドを実行します。
+
+```
+$t = Get-SPTrustedIdentityTokenIssuer "AzureAD"
+$t.UseWReplyParameter=$true
+$t.Update()
+```
+6. サーバーの全体管理では、web アプリケーションに移動し、既存の信頼できる id プロバイダーを有効にします。ユーザー設定のサインイン ページにサインイン ページの URL を構成することを忘れないでください`/_trust/`。
+7. サーバーの全体管理は、web アプリケーション] をクリックし、**ユーザー ポリシー**を選択します。この資料に以前のように、適切なアクセス許可を持つユーザーを追加します。
 
 ## <a name="fixing-people-picker"></a>ユーザー選択ウィンドウを修正します。
 Azure AD からの id を使用して SharePoint 2016 には、ユーザーはログオンできますようになりましたが、ユーザー エクスペリエンスの改善の機会はまだあります。たとえば、ユーザーを検索すると、ユーザー選択ウィンドウで複数の検索結果が表示されます。要求のマッピングで作成された 3 つのクレームの種類ごとに検索結果があります。ユーザー選択ウィンドウを使用してユーザーを選択するには、必要があるには、ユーザー名を正確に入力し、**名前**要求の結果を選択します。
@@ -220,7 +236,7 @@ Azure AD からの id を使用して SharePoint 2016 には、ユーザーは�
 
 このシナリオでは、支援するのには、オープン ソース ソリューションが SharePoint 2016 のカスタム クレーム プロバイダーを提供する[AzureCP](https://yvand.github.io/AzureCP/)と呼ばれます。Azure AD グラフを使用すると、解決するにはどのようなユーザーを入力し、実行してが検証されます。[AzureCP](https://yvand.github.io/AzureCP/)で詳しく説明します。 
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>追加リソース
 
 [WS-Federation について](https://go.microsoft.com/fwlink/p/?linkid=188052)
   
