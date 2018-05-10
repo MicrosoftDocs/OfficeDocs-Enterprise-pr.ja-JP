@@ -11,11 +11,11 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online の機能を複数地域での複数の地理的な領域に、Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
+ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange オンラインで複数の地域の機能
 
@@ -65,7 +65,7 @@ Exchange Online は、オンラインの Exchange のディレクトリ サー�
 
 - 地域が指定されていない場合は、既定の地域で、メールボックスが配置されます。
 
-**注**: 複数地域の機能と Skype を地域ごとにホストされているビジネス オンラインの会議のプロパティを使用して**PreferredDataLocation**ユーザー オブジェクトのサービスを検索します。地域ごとにホストされている会議のためのユーザー オブジェクトの**PreferredDataLocation**の値を構成する場合、メールボックスとユーザーのための OneDrive に自動的に移動されます指定した地域に複数地域を有効にした後 Office 365 テナントに。
+**注**: 複数地域の機能と Skype を地域ごとにホストされているビジネス オンラインの会議のプロパティを使用して**PreferredDataLocation**ユーザー オブジェクトのサービスを検索します。地域ごとにホストされている会議のためのユーザー オブジェクトの**PreferredDataLocation**の値を構成する場合は、それらのユーザーのメールボックスに自動的に移動されます指定した地域に複数地域を有効にした後 Office 365 テナントに。
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange オンラインで複数の地域の機能の制限
 1. ユーザーのメールボックス、リソース メールボックス (部屋・備品のメールボックス)、および共有メールボックスは、複数地域の機能をサポートします。パブリック フォルダーのメールボックスと Office 365 のグループは、お客様の自宅の地域にのみ配置できます。
