@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 エンタープライズ開発/テスト環境の MAM のポリシー"
+title: Microsoft 365 エンタープライズ開発/テスト環境の MAM のポリシー
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: "概要: は、Microsoft 365 の開発/テスト環境に EMS のモバイル アプリケーションの管理 (MAM) ポリシーを追加するのには、このテスト ラボ ガイド 』 を使用します。"
-ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '概要: は、Microsoft 365 の開発/テスト環境に EMS のモバイル アプリケーションの管理 (MAM) ポリシーを追加するのには、このテスト ラボ ガイド 』 を使用します。'
+ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 エンタープライズ開発/テスト環境の MAM のポリシー
 
- **の概要:**Microsoft 365 開発/テスト環境に EMS のモバイル アプリケーションの管理 (MAM) ポリシーを追加するのにには、このテスト ラボ ガイド 』 を使用します。
+ **の概要:** Microsoft 365 開発/テスト環境に EMS のモバイル アプリケーションの管理 (MAM) ポリシーを追加するのにには、このテスト ラボ ガイド 』 を使用します。
   
 Microsoft エンタープライズ モビリティとセキュリティ (EMS) は、組織のデータを保護しながら、お気に入りのアプリケーションとデバイスを使用して生産性の高い従業員を保つことができます。詳細については、[エンタープライズ ・ モビリティとセキュリティ (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)を参照してください。
   
@@ -34,25 +34,25 @@ Microsoft エンタープライズ モビリティとセキュリティ (EMS) �
 
 このフェーズでは、2 つの異なる MAM ポリシー (1 つは iOS デバイス用、もう 1 つは Android デバイス用) を作成し展開します。
   
-1. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+1. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
     
-2. 、お使いのブラウザーの新しいタブで、Azure ポータル ([https://azure.portal.com](https://azure.portal.com)) を開き、Office 365 のグローバル管理者アカウントを使用してサインインします。
+2. 、お使いのブラウザーの新しいタブで開くには、Azure ポータル ([https://azure.portal.com](https://azure.portal.com)) し、Office 365 のグローバル管理者アカウントを使用してサインインします。
     
-3. [Azure ポータル] タブで、Internet Explorer のナビゲーション ウィンドウで**その他のサービス**(または右矢印) をクリックしてし、入力**Intune**、 **Intune**] をクリックします。
+3. [Azure ポータル] タブで、Internet Explorer のナビゲーション ウィンドウで**すべてのサービス**] をクリックし、入力**Intune**、 **Intune**] をクリックします。
     
 4. 左側のナビゲーション ウィンドウで、**[グループ]** をクリックします。
     
-5. **ユーザーおよびグループのすべてのグループ**のブレードでは、[**追加**] をクリックします。
+5. **グループのグループのすべての**ブレードでは、[ **+ 新しいグループ**をクリックします。
     
-6. **グループ**ブレードの**名前**、 **iOS デバイスのユーザーの管理**を入力**割り当て****メンバーシップの種類**を選択**[はい]**の**を有効にする Office 機能ですか?**、し、[**作成**] をクリックします。 
+6. **グループ**・ ブレードの上の**Office 365**を選択**グループの種類ですか?** **iOS デバイスのユーザーの管理****名**、**メンバーシップの種類**、**割り当て**を選択して入力し、[**作成**] をクリックします。 
     
 7. **グループ**のブレードを閉じます。
     
-8. **ユーザーおよびグループのすべてのグループ**のブレードでは、[**追加**] をクリックします。
+8. **グループのグループのすべての**ブレードでは、[**追加**] をクリックします。
     
-9. **グループ**のブレードで**Android 管理デバイスのユーザー** **名**、入力**割り当てられた****メンバーシップの種類**を選択**[はい]**の**を有効にする Office 機能ですか?**、し、[**作成**] をクリックします。
+9. **グループ**・ ブレードの上の**Office 365**を選択**グループの種類ですか?** **Android 管理デバイスのユーザー** **名**、**メンバーシップの種類**、**割り当て**を選択して入力し、[**作成**] をクリックします。
     
-10. **ユーザーとグループのグループのすべての**ブレードを閉じます。
+10. **グループのグループのすべての**ブレードを閉じます。
     
 11. **クイック タスク**の一覧で、 **Intune**ブレードの**コンプライアンス ポリシーの作成**をクリックします。
     
