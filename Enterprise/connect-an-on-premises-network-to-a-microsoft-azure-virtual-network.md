@@ -7,27 +7,27 @@ ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: '概要: 設置型の間の Azure を構成する方法を学習するサイト間の VPN 接続での Office サーバーのワークロードを仮想ネットワークです。'
-ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
-ms.translationtype: MT
+description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
+ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
  **概要:** Office サーバーのワークロードのためにクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。
   
-複数の環境に関する Azure の仮想ネットワークは、Azure インフラストラクチャ サービスは、サブネットとホストの仮想マシンにネットワークを拡張する、設置型のネットワークに接続されています。この接続では、Azure およびその逆に、仮想マシンに直接アクセスするのには、設置型のネットワーク上のコンピューターを使用します。 
+クロスプレミス Azure Virtual Network をオンプレミス ネットワークに接続することで、Azure インフラ サービスにホストされているサブネットや仮想マシンを追加してネットワークを拡張します。この接続により、オンプレミスのネットワークにあるマシンと Azure の仮想マシンが相互に直接アクセスできるようになります。 
 
-たとえば、Azure の仮想マシンで実行されている、ディレクトリ同期サーバーは、アカウントへの変更、設置型のドメイン コント ローラーのクエリを実行し、Office 365 のサブスクリプションにその変更を同期する必要があります。この資料では、設定方法、設置型の間の Azure 仮想 Azure の仮想マシンをホストする準備が整っているサイト間仮想プライベート ネットワーク (VPN) 接続を使用してネットワークです。
+たとえば、Azure 仮想マシンで実行するディレクトリ同期サーバーは、アカウントの変更についてオンプレミスのドメイン コントローラーにクエリを実行して、それらの変更を Office 365 サブスクリプションと同期させる必要があります。この記事では、Azure 仮想マシンをホストできる状態のサイト間仮想プライベート ネットワーク (VPN) を使用して、クロスプレミスの Azure 仮想ネットワークをセットアップする方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -35,24 +35,24 @@ Azure の仮想マシンをオンプレミス環境から分離する必要は�
   
 ![サイト間 VPN 接続を使用して Microsoft Azure に接続されているオンプレミスのネットワーク](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-ダイアグラムでは、サイト間 VPN 接続で接続されている 2 つのネットワーク: オンプレミスのネットワークと Azure の仮想ネットワークです。サイト間 VPN 接続は、次のとおりです。
+この図では、サイト間 VPN 接続によって、2 つのネットワーク (オンプレミス ネットワークと Azure 仮想ネットワーク) が接続されています。このサイト間 VPN 接続は、次のようになります。
 
-- 2 つのエンドポイント間でアドレス指定可能なパブリック インターネット上に配置されます。
-- 設置型のネットワーク上の VPN デバイスと Azure の仮想ネットワークに、Azure の VPN ゲートウェイで終了します。
+- アドレス指定可能なパブリック インターネットに配置された 2 つのエンドポイント間で接続されます。
+- オンプレミス ネットワークの VPN デバイスと Azure 仮想ネットワークの Azure VPN ゲートウェイで終端されます。
 
-Azure の仮想ネットワークは、仮想マシンをホストします。Azure の仮想ネットワーク上の仮想マシンからのネットワーク トラフィックは、VPN ゲートウェイは、設置型のネットワーク上の VPN デバイスにサイト間 VPN 接続を介してトラフィックを転送するに転送を取得します。設置型ネットワークのルーティング インフラストラクチャは、その宛先へのトラフィックを転送します。
+Azure 仮想ネットワークでは、仮想マシンがホストされます。Azure 仮想ネットワーク上の仮想マシンから発信されるネットワーク トラフィックは、VPN ゲートウェイに転送されます。このゲートウェイによって、トラフィックがサイト間 VPN 接続を通じてオンプレミス ネットワーク上の VPN デバイスに転送されます。さらに、オンプレミス ネットワークのルーティング インフラストラクチャによって、トラフィックが宛先に転送されます。
 
 >[!Note]
->使用することも[ExpressRoute](https://azure.microsoft.com/services/expressroute/)組織とのネットワークとの間の直接接続であります。ExpressRoute 上のトラフィックは、パブリック インターネット経由では送信されません。この資料については説明しません ExpressRoute を使用します。
+>[ExpressRoute](https://azure.microsoft.com/services/expressroute/) を使用することもできます。これは、組織と Microsoft ネットワークの間を直接接続するものです。ExpressRoute を経由するトラフィックは、パブリック インターネットを経由して移動しません。この記事では、ExpressRoute の使用については説明していません。
 >
   
-Azure Virtual Network とオンプレミス ネットワーク間の VPN 接続を設定するには、次の手順を実行します。 
+Azure 仮想ネットワークとオンプレミス ネットワークの間の VPN 接続を設定するには、次の手順を実行します。 
   
 1. **オンプレミス:** オンプレミスの VPN デバイスをポイントするオンプレミス ネットワーク ルートを、Azure 仮想ネットワークのアドレス空間上で定義して作成します。
     
-2. **Microsoft Azure:** サイト間 VPN 接続では、Azure の仮想ネットワークを作成します。 
+2. **Microsoft Azure:** サイト間 VPN 接続を使用して Azure 仮想ネットワークを作成します。 
     
-3. **オンプレミス:** VPN 接続を終了するようにオンプレミスのハードウェアまたはソフトウェア VPN デバイスを構成します。これには、インターネット プロトコル セキュリティ (IPsec) が使用されます。
+3. **オンプレミス:** VPN 接続を終端するようにオンプレミスのハードウェアまたはソフトウェア VPN デバイスを構成します。これには、インターネット プロトコル セキュリティ (IPsec) が使用されます。
     
 サイト間 VPN 接続を確立した後、仮想ネットワークのサブネットに Azure 仮想マシンを追加します。
   
@@ -62,7 +62,7 @@ Azure Virtual Network とオンプレミス ネットワーク間の VPN 接続�
 ### <a name="prerequisites"></a>前提条件
 <a name="Prerequisites"></a>
 
-- Azure サブスクリプションの場合。Azure サブスクリプションについては、[どのようにして購入 Azure のページ](https://azure.microsoft.com/pricing/purchase-options/)に移動します。
+- Azure サブスクリプション。Azure サブスクリプションの詳細については、[Azure の購入方法のページ](https://azure.microsoft.com/pricing/purchase-options/)にアクセスしてください。
     
 - 仮想ネットワークとサブネットに割り当て可能なプライベート IPv4 アドレス空間。現在、および将来の拡大で必要となる仮想マシン数に対応できる十分な空き領域が必要です。
     
@@ -337,11 +337,11 @@ VPN デバイスを構成するために必要なものを以下に記します�
   
 ![仮想ネットワークが、オンプレミスのネットワークに接続されました。](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
-### <a name="phase-3-optional-add-virtual-machines"></a>フェーズ 3 (省略可能)：仮想マシンの追加
+### <a name="phase-3-optional-add-virtual-machines"></a>フェーズ 3 (省略可能): 仮想マシンの追加
 
-Azure にする必要がある仮想マシンを作成します。詳細については、 [Windows Azure ポータルでバーチャル マシンの作成](https://go.microsoft.com/fwlink/p/?LinkId=393098)を参照してください。
+Azure で必要な仮想マシンを作成します。詳細については、「[Azure Portal で Windows 仮想マシンを作成する](https://go.microsoft.com/fwlink/p/?LinkId=393098)」を参照してください。
   
-以下の設定を使用します。
+次に示す設定を使用します。
   
 - **[基本]** ウィンドウで、仮想ネットワークと同じサブスクリプションおよびリソース グループを選択します。ユーザー名とパスワードを安全な場所に記録します。後ほど、仮想マシンにサインインするときに必要になります。
     

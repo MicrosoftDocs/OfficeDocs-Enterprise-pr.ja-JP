@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,15 +15,15 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 800d81d657164b2a936b95764d57fd092cfa21cc
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
- **概要:**SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。
+ **概要:** SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。
   
 この記事では、SharePoint Online チーム サイトとファイルの保護を、セキュリティとコラボレーションのしやすさのバランスを取りながら構成するための推奨事項を示します。この記事では、4 つの異なる構成を定義します。最初は、最もオープンな共有ポリシーを使用した、組織内のパブリック サイトです。それ以外の各構成は、保護のセットアップには有効な手段ですが、リソースへのアクセスやリソース上でのコラボレーションは、関連したユーザーのセットに限定されます。これらの推奨事項を開始点として使用し、組織のニーズを満たすように構成を調整してください。 
   
@@ -169,7 +169,7 @@ Azure Information Protection 暗号化が Office 365 に格納されているフ
     
 ### <a name="adding-permissions-for-external-users"></a>外部ユーザーに対するアクセス許可の追加
 
-Azure の情報保護で保護されているファイルへのアクセスを外部ユーザーに付与する 2 つの方法もあります。どちらの場合も、外部ユーザーは Azure AD アカウントに必要です。Azure AD を使用する組織のメンバーが外部のユーザー場合は、入手できる Azure AD アカウント個人としてサインアップ ページを使用して: [https://aka.ms/aip-signup](https://aka.ms/aip-signup)。
+Azure Information Protection で保護されているファイルへのアクセス権を外部ユーザーに付与するには、2 つの方法があります。どちらの場合も外部ユーザーには Azure AD アカウントが必要です。外部ユーザーが Azure AD を使用する組織のメンバーでない場合は、サインアップ ページ ([https://aka.ms/aip-signup](https://aka.ms/aip-signup)) を使用して個人で Azure AD アカウントを取得できます。
   
 - 外部ユーザーを、ラベルの保護の構成に使用する Azure AD グループに追加します。
     

@@ -1,99 +1,99 @@
 ---
-title: 複数地域の環境を管理します。
+title: 複数地域環境の管理
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: マルチ geo 環境で SharePoint と OneDrive のサービスの管理について説明します。
-ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
+ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="administering-a-multi-geo-environment"></a>複数地域の環境を管理します。
+# <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
-OneDrive と SharePoint のサービスが複数地域環境で作業する方法を見てです。
+ここでは、複数地域環境で OneDrive および SharePoint のサービスが動作するしくみについて説明します。
 
-#### <a name="onedrive-administrator-experience"></a>OneDrive 管理者の経験
+#### <a name="onedrive-administrator-experience"></a>OneDrive 管理者のエクスペリエンス
 
-[OneDrive 管理センター](https://admin.onedrive.com)では、左側のナビゲーション機能 geo の場所にマップを表示し、地域、サイトの管理の**Geo の場所**] タブがあります。地域、テナントの場所を追加、削除するには、このページを使用します。
+[OneDrive 管理センター](https://admin.onedrive.com)の左側のナビゲーションには、**[地域の場所]** タブがあります。このタブには、地域の場所の地図があり、地域の場所を確認および管理できます。
 
 #### <a name="taxonomy"></a>分類
 
-サポート統一された[分類](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)管理エンタープライズ メタデータの地域拠点には、会社の中央の場所でホストされているマスターとします。中央の場所から、グローバルの分類を管理し、サテライト地域場所の分類にのみの場所に固有の用語を追加することをお勧めします。グローバル分類の用語は、サテライトの地域の場所に同期されます。
+企業の中央の場所でホストされるマスターと共に、複数の地域の場所にわたるエンタープライズ管理メタデータに対する統一された[分類](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)がサポートされています。中央の場所からグローバルな分類を管理し、サテライト地域の場所の分類には地域に固有の用語のみを追加することをお勧めします。グローバルな分類の用語は、サテライト地域の場所に同期されます。
 
 #### <a name="sharing"></a>共有
 
-管理者が設定し、それぞれの場所の共有ポリシーを管理できます。各地域拠点の OneDrive サイトには、のみ、対応する地域特定共有の設定を優先します。たとえば、ことができます[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)用ではなく、サテライトの場所またはその逆の場合ですが、中央の場所です。OneDrive の複数の地域、テナント間でこれらが同期するいないと、各地域の拠点で、共有の設定を管理する必要があります。
+管理者は、共有ポリシーを場所ごとに設定および管理できます。各地域の場所の OneDrive サイトは、対応する地域の共有設定のみを優先します (たとえば、中央の場所とサテライトの場所のどちらか一方に[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)を許可することができます)。共有の設定では、地域の場所間での共有の制限を構成できない点に注意してください。
 
-共有のアクセス、 [OneDrive 管理センターの共有の設定](https://admin.onedrive.com/?v=SharingSettings)] ページを管理します。既定で外部の共有は各サテライト サイト内の全員が有効になります。
+OneDrive 複数地域では、共有の設定がテナント全体には同期されないため、地域の場所ごとに管理する必要があります。共有を管理するには、[OneDrive 管理センターの共有設定](https://admin.onedrive.com/?v=SharingSettings)ページに移動します。既定では、各サテライトの場所の全員に外部共有が有効化されています。
 
 #### <a name="user-profile-application"></a>ユーザー プロファイル アプリケーション
 
-各地域拠点では、[ユーザー プロファイル アプリケーション](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723)を使用です。各ユーザーのプロファイル情報は、geo の場所とその地域の場所の管理者に使用可能なホストされています。
+各地域の場所ごとに、[ユーザー プロファイル アプリケーション](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723)があります。それぞれのユーザーのプロファイル情報は、それらのユーザーの地域の場所でホストされ、その場所の管理者が利用できます。
 
-カスタム プロファイルのプロパティがある場合同じプロファイル スキーマを使用して、地理的に分散し、地域のすべての場所のいずれか、カスタム プロファイル プロパティを設定することを推奨し、または必要な場所です。
+カスタムのプロファイル プロパティがある場合は、すべての地域で同じプロファイル スキーマを使用して、すべての地域の場所または必要な場所のどちらかにカスタムのプロファイル プロパティを設定します。ユーザー プロファイル データをプログラムによって設定する方法のガイダンスについては、「[SharePoint Online 用カスタム ユーザー プロファイル プロパティの一括更新用 API の概要](https://docs.microsoft.com/ja-JP/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)」を参照してください。
 
-#### <a name="bcs-secure-store-apps"></a>BCS では、セキュリティで保護されたストアは、アプリケーション
+#### <a name="bcs-secure-store-apps"></a>BCS、Secure Store、Apps
 
-BCS、セキュリティで保護されたストアおよびアプリケーションは、別の地域のインスタンスを持つ、したがって SharePoint Online の管理者が管理し、必要な場所に存在する各地理インスタンスからこれらのサービスを構成する必要があります。
+BCS、Secure Store、および Apps のすべてに、個別の地域インスタンスがあります。そのため、SharePoint Online 管理者は、これらのサービスが存在する各地域インスタンスから、そのサービスを管理および構成する必要があります。
 
-#### <a name="security-and-compliance-admin-center"></a>セキュリティおよびコンプライアンス管理センター
+#### <a name="security-and-compliance-admin-center"></a>セキュリティ/コンプライアンス管理センター
 
-複数地域のテナントの 1 つの中心的なコンプライアンス センターがある: [Office 365 のセキュリティとコンプライアンスの中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)です。
+複数地域テナントには、[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com/?rfr=AdminCenter\#/homepage)という 1 つの中心的なコンプライアンス センターがあります。
 
-#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>情報 (IP) の保護データの損失防止 (DLP) のポリシー
+#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Information Protection (IP) データ損失防止 (DLP) ポリシー
 
-ポリシーを設定できます、IP DLP OneDrive ビジネスのためのセキュリティとコンプライアンス ・ センターの全体のテナントまたは該当するユーザーに必要なポリシーのスコープの設定です。たとえば:、サテライトの場所に OneDrive のユーザーのポリシーを選択するには、特定の OneDrive にポリシーを適用し、ユーザー名を入力する場合に選択の OneDrive の url です。DLP ポリシーを作成する一般的な方法については、[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)を参照してください。
+セキュリティ/コンプライアンス センターでは、ポリシーの適用範囲をテナント全体または該当するユーザーに設定することで、OneDrive for Business の IP DLP ポリシーを設定できます。たとえば、サテライトの場所の OneDrive ユーザーのポリシーを選択する場合、特定の OneDrive に適用するポリシーを選択して、ユーザーの OneDrive の URL を入力します。DLP ポリシーの作成に関する一般的なガイダンスについては、「[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
 
-DLP ポリシーは、各地域の場所に適用性に基づいて自動的に同期されます。
+DLP ポリシーは、そのポリシーの適用性に基づいて各地域の場所に自動的に同期されます。
 
-地域の場所にすべてのユーザー情報の保護とデータ損失の防止ポリシーを実装することは、UI で使用可能なオプションではありませんが、代わりに、ポリシーの適用可能な OneDrive のアカウントを選択してか OneDrive のすべてのアカウントをグローバルにポリシーを適用する必要があります。
+地域の場所のすべてのユーザーに対する Information Protection ポリシーとデータ損失防止ポリシーの実装は、UI で使用可能なオプションではありません。その代わりに、ポリシーの適用が可能な OneDrive アカウントを選択するか、すべての OneDrive アカウントにグローバルにポリシーを適用する必要があります。
 
 #### <a name="ediscovery"></a>電子情報開示 
 
-既定では、マネージャーまたは多地域のテナントの管理者、電子的証拠開示は、テナントの中央の場所にのみ電子的証拠開示を行うことが可能になります。サテライト オフィスの電子的証拠開示を実施する機能をサポートするために「領域」と呼ばれる新しいコンプライアンス セキュリティ フィルター パラメーターは、PowerShell を使用して利用可能です。
+既定では、複数地域テナントの電子情報開示マネージャーまたは管理者は、テナントの中央の場所でのみ電子情報開示を実施できます。サテライトの場所で電子情報開示を実施できるようにするために、"Region" という新しいコンプライアンス セキュリティ フィルター パラメーターが PowerShell で使用できます。
 
-Office 365 のグローバル管理者は、電子的証拠開示を実行し、サテライトとして電子的証拠開示を実施するための領域を指定するのには、適用可能なコンプライアンス セキュリティ フィルターで「地域」パラメーターを指定するようにするのには、電子的証拠開示マネージャーのアクセス許可を割り当てる必要があります。場所、それ以外の場合サテライトの場所に電子的証拠開示が実行されるなし。
+Office 365 全体管理者は、別のユーザーが電子情報開示を実行できるように電子情報開示マネージャーのアクセス許可を割り当てる必要があります。また、サテライトの場所として電子情報開示を実施する地域を指定するために該当するコンプライアンス セキュリティ フィルターで "Region" パラメーターを割り当てる必要があります。それ以外の場合は、サテライトの場所で電子情報開示は実施されません。
 
-特定の地域の場所を電子的証拠開示マネージャー ロールまたは管理者ロールを設定すると、マネージャーまたは管理者、電子的証拠開示のみできるようになります、SharePoint サイトとその地理的な場所にある OneDrive サイトに対して電子的証拠開示検索の操作を実行します。電子的証拠開示マネージャーまたは管理者は、指定した領域の外側の SharePoint または OneDrive サイトの検索を試みると、結果は返されません。また、電子的証拠開示マネージャーまたは管理者の領域には、エクスポートがトリガーされた場合は、その地域の Azure のインスタンスにデータがエクスポートされます。これにより、組織を対象となるコントロールの境界線の間でコンテンツを許可しないことによって、コンプライアンスを維持します。
+電子情報開示マネージャーまたは管理者の役割が特定の地域の場所に設定されている場合、電子情報開示マネージャーまたは管理者は、その地域の場所にある SharePoint サイトと OneDrive サイトに対してのみ電子情報開示の検索操作を実行できます。電子情報開示マネージャーまたは管理者が、指定の地域外の SharePoint サイトまたは OneDrive サイトを検索しようとしても結果は返されません。さらに、ある地域の電子情報開示マネージャーまたは管理者がエクスポートをトリガーすると、データは、その地域の Azure インスタンスにエクスポートされます。制御された境界を越えたコンテンツのエクスポートが許可されなくなることで、これが組織のコンプライアンスの維持に役立ちます。
 
 > [!NOTE]
-> 電子的証拠開示マネージャーが複数の SharePoint の領域全体を検索するために必要な場合は、別のユーザー アカウントは、電子的証拠開示マネージャー、OneDrive または SharePoint サイトが配置されている別の領域を指定するために作成する必要があります。
+> 電子情報開示マネージャーが複数の SharePoint 地域全体で検索する必要がない場合は、OneDrive サイトまたは SharePoint サイトがある別の地域を指定する電子情報開示マネージャー用の別のユーザー アカウントを作成する必要があります。
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>複数地域は、地域の場所をサポートします。</strong></th>
-<th align="left"><strong>SharePoint にエクスポートされたデータの電子的証拠開示は、この Azure Blob データの場所になります.</strong></th>
+<th align="left"><strong>複数地域でサポートされる地域の場所</strong></th>
+<th align="left"><strong>SharePoint でエクスポートされた電子情報開示データが存在する Azure Blob データの場所</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>名</strong></td>
-<td align="left">米国のデータ ・ センター</td>
+<td align="left"><strong>NAM</strong></td>
+<td align="left">米国のデータ センター</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>EUR</strong></td>
-<td align="left">ヨーロッパのデータ ・ センター</td>
+<td align="left">ヨーロッパのデータ センター</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>APC</strong></td>
-<td align="left">東の南または東アジアのデータ ・ センター</td>
+<td align="left">東南アジアまたは東アジアのデータ センター</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>できます。</strong></td>
-<td align="left">米国のデータ ・ センター</td>
+<td align="left"><strong>CAN</strong></td>
+<td align="left">米国のデータ センター</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>オーストラリア</strong></td>
-<td align="left">東の南または東アジアのデータ ・ センター</td>
+<td align="left"><strong>AUS</strong></td>
+<td align="left">東南アジアまたは東アジアのデータ センター</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
@@ -101,30 +101,30 @@ Office 365 のグローバル管理者は、電子的証拠開示を実行し、
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
-<td align="left">ヨーロッパのデータ ・ センター</td>
+<td align="left">ヨーロッパのデータ センター</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>日本語版</strong></td>
-<td align="left">東の南または東アジアのデータ ・ センター</td>
+<td align="left"><strong>JPN </strong></td>
+<td align="left">東南アジアまたは東アジアのデータ センター</td>
 </tr>
 </tbody>
 </table>
 
-地域のコンプライアンス ・ セキュリティ ・ フィルターを設定します。
+地域のコンプライアンス セキュリティ フィルターを設定するには:
 
-1.  開いている Windows PowerShell の
+1.  Windows PowerShell を開きます。
 
-2.  「  
-    $s = Microsoft.Exchange を新規 PSSession ConfigurationName ConnectionUri - <https://ps.compliance.protection.outlook.com/powershell-liveid> -$cred に資格情報の AllowRedirection では基本認証-SessionOption (新規 PSSessionOption SkipCACheck-サーバー-SkipRevocationCheck)
+2.  次のように入力します  
+    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $を = $s のインポート-PSSession AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
-3.  **新しい-ComplianceSecurityFilter****-アクション**すべて**のフィルター名**EnterTheNameYouWantToAssign **-地域**EnterTheRegionParameter **-ユーザー** EnterTheUserPrincipalName
+3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
-    例を示します**ComplianceSecurityFilter で新しい-アクション**すべて**のフィルター名**NAMEDISCOVERYMANAGERS **-地域**名**・ ユーザー** adwood@contosodemosx.onmicrosoft.com。
+    例: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
 
-[新規 ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx)この資料は、追加のパラメーターと構文を参照してください。
+追加のパラメーターと構文については、「[New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx)」の記事を参照してください。
 
 #### <a name="audit-log-search"></a>監査ログ検索
 
-統一された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)のすべての地域の場所に、Office 365 の監査ログの検索ページから利用可能です。地域全体からのすべての監査ログ エントリを表示できます、やなどの名と EUR 地域ユーザーの活動は、組織の 1 つのビューに表示し、特定のユーザーの活動を確認する既存のフィルターを適用できます。
+すべての地域の場所に対して統一された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Office 365 の監査ログの検索ページから利用できます。すべての地域からの監査ログのエントリを参照できます。たとえば、NAM 地域と EUR 地域のユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。

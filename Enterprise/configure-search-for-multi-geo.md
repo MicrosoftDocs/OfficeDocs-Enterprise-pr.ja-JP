@@ -1,5 +1,5 @@
 ---
-title: ビジネスの複数の地域の OneDrive の検索を構成します。
+title: OneDrive for Business 複数地域の検索の構成
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
@@ -7,26 +7,27 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: マルチ地域環境での検索を構成する方法について説明します。
-ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: 複数地域環境で検索を構成する方法について説明します。
+ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>ビジネスの複数の地域の OneDrive の検索を構成します。
+# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>OneDrive for Business 複数地域の検索の構成
 
-マルチ Geo SharePoint オンライン (SPO) 環境で組織、1 つの Office 365 テナント、複数の地理的な場所に、SharePoint のコンテンツを格納する 1 つの場所と 1 つ以上サテライト地域の場所です。
+複数地域の SharePoint Online (SPO) 環境では、組織は Office 365 テナントを 1 つ保有しますが、その SharePoint コンテンツを複数地域の場所 (1 つの中央の場所と 1 つ以上のサテライト地域の場所) に保存します。
 
-各の地理的な場所では、独自の検索インデックスと検索センターがあります。ユーザーが検索してクエリは、すべてのインデックスさばいたが返される結果がマージされます。
+それぞれの地理的な場所には、その場所独自の検索インデックスと検索センターがあります。ユーザーが検索すると、すべての索引にクエリがファンアウトされ、マージされた結果が返されます。
 
-などの地域の 1 つの場所のユーザーは、地域の別の場所に保存されたコンテンツまたは地域の別の場所に制限されている SharePoint サイト上のコンテンツを検索できます。このコンテンツへのアクセスをユーザーには、検索で結果が表示されます。
+たとえば、ある地域の場所のユーザーが別の地域の場所に格納されているコンテンツを検索したり、別の地域の場所に限定されている SharePoint サイトのコンテンツを検索したりすることができます。このコンテンツへのアクセス権があるユーザーには、その検索結果が表示されます。
 
-## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>複数地域の環境でクライアントの作業を検索するでしょうか。
+## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>複数地域環境で動作する検索クライアントについて
 
-これらのクライアントでは、地域のすべての場所から結果を返すことができます。
+次のクライアントは、すべての地域の場所からの結果を返します。
 
 -   OneDrive for Business
 
@@ -40,70 +41,70 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-複数地域の環境が設定されているとすぐに OneDrive で検索するユーザーは、地域のすべての場所から結果を取得します。
+複数環境の設定が完了した直後に、OneDrive で検索を実行するユーザーには、すべての地域の場所からの結果が返されます。
 
 ### <a name="delve"></a>Delve
 
-複数地域の環境が設定されているとすぐに Delve で検索するユーザーは、地域のすべての場所から結果を取得します。
+複数環境の設定が完了した直後に、Delve で検索するユーザーには、すべての地域の場所からの結果が返されます。
 
-Delve のフィード、プロファイルのカードは**中央**の場所に格納されているファイルのプレビューにのみ表示されます。サテライト地域の場所に格納されているファイルの場合は、代わりにファイルの種類のアイコンが表示されます。
+Delve フィードとプロファイル カードには、**中央**の場所に保存されているファイルのプレビューのみが表示されます。その一方で、サテライト地域の場所に保存されているファイルについては、ファイルの種類に応じたアイコンが表示されます。
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint ホーム ページ
 
-ユーザー複数地域の環境が設定されているとすぐには、ニュースが、SharePoint のホーム ページに複数の地域の場所からのリンクと最近のサイトに表示されます。SharePoint ホーム ページで、[検索] ボックスを使用すると、それらが地域の複数の場所からマージされた結果が表示されます。
+複数環境の設定が完了した直後に、ユーザーには、複数地域の場所からのニュース、最近のサイトおよびフォローしているサイトが示された SharePoint ホーム ページが表示されます。ユーザーが SharePoint ホーム ページの検索ボックスを使用すると、複数地域の場所からの結果がマージされて返されます。
 
 ### <a name="the-search-center"></a>検索センター
 
-複数の地域の後の環境が設定されて、各検索センターは引き続き表示結果だけが自分の地域の場所から。管理者は、[各検索センターの設定を変更する](#_Set_up_a_1)地域のすべての場所から結果を取得する必要があります。その後、検索センターで検索するユーザーは、地域のすべての場所から結果を取得します。
+複数環境の設定完了後、それぞれの検索センターには、それらの地域の場所からの結果のみが引き続き表示されます。管理者は、[それぞれの検索センターの設定を変更](#_Set_up_a_1)して、すべての地域の場所からの結果が得られるようにする必要があります。その後、検索センターで検索したユーザーには、すべての地域の場所からの結果が表示されます。
 
 ### <a name="custom-search-applications"></a>カスタムの検索アプリケーション
 
-いつものように、カスタム検索アプリケーションは、既存の SharePoint 検索 REST Api を使用しての検索用のインデックスと対話します。全部または一部の地域の場所から結果を得るには、アプリケーション[API を呼び出すし複数地域の新しいクエリのパラメーターは、](#_Get_custom_search)要求で必要があります。これにより、地域のすべての場所へのクエリからのファンがトリガーされます。
+通常のように、カスタムの検索アプリケーションは、検索インデックスとの対話型操作に既存の SharePoint 検索 REST API を使用します。すべてまたは一部の地域の場所からの結果を取得するために、アプリケーションでは、要求で [API を呼び出して新しい複数地域クエリ パラメーターを含める](#_Get_custom_search)必要があります。これにより、すべての地域の場所へのクエリのファンアウトがトリガーされます。
 
-## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>マルチ地域環境での検索に関するさまざまなは何ですか。
+## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>複数地域環境での検索の相違点について
 
-いくつかの検索機能を学習し、する必要がありますが、複数地域環境で作業とは異なる。
+複数地域環境では、一部の使い慣れた検索機能の動作が異なります。
 
 <table>
 <thead>
 <tr class="header">
 <th align="left"><strong>機能</strong></th>
-<th align="left"><strong>どのように動作します。</strong></th>
+<th align="left"><strong>動作の内容</strong></th>
 <th align="left"><strong>回避策</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">昇格した結果</td>
-<td align="left">クエリ ルールを作成するにはさまざまなレベルに昇格した結果: 全体のテナント、サイト コレクションまたはサイトです。マルチ地域環境では、地域の<strong>すべて</strong>の場所で検索センター結果を昇格する場合は、<strong>テナント</strong>のレベルに昇格した結果を定義します。場合<strong>のみ</strong>サイト コレクションまたはサイトの地域の場所にある検索センターでの結果を促進する、<strong>サイト コレクション</strong>または<strong>サイト</strong>レベルでの結果を定義します。</td>
-<td align="left">個々 の地域の場所、旅をするなどの別のルールの異なる昇格した結果を必要としない場合は、テナントのレベルで結果を昇格を定義することをお勧めします。</td>
+<td align="left">昇格結果</td>
+<td align="left">クエリ ルールは、異なるレベル (テナント全体、サイト コレクション、またはサイト) の昇格結果で作成できます。複数地域環境では、<strong>すべて</strong>の地域の場所の検索センターに結果を昇格する場合、<strong>テナント</strong> レベルで昇格結果を定義します。サイト コレクションまたはサイトの地域の場所にある検索センターで<strong>のみ</strong>結果を昇格する場合は、<strong>サイト コレクション</strong>または<strong>サイト</strong> レベルで結果を定義します。</td>
+<td align="left">地域の場所ごとに異なる昇格結果を必要としない場合は (出張の場合の異なるルールなど)、テナント レベルで昇格結果を定義するようにお薦めします。</td>
 </tr>
 <tr class="even">
-<td align="left">検索の絞り込み条件</td>
-<td align="left">検索では、テナントのすべての地域の場所から絞り込み条件が返されます、それが集計されます。集計は、絞り込み条件の数が 100% 正確な可能性がありますできないことを意味するよう、最善の努力です。ほとんどの検索ベースのシナリオでは、この精度で十分です。</td>
-<td align="left">絞り込み条件の完全性に依存する検索駆動型アプリケーションを照会しない各地域拠点個別に複数地域のファンを使用せず。</td>
+<td align="left">絞り込み検索</td>
+<td align="left">検索は、テナントのすべての地域の場所からの絞り込み条件を返して、それらを集約します。この集約は、最善努力型であるため、絞り込み条件のカウントが 100% の精度にならないことがあります。ほとんどの検索型シナリオの場合は、この精度で十分です。</td>
+<td align="left">絞り込み条件の完全性に依存する検索型アプリケーションの場合は、複数地域のファンアウトを使用しないで、それぞれの地域の場所を個別にクエリします。</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">マルチ地域検索では、数値絞り込み条件の動的なバケットをサポートしていません。</td>
-<td align="left">数値絞り込み条件の<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">「Discretize」パラメーター</a>を使用します。</td>
+<td align="left">複数地域検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
+<td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
 </tr>
 <tr class="even">
-<td align="left">ドキュメント Id</td>
-<td align="left">ドキュメント Id に依存している、検索駆動型アプリケーションを開発する場合は、地域拠点に複数地域の環境でドキュメント Id は一意、geo の場所ごとに一意であることに注意してください。</td>
-<td align="left">地域の場所を識別する列を追加しました。一意性を達成するためにこの列を使用します。この列を"GeoLocationSource"といいます。</td>
+<td align="left">ドキュメント ID</td>
+<td align="left">ドキュメント ID に依存する検索型アプリケーションを開発する場合、複数地域環境のドキュメント ID は地域の場所ごとに一意ですが、複数の地域の場所にわたって一意でない点に注意してください。</td>
+<td align="left">地域の場所を特定する列が追加されています。この列を使用して、一意性を確保してください。この列の名前は、"GeoLocationSource" です。</td>
 </tr>
 <tr class="odd">
 <td align="left">結果の数</td>
-<td align="left">検索結果のページは、geo の場所からの結合された結果を示していますが、ページの 500 件の結果を超えることはできません。</td>
+<td align="left">検索結果ページには、地域の場所からの結果が結合されて表示されますが、500 件を超える結果をページにまとめることはできません。</td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a>マルチ地域環境での検索の内容はサポートされていませんでしょうか。
+## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a>複数地域環境の検索でサポートされない内容
 
-複数地域の環境で学習し、する必要があります検索機能の一部がサポートされていません。
+複数地域環境では、一部の使い慣れた検索機能がサポートされません。
 
 <table>
 <thead>
@@ -114,64 +115,64 @@ Delve のフィード、プロファイルのカードは**中央**の場所に�
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">アプリケーション専用の認証</td>
-<td align="left">マルチ地域検索では、アプリケーション専用の認証 (サービスからのアクセス権限) はサポートされていません。</td>
+<td align="left">アプリ専用の認証</td>
+<td align="left">複数地域検索では、アプリ専用の認証 (サービスからの特権アクセス) がサポートされません。</td>
 </tr>
 <tr class="even">
 <td align="left">ゲスト ユーザー</td>
-<td align="left">ゲスト ユーザーは、検索をしている地域の場所からのみ結果を取得します。</td>
+<td align="left">ゲスト ユーザーは、検索対象にしている地域の場所からの結果のみを取得できます。</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="how-does-search-work-in-a-multi-geo-environment"></a>検索の動作方法、複数地域の環境で
+## <a name="how-does-search-work-in-a-multi-geo-environment"></a>複数地域環境での検索の動作について
 
-**すべて**検索クライアントを使用して、既存の SharePoint 検索 REST Api 検索用のインデックスを操作します。
+**すべて**の検索クライアントは、検索インデックスとの対話型の操作に既存の SharePoint 検索 REST API を使用します。
 <img src="media/configure-search-for-multi-geo_image1-1.png" />
 
-1. 検索クライアントは、クエリのプロパティ EnableMultiGeoSearch を使用して検索 REST エンドポイントを呼び出す true です。
-2. テナントのすべての地域の場所にクエリが送信されます。
-3. 各地域の場所から検索結果がマージされ、ランク付けされます。
-4. クライアントでは、統合された検索結果を取得します。
+1. 検索クライアントは、クエリ プロパティ EnableMultiGeoSearch = true を設定して、検索 REST エンドポイントを呼び出します。
+2. クエリは、テナント内のすべての地域の場所に送信されます。
+3. それぞれの地域の場所からの検索結果はマージされ、ランク付けされます。
+4. クライアントは、統一された検索結果を取得します。
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>地域のすべての場所から結果を受信するまで検索結果をマージしてしないことを確認します。これは、複数地域の検索がある地域の 1 つだけの場所がある環境での検索と比較して追加の遅延を意味します。
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>検索結果は、すべての地域の場所からの結果を受信するまでマージされない点に注意してください。そのため、複数地域の検索では、地域の場所が 1 つの環境での検索と比べると遅延が大きくなります。
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
-## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>地域のすべての場所からの結果を表示する検索センターを取得します。
+## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>検索センターにすべての地域の場所からの結果を表示する
 
-各検索センターにはいくつかの業界を使用して個別にそれぞれの垂直方向を設定します。
+それぞれの検索センターには、複数のバーティカルがあり、それぞれのバーティカルを個別に設定する必要があります。
 
-1.  検索結果ページや検索結果の Web パーツを編集する権限を持つアカウントを使用して、次の手順を実行することを確認します。
+1.  ここに示す手順は、検索結果ページと検索結果 Web パーツを編集するためのアクセス許可があるアカウントで実行してください。
 
-2.  検索結果のページに移動します ([ボックスの一覧](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213)の検索結果のページを参照してください)
+2.  検索結果ページに移動します (検索結果ページの[一覧](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213)を参照してください)
 
-3.  設定し、上、右下の歯車アイコンの**設定**をクリックして、**ページの編集**] をクリックし、垂直方向を選択します。検索結果ページが編集モードで開きます。
+3.  設定するバーティカルを選択し、右上の **[設定]** ギア アイコンをクリックして、**[ページの編集]** をクリックします。編集モードで、検索結果ページが開きます。
 
      ![](media/configure-search-for-multi-geo_image2.png)
-1.  検索結果の Web パーツで、上にポインターを移動、Web パーツの右にある矢印をクリックし、メニューの [ **Web パーツの編集**] をクリックします。上部のリボンの下の検索結果 Web パーツ ツール ウィンドウが開き、ページの右。![](media/configure-search-for-multi-geo_image3.png)
+1.  検索結果 Web パーツで、Web パーツの右上にポインターを移動し、矢印をクリックして、メニューにある **[Web パーツの編集]** をクリックします。ページ右上のリボンの下に、検索結果 Web パーツ ツール ウィンドウが開きます。![](media/configure-search-for-multi-geo_image3.png)
 
-1.  Web パーツ ツール ウィンドウの [**設定**] セクションの**設定を制御する結果**を、下には、地域のすべての場所からの結果を表示する検索結果 Web パーツを取得するのには**複数の地域の表示結果**を選択します。
+1.  Web パーツ ツール ウィンドウの **[設定]** セクションで、**[結果コントロールの設定]** から **[複数地域の検索結果を表示する]** を選択して、検索結果 Web パーツに、すべての地域の場所からの結果が表示されるようにします。
 
-2.  変更を保存し、Web パーツ ツール ウィンドウを閉じるには、 **[ok]**をクリックします。
+2.  **[OK]** をクリックして変更内容を保存して、Web パーツ ツール ウィンドウを閉じます。
 
-3.  メイン メニューの [ページ] タブの [**チェックイン**] をクリックして、検索結果 Web パーツに加えた変更を確認します。
+3.  検索結果 Web パーツに対する変更内容を確認するには、メイン メニューの [ページ] タブで **[チェックイン]** をクリックします。
 
-4.  ページの上部にあるメモに記載されているリンクを使用して変更内容を発行します。
+4.  ページの上部にあるメモで示されるリンクを使用して、変更内容を公開します。
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
-## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>すべてまたは一部の地域の場所からの結果を表示するカスタムの検索アプリケーションを取得します。
+## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>カスタムの検索アプリケーションにすべてまたは一部の地域の場所からの結果を表示する
 
-カスタムの検索アプリケーションは、SharePoint 検索 REST API への要求にクエリ パラメーターを指定することにより全部または一部、地域の場所からの結果を得る。クエリのパラメーターによって、地域のすべての場所に、またはいくつかの地域拠点に、クエリさばいた。などの関連情報を検索する場所を地域のサブセットのクエリを実行する場合は、これらだけにファンを制御できます。要求が成功すると、SharePoint の検索 REST API は応答データを返します。
+カスタムの検索アプリケーションは、SharePoint 検索 REST API への要求にクエリ パラメーターを指定することで、すべてまたは一部の地域の場所からの結果を取得するようになります。このクエリ パラメーターに応じて、すべてまたは一部の地域の場所にクエリがファンアウトされます。たとえば、一部の地域の場所に対して関連情報を取得するクエリを実行する必要がある場合は、対象の地域にのみファンアウトするように制御できます。この要求が成功すると、SharePoint 検索 REST API は応答データを返します。
 
 ### <a name="query-parameters"></a>クエリ パラメーター
 
-EnableMultiGeoSearch - これは、クエリを複数地域テナントの他の地域の場所のインデックスさばいたものとするかどうかを指定するブール値です。に**true を指定**するクエリを設定します。**false を指定**しないクエリが 。既定値は、 **false を指定**します。このパラメーターを指定しない場合、クエリは、他の地域の場所に、**ない**さばいた。複数地域ではない環境で、パラメーターを使用する場合、パラメーターは無視されます。
+EnableMultiGeoSearch: 複数地域テナントの別の地域の場所のインデックスにクエリがファンアウトされるようにするかどうかを指定するブール値です。クエリをファンアウトする場合は **true** に設定します。クエリをファンアウトしない場合は **false** に設定します。既定値は **false** です。このパラメーターを含めていないと、クエリは別の地域の場所にファンアウト**されなくなります**。複数地域ではない環境でパラメーターを使用すると、このパラメーターは無視されます。
 
-顧客タイプ - これは、文字列です。検索アプリケーションごとに一意のクライアント名を入力します。このパラメーターを指定しない場合、クエリは、他の地域の場所に、**ない**さばいた。
+ClientType: 文字列です。検索アプリケーションごとに一意のクライアント名を入力します。このパラメーターを含めていないと、クエリは別の地域の場所にファンアウト**されなくなります**。
 
-MultiGeoSearchConfiguration - これは、どの地域の複数の地域での場所のテナント**EnableMultiGeoSearch**が**true**の場合に、クエリをファンに省略可能な一覧です。、このパラメーターを指定するか、空欄のままにしない、クエリはすべての地域の場所さばいた。各地域の場所では、JSON 形式で次の項目を入力します。
+MultiGeoSearchConfiguration: **EnableMultiGeoSearch** が **true** のときに、クエリをファンアウトする複数地域テナントの地域の場所を指定するオプションのリストです。このパラメーターを含めていない場合や空白のままにした場合、クエリはすべての地域の場所にファンアウトされます。地域の場所ごとに、次の項目を JSON 形式で入力します。
 
 <table>
 <thead>
@@ -183,24 +184,24 @@ MultiGeoSearchConfiguration - これは、どの地域の複数の地域での�
 <tbody>
 <tr class="odd">
 <td align="left">DataLocation</td>
-<td align="left">Geo 場所、たとえば名です。</td>
+<td align="left">地域の場所 (例: NAM)。</td>
 </tr>
 <tr class="even">
-<td align="left">エンドポイント</td>
-<td align="left">たとえば、接続するエンドポイントhttps://contoso.sharepoint.com</td>
+<td align="left">EndPoint</td>
+<td align="left">接続先のエンドポイント (例: https://contoso.sharepoint.com)。</td>
 </tr>
 <tr class="odd">
 <td align="left">SourceId</td>
-<td align="left">結果のソース、たとえば B81EAB55-3140-4312-B0F4-9459D1B4FFEE の GUID です。</td>
+<td align="left">検索先の GUID (例: B81EAB55-3140-4312-B0F4-9459D1B4FFEE)。</td>
 </tr>
 </tbody>
 </table>
 
-DataLocation またはエンドポイントを省略した場合、または、DataLocation が重複している場合は、要求は失敗します。[Microsoft Graph を使用して、テナントの geo の場所のエンドポイントに関する情報を取得することができます](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery)。
+DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](https://docs.microsoft.com/ja-JP/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>応答データ
 
-MultiGeoSearchStatus – これは、SharePoint Search API 要求への応答を返すプロパティです。プロパティの値は文字列であり、SharePoint Search API が返す結果をに関する次の情報を提供します。
+MultiGeoSearchStatus: 要求に対する応答で SharePoint 検索 API が返すプロパティです。このプロパティの値は文字列であり、SharePoint 検索 API が返す結果について次の情報が得られます。
 
 <table>
 <thead>
@@ -211,20 +212,20 @@ MultiGeoSearchStatus – これは、SharePoint Search API 要求への応答を
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">完全</td>
-<td align="left">地域の場所から<strong>すべて</strong>の結果の完全な。</td>
+<td align="left">Full</td>
+<td align="left"><strong>すべて</strong>の地域の場所からの完全な結果。</td>
 </tr>
 <tr class="even">
-<td align="left">一部</td>
-<td align="left">1 つまたは複数の地域の場所からの部分的な結果です。結果では、一時的なエラーのため完了できません。</td>
+<td align="left">Partial</td>
+<td align="left">1 つ以上の地域の場所からの部分的な結果。この結果は一時的なエラーによって不完全なものになります。</td>
 </tr>
 
 </tbody>
 </table>
 
-### <a name="query-using-the-rest-service"></a>REST サービスを使用してクエリ
+### <a name="query-using-the-rest-service"></a>REST サービスを使用したクエリ
 
-GET 要求では、URL にクエリ パラメーターを指定します。POST 要求では、JavaScript オブジェクト表記法 (JSON) 形式の本文にクエリのパラメーターを渡します。
+GET 要求の場合は、URL でクエリ パラメーターを指定します。POST 要求の場合は、JavaScript Object Notation (JSON) 形式のクエリ パラメーターを本文で渡します。
 
 #### <a name="request-headers"></a>要求ヘッダー
 
@@ -238,20 +239,20 @@ GET 要求では、URL にクエリ パラメーターを指定します。POST 
 <tbody>
 <tr class="odd">
 <td align="left">Content-Type</td>
-<td align="left">アプリケーションまたは json; odata = 詳細</td>
+<td align="left">application/json;odata=verbose</td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>地域の**すべて**の場所さばいたが GET 要求のサンプル
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる GET 要求の例
 
-https://\<テナント\>/\_api/検索/query?querytext 'sharepoint' とプロパティを = 'EnableMultiGeoSearch:true' と顧客タイプを = =' 私\_クライアント\_id'
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
 
-#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>サンプル GET 要求で**いくつか**の地域拠点に広がる
+#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトする GET 要求の例
 
-https:// <tenant>/_api/search/query?querytext 'site' & 顧客タイプを = 'my_client_id' とプロパティを = ='EnableMultiGeoSearch:true、MultiGeoSearchConfiguration: [{DataLocation\:「名前」\,エンドポイント\:"https\:contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:」が「\,エンドポイント\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>地域の**すべて**の場所さばいた、POST 要求のサンプル
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる POST 要求の例
 
     {
         "request": {
@@ -275,7 +276,7 @@ https:// <tenant>/_api/search/query?querytext 'site' & 顧客タイプを = 'my_
     }
 
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>**いくつか**の地域拠点にさばいたは、POST 要求のサンプル
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトされる POST 要求の例
 
 
     {
@@ -303,9 +304,9 @@ https:// <tenant>/_api/search/query?querytext 'site' & 顧客タイプを = 'my_
         }
     }
 
-### <a name="query-using-csom"></a>CSOM を使用してクエリ
+### <a name="query-using-csom"></a>CSOM を使用したクエリ
 
-地域の**すべて**の場所さばいた、CSOM クエリの例を以下に示します。
+次に、**すべて**の地域の場所に CSOM クエリの例を示します。
 
     var keywordQuery = new KeywordQuery(ctx);
     keywordQuery.QueryText = query.SearchQueryText;

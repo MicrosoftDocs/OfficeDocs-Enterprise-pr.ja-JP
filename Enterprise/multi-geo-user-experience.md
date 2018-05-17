@@ -1,5 +1,5 @@
 ---
-title: Multgeo 環境でのユーザー エクスペリエンス
+title: 複数地域環境でのユーザー エクスペリエンス
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,60 +7,61 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: マルチ geo 環境で SharePoint と OneDrive のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: 42e384d3e93ca3f5a06a8ee07a37b10e21477038
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: 複数地域環境での SharePoint および OneDrive のユーザー エクスペリエンスについて説明します。
+ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="user-experience-in-a-multi-geo-environment"></a>マルチ地域環境でのユーザー エクスペリエンス
+# <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
-ここでは、OneDrive の複数の地域の構成では、ユーザーが表示されます。
+ここでは、OneDrive 複数地域構成でユーザーが確認できる内容について説明します。
 
-#### <a name="users-onedrive-for-business-location"></a>業務の場所のユーザーの OneDrive
+#### <a name="users-onedrive-for-business-location"></a>ユーザーの OneDrive for Business の場所
 
-ユーザーには、希望するデータの場所を提供するビジネス用の OneDrive があります。場合は、正しくない地理的な場所 (以前の地理的な場所からブックマーク) などが含まれている OneDrive の URL にユーザーが移動した、適切な地理的な場所に OneDrive を自動的にリダイレクトされます。
+ユーザーには、そのユーザーの優先されるデータの場所にプロビジョニングされた OneDrive for Business が提供されます。ユーザーが不適切な地域の場所を含む OneDrive URL に移動すると (以前の地域の場所からのブックマークなど)、適切な地域の場所にある OneDrive に自動的にリダイレクトされます。
 
 #### <a name="sharing"></a>共有
 
-ユーザー選択ウィンドウの操作性は、その地域の場所に関係なくすべてのユーザーを示します。これにより、ユーザーは、同じ地域でも、他のテナントの geo の場所の他のユーザーと共有できます。場所、**自分と共有**ビューでのビジネス ユーザーの OneDrive が表示され、アクセスするのには、シングル ・ サインオン環境でホストされている地理的な場所に関係なく、異なる地域からのコンテンツします。
+ユーザー選択ウィンドウのエクスペリエンスでは、ユーザーの地域の場所に関係なく、すべてのユーザーが示されます。これにより、ユーザーは同じ地域またはテナントの地域の場所が異なる他のユーザーとの共有が可能になります。別の地域の場所からのコンテンツは、ユーザーの OneDrive for Business の **[共有相手]** ビューに表示され、そのコンテンツがホストされている地域の場所に関係なく、シングルサインオン エクスペリエンスに関連付けることができます。
 
 #### <a name="office-applications"></a>Office アプリケーション
 
-Word、Excel、PowerPoint などの Office アプリケーションにログインするとき、各ユーザーのビジネスの地理的な場所に適切な OneDrive が自動的に検出します。ユーザーは、OneDrive の地域に固有の URL を入力する必要はありません。
+Office アプリケーション (Word、Excel、PowerPoint など) は、ユーザーがログインしたときに、ユーザーごとの適切な OneDrive for Business の地域の場所を自動的に検出します。ユーザーは、自分の OneDrive の地域固有の URL を入力する必要がありません。
 
-#### <a name="onedrive-for-business-sync-client"></a>同期クライアントのビジネスの OneDrive
+#### <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同期クライアント
 
-同期クライアントのビジネスの OneDrive (バージョン 17.3.6943.0625 以降では)、ユーザーの業務地域の場所の正しい OneDrive を自動的に検出されます。
+OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 以降) は、ユーザーにとって適切な OneDrive for Business の地域の場所を自動的に検出します。
 
 #### <a name="office-365-app-launcher"></a>Office 365 アプリ起動ツール
 
-アプリケーション起動プログラムは複数の地域に注意してください、作業負荷の適切な地域の場所には、各タイルを紹介OneDrive では、ユーザーの OneDrive ライブラリをホストしている、SharePoint のタイルのすべてのユーザーを指す中央の場所では、チーム サイトは引き続きホストされているが、中に地域の正しい場所を並べて表示します。
+アプリ起動ツールは、複数地域に対応していて、各タイルをワークロードの適切な地域の場所に差し向けます。OneDrive タイルは、ユーザーの OneDrive ライブラリがホストされている適切な地域の場所をポイントします。その一方で、SharePoint タイルは、すべてのユーザーを中央の場所に差し向けます (チーム サイトは引き続き中央の場所でホストされるため)。
 
-#### <a name="delve-user-profiles"></a>ユーザー プロファイルを説明します。
+#### <a name="delve-user-profiles"></a>Delve のユーザー プロファイル
 
-ユーザー プロファイル情報はユーザーの地域の場所で習得します。ユーザーを選択すると、表示される、適切な地域の場所に、ユーザーの場所の完全なプロファイルの詳細が表示されます。
+ユーザー プロファイル情報は、ユーザーの地域の場所でマスター管理されます。ユーザーを選択すると、そのユーザーにとって適切な地域の場所に転送され、完全なプロファイルの詳細を確認できます。
 
-Delve がオフの場合は、複数地域の対応ではありませんが発生する SharePoint で、従来のプロファイルが表示されます。
+Delve がオフの場合、SharePoint の従来の (複数地域に対応していない) プロファイル エクスペリエンスが表示されます。
 
 #### <a name="delve"></a>Delve
 
-Office 365 ユーザーに対しては衛星の場合に、複数の地域の説明はサポートされて Delve が SharePoint の SharePoint ブログ サイトにのみ、その他の地域のユーザーが作成したブログの投稿にリンクしないこと。
+サテライトのインスタンスに存在する Office 365 ユーザーの場合は、Delve 複数地域がサポートされますが、別の地域に存在するユーザーの記述した SharePoint ブログ投稿へのリンクが Delve に示されないという制限があります。そのユーザーの SharePoint ブログ サイトへのリンクのみが示されます。
 
 #### <a name="search"></a>検索
 
-各地域の場所では、独自の検索インデックスと検索センターがあります。ユーザーが検索するときに、すべての場所の地域では、クエリが送信されると返される結果がマージされ、ユーザーは統一された結果を取得するために、ランク付けします。ユーザーは、独自の地域の場所に関係なくすべての地域の場所からの結果を取得します。詳細については、 [OneDrive 複数の地域のビジネスを検索する構成](configure-search-for-multi-geo.md)を参照してください。
+各地域の場所には、独自の検索インデックスと検索センターがあります。ユーザーが検索を実行すると、クエリはすべての地域の場所に送信されます。返される結果はマージされてからランク付けされるため、ユーザーには統一された結果が示されます。ユーザーは、自分の地域の場所に関係なく、すべての地域の場所からの結果を取得します。詳細については、「[OneDrive for Business 複数地域の検索の構成](configure-search-for-multi-geo.md)」を参照してください。
 
-次の検索クライアントがサポートされています。
+サポートされている検索クライアントは、次のとおりです。
 
 -   OneDrive for Business
 
 -   Delve
 
--   SharePoint ホーム
+-   SharePoint Home
 
 -   検索センター
 
@@ -68,10 +69,10 @@ Office 365 ユーザーに対しては衛星の場合に、複数の地域の説
 
 #### <a name="onedrive-ios-and-android"></a>OneDrive iOS および Android 
 
-OneDrive iOS および Android モバイル アプリケーションが表示されます、OneDrive ファイルとファイルを共有する地域の保存場所を問わない。OneDrive のモバイル アプリケーションからの検索には、地域のすべての場所から関連する検索結果が表示されます。これらのアプリケーションの最新バージョンをダウンロードしてください。
+OneDrive iOS および Android モバイル アプリには、ユーザーの OneDrive ファイルと、ユーザーの地域の場所と関係なくユーザーが共有しているファイルが表示されます。OneDrive モバイル アプリからの検索では、すべての地域の場所から関連する結果が表示されます。これらのアプリの最新バージョンをダウンロードしてください。
 
-詳細については、 [iOS の OneDrive](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247)の使用と[アプリの使用 OneDrive](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36)を参照してください。
+詳細については、「[iOS で OneDrive を使う](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247)」および「[Android で OneDrive を使う](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36)」を参照してください。
 
-#### <a name="teams-experience"></a>チームの経験
+#### <a name="teams-experience"></a>Teams のエクスペリエンス
 
-チームは、複数の地域に注意してください。OneDrive ファイルおよび最近表示したファイルは、ユーザーの地域の場所に関係なく表示されます。@ すべての地域の場所からユーザーの作業を参照。
+Teams は、複数地域に対応しています。OneDrive ファイルとユーザーの地域の場所と関係なく最近表示したファイルが表示されます。@ は、すべての地域の場所からのユーザーと作業することを示します。

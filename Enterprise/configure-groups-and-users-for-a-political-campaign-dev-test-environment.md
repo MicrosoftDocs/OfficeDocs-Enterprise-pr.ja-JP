@@ -1,41 +1,43 @@
 ---
-title: "選挙運動の開発/テスト環境用にグループとユーザーを構成する"
+title: 選挙運動の開発/テスト環境用にグループとユーザーを構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: None
-ms.custom:
-- DecEntMigration
+ms.collection:
+- Ent_O365
 - Strat_O365_Enterprise
+ms.service: o365-solutions
+localization_priority: Priority
+ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
-description: "概要: は、政治的なキャンペーンの開発/テスト環境のユーザーおよびグループを Office 365 とエンタープライズ モビリティとセキュリティ (EMS) の試用版サブスクリプションを作成します。"
-ms.openlocfilehash: 7faf428fc2225d3f31297ba6bf83a10a7682009a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
+ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
- **の概要:**政治キャンペーンの開発/テスト環境のユーザーおよびグループには、Office 365 とエンタープライズ モビリティとセキュリティ (EMS) の試用版サブスクリプションを作成します。
+ **要約:** 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。
   
-簡略化されたユーザー アカウントとグループ[政治運動、慈善団体、およびその他のアジャイルな組織のセキュリティ ガイダンスの Microsoft](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)ソリューションの開発/テスト環境を作成するのにこの資料の手順を使用します。
+簡略化されたユーザー アカウントとグループを含む開発/テスト環境を「[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)」ソリューション用に作成するには、この資料の手順を使用します。
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 の開発/テスト環境を作成する
 
-このフェーズでは、Office 365 の E5 とエンタープライズ モビリティ + 政治キャンペーンを表す架空の組織のセキュリティ (EMS) E5 の試用版サブスクリプションを取得します。
+このフェーズでは、選挙運動を務める架空の組織用に Office 365 E5 と Enterprise Mobility + Security (EMS) E5 の試用版サブスクリプションを取得します。
   
-最初に、 [Office 365 の開発/テスト環境](office-365-dev-test-environment.md)の**第 2 段階**の指示に従います。
+まず、「[Office 365 開発/テスト環境](office-365-dev-test-environment.md)」の**フェーズ 2**に記されている手順を実行します
   
-次に、EMS E5 の試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。
+次に、EMS E5 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。
   
 1. 必要に応じて、Office 365 ポータルに、試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. **[管理]** タイルをクリックします。
+2. 
+            **[管理]** タイルをクリックします。
     
 3. ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
     
@@ -43,9 +45,9 @@ ms.lasthandoff: 12/15/2017
     
 5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
     
-6. **[注文の受領書]** ページで、 **[続行]** をクリックします。
+6. **[注文の受領書]** ページで、**[続行]** をクリックします。
     
-次に、グローバル管理者アカウントの EMS E5 のライセンスを有効にします。
+次に、全体管理者アカウントの EMS E5 ライセンスを有効にします。
   
 1. ブラウザーの **[Office 365 管理センター]** タブの左側のナビゲーションで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。
     
@@ -57,13 +59,13 @@ ms.lasthandoff: 12/15/2017
 
 このフェーズでは、選挙運動用に Azure AD グループを作成して構成します。
   
-最初に、Azure ポータルと、一連の標準的な政治キャンペーンのグループを作成します。
+最初に、Azure portal で一般的な選挙運動グループのセットを作成します。
   
-1. お使いのブラウザー内の別のタブに、 [https://portal.azure.com](https://portal.azure.com)で Azure ポータルに移動します。必要な場合は、試用版サブスクリプションの Office 365 の E5 のグローバル ・ アドミニストレータ ・ アカウントの資格情報でサインインします。
+1. ブラウザーの別タブで、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。必要に応じて、Office 365 E5 試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。
     
-2. Azure Portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
+2. Azure portal で **[Azure Active Directory] > [ユーザーとグループ] > [すべてのグループ]** の順にクリックします。
     
-3. 各グループの名前をこのリスト内の次の手順の操作を行います。
+3. このリストのグループ名ごとに、次の手順を実行します。
     
   - 戦略的シニア スタッフ
     
@@ -77,33 +79,33 @@ ms.lasthandoff: 12/15/2017
     
   - フィールド スタッフ
     
-1. **[すべてのグループ]** ブレードで、 **[+ 新しいグループ]** をクリックします。
+1. **[すべてのグループ]** ブレードで、**[+ 新しいグループ]** をクリックします。
     
-2. **名前**の一覧からグループ名を入力します。
+2. リストにあるグループ名を **[名前]** に入力します。
     
-3. **メンバーシップ**では、**動的なユーザー**を選択します。
+3. **[メンバーシップ]** で **[動的ユーザー]** を選択します。
     
 4. **[Office の機能を有効にする]** で **[はい]** をクリックします。
     
-5. **動的クエリの追加**] をクリックします。
+5. **[動的クエリの追加]** をクリックします。
     
-6. **のユーザーを追加、**、**部門**を選択します。
+6. **[ユーザーを追加する場所]** で、**[部署]** を選択します。
     
-7. 次のフィールドでは、[**等しい**] を選択します。
+7. 次のフィールドで、**[等しい]** を選択します。
     
-8. 次のフィールドで、リストからグループ名を入力します。
+8. 次のフィールドで、リストにあるグループ名を入力します。
     
-9. **追加クエリ**] をクリックし、し、[**作成**] をクリックします。
+9. **[クエリの追加]** をクリックしてから、**[作成]** をクリックします。
     
-10. **ユーザーおよびグループのすべてのグループ**をクリックします。
+10. **[ユーザーとグループ - すべてのグループ]** をクリックします。
     
-グループは、次に、メンバーは、Office 365 の E5 と EMS E5 のライセンスを自動的に割り当てられるように構成します。
+次に、メンバーに Office 365 E5 および EMS E5 のライセンスが自動的に割り当てられるようにグループを構成します。
   
-1. Azure Portal で **[Azure Active Directory] > [ライセンス] > [すべての製品]** の順にクリックします。
+1. Azure portal で **[Azure Active Directory] > [ライセンス] > [すべての製品]** の順にクリックします。
     
-2. の一覧では、**エンタープライズ モビリティおよびセキュリティ E5**と**Office 365 エンタープライズ E5**を選択し、**割り当てる +**] をクリックします。
+2. 一覧で、**[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** を選択して、**[+ 割り当て]** をクリックします。
     
-3. **[ライセンスの割り当て]** ブレードで、 **[ユーザーとグループ]** をクリックします。
+3. **[ライセンスの割り当て]** ブレードで、**[ユーザーとグループ]** をクリックします。
     
 4. グループの一覧で、次を選択します。
     
@@ -119,7 +121,7 @@ ms.lasthandoff: 12/15/2017
     
   - 戦略的シニア スタッフ
     
-5. **[選択]** をクリックし、 **[割り当て]** をクリックします。
+5. **[選択]** をクリックし、**[割り当て]** をクリックします。
     
 6. ブラウザーの [Azure Portal] タブを閉じます。
     
@@ -127,7 +129,7 @@ ms.lasthandoff: 12/15/2017
 
 このフェーズでは、選挙運動のサンプル ユーザー アカウントを追加します。
   
-最初に、 [Azure Active Directory V2 PowerShell モジュールを使用して接続](https://go.microsoft.com/fwlink/?linkid=842218)します。
+まず、[Azure Active Directory V2 PowerShell モジュールを使用して接続](https://go.microsoft.com/fwlink/?linkid=842218)します。
   
 次に、組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Scripting Environment (ISE) からこれらのコマンドを実行します。
   
@@ -161,23 +163,23 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> ここに一般的なパスワードの使用では、自動化し、開発/テスト環境の構成を容易にします。生産のサブスクリプションをお勧めしません。各新しいユーザー アカウントを使用してサインインすると、パスワードの変更が求められます。 
+> ここでは共通のパスワードを使用することで、自動化と、開発/テスト環境の構成を容易にしています。運用サブスクリプションでの使用はお勧めしません。これらの新しいユーザー アカウントでサインインするときに、パスワードの変更を求めるダイアログが表示されます。 
   
 動的グループのメンバーシップとグループ ベースのライセンスが正常に機能していることを確認するには、次の手順を使用します。
   
-1. ブラウザーの **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
+1. ブラウザーの **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
-2. ブラウザーの新しい **[Office 管理者センター]** タブで、 **[ユーザー]** をクリックします。
+2. ブラウザーの新しい **Office 管理センター**のタブで、**[ユーザー]** をクリックします。
     
-3. ユーザーの一覧で、[**候補**] をクリックします。
+3. ユーザーの一覧で **[候補]** をクリックします。
     
-4. **候補**のユーザー アカウントのプロパティを一覧表示するウィンドウで、次のことを確認します。
+4. **[候補]** ユーザー アカウントのプロパティを一覧表示するウィンドウで、次を確認します。
     
-  - (**グループ メンバーシップ**) に**シニアと戦略的なスタッフ**のグループのメンバーであります。
+  - **[戦略的シニア スタッフ]** グループのメンバーである (**[グループ メンバーシップ]** 内)。
     
-  - **製品ライセンス**) の「**エンタープライズ モビリティおよびセキュリティ E5**と**Office 365 のエンタープライズ E5**のライセンスが割り当てられます。
+  - **[Enterprise Mobility + Security E5]** と **[Office 365 Enterprise E5]** のライセンスが割り当てられている (**[製品ライセンス]** 内)。
     
-5. **候補**のユーザー アカウントのウィンドウを閉じます。
+5. **[候補]** ユーザー アカウントのウィンドウを閉じます。
     
 ## <a name="record-values-for-future-reference"></a>将来の参考のために値を記録する
 
@@ -187,15 +189,15 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
     
     たとえば、試用版サブスクリプションのドメイン名 contoso.onmicrosoft.com の場合、組織名は "contoso" です。
     
-- Office 365 のグローバル管理者名: ___.onmicrosoft.com
+- Office 365 グローバル管理者名: ____________________________________.onmicrosoft.com
     
-    このアカウントのパスワードやその他のユーザー アカウントの一般的な初期パスワードを安全な場所に記録します。
+    このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
     
 ## <a name="next-step"></a>次の手順
 
-4 種類の[政治キャンペーンの開発/テスト環境のチーム サイトを作成する](create-team-sites-in-a-political-campaign-dev-test-environment.md)には、この開発/テスト環境での SharePoint Online のチーム サイトを作成します。
+[Create team sites in a political campaign dev/test environment](create-team-sites-in-a-political-campaign-dev-test-environment.md) を使用して、この開発/テスト環境で 4 つの異なる種類の SharePoint Online チーム サイトを作成します。
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>関連項目
 
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

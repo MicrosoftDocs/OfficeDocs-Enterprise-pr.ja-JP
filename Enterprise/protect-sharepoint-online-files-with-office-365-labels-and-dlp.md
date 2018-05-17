@@ -1,5 +1,5 @@
 ---
-title: Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。
+title: Office 365 ラベルと DLP による SharePoint ファイルの保護
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,38 +7,38 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
-description: '概要: Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトを適用します。'
-ms.openlocfilehash: a6413ac556cf63cbe7491180d65b4425cd0dba3d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトに、Office 365 ラベルとデータ損失防止 (DLP) ポリシーを適用します。'
+ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 のラベルと DLP の SharePoint Online のファイルを保護します。
+# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 ラベルと DLP による SharePoint ファイルの保護
 
- **の概要:**Office 365 のラベルとデータ損失防止 (DLP) のポリシーをさまざまな情報保護レベルの SharePoint Online のチーム サイトに適用します。
+ **概要:** 情報保護のレベルが多様な SharePoint Online チーム サイトに、Office 365 ラベルとデータ損失防止 (DLP) ポリシーを適用します。
   
-設計し、Office 365 のラベルと、基準計画と小文字が区別され、機密性の高いの SharePoint Online チーム サイト用の DLP ポリシーを展開するこの資料の手順を使用します。これら 3 つの層の保護の詳細については、 [SharePoint のオンラインのセキュリティで保護されたサイトとファイル](secure-sharepoint-online-sites-and-files.md)を参照してください。
+この記事にある手順を使用して、ベースライン、機密、および高機密の SharePoint Online チーム サイト用の Office 365 ラベルおよび DLP ポリシーを設計および展開します。これらの 3 つの層の保護について詳しくは、「[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)」を参照してください。
   
-## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>SharePoint Online サイト用の Office 365 のラベル
+## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>SharePoint Online サイトの Office 365 ラベル
 
 Office 365 のラベルを作成し、SharePoint Online チーム サイトにラベルを割り当てるためのフェーズは 3 つあります。
   
-### <a name="phase-1-determine-the-office-365-label-names"></a>フェーズ 1:Office 365 のラベル名を決定する
+### <a name="phase-1-determine-the-office-365-label-names"></a>フェーズ 1: Office 365 ラベル名を決定する
 
 このフェーズでは、SharePoint Online チーム サイトに適用される 4 レベルの情報保護用に、Office 365 ラベルの名前を決定します。 次の表は、各レベルに推奨される名前の一覧です。
   
 |**SharePoint Online チーム サイトの保護レベル**|**ラベル名**|
 |:-----|:-----|
 |ベースライン - パブリック  <br/> |内部パブリック  <br/> |
-|ベースライン - プライベート  <br/> |プライベート  <br/> |
+|ベースライン - プライベート  <br/> |Kirkland  <br/> |
 |機密  <br/> |機密  <br/> |
 |非常に機密性の高い社外秘  <br/> |非常に機密性の高い社外秘  <br/> |
    
@@ -52,25 +52,25 @@ Office 365 のラベルを作成し、SharePoint Online チーム サイトに�
 
 1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
+2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
 3. ブラウザーの新しい **[Office 管理者センター]** タブで、**[管理センター] > [セキュリティとコンプライアンス]** をクリックします。
     
 4. ブラウザーの新しい **[ホーム – セキュリティとコンプライアンス]** タブをクリックして、**[分類] > [ラベル]** をクリックします。
     
-5. **[ホーム] > [ラベル]** ウィンドウで、 **[ラベルの作成]** をクリックします。
+5. **[ホーム] > [ラベル]** ウィンドウで、**[ラベルの作成]** をクリックします。
     
-6. [ウィンドウ] の**名前ラベル**、ラベルの名前を入力し、[**次へ**] をクリックします。
+6. **[ラベルに名前をつける]** ウィンドウで、ラベルの名前を入力して、**[次へ]** をクリックします。
     
-7. **[ラベル設定]** ウィンドウで、 **[次へ]** をクリックします。
+7. **[ラベル設定]** ウィンドウで、**[次へ]** をクリックします。
     
-8. **[設定の確認]** ウィンドウで、 **[このラベルを作成する]** をクリックしてから **[閉じる]** をクリックします。
+8. **[設定の確認]** ウィンドウで、**[このラベルを作成する]** をクリックして、**[閉じる]** をクリックします。
     
 9. 追加ラベルについて手順 5 から 8 を繰り返します。
     
 ### <a name="create-office-365-labels-with-powershell"></a>PowerShell で Office 365 のラベルを作成する
 
-1. [Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)のセキュリティ管理者や企業の管理者の役割を持つアカウントの資格情報を指定します。
+1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)し、セキュリティ管理者ロールまたは会社の管理者ロールを持つアカウントの資格情報を指定します。
     
 2. ラベル名の一覧を入力し、PowerShell コマンド プロンプトで次のコマンドを実行します。
     
@@ -81,9 +81,9 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
 
 次に、以下の手順で新しい Office 365 ラベルを発行します。
   
-1. **ホーム > ラベル**ウィンドウ セキュリティ&amp;コンプライアンス センターでは、**ラベルの発行**] をクリックします。
+1. **[ホーム] > [ラベル]** ウィンドウの [セキュリティ &amp; コンプライアンス センター] で、**[ラベルの発行]** をクリックします。
     
-2. **[発行するラベルを選択]** ウィンドウで、 **[発行するラベルを選択]** をクリックします。
+2. **[発行するラベルを選択]** ウィンドウで、**[発行するラベルを選択]** をクリックします。
     
 3. **[Choose labels]\(ラベルの選択\)** ウィンドウで、**[追加]** をクリックして 4 つのラベルをすべて選択します。
     
@@ -91,11 +91,11 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 5. **[発行するラベルを選択]** ウィンドウで、 **[次へ]** をクリックします。
     
-6. **[場所の選択]** ウィンドウで、 **[次へ]** をクリックします。
+6. **[場所の選択]** ウィンドウで、**[次へ]** をクリックします。
     
-7. [ウィンドウ]**のポリシーの名前****名**] で、ラベルのセットの名前を入力し、[**次へ**] をクリックします。
+7. **[ポリシーに名前をつける]** ウィンドウで、**[名前]** にラベルのセットの名前を入力し、**[次へ]** をクリックします。
     
-8. **[設定の確認]** ウィンドウで、 **[ラベルの発行]** をクリックしてから **[閉じる]** をクリックします。
+8. **[設定の確認]** ウィンドウで、**[ラベルの発行]** をクリックして、**[閉じる]** をクリックします。
     
 ### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>フェーズ 3: SharePoint Online サイトに Office 365 ラベルを適用する
 
@@ -109,9 +109,9 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 4. 設定アイコンをクリックし、**[ライブラリの設定]** をクリックします。
     
-5. **[権限と管理]** をクリックして、 **[このライブラリ内の項目にラベルを適用]** をクリックします。
+5. **[権限と管理]** をクリックして、**[このライブラリ内の項目にラベルを適用]** をクリックします。
     
-6. **ラベルの設定の適用**] で、適切なラベルを選択し、し、[**保存**] をクリックします。
+6. **[設定 - ラベルの適用]** で適切なラベルを選択し、**[保存]** をクリックします。
     
 7. SharePoint Online サイトのタブを閉じます。
     
@@ -131,11 +131,11 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 3. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
     
-4. **[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。
+4. **[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、**[カスタム]** をクリックして、**[次へ]** をクリックします。
     
-5. **名ポリシー**ウィンドウで、[**名**] に、機密性の高いレベルの DLP ポリシーの名前を入力し、[**次へ**] をクリックします。
+5. **[ポリシーに名前をつける]** ウィンドウの **[名前]** に機密レベル DLP ポリシーの名前を入力して、**[次へ]** をクリックします。
     
-6. **[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。
+6. **[場所の選択]** ウィンドウで、**[自分で特定の場所を選択する]** をクリックして、**[次へ]** をクリックします。
     
 7. 場所の一覧で、 **Exchange メール**と **OneDrive アカウント**の場所を無効にし、 **[次へ]** をクリックします。
     
@@ -165,9 +165,9 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 18. **[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。
     
-19. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
+19. **[設定の確認]** ウィンドウで、**[作成]** をクリックして、**[閉じる]** をクリックします。
     
-機密 SharePoint Online チーム サイトの結果の構成は次のようになります。
+機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
 ![機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
@@ -179,11 +179,11 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 3. **[データ損失防止]** ウィンドウで、 **[+ ポリシーの作成]** をクリックします。
     
-4. **[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、 **[カスタム]** をクリックしてから、 **[次へ]** をクリックします。
+4. **[テンプレートを使って開始するか、カスタム ポリシーを作成する]** ウィンドウで、**[カスタム]** をクリックして、**[次へ]** をクリックします。
     
-5. **名ポリシー**ウィンドウで、[**名**] に、機密性の高いレベルの DLP ポリシーの名前を入力し、[**次へ**] をクリックします。
+5. **[ポリシーに名前をつける]** ウィンドウの **[名前]** に高機密レベル DLP ポリシーの名前を入力して、**[次へ]** をクリックします。
     
-6. **[場所の選択]** ウィンドウで、 **[自分で特定の場所を選択する]** をクリックしてから、 **[次へ]** をクリックします。
+6. **[場所の選択]** ウィンドウで、**[自分で特定の場所を選択する]** をクリックして、**[次へ]** をクリックします。
     
 7. 場所の一覧で、 **Exchange メール**と **OneDrive アカウント**の場所を無効にし、 **[次へ]** をクリックします。
     
@@ -213,15 +213,15 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 18. **[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。
     
-19. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
+19. **[設定の確認]** ウィンドウで、**[作成]** をクリックして、**[閉じる]** をクリックします。
     
-非常に機密性の高い社外秘 SharePoint Online チーム サイトの結果の構成は次のようになります。
+非常に機密性の高い社外秘 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
 ![高機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>次の手順
 
-[Azure Information Protection で SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)
+[Azure Information Protection を使用して SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)
     
 ## <a name="see-also"></a>関連項目
 
