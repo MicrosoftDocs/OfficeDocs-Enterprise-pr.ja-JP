@@ -1,130 +1,130 @@
 ---
-title: 複数地域の環境を管理します。
+title: 複数地域環境の管理
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: マルチ geo 環境で SharePoint と OneDrive のサービスの管理について説明します。
-ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
+ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="administering-a-multi-geo-environment"></a><span data-ttu-id="c538b-103">複数地域の環境を管理します。</span><span class="sxs-lookup"><span data-stu-id="c538b-103">Administering a multi-geo environment</span></span>
+# <a name="administering-a-multi-geo-environment"></a><span data-ttu-id="58603-103">複数地域環境の管理</span><span class="sxs-lookup"><span data-stu-id="58603-103">Administering a multi-geo environment</span></span>
 
-<span data-ttu-id="c538b-104">OneDrive と SharePoint のサービスが複数地域環境で作業する方法を見てです。</span><span class="sxs-lookup"><span data-stu-id="c538b-104">Here's a look at how OneDrive and SharePoint services work in a multi-geo environment.</span></span>
+<span data-ttu-id="58603-104">ここでは、複数地域環境で OneDrive および SharePoint のサービスが動作するしくみについて説明します。</span><span class="sxs-lookup"><span data-stu-id="58603-104">Here's a look at how OneDrive and SharePoint services work in a multi-geo environment.</span></span>
 
-#### <a name="onedrive-administrator-experience"></a><span data-ttu-id="c538b-105">OneDrive 管理者の経験</span><span class="sxs-lookup"><span data-stu-id="c538b-105">OneDrive Administrator Experience</span></span>
+#### <a name="onedrive-administrator-experience"></a><span data-ttu-id="58603-105">OneDrive 管理者のエクスペリエンス</span><span class="sxs-lookup"><span data-stu-id="58603-105">OneDrive Administrator Experience</span></span>
 
-<span data-ttu-id="c538b-p101">[OneDrive 管理センター](https://admin.onedrive.com)では、左側のナビゲーション機能 geo の場所にマップを表示し、地域、サイトの管理の**Geo の場所**] タブがあります。地域、テナントの場所を追加、削除するには、このページを使用します。</span><span class="sxs-lookup"><span data-stu-id="c538b-p101">The [OneDrive admin center](https://admin.onedrive.com) has a **Geo locations** tab in the left navigation which features a geo-locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.</span></span>
+<span data-ttu-id="58603-p101">[OneDrive 管理センター](https://admin.onedrive.com)の左側のナビゲーションには、**[地域の場所]** タブがあります。このタブには、地域の場所の地図があり、地域の場所を確認および管理できます。</span><span class="sxs-lookup"><span data-stu-id="58603-p101">The [OneDrive admin center](https://admin.onedrive.com) has a **Geo locations** tab in the left navigation which features a geo-locations map where you can view and manage your geo locations. Use this page to add or delete geo locations for your tenant.</span></span>
 
-#### <a name="taxonomy"></a><span data-ttu-id="c538b-108">分類</span><span class="sxs-lookup"><span data-stu-id="c538b-108">Taxonomy</span></span>
+#### <a name="taxonomy"></a><span data-ttu-id="58603-108">分類</span><span class="sxs-lookup"><span data-stu-id="58603-108">Taxonomy</span></span>
 
-<span data-ttu-id="c538b-p102">サポート統一された[分類](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)管理エンタープライズ メタデータの地域拠点には、会社の中央の場所でホストされているマスターとします。中央の場所から、グローバルの分類を管理し、サテライト地域場所の分類にのみの場所に固有の用語を追加することをお勧めします。グローバル分類の用語は、サテライトの地域の場所に同期されます。</span><span class="sxs-lookup"><span data-stu-id="c538b-p102">We support a unified [taxonomy](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) for enterprise managed metadata across geo locations, with the master being hosted in the central location for your company. We recommend that you manage your global taxonomy from the central location and only add location-specific terms to the satellite geo location’s Taxonomy. Global taxonomy terms will synchronize to the satellite geo locations.</span></span>
+<span data-ttu-id="58603-p102">企業の中央の場所でホストされるマスターと共に、複数の地域の場所にわたるエンタープライズ管理メタデータに対する統一された[分類](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)がサポートされています。中央の場所からグローバルな分類を管理し、サテライト地域の場所の分類には地域に固有の用語のみを追加することをお勧めします。グローバルな分類の用語は、サテライト地域の場所に同期されます。</span><span class="sxs-lookup"><span data-stu-id="58603-p102">We support a unified [taxonomy](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) for enterprise managed metadata across geo locations, with the master being hosted in the central location for your company. We recommend that you manage your global taxonomy from the central location and only add location-specific terms to the satellite geo location’s Taxonomy. Global taxonomy terms will synchronize to the satellite geo locations.</span></span>
 
-#### <a name="sharing"></a><span data-ttu-id="c538b-112">共有</span><span class="sxs-lookup"><span data-stu-id="c538b-112">Sharing</span></span>
+#### <a name="sharing"></a><span data-ttu-id="58603-112">共有</span><span class="sxs-lookup"><span data-stu-id="58603-112">Sharing</span></span>
 
-<span data-ttu-id="c538b-p103">管理者が設定し、それぞれの場所の共有ポリシーを管理できます。各地域拠点の OneDrive サイトには、のみ、対応する地域特定共有の設定を優先します。たとえば、ことができます[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)用ではなく、サテライトの場所またはその逆の場合ですが、中央の場所です。OneDrive の複数の地域、テナント間でこれらが同期するいないと、各地域の拠点で、共有の設定を管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c538b-p103">Administrators can set and manage sharing policies for each of their locations. The OneDrive sites in each geo location will honor only the corresponding geo specific sharing settings. For example, you can allow [external sharing](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) for your central location, but not for your satellite location or vice versa. For OneDrive Multi-Geo, you must manage your sharing settings at each geo location as these are not synchronized across the tenant.</span></span>
+<span data-ttu-id="58603-p103">管理者は、共有ポリシーを場所ごとに設定および管理できます。各地域の場所の OneDrive サイトは、対応する地域の共有設定のみを優先します (たとえば、中央の場所とサテライトの場所のどちらか一方に[外部共有](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)を許可することができます)。共有の設定では、地域の場所間での共有の制限を構成できない点に注意してください。</span><span class="sxs-lookup"><span data-stu-id="58603-p103">Administrators can set and manage sharing policies for each of their locations. The OneDrive sites in each geo location will honor only the corresponding geo specific sharing settings. (For example, you can allow [external sharing](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) for your central location, but not for your satellite location or vice versa.) Note that the sharing settings do not allow configuring sharing limitations between geo-locations.</span></span>
 
-<span data-ttu-id="c538b-p104">共有のアクセス、 [OneDrive 管理センターの共有の設定](https://admin.onedrive.com/?v=SharingSettings)] ページを管理します。既定で外部の共有は各サテライト サイト内の全員が有効になります。</span><span class="sxs-lookup"><span data-stu-id="c538b-p104">To manage sharing visit the [OneDrive admin center sharing settings](https://admin.onedrive.com/?v=SharingSettings) page. By default external sharing is enabled with Anyone in each satellite location.</span></span>
+<span data-ttu-id="58603-p104">OneDrive 複数地域では、共有の設定がテナント全体には同期されないため、地域の場所ごとに管理する必要があります。共有を管理するには、[OneDrive 管理センターの共有設定](https://admin.onedrive.com/?v=SharingSettings)ページに移動します。既定では、各サテライトの場所の全員に外部共有が有効化されています。</span><span class="sxs-lookup"><span data-stu-id="58603-p104">For OneDrive Multi-Geo, you must manage your sharing settings at each geo location as these are not synchronized across the tenant. To manage sharing visit the [OneDrive admin center sharing settings](https://admin.onedrive.com/?v=SharingSettings) page. By default external sharing is enabled with Anyone in each satellite location.</span></span>
 
-#### <a name="user-profile-application"></a><span data-ttu-id="c538b-119">ユーザー プロファイル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c538b-119">User Profile Application</span></span>
+#### <a name="user-profile-application"></a><span data-ttu-id="58603-119">ユーザー プロファイル アプリケーション</span><span class="sxs-lookup"><span data-stu-id="58603-119">User Profile Application</span></span>
 
-<span data-ttu-id="c538b-p105">各地域拠点では、[ユーザー プロファイル アプリケーション](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723)を使用です。各ユーザーのプロファイル情報は、geo の場所とその地域の場所の管理者に使用可能なホストされています。</span><span class="sxs-lookup"><span data-stu-id="c538b-p105">There is a [user profile application](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723) in each geo location. Each user’s profile information is hosted in their geo location and available to the administrator for that geo location.</span></span>
+<span data-ttu-id="58603-p105">各地域の場所ごとに、[ユーザー プロファイル アプリケーション](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723)があります。それぞれのユーザーのプロファイル情報は、それらのユーザーの地域の場所でホストされ、その場所の管理者が利用できます。</span><span class="sxs-lookup"><span data-stu-id="58603-p105">There is a [user profile application](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723) in each geo location. Each user’s profile information is hosted in their geo location and available to the administrator for that geo location.</span></span>
 
-<span data-ttu-id="c538b-122">カスタム プロファイルのプロパティがある場合同じプロファイル スキーマを使用して、地理的に分散し、地域のすべての場所のいずれか、カスタム プロファイル プロパティを設定することを推奨し、または必要な場所です。</span><span class="sxs-lookup"><span data-stu-id="c538b-122">If you have custom profile properties, then we recommend that you use the same profile schema across geographies and populate your custom profile properties either in all geo locations or where needed.</span></span>
+<span data-ttu-id="58603-p106">カスタムのプロファイル プロパティがある場合は、すべての地域で同じプロファイル スキーマを使用して、すべての地域の場所または必要な場所のどちらかにカスタムのプロファイル プロパティを設定します。ユーザー プロファイル データをプログラムによって設定する方法のガイダンスについては、「[SharePoint Online 用カスタム ユーザー プロファイル プロパティの一括更新用 API の概要](https://docs.microsoft.com/ja-JP/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58603-p106">If you have custom profile properties, then we recommend that you use the same profile schema across geographies and populate your custom profile properties either in all geo locations or where needed. For guidance regarding how to populate user profile data programmatically, please refer to the [Bulk User Profile Update API](https://docs.microsoft.com/ja-JP/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)</span></span>
 
-#### <a name="bcs-secure-store-apps"></a><span data-ttu-id="c538b-123">BCS では、セキュリティで保護されたストアは、アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c538b-123">BCS, Secure Store, Apps</span></span>
+#### <a name="bcs-secure-store-apps"></a><span data-ttu-id="58603-124">BCS、Secure Store、Apps</span><span class="sxs-lookup"><span data-stu-id="58603-124">BCS: Secure Store Service</span></span>
 
-<span data-ttu-id="c538b-124">BCS、セキュリティで保護されたストアおよびアプリケーションは、別の地域のインスタンスを持つ、したがって SharePoint Online の管理者が管理し、必要な場所に存在する各地理インスタンスからこれらのサービスを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c538b-124">BCS, Secure Store, and Apps all have separate geo instances, therefore the SharePoint Online administrator should manage and configure these services from each geo instance where they want them to be present.</span></span>
+<span data-ttu-id="58603-125">BCS、Secure Store、および Apps のすべてに、個別の地域インスタンスがあります。そのため、SharePoint Online 管理者は、これらのサービスが存在する各地域インスタンスから、そのサービスを管理および構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="58603-125">BCS, Secure Store, and Apps all have separate geo instances, therefore the SharePoint Online administrator should manage and configure these services from each geo instance where they want them to be present.</span></span>
 
-#### <a name="security-and-compliance-admin-center"></a><span data-ttu-id="c538b-125">セキュリティおよびコンプライアンス管理センター</span><span class="sxs-lookup"><span data-stu-id="c538b-125">Security and Compliance Admin Center</span></span>
+#### <a name="security-and-compliance-admin-center"></a><span data-ttu-id="58603-126">セキュリティ/コンプライアンス管理センター</span><span class="sxs-lookup"><span data-stu-id="58603-126">Security and Compliance Admin Center</span></span>
 
-<span data-ttu-id="c538b-126">複数地域のテナントの 1 つの中心的なコンプライアンス センターがある: [Office 365 のセキュリティとコンプライアンスの中心](https://protection.office.com/?rfr=AdminCenter\#/homepage)です。</span><span class="sxs-lookup"><span data-stu-id="c538b-126">There is one central compliance center for the Multi-Geo tenant: [Office 365 Security & Compliance Center](https://protection.office.com/?rfr=AdminCenter\#/homepage).</span></span>
+<span data-ttu-id="58603-127">複数地域テナントには、[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com/?rfr=AdminCenter\#/homepage)という 1 つの中心的なコンプライアンス センターがあります。</span><span class="sxs-lookup"><span data-stu-id="58603-127">There is one central compliance center for the Multi-Geo tenant: [Office 365 Security & Compliance Center](https://protection.office.com/?rfr=AdminCenter\#/homepage).</span></span>
 
-#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a><span data-ttu-id="c538b-127">情報 (IP) の保護データの損失防止 (DLP) のポリシー</span><span class="sxs-lookup"><span data-stu-id="c538b-127">Information Protection (IP) Data Loss Prevention (DLP) Policy</span></span>
+#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a><span data-ttu-id="58603-128">Information Protection (IP) データ損失防止 (DLP) ポリシー</span><span class="sxs-lookup"><span data-stu-id="58603-128">Information Protection (IP) Data Loss Prevention (DLP) Policy</span></span>
 
-<span data-ttu-id="c538b-p106">ポリシーを設定できます、IP DLP OneDrive ビジネスのためのセキュリティとコンプライアンス ・ センターの全体のテナントまたは該当するユーザーに必要なポリシーのスコープの設定です。たとえば:、サテライトの場所に OneDrive のユーザーのポリシーを選択するには、特定の OneDrive にポリシーを適用し、ユーザー名を入力する場合に選択の OneDrive の url です。DLP ポリシーを作成する一般的な方法については、[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c538b-p106">You can set your IP DLP policies for OneDrive for Business in the Security and Compliance center, scoping policies as needed to the whole tenant or to applicable users. For example: If you wish to select a policy for a OneDrive user in a satellite location, select to apply the policy to a specific OneDrive and enter the user’s OneDrive url. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.</span></span>
+<span data-ttu-id="58603-p107">セキュリティ/コンプライアンス センターでは、ポリシーの適用範囲をテナント全体または該当するユーザーに設定することで、OneDrive for Business の IP DLP ポリシーを設定できます。たとえば、サテライトの場所の OneDrive ユーザーのポリシーを選択する場合、特定の OneDrive に適用するポリシーを選択して、ユーザーの OneDrive の URL を入力します。DLP ポリシーの作成に関する一般的なガイダンスについては、「[データ損失防止ポリシーの概要](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58603-p107">You can set your IP DLP policies for OneDrive for Business in the Security and Compliance center, scoping policies as needed to the whole tenant or to applicable users. For example: If you wish to select a policy for a OneDrive user in a satellite location, select to apply the policy to a specific OneDrive and enter the user’s OneDrive url. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.</span></span>
 
-<span data-ttu-id="c538b-131">DLP ポリシーは、各地域の場所に適用性に基づいて自動的に同期されます。</span><span class="sxs-lookup"><span data-stu-id="c538b-131">The DLP policies are automatically synchronized based on their applicability to each geo location.</span></span>
+<span data-ttu-id="58603-132">DLP ポリシーは、そのポリシーの適用性に基づいて各地域の場所に自動的に同期されます。</span><span class="sxs-lookup"><span data-stu-id="58603-132">The DLP policies are automatically synchronized based on their applicability to each geo location.</span></span>
 
-<span data-ttu-id="c538b-132">地域の場所にすべてのユーザー情報の保護とデータ損失の防止ポリシーを実装することは、UI で使用可能なオプションではありませんが、代わりに、ポリシーの適用可能な OneDrive のアカウントを選択してか OneDrive のすべてのアカウントをグローバルにポリシーを適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c538b-132">Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable OneDrive accounts for the policy or apply the policy globally to all OneDrive accounts.</span></span>
+<span data-ttu-id="58603-133">地域の場所のすべてのユーザーに対する Information Protection ポリシーとデータ損失防止ポリシーの実装は、UI で使用可能なオプションではありません。その代わりに、ポリシーの適用が可能な OneDrive アカウントを選択するか、すべての OneDrive アカウントにグローバルにポリシーを適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="58603-133">Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable OneDrive accounts for the policy or apply the policy globally to all OneDrive accounts.</span></span>
 
-#### <a name="ediscovery"></a><span data-ttu-id="c538b-133">電子情報開示</span><span class="sxs-lookup"><span data-stu-id="c538b-133">eDiscovery</span></span> 
+#### <a name="ediscovery"></a><span data-ttu-id="58603-134">電子情報開示</span><span class="sxs-lookup"><span data-stu-id="58603-134">eDiscovery</span></span> 
 
-<span data-ttu-id="c538b-p107">既定では、マネージャーまたは多地域のテナントの管理者、電子的証拠開示は、テナントの中央の場所にのみ電子的証拠開示を行うことが可能になります。サテライト オフィスの電子的証拠開示を実施する機能をサポートするために「領域」と呼ばれる新しいコンプライアンス セキュリティ フィルター パラメーターは、PowerShell を使用して利用可能です。</span><span class="sxs-lookup"><span data-stu-id="c538b-p107">By default, an eDiscovery Manager or Administrator of a multi-geo tenant will be able to conduct eDiscovery only in the central location of that tenant. To support the ability to conduct eDiscovery for satellite locations, a new Compliance Security Filter parameter called “Region” is available via PowerShell.</span></span>
+<span data-ttu-id="58603-p108">既定では、複数地域テナントの電子情報開示マネージャーまたは管理者は、テナントの中央の場所でのみ電子情報開示を実施できます。サテライトの場所で電子情報開示を実施できるようにするために、"Region" という新しいコンプライアンス セキュリティ フィルター パラメーターが PowerShell で使用できます。</span><span class="sxs-lookup"><span data-stu-id="58603-p108">By default, an eDiscovery Manager or Administrator of a multi-geo tenant will be able to conduct eDiscovery only in the central location of that tenant. To support the ability to conduct eDiscovery for satellite locations, a new Compliance Security Filter parameter called “Region” is available via PowerShell.</span></span>
 
-<span data-ttu-id="c538b-136">Office 365 のグローバル管理者は、電子的証拠開示を実行し、サテライトとして電子的証拠開示を実施するための領域を指定するのには、適用可能なコンプライアンス セキュリティ フィルターで「地域」パラメーターを指定するようにするのには、電子的証拠開示マネージャーのアクセス許可を割り当てる必要があります。場所、それ以外の場合サテライトの場所に電子的証拠開示が実行されるなし。</span><span class="sxs-lookup"><span data-stu-id="c538b-136">The Office 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a “Region” parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise no eDiscovery will be carried out for the satellite location.</span></span>
+<span data-ttu-id="58603-137">Office 365 全体管理者は、別のユーザーが電子情報開示を実行できるように電子情報開示マネージャーのアクセス許可を割り当てる必要があります。また、サテライトの場所として電子情報開示を実施する地域を指定するために該当するコンプライアンス セキュリティ フィルターで "Region" パラメーターを割り当てる必要があります。それ以外の場合は、サテライトの場所で電子情報開示は実施されません。</span><span class="sxs-lookup"><span data-stu-id="58603-137">The Office 365 global administrator must assign eDiscovery Manager permissions to allow others to perform eDiscovery and assign a “Region” parameter in their applicable Compliance Security Filter to specify the region for conducting eDiscovery as satellite location, otherwise no eDiscovery will be carried out for the satellite location.</span></span>
 
-<span data-ttu-id="c538b-p108">特定の地域の場所を電子的証拠開示マネージャー ロールまたは管理者ロールを設定すると、マネージャーまたは管理者、電子的証拠開示のみできるようになります、SharePoint サイトとその地理的な場所にある OneDrive サイトに対して電子的証拠開示検索の操作を実行します。電子的証拠開示マネージャーまたは管理者は、指定した領域の外側の SharePoint または OneDrive サイトの検索を試みると、結果は返されません。また、電子的証拠開示マネージャーまたは管理者の領域には、エクスポートがトリガーされた場合は、その地域の Azure のインスタンスにデータがエクスポートされます。これにより、組織を対象となるコントロールの境界線の間でコンテンツを許可しないことによって、コンプライアンスを維持します。</span><span class="sxs-lookup"><span data-stu-id="c538b-p108">When the eDiscovery Manager or Administrator role is set for a particular-geo location, the eDiscovery Manager or Administrator will only be able to perform eDiscovery search actions against the SharePoint sites and OneDrive sites located in that geo-location. If an eDiscovery Manager or Administrator attempts to search SharePoint or OneDrive sites outside the specified region, no results will be returned. Also, when the eDiscovery Manager or Administrator for a region triggers an export, data is exported to the Azure instance of that region. This helps organizations stay in compliance by not allowing content to be exported across controlled borders.</span></span>
+<span data-ttu-id="58603-p109">電子情報開示マネージャーまたは管理者の役割が特定の地域の場所に設定されている場合、電子情報開示マネージャーまたは管理者は、その地域の場所にある SharePoint サイトと OneDrive サイトに対してのみ電子情報開示の検索操作を実行できます。電子情報開示マネージャーまたは管理者が、指定の地域外の SharePoint サイトまたは OneDrive サイトを検索しようとしても結果は返されません。さらに、ある地域の電子情報開示マネージャーまたは管理者がエクスポートをトリガーすると、データは、その地域の Azure インスタンスにエクスポートされます。制御された境界を越えたコンテンツのエクスポートが許可されなくなることで、これが組織のコンプライアンスの維持に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="58603-p109">When the eDiscovery Manager or Administrator role is set for a particular-geo location, the eDiscovery Manager or Administrator will only be able to perform eDiscovery search actions against the SharePoint sites and OneDrive sites located in that geo-location. If an eDiscovery Manager or Administrator attempts to search SharePoint or OneDrive sites outside the specified region, no results will be returned. Also, when the eDiscovery Manager or Administrator for a region triggers an export, data is exported to the Azure instance of that region. This helps organizations stay in compliance by not allowing content to be exported across controlled borders.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c538b-141">電子的証拠開示マネージャーが複数の SharePoint の領域全体を検索するために必要な場合は、別のユーザー アカウントは、電子的証拠開示マネージャー、OneDrive または SharePoint サイトが配置されている別の領域を指定するために作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c538b-141">If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, another user account will need to be created for the eDiscovery Manager which specifies the alternate region where the OneDrive or SharePoint sites are located.</span></span>
+> <span data-ttu-id="58603-142">電子情報開示マネージャーが複数の SharePoint 地域全体で検索する必要がない場合は、OneDrive サイトまたは SharePoint サイトがある別の地域を指定する電子情報開示マネージャー用の別のユーザー アカウントを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="58603-142">If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, another user account will need to be created for the eDiscovery Manager which specifies the alternate region where the OneDrive or SharePoint sites are located.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="c538b-142"><strong>複数地域は、地域の場所をサポートします。</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-142"><strong>Multi-Geo supported Geo Locations</strong></span></span></th>
-<th align="left"><span data-ttu-id="c538b-143"><strong>SharePoint にエクスポートされたデータの電子的証拠開示は、この Azure Blob データの場所になります.</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-143"><strong>eDiscovery for SharePoint Exported data will be in this Azure Blob data location…</strong></span></span></th>
+<th align="left"><span data-ttu-id="58603-143"><strong>複数地域でサポートされる地域の場所</strong></span><span class="sxs-lookup"><span data-stu-id="58603-143"><strong>Multi-Geo supported Geo Locations</strong></span></span></th>
+<th align="left"><span data-ttu-id="58603-144"><strong>SharePoint でエクスポートされた電子情報開示データが存在する Azure Blob データの場所</strong></span><span class="sxs-lookup"><span data-stu-id="58603-144"><strong>eDiscovery for SharePoint Exported data will be in this Azure Blob data location…</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="c538b-144"><strong>名</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-144"><strong>NAM</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-145">米国のデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-145">US Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-145"><strong>NAM</strong></span><span class="sxs-lookup"><span data-stu-id="58603-145"><strong>NAM</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-146">米国のデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-146">US Data Centers</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="c538b-146"><strong>EUR</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-146"><strong>EUR</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-147">ヨーロッパのデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-147">Europe Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-147"><strong>EUR</strong></span><span class="sxs-lookup"><span data-stu-id="58603-147"><strong>EUR</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-148">ヨーロッパのデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-148">Europe Data Centers</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="c538b-148"><strong>APC</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-148"><strong>APC</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-149">東の南または東アジアのデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-149">South East or East Asia Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-149"><strong>APC</strong></span><span class="sxs-lookup"><span data-stu-id="58603-149"><strong>APC</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-150">東南アジアまたは東アジアのデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-150">South East or East Asia Data Centers</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="c538b-150"><strong>できます。</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-150"><strong>CAN</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-151">米国のデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-151">US Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-151"><strong>CAN</strong></span><span class="sxs-lookup"><span data-stu-id="58603-151"><strong>CAN</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-152">米国のデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-152">US Data Centers</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="c538b-152"><strong>オーストラリア</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-152"><strong>AUS</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-153">東の南または東アジアのデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-153">South East or East Asia Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-153"><strong>AUS</strong></span><span class="sxs-lookup"><span data-stu-id="58603-153"><strong>AUS</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-154">東南アジアまたは東アジアのデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-154">South East or East Asia Data Centers</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="c538b-154"><strong>KOR</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-154"><strong>KOR</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-155">テナントの既定のデータの場所</span><span class="sxs-lookup"><span data-stu-id="c538b-155">Tenant's default data location</span></span></td>
+<td align="left"><span data-ttu-id="58603-155"><strong>KOR</strong></span><span class="sxs-lookup"><span data-stu-id="58603-155"><strong>KOR</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-156">テナントの既定のデータの場所</span><span class="sxs-lookup"><span data-stu-id="58603-156">Tenant's default data location</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="c538b-156"><strong>GBR</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-156"><strong>GBR</strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-157">ヨーロッパのデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-157">Europe Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-157"><strong>GBR</strong></span><span class="sxs-lookup"><span data-stu-id="58603-157"><strong>GBR</strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-158">ヨーロッパのデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-158">Europe Data Centers</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="c538b-158"><strong>日本語版</strong></span><span class="sxs-lookup"><span data-stu-id="c538b-158"><strong>JPN </strong></span></span></td>
-<td align="left"><span data-ttu-id="c538b-159">東の南または東アジアのデータ ・ センター</span><span class="sxs-lookup"><span data-stu-id="c538b-159">South East or East Asia Data Centers</span></span></td>
+<td align="left"><span data-ttu-id="58603-159"><strong>JPN </strong></span><span class="sxs-lookup"><span data-stu-id="58603-159"><strong>JPN </strong></span></span></td>
+<td align="left"><span data-ttu-id="58603-160">東南アジアまたは東アジアのデータ センター</span><span class="sxs-lookup"><span data-stu-id="58603-160">South East or East Asia Data Centers</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="c538b-160">地域のコンプライアンス ・ セキュリティ ・ フィルターを設定します。</span><span class="sxs-lookup"><span data-stu-id="c538b-160">To set the Compliance Security Filter for a Region:</span></span>
+<span data-ttu-id="58603-161">地域のコンプライアンス セキュリティ フィルターを設定するには:</span><span class="sxs-lookup"><span data-stu-id="58603-161">To set the Compliance Security Filter for a Region:</span></span>
 
-1.  <span data-ttu-id="c538b-161">開いている Windows PowerShell の</span><span class="sxs-lookup"><span data-stu-id="c538b-161">Open Windows PowerShell</span></span>
+1.  <span data-ttu-id="58603-162">Windows PowerShell を開きます。</span><span class="sxs-lookup"><span data-stu-id="58603-162">Open Windows PowerShell.</span></span>
 
-2.  <span data-ttu-id="c538b-162">「</span><span class="sxs-lookup"><span data-stu-id="c538b-162">Enter</span></span>  
-    <span data-ttu-id="c538b-163">$s = Microsoft.Exchange を新規 PSSession ConfigurationName ConnectionUri - <https://ps.compliance.protection.outlook.com/powershell-liveid> -$cred に資格情報の AllowRedirection では基本認証-SessionOption (新規 PSSessionOption SkipCACheck-サーバー-SkipRevocationCheck)</span><span class="sxs-lookup"><span data-stu-id="c538b-163">$s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)</span></span>
+2.  <span data-ttu-id="58603-163">次のように入力します</span><span class="sxs-lookup"><span data-stu-id="58603-163">Enter</span></span>  
+    <span data-ttu-id="58603-164">$s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)</span><span class="sxs-lookup"><span data-stu-id="58603-164">$s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)</span></span>
 
-    <span data-ttu-id="c538b-164">$を = $s のインポート-PSSession AllowClobber</span><span class="sxs-lookup"><span data-stu-id="c538b-164">$a = Import-PSSession $s -AllowClobber</span></span>  
+    <span data-ttu-id="58603-165">$a = Import-PSSession $s -AllowClobber</span><span class="sxs-lookup"><span data-stu-id="58603-165">$a = Import-PSSession $s -AllowClobber</span></span>  
 
-3.  <span data-ttu-id="c538b-165">**新しい-ComplianceSecurityFilter****-アクション**すべて**のフィルター名**EnterTheNameYouWantToAssign **-地域**EnterTheRegionParameter **-ユーザー** EnterTheUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="c538b-165">**New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName</span></span>
+3.  <span data-ttu-id="58603-166">**New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="58603-166">**New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName</span></span>
 
-    <span data-ttu-id="c538b-166">例を示します**ComplianceSecurityFilter で新しい-アクション**すべて**のフィルター名**NAMEDISCOVERYMANAGERS **-地域**名**・ ユーザー** adwood@contosodemosx.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="c538b-166">For Example: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com</span></span>
+    <span data-ttu-id="58603-167">例: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="58603-167">For Example: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com</span></span>
 
-<span data-ttu-id="c538b-167">[新規 ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx)この資料は、追加のパラメーターと構文を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c538b-167">See the [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) article for additional parameters and syntax</span></span>
+<span data-ttu-id="58603-168">追加のパラメーターと構文については、「[New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx)」の記事を参照してください。</span><span class="sxs-lookup"><span data-stu-id="58603-168">See the [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) article for additional parameters and syntax</span></span>
 
-#### <a name="audit-log-search"></a><span data-ttu-id="c538b-168">監査ログ検索</span><span class="sxs-lookup"><span data-stu-id="c538b-168">Audit log search</span></span>
+#### <a name="audit-log-search"></a><span data-ttu-id="58603-169">監査ログ検索</span><span class="sxs-lookup"><span data-stu-id="58603-169">Audit log search</span></span>
 
-<span data-ttu-id="c538b-p109">統一された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)のすべての地域の場所に、Office 365 の監査ログの検索ページから利用可能です。地域全体からのすべての監査ログ エントリを表示できます、やなどの名と EUR 地域ユーザーの活動は、組織の 1 つのビューに表示し、特定のユーザーの活動を確認する既存のフィルターを適用できます。</span><span class="sxs-lookup"><span data-stu-id="c538b-p109">A unified [Audit log](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) for all your geo locations is available from the Office 365 audit log search page. You can see all the audit log entries from across geos, for example, NAM & EUR geo users’ activities will show up in one org view and then you can apply existing filters to see specific user’s activities.</span></span>
+<span data-ttu-id="58603-p110">すべての地域の場所に対して統一された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Office 365 の監査ログの検索ページから利用できます。すべての地域からの監査ログのエントリを参照できます。たとえば、NAM 地域と EUR 地域のユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。</span><span class="sxs-lookup"><span data-stu-id="58603-p110">A unified [Audit log](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) for all your geo locations is available from the Office 365 audit log search page. You can see all the audit log entries from across geos, for example, NAM & EUR geo users’ activities will show up in one org view and then you can apply existing filters to see specific user’s activities.</span></span>
