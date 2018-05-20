@@ -1,5 +1,5 @@
 ---
-title: "ハイブリッド クラウドの概要"
+title: ハイブリッド クラウドの概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
-description: "概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。"
-ms.openlocfilehash: 3cf828b8411605a9d0bdd338c3b6c16a5892f6b7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。'
+ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="hybrid-cloud-overview"></a>ハイブリッド クラウドの概要
 
@@ -72,7 +72,7 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
     
 - Identity
     
-    SaaS と Azure PaaS ハイブリッド シナリオの ID には、共通の ID プロバイダーとして Azure AD を含めることができます。このプロバイダーは、オンプレミスの Windows Server AD と同期するか、Windows Server AD またはその他の ID プロバイダーとフェデレーションすることができます。また、オンプレミスの ID インフラストラクチャを Azure IaaS に拡張することもできます。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウド ID](microsoft-cloud-identity-for-enterprise-architects.md)」をご覧ください。
+    SaaS と Azure PaaS ハイブリッド シナリオの ID には、共通の ID プロバイダーとして Azure AD を含めることができます。このプロバイダーは、オンプレミスの Windows Server AD と同期するか、Windows Server AD またはその他の ID プロバイダーとフェデレーションすることができます。また、オンプレミスの ID インフラストラクチャを Azure IaaS に拡張することもできます。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウド ID](microsoft-cloud-it-architecture-resources.md#identity)」をご覧ください。
     
 - セキュリティ
     

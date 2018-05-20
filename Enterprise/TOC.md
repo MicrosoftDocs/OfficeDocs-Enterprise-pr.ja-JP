@@ -3,7 +3,6 @@
 
 # [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 ## [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-### [エンタープライズ アーキテクトのための Microsoft クラウド ID](microsoft-cloud-identity-for-enterprise-architects.md)
 ### [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
 #### [クラウド接続のためにネットワークを進化させる](evolving-your-network-for-cloud-connectivity.md)
 #### [Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)

@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation の概要"
+title: Contoso Corporation の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
-description: "概要: は、世界中のオフィスの階層型の構造と、企業として Contoso 社を理解します。"
-ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '概要: は、世界中のオフィスの階層型の構造と、企業として Contoso 社を理解します。'
+ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
- **の概要:**ビジネスおよび世界中のオフィスの階層構造として Contoso 社を理解します。
+ **の概要:** ビジネスおよび世界中のオフィスの階層構造として Contoso 社を理解します。
   
 Contoso Corporation は、フランス、パリに本社を持つグローバル企業です。同社は、100,000 を超える製品の製造、販売、およびサポートを行う複合企業組織です。  
   
@@ -71,7 +71,7 @@ Contoso 社の IT 設計者で次の要素が識別される場合、マイク�
     
     Contoso 社では、Windows サーバーの AD フォレストを使用して、その内部 id プロバイダーのと、サード パーティのプロバイダーの顧客やパートナーもフェデレーションします。Contoso 社では、マイクロソフトのクラウド サービスのアカウントの内部のセットを活用する必要があります。顧客やパートナーのクラウド ベースのアプリケーションへのアクセスには、サードパーティの id プロバイダーの場合にもを活用する必要があります。
     
-    詳細については、[マイクロソフトのクラウド Id](microsoft-cloud-identity-for-enterprise-architects.md)エンタープライズ設計者のポスターを参照してください。
+    詳細については、[マイクロソフトのクラウド Id](microsoft-cloud-it-architecture-resources.md#identity)エンタープライズ設計者のポスターを参照してください。
     
 - セキュリティ
     
