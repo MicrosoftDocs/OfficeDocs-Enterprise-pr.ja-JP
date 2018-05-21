@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: a5df4d7289ec31686ad74f78a4797e1aa3eaa447
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: bab799a784cac579c92fb06ea17592d85fd59af2
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection を使用して SharePoint Online ファイルを保護する
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/27/2018
     
 3. 初めて Azure Information Protection を構成する場合は、これらの[手順](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)を参照してください。
     
-4. リスト ウィンドウで、 **[その他のサービス]** をクリックして、「 **information**」と入力し、 **[Azure Information Protection]** をクリックします。
+4. リスト ウィンドウで、**[すべてのサービス]** をクリックして、「**information**」と入力し、**[Azure Information Protection]** をクリックします。
     
 5. **[Azure Information Protection]** ブレードで、 **[スコープ付きポリシー] > [+ 新しいポリシーの追加]** をクリックします。
     

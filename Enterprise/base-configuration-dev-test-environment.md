@@ -3,7 +3,7 @@ title: 基本構成開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/05/2018
+ms.date: 05/07/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: a6c0610531482d5d264b582f7a3550b57f21841d
-ms.sourcegitcommit: ac7a37049e3c96e32ea91a4d97105028b0dbb2c5
+ms.openlocfilehash: 2fd30b54d86684c08c944488bd853fa6dc46398b
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -164,7 +164,7 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
 
 1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] > **「新しいリソース グループの名前」** > [DC1] > [接続]** の順にクリックします。
     
-2. ダウンロードされる DC1.rdp ファイルを開いてから、**[接続]** をクリックします。
+2. 起動ウィンドウで **[RDP ファイルのダウンロード]** をクリックします。ダウンロードされる DC1.rdp ファイルを開いてから、**[接続]** をクリックします。
     
 3. DC1 のローカル管理者アカウント名を指定します。
     
@@ -192,7 +192,6 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
-
 セーフ モードの管理者パスワードを指定する必要があります。パスワードを安全な場所に保存します。
   
 これらのコマンドの完了には数分かかることがあります。
@@ -257,7 +256,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName APP1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -311,7 +310,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -342,7 +341,7 @@ CLIENT1 の再起動後に、CORP\\User1 のアカウント名とパスワード
     
 4. スタート画面で、**[Internet Explorer]** をクリックしてから、**[OK]** をクリックします。
     
-5. アドレス バーに「**http://app1.corp.contoso.com/**」と入力して、ENTER キーを押します。APP1 の既定のインターネット インフォメーション サービスの Web ページが表示されます。
+5. アドレス バーに「**http:\//app1.corp.contoso.com/**」と入力してから、ENTER キーを押します。APP1 の既定のインターネット インフォメーション サービスの Web ページが表示されます。
     
 6. デスクトップのタスクバーで、[エクスプローラー] アイコンをクリックします。
     

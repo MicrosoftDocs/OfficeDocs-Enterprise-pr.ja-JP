@@ -14,11 +14,11 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -185,11 +185,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 この開発/テスト環境で Office 365 と EMS の試用版サブスクリプションを使用するために、これらの値を記録します。
   
-- 試用版サブスクリプションの組織名: _______________________________________________。 
+- 試用版サブスクリプションの組織名: ![](./images/Common_Images/TableLine.png) 
     
     たとえば、試用版サブスクリプションのドメイン名 contoso.onmicrosoft.com の場合、組織名は "contoso" です。
     
-- Office 365 グローバル管理者名: ____________________________________.onmicrosoft.com
+- Office 365 グローバル管理者名: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
     このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
     
