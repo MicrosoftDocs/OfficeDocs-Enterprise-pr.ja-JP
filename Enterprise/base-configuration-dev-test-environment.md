@@ -3,7 +3,7 @@ title: 基本構成開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: 2fd30b54d86684c08c944488bd853fa6dc46398b
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: 6d53bb61ea7d325b15590c8aabe0740df3b92750
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
