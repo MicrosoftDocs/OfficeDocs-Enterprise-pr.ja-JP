@@ -3,7 +3,6 @@ title: 別の地域の場所に OneDrive サイトを移動する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,11 +10,11 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: 6bac98cc0707f977b7b585e8ae0a570f4b9662ee
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
+ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -26,6 +25,18 @@ OneDrive サービスでは、コンテンツの保存に Azure Blob Storage が
 OneDrive 地域移動の期間中 (約 2 ～ 6 時間)、ユーザーの OneDrive は読み取り専用に設定されます。その間、ユーザーは OneDrive 同期クライアントまたは SharePoint Online の OneDrive サイトからファイルにアクセスできます。OneDrive 地域移動の完了後に、ユーザーが Office 365 アプリ起動ツールで OneDrive に移動すると、移動先の地域の場所にある OneDrive に自動的に接続されます。同期クライアントは、新しい場所からの同期を自動的に開始します。
 
 この記事の手順には、[Microsoft Office SharePoint Online の PowerShell モジュール](https://www.microsoft.com/en-us/download/details.aspx?id=35588)が必要になります。
+
+## <a name="communicating-to-your-users"></a>ユーザーへの連絡
+
+OneDrive サイトの地理的場所を移動する際には、想定される動作についてユーザーに通知することが重要です。これは、ユーザーが混乱してヘルプ デスクに問い合わせる可能性を減らすのに役立ちます。移動の前に、次の情報について電子メールでユーザーに連絡してください:
+
+- 移動開始予定時刻と予定所要時間
+- ユーザーの OneDrive の移動先となる地理的場所、および新しい場所にアクセスするための URL
+- 移動中はファイルを閉じた状態にし、編集を加えてはならないこと。
+- 移動してもファイルの許可と共有は変更されないこと。
+- [複数地理環境でのユーザー エクスペリエンス](multi-geo-user-experience.md)として期待されること
+
+移動が正常に終了した時点で、ユーザーに対し、OneDrive での作業を再開できることを伝える電子メールを送信するようにしてください。
 
 ## <a name="moving-a-onedrive-site"></a>OneDrive サイトの移動
 
@@ -147,7 +158,7 @@ OneDrive コンテンツへのアクセス許可を持つユーザーは、移�
 
 ### <a name="onedrive-sync-client"></a>OneDrive 同期クライアント 
 
-OneDrive 同期クライアントは、OneDrive 地域移動の完了後に、自動的に新しい OneDrive の場所を検出し、シームレスに同期を転換します。ユーザーは、再度サインインするなどの操作を一切実行する必要がありません。
+OneDrive 同期クライアントは、OneDrive 地域移動の完了後に、自動的に新しい OneDrive の場所を検出し、シームレスに同期を転換します。ユーザーは、再度サインインするなどの操作を一切実行する必要がありません。(同期クライアントのバージョン 17.3.6943.0625 以降が必要。)
 
 OneDrive 地域移動の進行中にユーザーがファイルを更新すると、同期クライアントにより、移動が進行している間はファイルの更新が保留されることが通知されます。
 
