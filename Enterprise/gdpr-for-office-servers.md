@@ -9,15 +9,18 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: オンプレミス サーバー上の Office で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: dc1150361db6a28f011e4890a2770f4a6b607a91
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: 598d4b0c3f4b7d4281383111f0891759f81d483f
+ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19183596"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>オンプレミス サーバー上の Office の GDPR
 
 一般データ保護規則 (GDPR) により、組織が個人データを保護し、データ主体要求に適切に応答するための要件が導入されます。このシリーズの記事では、オンプレミスのワークロードのために推奨されるアプローチを示します。
+
+-   [SharePoint Server](gdpr-for-sharepoint-server.md)
 
 -   [Exchange Server](gdpr-for-exchange-server.md)
 
@@ -48,4 +51,4 @@ GDPR について、また Microsoft による支援方法の詳細について�
 |保護||Exchange Server データ損失防止規則; アクセス許可、ライブラリの IRM 保護|Exchange Server データ損失防止規則; IRM と Exchange Server の統合|||
 |監視|SIEM ツールとのログ統合|SIEM ツールとのログ統合|SIEM ツールとのログ統合|SIEM ツールとのログ統合|SIEM ツールとのログ統合|
 
-*GDPR では、保護を含まないラベルを適用します。保護では、ファイルが暗号化されます。その結果、SharePoint Server では、それらのファイル内の機密情報タイプを検出できません。
+* 保護機能によってファイルが暗号化されることに注意してください。結果として、SharePoint Server では、保護されたファイルの機密情報の種類を検索できなくなります。

@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 概要:このテスト ラボ ガイドを使用して、Office 365 E5、Enterprise Mobility + Security (EMS) E5、Windows 10 Enterprise を実行しているコンピューターなどの開発/テスト環境を作成します。
-ms.openlocfilehash: c38be855d6c2c3592ce6ee5e252e95888e0664c6
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178649"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 開発/テスト環境
 
@@ -174,7 +175,7 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
     
 6. [設定] ウィンドウを閉じます。
     
-次に、WIN10 コンピューターに Office 2016 をインストールします。
+次に、WIN10 コンピューターに Office 365 ProPlus をインストールします。
   
 1. Microsoft Edge ブラウザーを開いて、全体管理者アカウントの資格情報を使用して、Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
@@ -184,11 +185,15 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
     
 4. Office のインストールが完了するまで待ちます。**[準備が完了しました]** が表示されたら、**[閉じる]** を 2 回クリックします。
     
-図 3 は、Office 365 と EMS のサブスクリプションの Azure AD テナントに参加した WIN10 コンピューターの様子を含め、結果的な環境を示しています。
-  
-**図 3: WIN10 のコンピューター アカウントを Azure AD テナントに追加**
+図 3 に、構成される環境を示します。この環境には、次の WIN10 コンピューターが含まれています。
 
-![Microsoft 3656 Enterprise 開発/テスト環境のフェーズ 4](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
+- Office 365 および EMS サブスクリプションの Azure AD テナントに参加している
+- Intune (EMS) で Azure AD デバイスとして登録されている。
+- Office 365 ProPlus がインストールされている。
+  
+**図 3: Microsoft 365 開発/テスト環境の最終構成**
+
+![Microsoft 365 Enterprise 開発/テスト環境のフェーズ 4](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
 これで、[Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) の追加機能を試せるようになりました。
   
@@ -202,7 +207,7 @@ Microsoft 365 Enterprise の機能について確認するには、次に示す�
     
 - [高度なセキュリティ管理の構成とテスト](https://technet.microsoft.com/library/mt757250.aspx)
     
-- [Advanced Threat Protection の構成とテスト](https://technet.microsoft.com/library/mt490479.aspx)
+- [Office 365 開発/テスト環境の Advanced Threat Protection](https://technet.microsoft.com/library/mt490479.aspx)
     
 ## <a name="see-also"></a>関連項目
 

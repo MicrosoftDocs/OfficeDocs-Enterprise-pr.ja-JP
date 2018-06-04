@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: これらのクラウド導入のテスト ラボ ガイド (TLG) を使用して、Office 365、Enterprise Mobility + Security (EMS)、Dynamics 365、Office Server 製品のデモンストレーション、概念実証、開発/テスト環境を設定します。'
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193677"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>クラウド導入のテスト ラボ ガイド (TLG)
 
@@ -39,7 +40,6 @@ TLG では短時間で Microsoft 製品について学習できます。ある�
             [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
     
 ## <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
-<a name="O365"> </a>
 
 Office 365 の開発/テスト環境を構築するのに、次の記事を使用します。
   
@@ -90,7 +90,6 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     重要なリソースや機密性の高いリソース用に、組織の他の部分から分離されている SharePoint Online チーム サイトを作成する方法を示します。
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Microsoft 365 Enterprise 開発/テスト環境
-<a name="O365"> </a>
 
 これらの記事を利用して [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) シナリオ向けの開発/テスト環境を作成します。
   
@@ -107,7 +106,6 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     iOS または Android デバイスを登録し、それらをリモートで管理します。
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境
-<a name="O365_D365"> </a>
 
 以下の記事で、Dynamics 365 試用版サブスクリプションを追加し、Office 365 と Dynamics 365 の統合された機能とシナリオをテストします。
   
@@ -120,12 +118,10 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     Exchange Online のメールボックスで Office 365 と Dynamics 365 を併用するための構成と方法ついて説明します。
     
 ## <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 開発/テスト環境
-<a name="O365_D365"> </a>
 
 次の Microsoft のクラウド サービスすべてを含む開発/テスト環境を作成します:Office 365、Azure、EMS、Dynamics 365。詳しい手順については、「[One Microsoft Cloud 開発/テスト環境](the-one-microsoft-cloud-dev-test-environment.md)」を参照してください。
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>シミュレートされたクロスプレミスの開発/テスト環境
-<a name="O365_D365"> </a>
 
 以下の記事で、Azure 仮想ネットワークやシミュレートされたオンプレミス ネットワークが含まれている、クロスプレミスの開発/テスト環境を作成できます。
   
@@ -138,7 +134,6 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     Azure 仮想ネットワークに単一のサーバー SharePoint Server 2016 ファームを作成して、シミュレートされたオンプレミス ネットワークからの接続と管理をテストします。
     
 ## <a name="additional-cloud-based-devtest-environments"></a>クラウド ベースの他の開発/テスト環境
-<a name="ADD_TLGs"> </a>
 
 Azure インフラストラクチャ サービス内に作成できる、クラウド ベースのその他の開発/テスト環境は次のとおりです。
   

@@ -3,7 +3,7 @@ title: Azure でのシミュレートされたクロスプレミスの仮想ネ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,40 +14,41 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
-description: '概要: は、Microsoft Azure で開発/テスト環境とシミュレーションの間、設置型の仮想ネットワークを作成します。'
-ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
-ms.translationtype: MT
+description: '概要: 開発/テスト環境として、シミュレートされたクロスプレミスの仮想ネットワークを Microsoft Azure に作成します。'
+ms.openlocfilehash: 42ef04a92794c8df53d3de32970db78d4dcf3119
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193667"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure でのシミュレートされたクロスプレミスの仮想ネットワーク
 
- **の概要:** Microsoft Azure で開発/テスト環境としてのシミュレーションの間、設置型の仮想ネットワークを作成します。
+ **概要:** 開発/テスト環境として、シミュレートされたクロスプレミスの仮想ネットワークを Microsoft Azure に作成します。
   
-この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。   
+この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。 
   
 ![XPrem VNet に DC2 仮想マシンがある場合の、シミュレートされたクロスプレミスの仮想ネットワークネットワークの開発/テスト環境のフェーズ 3](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 これは Azure IaaS ハイブリッド クラウド運用環境をシミュレートするもので、次のもので構成されます。
   
-- 	Azure 仮想ネットワークでホストされる、シミュレートおよび単純化されたオンプレミス ネットワーク (TestLab 仮想ネットワーク)。
+- Azure 仮想ネットワークでホストされる、シミュレートおよび単純化されたオンプレミス ネットワーク (TestLab 仮想ネットワーク)。
     
-- 	Azure でホストされる、シミュレートされたクロスプレミスの仮想ネットワーク (XPrem)。
+- Azure でホストされる、シミュレートされたクロスプレミスの仮想ネットワーク (XPrem)。
     
-- 	2 つの仮想ネットワーク間の VNet ピアリング関係。
+- 2 つの仮想ネットワーク間の VNet ピアリング関係。
     
-- 	XPrem 仮想ネットワークのセカンダリ ドメイン コントローラー。
+- XPrem 仮想ネットワークのセカンダリ ドメイン コントローラー。
     
-これは次のことを行うための基礎および共通の開始点となります。  
+これは次のことを行うための基礎および共通の開始点となります。 
   
-- 	シミュレートされた Azure IaaS ハイブリッド クラウド環境におけるアプリケーションの開発およびテスト。
+- シミュレートされた Azure IaaS ハイブリッド クラウド環境におけるアプリケーションの開発およびテスト。
     
-- 	ハイブリッド クラウドベース IT ワークロードをシミュレートするための、コンピューターのテスト構成の作成 (TestLab 仮想ネットワーク内、および XPrem 仮想ネットワーク内)。
+- ハイブリッド クラウドベース IT ワークロードをシミュレートするための、コンピューターのテスト構成の作成 (TestLab 仮想ネットワーク内、および XPrem 仮想ネットワーク内)。
     
 次の 3 つの主要なフェーズを経て、この開発/テスト環境を設定します。
   
-1. 	TestLab 仮想ネットワークを構成します。
+1. TestLab 仮想ネットワークを構成します。
     
 2. クロスプレミスの仮想ネットワークを作成します。
     
@@ -59,16 +60,15 @@ ms.lasthandoff: 04/27/2018
 ![Microsoft Cloud のテスト ラボ ガイド](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> 
-            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>フェーズ 1: TestLab 仮想ネットワークを構成する
 
-[基本構成の開発/テスト環境](base-configuration-dev-test-environment.md)で、Azure 仮想ネットワークの名前付きテスト ラボに DC1、APP1、CLIENT1 コンピューターを構成する手順を使用します。
+「[基本構成開発/テスト環境](base-configuration-dev-test-environment.md)」の手順により、TestLab という名前の Azure 仮想ネットワークに DC1、APP1、CLIENT1 コンピューターを構成します。
   
 これは、現在の構成です。 
   
-![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 仮想マシンを含む Azure の基本構成のフェーズ 4](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## <a name="phase-2-create-the-xprem-virtual-network"></a>フェーズ 2: XPrem 仮想ネットワークを作成する
 
@@ -77,9 +77,9 @@ ms.lasthandoff: 04/27/2018
 最初に、ローカル コンピューターで Azure PowerShell プロンプトを起動します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/ja-JP/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
-次のコマンドを使用して Azure アカウントにログインします。
+次のコマンドを使用して Azure アカウントにサインインします。
   
 ```
 Login-AzureRMAccount
@@ -94,7 +94,7 @@ Login-AzureRMAccount
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Azure サブスクリプションを設定します。など、二重引用符内のすべてを交換して、\<と > 文字は、正しい名前を持つ。
+Azure サブスクリプションを設定します。二重引用符内のすべて (「\<」と「>」の文字を含む) を正しい名前に置き換えます。
   
 ```
 $subscrName="<subscription name>"
@@ -153,18 +153,18 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-次に、 [Azure ポータル](https://portal.azure.com)ローカル管理者のアカウント名とパスワードを使用してから新しい DC2 バーチャル マシンに接続します。
+次に、ローカル管理者のアカウント名とパスワードを使用して、[Azure portal](https://portal.azure.com) から新しい DC2 仮想マシンに接続します。
   
-次に、Windows ファイアウォール ルールを構成して、基本的な接続テストのトラフィックを許可します。DC2 の管理者レベルの Windows PowerShell コマンド プロンプトから、これらのコマンドを実行します。  
+次に、Windows ファイアウォール ルールを構成して、基本的な接続テストのトラフィックを許可します。DC2 の管理者レベルの Windows PowerShell コマンド プロンプトから、これらのコマンドを実行します。 
   
 ```
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
 
-ping コマンドを実行すると、IP アドレス 10.0.0.4 から 4 つの正常な応答があります。これは、VNet ピアリング関係間のトラフィックのテストです。  
+ping コマンドを実行すると、IP アドレス 10.0.0.4 から 4 つの正常な応答があります。これは、VNet ピアリング関係間のトラフィックのテストです。 
   
-DC2 上の Windows PowerShell コマンド プロンプトからこのコマンドを使用してドライブ文字 f: を持つ新しいボリュームとして余分なデータ ディスクを次に、追加します。
+次に、DC2 の Windows PowerShell コマンド プロンプトから次のコマンドを使用して、新しいボリュームとして別のデータ ディスクをドライブ文字 F: で追加します。
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -177,7 +177,7 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-CORP の両方を指定するように求められますことに注意してください\\User1 のパスワードとディレクトリ サービス復元モード (DSRM) のパスワードでは、DC2 を再起動するとします。 
+CORP\\User1 パスワードおよびディレクトリ サービス復元モード (DSRM) パスワードの両方の入力、ならびに DC2 の再起動が必要となる点に注意してください。 
   
 XPrem 仮想ネットワーク独自の DNS サーバー (DC2) の準備が整ったので、この DNS サーバーを使用するよう XPrem 仮想ネットワークを構成する必要があります。自分のローカル コンピューターの Azure PowerShell コマンド プロンプトから、これらのコマンドを実行します。
   
@@ -188,7 +188,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-Azure ポータル、ローカル コンピューター上では、CORP を DC1 に接続\\User1 の資格情報です。コンピューターとユーザー認証のため、ローカル ドメイン コント ローラーを使用するように、CORP ドメインを構成するには、DC1 上で管理者レベルの Windows PowerShell コマンド プロンプトからこれらのコマンドを実行します。
+ローカル コンピューター上の Azure portal から、CORP\\User1 の資格情報を使用して DC1 に接続します。コンピューターおよびユーザーがローカルのドメイン コントローラーを使用して認証を行うように CORP ドメインを構成するには、DC1 の管理者レベルの Windows PowerShell コマンド プロンプトから次のコマンドを実行します。
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -205,7 +205,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 ## <a name="next-step"></a>次の手順
 
-この開発/テスト環境を使用すると、 [Azure でホストされている SharePoint サーバー 2016年イントラネットのファーム](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)をシミュレートします。
+この開発/テスト環境を使用して、[Azure でホストされる SharePoint Server 2016 イントラネット ファーム](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)をシミュレートします。
   
 ## <a name="see-also"></a>関連項目
 
