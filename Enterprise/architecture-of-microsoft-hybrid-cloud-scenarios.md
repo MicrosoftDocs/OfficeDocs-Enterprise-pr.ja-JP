@@ -1,5 +1,5 @@
 ---
-title: "Microsoft ハイブリッド クラウド シナリオのアーキテクチャ"
+title: Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: "概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。"
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: '概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。'
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631388"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 
@@ -38,7 +39,7 @@ ms.lasthandoff: 02/13/2018
     
 - ネットワーク
     
-    Microsoft クラウド プラットフォームとサービスに接続するには、既存のインターネット パイプか ExpressRoute のいずれかを使用します。予測可能なパフォーマンスが重要な場合は、ExpressRoute 接続を使用します。ExpressRoute 接続を使用して、Microsoft SaaS サービス (Office 365 と Dynamics 365)、Azure PaaS サービス、および Azure PaaS サービスに直接接続できます。
+    マイクロソフトのクラウド プラットフォームおよびサービスへの接続用の 2 つの選択肢があります。 インターネットの既存のパイプと ExpressRoute。予測可能なパフォーマンスが重要な場合は、ExpressRoute 接続を使用します。マイクロソフトの SaaS サービス (Office 365 と Dynamics 365)、Azure PaaS サービス、および Azure IaaS サービスに直接接続する 1 つの ExpressRoute 接続を使用できます。
     
 - ID
     
