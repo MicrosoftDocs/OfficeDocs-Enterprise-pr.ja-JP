@@ -3,7 +3,6 @@ title: ユーザー ライセンスを割り当てる間、サービスへのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,11 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell を使い、ユーザー アカウントへのライセンスの割り当てと、特定のサービス プランの無効化を同時に行う方法を説明します。
-ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: 40abaa37b5a88eb69b01779894e851068a6454ee
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017403"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/09/2018
   
 Office 365 サブスクリプションには、個々のサービスのサービス プランが付属します。Office 365 管理者は、ユーザーにライセンスを割り当てるときに特定のプランを無効にしなければならないことが少なくありません。この資料の手順を使用すると、PowerShell を使用して、1 ユーザー アカウントの、または複数のユーザー アカウントの特定のサービス プランを無効にした状態で、Office 365 ライセンスを割り当てることができます。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
   
@@ -131,7 +131,7 @@ ForEach ($user in $users)
 $user.Userprincipalname
 $upn=$user.UserPrincipalName
 $usageLocation=$user.UsageLocation
-Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $AccountSkuId -ErrorAction SilentlyContinue
+Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $upn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 Set-MsolUser -UserPrincipalName $upn -UsageLocation $usageLocation
