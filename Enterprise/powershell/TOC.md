@@ -5,7 +5,6 @@
 ### [Office 365 PowerShell への接続](connect-to-office-365-powershell.md)
 ### [単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Windows PowerShell を使用して Office 365 でレポートを作成する](use-windows-powershell-to-create-reports-in-office-365.md)
-#### [Excel を使用して Office 365 レポート データを取得する](using-excel-to-retrieve-office-365-reporting-data.md)
 ### [Office 365 サービスのコマンドレット リファレンス](cmdlet-references-for-office-365-services.md)
 ### [Office 365 PowerShell のコミュニティ リソース](office-365-powershell-community-resources.md)
 ## [Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。](manage-user-accounts-and-licenses-with-office-365-powershell.md)
