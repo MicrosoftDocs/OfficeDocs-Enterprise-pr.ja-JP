@@ -1,9 +1,9 @@
 ---
-title: "Microsoft クラウド接続のためのExpressRoute"
+title: Microsoft クラウド接続のためのExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。"
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188115"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -48,7 +49,7 @@ ISP と Microsoft クラウド エッジとの間のパスは、インターネ�
   
 図 2 は、2 つのネットワーク パスを示しています。Microsoft Intune へのトラフィックは、通常のインターネットのトラフィックと同じパスを通過します。Office 365、Microsoft Azure、Dynamics 365 へのトラフィックは、ExpressRoute 接続を通過します。この接続は、オンプレミス ネットワークのエッジと Microsoft クラウドのエッジとの間の専用パスです。
   
-ExpressRoute 接続を使用すると、サービス プロバイダーとの関係を通じて、自社のエッジから Microsoft クラウドのヘッジまでのトラフィック パス全体を管理できるようになります。この接続では、予測可能なパフォーマンスと稼働時間 99.9% の SLA が得られます。
+ExpressRoute 接続では、ここで、サービス ・ プロバイダーとの関係によって、コントロール、クラウドのエッジ、エッジからマイクロソフトへの全体のトラフィック パスを。この接続には、予測可能なパフォーマンスと、 [99.95% の稼働時間 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)を提供できます。
   
 これにより、Office 365、Azure、Dynamics 365 サービスへの予測可能なスループットと待機時間は、サービス プロバイダーの接続に基づいて、信頼できるものになります。現時点では、Microsoft Intune への ExpressRoute 接続はサポートされていません。
   
@@ -239,7 +240,7 @@ Office 365 ベースの ExpressRoute 接続には、ExpressRoute Premium が必�
     
 - [Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
     
-- [Office 365 のパフォーマンス管理](https://mva.microsoft.com/ja-JP/training-courses/office-365-performance-management-8416)
+- [Office 365 のパフォーマンス管理](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>ExpressRoute のオプション
 
