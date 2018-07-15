@@ -16,11 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-ms.openlocfilehash: 400af224f7c74d72a173fa4ea45ede4d6057bbf7
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
-ms.translationtype: HT
+ms.openlocfilehash: 4ee4a5d0173f97520075f146e50bd234e767cc95
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319258"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
@@ -66,7 +67,7 @@ Get-MsolAccountSku
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。実際のサービス プランの一覧とは、異なる場合があります。すべてのサービス プランとフレンドリ名の一覧については、[Office サポート](https://support.office.com/home/contact)にお問い合わせください。
+次の表は、Office 365 のサービス プランと、最も一般的なサービスのフレンドリ名を示します。サービス プランの一覧は、異なる場合があります。名とサービス プランの一覧は、[ビジネス ユーザー向けのサポート ・ オプション](https://support.microsoft.com/gp/support-options-for-business)にお問い合わせください。
   
 |**サービス プラン**|**説明**|
 |:-----|:-----|

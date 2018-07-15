@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
-ms.openlocfilehash: eac56ae28ab48bb53842725d703bf81fb37d31eb
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: b603e019564f85d490dd560bda9967c9bb164d4b
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319248"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -71,10 +72,11 @@ Microsoft PowerShell の Microsoft Azure Active Directory モジュールには�
 1. Windows PowerShell コマンド プロンプトを実行します。
 2. **Windows PowerShell** コマンド ウィンドウで次のコマンドを実行します。
     
-```
-$UserCredential = Get-Credential
-Connect-MsolService -Credential $UserCredential
-```
+  ```
+  $UserCredential = Get-Credential
+  Connect-MsolService -Credential $UserCredential
+
+  ```
 
 3. **[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから **[OK]** をクリックします。
     
@@ -83,9 +85,9 @@ Connect-MsolService -Credential $UserCredential
 1. Windows PowerShell コマンド プロンプトを実行します。
 2. **Microsoft PowerShell の Microsoft Azure Active Directory モジュール** コマンド ウィンドウで、次のコマンドを実行します。
     
-```
-Connect-MsolService
-```
+  ```
+  Connect-MsolService
+  ```
 
 3. **[Azure Active Directory PowerShell]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから、 **[サインイン]** をクリックします。
     
@@ -151,6 +153,7 @@ Connect-MsolService
 ```
 $UserCredential = Get-Credential
 Connect-AzureAD -Credential $UserCredential
+
 ```
 
 **[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから **[OK]** をクリックします。
@@ -167,7 +170,7 @@ Connect-AzureAD
     
 接続した後、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)の新しいコマンドレットを使用できます。
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>See also
 
 - [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
