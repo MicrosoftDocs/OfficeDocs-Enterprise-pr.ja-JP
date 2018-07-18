@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319228"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -46,9 +47,9 @@ ms.lasthandoff: 04/27/2018
 SharePoint Online チーム サイトの推奨事項は、Office 365 のさまざまな機能に基づいています。高機密サイトに関しては、Azure Information Protection が推奨されています。これは Enterprise Mobility + Security (EMS) に含まれています。 
   
 次の図は、4 つの SharePoint Online チーム サイトについて推奨されている構成を示しています。
-  
-![SharePoint サイトの推奨構成](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![SharePoint サイトの推奨構成](Media/SharePoint-site-configuration-v2.png)
+
 次の点が示されています。
   
 - ベースライン保護には、SharePoint Online チーム サイト用の 2 つのオプション、つまりパブリック サイトとプライベート サイトが含まれます。パブリック サイトは、組織内のだれもが検出およびアクセスできます。プライベート サイトは、サイトのメンバーのみが検出とアクセスを行うことができます。どちらのサイト構成においても、グルーブの外部との共有を行うことができます。 
@@ -59,7 +60,7 @@ SharePoint Online チーム サイトの推奨事項は、Office 365 のさま�
     
 - データ損失防止 (DLP) ポリシーは、Office 365 の機密および高機密ラベル向けに構成されており、これらのタイプのファイルをユーザーが組織外に送信しようとすると警告を表示したり、その処理を防止したりします。 
     
-- 機密性の高い社外秘の保護が構成されているサイトの場合、Azure Information Protection がファイルを暗号化し、アクセス許可を与えます。
+- シナリオで必要とされる場合、Azure Information Protection を使用して、機密性の高いファイルを暗号化し、アクセス許可を付与します。これは、すべてのお客様にはお勧めできません。
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online と OneDrive for Business に関するテナント全体の設定
 
@@ -155,7 +156,7 @@ SharePoint Online と OneDrive for Business のデバイス アクセスの設�
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Azure Information Protection を使用して、ファイルが移動する場所に関係なく、ラベルと保護を適用します。このソリューションでは、スコープ付きの Azure Information Protection ポリシーと高機密ラベルのサブラベルを使用して、最高レベルのセキュリティによる保護が必要なファイルを暗号化して、それらのファイルにアクセス許可を付与することをお勧めします。 
+セキュリティ シナリオで保証される場合には、Azure Information Protection を使用して、ファイルが移動する場所に関係なく、ラベルと保護を適用することができます。Azure Information Protection のラベルは Office 365 のラベルとは異なります。このソリューションでは、スコープ付きの Azure Information Protection ポリシーと高機密ラベルのサブラベルを使用して、最高レベルのセキュリティによる保護が必要なファイルを暗号化して、それらのファイルにアクセス許可を付与することをお勧めします。 
   
 Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできないことにご注意ください。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。DLP ポリシーが操作できるのはメタデータ (Office 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
   

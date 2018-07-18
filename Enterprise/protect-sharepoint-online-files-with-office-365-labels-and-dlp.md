@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトに、Office 365 ラベルとデータ損失防止 (DLP) ポリシーを適用します。'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319268"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 ラベルと DLP による SharePoint ファイルの保護
 
@@ -27,6 +28,13 @@ ms.lasthandoff: 04/27/2018
   
 この記事にある手順を使用して、ベースライン、機密、および高機密の SharePoint Online チーム サイト用の Office 365 ラベルおよび DLP ポリシーを設計および展開します。これらの 3 つの層の保護について詳しくは、「[Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md)」を参照してください。
   
+## <a name="how-this-works"></a>そのしくみ
+1. 目的のラベルを作成して発行します。それらが発行されるまでに、最大 12 時間かかることがあります。
+2. 目的の SharePoint サイトについて、ドキュメント ライブラリの設定を編集して、ライブラリ内の項目にラベルを適用します。
+3. ラベルに基づいてアクションを実行する DLP ポリシーを作成します。
+
+ユーザーがドキュメントをライブラリに追加すると、文書は既定で割り当てられるラベルを受け取ります。ユーザーは、必要に応じてラベルを変更できます。ユーザーが組織外のドキュメントを共有する場合、DLP はラベルが割り当てられているかどうかを確認し、DLP ポリシーがラベルに一致する場合にアクションを実行します。DLP は同様に、他のポリシーの一致を探します。たとえば、クレジット カード番号によるファイルの保護などです (この種類のポリシーが設定されている場合)。 
+
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>SharePoint Online サイトの Office 365 ラベル
 
 Office 365 のラベルを作成し、SharePoint Online チーム サイトにラベルを割り当てるためのフェーズは 3 つあります。
@@ -151,13 +159,14 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 13. **[What do you want to do if we detect sensitive info?]\(機密情報が検出された場合の処理\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする)** をクリックします。
     
-14. **[Customize policy tips and email notifications]\(ポリシー ヒントと電子メール通知のカスタマイズ\)** ウィンドウで、**[Customize the policy tip text]\(ポリシー ヒントのテキストをカスタマイズする\)** をクリックします。
+14. **[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、**[ポリシー ヒント テキストをカスタマイズする]** をクリックします。
     
-15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
+15. 機密性の高いファイルを保護するために Azure Information Protection を実装したかどうかに応じて、テキスト ボックスに、次のいずれかのヒントを入力するか、貼り付けます。
     
   - 組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。
+  - 機密性の高いファイルは、暗号化によって保護されます。IT 部門によってこれらのファイルへのアクセス許可が与えられている外部ユーザーのみが、それらを読み取ることができます。
     
-    あるいは、ファイルを共有する方法について組織外のユーザーに指示する独自のポリシー ヒントを入力するか、貼り付けます。
+    あるいは、組織外のファイルを共有する方法をユーザーに指示する独自のポリシー ヒントを入力するか、貼り付けます。Azure Information Protection で保護されているファイルに対するアクセス許可を外部ユーザーに付与する方法については、「外部ユーザーに対するアクセス許可の追加」を参照してください。
     
 16. **[OK]** をクリックします。
     
