@@ -3,7 +3,7 @@ title: Office 365 PowerShell への接続
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2018
+ms.date: 07/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
-ms.openlocfilehash: b603e019564f85d490dd560bda9967c9bb164d4b
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319248"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720403"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -47,6 +47,45 @@ Office 365 PowerShell を使用して、コマンド ラインから Office 365 
     
 -  これらの手順は、Office 365 の管理者ロールのメンバーであるユーザーを意図しています。詳細については、 [Office 365 の管理者の役割](https://go.microsoft.com/fwlink/p/?LinkId=532367)を参照してください。
 
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>グラフ モジュールの Azure Active Directory PowerShell を使用して接続します。
+
+[グラフでは、Azure Active ディレクトリ PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)モジュール内のコマンドでは、そのコマンドレット名に**AzureAD**があります。
+
+グラフ モジュール用の新しい Azure Active Directory の PowerShell コマンドレットを必要とする手順は、モジュールをインストールし、Office 365 サブスクリプションに接続する手順を使用します。
+
+>[!Note]
+>異なるバージョンの Microsoft Windows のサポートについては、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)を参照してください。
+>
+
+### <a name="step-1-install-required-software"></a>手順 1: 必要なソフトウェアをインストールします
+
+これらの手順は、お使いのコンピューターで 1 度だけ必要となり、接続する度に実行する必要はありません。しかし、定期的にソフトウェアの新しいバージョンをインストールする必要があります。
+  
+1. 管理者特権で Windows PowerShell コマンド プロンプトを開きます (Windows PowerShell を管理者として実行)。
+    
+2. [ **Administrator:Windows PowerShell**] コマンド ウィンドウで、次のコマンドを実行します。
+    
+  ```
+  Install-Module -Name AzureAD
+  ```
+
+信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
+
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
+
+Azure AD に接続して、Office 365 には、サブスクリプション アカウント名とパスワード、または*多要素認証 (MFA)* は、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこのコマンドを実行します。
+    
+```
+Connect-AzureAD
+```
+
+**自分のアカウントにサインイン**] ダイアログ ボックスで、Office 365 の作業時間や学校のアカウントのユーザー名とパスワードを入力し、し、[ **OK**] をクリックします。
+
+MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
+    
+接続した後、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)の新しいコマンドレットを使用できます。
+  
+
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Microsoft PowerShell の Microsoft Azure Active Directory モジュールとの接続
 
 Microsoft PowerShell の Microsoft Azure Active Directory モジュールには、コマンドレット名に **Msol** が含まれています。
@@ -59,39 +98,23 @@ Microsoft PowerShell の Microsoft Azure Active Directory モジュールには�
     
 2. 以下の手順に従って、Windows PowerShell の Microsoft Azure Active Directory モジュールをインストールします。
     
-  - 管理者レベルの PowerShell コマンド プロンプトを開きます。
+  - 管理者特権で Windows PowerShell コマンド プロンプトを開きます (Windows PowerShell を管理者として実行)。
   - **Install-Module MSOnline** コマンドを実行します。
   - NuGet プロバイダーをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
   - PSGallery からモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
-  - インストール後、PowerShell コマンド ウィンドウを閉じます。
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
 
-*アカウント名とパスワード* のみを使用して接続する場合:
-  
-1. Windows PowerShell コマンド プロンプトを実行します。
-2. **Windows PowerShell** コマンド ウィンドウで次のコマンドを実行します。
+アカウント名とパスワード、または*多要素認証 (MFA)* では、Office 365 サブスクリプションの Azure AD に接続するには、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこのコマンドを実行します。
     
-  ```
-  $UserCredential = Get-Credential
-  Connect-MsolService -Credential $UserCredential
+```
+Connect-MsolService
+```
 
-  ```
+**自分のアカウントにサインイン**] ダイアログ ボックスで、Office 365 の作業時間や学校のアカウントのユーザー名とパスワードを入力し、し、[ **OK**] をクリックします。
 
-3. **[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから **[OK]** をクリックします。
-    
-*多要素認証 (MFA)* を使用して接続する場合:
-  
-1. Windows PowerShell コマンド プロンプトを実行します。
-2. **Microsoft PowerShell の Microsoft Azure Active Directory モジュール** コマンド ウィンドウで、次のコマンドを実行します。
-    
-  ```
-  Connect-MsolService
-  ```
+MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
 
-3. **[Azure Active Directory PowerShell]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから、 **[サインイン]** をクリックします。
-    
-4. **[Azure Active Directory PowerShell]** ダイアログ ボックスの手順に従って、検証コードなどの他の認証情報を提供してから、 **[サインイン]** をクリックします。
     
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
@@ -108,7 +131,10 @@ Microsoft PowerShell の Microsoft Azure Active Directory モジュールには�
   - Windows 8 または Windows 8.1 の場合、「[Windows 8 または Windows 8.1 への .NET Framework 3.5 のインストール](https://go.microsoft.com/fwlink/p/?LinkId=532369)」をご覧ください
     
   - Windows 7 または Windows Server 2008 R2 の場合、「[Windows PowerShell 用 Azure Active Directory モジュールを開くことができない](https://go.microsoft.com/fwlink/p/?LinkId=532370)」を参照してください
-    
+
+  - 10 の Windows、Windows 8.1 では、Windows 8 の[10 の Windows、Windows 8.1 では、Windows 8 に.NET Framework 3.5 のインストール](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)を参照してください.
+
+  
 - **お使いの Microsoft PowerShell の Microsoft Azure Active Directory モジュール のバージョンは期限切れの可能性があります。** Office 365 PowerShell または Microsoft PowerShell の Microsoft Azure Active Directory モジュール で、次のコマンドを実行して確認します。
     
   ```
@@ -119,58 +145,8 @@ Microsoft PowerShell の Microsoft Azure Active Directory モジュールには�
     
 - **接続エラーが発生した場合、次のトピックをご覧ください: **["Connect-MsolService:型の例外がスローされました" というエラー](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
-<a name="ConnectV2"> </a>
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>グラフ モジュールの Azure Active Directory PowerShell を使用して接続します。
 
-[グラフ モジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)のモジュール内のコマンドでは、コマンドレット名に**AzureAD**があります。
-
-グラフ モジュール用の新しい Azure Active Directory の PowerShell コマンドレットを必要とする手順は、モジュールをインストールし、Office 365 サブスクリプションに接続する手順を使用します。
-
->[!Note]
->異なるバージョンの Microsoft Windows のサポートについては、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)を参照してください。
->
-
-### <a name="step-1-install-required-software"></a>手順 1: 必要なソフトウェアをインストールします
-
-これらの手順は、お使いのコンピューターで 1 度だけ必要となり、接続する度に実行する必要はありません。しかし、定期的にソフトウェアの新しいバージョンをインストールする必要があります。
-
-  
-1. 管理者特権で Windows PowerShell コマンド プロンプトを開きます (Windows PowerShell を管理者として実行)。
-    
-2. [ **Administrator:Windows PowerShell**] コマンド ウィンドウで、次のコマンドを実行します。
-    
-  ```
-  Install-Module -Name AzureAD 
-  ```
-
-信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
-
-
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
-
-*アカウント名とパスワード*を使用して Office 365 サブスクリプションに接続するには、以下の操作を実行します。
-    
-```
-$UserCredential = Get-Credential
-Connect-AzureAD -Credential $UserCredential
-
-```
-
-**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから **[OK]** をクリックします。
-    
-*多要素認証 (MFA)* を使用して Office 365 サブスクリプションに接続するには、以下の操作を実行します。
-
-```
-Connect-AzureAD
-```
-
-**[Azure Active Directory PowerShell]** ダイアログ ボックスで、Office 365職場または学校のアカウント ユーザー名とパスワードを入力してから、 **[サインイン]** をクリックします。
-    
-**[Azure Active Directory PowerShell]** ダイアログ ボックスの手順に従って、検証コードなどの他の認証情報を提供してから、 **[サインイン]** をクリックします。
-    
-接続した後、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)の新しいコマンドレットを使用できます。
-  
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 
 - [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
