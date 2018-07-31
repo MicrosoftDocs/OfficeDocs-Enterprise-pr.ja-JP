@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 サーバーおよびクライアント アプリケーションのサポートがすぐに終了して、カスタム サポート契約をご利用いただけません。今すぐアップグレードの計画を開始するのにには、この資料を使用します。
-ms.openlocfilehash: 6935fab5e91de05c427d2bb1c233f988dc13e8ce
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 9318dd4f85d02673137498375e7ecdcfe2b4b553
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169859"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21548888"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>2007 のサーバーとクライアントの Office からアップグレードするためのリソース
 
@@ -52,13 +51,13 @@ Office 2007 の製品およびサービスのサポートが終了しました�
 次のオプションのいずれかを選択します。
 - **Office 365 に移動する**: 多くのお客様にとって、これは、効率的でコスト効果の高いソリューションです。参照してください[移動する方法を Office 365 にビジネスのですか?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **、オンプレミスのサーバーおよびアプリケーションをアップグレードします**。[Exchange 2007](exchange-2007-end-of-support.md)、 [SharePoint Server 2007](sharepoint-2007-end-of-support.md)、 [Project Server 2007](project-server-2007-end-of-support.md)、 [Office Communications Server](/Skype/SfbServer/plan-your-deployment/upgrade.md)、および[PerformancePoint Server 2007年](pps-2007-end-of-support.md)のコンテンツの計画を参照してください。 
+- **、オンプレミスのサーバーおよびアプリケーションをアップグレードします**。[Exchange 2007](exchange-2007-end-of-support.md)、 [SharePoint Server 2007](sharepoint-2007-end-of-support.md)、 [Project Server 2007](project-server-2007-end-of-support.md)、 [Office Communications Server](https://docs.microsoft.com/Skype/SfbServer/plan-your-deployment/upgrade)、および[PerformancePoint Server 2007年](pps-2007-end-of-support.md)のコンテンツの計画を参照してください。 
     
 - **Office 365 を含むハイブリッド ソリューションを導入**設置およびサーバー アプリケーションです。参照してください[Office 365 のハイブリッド クラウド ソリューションの概要です](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)。
     
 **ヘルプが必要ですか?** パートナー、またはボリューム ライセンスのスペシャ リストの使用を検討してください。**[Office 365 のパートナーまたは販売店の検索](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)** を参照してください。 
 > [!TIP]
-> 50 以上の Office 365 のライセンスを購入する場合、fasttrack というチームを支援できる Office 365 をセットアップするプロセスです。[FastTrack.Microsoft.com](https://fasttrack.microsoft.com)を参照してください。
+> 50 以上の Office 365 のライセンスを購入する場合、fasttrack というチームを支援できる Office 365 をセットアップするプロセスです。[FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365)を参照してください。
   
 組織の Office 365 のライセンスが 50 個よりも少ない場合を参照してください[管理者: 企業向け Office 365 を使用して最新の Office クライアントに、ユーザーをアップグレードする](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx)です。 
   
@@ -81,14 +80,12 @@ Office 2007 の製品およびサービスのサポートが終了しました�
 ## <a name="what-is-office-365"></a>Office 365 とは何ですか。
 
 Office 365 は、マイクロソフトのクラウド スタックの一部であるソフトウェアとしてのサービス (SaaS) 製品です。[Office 365 エンタープライズ プラン](https://aka.ms/viirjv)は、ビジネスの電子メール、Skype の IM やオンライン会議は、オンライン ビジネス、オンライン ・ ストレージのための OneDrive の Exchange Online 含まれます。ほとんどのビジネス プランには、Office がインストールするソフトウェア コンピューター (PC および Mac)、スマート フォン (Android、iOS、および Windows)、およびタブレット (Android と iOS) にはが含まれます。Office 365 の任意の場所から、さまざまなデバイス間で生産性を向上することがあります。 
-  
+
 |**リソース**|**説明**|
 |:-----|:-----|
-|**[ビデオ: Office 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |このビデオでは、Office 365 の概要を取得します。  <br/> |
-|**[私たちを移動する方法 Office 365 にビジネスのでしょうか。](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |企業組織が Office 365 に移動する方法の概要を取得するには、この資料を参照してください。  <br/> |
 |**[プランを選択します。](https://aka.ms/viirjv)** <br/> |Office 365 のビジネス プランの詳細については、このページを参照してください。  <br/> |
 |**[Office 365 のシステム要件](https://aka.ms/o365sysrequirements)** <br/> |システム要件の詳細については、**ビジネス、教育、および政府の Office 365 プラン**] セクションで表示します。  <br/> |
-|**[マイクロソフトのクラウド プラットフォームのオプション](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Office 365 とマイクロソフトのクラウド スタックについては、このポスターをダウンロードしてください。Office 365 では、顧客、およびマイクロソフトの責任の範囲など、マイクロソフトのクラウド スタックの中核的な機能について学習します。PDF のポスターをダウンロードすることができます。 または Visio の書式を設定します。  <br/> |
+|**[クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)** <br/> |マイクロソフト クラウドとサーバー プラットフォームのオプションに関する詳細については、1 つまたは複数のポスターをダウンロードしてください。ポスターの pdf をダウンロードすることができます。 または Visio の書式を設定します。  <br/> |
 |**[Office 365 のよく寄せられる質問](https://aka.ms/office365faqs)** <br/> |追加情報へのリンクを Office 365 についてのよく寄せられる質問の一覧を表示するには、このページを参照してください。  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>Microsoft 365 とは何ですか。

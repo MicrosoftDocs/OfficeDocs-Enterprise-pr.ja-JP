@@ -3,7 +3,7 @@ title: セキュリティ ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/30/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: '概要: これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。'
-ms.openlocfilehash: 6ba8b623d4073b611a5123e01e7cf5819bd34e4a
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
-ms.translationtype: HT
+ms.openlocfilehash: a94ff180ecaaf2122a313a1c6699ac234a95164f
+ms.sourcegitcommit: 825d44011b72d2832a82834ab4bb536aea448986
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "21533469"
 ---
 # <a name="security-solutions"></a>セキュリティ ソリューション
 
@@ -33,14 +34,6 @@ Microsoft Office 365、Microsoft Azure、Microsoft Dynamics 365、Microsoft Ente
 - [分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-sites.md)
 <br/><br/>
     
-**ディスカッションへの参加**
-
-|**お問い合わせ**|**説明**|
-|:-----|:-----|
-|**必要なソリューション** <br/> |複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。<br/> |
-|**ソリューションのディスカッションへの参加** <br/> |クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の [CAAB (Cloud Adoption Advisory Board) スペース](https://aka.ms/caab)のメンバーとしてご自分を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!) 宛に電子メールを送信してください。[CAAB ブログ](https://blogs.technet.com/b/solutions_advisory_board/)でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。<br/> |
-|**記載されているアートの取得方法** <br/> |この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記述した電子メールを [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20) に送信してください。<br/> |
-   
 ## <a name="see-also"></a>関連項目
 
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)

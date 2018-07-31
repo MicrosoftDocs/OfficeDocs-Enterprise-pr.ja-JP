@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 のサーバーおよびクライアント アプリケーションのサポートがすぐに終了して、カスタム サポート契約をご利用いただけません。今すぐアップグレードの計画を開始するのにには、この資料を使用します。
-ms.openlocfilehash: dd2d8d3a5ad629dcdbddab07cf9209a305a3024c
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: deca71195aec15370d10003b979e7222dead7418
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169779"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549978"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>2010 のサーバーとクライアントの Office からアップグレードするためのリソース
 
@@ -39,22 +38,21 @@ Office 2010 製品およびサービスを使用する場合は Office 365 で�
 |Office 2010 の Word 2010、Excel 2010、PowerPoint 2010、および Outlook 2010 など  <br/> |[サポート ロードマップの Office 2010 の終了](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[サポート ロードマップの Exchange 2010 の終了](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 または SharePoint Server 2010  <br/> |[SharePoint 2010 からアップグレードします。](upgrade-from-sharepoint-2010.md) <br/> |
-   
-> [!TIP]
-> 計画のロードマップがまもなくリリースされます。必ず将来の参照用には、このページにブックマークを設定してください。 
-  
+|Project Server 2010 </br> | [オンライン サーバーのプロジェクトとプロジェクトの計画](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
+|Lync Server 2010 </br> | [Skype ビジネス サーバーをアップグレードしようとしてください。](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+    
 Office 2010 製品およびサービスのサポートが終了に近づいて、これは、Office 365 への移行を検討する絶好の機会です。表示、最新の機能、セキュリティ更新プログラム、およびアクセスのコンテンツをさまざまなデバイスで。
 
 次のオプションのいずれかを選択します。
 - **Office 365 に移動する**: 多くのお客様にとって、これは、効率的でコスト効果の高いソリューションです。参照してください[移動する方法を Office 365 にビジネスのですか?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **、オンプレミスのサーバーおよびアプリケーションをアップグレードします**。[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)、 [Exchange 2010](exchange-2010-end-of-support.md)と[SharePoint 2010](upgrade-from-sharepoint-2010.md)の計画のロードマップを参照してください。 
+- **、オンプレミスのサーバーおよびアプリケーションをアップグレードします**。[Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)、 [Exchange](exchange-2010-end-of-support.md)、 [SharePoint](upgrade-from-sharepoint-2010.md)[および Project Server のプロジェクトのオンライン](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)、 [Skype のビジネス](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)計画の内容を参照してください。 
     
 - **Office 365 を含むハイブリッド ソリューションを導入**設置およびサーバー アプリケーションです。参照してください[Office 365 のハイブリッド クラウド ソリューションの概要です](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)。
     
 **ヘルプが必要ですか?** パートナー、またはボリューム ライセンスのスペシャ リストの使用を検討してください。**[Office 365 のパートナーまたは販売店を検索](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)** します。 
 > [!TIP]
-> 組織では、50 以上の Office 365 のライセンスが購入される場合、fasttrack というチームを支援できる Office 365 をセットアップするプロセスです。[FastTrack.Microsoft.com](https://fasttrack.microsoft.com)を参照してください。
+> 組織では、50 以上の Office 365 のライセンスが購入される場合、fasttrack というチームを支援できる Office 365 をセットアップするプロセスです。[FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365)を参照してください。
   
 組織では、50 未満の Office 365 のライセンスが購入される場合を参照してください[管理者: 企業向け Office 365 を使用して最新の Office クライアントに、ユーザーをアップグレードする](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx)です。 
   
@@ -80,11 +78,9 @@ Office 365 は、マイクロソフトのクラウド スタックの一部で�
   
 |**リソース**|**説明**|
 |:-----|:-----|
-|**[ビデオ: Office 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |このビデオでは、Office 365 の概要を取得します。  <br/> |
-|**[私たちを移動する方法 Office 365 にビジネスのでしょうか。](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |企業組織が Office 365 に移動する方法の概要を取得するには、この資料を参照してください。  <br/> |
 |**[プランを選択します。](https://aka.ms/viirjv)** <br/> |Office 365 のビジネス プランの詳細については、このページを参照してください。  <br/> |
 |**[Office 365 のシステム要件](https://aka.ms/o365sysrequirements)** <br/> |システム要件の詳細については、**ビジネス、教育、および政府の Office 365 プラン**] セクションで表示します。  <br/> |
-|**[マイクロソフトのクラウド プラットフォームのオプション](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Office 365 とマイクロソフトのクラウド スタックについては、このポスターをダウンロードしてください。Office 365 では、顧客、およびマイクロソフトの責任の範囲など、マイクロソフトのクラウド スタックの中核的な機能について学習します。PDF のポスターをダウンロードすることができます。 または Visio の書式を設定します。  <br/> |
+|**[クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)** <br/> |マイクロソフト クラウドとサーバー プラットフォームのオプションに関する詳細については、1 つまたは複数のポスターをダウンロードしてください。ポスターの pdf をダウンロードすることができます。 または Visio の書式を設定します。  <br/> |
 |**[Office 365 のよく寄せられる質問](https://aka.ms/office365faqs)** <br/> |追加情報へのリンクを Office 365 についてのよく寄せられる質問の一覧を表示するには、このページを参照してください。  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>Microsoft 365 とは何ですか。
