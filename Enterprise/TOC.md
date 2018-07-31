@@ -1,6 +1,3 @@
-
-  
-
 # [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 ## [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
 ### [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
@@ -44,9 +41,6 @@
 #### [Office 365 の開発/テスト環境の Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 #### [Office 365 の開発/テスト環境での機密性の高いファイルの保護](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
 #### [Office 365 開発/テスト環境でのデータ分類とラベルの作成](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-### [Microsoft 365 Enterprise 開発/テスト環境](the-microsoft-365-enterprise-dev-test-environment.md)
-#### [Microsoft 365 Enterprise 開発/テスト環境の MAM のポリシー](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-#### [Microsoft 365 Enterprise 開発/テスト環境に iOS および Android デバイスを登録する](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 ### [Office 365 と Dynamics 365 の開発/テスト環境](office-365-and-dynamics-365-dev-test-environment.md)
 #### [Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ### [One Microsoft Cloud 開発/テスト環境](the-one-microsoft-cloud-dev-test-environment.md)
@@ -112,5 +106,19 @@
 #### [分離した SharePoint Online チーム サイトの展開](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [分離した SharePoint Online チーム サイトの管理](manage-an-isolated-sharepoint-online-team-site.md)
 #### [Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [Office 2007 または 2010 の製品からのアップグレードします。](plan-upgrade-previous-versions-office.md)
+### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
+#### [Office 2010 のデスクトップ](/DeployOffice/office-2010-end-support-roadmap.md)
+#### [Exchange 2010](exchange-2010-end-of-support.md)
+#### [SharePoint 2010](upgrade-from-sharepoint-2010.md)
+#### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [Project Server 2010](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)
+### [Office 2007](upgrade-from-office-2007-servers-and-products.md)
+#### [Office 2007 のデスクトップ](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)
+#### [Exchange 2007](exchange-2007-end-of-support.md)
+#### [SharePoint 2007](sharepoint-2007-end-of-support.md)
+#### [Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
+#### [Project Server 2007](project-server-2007-end-of-support.md)
 ## [Office 365 PowerShell による Office 365 の管理](powershell/manage-office-365-with-office-365-powershell.md)
 
