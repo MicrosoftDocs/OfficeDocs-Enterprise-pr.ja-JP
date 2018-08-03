@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: OneDrive for Business 複数地域、複数地域のしくみ、およびデータ ストレージに使用できる地域の場所について説明します。
-ms.openlocfilehash: 54efc6092338e505ef44344f9c3d3a7efe9ae498
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549988"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>OneDrive for Business 複数地域の計画
 
@@ -63,20 +64,20 @@ OneDrive 複数地域構成では、Office 365 テナントが 1 つの中央の
 <td align="left">APC</td>
 </tr>
 <tr class="even">
-<td align="left">ヨーロッパ/中東/アフリカ</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
-<td align="left">北アメリカ</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
 <td align="left">オーストラリア</td>
 <td align="left">AUS</td>
 </tr>
 <tr class="odd">
 <td align="left">カナダ</td>
 <td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">ヨーロッパ/中東/アフリカ</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="odd">
+<td align="left">フランス</td>
+<td align="left">FRA</td>
 </tr>
 <tr class="odd">
 <td align="left">日本</td>
@@ -87,6 +88,10 @@ OneDrive 複数地域構成では、Office 365 テナントが 1 つの中央の
 <td align="left">KOR</td>
 </tr>
 <tr class="odd">
+<td align="left">北アメリカ</td>
+<td align="left">NAM</td>
+</tr>
+<tr class="odd">
 <td align="left">イギリス</td>
 <td align="left">GBR</td>
 </tr>
@@ -95,7 +100,6 @@ OneDrive 複数地域構成では、Office 365 テナントが 1 つの中央の
 
 今後提供予定の地域の場所:
   
-- フランス
 - インド
 
 複数地域を構成するときは、Office 365 への移行と同時にオンプレミスのインフラストラクチャを統合する機会だと考えてください。たとえば、シンガポールとマレーシアにオンプレミス ファームがある場合、データ所在地の要件で許可されているときには、それらのファームを APC サテライトの場所に統合できます。

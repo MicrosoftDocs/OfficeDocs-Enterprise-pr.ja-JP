@@ -11,11 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: OneDrive for Business 複数地域の構成方法について説明します。
-ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549968"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 複数地域テナントの構成
 
@@ -42,14 +43,6 @@ OneDrive for Business を使用する地理的位置ごとに、SharePoint の�
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">北アメリカ</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
-<td align="left">ヨーロッパ/中東/アフリカ</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
 <td align="left">アジア太平洋</td>
 <td align="left">APC</td>
 </tr>
@@ -57,21 +50,33 @@ OneDrive for Business を使用する地理的位置ごとに、SharePoint の�
 <td align="left">オーストラリア</td>
 <td align="left">AUS</td>
 </tr>
+<tr class="even">
+<td align="left">カナダ</td>
+<td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">ヨーロッパ/中東/アフリカ</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="even">
+<td align="left">フランス</td>
+<td align="left">FRA</td>
+</tr>
 <tr class="odd">
 <td align="left">日本</td>
 <td align="left">JPN</td>
 </tr>
 <tr class="even">
-<td align="left">カナダ</td>
-<td align="left">CAN</td>
+<td align="left">韓国</td>
+<td align="left">KOR</td>
+</tr>
+<tr class="odd">
+<td align="left">北アメリカ</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="odd">
 <td align="left">イギリス</td>
 <td align="left">GBR</td>
-</tr>
-<tr class="even">
-<td align="left">韓国</td>
-<td align="left">KOR</td>
 </tr>
 </tbody>
 </table>
