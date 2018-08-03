@@ -10,11 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
-ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21550060"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -76,36 +77,40 @@ Office 365 全体管理者は、別のユーザーが電子情報開示を実行
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>NAM</strong></td>
-<td align="left">米国のデータ センター</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>EUR</strong></td>
-<td align="left">ヨーロッパのデータ センター</td>
-</tr>
-<tr class="odd">
 <td align="left"><strong>APC</strong></td>
 <td align="left">東南アジアまたは東アジアのデータ センター</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>CAN</strong></td>
-<td align="left">米国のデータ センター</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>AUS</strong></td>
 <td align="left">東南アジアまたは東アジアのデータ センター</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>KOR</strong></td>
-<td align="left">テナントの既定のデータの場所</td>
+<td align="left"><strong>CAN</strong></td>
+<td align="left">米国のデータセンター</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>EUR</strong></td>
+<td align="left">ヨーロッパのデータセンター</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>FRA</strong></td>
+<td align="left">ヨーロッパのデータセンター</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
-<td align="left">ヨーロッパのデータ センター</td>
+<td align="left">ヨーロッパのデータセンター</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>KOR</strong></td>
+<td align="left">東南アジアまたは東アジアのデータ センター</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>JPN </strong></td>
 <td align="left">東南アジアまたは東アジアのデータ センター</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>NAM</strong></td>
+<td align="left">米国のデータセンター</td>
 </tr>
 </tbody>
 </table>
