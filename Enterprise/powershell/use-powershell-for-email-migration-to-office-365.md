@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17115246"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Office 365 へのメールの移行に PowerShell を使う
 
@@ -47,9 +48,9 @@ ms.lasthandoff: 01/11/2018
 [Windows PowerShell を使用して Office 365 でレポートを作成する](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Windows PowerShell を使用して Office 365 を管理する利点]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))
+[Windows PowerShell を使用して Office 365 を管理する利点](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Office 365 での Windows PowerShell のテクニカル リファレンス]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))
+[Office 365 での Windows PowerShell のテクニカル リファレンス](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Office 365 ライセンスと Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))
+[Office 365 ライセンスと Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 
