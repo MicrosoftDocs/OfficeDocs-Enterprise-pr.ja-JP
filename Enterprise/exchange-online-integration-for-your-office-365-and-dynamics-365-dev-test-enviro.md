@@ -1,5 +1,5 @@
 ---
-title: "Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合"
+title: Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: "概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。"
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。'
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915502"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合
 
@@ -39,13 +42,13 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 
 以下の手順を使用して、Dynamics 365 と Exchange Online 統合用の全体管理者のメールボックスを構成します。
   
-1. ブラウザーのプライベート セッションを使用して、[http://portal.office.com](http://portal.office.com) に移動し、Office 365 全体管理者アカウントでサインインします。
+1. お使いのブラウザーのプライベート ・ セッションを使用して[http://portal.office.com](http://portal.office.com)し、Office 365 のグローバル管理者アカウントを使用してサインインします。
     
 2. **Microsoft Office ホーム** ページで、 **[メール]** タイルをクリックします。
     
 3. お使いのブラウザーの新しい **[メール]** タブで **[新規作成]** をクリックして、メッセージ入力ボックスの下のウィンドウ下部の隅に [マイ テンプレート] のアイコンが含まれていることを確認します。
     
-     ![Dynamics 365 との統合なしの、新しい空の電子メール メッセージ。](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Dynamics 365 との統合なしの、新しい空の電子メール メッセージ。](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. **[破棄]** をクリックして、 **[メール]** タブを開いたままにします。
     
@@ -87,13 +90,13 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
     
 6. ブラウザーの新しい **[メール]** タブをクリックし、 **[新規作成]** をクリックします。メッセージ入力ボックスの下のウィンドウ下部の隅に [Dynamics 365] のアイコンが含まれていることを確認します。
     
-     ![新しいアイコンが表示される、Dynamics 365 と統合された新しい空の電子メール メッセージ。](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![新しいアイコンが表示される、Dynamics 365 と統合された新しい空の電子メール メッセージ。](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. [Dynamics 365] アイコンをクリックします。 **Dynamics 365** ウィンドウが表示されます。そこからこの電子メールを追跡したり、テンプレート、営業資料、記事などにアクセスしたりできます。
     
 8. 電子メール メッセージの **[宛先]** フィールドに、 **alex.y.wu@outlook.com** とタイプし、次いで、 **Dynamics 365** ウィンドウの **[再試行]** をクリックします。 **Dynamics 365** ウィンドウの **[受信者]** セクションに、試用版サブスクリプションのサンプル データと共に提供されている、販売アプリケーションの取引先担当者 Alex Wu の情報が表示されるはずです。
     
-     ![Dynamics 365 に格納されている営業担当者用の Dynamics 365 情報ウィンドウ。](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Dynamics 365 に格納されている営業担当者用の Dynamics 365 情報ウィンドウ。](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. **[破棄]** をクリックします。
 

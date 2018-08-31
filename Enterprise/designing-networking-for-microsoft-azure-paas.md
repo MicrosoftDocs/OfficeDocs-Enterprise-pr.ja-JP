@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Azure PaaS のためのネットワーク デザイン"
+title: Microsoft Azure PaaS のためのネットワーク デザイン
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "概要: Microsoft Azure PaaS へのアクセスのためにネットワークを最適化する方法を理解します。"
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: Microsoft Azure PaaS へのアクセスのためにネットワークを最適化する方法を理解します。'
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915112"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS のためのネットワーク デザイン
 
@@ -46,7 +49,7 @@ Azure PaaS においてホストされている組織のアプリケーション
     
 **図 1: Azure PaaS サービスに接続するための接続オプション**
 
-![図 1: Azure PaaS サービスの接続オプション](images/Network_Poster/PaaS1.png)
+![図 1: Azure PaaS サービスの接続オプション](media/Network-Poster/PaaS1.png)
   
 図 1 はインターネット パイプまたは ExpressRoute によって Azure PaaS サービスに接続しているオンプレミスのネットワークを示しています。
   
@@ -56,7 +59,7 @@ Azure PaaS においてホストされている組織のアプリケーション
   
 **図 2: Azure アプリケーション ゲートウェイ**
 
-![図 2:Azure アプリケーション ゲートウェイ サービス](images/Network_Poster/PaaS2.png)
+![図 2:Azure アプリケーション ゲートウェイ サービス](media/Network-Poster/PaaS2.png)
   
 図 2 は、Azure アプリケーション ゲートウェイと、インターネットからのユーザー要求がどのように Azure の Web アプリケーション、クラウド サービス、または仮想マシンに送られるのかを示しています。
   
@@ -86,7 +89,7 @@ Traffic Manager は、次のルーティング方法を使用します。
   
 **図 3: Azure Traffic Manager**
 
-![図 3: Azure Traffic Manager](images/Network_Poster/PaaS3.png)
+![図 3: Azure Traffic Manager](media/Network-Poster/PaaS3.png)
   
 図 3 は、Traffic Manager が米国、ヨーロッパ、アジアの 3 つの異なる Azure Web アプリに要求を送信するために使用する基本的なプロセスを示しています。例の中で:
   

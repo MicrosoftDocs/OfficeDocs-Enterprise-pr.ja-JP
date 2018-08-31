@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: '概要: 高可用性をホストする Microsoft Azure インフラストラクチャを構成する Office 365 のフェデレーション認証します。'
-ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
+ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915462"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
- **の概要:** Office 365 のホストの高可用性の統合認証に Microsoft Azure インフラストラクチャを構成します。
+ **概要:** Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
   
 このフェーズでは、リソース グループ、2、3、および 4 の段階で仮想マシンをホストする Azure 内の仮想ネットワーク (VNet)、および可用性を設定を作成します。上に移動する前に、このフェーズを完了する必要があります[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)です。フェーズのすべては、 [Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
   
@@ -40,11 +41,11 @@ Azure のコンポーネントの構成を開始する前に、次の表に入�
   
 |**項目**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet アドレス空間  <br/> |仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet アドレス空間  <br/> |仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V:クロスプレミスの仮想ネットワーク構成**
   
@@ -60,12 +61,12 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**項目**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
+|**項目**|**サブネット名**|**サブネット アドレス スペース**|**目的**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Web アプリケーション プロキシ VM が使用するサブネット。  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Azure ゲートウェイ VM が使用するサブネット。  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ VM が使用するサブネット。  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure ゲートウェイ VM が使用するサブネット。  <br/> |
    
  **表 S:仮想ネットワーク内のサブネット**
   
@@ -73,14 +74,14 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 |**項目**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |DirSync サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |AD FS サーバーの内部ロード バランサーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |最初の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|6.  <br/> |2 番目の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|7.  <br/> |最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|8.  <br/> |2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |DirSync サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |AD FS サーバーの内部ロード バランサーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |最初の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |2 番目の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 I: 仮想ネットワークの静的 IP アドレス**
   
@@ -88,8 +89,8 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 |**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 D:オンプレミスの DNS サーバー**
   
@@ -99,16 +100,16 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 |**アイテム**|**ローカル ネットワークのアドレス スペース**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 L:ローカル ネットワークのアドレス プレフィックス**
   
 ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
@@ -131,7 +132,7 @@ Azure PowerShell の以前のバージョンの代わりにこのコマンドを
 Get-AzureRMSubscription | Sort Name | Select SubscriptionName
 ```
 
-Azure サブスクリプションを設定します。など、二重引用符内のすべてを交換して、\<と > 正しい名前の文字です。
+Azure サブスクリプションを設定します。二重引用符内のすべて (「\<」と「>」の文字を含む) を正しい名前に置き換えます。
   
 ```
 $subscr="<subscription name>"
@@ -148,10 +149,10 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 |**項目**|**リソース グループ名**|**用途**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |ドメイン コントローラー  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS サーバー  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Web アプリケーション プロキシ サーバー  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |インフラストラクチャの要素  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |ドメイン コントローラー  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS サーバー  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ サーバー  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |インフラストラクチャの要素  <br/> |
    
  **表 R: リソース グループ**
   
@@ -273,9 +274,9 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 |**項目**|**用途**|**可用性セット名**|
 |:-----|:-----|:-----|
-|1.  <br/> |ドメイン コントローラー  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS サーバー  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Web アプリケーション プロキシ サーバー  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |ドメイン コントローラー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Web アプリケーション プロキシ サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 A: 可用性セット**
   
@@ -298,13 +299,13 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
 
 次に、このフェーズが正常に完了した結果の構成を示します。
   
-**フェーズ 1: Office 365 のフェデレーション認証を高可用性を実現するための Azure インフラストラクチャ**
+**フェーズ 1:Office 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**
 
-![Azure インフラストラクチャによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ 1](images/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Azure インフラストラクチャによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ 1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>次の手順
 
-使用[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)、この作業負荷の構成を続行するのには。
+「[High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」を使用して、このワークロードの構成を続行します。
   
 ## <a name="see-also"></a>関連項目
 
@@ -314,6 +315,6 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 のフェデレーション ID](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Office 365 ID と Azure Active Directory について](about-office-365-identity.md)
 
 

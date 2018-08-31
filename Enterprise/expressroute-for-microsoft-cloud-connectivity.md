@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188115"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915492"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -31,7 +33,7 @@ ExpressRoute は、Microsoft のクラウドへのプライベート、専用、
   
 **図 1:ExpressRoute のないネットワーク パス**
 
-![図 1:ExpressRoute のないネットワーク パス](images/Network_Poster/ExpressRoute.png)
+![図 1:ExpressRoute のないネットワーク パス](media/Network-Poster/ExpressRoute.png)
   
 図 1 は、オンプレミスのネットワークと Microsoft クラウドとの間の一般的なパスを示しています。オンプレミスのネットワーク エッジは、ISP への WAN リンクを経由してインターネットに接続しています。トラフィックは、インターネットを通過して Microsoft クラウドのエッジに到達します。Microsoft クラウド内のクラウド サービスには、Office 365、Microsoft Azure、Microsoft Intune、Dynamics 365 があります。組織のユーザーは、オンプレミスのネットワークに配置することも、インターネットに配置することもできます。
   
@@ -45,7 +47,7 @@ ISP と Microsoft クラウド エッジとの間のパスは、インターネ�
   
 **図 2: ExpressRoute のあるネットワーク パス**
 
-![図 2: ExpressRoute のあるネットワーク パス](images/Network_Poster/ExpressRoute_post.png)
+![図 2: ExpressRoute のあるネットワーク パス](media/Network-Poster/ExpressRoute-post.png)
   
 図 2 は、2 つのネットワーク パスを示しています。Microsoft Intune へのトラフィックは、通常のインターネットのトラフィックと同じパスを通過します。Office 365、Microsoft Azure、Dynamics 365 へのトラフィックは、ExpressRoute 接続を通過します。この接続は、オンプレミス ネットワークのエッジと Microsoft クラウドのエッジとの間の専用パスです。
   
@@ -87,7 +89,7 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
   
 |**Cloud Exchange でのコロケーション**|**ポイント ツー ポイントのイーサネット**|**Any-to-Any (IP VPN) 接続**|
 |:-----|:-----|:-----|
-|![ExpressRoute 接続モデル:Cloud Exchange でのコロケーション](images/Network_Poster/ER_Conn1.png)|![ExpressRoute 接続モデル:ポイント ツー ポイントのイーサネット](images/Network_Poster/ER_Conn2.png)|![ExpressRoute 接続モデル:Any-to-Any (IP VPN) 接続](images/Network_Poster/ER_Conn3.png)|
+|![ExpressRoute 接続モデル:Cloud Exchange でのコロケーション](media/Network-Poster/ER-Conn1.png)|![ExpressRoute 接続モデル:ポイント ツー ポイントのイーサネット](media/Network-Poster/ER-Conn2.png)|![ExpressRoute 接続モデル:Any-to-Any (IP VPN) 接続](media/Network-Poster/ER-Conn3.png)|
 |Could Exchange を備えた施設にデータセンターが併置されている場合は、併置プロバイダーのイーサネット交換機を通じた Microsoft クラウドへの仮想交差接続をオーダーできます。  <br/> |データセンターがオンプレミスに配置されている場合は、Microsoft クラウドへの接続に、ポイント ツー ポイントのイーサネット リンクを使用できます。  <br/> |既に、組織のサイトへの接続に IP VPN (MPLS) プロバイダーを使用している場合、Microsoft クラウドへの ExpressRoute 接続はプライベート WAN 上の別の場所と同じように機能します。  <br/> |
    
  **表 1:ExpressRoute の接続モデル**
@@ -98,7 +100,7 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
   
 **図 3: 単一の ExpressRoute 接続が対応する 3 つの異なる BGP 関係**
 
-![図 3: 単一の ExpressRoute 接続が対応する 3 つの異なる BGP 関係](images/Network_Poster/ERPeering.png)
+![図 3: 単一の ExpressRoute 接続が対応する 3 つの異なる BGP 関係](media/Network-Poster/ERPeering.png)
   
 図 3 は、オンプレミス ネットワークからの ExpressRoute 接続を示しています。ExpressRoute 接続には 3 つの論理ピアリング関係が含まれています。Microsoft ピアリング関係は、Office 365 と Dynamcs CRM Online を含む Microsoft SaaS サービスに向けられています。パブリック ピアリング関係は、Azure PaaS サービスに向けられています。プライベート ピアリング関係には、Azure IaaSに向けられたものと、仮想マシンをホストする仮想ネットワーク ゲートウェイに向けられたものがあります。
   
@@ -128,7 +130,7 @@ Microsoft ピアリング BGP 関係:
   
 **図 4:オンプレミス SharePoint ファームにアクセスする Azure 仮想マシン上のアプリケーション**
 
-![図 4:オンプレミス SharePoint ファームにアクセスする Azure 仮想マシン上のアプリケーション](images/Network_Poster/ER_App_Flow1.png)
+![図 4:オンプレミス SharePoint ファームにアクセスする Azure 仮想マシン上のアプリケーション](media/Network-Poster/ER-App-Flow1.png)
 
   
 図 4 は、オンプレミスの SharePoint ファーム、オンプレミス ネットワークと Azure IaaS の仮想ネットワークとの間のサイト間 VPN 接続、Azure IaaS 仮想マシンとして実行しているアプリケーション サーバー、およびアプリケーション サーバーと SharePoint ファームとの間のトラフィック フローを示しています。
@@ -139,7 +141,7 @@ Microsoft ピアリング BGP 関係:
   
 **図 5: オンプレミスの SharePoint ファームを SharePoint Online に移行する**
 
-![図 5: オンプレミスの SharePoint ファームを SharePoint Online に移行する](images/Network_Poster/Hairpin1.png)
+![図 5: オンプレミスの SharePoint ファームを SharePoint Online に移行する](media/Network-Poster/Hairpin1.png)
   
 図 5 は、Microsoft SaaS と Office 365 へのピアリング関係と、仮想ネットワーク上にアプリケーション サーバーを含む Azure IaaS へのピアリング関係を持つ ExpressRoute 接続の追加を示しています。オンプレミスの SharePoint ファームは、Office 365 に移行されています。
   
@@ -157,7 +159,7 @@ Microsoft ピアリング関係とプライベート ピアリング関係があ
   
 **図 6:SharePoint ファームが Office 365 の SharePoint Online に移行したときのトラフィック フロー**
 
-![図 6:SharePoint ファームが Office 365 の SharePoint Online に移行したときのトラフィック フロー](images/Network_Poster/Hairpin2.png)
+![図 6:SharePoint ファームが Office 365 の SharePoint Online に移行したときのトラフィック フロー](media/Network-Poster/Hairpin2.png)
 
   
 図 6 は、アプリケーション サーバーと Office 365 の SharePoint Online との間で、トラフィックがプライベート ピアリング関係を通じてアプリケーション サーバーからオンプレミスのネットワーク エッジに流れ、Microsoft ピアリング関係を通じてエッジから Office 365 に流れる様子を示しています。
@@ -186,7 +188,7 @@ Microsoft クラウド ピアリングの場所への ExpressRoute 接続を作�
   
 **図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例**
 
-![図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例](images/Network_Poster/MSNet1.png)
+![図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例](media/Network-Poster/MSNet1.png)
   
 図 7 は、2 つの場所 (米国の北西にある Location 1 と北東にある Location 2) を持つ組織を示しています。これらは、Any-to-Any の WAN プロバイダーで接続されています。この組織には、西海岸にある Microsoft ピアリングの場所への ExpressRoute 接続もあります。北東にある Location 2 から東海岸のデータセンターに向かうトラフィックは、組織の WAN で西海岸に移動し、Microsoft ピアリングの場所に移動してから、Microsoft クラウド ネットワーク経由で国を横断して東海岸のデータセンターに戻ります。この経路をすべて通過する必要があります。
   
@@ -194,7 +196,7 @@ Microsoft クラウド ピアリングの場所への ExpressRoute 接続を作�
   
 **図 8: 地域のデータ センターへの最適な配信を確保するために複数の ExpressRoute 接続を使用する**
 
-![図 8: 地域のデータ センターへの最適な配信を確保するために複数の ExpressRoute 接続を使用する](images/Network_Poster/MSNet2.png)
+![図 8: 地域のデータ センターへの最適な配信を確保するために複数の ExpressRoute 接続を使用する](media/Network-Poster/MSNet2.png)
   
 図 8 は、ExpressRoute 接続が 2 つある同じ組織を示しています。それぞれが地域的にローカルの Microsoft ピアリングの場所に接続しています。この構成では、北東にある Location 2 から東海岸のデータセンターに向かうトラフィックは、東海岸のピアリングの場所に直接移動し、Microsoft クラウド ネットワークに移動してから、東海岸のデータセンターに到達します。
   
@@ -224,7 +226,7 @@ Office 365 ベースの ExpressRoute 接続には、ExpressRoute Premium が必�
   
 **図 9: 全世界をカバーする Microsoft のクラウド ネットワーク**
 
-![図 9: 全世界をカバーする Microsoft のクラウド ネットワーク](images/Network_Poster/MSNet3.png)
+![図 9: 全世界をカバーする Microsoft のクラウド ネットワーク](media/Network-Poster/MSNet3.png)
   
 図 9 は、世界規模の Microsoft クラウド ネットワークの論理図を示しています。この図には、大陸間および地域間に広がるネットワークと、そのネットワークの相互接続が示されています。各大陸にある部分的な Microsoft クラウド ネットワークでは、グローバル企業が、地域拠点の支社からローカルの Microsoft ピアリングの場所までの ExpressRoute Premium 接続を作成します。
   

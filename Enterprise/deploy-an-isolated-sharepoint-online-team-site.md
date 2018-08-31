@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。'
-ms.openlocfilehash: c4bb272cc96ca86fc8bffc99f7c3e50033c06755
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
-ms.translationtype: HT
+ms.openlocfilehash: e71564248716523a53fcdda48f3a9fdc6349a2c5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914952"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -86,7 +87,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
   
 これで 3 つのサイトのアクセス グループの構成が完了します。
   
-![独立した SharePoint Online サイトの展開用の 3 つのアクセス グループ。](images/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![独立した SharePoint Online サイトの展開用の 3 つのアクセス グループ。](media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>手順 5:アクセス グループにユーザー アカウントを追加する
 
@@ -152,7 +153,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 以下に示すのが、でき上がった構成で、この構成にはユーザー アカウントとグループが設定された3 つのサイトのアクセス グループが含まれます。
   
-![ユーザー アカウントが設定された 3 つのアクセス グループ。](images/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![ユーザー アカウントが設定された 3 つのアクセス グループ。](media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>フェーズ 2:分離したチーム サイトを作成し構成する
 
@@ -222,7 +223,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 以下に示すのができ上がった構成で、この構成にはユーザー アカウントと Azure AD グループが設定された 3 つのアクセス グループを使用するように構成されたサイト用の 3 つの SharePoint グループ含まれます。
   
-![アクセス グループおよびユーザー アカウントが設定された、独立した SharePoint Online サイトの最終的な構成。](images/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![アクセス グループおよびユーザー アカウントが設定された、独立した SharePoint Online サイトの最終的な構成。](media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 いずれかのアクセス グループのグループ メンバーシップを介して、サイトのメンバーとともにサイトのリソースを使用して共同作業を行えるようになります。
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007年、ProClarity、および SharePoint Server 2007 は、サポートの最後に到達しました。BI ソリューションのアップグレードを計画するには、この資料を参照してください。
-ms.openlocfilehash: 98a02ba3945578171c97a616edd88fe0db1cc57f
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169789"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915102"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 のサポート終了ロードマップ
 
@@ -32,7 +32,7 @@ Office 2007 サーバーおよびアプリケーションは、サポート、�
 |SharePoint Server 2007 Service Pack 3  <br/> |2017 年 10 月 10 日  <br/> |
 |PerformancePoint Server 2007年のサービス パック 3  <br/> |2018 年 1 月 9 日  <br/> |
    
-退職後に到達する Office 2007 サーバーの詳細については、 [Office 2007 サーバーのアップグレードを計画する](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)を参照してください。
+詳細については、 [2007 のサーバーとクライアントの Office からアップグレードするためのリソース](upgrade-from-office-2007-servers-and-products.md)を参照してください。
   
 ## <a name="what-does-end-of-support-mean"></a>サポートの平均の最後は何でしょうか。
 
@@ -73,10 +73,10 @@ ProClarity、SharePoint Server 2007 SP3 には、PerformancePoint Server 2007 SP
   
 |**オプション**|**クラウドまたはオンプレミスか。**|
 |:-----|:-----|
-|[Excel で Excel を使用してオンライン](pps-2007-end-of-support.md#ExcelAndOnline) <br/> |両方  <br/> |
-|[BI の電源を使用します。](pps-2007-end-of-support.md#PowerBI) <br/> |両方  <br/> |
-|[Reporting Services を使用します。](pps-2007-end-of-support.md#SSRS) <br/> |設置型のみ  <br/> |
-|[PerformancePoint Services を使用します。](pps-2007-end-of-support.md#PPS) <br/> |設置型のみ  <br/> |
+|[オンラインの Excel を使用して Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |両方  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |両方  <br/> |
+|[レポート サービス](#use-reporting-services-on-premises) <br/> |設置型のみ  <br/> |
+|[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |設置型のみ  <br/> |
    
 ### <a name="use-excel-with-excel-online-in-the-cloud-or-on-premises"></a>クラウドまたはオンプレミス) Excel のオンラインで Excel を使用してください。
 
@@ -84,7 +84,7 @@ Excel のオンラインで-SharePoint server Excel Services とも呼ばれる-
   
 次の表は、Office 365 で SharePoint サーバーを使用する詳細については、次に Excel を使用する Excel を使用する場合の重要な利点を比較します。
   
-|**[(クラウド) に Office 365 を使用した Excel](pps-2007-end-of-support.md#ExcelO365)**|**[(設置型) の SharePoint サーバーで Excel](pps-2007-end-of-support.md#ExcelSPS)**|
+|**[(クラウド) に Office 365 を使用した Excel](#excel-with-office-365-in-the-cloud)**|**[(設置型) の SharePoint サーバーで Excel](#excel-with-sharepoint-server-on-premises)**|
 |:-----|:-----|
 |**Excel の最新、最大のバージョンを取得する**。、Office 365 では、最新バージョンの Excel で、強力なが含まれています、新しい種類のグラフ、迅速かつ容易に、グラフや表を作成し、データ ソースの詳細をサポートする機能を取得します。<br/> <br/> **セットアップは、はるかに簡単**です。Excel オンライン含まれています Office 365 で、ビジネスのために面倒な作業はありません。サインアップし、サインインするのには、高速起動および実行し、オンプレミスのサーバーをアップグレードするよりも効率的にすることです。<br/> <br/> **ユーザーがそのブックへのアクセスであるすべての場所**。ユーザーは、任意の場所から、コンピューター、スマート フォン、およびタブレットを使用してブックを安全に表示できます。<br/> <br/> **多くあります**。[Excel と Office 365 の BI 機能](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx)を参照してください。 <br/> |**グローバル設定を管理**します。SharePoint 管理者は、セキュリティ、負荷分散、セッション管理など、ブックのキャッシュ、外部データ接続のグローバル設定を指定できます。<br/> <br/> **PerformancePoint Services と Excel Services を使用することができます**。SharePoint サーバーのインストールの一部として Excel Services と PerformancePoint Services を構成して、PerformancePoint ダッシュ ボードで Excel Services レポートが含まれます。<br/> <br/> **多くあります**。[Excel と Excel Services (SharePoint Server 2013) でのビジネス ・ インテリジェンス](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx)を参照してください。 <br/> |
    
@@ -92,7 +92,7 @@ Excel のオンラインで-SharePoint server Excel Services とも呼ばれる-
 
 Office 365 に移動する場合、最新のサービスとアプリケーション、Excel 2016、Excel のオンラインなどがあります。PerformancePoint Services は、Office 365 で利用可能な Excel ブックまたは他のレポート コンテンツ、PerformancePoint ダッシュ ボードを交換するでしょう。良い知らせは、Excel 2016 には、多くの新しい種類のグラフと見事なダッシュ ボードを作成する Excel より簡単に。定期的に追加される新しい機能です。詳細については、 [Windows 用の Excel 2016 の新](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)を参照してください。
   
-50 席以上の Office 365 を購入するときに Microsoft fasttrack というチームに役立つの設定をします。詳細については、[マイクロソフトの FastTrack](https://go.microsoft.com/fwlink/?linkid=780698)を参照してください。
+50 席以上の Office 365 を購入するときに Microsoft fasttrack というチームに役立つの設定をします。詳細については、 [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)を参照してください。
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>(設置型) の SharePoint サーバーで Excel
 

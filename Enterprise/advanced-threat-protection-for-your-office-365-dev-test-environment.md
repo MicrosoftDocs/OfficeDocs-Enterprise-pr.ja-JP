@@ -1,5 +1,5 @@
 ---
-title: "Office 365 開発/テスト環境の Advanced Threat Protection"
+title: Office 365 開発/テスト環境の Advanced Threat Protection
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
-description: "概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。"
-ms.openlocfilehash: 6266960287d06ffafdf7ed1f6690396fd4cda9d5
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: '概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。'
+ms.openlocfilehash: 07411600db11c8eea825c0ef5b82ea1206d20e11
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914962"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Advanced Threat Protection
 
@@ -71,9 +74,9 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
     
 13. 本文で、「 **このサイト**」のテキストを選択して、ツールのハイパーリンク アイコンをクリックします。
     
-14. **URL** に、 **http://www.spamlink.contoso.com/** と入力して、 **[OK]**、 **[送信]** の順にクリックします。
+14. **URL**を入力**http://www.spamlink.contoso.com/**、 **[ok]** をクリックし、し、[**送信**] をクリックします。
     
-15. プライベート ブラウズ モードで Internet Explorer のインスタンスを個別に開き、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+15. 開いているプライベート ブラウズ モードで Internet Explorer の別のインスタンスには、Office 365 ポータル ([https://portal.office.com](https://portal.office.com))、し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
     
 16. メイン ポータル ページで、アプリ タイルをクリックし、 **[メール]** をクリックします。
     

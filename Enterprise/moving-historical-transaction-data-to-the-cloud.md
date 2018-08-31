@@ -1,5 +1,5 @@
 ---
-title: "トランザクション履歴データのクラウドへの移動"
+title: トランザクション履歴データのクラウドへの移動
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
-description: "概要: Contoso 社が SQL Server Stretch Database を実装することで、オンプレミスのデータ ストレージの必要性と毎日の運営コストを縮小した方法を示します。"
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: Contoso 社が SQL Server Stretch Database を実装することで、オンプレミスのデータ ストレージの必要性と毎日の運営コストを縮小した方法を示します。'
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915722"
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>トランザクション履歴データのクラウドへの移動
 
@@ -28,7 +31,7 @@ Contoso 社のエンタープライズ ストレージ システムには大量�
   
 **図 1:SQL Server Stretch Database**
 
-![ハイブリッド データ ソリューションとしての SQL Server Stretch Database](images/Contoso_Poster/StretchDB01.png)
+![ハイブリッド データ ソリューションとしての SQL Server Stretch Database](media/Contoso-Poster/StretchDB01.png)
   
 図 1 は、SQL クライアントから SQL Server 2016 を実行しているサーバーに T-SQL クエリを送信し、さらに Azure PaaS 内の Azure SQL Stretch Database に転送する方法を示しています。
   
@@ -52,7 +55,7 @@ Contoso 社では、次の手順を使用して、履歴データをクラウド
   
 **図 2:Contoso 社のデータセンター内のサーバーに対する Stretch Database の使用状況**
 
-![SQL Server を実行している 1 台のコンピューター向け Contoso 社の構成 SQL Server Stretch Database](images/Contoso_Poster/StretchDB02.png)
+![SQL Server を実行している 1 台のコンピューター向け Contoso 社の構成 SQL Server Stretch Database](media/Contoso-Poster/StretchDB02.png)
 
   
 図 2 は、Contoso 社のデータセンター内のアプリケーション サーバーに対するユーザー クエリが、Azure PaaS 内の Azure SQL Stretch Database に渡される SQL クエリになる様子を示しています。

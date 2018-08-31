@@ -1,5 +1,5 @@
 ---
-title: "Microsoft クラウド接続の一般的な要素"
+title: Microsoft クラウド接続の一般的な要素
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
-description: "概要: ネットワーク インフラストラクチャの一般的な要素とネットワークを準備する方法を理解します。"
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: '概要: ネットワーク インフラストラクチャの一般的な要素とネットワークを準備する方法を理解します。'
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915652"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft クラウド接続の一般的な要素
 
@@ -48,7 +51,7 @@ ms.lasthandoff: 02/13/2018
   
 **図 1: Microsoft クラウド接続のオプション**
 
-![図 1:Microsoft クラウド接続のオプション](images/Network_Poster/CommonElements.png)
+![図 1:Microsoft クラウド接続のオプション](media/Network-Poster/CommonElements.png)
 
   
 図 1 は、既存のインターネット パイプまたは ExpressRoute を使用して、どのようにオンプレミスのネットワークを Microsoft クラウド製品に接続するかを示します。インターネット パイプは DMZ を表し、次のコンポーネントを有する場合があります。

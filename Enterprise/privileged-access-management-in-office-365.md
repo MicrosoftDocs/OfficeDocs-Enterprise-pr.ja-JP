@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: このトピックを使用して、Office 365 にアクセス権限の管理機能の詳細について
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319208"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915392"
 ---
 # <a name="privileged-access-management-in-office-365"></a>特権にアクセス、Office 365 の管理
 
@@ -46,7 +48,7 @@ ms.locfileid: "20319208"
 ### <a name="step-1---create-an-approvers-group"></a>手順 1 - 承認者のグループを作成します。
 Office 365 管理ポータルから**のグループ**を選択します > **グループの追加**、特権を持つ既定のアクセスの承認者のメールが有効なセキュリティ グループを作成します。完了したら、作成し、承認者のグループを保存するのには、**追加**を選択します。
 
-![Office 365 管理ポータルにアクセス権限の承認者の画面](images/privileged-access-approvers-ui.png)
+![Office 365 管理ポータルにアクセス権限の承認者の画面](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > この時点では、管理者アクセス権を持つユーザーだけできるは Office 365 の管理者のアクセスからの要求を承認します。将来的に、承認者グループの一部になっているユーザーはアクセス権の要求を承認することになります。
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>グラフで、Microsoft Azure へのアクセスを管理
 
 > [!IMPORTANT]
-> このセクションでは、Office 365 の E5 と高度なコンプライアンスの Sku でのみ現在使用できるパブリック ベータ版の Microsoft Graph 機能の展開と構成のガイダンスについて説明します。
+> このセクションでは、プレビューにのみ現在利用可能な機能に関する詳細情報について説明します。
 
 グラフで、Microsoft Azure にアクセスを管理より細かいレベルの Office 365 のデータを細かく制御をより細かく組織を支援するサービスです。このシステムは、アプリケーション開発者はそのデータの分析を偽造できます。 
 

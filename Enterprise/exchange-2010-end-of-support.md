@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 は、サポート終了に近づいています。オンライン Exchange または Exchange Server の設置型の新しいバージョンへのアップグレードを準備するのには、この計画のロードマップをガイドとして使用します。
-ms.openlocfilehash: 240f93bfe27e3d564514626fc1d0f51ddeb7802d
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: e655edcc38723acd622fc6abc62a00d3f3e36738
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169889"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915192"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>サポート ロードマップの Exchange 2010 の終了
 

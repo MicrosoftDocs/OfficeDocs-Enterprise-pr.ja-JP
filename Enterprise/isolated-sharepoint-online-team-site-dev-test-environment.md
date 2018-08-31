@@ -1,5 +1,5 @@
 ---
-title: "Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト"
+title: Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,24 +9,27 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG
+- Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: "概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。"
-ms.openlocfilehash: 75a469b50603d5eb398d1e15d37c6745bc0a48b8
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
+ms.openlocfilehash: d2a75f3a3a410116c454892c9ecf3747fb3da53d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915052"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
  **概要:** Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。
   
-Office 365 の SharePoint Online チーム サイトは、共通のドキュメント ライブラリや OneNote ノートブックなどのサービスを使用してコラボレーションを行うための場所です。多くの場合、部門または組織全体での幅広いアクセスやコラボレーションが望まれます。しかし、小さなユーザー グループでコラボレーションを行うために、アクセスとアクセス許可を厳しく制御する場合もあります。
+Office 365 の SharePoint Online チーム サイトは、共通のドキュメント ライブラリや OneNote ノートブックなどのサービスを使用してコラボレーションを行うための場所です。多くの場合、部門または組織全体での幅広いアクセスやコラボレーションが望まれます。しかし、小さなユーザー グループでコラボレーションを行うためにアクセスとアクセス許可を厳しく制御したい場合もあります。
   
 SharePoint Online チーム サイトへのアクセスとユーザーが実行できる操作は、SharePoint グループとアクセス許可レベルによって制御されます。既定では、SharePoint Online サイトには、3 つのアクセス レベルがあります。
   
-- **メンバー**。サイトでリソースを表示、作成、変更できるユーザー。
+- **メンバー** 。サイトでリソースを表示、作成、変更できるユーザー。
     
 - **所有者** 。権限の変更を含め、サイトを完全に制御できるユーザー。
     
@@ -34,7 +37,7 @@ SharePoint Online チーム サイトへのアクセスとユーザーが実行�
     
 この記事では、ProjectX という秘密調査プロジェクトのための、分離した SharePoint Online チーム サイトの構成について順を追って説明します。アクセス要件は、次のとおりです。
   
-- グループ メンバーシップによって制御される SharePoint の編集と表示のアクセス許可レベルを持つプロジェクトのメンバーだけがサイトとそのコンテンツ (ドキュメント、OneNote ノートブック、ページ) にアクセスできます。
+- グループ メンバーシップによって制御される SharePoint の編集と表示の権限レベルを持つプロジェクトのメンバーだけがサイトとそのコンテンツ (ドキュメント、OneNote ノートブック、ページ) にアクセスできます。
     
 - サイトの管理 (サイト レベルの権限の変更を含む) を実行できるのは、サイトの作成者とサイトの管理者グループのメンバーだけです。
     
@@ -57,7 +60,7 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
 シミュレーションのエンタープライズ構成で分離した SharePoint Online チーム サイトを作成する場合は、[Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md) の手順に従ってください。
   
 > [!NOTE]
-> 分離した SharePoint Online サイトの作成には、シミュレーションのエンタープライズ開発/テスト環境は必要ありません。シミュレーションのエンタープライズ開発/テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Windows サーバー AD フォレスト用のディレクトリ同期が含まれています。この機能は、分離した SharePoint Online サイトをテストし、一般的な組織と類似した環境で試していただけるよう、オプションとしてここで提供されています。 
+> 分離した SharePoint Online サイトの作成には、シミュレーションのエンタープライズ開発/テスト環境は必要ありません。その環境には、インターネットに接続されたシミュレーションのイントラネット、Windows サーバー AD フォレスト用のディレクトリ同期が含まれています。この機能は、一般的な組織と類似した環境で分離した SharePoint Online サイトをテストしてお試しいただけるようオプションとしてここで提供されています。 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>フェーズ 2: ユーザー アカウントとアクセス グループを作成する
 
@@ -141,21 +144,21 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
   
 **図 1**
 
-![分離 SharePoint Online グループ サイトの Office 365 グループおよびそのメンバーシップ](images/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![分離 SharePoint Online グループ サイトの Office 365 グループおよびそのメンバーシップ](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
   
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>フェーズ 3: 新しい ProjectX SharePoint Online チーム サイトを作成して分離させる
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
   
-1. ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. ローカル コンピューター (軽量構成) のいずれかのブラウザーを使用してまたは CLIENT1 の (シミュレートされたエンタープライズ構成の場合)、Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com)) グローバル管理者アカウントを使用して。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい SharePoint タブで、 **[+ サイトの作成]** をクリックします。
     
-4. **[チーム サイト名]** に「**ProjectX**」と入力します。**[プライバシーの設定]** で、**[非公開 - メンバーのみがこのサイトにアクセス可能]** を選択します。
+4. **[チーム サイト名]** に「 **ProjectX**」と入力します。 **[プライバシーの設定]** で、 **[非公開 - メンバーのみがこのサイトにアクセス可能]** を選択します。
     
-5. **[チーム サイトの説明]** に、「**ProjectX 用の SharePoint サイト**」と入力し、**[次へ]** をクリックします。
+5. **[チーム サイトの説明]** に、「 **ProjectX 用の SharePoint サイト**」と入力し、 **[次へ]** をクリックします。
     
 6. **[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。
     
@@ -207,7 +210,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
   
 **図 2**
 
-![分離 SharePoint Online グループ サイトの SharePoint Online グループおよびそのメンバーシップ](images/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![分離 SharePoint Online グループ サイトの SharePoint Online グループおよびそのメンバーシップ](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   
 デザイナーのリーダーのユーザー アカウントを使用したアクセスをデモンストレーションします。
   
@@ -215,15 +218,15 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
     
-3. デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+3. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com)) デザイナーの潜在顧客のアカウント名とパスワードを使用します。
     
 4. タイルのリストで、 **[SharePoint]** をクリックします。
     
-5. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「**ProjectX**」と入力し、検索をアクティブ化した後、**[ProjectX]** チーム サイトをクリックします。ProjectX チーム サイトのブラウザーに新しいタブが表示されます。
+5. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「 **ProjectX**」と入力し、検索をアクティブ化した後、 **[ProjectX]** チーム サイトをクリックします。ProjectX チーム サイトのブラウザーに新しいタブが表示されます。
     
-6. 設定アイコンをクリックします。**[サイトの権限]** にオプションがありません。サイトの権限を変更できるのは ProjectX-Admins グループのメンバーだけなので、これは正常です。
+6. 設定アイコンをクリックします。 **[サイトの権限]** にオプションがありません。サイトの権限を変更できるのは ProjectX-Admins グループのメンバーだけなので、これは正常です。
     
-7. メモ帳またはお好きなテキスト エディターを開きます。
+7. お好きなメモ帳やテキスト エディターを開きます。
     
 8. ProjectX チーム サイトの URL をコピーし、メモ帳やテキスト エディターの新しい行に貼り付けます。
     
@@ -233,9 +236,9 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 11. ブラウザーの **[ProjectX-Documents]** タブで、 **[新規] > [Word 文書]** の順にクリックします。
     
-12. **[Word Online]** ページでテキストを入力し、状態が **[保存済み]** になるのを待ちます。その後、ブラウザーの戻るボタンをクリックして、ページを最新の情報に更新します。**[ドキュメント]** フォルダーで新しい **[Document.docx]** が表示されます。
+12. **[Word Online]** ページでテキストを入力し、状態が **[保存済み]** になるのを待ちます。その後、ブラウザーの戻るボタンをクリックして、ページを最新の情報に更新します。 **[ドキュメント]** フォルダーで新しい **[Document.docx]** が表示されます。
     
-13. **[Document.docx]** ドキュメントの省略記号をクリックし、**[リンクの取得]** をクリックします。
+13. **[Document.docx]** ドキュメントの省略記号をクリックし、 **[リンクの取得]** をクリックします。
     
 14. **['Document.docx' の共有]** ダイアログ ボックスの URL をコピーし、メモ帳かテキスト エディターの新しい行に貼り付けた後、 **['Document.docx' の共有]** ダイアログ ボックスを閉じます。
     
@@ -245,35 +248,35 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
   
-1. 開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com)) の開発担当副社長のアカウント名とパスワードを使用します。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
-3. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「**ProjectX**」と入力し、検索をアクティブ化した後、**[ProjectX]** チーム サイトをクリックします。ProjectX チーム サイトのブラウザーに新しいタブが表示されます。
+3. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「 **ProjectX**」と入力し、検索をアクティブ化した後、 **[ProjectX]** チーム サイトをクリックします。ProjectX チーム サイトのブラウザーに新しいタブが表示されます。
     
-4. **[ドキュメント]** をクリックし、**[Document.docx]** ファイルをクリックします。
+4. **[ドキュメント]** をクリックし、 **[Document.docx]** ファイルをクリックします。
     
-5. ブラウザーの **[Document.docx]** タブで、テキストの変更を試みます。"**このドキュメントは読み取り専用です。**" というメッセージが表示されます。開発 VP のユーザー アカウントにはサイトの表示権限しかないため、これは正常です。
+5. ブラウザーの **[Document.docx]** タブで、テキストの変更を試みます。" **このドキュメントは読み取り専用です。**" というメッセージが表示されます。開発 VP のユーザー アカウントにはサイトの表示権限しかないため、これは正常です。
     
-6. ブラウザーの **[Document.docx]** タブ、**[ProjectX-Documents]** タブ、**[SharePoint]** タブを閉じます。
+6. ブラウザーの **[Document.docx]** タブ、 **[ProjectX-Documents]** タブ、 **[SharePoint]** タブを閉じます。
     
 7. **[Microsoft Office Home]** タブをクリックし、 **[開発 VP]** の名前をクリックした後、 **[サインアウト]** をクリックします。
     
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
   
-1. User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com))、3 のユーザー アカウント名とパスワードを使用します。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
-3. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「**ProjectX**」と入力し、検索をアクティブ化します。"**検索に一致するものがここにありません。**" というメッセージが表示されます。
+3. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「 **ProjectX**」と入力し、検索をアクティブ化します。" **検索に一致するものがここにありません。**" というメッセージが表示されます。
     
-4. メモ帳またはテキスト エディターで開いたインスタンスから、ProjectX サイトの URL を、ブラウザーのアドレス バーにコピーし、**Enter** キーを押します。**[アクセスは拒否されました]** というページが表示されます。
+4. メモ帳またはテキスト エディターで開いたインスタンスから、ProjectX サイトの URL を、ブラウザーのアドレス バーにコピーし、 **Enter** キーを押します。 **[アクセスは拒否されました]** というページが表示されます。
     
-5. メモ帳またはテキスト エディターから、ProjectX Documents フォルダーの URL を、ブラウザーのアドレス バーにコピーし、**Enter** キーを押します。**[アクセスは拒否されました]** というページが表示されます。
+5. メモ帳またはテキスト エディターから、ProjectX Documents フォルダーの URL を、ブラウザーのアドレス バーにコピーし、 **Enter** キーを押します。 **[アクセスは拒否されました]** というページが表示されます。
     
-6. メモ帳またはテキスト エディターから、Documents.docx ファイルの URL を、ブラウザーのアドレス バーにコピーし、**Enter** キーを押します。**[アクセスは拒否されました]** というページが表示されます。
+6. メモ帳またはテキスト エディターから、Documents.docx ファイルの URL を、ブラウザーのアドレス バーにコピーし、 **Enter** キーを押します。 **[アクセスは拒否されました]** というページが表示されます。
     
-7. ブラウザーの **[SharePoint]** タブを閉じ、**[Microsoft Office Home]** タブをクリックし、**[User 3]** の名前をクリックし、**[サインアウト]** をクリックします。
+7. ブラウザーの **[SharePoint]** タブを閉じ、 **[Microsoft Office Home]** タブをクリックし、 **[User 3]** の名前をクリックし、 **[サインアウト]** をクリックします。
     
 これで、分離した SharePoint Online サイトをさらにお試しいただけます。
   

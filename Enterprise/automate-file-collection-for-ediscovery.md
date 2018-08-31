@@ -11,12 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: 概要:電子情報開示用にユーザーのコンピューターのファイル収集を自動化する方法について説明します。
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: HT
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915752"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>電子情報開示用にファイル収集を自動化する
 
@@ -37,21 +40,21 @@ ms.lasthandoff: 04/20/2018
   
 次の図は、ソリューションのすべての手順と要素を順を追って説明しています。
   
-![自動ファイル コレクション ソリューションの概要](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![自動ファイル コレクション ソリューションの概要](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |****凡例****||
 |:-----|:-----|
-|![マゼンタの吹き出し 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|グループ ポリシー オブジェクト (GPO) を作成し、コレクションのログオン スクリプトと関連付ける。  <br/> |
-|![マゼンタの吹き出し 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   GPO セキュリティ フィルターを構成して、管理者グループにのみ GPO を適用する <br/> |
-|![マゼンタの吹き出し 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|保管担当者がログオンし、GPO が実行され、コレクションのログオン スクリプトが呼び出される。  <br/> |
-|![マゼンタの吹き出し 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|コレクションのログオン スクリプトは、保管担当者のコンピューターにローカルにアタッチされたドライブのすべてのインベントリを作成し、目的のファイルを検索し、その場所を記録します。  <br/> |
-|![マゼンタの吹き出し 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|コレクションのログオン スクリプトは、ステージング サーバー上の非表示のファイル共有に、インベントリが作成されたファイルをコピーします。  <br/> |
-|![マゼンタの吹き出し 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (オプション A) PST インポート スクリプトを手動で実行して、収集した PST ファイルを Exchange Server 2013 にインポートします。 <br/> |
-|![マゼンタの吹き出し 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(オプション B) Office 365 インポート ツールとプロセスを使用して、収集した PST ファイルを Exchange Online にインポートします。  <br/> |
-|![マゼンタの吹き出し 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|MoveToColdStorageSystem Center Orchestrator 2012 R2 Runbook での長期保存用に、収集したファイルをすべて Azure ファイル共有に移動します。 <br/> |
-|![マゼンタの吹き出し 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|SharePoint 2013 によりコールド ストレージ ファイル共有にファイルのインデックスを作成します。  <br/> |
-|![マゼンタの吹き出し 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|コールド ストレージとオンプレミスの Exchange Server 2013 のコンテンツで eDiscovery を実行します。  <br/> |
-|![マゼンタの吹き出し 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Office 365 のコンテンツで eDiscovery を実行します。  <br/> |
+|![マゼンタの吹き出し 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|グループ ポリシー オブジェクト (GPO) を作成し、コレクションのログオン スクリプトと関連付ける。  <br/> |
+|![マゼンタの吹き出し 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)|   GPO セキュリティ フィルターを構成して、管理者グループにのみ GPO を適用する <br/> |
+|![マゼンタの吹き出し 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|保管担当者がログオンし、GPO が実行され、コレクションのログオン スクリプトが呼び出される。  <br/> |
+|![マゼンタの吹き出し 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|コレクションのログオン スクリプトは、保管担当者のコンピューターにローカルにアタッチされたドライブのすべてのインベントリを作成し、目的のファイルを検索し、その場所を記録します。  <br/> |
+|![マゼンタの吹き出し 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|コレクションのログオン スクリプトは、ステージング サーバー上の非表示のファイル共有に、インベントリが作成されたファイルをコピーします。  <br/> |
+|![マゼンタの吹き出し 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (オプション A) PST インポート スクリプトを手動で実行して、収集した PST ファイルを Exchange Server 2013 にインポートします。 <br/> |
+|![マゼンタの吹き出し 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(オプション B) Office 365 インポート ツールとプロセスを使用して、収集した PST ファイルを Exchange Online にインポートします。  <br/> |
+|![マゼンタの吹き出し 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|MoveToColdStorageSystem Center Orchestrator 2012 R2 Runbook での長期保存用に、収集したファイルをすべて Azure ファイル共有に移動します。 <br/> |
+|![マゼンタの吹き出し 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|SharePoint 2013 によりコールド ストレージ ファイル共有にファイルのインデックスを作成します。  <br/> |
+|![マゼンタの吹き出し 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|コールド ストレージとオンプレミスの Exchange Server 2013 のコンテンツで eDiscovery を実行します。  <br/> |
+|![マゼンタの吹き出し 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Office 365 のコンテンツで eDiscovery を実行します。  <br/> |
    
 ## <a name="prerequisites"></a>前提条件
 

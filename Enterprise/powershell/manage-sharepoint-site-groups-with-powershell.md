@@ -14,11 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '使用 Office 365 PowerShell を概要: SharePoint Online サイト グループを管理します。'
-ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915352"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイト グループを管理する
 
@@ -32,12 +33,12 @@ Office 365 の管理ページを使用できますが、SharePoint Online サイ
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>SharePoint を Office 365 の PowerShell でオンラインに表示
 
-SharePoint Online 管理センターでは、サイト グループを管理するためのいくつかの簡単に使用できる方法があります。たとえば、グループ、および https に対して、グループのメンバーを参照する\://litwareinc.sharepoint.com/sites/finance のサイトです。ために何が必要です。
+SharePoint Online 管理センターでは、サイト グループを管理するためのいくつかの簡単に使用できる方法があります。たとえばのグループ、およびグループのメンバーを参照する、`https://litwareinc.sharepoint.com/sites/finance`サイトです。ために何が必要です。
 
 1. Office 365 管理センターで、[**リソース**] をクリックします > **のサイト**サイトの URL をクリックします。
-2. サイト コレクション] ダイアログ ボックスで**、このサイト**をクリックします。
-3. [サイト] ページで (ページの右上隅にあります)**の設定**] アイコンをクリックし、[**サイトの設定**] をクリックします。</br>
-![SharePoint Online サイトの設定](images/spo-site-settings.png)</br>
+2. [サイト コレクション] ダイアログ ボックスで **[このサイトに移動]** をクリックします。
+3. サイト ページで、**[設定]** アイコン (ページの右上隅にある) をクリックしてから、**[サイトの設定]** をクリックします。</br>
+![SharePoint Online サイトの設定](media/spo-site-settings.png)</br>
 4. [サイトの設定] ページで、[**ユーザーと権限****のサイトのアクセス許可**をクリックします。
 
 参照する次のサイトでも、このプロセスを繰り返します。
@@ -66,9 +67,9 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 どちらの場合も、次のように表示されるはずです。
 
-![SharePoint Online サイト グループ](images/SPO-site-groups.png)
+![SharePoint Online サイト グループ](media/SPO-site-groups.png)
 
-サイトの https 用に作成されたすべてのグループは、\:/すべてのユーザーだけでなく、litwareinc.sharepoint.com/sites/finance、それらのグループに割り当てられているとします。グループ名は、そのメンバーからの別のグループ名を支援するのには黄色では。
+サイト用に作成されたすべてのグループは、 `https://litwareinc.sharepoint.com/sites/finance`、およびそれらのグループに割り当てられているすべてのユーザーです。グループ名は、そのメンバーからの別のグループ名を支援するのには黄色では。
 
 別の例として、グループ、およびすべての SharePoint Online サイトのすべてのグループのメンバーシップを一覧表示するコマンドのセットです。
 
@@ -90,9 +91,9 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>関連項目
 
-[SharePoint のオンライン PowerShell への接続します。](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[SharePoint Online PowerShell に接続する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[SharePoint Online サイトを作成し、Office 365 の PowerShell でユーザーを追加します。](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する](manage-sharepoint-users-and-groups-with-powershell.md)
 

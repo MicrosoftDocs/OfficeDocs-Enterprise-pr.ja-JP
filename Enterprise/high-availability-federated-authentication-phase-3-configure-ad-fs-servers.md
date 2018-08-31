@@ -1,5 +1,5 @@
 ---
-title: "連合認証フェーズ 3 を構成する AD FS サーバーの高可用性を実現"
+title: 連合認証フェーズ 3 を構成する AD FS サーバーの高可用性を実現
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: "概要: は、作成し、Microsoft Azure の Office 365 のフェデレーション認証の高可用性、Active Directory フェデレーション サービス (AD FS) サーバーを構成します。"
-ms.openlocfilehash: a9daecddb572bf2432d68ae76ed8d81571ef4b79
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用に、Active Directory フェデレーション サービス (AD FS) を作成して構成します。
+ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915432"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3:AD FS サーバーを構成する
 
- **の概要:**作成し、Microsoft Azure の Office 365 のフェデレーション認証の高可用性、Active Directory フェデレーション サービス (AD FS) サーバーを構成します。
+ **概要:** Microsoft Azure で Office 365 の高可用性フェデレーション認証用に、Active Directory フェデレーション サービス (AD FS) を作成して構成します。
   
 Azure インフラストラクチャ サービスに Office 365 フェデレーション認証の高可用性を展開するために、このフェーズでは、内部ロード バランサーと 2 つの AD FS サーバーを作成します。
   
@@ -45,7 +46,7 @@ Azure インフラストラクチャ サービスに Office 365 フェデレー�
 テーブル M が定義されていることを思い出して[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)とテーブル R、V、S、I、および A で[の高可用性の統合認証フェーズ 1: Azure の構成](high-availability-federated-authentication-phase-1-configure-azure.md)。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure の PowerShell の最新バージョンを使用します。[Azure の PowerShell コマンドレットの入門](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)を参照してください。 
+> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 最初に、サーバーを作成する、Azure の内部ロード バランサーの 2 つの AD FS です。削除して、変数の値を指定します\<と > の文字。すべての適切な値を指定すると、ときに、Azure の PowerShell コマンド プロンプトまたは PowerShell ISE で結果のブロックを実行します。
   
@@ -128,7 +129,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> これらの仮想マシンは、イントラネット アプリケーションには、ためいないパブリック IP アドレスまたは DNS ドメイン名のラベルが割り当てられているそしてインターネットに公開します。ただし、つまり、Azure ポータルからのそれらに接続できません。仮想マシンのプロパティを表示するときは、[**接続**] オプションは使用できません。プライベート IP アドレスまたはイントラネット DNS 名を使用して仮想マシンに接続するリモート デスクトップ接続の付属品、または別のリモート デスクトップ ツールを使用します。
+> これらの仮想マシンはイントラネット アプリケーション向けのため、パブリック IP アドレスや DNS ドメイン名のラベルが割り当てられていません。また、インターネットに公開もされていません。ただし、これは Azure ポータルから接続できないことも意味します。仮想マシンのプロパティを表示したときに、**[接続]** オプションは使用できない状態になります。リモート デスクトップ接続アクセサリなどのリモート デスクトップ ツールを使用して、仮想マシンのプライベート IP アドレスまたはイントラネット DNS 名で仮想マシンに接続します。
   
 仮想マシンごとに、お好みのリモート デスクトップ クライアントを使用して、リモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
@@ -143,13 +144,13 @@ Restart-Computer
 
 次に、このフェーズが正常に完了した結果の構成を示します。コンピューター名にはプレース ホルダーを使用しています。
   
-**フェーズ 3: AD FS サーバーと Azure で、高可用性の統合認証インフラストラクチャの内部ロード バランサー**
+**フェーズ 3:Azure での高可用性フェデレーション認証インフラストラクチャ用の AD FS サーバーと内部ロード バランサー**
 
-![AD FS サーバーによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ 3](images/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![AD FS サーバーによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ 3](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>次の手順
 
-使用[高可用性の統合認証フェーズ 4: web アプリケーションのプロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)この作業負荷の構成を続行します。
+「[High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)」を使用して、このワークロードの構成を続行します。
   
 ## <a name="see-also"></a>関連項目
 

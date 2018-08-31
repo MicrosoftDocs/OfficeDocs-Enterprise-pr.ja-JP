@@ -1,5 +1,5 @@
 ---
-title: "Azure PaaS のハイブリッド クラウド シナリオ"
+title: Azure PaaS のハイブリッド クラウド シナリオ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: "概要: Microsoft のサービスとしてのプラットフォーム (PaaS) ベースの Azure 内クラウド製品のハイブリッド アーキテクチャとシナリオについて説明します。"
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: Microsoft のサービスとしてのプラットフォーム (PaaS) ベースの Azure 内クラウド製品のハイブリッド アーキテクチャとシナリオについて説明します。'
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915012"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS のハイブリッド クラウド シナリオ
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **図 1:Microsoft PaaS ベースの Azure 内ハイブリッド シナリオ**
 
-![Microsoft PaaS ベースの Azure 内ハイブリッド シナリオ](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Microsoft PaaS ベースの Azure 内ハイブリッド シナリオ](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 アーキテクチャの各レイヤーについて:
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 02/09/2018
   
 **図 2:Azure PaaS ベースのハイブリッド アプリケーション**
 
-![Azure PaaS ベースのハイブリッド アプリケーション](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Azure PaaS ベースのハイブリッド アプリケーション](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 図 2 では、オンプレミスのネットワークは、サーバー上、およびプロキシ サーバーを含む DMZ 上のストレージまたはアプリをホストします。インターネット経由で、または ExpressRoute に接続して、Azure PaaS サービスに接続されています。
   
@@ -78,7 +79,7 @@ Azure アプリは、次の資格情報を使用できます。
   
 **図 3:Azure PaaS ベースのハイブリッド アプリケーションの例**
 
-![Azure PaaS ベースのハイブリッド アプリケーション例](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Azure PaaS ベースのハイブリッド アプリケーション例](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 図 3 では、オンプレミスのネットワークは、LOB アプリをホストします。Azure PaaS は、カスタム モバイル アプリをホストします。インターネット上のスマートフォンは Azure 内のカスタム モバイル アプリにアクセスし、このアプリはオンプレミスの LOB アプリにデータ要求を送信します。
   
@@ -104,7 +105,7 @@ Stretch Database は SQL Server 2016 の機能であり、顧客の発注情報�
   
 **図 4:Stretch Database および SQL Server 2016**
 
-![Stretch Database および SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![Stretch Database および SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 図 4 では、オンプレミスのネットワークは、小規模なローカル データベースを使用する SQL Server 2016 を実行しているサーバーをホストします。Azure PaaS は、データベースのストレッチ部分を含む Azure SQL Server Stretch Database のインスタンスをホストします。オンプレミスのユーザーからオンプレミスの SQL Server に送信された T-SQL クエリは、Azure SQL Stretch Database に安全に転送され、要求元のユーザーに結果が返されます。
   

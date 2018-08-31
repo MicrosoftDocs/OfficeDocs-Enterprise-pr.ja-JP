@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: '概要: は、世界中のオフィスの階層型の構造と、企業として Contoso 社を理解します。'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915862"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
@@ -30,7 +31,7 @@ Contoso 社の世界規模の組織では、次の場所にオフィスがあり
   
 **世界中の図 1: contoso 社のオフィス**
 
-![世界各国の Contoso 社のオフィス](images/Contoso_Poster/Contoso_WW_Org.png)
+![世界各国の Contoso 社のオフィス](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 図 1 は、パリにある本社と、さまざまな大陸にある地域ハブおよびサテライト オフィスを示しています。
@@ -51,7 +52,9 @@ Contoso 社の世界規模の組織では、次の場所にオフィスがあり
     
 - サテライト オフィス
     
-    サテライト オフィスは 80% の売上が含まれているサポート スタッフと、主要都市またはサブ領域の contoso 社の顧客の物理的およびオンサイトのプレゼンスを提供します。各サテライト オフィスは、高帯域幅の WAN リンクを使用して地域のハブに接続されています。
+    サテライト オフィスには 80% の販売およびサポート スタッフがいて、主要都市または地区で Contoso 社の顧客に物理的およびオンサイトのプレゼンスを提供します。各サテライト オフィスは、高帯域幅の WAN リンクで地域ハブに接続されています。
+
+
     
     各サテライト オフィスには平均 250 人のワーカーがいます。
     
@@ -65,13 +68,13 @@ Contoso 社の IT 設計者で次の要素が識別される場合、マイク�
     
     ネットワークには、マイクロソフトのクラウド サービスと負荷のピーク時のパフォーマンスを十分な帯域幅への接続が含まれています。いくつかの接続がローカルのインターネット接続を経由して、contoso 社のプライベート ネットワークのインフラストラクチャ全体にわたっていくつかになります。
     
-    詳細については、[エンタープライズ設計者向けのマイクロソフト クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)のポスターを参照してください。
+    詳細については、[Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md) ポスターを参照してください。
    
 - ID
     
     Contoso 社では、Windows サーバーの AD フォレストを使用して、その内部 id プロバイダーのと、サード パーティのプロバイダーの顧客やパートナーもフェデレーションします。Contoso 社では、マイクロソフトのクラウド サービスのアカウントの内部のセットを活用する必要があります。顧客やパートナーのクラウド ベースのアプリケーションへのアクセスには、サードパーティの id プロバイダーの場合にもを活用する必要があります。
     
-    詳細については、[マイクロソフトのクラウド Id](microsoft-cloud-it-architecture-resources.md#identity)エンタープライズ設計者のポスターを参照してください。
+    詳細については、[Microsoft Cloud Identity for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity) ポスターを参照してください。
     
 - セキュリティ
     

@@ -1,5 +1,5 @@
 ---
-title: "ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する"
+title: ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: "Office 365 PowerShell を使って、ライセンスのあるユーザー アカウントとライセンスのないユーザー アカウントを表示する方法について説明します。"
-ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: Office 365 PowerShell を使って、ライセンスのあるユーザー アカウントとライセンスのないユーザー アカウントを表示する方法について説明します。
+ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914872"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する
 
@@ -57,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>詳細版 (詳細な説明付きの手順)
 
-Office 365 ユーザー アカウントと Office 365 ライセンスは、1 対 1 で対応している必要はありません。Office 365 のライセンスがない Office 365 ユーザーや、どのユーザーにも割り当てられいない Office 365 ライセンスが存在する可能性があります (実際に、単一のユーザー アカウントが*複数の* Office 365 ライセンスを持つこともあります)。新しい Office 365 ユーザー アカウントを作成するとき (詳しくは「[Windows PowerShell による Office 365 ユーザーのライセンス取得](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)」をご覧ください)、そのユーザーにライセンスを割り当てる必要はありません。この場合、新しいユーザーのアカウントは有効ですが、Office 365 にサインインすることはできません。サインインしようとすると、次のようなメッセージが表示されます。
+Office 365 ユーザー アカウントと Office 365 のライセンスは、1 対 1 対応する必要がある: Office 365 のユーザーが Office 365 のライセンスではありませんすることは、まだ割り当てられていないユーザーに Office 365 のライセンスを所有することができます。(実際には、単一のユーザー アカウントを持つことも*複数*Office 365 のライセンスです。)作成するとき、新しい Office 365 ユーザー アカウント ( [Office 365 の PowerShell でのユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts-with-office-365-powershell.md)詳細については記事を参照してください) をそのユーザーにライセンスを割り当てる必要はありません: 新しいユーザーには、有効なアカウントが彼または彼女が sig をことはできませんOffice 365 の n です。サインインしようとする場合、次のようなものが表示されます。
   
-![有効な Office 365 ライセンスを持たないユーザー。](images/o365_powershell_no_license.png)
+![有効な Office 365 ライセンスを持たないユーザー。](media/o365-powershell-no-license.png)
   
 同様に、有給休暇や育児休暇などで長期休暇を取るユーザーがいるとします。そのような場合は、ユーザーのライセンスを削除しますが、ユーザー アカウントはそのままにしておくことができます (つまり、住所や電話番号などのプロパティ値をすべてそのままにしておくことができます)。こうすると、そのライセンスを他のユーザー (休暇を取った人の代わりに働く臨時社員など) に割り当てることができます。ユーザーが仕事に復帰した時点で新しいライセンスを発行すれば、休暇を取る前と同じように仕事に復帰できます。
   
@@ -125,7 +126,6 @@ AlexD@litwareinc.com        Alex Darrow                     True
 ご覧のとおり、Belinda Newman の情報は返されません。なぜかというと、Belinda のアカウントの **isLicensed** プロパティは、 `True` に設定されていないからです。
   
 ## <a name="see-also"></a>関連項目
-<a name="SeeAlso"> </a>
 
 これらの手順で使用するコマンドレットの詳細については、次のトピックをご覧ください。
   

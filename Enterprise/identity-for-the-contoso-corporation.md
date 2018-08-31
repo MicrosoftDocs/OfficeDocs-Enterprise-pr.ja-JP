@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation の ID"
+title: Contoso Corporation の ID
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,26 +11,28 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
-description: "Contoso 社の IDaaS を利用して地理的に分散、冗長化されたユーザーと認証の概要を理解します。"
-ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: Contoso 社の IDaaS を利用して地理的に分散、冗長化されたユーザーと認証の概要を理解します。
+ms.openlocfilehash: 25e708147bda51fa8f8b4d0ea5e83eb4a9cd10b0
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915442"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation の ID
 
- **の概要:**Contoso 社の IDaaS を利用して地理的に分散、冗長化されたユーザーと認証を理解します。
+ **の概要:** Contoso 社の IDaaS を利用して地理的に分散、冗長化されたユーザーと認証を理解します。
   
 マイクロソフトは、サービス (IDaaS) として、クラウド サービスの間で Id を提供します。クラウドの包括的なインフラストラクチャを導入するには、contoso 社の IDaaS ソリューション必要があります、設置型の id プロバイダーを活用を既存の信頼できる、サードパーティの id プロバイダーとのフェデレーションの認証が含まれてできます。
   
 ## <a name="contosos-windows-server-ad-forest"></a>Contoso 社の Windows サーバーの AD フォレスト
 
-Contoso 社では、contoso.com の 7 つのドメインがあり、世界の地域ごとに 1 つの単一の Windows サーバー ・ Active Directory (AD) フォレストを使用します。本社、地域のハブのオフィス、サテライト オフィスなどには、ローカルの認証と承認のためのドメイン コント ローラーが含まれています。
-  
-**図 1: contoso 社のフォレストとドメインの世界**
+Contoso 社では、contoso.com に対して 7 つのドメインを持つ単一の Windows Server Active Directory (AD) フォレストを使用しており、世界の地域ごとに 1 つのドメインを使用します。本社、地域ハブ オフィス、サテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
 
-![世界各地の Contoso 社の Windows サーバーの AD フォレストとドメイン](images/Contoso_Poster/Contoso_WW_ID.png)
+  
+**図 1:Contoso 社の世界的なフォレストとドメイン**
+
+![世界各地の Contoso 社の Windows サーバーの AD フォレストとドメイン](media/Contoso-Poster/Contoso-WW-ID.png)
   
 図 1 では、地域ハブを含む世界各地の地域ドメインを持つ Contoso 社のフォレストを示しています。
   
@@ -38,15 +40,19 @@ Contoso 社では、クラウドベースのアプリおよびワークロード
   
 ## <a name="contosos-federated-authentication-infrastructure"></a>Contoso 社のフェデレーション認証インフラストラクチャ
 
-Contoso を使用します。
+Contoso 社では次のことが可能です。
+ 
+
+
+
   
 - 顧客は Microsoft、Facebook、または Google のメール アカウントを使用してパブリック Web サイトにサインインできます。
     
 - ベンダーおよびパートナーは、LinkedIn、Salesforce、または Google のメール アカウントを使用してパートナー エクストラネットにサインインできます。
     
-**図 2: contoso 社のお客様とパートナーのフェデレーション認証サポート**
+**図 2:Contoso 社の顧客とパートナーのフェデレーション認証のサポート**
 
-![顧客とパートナーのフェデレーション認証をサポートする Contoso 社の既存のインフラストラクチャ](images/Contoso_Poster/Federated_ID.png)
+![顧客とパートナーのフェデレーション認証をサポートする Contoso 社の既存のインフラストラクチャ](media/Contoso-Poster/Federated-ID.png)
   
 図 2 は、公開 Web サイト、パートナーのエクストラネット、および AD FS サーバーのセットを含む Contoso 社の DMZ を示しています。DMZ は、顧客、パートナー、およびインターネット サービスを含むインターネットに接続されています。
   
@@ -58,9 +64,9 @@ Contoso 社では、Azure の Web アプリケーションやビジネス パー
 
 Contoso 社は、パリのデータ センター内のサーバーのクラスターに AD の Azure 接続ツールを導入しました。Azure AD 接続では、contoso 社の Office 365、EMS、Dynamics 365 で、Azure サブスクリプションで共有する Azure AD テナント contoso.com フォレストの Windows サーバーの AD への変更を同期します。サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの詳細については、[サブスクリプション、ライセンス、および Contoso 社のユーザー アカウント](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)を参照してください。
   
-**図 3: contoso 社のディレクトリ同期のインフラストラクチャ**
+**図 3:Contoso 社のディレクトリ同期インフラストラクチャ**
 
-![Contoso 社のディレクトリ同期インフラストラクチャ](images/Contoso_Poster/DirSync.png)
+![Contoso 社のディレクトリ同期インフラストラクチャ](media/Contoso-Poster/DirSync.png)
   
 図 3 は、Azure AD テナントで Contoso 社の Windows Server AD フォレストを同期する Azure AD Connect を実行するサーバーのクラスターを示しています。
   
@@ -68,19 +74,23 @@ Contoso 社では、contoso 社の作業者のシングル サインオンを提
   
 ## <a name="geographical-distribution-of-contoso-authentication-traffic"></a>Contoso 社の認証トラフィックの地理的分布
 
-Contoso 社は、モバイル ワーカーやリモート ワーカーのサポートを強化するには、地域のオフィスでの認証サーバーのセットを導入しました。このインフラストラクチャでは、負荷分散し、共通の Azure AD テナントを使用しているマイクロソフトのクラウド サービスにアクセスするためのユーザーの資格情報を認証するとき、冗長性とパフォーマンスの向上を提供します。
+モバイルおよびリモートの要員をより良くサポートするために、Contoso 社は地域のオフィスにて認証サーバーのセットを展開しました。このインフラストラクチャでは、共通の Azure AD テナントを使用する Microsoft クラウド製品にアクセスするためのユーザー資格情報を認証するときに、負荷が分散され、冗長性と高パフォーマンスが実現されます。
+
   
 認証要求の負荷を分散するために、Contoso 社は、パフォーマンス ルーティング方法を使用するプロファイルを使用して Azure Traffic Manager を構成しました。この方法では、認証クライアントを地域の最も近い認証サーバーのセットにルーティングします。  
   
-**地域オフィスの認証トラフィックの地理的分布を図 4:**
+**図 4:地域のオフィスのための認証トラフィックの地理的分布**
 
-![Contoso 社の支社のための認証トラフィックの地理的分布](images/Contoso_Poster/Auth_GeoDist.png)
+![Contoso 社の支社のための認証トラフィックの地理的分布](media/Contoso-Poster/Auth-GeoDist.png)
   
 図 4 では、地域のオフィスでのクライアント コンピューター、Azure Traffic Manager、および認証サーバーのレイヤーを示します。それぞれの地域のオフィスは Web プロキシおよび AD FS サーバーを使用して、Windows Server AD ドメイン コントローラーとユーザーの資格情報を認証します。
   
 認証プロセスの例:
   
-1. クライアント コンピューターなどの通信の web ページに Office 365 テナントにヨーロッパで (sharepoint.contoso.com) を開始します。
+1. クライアント コンピューターは、ヨーロッパの Office 365 テナント内の Web ページ (sharepoint.contoso.com など) と通信を開始します。
+
+
+
     
 2. Office 365 は、認証の証明を送信する要求を送り返します。要求には、認証のために連絡する URL が含まれています。
     
@@ -88,7 +98,11 @@ Contoso 社は、モバイル ワーカーやリモート ワーカーのサポ�
     
 4. Azure Traffic Manager は DNS クエリを受信し、クライアント コンピューターに最も近い地域オフィスの Web アプリケーション プロキシ サーバーの IP アドレスを持つクライアント コンピューターに応答します。
     
-5.  クライアント コンピューターでは、AD FS サーバーに要求を転送する、web のアプリケーションのプロキシ サーバーに認証要求を送信します。
+5.   クライアント コンピューターは、認証要求を Web アプリケーション プロキシ サーバーに送信し、このサーバーは要求を AD FS サーバーに転送します。
+
+
+
+
     
 6. AD FS サーバーは、クライアント コンピューターからユーザー資格情報を要求します。
     
@@ -102,11 +116,12 @@ Contoso 社は、モバイル ワーカーやリモート ワーカーのサポ�
     
 ## <a name="redundancy-for-the-headquarters-authentication-infrastructure-in-azure-iaas"></a>Azure IaaS における本社の認証インフラストラクチャの冗長性
 
-15,000 の作業者を含むパリ本社のリモートおよびモバイル ワーカーの冗長性を提供する、contoso 社は、アプリケーション プロキシと Azure IaaS に AD FS サーバーの 2 番目のセットを導入しました。
-  
-**Azure IaaS に冗長化された認証インフラストラクチャを図 5:**
+15,000 人のワーカーを抱えるパリ本社のリモート ワーカーおよびモバイル ワーカーに冗長性をもたらすために、Contoso 社は、Azure IaaS にアプリケーション プロキシと AD FS サーバーの 2 つ目のセットを展開しました。
 
-![パリ本社の Azure IaaS における冗長認証インフラストラクチャ](images/Contoso_Poster/Paris_Auth_Redun.png)
+  
+**図 5:Azure IaaS における冗長認証インフラストラクチャ**
+
+![パリ本社の Azure IaaS における冗長認証インフラストラクチャ](media/Contoso-Poster/Paris-Auth-Redun.png)
   
 図 5 は、DMZ にある Web プロキシと AD FS サーバー、およびクロスプレミスの Azure 仮想ネットワークごとの追加のセットを示しています。
   
@@ -114,7 +129,8 @@ Contoso 社は、モバイル ワーカーやリモート ワーカーのサポ�
   
 切り替えを行うために、Contoso 社はパリ地域の Azure Traffic Manager プロファイルを更新して、Web アプリケーション プロキシに次の異なる IP アドレスのセットを使用します。
   
-- DMZ の認証サーバーが使用できる場合は、DMZ 内のサーバーの IP アドレスを使用します。
+- DMZ 認証サーバーが使用できる場合は、DMZ のサーバーの IP アドレスを使用します。
+
     
 - DMZ 認証サーバーを使用できない場合は、Azure IaaS のサーバーの IP アドレスを使用します。
     
@@ -126,7 +142,7 @@ Contoso 社は、モバイル ワーカーやリモート ワーカーのサポ�
 
 [エンタープライズ アーキテクトのための Microsoft クラウド ID](http://aka.ms/cloudarchidentity)
   
-[Office 365 の ID とデバイスを保護する](http://aka.ms/o365protect_device)
+[Office 365 の ID とデバイス保護](http://aka.ms/o365protect_device)
   
 [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
 

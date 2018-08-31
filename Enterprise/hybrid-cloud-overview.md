@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。'
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915822"
 ---
 # <a name="hybrid-cloud-overview"></a>ハイブリッド クラウドの概要
 
@@ -36,7 +39,7 @@ Microsoft ハイブリッド クラウドは、次のように Microsoft クラ�
     
 **図 1:Microsoft ハイブリッド クラウドのコンポーネント**
 
-![Microsoft ハイブリッド クラウドのコンポーネント](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Microsoft ハイブリッド クラウドのコンポーネント](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 図 1 は、インターネットまたは ExpressRoute 接続を通して利用可能なオンプレミス ネットワークから Office 365 のセットまでの Microsoft ハイブリッド クラウド、Azure のサービスとしてのプラットフォーム (PaaS)、Azure のサービスとしてのインフラストラクチャ (IaaS) サービスを示しています。
   

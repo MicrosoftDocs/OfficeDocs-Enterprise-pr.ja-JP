@@ -1,5 +1,5 @@
 ---
-title: "SharePoint 2013 用の Microsoft Azure アーキテクチャ"
+title: SharePoint 2013 用の Microsoft Azure アーキテクチャ
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "概要: SharePoint 2013 ソリューションは、Microsoft Azure 仮想マシンでホストできます。適切なソリューションの種類と、ソリューションをホストするように Microsoft Azure を設定する方法について説明します。"
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: SharePoint 2013 ソリューションは、Microsoft Azure 仮想マシンでホストできます。適切なソリューションの種類と、ソリューションをホストするように Microsoft Azure を設定する方法について説明します。'
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915382"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
@@ -53,7 +54,7 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
 
 この記事では SharePoint トポロジの例が使用されていますが、こうした設計概念は任意の SharePoint ファーム トポロジで使用できます。Azure 環境を設計する前に、SharePoint ファームを設計するための次のトポロジ、アーキテクチャ、キャパシティ、およびパフォーマンスに関するガイダンスを使用してください。
   
-- [SharePoint 2013 の IT 担当者向けアーキテクチャ設計](http://technet.microsoft.com/ja-JP/sharepoint/fp123594.aspx)
+- [SharePoint 2013 の IT 担当者向けアーキテクチャ設計](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
@@ -76,7 +77,7 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
   
 **図 1:Azure での仮想ネットワークを使用したオンプレミス環境**
 
-![SharePoint ソリューション用の Microsoft Azure 仮想ネットワーク設計。Azure ゲートウェイ用の 1 つのサブネット。仮想マシン用の 1 つのサブネット。](images/OPrrasconWA_AZarch.png)
+![SharePoint ソリューション用の Microsoft Azure 仮想ネットワーク設計。Azure ゲートウェイ用の 1 つのサブネット。仮想マシン用の 1 つのサブネット。](media/OPrrasconWA-AZarch.png)
   
 この図では次のようになっています。
   
@@ -92,7 +93,7 @@ Azure インフラストラクチャ サービスは、SharePoint ソリュー�
   
 **図 2:オンプレミス環境と Azure 間でサイト間接続を提供するための Azure ゲートウェイとオンプレミス ゲートウェイ デバイスの使用**
 
-![オンプレミス環境はクロスプレミス接続 (サイト間 VPN 接続または ExpressRoute が可能) を介して Azure 仮想ネットワークに接続されています](images/AZarch_VPNgtwyconnct.png)
+![オンプレミス環境はクロスプレミス接続 (サイト間 VPN 接続または ExpressRoute が可能) を介して Azure 仮想ネットワークに接続されています](media/AZarch-VPNgtwyconnct.png)
   
 この図では次のようになっています。
   
@@ -110,7 +111,7 @@ Azure における障害復旧の場合、Windows Server AD と DNS をハイブ
   
 **図 3: Active Directory ドメインのハイブリッド構成**
 
-![Azure の仮想ネットワークと SharePoint ファームのサブネットに配置された 2 つの仮想マシンは、レプリカ ドメイン コントローラーおよび DNS サーバーです](images/AZarch_HyADdomainConfig.png)
+![Azure の仮想ネットワークと SharePoint ファームのサブネットに配置された 2 つの仮想マシンは、レプリカ ドメイン コントローラーおよび DNS サーバーです](media/AZarch-HyADdomainConfig.png)
   
 この図は前の図に基づいて作成されていて、Windows Server AD と DNS のサブネットには 2 つの仮想マシンが追加されています。これらの仮想マシンは、レプリカのドメイン コントローラーと DNS サーバーです。これらは、オンプレミス Windows Server AD 環境の拡張となります。 
   
@@ -134,7 +135,7 @@ Azure における障害復旧の場合、Windows Server AD と DNS をハイブ
   
 **図 4: SharePoint 仮想マシンの配置**
 
-![SharePoint ファーム サブネット内の Azure 仮想ネットワークに追加された、データベース サーバーと SharePoint サーバーの役割](images/AZarch_SPVMsinCloudSer.png)
+![SharePoint ファーム サブネット内の Azure 仮想ネットワークに追加された、データベース サーバーと SharePoint サーバーの役割](media/AZarch-SPVMsinCloudSer.png)
   
 この図は前の図に基づいて作成されていて、それぞれの層で SharePoint ファーム サーバー ロールが追加されています。
   
@@ -150,7 +151,7 @@ SharePoint ファーム用に Azure アーキテクチャを設計する場合�
   
 **図 5: SharePoint ファーム層の高可用性を確保するための Azure 可用性セットの使用**
 
-![SharePoint 2013 ソリューションのための Azure インフラストラクチャ内の可用性セットの構成](images/AZenv_WinAzureAvailSetsHA.png)
+![SharePoint 2013 ソリューションのための Azure インフラストラクチャ内の可用性セットの構成](media/AZenv-WinAzureAvailSetsHA.png)
   
 この図は、Azure インフラストラクチャ内の可用性セットの構成を示しています。次の各ロールが、それぞれの可用性セットで共有されています。
   
@@ -170,7 +171,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 6: 3 層ファームにおけるキャパシティとパフォーマンスの目標に関する計画例**
 
-![特定の容量とパフォーマンスの目標を達成するコンポーネント割り当てを含む標準的な SharePoint 2013 のインターネット サイトのアーキテクチャ](images/AZarch_CapPerfexmpArch.png)
+![特定の容量とパフォーマンスの目標を達成するコンポーネント割り当てを含む標準的な SharePoint 2013 のインターネット サイトのアーキテクチャ](media/AZarch-CapPerfexmpArch.png)
   
 この図では次のようになっています。
   
@@ -186,7 +187,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 7: 調整前のアプリケーション サーバー層**
 
-![Microsoft Azure 可用性セットのために調整する前の SharePoint Server 2013 アプリケーション サーバー層の例](images/AZarch_AppServtierBefore.png)
+![Microsoft Azure 可用性セットのために調整する前の SharePoint Server 2013 アプリケーション サーバー層の例](media/AZarch-AppServtierBefore.png)
   
 この図では次のようになっています。
   
@@ -202,7 +203,7 @@ SharePoint ファームを Azure プラットフォームで調整しなけれ�
   
 **図 8: 調整後のアプリケーション サーバー層**
 
-![Microsoft Azure 可用性セットのために調整した後の SharePoint Server 2013 アプリケーション サーバー層の例](images/AZarch_AppServtierAfter.png)
+![Microsoft Azure 可用性セットのために調整した後の SharePoint Server 2013 アプリケーション サーバー層の例](media/AZarch-AppServtierAfter.png)
   
 この図は、同じ 4 つのコンポーネントを含み、同一に構成されている 3 つのアプリケーション サーバーすべてを示しています。
   
@@ -210,7 +211,7 @@ SharePoint ファームの各層に可用性セットを追加すると、実装
   
 **図 9:Azure インフラストラクチャ サービスに実装された SharePoint ファーム**
 
-![仮想ネットワーク、クロスプレミス接続、サブネット、VM、および可用性の設定を含む Azure インフラストラクチャ サービスの SharePoint 2013 ファームの例](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![仮想ネットワーク、クロスプレミス接続、サブネット、VM、および可用性の設定を含む Azure インフラストラクチャ サービスの SharePoint 2013 ファームの例](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 この図は、Azure インフラストラクチャ サービスに実装された、各層内のサーバー用の障害ドメインを提供する可用性セットを備えた SharePoint ファームを示しています。
   

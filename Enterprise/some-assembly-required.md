@@ -1,5 +1,5 @@
 ---
-title: "いくらかのアセンブリが必要"
+title: いくらかのアセンブリが必要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "概要: 独自のストレージ ソリューションの作成に使用できる、クラウド ストレージ オプションのセットについての詳細を説明します。"
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: 独自のストレージ ソリューションの作成に使用できる、クラウド ストレージ オプションのセットについての詳細を説明します。'
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915522"
 ---
 # <a name="some-assembly-required"></a>いくらかのアセンブリが必要
 
@@ -138,11 +141,11 @@ ms.lasthandoff: 02/09/2018
     
 垂直方向の拡大/縮小については、Azure データベース パフォーマンス レベル/エディションを変更するか、Elastic Database プールを利用できます。
   
-![Azure SQL Database が提供する垂直方向のスケーリング。](images/Storage_Poster/CloudStor-VertScale.png)
+![Azure SQL Database が提供する垂直方向のスケーリング。](media/Storage-Poster/CloudStor-VertScale.png)
   
 水平方向の拡大/縮小については、必要に応じて、新しいデータベースを追加することができます。
   
-![Azure SQL Database が提供する水平方向のスケーリング。](images/Storage_Poster/CloudStor-HorizScale.png)
+![Azure SQL Database が提供する水平方向のスケーリング。](media/Storage-Poster/CloudStor-HorizScale.png)
   
 詳細情報については、[こちら](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) をクリックしてください。
   
@@ -150,7 +153,7 @@ ms.lasthandoff: 02/09/2018
 
 Stretch Database は SQL Server 2016 の機能であり、顧客の発注情報を含む大きなテーブル内の処理済みビジネス データなど、コールド データを Azure の SQL Stretch Database に透過的かつ安全に移動できます。 ストレッチ時には、SQL Server インスタンス、データベース、または単一のテーブルのコンテンツは、SQL Server 2016 サーバーのローカル データと Azure のリモート データとを組み合わせたものです。ストレッチの対象となるデータは、SQL Server 2016 によって Azure に自動的に移動されます。
   
-![Stretch Database および SQL Server 2016。](images/Storage_Poster/CloudStor-Stretch.png)
+![Stretch Database および SQL Server 2016。](media/Storage-Poster/CloudStor-Stretch.png)
   
  
 
@@ -206,7 +209,7 @@ Cosmos DB、Azure Table ストレージ、および Azure SQL データベース
     
 次の図は、Azure Cosmos DB、Azure Table ストレージ、Azure SQL データベースの共通でない属性を示しています。
   
-![Cosmos DB、Azure Tables、Azure SQL Database に共通でない属性](images/Storage_Poster/CloudStor-Table.png)
+![Cosmos DB、Azure Tables、Azure SQL Database に共通でない属性](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>リソース
 

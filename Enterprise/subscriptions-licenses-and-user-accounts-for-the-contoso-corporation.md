@@ -1,5 +1,5 @@
 ---
-title: "Contoso Corporation のサブスクリプション、ライセンス、およびユーザー アカウント"
+title: Contoso Corporation のサブスクリプション、ライセンス、およびユーザー アカウント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
-description: "概要: は、contoso 社のクラウドのサブスクリプション、ライセンス、ユーザー アカウント、およびテナントの構造を理解します。"
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '概要: は、contoso 社のクラウドのサブスクリプション、ライセンス、ユーザー アカウント、およびテナントの構造を理解します。'
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915512"
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Contoso Corporation のサブスクリプション、ライセンス、およびユーザー アカウント
 
- **の概要:**Contoso 社のクラウドのサブスクリプション、ライセンス、ユーザー アカウント、およびテナントの構造を理解します。
+ **の概要:** Contoso 社のクラウドのサブスクリプション、ライセンス、ユーザー アカウント、およびテナントの構造を理解します。
   
 すべてのクラウド製品について ID の一貫した使用と課金を実現するために、Microsoft は、組織/サブスクリプション/ライセンス/ユーザー アカウントの階層を提供します。
   
@@ -44,9 +47,9 @@ ms.lasthandoff: 02/09/2018
 
 Contoso 社では、組織とそのサブスクリプション、ライセンス、アカウント、テナントに対して、次の構造を決定しました。
   
-**図 1: Contoso の組織、サブスクリプション、ライセンス、ユーザー アカウントおよびテナント**
+**図 1:Contoso 社の組織、サブスクリプション、ライセンス、ユーザー アカウント、テナント**
 
-![Contoso 社の組織、サブスクリプション、ライセンス、ユーザー アカウント、テナント](images/Contoso_Poster/Subscriptions.png)
+![Contoso 社の組織、サブスクリプション、ライセンス、ユーザー アカウント、テナント](media/Contoso-Poster/Subscriptions.png)
   
 図 1 は、Contoso 社の組織が、どのように複数のサブスクリプションを含み、contoso.com Windows Server AD フォレストから同期されたユーザー アカウントを含む共通の Azure AD テナントに関連付けられているかを示しています。
   
@@ -60,7 +63,8 @@ Contoso 社では、組織とそのサブスクリプション、ライセンス
     
   - EMS 製品 5,000 ライセンス
     
-  - 100 のライセンスを持つ Dynamics 365 製品
+  - 100 個のライセンスがある Dynamics 365 製品
+
     
   - 地域に基づく複数の Azure サブスクリプション
     
@@ -68,7 +72,8 @@ Contoso 社では、組織とそのサブスクリプション、ライセンス
     
 Contoso 社のテナントの場合:
   
-- Saas クラウドのテナントは、クラウド サービスを提供するサーバーを収容している地域の場所です。Contoso 社は、その Office 365、EMS、Dynamics 365 のテナントをホストするためのヨーロッパの地域を選択しました。 
+- SaaS クラウド製品の場合、テナントは、クラウド サービスを提供しているサーバーが保管されている地域の場所です。Contoso 社は、Office 365、EMS、Dynamics 365 テナントのホストにヨーロッパの地域を選択しました。
+  
     
 - Azure PaaS サービスとアプリケーションおよび IaaS IT 作業負荷は、世界中に、Azure データ センター内のテナントを持つことができます。Azure AD、テナントは、Azure AD のアカウントおよびグループを含むの特定のインスタンスです。
     
@@ -78,11 +83,14 @@ Contoso 社のテナントの場合:
   
 ## <a name="contosos-azure-subscriptions"></a>Contoso 社の Azure サブスクリプション
 
-図 2 は、contoso 社の Azure サブスクリプションの階層の設計を示しています。
-  
-**Azure サブスクリプションの contoso 社の構造を図 2:**
+図 2 は、Contoso 社の Azure サブスクリプションの階層設計を示しています。 
 
-![Azure サブスクリプションの Contoso 社の構造](images/Contoso_Poster/Subscriptions_Nested.png)
+
+
+  
+**図 2:Azure サブスクリプションの Contoso 社の構造**
+
+![Azure サブスクリプションの Contoso 社の構造](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - Microsoft とのエンタープライズ契約に基づき、Contoso 社は最上位です。
     

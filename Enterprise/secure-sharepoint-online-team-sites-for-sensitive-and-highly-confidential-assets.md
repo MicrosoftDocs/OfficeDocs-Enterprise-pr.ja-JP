@@ -1,5 +1,5 @@
 ---
-title: "センシティブなアセットや機密性の高いアセット用のセキュアな SharePoint Online チームサイト"
+title: センシティブなアセットや機密性の高いアセット用のセキュアな SharePoint Online チームサイト
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "概要: ここでは、幹部や研究所が簡単かつセキュアにコラボレーションできるようにするために、Contoso 社がセンシティブな情報の保護と、機密性の高い SharePoint Online チーム サイトをどのように構築したかを説明します。"
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: '概要: ここでは、幹部や研究所が簡単かつセキュアにコラボレーションできるようにするために、Contoso 社がセンシティブな情報の保護と、機密性の高い SharePoint Online チーム サイトをどのように構築したかを説明します。'
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914862"
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>センシティブなアセットや機密性の高いアセット用のセキュアな SharePoint Online チームサイト
 
@@ -30,7 +33,7 @@ Contoso 社の経営幹部は、居場所に関係なく共同作業を行うた
   
 **図 1:センシティブな情報の保護と機密性の高い SharePoint Online チーム サイトの比較**
 
-![機密保護および高機密 SharePoint Online チーム サイト](images/Contoso_Poster/SP_Solution.png)
+![機密保護および高機密 SharePoint Online チーム サイト](media/Contoso-Poster/SP-Solution.png)
   
 Contoso 社は次のようなステップで、経営幹部および研究チーム用にセキュアな SharePoint Online のチーム サイトを作成しました。
   

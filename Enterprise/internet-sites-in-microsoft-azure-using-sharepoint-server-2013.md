@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: '概要: SharePoint Server 2013 を使用したインターネット サイトを Azure インフラストラクチャ サービスでホストすることにはメリットがあります。この記事では、このソリューションを設計し、実装するためのリソースを提供します。'
-ms.openlocfilehash: a2444cdf98e861530131d55ae80fc661f730ba57
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 26578133709959964e2f8ab1d01b562a526febcb
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161790"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914892"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト
 
@@ -43,8 +43,8 @@ Microsoft Azure は SharePoint Server 2013 に基づくインターネット サ
   
 |**Resource**|**詳細情報**|
 |:-----|:-----|
-|**Azure での SharePoint Server 2013 のインターネット サイト** <br/> [![SharePoint を使用した Azure のインターネット サイトのイメージ](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [           ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |このアーキテクチャ モデルは、Azure のインターネット サイトの主要な設計活動および推奨されるアーキテクチャの選択肢の概要を説明しています。  <br/> |
-|**設計サンプル: SharePoint Server 2013 用の Azure のインターネット サイト ** <br/> [![デザイン サンプルの図:SharePoint 2013 用の Microsoft Azure のインターネット サイト](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |独自のアーキテクチャの開始点としてこの設計サンプルをご利用ください。  <br/> |
+|**Azure での SharePoint Server 2013 のインターネット サイト** <br/> [![SharePoint を使用した Azure のインターネット サイトのイメージ](media/MS-AZ-SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [           ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |このアーキテクチャ モデルは、Azure のインターネット サイトの主要な設計活動および推奨されるアーキテクチャの選択肢の概要を説明しています。  <br/> |
+|**設計サンプル: SharePoint Server 2013 用の Azure のインターネット サイト ** <br/> [![デザイン サンプルの図:SharePoint 2013 用の Microsoft Azure のインターネット サイト](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |独自のアーキテクチャの開始点としてこの設計サンプルをご利用ください。  <br/> |
 |**[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |この記事は、SharePoint ソリューションをホストするための Azure アーキテクチャの設計方法について説明しています。  <br/> |
 
    

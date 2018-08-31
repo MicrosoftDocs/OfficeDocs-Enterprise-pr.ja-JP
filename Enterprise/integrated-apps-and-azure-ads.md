@@ -1,5 +1,5 @@
 ---
-title: 統合アプリケーションと Office 365 の管理者向けの Azure AD
+title: Office 365 管理者向けの統合アプリおよび Azure AD
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,18 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: O365 がアプリケーションを統合する方法については登録されているし、Azure AD で管理されています。
-ms.openlocfilehash: 666bfca5c2621d25f13dff7c5753c5ef47591b68
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: 0482271f15dc5e2b81e36fd265b49da6eba18702
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22213124"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915002"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>統合アプリケーションと Office 365 の管理者向けの Azure AD
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 管理者向けの統合アプリおよび Azure AD
 
 [オンまたはオフは、[統合されたアプリケーションにすること](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114)だけでより統合されたアプリケーションを管理するのにはありません。Office 365 の REST Api の登場によって、ユーザーは、アプリケーション データへのアクセス、Office 365、メール、予定表、連絡先、ユーザー、グループ、ファイル、およびフォルダーのようなを与えることができます。既定では、ユーザーが個別に、各アプリケーションへのアクセス許可を付与する必要がありますですが、これをグローバル管理者レベルで 1 回、アプリケーションを承認し、アプリケーション起動プログラムを組織全体にロールアウトする場合にも。これを行うには、Azure AD でアプリケーションを登録する必要があります。Azure AD でアプリケーションを登録することができ、するのに役立つ背景情報を知っている必要がありますが、Office 365 の組織でのアプリケーションを管理する前に必要ないくつかの手順があります。この資料には、これらのリソースへのリンクがあります。
   

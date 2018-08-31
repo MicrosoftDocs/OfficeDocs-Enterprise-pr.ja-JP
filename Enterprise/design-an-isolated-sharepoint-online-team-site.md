@@ -1,5 +1,5 @@
 ---
-title: "分離した SharePoint Online チーム サイトの設計"
+title: 分離した SharePoint Online チーム サイトの設計
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: "概要: SharePoint Online の分離のチーム サイトの設計プロセス ステップ"
-ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 概要:分離した SharePoint Online チーム サイトの設計プロセスをステップごとに示します。
+ms.openlocfilehash: 4807b7cef0a401901eb5abec3d683ca67b2193db
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914842"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの設計
 
- **の概要:**分離のオンラインの SharePoint チーム サイトの設計プロセスをステップ実行します。
+ **概要:** 分離した SharePoint Online チーム サイトの設計プロセスをステップごとに示します。
   
 この記事では、分離した SharePoint Online チーム サイトを作成する前に行う必要がある設計上の主要な決定事項について説明します。
   
@@ -44,11 +47,11 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
 |\<サイト名 > の訪問者  <br/> |読み取り  <br/> |
 |\<サイト名 > の所有者  <br/> |フル コントロール  <br/> |
    
- **ベスト プラクティス:**追加の SharePoint グループおよびアクセス許可レベルを作成することができます。ただし、独立した SharePoint Online サイトの既定の SharePoint グループおよびアクセス許可レベルを使用するをお勧めします。
+ **ベスト プラクティス:** 追加の SharePoint グループおよびアクセス許可レベルを作成できます。ただし、分離した SharePoint Online サイトには、既定の SharePoint グループおよびアクセス許可レベルを使用することをお勧めします。
   
 既定の SharePoint グループおよびアクセス許可レベルを次に示します。
   
-![SharePoint Online サイトの既定の SharePoint グループおよびアクセス許可レベル。](images/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![SharePoint Online サイトの既定の SharePoint グループおよびアクセス許可レベル。](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>フェーズ 2:アクセス グループを使用してアクセス許可をユーザーに割り当てる
 
@@ -62,19 +65,19 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
     
 - メンバー、**\<サイト名 > の所有者**SharePoint グループは、ユーザー アカウントとグループの両方を含めることができます、**フル コントロール**アクセス許可レベルを割り当てられました。
     
- **ベスト プラクティス:**1 つを使用することをお勧めの個々 のユーザー アカウントのアクセス許可を管理できますが、Azure AD グループ、代わりに、アクセス グループとして知られています。各 SharePoint グループにアカウントのユーザーのリストを管理するのではなく、アクセス グループのメンバーシップを介してアクセス許可の管理が簡略化されます。
+ **ベスト プラクティス:** 個々のユーザー アカウントを使用してアクセス許可を管理することもできますが、代わりにアクセス グループと呼ばれる 1 つの Azure AD グループを使用することをお勧めします。この方法は、SharePoint グループごとにユーザー アカウントのリストを管理するのではなく、アクセス グループのメンバーシップでアクセス許可の管理を簡略化するものです。
   
-Office 365 の azure の AD グループは、Office 365 のグループとは異なります。Azure AD グループは、**セキュリティ**の**種類**のセットを使用して Office の管理センターに表示され、電子メール アドレスがありません。Azure AD グループ内で管理できます。
+Office 365 の Azure AD グループは、Office 365 のグループとは異なります。Azure AD グループは、**タイプ**が**セキュリティ**に設定された状態で Office 管理センターに表示され、メール アドレスはありません。以下で Azure AD グループを管理できます。
   
 - Windows Server Active Directory (AD)
     
-    これらは、オンプレミス AD の Windows サーバー インフラストラクチャで作成され、Office 365 サブスクリプションを同期するグループです。Office 管理センターは、これらのグループは、 **active directory と Synched**の**状態**を持ちます。
+    これらは、オンプレミス Windows Server AD インフラストラクチャで作成され、Office 365 サブスクリプションと同期されたグループです。Office 管理センターで、これらのグループの**状態**は **Active Directory と同期済み**になっています。
     
 - Office 365
     
-    これらは、Office の管理センター、Azure ポータル、またはマイクロソフトの PowerShell を使用して作成されているグループです。Office 管理センターでは、これらのグループは、**クラウド**の**ステータス**を持ちます。
+    これらは、Office 管理センター、Azure ポータル、Microsoft PowerShell を使用して作成されたグループです。Office 管理センターで、これらのグループの**状態**は**クラウド**になっています。
     
- **ベスト プラクティス:**AD の Windows サーバーの設置型を使用して、Office 365 サブスクリプションと同期している場合、ユーザーと Windows サーバーの AD とグループの管理を実行します。
+ **ベスト プラクティス:** オンプレミスの Windows Server AD を使用しており、Office 365 サブスクリプションと同期している場合は、Windows Server AD でユーザーとグループの管理を実行します。
   
 分離した SharePoint Online チーム サイトの場合、推奨されるグループ構造は次のようになります。
   
@@ -84,11 +87,11 @@ Office 365 の azure の AD グループは、Office 365 のグループとは�
 |\<サイト名 > の訪問者  <br/> |\<サイト名 > の閲覧者  <br/> |読み取り  <br/> |
 |\<サイト名 > の所有者  <br/> |\<サイト名 > 管理者  <br/> |フル コントロール  <br/> |
    
- **ベスト プラクティス:**Office 365 または Azure AD のいずれかのグループは、SharePoint グループのメンバーとして使用できますが、Azure AD グループを使用することをお勧めします。Azure の AD グループは、Windows サーバーの AD または、Office 365 の管理では、ネストされたグループを使用して、アクセス許可を割り当てるには高い柔軟性を提供します。
+ **ベスト プラクティス:** SharePoint グループのメンバーには Office 365 グループまたは Azure AD グループを使用できますが、Azure AD グループを使用することをお勧めします。Azure AD グループは、Windows Server AD または Office 365 を通して管理され、ネストされたグループを使用してアクセス許可を柔軟に割り当てることができます。
   
 ここでは、既定の SharePoint グループの Azure AD ベースのアクセス グループを使用するように構成します。
   
-![既定の SharePoint Online サイト グループのメンバーとしてアクセス グループを使用する。](images/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![既定の SharePoint Online サイト グループのメンバーとしてアクセス グループを使用する。](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 3 つのアクセス グループを設計するときは、以下の点にご注意ください。
   
@@ -98,7 +101,7 @@ Office 365 の azure の AD グループは、Office 365 のグループとは�
     
 ここでは、SharePoint グループおよび ProjectX という名前の独立したサイトのアクセス グループの例です。
   
-![ProjectX という名前の SharePoint Online サイトのアクセス グループを使用する場合の例。](images/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![ProjectX という名前の SharePoint Online サイトのアクセス グループを使用する場合の例。](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>フェーズ 3: ネストされた Azure AD グループを使用する
 
@@ -121,13 +124,13 @@ Office 365 の azure の AD グループは、Office 365 のグループとは�
   
 ProjectX メンバー アクセス グループのグループの入れ子になった Azure AD の例を次のとおりです。
   
-![ProjectX サイトのメンバー アクセス グループの入れ子になったアクセス グループを使用する場合の例。](images/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![ProjectX サイトのメンバー アクセス グループの入れ子になったアクセス グループを使用する場合の例。](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 研究、エンジニア リング、およびプロジェクト内のユーザー アカウントのすべての潜在顧客のため、チーム サイトのメンバーにするものでは、ProjectX のメンバーのアクセス グループに、Azure AD グループを追加する方が簡単です。
   
 ## <a name="next-step"></a>次の手順
 
-作成し、運用環境で分離されたサイトを構成する準備ができたら、 [SharePoint Online の分離のチーム サイトの展開](deploy-an-isolated-sharepoint-online-team-site.md)を参照してください。
+分離したサイトを運用環境で作成および構成する準備ができたら、「[Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

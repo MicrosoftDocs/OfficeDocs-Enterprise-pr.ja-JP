@@ -12,15 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
-ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915362"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性フェデレーション認証のフェーズ 5:Office 365 のフェデレーション認証を構成する
 
- **概要:**Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
+ **概要:** Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
  
 Azure インフラストラクチャ サービスに Office 365 の高可用性のフェデレーション認証を展開するのこの最終フェーズで取得し、パブリック証明機関によって発行された証明書をインストール、構成を確認して、インストールおよび実行する Azure ADディレクトリ同期サーバーに接続します。Azure AD 接続では、Office 365 サブスクリプションと、Active Directory フェデレーション サービス (AD FS) とフェデレーションの認証のための web アプリケーションのプロキシ サーバーを構成します。
   
@@ -64,7 +65,7 @@ Contoso 組織の例を、以下に示します。
   
 **Azure での高可用性フェデレーション認証インフラストラクチャの構成例**
 
-![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャの構成例](images/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャの構成例](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Azure AD Connect を実行してフェデレーション認証を構成する
 
@@ -134,7 +135,7 @@ Azure AD Connect ツールは、次に示す手順で、フェデレーション
   
 **フェーズ 5:Azure での高可用性フェデレーション認証インフラストラクチャの最終構成**
 
-![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャの最終構成](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャの最終構成](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Azure の Office 365 用の高可用性フェデレーション認証インフラストラクチャが完成しました。
   

@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: '概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。'
-ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631388"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914922"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 
@@ -27,7 +29,7 @@ ms.locfileid: "19631388"
   
 **図 1:Microsoft ハイブリッド クラウド スタック**
 
-![Microsoft ハイブリッド クラウド スタック](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
+![Microsoft ハイブリッド クラウド スタック](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
 図 1 は、Microsoft ハイブリッド クラウド スタックとそのレイヤーを示しています。レイヤーには、オンプレミス、ネットワーク、ID、アプリとシナリオ、およびクラウド サービスのカテゴリ (Microsoft SaaS、Azure PaaS、Azure PaaS) が含まれます。
   

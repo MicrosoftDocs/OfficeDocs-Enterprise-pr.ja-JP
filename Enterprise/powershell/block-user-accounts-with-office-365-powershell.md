@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell でユーザー アカウントをブロックする"
+title: Office 365 PowerShell でユーザー アカウントをブロックする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +13,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: "Office 365 の PowerShell を使用してブロックし、Office 365 アカウントへのアクセスをブロック解除する方法について説明します。"
-ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Office 365 の PowerShell を使用してブロックし、Office 365 アカウントへのアクセスをブロック解除する方法について説明します。
+ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915412"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントをブロックする
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/14/2018
   
 Office 365 アカウントへのアクセスをブロックできなくなりますアカウントを使用してサインインして、サービスと Office 365 の組織内のデータにアクセスします。アカウントへのアクセスを禁止すると、サインインを試みると、ユーザーは次のエラー メッセージを受け取ります。
   
-![ブロックされた Office 365 アカウント。](images/o365_powershell_account_blocked.png)
+![ブロックされた Office 365 アカウント。](media/o365-powershell-account-blocked.png)
   
 Office 365 の PowerShell を使用するには個別にアクセスし、複数のユーザー アカウントをブロックします。
   
@@ -161,7 +162,6 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```
 
 ## <a name="see-also"></a>関連項目
-<a name="SeeAlso"> </a>
 
 Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
   

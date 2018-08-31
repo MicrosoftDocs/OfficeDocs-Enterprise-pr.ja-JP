@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Office 365 サービスに接続します。'
-ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: b4d7b163bfba433196f46046030078c5559c4459
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720373"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915832"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する
 
@@ -29,12 +29,11 @@ ms.locfileid: "20720373"
   
 PowerShell を使用して Office 365 を管理する場合は、最大 5 つの異なる Windows PowerShell セッション (Office 365 管理センター、SharePoint Online、Exchange Online、Skype for Business Online、およびセキュリティ/コンプライアンス センターに対応する) を同時に開くことができます。別々の Windows PowerShell セッションで 5 つの異なる接続方法を使用すると、デスクトップは以下のようになります。
   
-![一度に実行している 5 つの Windows PowerShell コンソール](images/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
+![一度に実行している 5 つの Windows PowerShell コンソール](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 これは Office 365 の管理に最適な状況ではありません。サービス間管理のために 5 つのウィンドウ間でデータを交換できないからです。このトピックでは、Office 365、Skype for Business Online、Exchange Online、SharePoint Online、および セキュリティ センターとコンプライアンス センター を管理する Windows PowerShell のインスタンスを使用する方法について説明します。
 
 ## <a name="before-you-begin"></a>はじめに
-<a name="BeforeYouBegin"> </a>
 
 Windows PowerShell の単一のインスタンスからすべての Office 365 を管理する前に、次の前提条件を考慮してください。
   
@@ -71,7 +70,6 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   ```
 
 ## <a name="connection-steps-when-using-a-password"></a>パスワードを使用する場合の接続手順
-<a name="ConnStepsPassword"> </a>
 
 ここでは、1 つの PowerShell ウィンドウ内のすべてのサービスに接続する手順を実行します。
   
@@ -165,7 +163,6 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 ```
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>多要素認証を使用する場合の接続手順
-<a name="ConnStepsMFA"> </a>
 
 Azure AD に接続する 1 つのブロック内のすべてのコマンドをここでは、SharePoint Online と多要素認証を使用して 1 つのウィンドウで Buiness の Skype です。グローバル管理者アカウントのユーザー プリンシパル名 (UPN) の名前と、ドメインのホスト名を指定し、それらすべてを同時に実行します。
 
@@ -202,10 +199,6 @@ Exchange Online とセキュリティの&amp;コンプライアンス センタ�
  
 どちらの場合で、Exchange オンライン リモート PowerShell モジュールの別のセッションを使用して接続する必要があります。
 
-
-## <a name="new-to-office-365"></a>Office 365 を初めて使用する場合
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
 ## <a name="see-also"></a>関連項目
 
