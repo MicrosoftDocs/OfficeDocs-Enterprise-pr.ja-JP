@@ -11,14 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: c58782185d0638f7a6a9e14ee7e4516f1852908b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915692"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -185,11 +188,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 この開発/テスト環境で Office 365 と EMS の試用版サブスクリプションを使用するために、これらの値を記録します。
   
-- 試用版サブスクリプションの組織名: ![](./images/Common_Images/TableLine.png) 
+- 試用版サブスクリプションの組織名: ![](./media/Common-Images/TableLine.png) 
     
     たとえば、試用版サブスクリプションのドメイン名 contoso.onmicrosoft.com の場合、組織名は "contoso" です。
     
-- Office 365 グローバル管理者名: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+- Office 365 グローバル管理者名: ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
     

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: '概要: このテスト ラボ ガイドを使用して、Microsoft のクラウド サービスすべてを含む開発/テスト環境を作成します。'
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915632"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 開発/テスト環境
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 この記事の手順に従い、Microsoft Azure インフラストラクチャ サービスでシミュレートされたイントラネットを作成し、Microsoft Office 365、Microsoft Enterprise Mobility + Security (EMS)、Microsoft Dynamics 365 のサブスクリプションを追加します。その結果として、1 つの開発/テスト環境で Microsoft のクラウド サービスすべてを同時に使用する、シンプルな組織になります。  
   
-![Azure、Office 365、EMS、Dynamics 365 が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 3](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Azure、Office 365、EMS、Dynamics 365 が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 3](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 最終的な構成を、次の目的に使用できます。
   
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/27/2018
   
 **図 1: Azure でシミュレートされたイントラネットと Office 365**
 
-![DirSync を使用した Office 365 の開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![DirSync を使用した Office 365 の開発/テスト環境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > Azure 試用版は 30 日間有効です。Office 365 Enterprise E5 の試用版サブスクリプションは 30 日間有効ですが、追加で 30 日間、簡単に延長できます。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料 Azure サブスクリプション、および新しい有料 Office 365 Enterprise E5 サブスクリプションを作成します。 
@@ -93,7 +96,7 @@ ms.lasthandoff: 04/27/2018
   
 **図 2: Azure でシミュレートされたイントラネットと、Office 365 および EMS**
 
-![Azure、Office 365、EMS が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 2](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Azure、Office 365、EMS が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 2](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>フェーズ 3: Dynamics 365 を追加する
 
@@ -171,7 +174,7 @@ ms.lasthandoff: 04/27/2018
   
 **図 3: Azure でシミュレートされたイントラネットと、Office 365、EMS、および Dynamics 365**
 
-![Azure、Office 365、EMS、Dynamics 365 が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 3](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Azure、Office 365、EMS、Dynamics 365 が追加された One Microsoft Cloud 開発/テスト環境のフェーズ 3](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>次の手順
 

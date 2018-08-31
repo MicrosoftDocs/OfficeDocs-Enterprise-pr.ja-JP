@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: 03e729e2211320cac1adc88258e59b18b3ff0719
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215849"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915282"
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -30,7 +32,7 @@ ms.locfileid: "20215849"
   
 **図 1: 基本構成開発/テスト環境**
 
-![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 図 1 の基本構成開発/テスト環境は、インターネットに接続された簡略化されたプライベート イントラネットをシミュレートする、TestLab というクラウド専用 Azure 仮想ネットワーク内の企業ネットワーク サブネットで構成されています。Windows Server 2016 を実行している次の 3 つの Azure 仮想マシンが含まれます。
   
@@ -67,7 +69,7 @@ Azure の基本構成テスト環境の設定には次の 4 つのフェーズ�
 > [!NOTE]
 > Azure の仮想マシンは、実行中に継続して金銭的なコストが発生します。このコストは、無料試用版、MSDN サブスクリプション、有料版サブスクリプションに対して請求されます。Azure 仮想マシンの実行にかかるコストの詳細については、「[Linux Virtual Machines の料金](https://azure.microsoft.com/pricing/details/virtual-machines/)」と「[料金計算ツール](https://azure.microsoft.com/pricing/calculator/)」を参照してください。コストを低く抑えるには、「[Azure のテスト環境の仮想マシンのコストを最小限に抑える](base-configuration-dev-test-environment.md#mincost)」を参照してください。 
   
-![Microsoft Cloud のテスト ラボ ガイド](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft Cloud のテスト ラボ ガイド](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
@@ -131,7 +133,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 これは、現在の構成です。
   
-![仮想ネットワークとサブネットを含む Azure のフェーズ 1 基本構成](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![仮想ネットワークとサブネットを含む Azure のフェーズ 1 基本構成](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
 ## <a name="phase-2-configure-dc1"></a>フェーズ 2: DC1 を構成する
 
@@ -235,7 +237,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 これは、現在の構成です。
   
-![DC1 仮想マシンを含む Azure のフェーズ 2 基本構成](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![DC1 仮想マシンを含む Azure のフェーズ 2 基本構成](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
 ## <a name="phase-3-configure-app1"></a>フェーズ 3: APP1 を構成する
 
@@ -289,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 これは、現在の構成です。
   
-![APP1 仮想マシンを含む Azure のフェーズ 3 基本構成](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![APP1 仮想マシンを含む Azure のフェーズ 3 基本構成](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
 ## <a name="phase-4-configure-client1"></a>フェーズ 4: CLIENT1 を構成する
 
@@ -354,7 +356,7 @@ CLIENT1 の再起動後に、CORP\\User1 のアカウント名とパスワード
     
 これは、最後の構成です。
   
-![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Azure の基本構成は、アプリケーション開発とテスト、追加のテスト環境の作成を行うための準備ができました。 
   

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: '概要: 典型的なグローバルな組織 (架空) が Microsoft のクラウド サービスを使って、クラウド包括型の IT インフラストラクチャを採用している方法について。'
-ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: afb1760d1c2fcfe7679d39a14e22f6abfcf0e80c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161780"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915292"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Microsoft Cloud の Contoso
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161780"
   
 この記事のリンクをクリックすると、パリに本社を置く世界規模の製造複合企業の Contoso Corporation が、クラウド包括型の IT インフラストラクチャを採用している方法と、ネットワーク、ID、セキュリティに関する主要な設計決定に対応している方法、およびエンタープライズ クラウド シナリオを導入してビジネスに関する問題に対処している方法を説明した複数の記事へ移動します。この情報を 11 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、または A3 とも表される) で印刷することもできます。
   
-[![Microsoft Cloud ポスターの Contoso のサムネイル画像。](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Microsoft Cloud ポスターの Contoso のサムネイル画像。](media/Contoso-Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [その他の言語](https://www.microsoft.com/download/details.aspx?id=54427)
   

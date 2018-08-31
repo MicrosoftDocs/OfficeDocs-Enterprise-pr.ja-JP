@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: OneDrive for Business 複数地域の構成方法について説明します。
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549968"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915252"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 複数地域テナントの構成
 
@@ -112,7 +112,7 @@ AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類の�
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>AD Connect を使用してユーザーの優先されるデータの場所を同期する 
 
-社内のユーザーがオンプレミスの Active Directory (AD) システムから Azure Active Directory (AAD) に同期される場合は、そうしたユーザーの PreferredDataLocation は AD に移入する必要があり、AAD に同期される必要があります。「[Azure AD Connect Sync: 既定の構成を変更する](https://docs.microsoft.com/ja-JP/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)」の手順に従って、オンプレミスの AD から AAD への優先されるデータの場所の同期を構成します。
+社内のユーザーがオンプレミスの Active Directory (AD) システムから Azure Active Directory (AAD) に同期される場合は、そうしたユーザーの PreferredDataLocation は AD に移入する必要があり、AAD に同期される必要があります。「[Azure AD Connect Sync: 既定の構成を変更する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)」の手順に従って、オンプレミスの AD から AAD への優先されるデータの場所の同期を構成します。
 
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
@@ -129,7 +129,7 @@ AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類の�
 
 2.  `Connect-MsolService` を実行して、テナントの全体管理者の資格情報を入力します。
 
-3.  [Set-MsolUser](https://docs.microsoft.com/ja-JP/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
+3.  [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類の�
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 

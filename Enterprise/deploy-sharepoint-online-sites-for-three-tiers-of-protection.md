@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631398"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915622"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 
@@ -54,7 +56,7 @@ ms.locfileid: "19631398"
     
 最終的な構成をここに示します。
   
-![パブリック SharePoint Online チーム サイトのベースライン レベルの保護。](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![パブリック SharePoint Online チーム サイトのベースライン レベルの保護。](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Private
 
@@ -80,7 +82,7 @@ ms.locfileid: "19631398"
     
 最終的な構成をここに示します。
   
-![プライベート SharePoint Online チーム サイトのベースライン レベルの保護。](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![プライベート SharePoint Online チーム サイトのベースライン レベルの保護。](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>機密 SharePoint Online チーム サイト
 
@@ -142,7 +144,7 @@ ms.locfileid: "19631398"
     
 次に、新しい SharePoint Online チーム サイトから、以下の手順でアクセス許可を構成します。
   
-1. サイトへのアクセス要求への対応を担当する IT 管理者または他のユーザーのユーザー プリンシパル名 (UPN) を決定します (belindan@contoso.com は、UPN の一例です)。その UPN をここに書き込みます。![](./images/Common_Images/TableLine.png)。
+1. サイトへのアクセス要求への対応を担当する IT 管理者または他のユーザーのユーザー プリンシパル名 (UPN) を決定します (belindan@contoso.com は、UPN の一例です)。その UPN をここに書き込みます。![](./media/Common-Images/TableLine.png)。
     
 2. ツールバーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
     
@@ -196,7 +198,7 @@ ms.locfileid: "19631398"
     
 最終的な構成をここに示します。
   
-![独立した SharePoint Online チーム サイトの機密レベルの保護。](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![独立した SharePoint Online チーム サイトの機密レベルの保護。](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 サイトのメンバーは、いずれかのアクセス グループのグループ メンバーシップを使用して、サイトのリソースについて安全に共同作業できるようになりました。
   
@@ -256,7 +258,7 @@ ms.locfileid: "19631398"
     
 最終的な構成をここに示します。
   
-![独立した SharePoint Online チーム サイトの高機密レベルの保護。](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![独立した SharePoint Online チーム サイトの高機密レベルの保護。](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 サイトのメンバーは、いずれかのアクセス グループのグループ メンバーシップを使用して、サイトのリソースについて安全に共同作業できるようになりました。
   

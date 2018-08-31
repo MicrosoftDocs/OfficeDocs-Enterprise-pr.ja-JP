@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: '概要: Microsoft クラウド サービスとプラットフォームのストレージを設計します。'
-ms.openlocfilehash: 7c8d232c42c203ce1f4fba06d4134693e01e7284
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56f7f8316296b43b96903ad8da5f4f4fbf2733d7
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161810"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915672"
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ストレージ
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161810"
   
 この記事には、Microsoft のクラウド サービスとプラットフォームを使用して、組織のためのストレージを設計する上で IT アーキテクトが知る必要のある事柄について説明する一連の記事へのリンクがあります。この情報を 6 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、A3 としても表される) で印刷することもできます。
   
-[![Microsoft クラウド ストレージ モデルのサムネイル画像](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+[![Microsoft クラウド ストレージ モデルのサムネイル画像](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=49552)

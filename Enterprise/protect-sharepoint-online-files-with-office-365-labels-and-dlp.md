@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトに、Office 365 ラベルとデータ損失防止 (DLP) ポリシーを適用します。'
-ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 1e83f8c08dde55c22b7b9e8e6f9fe966c9fe9c02
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319268"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915782"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Office 365 ラベルと DLP による SharePoint ファイルの保護
 
@@ -127,7 +129,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 最終的な構成をここに示します。
   
-![4 種類の SharePoint Online チーム サイト用の Office 365 ラベル。](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![4 種類の SharePoint Online チーム サイト用の Office 365 ラベル。](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>SharePoint Online サイトの DLP ポリシー
 
@@ -178,7 +180,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 機密 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
-![機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 次に、以下の手順で、SharePoint Online の非常に機密性の高い社外秘チーム サイト上のドキュメントを組織外と共有するときにユーザーをブロックする DLP ポリシーを構成します。
   
@@ -226,7 +228,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 非常に機密性の高い社外秘 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
-![高機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![高機密 Office 365 ラベルを使用している、独立した SharePoint Online チーム サイトの DLP ポリシー。](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>次の手順
 

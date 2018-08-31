@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: '概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。'
-ms.openlocfilehash: eebfb0537ba3166ded84c899f22efcd11825601b
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161870"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915402"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161870"
   
 この記事には、Microsoft のクラウド サービスとプラットフォームを使用して、組織のためのネットワークを設計する上で IT アーキテクトが知る必要のある事柄について説明する一連の記事へのリンクがあります。この情報を 12 ページのポスターとして表示し、タブロイド形式 (レジャー、11 x 17、A3 としても表される) で印刷することもできます。
   
-[![Microsoft クラウドのネットワーク モデルのサムネイル画像](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Microsoft クラウドのネットワーク モデルのサムネイル画像](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=54425)

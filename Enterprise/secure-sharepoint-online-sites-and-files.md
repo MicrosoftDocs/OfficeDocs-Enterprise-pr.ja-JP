@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319228"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915082"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -138,7 +140,7 @@ SharePoint Online と OneDrive for Business のデバイス アクセスの設�
     
 - 組織内のユーザーは、Outlook on the web、Outlook 2010 以降、OneDrive for Business、SharePoint Online、Office 365 グループのコンテンツに手動でラベルを適用できます。ユーザーは自分が操作するコンテンツの種類を最もよく知っているので、コンテンツを分類して適切な DLP ポリシーを適用できます。
     
-![SharePoint サイトの推奨構成](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![SharePoint サイトの推奨構成](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 示されているように、このソリューションでは次のラベルを作成します。
   
@@ -160,7 +162,7 @@ SharePoint Online と OneDrive for Business のデバイス アクセスの設�
   
 Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできないことにご注意ください。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。DLP ポリシーが操作できるのはメタデータ (Office 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
   
-![Azure Information Protection は Azure で設定され、ラベルはクライアント ツールバーに表示される](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![Azure Information Protection は Azure で設定され、ラベルはクライアント ツールバーに表示される](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 次の点が示されています。
   
