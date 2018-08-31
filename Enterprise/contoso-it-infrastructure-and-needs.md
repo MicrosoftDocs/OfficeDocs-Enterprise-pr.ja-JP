@@ -1,5 +1,5 @@
 ---
-title: "Contoso 社の IT インフラストラクチャおよびニーズ"
+title: Contoso 社の IT インフラストラクチャおよびニーズ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "概要: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft のクラウド サービスによってどのように満たされるかについて説明します。"
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: '概要: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft のクラウド サービスによってどのように満たされるかについて説明します。'
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915732"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Contoso 社の IT インフラストラクチャおよびニーズ
 
@@ -30,7 +31,7 @@ Contoso 社では、ほとんど集中管理されたオンプレミスの IT �
   
 **図 1:Contoso 社の既存の IT インフラストラクチャ**
 
-![Contoso 社の既存の IT インフラストラクチャ](images/Contoso_Poster/Existing_IT.png)
+![Contoso 社の既存の IT インフラストラクチャ](media/Contoso-Poster/Existing-IT.png)
   
 図 1 は、本社とアプリケーション データセンター、DMZ、およびインターネットを示しています。
   

@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: '概要: これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。'
-ms.openlocfilehash: a94ff180ecaaf2122a313a1c6699ac234a95164f
-ms.sourcegitcommit: 825d44011b72d2832a82834ab4bb536aea448986
+ms.openlocfilehash: 17bb89553b97d1a15c076d9bb4ce9acca19e62d2
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "21533469"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915272"
 ---
 # <a name="security-solutions"></a>セキュリティ ソリューション
 

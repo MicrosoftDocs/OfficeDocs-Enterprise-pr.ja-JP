@@ -1,45 +1,50 @@
 ---
-title: Office 365 と azure の統合
+title: Office 365 での Azure 統合
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 8/21/2018
 ms.audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Office 365 サブスクリプションには、Azure AD へのサブスクリプションが含まれています。オンプレミス環境でパスワード同期またはシングル サインオンをする場合は、Azure AD と Office 365 を統合します。
-ms.openlocfilehash: abeda5eb915ac4ff9e395ab3b28f1e0cb7a68163
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
+ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550081"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23531840"
 ---
-# <a name="azure-integration-with-office-365"></a>Office 365 と azure の統合
+# <a name="azure-integration-with-office-365"></a>Office 365 での Azure 統合
 
 Office 365 は、バック グラウンドでユーザー id を管理する Azure Active Directory (AD の Azure) を使用します。Office 365 サブスクリプションには、パスワードを同期させるか、オンプレミス環境でのシングル サインオンを設定する場合、Azure AD で Office 365 を統合することができますように Azure AD への無料サブスクリプションが含まれています。資産を効率的に管理する高度な機能を購入することもできます。
   
 Azure には、拡張し、Office 365 サブスクリプションをカスタマイズするに使用できる、統合されたアプリケーションを管理するのと同様に、他の機能も提供しています。
   
-Azure AD アドバイザーを使用することもできます: [Azure AD 接続アドバイザー](https://aka.ms/aadconnectpwsync) [AD FS 展開アドバイザー](https://aka.ms/adfsguidance)、 [Azure RMS Deploymnet ウィザード](https://aka.ms/azuremsguidance)では、 [Azure AD のプレミアム ・ セットアップ ・ ガイド](https://aka.ms/aadpguidance)です。
+ガイド付きのセットアップと構成のエクスペリエンスの Azure AD の導入アドバイザーを使用できます。
+ - [Azure AD 接続アドバイザー](https://aka.ms/aadconnectpwsync)
+ - [AD FS 展開アドバイザー](https://aka.ms/adfsguidance)
+ - [Azure の RMS の展開ウィザード](https://aka.ms/azuremsguidance)
+ - [Azure AD のプレミアム ・ セットアップ ・ ガイド](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-office-365-identity-management"></a>Azure AD エディションと Office 365 の id 管理
 
 Office 365 サブスクリプションを購入する場合は、Azure AD への無料サブスクリプションもあります。Azure AD を使用するにを作成し、ユーザーおよびグループ アカウントを管理します。このサブスクリプションをアクティブにするには、1 回限りの登録を完了する必要があります。後で、Azure AD に、Office 365 管理ポータルからアクセスできます。手順についてを参照してください[登録無料の Azure AD サブスクリプション](https://go.microsoft.com/fwlink/p/?LinkId=617127)。 
   
 > [!TIP]
-> Office 365 サブスクリプションに付属している登録無料の Azure AD サブスクリプションに、上記の指示に従います。サインアップするのには Azure.Microsoft.com に直接移動しないかは Office 365 の無料の 1 つから別の Microsoft Azure への試用版または有料のサブスクリプションが終了しました。 
+> Office 365 サブスクリプションに付属している登録無料の Azure AD サブスクリプションに、上記の指示に従います。サインアップするのには azure.microsoft.com に直接移動しないかは Office 365 の無料の 1 つから別の Microsoft Azure への試用版または有料のサブスクリプションが終了しました。 
   
 サブスクリプションでは、無料設置ディレクトリと同期させることができます、シングル サインオンを設定しなど、Salesforce、ドロップ ボックス、およびより多くのサービス アプリケーションとして、多くのソフトウェアと同期させます。
   
-AD DS 機能の強化、双方向同期、およびその他の管理機能をする場合、無償のサブスクリプションを有料のプレミアム サブスクリプションにアップグレードできます。詳細については、 [Azure Active Directory のエディション](https://go.microsoft.com/fwlink/p/?LinkId=524280)を参照してください。
+AD DS 機能の強化、双方向同期、およびその他の管理機能をする場合、無償のサブスクリプションを有料のプレミアム サブスクリプションにアップグレードできます。詳細については、 [Azure Active Directory のエディション](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)を参照してください。
   
 Office 365 と Azure AD に関する詳細については、 [Office 365 の Id を理解して Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9)を参照してください。
   
@@ -57,3 +62,7 @@ Office 365 と Azure AD に関する詳細については、 [Office 365 の Id 
 - [Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
 
+[統合アプリケーションと Office 365 の管理者向けの Azure AD](integrated-apps-and-azure-ads.md)の詳細については、 [AD の Azure アプリケーション ギャラリーとシングル ・ サインオン](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)。
+
+### <a name="power-apps"></a>電源アプリケーション
+電源アプリケーションは、SharePoint リストなどのソースの既存のデータに接続できるモバイル デバイスのフォーカスのあるアプリケーションとその他のデータ アプリケーションです。詳細については、 [SharePoint Online の一覧については、PowerApp を作成](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab)し、 [PowerApps のページ](https://powerapps.microsoft.com/)を参照してください。

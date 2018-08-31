@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してアカウントのライセンスと
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2018
+ms.date: 08/27/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,20 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。
-ms.openlocfilehash: 5286a581a67b39d5d5ca921b998d6ea14b3ff50f
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
+ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23223109"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
-**の概要:**Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。
+**の概要:** Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。
   
 、Office 365 では、計画のライセンスからライセンス (も呼び出された Sku または Office 365 プラン) ユーザーにそれらの計画に定義されている Office 365 サービスへのアクセスを提供します。ただし、[ユーザーはそれらに現在割り当てられているライセンスで使用可能なすべてのサービスへのアクセスをいない可能性があります。ユーザー アカウントのサービスの状態を表示するのには、Office 365 の PowerShell を使用できます。 
 
 ## <a name="before-you-begin"></a>はじめに
-<a name="RTT"> </a>
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
@@ -44,10 +44,10 @@ ms.lasthandoff: 04/20/2018
     
 - _All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
-<a name="ShortVersion"> </a>
-## <a name="the-short-version-instructions-without-explanations"></a>簡略版 (説明なしの手順)
 
-ユーザーへのアクセス権を持っている Office 365 の PowerShell のすべてのサービスを表示するには、次の構文を使用します。
+## <a name="to-view-services-for-a-user-account"></a>ユーザー アカウントのサービスを表示するには
+
+ユーザーへのアクセス権を持っているすべての Office 365 サービスを表示するには、次の構文を使用します。
   
 ```
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
@@ -89,213 +89,22 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceSt
 Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
-<a name="LongVersion"> </a>
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>詳細版 (詳細な説明付きの手順)
+*複数のライセンス*が割り当てられているユーザーのためのすべてのサービスを表示するには、次の構文を使用します。
 
-### <a name="find-the-office-365-powershell-services-that-a-user-has-access-to"></a>Office 365 の PowerShell サービスへのアクセスを持つユーザーを見つける
-
-ユーザーに Office 365 のライセンスが発行されているし、どのユーザーがいないを理解するが明らかに重要です。(詳細については[Office 365 の PowerShell でのライセンスおよびライセンスのないユーザーを表示する](view-licensed-and-unlicensed-users-with-office-365-powershell.md)資料を参照してください)。ただし、Office 365 のライセンスがあるだけはわかります何もそのユーザーが実際に何と Office 365 について。彼または彼女を使用して Exchange Online または Skype オンライン ビジネスのでしょうか。このユーザーが SharePoint のオンラインでアクセスできますか。彼または彼女が、Office Professional Plus へのアクセスですか。ユーザーがこれらのサービスにアクセスする可能性を持っていること、ライセンスのことです。ただし、ユーザーに利用できる機能は、彼または彼女のライセンスを有効になっているサービスに依存します。
-  
-どのように確認するが Office 365 の機能ユーザーへのアクセス権を持っているでしょうか。このいずれかのようなコマンドを実行する必要があることを実行します。
-  
 ```
-Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Select-Object -ExpandProperty Licenses | Select-Object -ExpandProperty ServiceStatus
-```
-
-このコマンドで、BelindaN@litwareinc.com のアカウントに関する情報を取得する**Get MsolUser**コマンドレットを使用している私たち。その情報を取得して、アカウント データを**Select-object**コマンドレットにパイプし、**ライセンス**のプロパティの値を「拡張」を**選択オブジェクト**を確認します。
-  
- `Select-Object -ExpandProperty Licenses`
-  
-理由で実行するでしょうか。既定では**ライセンス**のプロパティのみがわかりますから Belinda のライセンスが付属していたライセンス パックの名前。
-  
-```
-Licenses
---------
-{litwareinc:ENTERPRISEPACK}
+$userAccountUPN="<user account UPN>"
+$AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
+$licArray = @()
+for($i = 0; $i -lt $AllLicenses.Count; $i++)
+{
+$licArray += "License: " + $AllLicenses[$i].AccountSkuId
+$licArray +=  $AllLicenses[$i].ServiceStatus
+$licArray +=  ""
+}
+$licArray
 ```
 
-**ライセンス**プロパティを「拡大」は、少しの詳細については。
   
-```
-ExtensionData     AccountSku       AccountSkuId ServiceStatus
--------------     ----------       ------------ -------------
-System.Runtime... Microsoft.On...  litwarein... {Microsoft.Online.A...
-```
-
-**サービス ステータス**のプロパティを展開することによって取得できますより多くの情報。
-  
-|****サービス プラン****|****説明****|
-|:-----|:-----|
-| `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
-| `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
-   
-> [!NOTE]
-> 入力することが多すぎることがあると答えるとしますか。配置するには、ほとんどの Windows PowerShell obtuseness を実行できますこの縮小バージョンのコマンドの代わりに: >`(Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com).Licenses[0].ServiceStatus`
-  
-念のため、「展開」**のライセンス**は**ライセンス**が複数値を持つプロパティであるため: 複数の値を格納できる単一のプロパティです。展開してプロパティの値を単に下にドリル ダウンするときの取得次の値を既定では、表示されていない画面に表示されます。
-  
-> [!NOTE]
-> どのようにするになっている値は、複数値を持つプロパティであることでしょうか。アウト ボックスが、次のようなコマンドを実行している実行してください: > `Get-MsolUser -UserPrincipalName BelindaN@litwareinc.com | Get-Member`> **get-member**コマンドレットは、オブジェクト自体に関する情報を返しますこの例では、プロパティに関する情報は、ユーザー アカウント オブジェクトを構成する値です。**ライセンス**のプロパティについては、**メンバーの取得**を次のとおりです: > `Licenses Property System.Collections.Generic.List[Microsoft.On...`> プロパティ定義のコレクションのある場合 (この例では、 `System.Collections.Generic.List`) 複数値を持つプロパティを扱うことがわかって、します。 
-  
-このすべての意味は何ですか。それに答える、最初にもう 1 つ見てみましょう**Get MsolUser**コマンドレットによって返される情報。
-  
-```
-ServicePlan                       ProvisioningStatus
------------                       ------------------
-SWAY                              Success
-INTUNE_O365                       Success
-YAMMER_ENTERPRISE                 PendingInput
-RMS_S_ENTERPRISE                  Success
-OFFICESUBSCRIPTION                Success
-MCOSTANDARD                       Success
-SHAREPOINTWAC                     Success
-SHAREPOINTENTERPRISE              Success
-EXCHANGE_S_ENTERPRISE             Success
-```
-
-見て奇妙という名前のサービス プランが実際に表すかを説明する表にします。
-  
-|****サービス プラン****|****説明****|
-|:-----|:-----|
-| `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
-| `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
-   
-おわかりでしょうか。 `MCOSTANDARD`ビジネス オンラインでは、Skype の内部プログラミング名だけでは、中に`OFFICESUSBCRIPTION`は、Office Professional Plus の内部のプログラミング名だけ。世界では、最も直感的なものではありませんが、次の表を手元にする限り、Office 365 サービスを使用する際に多くの問題を必要はありません。
-  
-待て: はありません。**ProvisioningStatus**設定されている場合、[ライセンスを表示し Office 365 の PowerShell を使用してサービス](view-licenses-and-services-with-office-365-powershell.md)の記事で学んだように`Success`つまり、サービスが完全に有効になっています。などの場合は`MCOSTANDARD`に設定されて`Success`、ユーザーがオンライン ビジネスの Skype にアクセスできることを意味します。**ProvisioningStatus**設定されている場合`PendingInput`Office 365 のサービス要求がまだ処理することを意味します。ただし、ユーザー通常ログオンし、要求が処理を終了するときにサービスにアクセスします。(`YAMMER_ENTERPRISE`として常に表示される`PendingInput`が、[ok]: Yammer へのログオンからユーザーを停止をしない)。
-  
-> [!IMPORTANT]
-> ユーザーがインストールし、新しい Office Professional Plus インストール中にアクティブにすることができます`OFFICESUBSCRIPTION`では、`PendingInput`の状態です。
-  
-言うまでも、サービスに設定されて`Disabled`問題のサービスのユーザーが利用できるがないことを意味します。
-  
-
-### <a name="find-users-that-have-access-to-specific-office-365-powershell-services"></a>Office 365 の PowerShell の特定のサービスへのアクセス権を持つユーザーを検索します。
-
-別の資料では、サービスへのユーザー アクセスを無効にするのには、Office 365 の PowerShell を使用する方法を見られました。(場合は、その記事を参照してください[Office 365 の PowerShell を使用してサービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md))。により次のような疑問が生じます: どの*ユーザー*を決定する方法はあります (は、複数のユーザー) が有効か無効にするサービスがあるでしょうか。
-  
-その他のご質問があると願っていました。その質問に解答するために最初に考えた[ライセンスを表示し Office 365 の PowerShell を使用してサービス](view-licenses-and-services-with-office-365-powershell.md)の記事で当社のみ使用可能なライセンス プランのサービスのテーブルを見てみましょう`litwareinc:ENTERPRISEPACK`。
-  
-|****サービス プラン****|****説明****|
-|:-----|:-----|
-| `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
-| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
-| `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
-   
-サービス計画では、プログラミングの内部名は製品よりもそれ以上、思い出して、たとえば、 `OFFICESUBSCRIPTION`、1 つの名前には、Office Professional Plus の内部のプログラミングの名前です。場合`OFFICESUBSCRIPTION`として表示される`SUCCESS`ユーザーのサービス プランでは、上、つまり Office Professional Plus にアクセスするユーザーができることです。場合`EXCHANGE_S_ENTERPRISE`と表示されている`DISABLED`ユーザーは Exchange Online を使用できないことを意味します。
-  
-> [!IMPORTANT]
-> ユーザーがインストールし、新しい Office Professional Plus インストール中にアクティブにすることができます`OFFICESUBSCRIPTION`では、`PendingInput`の状態です。
-  
-今こそ、サービスの表示順序が非常に重要です。Windows PowerShell には、リスト内の各エントリにインデックス番号が割り当てられます。最初のエントリは 0 で、次のエントリは、1 というように。結果は、次の表で説明します。
-  
-|インデックス番号。|****サービス プラン****|
-|:-----|:-----|
-|0  <br/> | `SWAY` <br/> |
-|1  <br/> | `INTUNE_O365` <br/> |
-|2  <br/> | `YAMMER_ENTERPRISE` <br/> |
-|3  <br/> | `RMS_S_ENTERPRISE` <br/> |
-|4  <br/> | `OFFICESUBSCRIPTION` <br/> |
-|5  <br/> | `MCOSTANDARD` <br/> |
-|6  <br/> | `SHAREPOINTWAC` <br/> |
-|7  <br/> | `SHAREPOINTENTERPRISE` <br/> |
-|8  <br/> | `EXCHANGE_S_ENTERPRISE` <br/> |
-   
-ご覧のように、`SWAY`最初のサービスがあるので、インデックス番号 0 が割り当てられます。
-  
-> [!CAUTION]
-> 理由 0 と 1 がありませんか。プログラミングのことです。プログラミング言語では、インデックスは、項目は「オフセット」配列の先頭からどれだけを指示します。最初の項目*が*のオフセットが 0 であるため、配列の先頭。2 番目の項目は、オフセットが 1 であるため、配列の先頭から 1 個のアイテムです。
-  
-例を試してみましょう。ご Exchange Online を有効になっていないすべてのライセンスを付与されたユーザーの一覧があるとします。次のコマンドを使用できます。
-  
-```
-Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
-```
-
-正直なところ、ある暗号のようなほとんどのコマンドのしくみを説明する 1 分を見てみましょう。これは、実際に次の 2 つのコマンドと、最初の部分は非常に単純な: 当社のすべての Office 365 ユーザーのコレクションを取得する**Get MsolUser**コマンドレットを使用しています (ライセンスおよびライセンスのない)。
-  
-```
-Get-MsolUser
-```
-
-その情報は、 **Where-object**コマンドレットにパイプします。**場所オブジェクト**では、すべてのユーザー アカウントを経由し、次の条件の両方に一致するこれらのアカウントを探します。
-  
-- **IsLicensed**プロパティは ( `-eq`) `True` ( `$true`)。により、ライセンスのないユーザーを除外します。
-    
-- **ライセンス [0] の値です。サービス ステータス [8]。ProvisioningStatus**プロパティは ( `-eq`) `Disabled`。当社の当面の目的のこの扱いプロパティ名の重要な部分は、
-    
-     `ServiceStatus[8]`
-    
-    `[8]` Exchange オンラインのインデックス番号を表します。(それがわかったから数分前にテーブルを参照)。Skype オンライン ビジネスの有効なすべてのユーザーを検索する場合はどうでしょうか。ビジネス オンラインの Skype のインデックス番号は、5、私たちには、この構文を使用するようにします。
-    
-     `ServiceStatus[5]`
-    
-    その他も同様です。
-    
-    ちなみに、`Licenses[0]`ライセンス計画を確認することを示します。1 つのライセンスについては、テスト ドメインであるためこれも関係ありません。ですが、2 つの異なるライセンス計画からライセンスが割り当てられているユーザーがあるとします。その場合は、 `Licenses[0]` 、ライセンスも最初のプランを表すと`Licenses[1]`2 つ目のライセンス プランを表します。
-    
-    ユーザーに割り当てられているライセンス、およびライセンスがリストされる順序を調べるには、次のコマンドを実行します。
-    
-  ```
-  Get-MsolUser -UserPrincipalName <Account>  | Format-List DisplayName,Licenses
-  ```
-
-どのように動作が発生するかOffice Professional Plus のインデックス番号は、4 です。したがって、このコマンドは、Office Professional Plus を有効になっていないすべてのユーザーの一覧を返します。
-  
-```
-Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceStatus[4].ProvisioningStatus -eq "Disabled"}
-```
-
-たい場合は*有効な*Office Professional Plus をされているユーザーのリストですか。そうまで有効になって場合、**サービス ステータス**を行うか、`PendingInput`または`Success`。**サービス ステータス**のつまり、等しく*ない*( `-ne`) `Disabled`。行うには、前のコマンドを実行して、スワップ アウトすることを意味する、`-eq`の演算子、`-ne`演算子。
-  
-```
-Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceStatus[4].ProvisioningStatus -ne "Disabled"}
-```
-
-言っているように、そのコード可能性がありますされません勝利を収めて多くの利点を競う。真実のように設定、さらに多くのコードを取得できますタングル。たとえばが有効になって両方の Skype のオンライン ビジネス、オンラインの Exchange ユーザーを検索したいとします。
-  
-```
-Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses.ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-心配 gnarly 方法を次の方法が多すぎる: 重要なことですが、比較的少ない労力でこの情報を取得できます。Office 365 管理センターを使用するこれと同じ情報を取得できませんか。理論的には、[はい] ですが、具体的には、なし。Office 365 管理センターを使用するこれと同じ情報を取得するには、各ユーザーのライセンス情報を一度に 1 人のユーザーを確認し、手動での記録の*X*を有効になっているし、付け加えている必要があります。使用できますが、正直に: 10 または 11 を複数のユーザーであれば、しないことにこれを行う。すぎて手間と時間がかかるをお勧めします。
-  
-、言うまでもなく、あるため、Windows PowerShell がある: Windows PowerShell を節約するなどの手間と時間のかかるタスクからです。
-  
-ここでは、Office 365 の E5 のサブスクリプションをライセンス、サービス ステータスのインデックスで識別される、指定された一連のサービスのサービスの情報を表示するためのコマンドの例です。
-  
-```
-Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[12].ProvisioningStatus}}, @{Name="Teams";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[20].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[19].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[21].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[22].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[24].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[23].ProvisioningStatus}} | ConvertTo-CSV > "C:\Service Info.csv"
-```
-
-このコマンドは、すべてのユーザーおよびサービス (チーム、Yammer、AD RMS、OfficePro、Skype、SharePoint、および Exchange) の指定されたセットの場合は、そのサービス ステータスを表示、CSV ファイルを作成します。
-
->[!Note]
->サブスクリプションのサービスの一覧を取得することができます、`(Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus`コマンドです。出力では、0 からインデックス サービスの番号付けを開始します。上記のコマンドは、単なる例です。サービスのインデックス番号は、時間の経過とともに変更できます。
->
-
-  
-<a name="SeeAlso"> </a>
 ## <a name="see-also"></a>関連項目
 
 Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
@@ -314,9 +123,9 @@ Office 365 PowerShell でのユーザー管理に関する次の追加のトピ�
   
 - [Convertto-html コマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=113290)
     
-- [形式リスト](https://go.microsoft.com/fwlink/p/?LinkId=113302)
+- [Format-List](https://go.microsoft.com/fwlink/p/?LinkId=113302)
     
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [Get-msoluser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
 - [Select-Object](https://go.microsoft.com/fwlink/p/?LinkId=113387)
     

@@ -3,20 +3,23 @@ title: ハイブリッド ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 3/2/2018
+ms.date: 07/30/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。'
-ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
-ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
-ms.translationtype: HT
+ms.openlocfilehash: c648ecb7df1a4604960a5b0445ce3de7a74c9acf
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915872"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -28,7 +31,7 @@ Microsoft Azure を使用すれば、通常ならオンプレミスで展開さ�
 
 - [Azure AD for SharePoint サーバー認証の使用](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Microsoft Azure での Office 365 ディレクトリ同期 (DirSync) の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Microsoft Azure での Office 365 ディレクトリ同期の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
@@ -42,15 +45,7 @@ Microsoft Azure を使用すれば、通常ならオンプレミスで展開さ�
     
 - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
-    
-**ディスカッションへの参加**
-
-|**お問い合わせ**|**説明**|
-|:-----|:-----|
-|**必要なソリューション** <br/> |複数の Microsoft 製品やサービスにまたがるソリューションに関するコンテンツを作成しています。[MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) に電子メールを送信して、サーバー間のソリューションに関するご意見や、特定のソリューションに関するご質問をお寄せください。<br/> |
-|**ソリューションのディスカッションへの参加** <br/> |クラウドベースのソリューションに関して強い関心がある場合は、Cloud Adoption Advisory Board (CAAB) に参加して、大規模で活発な Microsoft コンテンツ開発者、業界プロフェッショナル、および世界中のお客様の大規模で活発なコミュニティとつながることを検討してください。参加するには、Microsoft Tech Community の [CAAB (Cloud Adoption Advisory Board) スペース](https://aka.ms/caab)のメンバーとしてご自分を追加し、[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!) 宛に電子メールを送信してください。[CAAB ブログ](https://blogs.technet.com/b/solutions_advisory_board/)でコミュニティ関連のコンテンツをだれでも読むことができます。ただし、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。<br/> |
-|**記載されているアートの取得方法** <br/> |この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記述した電子メールを [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20) に送信してください。<br/> |
-   
+  
 ## <a name="see-also"></a>関連項目
 
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)

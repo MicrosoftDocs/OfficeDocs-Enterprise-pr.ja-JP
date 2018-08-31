@@ -1,5 +1,5 @@
 ---
-title: "新規に構築"
+title: 新規に構築
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "概要: は、クラウドの設定の詳細については独自のストレージ ・ サービスやソリューションの作成に使用できるストレージ構成要素を取得します。"
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 概要:独自のストレージ サービスやソリューションの作成に使用できる、クラウド ストレージ構成要素のセットに関する詳細について説明します。
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915682"
 ---
 # <a name="build-from-the-ground-up"></a>新規に構築
 
- **の概要:**クラウドの設定の詳細については独自のストレージ ・ サービスやソリューションの作成に使用できるストレージ構成要素を取得します。
+ **概要:** 独自のストレージ サービスやソリューションの作成に使用できる、クラウド ストレージ構成要素のセットに関する詳細について説明します。
   
 "新規に構築" ストレージ ソリューション:
   
@@ -70,7 +73,12 @@ ms.lasthandoff: 02/09/2018
 
 ### <a name="features"></a>機能
 
-- 各ストレージ アカウントは、最大で 500 TB を保持できます (1 つのサブスクリプションは、複数のストレージ アカウントを持つことができます)
+- 各ストレージ アカウントは 500 TB まで保存可能 (1 つのサブスクリプションで複数のストレージ アカウントの設定が可能)
+
+
+
+
+
     
 - ストレージ アカウントはストレージに構成され、そこでセキュリティを適用し、BLOB を含めることが可能
     
@@ -144,7 +152,8 @@ ms.lasthandoff: 02/09/2018
     
 - 一般的に、従来の SQL より低コスト
     
-- 値のクエリを実行する場合に低速のキー、クエリを実行する場合に非常に高速
+- キーのクエリの場合は高速、値のクエリの場合は低速
+
     
 - ストレージ アカウントの上限まで、テーブル数を大規模に拡張可能
     
