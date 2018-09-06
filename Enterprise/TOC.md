@@ -1,4 +1,4 @@
-# クラウド アーキテクチャ モデル
+# [クラウド アーキテクチャ モデル](microsoft-cloud-it-architecture-resources.md)
 ## [エンタープライズ アーキテクトのための Microsoft Cloud ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [クラウド接続のためにネットワークを進化させる](evolving-your-network-for-cloud-connectivity.md)
 ### [Microsoft クラウド接続の一般的な要素](common-elements-of-microsoft-cloud-connectivity.md)
@@ -66,7 +66,7 @@
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
 
-# Office 365 をテストする
+# [Office 365 をテストする](cloud-adoption-test-lab-guides-tlgs.md)
 ## [基本構成開発/テスト環境](base-configuration-dev-test-environment.md)
 ## [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
 ### [Office 365 開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)
