@@ -3,7 +3,7 @@ title: データ移行をリクエストする方法
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222979"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839575"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -109,5 +109,15 @@ IP アドレスを追加した後には、新しいデータセンター geo へ
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>モバイル デバイス上の古い Exchange 設定を更新するようユーザーに通知する
 
 ユーザーは、 **m.outlook.com**または**podxxxxx.outlook.com**に設定する Exchange Server でモバイル デバイスを持って、お勧め**outlook.office365.com**にそれらを切り替える[セットを同期するモバイル デバイス上の指示に従う自分のアカウントで](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)。
+
+## <a name="related-topics"></a>関連項目
+
+[コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
+
+[データ移行についての一般的な FAQ](data-move-faq.md)
+
+[Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure のリージョン](https://azure.microsoft.com/en-us/regions/)
   
 

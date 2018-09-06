@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: '概要: 開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193727"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915772"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>開発/テスト環境の SharePoint Online サイトをセキュリティで保護する
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193727"
   
 この記事では、4 つの異なるタイプの SharePoint Online チーム サイトを含む開発/テスト環境を [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md) ソリューション用に作成する手順を順を追って説明します。
   
-![セキュリティで保護された SharePoint Online の開発/テスト環境の 4 つすべてのチーム サイト。](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![セキュリティで保護された SharePoint Online の開発/テスト環境の 4 つすべてのチーム サイト。](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 SharePoint Online チーム サイトを運用環境に展開する前に、この開発/テスト環境を使用して情報保護の動作を試し、特定の必要に応じて設定を微調整します。
   
@@ -271,7 +273,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 最終的な構成をここに示します。
   
-![組織全体のパブリック SharePoint Online チーム サイトのベースライン レベルの保護。](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![組織全体のパブリック SharePoint Online チーム サイトのベースライン レベルの保護。](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>プロジェクト 1 チーム サイト
 
@@ -305,7 +307,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 最終的な構成をここに示します。
   
-![Project1 プライベート SharePoint Online チーム サイトのベースライン レベルの保護。](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Project1 プライベート SharePoint Online チーム サイトのベースライン レベルの保護。](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>マーケティング キャンペーン チーム サイト
 
@@ -421,7 +423,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 最終的な構成をここに示します。
   
-![マーケティング キャンペーンの独立した SharePoint Online チーム サイトの機密レベルの保護。](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![マーケティング キャンペーンの独立した SharePoint Online チーム サイトの機密レベルの保護。](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>会社戦略のチーム サイト
 
@@ -569,7 +571,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 16. **[Azure Information Protection]** ブレードで **[ポリシー] > [+ 新しいポリシーの追加]** をクリックします。
     
-17. **[ポリシー名]** に「**CompanyStrategy**」と入力し、**[説明]** に「**会社戦略チーム サイトのドキュメントのラベル**」と入力します。
+17. **[ポリシー名]** に「**CompanyStrategy**」と入力し、**[説明]** に「**会社戦略チーム サイトのドキュメント**」と入力します。
     
 18. **[このポリシーを取得するユーザーまたはグループを選択してください] > [ユーザー/グループ]** をクリックし、 **[C スイート]** を選択します。
     
@@ -583,13 +585,13 @@ Azure Information Protection とこの新しいラベルでドキュメントを
   
 最終的な構成をここに示します。
   
-![会社戦略の独立した SharePoint Online チーム サイトの高機密レベルの保護。](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![会社戦略の独立した SharePoint Online チーム サイトの高機密レベルの保護。](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 これら 4 つのサイトでドキュメントを作成し、試用版サブスクリプションでさまざまなユーザー アカウントを使用して、それらへのアクセスをテストする準備が整いました。
   
 ここに 4 つの SharePoint Online チーム サイト全体の構成を示します。
   
-![セキュリティで保護された SharePoint Online の開発/テスト環境の 4 つすべてのチーム サイト。](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![セキュリティで保護された SharePoint Online の開発/テスト環境の 4 つすべてのチーム サイト。](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>次の手順
 

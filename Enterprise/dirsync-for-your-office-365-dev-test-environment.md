@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,11 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '概要: Office 365 の開発/テスト環境に向けたディレクトリ同期を構成します。'
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915842"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のディレクトリ同期
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 05/19/2018
   
 多くの組織は、Azure AD Connect とディレクトリ同期を使用して、オンプレミスの Windows Server Active Directory (AD) フォレスト内のアカウントのセットを Office 365 内のアカウントのセットに同期しています。この記事では、パスワード ハッシュ同期を伴うディレクトリ同期を Office 365 開発/テスト環境に追加する方法について説明します。最終的な構成は、次のとおりになります。
   
-![ディレクトリ同期を使用した Office 365 開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![ディレクトリ同期を使用した Office 365 開発/テスト環境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 この構成は、次の内容で成立します。 
   
@@ -47,7 +50,7 @@ ms.lasthandoff: 05/19/2018
 
 [Office 365 開発/テスト環境](office-365-dev-test-environment.md)記事のフェーズ 1、2、および 3 の指示に従ってください。最終的な構成は、次のようになります。
   
-![Office 365 開発/テスト環境](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Office 365 開発/テスト環境](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 この構成は、次の内容で成立します。 
   
@@ -103,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 最終的な構成を示します。
   
-![ディレクトリ同期を使用した Office 365 開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![ディレクトリ同期を使用した Office 365 開発/テスト環境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 この構成は、次の内容で成立します。 
   

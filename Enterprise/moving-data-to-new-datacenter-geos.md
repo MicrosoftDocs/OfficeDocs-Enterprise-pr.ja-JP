@@ -3,7 +3,7 @@ title: コア データを新しい Office 365 データ センター geo に移
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: '新しいデータ センターの地域では、容量を追加し、継続的な顧客の需要と使用率の増大をサポートするためにリソースを計算します。さらに、新しいデータ センターの地域は、主要な顧客データの地域のデータの常駐サービスを提供しています。コア カスタマー データは、Microsoft Online Services の用語で定義されている顧客データのサブセットを参照する用語: Exchange Online のメールボックスの内容 (電子メールの本文、予定表エントリ、および電子メールの添付ファイルの内容) と、SharePoint Online サイトのコンテンツとファイル、そのサイト内に格納し、ビジネスの OneDrive にファイルをアップロードします。'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541765"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839585"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>コア データを新しい Office 365 データ センター geo に移行する
 

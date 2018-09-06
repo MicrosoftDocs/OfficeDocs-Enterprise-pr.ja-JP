@@ -3,7 +3,7 @@ title: データ移行についての一般的な FAQ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: 40f83ee94aaa7c919f08d91d888ff131da02df67
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541680"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839595"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -149,4 +149,12 @@ A. はい。
   
 A. はい。Microsoft は、世界中の 23 か国の 50 を超える場所で公衆インターネットに接続する大規模なグローバル ネットワークを保有しており、1,500 を超えるインターネット サービス プロバイダー (ISP) と相互接続契約を結んでいます。インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。
   
+## <a name="related-topics"></a>関連項目
 
+[コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
+
+[データ移行をリクエストする方法](request-your-data-move.md)
+
+[Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure のリージョン](https://azure.microsoft.com/en-us/regions/)

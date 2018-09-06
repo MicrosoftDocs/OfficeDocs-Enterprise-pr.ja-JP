@@ -10,11 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915332"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -38,6 +39,14 @@ OneDrive サイトの地理的場所を移動する際には、想定される�
 
 移動が正常に終了した時点で、ユーザーに対し、OneDrive での作業を再開できることを伝える電子メールを送信するようにしてください。
 
+## <a name="scheduling-onedrive-site-moves"></a>OneDrive サイトの移動のスケジュール設定
+
+OneDrive サイトの移動を事前にスケジュールすることができます (この記事の後半でご説明いたします)。少数のユーザーの移動から始め、ワークフローと連絡手順を確認することをお勧めします。プロセスが満足できるものであった場合、次のように移動をスケジュールします。
+
+- 一度に最大 4,000 件の移動をスケジュールすることができます。
+- 移動開始後はスケジュールを追加でき、常時最大 4,000 件の保留中の移動をキューに置いておけます。
+- 1 か月あたり 4,000 件以上の移動をスケジュールしないことをお勧めします。
+
 ## <a name="moving-a-onedrive-site"></a>OneDrive サイトの移動
 
 OneDrive 地域移動を実行するには、まず、管理者がユーザーの優先されるデータの場所 (PDL) を適切な地域の場所に設定しておく必要があります。PDL の設定後、PDL の更新内容が地域の場所全体に同期されるまで少なくとも 24 時間待機してから、OneDrive 地域移動を開始します。
@@ -50,7 +59,7 @@ OneDrive 地域移動を実行するには、まず、管理者がユーザー�
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>環境の検証
 
@@ -85,7 +94,7 @@ OneDrive の移動が可能な状態になっている場合は Success が返�
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 将来の地域移動をスケジュールするには、次に示すパラメーターのいずれかを使用します。
 

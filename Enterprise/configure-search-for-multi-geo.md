@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境で検索を構成する方法について説明します。
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915062"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>OneDrive for Business 複数地域の検索の構成
 
@@ -81,7 +82,7 @@ Delve フィードとプロファイル カードには、**中央**の場所に
 </tr>
 <tr class="even">
 <td align="left">絞り込み検索</td>
-<td align="left">検索は、テナントのすべての地域の場所からの絞り込み条件を返して、それらを集約します。この集約は、最善努力型であるため、絞り込み条件のカウントが 100% の精度にならないことがあります。ほとんどの検索型シナリオの場合は、この精度で十分です。</td>
+<td align="left">検索は、テナントのすべての地域の場所からの絞り込み条件を返して、それらを集約します。この集約は、最善努力型であるため、絞り込み条件のカウントが 100% の精度にならないことがあります。ほとんどの検索型シナリオの場合は、この精度で十分です。 </td>
 <td align="left">絞り込み条件の完全性に依存する検索型アプリケーションの場合は、複数地域のファンアウトを使用しないで、それぞれの地域の場所を個別にクエリします。</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ Delve フィードとプロファイル カードには、**中央**の場所に
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>複数地域環境での検索の動作について
 
 **すべて**の検索クライアントは、検索インデックスとの対話型の操作に既存の SharePoint 検索 REST API を使用します。
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. 検索クライアントは、クエリ プロパティ EnableMultiGeoSearch = true を設定して、検索 REST エンドポイントを呼び出します。
 2. クエリは、テナント内のすべての地域の場所に送信されます。
@@ -150,8 +152,8 @@ Delve フィードとプロファイル カードには、**中央**の場所に
 
 3.  設定するバーティカルを選択し、右上の **[設定]** ギア アイコンをクリックして、**[ページの編集]** をクリックします。編集モードで、検索結果ページが開きます。
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  検索結果 Web パーツで、Web パーツの右上にポインターを移動し、矢印をクリックして、メニューにある **[Web パーツの編集]** をクリックします。ページ右上のリボンの下に、検索結果 Web パーツ ツール ウィンドウが開きます。![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  検索結果 Web パーツで、Web パーツの右上にポインターを移動し、矢印をクリックして、メニューにある **[Web パーツの編集]** をクリックします。ページ右上のリボンの下に、検索結果 Web パーツ ツール ウィンドウが開きます。![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Web パーツ ツール ウィンドウの **[設定]** セクションで、**[結果コントロールの設定]** から **[複数地域の検索結果を表示する]** を選択して、検索結果 Web パーツに、すべての地域の場所からの結果が表示されるようにします。
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus: 要求に対する応答で SharePoint 検索 API が返�
 
 GET 要求の場合は、URL でクエリ パラメーターを指定します。POST 要求の場合は、JavaScript Object Notation (JSON) 形式のクエリ パラメーターを本文で渡します。
 
+
 #### <a name="request-headers"></a>要求ヘッダー
 
 <table>
@@ -250,7 +253,10 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトする GET 要求の例
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> MultiGeoSearchConfiguration プロパティの地理的場所の一覧内のコンマとコロンの前に **バックスラッシュ** 記号が先行します。これは、GET 要求では複数のプロパティの区切りにはコロンが、複数の因数の区切りにはコンマが使用されるためです。エスケープ文字としてバックスラッシュ記号を使わない場合、MultiGeoSearchConfiguration プロパティの解釈は間違ったものになります。
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる POST 要求の例
 

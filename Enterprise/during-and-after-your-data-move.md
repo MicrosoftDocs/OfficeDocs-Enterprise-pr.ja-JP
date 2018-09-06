@@ -3,7 +3,7 @@ title: データの移行中および移行後
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行はエンドユーザーへの影響を最小限に抑えたバックエンドの操作です。Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541669"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839605"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -165,4 +165,13 @@ SharePoint Online データを移行する過程で、検索インデックス�
 
 Exchange Online、SharePoint Online、および Skype for Business の顧客データのみを移動します。その他のサービスのデータは移動しません。これらの別サービスの顧客やユーザーにとって、変更や影響はありません。移動プロセスも影響しません。また、顧客データの場所は変更されません。
   
+## <a name="related-topics"></a>関連項目 
+ 
+[データ移行をリクエストする方法](request-your-data-move.md)
+    
+[データ移行についての一般的な FAQ](data-move-faq.md)
+  
+[Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure のリージョン](https://azure.microsoft.com/en-us/regions/)
 

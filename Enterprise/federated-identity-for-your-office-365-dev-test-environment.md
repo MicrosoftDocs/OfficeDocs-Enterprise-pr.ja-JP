@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Office 365 開発/テスト環境に向けたフェデレーション認証を構成します。'
-ms.openlocfilehash: 2877fa7f85643057c6ba8630939c690256bb8918
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215859"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915242"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のフェデレーション ID
 
@@ -33,7 +35,7 @@ Office 365 は、フェデレーション ID をサポートします。つま�
   
 **図 1: Office 365 開発/テスト環境のフェデレーション認証**
 
-![Office 365 開発/テスト環境の DirSync に追加された Web アプリケーション プロキシ サーバー](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![Office 365 開発/テスト環境のフェデレーション認証](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 図 1 に示す構成の内容は、次のとおりです。 
   
@@ -73,7 +75,7 @@ DNS プロバイダーで適切な DNS レコードを作成して、ドメイ�
   
 **図 2: Office 365 開発/テスト環境のディレクトリ同期**
 
-![ディレクトリ同期を使用した Office 365 開発/テスト環境](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![ディレクトリ同期を使用した Office 365 開発/テスト環境](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 図 2 は、Office 365 開発/テスト環境のディレクトリ同期を示しています。この図には、Office 365 と、Azure 仮想ネットワーク内の CLIENT1、APP1、DC1 の各仮想マシンが含まれています。
   
@@ -121,7 +123,7 @@ Restart-Computer
   
 **図 3: AD FS サーバーの追加**
 
-![Office 365 開発/テスト環境の DirSync に追加された AD FS サーバー](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![Office 365 開発/テスト環境の DirSync に追加された AD FS サーバー](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
 図 3 は、Office 365 開発/テスト環境の DirSync に ADFS1 サーバーが追加されたことを示しています。
   
@@ -192,7 +194,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
   
 **図 4: Web アプリケーション プロキシ サーバーの追加**
 
-![Office 365 開発/テスト環境の DirSync に追加された Web アプリケーション プロキシ サーバー](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![Office 365 開発/テスト環境の DirSync に追加された Web アプリケーション プロキシ サーバー](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 図 4 は、PROXY1 サーバーの追加を示しています。
   
