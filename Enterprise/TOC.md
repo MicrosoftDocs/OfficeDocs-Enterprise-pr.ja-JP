@@ -92,7 +92,7 @@
 ### [ディレクトリ同期用に非ルーティング ドメインを準備する方法](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
 ### [Office 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
-### [Office 365 ネットワーク接続の原則](network-connectivity.md)
+### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
 ### Office 365 エンドポイント
 #### [世界中のエンドポイント](urls-and-ip-address-ranges.md)
 #### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
