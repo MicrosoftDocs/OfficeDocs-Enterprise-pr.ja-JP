@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: 特定し、遅れて、ハング、および SharePoint のオンラインのビジネス、Exchange Online では、Skype のビジネス オンラインでは、OneDrive、クライアント コンピューターの間でパフォーマンスの低下を解決するための手順を理解する必要がありますか。サポートに連絡する前に、Office 365 のパフォーマンスに関する問題のトラブルシューティングを行うし、もいくつかの最も一般的な問題を解決するをこの資料に役立ちます。
-ms.openlocfilehash: c7eed9498920c601b3b345e8d1879ddbb16c56c3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
+ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541675"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849370"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 のパフォーマンスに関するトラブルシューティングの計画
 
@@ -120,14 +120,14 @@ Netmon 3.4 をインストールすると、ツールを起動し、これらの
   
  **HTTPWatch を実行し、問題を再現**
   
-1. HTTPWatch はブラウザーのプラグイン、ブラウザーのツールを公開することは、Internet Explorer のバージョンごとに若干異なります。通常、Internet Explorer ブラウザーのコマンド バーの下、HTTPWatch を検索できます。</br></br>チェック、ブラウザーのバージョンでヘルプをクリックして、ブラウザー ウィンドウで、HTTPWatch プラグインが表示されない場合、\>歯車記号および Internet Explorer に関する、または、新しいバージョンの Internet Explorer で、] をクリックします。**コマンド**バーを起動するに Internet Explorer のメニュー バーを右クリックし、**コマンド バー**] をクリックします。以前は、HTTPWatch が関連付けられているコマンドと、エクスプ ローラー バーの両方で、1 回インストールすると、**ツール**、およびツールバー アイコンの確認 (コンピューターを再起動後もアイコンがすぐに表示されない場合。ツールバーをカスタマイズすることができます、オプションを追加できることに注意してください。</br>
+1. HTTPWatch はブラウザーのプラグイン、ブラウザーのツールを公開することは、Internet Explorer のバージョンごとに若干異なります。通常、Internet Explorer ブラウザーのコマンド バーの下、HTTPWatch を検索できます。</br>チェック、ブラウザーのバージョンでヘルプをクリックして、ブラウザー ウィンドウで、HTTPWatch プラグインが表示されない場合、\>歯車記号および Internet Explorer に関する、または、新しいバージョンの Internet Explorer で、] をクリックします。**コマンド**バーを起動するに Internet Explorer のメニュー バーを右クリックし、**コマンド バー**] をクリックします。以前は、HTTPWatch が関連付けられているコマンドと、エクスプ ローラー バーの両方で、1 回インストールすると、**ツール**、およびツールバー アイコンの確認 (コンピューターを再起動後もアイコンがすぐに表示されない場合。ツールバーをカスタマイズすることができます、オプションを追加できることに注意してください。</br>
     ![コマンド ツールバーを Internet Explorer の HTTPWatch] アイコンを表示します。](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. HTTPWatch に Internet Explorer のブラウザー ウィンドウを起動します。ブラウザー ウィンドウの下部にドッキングされて表示されます。[**レコード**] をクリックします。
     
 3. パフォーマンスの問題に関連する正確な手順を再現します。HTTPWatch に [**停止**] ボタンをクリックします。 
     
-4. HTTPWatch または**電子メールで送信**、**保存**します。日付と時刻の情報と、ウォッチに良くも悪くもパフォーマンスのデモが含まれているかどうかを示す値を含むファイルの名前を覚えておいてください。</br></br>![Office 365 ホームページのページ読み込み用の [ネットワーク] タブを示す HTTPWatch。](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br></br>
+4. HTTPWatch または**電子メールで送信**、**保存**します。日付と時刻の情報と、ウォッチに良くも悪くもパフォーマンスのデモが含まれているかどうかを示す値を含むファイルの名前を覚えておいてください。</br>![Office 365 ホームページのページ読み込み用の [ネットワーク] タブを示す HTTPWatch。](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
     HTTPWatch のプロフェッショナル ・ バージョンは、このスクリーン ショットです。プロフェッショナル ・ バージョンと、コンピューターの基本的なバージョンからのトレースを表示でき、読み取ることがあります。余分な情報は、そのメソッドによって、トレースから使用可能な可能性があります。
     
 ## <a name="problem-steps-recorder"></a>問題ステップ記録ツール
@@ -488,7 +488,7 @@ DNS は、できるだけユーザーの場所に名前解決が行われると�
    
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 エンドポイントを管理します。](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Office 365 エンドポイントに関する FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
   
