@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830892"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831902"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP アドレスと URL の Web サービス **
 
@@ -66,13 +66,15 @@ Microsoft では、Office 365 の IP アドレスと FQDN のエントリを毎�
 
 - **AllVersions=true** - クエリ文字列パラメーター。既定では、返されるバージョンは最新のものです。すべての公開済みバージョンを要求するには、このオプション パラメーターを含めます。
 - **Format=JSON** | **CSV** | **RSS** – JSON 形式および CSV 形式に加えて、バージョン Web メソッドは RSS もサポートしています。これを AllVersions=true パラメーターと共に使用して、Outlook や他の RSS リーダーで使用できる RSS フィードを要求できます。
-- **Instance** - ルート パラメーター。この省略可能なパラメーターは、バージョンを返すインスタンスを指定します。省略した場合は、すべてのインスタンスが返されます。有効なインスタンスは次のとおりです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh
+- **Instance** - ルート パラメーター。この省略可能なパラメーターは、バージョンを返すインスタンスを指定します。省略した場合は、すべてのインスタンスが返されます。有効なインスタンスは次のとおりです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
-バージョン Web メソッドの結果は、単一のレコードまたはレコードの配列です。各レコードの要素は次のとおりです。
+バージョン Web メソッドの結果は、単一レコードまたはレコードの配列です。各レコードの要素は次のとおりです。
 
 - instance - Office 365 サービス インスタンスの短い名前。
 - latest - 指定されたインスタンスのエンドポイントの最新バージョン。
 - versions - 指定されたインスタンスの以前のバージョンすべてのリスト。この要素は、AllVersions パラメーターが true の場合にのみ含まれます。
+
+Microsoft Flow を使用して、IP アドレスや URL への変更のメール通知を受け取れます。「[Microsoft Flow を使用して、Office 365 IP アドレスや URL への変更のメール通知を受け取る](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」をご覧ください。
 
 ### <a name="examples"></a>**例:**
 
@@ -487,24 +489,10 @@ else:
 
 [Office 365 へのネットワーク接続](network-connectivity.md)
   
-[Office 365 向け Azure ExpressRoute](azure-expressroute.md)
-  
-[Office 365 向け ExpressRoute の管理](managing-expressroute-for-connectivity.md)
-  
-[Office 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
-  
-[Office 365 向け ExpressRoute での実装](implementing-expressroute.md)
-  
-[Office 365 向け ExpressRoute での BGP コミュニティの使用のシナリオ (プレビュー)](bgp-communities-in-expressroute.md)
-  
 [Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Skype for Business Online 向けのネットワークの最適化](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
