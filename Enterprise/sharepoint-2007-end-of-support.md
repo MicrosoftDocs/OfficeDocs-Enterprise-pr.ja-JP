@@ -31,124 +31,123 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: 2017 年 10 月 10日には、SharePoint Server 2007 のサポートが終了しました。、ベスト ・ プラクティス、トラブルシューティングのシステム要件、アップグレード手順は、マイクロソフトのパートナーからのヘルプを表示する方法、アップグレードのオプションの詳細については、この資料を参照してください。
+description: SharePoint Server 2007 のサポートは 2017 年 10 月 10 日に終了しました。アップグレード オプション、トラブルシューティング、ベスト プラクティス、システム要件、アップグレード手順、および Microsoft パートナーからサポートを受ける方法については、この記事をお読みください。
 ms.openlocfilehash: b548e7623a72d57793c18409a80506bb832df858
 ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/25/2018
 ms.locfileid: "21169799"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
-**2017 年 10 月 10日**、[Microsoft Office SharePoint Server 2007 はサポート終了に達しました。Office 365 または SharePoint のサーバーの設置型の新しいバージョンの SharePoint Server 2007 からの移行を開始していない場合はここで計画を開始します。この資料では、SharePoint Online では、データを移行またはアップグレード、SharePoint サーバーの設置型の人々 を支援するためのリソースについて説明します。 
+Microsoft Office SharePoint Server 2007 のサポートは **2017 年 10 月 10 日**に終了しました。SharePoint Server 2007 から Office 365 またはオンプレミスの新しいバージョンの SharePoint Server への移行を開始していない場合は、今すぐ移行を実施する必要があります。この記事では、ユーザーが SharePoint Online にデータを移行したり、オンプレミスの SharePoint Server をアップグレードしたりする際に役立つリソースについて詳しく説明します。 
   
-## <a name="what-does-end-of-support-mean"></a>サポートの平均の最後は何でしょうか。
+## <a name="what-does-end-of-support-mean"></a>サポートが終了するとどうなるのか
 
-SharePoint サーバーでは、ほとんどすべてのマイクロソフト製品と同じようにする時に、マイクロソフトでは、新機能、バグ修正、セキュリティ修正プログラム、およびなどが提供していますサポート ライフ サイクルがあります。このライフ サイクルは、通常製品の初期リリースの日付から 10 年間持続し、このライフ サイクルの最後は、製品のサポート終了と呼ばれます。。サポートの終わりは、マイクロソフトが提供されなくなります。
+ほとんどの Microsoft 製品と同様に、SharePoint Server にはサポート ライフサイクルがあり、該当期間内に Micosoft は新しい機能、バグ修正プログラム、セキュリティ修正プログラムなどを提供しています。このライフサイクルは通常、製品の最初のリリース日から 10 年間続きます。このライフサイクルが終わると、製品のサポートも終了となります。サポートが終了すると、以下のものが提供されなくなります。
   
-- テクニカル サポートに問題が発生します。
+- 発生する可能性のある問題のテクニカル サポート。
     
-- バグの修正で問題が検出され、サーバーの使いやすさと安定性に影響を及ぼす可能性があります。
+- サーバーの安定性と運用に影響を与える可能性のある問題が検出された場合のバグ修正プログラム。
     
-- セキュリティ上の脆弱性が検出され、セキュリティ違反の影響を受けるサーバーを構成することがありますの修正プログラムそして 
+- セキュリティ違反に対するサーバーの精度を低下させるような脆弱性が検出された場合のセキュリティ修正プログラム。 
     
-- タイム ゾーンを更新します。
+- タイム ゾーンの更新。
     
-ただし、SharePoint Server 2007 ファームになります運用後 2017年 10 月 10日、なしの更新プログラムではさらに、修正プログラム、または修正プログラム (セキュリティ更新プログラムと修正プログラムを含む)、製品の出荷し、マイクロソフトのサポートが完全に移ってきていますへのサポートを行って製品の最新バージョンです。インストールはサポートされなくなりましたまたは修正プログラムを適用するためサポート ・ アプローチの終わりとして、製品をアップグレードするか重要なデータを移行します。
+2017 年 10 月 10 日以降も、SharePoint Server 2007 ファームは引き続き稼働しますが、製品の更新プログラム、パッチ、修正プログラム (セキュリティのパッチや修正プログラムも含む) のサポートは行われません。Microsoft サポートによるサポート対象も製品の最新バージョンに切り替わります。製品のサポートが終了すると、パッチなどのサポートの対象外となるため、製品をアップグレードするか、重要なデータを移行する必要があります。
   
 > [!TIP]
-> アップグレードや移行を既に計画していない場合を参照してください: [SharePoint 2007 の移行オプションを考慮する](sharepoint-2007-migration-options.md)を開始する場所の例をいくつか。アップグレード Office 365 移行 (またはその両方) を持つことができます[マイクロソフトのパートナー企業](https://go.microsoft.com/fwlink/?linkid=841249)の検索することもできます。 
+> アップグレードまたは移行の計画をまだ行っていない場合は、「[考慮すべき SharePoint 2007 の移行オプション](sharepoint-2007-migration-options.md)」で、実施すべき作業の例を参照してください。アップグレードまたは Office 365 の移行 (あるいはその両方) を支援する [Microsoft パートナー](https://go.microsoft.com/fwlink/?linkid=841249)を検索することもできます。 
   
-サポートの末尾に到達する Office 2007 サーバーの詳細については、 [Office 2007 サーバーのアップグレードを計画する](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)を参照してください。
+Office 2007 のサーバーのサポート終了の詳細については、「[Office 2007 のサーバーのアップグレードを計画する](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)」を参照してください。
   
-## <a name="what-are-my-options"></a>オプションを挙げてください。
+## <a name="what-are-my-options"></a>使用できるオプション
 
-最初の位置は、[製品のライフ サイクルのサイト](https://go.microsoft.com/fwlink/?linkid=843148)があります。エージングされているマイクロソフトの設置をした場合の確認事項サポート日の最後のため、1 年間またはアウトのためか、通常、移行が必要である限り、アップグレードや移行をスケジュールできます。次のステップを選択するときは、十分、向上、および最高の製品の機能に何と考えると役立つ場合があります。例を以下に示します。
+まず、[製品のライフサイクルのサイト](https://go.microsoft.com/fwlink/?linkid=843148)にアクセスします。オンプレミスの古い Microsoft 製品を使用している場合は、サポート終了日を確認する必要があります。そうすれば、1 年ほどでサポートが終わる、あるいは、一般的に移行が必要とされる限度などを考慮に入れて、アップグレードまたは移行のスケジュールを立てることができます。次の手順を選ぶときには、製品機能に関して段階的 (標準、良い、最良の 3 段階) に検討すると良いでしょう。以下に例を示します。
   
-|**中**|**良い**|**高**|
+|**標準**|**良い**|**最良**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||SharePoint ハイブリッド  <br/> |SharePoint Server 2016  <br/> |
 |||SharePoint ハイブリッド  <br/> |
    
-(不十分) のスケールのローエンドのオプションは、SharePoint Server 2007 からの移行後は非常にすぐにアップグレードの計画を開始する必要が注意してください」を選択する場合が完了しました。(SharePoint Server 2007 用のサポートの終了は、2017 年 10 月 10 日です。注意してくださいこれらの日付が変更され、[製品のライフ サイクルのサイト](https://support.microsoft.com/en-us/lifecycle)を確認します。)
+終了までの期間が短い (標準) オプションを選択した場合は、SharePoint Server 2007 からの移行が完了したらすぐにアップグレードの計画を立てる必要があります。(SharePoint Server 2007 のサポート終了日は 2017 年 10 月 10 日ですが、この日付は変更される可能性がありますので、[製品のライフサイクルのサイト](https://support.microsoft.com/ja-JP/lifecycle)を確認するようにしてください。)
   
-## <a name="where-can-i-go-next"></a>次へ移動先は?
+## <a name="where-can-i-go-next"></a>次に行う操作
 
-SharePoint サーバーは、インストールされている設置型、独自のサーバー上または SharePoint Online では、これは、Microsoft Office 365 の一部であるオンライン サービスを使用できます。を選択できます。
+SharePoint Server は、オンプレミスの自分のサーバー上にインストールすることができます。あるいは、Microsoft Office 365 の一部を成すオンライン サービスである SharePoint Online を使用できます。以下を選択することができます。
   
-- SharePoint Online に移行する
+- SharePoint Online への移行
     
-- アップグレードの SharePoint サーバーの設置型
+- オンプレミスの SharePoint Server のアップグレード
     
-- 上記の両方の操作を行います
+- 上記の両方の実施
     
-- [SharePoint のハイブリッド](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)ソリューションを実装します。 
+- [SharePoint ハイブリッド](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) ソリューションの実装 
     
-非表示に伴うコストの今後は、サーバー ファームの管理を維持するか、カスタマイズを移行して SharePoint Server が依存しているハードウェアのアップグレードに注意します。設置型の SharePoint サーバー ファームのことは、やりがいは増しますは必要です。それ以外の場合、大量のカスタマイズを行わなくても、従来の SharePoint サーバーに、ファームを実行する場合を享受できます計画的な移行 SharePoint Online にします。
+サーバー ファームの管理、カスタマイズの保守や移行、および SharePoint Server が依存するハードウェアのアップグレードには、関連する潜在的コストが発生しますので、ご注意ください。オンプレミスの SharePoint Server ファームが必要な場合、このファームを使用することには価値があります。一方、大幅なカスタマイズをせずに、従来の SharePoint Server でファームを実行している場合は、SharePoint Online への計画的な移行から益を得ることができます。
   
 > [!IMPORTANT]
-> 別の方法で SharePoint 2007 のコンテンツは、使用頻度の低い場合。SharePoint 管理者によってでは[、Office 365 のサブスクリプションを作成](https://go.microsoft.com/fwlink/?linkid=843152)、新しい SharePoint Online サイトを設定し、SharePoint 2007 から完全にカットするのには最新の SharePoint Online サイトに最も重要なドキュメントのみを取得ができます。そこからデータ消耗する SharePoint 2007 サイトからアーカイブにします。思考方法のユーザー データを処理する、SharePoint 2007 のインストールを提供します。この問題を解決するのには創造的な方法がある可能性があります。 
+> SharePoint 2007 のコンテンツを頻繁に使用しない場合は、別のオプションを使用できます。一部の SharePoint 管理者は、[Office 365 サブスクリプションを作成](https://go.microsoft.com/fwlink/?linkid=843152)し、新しい SharePoint Online サイトをセットアップすることを選択するかもしれません。新しい SharePoint Online サイトに必要なドキュメントのみが取り入れられた、完全に独立したサイトとなり、SharePoint 2007 からは切り離されます。そしてデータは、SharePoint 2007 サイトからアーカイブに排出することができます。SharePoint 2007 インストールでのデータの操作方法については、ユーザーが検討します。この問題を解決する創造的な方法が登場することでしょう。 
   
-|**SharePoint オンライン (SPO)**|**SharePoint サーバー設置**|
+|**SharePoint Online (SPO)**|**オンプレミスの SharePoint Server**|
 |:-----|:-----|
-|時間のコストが高い (計画と実行と検証)  <br/> |時間のコストが高い (計画と実行と検証)  <br/> |
-|資金 (ハードウェアの購入なし) でのコストを削減  <br/> |資金のコストが高い (ハードウェア + 開発者と管理者)  <br/> |
-|移行での 1 回限りの料金  <br/> |将来の移行につき 1 回限りのコストが繰り返されます。  <br/> |
-|低い総所有コストとメンテナンス  <br/> |高の総所有コストとメンテナンス  <br/> |
+|時間コストが高い (計画 / 実行 / 確認)  <br/> |時間コストが高い (計画 / 実行 / 確認)  <br/> |
+|資金コストが安い (ハードウェアの購入の必要なし)  <br/> |資金コストが高い (ハードウェア + 開発/管理者)  <br/> |
+|一度の移行でのコスト  <br/> |将来繰り返される一度の移行でのコスト  <br/> |
+|所有権および保守の費用合計が低い  <br/> |所有権および保守の費用合計が高い  <br/> |
    
-Office 365 に移行するときに 1 回限りの移動は、データを整理し、クラウドへの対処およびのままにするのにはどのような決定している間に先行、重いコストがあります。ただし、アップグレードをその時点から自動的に行われます、ハードウェアとソフトウェアの更新を管理する必要がないと、マイクロソフトのサービス レベル契約 ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) によって、ファームのアップ時間がバックアップされます。
+Office 365 に移行する場合、データを整理して、クラウドに取り入れるべきものと残すべきものを決定しますが、一度の移行ではコストがかかります。ただし、移行の時点からアップグレードが自動的に行われるため、ハードウェアとソフトウェアの更新を管理する必要はなくなり、ファームの稼働時間は Microsoft サービス レベル契約 ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) に基づいたものとなります。
   
-### <a name="migrate-to-sharepoint-online"></a>SharePoint Online に移行する
+### <a name="migrate-to-sharepoint-online"></a>SharePoint Online への移行
 
-SharePoint Online が関連付けられているサービスの説明を確認して、必要なすべての機能を確認します。すべての Office 365 サービスの説明へのリンクを以下に示します。
+関連するサービスの説明を確認し、SharePoint Online に必要なすべての機能が備わっていることを確認してください。以下のリンクをクリックすると、Office 365 サービスのすべての説明を確認できます。
   
 [Office 365 サービスの説明](https://go.microsoft.com/fwlink/?linkid=272060)
   
-SharePoint 2007 からの移行は、SharePoint Online; までする直接的な方法はありません。SharePoint Online への移行を手動で実行するとします。SharePoint Server 2013 または SharePoint サーバーの 2016年をアップグレードする場合の移動もあります (ビジネス、OneDrive に情報を移行するなど) を SharePoint 移行 API を使用します。
+SharePoint 2007 から SharePoint Online に直接移行する方法はありません。SharePoint Online への移行は手動で行います。SharePoint Server 2013 または SharePoint Server 2016 にアップグレードする際には、SharePoint 移行 API の使用が必要になる場合があります (OneDrive for Business への情報の移行などのため)。
   
-|**オンライン Pro**|**オンライン詐欺**|
+|**オンラインの利点**|**オンラインの欠点**|
 |:-----|:-----|
-|Microsoft では、SPO のハードウェアおよびハードウェアのすべての管理を提供します。  <br/> |使用可能な機能は、SharePoint サーバーの設置型と SPO の間で異なる場合があります。  <br/> |
-|グローバル管理者は、サブスクリプションのと、SPO のサイトに管理者を割り当てることがあります。  <br/> |設置型が存在しない (または必要はありません)、SharePoint サーバーのファーム管理者に利用可能ないくつかの操作は、Office 365 で SharePoint の管理者ロールに含まれます。  <br/> |
-|マイクロソフトは、修正プログラムを適用、修正および基になるハードウェアとソフトウェアを更新します。  <br/> |サービスの基になるファイル ・ システムへのアクセス権がないため、一部のカスタマイズが制限されています。  <br/> |
-|マイクロソフトでは、[サービス レベル合意書](https://go.microsoft.com/fwlink/?linkid=843153)の発行し、サービス ・ レベルの問題を解決するのには迅速に移動します。  <br/> |バックアップと復元、およびその他のリカバリ ・ オプションは、SharePoint Online のサービスで自動化された - バックアップが上書きされるかどうかを使用します。  <br/> |
-|セキュリティのテストとサーバーのパフォーマンスのチューニングを実施するサービスで継続的にマイクロソフトによって。  <br/> |ユーザー インターフェイスおよびその他の SharePoint の機能は、サービスがインストールされているし、オンとオフを切り替える必要がありますに変更します。  <br/> |
-|Office 365 は、多くの業界標準を満たしている: [Office 365 のコンプライアンス](https://go.microsoft.com/fwlink/?linkid=843165)です。  <br/> |[FastTrack](https://go.microsoft.com/fwlink/?linkid=518597)移行支援は、制限されています。  <br/> アップグレードの多くは、手動または SPO の移行 API を使用して、 [SharePoint Online と OneDrive 移行コンテンツのロードマップ](https://go.microsoft.com/fwlink/?linkid=843184)に記載されています。  <br/> |
-|マイクロソフト サポート エンジニアも、データ センター内の従業員に無制限に管理者のアクセス、サブスクリプション。  <br/> |ハードウェア ・ インフラストラクチャは、SharePoint の新しいバージョンをサポートするためにアップグレードする必要がある場合、またはセカンダリ ファームのアップグレードに必要な場合、追加のコストが存在することができます。  <br/> |
-|SharePoint Online に、データを移行するための一時的なジョブ パートナーを支援できます。  <br/> ||
-|オンラインの製品は、機能を廃止可能性があります、ただしはありませんサポートの本来の終了を意味するサービスの間で自動的に更新されます。  <br/> ||
+|Microsoft が SPO ハードウェアおよびすべてのハードウェアの管理を行う。  <br/> |オンプレミスの SharePoint Server で利用できる機能と、SPO で利用できる機能が異なる。  <br/> |
+|サブスクリプションの全体管理者であると、SPO サイトに管理者を割り当てることができる。  <br/> |オンプレミスの SharePoint Server のファーム管理者が使用できる操作の一部が、Office 365 の SharePoint 管理者ロールに含まれない (または必要ない)。  <br/> |
+|Microsoft が、基になるハードウェアとソフトウェアに、パッチ、修正プログラム、更新プログラムを適用する。  <br/> |サービスの基となるファイル システムへのアクセスがないため、一部のカスタマイズが制限される。  <br/> |
+|Microsoft が[サービス レベル契約](https://go.microsoft.com/fwlink/?linkid=843153)を発行し、サービス レベルの問題に迅速に対応する。  <br/> |バックアップと復元、その他の回復オプションは、SharePoint Online のサービスによって自動化される。バックアップは、使用されていない場合に上書きされる。  <br/> |
+|セキュリティ テストとサーバーのパフォーマンス チューニングは、Microsoft によって、継続的なサービスとして実施される。  <br/> |ユーザー インターフェイスとその他の SharePoint 機能の変更はサービスによってインストールされ、オン/オフの切り替えが必要な場合がある。  <br/> |
+|Office 365 が、[Office 365 のコンプライアンス](https://go.microsoft.com/fwlink/?linkid=843165)に記載されている多くの業界標準に対応している。  <br/> |移行の際に [FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) でできることが限られる。  <br/> アップグレードの多くは、手動か、[SharePoint Online と OneDrive 移行コンテンツ ロードマップ](https://go.microsoft.com/fwlink/?linkid=843184)に記載されている SPO 移行 API により実施される。  <br/> |
+|Microsoft のサポート エンジニアもデータセンターの従業員も、ユーザーのサブスクリプションに対する無制限の管理アクセス権はない。  <br/> |新しいバージョンの SharePoint に対応するために、ハードウェア インフラストラクチャをアップグレードする必要がある場合や、アップグレードにセカンダリ ファームが必要な場合は、追加のコストがかかる可能性がある。  <br/> |
+|パートナーが、SharePoint Online へのデータの移行を一度で行えるようにサポートできる。  <br/> ||
+|オンライン製品に関しては、サービス全体における更新が自動的に行われる。機能は廃止になる可能性もあるが、サポート自体は継続する。  <br/> ||
    
-新しい Office 365 サイトを作成するし、手動で移行データには、必要に応じて、Office 365 のオプション権利をここで見ることができます。
+新しい Office 365 サイトを作成し、必要に応じてデータを手動で移行することにした場合は、以下の Office 365 のオプションを確認してください。
   
 [Office 365 プランのオプション](https://go.microsoft.com/fwlink/?linkid=843151)
   
-### <a name="upgrade-sharepoint-server-on-premises"></a>アップグレードの SharePoint サーバーの設置型
+### <a name="upgrade-sharepoint-server-on-premises"></a>オンプレミスの SharePoint Server のアップグレード
 
-これは、SharePoint サーバーの 2016 年のリリースの時点で、少なくとも、SharePoint のアップグレードでバージョンをスキップする方法はこれまでありません。つまり、アップグレードが連続的に移動します。
+SharePoint のバージョンをスキップしてアップグレードする方法はありません。SharePoint Server 2016 のリリースの場合も同様です。アップグレードは以下のように順次に行われます。
   
 |||
 |:-----|:-----|
 ||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
    
-SharePoint 2007 から完全なパスを実行するには、SharePoint サーバーの 2016年は膨大な時間のことを意味し、コスト (SQL サーバーもアップグレードする必要があることに注意する)、アップグレードされたハードウェアで、ソフトウェア、および管理が含まれます。カスタマイズはアップグレードまたは機能の重要度に応じて、破棄する必要があります。
+SharePoint 2007 から SharePoint Server 2016 へのパス全体を取得するには、多くの時間を要します。また、アップグレードされたハードウェア (SQL サーバーもアップグレードする必要があります)、ソフトウェア、管理に関するコストも発生します。機能の重要度に応じて、カスタマイズをアップグレードしたり、カスタマイズした内容を破棄したりする必要があります。
   
 > [!NOTE]
-> 終了の SharePoint 2007 ファームを維持、(別のファームでは、サイド バイ サイドを実行) のための新しいハードウェアは、[SharePoint のサーバーの 2016年ファームのインストール、計画し、(とコンテンツのダウンロードのコンテンツを再アップロードするを手動での移行を実行することはなど)。など移動のドキュメントが最後に修正されたアカウントを手動での移動を実行するアカウントのエイリアスに置き換える)、手動での移動と、サイト、サブサイト、アクセス許可、リストの再作成などの時間の前に行う必要がある作業の注意事項のいくつかに注意してください。構造体)。繰り返しますが、これは、どのようなデータのストレージ、または不要になったが、移行の影響を減らすことができるアクションに移動することを検討する時間です。
+> サポートが終了した SharePoint 2007 ファームの使用を継続し、新しいハードウェアに SharePoint Server 2016 ファームをインストールして (ファームが共存している状態で別々に実行)、コンテンツの手動による移行 (コンテンツのダウンロードや再アップロードなど) を計画したり実行したりすることは可能です。ただし、手動による移動 (最後に変更されたアカウントを、手動で移動するアカウントのエイリアスに置き換えたドキュメントの移動など) に関する問題には注意を払う必要があり、サイト、サブサイト、アクセス許可、リスト構造の再構成などの作業は早めに行う必要があります。ストレージに移行するデータと、必要ないデータを区別し、どういった操作が移行による負担を軽減できるのかを今検討することが非常に重要です。
   
-どちらの方法は、環境の前に、アップグレードをクリーニングします。既存のファームでは、アップグレードする前に機能し、解除する前に (確認) を特定します。 
+いずれにしても、アップグレードする前に環境を整えることが重要です。アップグレードする前に既存のファームが機能していることを確認してください。使用を停止するものについても、念のため確認してください。 
   
-**サポート対象およびサポートされていないアップグレード ・ パス**を確認するのには注意してください。 
+以下の、**サポートされるアップグレード パスとサポート外のアップグレード パス**を確認してください。 
   
-- 
-  [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
-**カスタマイズ**をした場合は、計画がある、ステップごとに、アップグレード、移行パスでが重要です。 
+**カスタマイズ**を行っている場合は、移行パスの手順ごとにアップグレードの計画を立てることが重要となります。詳細は以下を参照してください。 
   
 - [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
     
@@ -156,52 +155,52 @@ SharePoint 2007 から完全なパスを実行するには、SharePoint サー�
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
     
-|**オンプレミス Pro**|**設置詐欺**|
+|**オンプレミスの利点**|**オンプレミスの欠点**|
 |:-----|:-----|
-|サーバー ハードウェアを SharePoint ファームのすべての側面に対するフル コントロール。  <br/> |すべての破断や修正プログラムは、(取り組むことができますマイクロソフトの有償サポート、製品サポートの端にある場合)、会社の責任。  <br/> |
-|SharePoint サーバー設置型のハイブリッドを使用して SharePoint Online サブスクリプションに、オンプレミスのファームに接続するためのオプションの完全な機能セットです。  <br/> |アップグレード、修正プログラム、セキュリティ修正プログラム、および SharePoint サーバーのすべての保守作業は、設置型を管理します。  <br/> |
-|アクセスより詳細にカスタマイズできます。  <br/> |[Office 365 でサポートされているコンプライアンス基準](https://go.microsoft.com/fwlink/?linkid=843165)には、オンプレミスで手動で構成されている必要があります。  <br/> |
-|セキュリティ テスト、およびサーバーのパフォーマンスのチューニング、上で実行されるお客様のサイト (制御です)。  <br/> |Office 365 にすることが機能使用可能な SharePoint オンラインの SharePoint サーバーの設置型と相互運用できません。  <br/> |
-|パートナーは、移行を支援できる SharePoint サーバーの (および外) は、次のバージョンへのデータ。  <br/> |SharePoint サーバーのサイトに自動的には使用されません[SSL や TLS](https://go.microsoft.com/fwlink/?linkid=843167)証明書 SharePoint Online] に表示されるように。  <br/> |
-|名前付け規則、バックアップと復元、および SharePoint サーバーの設置型の場合は、他の回復オプションのフル コントロール。  <br/> |SharePoint サーバーの設置型は、製品のライフ サイクルに重要です。  <br/> |
+|サーバー ハードウェアからの、SharePoint ファームの機能すべての完全なコントロール。  <br/> |下記の破損と修理のすべてが貴社の責任になる (製品のサポートが終了していない場合は、有料の Microsoft サポートの利用が可能)。  <br/> |
+|ハイブリッドの SharePoint Online サブスクリプションにオンプレミス ファームを接続するオプションを備えた、オンプレミスの SharePoint Server のフル機能一式。  <br/> |オンプレミスに管理される SharePoint Server のアップグレード、パッチ、セキュリティ修正プログラム、およびすべての保守。  <br/> |
+|高度なカスタマイズのためのフル アクセス許可。  <br/> |[Office 365 でサポートされるコンプライアンス基準](https://go.microsoft.com/fwlink/?linkid=843165)を、オンプレミスで手動で構成しなければならない。  <br/> |
+|オンプレミスで実行される、セキュリティ テストとサーバーのパフォーマンス チューニング (自分でコントロール)。  <br/> |オンプレミスの SharePoint Server と相互運用しない SharePoint Online での機能が、Office 365 によって、有効になることがある  <br/> |
+|パートナーが、SharePoint Server の次のバージョン (さらにその先も対象) へのデータ移行をサポートできる。  <br/> |SharePoint Server サイトでは、SharePoint Online で表示される [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) 証明書が自動的に使用されることはない。  <br/> |
+|オンプレミスの SharePoint Server での、名前付け規則、バックアップと復元、その他の回復オプションの完全なコントロール。  <br/> |製品のライフサイクルによって、オンプレミスの SharePoint Server の機能が異なる。  <br/> |
    
-### <a name="upgrade-resources"></a>リソースをアップグレードします。
+### <a name="upgrade-resources"></a>アップグレードのリソース
 
-ハードウェアとソフトウェアの要件に対応し、次のことを知ることによって開始には、アップグレードの方法がサポートされています。
+ハードウェアとソフトウェアの要件を満たしていることを確認してから、サポートされているアップグレード方法に従って操作を行ってください。
   
-- **ハードウェア/ソフトウェアの要件**: 
+- **ハードウェア/ソフトウェア要件**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint サーバー 2016年](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
-- **ソフトウェアの境界と制限**します。 
+- **ソフトウェアの境界と制限**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint サーバー 2016年](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
-- **のアップグレード プロセスの概要**: 
+- **アップグレード プロセスの概要**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint サーバー 2016年](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
-### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>SharePoint Online と設置型の SharePoint のハイブリッド ソリューションを作成します。
+### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>SharePoint Online とオンプレミスの間で、SharePoint ハイブリッド ソリューションを作成する
 
-回答した場合、移行のニーズにはどこかに設置し、SharePoint Online で提供されている所有権の低コストで提供されている放置の間を組み合わせたものを SharePoint Online では、SharePoint Server 2013 または 2016 ファームを接続できます。[ハイブリッド ソリューションの SharePoint について理解します。](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+オンプレミスでの完全コントロールでの移行か、SharePoint Online の低コストの所有権による移行かを検討している場合、SharePoint Server 2013 のファームあるいは 2016 のファームをハイブリッドとして、SharePoint Online に接続できます。[SharePoint ハイブリッド ソリューションの詳細情報](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
-ハイブリッドの SharePoint サーバー ファームにお客様のビジネス メリットをもたらすことを決定する場合、設置型の SharePoint ファームと Office 365 サブスクリプション間の接続を構成する方法と、ハイブリッドの既存の型を確認します。
+ハイブリッドの SharePoint Server ファームをビジネスに活用することにした場合は、既存のハイブリッドの種類はもちろん、オンプレミスの SharePoint ファームと Office 365 サブスクリプションとの接続方法を理解することが重要です。
   
-この動作を確認する方法の 1 つは、 [Office 365 の開発/テスト環境](https://go.microsoft.com/fwlink/?linkid=843152)を作成することによってです。試用版があるか、Office 365 のサブスクリプションを購入するには、なりますようにデータを移行することができますし、SharePoint Online サイト コレクション、web、およびドキュメント ライブラリを作成する (使用するか、手動での移行 API、または移行する場合は、マイサイトのコンテンツのビジネス ・ OneDrive にハイブリッドのウィザードを使用)。
+動作を確認するお勧めの方法の 1 つは、[Office 365 の開発/テスト環境](https://go.microsoft.com/fwlink/?linkid=843152)を作成することです。試用版や購入済みの Office 365 サブスクリプションがあれば、SharePoint Online でサイト コレクション、Web、ドキュメント ライブラリを作成し、データを移行できるようになります (手動で、移行 API を使用して、あるいは個人用サイトのコンテンツを OneDrive for Business に移行する場合は、ハイブリッド ウィザードで行うこともできます)。
   
 > [!NOTE]
-> SharePoint 2007 ファームをアップグレードする必要があることに注意してください、設置型、型、または SharePoint Server 2013 ハイブリッド オプションを使用する SharePoint サーバー 2016年 
+> なお、ハイブリッド オプションを使用するには、SharePoint Server 2007 ファームを SharePoint Server 2013 または SharePoint Server 2016 にオンプレミスでアップグレードする必要があります 
   
 ## <a name="related-topics"></a>関連項目
 
-[トラブルシューティングを行うし、(Office SharePoint Server 2007) のアップグレードを再開します。](https://go.microsoft.com/fwlink/?linkid=843192)
+[アップグレードのトラブルシューティングおよび再開 (Office SharePoint Server 2007)](https://go.microsoft.com/fwlink/?linkid=843192)
   
-[(SharePoint Server 2010) のアップグレードの問題のトラブルシューティングを行う](https://go.microsoft.com/fwlink/?linkid=843194)
+[アップグレードの問題のトラブルシューティング (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=843194)
   
 [SharePoint 2013 でのデータベース アップグレードの問題のトラブルシューティング](https://go.microsoft.com/fwlink/?linkid=843195)
   
-[アップグレードを支援するマイクロソフトのパートナーの検索](https://go.microsoft.com/fwlink/?linkid=841249)
+[アップグレードを支援する Microsoft パートナーの検索](https://go.microsoft.com/fwlink/?linkid=841249)
   
-[2007 のサーバーとクライアントの Office からアップグレードするためのリソース](upgrade-from-office-2007-servers-and-products.md)
+[Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)
   
 
