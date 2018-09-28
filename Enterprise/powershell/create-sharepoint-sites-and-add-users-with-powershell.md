@@ -3,7 +3,6 @@ title: Office 365 PowerShell を使用して SharePoint Online サイトを作�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,11 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Office 365 PowerShell を使用して SharePoint Online の新しいサイトを作成し、それらのサイトにユーザーおよびグループを追加します。'
-ms.openlocfilehash: 0a0438917f6e7010b56703ce0bf73e89e1db0533
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975205"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
@@ -36,88 +36,125 @@ Office 365 PowerShell と、提供されているサンプル コードとメモ
 
 Office 365 PowerShell コマンドレットは、その .csv ファイルをインポートし、ファイルの最初の行を列見出しとして読み取る、中かっこ内のループにパイプします。次に、Office 365 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新規のサイト コレクションを作成し、列見出しに従ってサイト コレクションのプロパティを割り当てます。
 
-###<a name="create-a-csv-file"></a>.csv ファイルの作成
+### <a name="create-a-csv-file"></a>.csv ファイルの作成
 
-1. メモ帳を開き、次のテキスト ブロックを貼り付けます。</br>
+1. メモ帳を開き、次のテキスト ブロックを貼り付けます。<br/>
+
 ```
 Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
 owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/TeamSite01,25,EHS#1,10,Contoso Team Site
 owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,BLOG#0,10,Contoso Blog
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
-```</br>Where *tenant* is the name of your tenant, and *owner* is the user name of the user on your tenant to whom you want to grant the role of primary site collection administrator.</br>(You can press Ctrl+H when you use Notepad to bulk replace faster.)</br>
-2. Save the file on your desktop as **SiteCollections.csv**.
-
- > [!TIP]
-> Before you use this or any other .csv or Windows PowerShell script file, it is good practice to make sure that there are no extraneous or nonprinting characters. Open the file in Word, and in the ribbon, click the paragraph icon to show nonprinting characters. There should be no extraneous nonprinting characters. For example, there should be no paragraph marks beyond the final one at the end of the file.
-
-### Run the Windows PowerShell command
-
-1. At the Windows PowerShell prompt, type or copy and paste the following cmdlet, and press Enter:</br>
 ```
-Csv のインポート C:\users\MyAlias\desktop\SiteCollections.csv |Foreach-object {SPOSite-新しい-所有者 $_です。所有者 - StorageQuota $_ です。StorageQuota-$_の Url です。Url NoWait-ResourceQuota $_ です。ResourceQuota-$_のテンプレートです。テンプレートの TimeZoneID $_ です。TimeZoneID-$_ のタイトルです。名}
-```
-</br>Where *MyAlias* equals your user alias.</br>
-2. Wait for the Windows PowerShell prompt to reappear. It might take a minute or two.</br>
-3. At the Windows PowerShell prompt, type or copy and paste the following cmdlet, and press Enter:</br>
-```
-Get SPOSite の詳細 |表の書式設定のサイズを自動調整
-```</br>
-4. Note the new site collections in the list. You should see the following site collections: **contosotest**, **TeamSite01**, **Blog01**, and **Project01**.
+<br/>プライマリ サイト コレクション管理者の役割を付与する*テナント*が、テナントの名前、*所有者*は、先のテナントのユーザーのユーザー名。<br/>(することができます押して Ctrl + H 置換を高速に一括してメモ帳を使用する場合)。<br/>
 
-That’s it. You’ve created multiple site collections using the .csv file you created and a single Windows PowerShell cmdlet. You’re now ready to create and assign users to these sites.
+2. デスクトップ上のファイルを**SiteCollections.csv**として保存します。<br/>
 
-## Step 2: Add users and groups
+> [!TIP]
+> これまたはその他の .csv ファイルまたは Windows PowerShell スクリプト ファイルを使用する前に不要なまたは印刷されない文字がないかどうかを確認することをお勧めします。Word と、リボンの [ファイルを開く、編集記号を表示するのには [段落] アイコンをクリックします。不要な記号はないはずです。などはないはず、ファイルの末尾に最後の 1 つ以上の段落記号です。
 
-Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
+### <a name="run-the-windows-powershell-command"></a>Windows PowerShell コマンドの実行
 
-The following procedures assume that you successfully created the site collections contosotest, TeamSite01, Blog01, and Project01.
-
-### Create .csv and .ps1 files
-
-1. Open Notepad, and paste the following text block into it:</br>
+1. Windows PowerShell プロンプトで、次のコマンドレットを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
 ```
-サイト、グループ、PermissionLevels https://tenant.sharepoint.com/sites/contosotest、フル コントロールである Contoso プロジェクト リーダー、 https://tenant.sharepoint.com/sites/contosotest、contoso 社の監査役の表示のみhttps://tenant.sharepoint.com/sites/contosotest、Contoso の設計者、設計https://tenant.sharepoint.com/sites/TeamSite01、XT1000 のチームのリーダー、フル コントロールhttps://tenant.sharepoint.com/sites/TeamSite01、XT1000 顧問、編集https://tenant.sharepoint.com/sites/Blog01、contoso 社のブログデザイナー、デザインhttps://tenant.sharepoint.com/sites/Blog01、contoso 社のブログの編集者、編集https://tenant.sharepoint.com/sites/Project01、アルファの承認者のプロジェクトについては、フル コントロール
+Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-</br>Where *tenant* equals your tenant name.</br>
-2. Save the file to your desktop as **GroupsAndPermissions.csv**.</br>
-3. Open a new instance of Notepad, and paste the following text block into it:</br>
-```
-グループ、ログイン名が表示、サイトの contoso 社のプロジェクトのリーダー、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/contosotest contoso 社の監査役、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/contosotest Contoso デザイナー、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/contosotest XT1000 チームの責任者username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/TeamSite01 XT1000 アドバイザー、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/TeamSite01ブログの Contoso の設計者、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/Blog01 contoso 社のブログの編集者、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/Blog01プロジェクトのアルファの承認者、username@tenant.onmicrosoft.com、https://tenant.sharepoint.com/sites/Project01
-```
-</br>Where *tenant* equals your tenant name, and *username* equals the user name of an existing user.</br>
-4. Save the file to your desktop as **Users.csv**.</br>
-5. Open a new instance of Notepad, and paste the following text block into it:</br>
-```
-Csv のインポート C:\users\MyAlias\desktop\GroupsAndPermissions.csv |Foreach-object {新しい-SPOSiteGroup-$_をグループ化します。グループ - PermissionLevels $_ です。PermissionLevels-$_のサイトです。サイト} Csv のインポート C:\users\MyAlias\desktop\Users.csv |場所 {追加 SPOUser ・ グループの $_。$_: ログイン名が表示をグループ化します。LoginName のサイトの $_ です。サイト}
-```
-</br>Where MyAlias equals the user name of the user that is currently logged on.</br>
-6. Save the file to your desktop as **UsersAndGroups.ps1**. This is a simple Windows PowerShell script.
+<br/>場所*MyAlias*は、ユーザーのエイリアスと同じです。<br/>
 
-You’re now ready to run the UsersAndGroup.ps1 script to add users and groups to multiple site collections.
+2. WindowsPowerShell プロンプトが再度表示されるまで待機します。これには 1 - 2 分かかる場合があります。<br/>
 
-### Run UsersAndGroups.ps1 script
+3. Windows PowerShell プロンプトで、次のコマンドレットを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
 
-1. Return to the SharePoint Online Management Shell.</br>
-2. At the Windows PowerShell prompt, type or copy and paste the following line, and press Enter:</br>
 ```
-セット ExecutionPolicy バイパス
-```</br>
-3. At the confirmation prompt, press **Y**.</br>
-4. At the Windows PowerShell prompt, type or copy and paste the following, and press Enter:</br>
+Get-SPOSite -Detailed | Format-Table -AutoSize
+```
+<br/>
+
+4. 一覧に新しいサイト コレクションに注意してください。次のサイト コレクションを参照する必要があります: **contosotest**、 **TeamSite01**、 **Blog01**、および**Project01**
+
+これで完了です。作成した .csv ファイルと 1 つの WindowsPowerShell コマンドレットを使用して、複数のサイト コレクションを作成しました。これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
+
+## <a name="step-2-add-users-and-groups"></a>手順 2:ユーザーおよびグループの追加
+
+ここでは、ユーザーを作成し、サイト コレクションのグループに追加します。次に、.csv ファイルを使用して、新しいグループとユーザーを一括アップロードします。
+
+次の手順では、サイト コレクションの contosotest、TeamSite01、Blog01、Project01 が正常に作成されていることが前提になっています。
+
+### <a name="create-csv-and-ps1-files"></a>.csv ファイルおよび .ps1 ファイルの作成
+
+1. メモ帳を開き、次のテキスト ブロックを貼り付けます。<br/>
+```
+Site,Group,PermissionLevels
+https://tenant.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
+https://tenant.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
+https://tenant.sharepoint.com/sites/contosotest,Contoso Designers,Design
+https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
+https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
+https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
+https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
+https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
+```
+<br/>*テナント*に等しい、テナント名を指定します。<br/>
+
+2. **GroupsAndPermissions.csv**として、ファイルをデスクトップに保存します。<br/>
+
+3. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
+
+```
+Group,LoginName,Site
+Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
+Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
+Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
+XT1000 Team Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
+XT1000 Advisors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
+Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
+Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
+Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
+```
+<br/>*テナント*に等しい、テナント名、*ユーザー名*が既存のユーザーのユーザー名と同じです。<br/>
+
+4. として**ユーザー.csv**ファイルをデスクトップに保存します。<br/>
+
+5. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
+
+```
+Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
+Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
+```
+<br/>MyAlias に等しい現在ログオンしているユーザーのユーザー名を指定します。<br/>
+
+6. **UsersAndGroups.ps1**として、ファイルをデスクトップに保存します。これは、単純な Windows PowerShell スクリプトです。
+
+これで、UsersAndGroup.ps1 スクリプトを実行して複数のサイト コレクションにユーザーとグループを追加する準備ができました。
+
+### <a name="run-usersandgroupsps1-script"></a>UsersAndGroups.ps1 スクリプトの実行
+
+1. SharePoint Online 管理シェルに戻ります。<br/>
+2. Windows PowerShell プロンプトで、次の行を入力するか、コピーして貼り付け、Enter キーを押します。<br/>
+```
+Set-ExecutionPolicy Bypass
+```
+<br/>
+
+3. 確認プロンプトで、 **Y**をキーを押します。<br/>
+
+4. Windows PowerShell プロンプトで、次のコマンドを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
+
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-</br>Where *MyAlias* equals your user name.</br>
-5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
+<br/>*MyAlias*に等しい自分のユーザー名を指定します。<br/>
 
-## See also
+5. プロンプトが戻るまで待機してから、次に進みます。最初に、作成したとおりにグループが表示されます。次に、ユーザーを追加するたびに、グループの一覧が繰り返し表示されます。
 
-[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+## <a name="see-also"></a>関連項目
 
-[Manage SharePoint Online site groups Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[SharePoint Online PowerShell に接続する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Manage Office 365 with Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Office 365 の PowerShell SharePoint Online のサイト グループを管理します。](manage-sharepoint-site-groups-with-powershell.md)
+
+[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
   
-[Getting started with Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: '概要: は、Azure アクセス制御サービスを使用しないし、Azure Active Directory で、SharePoint サーバーのユーザーの認証に SAML 1.1 を使用する方法を説明します。'
-ms.openlocfilehash: 465f333638401402c743dc66d3ebecc33be00749
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5c95501d73c59a4af89147d3eec6c5d4e206d067
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915452"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975225"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Azure AD for SharePoint サーバー認証の使用
 
@@ -75,34 +75,34 @@ Azure ポータル ([https://portal.azure.com](https://portal.azure.com))、新�
 
 SAML を使用するには、SSL を使用するアプリケーションを構成する必要があります。SSL を使用する SharePoint web アプリケーションが構成されていない場合は、SSL 用の web アプリケーションを構成するのには新しい自己署名証明書を作成するのには次の手順を使用します。この構成では、ラボ環境のだけを目的とし、本番用のものではありません。本番環境では、署名証明書を使用してください。
 
-1. **サーバーの全体管理**に移動 > **アプリケーション管理** > **Web アプリケーションの管理**では、SSL を使用するように拡張する必要がある web アプリケーション] をクリックします。Web アプリケーションを選択し、**移動できるようにするリボン**のボタンをクリックします。同じ URL を使用してくださいが、ポート 443 の SSL を使用する web アプリケーションを拡張します。</br>![別の IIS サイトに web アプリケーションを拡張します。](media/SAML11/fig3-extendwebapptoiis.png)</br>
+1. **サーバーの全体管理**に移動 > **アプリケーション管理** > **Web アプリケーションの管理**では、SSL を使用するように拡張する必要がある web アプリケーション] をクリックします。Web アプリケーションを選択し、**移動できるようにするリボン**のボタンをクリックします。同じ URL を使用してくださいが、ポート 443 の SSL を使用する web アプリケーションを拡張します。<br/>![別の IIS サイトに web アプリケーションを拡張します。](media/SAML11/fig3-extendwebapptoiis.png)<br/>
 2. IIS マネージャー で、[ **サーバー証明書**] をダブルクリックします。
 3. [ **操作**] ウィンドウの [ **自己署名入り証明書の作成**] をクリックします。[ 証明書のフレンドリ名を指定してください] ボックスに証明書のフレンドリ名を入力して、[ **OK**] をクリックします。
-4. **サイト バインドの編集**] ダイアログ ボックスで、ホスト名が確認、フレンドリ名と同じ次の図に示すようにします。</br>![IIS でサイトのバインドを編集](media/SAML11/fig4-editsitebinding.png)</br>
+4. **サイト バインドの編集**] ダイアログ ボックスで、ホスト名が確認、フレンドリ名と同じ次の図に示すようにします。<br/>![IIS でサイトのバインドを編集](media/SAML11/fig4-editsitebinding.png)<br/>
 
 IIS でサイトのバインド用の証明書を構成する SharePoint ファーム内の web フロント エンド サーバーのそれぞれが必要です。
 
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>手順 3: Azure AD で新しいエンタープライズ アプリケーションを作成します。
 
-1. Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) で、Azure AD ディレクトリを開きます。**エンタープライズ ・ アプリケーション**をクリックし、[**新しいアプリケーション**] をクリックします。**非ギャラリー アプリケーション**を選択します。*SharePoint SAML の統合*などの名前を指定し、[**追加**] をクリックします。</br>![新しいギャラリーではないアプリケーションを追加します。](media/SAML11/fig5-addnongalleryapp.png)</br>
-2. アプリケーションを構成するのにはナビゲーション ウィンドウで 1 つの記号でリンクをクリックします。**SAML ベース サインオン**SAML の構成アプリケーションのプロパティを表示するには、**シングル ・ サインオン ・ モード**のドロップダウン リストを変更します。次のプロパティを構成します。</br>
+1. Azure ポータル ([https://portal.azure.com](https://portal.azure.com)) で、Azure AD ディレクトリを開きます。**エンタープライズ ・ アプリケーション**をクリックし、[**新しいアプリケーション**] をクリックします。**非ギャラリー アプリケーション**を選択します。*SharePoint SAML の統合*などの名前を指定し、[**追加**] をクリックします。<br/>![新しいギャラリーではないアプリケーションを追加します。](media/SAML11/fig5-addnongalleryapp.png)<br/>
+2. アプリケーションを構成するのにはナビゲーション ウィンドウで 1 つの記号でリンクをクリックします。**SAML ベース サインオン**SAML の構成アプリケーションのプロパティを表示するには、**シングル ・ サインオン ・ モード**のドロップダウン リストを変更します。次のプロパティを構成します。<br/>
     - 識別子:`urn:sharepoint:portal.contoso.local`
     - 返信の URL:`https://portal.contoso.local/_trust/default.aspx`
     - サインオン URL:`https://portal.contoso.local/_trust/default.aspx`
-    - ユーザー識別子。`user.userprincipalname`</br>
-    - 注意: *portal.contoso.local*をセキュリティで保護する SharePoint サイトの URL に置き換えることによって、Url を変更します。</br>
-3. 次の行を含むテーブルを (次の表 1 のような) を設定します。</br> 
+    - ユーザー識別子。`user.userprincipalname`<br/>
+    - 注意: *portal.contoso.local*をセキュリティで保護する SharePoint サイトの URL に置き換えることによって、Url を変更します。<br/>
+3. 次の行を含むテーブルを (次の表 1 のような) を設定します。<br/> 
     - Realm
     - SAML の署名証明書ファイルへの完全パス
     - SAML シングル サインオン サービスの URL ( */wsfed*と */saml2*を置き換え)
-    - アプリケーション オブジェクトの id です。 </br>
+    - アプリケーション オブジェクトの id です。 <br/>
 *識別子*の値をテーブル (「表 1 の下) に*領域*のプロパティにコピーします。
 4. 変更を保存します。
-5. サインオンの構成] ページにアクセスする **(アプリケーション名) を構成する**] リンクをクリックします。</br>![ページで、シングル ・ サインオンを構成します。](media/SAML11/fig7-configssopage.png)</br> 
+5. サインオンの構成] ページにアクセスする **(アプリケーション名) を構成する**] リンクをクリックします。<br/>![ページで、シングル ・ サインオンを構成します。](media/SAML11/fig7-configssopage.png)<br/> 
     -  SAML の署名証明書を .cer の拡張子が付いたファイルとしてダウンロードする**SAML の署名証明書の生**のリンクをクリックします。コピーし、テーブルにダウンロードしたファイルへの完全パスを貼り付けます。
-    - コピーし、SAML シングル サインオン サービスの URL リンクを貼り付けるには、URL の */saml2*の部分を */wsfed*に置き換えます。</br>
-6.  アプリケーションの [**プロパティ**] ウィンドウに移動します。コピーし、手順 3 で設定したテーブルにオブジェクト ID の値を貼り付けます。</br>![アプリケーションのプロパティ] ウィンドウ](media/SAML11/fig8-propertiespane.png)</br>
+    - コピーし、SAML シングル サインオン サービスの URL リンクを貼り付けるには、URL の */saml2*の部分を */wsfed*に置き換えます。<br/>
+6.  アプリケーションの [**プロパティ**] ウィンドウに移動します。コピーし、手順 3 で設定したテーブルにオブジェクト ID の値を貼り付けます。<br/>![アプリケーションのプロパティ] ウィンドウ](media/SAML11/fig8-propertiespane.png)<br/>
 7. キャプチャした値を使用して、手順 3 で設定した表次の表 1 のようになるかどうかを確認します。
 
 
@@ -161,12 +161,12 @@ Azure AD にログインし、SharePoint にアクセスするユーザーには
 1. サーバーの全体管理で、[ **アプリケーション構成の管理**] をクリックします。
 2. [ **アプリケーション構成の管理**] ページの [ **Web アプリケーション**] セクションで、[ **Web アプリケーションの管理**] をクリックします。
 3. 適切な Web アプリケーションをクリックし、[ **ユーザー ポリシー**] をクリックします。
-4. Web アプリケーションのポリシー]、 **[ユーザーの追加**をクリックします。</br>![その名の要求によって、ユーザーの検索](media/SAML11/fig11-searchbynameclaim.png)</br>
+4. Web アプリケーションのポリシー]、 **[ユーザーの追加**をクリックします。<br/>![その名の要求によって、ユーザーの検索](media/SAML11/fig11-searchbynameclaim.png)<br/>
 5. [ **ユーザーの追加**] ダイアログ ボックスの [ **領域**] で適切な領域をクリックし、[ **次へ**] をクリックします。
 6. **Web アプリケーションのポリシー** ] ダイアログ ボックスの [**ユーザーの選択**] セクションで、[**参照**] アイコンをクリックします。
-7. [**検索**] ボックスで、ディレクトリ内のユーザーのサインイン名を入力し、[**検索**] をクリックします。 </br>例: *demouser@blueskyabove.onmicrosoft.com*。
+7. [**検索**] ボックスで、ディレクトリ内のユーザーのサインイン名を入力し、[**検索**] をクリックします。 <br/>例: *demouser@blueskyabove.onmicrosoft.com*。
 8. リスト ビューで [AzureAD] 見出しの下 name プロパティを選択して [**追加**] をクリックし、ダイアログ ボックスを閉じます **[ok]** をクリックします。
-9. アクセス許可] では、**フル コントロール**をクリックします。</br>![クレーム ユーザーにフル コントロールを付与します。](media/SAML11/fig12-grantfullcontrol.png)</br>
+9. アクセス許可] では、**フル コントロール**をクリックします。<br/>![クレーム ユーザーにフル コントロールを付与します。](media/SAML11/fig12-grantfullcontrol.png)<br/>
 10. [ **完了**]、[ **OK**] の順にクリックします。
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>手順 6: Azure AD で SAML 1.1 トークンの発行ポリシーを追加します。

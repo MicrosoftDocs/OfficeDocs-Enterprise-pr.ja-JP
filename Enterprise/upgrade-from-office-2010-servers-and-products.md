@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 のサーバーおよびクライアント アプリケーションのサポートがすぐに終了して、カスタム サポート契約をご利用いただけません。今すぐアップグレードの計画を開始するのにには、この資料を使用します。
-ms.openlocfilehash: 97a21b3dc715fa90113491be216a8f2da45678e5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d358cfc2e9fbc0ecc829995698b32801e4c55c9f
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915182"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975155"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>2010 のサーバーとクライアントの Office からアップグレードするためのリソース
 
@@ -39,8 +39,8 @@ Office 2010 製品およびサービスを使用する場合は Office 365 で�
 |Office 2010 の Word 2010、Excel 2010、PowerPoint 2010、および Outlook 2010 など  <br/> |[サポート ロードマップの Office 2010 の終了](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[サポート ロードマップの Exchange 2010 の終了](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 または SharePoint Server 2010  <br/> |[SharePoint 2010 からアップグレードします。](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 </br> | [オンライン サーバーのプロジェクトとプロジェクトの計画](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
-|Lync Server 2010 </br> | [Skype ビジネス サーバーをアップグレードしようとしてください。](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+|Project Server 2010 <br/> | [オンライン サーバーのプロジェクトとプロジェクトの計画](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) <br/> |
+|Lync Server 2010 <br/> | [Skype ビジネス サーバーをアップグレードしようとしてください。](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="what-if-im-a-home-user-what-do-i-do"></a>場合私は、ホーム ユーザーですか。どうしようか。
 

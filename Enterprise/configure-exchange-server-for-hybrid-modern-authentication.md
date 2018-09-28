@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: ハイブリッド現代認証 (HMA) より安全なユーザー認証と承認を提供し、Exchange サーバー設置型のハイブリッド展開を利用する id 管理の方法です。
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541667"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975195"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -81,7 +81,7 @@ AAD での HTTPS サービス プリンシパル名として登録されてい�
     
 メモ (および後で比較のスクリーン ショット)、https:// を含める必要があります、このコマンドの出力を行う * 自動検出します。*宛先** と*mail.yourdomain.com*の URL を https://、00000002-0000-0ff1-ce00-000000000000 で始まる Spn のほとんどで構成されますと。オンプレミスで不足しているから https:// の Url がある場合はこの一覧にある特定のレコードを追加する必要があります。 
   
-3. このリストの内部および外部 MAPI 要求、EWS、ActiveSync、OAB、および自動検出レコードが表示されない場合、次のコマンドを使用して、追加する必要があります (この例の Url は、'`mail.corp.contoso.com`'と'`owa.contoso.com`'、**独自の Url の例を置換**する必要があるが、): </br>
+3. このリストの内部および外部 MAPI 要求、EWS、ActiveSync、OAB、および自動検出レコードが表示されない場合、次のコマンドを使用して、追加する必要があります (この例の Url は、'`mail.corp.contoso.com`'と'`owa.contoso.com`'、**独自の Url の例を置換**する必要があるが、): <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

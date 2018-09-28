@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行はエンドユーザーへの影響を最小限に抑えたバックエンドの操作です。Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839605"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975175"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -96,8 +96,8 @@ Outlook Web Access のオプション ページを使用してリソース メ�
   
 ||**Exchange 管理センター**|**セキュリティ&amp;コンプライアンス センター**|
 |:-----|:-----|:-----|
-|電子情報開示  <br/> | https://portal.office.com、**管理**のタイルをクリックします。 </br> **管理センター**をクリックして\>**交換**します。 </br> **コンプライアンスの管理**を選択して\>**インプレース電子情報開示&amp;を保持**。 | https://portal.office.com、管理のタイルをクリックします。 </br> **管理センター**をクリックして\>**セキュリティ&amp;準拠**。 </br> 選択**検索&amp;調査** \> **電子的証拠開示**します。|
-|監査  <br/> | https://portal.office.com、**管理**のタイルをクリックします。 </br> **管理センター**をクリックして\>**交換**します。**コンプライアンスの管理**を選択して\>**監査**します。 | https://portal.office.com、管理のタイルをクリックします。 </br> **管理センター**をクリックして\>**セキュリティ&amp;準拠**。 </br> 選択**検索&amp;調査** \> **監査ログの検索**します。 |
+|電子情報開示  <br/> | https://portal.office.com、**管理**のタイルをクリックします。 <br/> **管理センター**をクリックして\>**交換**します。 <br/> **コンプライアンスの管理**を選択して\>**インプレース電子情報開示&amp;を保持**。 | https://portal.office.com、管理のタイルをクリックします。 <br/> **管理センター**をクリックして\>**セキュリティ&amp;準拠**。 <br/> 選択**検索&amp;調査** \> **電子的証拠開示**します。|
+|監査  <br/> | https://portal.office.com、**管理**のタイルをクリックします。 <br/> **管理センター**をクリックして\>**交換**します。**コンプライアンスの管理**を選択して\>**監査**します。 | https://portal.office.com、管理のタイルをクリックします。 <br/> **管理センター**をクリックして\>**セキュリティ&amp;準拠**。 <br/> 選択**検索&amp;調査** \> **監査ログの検索**します。 |
    
 ### <a name="mailbox-migration"></a>メールボックスの移行
 

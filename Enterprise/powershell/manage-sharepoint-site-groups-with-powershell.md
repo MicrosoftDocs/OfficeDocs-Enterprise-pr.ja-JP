@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '使用 Office 365 PowerShell を概要: SharePoint Online サイト グループを管理します。'
-ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915352"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975145"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイト グループを管理する
 
@@ -37,8 +37,8 @@ SharePoint Online 管理センターでは、サイト グループを管理す�
 
 1. Office 365 管理センターで、[**リソース**] をクリックします > **のサイト**サイトの URL をクリックします。
 2. [サイト コレクション] ダイアログ ボックスで **[このサイトに移動]** をクリックします。
-3. サイト ページで、**[設定]** アイコン (ページの右上隅にある) をクリックしてから、**[サイトの設定]** をクリックします。</br>
-![SharePoint Online サイトの設定](media/spo-site-settings.png)</br>
+3. サイト ページで、**[設定]** アイコン (ページの右上隅にある) をクリックしてから、**[サイトの設定]** をクリックします。<br/>
+![SharePoint Online サイトの設定](media/spo-site-settings.png)<br/>
 4. [サイトの設定] ページで、[**ユーザーと権限****のサイトのアクセス許可**をクリックします。
 
 参照する次のサイトでも、このプロセスを繰り返します。
@@ -58,7 +58,7 @@ foreach ($y in $x)
 
 SharePoint のオンライン管理シェルのコマンド プロンプトで設定このコマンドを実行する 2 つの方法があります。
 
-- コマンドをメモ帳 (または別のテキスト エディターにコピー、 **$siteURL**変数の値を変更、コマンドを選択、および SharePoint のオンライン管理シェルのコマンド プロンプトに貼り付けること。PowerShell で停止するには、ときに、**>>** プロンプトします。**Foreach**コマンドを実行するには、enter キーを押します。</br>
+- コマンドをメモ帳 (または別のテキスト エディターにコピー、 **$siteURL**変数の値を変更、コマンドを選択、および SharePoint のオンライン管理シェルのコマンド プロンプトに貼り付けること。PowerShell で停止するには、ときに、**>>** プロンプトします。**Foreach**コマンドを実行するには、enter キーを押します。<br/>
 - メモ帳 (または別のテキスト エディター) にコマンドをコピー、 **$siteURL**変数の値を変更、名前と適切なフォルダーに .ps1 拡張子を持つテキスト ファイルを保存します。次に、そのパスとファイル名を指定することによって SharePoint のオンライン管理シェルのコマンド プロンプトからスクリプトを実行します。コマンドの例を以下に示します。
 
 ```
