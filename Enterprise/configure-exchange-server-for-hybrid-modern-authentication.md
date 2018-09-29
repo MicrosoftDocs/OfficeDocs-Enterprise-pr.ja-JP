@@ -3,7 +3,7 @@ title: Exchange Server をオンプレミスで構成して、ハイブリッド
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 3/23/2018
+ms.date: 09/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: ハイブリッド現代認証 (HMA) より安全なユーザー認証と承認を提供し、Exchange サーバー設置型のハイブリッド展開を利用する id 管理の方法です。
-ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
+ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975195"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347607"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -63,13 +63,12 @@ Azure AD Spn。 Spn が使っているクライアント コンピューター�
   
 まず、AAD に追加する必要があるすべての Url を収集します。これらのコマンドで設置型を実行します。
   
-- Get MapiVirtualDirectory |FL サーバー、\*の url\*
-    
-- Get WebServicesVirtualDirectory |FL サーバー、\*の url\*
-    
-- **Get ActiveSyncVirtualDirectory |FL サーバー、\*の url\***
-    
-- Get OABVirtualDirectory |FL サーバー、\*の url\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
+```
     
 AAD での HTTPS サービス プリンシパル名として登録されている可能性がありますクライアント接続の Url を確認します。
   
@@ -77,17 +76,19 @@ AAD での HTTPS サービス プリンシパル名として登録されてい�
     
 2. Exchange 関連の Url は次のコマンドを入力します。
     
-- Get-MsolServicePrincipal-AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 |-ExpandProperty ServicePrincipalNames を選択します。
-    
-メモ (および後で比較のスクリーン ショット)、https:// を含める必要があります、このコマンドの出力を行う * 自動検出します。*宛先** と*mail.yourdomain.com*の URL を https://、00000002-0000-0ff1-ce00-000000000000 で始まる Spn のほとんどで構成されますと。オンプレミスで不足しているから https:// の Url がある場合はこの一覧にある特定のレコードを追加する必要があります。 
+```powershell
+Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+```
+
+メモ (および後で比較のスクリーン ショット)、https:// *autodiscover.yourdomain.com*と https:// *mail.yourdomain.com*の URL を含める必要がありますで始まる Spn のほとんどで構成されますが、このコマンドの出力を行う00000002-0000-0ff1-ce00-000000000000 とします。オンプレミスで不足しているから https:// の Url がある場合はこの一覧にある特定のレコードを追加する必要があります。 
   
 3. このリストの内部および外部 MAPI 要求、EWS、ActiveSync、OAB、および自動検出レコードが表示されない場合、次のコマンドを使用して、追加する必要があります (この例の Url は、'`mail.corp.contoso.com`'と'`owa.contoso.com`'、**独自の Url の例を置換**する必要があるが、): <br/>
-```
-- $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
-- $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
-- Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```powershell
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
+$x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
 4. 手順 2 から Get MsolServicePrincipal コマンドを再度実行して、出力を確認して、新しいレコードが追加されたことを確認します。一覧を比較/スクリーン ショットの前に新しい (必要な場合も、新しいリストのスクリーン ショットを記録用) の Spn の一覧にします。成功した場合は、リスト内の 2 つの新しい Url が表示されます。この例では、移動、Spn の一覧表示されます特定の Url`https://mail.corp.contoso.com`と`https://owa.contoso.com`。 
@@ -96,28 +97,27 @@ AAD での HTTPS サービス プリンシパル名として登録されてい�
 
 か確認して OAuth が適切に有効になっている次のコマンドを実行して、すべての仮想ディレクトリの Outlook で Exchange を使用します。
 
-```
-Get-MapiVirtualDirectory | FL server,\*url\*,\*auth\* 
-Get-WebServicesVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-OABVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*,*auth* 
+Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
+Get-OABVirtualDirectory | FL server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
 これらの VDirs のそれぞれにチェックすることを確認して**OAuth**が有効になっている、次のようになります (およびを見ることは、'OAuth') です。 
-  
- **[PS]C:\Windows\system32\>Get MapiVirtualDirectory |fl サーバー、\*url\*、\*認証\***
-  
- **サーバー: EX1**
-  
- **InternalUrl。`https://mail.contoso.com/mapi`**
-  
- **ExternalUrl。`https://mail.contoso.com/mapi`**
-  
- **IISAuthenticationMethods: {Ntlm、OAuth の交渉}**
-  
- **InternalAuthenticationMethods: {Ntlm、OAuth の交渉}**
-  
- **ExternalAuthenticationMethods: {Ntlm、OAuth の交渉}**
+
+```powershell
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+```
+
+```
+Server                        : EX1
+InternalUrl                   : https://mail.contoso.com/mapi
+ExternalUrl                   : https://mail.contoso.com/mapi
+IISAuthenticationMethods      : {Ntlm, OAuth, Negotiate}
+InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+```
   
 OAuth では、任意のサーバーと 4 つの仮想ディレクトリのいずれかに表示されない場合は、続行する前に関連するコマンドを使用して追加する必要があります。
   
@@ -125,8 +125,10 @@ OAuth では、任意のサーバーと 4 つの仮想ディレクトリのい�
 
 この最後のコマンドに、オンプレミスの Exchange 管理シェルに戻ります。これで、設置型では、evoSTS の認証プロバイダーのエントリがあるかを検証できます。
   
-`Get-AuthServer | where {$_.Name -eq "EvoSts"}`
-    
+```powershell
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
+```
+
 出力の名前 EvoSts、AuthServer を表示する必要があり、'有効' の状態が True にする必要があります。このメッセージが表示されない場合は、ダウンロードして、ハイブリッド構成ウィザードの最新バージョンを実行する必要があります。
   
  **重要です**環境内で Exchange 2010 を実行している場合は、EvoSTS の認証プロバイダーが作成されません。 
@@ -135,7 +137,7 @@ OAuth では、任意のサーバーと 4 つの仮想ディレクトリのい�
 
 設置、Exchange 管理シェルで次のコマンドを実行します。
 
-```
+```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
