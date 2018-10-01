@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 概要:Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915742"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022096"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
@@ -40,7 +40,6 @@ ms.locfileid: "22915742"
     - [エンタープライズ アーキテクトのための Microsoft Mobility および Security](microsoft-cloud-it-architecture-resources.md#mobility)
     - [エンタープライズ アーキテクトのための Microsoft クラウド ストレージ](microsoft-cloud-it-architecture-resources.md#storage)
     - [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Microsoft Cloud の Contoso](microsoft-cloud-it-architecture-resources.md#contoso)
     - [一般的な攻撃と、組織を保護する Microsoft の機能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Office 365 Enterprise ソリューション シリーズ](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -132,22 +131,13 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 |:-----|:-----|
 |[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [記事](https://technet.microsoft.com/library/mt750500.aspx) <br/>[その他の言語](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | このモデルには以下のページが含まれています。 <ul><li> **ハイブリッド クラウドの概要** Microsoft のクラウド サービス (SaaS、Azure PaaS、そして Azure IaaS) とそれらの共通の要素。 </li><li> **Microsoft ハイブリッド クラウド シナリオのアーキテクチャ** Microsoft のクラウド製品のハイブリッド クラウドのアーキテクチャ ダイアグラム。オンプレミス インフラストラクチャ、ネットワーク、および ID の共通レイヤーを示します。 </li><li> **Microsoft SaaS (Office 365) のハイブリッド クラウド シナリオ** SaaS ハイブリッド シナリオ アーキテクチャと、Skype for Business、SharePoint Server、そして Exchange Server の主要なハイブリッド構成の説明。 </li><li> **Azure PaaS のハイブリッド クラウド シナリオ** Azure PaaS ハイブリッド シナリオのアーキテクチャ、および Azure PaaS ハイブリッド アプリケーションの説明とその例、および SQL Server 2016 Stretch Database の説明。 </li><li> **Azure IaaS のハイブリッド クラウド シナリオ** Azure IaaS ハイブリッド シナリオのアーキテクチャ、および Azure IaaS でホストされる基幹業務 (LOB) アプリケーションの説明。 </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Microsoft Cloud の Contoso
-
-架空ではありますが代表的な世界規模の組織が Microsoft のクラウド商品 (Office 365、Azure、Dynamics 365、および Intune を含む) を実装している方法を示します。
-  
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Microsoft Cloud ポスターの Contoso のサムネイル画像。](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)           \| [記事](https://technet.microsoft.com/library/mt775341.aspx) <br/>[その他の言語](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |このモデルには次のものが含まれています。 <ul><li>Contoso Corporation の概要 </li><li>Contoso 社の IT インフラストラクチャおよびニーズ </li><li>Contoso 社のクラウド ネットワーク</li><li>Contoso 社のクラウド ID</li><li>Contoso 社のサブスクリプション、ライセンス、およびユーザー アカウント</li><li>Contoso 社のクラウドのセキュリティ</li><li>Contoso 社のエンタープライズ クラウドのシナリオ</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>一般的な攻撃と、組織を保護する Microsoft の機能
 最も一般的なサイバー攻撃と、攻撃の各段階で Microsoft が組織を支援する方法について説明します。 
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![一般的な攻撃ポスターのサムネイル画像。](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | このポスターは、一般的な攻撃の経路を示し、攻撃の各段階で攻撃者を阻止する機能について説明します。 <br/>|
+|[![一般的な攻撃ポスターのサムネイル画像。](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | このポスターは、一般的な攻撃の経路を示し、攻撃の各段階で攻撃者を阻止する機能について説明します。 <br/>|
 
 
 <a name="santa"> </a>
