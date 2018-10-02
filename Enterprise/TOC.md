@@ -36,6 +36,10 @@
 ### [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
 ### [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 テナント間コラボレーション](office-365-inter-tenant-collaboration.md)
+## Office 365 クライアントのサポート
+### [条件付きアクセス](office-365-client-support-conditional-access.md)
+### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
+### [現代の認証](office-365-client-support-modern-authentication.md)
 ## ハイブリッド オプション
 ### [Skype for Business Server および Exchange Server 向けのハイブリッド先進認証と前提条件](hybrid-modern-auth-overview.md)
 ### [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -169,6 +173,8 @@
 ### [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
 ### [Exchange Online のパフォーマンスをチューニングする](tune-exchange-online-performance.md)
 ### [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
+#### [SharePoint Online のパフォーマンス チューニングの概要](introduction-to-performance-tuning-for-sharepoint-online.md)
+#### [SharePoint Online のパフォーマンスの問題の診断](diagnosing-performance-issues-with-sharepoint-online.md)
 ### [Skype のオンライン ビジネスのパフォーマンスをチューニングします。](tune-skype-for-business-online-performance.md)
 ### [オンライン プロジェクトのパフォーマンスをチューニングします。](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
