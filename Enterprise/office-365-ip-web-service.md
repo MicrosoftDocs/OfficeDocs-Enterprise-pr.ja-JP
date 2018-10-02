@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831902"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961826"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP アドレスと URL の Web サービス **
 
@@ -183,7 +183,7 @@ Worldwide,2018063000
 - tcpPorts - エンドポイント セットの TCP ポート。すべてのポート要素は、コンマで区切られたポートまたはダッシュ文字 (-) で区切られたポート範囲のリストとです。ポートは、そのカテゴリのエンドポイント セットのすべての IP アドレスとすべての URL に適用されます。空白の場合は省略します。
 - udpPorts - このエンドポイント セット内の IP アドレス範囲の UDP ポート。空白の場合は省略します。
 - ips - 一覧表示された TCP ポートまたは UDP ポートに関連付けられたものとして、このエンドポイントセットに関連付けられている IP アドレスの範囲。IP アドレス範囲の JSON 配列。空白の場合は省略します。
-- category - エンドポイント セットの接続性カテゴリ。有効な値は、Optimize、Allow、Default。必須です。
+- category - エンドポイント セットの接続のカテゴリ。有効な値は、Optimize、Allow、Default です。エンドポイント データを使用して IP アドレスまたは URL のカテゴリを検索する場合、クエリが複数のカテゴリを返す可能性があります。これにはいくつかの原因が考えられますので、複数のカテゴリが返された場合は、最優先のカテゴリの推奨事項に従ってください。たとえば、エンドポイントが Optimize と Allow の両方に表示される場合は、Optimize の要件に従う必要があります。必須です。 
 - expressRoute - このエンドポイント セットが ExpressRoute を経由してルーティングされるかどうかを示す True または False。
 - required - Office 365 のサポートを受けるためにこのエンドポイント セットの接続性が必要な場合は True。このエンドポイント セットが省略可能な場合は False。
 - notes - オプションのエンドポイントで、ネットワーク層でエンドポイント セットの IP アドレスまたは URL にアクセスできない場合に、このテキストは見つからない Office 365 の機能について説明します。空白の場合は省略します。

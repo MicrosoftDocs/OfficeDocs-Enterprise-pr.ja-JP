@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive と SharePoint Online の複数地域機能を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012737"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive の複数地域機能および Office 365 の SharePoint Online
 
-OneDrive の複数地域機能と SharePoint Online を使用すれば、組織はその組織の Office 365 のプレゼンスを、その既存のテナント内の複数の地域または国に対して展開することができます。お客様の Microsoft アカウント チームと連絡を取って、お客様の多国籍企業をサインアップし、OneDrive for Business 複数地域を入手してください。
+OneDrive の複数地域機能と SharePoint Online を使用すれば、組織はその組織の Office 365 のプレゼンスを、その既存のテナント内の複数の地域または国に対して展開することができます。お客様の Microsoft アカウント チームと連絡を取って、OneDrive for Business 複数地域用にお客様の多国籍企業のサインアップを行ってください。
   
 OneDrive の複数地域機能を使用すれば、データの常駐に関連する要件を満たすと同時に、モダンな生産性向上エクスペリエンスのグローバル展開を要員に開放するために、選択した地理的な場所に保存 (休眠) データをプロビジョニングして蓄えることができます。
   
@@ -69,6 +70,8 @@ OneDrive の複数地域は、現在次の地域と国で提供されていま�
 - カナダ
     
 - 欧州連合 (EMEA)
+
+- フランス
     
 - 日本
     
@@ -80,7 +83,6 @@ OneDrive の複数地域は、現在次の地域と国で提供されていま�
       
 今後提供予定の地域の場所:
   
-- フランス
 - インド
     
 ## <a name="getting-started"></a>はじめに
