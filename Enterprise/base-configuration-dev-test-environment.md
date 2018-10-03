@@ -3,7 +3,7 @@ title: 基本構成開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2018
+ms.date: 10/01/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,23 +17,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9ffa35a6318d83d489ec51051547ce22c16b5b5f
+ms.sourcegitcommit: 9ce1da973b8c91b0926142a28c5b90f95f0422d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915282"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353313"
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
  **概要:** Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。
   
-この記事では、Azure で次の基本構成開発/テスト環境を作成するための詳しい手順について説明します。
+この記事では、Azure で次の基本構成開発/テスト環境を作成する手順について説明します。
+  
+![Azure での基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 **図 1: 基本構成開発/テスト環境**
 
-![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
-  
 図 1 の基本構成開発/テスト環境は、インターネットに接続された簡略化されたプライベート イントラネットをシミュレートする、TestLab というクラウド専用 Azure 仮想ネットワーク内の企業ネットワーク サブネットで構成されています。Windows Server 2016 を実行している次の 3 つの Azure 仮想マシンが含まれます。
   
 - イントラネット ドメイン コントローラーとドメイン ネーム システム (DNS) サーバーとして構成されている DC1
@@ -52,9 +52,41 @@ ms.locfileid: "22915282"
   
 - アプリケーション開発とテスト。
     
-- 追加の仮想マシン、Azure サービス、Microsoft Office 365 と Microsoft Intune などその他の Microsoft クラウド サービス (Office 365 や Enterprise Mobility + Security (EMS) など) を含む、独自の設計の拡張されたテスト環境の初期構成として。
+- 追加の仮想マシン、Azure サービス、その他の Microsoft クラウド サービス (Office 365 や Enterprise Mobility + Security (EMS) など) を含む、独自の設計の拡張されたテスト環境の初期構成として。
     
-Azure の基本構成テスト環境の設定には次の 4 つのフェーズがあります。
+このような環境を作成するには、2 つの方法があります。
+
+1. Azure Resource Manager のテンプレート
+2. Azure PowerShell
+
+## <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1: Azure Resource Manager テンプレートを使用して、シミュレートされたイントラネットを構築する
+
+この方法では、Azure Resource Manager (ARM) テンプレートを使用してシミュレートされたイントラネットを構築します。ARM テンプレートには、Azure ネットワーク インフラストラクチャおよび仮想マシンを作成して構成するためのすべての手順が含まれています。
+
+テンプレートを展開する前に「[テンプレートの Readme ページ](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm)」を確認し、次の情報をご用意ください。
+
+- Azure サブスクリプションの名前。**[カスタムの導入]** ページの **[サブスクリプション]** フィールドにこのラベルを入力する必要があります。
+- Azure リソース グループの名前。**[カスタムの導入]** ページの **[リソース グループ]** フィールドにこのラベルを入力する必要があります。
+- 仮想マシンのパブリック IP アドレスの URL の DNS ラベル プレフィックス。[**カスタム デプロイ**] ページの [**DNS ラベル プレフィックス**] フィールドにこのラベルを入力する必要があります。
+
+手順をすべて確認したら、[[テンプレートの Readme ページ](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm)] で [**Azure に展開**] をクリックして展開を開始します。
+
+>[!Note]
+>ARM テンプレートで作成されたシミュレートされたイントラネットでは、Azure の有料サブスクリプションが必要です。
+>
+
+こちらがテンプレート完了後の構成です。
+
+![Azure での基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+
+
+## <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>方法 2: Azure PowerShell を使用してシミュレートされたイントラネットを構築する
+
+この方法では、Windows PowerShell と Azure PowerShell モジュールを使用してネットワーク インフラストラクチャ、仮想マシン、およびその構成を構築します。
+
+Azure インフラストラクチャの要素を作成する作業を、PowerShell でコマンド ブロックを 1 つずつ進める方法で経験してみたいという場合は、この方法をお使いください。その後、Azure で他の仮想マシンを展開するために PowerShell コマンドのブロックをカスタマイズできます。
+
+Azure PowerShell を使った基本構成テスト環境の設定には次の 4 つのステップがあります。
   
 1. 仮想ネットワークを作成します。
     
@@ -72,9 +104,11 @@ Azure の基本構成テスト環境の設定には次の 4 つのフェーズ�
 ![Microsoft Cloud のテスト ラボ ガイド](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="phase-1-create-the-virtual-network"></a>フェーズ 1: 仮想ネットワークを作成する
+### <a name="step-1-create-the-virtual-network"></a>ステップ 1: 仮想ネットワークを作成します。
+
+このステップでは、Azure で TestLab 仮想ネットワークを作成します。
 
 最初に、Azure PowerShell プロンプトを起動します。
   
@@ -131,13 +165,16 @@ $nsg=Get-AzureRMNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-これは、現在の構成です。
+こちらが現在の構成です。
   
-![仮想ネットワークとサブネットを含む Azure のフェーズ 1 基本構成](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![仮想ネットワークとサブネットを含む Azure の基本構成、ステップ 1](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
-## <a name="phase-2-configure-dc1"></a>フェーズ 2: DC1 を構成する
+### <a name="step-2-configure-dc1"></a>ステップ 2: DC1 を構成する
 
-このフェーズでは、DC1 仮想マシンを作成し、それを Windows Server Active Directory (AD) の corp.contoso.comis ドメインのドメイン コントローラー、および TestLab 仮想ネットワークの仮想マシン用の DNS サーバーとして構成します。
+このステップでは、DC1 仮想マシンを作成し、それを Windows Server Active Directory (AD) の corp.contoso.comis ドメインのドメイン コントローラー、および TestLab 仮想ネットワークの仮想マシン用の DNS サーバーとして構成します。
+
+> [!NOTE]
+> 以下のコマンド ブロックを実行する前に、選択した Azure リージョン (場所) が Azure の仮想マシンのサイズをサポートしているか確認してください。既定では、Standard_A1 に設定されています。[ここ](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines)をクリックすると Azure 仮想マシンのサイズと場所を確認できます。
   
 DC1 用の Azure 仮想マシンを作成するには、リソース グループの名前を入力して、次に示すコマンドをローカル コンピューターの Azure PowerShell コマンド プロンプトから実行します。
   
@@ -163,8 +200,6 @@ DC1 のローカル管理者アカウントのユーザー名とパスワード�
   
 次に、DC1 仮想マシンに接続します。
   
-### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>ローカルの管理者アカウントの資格情報を使用して DC1 に接続する
-
 1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] > **「新しいリソース グループの名前」** > [DC1] > [接続]** の順にクリックします。
     
 2. 起動ウィンドウで **[RDP ファイルのダウンロード]** をクリックします。ダウンロードされる DC1.rdp ファイルを開いてから、**[接続]** をクリックします。
@@ -199,11 +234,9 @@ Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolP
   
 これらのコマンドの完了には数分かかることがあります。
   
-DC1 の再起動後に、DC1 仮想マシンに再接続します。
+DC1 の再起動後に、ドメインの資格情報を使って DC1 仮想マシンに再接続します。
   
-### <a name="connect-to-dc1-using-domain-credentials"></a>ドメインの資格情報を使用して DC1 に接続する
-
-1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] > **「リソース グループ名」** > [DC1] > [接続]** をクリックします。
+1. [Azure portal](https://portal.azure.com) で、**[リソース グループ] > **[リソース グループ名]** > [DC1] > [接続]** をクリックします。
     
 2. ダウンロードされる DC1.rdp ファイルを実行して、**[接続]** をクリックします。
     
@@ -235,14 +268,17 @@ DC1 とのリモート デスクトップ セッションを終了し、CORP\\Us
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
-これは、現在の構成です。
+こちらが現在の構成です。
   
-![DC1 仮想マシンを含む Azure のフェーズ 2 基本構成](media/49069908-29c3-4d73-87f7-debbea067261.png)
+![DC1 仮想マシンを含む Azure の基本構成、ステップ 2](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
-## <a name="phase-3-configure-app1"></a>フェーズ 3: APP1 を構成する
+### <a name="step-3-configure-app1"></a>ステップ 3: APP1 を構成する
 
-APP1 は、Web サービスとファイル共有サービスを提供します。
+このステップでは、Web およびファイル共有サービスを提供する APP1 を作成して構成します。
 
+> [!NOTE]
+> 以下のコマンド ブロックを実行する前に、選択した Azure リージョン (場所) が Azure の仮想マシンのサイズをサポートしているか確認してください。既定では、Standard_A1 に設定されています。[ここ](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines)をクリックすると Azure 仮想マシンのサイズと場所を確認できます。
+  
 APP1 用の Azure 仮想マシンを作成するには、リソース グループの名前を入力して、次に示すコマンドをローカル コンピューターの Azure PowerShell コマンド プロンプトから実行します。
   
 ```
@@ -289,16 +325,20 @@ Write-Output "This is a shared file." | out-file c:\files\example.txt
 New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ```
 
-これは、現在の構成です。
+こちらが現在の構成です。
   
-![APP1 仮想マシンを含む Azure のフェーズ 3 基本構成](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![APP1 仮想マシンを含む Azure の基本構成、ステップ 3](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
-## <a name="phase-4-configure-client1"></a>フェーズ 4: CLIENT1 を構成する
+### <a name="step-4-configure-client1"></a>ステップ 4: CLIENT1 を構成する
 
-CLIENT1 は、Contoso イントラネット上の一般的なノート PC、タブレット、デスクトップ コンピューターとして機能します。
+このステップでは、Contoso イントラネット上の一般的なラップトップ、タブレット、またはデスクトップ コンピューターとして機能する CLIENT1 を作成して構成します。
 
 > [!NOTE]  
 > 次のコマンド セットでは、Windows Server 2016 Datacenter を実行する CLIENT1 を作成します。これは、すべての Azure サブスクリプションのタイプに対して実行できます。Visual Studio ベースの Azure サブスクリプションがある場合は、[Azure portal](https://portal.azure.com) で、Windows 10 を実行する CLIENT1 を作成できます。 
+  
+
+> [!NOTE]
+> 以下のコマンド ブロックを実行する前に、選択した Azure リージョン (場所) が Azure の仮想マシンのサイズをサポートしているか確認してください。既定では、Standard_A1 に設定されています。[ここ](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines)をクリックすると Azure 仮想マシンのサイズと場所を確認できます。
   
 CLIENT1 用の Azure 仮想マシンを作成するには、リソース グループの名前を入力して、次に示すコマンドをローカル コンピューターの Azure PowerShell コマンド プロンプトから実行します。
   
@@ -334,8 +374,6 @@ CLIENT1 の再起動後に、CORP\\User1 のアカウント名とパスワード
   
 次に、CLIENT1 から APP1 の Web リソースおよびファイル共有リソースにアクセスできることを確認します。
   
-### <a name="verify-client-access-to-app1"></a>APP1 への CLIENT アクセスを確認する
-
 1. サーバー マネージャーのツリー ウィンドウで、**[ローカル サーバー]** をクリックします。
     
 2. **[CLIENT1 のプロパティ]** で、**[IE セキュリティ強化の構成]** の横にある **[オン]** をクリックします。
@@ -354,9 +392,9 @@ CLIENT1 の再起動後に、CORP\\User1 のアカウント名とパスワード
     
 9. **[example.txt - メモ帳]** と **[ファイル]** の共有フォルダーのウィンドウを閉じます。
     
-これは、最後の構成です。
+これが、最終的な構成です。
   
-![CLIENT1 仮想マシンを含む Azure のフェーズ 4 基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![CLIENT1 仮想マシンを含む Azure の基本構成、ステップ 4](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Azure の基本構成は、アプリケーション開発とテスト、追加のテスト環境の作成を行うための準備ができました。 
   
