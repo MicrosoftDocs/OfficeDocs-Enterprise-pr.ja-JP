@@ -1,5 +1,5 @@
 ---
-title: Office 365 エンドポイントを管理します。
+title: Office 365 エンドポイントの管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,14 +15,14 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: ネットワークによっては、Office 365 にアクセスできる、ネットワークとプロキシの管理者は、Fqdn では、Url のリストを管理する必要があります、および IP アドレスなどのネットワーク上のコンピューターは、Office 365 エンドポイントの一覧を構成することを確認するのには、インターネットへのアクセスを制限するように設計されています。これらのネットワーク要求を確認するのにはファイルのプロキシまたはファイアウォールの規則および PAC に追加する必要性は、Office 365 に到達することができます。
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831922"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359499"
 ---
-# <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理します。
+# <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントの管理
 
 ## <a name="office-365-network-connectivity"></a>Office 365 のネットワーク接続
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831922"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>更新プログラム、ファイアウォールの外部リストを許可します。
 
-すべての信頼されたファイアウォールを使用して直接 Office 365 のネットワーク要求を送信する、すべての他のパケット レベルの検査をバイパスする処理では、ネットワークを最適化できます。これは、遅延から低速のパフォーマンスが低下し、境界領域の容量要件を軽減します。ネットワークを信頼するように要求を選択する最も簡単な方法では、上記の [**プロキシ**] タブで、構築済みの PAC ファイルを使用します。 
+すべての信頼されたファイアウォールを使用して直接 Office 365 のネットワーク要求を送信する、すべての他のパケット レベルの検査をバイパスする処理では、ネットワークを最適化できます。これは、遅延から低速のパフォーマンスが低下し、境界領域の容量要件を軽減します。ネットワークを信頼するように要求を選択する最も簡単な方法では、当社の[事前構成済みの PAC ファイル](managing-office-365-endpoints.md#pacfiles)を使用します。 
   
 ファイアウォールのブロックの送信トラフィックでは、すべての ip アドレスを確認する必要があり、この[XML ファイル](https://go.microsoft.com/fwlink/?LinkId=533185)で**必要な**のと Fqdn が表示されている場合は、許可リストには。いくつかサード パーティのサービスを使用する必要のすべてのサービスを認識します。おしないこれらのサード パーティ サービス プロバイダー、コンテンツ配信ネットワークでは、DNS プロバイダーの証明書などの IP アドレスを提供するとします。すべての Office 365 の機能は、方法に関する情報を多く公開して先に関係なく、Office 365 によって要求されたすべての宛先に到達できる必要があります。 
   
@@ -888,17 +888,17 @@ Exfiltrate については、Office 365 テナントまたはその他のサー�
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 の IP アドレスと URL の Web サービス](office-365-ip-web-service.md)
+[Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 
-[Microsoft Azure データ センターの IP の範囲](https://www.microsoft.com/download/details.aspx?id=41653)
+[Microsoft Azure データ センターの IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)
   
-[Microsoft のパブリック IP スペース](https://www.microsoft.com/download/details.aspx?id=53602)
+[Microsoft パブリック IP スペース](https://www.microsoft.com/download/details.aspx?id=53602)
   
 [Microsoft Intune のネットワーク インフラストラクチャの要件](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
 [電源の BI および ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[Office 365 の URL と IP アドレス範囲](urls-and-ip-address-ranges.md)
+[Office 365 の URL と IP アドレスの範囲](urls-and-ip-address-ranges.md)
   
 [Office 365 向け ExpressRoute の管理](managing-expressroute-for-connectivity.md)
   
