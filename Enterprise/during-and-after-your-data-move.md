@@ -3,7 +3,7 @@ title: データの移行中および移行後
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行はエンドユーザーへの影響を最小限に抑えたバックエンドの操作です。Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975175"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361505"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -34,7 +34,7 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |オーストラリア、ニュージーランド、フィジー  <br/> |2017 年 10 月 31 日  <br/> |
 |日本  <br/> |2018 年 10 月 31 日  <br/> |
 |インド  <br/> |2018 年 10 月 31 日  <br/> |
-|カナダ  <br/> |2018 年 10 月 31 日  <br/> |
+|カナダ  <br/> |、2019 年 6 月 30日  <br/> |
 |韓国  <br/> |2018 年 10 月 31 日  <br/> |
 |英国  <br/> |2019 年 9 月 15 日  <br/> |
 |フランス  <br/> |2020 年 9 月 15 日  <br/> |
