@@ -3,7 +3,7 @@ title: Office 2007 または 2010 のサーバーとクライアントのアッ�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: 以前のバージョンの Office 製品とサーバーからのアップグレードを計画する時間です。計画を開始するには、これらのリソースを使用します。
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Office 2007 または Office 2010 を使用する場合は、アップグレードを計画する時間です。計画を開始するには、これらのリソースを使用します。
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915162"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363170"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントのアップグレードを計画します。
 
@@ -54,9 +54,11 @@ ms.locfileid: "22915162"
 
 Office 2007 または Office 2010 は、家庭で使用して、次のオプションを検討します。
 
+- **Office オンラインで使用するを解放**します。作成表示、ブラウザーで Office ファイルを編集して、インターネットへのアクセスには、どんなデバイスからこれらのファイルへのアクセス権を持ちます。[Word のオンライン](http://go.microsoft.com/fwlink/p/?linkid=746664) [Excel のオンライン](http://go.microsoft.com/fwlink/p/?linkid=746665) [PowerPoint のオンライン](http://go.microsoft.com/fwlink/p/?linkid=746666)、 [OneNote オンライン](http://go.microsoft.com/fwlink/p/?linkid=746674)、[かきたてる](http://go.microsoft.com/fwlink/p/?linkid=746675)、[電子メール](http://go.microsoft.com/fwlink/p/?linkid=746676)、[予定表](http://go.microsoft.com/fwlink/p/?linkid=746678)、および[OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679) [Office オンライン](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)のメッセージが含まれます。開始するには[office.com](https://office.com)を参照してくださいし、Microsoft アカウントでサインインします。(Microsoft アカウントをお持ちでない場合作成 office.com にある 1 つです。)
+
 - **Office 365 を自宅で使用してみてください**。[ [Office 365 ホーム](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)] または [ [Office 365 の個人用](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)サブスクリプションを選択します。試用版にサインアップします。、サインアップし、Windows または Mac コンピューター、iOS または Android スマート フォン、および、iOS または Android タブレットの最新バージョンの Office をインストールします。Office 365 では、OneDrive でのクラウド ・ ストレージをお楽しみいただけますとすればモバイル Skype 呼び出しの 60 分と地上線の番号、毎月および他の多くの優れた機能が表示されます。[参照してください Office 365 のプランおよびホームの価格](https://products.office.com/explore-office-for-home)を表示します。
     
-- **購買オフィス ホーム&amp;学生 2016年**。このオプションを選択する場合は、1 回限りの購入し、 [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc)または[Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)上 2016 の Office をインストールします。 
+- **購買オフィス ホーム&amp;学生 2016年**。このオプションを選択する場合は、1 回限りの購入し、 [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc)または[Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac)上 2016 の Office をインストールします。のサブスクリプションではありません1 台のコンピューターの 1 回限り、永続的な使用ライセンスすることをお勧めします。
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>アップグレードしないとどうなりますか。
