@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期の問題の一般的な原因を説明し、トラブルシューティングし、解決に役立ついくつかのメソッドを提供します。
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541584"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405130"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期に関する問題の修正
 
@@ -63,7 +63,7 @@ Azure Active Directory 同期から Azure AD 接続を更新するには、[ア�
 - [Azure Active Directory が停止するか、またはディレクトリ同期は 1 日以上で、同期していない登録されている警告メッセージが表示しています。](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**パスワード ハッシュが同期されていない、または最近使用したパスワード ハッシュの同期がありますされていない Office 365 管理センターの警告が表示**
-- [Azure AD 接続の同期でのパスワード ハッシュの同期を実装します。](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Azure AD 接続の同期でのパスワード ハッシュの同期を実装します。](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**オブジェクト クォータを超過したアラートが表示します。**
 - サービスを保護するための組み込みオブジェクトのクォータがあります。Office 365 に同期する必要のあるディレクトリに多数のオブジェクトがある場合は、クォータを増やすには、[ビジネス製品に関するサポートの連絡先](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)に必要があります。
