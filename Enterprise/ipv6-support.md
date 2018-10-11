@@ -3,7 +3,7 @@ title: Office 365 サービスでの IPv6 サポート
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: は、Microsoft Office 365 コンポーネントと Office 365 の政府サービスの IPv6 のサポートについて説明します。'
-ms.openlocfilehash: 74752988803728ef4c319e368150b90f7e5d2599
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
+ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223129"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25493832"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 サービスでの IPv6 サポート
 
@@ -79,7 +79,9 @@ IPv6 を無効にしないことをお勧めします。詳細についてを参
 
 - IPv6 では、BlackBerry は、IPv6 をサポートしていませんので BlackBerry® エンタープライズ サーバー (BE) をサポートしていません。
 
-戻るを使用することができます短いリンクを以下に示します。[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+- を Office 365 を Active Directory フェデレーション サービス (AD FS) を使用する場合は、Office 365 AD FS ネットワーク エンドポイントを提供する IPv6 を使用してサポートされていません。、Exchange Online を使用する場合、AAAA レコードを AD FS の DNS エントリに含める必要があります。 
+
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>関連項目
 
