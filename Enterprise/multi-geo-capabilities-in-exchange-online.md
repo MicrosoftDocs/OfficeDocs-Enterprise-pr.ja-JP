@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online の機能を複数地域での複数の地理的な領域に、Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914782"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498227"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange オンラインで複数の地域の機能
 
@@ -52,7 +52,7 @@ Office 365 に複数の地域の機能は、複数の地理的な場所 (地域)
 - 米国
 
 ## <a name="prerequisite-configuration"></a>前提条件の構成
-機能を使用して複数の地域では、Exchange オンラインを開始する前にマイクロソフトは複数地域のサポートのため、Exchange Online のテナントを構成する必要があります。複数地域のライセンス表示して、テナントのご注文後に、この 1 回限りの構成プロセスがトリガーされます。1 回のみ構成する必要があります通常かかる 30 日未満で完了します。
+機能を使用して複数の地域では、Exchange オンラインを開始する前にマイクロソフトは複数地域のサポートのため、Exchange Online のテナントを構成する必要があります。複数地域のライセンス表示して、テナントのご注文後に、この 1 回限りの構成プロセスがトリガーされます。1 回のみ構成する必要があります通常かかる 30 日未満で完了します。複数地域の順序をマイクロソフトの担当者に問い合わせてください。詳細についてを参照してくださいhttps://aka.ms/Multi-Geo。
 
 構成が完了したときは、 [Office 365 のメッセージ センター](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093)に通知が届きます。テナントに、複数地域のライセンスが表示されたら、構成が自動的にトリガーされます。
 

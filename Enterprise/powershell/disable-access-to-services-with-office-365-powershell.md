@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使ったサービスへのアクセスを無効
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/20/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Office 365 の PowerShell を使用して、組織内のユーザーの Office 365 サービスへのアクセスを無効にする方法について説明します。
-ms.openlocfilehash: d65308746ac5c2b60f4749588455fa66471069e3
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 3bab553bd23d6179eb60ff61ae3edb56c528946d
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914992"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498237"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell を使ったサービスへのアクセスを無効にする
 
@@ -57,7 +57,7 @@ Office 365 アカウントは、ライセンス計画からライセンスが割
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-    ライセンス プランという名前で、Office オンライン サービスと SharePoint のオンライン サービスを無効にする**LicenseOptions**オブジェクトを作成する例を次`litwareinc:ENTERPRISEPACK`(Office 365 エンタープライズ E3)。
+  ライセンス プランという名前で、Office オンライン サービスと SharePoint のオンライン サービスを無効にする**LicenseOptions**オブジェクトを作成する例を次`litwareinc:ENTERPRISEPACK`(Office 365 エンタープライズ E3)。
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -71,13 +71,13 @@ Office 365 アカウントは、ライセンス計画からライセンスが割
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
-    Allie Bellew、ライセンスが割り当てられ、手順 1 で説明されているサービスを無効にするため、新しいアカウントを作成する例を次にします。
+  Allie Bellew、ライセンスが割り当てられ、手順 1 で説明されているサービスを無効にするため、新しいアカウントを作成する例を次にします。
     
   ```
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-    Office 365 の PowerShell でのユーザー アカウントの作成の詳細については、 [Office 365 の PowerShell でのユーザー アカウントの作成](create-user-accounts-with-office-365-powershell.md)を参照してください。
+  Office 365 の PowerShell でのユーザー アカウントの作成の詳細については、 [Office 365 の PowerShell でのユーザー アカウントの作成](create-user-accounts-with-office-365-powershell.md)を参照してください。
     
   - ライセンスを付与された既存のユーザー用のサービスを無効にするには、次の構文を使用します。
     
@@ -85,7 +85,7 @@ Office 365 アカウントは、ライセンス計画からライセンスが割
   Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
   ```
 
-    この例では、ユーザー BelindaN@litwareinc.com に対してサービスを無効にします。
+  この例では、ユーザー BelindaN@litwareinc.com に対してサービスを無効にします。
     
   ```
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
@@ -108,7 +108,7 @@ Office 365 アカウントは、ライセンス計画からライセンスが割
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-    次の使用例は、米国内の販売部門のユーザー用のサービスを無効にします。
+  次の使用例は、米国内の販売部門のユーザー用のサービスを無効にします。
     
   ```
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
@@ -125,7 +125,7 @@ Office 365 アカウントは、ライセンス計画からライセンスが割
   kakers@contoso.com
   ```
 
-    この例で、テキスト ファイルは、c:\\マイ ドキュメント\\Accounts.txt。
+  この例で、テキスト ファイルは、c:\\マイ ドキュメント\\Accounts.txt。
     
 2. 次のコマンドを実行します。
     
