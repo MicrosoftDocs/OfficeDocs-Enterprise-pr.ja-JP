@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 概要:Office 365 の Windows PowerShell を使用して顧客テナンシーを管理します。
-ms.openlocfilehash: f4c6f1a0275e9b483a30b31564426b62241029bf
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 86bf5f10862c7eb3f3b9e17e9d8431bb0602a090
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498247"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 テナントを管理する
 
@@ -41,7 +42,7 @@ Windows PowerShell を使うと、シンジケート パートナーとクラウ
 アクセスできるすべての顧客テナント ID を一覧表示するには、次のコマンドを実行します。
   
 ```
-Get-MsolPartnerContract -All | Select-Object -TenantId
+Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
 これにより、 **テナント ID** 順にすべての顧客テナントが一覧表示されます。
@@ -51,7 +52,7 @@ Get-MsolPartnerContract -All | Select-Object -TenantId
 ドメイン名によって特定の顧客テナントの **テナント ID** を取得するには、次のコマンドを実行します。 _<domainname.onmicrosoft.com>_ を、目的の顧客テナントの実際のドメイン名に置き換えます。
   
 ```
-Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object -TenantId
+Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object TenantId
 ```
 
 ### <a name="list-all-domains-for-a-tenant"></a>テナントのすべてのドメインを一覧表示する
