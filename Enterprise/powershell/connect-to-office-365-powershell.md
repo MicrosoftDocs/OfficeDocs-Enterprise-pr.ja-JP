@@ -3,7 +3,7 @@ title: Office 365 PowerShell への接続
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2018
+ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,26 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
-ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720403"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575281"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
  **の概要:** コマンドラインから管理タスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。
   
-Office 365 PowerShell を使用して、コマンド ラインから Office 365 設定を管理します。Office 365 PowerShell への接続は、必要なソフトウェアのインストール、必要なソフトウェアの実行、Office 365 組織への接続という、シンプルな 3 段階のプロセスです。 
+Office 365 の PowerShell では、コマンド ・ ラインから、Office 365 の設定を管理することができます。Office 365 の PowerShell への接続で必要なソフトウェアをインストールし、Office 365 の組織に接続し、単純なプロセスです。 
 
-  
+Office 365 に接続し、ユーザー アカウント、グループ、およびライセンスの管理に使用する PowerShell モジュールの 2 つのバージョンがあります。
+
+- Azure のアクティブ ディレクトリ PowerShell (コマンドレットは、その名前に**AzureAD**を含む) のグラフの 
+- Microsoft Azure Active Directory モジュールを Windows PowerShell (コマンドレットは、その名前で**MSol**を含む) 
+
+この資料の日付には、グラフ モジュールの Azure Active Directory PowerShell はない完全に機能を置き換えるユーザー、グループ、およびライセンスの管理については、Microsoft Azure Active Directory モジュールを Windows PowerShell モジュールのコマンドレットで.多くの場合、両方のバージョンを使用する必要があります。同じコンピューターに両方のバージョンを安全にインストールすることができます。
+
 > [!TIP]
 > **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn Learning にアクセスしてください。 
   
@@ -38,14 +44,15 @@ Office 365 PowerShell を使用して、コマンド ラインから Office 365 
     
 - 次の Windows のバージョンを使用できます。
     
-  - Windows 10、Windows 8.1、Windows 8 または Windows 7 Service Pack 1 (SP1) 
+  - 10 の Windows、Windows 8.1、Windows 8、または Windows 7 Service Pack 1 (SP1) 
     
-  - Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、または Windows Server 2008 R2 SP1
+  - Windows Server 2019、2016 の Windows サーバー、Windows Server 2012 R2、Windows Server 2012 では、または Windows Server 2008 R2 SP1
     
     > [!NOTE]
     >64 ビット バージョンの Windows を使用してください。Microsoft PowerShell の Microsoft Azure Active Directory モジュールの 32 ビット バージョンのサポートは 2014 年 10 月に終了しました。
     
 -  これらの手順は、Office 365 の管理者ロールのメンバーであるユーザーを意図しています。詳細については、 [Office 365 の管理者の役割](https://go.microsoft.com/fwlink/p/?LinkId=532367)を参照してください。
+
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>グラフ モジュールの Azure Active Directory PowerShell を使用して接続します。
 
@@ -73,7 +80,7 @@ Office 365 PowerShell を使用して、コマンド ラインから Office 365 
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
 
-Azure AD に接続して、Office 365 には、サブスクリプション アカウント名とパスワード、または*多要素認証 (MFA)* は、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこのコマンドを実行します。
+アカウント名とパスワード、または*多要素認証 (MFA)* では、Office 365 サブスクリプションの Azure AD に接続するには、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこのコマンドを実行します。
     
 ```
 Connect-AzureAD
@@ -116,7 +123,7 @@ Connect-MsolService
 MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
 
     
-### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
+### <a name="how-do-you-know-this-worked"></a>これが機能したことを知る方法
 
 何もエラーが表示されなければ、正常に接続されています。簡単に確かめるには、Office 365 コマンドレット ( **Get-MsolUser** など) を実行して結果を確認します。
   
@@ -127,8 +134,6 @@ MFA を使用する場合は、検証コードなどの追加の認証情報を�
 - * *、Microsoft Azure Active ディレクトリ モジュールを Windows PowerShell には、Microsoft.NET Framework 3.5* 。上のコンピューター * * x * 機能を有効にします。お使いのコンピューターがインストールされている新しいバージョンを持っている可能性があります (たとえば、4 または 4.5* 。x *)、.NET Framework の以前のバージョンとの互換性を有効または無効になっている下位ですが。詳細については、次のトピックを参照してください。
     
   - Windows Server 2012 または Windows Server 2012 R2 の場合、「[役割と機能の追加ウィザードを使用して .NET Framework 3.5 を有効にする](https://go.microsoft.com/fwlink/p/?LinkId=532368)」をご覧ください
-    
-  - Windows 8 または Windows 8.1 の場合、「[Windows 8 または Windows 8.1 への .NET Framework 3.5 のインストール](https://go.microsoft.com/fwlink/p/?LinkId=532369)」をご覧ください
     
   - Windows 7 または Windows Server 2008 R2 の場合、「[Windows PowerShell 用 Azure Active Directory モジュールを開くことができない](https://go.microsoft.com/fwlink/p/?LinkId=532370)」を参照してください
 

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: 管理者が Office 365 PowerShell を使って Office 365 を管理すべき理由を説明します。ある場合は効率のため、他の場合は必要であるためです。'
-ms.openlocfilehash: 7149478efcbffcec56423a6c8ade5377992f3352
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915042"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575271"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell を使用する必要がある理由
 
@@ -43,12 +43,6 @@ Office 365 管理センター では、Office 365 ユーザー アカウント�
   
 ```
 Get-Mailbox
-```
-
-また、次のコマンドを実行して、SharePoint Online 内のすべての Web アプリ用のすべてのサイトのすべての一覧に含まれるアイテム数を計算できます。
-  
-```
-Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Microsoft.SharePoint.SPDocumentLibrary]} | % {$total+= $_.ItemCount}; $total
 ```
 
 メールボックスの一覧の取得は Office 365 管理センター を使用しても実行できますが、すべての Web アプリ用のすべてのサイトのすべての一覧に含まれるアイテム数のカウントは簡単にはできません。
