@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575281"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601641"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -89,6 +89,10 @@ Connect-AzureAD
 **自分のアカウントにサインイン**] ダイアログ ボックスで、Office 365 の作業時間や学校のアカウントのユーザー名とパスワードを入力し、し、[ **OK**] をクリックします。
 
 MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
+
+>[!Tip]
+>Office 365 のドイツに接続するには、 [PowerShell を使用して、Azure のドイツへの接続](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)を参照してください。
+>
     
 接続した後、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)の新しいコマンドレットを使用できます。
   
@@ -122,6 +126,9 @@ Connect-MsolService
 
 MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
 
+>[!Tip]
+>Office 365 のドイツに接続するには、 [PowerShell を使用して、Azure のドイツへの接続](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)を参照してください。
+>
     
 ### <a name="how-do-you-know-this-worked"></a>これが機能したことを知る方法
 
