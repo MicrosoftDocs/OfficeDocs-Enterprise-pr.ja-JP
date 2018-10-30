@@ -26,7 +26,7 @@
 ### [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
 ### [Office 365 のサード パーティ SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
 ### [Office 365 ID と Azure Active Directory について](about-office-365-identity.md)
-### [MDM または Intune を選択する](https://docs.microsoft.com/en-us/office365/securitycompliance/choose-between-mdm-and-intune)
+### [MDM または Intune を選択する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)
 ### [Office 365 へのネットワーク接続](network-connectivity.md)
 ### [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
@@ -36,10 +36,10 @@
 ### [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
 ### [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 テナント間コラボレーション](office-365-inter-tenant-collaboration.md)
-## Office 365 クライアントのサポート
+## Office 365 クライアント サポート
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
 ### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
-### [現代の認証](office-365-client-support-modern-authentication.md)
+### [先進認証](office-365-client-support-modern-authentication.md)
 ## ハイブリッド オプション
 ### [Skype for Business Server および Exchange Server 向けのハイブリッド先進認証と前提条件](hybrid-modern-auth-overview.md)
 ### [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -65,14 +65,14 @@
 ## [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
 ### [ディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)
 ### [多要素認証](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [フェデレートされた識別情報](federated-identity-for-your-office-365-dev-test-environment.md)
+### [フェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [詳細な電子情報開示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [機密性の高いファイルの保護](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [データのクラス分けやラベル付け](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+### [データの分類とラベル付け](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Office 365 と Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
-### [Exchange オンラインの統合](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
+### [Exchange Online 統合](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ## [One Microsoft Cloud 開発/テスト環境](the-one-microsoft-cloud-dev-test-environment.md)
 ## [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](simulated-cross-premises-virtual-network-in-azure.md)
 
@@ -80,14 +80,14 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [組織用に Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
 ### [Office 365 の展開計画チェックリスト](deployment-planning-checklist.md)
-### [Office 365 のセキュリティのベスト プラクティス](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+### [Office 365 のセキュリティのベスト プラクティス](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 ## ネットワークをセットアップする
-### [Office 365 のネットワーク接続性の概要](office-365-networking-overview.md)
+### [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
 ### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
 ### [Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
 ### [Office 365 へのネットワーク接続](network-connectivity.md)
 ### [Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)
-### Office 365 の IP アドレスや Url
+### Office 365 の IP アドレスおよび URL
 #### [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
 #### [世界中のエンドポイント](urls-and-ip-address-ranges.md)
 #### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
@@ -95,17 +95,18 @@
 #### [21Vianet エンドポイントが運用している Office 365](urls-and-ip-address-ranges-21vianet.md)
 #### [Office 365 Germany エンドポイント](office-365-germany-endpoints.md)
 #### [Office 2016 for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
+#### [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 #### [Web サービスに含まれていないその他のエンドポイント](additional-office365-ip-addresses-and-urls.md)
 ### [コンテンツ配信ネットワーク](content-delivery-networks.md)
 ### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
 ### [Office 365 の NAT サポート](nat-support-with-office-365.md)
-### Office 365 用の ExpressRoute の操作
+### Office 365 向け ExpressRoute の使用
 #### [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
-#### [Office 365 向け ExpressRoute での実装](implementing-expressroute.md)
+#### [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
 #### [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
 #### [Office 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
 
-## サブスクリプションをセットアップする
+## サブスクリプションのセットアップ
 ### [Office 365 へのディレクトリ同期を通してユーザーをプロビジョニングするための準備](prepare-for-directory-synchronization.md)
 ### [IdFix ツールを使用して Office 365 と同期するためにディレクトリ属性を準備する](prepare-directory-attributes-for-synch-with-idfix.md)
 ### [IdFix ツールのインストールと実行](install-and-run-idfix.md)
@@ -158,8 +159,8 @@
 # Office 365 の管理
 ## [サービス正常性](view-service-health.md)
 ### [接続性を監視する](monitor-connectivity.md)
-### [サポート オプション](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [管理ツール](https://support.office.com/en-us/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [サポート オプション](https://support.office.com/ja-JP/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## [管理ツール](https://support.office.com/ja-JP/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Office 365 アカウントを管理するツール](manage-office-365-accounts.md)
 ### [複数のユーザーを同時に Office 365 に追加する - 管理者ヘルプ](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ](recover-deleted-items-in-a-mailbox.md)
@@ -173,10 +174,10 @@
 ### [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
 ### [Exchange Online のパフォーマンスをチューニングする](tune-exchange-online-performance.md)
 ### [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
-#### [SharePoint Online のパフォーマンス チューニングの概要](introduction-to-performance-tuning-for-sharepoint-online.md)
+#### [SharePoint Online のパフォーマンスのチューニングの概要](introduction-to-performance-tuning-for-sharepoint-online.md)
 #### [SharePoint Online のパフォーマンスの問題の診断](diagnosing-performance-issues-with-sharepoint-online.md)
-### [Skype のオンライン ビジネスのパフォーマンスをチューニングします。](tune-skype-for-business-online-performance.md)
-### [オンライン プロジェクトのパフォーマンスをチューニングします。](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
+### [Skype for Business Online のパフォーマンスをチューニングする](tune-skype-for-business-online-performance.md)
+### [Project Online のパフォーマンスをチューニングする](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
 ### [Office 365 向け ExpressRoute の管理](managing-expressroute-for-connectivity.md)
 ## ディレクトリ同期
