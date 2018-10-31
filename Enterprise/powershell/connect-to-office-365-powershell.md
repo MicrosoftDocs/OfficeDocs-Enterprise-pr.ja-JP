@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
-ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601641"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849893"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -80,20 +80,22 @@ Office 365 に接続し、ユーザー アカウント、グループ、およ�
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
 
-アカウント名とパスワード、または*多要素認証 (MFA)* では、Office 365 サブスクリプションの Azure AD に接続するには、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこのコマンドを実行します。
-    
-```
-Connect-AzureAD
-```
+アカウント名とパスワード、または*多要素認証 (MFA)* では、Office 365 サブスクリプションの Azure AD に接続するには、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこれらのコマンドのいずれかを実行します。
+
+|||
+|:-------|:-----|
+| **Office 365 のクラウド** | **コマンド** |
+| Office 365 世界中 (+ GCC) | `Connect-AzureAD` |
+| Office 365 の 21 Vianet によって運営されて | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 の米国政府の DoD と Office 365 の米国政府の GCC 高 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+|||
 
 **自分のアカウントにサインイン**] ダイアログ ボックスで、Office 365 の作業時間や学校のアカウントのユーザー名とパスワードを入力し、し、[ **OK**] をクリックします。
 
 MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
 
->[!Tip]
->Office 365 のドイツに接続するには、 [PowerShell を使用して、Azure のドイツへの接続](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)を参照してください。
->
-    
+
 接続した後、[グラフのモジュールのアクティブなディレクトリの PowerShell を Azure](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)の新しいコマンドレットを使用できます。
   
 
@@ -116,27 +118,28 @@ Microsoft PowerShell の Microsoft Azure Active Directory モジュールには�
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプションの Azure AD に接続します。
 
-アカウント名とパスワード、または*多要素認証 (MFA)* では、Office 365 サブスクリプションの Azure AD に接続するには、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこのコマンドを実行します。
-    
-```
-Connect-MsolService
-```
+アカウント名とパスワード、または*多要素認証 (MFA)* では、Office 365 サブスクリプションの Azure AD に接続するには、(昇格するは必要ありません)、Windows PowerShell コマンド プロンプトからこれらのコマンドのいずれかを実行します。
+
+|||
+|:-------|:-----|
+| **Office 365 のクラウド** | **コマンド** |
+| Office 365 世界中 (+ GCC) | `Connect-MsolService` |
+| Office 365 の 21 Vianet によって運営されて | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Germany | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 の米国政府の DoD と Office 365 の米国政府の GCC 高 | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+|||
 
 **自分のアカウントにサインイン**] ダイアログ ボックスで、Office 365 の作業時間や学校のアカウントのユーザー名とパスワードを入力し、し、[ **OK**] をクリックします。
 
 MFA を使用する場合は、検証コードなどの追加の認証情報を提供する追加のダイアログ ボックスの指示に従います。
 
->[!Tip]
->Office 365 のドイツに接続するには、 [PowerShell を使用して、Azure のドイツへの接続](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps)を参照してください。
->
-    
-### <a name="how-do-you-know-this-worked"></a>これが機能したことを知る方法
+### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
 何もエラーが表示されなければ、正常に接続されています。簡単に確かめるには、Office 365 コマンドレット ( **Get-MsolUser** など) を実行して結果を確認します。
   
 エラーが表示された場合は、次の要件を確認します。
   
-- **よくある原因は、正しくないパスワードです** 。手順 3 をもう一度実行して、ユーザー名とパスワードの入力に注意します。
+- **共通の問題は不正なパスワード**です。手順 2 を再度実行します。入力したユーザー名とパスワードに特に注意します。
     
 - * *、Microsoft Azure Active ディレクトリ モジュールを Windows PowerShell には、Microsoft.NET Framework 3.5* 。上のコンピューター * * x * 機能を有効にします。お使いのコンピューターがインストールされている新しいバージョンを持っている可能性があります (たとえば、4 または 4.5* 。x *)、.NET Framework の以前のバージョンとの互換性を有効または無効になっている下位ですが。詳細については、次のトピックを参照してください。
     
