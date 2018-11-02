@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 258c562343875ff4ad115b81dba5338c79641dfc
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915332"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849853"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -29,7 +29,7 @@ OneDrive 地域移動の期間中 (約 2 ～ 6 時間)、ユーザーの OneDriv
 
 ## <a name="communicating-to-your-users"></a>ユーザーへの連絡
 
-OneDrive サイトの地理的場所を移動する際には、想定される動作についてユーザーに通知することが重要です。これは、ユーザーが混乱してヘルプ デスクに問い合わせる可能性を減らすのに役立ちます。移動の前に、次の情報について電子メールでユーザーに連絡してください:
+OneDrive サイトの地理的場所を移動する際には、想定される動作についてユーザーに通知することが重要です。これは、ユーザーが混乱してヘルプ デスクに問い合わせる可能性を減らすのに役立ちます。移動の前に、次の情報について電子メールでユーザーに連絡してください。
 
 - 移動開始予定時刻と予定所要時間
 - ユーザーの OneDrive の移動先となる地理的場所、および新しい場所にアクセスするための URL
