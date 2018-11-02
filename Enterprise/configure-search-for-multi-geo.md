@@ -10,23 +10,23 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: 複数地域環境で検索を構成する方法について説明します。
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Multi-Geo 環境で検索を構成する方法について説明します。
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915062"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849913"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>OneDrive for Business 複数地域の検索の構成
 
-複数地域の SharePoint Online (SPO) 環境では、組織は Office 365 テナントを 1 つ保有しますが、その SharePoint コンテンツを複数地域の場所 (1 つの中央の場所と 1 つ以上のサテライト地域の場所) に保存します。
+OneDrive for Business Multi-Geo 環境では、組織は Office 365 テナントを 1 つ保有しますが、その OneDrive コンテンツを複数地域の場所 (1 つの中央の場所と 1 つ以上のサテライトの場所) に保存します。
 
-それぞれの地理的な場所には、その場所独自の検索インデックスと検索センターがあります。ユーザーが検索すると、すべての索引にクエリがファンアウトされ、マージされた結果が返されます。
+それぞれの地理的位置には、独自の検索インデックスと検索センターがあります。ユーザーが検索すると、すべての索引にクエリがファンアウトされ、マージされた結果が返されます。
 
 たとえば、ある地域の場所のユーザーが別の地域の場所に格納されているコンテンツを検索したり、別の地域の場所に限定されている SharePoint サイトのコンテンツを検索したりすることができます。このコンテンツへのアクセス権があるユーザーには、その検索結果が表示されます。
 
-## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>複数地域環境で動作する検索クライアントについて
+## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Multi-Geo 環境で動作する検索クライアントについて
 
 次のクライアントは、すべての地域の場所からの結果を返します。
 
@@ -42,21 +42,21 @@ ms.locfileid: "22915062"
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-複数環境の設定が完了した直後に、OneDrive で検索を実行するユーザーには、すべての地域の場所からの結果が返されます。
+Multi-Geo 環境の設定が完了した直後に、OneDrive で検索を実行するユーザーには、すべての地域の場所からの結果が返されます。
 
 ### <a name="delve"></a>Delve
 
-複数環境の設定が完了した直後に、Delve で検索するユーザーには、すべての地域の場所からの結果が返されます。
+Multi-Geo 環境の設定が完了した直後に、Delve で検索するユーザーには、すべての地域の場所からの結果が返されます。
 
-Delve フィードとプロファイル カードには、**中央**の場所に保存されているファイルのプレビューのみが表示されます。その一方で、サテライト地域の場所に保存されているファイルについては、ファイルの種類に応じたアイコンが表示されます。
+Delve フィードとプロファイル カードには、**中央**の場所に保存されているファイルのプレビューのみが表示されます。その一方で、サテライトの場所に保存されているファイルについては、ファイルの種類に応じたアイコンが表示されます。
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint ホーム ページ
 
-複数環境の設定が完了した直後に、ユーザーには、複数地域の場所からのニュース、最近のサイトおよびフォローしているサイトが示された SharePoint ホーム ページが表示されます。ユーザーが SharePoint ホーム ページの検索ボックスを使用すると、複数地域の場所からの結果がマージされて返されます。
+Multi-Geo 環境の設定が完了した直後に、ユーザーには、複数地域の場所からのニュース、最近のサイトおよびフォローしているサイトが示された SharePoint ホーム ページが表示されます。ユーザーが SharePoint ホーム ページの検索ボックスを使用すると、複数地域の場所からの結果がマージされて返されます。
 
 ### <a name="the-search-center"></a>検索センター
 
-複数環境の設定完了後、それぞれの検索センターには、それらの地域の場所からの結果のみが引き続き表示されます。管理者は、[それぞれの検索センターの設定を変更](#_Set_up_a_1)して、すべての地域の場所からの結果が得られるようにする必要があります。その後、検索センターで検索したユーザーには、すべての地域の場所からの結果が表示されます。
+Multi-Geo 環境の設定完了後、それぞれの検索センターには、それらの地域の場所からの結果のみが引き続き表示されます。管理者は、[それぞれの検索センターの設定を変更](#_Set_up_a_1)して、すべての地域の場所からの結果が得られるようにする必要があります。その後、検索センターで検索したユーザーには、すべての地域の場所からの結果が表示されます。
 
 ### <a name="custom-search-applications"></a>カスタムの検索アプリケーション
 
@@ -77,22 +77,22 @@ Delve フィードとプロファイル カードには、**中央**の場所に
 <tbody>
 <tr class="odd">
 <td align="left">昇格結果</td>
-<td align="left">クエリ ルールは、異なるレベル (テナント全体、サイト コレクション、またはサイト) の昇格結果で作成できます。複数地域環境では、<strong>すべて</strong>の地域の場所の検索センターに結果を昇格する場合、<strong>テナント</strong> レベルで昇格結果を定義します。サイト コレクションまたはサイトの地域の場所にある検索センターで<strong>のみ</strong>結果を昇格する場合は、<strong>サイト コレクション</strong>または<strong>サイト</strong> レベルで結果を定義します。</td>
+<td align="left">クエリ ルールは、異なるレベル (テナント全体、サイト コレクション、またはサイト) の昇格結果で作成できます。Multi-Geo 環境では、<strong>すべて</strong>の地域の場所の検索センターに結果を昇格する場合、<strong>テナント</strong> レベルで昇格結果を定義します。サイト コレクションまたはサイトの地域の場所にある検索センターで<strong>のみ</strong>結果を昇格する場合は、<strong>サイト コレクション</strong>または<strong>サイト</strong> レベルで結果を定義します。</td>
 <td align="left">地域の場所ごとに異なる昇格結果を必要としない場合は (出張の場合の異なるルールなど)、テナント レベルで昇格結果を定義するようにお薦めします。</td>
 </tr>
 <tr class="even">
 <td align="left">絞り込み検索</td>
 <td align="left">検索は、テナントのすべての地域の場所からの絞り込み条件を返して、それらを集約します。この集約は、最善努力型であるため、絞り込み条件のカウントが 100% の精度にならないことがあります。ほとんどの検索型シナリオの場合は、この精度で十分です。 </td>
-<td align="left">絞り込み条件の完全性に依存する検索型アプリケーションの場合は、複数地域のファンアウトを使用しないで、それぞれの地域の場所を個別にクエリします。</td>
+<td align="left">絞り込み条件の完全性に依存する検索型アプリケーションの場合は、Multi-Geo ファンアウトを使用しないで、それぞれの地域の場所を個別にクエリします。</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left">複数地域検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
+<td align="left">Multi-Geo 検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
 <td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
 </tr>
 <tr class="even">
 <td align="left">ドキュメント ID</td>
-<td align="left">ドキュメント ID に依存する検索型アプリケーションを開発する場合、複数地域環境のドキュメント ID は地域の場所ごとに一意ですが、複数の地域の場所にわたって一意でない点に注意してください。</td>
+<td align="left">ドキュメント ID に依存する検索型アプリケーションを開発する場合、Multi-Geo 環境のドキュメント ID は地域の場所ごとに一意ですが、複数の地域の場所にわたって一意でない点に注意してください。</td>
 <td align="left">地域の場所を特定する列が追加されています。この列を使用して、一意性を確保してください。この列の名前は、"GeoLocationSource" です。</td>
 </tr>
 <tr class="odd">
@@ -105,7 +105,7 @@ Delve フィードとプロファイル カードには、**中央**の場所に
 
 ## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a>複数地域環境の検索でサポートされない内容
 
-複数地域環境では、一部の使い慣れた検索機能がサポートされません。
+Multi-Geo 環境では、一部の使い慣れた検索機能がサポートされません。
 
 <table>
 <thead>
@@ -117,7 +117,7 @@ Delve フィードとプロファイル カードには、**中央**の場所に
 <tbody>
 <tr class="odd">
 <td align="left">アプリ専用の認証</td>
-<td align="left">複数地域検索では、アプリ専用の認証 (サービスからの特権アクセス) がサポートされません。</td>
+<td align="left">Multi-Geo 検索では、アプリ専用の認証 (サービスからの特権アクセス) がサポートされません。</td>
 </tr>
 <tr class="even">
 <td align="left">ゲスト ユーザー</td>
@@ -179,7 +179,7 @@ MultiGeoSearchConfiguration: **EnableMultiGeoSearch** が **true** のときに�
 <table>
 <thead>
 <tr class="header">
-<th align="left">項目</th>
+<th align="left">アイテム</th>
 <th align="left">説明</th>
 </tr>
 </thead>

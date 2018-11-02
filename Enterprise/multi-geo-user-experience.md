@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境での SharePoint および OneDrive のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849833"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/27/2018
 
 #### <a name="sharing"></a>共有
 
-ユーザー選択ウィンドウのエクスペリエンスでは、ユーザーの地域の場所に関係なく、すべてのユーザーが示されます。これにより、ユーザーは同じ地域またはテナントの地域の場所が異なる他のユーザーとの共有が可能になります。別の地域の場所からのコンテンツは、ユーザーの OneDrive for Business の **[共有相手]** ビューに表示され、そのコンテンツがホストされている地域の場所に関係なく、シングルサインオン エクスペリエンスに関連付けることができます。
+ユーザー選択ウィンドウのエクスペリエンスでは、ユーザーの地域の場所に関係なく、すべてのユーザーが示されます。これにより、ユーザーは同じ地域またはテナントの地域の場所が異なる他のユーザーとの共有が可能になります。別の地域の場所からのコンテンツは、ユーザーの OneDrive for Business の **[共有アイテム]** ビューに表示され、そのコンテンツがホストされている地域の場所に関係なく、シングル サインオン エクスペリエンスに関連付けることができます。
 
 #### <a name="office-applications"></a>Office アプリケーション
 
@@ -39,7 +40,7 @@ OneDrive for Business 同期クライアント (バージョン 17.3.6943.0625 �
 
 #### <a name="office-365-app-launcher"></a>Office 365 アプリ起動ツール
 
-アプリ起動ツールは、複数地域に対応していて、各タイルをワークロードの適切な地域の場所に差し向けます。OneDrive タイルは、ユーザーの OneDrive ライブラリがホストされている適切な地域の場所をポイントします。その一方で、SharePoint タイルは、すべてのユーザーを中央の場所に差し向けます (チーム サイトは引き続き中央の場所でホストされるため)。
+アプリ起動ツールは、Multi-Geo に対応していて、各タイルをワークロードの適切な地域の場所に差し向けます。OneDrive タイルは、ユーザーの OneDrive ライブラリがホストされている適切な地域の場所をポイントします。その一方で、SharePoint タイルは、すべてのユーザーを中央の場所に差し向けます (チーム サイトは引き続き中央の場所でホストされるため)。
 
 #### <a name="delve-user-profiles"></a>Delve のユーザー プロファイル
 

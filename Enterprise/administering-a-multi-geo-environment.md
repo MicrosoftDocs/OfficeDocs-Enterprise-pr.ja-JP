@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550060"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849883"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "21550060"
 
 #### <a name="taxonomy"></a>分類
 
-企業の中央の場所でホストされるマスターと共に、複数の地域の場所にわたるエンタープライズ管理メタデータに対する統一された[分類](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)がサポートされています。中央の場所からグローバルな分類を管理し、サテライト地域の場所の分類には地域に固有の用語のみを追加することをお勧めします。グローバルな分類の用語は、サテライト地域の場所に同期されます。
+企業の中央の場所でホストされるマスターと共に、複数の地域の場所にわたるエンタープライズ管理メタデータに対する統一された[分類](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC)がサポートされています。中央の場所からグローバルな分類を管理し、サテライトの場所の分類には地域に固有の用語のみを追加することをお勧めします。グローバルな分類の用語は、サテライトの場所に同期されます。
 
 #### <a name="sharing"></a>共有
 
@@ -43,7 +43,7 @@ OneDrive 複数地域では、共有の設定がテナント全体には同期�
 
 #### <a name="bcs-secure-store-apps"></a>BCS、Secure Store、Apps
 
-BCS、Secure Store、および Apps のすべてに、個別の地域インスタンスがあります。そのため、SharePoint Online 管理者は、これらのサービスが存在する各地域インスタンスから、そのサービスを管理および構成する必要があります。
+BCS、Secure Store、およびすべての App は、各サテライトの場所に個別のインスタンスがあります。そのため、SharePoint Online 管理者は、これらのサービスを各サテライトの場所とは別に管理および構成する必要があります。
 
 #### <a name="security-and-compliance-admin-center"></a>セキュリティ/コンプライアンス管理センター
 
@@ -63,10 +63,10 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 
 Office 365 全体管理者は、別のユーザーが電子情報開示を実行できるように電子情報開示マネージャーのアクセス許可を割り当てる必要があります。また、サテライトの場所として電子情報開示を実施する地域を指定するために該当するコンプライアンス セキュリティ フィルターで "Region" パラメーターを割り当てる必要があります。それ以外の場合は、サテライトの場所で電子情報開示は実施されません。
 
-電子情報開示マネージャーまたは管理者の役割が特定の地域の場所に設定されている場合、電子情報開示マネージャーまたは管理者は、その地域の場所にある SharePoint サイトと OneDrive サイトに対してのみ電子情報開示の検索操作を実行できます。電子情報開示マネージャーまたは管理者が、指定の地域外の SharePoint サイトまたは OneDrive サイトを検索しようとしても結果は返されません。さらに、ある地域の電子情報開示マネージャーまたは管理者がエクスポートをトリガーすると、データは、その地域の Azure インスタンスにエクスポートされます。制御された境界を越えたコンテンツのエクスポートが許可されなくなることで、これが組織のコンプライアンスの維持に役立ちます。
+電子情報開示マネージャーまたは管理者の役割が特定のサテライトの場所に設定されている場合、電子情報開示マネージャーまたは管理者は、そのサテライトの場所にある SharePoint サイトと OneDrive サイトに対してのみ電子情報開示の検索操作を実行できます。電子情報開示マネージャーまたは管理者が、指定のサテライトの場所以外の SharePoint サイトまたは OneDrive サイトを検索しようとしても、結果は返されません。さらに、あるサテライトの場所の電子情報開示マネージャーまたは管理者がエクスポートをトリガーすると、データは、その地域の Azure インスタンスにエクスポートされます。制御された境界を越えたコンテンツのエクスポートが許可されなくなることで、これが組織のコンプライアンスの維持に役立ちます。
 
 > [!NOTE]
-> 電子情報開示マネージャーが複数の SharePoint 地域全体で検索する必要がない場合は、OneDrive サイトまたは SharePoint サイトがある別の地域を指定する電子情報開示マネージャー用の別のユーザー アカウントを作成する必要があります。
+> 電子情報開示マネージャーが複数の SharePoint のサテライトの場所全体で検索する必要がない場合は、OneDrive サイトまたは SharePoint サイトがある別のサテライトの場所を指定する電子情報開示マネージャー用の別のユーザー アカウントを作成する必要があります。
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ Office 365 全体管理者は、別のユーザーが電子情報開示を実行
 2.  次のように入力します  
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Office 365 全体管理者は、別のユーザーが電子情報開示を実行
 
 #### <a name="audit-log-search"></a>監査ログ検索
 
-すべての地域の場所に対して統一された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Office 365 の監査ログの検索ページから利用できます。すべての地域からの監査ログのエントリを参照できます。たとえば、NAM 地域と EUR 地域のユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。
+すべてのサテライトの場所に対して統一された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Office 365 の監査ログの検索ページから利用できます。すべての地域からの監査ログのエントリを参照できます。たとえば、NAM 地域と EUR 地域のユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。
