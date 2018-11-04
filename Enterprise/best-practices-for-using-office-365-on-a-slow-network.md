@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: できれば便利な場合は、インターネット接続が高速では常に上下のないでしょうか。おそらくその日が来ることはできます。その間、実用的なものの balky ネットワークを回避するにしても日常的な作業を行うことができます。
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541769"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933144"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>低速のネットワーク上の Office 365 の使用に関するベスト プラクティス
 
@@ -162,7 +162,7 @@ OneNote の利点は、そのコンテンツにアクセスできます、ほぼ
 
 Web ページをカスタマイズするときに誤ってページのパフォーマンスの低下が発生します。いくつかの要因には、ページ、リストまたはライブラリ アイテムの数を最初に表示されます、どのように多くの web パーツが追加され、ページのコードを記述する方法のサイズと複雑さなど、影響を与えることができます。
   
-詳細については、 [SharePoint Online のチューニングのパフォーマンス](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint)を参照してください。
+詳細については、 [SharePoint Online のチューニングのパフォーマンス](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)を参照してください。
   
 ## <a name="best-practices-for-using-project-online"></a>プロジェクト オンラインを使用するためのベスト プラクティス
 
@@ -190,7 +190,7 @@ Web ページをカスタマイズするときに誤ってページのパフォ�
   
 [Microsoft 仮想アカデミー コース、Office 365 のパフォーマンス管理](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
   
-[Office 365 エンドポイントを管理します。](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365 エンドポイントに関する FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 

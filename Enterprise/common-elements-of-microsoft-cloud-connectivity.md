@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: '概要: ネットワーク インフラストラクチャの一般的な要素とネットワークを準備する方法を理解します。'
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915652"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897030"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft クラウド接続の一般的な要素
 
@@ -60,7 +60,7 @@ ms.locfileid: "22915652"
     
 - **外部ワークロード:** インターネット上で、外部のユーザーに対して利用可能になっている Web サイトまたはその他のワークロード。
     
-- **プロキシ サーバー:** イントラネット ユーザーのための Web コンテンツの要求にサービスします。リバース プロキシは、未承諾の受信要求を許可します。
+- **プロキシ サーバー:** イントラネット ユーザーの代わりに web コンテンツの要求をサービスします。リバース プロキシでは、未承諾の受信要求を許可します。
     
 - **外部ファイアウォール:** 送信トラフィックおよび指定した着信トラフィックを許可します。アドレス変換を実行できます。
     

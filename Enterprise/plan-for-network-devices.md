@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 概要:Office 365 に接続するために使用されるネットワーク容量、WAN アクセラレータ、負荷分散装置に関する考慮事項について説明します。
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223069"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933124"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
@@ -37,7 +37,7 @@ ms.locfileid: "23223069"
   
 次の Skype のビジネスに役立つ記事があるビジネス設定の Skype の詳細について。
   
-- [Skype をビジネスでサインイン エラー (管理者) のトラブルシューティング](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [管理者の Skype をビジネス オンラインのサインインのエラーのトラブルシューティング](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [ビジネス用の Skype に接続できない場合や、オンプレミスのファイアウォールが接続をブロックするため、特定の機能は使用できません。](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
