@@ -45,7 +45,7 @@
 ### [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](configure-exchange-server-for-hybrid-modern-authentication.md)
 ### [Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
 ### [Skype for Business および Exchange からのハイブリッド先進認証の削除または無効化](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [Office 2007 製品または Office 2010 製品からのアップグレード計画](plan-upgrade-previous-versions-office.md)
+## [Office のアップグレード](plan-upgrade-previous-versions-office.md)
 ### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
 #### [Office 2010 デスクトップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 #### [Exchange 2010](exchange-2010-end-of-support.md)
