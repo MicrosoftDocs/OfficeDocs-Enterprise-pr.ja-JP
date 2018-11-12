@@ -81,13 +81,13 @@
 ## [組織用に Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
 ### [Office 365 の展開計画チェックリスト](deployment-planning-checklist.md)
 ### [Office 365 のセキュリティのベスト プラクティス](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
-## ネットワークをセットアップする
+## [ネットワークをセットアップする](set-up-network-for-office-365.md)
 ### [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
 ### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
 ### [Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
 ### [Office 365 へのネットワーク接続](network-connectivity.md)
 ### [Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)
-### Office 365 の IP アドレスおよび URL
+### [Office 365 の IP アドレスおよび URL](office-365-endpoints.md)
 #### [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
 #### [世界中のエンドポイント](urls-and-ip-address-ranges.md)
 #### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
