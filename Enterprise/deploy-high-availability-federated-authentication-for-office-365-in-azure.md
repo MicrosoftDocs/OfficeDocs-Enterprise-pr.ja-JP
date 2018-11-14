@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 概要:Microsoft Azure で Office 365 サブスクリプションの高可用性フェデレーション認証を構成します。
-ms.openlocfilehash: c72090638bcdcb580353baa7a733051971598e66
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9ab2cf992a0170e8b6528c74c868f0db5feeb6e1
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914902"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024659"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure に Office 365 の高可用性フェデレーション認証を展開する
 
@@ -88,15 +88,15 @@ ms.locfileid: "22914902"
 
 次のフェーズでは、このワークロードを展開します。
   
-- [高可用性フェデレーション認証のフェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)。リソース グループ、ストレージ アカウント、可用性セット、クロスプレミスの仮想ネットワークを作成します。
+- [フェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)。リソース グループ、ストレージ アカウント、可用性セット、およびクロスプレミスの仮想ネットワークを作成します。
     
-- [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバーを作成して構成します。
+- [フェーズ 2: ドメイン コントローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。レプリカの Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバーを作成して構成します。
     
-- [高可用性フェデレーション認証のフェーズ 3: AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。2 つの AD FS サーバーを作成して構成します。
+- [フェーズ 3: AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)。2 つの AD FS サーバーを作成して構成します。
     
-- [高可用性フェデレーション認証のフェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
+- [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
     
-- [高可用性フェデレーション認証のフェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。Office 365 サブスクリプションのフェデレーション認証を構成します。
+- [フェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。Office 365 サブスクリプションのフェデレーション認証を構成します。
     
 この記事では、定義済みのアーキテクチャを使用して、Azure インフラストラクチャ サービスに Office 365 の機能的な高可用性フェデレーション認証を作成するためのフェーズごとの規範となるガイドを提供します。以下の点にご注意ください。
   
