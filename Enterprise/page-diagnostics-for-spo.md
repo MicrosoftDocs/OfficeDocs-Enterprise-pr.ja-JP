@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: SharePoint ツールのページの診断を使用すると、SharePoint Online の推奨されるベスト プラクティスと照らし合わせて、従来のページを分析できます。
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975165"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253618"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>SharePoint Online のページの診断ツールを使用してください。
 
 この資料では、従来のページを発行し、 **SharePoint Online**での推奨事項のサブセットに対して、従来のチーム サイト上のページを分析するため、ページの診断ツールを使用する方法について説明します。 
   
 発行が有効になっている必要はありませんが、チーム サイトは、Cdn を使用することはできませんが、残りの規則のすべてに適用されます。発行は、発行ページの読み込み時間に悪影響を与えることと、CDN 機能を取得するだけで有効にしないように、追加のオーバーヘッドを追加します。
+
+**ので、V1.05 がリリースされている注意ください、更新プログラムが既にインストールされている拡張機能**。わからない場合お持ちのバージョンしてくださいリンクをクリックして [バージョン情報] ことを確認します。
   
 > [!IMPORTANT]
-> ページの診断ツールはツールは、SharePoint サイトのページを確認したり、ドキュメント ライブラリまたはシステムのページに対しては実行されません。*Allitems.aspx*ページは、システム ページです。というメッセージが表示されます、「このアプリケーションのみに対して実行してください SharePoint ページ」の場合は [システム] ページで、ツールを実行しようとすると、<br/> ![SharePoint ページ上で実行する必要があります。](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>ライブラリまたはシステムのページを評価する際の値がないため、ツールでのエラーはありません。ツールを使用してシステム以外の SharePoint ページに移動してください。に関するフィードバックを提供する必要がありますツール、[バージョン情報] タブをクリックしてください以下の[フィードバック] リンクを提供](https://go.microsoft.com/fwlink/?linkid=874109)する。 
+> ページの診断ツールはツールは、SharePoint サイトのページを確認したり、ドキュメント ライブラリまたはシステムのページに対しては実行されません。*Allitems.aspx*ページは、システム ページです。というメッセージが表示されます、「このアプリケーションのみに対して実行してください SharePoint ページ」の場合は [システム] ページで、ツールを実行しようとすると、<br/> ![SharePoint ページ上で実行する必要があります。](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>ライブラリまたはシステムのページを評価する際の値がないため、ツールでのエラーはありません。ツールを使用してシステム以外の SharePoint ページに移動してください。SharePoint ページにこれが発生した場合、確認してくださいマスターに示したように SharePoint のメタタグを削除し、ページが不要になった SharePoint ページ。に関するフィードバックを提供する必要がありますツール、[バージョン情報] タブをクリックしてください以下の[フィードバック] リンクを提供](https://go.microsoft.com/fwlink/?linkid=874109)する。 
   
 ## <a name="install-the-page-diagnostic-tool"></a>ページの診断ツールをインストールします。
 

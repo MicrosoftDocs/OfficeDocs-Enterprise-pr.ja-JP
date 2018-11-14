@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 description: Office 365 との接続の大まかな基準を確立することがお客様のビジネスとの間の接続のパフォーマンスを確認するのにはいくつかの簡単な方法があります。コンピューターの接続、クライアントのパフォーマンスの履歴を知ることと、新たな問題を早期に検出、特定し、問題を予測することができます。
-ms.openlocfilehash: bb1fe1e1450798e43c15a07610e27450bce6ea5b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 30a0903d95ccfcd2018d8971c74c7f80223c005d
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541671"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024689"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング
 
@@ -196,7 +196,7 @@ Office 365 サービスで問題が発生している場合、サービスの問
 ![基本的なネットワーク クライアント、プロキシ、およびクラウド、およびツールの提案 PSPing、TraceTCP、およびネットワーク トレースします。](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP は、この画面を表示するため、ミリ秒単位での要求にかかるプロセス、およびネットワーク ホップの数、または接続の数に、次の 1 台のコンピューターから要求が宛先に到達することの便利なツールであるために含まれています。TraceTCP では、ホップ数、サポートの Microsoft Office 365 のトラブルシューティングに役立つ可能性がある時に使用されるサーバーの名前を付けることもできます。> TraceTCP コマンドなど、非常に単純なことができます: > `tracetcp.exe outlook.office365.com:443`> コマンドでポート番号を含めることを忘れないでください!> [TraceTCP](https://simulatedsimian.github.io/tracetcp.mdl)は Wincap に依存していますが、無料でダウンロードします。Wincap は、また使用され、ネットワーク モニターがインストールされているツールです。高度な方法でネットワーク モニターを使用します。 
+> TraceTCP は、この画面を表示するため、ミリ秒単位での要求にかかるプロセス、およびネットワーク ホップの数、または接続の数に、次の 1 台のコンピューターから要求が宛先に到達することの便利なツールであるために含まれています。TraceTCP では、ホップ数、サポートの Microsoft Office 365 のトラブルシューティングに役立つ可能性がある時に使用されるサーバーの名前を付けることもできます。> TraceTCP コマンドなど、非常に単純なことができます: > `tracetcp.exe outlook.office365.com:443`> コマンドでポート番号を含めることを忘れないでください!> [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html)は Wincap に依存していますが、無料でダウンロードします。Wincap は、また使用され、ネットワーク モニターがインストールされているツールです。高度な方法でネットワーク モニターを使用します。 
   
  複数のオフィスがある場合は、それぞれの場所も同様に、クライアントからデータのセットを保持する必要があります。このテストは、Office 365 および Office 365 の要求に応答する要求を送信するクライアントの間の時間の量を表す数値をここでは、遅延を測定します。テスト クライアント コンピューターで、ドメイン内から発信されたし、内部ネットワークのラウンド トリップ Office 365 では、インターネット経由で、出口のポイントを測定し、バックアップします。 
   
@@ -322,5 +322,5 @@ Internet Explorer でプロキシ バイ パス リストにこれらを追加�
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 エンドポイントを管理します。](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Office 365 エンドポイントを管理する](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 
