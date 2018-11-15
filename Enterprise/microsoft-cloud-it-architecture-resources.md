@@ -3,7 +3,7 @@ title: Microsoft クラウド IT アーキテクチャのリソース
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 概要:Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022096"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525848"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
@@ -38,7 +38,6 @@ ms.locfileid: "24022096"
     - [エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](microsoft-cloud-it-architecture-resources.md#security)
     - [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-it-architecture-resources.md#networking)
     - [エンタープライズ アーキテクトのための Microsoft Mobility および Security](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [エンタープライズ アーキテクトのための Microsoft クラウド ストレージ](microsoft-cloud-it-architecture-resources.md#storage)
     - [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [一般的な攻撃と、組織を保護する Microsoft の機能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
@@ -112,15 +111,6 @@ Microsoft クラウド サービスおよびプラットフォームによるモ
 |**アイテム**|**説明**|
 |:-----|:-----|
 |[![Office 365 の情報保護ポスターのサムネイル画像](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | このモデルには次のものが含まれています。 <ul><li>最上位のビジネス用モバイル アプリ </li><li>モバイル アプリ開発のためのプラットフォーム、サービス、リソース </li><li>モバイル デバイスからクラウドベースのアプリケーションやデータへのアクセスを管理する </li><li>Office 365 MDM、Azure Active Directory Premium、および Intune の機能の比較とプラットフォーム サポート </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ストレージ
-
-Microsoft クラウド サービスおよびプラットフォームにおけるストレージ オプションについて IT アーキテクトが知る必要のある事柄。
-  
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Microsoft クラウド ストレージ モデルのサムネイル画像](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [記事](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[その他の言語](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | このモデルには次のものが含まれています。 <ul><li>クラウド ストレージを利用する理由と主要なシナリオ </li><li>既存のサービスに付属している、事前にパッケージ化されたクラウド ストレージ オプション </li><li>使用するストレージ ソリューションの開始点として使用できるストレージ オプション </li><li>独自のストレージ ソリューションまたはアプリ用のストレージを作成するためのストレージ構築ブロック</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド

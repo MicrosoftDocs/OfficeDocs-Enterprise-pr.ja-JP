@@ -94,7 +94,7 @@
 #### [米国政府の GCC High エンドポイント](office-365-u-s-government-gcc-high-endpoints.md)
 #### [21Vianet エンドポイントが運用している Office 365](urls-and-ip-address-ranges-21vianet.md)
 #### [Office 365 Germany エンドポイント](office-365-germany-endpoints.md)
-#### [Office 2016 for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
+#### [Office for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 #### [Web サービスに含まれていないその他のエンドポイント](additional-office365-ip-addresses-and-urls.md)
 ### [コンテンツ配信ネットワーク](content-delivery-networks.md)
@@ -191,5 +191,5 @@
 ### [クライアント接続](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [セキュリティとコンプライアンス](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 for Business](https://support.office.com/office365admin)
+# [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
   

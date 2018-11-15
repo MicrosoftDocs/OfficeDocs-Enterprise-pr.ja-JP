@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915492"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525838"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -102,7 +102,7 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
 
 ![図 3: 単一の ExpressRoute 接続が対応する 3 つの異なる BGP 関係](media/Network-Poster/ERPeering.png)
   
-図 3 は、オンプレミス ネットワークからの ExpressRoute 接続を示しています。ExpressRoute 接続には 3 つの論理ピアリング関係が含まれています。Microsoft ピアリング関係は、Office 365 と Dynamcs CRM Online を含む Microsoft SaaS サービスに向けられています。パブリック ピアリング関係は、Azure PaaS サービスに向けられています。プライベート ピアリング関係には、Azure IaaSに向けられたものと、仮想マシンをホストする仮想ネットワーク ゲートウェイに向けられたものがあります。
+図 3 は、オンプレミスのネットワークから、ExpressRoute の接続を示しています。ExpressRoute 接続では、3 つの論理ピアリング関係があります。マイクロソフトのピアリング関係は、マイクロソフトの SaaS などのサービスを Office 365 Dynamcs CRM Online に移動します。パブリック ピアリング関係は、Azure PaaS サービスに移動します。プライベート ピアリング関係は、Azure IaaS と仮想マシンをホストする仮想ネットワークのゲートウェイに送られます。
   
 Microsoft ピアリング BGP 関係: 
   
@@ -186,9 +186,9 @@ Microsoft クラウド ピアリングの場所への ExpressRoute 接続を作�
   
 このため、Any-to-Any 接続モデルの場合は、ローカルの Microsoft データセンターへの配信が最適でなくなる可能性があります。
   
-**図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例**
+**ExpressRoute の単一の接続を使用する地理的に分散組織の例を図 7:**
 
-![図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例](media/Network-Poster/MSNet1.png)
+![ExpressRoute の単一の接続を使用する地理的に分散組織の例を図 7:](media/Network-Poster/MSNet1.png)
   
 図 7 は、2 つの場所 (米国の北西にある Location 1 と北東にある Location 2) を持つ組織を示しています。これらは、Any-to-Any の WAN プロバイダーで接続されています。この組織には、西海岸にある Microsoft ピアリングの場所への ExpressRoute 接続もあります。北東にある Location 2 から東海岸のデータセンターに向かうトラフィックは、組織の WAN で西海岸に移動し、Microsoft ピアリングの場所に移動してから、Microsoft クラウド ネットワーク経由で国を横断して東海岸のデータセンターに戻ります。この経路をすべて通過する必要があります。
   

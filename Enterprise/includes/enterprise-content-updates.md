@@ -135,3 +135,22 @@
 | 2018/11/2 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 変更 |
 | 2018/11/2 | [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 変更 |
 | 2018/11/2 | [2010 のサーバーとクライアントの Office からアップグレードするためのリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 変更 |
+
+
+## <a name="week-of-november-05-2018"></a>、2018 年 11 月 5 日の週
+
+
+| 上で公開 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 2018/11/5 | [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 変更 |
+| 2018/11/5 | [Microsoft Azure での Office 365 ディレクトリ同期の展開](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 変更 |
+| 2018/11/5 | [Office 365 用にネットワークをセットアップします。](/Office365/Enterprise/set-up-network-for-office-365) | 追加 |
+| 2018/11/6 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 変更 |
+| 2018/11/6 | [Azure に Office 365 の高可用性フェデレーション認証を展開する](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 変更 |
+| 2018/11/6 | [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | 変更 |
+| 2018/11/7 | [Office 365 エンドポイント](/Office365/Enterprise/office-365-endpoints) | 追加 |
+| 2018/11/7 | [Office 365 用にネットワークをセットアップします。](/Office365/Enterprise/set-up-network-for-office-365) | 変更 |
+| 2018/11/8 | [Office for Mac でネットワーク要求](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | 変更 |
+| 2018/11/8 | [Office 365 テナント間コラボレーション](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 変更 |
+| 2018/11/8 | [SharePoint Online のパフォーマンスのチューニングの概要](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 変更 |
+| 2018/11/9 | [SharePoint Online のページの診断ツールを使用してください。](/Office365/Enterprise/page-diagnostics-for-spo) | 変更 |
