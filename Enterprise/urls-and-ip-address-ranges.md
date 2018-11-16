@@ -3,7 +3,7 @@ title: 'Office 365 の URL と IP アドレスの範囲 '
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/01/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,27 +22,27 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: 2e6f5afd097aa85c09847b58fd3166961116b773
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 155bbbbb0e924539322194e16110d371893955ca
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541820"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933134"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 の URL と IP アドレスの範囲 
 
  **概要**: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。
   
 > [!NOTE]
-> Microsoft では、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開発しています。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、最終的にこのページからリンクされている XML ドキュメントを置き換えます。この新しいサービスを試すには、[[Web サービス](managing-office-365-endpoints.md#webservice)] にアクセスします。 
+> Microsoft は、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開始しました。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、このページからリンクされている XML ドキュメント (2018 年 10 月 2 日に廃止済み) に代わるものです。この新しいサービスを試すには、[[Web サービス]](office-365-ip-web-service.md) にアクセスします。
   
 *Office 365 世界 (+ GCC)* | [21Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md) | [Office 365 ドイツ](office-365-germany-endpoints.md) | [Office 365 米国政府機関向け DoD](office-365-u-s-government-dod-endpoints.md)  | [Office 365 米国政府 GCC 高](office-365-u-s-government-gcc-high-endpoints.md) |
   
 ||||
 |:-----|:-----|:-----|
-|**最終更新日:** 2018 年 8 月 1 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://go.microsoft.com/fwlink/p/?linkid=236301) <br/> |**ダウンロード:** 1 つの [XML 形式](https://go.microsoft.com/fwlink/?LinkId=533185)リスト内のすべての必須およびオプションの宛先。  <br/> | **使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles) <br/> |
+|**最終更新日:** 2018 年 11 月 1 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> | **使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles) <br/> |
    
- はじめに 「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」を読み、以下のデータを使用してネットワーク接続を管理するための推奨事項を確認します。エンドポイント データは毎月月初めに更新され、新しい IP アドレスと URL は、それらがアクティブになる 30 日前に公開されます。これにより、お客様がまだ自動更新の設定を行っていない場合でも、新しい接続が必要になる前にプロセスを完了していただけます。サポートのエスカレーション、セキュリティ インシデント、またはその他の即時の運用要件に対応するために、月の途中にエンドポイントが更新される場合があります。このページの下に表示されるデータは、すべて REST ベースの Web サービスから生成されたものです。スクリプトやネットワーク デバイスを使用してこのデータにアクセスする場合、[[Web サービス](managing-office-365-endpoints.md#webservice)] に直接移動する必要があります。
+ はじめに 「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」を読み、以下のデータを使用してネットワーク接続を管理するための推奨事項を確認します。エンドポイント データは毎月月初めに更新され、新しい IP アドレスと URL は、それらがアクティブになる 30 日前に公開されます。これにより、お客様がまだ自動更新の設定を行っていない場合でも、新しい接続が必要になる前にプロセスを完了していただけます。サポートのエスカレーション、セキュリティ インシデント、またはその他の即時の運用要件に対応するために、月の途中にエンドポイントが更新される場合があります。このページの下に表示されるデータは、すべて REST ベースの Web サービスから生成されたものです。スクリプトやネットワーク デバイスを使用してこのデータにアクセスする場合、[[Web サービス](office-365-ip-web-service.md)] に直接移動する必要があります。
 
 次のエンドポイント データは、ユーザーのコンピューターを Office 365 に接続するための要件の一覧です。Microsoft からお客様のネットワークへの接続 (“ハイブリッド ネットワーク接続” や ”受信ネットワーク接続” と呼ばれる場合があります) は含まれません。
 
