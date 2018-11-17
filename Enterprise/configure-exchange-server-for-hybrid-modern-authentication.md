@@ -3,7 +3,7 @@ title: Exchange Server をオンプレミスで構成して、ハイブリッド
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: ハイブリッド現代認証 (HMA) より安全なユーザー認証と承認を提供し、Exchange サーバー設置型のハイブリッド展開を利用する id 管理の方法です。
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347607"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547159"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 AAD での HTTPS サービス プリンシパル名として登録されている可能性がありますクライアント接続の Url を確認します。
   
-1. 最初に、[次の手順](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell)で AAD に接続します。
+1. 最初に、[次の手順](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)で AAD に接続します。 
+
+ **メモ**次のコマンドを使用することができるこのページから接続する-MsolService オプションを使用する必要があります。 
     
 2. Exchange 関連の Url は次のコマンドを入力します。
     
@@ -148,7 +150,7 @@ HMA を有効にすると、クライアントの次回のログインは、新�
   
 また、(Windows の通知トレイ) にも Outlook クライアントのアイコンを右クリックすると同時に、CTRL キーを押し、[接続ステータス] をクリックしてください。に対して、'認証' 型のクライアントの SMTP アドレスを検索 ' ベアラー\*'、OAuth でベアラー トークンを表します。
   
- **メモ**HMA にビジネス用の Skype を構成する必要がありますか。2 つの記事をする必要があります:[サポートされるトポロジ](https://technet.microsoft.com/en-us/library/mt803262.aspx)はの一覧が表示されると[、構成を行う方法](configure-skype-for-business-for-hybrid-modern-authentication.md)を示しています。
+ **メモ**HMA にビジネス用の Skype を構成する必要がありますか。2 つの記事をする必要があります:[サポートされるトポロジ](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)はの一覧が表示されると[、構成を行う方法](configure-skype-for-business-for-hybrid-modern-authentication.md)を示しています。
   
 
 ## <a name="related-topics"></a>関連項目

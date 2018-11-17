@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: SharePoint Online で有効にし、SharePoint 発行のナビゲーション オプションのサイトについて説明します。選択とナビゲーションの構成は、パフォーマンスとスケーラビリティは、SharePoint Online サイトを大幅に影響します。
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547179"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
@@ -193,7 +193,7 @@ SharePoint ページのパフォーマンスを分析するには、Internet Exp
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. 結果は、self.nodes 配列に割り当てられているし、linq.js は、配列 self.heirarchy への出力の割り当てを使用してオブジェクト階層を構築します。この配列は、HTML にバインドされているオブジェクトです。Self オブジェクトを ko.applyBinding() 関数に渡すことによって toggleView() 関数の中でこれです。<br/>これは、し、次の HTML にバインドするのには階層構造の配列を発生します。<br/>
+8. 結果は、self.nodes 配列に割り当てられているし、linq.js は、配列 self.hierarchy への出力の割り当てを使用してオブジェクト階層を構築します。この配列は、HTML にバインドされているオブジェクトです。Self オブジェクトを ko.applyBinding() 関数に渡すことによって toggleView() 関数の中でこれです。<br/>これは、し、次の HTML にバインドするのには階層構造の配列を発生します。<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
