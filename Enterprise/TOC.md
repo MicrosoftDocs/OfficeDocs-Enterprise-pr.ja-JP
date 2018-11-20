@@ -133,6 +133,7 @@
 ##### [地理的位置の削除](delete-a-geo-location.md)
 ##### [複数地域環境でのユーザー エクスペリエンス](multi-geo-user-experience.md)
 #### [OneDrive for Business Multi-Geo を構成する](multi-geo-tenant-configuration.md)
+##### [優先されるデータの場所を構成する](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### [OneDrive for Business Multi-Geo の検索の構成](configure-search-for-multi-geo.md)
 #### [別の地域の場所に OneDrive ライブラリを移動する](move-onedrive-between-geo-locations.md)
 ### [Exchange Online の Multi-Geo Capabilities](multi-geo-capabilities-in-exchange-online.md)
