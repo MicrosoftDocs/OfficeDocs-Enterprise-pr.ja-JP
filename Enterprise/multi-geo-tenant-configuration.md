@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: OneDrive for Business 複数地域の構成方法について説明します。
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849873"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539139"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 複数地域テナントの構成
 
@@ -112,7 +112,7 @@ AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類の�
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>AD Connect を使用してユーザーの優先されるデータの場所を同期する 
 
-社内のユーザーがオンプレミスの Active Directory システムから Azure Active Directory に同期される場合は、そうしたユーザーの PreferredDataLocation は AD に移入する必要があり、AAD に同期される必要があります。「[Azure AD Connect Sync: 既定の構成を変更する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration)」の手順に従って、オンプレミスの Active Directory から Azure Active Directory への優先されるデータの場所の同期を構成します。
+社内のユーザーがオンプレミスの Active Directory システムから Azure Active Directory に同期される場合は、そうしたユーザーの PreferredDataLocation は AD に移入する必要があり、AAD に同期される必要があります。「[Azure Active Directory Connect 同期: Office 365 リソースの優先されるデータの場所を構成する](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)」の手順に従って、オンプレミスの Active Directory から Azure Active Directory への優先されるデータの場所の同期を構成します。
 
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
