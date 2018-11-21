@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: OneDrive for Business 複数地域の構成方法について説明します。
-ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
-ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
+ms.openlocfilehash: 5049904b1419935ed1d55eb73b74d2cd12edb3c0
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539139"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547169"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 複数地域テナントの構成
 
