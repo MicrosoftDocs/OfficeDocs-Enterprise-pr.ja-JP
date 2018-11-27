@@ -3,7 +3,6 @@ title: ディレクトリ同期のためのルーティング不可能なドメ�
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Office 365 と同期する前に、オンプレミスのユーザーと関連付けられている routale ではないドメインがある場合の対処方法を説明します。
-ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541783"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674441"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のためのルーティング不可能なドメインを準備します。
 Azure Active Directory で検証済みのドメインに存在する必要が Office 365 で、設置ディレクトリを同期するとします。のみ、ユーザー プリンシパル名 (UPN)、オンプレミス ドメインに関連付けられているが同期されます。ルーティング不可能なドメイン (billa@contoso.local) のようなローカルな例が含まれているすべての UPN を同期するただし、です。 (billa@contoso.onmicrosoft.com) のような onmicrosoft.com ドメインです。 
@@ -32,7 +31,7 @@ Azure Active Directory で検証済みのドメインに存在する必要が Of
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>場合のみ .local オンプレミス ドメインがあるでしょうか。
 
-Azure Active Directory、Active Directory を同期するために使用できる最新のツールを Azure AD 接続と呼びます。詳細については[、オンプレミス ユーザーは、Azure Active Directory との統合](https://go.microsoft.com/fwlink/p/?LinkId=624168)」を参照してください。
+Azure Active Directory、Active Directory を同期するために使用できる最新のツールを Azure AD 接続と呼びます。詳細については[、オンプレミス ユーザーは、Azure Active Directory との統合](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)」を参照してください。
   
 Azure AD 接続と同期化、ユーザーの UPN パスワード ユーザーが署名できるように、設置型を使用する同じ資格情報を使用しています。ただし、Azure AD 接続は、ユーザーが Office 365 によって検証されているドメインのみを同期します。つまり、ドメインも検証 Azure Active Directory で Office 365 の id は、Azure Active Directory によって管理されるためです。つまり、ドメインを有効なインターネット ドメイン (たとえば、.com、.org、.net、.us など) をある必要があります。内部の Active Directory は、ルーティング不可能なドメイン (たとえば、ローカルな) のみを使用する場合は、Office 365 にあることを確認したドメイン可能性があると一致ことはできません。Active Directory で、設置型には、プライマリ ドメインを変更するか、または 1 つまたは複数の UPN サフィックスを追加することによってこの問題を解決できます。
   

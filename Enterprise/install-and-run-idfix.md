@@ -3,7 +3,6 @@ title: Office 365 IdFix ツールをインストールして実行する
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 f1_keywords:
@@ -16,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: インストールし、Office 365 に同期する前に、active directory のクリーンアップのために Office 365 の IdFix ツールを実行する方法です。
-ms.openlocfilehash: 642273c0171603d627a19273a78fe66662f4caaf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541533"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674431"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix ツールをインストールして実行する
 
@@ -36,30 +35,30 @@ IdFix は、Office 365 に同期する前に複製し、ディレクトリ内の
     
 ## <a name="what-you-need-to-run-idfix"></a>IdFix を実行するために必要な事柄
 
-IdFix を取得する方法の最も簡単な実行中、ドメインに参加しているコンピューターにインストールするには。、する場合は必要はありません、ドメイン コント ローラーでそれを実行できます。
+IdFix を取得する方法の最も簡単な実行中、ドメインに参加しているコンピューターにインストールするには。制限はありませんが、必要がない場合、ドメイン コント ローラー上でそれを実行できます。
   
 ### <a name="idfix-hardware-requirements"></a>IdFix のハードウェア要件
 
-IdFix をインストールするコンピューターは、以下のハードウェア要件を満たしている必要があります。
+IdFix をインストールするコンピューターは、これらのハードウェアの最小要件を満たす必要があります。
   
-- 4 GB の RAM (最小)
-- 2 GB のハード ディスク容量 (最小)
+- 4 GB RAM
+- 2 GB のハード ディスク容量
     
 ### <a name="idfix-software-requirements"></a>IdFix のソフトウェア要件
 
-IdFix 必要がありますをインストールするコンピューターは、Office 365 にユーザーを同期する、同じ Active Directory ドメインに参加している必要があります。コンピューターでは、.NET Framework 4.0 がインストールされている必要があります。 
+IdFix をインストールするコンピューターは、Office 365 にユーザーを同期する、同じ Active Directory ドメインに参加している必要があります。コンピューターでは、.NET Framework 4.0 がインストールされている必要があります。 
   
-Windows Server 2008 または Windows Server 2012 を実行している.NET Framework はインストールされて可能性があります。[ダウンロード センターから .NET 4.0 をダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=400475)可能な場合、または Windows Update を使用しています。 
+Windows Server 2008 または Windows Server 2012 を実行している.NET Framework はインストールされて可能性があります。[ダウンロード センターから .NET 4.0 をダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=400475)することができます、または Windows Update を使用しています。 
   
 ### <a name="idfix-permissions-requirements"></a>IdFix アクセス許可の要件
 
 IdFix を実行するためのユーザー アカウントには、ディレクトリへの読み取り/書き込みアクセス権が必要です。
   
-わからない場合、ユーザー アカウントがこれらの要件を満たしているし、確認する方法がわからない場合、まだインストールし、IdFix を実行します。自分のユーザー アカウントには、適切なアクセス許可が割り当てられていない、IdFix だけでエラーが表示されますそれを実行しようとするとき。
+わからない場合、ユーザー アカウントがこれらの要件を満たしているし、確認する方法がわからない場合、まだインストールして IdFix を実行できます。自分のユーザー アカウントには、適切なアクセス許可が割り当てられていない、IdFix だけでエラーが表示されますそれを実行しようとするとき。
   
 ## <a name="install-idfix"></a>IdFix のインストール
 
-IdFix をインストールするには、以下の手順に従って **IdFix.exe** をダウンロードし、解凍します。 
+IdFix をインストールするには、ダウンロードして、 **IdFix.exe**を解凍します。 
   
 1. IdFix ツールをインストールするコンピューターにログオンします。
     
@@ -69,7 +68,7 @@ IdFix をインストールするには、以下の手順に従って **IdFix.ex
     
 4. ダイアログ ボックスが表示されたら、**実行**を選択します。
     
-5. [ **WinZip Self-extractor** ] ダイアログ ボックスの**フォルダーに解凍**] テキスト ボックスに入力するか、IdFix ツールをインストールする場所を参照します。C:\Deployment ツールに既定では、IdFix がインストールされています。\. 
+5. [ **WinZip Self-extractor** ] ダイアログ ボックスの**フォルダーに解凍**] テキスト ボックスに入力するか、IdFix ツールをインストールする場所を参照します。既定では、IdFix がインストールされている`C:\Deployment Tools\`。 
     
 6. **解凍**」を選択します。
     
@@ -79,7 +78,7 @@ IdFix をインストールした後、次のようにツールを実行して�
   
 1. ディレクトリへの読み取り/書き込みアクセス権を持つアカウントを使用して、IdFix をインストールしたコンピューターにログオンします。
     
-2. エクスプローラーで、IdFix をインストールした場所に移動します。インストール時に既定のフォルダーを選択した場合は、C:\Deployment Tools\IdFix に移動します。
+2. ファイル エクスプ ローラーで、IdFix をインストールした場所に移動します。インストール時に既定のフォルダーを選択する場合に、 `C:\Deployment Tools\IdFix`。
     
 3. **IdFix.exe** をダブルクリックします。 
     
@@ -97,7 +96,7 @@ IdFix をインストールした後、次のようにツールを実行して�
     
     ![IdFix クエリし、エラーの数です。](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. IdFix による照会の完了後、ディレクトリにエラーがない場合には、続行してディレクトリを同期できます。ディレクトリ内にエラーがある場合は、同期する前にそれらを修正することをお勧めします。エラーの種類に関するより詳細な情報やそれぞれを修正する最善の方法についての推奨を確認するには、このトピックの末尾にあるリンクを参照してください。 
+7. IdFix には、クエリが完了すると、さあ、エラーがない場合に、ディレクトリを同期することができます。ディレクトリにエラーがある場合は、同期する前にそれらを修正することをお勧めします。エラーの種類に関する詳細情報とそれらのそれぞれを解決する最善の方法に関する推奨事項をする場合、このトピックの最後にあるリンクを参照してください。 
     
     同期の前にエラーを修正することは必須ではありませんが、IdFix によって戻されたエラーすべてを少なくても確認することを是非お勧めします。
     
@@ -121,8 +120,8 @@ IdFix をインストールした後、次のようにツールを実行して�
 - [リファレンス: IdFix で除外されるオブジェクトと属性、およびサポートされるオブジェクトと属性](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [リファレンス: Office 365 IdFix トランザクション ログ](idfix-transaction-log.md)
     
-## <a name="video-training"></a>ビデオ ・ トレーニング
+## <a name="video-training"></a>ビデオ トレーニング
 
-詳細については、LinkedIn の学習でレッスン[をインストールして IDFix ツールを使用して](https://support.office.com/article/4d81d73c-f172-4fd5-8542-f601c0c96aa9.aspx)を参照してください。
+詳細については、LinkedIn の学習でレッスン[をインストールして IDFix ツールを使用して](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)を参照してください。
   
 
