@@ -3,7 +3,7 @@ title: 単一の Windows PowerShell ウィンドウですべての Office 365 �
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Office 365 サービスに接続します。'
-ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
+ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575262"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706691"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する
 
@@ -32,6 +32,10 @@ PowerShell を使用して Office 365 を管理する場合は、最大 5 つの
 ![一度に実行している 5 つの Windows PowerShell コンソール](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
 これは Office 365 の管理に最適な状況ではありません。サービス間管理のために 5 つのウィンドウ間でデータを交換できないからです。このトピックでは、Office 365、Skype for Business Online、Exchange Online、SharePoint Online、および セキュリティ センターとコンプライアンス センター を管理する Windows PowerShell のインスタンスを使用する方法について説明します。
+
+>[!Note]
+>この記事には現在のみが含まれています Office 365 ワールドワイド (+ GCC) クラウドに接続するためのコマンドにはです。追加の注記は、他の Office 365 のクラウドへの接続に関する情報が含まれる記事へのリンクを提供します。
+>
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -117,12 +121,20 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   Import-PSSession $exchangeSession
   ```
 
+>[!Note]
+>世界の検索サイト以外の Office 365 のクラウドの Exchange Online に接続するには、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)を参照してください。
+>
+
 7. 次のコマンドを実行して、セキュリティ センターとコンプライアンス センター に接続します。
     
   ```
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
+
+>[!Note]
+>セキュリティへの接続に&amp;以外の世界の検索サイトは、Office 365 のクラウドのコンプライアンス センターは、 [Office 365 のセキュリティとコンプライアンス センター PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)を参照してください。
+>
 
 ここでグラフ モジュールの Azure Active Directory の PowerShell を使用する場合は、1 つのブロックですべてのコマンドを示します。、自分のドメインのホストの名前を指定し、それらすべてを同時に実行します。
   
