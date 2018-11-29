@@ -3,7 +3,7 @@ title: Microsoft クラウド接続のためのExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/03/2018
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525838"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872328"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -273,8 +273,4 @@ ExpressRoute の展開には、次に示すオプションを組み込むこと�
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

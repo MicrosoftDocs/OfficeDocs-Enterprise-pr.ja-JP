@@ -3,7 +3,7 @@ title: Microsoft Azure PaaS のためのネットワーク デザイン
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: '概要: Microsoft Azure PaaS へのアクセスのためにネットワークを最適化する方法を理解します。'
-ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915112"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872238"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS のためのネットワーク デザイン
 
@@ -108,8 +108,4 @@ Traffic Manager は、次のルーティング方法を使用します。
 [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

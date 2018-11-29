@@ -3,7 +3,7 @@ title: クラウド接続のためにネットワークを進化させる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: '概要: クラウド導入において、新しいアプローチによるネットワーク インフラストラクチャ投資が必要となることを理解します。'
-ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915142"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872258"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>クラウド接続のためにネットワークを進化させる
 
@@ -44,6 +44,8 @@ ms.locfileid: "22915142"
 - **サービスとしての Azure プラットフォーム (PaaS)** Microsoft SaaS サービスへの投資に加えて、複数サイトまたは地理的に分散したPaaS アプリケーションのために、Azure Traffic Manager はクライアント トラフィックを分散させるように設計する必要がある場合があります。継続的な投資には、パフォーマンスおよびトラフィック分散の監視、並びにフェールオーバーのテストが含まれます。
     
 - **サービスとしての Azure インフラストラクチャ (IaaS)** Microsoft SaaS サービスおよび PaaS サービスへの投資に加えて、IaaS における IT ワークロードの実行においては、仮想マシンをホストする Azure 仮想ネットワーク、仮想マシン上で実行されるアプリケーションへのセキュアな接続、ルーティング、IP アドレス指定、DNS、および負荷分散の設計と構成が必要となります。継続的な投資には、パフォーマンスおよびセキュリティの監視、並びにトラブルシューティングが含まれます。
+
+[Microsoft 365](https://www.microsoft.com/microsoft-365)は、Office 365、エンタープライズ管理 + セキュリティ (EMS)、および Windows の 10 の組み合わせです。Microsoft 365 サービスを組み合わせて複数 SaaS Azure のインテリジェントな包括的なソリューションを創造するすべてのユーザーを強力に支援し、安全に共同作業します。
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>クラウドで成功するためのネットワーク投資の領域
 
@@ -59,7 +61,7 @@ ms.locfileid: "22915142"
   
 ### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Azure への高い SLA のために、Office 365 および Dynamics 365 は ExpressRoute を使用します。
 
-境界ネットワークから現行のインターネット接続を利用することができますが、Microsoft クラウド サービスとの間のトラフィックは、インターネットへ流れる他のイントラネット トラフィックとパイプを共有しなければなりません。また、Microsoft クラウドサービスへのトラフィックは、インターネット トラフィックの混雑の影響を受けます。
+エッジ ネットワークから、現在のインターネット接続を使用できますが、マイクロソフトのクラウド サービスとの間のトラフィックを他のイントラネット トラフィックをインターネットにパイプを共有しなければなりません。また、マイクロソフトのクラウド サービスへのトラフィックは、インターネット トラフィックの輻輳の対象です。
   
 高い SLA および最高のパフォーマンスを得るために、ExpressRoute、つまり自分のネットワークと Azure、Office 365、Dynamics 365 (またはこれら 3 つすべて) との間をつなぐ専用 WAN 接続を使用します。 
   
