@@ -3,7 +3,7 @@ title: ハイブリッド クラウドの概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915822"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123314"
 ---
 # <a name="hybrid-cloud-overview"></a>ハイブリッド クラウドの概要
 
@@ -55,7 +55,7 @@ Microsoft クラウド サービスを使用するハイブリッド クラウ�
   
 - SaaS
     
-    Microsoft SaaS サービスには、Office 365、Microsoft Intune および Microsoft Dynamics 365 が含まれます。Microsoft SaaS を使ったハイブリッド クラウド シナリオでは、これらのサービスをオンプレミス サービスまたはアプリケーションと統合します。たとえば、Office 365 で実行されている Exchange Online は、オンプレミスで展開されている Skype for Business 2015 と統合することができます。
+    マイクロソフトの SaaS のサービスには、Office 365、Microsoft Intune では、Microsoft Dynamics 365 などがあります。マイクロソフトの saas を利用してハイブリッド クラウドのシナリオでは、オンプレミスのサービスまたはアプリケーションでこれらのサービスを組み合わせます。たとえば、Office 365 で実行されている Exchange Online と統合できます Skype ビジネス 2019 は、オンプレミスで導入するのです。
     
 - Azure PaaS
     
@@ -90,8 +90,4 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
 [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 

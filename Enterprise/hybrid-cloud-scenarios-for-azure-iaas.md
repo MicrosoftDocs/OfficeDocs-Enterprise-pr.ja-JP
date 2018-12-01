@@ -3,7 +3,7 @@ title: Azure IaaS のハイブリッド クラウド シナリオ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '概要: ハイブリッド アーキテクチャと理解シナリオのインフラストラクチャのサービス (IaaS) としてのベースで、Azure クラウド サービスです。'
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915032"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123244"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウドのシナリオ
 
@@ -67,7 +67,7 @@ DirSync サーバーは、Azure AD Connect を実行する Windows ベースの�
   
 DirSync サーバーは、変更用に Windows Server AD をポーリングし、それらの変更点を Office 365 サブスクリプションと同期します。
   
-詳細については、 [Office 365 のディレクトリ同期の設定](set-up-directory-synchronization.md)を参照してください。
+詳細については、 [Microsoft Azure で Office 365 ディレクトリ同期を展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)を参照してください。
   
 ## <a name="line-of-business-lob-application"></a>基幹業務 (LOB) アプリケーション
 
@@ -161,7 +161,7 @@ Azure 内の複数の層、および高可用性の LOB アプリケーション
   
 **図 5: Azure IaaS で Office 365 のフェデレートされた識別情報の高可用性インフラストラクチャが、**
 
-![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャの最終構成](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![高可用性の Office 365 は、Azure での認証インフラストラクチャを連合](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 図 5 に、オンプレミスのネットワークとユーザーの識別情報のインフラストラクチャをホストします。サイト間の VPN または ExpressRoute の接続を使用して、Azure の IaaS のゲートウェイに接続されています。Azure VNet には、web プロキシ サーバー、Active Directory フェデレーション サービス (AD FS) サーバー、および Windows Server ・ Active Directory (AD) ドメイン コント ローラーが含まれています。
   
@@ -181,19 +181,11 @@ Azure 内の複数の層、および高可用性の LOB アプリケーション
     
     5 つのフェーズでは、AD FS インフラストラクチャの高可用性のエンド ・ ツー ・ エンドの構成をステップ実行するには[Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
     
-これらのその他のリソースを参照してください。
-  
-- [ハイブリッド クラウド環境の構築](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [設計して、Azure で LOB アプリケーションを作成](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

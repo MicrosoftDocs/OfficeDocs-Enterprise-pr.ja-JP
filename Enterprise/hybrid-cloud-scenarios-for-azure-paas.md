@@ -3,7 +3,7 @@ title: Azure PaaS のハイブリッド クラウド シナリオ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: '概要: Microsoft のサービスとしてのプラットフォーム (PaaS) ベースの Azure 内クラウド製品のハイブリッド アーキテクチャとシナリオについて説明します。'
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915012"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123334"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS のハイブリッド クラウド シナリオ
 
@@ -95,37 +95,9 @@ Azure アプリは、次の資格情報を使用できます。
     
 オンプレミスの ID プロバイダーは Azure AD と同期されているため、カスタム モバイル アプリと LOB アプリの両方が要求元ユーザーのアカウント名を検証できます。
   
-## <a name="stretch-database-with-sql-server-2016"></a>Stretch Database および SQL Server 2016
-
-Stretch Database は SQL Server 2016 の機能であり、顧客の発注情報を含む大きなテーブル内の処理済みビジネス データなど、コールド データを Azure の SQL Stretch Database に透過的かつ安全に移動できます。
-  
-ストレッチ時には、SQL Server インスタンス、データベース、または単一のテーブルのコンテンツは、SQL Server 2016 サーバーのローカル データと Azure のリモート データとを組み合わせたものです。ストレッチの対象となるデータは、SQL Server 2016 によって Azure に自動的に移動されます。
-  
-図 4 は、Stretch Database および SQL Server 2016 を示しています。
-  
-**図 4:Stretch Database および SQL Server 2016**
-
-![Stretch Database および SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-図 4 では、オンプレミスのネットワークは、小規模なローカル データベースを使用する SQL Server 2016 を実行しているサーバーをホストします。Azure PaaS は、データベースのストレッチ部分を含む Azure SQL Server Stretch Database のインスタンスをホストします。オンプレミスのユーザーからオンプレミスの SQL Server に送信された T-SQL クエリは、Azure SQL Stretch Database に安全に転送され、要求元のユーザーに結果が返されます。
-  
-  
-
-履歴データを含むユーザー クエリは、Azure SQL Stretch Database に透過的に転送されます。テーブルがストレッチされても、クエリを書き換える必要はありません。 
-
-
-  
-Stretch Database は、長期ストレージ、および履歴データへの透過的アクセスのためのコスト パフォーマンスに優れたオプションを提供します。テーブルが非常に大きくなると発生するパフォーマンスと可用性の問題も解決します。
-  
-詳細については、「[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)」を参照してください。
-  
 ## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

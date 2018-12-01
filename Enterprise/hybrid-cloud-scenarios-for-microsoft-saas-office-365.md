@@ -3,7 +3,7 @@ title: Microsoft SaaS (Office 365) のハイブリッド クラウド シナリ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: '概要: マイクロソフトの SaaS ベースの理解するハイブリッド アーキテクチャとシナリオ クラウドの製品 (Office 365)。'
-ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 063cbd03a2cc65a6cd278ab2efcea235079f801b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915592"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123414"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Microsoft SaaS (Office 365) のハイブリッド クラウドのシナリオ
 
@@ -43,7 +43,7 @@ ms.locfileid: "22915592"
     
   - Skype for Business Server を Skype for Business Online および新しいクラウド PBX とクラウド コネクタ エディションと組み合わせたシナリオ
     
-  - SharePoint Server 2016 または SharePoint Server 2013 を SharePoint Online と組み合わせる (複数のシナリオ)
+  - SharePoint サーバー 2019年、SharePoint サーバーの 2016、または SharePoint Server 2013 は、SharePoint Online (複数の場合) と組み合わせる
     
     また、Exchange Online をオンプレミスの Skype for Business Server と組み合わせる製品間ハイブリッド シナリオもあります。
     
@@ -59,29 +59,23 @@ ms.locfileid: "22915592"
     
     Exchange、SharePoint、Skype for Business の既存のサーバーで構成でき、これらの製品は最新バージョンに更新する必要があります。その後、ハイブリッド シナリオで Office 365 の対応する製品と組み合わせることができます。
     
-独自の[Office 365 dev/test environment](office-365-dev-test-environment.md)をセットアップします。
+Office 365 の開発/テスト環境のセットアップは、 [Office 365 のテスト ラボ ガイド](cloud-adoption-test-lab-guides-tlgs.md)を参照してください。
   
-## <a name="skype-for-business-2015-hybrid"></a>Skype for Business 2015 ハイブリッド
+## <a name="skype-for-business-hybrid"></a>Skype ビジネスのハイブリッド
 
-ビジネス 2015年ハイブリッドの Skype を使用すると、オンライン ビジネスの Skype で既存のオンプレミスの展開を組み合わせることができます。一部のユーザー ホーム設置型で、一部のユーザーがオンラインで置かれているにもかかわらず、ユーザーが contoso.com など、同じセッション開始プロトコル (SIP) ドメインを共有します。このハイブリッド構成を使用すると、スケジュールに時間の経過と共に Office 365 の設置から移行します。ビジネス 2015年の Skype は、Exchange のオンラインとも統合できます。
+ビジネスのハイブリッドの Skype を使用して、オンライン ビジネスの Skype で既存のオンプレミスの展開を結合できます。一部のユーザー ホーム設置型で、一部のユーザーがオンラインで置かれているにもかかわらず、ユーザーが contoso.com など、同じセッション開始プロトコル (SIP) ドメインを共有します。このハイブリッド構成を使用すると、スケジュールに時間の経過と共に Office 365 の設置から移行します。ビジネス用の Skype は、 [Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint)とも統合できます。
   
-**図 2:Skype for Business 2015 のハイブリッド構成**
+**図 2: ビジネスのハイブリッド構成の Skype**
 
-![Skype for Business 2015 のハイブリッド構成](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
+![ビジネスのハイブリッド構成の Skype](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-ビジネス 2015年のフロント エンド プール、エッジ サーバーとの通信 Skype Office 365 のオンライン ビジネスのため、設置型 Skype から成るビジネス 2015年ハイブリッド構成では、Skype を図 2 に示します。
+ビジネスのフロント エンド プール、エッジ サーバーとの通信 Skype Office 365 のオンライン ビジネスのため、設置型 Skype から成るビジネス ハイブリッド構成では、Skype を図 2 に示します。
   
-詳細については、次のトピックを参照してください。
-  
-- [Skype ビジネス サーバーとビジネス オンラインの Skype との間のハイブリッド接続を計画します。](https://technet.microsoft.com/library/jj205403.aspx)
-    
-- [ビジネス サーバー 2015 の Skype のサポートされているハイブリッドの構成](https://technet.microsoft.com/library/jj945633.aspx)
-    
-- [Skype ビジネスのハイブリッド](http://hybrid.office.com/skype-for-business/)
+詳細については、[サーバーのビジネスとオンライン ビジネスの Skype の Skype 間のハイブリッド接続の計画](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity)を参照してください。
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>Skype for Business Server と組み合わされたクラウド PBX
 
-Skype for Business Server と組み合わされたクラウド PBX を使用すると、既存の Skype for Business Server のオンプレミス展開を、オンプレミスの公衆交換電話網 (PSTN) 接続を備えたトポロジに移行できます。  
+クラウド ビジネス サーバーの Skype での PBX では、設置の公衆交換電話網 (PSTN) 接続を備えたビジネス サーバー設置型の展開トポロジを既存の Skype に移行することができます。 
   
 **図 3:Skype for Business Server と組み合わされたクラウド PBX**
 
@@ -91,13 +85,14 @@ Skype for Business Server と組み合わされたクラウド PBX を使用す�
   
 クラウドに所属する組織内のユーザーは、Microsoft クラウドから通知やボイスメールを含む構内交換機 (PBX) サービスを受信できますが、PSTN 接続 (ダイヤル トーン) はオンプレミスの Skype for Business Server 展開からエンタープライズ VoIP 経由で提供されます。
   
-これは、段階的にクラウド ベースのサービスに移行することを可能にするハイブリッド構成の優れた例です。Skype for Business Online への移動を開始するときに、ユーザーのボイス機能を保持することができます。所属する場所にかかわりなく、ユーザーの音声機能は継続されることがわかっているので、自分のペースでユーザーを移動させることができます。  
+これは、段階的にクラウド ベースのサービスに移行することができるハイブリッド構成の優れた例です。ビジネス オンラインの Skype に移動を開始すると、ユーザーのボイス機能を保持できます。場所に置かれているペースで、音声機能がなしで続けることを知るだけで、ユーザーを移動することができます。 
   
-詳細については、[サーバーのビジネスとビジネス オンラインまたは Lync Server 2013 の Skype の Skype 間のハイブリッド接続の計画](https://technet.microsoft.com/library/jj205403.aspx)を参照してください。
+詳細については、[サーバーのビジネスとオンライン ビジネスの Skype の Skype 間のハイブリッド接続の計画](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity)を参照してください。
   
 既存の Lync Server または Skype for Business Server 展開がまだない場合は、クラウド PBX とのオンプレミス PSTN 接続を実装するパッケージ化された仮想マシン (VM) のセットである、Skype for Business クラウド コネクタ エディションを使用できます。
   
-詳細については、 [Skype ビジネス クラウド コネクタ ・ エディションの計画](https://technet.microsoft.com/library/mt605227.aspx)を参照してください。
+詳細については、 [Skype ビジネス クラウド コネクタ ・ エディションの計画](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition)を参照してください。
+
   
 ## <a name="sharepoint-hybrid"></a>SharePoint ハイブリッド
 
@@ -114,25 +109,21 @@ SharePoint ハイブリッド シナリオ
   
 - ユーザーは SharePoint Server サイトと SharePoint Online サイトをフォローし、両者を 1 つのリストに統合して参照することができます。
     
-- [ハイブリッド チーム サイト](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
+- [エクストラネットの B2B のハイブリッド](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
     
-- [エクストラネットの B2B のハイブリッド](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)
+- [ハイブリッド検索](https://docs.microsoft.com/SharePoint/hybrid/configure-cloud-hybrid-searchroadmap)
     
-- [ハイブリッド検索](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
+- [ハイブリッド プロファイル](https://docs.microsoft.com/SharePoint/hybrid/plan-hybrid-profiles)
     
-- [ハイブリッド プロファイル](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
-    
-- [ハイブリッドの選択](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
+- [ハイブリッドの選択](https://docs.microsoft.com/SharePoint/hybrid/hybrid-picker-in-the-sharepoint-online-admin-center)
     
     ハイブリッド シナリオは、Office 365 の SharePoint Online 管理センターから入手できる、ハイブリッド構成を自動化するウィザードを使用して、簡単に有効にすることができます。
     
-- [拡張ハイブリッド アプリ起動ツール](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [拡張ハイブリッド アプリ起動ツール](https://docs.microsoft.com/SharePoint/hybrid/the-extensible-hybrid-app-launcher)
     
     ユーザーは Office 365 ビデオや Delve アプリを表示および使用し、オンプレミスの SharePoint ファームのページ内で体験することができます。
     
 これらのすべての SharePoint ハイブリッド シナリオは、拡張可能なハイブリッド アプリ起動ツールを除き、SharePoint 2016 と SharePoint 2013 の両方のユーザーが使用できます。
-  
-詳細については、 [SharePoint のハイブリッド](http://hybrid.office.com/sharepoint/)を参照してください。
   
 ## <a name="exchange-server-2016-hybrid"></a>Exchange Server 2016 ハイブリッド
 
@@ -161,15 +152,11 @@ Exchange Server 2016 ハイブリッドを使用すると、オンライン ユ�
     
 このハイブリッド構成は、Skype for Business Online や SharePoint Online などのその他の Microsoft Office 365 アプリケーションと統合することもできます。
   
-詳細については、[ハイブリッド展開の Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)および[Exchange ハイブリッド](http://hybrid.office.com/exchange/)を参照してください。
+詳細については、 [Exchange Server のハイブリッド展開](https://docs.microsoft.com/exchange/exchange-hybrid)を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

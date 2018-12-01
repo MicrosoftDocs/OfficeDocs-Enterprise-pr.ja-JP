@@ -3,7 +3,7 @@ title: Microsoft ハイブリッド クラウド シナリオのアーキテク�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: '概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。'
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914922"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123394"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 
@@ -33,7 +33,7 @@ ms.locfileid: "22914922"
   
 図 1 は、Microsoft ハイブリッド クラウド スタックとそのレイヤーを示しています。レイヤーには、オンプレミス、ネットワーク、ID、アプリとシナリオ、およびクラウド サービスのカテゴリ (Microsoft SaaS、Azure PaaS、Azure PaaS) が含まれます。
   
-アプリとシナリオのレイヤーには、このモデルの他の記事で詳しく説明された特定のハイブリッド クラウド シナリオが含まれます。ID、ネットワーク、オンプレミスのレイヤーは、クラウド サービスのカテゴリ (SaaS、PaaS、または PaaS) では共通である場合があります。
+アプリケーションおよびシナリオのレイヤーでは、このモデルの他の資料に詳細については、特定のハイブリッド クラウド シナリオを持っています。Id、ネットワーク、および設置レイヤーは、SaaS、PaaS、(PaaS) のクラウド サービスのカテゴリに共通することができます。
   
 - オンプレミス
     
@@ -68,8 +68,4 @@ Microsoft を含む多くの企業は、クラウドの採用に 3 段階のア�
 [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
