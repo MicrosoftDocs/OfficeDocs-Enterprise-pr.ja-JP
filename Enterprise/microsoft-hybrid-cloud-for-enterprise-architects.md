@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: '概要: Microsoft クラウド サービスおよびプラットフォームを使用するハイブリッド シナリオについて IT アーキテクトが知る必要のある内容。'
-ms.openlocfilehash: a2859d6ce677a37541948d481530aee8f46adf7b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915552"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872248"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド
 
@@ -36,7 +36,7 @@ ms.locfileid: "22915552"
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
 [その他の言語](https://www.microsoft.com/download/details.aspx?id=54424)
   
-すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://aka.ms/cloudarchitecture)」でスワイプして見ることもできます。
+[Microsoft Cloud IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)のすべてのモデルを表示することもできます。
   
 次のセクションを参照してください。
   
