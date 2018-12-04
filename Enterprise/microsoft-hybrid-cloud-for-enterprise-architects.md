@@ -3,7 +3,7 @@ title: エンタープライズ アーキテクトのための Microsoft ハイ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: '概要: Microsoft クラウド サービスおよびプラットフォームを使用するハイブリッド シナリオについて IT アーキテクトが知る必要のある内容。'
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872248"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123374"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド
 
@@ -33,8 +33,7 @@ ms.locfileid: "26872248"
 [![Microsoft ハイブリッド クラウド モデルのサムネイル画像](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[その他の言語](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 [Microsoft Cloud IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)のすべてのモデルを表示することもできます。
   
@@ -61,13 +60,9 @@ ms.locfileid: "26872248"
     Azure IaaS ハイブリッド シナリオのアーキテクチャ、および Azure IaaS でホストされる基幹業務 (LOB) アプリケーションの説明。
     
 > [!NOTE]
-> これらの記事は、「エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド」のポスターの **2017 年 6 月** リリースを反映しています。
+> これらの記事は、「エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド」のポスターの **2018 年 12 月**リリースを反映しています。
   
 ## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
