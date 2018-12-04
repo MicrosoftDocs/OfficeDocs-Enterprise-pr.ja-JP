@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この資料では、従来の負荷が許可されていないためにテストを実行することがなく SharePoint Online に展開する方法について説明します。
-ms.openlocfilehash: 06649942f20dc18abfcae0e56df7e3ea56ed9165
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
+ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541785"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "27134672"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量計画および SharePoint Online のテスト負荷
 
-この資料では、従来の負荷が許可されていないためにテストを実行することがなく SharePoint Online に展開する方法について説明します。
+この資料では、従来の負荷が推奨であるためにテストを実行することがなく SharePoint Online に展開する方法について説明します。
   
 SharePoint Online でのテスト作業中の負荷は強くお勧めはことを確認する他の方法がありますが、サイトが生成されませんユーザー エクスペリエンスの低下、サイトを起動すると。 
   
