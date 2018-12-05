@@ -3,7 +3,7 @@ title: エンタープライズ アーキテクトのための Microsoft クラ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: '概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。'
-ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915402"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123354"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
 
@@ -33,9 +33,9 @@ ms.locfileid: "22915402"
 [![Microsoft クラウドのネットワーク モデルのサムネイル画像](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=54425)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)
   
-すべてのモデルを [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)で見ることも、「[Microsoft の Enterprise Cloud ロードマップ: IT の意思決定者向けのリソース](https://aka.ms/cloudarchitecture)」でスワイプして見ることもできます。
+[Microsoft Cloud IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)のすべてのモデルを表示することもできます。
   
 次のセクションを参照してください。
   
@@ -53,7 +53,7 @@ ms.locfileid: "22915402"
     
 - [Microsoft SaaS のためのネットワーク デザイン](designing-networking-for-microsoft-saas.md)
     
-    Microsoft SaaS サービス向けにネットワークを最適化するには、インターネット エッジ、クライアント デバイス、および標準の IT 運用を慎重に分析する必要があります。
+    Microsoft SaaS サービスに対してネットワークを最適化するには、あらゆるカテゴリのトラフィックを Microsoft SaaS サービスを別のカテゴリのトラフィックをルーティングするために内部デバイスとエッジ デバイスを構成する必要があります。
     
 - [Microsoft Azure PaaS のためのネットワーク デザイン](designing-networking-for-microsoft-azure-paas.md)
     
@@ -66,13 +66,9 @@ ms.locfileid: "22915402"
 このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する](https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)」Microsoft Virtual Academy コースをご覧ください。
   
 > [!NOTE]
-> これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2017 年 6 月**リリースを反映しています。
+> これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2018 年 12 月**リリースを反映しています。
   
 ## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
-
-[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
