@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '概要: ハイブリッド アーキテクチャと理解シナリオのインフラストラクチャのサービス (IaaS) としてのベースで、Azure クラウド サービスです。'
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123244"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181038"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウドのシナリオ
 
@@ -51,21 +51,21 @@ ms.locfileid: "27123244"
     
     Azure で実行されている ID サーバーと同期している ID サーバーが含まれています。ストレージおよびシステムの管理インフラストラクチャなど、Azure で実行されている VM がアクセスできるリソースが含まれる場合もあります。
     
-## <a name="dirsync-server-for-office-365"></a>Office 365 向けの DirSync サーバー
+## <a name="directory-synchronization-server-for-office-365"></a>Office 365 のディレクトリ同期サーバー
 
-図 2 に示すように、コンピューティングと ID インフラストラクチャをクラウドに拡張する一例として、ディレクトリ同期 (DirSync) サーバーを Azure VNet から実行するという方法があります。
+図 2 に示すように、Azure の VNet からディレクトリ同期サーバーを実行しているは、クラウド ・ コンピューティングと id インフラストラクチャを拡張するための例です。
   
-**図 2: Azure IaaS の Office 365 向けの DirSync サーバー**
+**Azure IaaS で Office 365 のディレクトリ同期サーバーを図 2:**
 
-![Azure IaaS の Office 365 向けの DirSync サーバー](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Azure IaaS で Office 365 のディレクトリ同期サーバー](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 図 2 に、オンプレミスのネットワークは、プロキシ サーバーとルーターの端に、Windows サーバーの AD インフラストラクチャをホストします。ルーターは、サイト間の VPN または ExpressRoute の接続を使用して、Azure の VNet の端に、Azure のゲートウェイに接続します。VNet の内部は、ディレクトリ同期サーバーは、Azure AD 接続を実行します。
   
-Office 365 向けの DirSync サーバーは、Windows Server AD のアカウントの一覧を Office 365 サブスクリプションの Azure AD テナントと同期します。
+Office 365 のディレクトリ同期サーバーでは、Office 365 サブスクリプションの Azure AD テナントと Windows サーバーの AD のアカウントの一覧を同期します。
   
-DirSync サーバーは、Azure AD Connect を実行する Windows ベースのサーバーです。迅速なプロビジョニングを実現し、組織内のオンプレミスのサーバーの数を減らすには、Azure IaaS の仮想ネットワーク (VNet) で DirSync サーバーを展開します。
+ディレクトリ同期サーバーは、AD の Azure の接続を実行している Windows ベースのサーバーです。迅速なプロビジョニングや、組織内の設置型サーバーの数を減らすには、Azure IaaS で仮想ネットワーク (VNet) では、ディレクトリ同期サーバーを展開します。
   
-DirSync サーバーは、変更用に Windows Server AD をポーリングし、それらの変更点を Office 365 サブスクリプションと同期します。
+ディレクトリ同期サーバーは、Windows サーバーの AD の変更をポーリングし、し、Office 365 サブスクリプションの同期をとります。
   
 詳細については、 [Microsoft Azure で Office 365 ディレクトリ同期を展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)を参照してください。
   
