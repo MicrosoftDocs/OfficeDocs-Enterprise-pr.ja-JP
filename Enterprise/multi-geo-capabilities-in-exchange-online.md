@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Exchange Online の機能を複数地域での複数の地理的な領域に、Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849923"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200740"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange オンラインで複数の地域の機能
 
@@ -41,7 +41,7 @@ Office 365 に複数の地域の機能は、複数の地域にまたがる 1 つ
 
 - フランス
 
-- インド (現在インドでの請求先住所を持つ顧客にのみ使用可能)
+- インド
 
 - 日本
 
