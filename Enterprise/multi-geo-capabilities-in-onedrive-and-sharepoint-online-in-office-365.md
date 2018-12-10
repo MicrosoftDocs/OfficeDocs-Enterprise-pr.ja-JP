@@ -3,7 +3,6 @@ title: OneDrive の複数地域機能および Office 365 の SharePoint Online
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive と SharePoint Online の複数地域機能を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849823"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200730"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive の複数地域機能および Office 365 の SharePoint Online
 
@@ -64,27 +63,25 @@ Multi-Geo 構成では、Office 365 テナントは中央の場所 (Office 365 �
 OneDrive の複数地域は、現在次の地域と国で提供されています。
   
 - アジア太平洋
-    
+
 - オーストラリア
-    
+
 - カナダ
-    
+
 - 欧州連合 (EMEA)
 
 - フランス
-    
-- 日本
-    
-- 英国
-    
-- 米国 (北アメリカ)
-    
-- 韓国
-      
-今後提供予定の地域の場所:
-  
+
 - インド
-    
+
+- 日本
+
+- 英国
+
+- 米国 (北アメリカ)
+
+- 韓国
+
 ## <a name="getting-started"></a>はじめに
 
 OneDrive for Business 複数地域を開始するには、まず [OneDrive for Business 複数地域の環境を計画](plan-for-multi-geo.md)します。次に、[複数地域の環境の管理について](administering-a-multi-geo-environment.md)と、[ユーザーが複数地域の環境を体験する方法](multi-geo-user-experience.md)について説明します。OneDrive for Business 複数地域を設定する準備ができたら、[複数地域のテナントを構成](multi-geo-tenant-configuration.md)し、[既存の OneDrive サイトを新しい場所に移動](move-onedrive-between-geo-locations.md)して、[検索を設定](configure-search-for-multi-geo.md)します。

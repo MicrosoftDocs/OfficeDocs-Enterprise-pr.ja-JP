@@ -3,7 +3,6 @@ title: OneDrive for Business 複数地域の計画
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,18 +10,18 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: OneDrive for Business 複数地域、複数地域のしくみ、およびデータ ストレージに使用できる地域の場所について説明します。
-ms.openlocfilehash: d40f84ea3636b4eca2711a48bd9d70c73a242cfd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: de856bdeb0c0f1ca8e718439ddb98d738843bc5a
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849863"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200720"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>OneDrive for Business 複数地域の計画
 
 このガイドは、データ所在地の要件を満たすように、SharePoint Online テナントを企業の所在地に応じて追加の地域に展開するための準備を整える多国籍企業 (MNC) の管理者を対象としています。
 
-OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の場所と 1 つ以上のサテライト地域の場所で構成されます。これは、複数の地域の場所に展開する単一のテナントです。OneDrive Multi-Geoでは、地域の場所を含むテナント情報が Azure Active Directory (AAD) でマスター管理されます。 
+OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の場所と 1 つ以上のサテライト地域の場所で構成されます。これは、複数の地域の場所に展開する単一のテナントです。OneDrive Multi-Geo では、地域の場所を含むテナント情報が Azure Active Directory (AAD) でマスター管理されます。 
 
 この構成の基本的な概念についての理解を助けるために、複数地域に関するいくつかの主要な用語を示します。
 
@@ -32,7 +31,7 @@ OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の�
 
 -   **サテライトの場所** – Office 365 テナントのデータをホストするように構成した地理的な場所。複数地域テナントは、複数の地域の場所 (たとえば、北米とヨーロッパ) に展開します。
 
--   **優先されるデータの場所 (PDL)**: 個別のユーザーの OneDrive データが保存される地域の場所。この場所は、テナントに対して構成されている許可されているデータの場所のいずれかに管理者が設定できます。既に OneDrive サイトを所有しているユーザーの PDL を変更しても、そのユーザーの OneDrive データは新しい地域の場所に自動的には移動されない点に注意してください。詳細については、「[OneDrive ライブラリを別の地域の場所に移動する](move-onedrive-between-geo-locations.md)」を参照してください。
+-   **優先するデータの場所 (PDL)**: 個別のユーザーの OneDrive データが保存される地域の場所。この場所は、テナントに対して構成されている許可されているデータの場所のいずれかに管理者が設定できます。既に OneDrive サイトを所有しているユーザーの PDL を変更しても、そのユーザーの OneDrive データは新しい地域の場所に自動的には移動されない点に注意してください。詳細については、「[OneDrive ライブラリを別の地域の場所に移動する](move-onedrive-between-geo-locations.md)」を参照してください。
 
 複数地域の有効化に必要になる主な 4 つの手順は次のとおりです。
 
@@ -40,9 +39,9 @@ OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の�
 
 2.  サテライトの場所を選択して、その場所をテナントに追加します。
 
-3.  ユーザーの優先されるデータの場所を適切なサテライトの場所に設定します。ユーザーに新しい OneDrive サイトがプロビジョニングされると、そのサイトがユーザーの PDL にプロビジョニングされます。
+3.  ユーザーの優先するデータの場所を適切なサテライトの場所に設定します。ユーザーに新しい OneDrive サイトがプロビジョニングされると、そのサイトがユーザーの PDL にプロビジョニングされます。
 
-4.  ユーザーの既存の OneDrive サイトを中央の場所から、そのユーザーの優先されるデータの場所に移行します (必要な場合)。
+4.  ユーザーの既存の OneDrive サイトを中央の場所から、そのユーザーの優先するデータの場所に移行します (必要な場合)。
 
 それぞれの手順の詳細については、「[OneDrive for Business 複数地域の構成](multi-geo-tenant-configuration.md)」を参照してください。
 
@@ -80,6 +79,10 @@ OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の�
 <td align="left">FRA</td>
 </tr>
 <tr class="odd">
+<td align="left">インド</td>
+<td align="left">IND</td>
+</tr>
+<tr class="odd">
 <td align="left">日本</td>
 <td align="left">JPN</td>
 </tr>
@@ -98,10 +101,6 @@ OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の�
 </tbody>
 </table>
 
-今後提供予定の地域の場所:
-  
-- インド
-
 複数地域を構成するときは、Office 365 への移行と同時にオンプレミスのインフラストラクチャを統合する機会だと考えてください。たとえば、シンガポールとマレーシアにオンプレミス ファームがある場合、データ所在地の要件で許可されているときには、それらのファームを APC サテライトの場所に統合できます。
 
 ## <a name="best-practices"></a>ベスト プラクティス
@@ -110,9 +109,9 @@ OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の�
 
 テスト用ユーザーでのテストが完了したら、新しい地域の場所で最初に OneDrive を使用するパイロット グループを IT 部門 (など) から選択します。この最初のグループには、OneDrive をまだ所有していないユーザーを選択します。この初期グループのユーザーは 5 人未満にして、バッチ ロールアウトのアプローチに従って段階的に増員していきます。
 
-各ユーザーには*優先されるデータの場所* (PDL) を設定しておく必要があります。これにより、それぞれのユーザーの OneDrive をプロビジョニングする地域の場所を Office 365 が判断できるようになります。ユーザーの優先されるデータの場所は、選択したサテライトの場所のいずれか、または中央の場所と一致する必要があります。PDL フィールドは必須ではありませんが、すべてのユーザーの PDL を設定することをお勧めします。PDL のないユーザーのワークロードは中央の場所にプロビジョニングされます。   
+各ユーザーには*優先するデータの場所* (PDL) を設定しておく必要があります。これにより、それぞれのユーザーの OneDrive をプロビジョニングする地域の場所を Office 365 が判断できるようになります。ユーザーの優先するデータの場所は、選択したサテライトの場所のいずれか、または中央の場所と一致する必要があります。PDL フィールドは必須ではありませんが、すべてのユーザーの PDL を設定することをお勧めします。PDL のないユーザーのワークロードは中央の場所にプロビジョニングされます。   
 
-ユーザーのリストを作成して、ユーザー プリンシパル名と適切な優先されるデータの場所の地域コードを含めます。テスト用ユーザーと初期パイロット グループを含めて開始します。このリストは、構成の手順で必要になります。
+ユーザーのリストを作成して、ユーザー プリンシパル名 (UPN) と適切な優先するデータの場所の地域コードを含めます。テスト用ユーザーと初期パイロット グループを含めて開始します。このリストは、構成の手順で必要になります。
 
 ユーザーがオンプレミスの Active Directory システムから Azure Active Directory に同期される場合、同期されるユーザーの優先されるデータの場所は、Azure Active Directory Connect を使用して設定する必要があります。同期されるユーザーの優先されるデータの場所は、Azure AD PowerShell を使用して直接構成することはできません。AD で PDL を設定して同期する手順については、「[Azure Active Directory Connect 同期: Office 365 リソースの優先されるデータの場所を構成する](https://docs.microsoft.com/ja-JP/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)」を参照してください。
 
@@ -122,4 +121,4 @@ OneDrive Multi-Geo 構成では、Office 365 テナントが 1 つの中央の�
 
 OneDrive for Business 複数地域の構成を開始する場合は、「[OneDrive for Business 複数地域の構成](multi-geo-tenant-configuration.md)」を参照してください。
 
-構成の完了後は、ユーザーが優先されるデータの場所から作業するために必要になる、[ユーザーの OneDrive ライブラリの移行](move-onedrive-between-geo-locations.md)を必ず実行してください。
+構成の完了後は、ユーザーが優先するデータの場所から作業するために必要になる、[ユーザーの OneDrive ライブラリの移行](move-onedrive-between-geo-locations.md)を必ず実行してください。

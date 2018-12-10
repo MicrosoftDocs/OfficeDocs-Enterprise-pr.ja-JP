@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
-ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 09f8816fc0ba748ced5bd104710677829d893198
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849883"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200703"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -99,6 +99,10 @@ Office 365 全体管理者は、別のユーザーが電子情報開示を実行
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
 <td align="left">ヨーロッパのデータセンター</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>IND</strong></td>
+<td align="left">東南アジアまたは東アジアのデータ センター</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
