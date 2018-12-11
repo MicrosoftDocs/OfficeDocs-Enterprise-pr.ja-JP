@@ -3,7 +3,7 @@ title: Microsoft クラウド接続のためのExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872328"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213974"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -222,7 +222,7 @@ ExpressRoute Premium では、どの大陸にある Microsoft ピアリングの
     
 - ローカルの ExpressRoute 接続が使用不能になったときのグローバルな Microsoft クラウドに対する可用性の向上。
     
-Office 365 ベースの ExpressRoute 接続には、ExpressRoute Premium が必要になります。ただし、ライセンス付与済みのユーザー数が 500 以上の企業には追加のコストは発生しません。
+ExpressRoute プレミアムは、Office 365 に基づく ExpressRoute の接続に必要です。
   
 **図 9: 全世界をカバーする Microsoft のクラウド ネットワーク**
 

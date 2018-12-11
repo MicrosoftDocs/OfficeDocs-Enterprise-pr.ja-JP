@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してアカウントのライセンスと
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/27/2018
+ms.date: 12/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 の PowerShell を使用してユーザーに割り当てられている Office 365 のサービスを確認する方法について説明します。
-ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223109"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213954"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
@@ -28,7 +28,7 @@ ms.locfileid: "23223109"
   
 、Office 365 では、計画のライセンスからライセンス (も呼び出された Sku または Office 365 プラン) ユーザーにそれらの計画に定義されている Office 365 サービスへのアクセスを提供します。ただし、[ユーザーはそれらに現在割り当てられているライセンスで使用可能なすべてのサービスへのアクセスをいない可能性があります。ユーザー アカウントのサービスの状態を表示するのには、Office 365 の PowerShell を使用できます。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
@@ -63,30 +63,6 @@ ms.locfileid: "23223109"
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
-```
-
-特定のサービスが有効、または無効なすべてのライセンス ユーザーを調べるには、次の構文を使用します。
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled" -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled"...}
-```
-
-以下の例では、次の情報を使用します。
-  
-- Office 365 サービスに関心をへのアクセスを提供するライセンスは、(インデックス番号は 0 になります) すべてのユーザーに割り当てられている最初のライセンスです。
-    
-- 関心を Office 365 サービスは、オンライン ビジネスおよび Exchange Online の Skype です。ライセンス プランに関連付けられているライセンス、ビジネス オンラインの Skype は、6 番目の項目に記載されているサービス (インデックス番号が 5)、9 のサービスを Exchange Online には、(インデックス番号は、8) に表示されています。
-    
-この例が有効になっている Skype のオンライン ビジネスおよび Exchange Online ライセンスを付与されたすべてのユーザーを返します。
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-この例では、すべてのライセンスを受けたユーザーは有効になっている Skype のビジネス オンラインまたは Exchange Online を返します。
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
 *複数のライセンス*が割り当てられているユーザーのためのすべてのサービスを表示するには、次の構文を使用します。
