@@ -1,5 +1,5 @@
 ---
-title: "Office 365 PowerShell でユーザー アカウント プロパティを構成する"
+title: Office 365 PowerShell でユーザー アカウント プロパティを構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,18 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
+ms.custom:
+- O365ITProTrain
+- Ent_Office_Other
+- PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: "概要:Office 365 PowerShell を使用して、Office 365 テナント内の個別のまたは複数のユーザー アカウントのプロパティを構成します。"
-ms.openlocfilehash: 65857511886534e18ba3e67b79ab4d74a0119568
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 概要:Office 365 PowerShell を使用して、Office 365 テナント内の個別のまたは複数のユーザー アカウントのプロパティを構成します。
+ms.openlocfilehash: 60b3c1d91df0cb28f19f60a285093de7337904a9
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552690"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウント プロパティを構成する
 
@@ -114,13 +118,13 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 
 ## <a name="change-properties-for-all-user-accounts"></a>すべてのユーザー アカウントのプロパティを変更する
 
-すべてのユーザーのプロパティを変更する場合には、**Get-MsolUser** と **Set-MsolUser** コマンドレットを組み合わせて使用できます。次の例では、すべてのユーザーの使用場所をフランスに変更します。
+すべてのユーザーのプロパティを変更する場合には、 **Get-MsolUser** と **Set-MsolUser** コマンドレットを組み合わせて使用できます。次の例は、すべてのユーザーについて、使用場所をフランスに変更します。
   
 ```
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
-このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。
+このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
   
 - ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
@@ -128,13 +132,13 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
     
 ## <a name="change-properties-for-a-specific-set-of-user-accounts"></a>特定のユーザー アカウント セットのプロパティを変更する
 
-特定のユーザー アカウント セットのプロパティを変更する場合には、**Get-MsolUser**、**Where-Object**、**Set-MsolUser** コマンドレットの組み合わせを使用することができます。次の例では、会計部門のすべてのユーザーの使用場所をフランスに変更します。
+特定のユーザー アカウント セットのプロパティを変更する場合には、 **Get-MsolUser** 、 **Where-Object** 、 **Set-MsolUser** コマンドレットの組み合わせを使用することができます。次の例は、会計部門のすべてのユーザーについて、使用場所をフランスに変更します。
   
 ```
 Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
-このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。
+このコマンドにより、Office 365 PowerShell に対して次の処理が命令されます。
   
 - ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。
     
@@ -146,7 +150,7 @@ Get-MsolUser | Where-Object {$_.Department -eq "Accounting"} | Set-MsolUser -Usa
     
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-configure-user-account-properties"></a>Azure Active Directory V2 PowerShell モジュールを使用してユーザー アカウント プロパティを構成する
 
-Azure Active Directory V2 PowerShell モジュールを使用してユーザー アカウントのプロパティを構成する場合には、[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) コマンドレットを使用して、設定または変更するプロパティを指定します。ただし、まずサブスクリプションに接続する必要があります。手順については、「[Azure Active Directory V2 PowerShell モジュールを使用した接続](https://go.microsoft.com/fwlink/?linkid=842218)」を参照してください。
+Azure Active Directory V2 PowerShell モジュールを使用してユーザー アカウントのプロパティを構成する場合には、[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) コマンドレットを使用して、設定または変更するプロパティを指定します。しかし、まずサブスクリプションに接続する必要があります。手順については、「[Azure Active Directory V2 PowerShell モジュールを使用した接続](https://go.microsoft.com/fwlink/?linkid=842218)」を参照してください。
   
 ### <a name="change-properties-for-a-specific-user-account"></a>特定のユーザー アカウントのプロパティを変更する
 
@@ -231,7 +235,7 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 
 ### <a name="change-properties-for-all-user-accounts"></a>すべてのユーザー アカウントのプロパティを変更する
 
-すべてのユーザーのプロパティを変更する場合には、**Get-AzureADUser** と **Set-AzureADUser** コマンドレットを組み合わせて使用できます。次の例では、すべてのユーザーの使用場所をフランスに変更します。
+すべてのユーザーのプロパティを変更する場合には、 **Get-AzureADUser** と **Set-AzureADUser** コマンドレットを組み合わせて使用できます。次の例は、すべてのユーザーについて、使用場所をフランスに変更します。
   
 ```
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
@@ -245,7 +249,7 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>特定のユーザー アカウント セットのプロパティを変更する
 
-特定のユーザー アカウント セットのプロパティを変更する場合には、**Get-AzureADUser**、**Where**、**Set-AzureADUser** コマンドレットの組み合わせを使用することができます。次の例では、会計部門のすべてのユーザーの使用場所をフランスに変更します。
+特定のユーザー アカウント セットのプロパティを変更する場合には、**Get-AzureADUser**、**Where**、**Set-AzureADUser** コマンドレットの組み合わせを使用することができます。次の例は、会計部門のすべてのユーザーについて、使用場所をフランスに変更します。
   
 ```
 Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"

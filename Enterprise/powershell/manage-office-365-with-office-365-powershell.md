@@ -20,6 +20,7 @@ ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "18609009"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell による Office 365 の管理
 
