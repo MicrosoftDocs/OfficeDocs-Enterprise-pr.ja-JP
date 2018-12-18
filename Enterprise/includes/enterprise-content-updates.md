@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>2018 年 11 月 5 日の週
-
-
-| 発行日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 11/5/2018 | [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 変更 |
-| 11/5/2018 | [Microsoft Azure での Office 365 ディレクトリ同期の展開](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 変更 |
-| 11/5/2018 | [Office 365 のネットワークをセットアップする](/Office365/Enterprise/set-up-network-for-office-365) | 追加 |
-| 2018/11/6 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 変更 |
-| 2018/11/6 | [Azure に Office 365 の高可用性フェデレーション認証を展開する](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 変更 |
-| 2018/11/6 | [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | 変更 |
-| 2018/11/7 | [Office 365 エンドポイント](/Office365/Enterprise/office-365-endpoints) | 追加 |
-| 2018/11/7 | [Office 365 のネットワークをセットアップする](/Office365/Enterprise/set-up-network-for-office-365) | 変更 |
-| 2018/11/8 | [Office for Mac でのネットワーク要求](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | 変更 |
-| 2018/11/8 | [Office 365 テナント間コラボレーション](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 変更 |
-| 2018/11/8 | [SharePoint Online のパフォーマンスのチューニングの概要](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 変更 |
-| 2018/11/9 | [SharePoint Online のページの診断ツールを使用してください。](/Office365/Enterprise/page-diagnostics-for-spo) | 変更 |
-
-
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日の週
 
 
@@ -59,7 +40,7 @@
 | 2018/11/26 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 変更 |
 | 2018/11/26 | [Office 365 での Azure 統合](/Office365/Enterprise/azure-integration) | 変更 |
 | 2018/11/26 | [Office 365 IdFix ツールのインストールと実行](/Office365/Enterprise/install-and-run-idfix) | 変更 |
-| 2018/11/26 | [ディレクトリ同期のためのルーティング不可能なドメインを準備します。](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | 変更 |
+| 2018/11/26 | [ディレクトリ同期のために非ルーティング ドメインの準備を整える](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | 変更 |
 | 2018/11/27 | [OneDrive for Business Multi-Geo の検索の構成](/Office365/Enterprise/configure-search-for-multi-geo) | 変更 |
 | 2018/11/27 | [単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | 変更 |
 | 2018/11/28 | [Microsoft クラウド接続の一般的な要素](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | 変更 |
@@ -104,3 +85,12 @@
 | 2018/12/7 | [Exchange オンラインで複数の地域の機能](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | 変更 |
 | 2018/12/7 | [OneDrive for Business 複数地域テナントの構成](/Office365/Enterprise/multi-geo-tenant-configuration) | 変更 |
 | 2018/12/7 | [OneDrive for Business Multi-Geo の計画](/Office365/Enterprise/plan-for-multi-geo) | 変更 |
+
+
+## <a name="week-of-december-10-2018"></a>、2018 年 12 月 10 日の週
+
+
+| 発行日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 2018/12/10 | [Microsoft クラウド接続のためのExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 変更 |
+| 2018/12/10 | [Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | 変更 |

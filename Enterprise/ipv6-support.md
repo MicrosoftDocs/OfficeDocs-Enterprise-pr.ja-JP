@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: は、Microsoft Office 365 コンポーネントと Office 365 の政府サービスの IPv6 のサポートについて説明します。'
-ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
-ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
+ms.openlocfilehash: 75ed1c8ffe96ed1b09aa8802e11ae195ad60a4f2
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25493832"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294467"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 サービスでの IPv6 サポート
 
@@ -51,9 +51,7 @@ SharePoint Online への接続に使用するプログラムでは、IPv6 をサ
   
 ### <a name="skype-for-business-and-ipv6"></a>ビジネスと IPv6 の Skype
 
-マイクロソフトはマルチ テナント型のパブリック クラウドと Office 365 政府 G1/G3/G4 と K1 のサブスクリプションでは、ご要望のビジネス用の Skype の IPv6 を有効になります。それを有効にする、ビジネスの Skype への接続に使用するプログラムは、IPv6 をサポートしている場合、既定で IPv6 を使用します。ビジネス用の Skype への通信を制御する場合は、 [Office 365 の Url と IP アドレスの範囲](https://go.microsoft.com/fwlink/?LinkId=293744)の IP アドレスの範囲を使用します。
-  
-IPv6 は、すべての地域では利用可能ではありませんし、マイクロソフトは、この時点で、テナントのアクティブ化できない場合があります注意してください。
+IPv6 は、ビジネスの Skype ではサポートされていません、有効になっていないことに注意してください。
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection と IPv6
 

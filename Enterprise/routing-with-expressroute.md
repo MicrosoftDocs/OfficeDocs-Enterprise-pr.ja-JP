@@ -3,7 +3,7 @@ title: Office 365 向け ExpressRoute でのルーティング
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/7/2017
+ms.date: 12/14/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure ExpressRoute を使用して Office 365 にトラフィックのルーティングを正しく理解するには、主要な ExpressRoute ルーティング要件を満たす ExpressRoute の回路とルーティング ドメインを確実に把握する必要があります。これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトします。
-ms.openlocfilehash: e80ce78c0b229881349a4d02c7708fb9509748a9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d8fa0c606a5aedd3760236cb46bcf9e1c584ecb8
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541560"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294477"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
@@ -53,13 +53,11 @@ ExpressRoute またはインターネット経由で Office 365 への接続を�
   
 Office 365 から、オンプレミスのネットワークへの通信を開始する場所のシナリオを次に示します。ネットワークの設計を簡素化、インターネット パス上でこれらのルーティングをお勧めします。
   
+- 設置型のホストに Exchange Online のテナントからのメールや SharePoint Online から、設置型のホストに送信される SharePoint のオンライン メールなどの SMTP サービスです。ルート プレフィックスは、ExpressRoute の回路を共有し、広告の設置型 ExpressRoute 経由で SMTP サーバーはエラーが発生これらの他のサービスよりもさらに広げて SMTP プロトコルを使用し、Microsoft のネットワーク内では。
+
 - サインインのパスワードの検証中に ADFS。
 
 - [Exchange Server のハイブリッド展開](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)します。
-
-- 設置型のホストに Exchange Online のテナントからのメール.
-
-- オンライン メールの SharePoint は、SharePoint Online の設置型のホストに送信します。
 
 - [SharePoint は、ハイブリッドの検索を統合](https://technet.microsoft.com/library/dn197174.aspx)します。
 
@@ -69,7 +67,13 @@ Office 365 から、オンプレミスのネットワークへの通信を開始
 
 - [Skype ビジネス クラウド コネクタ](https://technet.microsoft.com/library/mt605227.aspx )です。
 
-これらの双方向のトラフィック フローのネットワークにルーティングするのにはマイクロソフトは、マイクロソフトと、設置型デバイスに BGP 経路を共有する必要があります。
+これらの双方向のトラフィック フローのネットワークにルーティングするのにはマイクロソフトは、マイクロソフトと、設置型デバイスに BGP 経路を共有する必要があります。ExpressRoute 経由でマイクロソフトにルートのプレフィックスをアドバタイズすると、これらのベスト プラクティスに従う必要があります。
+
+1) 同じパブリック IP アドレスのルート プレフィックス パブリック インターネットと ExpressRoute の上をアドバタイズしません。アドバタイズされませんインターネットにすべての範囲から ExpressRoute 経由でマイクロソフトに IP BGP 経路のプレフィックスのアドバタイズしていることをお勧めします。これが利用可能な IP アドレス空間のために達成するために不可能な場合は、ExpressRoute 経由でのインターネット接続よりもより特定の範囲を提供することを確認するために不可欠です。
+
+2) ExpressRoute 回路ごとに別の NAT の IP プールを使用し、インターネット回線の分離します。
+
+3) マイクロソフトに提供されるすべての工順でのルートをアドバタイズ ネットワークに ExpressRoute の上だけでなく、Microsoft のネットワークでは、任意のサーバーからのネットワーク トラフィックを惹きつけることに注意します。ルーティングのシナリオを定義して、チームでよく理解されている、サーバーへのルートをアドバタイズするだけです。ネットワークからの複数の ExpressRoute 回路のそれぞれに別の IP アドレスのルート プレフィックスを提供します。 
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>アプリケーションと機能は、ExpressRoute 経由でルーティングを決定します。
 
@@ -78,7 +82,7 @@ Microsoft ピアリング ルーティング ドメインを使用して、ピ�
 Office 365 のビデオ、その他のアプリケーションは、Office 365 アプリケーションです。ただし、Office 365 のビデオは、の 3 つの異なるコンポーネント、ポータル、ストリーミング サービス、およびコンテンツ配信ネットワークで構成されます。Azure のメディア サービスのストリーミング サービス生活 SharePoint Online 内でポータルが存在しており、Azure CDN でコンテンツ配信ネットワークが存在します。次の表では、これらのコンポーネントについて説明します。
   
 | |
-|**コンポーネント**|**アプリケーションの基になります。**|**SharePoint オンライン BGP のコミュニティに含まれますか。**|**使用法**|
+|**コンポーネント**|**アプリケーションの基になります。**|**SharePoint オンライン BGP のコミュニティに含まれますか。**|**使用する方法**|
 |:-----|:-----|:-----|:-----|
 |Office 365 ビデオ ポータル  <br/> |SharePoint Online  <br/> |はい  <br/> |構成]、[アップロード  <br/> |
 |Office 365 のビデオのストリーミング サービス  <br/> |Azure Media Services  <br/> |いいえ  <br/> |ストリーミング ビデオでは、CDN からイベントに使用されるサービス  <br/> |
@@ -222,7 +226,7 @@ ExpressRoute で選択したルーティングできなくなるさまざまな�
 
 4. **BGP コミュニティ**- [BGP コミュニティ タグ](https://aka.ms/bgpexpressroute365)に基づいてフィルタ リングは、特定の Office 365 アプリケーションが ExpressRoute を通過し、インターネット上をスキャンする、顧客を使用できます。
 
-戻るを使用することができます短いリンクを以下に示します。[https://aka.ms/erorouting](https://aka.ms/erorouting)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>関連項目
 
@@ -234,15 +238,15 @@ ExpressRoute で選択したルーティングできなくなるさまざまな�
   
 [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
   
-[Office 365 向け ExpressRoute での実装](implementing-expressroute.md)
+[Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
   
-[メディアの品質とオンライン ビジネスの Skype でのネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Skype のオンライン ビジネスのネットワークを最適化します。](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Skype for Business Online 向けのネットワークの最適化](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute とオンライン ビジネスの Skype での QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute を使用して通話フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [ExpressRoute に BGP のコミュニティを使用して Office 365 シナリオ](bgp-communities-in-expressroute.md)
   
@@ -250,6 +254,6 @@ ExpressRoute で選択したルーティングできなくなるさまざまな�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL と IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Office 365 のネットワークとパフォーマンスの調整](network-planning-and-performance.md)
+[Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
