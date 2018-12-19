@@ -4,19 +4,19 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/27/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 description: '現代の認証より安全なユーザー認証と承認を提供する id 管理の方法です。ビジネス サーバー設置型 Exchange サーバー設置とビジネスの混成のドメインを分割 Skype の Skype のハイブリッド展開で使用可能になります。この資料へのリンクでは、ドキュメントに関する最新の認証のセットアップと無効化の前提条件と関連するクライアント (例: Outlook、Skype クライアント) の情報の一部に関連します。'
-ms.openlocfilehash: 3d510c6d3e9f8ff885279dc008eeefb5d1014639
-ms.sourcegitcommit: 2ffe998e58ce1466366d697d99f0dd3e85b0605c
+ms.openlocfilehash: c10e5660d43ccce50497fccfd9d830d31ac07d55
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23240592"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371111"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド現代の認証の概要とビジネスと Exchange サーバーの設置型の Skype で使用するための前提条件
 
@@ -51,7 +51,8 @@ ms.locfileid: "23240592"
   
 ビジネス用の Skype は、Exchange と緊密に動作をするためのログイン動作 Skype ビジネス クライアントのユーザーが参照してくださいの影響を受ける Exchange の最新の認証状態があります。これは、ビジネス ドメインを分割ハイブリッドに、Skype がある場合にも適用されます。また、Skype の最新の認証の使用をサポートしているビジネスのハイブリッドの種類とも呼ばれます、' 分割ドメイン ' (分割・ ドメインで、ビジネス オンラインの Skype とのビジネス上の prem、Skype の両方があり、ユーザーが両方の場所に置かれている)。
   
- **重要です**2017 年 8 月の現在オンライン ビジネスの Skype を含めるし、オンラインで交換できるすべての新しい Office 365 テナントが現代の認証が既定で有効になっているとご存知ですか。既存のテナントでは、既定の MA 状態の変更がありませんが、すべての新しいテナントは、上記を参照してくださいユーザー機能の拡張セットを自動的にサポートします。オンライン ビジネスの Skype の MA の状態を確認するには、グローバル管理者の資格情報を持つビジネス オンラインの PowerShell の Skype を使用できます。' Get CsOAuthConfiguration' - ClientADALAuthOverride の出力を確認するを実行します。-ClientADALAuthOverride が可能な場合' '、現在の認証には。 
+> [!IMPORTANT]
+> 2017 年 8 月の現在オンライン ビジネスの Skype を含めるし、オンラインで交換できるすべての新しい Office 365 テナントが現代の認証が既定で有効になっているとご存知ですか。既存のテナントでは、既定の MA 状態の変更がありませんが、すべての新しいテナントは、上記を参照してくださいユーザー機能の拡張セットを自動的にサポートします。オンライン ビジネスの Skype の MA の状態を確認するには、グローバル管理者の資格情報を持つビジネス オンラインの PowerShell の Skype を使用できます。実行`Get-CsOAuthConfiguration`- ClientADALAuthOverride の出力を確認します。-ClientADALAuthOverride が可能な場合' '、現在の認証には。 
   
 ## <a name="what-changes-when-i-use-modern-authentication"></a>現代の認証を使用すると、変更は何ですか。
 <a name="BKMK_WhatChanges"> </a>
@@ -66,12 +67,13 @@ EvoSTS への変更は、活用する OAuth (トークンの発行)、クライ�
   
 何が変わらないか。分割ドメイン ハイブリッドまたは Skype を使用して、ビジネスおよび Exchange サーバーの設置型の中には、かどうかすべてのユーザーは最初*設置*を認証する必要があります。認証の最新のハイブリッド実装では、Lyncdiscovery 自動検出は、オンプレミスのサーバーをポイントします。 
   
- **重要です**MA でサポートされているビジネス ・ トポロジーの特定の Skype を知っている場合は、[右側には、ここに記載されている](https://technet.microsoft.com/en-us/library/mt803262.aspx)です。
+> [!IMPORTANT]
+> MA でサポートされているビジネス ・ トポロジーの特定の Skype を知っている場合は、[右側には、ここに記載されている](https://technet.microsoft.com/en-us/library/mt803262.aspx)です。
   
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>オンプレミス環境の最新の認証状態を確認します。
 <a name="BKMK_CheckStatus"> </a>
 
-現代の認証は、サービスが OAuth と S2S を活用するときに使用される認証サーバーを変更、ためには、最新の認証がオンまたはオフのビジネス環境、Skype の知っている必要があります。PowerShell で Get CSOAuthConfiguration コマンドを実行することによって、ビジネス上のサーバーを設置型では、Exchange または Skype のステータスを確認できます。コマンドには、空の 'OAuthServers' プロパティが返されます、現代の認証が無効です。
+現代の認証は、サービスが OAuth と S2S を活用するときに使用される認証サーバーを変更、ためには、最新の認証がオンまたはオフのビジネス環境、Skype の知っている必要があります。ビジネス上のサーバーを設置型では、Exchange または Skype のステータスをチェックするには実行することによって、`Get-CSOAuthConfiguration`の PowerShell コマンドです。コマンドには、空の 'OAuthServers' プロパティが返されます、現代の認証が無効です。
   
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>現代の認証の前提条件を満たしているか。
 
@@ -85,35 +87,28 @@ EvoSTS への変更は、活用する OAuth (トークンの発行)、クライ�
     
   - SIP ドメインが Office 365 のフェデレーション ドメインとして追加されます。
     
-  - すべてデバイス フロント エンドと、インターネットには、Office 365 認証 Url (TCP 443) とよく知られている証明書のルート Crl (TCP 80) の送信接続の行の 1 と 2 [Office 365 の Url と IP の [Office 365 の認証と識別情報] セクションに記載されている必要があります。アドレス範囲](https://www.bing.com/search?q=%22Office+365+URLs+and+IP+address+ranges%22&amp;src=IE-SearchBox&amp;FORM=IESR3N&amp;redir=5&amp;itrid=96B6C7422F9F4019B37C1B7FDAF8831E)。
+  - Office 365 認証 Url (TCP 443) に、インターネットへの送信接続を持つ必要がありますすべてデバイス フロント エンドし、Office 365 の Url と IP 行 56 と ' 365 一般的な Microsoft Office オンライン '」の[の 125 でよく知られている証明書のルート Crl (TCP 80) が表示されます。アドレス範囲](urls-and-ip-address-ranges.md)。
     
  **メモ**ビジネスのフロント エンド サーバーについて、Skype は、インターネット アクセスにプロキシ サーバーを使用、する場合は、各フロント エンド用の web.config ファイルの構成セクションで使用されるプロキシ サーバーの IP とポート番号を入力してください。 
   
-- ビジネス サーバー 2015\Web Components\Web ticket\int\web.config の c:\program files\Skype
+- ビジネス サーバー ・ 2015\Web ・ Components\Web の C:\Program Files\Skype ticket\int\web.config
     
-- ビジネス サーバー 2015\Web Components\Web ticket\ext\web.config の c:\program files\Skype
+- ビジネス サーバー ・ 2015\Web ・ Components\Web の C:\Program Files\Skype ticket\ext\web.config
     
-- \</system.identityModel.services\>
+```xml
+<system.identityModel.services>
+  <system.net>
+    <defaultProxy>
+      <proxy
+        proxyaddress="http://192.168.100.60:8080"
+        bypassonlocal="true" />
+    </defaultProxy>
+  </system.net>
+</system.identityModel.services>
+```
     
-     \<system.net\> 
-    
-     \<defaultProxy\> 
-    
-     \<プロキシ 
-    
-     メタベース ="http://192.168.100.60:8080" 
-    
-     bypassonlocal ="true" 
-    
-     /\> 
-    
-     \</defaultProxy\> 
-    
-     \</system.net\> 
-    
-    \<設定\>
-    
- **重要です**[Office 365 の Url と IP アドレスの範囲](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)に必要な Url の最新の番組で最新の RSS フィードを購読することを確認します。 
+> [!IMPORTANT]
+> [Office 365 の Url と IP アドレスの範囲](urls-and-ip-address-ranges.md)に必要な Url の最新の番組で最新の RSS フィードを購読することを確認します。 
   
 - **Exchange Server の特定**
     
