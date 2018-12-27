@@ -3,24 +3,6 @@
 
 
 
-## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日の週
-
-
-| 発行日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 2018/11/14 | [Microsoft クラウド接続のためのExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 変更 |
-| 2018/11/14 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 変更 |
-| 2018/11/15 | [OneDrive for Business 複数地域テナントの構成](/Office365/Enterprise/multi-geo-tenant-configuration) | 変更 |
-| 2018/11/16 | [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | 変更 |
-| 2018/11/16 | [OneDrive for Business 複数地域テナントの構成](/Office365/Enterprise/multi-geo-tenant-configuration) | 変更 |
-| 2018/11/16 | [SharePoint Online のナビゲーション オプション](/Office365/Enterprise/navigation-options-for-sharepoint-online) | 変更 |
-| 2018/11/16 | 新規に構築 | 削除 |
-| 2018/11/16 | Microsoft クラウドのストレージを設計する | 削除 |
-| 2018/11/16 | エンタープライズ アーキテクトのための Microsoft クラウド ストレージ | 削除 |
-| 2018/11/16 | いつでも使用可能 | 削除 |
-| 2018/11/16 | いくらかのアセンブリが必要 | 削除 |
-
-
 ## <a name="week-of-november-19-2018"></a>、2018 年 11 月 19 日の週
 
 
@@ -94,3 +76,17 @@
 |------|------------|--------|
 | 2018/12/10 | [Microsoft クラウド接続のためのExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 変更 |
 | 2018/12/10 | [Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | 変更 |
+
+
+## <a name="week-of-december-17-2018"></a>、2018 年 12 月 17 日の週
+
+
+| 発行日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 2018/12/17 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 変更 |
+| 2018/12/17 | [Office 365 サービスでの IPv6 サポート](/Office365/Enterprise/ipv6-support) | 変更 |
+| 2018/12/18 | [ハイブリッド現代の認証の概要とビジネスと Exchange サーバーの設置型の Skype で使用するための前提条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 変更 |
+| 2018/12/18 | [Office 365 へのディレクトリ同期を通してユーザーをプロビジョニングするための準備](/Office365/Enterprise/prepare-for-directory-synchronization) | 変更 |
+| 2018/12/19 | [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 変更 |
+| 2018/12/19 | [Office 365 のセッションのタイムアウト](/Office365/Enterprise/session-timeouts) | 変更 |
+| 2018/12/20 | [サポート ロードマップの Exchange 2010 の終了](/Office365/Enterprise/exchange-2010-end-of-support) | 変更 |
