@@ -3,7 +3,7 @@ title: Office 365 PowerShell でライセンスとサービスを確認する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/17/2018
+ms.date: 12/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
+ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601631"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466876"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
@@ -29,9 +29,9 @@ ms.locfileid: "25601631"
   
 Office 365 サブスクリプションは、すべて以下の要素で構成されます。
 
-- **ライセンス プラン**ライセンス プランまたは Office 365 プランとも呼ばれます。ライセンス プランでは、ユーザーが利用可能な Office 365 サービスを定義します。Office 365 サブスクリプションには、複数のライセンス プランが含まれる場合があります。たとえば、Office 365 Enterprise E3 というライセンス プランがあります。
+- **ライセンス プラン**これらは、Office 365 のプランやライセンスの計画とも呼ばれます。ライセンス プランでは、ユーザーに利用可能な Office 365 サービスを定義します。Office 365 サブスクリプションにはライセンスの複数の計画が含まれます。例のライセンスについては、Office 365 エンタープライズ E3 になります。
     
-- **サービス**サービス プランとも呼ばれます。サービスとは、各ライセンス プランで利用可能な Office 365 製品および機能のことで、たとえば、Exchange Online や Office Professional Plus があります。ユーザーは、さまざまなサービスへのアクセスを許可するさまざまなライセンス プランから割り当てられた複数のライセンスを持つことができます。
+- **サービス**これらは、サービス プランとも呼ばれます。サービスは、Office 365 の製品、機能、および使用可能な機能で、各ライセンス プランなどの Exchange Online と Office Professional Plus です。ユーザーには、複数のライセンスが割り当てられているさまざまなサービスへのアクセスを許可するさまざまなライセンス プランからことができます。
     
 - **ライセンス** すべてのライセンス プランには、購入した数のライセンスが含まれています。ライセンスをユーザーに割り当てると、ライセンス プランで定義した Office 365 サービスが使えるようになります。それぞれのユーザー アカウントに、少なくとも 1 つのライセンス プランからの 1 つのライセンスが必要です。これにより、ユーザーが Office 365 にログオンして、サービスを利用することができます。
     
@@ -41,7 +41,7 @@ Office 365 PowerShell を使って、Office 365 組織で利用可能なライ�
 
 - このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
     
-- このトピックで説明されている手順を自動化する PowerShell スクリプトが利用可能です。具体的に言うと、このスクリプトにより、Office 365 組織のサービス (Sway を含む) を表示し、無効化できます。詳細については、「[Office 365 PowerShell を使った Sway へのアクセスを無効にする](disable-access-to-sway-with-office-365-powershell.md)」をご覧ください。
+- PowerShell スクリプトが利用可能なこのトピックで説明する手順を自動化します。具体的には、スクリプトでは、表示し、影響を与えるを含む、Office 365 の組織でサービスを無効にすることができます。詳細については、 [Office 365 の PowerShell で影響を与えるへのアクセスを無効にする](disable-access-to-sway-with-office-365-powershell.md)を参照してください。
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>ライセンス プランと利用可能なライセンスに関する情報を確認する
 

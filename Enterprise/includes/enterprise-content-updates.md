@@ -3,16 +3,6 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>、2018 年 11 月 19 日の週
-
-
-| 発行日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 2018/11/19 | [PerformancePoint Server 2007 のサポート終了ロードマップ](/Office365/Enterprise/pps-2007-end-of-support) | 変更 |
-| 2018/11/19 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 変更 |
-| 2018/11/19 | [Office 365 管理者向けの統合アプリおよび Azure AD](/Office365/Enterprise/integrated-apps-and-azure-ads) | 変更 |
-
-
 ## <a name="week-of-november-26-2018"></a>、2018 年 11 月 26 日の週
 
 
@@ -90,3 +80,10 @@
 | 2018/12/19 | [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 変更 |
 | 2018/12/19 | [Office 365 のセッションのタイムアウト](/Office365/Enterprise/session-timeouts) | 変更 |
 | 2018/12/20 | [サポート ロードマップの Exchange 2010 の終了](/Office365/Enterprise/exchange-2010-end-of-support) | 変更 |
+
+
+## <a name="week-of-december-24-2018"></a>、2018 年 12 月 24 日の週
+
+
+| 発行日 |トピックのタイトル | 変更 |
+|------|------------|--------|
