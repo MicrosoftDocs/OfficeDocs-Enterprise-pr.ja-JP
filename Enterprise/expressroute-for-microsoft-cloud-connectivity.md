@@ -3,7 +3,7 @@ title: Microsoft クラウド接続のためのExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470169"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -96,25 +96,19 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Microsoft クラウド サービスへの ExpressRoute ピアリング関係
 
-1 つの ExpressRoute 接続では、Microsoft クラウドの異なる部分とのボーダー ゲートウェイ プロトコル (BGP) ピアリング関係を最大 3 つまでサポートします。BPG では、信頼を確立してルーティング情報を交換するために、ピアリング関係を使用します。
+ExpressRoute の単一の接続を 2 つの罫線ゲートウェイ プロトコル (BGP) ピアリング関係が異なるマイクロソフト クラウドのさまざまな部分をサポートしています。BPG は、ピアリング関係を使用して信頼を確立し、ルーティング情報を交換します。
   
-**図 3: 単一の ExpressRoute 接続が対応する 3 つの異なる BGP 関係**
+**図 3: 2 つ異なる BGP の関係で 1 つの ExpressRoute 接続**
 
-![図 3: 単一の ExpressRoute 接続が対応する 3 つの異なる BGP 関係](media/Network-Poster/ERPeering.png)
+![図 3: 2 つ異なる BGP の関係で 1 つの ExpressRoute 接続](media/Network-Poster/ERPeering.png)
   
-図 3 は、オンプレミスのネットワークから、ExpressRoute の接続を示しています。ExpressRoute 接続では、3 つの論理ピアリング関係があります。マイクロソフトのピアリング関係は、マイクロソフトの SaaS などのサービスを Office 365 Dynamcs CRM Online に移動します。パブリック ピアリング関係は、Azure PaaS サービスに移動します。プライベート ピアリング関係は、Azure IaaS と仮想マシンをホストする仮想ネットワークのゲートウェイに送られます。
+図 3 は、オンプレミスのネットワークから、ExpressRoute の接続を示しています。ExpressRoute の接続には、2 つの論理ピアリング関係があります。マイクロソフトのピアリング関係は、Office 365、Dynamcs 365、Azure PaaS のサービスを含め、マイクロソフトの SaaS のサービスに移動します。プライベート ピアリング関係は、Azure IaaS と仮想マシンをホストする仮想ネットワークのゲートウェイに送られます。
   
 Microsoft ピアリング BGP 関係: 
   
-- DMZ のルーターから Office 365 および Dynamics 365 サービスのパブリック アドレスに向けられています。 
+- Office 365、Dynamics 365 では、Azure のサービスのパブリック アドレスは、DMZ 内のルーターからです。 
     
 - 双方向で開始される通信をサポートします。
-    
-パブリック ピアリング BGP 関係:
-  
-- DMZ のルーターから Azure サービスのパブリック IP アドレスに向けられています。
-    
-- 双方向で開始されないオンプレミスのシステムからのみの通信をサポートします。このピアリング関係は、Azure PaaS サービスから開始される通信をサポートしません。
     
 プライベート ピアリング BGP 関係:
   
@@ -123,6 +117,10 @@ Microsoft ピアリング BGP 関係:
 - 双方向で開始される通信をサポートします。
     
 - 組織のネットワークのMicrosoft クラウドへの拡張であり、内部的に一貫したアドレス指定とルーティングを備えています。
+
+>[!Note]
+>この資料の以前のバージョンで記載されているパブリックのピアリング BGP 関係は廃止されました。
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>ExpressRoute によるアプリケーション展開とトラフィック フローの例
 
@@ -250,7 +248,7 @@ ExpressRoute の展開には、次に示すオプションを組み込むこと�
   
 - **エッジでのセキュリティ:** ExpressRoute 接続を通じて送受信されるトラフィックに高度なセキュリティ (トラフィック検査や侵入/マルウェア検出など) を提供するには、DMZ 内のトラフィック パスまたはインターネット境界にセキュリティ アプライアンスを配置します。
     
-    VM のインターネット トラフィック: インターネットの場所で Azure VM が直接開始されないようにするために、Microsoft への既定のルートを公開します。インターネットへのトラフィックは、ExpressRoute 接続を経由して、オンプレミスのプロキシ サーバーを通過するようにルーティングされます。Azure VM から Azure PaaS サービスや Office 365 へのトラフィックは、ExpressRoute 接続を経由して戻るようにルーティングされます。
+- **Vm 用のインターネット トラフィック:** Azure の仮想マシンがインターネット上の場所に直接トラフィックを開始することを防ぐためには、Microsoft の既定のルートをアドバタイズします。インターネットへのトラフィックは、ExpressRoute 接続を経由し、オンプレミスのプロキシ サーバー経由でルーティングされます。Azure PaaS サービスまたは Office 365 に Azure の仮想マシンからのトラフィックは、ExpressRoute 接続経由でルーティングされます。
     
 - **WAN オプティマイザー:** クロスプレミス Azure 仮想ネットワーク (VNet) のプライベート ピアリング接続の両側に WAN オプティマイザーを展開できます。Azure VNet の内部では、Azure マーケットプレースから得られる WAN オプティマイザー ネットワーク アプライアンスと、トラフィックがアプライアンスを通過するようにルーティングするユーザー定義のルーティングを使用します。
     
