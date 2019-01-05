@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '概要: 表示、リスト、または Office 365 の PowerShell でのさまざまな方法でユーザー アカウントを表示します。'
-ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546528"
+ms.locfileid: "27730322"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントを表示する
 
@@ -55,10 +55,16 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>特定のアカウントを表示します。
 
-特定のユーザー アカウントを表示するには、ユーザー アカウントのユーザー プリンシパル名 (UPN) を入力、削除、"<"と">"文字、および次のコマンドを実行します。
+呼ばれるユーザー プリンシパル名 (UPN)、ユーザー アカウントのアカウントでサインイン名を入力を削除する特定のユーザー アカウントを表示するに、"<"と">"文字、および次のコマンドを実行します。
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account>
+Get-AzureADUser -ObjectID <sign-in name of the user account>
+```
+
+次に例を示します。
+  
+```
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>特定のアカウントの追加のプロパティの値を表示します
@@ -80,13 +86,13 @@ Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 すべてのユーザー アカウントのプロパティを表示するには、 **Select-object**コマンドレット、ワイルドカード文字 (*) を特定のユーザー アカウントのすべてを表示するのに使用します。例を以下に示します。
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 別の例としては、次のコマンドを使用して特定のユーザー アカウントの有効な状態をチェックできます。
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>一般的なプロパティに基づいていくつかのアカウントを表示します。
@@ -106,7 +112,7 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 **UsageLocation**プロパティは、ユーザー アカウントに関連付けられている多くのプロパティの 1 つだけです。すべてのユーザー アカウントのプロパティを表示するには、 **Select-object**コマンドレット、ワイルドカード文字 (*) を特定のユーザー アカウントのすべてを表示するのに使用します。例を以下に示します。
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 たとえば、この一覧で、**City** がユーザー アカウント プロパティの名前であるとします。つまり、以下のコマンドを使用すると、ロンドン在住のユーザーのユーザー アカウントすべての一覧を表示できます。
@@ -164,10 +170,10 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ### <a name="view-a-specific-account"></a>特定のアカウントを表示します。
 
-特定のユーザー アカウントを表示するには、ユーザー アカウントのユーザー プリンシパル名 (UPN) を入力、削除、"<"と">"文字、および次のコマンドを実行します。
+呼ばれるユーザー プリンシパル名 (UPN)、ユーザー アカウントのユーザー アカウントのサインイン名を入力を削除する特定のユーザー アカウントを表示するに、"<"と">"文字、および次のコマンドを実行します。
   
 ```
-Get-MsolUser -UserPrincipalName <UPN of user account>
+Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>一般的なプロパティに基づいていくつかのアカウントを表示します。
@@ -197,7 +203,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 **UsageLocation**プロパティは、ユーザー アカウントに関連付けられている多くのプロパティの 1 つだけです。すべてのユーザー アカウントのプロパティを表示するには、 **Select-object**コマンドレット、ワイルドカード文字 (*) を特定のユーザー アカウントのすべてを表示するのに使用します。例を以下に示します。
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 たとえば、この一覧で、**City** がユーザー アカウント プロパティの名前であるとします。つまり、以下のコマンドを使用すると、ロンドン在住のユーザーのユーザー アカウントすべての一覧を表示できます。
@@ -254,7 +260,7 @@ Scott Wallace           Operations
 **Select-object**コマンドレットでは、目的のプロパティを表示するコマンドを選択することができます。すべてのユーザー アカウントのプロパティを参照してくださいするのにには、特定のユーザー アカウントのすべてを表示するのにはワイルドカード文字 (*) を使用します。例を以下に示します。
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 アカウントの一覧をより選択的に表示する場合には、**Where-object** コマンドレットも使用できます。次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。

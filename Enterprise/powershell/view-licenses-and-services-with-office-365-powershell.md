@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-ms.openlocfilehash: e4c4a0570cafd3d9cb775dd99c5f75da613715e3
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546538"
+ms.locfileid: "27730332"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 結果には次の情報が含まれます。
   
-- **SkuPartNumber:** 組織の利用可能なライセンス プランを表示する > などの`ENTERPRISEPACK`は、Office 365 エンタープライズ E3 のシステム名。
+- **SkuPartNumber:** 組織の利用可能なライセンス プランを示しています。たとえば、`ENTERPRISEPACK`は、Office 365 エンタープライズ E3 のシステム名です。
     
 - **を有効にします**。特定のライセンスについては購入したライセンスの数です。
     
