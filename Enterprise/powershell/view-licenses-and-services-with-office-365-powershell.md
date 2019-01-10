@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
-ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
+ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
+ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27730332"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "27786153"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
@@ -38,9 +38,9 @@ Office 365 サブスクリプションは、すべて以下の要素で構成さ
 Office 365 PowerShell を使って、Office 365 組織で利用可能なライセンス プラン、ライセンス、およびサービスに関する詳細を確認することができます。別の Office 365 サブスクリプションで利用可能な製品、機能、サービスについての詳細は、「[Office 365 プランのオプション](https://go.microsoft.com/fwlink/p/?LinkId=691147)」を参照してください。
 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory の PowerShell を使用して、グラフのモジュールの
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
-最初は[、Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 現在ライセンス計画と各プランの利用可能なライセンスについての概要情報を表示するには、次のコマンドを実行します。
   
@@ -71,7 +71,7 @@ $licenses = Get-AzureADSubscribedSku
 次に、特定のライセンス プランでサービスを表示します。
 
 ````
-$licenses[<index>].ServicePlan
+$licenses[<index>].ServicePlans
 ````
 
 \<インデックス > ライセンス プランの表示の行番号を指定する整数では、 `Get-AzureADSubscribedSku | Select SkuPartNumber` -1 のコマンドです。
@@ -90,16 +90,16 @@ FLOW_FREE
 ENTERPRISEPREMIUM ライセンス プランのサービスを表示するコマンドは、これです。
 
 ````
-$licenses[2].ServicePlan
+$licenses[2].ServicePlans
 ````
 
 ENTERPRISEPREMIUM は、3 番目の行です。したがって、インデックス値は (3-1) または 2 です。
 
 ライセンス プラン (製品の名前とも呼ばれます) が含まれているサービス プラン、および対応するフレンドリ名の一覧については、[製品の名前とライセンスのサービス プランの識別子](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)を参照してください。
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>モジュールを使用して、Microsoft Azure Active Directory Windows PowerShell の
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
 
-最初は[、Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 >[!Note]
 >PowerShell スクリプトが利用可能なこのトピックで説明する手順を自動化します。具体的には、スクリプトでは、表示し、影響を与えるを含む、Office 365 の組織でサービスを無効にすることができます。詳細については、 [Office 365 の PowerShell で影響を与えるへのアクセスを無効にする](disable-access-to-sway-with-office-365-powershell.md)を参照してください。
