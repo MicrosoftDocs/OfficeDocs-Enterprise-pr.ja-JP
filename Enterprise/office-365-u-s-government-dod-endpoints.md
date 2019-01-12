@@ -3,7 +3,7 @@ title: Office 365 の米国政府の DoD のエンドポイント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 01/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: '概要: Office 365 には、インターネットへの接続が必要です。次のエンドポイントは、Office 365 の米国政府の DoD のプランのみを使用して顧客に到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: d0a0bc820e5a202a09e438b4fba682e9ce309805
-ms.sourcegitcommit: e3fa9998321f6fa5d31217d107b672258993826e
+ms.openlocfilehash: 3809298c012d41126271c3eec0981b5a6b7415c9
+ms.sourcegitcommit: 79ffc3bfded032ee510b800426a0619e19e46915
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "27746127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27896377"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 の米国政府の DoD のエンドポイント
 
@@ -37,7 +37,7 @@ ms.locfileid: "27746127"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 01/07/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログの購読](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**をダウンロード:** 、 [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
+|**最終更新日:** 01/11/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログの購読](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**をダウンロード:** 、 [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
    
  このデータを使用してネットワーク接続を管理するための当社の推奨事項を理解するのには[Office 365 の管理するエンドポイント](managing-office-365-endpoints.md)を開始します。エンドポイントのデータは、毎月新規の IP アドレスとアクティブにする前に 30 日間の公開 Url の先頭に更新されます。これにより、自動的に新しい接続が要求される前に、プロセスを完了するのには更新しないとはまだのお客様です。エンドポイントのアドレスのサポートのエスカレーション、セキュリティの問題、またはその他の即時の運用上の要件が必要な場合、月の中に更新も可能です。REST ベースの web サービスからは、このページの下に表示されているデータすべてが生成されます。このデータにアクセスするスクリプト、またはネットワーク デバイスを使用している場合、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
 
