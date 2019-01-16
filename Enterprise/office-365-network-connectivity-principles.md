@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 のネットワーク接続のネットワークの計画を開始する前には、Office 365 のトラフィックを安全に管理すると、最高のパフォーマンスを取得する接続性の原則について理解する必要があります。この資料では Office 365 のネットワーク接続を安全に最適化するため、最新のガイダンスを理解できます。
-ms.openlocfilehash: be41162833a7442ac65af1e973a00923841fca6b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d319d99cdd413fe1df9e8f88d18742ad464bbb3b
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541677"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021808"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 ネットワーク接続の原則
 
@@ -54,8 +54,8 @@ Office 365 は多くの場合ミストかネットワーク プランナーが�
   
 ネットワーク設計の主な目的に Microsoft のグローバル ネットワーク、低レーテンシーとマイクロソフトのデータ センターのすべてを相互接続する Microsoft のパブリック ネットワークのバックボーン ネットワークの往復時間 (RTT) を減らすことで遅延を最小限にする必要があります。およびクラウド アプリケーションのエントリ ポイントが世界中に分散します。[マイクロソフトではどのように、高速かつ信頼性の高いグローバルなネットワークを構築するの](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)に Microsoft のグローバル ネットワークの詳細を学びます。
   
-### <a name="identify-and-differentiate-office-365-traffic"></a>識別し、Office 365 のトラフィックを区別します。
 <a name="BKMK_P1"> </a>
+### <a name="identify-and-differentiate-office-365-traffic"></a>識別し、Office 365 のトラフィックを区別します。
 
 ![Office 365 のトラフィックを識別します。](media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
@@ -67,10 +67,10 @@ Office 365 エンドポイントの分類と最適化の方法の詳細につい
   
 ここで、マイクロソフトは、Office 365 のすべてのエンドポイントを web サービスとして公開し、このデータを使用する最適な方法に関するガイダンスを示します。フェッチし、Office 365 エンドポイントを操作する方法の詳細については、「 [Office 365 の Url と IP アドレスの範囲](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)」を参照してください。
   
-### <a name="egress-network-connections-locally"></a>出口のネットワーク接続でローカルに
 <a name="BKMK_P2"> </a>
+### <a name="egress-network-connections-locally"></a>ネットワーク接続のローカルの出口を提供する
 
-![出口のネットワーク接続でローカルに](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![ネットワーク接続のローカルの出口を提供する](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 ローカル DNS とインターネットの出口では、接続の遅延時間を削減し、Office 365 サービスへのエントリの最も近いポイントへのユーザー接続が行われていることを確認の重要な要素です。複雑なネットワーク トポロジでは、ローカルの DNS およびローカルのインターネット出口の両方を一緒に実装するために重要ですが。エントリの最も近いポイントに、Office 365 がクライアントの接続をルーティングする方法の詳細については、「[クライアント接続](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)」を参照してください。
   
@@ -102,8 +102,8 @@ Office 365 を採用している企業を利用して Microsoft のグローバ�
 - ローカルの出口を許可することで企業のネットワーク インフラストラクチャへの負荷が軽減されます。
 - クライアント エンドポイント ・ セキュリティ、クラウドのセキュリティ機能を活用することにより、接続の両端を保護します。
 
-### <a name="avoid-network-hairpins"></a>ネットワーク hairpins を避けるため。
 <a name="BKMK_P3"> </a>
+### <a name="avoid-network-hairpins"></a>ネットワーク ヘアピンを回避する
 
 ![Hairpins を避けるため。](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
@@ -115,8 +115,8 @@ Office 365 を採用している企業を利用して Microsoft のグローバ�
   
 Office 365 のエントリ ポイントとエンド ・ ユーザーに自分の近くに分散した場所の数が多いため、サード パーティ製のネットワークまたはセキュリティ プロバイダーに Office 365 のトラフィックをルーティングできます悪影響がない Office 365 の接続のプロバイダーのネットワークがない場合最適な Office 365 のピアリングを構成します。
   
-### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>プロキシを使用しない、トラフィックの検査のデバイスと重複するセキュリティ テクノロジ
 <a name="BKMK_P4"> </a>
+### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>プロキシを使用しない、トラフィックの検査のデバイスと重複するセキュリティ テクノロジ
 
 ![プロキシを使用しない、トラフィックの検査のデバイスと重複するセキュリティ テクノロジ](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
@@ -124,8 +124,8 @@ Office 365 のエントリ ポイントとエンド ・ ユーザーに自分の
   
 ほとんどの企業ネットワークでは、プロキシ、SSL の検査、パケットの検査、およびデータの損失防止システムなどのテクノロジを使用してインターネット トラフィックのネットワーク セキュリティを適用します。これらのテクノロジでは、汎用のインターネット要求の重要なリスクの軽減を提供しますが、パフォーマンス、スケーラビリティ、および Office 365 エンドポイントに適用する場合のエンド ユーザー エクスペリエンスの質を大幅に減らすことができます。
   
-#### <a name="office-365-endpoints-web-service"></a>Office 365 エンドポイントの web サービス
 <a name="BKMK_WebSvc"> </a>
+#### <a name="office-365-endpoints-web-service"></a>Office 365 エンドポイントの web サービス
 
 Office 365 の管理者は、スクリプトを使用して、または Office 365 エンドポイントからエンドポイントの構造化された一覧を使用する他の呼び出しは、web サービスと、境界ファイアウォールの構成およびその他のネットワーク デバイスを更新します。これがいることを確認 Office 365 へのトラフィック識別、適切に扱われるジェネリックと多くの場合不明なインターネットの web サイトへのネットワーク トラフィックとは異なる方法で管理します。Web サービスを Office 365 のエンドポイントを使用する方法の詳細については、 [Office 365 の Url と IP アドレスの範囲](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)の資料を参照してください。
   
@@ -151,7 +151,7 @@ Office 365 エンドポイントは、ネットワーク アドレスとサブ�
   
 「前」の 3 Office 365 トラフィックを管理するためエンドポイントが、**必須**および**オプション**の 2 つカテゴリに編成しました。各カテゴリ内でエンドポイントが、サービスの重要度に応じて別の最適化を必要し、多くのお客様には、Office 365 の Url と IP アドレスの完全なリストに同じネットワーク最適化のアプリケーションの正当化に課題が直面しています。 
   
-**最適化**が**必要な**および**既定**で最適なパフォーマンスの向上を実現するネットワークの最適化作業をフォーカスがある場所の優先順位ベースのピボットを提供することの 3 つのカテゴリに、新しいモデルでは、エンドポイントの分離と投資を収益率です。端点は、上記のシナリオのネットワークの品質、ボリューム、およびパフォーマンスの封筒と実装の容易性に効果的なユーザー エクスペリエンスの感度に基づくカテゴリに統合されます。推奨される最適化には、カテゴリ内のすべてのエンドポイントに同じ方法を適用できます。
+**最適化****できるようにする****既定**の優先度ベースのピボットを提供する最適なパフォーマンスの向上を実現し、返すフォーカス ネットワークの最適化を行った場所で、次の 3 つのカテゴリに、新しいモデルでは、エンドポイントの分離します。投資収益率です。端点は、上記のシナリオのネットワークの品質、ボリューム、およびパフォーマンスの封筒と実装の容易性に効果的なユーザー エクスペリエンスの感度に基づくカテゴリに統合されます。推奨される最適化には、カテゴリ内のすべてのエンドポイントに同じ方法を適用できます。
   
 - **最適化**のエンドポイントは、すべての Office 365 サービスへの接続に必要なし、Office 365 の帯域幅、接続、およびデータの量の 75% を超える表現します。これらのエンドポイントは、最も機密性の高いネットワークのパフォーマンス、遅延時間、および可用性には、Office 365 シナリオを表しています。すべてのエンドポイントは、マイクロソフトのデータ センターでホストされています。このカテゴリ内のエンドポイントへの変更の頻度は、他の 2 つのカテゴリでのよりも小さく必要があります。このカテゴリには、Url と IP サブネットの定義済みセット専用の Exchange オンライン、SharePoint Online で Skype などのコア Office 365 のワークロードにビジネスをオンラインで、マイクロソフトのチームのキーの (10) の順序は非常に小さいセットが含まれています。
 
