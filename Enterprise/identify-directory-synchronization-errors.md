@@ -3,7 +3,6 @@ title: Office 365 のディレクトリ同期のエラーを表示します
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +16,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Office 365 管理センターのディレクトリ同期のエラーを表示する方法について説明します。
-ms.openlocfilehash: 62f1135568261eccf0e7e66b78c5aaff966c7281
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8beeeebbb24936abd7c93f4c04c0fa4e27c85c12
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541663"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327339"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Office 365 のディレクトリ同期のエラーを表示します
 
-Office 365 の管理センターでは、ディレクトリ同期のエラーを表示できます。ユーザー オブジェクトのエラーのみが表示されます。PowerShell を使用してエラーを表示するには、 [DirSyncProvisioningErrors を識別するオブジェクト](https://go.microsoft.com/fwlink/p/?LinkId=798300)を参照してください。
+Office 365 の管理センターでは、ディレクトリ同期のエラーを表示できます。ユーザー オブジェクトのエラーのみが表示されます。PowerShell を使用してエラーを表示するには、 [DirSyncProvisioningErrors を識別するオブジェクト](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)を参照してください。
 
 表示後、は、特定された問題を修正するのには[Office 365 のディレクトリ同期の問題を解決する](fix-problems-with-directory-synchronization.md)を参照してください。
   

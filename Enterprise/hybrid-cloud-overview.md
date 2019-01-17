@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。'
-ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123314"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327349"
 ---
 # <a name="hybrid-cloud-overview"></a>ハイブリッド クラウドの概要
 
@@ -79,7 +79,7 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
     
 - セキュリティ
     
-    ハイブリッド クラウド シナリオのセキュリティには、ID の保護と管理、データ保護、管理権限の管理、脅威の認識、およびガバナンスとセキュリティ ポリシーの実装が含まれます。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](https://technet.microsoft.com/library/dn919927.aspx#security)」を参照してください。
+    ハイブリッド クラウド シナリオのセキュリティには、ID の保護と管理、データ保護、管理権限の管理、脅威の認識、およびガバナンスとセキュリティ ポリシーの実装が含まれます。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](microsoft-cloud-it-architecture-resources.md#security)」を参照してください。
     
 - 管理
     
