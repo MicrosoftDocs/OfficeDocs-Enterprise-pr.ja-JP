@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL Web サービスに含まれないそ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/06/2018
+ms.date: 01/16/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: 65b425c7a94374e80fb9069ab831e7ab92de8313
-ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
+ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
+ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "26024669"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723374"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -53,13 +53,13 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 | 7  | [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) 空き時間情報の共有などの共存機能。 | 顧客のオンプレミス Exchange サーバーのバージョン | 受信サーバー トラフィック |
 | 8  | [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) プロキシ認証 | 顧客のオンプレミス STS | 受信サーバー トラフィック |
 | 9  | Exchange ハイブリッド構成ウィザードを使用して [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant)を構成する場合に使用します。 <br> 注: これらのエンドポイントは、Exchange ハイブリッドの構成にのみ必要です。  | TCP ポート 80 と 443 の ```domains.live.com``` は、Exchange 2010 SP3 ハイブリッド構成ウィザードでのみ必要です。 | 送信サーバー トラフィック |
-| 10  | AutoDetect サービスは、[iOS および Android 用の Outlook でハイブリッド先進認証](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)を行う [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) シナリオで使用します。 <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 顧客の TCP 443 のオンプレミス Exchange サーバー | 受信サーバー トラフィック |
+| 10  | AutoDetect サービスは、[iOS および Android 用の Outlook でハイブリッド先進認証](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)を行う [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) シナリオで使用します。 <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 顧客の TCP 443 のオンプレミス Exchange サーバー | 受信サーバー トラフィック |
 | 11  | Office 2016 の Skype for Business には、UDP ポートを使用するビデオ ベースの画面共有が含まれています。Office 2013 以前の Skype for Business クライアントでは、TCP ポート 443 経由で RDP を使用していました。 | TCP ポート 443 を 52.112.0.0/14 に開く | Office 2013 以前の Skype for Business の古いクライアント バージョン |
 | 12  | Skype for Business ハイブリッド オンプレミス サーバーから Skype for Business Online への接続性 | 13.107.64.0/18、52.112.0.0/14 UDP ポート 50,000-59,999 <BR>  TCP ポート 50,000-59,999 | Skype for Business オンプレミス サーバーの送信接続性 |
 | 13  | オンプレミスのハイブリッド接続を使用するクラウド PSTN では、オンプレミスのホストへのネットワーク接続を開く必要があります。Skype for Business Online のハイブリッド構成の詳細については、  | 「[Skype for Business ハイブリッド ソリューション](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions)」を参照してください | Skype for Business オンプレミス ハイブリッド受信 |
 | 14  | **認証と ID FQDN** <br> FQDN (```secure.aadcdn.microsoftonline-p.com```) を機能させるには、クライアントの Internet Explorer (IE) またはエッジの信頼済みサイト ゾーンに含める必要があります。 |  | 信頼済みサイト |
-| 15  |  **Microsoft Teams FQDN** <br> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および上記のテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](https://docs.microsoft.com/microsoftteams/known-issues)」を参照してください。 |  | 信頼済みサイト |
-| 16  |  **Sharepoint Online と OneDrive for Business FQDN** <br> “\<tenant>” が入ったすべての FQDN (“.sharepoint.com”) を機能させるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および上記のテレメトリに加えて、これらのエンドポイントも追加する必要があります。 |  | 信頼済みサイト |
+| 15  |  **Microsoft Teams FQDN** <br> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](https://docs.microsoft.com/microsoftteams/known-issues)」を参照してください。 |  | 信頼済みサイト |
+| 16  |  **Sharepoint Online と OneDrive for Business FQDN** <br> “\<tenant>” が入ったすべての FQDN (“.sharepoint.com”) を機能させるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加えて、これらのエンドポイントも追加する必要があります。 |  | 信頼済みサイト |
 | 17  | **Yammer**  <br> Yammer はブラウザーでのみ利用でき、認証されたユーザーはプロキシを経由する必要があります。Yammer のすべての FQDN をさせるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。 |  | 信頼済みサイト |
 
 ## <a name="related-topics"></a>関連項目
