@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839575"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604508"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -80,7 +80,7 @@ Office 365 管理センター のページにアクセスするには、左側�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-まだ、マイクロソフトのチームでは、マイクロソフトのチームのデータの常駐サービスが利用可能な国のデータ ・ センターを地域内の残りの部分にお客様のコンテンツの移行をサポートしていません。 そのため、新規のお客様だけではすべての国では、マイクロソフトのチームがデータの常駐サービスをサポートしている新しい領域に格納されているデータがあります。 貴社での Office 365 のデータの常駐サービスの詳細については[があるデータですか?](https://office/com/datamaps)   
+まだ、マイクロソフトのチームでは、マイクロソフトのチームのデータの常駐サービスが利用可能な国のデータ ・ センターを地域内の残りの部分にお客様のコンテンツの移行をサポートしていません。 そのため、新規のお客様だけではすべての国では、マイクロソフトのチームがデータの常駐サービスをサポートしている新しい領域に格納されているデータがあります。 貴社での Office 365 のデータの常駐サービスの詳細については[があるデータですか?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>移行をリクエストする前に選択可能なアクション
 
