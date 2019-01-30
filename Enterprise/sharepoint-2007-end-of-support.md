@@ -3,7 +3,7 @@ title: SharePoint Server 2007 のサポート終了ロードマップ
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: SharePoint Server 2007 のサポートは 2017 年 10 月 10 日に終了しました。アップグレード オプション、トラブルシューティング、ベスト プラクティス、システム要件、アップグレード手順、および Microsoft パートナーからサポートを受ける方法については、この記事をお読みください。
-ms.openlocfilehash: b548e7623a72d57793c18409a80506bb832df858
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: b0d3eda690733b45ee82054e145642a5c76125d5
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169799"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604518"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
@@ -60,7 +60,7 @@ Microsoft Office SharePoint Server 2007 のサポートは **2017 年 10 月 10 
 > [!TIP]
 > アップグレードまたは移行の計画をまだ行っていない場合は、「[考慮すべき SharePoint 2007 の移行オプション](sharepoint-2007-migration-options.md)」で、実施すべき作業の例を参照してください。アップグレードまたは Office 365 の移行 (あるいはその両方) を支援する [Microsoft パートナー](https://go.microsoft.com/fwlink/?linkid=841249)を検索することもできます。 
   
-Office 2007 のサーバーのサポート終了の詳細については、「[Office 2007 のサーバーのアップグレードを計画する](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx)」を参照してください。
+Office 2007 サーバーのサポート終了の詳細については、「[Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)」を参照してください。
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
