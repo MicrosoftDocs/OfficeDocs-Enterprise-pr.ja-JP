@@ -20,12 +20,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブなサービス中断がないかどうかをサポートに連絡する前に、Office 365 サービスの状態を表示します。
-ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
+ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651191"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29696354"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Office 365 サービスの正常性をチェックする方法
 
@@ -108,7 +108,7 @@ Office 365**サービスの状態**のページの管理センターでは、Off
    
 ## <a name="history"></a>[履歴]
 
-サービス正常性では現在の正常性の状態を確認し、過去 30 日間のサービスの勧告とインシデントの履歴を表示することができます。すべてのサービスの過去の正常性を表示するには、[ **サービス正常性**] ページで [ **履歴の表示**] を選択します。 
+サービスの稼働状態では、現在のヘルス ステータスを確認し、サービスの勧告や、過去 30 日間でのテナントに影響を与えるインシデントの履歴を表示することができます。過去のすべてのサービスの稼働状態を表示するには、ページで**サービスの状態****の履歴を表示する**を選択します。 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
