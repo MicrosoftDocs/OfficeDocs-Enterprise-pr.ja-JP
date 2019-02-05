@@ -3,7 +3,7 @@ title: Office 365 PowerShell でロールをユーザー アカウントに割�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/31/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,24 +14,58 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 概要:Office 365 PowerShell と Add-MsolRoleMember コマンドレットを使用して、ユーザー アカウントにロールを割り当てます。
-ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: '概要: Office 365 PowerShell を使用して、ロールをユーザー アカウントに割り当てます。'
+ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
+ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690438"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
 
- **概要:** Office 365 PowerShell と **Add-MsolRoleMember** コマンドレットを使用して、ユーザー アカウントにロールを割り当てます。
-  
-ユーザー アカウントの表示名とロール名を識別すれば、Office 365 PowerShell を使用してロールをユーザー アカウントに迅速かつ簡単に割り当てることができます。
-  
-## <a name="before-you-begin"></a>はじめに
+Office 365 PowerShell を使用すると、ロールをユーザー アカウントに迅速かつ簡単に割り当てることができます。
 
-このトピックの手順では、全体管理者アカウントを使用して Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
+
+最初に、全体管理者アカウントを使用して [Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
   
-## <a name="for-a-single-role-change"></a>単一ロールの変更の場合
+次に、ロールに追加するユーザー アカウントのサインイン名を判別します (例: fredsm@contoso.com)。サインイン名はユーザー プリンシパル名 (UPN) とも呼ばれます。
+
+その後、ロールの名前を判別します。以下のコマンドを使用して、PowerShell で割り当てることができるロールの一覧を表示できます。
+
+````
+Get-AzureADDirectoryRole
+````
+
+次に、サインイン名とロール名を入力し、次のコマンドを実行します。
+  
+```
+$userName="<sign-in name of the account>"
+$roleName="<role name>"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+完成したコマンド セットの例を以下に示します。
+  
+```
+$userName="belindan@contoso.com"
+$roleName="Lync Service Administrator"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+特定のロールのユーザー名の一覧を表示するには、次のコマンドを使用します。
+
+```
+$roleName="<role name>"
+Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
+
+最初に、全体管理者アカウントを使用して [Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+  
+### <a name="for-a-single-role-change"></a>単一ロールの変更の場合
 
 以下を判別します。
   
@@ -77,7 +111,7 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-## <a name="for-multiple-role-changes"></a>複数ロールの変更の場合
+### <a name="for-multiple-role-changes"></a>複数ロールの変更の場合
 
 以下を判別します。
   
@@ -105,7 +139,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-次に、DisplayName フィールドと RoleName フィールドが含まれるコンマ区切り値 (CSV) テキスト ファイルを作成します。次に例を示します。
+次に、DisplayName フィールドとロール名フィールドが含まれるコンマ区切り値 (CSV) テキスト ファイルを作成します。次に例を示します。
   
 ```
 DisplayName,RoleName
@@ -117,7 +151,7 @@ DisplayName,RoleName
 その後、PowerShell コマンド プロンプトで CSV ファイルの場所を入力し、完成したコマンドを実行します。
   
 ```
-$fileName="<path and file name of the input CSV file that contains the role changes, example: C:\admin\RoleUpdates.CSV>"
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
@@ -127,4 +161,3 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 - [Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
 - [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
-- [Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
