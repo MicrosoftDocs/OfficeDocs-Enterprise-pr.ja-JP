@@ -1,8 +1,8 @@
 ---
-title: PowerShell を使用して Office 365 のグループを管理します。
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: PowerShell で Office 365 グループを管理する
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: PowerShell のマイクロソフト内のグループの一般的な管理タスクを行うための手順を説明します。
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541753"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741230"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>PowerShell を使用して Office 365 のグループを管理します。
+# <a name="manage-office-365-groups-with-powershell"></a>PowerShell で Office 365 グループを管理する
 
  *最終更新 18 年 4 月、2018* 
   
@@ -35,15 +35,15 @@ PowerShell のマイクロソフト内のグループの一般的な管理タス
 
 - [Office 365 のグループへのアップグレードの配布リスト](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f.aspx)
     
-- [Office 365 のグループを作成できるユーザーを管理します。](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
+- [Office 365 グループを作成できるユーザーを管理する](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [Office 365 のグループへのゲスト アクセスを管理します。](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [Office 365 グループへのゲスト アクセスを管理する](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [Azure Active Directory での動的なグループを管理します。](https://go.microsoft.com/fwlink/?linkid=847632)
     
 - 数百または数千のユーザーを Office 365 のグループに追加、[追加 UnifiedGroupLinks コマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=616191)を使用します。
     
-### <a name="link-to-your-office-365-groups-usage-guidelines"></a>Office 365 のグループの使用方法のガイドラインへのリンクします。
+### <a name="link-to-your-office-365-groups-usage-guidelines"></a>Office 365 グループの使用に関するガイドラインへのリンク
 <a name="BK_LinkToGuideLines"> </a>
 
 ユーザー[を作成または Outlook 内のグループを編集](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)、表示できます、組織の使用方法のガイドラインへのリンクです。たとえば、特定のプレフィックスを必要とするか、グループ名に追加するサフィックスがある場合です。
@@ -92,7 +92,7 @@ Exchange 管理センターでにも実行できます。[「送信者」また�
 
 - コマンドレットを実行すると、ユーザーが **[差出人**] フィールドにグループの電子メール アドレスを追加することにより、グループとして送信するには、Outlook または Outlook web 上に移動できます。 
     
-### <a name="create-classifications-for-office-groups-in-your-organization"></a>組織で Office のグループの分類を作成します。
+### <a name="create-classifications-for-office-groups-in-your-organization"></a>組織の Office グループに対する分類を作成する
 
 組織内のユーザーが、Office 365 のグループを作成するときに設定する分類を作成します。などを作成するグループの「標準」、「秘密」、および「トップ シークレット」を設定するユーザーを許可できます。グループの分類は、既定で設定されていないし、それを設定するのには、ユーザーのために作成する必要があります。Azure Active Directory PowerShell を使用して、Office 365 のグループに対して、組織の使用方法のガイドラインをユーザーをポイントします。
   
@@ -126,7 +126,7 @@ Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact>
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-Exchange オンライン PowerShell を使用しての詳細については[Exchange Online に PowerShell を使用して](https://go.microsoft.com/fwlink/?LinkID=402831) [Exchange のオンライン PowerShell への接続](https://go.microsoft.com/fwlink/?LinkID=722415)を確認してください。 
+Exchange Online PowerShell の使い方の詳細については、「[Exchange Online による PowerShell の使用](https://go.microsoft.com/fwlink/?LinkID=402831)」および「[リモート PowerShell による Exchange への接続](https://go.microsoft.com/fwlink/?LinkID=722415)」をご覧ください。 
   
 これらの設定を有効にすると、グループの所有者が同じ outlook および Outlook のメニューのドロップダウンから分類を選択し、グループの**編集**] ページから保存することができます。 
   
@@ -204,7 +204,7 @@ Office 365 デフォルトでは、Outlook 内のグループをプライベー�
   
 ## <a name="office-365-groups-cmdlets"></a>Office 365 グループ コマンドレット
 
-次のコマンドレットでは、最近行った利用可能な Office 365 のグループにします。これらを使用できない場合、Office 365 サブスクリプションがまだ更新されていませんこの機能を持つ。メッセージ センターと[Office 365 のロードマップ](http://roadmap.office.com/en-us)を確認してください。
+次のコマンドレットでは、最近行った利用可能な Office 365 のグループにします。これらを使用できない場合、Office 365 サブスクリプションがまだ更新されていませんこの機能を持つ。メッセージ センターと[マイクロソフト 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を確認してください。
   
 |**コマンドレット名**|**説明**|
 |:-----|:-----|
