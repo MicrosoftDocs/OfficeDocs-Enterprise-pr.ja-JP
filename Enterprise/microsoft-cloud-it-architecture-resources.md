@@ -3,7 +3,6 @@ title: Microsoft クラウド IT アーキテクチャのリソース
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,68 +15,71 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 概要:Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
-ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+description: '概要: Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Office ProPlus で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。'
+ms.openlocfilehash: a32b73facd54da98d7c5df84223237d857883cfe
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525848"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741240"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
- **概要:** Microsoft クラウド サービスおよびプラットフォームについて説明します。Enterprise Cloud ロードマップの確認、クラウド アーキテクチャ シリーズの検索、などを行います。
+ **概要:** Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Office ProPlus で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。
   
-以下のアーキテクチャ ツールおよびポスターでは、Office 365、Microsoft Azure、Microsoft Intune、Microsoft Dynamics 365、プライベート クラウドのデータ センター、オンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスおよびプラットフォームについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードの最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。 
+これらのアーキテクチャ ツールおよびポスターでは、Office 365、Windows 10、Azure Active Directory, Microsoft Intune、Microsoft Dynamics 365、および プライベート クラウドのデータ センター、オンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードに最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。 
   
-- **[Microsoft の Enterprise Cloud ロードマップ](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway)
+<!---**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) --->
     
-- **[エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド](microsoft-cloud-it-architecture-resources.md#cloudarch)** 
-    - [Microsoft クラウド サービスとプラットフォームのオプション](microsoft-cloud-it-architecture-resources.md#platformoptions)
+- **[エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!--- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) --->
     - [エンタープライズ アーキテクトのための Microsoft クラウド ID](microsoft-cloud-it-architecture-resources.md#identity)
     - [エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ](microsoft-cloud-it-architecture-resources.md#security)
-    - [エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-it-architecture-resources.md#networking)
-    - [エンタープライズ アーキテクトのための Microsoft Mobility および Security](microsoft-cloud-it-architecture-resources.md#mobility)
+    - [エンタープライズ アーキテクトのための Microsoft Cloud ネットワーク](microsoft-cloud-it-architecture-resources.md#networking)
     - [エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [一般的な攻撃と、組織を保護する Microsoft の機能](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
-- **[Office 365 Enterprise ソリューション シリーズ](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
-    - [Office 365 の情報保護](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect)
+- **[Microsoft 365 Enterprise ソリューション シリーズ](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Office 365 の ID とデバイス保護](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Office 365 のファイル保護ソリューション](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
-    - [Office 365 クライアントの管理に関する変更](microsoft-cloud-it-architecture-resources.md#changemgmt)
+    - [GDPR のための Office 365 の情報保護](#office-365-information-protection-for-gdpr)
+    - [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
+    - [Microsoft テレフォニー ソリューション](#microsoft-telephony-solutions) 
     - [Microsoft の最新のセキュリティで保護されたデスクトップの展開](microsoft-cloud-it-architecture-resources.md#msd)
     
-> [!TIP]
-> このページのポスターのほとんどは、中国語、英語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語、ロシア語、スペイン語を含む複数の言語で提供されています。これらの言語のいずれかのポスターをダウンロードするには、ポスターの **[その他の言語]** リンクをクリックします。
+
   
 ご意見を電子メールで [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com) 宛てにお送りください。 
-  
+
+<!---
 <a name="roadmap"> </a>
-## <a name="microsofts-enterprise-cloud-roadmap"></a>Microsoft の Enterprise Cloud ロードマップ
+## Microsoft's Enterprise Cloud Roadmap
 
-業界で最も包括的なクラウド ソリューションを説明しているポスター、アイコン セット、コミュニティの場、その他のリソースを参照してください。
+See the posters, icon sets, community venues, and other resources that describe the industry's most complete cloud solution.
   
-|**項目**|**説明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Enterprise Cloud ロードマップのサムネイル](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft の Enterprise Cloud ロードマップ](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |この Sway エクスペリエンスを通して、業界で最も包括的なクラウド ソリューションを説明しているリソースをご確認ください。  <br/> |
-   
+|[![Thumbnail for Enterprise Cloud Roadmap](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Swipe through this Sway experience for the resources that describe the industry's most complete cloud solution.  <br/> |
+--->
+  
 <a name="cloudarch"> </a>
-## <a name="microsoft-cloud-for-enterprise-architects-series"></a>エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド
+##エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド
 
-これらのクラウド アーキテクチャ ポスターでは、Office 365、Microsoft Azure、Microsoft Intune、Microsoft Dynamics CRM Online、プライベート クラウドのデータ センター、オンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスおよびプラットフォームについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードの最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。
-  
+これらのクラウド アーキテクチャ ポスターでは、Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online、およびオンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードに最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。
+
+<!---  
 <a name="platformoptions"> </a>
-### <a name="microsoft-cloud-services-and-platform-options"></a>Microsoft クラウド サービスとプラットフォームのオプション
+### Microsoft Cloud Services and Platform Options
 
-各種の Microsoft クラウド サービスとプラットフォーム サービスの重要な相違点について説明します。ご使用のソリューションに最もよく合うものを見つけてください。
+Learn key differences between Microsoft cloud services and platform offerings. Find the best fit for your solution.
   
-|**アイテム**|**説明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![サービスのオプションを含むクラウド アーキテクチャ モデルのサムネイル画像](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | このモデルでは、次について説明します。 <ul><li>  Office 365 を含む、サービスとしてのソフトウェア (SaaS) 提供物 </li><li>  Microsoft Azure における、サービスとしてのプラットフォーム (PaaS) 機能 </li><li>  Microsoft Azure における、サービスとしてのインフラストラクチャ (IaaS) 機能 </li><li>  Windows Server および System Center を使用する、プライベート クラウドのデータセンター機能 </li><li>  Microsoft 社の IT 部門が、これらのクラウド サービスにどのように移行し、ハイブリッド クラウドをどのように構築しているかを学びます。 </li></ul><br/>|
+|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
+--->
+
    
 <a name="identity"> </a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ID
+###エンタープライズ アーキテクトのための Microsoft クラウド ID
 
 Microsoft クラウド サービスおよびプラットフォームを使用して、組織のためのアイデンティティを設計する上で IT アーキテクトが知る必要のある事柄。
   
@@ -92,10 +94,10 @@ Microsoft クラウド サービスおよびプラットフォームにおける
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft クラウドのセキュリティ モデルのサムネイル画像](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | このモデルには次のものが含まれています。 <ul><li>安全なサービスとプラットフォームを提供することにおける Microsoft の役割</li><li>セキュリティ上のリスクを軽減するというお客様側の責任</li><li>最高位のセキュリティ認定 </li><li>マイクロソフト コンサルティング サービスが提供するセキュリティ サービス </ul></li>このアーキテクチャ ポスターに基づく Microsoft Virtual Academy コースである「[クラウド対応世界のセキュリティ](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474)」を受講してください。 <br/>|
+|[![Microsoft クラウドのセキュリティ モデルのサムネイル画像](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | このモデルには次のものが含まれています。 <ul><li>安全なサービスとプラットフォームを提供することにおける Microsoft の役割</li><li>セキュリティ上のリスクを軽減するというお客様側の責任</li><li>最高位のセキュリティ認定 </li><li>Microsoft コンサルティング サービスが提供するセキュリティ サービス </ul> <br/>|
    
 <a name="networking"> </a>
-### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
+### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft Cloud ネットワーク
 
 Microsoft クラウド サービスおよびプラットフォームのネットワーキングに関して IT アーキテクトが知る必要のある事柄。
   
@@ -103,14 +105,6 @@ Microsoft クラウド サービスおよびプラットフォームのネット
 |:-----|:-----|
 |[![Microsoft クラウドのネットワーク モデルのサムネイル画像](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [記事](https://technet.microsoft.com/library/mt733214.aspx) <br/>[その他の言語](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | このモデルには以下のページが含まれています。 <ul><li> **クラウド接続用のネットワークの進化**: クラウド移行によって、企業ネットワークの内外でのトラフィック フローの容量と特性が変化します。また、セキュリティ リスクを軽減するためのアプローチにも影響します。</li><li> **Microsoft クラウド接続の一般的な要素**: ネットワーキングと Microsoft クラウドの統合によって、広範なサービスへの最適なアクセスが提供されます。 </li><li> **Microsoft クラウド接続用の ExpressRoute** ExpressRoute は、Microsoft のクラウドへのプライベートで専用の高スループットなネットワーク接続を提供します。 </li><li> **Microsoft SaaS (Office 365、Microsoft Intune、および Dynamics CRM Online) 用ネットワーキングの設計**: Microsoft SaaS サービス用のネットワークを最適化するには、インターネット エッジ、クライアント デバイス、および標準の IT 運用を慎重に分析する必要があります。 </li><li> **Azure PaaS 用のネットワーキングの設計**: Azure PaaS アプリ用のネットワーキングを最適化するには、適切なインターネット帯域幅が必要であり、複数のサイトまたはアプリにまたがるネットワーク トラフィックの分散が必要とされる可能性があります。 </li><li> **Azure IaaS のネットワークの設計** サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。 </li></ul><br/>  このアーキテクチャ ポスターに基づく新しい Microsoft Virtual Academy コースである「[Microsoft クラウド サービスに合わせてネットワークを最適化する](https://aka.ms/optimizecloudnetworkingmva)」を受講してください。  <br/>|
    
-<a name="mobility"> </a>
-### <a name="microsoft-mobility-and-security-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft Mobility および Security
-
-Microsoft クラウド サービスおよびプラットフォームによるモビリティについて IT アーキテクトが知る必要のある事柄。
-  
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Office 365 の情報保護ポスターのサムネイル画像](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | このモデルには次のものが含まれています。 <ul><li>最上位のビジネス用モバイル アプリ </li><li>モバイル アプリ開発のためのプラットフォーム、サービス、リソース </li><li>モバイル デバイスからクラウドベースのアプリケーションやデータへのアクセスを管理する </li><li>Office 365 MDM、Azure Active Directory Premium、および Intune の機能の比較とプラットフォーム サポート </li></ul><br/> |
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド
@@ -130,31 +124,33 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 |[![一般的な攻撃ポスターのサムネイル画像。](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | このポスターは、一般的な攻撃の経路を示し、攻撃の各段階で攻撃者を阻止する機能について説明します。 <br/>|
 
 
-<a name="santa"> </a>
-### <a name="the-santa-cloud"></a>サンタ クラウド
+<!---<a name="santa"> </a>
+### The Santa cloud
 
-サンタと仲間の小さな妖精たちが Microsoft のクラウド ソリューションを使用して年ごとの配達を行う方法を説明します。
+How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
   
-|**アイテム**|**説明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![サンタ クラウドのポスターのサムネイル画像](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)          ](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |悪い子と良い子を判別して 12 月 24 日にプレゼントを配る対象を決めるため、サンタクロースと仲間の小さな妖精たちの IT 部門は Office 365、Azure、Dynamics 365、Intune を使用します。  <br/>|
+|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| --->
    
 <a name="BKMK_o365solutions"> </a>
-## <a name="office-365-enterprise-solution-series"></a>Office 365 Enterprise ソリューション シリーズ
+## Microsoft 365 Enterprise ソリューション シリーズ
 
-Office 365 Enterprise ソリューション シリーズには、Office 365 の機能、特にざまざまなプラットフォームで使える機能を実装するためのガイダンスが用意されています。
-  
+Microsoft 365 Enterprise ソリューション シリーズには、Microsoft 365 の機能、特にざまざまなプラットフォームで使える機能を実装するためのガイダンスが用意されています。
+
+<!---  
 <a name="BKMK_infoprotect"> </a>
-### <a name="information-protection-for-office-365"></a>Office 365 の情報保護
+### Information Protection for Office 365
 
-企業資産を保護する、エンタープライズ組織向けの機能です。
+Capabilities for enterprise organizations to protect corporate assets.
   
-|**アイテム**|**説明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Office 365 の情報保護機能](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft は、企業資産を保護する最も包括的な機能のセットを提供します。このモデルは、組織が導入する機能を計画する際に、系統的なアプローチを行うのに役立ちます。  <br/>|
+|[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
+--->
    
 <a name="BKMK_O365IDP"> </a>
-### <a name="identity-and-device-protection-for-office-365"></a>Office 365 の ID とデバイス保護
+### Office 365 の ID とデバイス保護
 
 Office 365、他の SaaS サービス、および Azure AD アプリケーション プロキシで公開したオンプレミス アプリケーションにアクセスする ID とデバイスを保護するために推奨される機能。
   
@@ -171,15 +167,36 @@ Office 365 のファイル保護のために推奨される機能は、3 段階�
 |:-----|:-----|
 |[![Office 365 でのファイル保護ソリューションのミニ ポスター セットのサムネイル](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。このドキュメントでは、Office 365 のファイルを保護する機能に関する詳細情報に、どの機能が相当するのかを説明します。  <br/> |
    
-<a name="changemgmt"> </a>
-### <a name="change-management-for-office-365-clients"></a>Office 365 クライアントの管理に関する変更
 
-Office 365 クライアント アプリケーションと Windows 10 のリリースの管理に関して IT アーキテクトが知る必要のある事柄。 
-  
-|**アイテム**|**説明**|
+### <a name="office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護
+
+個人データの検出、分類、保護、および監視に規定された推奨事項。このソリューションでは、例として一般データ保護規制 (GDPR) を使用しますが、その他の多くの規制遵守のためにも同じ手順を適用することができます。
+
+|**Item**|**説明**|
 |:-----|:-----|
-|[![モデル ポスター:Office 365 クライアントの管理に関する変更](media/fd0705af-5103-438f-9e1a-fa38eb1af2cc.png)          ](https://www.microsoft.com/download/details.aspx?id=49141) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=626681)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=626680)| このモデルには次のものが含まれています。 <ul><li>Windows 10 と Office 365 クライアント アプリケーション用のサービス提供モデル </li><li>  リリース オプション </li><li>  リリース ケーデンス </li><li>  変更の種類 </li><li>  役割と責任 </li><li>  更新プログラムの展開の管理 </li></ul><br/>  記事の形式で情報を表示: [Office 365 クライアントの変更管理](https://docs.microsoft.com/DeployOffice/change-management-for-office-365-clients)  <br/> |
-   
+|![GDPR のための Office 365 の情報保護のサムネイル](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |このコンテンツを記事形式で表示するには、「[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/ja-JP/Office365/SecurityCompliance/office-365-information-protection-for-gdpr)」を参照してください。      |
+
+### <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス 
+
+このガイドでは、セキュリティで保護されたクラウド環境を実装する方法について説明します。このソリューション ガイダンスは、どのような組織でも使用できます。アジャイルな組織向けの、BYOD によるアクセスおよびゲスト アカウントに関する追加のヘルプが含まれています。このガイダンスは、独自の環境を設計するための開始点としてご利用ください。
+
+
+|**Item**|**説明**|
+|:-----|:-----|
+|**選挙運動のための Microsoft Security ガイダンス** <br/> [![ミニ ポスター セット用のサムネイル。](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |このガイダンスでは、選挙運動を行う団体を例として使用しています。このガイダンスは、任意の環境を設計するための開始点としてご利用ください。  <br/> |
+|**非営利組織のための Microsoft Security ガイダンス** <br/> [![ダウンロード可能なファイル用のサムネイル画像](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |このガイドは、非営利組織用に少し改定されています。たとえば、Office 365 Nonprofit のプランについて言及しています。技術的なガイダンスは選挙運動のソリューション ガイドと同じです。  <br/> |
+
+このガイダンスにはテスト ラボ ガイドが含まれます。詳細については、「[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](https://docs.microsoft.com/ja-JP/Office365/SecurityCompliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)」を参照してください。
+
+### <a name="microsoft-telephony-solutions"></a>Microsoft テレフォニー ソリューション
+
+Microsoft では、Microsoft クラウド内の Teams の使用を開始する際に使用できるいくつかのオプションをサポートしています。このポスターは、どの Microsoft テレフォニー ソリューション (クラウド内の電話システムまたはオンプレミスのエンタープライズ ボイス) が組織のユーザーに適しているかを判断し、組織を公衆交換電話網 (PSTN) に接続する方法を決定するのに役立ちます。
+
+![Microsoft テレフォニー ソリューションのポスターのサムネイル](media/microsoft-telephony-solutions-thumb.png) <br/>
+[PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) 
+
+詳細については、このポスターの記事を参照してください: [Microsoft テレフォニー ソリューション](https://docs.microsoft.com/ja-JP/SkypeForBusiness/hybrid/msft-telephony-solutions)。
+  
 <a name="msd"> </a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Microsoft の最新のセキュリティで保護されたデスクトップの展開
 
