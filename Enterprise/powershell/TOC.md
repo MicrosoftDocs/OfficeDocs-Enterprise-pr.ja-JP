@@ -22,6 +22,7 @@
 ### [ユーザー アカウントの作成](create-user-accounts-with-office-365-powershell.md)
 ### [ユーザー アカウントを表示する](view-user-accounts-with-office-365-powershell.md)
 ### [ユーザー アカウントのプロパティを構成する](configure-user-account-properties-with-office-365-powershell.md)
+## [グループを管理する](manage-office-365-groups-with-powershell.md)
 ## [SharePoint Online を管理する](manage-sharepoint-online-with-office-365-powershell.md)
 ### [SharePoint Online サイトを作成し、ユーザーを追加する](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [SharePoint Online のユーザーとグループを管理する](manage-sharepoint-users-and-groups-with-powershell.md)
