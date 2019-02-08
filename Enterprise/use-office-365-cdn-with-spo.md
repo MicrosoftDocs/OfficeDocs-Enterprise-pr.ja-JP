@@ -15,341 +15,344 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 置かれる場所や、コンテンツにアクセスする方法に関係なく、SharePoint Online の資産のすべてのユーザーへの配信を高速化するのには Office 365 の組み込みコンテンツ配信ネットワーク (CDN) を使用する方法を説明します。
-ms.openlocfilehash: 958f01419a74e4b8cd007b2627585884496bdfdf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fd118e8df404961e1c35c6297a788397f810d1a2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541544"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547115"
 ---
-# <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a><span data-ttu-id="ecdfc-103">SharePoint Online のコンテンツ配信ネットワークを使用して Office 365</span><span class="sxs-lookup"><span data-stu-id="ecdfc-103">Use the Office 365 content delivery network with SharePoint Online</span></span>
+# <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a><span data-ttu-id="adead-103">SharePoint Online のコンテンツ配信ネットワークを使用して Office 365</span><span class="sxs-lookup"><span data-stu-id="adead-103">Use the Office 365 content delivery network with SharePoint Online</span></span>
 
-<span data-ttu-id="ecdfc-p101">Office 365 のコンテンツ配信ネットワーク (CDN) で、SharePoint Online のページのパフォーマンスを向上させるための静的なアセットをホストすることができます。静的なアセットは、画像、ビデオ、オーディオ、スタイル シート、フォント、および JavaScript ファイルと同じように非常に多くの場合は、変更されないファイルです。CDN では、それらを要求しているブラウザーに静的なアセットの近くにキャッシュすることによって、地理的に分散キャッシュ プロキシとして動作します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p101">You can host static assets in the Office 365 content delivery network (CDN) to provide better performance for your SharePoint Online pages. Static assets are files that don't change very often, like images, video and audio, style sheets, fonts, and JavaScript files. The CDN works as a geographically distributed caching proxy, by caching static assets closer to the browsers requesting them.</span></span> 
+<span data-ttu-id="adead-p101">Office 365 のコンテンツ配信ネットワーク (CDN) で、SharePoint Online のページのパフォーマンスを向上させるための静的なアセットをホストすることができます。静的なアセットは、画像、ビデオ、オーディオ、スタイル シート、フォント、および JavaScript ファイルと同じように非常に多くの場合は、変更されないファイルです。CDN では、それらを要求しているブラウザーに静的なアセットの近くにキャッシュすることによって、地理的に分散キャッシュ プロキシとして動作します。</span><span class="sxs-lookup"><span data-stu-id="adead-p101">You can host static assets in the Office 365 content delivery network (CDN) to provide better performance for your SharePoint Online pages. Static assets are files that don't change very often, like images, video and audio, style sheets, fonts, and JavaScript files. The CDN works as a geographically distributed caching proxy, by caching static assets closer to the browsers requesting them.</span></span> 
   
-<span data-ttu-id="ecdfc-p102">Cdn の動作に慣れている場合のみ、それを設定するのには、いくつかの手順を完了する必要があります。このトピックで説明する方法です。Office 365 の CDN と、静的なアセットをホストしているを開始する方法については、読み進んでください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p102">If you are already familiar with the way that CDNs work, you only need to complete a few steps to set it up. This topic describes how. Read on for information about the Office 365 CDN and how to get started hosting your static assets.</span></span>
+<span data-ttu-id="adead-p102">Cdn の動作に慣れている場合のみ、それを設定するのには、いくつかの手順を完了する必要があります。このトピックで説明する方法です。Office 365 の CDN と、静的なアセットをホストしているを開始する方法については、読み進んでください。</span><span class="sxs-lookup"><span data-stu-id="adead-p102">If you are already familiar with the way that CDNs work, you only need to complete a few steps to set it up. This topic describes how. Read on for information about the Office 365 CDN and how to get started hosting your static assets.</span></span>
   
- <span data-ttu-id="ecdfc-110">**ヘッドは、[ネットワークの計画と Office 365 のパフォーマンスの調整](https://aka.ms/tune)をバックアップします。**</span><span class="sxs-lookup"><span data-stu-id="ecdfc-110">**Head back to [Network planning and performance tuning for Office 365](https://aka.ms/tune).**</span></span>
+ <span data-ttu-id="adead-110">**ヘッドは、[ネットワークの計画と Office 365 のパフォーマンスの調整](https://aka.ms/tune)をバックアップします。**</span><span class="sxs-lookup"><span data-stu-id="adead-110">**Head back to [Network planning and performance tuning for Office 365](https://aka.ms/tune).**</span></span>
   
-## <a name="office-365-cdn-basics"></a><span data-ttu-id="ecdfc-111">Office 365 の CDN の基本</span><span class="sxs-lookup"><span data-stu-id="ecdfc-111">Office 365 CDN basics</span></span>
+## <a name="office-365-cdn-basics"></a><span data-ttu-id="adead-111">Office 365 の CDN の基本</span><span class="sxs-lookup"><span data-stu-id="adead-111">Office 365 CDN basics</span></span>
 
-<span data-ttu-id="ecdfc-p103">Office 365 の CDN は、SharePoint Online サブスクリプションの一部として含まれています。支払う必要はありません。Office 365 は、プライベートの両方をサポートし、パブリック アクセスを提供したり、複数の場所、または元の場所でホストの静的なアセットをできます。Office 365 の CDN は、Azure CDN と同じではありません。CDN の一般的な概念、または CDN を使用する理由に関する詳細が必要な場合は、[コンテンツ配信ネットワーク](content-delivery-networks.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p103">The Office 365 CDN is included as part of your SharePoint Online subscription. You don't have to pay extra for it. Office 365 provides support for both private and public access and allows you to host static assets in multiple locations, or origins. The Office 365 CDN is not the same as the Azure CDN. If you need more information about why to use a CDN or about general CDN concepts, see [Content delivery networks](content-delivery-networks.md).</span></span>
+<span data-ttu-id="adead-p103">Office 365 の CDN は、SharePoint Online サブスクリプションの一部として含まれています。支払う必要はありません。Office 365 は、プライベートの両方をサポートし、パブリック アクセスを提供したり、複数の場所、または元の場所でホストの静的なアセットをできます。Office 365 の CDN は、Azure CDN と同じではありません。CDN の一般的な概念、または CDN を使用する理由に関する詳細が必要な場合は、[コンテンツ配信ネットワーク](content-delivery-networks.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-p103">The Office 365 CDN is included as part of your SharePoint Online subscription. You don't have to pay extra for it. Office 365 provides support for both private and public access and allows you to host static assets in multiple locations, or origins. The Office 365 CDN is not the same as the Azure CDN. If you need more information about why to use a CDN or about general CDN concepts, see [Content delivery networks](content-delivery-networks.md).</span></span>
   
-## <a name="how-the-cdn-grants-access-to-end-users"></a><span data-ttu-id="ecdfc-117">CDN がエンド ・ ユーザーにアクセスを許可する方法</span><span class="sxs-lookup"><span data-stu-id="ecdfc-117">How the CDN grants access to end users</span></span>
+## <a name="how-the-cdn-grants-access-to-end-users"></a><span data-ttu-id="adead-117">CDN がエンド ・ ユーザーにアクセスを許可する方法</span><span class="sxs-lookup"><span data-stu-id="adead-117">How the CDN grants access to end users</span></span>
 
-<span data-ttu-id="ecdfc-p104">Office 365 の CDN 内の静的なアセットへのアクセスを秘密は、SharePoint Online で生成されたトークンによって付与されます。フォルダーまたはライブラリの原点を基準にアクセスするアクセス許可を既に持っているユーザーは、トークン自動的に付与されます。SharePoint Online は項目レベルのアクセス許可、CDN のです。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p104">Private access to static assets in the Office 365 CDN is granted by tokens generated by SharePoint Online. Users who already have permission to access to the folder or library designated by the origin will automatically be granted tokens. SharePoint Online does not support item-level permissions for the CDN.</span></span>
+<span data-ttu-id="adead-p104">Office 365 の CDN 内の静的なアセットへのアクセスを秘密は、SharePoint Online で生成されたトークンによって付与されます。フォルダーまたはライブラリの原点を基準にアクセスするアクセス許可を既に持っているユーザーは、トークン自動的に付与されます。SharePoint Online は項目レベルのアクセス許可、CDN のです。</span><span class="sxs-lookup"><span data-stu-id="adead-p104">Private access to static assets in the Office 365 CDN is granted by tokens generated by SharePoint Online. Users who already have permission to access to the folder or library designated by the origin will automatically be granted tokens. SharePoint Online does not support item-level permissions for the CDN.</span></span>
   
-<span data-ttu-id="ecdfc-121">あるファイルをたとえば、 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`、次の指定します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-121">For example, for a file located at `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, given the following:</span></span>
+<span data-ttu-id="adead-121">あるファイルをたとえば、 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`、次の指定します。</span><span class="sxs-lookup"><span data-stu-id="adead-121">For example, for a file located at `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, given the following:</span></span>
   
-- <span data-ttu-id="ecdfc-122">ユーザー 1 は、folder1 と image1.jpg にアクセスを持っています。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-122">User 1 has access to folder1 and to image1.jpg</span></span>
+- <span data-ttu-id="adead-122">ユーザー 1 は、folder1 と image1.jpg にアクセスを持っています。</span><span class="sxs-lookup"><span data-stu-id="adead-122">User 1 has access to folder1 and to image1.jpg</span></span>
     
-- <span data-ttu-id="ecdfc-123">ユーザー 2 には、folder1 へのアクセスはありません。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-123">User 2 does not have access to folder1</span></span>
+- <span data-ttu-id="adead-123">ユーザー 2 には、folder1 へのアクセスはありません。</span><span class="sxs-lookup"><span data-stu-id="adead-123">User 2 does not have access to folder1</span></span>
     
-- <span data-ttu-id="ecdfc-124">ユーザー 3 が folder1 へのアクセスはありませんが、SharePoint Online で image1.jpg にアクセスするための明示的なアクセス許可を付与</span><span class="sxs-lookup"><span data-stu-id="ecdfc-124">User 3 does not have access to folder1 but is granted explicit permission to access image1.jpg through SharePoint Online</span></span>
+- <span data-ttu-id="adead-124">ユーザー 3 が folder1 へのアクセスはありませんが、SharePoint Online で image1.jpg にアクセスするための明示的なアクセス許可を付与</span><span class="sxs-lookup"><span data-stu-id="adead-124">User 3 does not have access to folder1 but is granted explicit permission to access image1.jpg through SharePoint Online</span></span>
     
-- <span data-ttu-id="ecdfc-125">ユーザー 4 は folder1 へのアクセス権を持つが、image1.jpg へのアクセスを明示的に拒否されています。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-125">User 4 has access to folder1 but has been explicitly denied access to image1.jpg</span></span>
+- <span data-ttu-id="adead-125">ユーザー 4 は folder1 へのアクセス権を持つが、image1.jpg へのアクセスを明示的に拒否されています。</span><span class="sxs-lookup"><span data-stu-id="adead-125">User 4 has access to folder1 but has been explicitly denied access to image1.jpg</span></span>
     
-<span data-ttu-id="ecdfc-126">次に該当します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-126">Then the following are true:</span></span>
+<span data-ttu-id="adead-126">次に該当します。</span><span class="sxs-lookup"><span data-stu-id="adead-126">Then the following are true:</span></span>
   
-- <span data-ttu-id="ecdfc-127">ユーザー 1 および 4 のユーザーは、CDN で image1.jpg にアクセスすることがされます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-127">User 1 and User 4 will be able to access image1.jpg through the CDN.</span></span>
+- <span data-ttu-id="adead-127">ユーザー 1 および 4 のユーザーは、CDN で image1.jpg にアクセスすることがされます。</span><span class="sxs-lookup"><span data-stu-id="adead-127">User 1 and User 4 will be able to access image1.jpg through the CDN.</span></span>
     
-- <span data-ttu-id="ecdfc-128">ユーザー 2 とユーザー 3 は、CDN で image1.jpg にアクセスすることができません。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-128">User 2 and User 3 will not be able to access image1.jpg through the CDN.</span></span>
+- <span data-ttu-id="adead-128">ユーザー 2 とユーザー 3 は、CDN で image1.jpg にアクセスすることができません。</span><span class="sxs-lookup"><span data-stu-id="adead-128">User 2 and User 3 will not be able to access image1.jpg through the CDN.</span></span>
     
-    <span data-ttu-id="ecdfc-129">ただし、ユーザー 3 にアクセスできます資産 image1.jpg を使用して直接 SharePoint Online ユーザー 4、SharePoint Online を資産にアクセスできないときに。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-129">However, User 3 can still access the asset image1.jpg directly through SharePoint Online while User 4 cannot access the asset through SharePoint Online.</span></span>
+    <span data-ttu-id="adead-129">ただし、ユーザー 3 にアクセスできます資産 image1.jpg を使用して直接 SharePoint Online ユーザー 4、SharePoint Online を資産にアクセスできないときに。</span><span class="sxs-lookup"><span data-stu-id="adead-129">However, User 3 can still access the asset image1.jpg directly through SharePoint Online while User 4 cannot access the asset through SharePoint Online.</span></span>
     
-## <a name="overview-of-working-with-the-office-365-cdn"></a><span data-ttu-id="ecdfc-130">Office 365 の CDN の使用の概要</span><span class="sxs-lookup"><span data-stu-id="ecdfc-130">Overview of working with the Office 365 CDN</span></span>
+## <a name="overview-of-working-with-the-office-365-cdn"></a><span data-ttu-id="adead-130">Office 365 の CDN の使用の概要</span><span class="sxs-lookup"><span data-stu-id="adead-130">Overview of working with the Office 365 CDN</span></span>
 
-<span data-ttu-id="ecdfc-131">Office 365 の CDN を設定するには、以下の基本的な手順。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-131">To set up the Office 365 CDN, you follow these basic steps:</span></span>
+<span data-ttu-id="adead-131">Office 365 の CDN を設定するには、以下の基本的な手順。</span><span class="sxs-lookup"><span data-stu-id="adead-131">To set up the Office 365 CDN, you follow these basic steps:</span></span>
   
-- <span data-ttu-id="ecdfc-132">CDN の展開を計画します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-132">Plan for CDN deployment:</span></span>
+- <span data-ttu-id="adead-132">CDN の展開を計画します。</span><span class="sxs-lookup"><span data-stu-id="adead-132">Plan for CDN deployment:</span></span>
     
-  - <span data-ttu-id="ecdfc-p105">Office 365 の CDN でホストする静的な資産を特定します。これらの項目を選択する方法の詳細については、[コンテンツ配信ネットワーク](content-delivery-networks.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p105">Determine which static assets you want to host on the Office 365 CDN. For detailed information about how to make these choices, refer to [Content delivery networks](content-delivery-networks.md).</span></span>
+  - <span data-ttu-id="adead-p105">Office 365 の CDN でホストする静的な資産を特定します。これらの項目を選択する方法の詳細については、[コンテンツ配信ネットワーク](content-delivery-networks.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-p105">Determine which static assets you want to host on the Office 365 CDN. For detailed information about how to make these choices, refer to [Content delivery networks](content-delivery-networks.md).</span></span>
     
-  - <span data-ttu-id="ecdfc-p106">[お客様の資産を格納するかを確認します](use-office-365-cdn-with-spo.md#CDNStoreAssets)。この場所は、フォルダーや SharePoint ライブラリし、基準点と呼びます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p106">[Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets). This location is a folder or SharePoint library and is called an origin.</span></span>
+  - <span data-ttu-id="adead-p106">[お客様の資産を格納するかを確認します](use-office-365-cdn-with-spo.md#CDNStoreAssets)。この場所は、フォルダーや SharePoint ライブラリし、基準点と呼びます。</span><span class="sxs-lookup"><span data-stu-id="adead-p106">[Determine where you want to store your assets](use-office-365-cdn-with-spo.md#CDNStoreAssets). This location is a folder or SharePoint library and is called an origin.</span></span>
     
-  - <span data-ttu-id="ecdfc-p107">資産を公開するか非公開かどうかを決定します。場合にこの操作を行う[各元がパブリックまたはプライベートにするかどうかを選択](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)できます。する場合は、複数の基準をいくつかはパブリックにすることができます、いくつかプライベート。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p107">Determine whether the assets should be made public or kept private. You do this when you [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). If you want, you can have multiple origins in which some are public, and some are private.</span></span>
+  - <span data-ttu-id="adead-p107">資産を公開するか非公開かどうかを決定します。場合にこの操作を行う[各元がパブリックまたはプライベートにするかどうかを選択](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)できます。する場合は、複数の基準をいくつかはパブリックにすることができます、いくつかプライベート。</span><span class="sxs-lookup"><span data-stu-id="adead-p107">Determine whether the assets should be made public or kept private. You do this when you [Choose whether each origin should be public or private](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). If you want, you can have multiple origins in which some are public, and some are private.</span></span>
     
-- <span data-ttu-id="ecdfc-p108">[を設定し、SharePoint のオンライン管理シェルを使用して Office 365 の CDN を構成する](use-office-365-cdn-with-spo.md#CDNSetupinPShell)です。この手順を完了する場合があります。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p108">[Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell). When you complete this step, you will have:</span></span>
+- <span data-ttu-id="adead-p108">[を設定し、SharePoint のオンライン管理シェルを使用して Office 365 の CDN を構成する](use-office-365-cdn-with-spo.md#CDNSetupinPShell)です。この手順を完了する場合があります。</span><span class="sxs-lookup"><span data-stu-id="adead-p108">[Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell](use-office-365-cdn-with-spo.md#CDNSetupinPShell). When you complete this step, you will have:</span></span>
     
-  - <span data-ttu-id="ecdfc-142">組織の CDN を有効にします。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-142">Enabled the CDN for your organization.</span></span>
+  - <span data-ttu-id="adead-142">組織の CDN を有効にします。</span><span class="sxs-lookup"><span data-stu-id="adead-142">Enabled the CDN for your organization.</span></span>
     
-  - <span data-ttu-id="ecdfc-p109">元の場所を追加します。各パブリックまたはプライベートの原点を指定します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p109">Added your origins. You identify each origin as public or private.</span></span>
+  - <span data-ttu-id="adead-p109">元の場所を追加します。各パブリックまたはプライベートの原点を指定します。</span><span class="sxs-lookup"><span data-stu-id="adead-p109">Added your origins. You identify each origin as public or private.</span></span>
     
-<span data-ttu-id="ecdfc-145">1 回で時間の経過と共に[管理 Office 365 の CDN](use-office-365-cdn-with-spo.md#CDNManage)のセットアップが終了しました。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-145">Once you're done with setup, [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:</span></span> 
+<span data-ttu-id="adead-145">1 回で時間の経過と共に[管理 Office 365 の CDN](use-office-365-cdn-with-spo.md#CDNManage)のセットアップが終了しました。</span><span class="sxs-lookup"><span data-stu-id="adead-145">Once you're done with setup, [Manage the Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) over time by:</span></span> 
   
-- <span data-ttu-id="ecdfc-146">追加、更新、および資産を削除します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-146">Adding, updating, and removing assets</span></span>
+- <span data-ttu-id="adead-146">追加、更新、および資産を削除します。</span><span class="sxs-lookup"><span data-stu-id="adead-146">Adding, updating, and removing assets</span></span>
     
-- <span data-ttu-id="ecdfc-147">追加して、元の場所を削除します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-147">Adding and removing origins</span></span>
+- <span data-ttu-id="adead-147">追加して、元の場所を削除します。</span><span class="sxs-lookup"><span data-stu-id="adead-147">Adding and removing origins</span></span>
     
-- <span data-ttu-id="ecdfc-148">CDN のポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-148">Configuring CDN policies</span></span>
+- <span data-ttu-id="adead-148">CDN のポリシーを構成します。</span><span class="sxs-lookup"><span data-stu-id="adead-148">Configuring CDN policies</span></span>
     
-- <span data-ttu-id="ecdfc-149">必要に応じて、Office 365 の CDN を無効にします。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-149">If necessary, disabling the Office 365 CDN</span></span>
+- <span data-ttu-id="adead-149">必要に応じて、Office 365 の CDN を無効にします。</span><span class="sxs-lookup"><span data-stu-id="adead-149">If necessary, disabling the Office 365 CDN</span></span>
     
-## <a name="determine-where-you-want-to-store-your-assets"></a><span data-ttu-id="ecdfc-150">お客様の資産を格納する場所を決定します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-150">Determine where you want to store your assets</span></span>
+## <a name="determine-where-you-want-to-store-your-assets"></a><span data-ttu-id="adead-150">お客様の資産を格納する場所を決定します。</span><span class="sxs-lookup"><span data-stu-id="adead-150">Determine where you want to store your assets</span></span>
 
-<span data-ttu-id="ecdfc-p110">CDN では、基準点と呼ばれる場所からお客様の資産を取得します。Office 365 では、オリジナルの SharePoint ライブラリまたはフォルダーの URL でアクセスできます。組織の原点を指定するときに、高い柔軟性があります。たとえば、複数の原点、または、CDN のすべての資産を格納する 1 つの原点を指定できます。組織のパブリックまたはプライベートの両方の基準を選択できます。ほとんどの組織では、2 つの組み合わせを実装するために選択します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p110">The CDN fetches your assets from a location called an origin. For Office 365, an origin is a SharePoint library or folder that is accessible by a URL. You have great flexibility when you specify origins for your organization. For example, you can specify multiple origins, or, a single origin where you want to put all your CDN assets. You can choose to have both public or private origins for your organization. Most organizations will choose to implement a combination of the two.</span></span>
+<span data-ttu-id="adead-p110">CDN では、基準点と呼ばれる場所からお客様の資産を取得します。Office 365 では、オリジナルの SharePoint ライブラリまたはフォルダーの URL でアクセスできます。組織の原点を指定するときに、高い柔軟性があります。たとえば、複数の原点、または、CDN のすべての資産を格納する 1 つの原点を指定できます。組織のパブリックまたはプライベートの両方の基準を選択できます。ほとんどの組織では、2 つの組み合わせを実装するために選択します。</span><span class="sxs-lookup"><span data-stu-id="adead-p110">The CDN fetches your assets from a location called an origin. For Office 365, an origin is a SharePoint library or folder that is accessible by a URL. You have great flexibility when you specify origins for your organization. For example, you can specify multiple origins, or, a single origin where you want to put all your CDN assets. You can choose to have both public or private origins for your organization. Most organizations will choose to implement a combination of the two.</span></span>
   
-<span data-ttu-id="ecdfc-p111">何百もの原点を定義する場合可能性があります要求の処理にかかる時間に悪影響を与える可能性があります。約 100 社以上の原点がある場合は、アーキテクチャを見直すことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p111">If you define hundreds of origins, it will likely have a negative impact on the time it takes to process requests. We recommend that if you have more than about 100 origins you might want to rethink your architecture.</span></span>
+<span data-ttu-id="adead-p111">何百もの原点を定義する場合可能性があります要求の処理にかかる時間に悪影響を与える可能性があります。約 100 社以上の原点がある場合は、アーキテクチャを見直すことをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="adead-p111">If you define hundreds of origins, it will likely have a negative impact on the time it takes to process requests. We recommend that if you have more than about 100 origins you might want to rethink your architecture.</span></span>
   
-## <a name="choose-whether-each-origin-should-be-public-or-private"></a><span data-ttu-id="ecdfc-159">各原点がパブリックまたはプライベートにするかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-159">Choose whether each origin should be public or private</span></span>
+## <a name="choose-whether-each-origin-should-be-public-or-private"></a><span data-ttu-id="adead-159">各原点がパブリックまたはプライベートにするかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="adead-159">Choose whether each origin should be public or private</span></span>
 
-<span data-ttu-id="ecdfc-p112">基準点を指定するかどうかに行う必要がありますパブリックまたはプライベートを指定します。どちらのオプションを選択する、Microsoft はすべての面倒を自体 CDN を管理する際に。変更できますは、後で、CDN を設定し、元の場所を識別した後。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p112">When you identify an origin, you specify whether it should be made public or private. Regardless of which option you choose, Microsoft does all the heavy lifting for you when it comes to administration of the CDN itself. Also, you can change your mind later, after you've set up the CDN and identified your origins.</span></span>
+<span data-ttu-id="adead-p112">基準点を指定するかどうかに行う必要がありますパブリックまたはプライベートを指定します。どちらのオプションを選択する、Microsoft はすべての面倒を自体 CDN を管理する際に。変更できますは、後で、CDN を設定し、元の場所を識別した後。</span><span class="sxs-lookup"><span data-stu-id="adead-p112">When you identify an origin, you specify whether it should be made public or private. Regardless of which option you choose, Microsoft does all the heavy lifting for you when it comes to administration of the CDN itself. Also, you can change your mind later, after you've set up the CDN and identified your origins.</span></span>
   
-<span data-ttu-id="ecdfc-163">パブリックとプライベートの両方のオプションは、パフォーマンスの向上を提供ですが、それぞれ固有の属性との利点です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-163">Both public and private options provide performance improvements, but each has unique attributes and advantages.</span></span>
+<span data-ttu-id="adead-163">パブリックとプライベートの両方のオプションは、パフォーマンスの向上を提供ですが、それぞれ固有の属性との利点です。</span><span class="sxs-lookup"><span data-stu-id="adead-163">Both public and private options provide performance improvements, but each has unique attributes and advantages.</span></span>
   
- <span data-ttu-id="ecdfc-164">**属性と公開元の資産をホストしている場合の利点**</span><span class="sxs-lookup"><span data-stu-id="ecdfc-164">**Attributes and advantages of hosting assets in a public origin**</span></span>
+ <span data-ttu-id="adead-164">**属性と公開元の資産をホストしている場合の利点**</span><span class="sxs-lookup"><span data-stu-id="adead-164">**Attributes and advantages of hosting assets in a public origin**</span></span>
   
-- <span data-ttu-id="ecdfc-165">公開元に公開されている資産は、匿名でアクセスが可能です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-165">Assets exposed in a public origin are accessible by everyone anonymously.</span></span>
+- <span data-ttu-id="adead-165">公開元に公開されている資産は、匿名でアクセスが可能です。</span><span class="sxs-lookup"><span data-stu-id="adead-165">Assets exposed in a public origin are accessible by everyone anonymously.</span></span>
     
     > [!IMPORTANT]
-    > <span data-ttu-id="ecdfc-166">CDN の公開元を識別する場合は、パブリックの原点または SharePoint Online ライブラリで、組織に機密性の高いと見なされているリソースを配置しないでください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-166">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in a public origin or SharePoint Online library.</span></span> 
+    > <span data-ttu-id="adead-166">CDN の公開元を識別する場合は、パブリックの原点または SharePoint Online ライブラリで、組織に機密性の高いと見なされているリソースを配置しないでください。</span><span class="sxs-lookup"><span data-stu-id="adead-166">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in a public origin or SharePoint Online library.</span></span> 
   
-- <span data-ttu-id="ecdfc-167">パブリックの原点からアセットを削除する場合、資産可能性がありますのままになって使用可能な最大 30 日間キャッシュからただし、15 分以内、CDN のアセットへのリンクを無効にはなります。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-167">If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
+- <span data-ttu-id="adead-167">パブリックの原点からアセットを削除する場合、資産可能性がありますのままになって使用可能な最大 30 日間キャッシュからただし、15 分以内、CDN のアセットへのリンクを無効にはなります。</span><span class="sxs-lookup"><span data-stu-id="adead-167">If you remove an asset from a public origin, the asset may continue to be available for up to 30 days from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
     
-- <span data-ttu-id="ecdfc-p113">公開元のスタイル シート (CSS ファイル) をホストする場合は、コード内での相対パスと Uri を使用できます。つまり、背景イメージおよびその他のオブジェクトを呼び出すことは、資産の場所の場所を参照することができます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p113">When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.</span></span>
+- <span data-ttu-id="adead-p113">公開元のスタイル シート (CSS ファイル) をホストする場合は、コード内での相対パスと Uri を使用できます。つまり、背景イメージおよびその他のオブジェクトを呼び出すことは、資産の場所の場所を参照することができます。</span><span class="sxs-lookup"><span data-stu-id="adead-p113">When you host style sheets (CSS files) in a public origin, you can use relative paths and URIs within the code. This means that you can reference the location of background images and other objects relative to the location of the asset that's calling it.</span></span>
     
-- <span data-ttu-id="ecdfc-p114">パブリック送信元の URL をハード コードすることができます、そのためはお勧めできません。この理由は、CDN へのアクセスができなくなった場合、URL に組織は、SharePoint Online で自動的に解決されませんで切断されたリンクやその他のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p114">While you can hard code a public origin's URL, doing so is not recommended. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.</span></span>
+- <span data-ttu-id="adead-p114">パブリック送信元の URL をハード コードすることができます、そのためはお勧めできません。この理由は、CDN へのアクセスができなくなった場合、URL に組織は、SharePoint Online で自動的に解決されませんで切断されたリンクやその他のエラーが発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="adead-p114">While you can hard code a public origin's URL, doing so is not recommended. The reason for this is that if access to the CDN becomes unavailable, the URL will not automatically resolve to your organization in SharePoint Online and might result in broken links and other errors.</span></span>
     
-- <span data-ttu-id="ecdfc-p115">公開元の場所に含まれている既定のファイルの種類は、.css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf、および .woff です。追加ファイルの種類を指定できます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p115">The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff. You can specify additional file types.</span></span>
+- <span data-ttu-id="adead-p115">公開元の場所に含まれている既定のファイルの種類は、.css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf、および .woff です。追加ファイルの種類を指定できます。</span><span class="sxs-lookup"><span data-stu-id="adead-p115">The default file types that are included for public origins are .css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, and .woff. You can specify additional file types.</span></span>
     
-- <span data-ttu-id="ecdfc-p116">する場合は、指定したサイトの分類で特定されている資産を除外するポリシーを構成できます。など、許可されているファイルの種類には、パブリックの原点である場合でも、「社外秘」や「制限された」としてマークされているすべての資産を除外することができます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p116">If you want, you can configure a policy to exclude assets that have been identified by site classifications that you specify. For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.</span></span>
+- <span data-ttu-id="adead-p116">する場合は、指定したサイトの分類で特定されている資産を除外するポリシーを構成できます。など、許可されているファイルの種類には、パブリックの原点である場合でも、「社外秘」や「制限された」としてマークされているすべての資産を除外することができます。</span><span class="sxs-lookup"><span data-stu-id="adead-p116">If you want, you can configure a policy to exclude assets that have been identified by site classifications that you specify. For example, you can choose to exclude all assets that are marked as "confidential" or "restricted" even if they are an allowed file type and are located in a public origin.</span></span>
     
- <span data-ttu-id="ecdfc-176">**属性とプライベートの元の資産をホストしている場合の利点**</span><span class="sxs-lookup"><span data-stu-id="ecdfc-176">**Attributes and advantages of hosting assets in a private origin**</span></span>
+ <span data-ttu-id="adead-176">**属性とプライベートの元の資産をホストしている場合の利点**</span><span class="sxs-lookup"><span data-stu-id="adead-176">**Attributes and advantages of hosting assets in a private origin**</span></span>
   
-- <span data-ttu-id="ecdfc-p117">ユーザーからのみアクセスできます資産秘密の原点を行うために承認されている場合。これらの資産への匿名アクセスを禁止します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p117">Users can only access the assets from a private origin if they are authorized to do so. Anonymous access to these assets is prevented.</span></span>
+- <span data-ttu-id="adead-p117">ユーザーからのみアクセスできます資産秘密の原点を行うために承認されている場合。これらの資産への匿名アクセスを禁止します。</span><span class="sxs-lookup"><span data-stu-id="adead-p117">Users can only access the assets from a private origin if they are authorized to do so. Anonymous access to these assets is prevented.</span></span>
     
-- <span data-ttu-id="ecdfc-179">資産をキャッシュから 1 時間を使用する続行可能性がありますプライベートの原点からアセットを削除する場合ただし、15 分以内、CDN のアセットへのリンクを無効にはなります。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-179">If you remove an asset from the private origin, the asset may continue to be available for up to an hour from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
+- <span data-ttu-id="adead-179">資産をキャッシュから 1 時間を使用する続行可能性がありますプライベートの原点からアセットを削除する場合ただし、15 分以内、CDN のアセットへのリンクを無効にはなります。</span><span class="sxs-lookup"><span data-stu-id="adead-179">If you remove an asset from the private origin, the asset may continue to be available for up to an hour from the cache; however, we will invalidate links to the asset in the CDN within 15 minutes.</span></span>
     
-- <span data-ttu-id="ecdfc-p118">秘密の原点に含まれている既定のファイルの種類は、.gif、.ico、.jpeg、.jpg、.js、および .png です。追加ファイルの種類を指定できます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p118">The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.</span></span>
+- <span data-ttu-id="adead-p118">秘密の原点に含まれている既定のファイルの種類は、.gif、.ico、.jpeg、.jpg、.js、および .png です。追加ファイルの種類を指定できます。</span><span class="sxs-lookup"><span data-stu-id="adead-p118">The default file types that are included for private origins are .gif, .ico, .jpeg, .jpg, .js, and .png. You can specify additional file types.</span></span>
     
-- <span data-ttu-id="ecdfc-182">公開元の場所と同じように、フォルダーまたはサイトのライブラリ内のすべての資産を含むようにワイルドカードを使用する場合でも、指定したサイトの分類で特定されている資産を除外するポリシーを構成できます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-182">Just like public origins, you can configure a policy to exclude assets that have been identified by site classifications that you specify even if you use wildcards to include all assets within a folder or Site Library.</span></span>
+- <span data-ttu-id="adead-182">公開元の場所と同じように、フォルダーまたはサイトのライブラリ内のすべての資産を含むようにワイルドカードを使用する場合でも、指定したサイトの分類で特定されている資産を除外するポリシーを構成できます。</span><span class="sxs-lookup"><span data-stu-id="adead-182">Just like public origins, you can configure a policy to exclude assets that have been identified by site classifications that you specify even if you use wildcards to include all assets within a folder or Site Library.</span></span>
     
-## <a name="default-office-365-cdn-origins"></a><span data-ttu-id="ecdfc-183">既定の Office 365 の CDN の原点</span><span class="sxs-lookup"><span data-stu-id="ecdfc-183">Default Office 365 CDN origins</span></span>
+## <a name="default-office-365-cdn-origins"></a><span data-ttu-id="adead-183">既定の Office 365 の CDN の原点</span><span class="sxs-lookup"><span data-stu-id="adead-183">Default Office 365 CDN origins</span></span>
 
-<span data-ttu-id="ecdfc-p119">指定しない限り、Office 365 をいくつかのデフォルトの原点の設定を Office 365 の CDN を有効にするとします。最初に除外する場合は、セットアップを完了した後これらの基準を追加できます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p119">Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN. If you initially exclude them, you can add these origins after you complete setup.</span></span>
+<span data-ttu-id="adead-p119">指定しない限り、Office 365 をいくつかのデフォルトの原点の設定を Office 365 の CDN を有効にするとします。最初に除外する場合は、セットアップを完了した後これらの基準を追加できます。</span><span class="sxs-lookup"><span data-stu-id="adead-p119">Unless you specify otherwise, Office 365 sets up some default origins for you when you enable the Office 365 CDN. If you initially exclude them, you can add these origins after you complete setup.</span></span>
   
-<span data-ttu-id="ecdfc-186">プライベート原点の既定値:</span><span class="sxs-lookup"><span data-stu-id="ecdfc-186">Default private origins:</span></span>
+<span data-ttu-id="adead-186">プライベート原点の既定値:</span><span class="sxs-lookup"><span data-stu-id="adead-186">Default private origins:</span></span>
   
-- <span data-ttu-id="ecdfc-187">\*/userphoto.aspx</span><span class="sxs-lookup"><span data-stu-id="ecdfc-187">\*/userphoto.aspx</span></span>
+- <span data-ttu-id="adead-187">\*/userphoto.aspx</span><span class="sxs-lookup"><span data-stu-id="adead-187">\*/userphoto.aspx</span></span>
     
-- <span data-ttu-id="ecdfc-188">\*/siteassets</span><span class="sxs-lookup"><span data-stu-id="ecdfc-188">\*/siteassets</span></span>
+- <span data-ttu-id="adead-188">\*/siteassets</span><span class="sxs-lookup"><span data-stu-id="adead-188">\*/siteassets</span></span>
     
-<span data-ttu-id="ecdfc-189">公開元の既定値:</span><span class="sxs-lookup"><span data-stu-id="ecdfc-189">Default public origins:</span></span>
+<span data-ttu-id="adead-189">公開元の既定値:</span><span class="sxs-lookup"><span data-stu-id="adead-189">Default public origins:</span></span>
   
-- <span data-ttu-id="ecdfc-190">\*/masterpage</span><span class="sxs-lookup"><span data-stu-id="ecdfc-190">\*/masterpage</span></span>
+- <span data-ttu-id="adead-190">\*/masterpage</span><span class="sxs-lookup"><span data-stu-id="adead-190">\*/masterpage</span></span>
     
-- <span data-ttu-id="ecdfc-191">\*/style ライブラリ</span><span class="sxs-lookup"><span data-stu-id="ecdfc-191">\*/style library</span></span>
-    
-## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a><span data-ttu-id="ecdfc-192">設定し、SharePoint のオンライン管理シェルを使用して Office 365 の CDN を構成します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-192">Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell</span></span>
+- <span data-ttu-id="adead-191">\*/style ライブラリ</span><span class="sxs-lookup"><span data-stu-id="adead-191">\*/style library</span></span>
 
-<span data-ttu-id="ecdfc-p120">このトピックの手順では、SharePoint のオンライン管理シェルを使用して SharePoint Online に接続する必要があります。手順については、 [SharePoint のオンライン PowerShell への接続](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p120">The procedures in this topic require you to use the SharePoint Online Management Shell to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
-  
-<span data-ttu-id="ecdfc-195">設定し、SharePoint Online での静的なアセットをホストするのには Office 365 の CDN を構成する手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-195">Complete these steps to set up and configure the Office 365 CDN to host your static assets in SharePoint Online.</span></span>
-  
-### <a name="to-enable-your-organization-to-use-the-office-365-cdn"></a><span data-ttu-id="ecdfc-196">Office 365 の CDN を使用する組織を有効にするには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-196">To enable your organization to use the Office 365 CDN</span></span>
+> [!NOTE]
+> <span data-ttu-id="adead-p120">Clientsideassets 年 12 月の 2017年でできるように、その時刻より前に、パブリックの CDN をした場合、エントリが自動的に追加されると、表示されません。 ですが、後で作成した場合に追加されたデフォルトの公開基準では、この変更を自動的に表示されます。この CDN の原点を使用しての例を読みを参照してくださいしたい場合:[ホストから Office 365 の CDN (Hello World パート 4) クライアント側の web パーツ](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)</span><span class="sxs-lookup"><span data-stu-id="adead-p120">Clientsideassets is a default public origin that was added in Dec of 2017 so that, if you had a public CDN before that time, you wouldn't see the entry automatically added, but if you created afterward, you'd see this change automatically. If you'd like to read an example of using this CDN origin, see: [Host your client-side web part from Office 365 CDN (Hello World part 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)</span></span>
+    
+## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a><span data-ttu-id="adead-194">設定し、SharePoint のオンライン管理シェルを使用して Office 365 の CDN を構成します。</span><span class="sxs-lookup"><span data-stu-id="adead-194">Set up and configure the Office 365 CDN by using the SharePoint Online Management Shell</span></span>
 
-<span data-ttu-id="ecdfc-p121">**セット SPOTenantCdnEnabled**コマンドレットを使用して、Office 365 の CDN を使用する組織を有効にします。元のパブリック、プライベートの原点またはその、CDN の両方を使用する組織を有効にできます。有効にすると、元の既定の設定をスキップするのには Office 365 の CDN を構成することもできます。これらの原点はこのトピックで説明したように、後でいつでも追加できます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p121">Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use either public origins, private origins, or both with the CDN. You can also configure the Office 365 CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.</span></span> 
+<span data-ttu-id="adead-p121">このトピックの手順では、SharePoint のオンライン管理シェルを使用して SharePoint Online に接続する必要があります。手順については、 [SharePoint のオンライン PowerShell への接続](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-p121">The procedures in this topic require you to use the SharePoint Online Management Shell to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
   
-<span data-ttu-id="ecdfc-201">で SharePoint のオンラインの Windows Powershell:</span><span class="sxs-lookup"><span data-stu-id="ecdfc-201">In Windows Powershell for SharePoint Online:</span></span>
+<span data-ttu-id="adead-197">設定し、SharePoint Online での静的なアセットをホストするのには Office 365 の CDN を構成する手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="adead-197">Complete these steps to set up and configure the Office 365 CDN to host your static assets in SharePoint Online.</span></span>
+  
+### <a name="to-enable-your-organization-to-use-the-office-365-cdn"></a><span data-ttu-id="adead-198">Office 365 の CDN を使用する組織を有効にするには</span><span class="sxs-lookup"><span data-stu-id="adead-198">To enable your organization to use the Office 365 CDN</span></span>
+
+<span data-ttu-id="adead-p122">**セット SPOTenantCdnEnabled**コマンドレットを使用して、Office 365 の CDN を使用する組織を有効にします。元のパブリック、プライベートの原点またはその、CDN の両方を使用する組織を有効にできます。有効にすると、元の既定の設定をスキップするのには Office 365 の CDN を構成することもできます。これらの原点はこのトピックで説明したように、後でいつでも追加できます。</span><span class="sxs-lookup"><span data-stu-id="adead-p122">Use the **Set-SPOTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use either public origins, private origins, or both with the CDN. You can also configure the Office 365 CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.</span></span> 
+  
+<span data-ttu-id="adead-203">で SharePoint のオンラインの Windows Powershell:</span><span class="sxs-lookup"><span data-stu-id="adead-203">In Windows Powershell for SharePoint Online:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType <Public | Private | Both> -Enable $true
 ```
 
-<span data-ttu-id="ecdfc-202">など、CDN で元のパブリックとプライベートの両方を使用する組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-202">For example, to enable your organization to use both public and private origins with the CDN, type the following command:</span></span>
+<span data-ttu-id="adead-204">など、CDN で元のパブリックとプライベートの両方を使用する組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-204">For example, to enable your organization to use both public and private origins with the CDN, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 ```
 
-<span data-ttu-id="ecdfc-203">パブリックとプライベートの両方の基準を使用して、CDN では、元の既定の設定を省略して、組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-203">To enable your organization to use both public and private origins with the CDN but skip setting up the default origins, type the following command:</span></span>
+<span data-ttu-id="adead-205">パブリックとプライベートの両方の基準を使用して、CDN では、元の既定の設定を省略して、組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-205">To enable your organization to use both public and private origins with the CDN but skip setting up the default origins, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Both -Enable $true -NoDefaultOrigins
 ```
 
-<span data-ttu-id="ecdfc-204">CDN とパブリックの原点を使用する組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-204">To enable your organization to use public origins with the CDN, type the following command:</span></span>
+<span data-ttu-id="adead-206">CDN とパブリックの原点を使用する組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-206">To enable your organization to use public origins with the CDN, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 ```
 
-<span data-ttu-id="ecdfc-205">CDN とプライベートの原点を使用する組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-205">To enable your organization to use private origins with the CDN, type the following command:</span></span>
+<span data-ttu-id="adead-207">CDN とプライベートの原点を使用する組織を有効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-207">To enable your organization to use private origins with the CDN, type the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-<span data-ttu-id="ecdfc-206">このコマンドレットの詳細については、[一連の SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-206">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
+<span data-ttu-id="adead-208">このコマンドレットの詳細については、[一連の SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-208">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
   
-### <a name="optional-to-change-the-list-of-file-types-to-include-in-the-office-365-cdn"></a><span data-ttu-id="ecdfc-207">(省略可能)Office 365 の CDN に含めるファイルの種類の一覧を変更するのには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-207">(Optional) To change the list of file types to include in the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-208"><a name="Office365CDNforSPOFileType"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-208"></span></span>
+### <a name="optional-to-change-the-list-of-file-types-to-include-in-the-office-365-cdn"></a><span data-ttu-id="adead-209">(省略可能)Office 365 の CDN に含めるファイルの種類の一覧を変更するのには</span><span class="sxs-lookup"><span data-stu-id="adead-209">(Optional) To change the list of file types to include in the Office 365 CDN</span></span>
+<span data-ttu-id="adead-210"><a name="Office365CDNforSPOFileType"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-210"></span></span>
 
 > [!TIP]
-> <span data-ttu-id="ecdfc-p122">**セット SPOTenantCdnPolicy**コマンドレットを使用してファイルの種類を定義するときは、現在定義されているリストを上書きします。追加ファイルの種類を一覧に追加する場合は、最初にどのようなファイルの種類が既に許可されて、およびと、新規のリストに含めますコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p122">When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.</span></span> 
+> <span data-ttu-id="adead-p123">**セット SPOTenantCdnPolicy**コマンドレットを使用してファイルの種類を定義するときは、現在定義されているリストを上書きします。追加ファイルの種類を一覧に追加する場合は、最初にどのようなファイルの種類が既に許可されて、およびと、新規のリストに含めますコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="adead-p123">When you define file types by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to add additional file types to the list, use the cmdlet first to find out what file types are already allowed and include them in the list along with your new ones.</span></span> 
   
-<span data-ttu-id="ecdfc-p123">**セット SPOTenantCdnPolicy**コマンドレットを使用すると、CDN のパブリックおよびプライベートの原点でホストできる静的ファイルの種類を定義します。既定では、例の .css、.gif、.jpg、および .js の共通の資産の型が使用できます。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p123">Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.</span></span> 
+<span data-ttu-id="adead-p124">**セット SPOTenantCdnPolicy**コマンドレットを使用すると、CDN のパブリックおよびプライベートの原点でホストできる静的ファイルの種類を定義します。既定では、例の .css、.gif、.jpg、および .js の共通の資産の型が使用できます。</span><span class="sxs-lookup"><span data-stu-id="adead-p124">Use the **Set-SPOTenantCdnPolicy** cmdlet to define static file types that can be hosted by public and private origins in the CDN. By default, common asset types are allowed, for example .css, .gif, .jpg, and .js.</span></span> 
   
-<span data-ttu-id="ecdfc-213">で SharePoint のオンラインの Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="ecdfc-213">In Windows PowerShell for SharePoint Online:</span></span>
+<span data-ttu-id="adead-215">で SharePoint のオンラインの Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="adead-215">In Windows PowerShell for SharePoint Online:</span></span>
   
 ```
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType IncludeFileExtensions -PolicyValue "<Comma-separated list of file types >"
 ```
 
-<span data-ttu-id="ecdfc-214">ファイルの種類は、現在許可されている、CDN でを表示するには、 **Get SPOTenantCdnPolicies**コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-214">To see what file types are currently allowed by the CDN, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
+<span data-ttu-id="adead-216">ファイルの種類は、現在許可されている、CDN でを表示するには、 **Get SPOTenantCdnPolicies**コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="adead-216">To see what file types are currently allowed by the CDN, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
   
 ```
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-<span data-ttu-id="ecdfc-215">これらのコマンドレットの詳細については、[一連の SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)と[Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-215">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
+<span data-ttu-id="adead-217">これらのコマンドレットの詳細については、[一連の SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)と[Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-217">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
   
-### <a name="optional-to-change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a><span data-ttu-id="ecdfc-216">(省略可能)Office 365 の CDN から除外したいサイトの分類の一覧を変更するのには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-216">(Optional) To change the list of site classifications you want to exclude from the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-217"><a name="Office365CDNforSPOSiteClassification"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-217"></span></span>
+### <a name="optional-to-change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn"></a><span data-ttu-id="adead-218">(省略可能)Office 365 の CDN から除外したいサイトの分類の一覧を変更するのには</span><span class="sxs-lookup"><span data-stu-id="adead-218">(Optional) To change the list of site classifications you want to exclude from the Office 365 CDN</span></span>
+<span data-ttu-id="adead-219"><a name="Office365CDNforSPOSiteClassification"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-219"></span></span>
 
 > [!TIP]
-> <span data-ttu-id="ecdfc-p124">**セット SPOTenantCdnPolicy**コマンドレットを使用してサイトの分類を除外するとは、現在定義されているリストを上書きします。その他のサイトの分類を除外する場合は、最初にどのような分類が既に除外されていることを確認し、追加、新しいものとコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p124">When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.</span></span> 
+> <span data-ttu-id="adead-p125">**セット SPOTenantCdnPolicy**コマンドレットを使用してサイトの分類を除外するとは、現在定義されているリストを上書きします。その他のサイトの分類を除外する場合は、最初にどのような分類が既に除外されていることを確認し、追加、新しいものとコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="adead-p125">When you exclude site classifications by using the **Set-SPOTenantCdnPolicy** cmdlet, you overwrite the currently defined list. If you want to exclude additional site classifications, use the cmdlet first to find out what classifications are already excluded and then add them along with your new ones.</span></span> 
   
-<span data-ttu-id="ecdfc-p125">CDN を介して利用できるようにするのに必要がないサイトの分類を除外するのには、**セット SPOTenantCdnPolicy**コマンドレットを使用します。既定では、サイトの分類は除外されません。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p125">Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.</span></span> 
+<span data-ttu-id="adead-p126">CDN を介して利用できるようにするのに必要がないサイトの分類を除外するのには、**セット SPOTenantCdnPolicy**コマンドレットを使用します。既定では、サイトの分類は除外されません。</span><span class="sxs-lookup"><span data-stu-id="adead-p126">Use the **Set-SPOTenantCdnPolicy** cmdlet to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.</span></span> 
   
-<span data-ttu-id="ecdfc-222">で SharePoint のオンラインの Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="ecdfc-222">In Windows PowerShell for SharePoint Online:</span></span>
+<span data-ttu-id="adead-224">で SharePoint のオンラインの Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="adead-224">In Windows PowerShell for SharePoint Online:</span></span>
   
 ```
 Set-SPOTenantCdnPolicy -CdnType <Public | Private> -PolicyType ExcludeRestrictedSiteClassifications  -PolicyValue "<Comma-separated list of site classifications >"
 ```
 
-<span data-ttu-id="ecdfc-223">どのようなサイトの分類は現在の制限を表示するには、 **Get SPOTenantCdnPolicies**コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-223">To see what site classifications are currently restricted, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
+<span data-ttu-id="adead-225">どのようなサイトの分類は現在の制限を表示するには、 **Get SPOTenantCdnPolicies**コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="adead-225">To see what site classifications are currently restricted, use the **Get-SPOTenantCdnPolicies** cmdlet:</span></span> 
   
 ```
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-<span data-ttu-id="ecdfc-224">これらのコマンドレットの詳細については、[一連の SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)と[Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-224">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
+<span data-ttu-id="adead-226">これらのコマンドレットの詳細については、[一連の SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx)と[Get SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-226">For more information about these cmdlets, see [Set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) and [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).</span></span>
   
-### <a name="to-add-an-origin-for-your-assets"></a><span data-ttu-id="ecdfc-225">資産の基準点を追加するのには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-225">To add an origin for your assets</span></span>
-<span data-ttu-id="ecdfc-226"><a name="Office365CDNforSPOOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-226"></span></span>
+### <a name="to-add-an-origin-for-your-assets"></a><span data-ttu-id="adead-227">資産の基準点を追加するのには</span><span class="sxs-lookup"><span data-stu-id="adead-227">To add an origin for your assets</span></span>
+<span data-ttu-id="adead-228"><a name="Office365CDNforSPOOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-228"></span></span>
 
-<span data-ttu-id="ecdfc-p126">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、基準点を定義します。複数の基準を定義できます。原点は、SharePoint ライブラリまたは、CDN でホストされるように使用するアセットが含まれているフォルダーを指す URL です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p126">Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span> 
+<span data-ttu-id="adead-p127">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、基準点を定義します。複数の基準を定義できます。原点は、SharePoint ライブラリまたは、CDN でホストされるように使用するアセットが含まれているフォルダーを指す URL です。</span><span class="sxs-lookup"><span data-stu-id="adead-p127">Use the **Add-SPOTenantCdnOrigin** cmdlet to define an origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="ecdfc-230">CDN の公開元を識別する場合は、パブリックの原点または SharePoint Online ライブラリで、組織に機密性の高いと見なされているリソースを配置しないでください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-230">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in the public origin or SharePoint Online library.</span></span> 
+> <span data-ttu-id="adead-232">CDN の公開元を識別する場合は、パブリックの原点または SharePoint Online ライブラリで、組織に機密性の高いと見なされているリソースを配置しないでください。</span><span class="sxs-lookup"><span data-stu-id="adead-232">If you identify a public origin in your CDN, you should never place resources that are considered sensitive to your organization in the public origin or SharePoint Online library.</span></span> 
   
 ```
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path >
 ```
 
-<span data-ttu-id="ecdfc-p127">パスには、資産が含まれるフォルダーへのパスです。相対パス以外のワイルドカードを使用できます。たとえば、masterpages フォルダーのすべてのサイトにすべての資産は、CDN 内のパブリックの原点としてするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p127">Where path is the path to the folder that contains the assets. You can use wildcards in addition to relative paths. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:</span></span>
+<span data-ttu-id="adead-p128">パスには、資産が含まれるフォルダーへのパスです。相対パス以外のワイルドカードを使用できます。たとえば、masterpages フォルダーのすべてのサイトにすべての資産は、CDN 内のパブリックの原点としてするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-p128">Where path is the path to the folder that contains the assets. You can use wildcards in addition to relative paths. For example, to include all of the assets in the masterpages folder for all of your sites as a public origin within the CDN, type the following command:</span></span>
   
 ```
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-<span data-ttu-id="ecdfc-234">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-234">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+<span data-ttu-id="adead-236">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-236">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
   
-<span data-ttu-id="ecdfc-p128">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p128">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+<span data-ttu-id="adead-p129">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="adead-p129">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
   
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a><span data-ttu-id="ecdfc-237">例: SharePoint Online は、マスター ページとスタイル ライブラリのパブリックの原点を構成します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-237">Example: Configure a public origin for your master pages and for your style library for SharePoint Online</span></span>
-<span data-ttu-id="ecdfc-238"><a name="ExamplePublicOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-238"></span></span>
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a><span data-ttu-id="adead-239">例: SharePoint Online は、マスター ページとスタイル ライブラリのパブリックの原点を構成します。</span><span class="sxs-lookup"><span data-stu-id="adead-239">Example: Configure a public origin for your master pages and for your style library for SharePoint Online</span></span>
+<span data-ttu-id="adead-240"><a name="ExamplePublicOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-240"></span></span>
 
-<span data-ttu-id="ecdfc-p129">通常、これらの原点が設定されて既定で Office 365 の CDN の元の公開を有効にするとします。ただし、それらを手動で有効にする場合は、以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p129">Normally, these origins are set up for you by default when you enable public origins for the Office 365 CDN. However, if you want to enable them manually, follow these steps.</span></span>
+<span data-ttu-id="adead-p130">通常、これらの原点が設定されて既定で Office 365 の CDN の元の公開を有効にするとします。ただし、それらを手動で有効にする場合は、以下の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="adead-p130">Normally, these origins are set up for you by default when you enable public origins for the Office 365 CDN. However, if you want to enable them manually, follow these steps.</span></span>
   
-- <span data-ttu-id="ecdfc-241">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の公開基準とスタイル ライブラリを定義します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-241">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the style library as a public origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="adead-243">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の公開基準とスタイル ライブラリを定義します。</span><span class="sxs-lookup"><span data-stu-id="adead-243">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the style library as a public origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */style%20library
   ```
 
-- <span data-ttu-id="ecdfc-242">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の公開基準とマスター ページを定義します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-242">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the master pages as a public origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="adead-244">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の公開基準とマスター ページを定義します。</span><span class="sxs-lookup"><span data-stu-id="adead-244">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the master pages as a public origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-- <span data-ttu-id="ecdfc-243">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-243">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+- <span data-ttu-id="adead-245">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-245">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
     
-    <span data-ttu-id="ecdfc-p130">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p130">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+    <span data-ttu-id="adead-p131">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="adead-p131">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
     
-### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a><span data-ttu-id="ecdfc-246">例: SharePoint online サイトの資産、サイト ページ、および発行イメージの秘密の原点を構成します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-246">Example: Configure a private origin for your site assets, site pages, and publishing images for SharePoint Online</span></span>
-<span data-ttu-id="ecdfc-247"><a name="ExamplePrivateOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-247"></span></span>
+### <a name="example-configure-a-private-origin-for-your-site-assets-site-pages-and-publishing-images-for-sharepoint-online"></a><span data-ttu-id="adead-248">例: SharePoint online サイトの資産、サイト ページ、および発行イメージの秘密の原点を構成します。</span><span class="sxs-lookup"><span data-stu-id="adead-248">Example: Configure a private origin for your site assets, site pages, and publishing images for SharePoint Online</span></span>
+<span data-ttu-id="adead-249"><a name="ExamplePrivateOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-249"></span></span>
 
-- <span data-ttu-id="ecdfc-248">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点としてサイトの assets フォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-248">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site assets folder as a private origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="adead-250">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点としてサイトの assets フォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="adead-250">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site assets folder as a private origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */siteassets
   ```
 
-- <span data-ttu-id="ecdfc-249">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点としてのサイトのページのフォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-249">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site pages folder as a private origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="adead-251">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点としてのサイトのページのフォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="adead-251">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the site pages folder as a private origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */sitepages
   ```
 
-- <span data-ttu-id="ecdfc-250">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点として公開の画像フォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-250">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the publishing images folder as a private origin within the Office 365 CDN.</span></span> 
+- <span data-ttu-id="adead-252">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点として公開の画像フォルダーを定義します。</span><span class="sxs-lookup"><span data-stu-id="adead-252">Use the **Add-SPOTenantCdnOrigin** cmdlet to define the publishing images folder as a private origin within the Office 365 CDN.</span></span> 
     
   ```
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-    <span data-ttu-id="ecdfc-251">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-251">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+    <span data-ttu-id="adead-253">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-253">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
     
-    <span data-ttu-id="ecdfc-p131">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p131">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+    <span data-ttu-id="adead-p132">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="adead-p132">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
     
-### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a><span data-ttu-id="ecdfc-254">例: SharePoint online サイト コレクションの秘密の原点を構成します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-254">Example: Configure a private origin for a site collection for SharePoint Online</span></span>
-<span data-ttu-id="ecdfc-255"><a name="ExamplePrivateOriginSiteCollection"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-255"></span></span>
+### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a><span data-ttu-id="adead-256">例: SharePoint online サイト コレクションの秘密の原点を構成します。</span><span class="sxs-lookup"><span data-stu-id="adead-256">Example: Configure a private origin for a site collection for SharePoint Online</span></span>
+<span data-ttu-id="adead-257"><a name="ExamplePrivateOriginSiteCollection"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-257"></span></span>
 
-<span data-ttu-id="ecdfc-p132">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点としてサイト コレクションを定義します。例えば</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p132">Use the **Add-SPOTenantCdnOrigin** cmdlet to define a site collection as a private origin within the Office 365 CDN. For example,</span></span> 
+<span data-ttu-id="adead-p133">**追加 SPOTenantCdnOrigin**コマンドレットを使用すると、Office 365 の CDN 内の秘密の原点としてサイト コレクションを定義します。例えば</span><span class="sxs-lookup"><span data-stu-id="adead-p133">Use the **Add-SPOTenantCdnOrigin** cmdlet to define a site collection as a private origin within the Office 365 CDN. For example,</span></span> 
   
 ```
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-<span data-ttu-id="ecdfc-258">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-258">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
+<span data-ttu-id="adead-260">このコマンドとその構文の詳細については、[追加 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-260">For more information about this command and its syntax, see [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).</span></span>
   
-<span data-ttu-id="ecdfc-p133">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p133">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
+<span data-ttu-id="adead-p134">コマンドを実行すると、システムは、データ ・ センター内の構成を同期します。これは、15 分です。</span><span class="sxs-lookup"><span data-stu-id="adead-p134">Once you've run the command, the system synchronizes the configuration across the datacenter. This takes 15 minutes.</span></span>
   
-## <a name="manage-the-office-365-cdn"></a><span data-ttu-id="ecdfc-261">Office 365 を管理する CDN</span><span class="sxs-lookup"><span data-stu-id="ecdfc-261">Manage the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-262"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-262"></span></span>
+## <a name="manage-the-office-365-cdn"></a><span data-ttu-id="adead-263">Office 365 を管理する CDN</span><span class="sxs-lookup"><span data-stu-id="adead-263">Manage the Office 365 CDN</span></span>
+<span data-ttu-id="adead-264"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-264"></span></span>
 
-<span data-ttu-id="ecdfc-263">CDN を設定すると変更できます、構成にコンテンツを更新するように変更したり、お客様のニーズ、このセクションで説明したようです。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-263">Once you've set up the CDN, you can make changes to your configuration as you update content or as your needs change, as described in this section.</span></span>
+<span data-ttu-id="adead-265">CDN を設定すると変更できます、構成にコンテンツを更新するように変更したり、お客様のニーズ、このセクションで説明したようです。</span><span class="sxs-lookup"><span data-stu-id="adead-265">Once you've set up the CDN, you can make changes to your configuration as you update content or as your needs change, as described in this section.</span></span>
   
-### <a name="to-add-update-or-remove-assets-from-the-office-365-cdn"></a><span data-ttu-id="ecdfc-264">追加、更新、または Office 365 の CDN からアセットを削除するには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-264">To add, update, or remove assets from the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-265"><a name="Office365CDNforSPOaddremoveasset"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-265"></span></span>
+### <a name="to-add-update-or-remove-assets-from-the-office-365-cdn"></a><span data-ttu-id="adead-266">追加、更新、または Office 365 の CDN からアセットを削除するには</span><span class="sxs-lookup"><span data-stu-id="adead-266">To add, update, or remove assets from the Office 365 CDN</span></span>
+<span data-ttu-id="adead-267"><a name="Office365CDNforSPOaddremoveasset"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-267"></span></span>
 
-<span data-ttu-id="ecdfc-p134">セットアップ手順が完了したら、新しい資産を追加および更新したりするたびに、既存の資産を削除できます。同じフォルダーまたは基準点として指定した SharePoint ライブラリ内の資産に変更を加えます。新しい資産を追加する場合は、CDN を通じて使用可能なすぐにただし、資産を更新する場合は、かかるを伝達し、CDN で使用可能になる新しいコピーを最大で 15 分間です。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p134">Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it is available through the CDN immediately. However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.</span></span>
+<span data-ttu-id="adead-p135">セットアップ手順が完了したら、新しい資産を追加および更新したりするたびに、既存の資産を削除できます。同じフォルダーまたは基準点として指定した SharePoint ライブラリ内の資産に変更を加えます。新しい資産を追加する場合は、CDN を通じて使用可能なすぐにただし、資産を更新する場合は、かかるを伝達し、CDN で使用可能になる新しいコピーを最大で 15 分間です。</span><span class="sxs-lookup"><span data-stu-id="adead-p135">Once you've completed the setup steps, you can add new assets, and update or remove existing assets whenever you want. Just make your changes to the assets in the folder or SharePoint library that you identified as an origin. If you add a new asset, it is available through the CDN immediately. However, if you update the asset, it will take up to 15 minutes for the new copy to propagate and become available in the CDN.</span></span>
   
-<span data-ttu-id="ecdfc-p135">原点の位置を取得する必要がある場合、は、 **Get SPOTenantCdnOrigins**コマンドレットを使用することができます。このコマンドレットを使用する方法については、 [Get SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p135">If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).</span></span>
+<span data-ttu-id="adead-p136">原点の位置を取得する必要がある場合、は、 **Get SPOTenantCdnOrigins**コマンドレットを使用することができます。このコマンドレットを使用する方法については、 [Get SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-p136">If you need to retrieve the location of the origin, you can use the **Get-SPOTenantCdnOrigins** cmdlet. For information on how to use this cmdlet, see [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).</span></span>
   
-### <a name="to-remove-an-origin-from-the-office-365-cdn"></a><span data-ttu-id="ecdfc-272">Office 365 の CDN からオリジナルを削除するのには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-272">To remove an origin from the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-273"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-273"></span></span>
+### <a name="to-remove-an-origin-from-the-office-365-cdn"></a><span data-ttu-id="adead-274">Office 365 の CDN からオリジナルを削除するのには</span><span class="sxs-lookup"><span data-stu-id="adead-274">To remove an origin from the Office 365 CDN</span></span>
+<span data-ttu-id="adead-275"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-275"></span></span>
 
-<span data-ttu-id="ecdfc-p136">必要がある場合、基準点として指定した SharePoint ライブラリまたはフォルダーへのアクセスを削除できます。これを行うには、**削除 SPOTenantCdnOrigin**コマンドレットを使用します。このコマンドレットを使用する方法については、[削除 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p136">If you need to, you can remove access to a folder or SharePoint library that you identified as an origin. To do this, use the **Remove-SPOTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).</span></span>
+<span data-ttu-id="adead-p137">必要がある場合、基準点として指定した SharePoint ライブラリまたはフォルダーへのアクセスを削除できます。これを行うには、**削除 SPOTenantCdnOrigin**コマンドレットを使用します。このコマンドレットを使用する方法については、[削除 SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-p137">If you need to, you can remove access to a folder or SharePoint library that you identified as an origin. To do this, use the **Remove-SPOTenantCdnOrigin** cmdlet. For information on how to use this cmdlet, see [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).</span></span>
   
-### <a name="to-modify-an-origin-in-the-office-365-cdn"></a><span data-ttu-id="ecdfc-277">Office 365 の CDN で基準点を変更するのには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-277">To modify an origin in the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-278"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-278"></span></span>
+### <a name="to-modify-an-origin-in-the-office-365-cdn"></a><span data-ttu-id="adead-279">Office 365 の CDN で基準点を変更するのには</span><span class="sxs-lookup"><span data-stu-id="adead-279">To modify an origin in the Office 365 CDN</span></span>
+<span data-ttu-id="adead-280"><a name="Office365CDNforSPORemoveOrigin"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-280"></span></span>
 
-<span data-ttu-id="ecdfc-p137">作成したオリジナルを変更することはできません。代わりに、原点を削除し、新しいします。詳細については、 [Office 365 の CDN からオリジナルを削除して](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) [、資産の基準点を追加するのに](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)はを参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p137">You can't modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).</span></span>
+<span data-ttu-id="adead-p138">作成したオリジナルを変更することはできません。代わりに、原点を削除し、新しいします。詳細については、 [Office 365 の CDN からオリジナルを削除して](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) [、資産の基準点を追加するのに](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)はを参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-p138">You can't modify an origin you've created. Instead, remove the origin and then add a new one. For more information, see [To remove an origin from the Office 365 CDN](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin) and [To add an origin for your assets](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin).</span></span>
   
-### <a name="to-disable-the-office-365-cdn"></a><span data-ttu-id="ecdfc-282">Office 365 の CDN を無効にするには</span><span class="sxs-lookup"><span data-stu-id="ecdfc-282">To disable the Office 365 CDN</span></span>
-<span data-ttu-id="ecdfc-283"><a name="Office365CDNforSPODisable"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-283"></span></span>
+### <a name="to-disable-the-office-365-cdn"></a><span data-ttu-id="adead-284">Office 365 の CDN を無効にするには</span><span class="sxs-lookup"><span data-stu-id="adead-284">To disable the Office 365 CDN</span></span>
+<span data-ttu-id="adead-285"><a name="Office365CDNforSPODisable"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-285"></span></span>
 
-<span data-ttu-id="ecdfc-p138">**セット SPOTenantCdnEnabled**コマンドレットを使用して、組織の CDN を無効にします。両方パブリックとプライベートの原点、CDN を有効になっている場合は、次の例に示すように 2 回のコマンドレットを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p138">Use the **Set-SPOTenantCdnEnabled** cmdlet to disable the CDN for your organization. If you have both the public and private origins enabled for the CDN, you need to run the cmdlet twice as shown in the following examples.</span></span> 
+<span data-ttu-id="adead-p139">**セット SPOTenantCdnEnabled**コマンドレットを使用して、組織の CDN を無効にします。両方パブリックとプライベートの原点、CDN を有効になっている場合は、次の例に示すように 2 回のコマンドレットを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="adead-p139">Use the **Set-SPOTenantCdnEnabled** cmdlet to disable the CDN for your organization. If you have both the public and private origins enabled for the CDN, you need to run the cmdlet twice as shown in the following examples.</span></span> 
   
-<span data-ttu-id="ecdfc-286">CDN、SharePoint online では、Windows Powershell での公開元の場所の使用を無効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-286">To disable use of public origins in the CDN, in Windows Powershell for SharePoint Online, enter the following command:</span></span>
+<span data-ttu-id="adead-288">CDN、SharePoint online では、Windows Powershell での公開元の場所の使用を無効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-288">To disable use of public origins in the CDN, in Windows Powershell for SharePoint Online, enter the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 ```
 
-<span data-ttu-id="ecdfc-287">秘密の原点、CDN での使用を無効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-287">To disable use of the private origins in the CDN, enter the following command:</span></span>
+<span data-ttu-id="adead-289">秘密の原点、CDN での使用を無効にするには、次のコマンドを入力します。</span><span class="sxs-lookup"><span data-stu-id="adead-289">To disable use of the private origins in the CDN, enter the following command:</span></span>
   
 ```
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-<span data-ttu-id="ecdfc-288">このコマンドレットの詳細については、[一連の SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-288">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
+<span data-ttu-id="adead-290">このコマンドレットの詳細については、[一連の SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="adead-290">For more information about this cmdlet, see [Set-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).</span></span>
   
-## <a name="troubleshooting-your-office-365-cdn-configuration"></a><span data-ttu-id="ecdfc-289">Office 365 の CDN の構成のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="ecdfc-289">Troubleshooting your Office 365 CDN configuration</span></span>
-<span data-ttu-id="ecdfc-290"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="ecdfc-290"></span></span>
+## <a name="troubleshooting-your-office-365-cdn-configuration"></a><span data-ttu-id="adead-291">Office 365 の CDN の構成のトラブルシューティング</span><span class="sxs-lookup"><span data-stu-id="adead-291">Troubleshooting your Office 365 CDN configuration</span></span>
+<span data-ttu-id="adead-292"><a name="CDNManage"> </a></span><span class="sxs-lookup"><span data-stu-id="adead-292"></span></span>
 
-<span data-ttu-id="ecdfc-p139">エンドポイントはすぐにできませんには、CDN に登録するための時間がかかるようです。構成では、15 分かかります。</span><span class="sxs-lookup"><span data-stu-id="ecdfc-p139">The endpoint will not immediately be available for use, as it takes time for the registration to propagate through the CDN. Configuration takes 15 minutes.</span></span>
+<span data-ttu-id="adead-p140">エンドポイントはすぐにできませんには、CDN に登録するための時間がかかるようです。構成では、15 分かかります。</span><span class="sxs-lookup"><span data-stu-id="adead-p140">The endpoint will not immediately be available for use, as it takes time for the registration to propagate through the CDN. Configuration takes 15 minutes.</span></span>
   
 

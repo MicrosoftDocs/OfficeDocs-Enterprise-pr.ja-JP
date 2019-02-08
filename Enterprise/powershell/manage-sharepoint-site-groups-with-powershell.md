@@ -14,36 +14,36 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '使用 Office 365 PowerShell を概要: SharePoint Online サイト グループを管理します。'
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975145"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897160"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a><span data-ttu-id="02151-103">Office 365 PowerShell を使用して SharePoint Online サイト グループを管理する</span><span class="sxs-lookup"><span data-stu-id="02151-103">Manage SharePoint Online site groups with Office 365 PowerShell</span></span>
+# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a><span data-ttu-id="aaa01-103">Office 365 PowerShell を使用して SharePoint Online サイト グループを管理する</span><span class="sxs-lookup"><span data-stu-id="aaa01-103">Manage SharePoint Online site groups with Office 365 PowerShell</span></span>
 
- <span data-ttu-id="02151-104">**の概要:** SharePoint Online サイト グループを管理するのにには、Office 365 の PowerShell を使用します。</span><span class="sxs-lookup"><span data-stu-id="02151-104">**Summary:** Use Office 365 PowerShell to manage SharePoint Online site groups.</span></span>
+ <span data-ttu-id="aaa01-104">**の概要:** SharePoint Online サイト グループを管理するのにには、Office 365 の PowerShell を使用します。</span><span class="sxs-lookup"><span data-stu-id="aaa01-104">**Summary:** Use Office 365 PowerShell to manage SharePoint Online site groups.</span></span>
   
-<span data-ttu-id="02151-105">Office 365 の管理ページを使用できますが、SharePoint Online サイト グループを管理するために Office 365 の PowerShell を使用することができますも。</span><span class="sxs-lookup"><span data-stu-id="02151-105">Although you can use the Office 365 admin center, you can also use Office 365 PowerShell to manage your SharePoint Online site groups.</span></span>
+<span data-ttu-id="aaa01-105">Office 365 の管理ページを使用できますが、SharePoint Online サイト グループを管理するために Office 365 の PowerShell を使用することができますも。</span><span class="sxs-lookup"><span data-stu-id="aaa01-105">Although you can use the Office 365 admin center, you can also use Office 365 PowerShell to manage your SharePoint Online site groups.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="02151-106">はじめに</span><span class="sxs-lookup"><span data-stu-id="02151-106">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="aaa01-106">始める前に</span><span class="sxs-lookup"><span data-stu-id="aaa01-106">Before you begin</span></span>
 
-<span data-ttu-id="02151-p101">この資料の手順では、SharePoint Online に接続する必要があります。手順については、 [SharePoint のオンライン PowerShell への接続](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="02151-p101">The procedures in this article require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
+<span data-ttu-id="aaa01-p101">この資料の手順では、SharePoint Online に接続する必要があります。手順については、 [SharePoint のオンライン PowerShell への接続](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="aaa01-p101">The procedures in this article require you to connect to SharePoint Online. For instructions, see [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).</span></span>
 
-## <a name="view-sharepoint-online-with-office-365-powershell"></a><span data-ttu-id="02151-109">SharePoint を Office 365 の PowerShell でオンラインに表示</span><span class="sxs-lookup"><span data-stu-id="02151-109">View SharePoint Online with Office 365 PowerShell</span></span>
+## <a name="view-sharepoint-online-with-office-365-powershell"></a><span data-ttu-id="aaa01-109">SharePoint を Office 365 の PowerShell でオンラインに表示</span><span class="sxs-lookup"><span data-stu-id="aaa01-109">View SharePoint Online with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="02151-p102">SharePoint Online 管理センターでは、サイト グループを管理するためのいくつかの簡単に使用できる方法があります。たとえばのグループ、およびグループのメンバーを参照する、`https://litwareinc.sharepoint.com/sites/finance`サイトです。ために何が必要です。</span><span class="sxs-lookup"><span data-stu-id="02151-p102">The SharePoint Online admin center has some easy-to-use methods for managing site groups. For example, suppose you want to look at the groups, and the group members, for the `https://litwareinc.sharepoint.com/sites/finance` site. Here’s what you have to do to:</span></span>
+<span data-ttu-id="aaa01-p102">SharePoint Online 管理センターでは、サイト グループを管理するためのいくつかの簡単に使用できる方法があります。たとえばのグループ、およびグループのメンバーを参照する、`https://litwareinc.sharepoint.com/sites/finance`サイトです。ために何が必要です。</span><span class="sxs-lookup"><span data-stu-id="aaa01-p102">The SharePoint Online admin center has some easy-to-use methods for managing site groups. For example, suppose you want to look at the groups, and the group members, for the `https://litwareinc.sharepoint.com/sites/finance` site. Here’s what you have to do to:</span></span>
 
-1. <span data-ttu-id="02151-113">Office 365 管理センターで、[**リソース**] をクリックします > **のサイト**サイトの URL をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02151-113">From the Office 365 admin center, click **Resources** > **Sites**, and then click the URL of the site.</span></span>
-2. <span data-ttu-id="02151-114">[サイト コレクション] ダイアログ ボックスで **[このサイトに移動]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02151-114">In the site collection dialog box, click **Go to this site**.</span></span>
-3. <span data-ttu-id="02151-115">サイト ページで、**[設定]** アイコン (ページの右上隅にある) をクリックしてから、**[サイトの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02151-115">On the site page, click the **Settings** icon (located in the upper right-hand corner of the page) and then click **Site settings**:</span></span><br/>
-<span data-ttu-id="02151-116">![SharePoint Online サイトの設定](media/spo-site-settings.png)</span><span class="sxs-lookup"><span data-stu-id="02151-116">![SharePoint Online site settings](media/spo-site-settings.png)</span></span><br/>
-4. <span data-ttu-id="02151-117">[サイトの設定] ページで、[**ユーザーと権限\*\*\*\*のサイトのアクセス許可**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="02151-117">On the Site Settings page, click **Sites permissions** under **Users and Permissions**.</span></span>
+1. <span data-ttu-id="aaa01-113">Office 365 管理センターで、[**リソース**] をクリックします > **のサイト**サイトの URL をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaa01-113">From the Office 365 admin center, click **Resources** > **Sites**, and then click the URL of the site.</span></span>
+2. <span data-ttu-id="aaa01-114">[サイト コレクション] ダイアログ ボックスで **[このサイトに移動]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaa01-114">In the site collection dialog box, click **Go to this site**.</span></span>
+3. <span data-ttu-id="aaa01-115">サイト ページで、**[設定]** アイコン (ページの右上隅にある) をクリックしてから、**[サイトの設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaa01-115">On the site page, click the **Settings** icon (located in the upper right-hand corner of the page) and then click **Site settings**:</span></span><br/>
+<span data-ttu-id="aaa01-116">![SharePoint Online サイトの設定](media/spo-site-settings.png)</span><span class="sxs-lookup"><span data-stu-id="aaa01-116">![SharePoint Online site settings](media/spo-site-settings.png)</span></span><br/>
+4. <span data-ttu-id="aaa01-117">[サイトの設定] ページで、[**ユーザーと権限\*\*\*\*のサイトのアクセス許可**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="aaa01-117">On the Site Settings page, click **Sites permissions** under **Users and Permissions**.</span></span>
 
-<span data-ttu-id="02151-118">参照する次のサイトでも、このプロセスを繰り返します。</span><span class="sxs-lookup"><span data-stu-id="02151-118">And then repeat the process for the next site you want to look at.</span></span>
+<span data-ttu-id="aaa01-118">参照する次のサイトでも、このプロセスを繰り返します。</span><span class="sxs-lookup"><span data-stu-id="aaa01-118">And then repeat the process for the next site you want to look at.</span></span>
 
-<span data-ttu-id="02151-119">Office 365 PowerShell でグループの一覧を取得するには、次のコマンド セットを使用します。</span><span class="sxs-lookup"><span data-stu-id="02151-119">To get a list of the groups with Office 365 PowerShell, you would use the following command set:</span></span>
+<span data-ttu-id="aaa01-119">Office 365 PowerShell でグループの一覧を取得するには、次のコマンド セットを使用します。</span><span class="sxs-lookup"><span data-stu-id="aaa01-119">To get a list of the groups with Office 365 PowerShell, you would use the following command set:</span></span>
 
 ```
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -56,22 +56,22 @@ foreach ($y in $x)
     }
 ```
 
-<span data-ttu-id="02151-120">SharePoint のオンライン管理シェルのコマンド プロンプトで設定このコマンドを実行する 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="02151-120">There are two ways to run this command set in the SharePoint Online Management Shell command prompt:</span></span>
+<span data-ttu-id="aaa01-120">SharePoint のオンライン管理シェルのコマンド プロンプトで設定このコマンドを実行する 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="aaa01-120">There are two ways to run this command set in the SharePoint Online Management Shell command prompt:</span></span>
 
-- <span data-ttu-id="02151-p103">コマンドをメモ帳 (または別のテキスト エディターにコピー、 **$siteURL**変数の値を変更、コマンドを選択、および SharePoint のオンライン管理シェルのコマンド プロンプトに貼り付けること。PowerShell で停止するには、ときに、**>>** プロンプトします。**Foreach**コマンドを実行するには、enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="02151-p103">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, select the commands, and then paste them into the SharePoint Online Management Shell command prompt. When you do, PowerShell will stop at a **>>** prompt. Press Enter to execute the **foreach** command.</span></span><br/>
-- <span data-ttu-id="02151-p104">メモ帳 (または別のテキスト エディター) にコマンドをコピー、 **$siteURL**変数の値を変更、名前と適切なフォルダーに .ps1 拡張子を持つテキスト ファイルを保存します。次に、そのパスとファイル名を指定することによって SharePoint のオンライン管理シェルのコマンド プロンプトからスクリプトを実行します。コマンドの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="02151-p104">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, and then save this text file with a name and the .ps1 extension in a suitable folder. Next, run the script from the SharePoint Online Management Shell command prompt by specifying its path and file name. Here is an example command:</span></span>
+- <span data-ttu-id="aaa01-p103">コマンドをメモ帳 (または別のテキスト エディターにコピー、 **$siteURL**変数の値を変更、コマンドを選択、および SharePoint のオンライン管理シェルのコマンド プロンプトに貼り付けること。PowerShell で停止するには、ときに、**>>** プロンプトします。**Foreach**コマンドを実行するには、enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="aaa01-p103">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, select the commands, and then paste them into the SharePoint Online Management Shell command prompt. When you do, PowerShell will stop at a **>>** prompt. Press Enter to execute the **foreach** command.</span></span><br/>
+- <span data-ttu-id="aaa01-p104">メモ帳 (または別のテキスト エディター) にコマンドをコピー、 **$siteURL**変数の値を変更、名前と適切なフォルダーに .ps1 拡張子を持つテキスト ファイルを保存します。次に、そのパスとファイル名を指定することによって SharePoint のオンライン管理シェルのコマンド プロンプトからスクリプトを実行します。コマンドの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="aaa01-p104">Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, and then save this text file with a name and the .ps1 extension in a suitable folder. Next, run the script from the SharePoint Online Management Shell command prompt by specifying its path and file name. Here is an example command:</span></span>
 
 ```
 C:\Scripts\SiteGroupsAndUsers.ps1
 ```
 
-<span data-ttu-id="02151-127">どちらの場合も、次のように表示されるはずです。</span><span class="sxs-lookup"><span data-stu-id="02151-127">In both cases, you should see something similar to this:</span></span>
+<span data-ttu-id="aaa01-127">どちらの場合も、次のように表示されるはずです。</span><span class="sxs-lookup"><span data-stu-id="aaa01-127">In both cases, you should see something similar to this:</span></span>
 
 ![SharePoint Online サイト グループ](media/SPO-site-groups.png)
 
-<span data-ttu-id="02151-p105">サイト用に作成されたすべてのグループは、 `https://litwareinc.sharepoint.com/sites/finance`、およびそれらのグループに割り当てられているすべてのユーザーです。グループ名は、そのメンバーからの別のグループ名を支援するのには黄色では。</span><span class="sxs-lookup"><span data-stu-id="02151-p105">These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, as well as all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.</span></span>
+<span data-ttu-id="aaa01-p105">サイト用に作成されたすべてのグループは、 `https://litwareinc.sharepoint.com/sites/finance`、およびそれらのグループに割り当てられているすべてのユーザーです。グループ名は、そのメンバーからの別のグループ名を支援するのには黄色では。</span><span class="sxs-lookup"><span data-stu-id="aaa01-p105">These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.</span></span>
 
-<span data-ttu-id="02151-131">別の例として、グループ、およびすべての SharePoint Online サイトのすべてのグループのメンバーシップを一覧表示するコマンドのセットです。</span><span class="sxs-lookup"><span data-stu-id="02151-131">As another example, here is a command set that lists the groups, and all the group memberships, for all of your SharePoint Online sites.</span></span>
+<span data-ttu-id="aaa01-131">別の例として、グループ、およびすべての SharePoint Online サイトのすべてのグループのメンバーシップを一覧表示するコマンドのセットです。</span><span class="sxs-lookup"><span data-stu-id="aaa01-131">As another example, here is a command set that lists the groups, and all the group memberships, for all of your SharePoint Online sites.</span></span>
 
 ```
 $x = Get-SPOSite
@@ -89,15 +89,15 @@ foreach ($y in $x)
     }
 ```
     
-## <a name="see-also"></a><span data-ttu-id="02151-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="02151-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aaa01-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="aaa01-132">See also</span></span>
 
-[<span data-ttu-id="02151-133">SharePoint Online PowerShell に接続する</span><span class="sxs-lookup"><span data-stu-id="02151-133">Connect to SharePoint Online PowerShell</span></span>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[<span data-ttu-id="aaa01-133">SharePoint Online PowerShell に接続する</span><span class="sxs-lookup"><span data-stu-id="aaa01-133">Connect to SharePoint Online PowerShell</span></span>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[<span data-ttu-id="02151-134">Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する</span><span class="sxs-lookup"><span data-stu-id="02151-134">Create SharePoint Online sites and add users with Office 365 PowerShell</span></span>](create-sharepoint-sites-and-add-users-with-powershell.md)
+[<span data-ttu-id="aaa01-134">Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する</span><span class="sxs-lookup"><span data-stu-id="aaa01-134">Create SharePoint Online sites and add users with Office 365 PowerShell</span></span>](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[<span data-ttu-id="02151-135">Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する</span><span class="sxs-lookup"><span data-stu-id="02151-135">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>](manage-sharepoint-users-and-groups-with-powershell.md)
+[<span data-ttu-id="aaa01-135">Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する</span><span class="sxs-lookup"><span data-stu-id="aaa01-135">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[<span data-ttu-id="02151-136">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="02151-136">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="aaa01-136">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="aaa01-136">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="02151-137">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="02151-137">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="aaa01-137">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="aaa01-137">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 
