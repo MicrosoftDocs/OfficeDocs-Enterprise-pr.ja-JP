@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007年、ProClarity、および SharePoint Server 2007 は、サポートの最後に到達しました。BI ソリューションのアップグレードを計画するには、この資料を参照してください。
-ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 03db75b38bfaa32df20eafb8ede745e403bc964f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831912"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26617880"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 のサポート終了ロードマップ
 
@@ -33,7 +33,7 @@ Office 2007 サーバーおよびアプリケーションは、サポート、�
    
 詳細については、 [2007 のサーバーとクライアントの Office からアップグレードするためのリソース](upgrade-from-office-2007-servers-and-products.md)を参照してください。
   
-## <a name="what-does-end-of-support-mean"></a>サポートの平均の最後は何でしょうか。
+## <a name="what-does-end-of-support-mean"></a>サポートが終了するとどうなるのか
 
 PerformancePoint Server 2007 SP3、ProClarity のソフトウェア、および SharePoint Server 2007 SP3 など、マイクロソフト製品サポート ライフ サイクルを実行中に、マイクロソフトでは、新機能、バグ修正、およびセキュリティ更新プログラムが提供していますがありました。製品のライフ サイクルは、通常製品の初期リリースの日付から 10 年間の継続し、そのライフ サイクルの最後が製品のサポート終了と呼ばれます。ProClarity、PerformancePoint Server、および SharePoint Server 2007 のサポート終了に達したと Microsoft は提供されなくなります。
   
@@ -47,7 +47,7 @@ PerformancePoint Server 2007 SP3、ProClarity のソフトウェア、および 
     
 ProClarity、SharePoint Server 2007 SP3 には、PerformancePoint Server 2007 SP3 のインストールに対しては、サポートが終了した場合でも、実行され続けます。ただし、すぐにこれらのアプリケーションから移行することを強くお勧めします。
   
-## <a name="what-are-my-options"></a>オプションを挙げてください。
+## <a name="what-are-my-options"></a>使用できるオプション
 
 サポートの終わりに達するこれらの BI アプリケーションでは、オプションを検索し、アップグレード計画を準備するのには絶好の機会です。2007 年以降多数の Microsoft BI アプリケーションに変更されていて、次の表に、考慮すべきいくつかのオプションがあります。
   
@@ -149,8 +149,10 @@ PerformancePoint Services にアップグレードする場合、いくつかの
   
 ## <a name="related-topics"></a>関連項目
 
-[2007 のサーバーとクライアントの Office からアップグレードするためのリソース](upgrade-from-office-2007-servers-and-products.md)
+[Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)
   
 [Office 退職グループ (マイクロソフト テクニカル コミュニティ)](https://go.microsoft.com/fwlink/?linkid=842065)
+
+
   
 

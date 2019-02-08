@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: 置かれる場所や、コンテンツにアクセスする方法に関係なく、SharePoint Online の資産のすべてのユーザーへの配信を高速化するのには Office 365 の組み込みコンテンツ配信ネットワーク (CDN) を使用する方法を説明します。
-ms.openlocfilehash: 958f01419a74e4b8cd007b2627585884496bdfdf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fd118e8df404961e1c35c6297a788397f810d1a2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541544"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547115"
 ---
 # <a name="use-the-office-365-content-delivery-network-with-sharepoint-online"></a>SharePoint Online のコンテンツ配信ネットワークを使用して Office 365
 
@@ -138,6 +138,9 @@ CDN では、基準点と呼ばれる場所からお客様の資産を取得し�
 - \*/masterpage
     
 - \*/style ライブラリ
+
+> [!NOTE]
+> Clientsideassets 年 12 月の 2017年でできるように、その時刻より前に、パブリックの CDN をした場合、エントリが自動的に追加されると、表示されません。 ですが、後で作成した場合に追加されたデフォルトの公開基準では、この変更を自動的に表示されます。この CDN の原点を使用しての例を読みを参照してくださいしたい場合:[ホストから Office 365 の CDN (Hello World パート 4) クライアント側の web パーツ](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)
     
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>設定し、SharePoint のオンライン管理シェルを使用して Office 365 の CDN を構成します。
 

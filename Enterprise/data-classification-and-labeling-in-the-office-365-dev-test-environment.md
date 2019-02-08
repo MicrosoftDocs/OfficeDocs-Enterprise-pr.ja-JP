@@ -16,21 +16,21 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 概要：Office 365 開発/テスト環境で Azure Information Protection (AIP) クライアントを使用して、データ分類とラベルの設定とデモを行います。
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914852"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897440"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境でのデータ分類とラベルの作成
 
  **概要：** Office 365 開発/テスト環境で Azure Information Protection (AIP) クライアントを使用して、データ分類とラベルの設定とデモを行います。
   
-Azure の情報保護のクライアントを使用すると、Office 365 で SharePoint Online フォルダーにアップロードする前にドキュメントを分類できます。この資料の手順についてでは、Azure の情報保護のクライアントをインストールして、データのクラス分けを実演します。詳細については、 [Azure の情報の保護](https://www.microsoft.com/cloud-platform/azure-information-protection)を参照してください。
+Azure の情報保護のクライアントでは、Office 365 で SharePoint Online フォルダーにアップロードする前にドキュメントを分類することができます。この資料の手順についてでは、Azure の情報保護のクライアントをインストールして、データのクラス分けを実演します。詳細については、 [Azure の情報の保護](https://www.microsoft.com/cloud-platform/azure-information-protection)を参照してください。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構築する
 
@@ -126,7 +126,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
     
 9. タスクバーの **[ファイル エクスプローラー]** をクリックして、**[ドキュメント]** フォルダーを開きます。
     
-    **BeforeAIP** と **AfterAIP** のドキュメントのファイル サイズの違いに注意します。AfterAIP ドキュメントには分類情報が含まれているために大きくなります。
+    **BeforeAIP**と**AfterAIP**のドキュメントの別のファイルのサイズに注意してください。AfterAIP ドキュメントは、分類情報が含まれているために大きくなります。
     
 次に、すべてのユーザーにサポート サイト コレクションへのアクセスを許可します。
   
@@ -140,7 +140,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
     
 5. SharePoint グループの一覧で **[サポート サイト コレクションのメンバー]** をクリックします。
     
-6. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+6. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
     
 7. **共有 'サポート サイト コレクション'**、**すべてのユーザー**を入力、**外部のユーザーを除くすべて**] をクリックし、**共有します**。
     
@@ -150,7 +150,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
   
 1. **[Microsoft Office Home]** タブの右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://portal.office.com](http://portal.office.com)。
+2. [http://portal.office.com](http://portal.office.com) に移動します。
     
 3. **Office 365 のサインイン**ページで、User5 のアカウント名をクリックし、サインインします。
     

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: '概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。'
-ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915502"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897120"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合
 
@@ -46,7 +46,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
     
 2. **Microsoft Office ホーム** ページで、 **[メール]** タイルをクリックします。
     
-3. お使いのブラウザーの新しい **[メール]** タブで **[新規作成]** をクリックして、メッセージ入力ボックスの下のウィンドウ下部の隅に [マイ テンプレート] のアイコンが含まれていることを確認します。
+3. ブラウザーの [新しい**メール**] タブ、[**新規**] をクリックし、メッセージを入力するボックスの下のウィンドウの下隅がマイ テンプレートのアイコンには、方法に注意してください。
     
      ![Dynamics 365 との統合なしの、新しい空の電子メール メッセージ。](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
     
 5. ブラウザーの **[Microsoft Office ホーム]** タブをクリックし、次いで **[メール]** タイルをクリックします。
     
-6. ブラウザーの新しい **[メール]** タブをクリックし、 **[新規作成]** をクリックします。メッセージ入力ボックスの下のウィンドウ下部の隅に [Dynamics 365] のアイコンが含まれていることを確認します。
+6. ブラウザーの [新しい**メール**] タブ、[**新規**] をクリックします。今すぐメッセージを入力するためのボックスの下のウィンドウの下隅にある Dynamics 365 のアイコンに注目してください。
     
      ![新しいアイコンが表示される、Dynamics 365 と統合された新しい空の電子メール メッセージ。](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915462"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897480"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
@@ -39,7 +39,7 @@ Azure は、これらの基本的なコンポーネントを準備する必要�
 
 Azure のコンポーネントの構成を開始する前に、次の表に入力します。Azure の構成の手順を支援する、このセクションを印刷する必要な情報をメモまたはこのセクションをドキュメントにコピーしで塗りつぶします。VNet の設定、テーブル V を入力します。
   
-|**項目**|**構成設定**|**説明**|**値**|
+|**アイテム**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**項目**|**サブネット名**|**サブネット アドレス スペース**|**目的**|
+|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
@@ -94,7 +94,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
    
  **表 D:オンプレミスの DNS サーバー**
   
-クロスプレミス ネットワークからサイト間 VPN 接続を通過して組織ネットワークにパケットをルーティングするには、組織のオンプレミス ネットワーク上の到達可能なすべての場所についてのアドレス空間 (CIDR 表記) の一覧が含まれているローカル ネットワークで仮想ネットワークを構成する必要があります。このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。
+サイト間 VPN 接続を介して組織のネットワークに複数の環境に関するネットワークからのパケットをルーティングするには、CIDR 表記で、到達可能なすべてのアドレス スペースのリストを持つローカル ネットワークと仮想ネットワークを構成する必要があります。組織の設置型のネットワーク上の場所です。ローカル ネットワークを定義するアドレス スペースの一覧は、一意である必要があり、他の仮想ネットワーク、または他のローカル ネットワークに使用されるアドレス領域と重複していません。
   
 一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。
   
@@ -109,7 +109,7 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
 ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。
   
 > [!NOTE]
-> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
@@ -118,7 +118,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> すべての PowerShell コマンドは、この資料で即座に実行の PowerShell コマンド ブロックが、カスタム設定に基づくを生成する Microsoft Excel の構成のブックに含まれているテキスト ファイルを参照してください[Office 365 のフェデレーション認証Azure 展開キット](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)です。 
+> すべての PowerShell コマンドは、この資料で即座に実行の PowerShell コマンド ブロックが、カスタム設定に基づくを生成する Microsoft Excel の構成のブックをテキスト ファイル、Office 365 のフェデレーション認証で、Azure の[を参照してください。展開キット](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)です。 
   
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
@@ -199,7 +199,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-次に、仮想マシンが含まれているサブネットごとにネットワーク セキュリティ グループを作成します。サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。
+次に、セキュリティ グループを各仮想マシンのあるサブネットのネットワークを作成します。サブネットの分離を実行するのには、トラフィックを許可または拒否するサブネットのネットワークのセキュリティ グループの特定の種類の規則を追加できます。
   
 ```
 # Create network security groups
@@ -272,7 +272,7 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。 
   
-|**項目**|**用途**|**可用性セット名**|
+|**アイテム**|**用途**|**可用性セット名**|
 |:-----|:-----|:-----|
 |1.  <br/> |ドメイン コントローラー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 概要:Office 365 の開発/テスト環境で、スマート フォンに送信されるテキスト メッセージを使用して多要素認証を構成します。
-ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6e2aefa9309e7e268c937055f7fe59600f8c87da
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915662"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897450"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境用の多要素認証
 
  **概要:** Office 365 の開発/テスト環境で、スマート フォンに送信されるテキスト メッセージを使用して多要素認証を構成します。
   
-Office 365 サブスクリプションにサインインする際に追加のレベルのセキュリティが必要な場合、Azure 多要素認証を有効にできます。この認証には、アカウントを確認するために、ユーザー名とパスワード以上のものが必要になります。Office 365 用の多要素認証では、ユーザーは、パスワードを正しく入力した後に、電話に応答するか、テキスト メッセージで送信される確認コードを入力するか、スマート フォンでアプリ パスワードを入力する必要があります。この第 2 の認証要素が満たされた後でのみ、ユーザーはサインインできます。  
+Office 365 サブスクリプションへのサインインのセキュリティのレベルを上げる、ためだけで複数のユーザー名とアカウントを認証するパスワードが必要ですが、Azure の多要素認証を有効にできます。Office 365 の多要素認証を使用する必要があります確認の電話、テキスト メッセージで送信された確認コードを入力、または自分のパスワードを正しく入力した後、スマート フォンのアプリのパスワードを指定します。この 2 番目の認証要素が満たされた後にのみ、サインインできます。 
   
 この記事では、特定の Office 365 アカウントに対してテキスト メッセージ ベースの認証を有効にしてテストする方法について説明します。
   
@@ -38,10 +38,9 @@ Office 365 サブスクリプションにサインインする際に追加のレ
 2. User 2 アカウントに対して、多要素認証を有効にしてテストします。
     
 > [!TIP]
-> 
-            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
 最小要件で軽量な方法で複数要素の認証をテストする場合は、フェーズ 2 と 3[の開発/テスト環境を Office 365](office-365-dev-test-environment.md)の指示に従います。
   
@@ -78,7 +77,7 @@ Office 365 サブスクリプションにサインインする際に追加のレ
   
 1. ブラウザーの新しいインスタンスを開きます。
     
-2. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) と 2 のユーザー アカウントでサインイン (user2 @\<組織名 >. onmicrosoft.com) とパスワードです。
+2. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) と 2 のユーザー アカウントでサインイン (user2 @\<組織 name>.onmicrosoft.com) とパスワードです。
     
 3. サインイン後、追加のセキュリティ検証のためにアカウントを設定するように求められます。**[今すぐセットアップ]** をクリックします。
     
@@ -110,5 +109,5 @@ Office 365 サブスクリプションにサインインする際に追加のレ
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 の展開の多要素認証の計画](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Office 365 展開用の多要素認証の計画](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 の ExpressRoute の間のレイヤー 3 接続を提供する、ネットワークと Microsoft のデータ センターです。回路では、Office 365 のフロント エンド サーバーのルートのアドバタイズを罫線ゲートウェイ プロトコル (BGP) を使用します。設置型デバイスの観点から、Office 365 に TCP/IP の正しいパスを選択する必要がある場合は、Azure ExpressRoute の代わりに、インターネットとして認識されます。
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541762"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897230"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのネットワーク計画
 
@@ -106,7 +106,7 @@ Woodgrove Bank は Azure の ExpressRoute を実装することを検討して�
   
 Woodgrove では、拠点とし、複数の大陸では、多国籍組織のセキュリティは、すべての境界を広げる必要があります。Woodgrove の最適な接続性オプションは、大陸ごとに、従業員のニーズにサービスを提供する世界中でピアリング ・ マルチ ・ ポイント接続です。各大陸には、大陸内の冗長の Azure ExpressRoute 回路が含まれていて、セキュリティは、これらすべてを広げる必要があります。
   
-Woodgrove の既存のインフラストラクチャの信頼性し、追加の作業を処理することができます、その結果、Woodgrove Bank の Azure ExpressRoute とインターネットの境界セキュリティのインフラストラクチャを利用することです。場合は、いずれにしても Woodgrove の既存の設備を補足するために、または別の種類の接続を処理するために他の機器を購入するように選択します。
+Woodgrove の既存のインフラストラクチャの信頼性し、追加の作業を処理することができます、その結果、Woodgrove Bank の Azure ExpressRoute とインターネットの境界セキュリティのインフラストラクチャを使用することです。場合は、いずれにしても Woodgrove の既存の設備を補足するために、または別の種類の接続を処理するために他の機器を購入するように選択します。
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>高可用性を実現し、Azure の ExpressRoute を使用したフェイル オーバー
 <a name="BKMK_high-availability"> </a>
@@ -185,7 +185,7 @@ Woodgrove は、地域ごとの複数の Azure ExpressRoute 回路を持つこ�
   
 最適な接続オプションでは、ポイント ツー ポイント、マルチポイント、またはホストを選択するのには、プロバイダーまたはプロバイダーを使用します。記憶を混在させるし、帯域幅およびその他の冗長コンポーネントがルーティングと高可用性の設計をサポートしている限り、接続オプションを一致させることができます。
   
-戻るを使用することができます短いリンクを以下に示します。[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>関連項目
 <a name="BKMK_high-availability"> </a>
@@ -200,15 +200,15 @@ Woodgrove は、地域ごとの複数の Azure ExpressRoute 回路を持つこ�
   
 [Office 365 向け ExpressRoute での実装](implementing-expressroute.md)
   
-[ExpressRoute に BGP のコミュニティを使用して Office 365 シナリオ (プレビュー)](bgp-communities-in-expressroute.md)
+[Office 365 向け ExpressRoute での BGP コミュニティの使用のシナリオ (プレビュー)](bgp-communities-in-expressroute.md)
   
-[メディアの品質とオンライン ビジネスの Skype でのネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Skype のオンライン ビジネスのネットワークを最適化します。](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Skype for Business Online 向けのネットワークの最適化](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute とオンライン ビジネスの Skype での QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute を使用して通話フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
   
@@ -216,6 +216,6 @@ Woodgrove は、地域ごとの複数の Azure ExpressRoute 回路を持つこ�
   
 [Office 365 の URL と IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Office 365 のネットワークとパフォーマンスの調整](network-planning-and-performance.md)
+[Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
   
-[Office 365 エンドポイントに関する FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

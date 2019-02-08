@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Office 365 PowerShell を使用して SharePoint Online の新しいサイトを作成し、それらのサイトにユーザーおよびグループを追加します。'
-ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975205"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897170"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
@@ -26,13 +26,13 @@ ms.locfileid: "23975205"
 
 Office 365 の PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、迅速かつ繰り返しタスクを実行できます Office 356 管理センターでよりもはるかに高速です。Office 356 管理センターで実行することができないタスクも実行できます。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 このトピックの手順では、SharePoint Online に接続する必要があります。手順については、 [SharePoint のオンライン PowerShell への接続](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)を参照してください。
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>手順 1: Office 365 PowerShell を使って新しいサイト コレクションを作成する
 
-Office 365 PowerShell と、提供されているサンプル コードとメモ帳を使用して作成した .csv ファイルを使用して複数のサイトを作成します。この手順では、角かっこ内に表示されているプレースホルダー情報を自分のサイトやテナント固有の情報に置き換えます。このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの Office 365 PowerShell コマンドを実行することができます。これにより、実行されるアクションは反復可能かつポータブルになり、長いコマンドを SharePoint Online Management Shell に入力した場合に発生する可能性がある多くのエラー (すべてではないものの) がなくなります。この手順は 2 つの部分で構成されます。最初に .csv ファイルを作成し、次に Office 365 PowerShell を使用してその .csv ファイルを参照します。ファイルの内容を使用してサイトが作成されます。
+Office 365 の PowerShell とサンプル コードが用意されているとメモ帳を使用して作成した .csv ファイルを使用して複数のサイトを作成します。この手順では、独自のサイトやテナント固有の情報をかっこで囲んで表示されているプレース ホルダー情報を交換することです。このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの Office 365 の PowerShell コマンドを実行することができます。これは、繰り返しとポータブルの両方を実行する操作し、SharePoint のオンライン管理シェルに長いコマンドを入力することによってもたらされる、すべてのエラーの場合、多くが不要します。このプロシージャに 2 つの部分があります。まず .csv ファイルを作成し、その内容を使用してサイトを作成する、Office 365 PowerShell を使用して .csv ファイルを参照します。
 
 Office 365 PowerShell コマンドレットは、その .csv ファイルをインポートし、ファイルの最初の行を列見出しとして読み取る、中かっこ内のループにパイプします。次に、Office 365 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新規のサイト コレクションを作成し、列見出しに従ってサイト コレクションのプロパティを割り当てます。
 

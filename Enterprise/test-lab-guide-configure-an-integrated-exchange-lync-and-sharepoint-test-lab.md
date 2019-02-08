@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: '概要: Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、および SharePoint Server 2013 を実行するサーバーを持つ、統合テスト ラボの作成方法について説明します。'
-ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915602"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897050"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成
 
@@ -30,7 +30,7 @@ ms.locfileid: "22915602"
  
 この構成には全 3 種類のサーバー同士のサーバー間認証が含まれており、この構成で作成されるテスト ラボでは、Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、SharePoint Server 2013 を実行するサーバーを使用する複数製品のシナリオとソリューションを構築して、デモンストレーションすることができます。
   
-このドキュメントには、次のことを行うための手順が含まれています。
+このドキュメントには、指示が含まれています。
   
 1. Windows Server 2012 の基本構成テスト ラボの構成。
     

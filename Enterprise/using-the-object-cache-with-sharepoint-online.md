@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: この資料では、SharePoint Server 2013 設置し、SharePoint Online でのオブジェクト キャッシュを使用しての違いについて説明します。
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056166"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769856"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint Online でのオブジェクト キャッシュの使用
 
@@ -34,7 +34,7 @@ SharePoint Server 2013 は、オンプレミスでホストされているが、
   
 結果として、ユーザーが 2 回目にページにアクセスするとき、ページの読み込み時間が短縮します。同じページを 4 回以上読み込むと、ページはすべてのフロントエンド Web サーバーにキャッシュされます。
   
-対照的に、SharePoint Online は、多くのより多くのサーバがより多くのサイトもいます。各ユーザーは、キャッシュ設定を設定していない別のフロント エンド web サーバーに接続できます。または、おそらくキャッシュが値を設定、サーバーがフロント エンド web サーバーに次のユーザーが別のサイトからページを要求します。または、場合でも、次のユーザーは、同じページを要求の場合、前回の訪問と、キャッシュ内にそのページを持たない別のフロント エンド web サーバーに負荷分散します。この最後の場合では、キャッシュ問題が解決しないユーザーにします。
+対照的に、SharePoint Online は、多くのより多くのサーバがより多くのサイトもいます。各ユーザーは、キャッシュ設定を設定していない別のフロント エンド web サーバーに接続できます。または、おそらくキャッシュが値を設定、サーバーが次のユーザーのページがそのフロント エンド web サーバーの要求を別のサイトから。または、場合でも、次のユーザーは、同じページを要求の場合、前回の訪問と、キャッシュ内にそのページを持たない別のフロント エンド web サーバーに負荷分散します。この最後の場合では、キャッシュ問題が解決しないユーザーにします。
   
 次の図で、各ドットはユーザーが要求していて、キャッシュされているページを表しています。さまざまな色は、SaaS インフラストラクチャを共用しているさまざまな顧客を表します。
   

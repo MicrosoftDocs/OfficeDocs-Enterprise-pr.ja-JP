@@ -3,7 +3,7 @@ title: Office 365 へのネットワーク接続
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 は、世界中のお客様は、インターネット接続を使用してサービスへの接続を有効にするよう設計されています。サービスの拡大に伴って、セキュリティ、パフォーマンス、および Office 365 の信頼性が向上しましたベース サービスへの接続を確立するためにインターネットを使用しているお客様に。
-ms.openlocfilehash: b72b0a4584542e4c8673c7cf009c66aa97c6b81c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: da086aa3fcd23ccb4a82cde2a1f7d812c111071a
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541756"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911391"
 ---
 # <a name="network-connectivity-to-office-365"></a>Office 365 へのネットワーク接続
 
@@ -31,12 +31,12 @@ Office 365 を使用する予定のユーザーは、展開プロジェクトの
   
 多くのさまざまな人々 や組織によっては、サイズと初期設定では、ネットワークの評価を実行できます。評価のネットワーク範囲にしているので、展開プロセスによって異なります。ネットワークを評価するためにかかるを把握するために、ネットワークの評価ガイド」に使用できるオプションを理解するために開発しました。この評価が可能かどうかの手順とリソースを正常に Office 365 を採用することを有効にする配置プロジェクトに追加します。
   
-これら所定の宿[Skype の運用フレームワーク](https://www.skypeoperationsframework.com/)のような包括的なネットワークの評価と実装の詳細ネットワーク設計上の課題の解決策の候補が提供されます。[マイナーの構成やデザインの変更](https://aka.ms/manageo365endpoints)、既存のネットワークとインターネットの出口のインフラストラクチャに、Office 365 へのネットワーク接続を確保できるほとんどのネットワークの評価が示されます。
+ネットワークの実装の詳細と設計上の課題解決策の候補は、 [Skype の運用フレームワーク](https://www.skypeoperationsframework.com/)で規定されているような包括的なネットワークの評価が提供されます。[マイナーの構成やデザインの変更](https://aka.ms/manageo365endpoints)、既存のネットワークとインターネットの出口のインフラストラクチャに、Office 365 へのネットワーク接続を確保できるほとんどのネットワークの評価が示されます。
 
 いくつかの評価には、Office 365 へのネットワーク接続のネットワーク コンポーネントの追加投資が必要になりますが表示されます。たとえば、WAN の帯域幅、または Office 365 へのインターネット接続をサポートするためにルーティング インフラストラクチャの最適化に投資します。場合によっては評価では、[ビジネス オンラインのメディアの品質の Skype](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)などの場合に、規制やパフォーマンスの要件は、影響を受ける Office 365 へのネットワーク接続が表示されます。これらの要件は、インターネット接続インフラストラクチャ、ルーティングの最適化では、専用のダイレクト接続への投資する可能性があります。
   
 > [!NOTE]
-> マイクロソフトでは、Azure ExpressRoute の Microsoft Peering ルーティング ドメインを確認する方法を変更します。2017 年 7 月 31日の開始 Azure ExpressRoute のすべての顧客ができます Microsoft Peering Azure の管理コンソールから直接、または PowerShell を使用しています。Microsoft Peering を有効にすると、すべてのお客様は、Dynamics 365 お客様との契約のアプリケーション (CRM Online と呼ばれていました) の BGP ルートのアドバタイズを受信するルート フィルターを作成できます。Office 365 の Azure ExpressRoute を必要とするお客様は、ルート フィルターを作成するには Office 365 の前に、マイクロソフトからレビューを取得しなければなりません。Office 365 の ExpressRoute を有効にするためのレビューを要求する方法の詳細については、マイクロソフト アカウント チームにお問い合わせください。承認されていないサブスクリプションの Office 365 のルート フィルターを作成しようとして[エラー メッセージ](https://support.microsoft.com/kb/3181709)が表示されます。
+> マイクロソフトの承認は、Office 365 の ExpressRoute を使用する必要があります。マイクロソフトでは、すべての顧客の要求を確認し、お客様の規制要件などの直接接続するときのみ Office 365 を使用するため ExpressRoute を承認します。このような要件がある場合は、直接接続に必要である[Office 365 の要求フォームの ExpressRoute](https://aka.ms/O365ERReview)マイクロソフトのレビューを開始するという意味に解釈するを規制するテキストの抜粋と web リンクを指定してください。承認されていないサブスクリプションの Office 365 のルート フィルターを作成しようとして[エラー メッセージ](https://support.microsoft.com/kb/3181709)が表示されます。
   
 Office 365 は、ネットワークの評価を計画する際に考慮すべき重要なポイント。
   
@@ -54,11 +54,11 @@ Office 365 は、ネットワークの評価を計画する際に考慮すべき
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 エンドポイントを管理します。](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365 エンドポイントに関する FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
   
-[Office 365 のネットワークとパフォーマンスの調整](network-planning-and-performance.md)
+[Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   
@@ -66,9 +66,9 @@ Office 365 は、ネットワークの評価を計画する際に考慮すべき
   
 [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
   
-[ExpressRoute に BGP のコミュニティを使用して Office 365 シナリオ (プレビュー)](bgp-communities-in-expressroute.md)
+[Office 365 向け ExpressRoute での BGP コミュニティの使用のシナリオ (プレビュー)](bgp-communities-in-expressroute.md)
   
-[メディアの品質とオンライン ビジネスの Skype でのネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Office 365 の URL と IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   

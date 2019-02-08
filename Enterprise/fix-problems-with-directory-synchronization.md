@@ -3,7 +3,6 @@ title: Office 365 のディレクトリ同期に関する問題の修正
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期の問題の一般的な原因を説明し、トラブルシューティングし、解決に役立ついくつかのメソッドを提供します。
-ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
-ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
+ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405130"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897310"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期に関する問題の修正
 
@@ -54,12 +53,12 @@ Azure Active Directory 同期から Azure AD 接続を更新するには、[ア�
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**同期されたオブジェクトは表示されないようにしたり、オンラインで更新またはサービスから同期エラーのレポートを取得します。**
 
-- [アイデンティティの同期化と重複している属性の弾力性](https://go.microsoft.com/fwlink/p/?LinkID=798300)
+- [アイデンティティの同期化と重複している属性の弾力性](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Office 365 管理センターで、アラートがあるか、または最新の同期イベントが発生されていない自動の電子メールを受信しています。**
-- [Azure AD 接続と接続の問題のトラブルシューティングを行う](https://go.microsoft.com/fwlink/p/?LinkId=820597)
+- [Azure AD 接続と接続の問題のトラブルシューティングを行う](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD 接続アカウントとアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD 接続の同期: Azure AD のサービス アカウントを管理する方法](https://go.microsoft.com/fwlink/p/?LinkId=820599)
+- [Azure AD 接続の同期: Azure AD のサービス アカウントを管理する方法](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Azure Active Directory が停止するか、またはディレクトリ同期は 1 日以上で、同期していない登録されている警告メッセージが表示しています。](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**パスワード ハッシュが同期されていない、または最近使用したパスワード ハッシュの同期がありますされていない Office 365 管理センターの警告が表示**
@@ -79,7 +78,7 @@ Azure Active Directory 同期から Azure AD 接続を更新するには、[ア�
    
 ## <a name="other-resources"></a>その他のリソース
 
-- [重複するユーザー プリンシパル名を解決するためのスクリプト](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [ユーザー プリンシパル名の重複を修正するためのスクリプト](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
 - [ディレクトリ同期 (.local ドメイン) などのルーティング不可能なドメインを準備する方法](prepare-a-non-routable-domain-for-directory-synchronization.md)
     

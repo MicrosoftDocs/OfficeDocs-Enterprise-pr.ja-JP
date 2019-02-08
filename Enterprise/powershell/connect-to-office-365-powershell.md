@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: は、コマンドラインから管理センターのタスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。'
-ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849893"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897200"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
  **の概要:** コマンドラインから管理タスクを実行するのには Office 365 の PowerShell を使用して、Office 365 の組織に接続します。
   
-Office 365 の PowerShell では、コマンド ・ ラインから、Office 365 の設定を管理することができます。Office 365 の PowerShell への接続で必要なソフトウェアをインストールし、Office 365 の組織に接続し、単純なプロセスです。 
+Office 365 の PowerShell を使用して、コマンド ・ ラインから、Office 365 の設定を管理できます。Office 365 の PowerShell への接続で必要なソフトウェアをインストールし、Office 365 の組織に接続し、単純なプロセスです。 
 
 Office 365 に接続し、ユーザー アカウント、グループ、およびライセンスの管理に使用する PowerShell モジュールの 2 つのバージョンがあります。
 
@@ -38,9 +38,9 @@ Office 365 に接続し、ユーザー アカウント、グループ、およ�
 > [!TIP]
 > **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn Learning にアクセスしてください。 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- 予想所要時間 : 5 分
+- 予想所要時間 : 5 分
     
 - 次の Windows のバージョンを使用できます。
     

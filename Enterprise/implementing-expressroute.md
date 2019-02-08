@@ -1,5 +1,5 @@
 ---
-title: Office 365 向け ExpressRoute での実装
+title: Office 365 向け ExpressRoute の実装
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 の ExpressRoute は、Office 365 サービスが直面している多くのインターネットに代替ルーティング パスを提供します。Office 365 の ExpressRoute のアーキテクチャがアドバタイズされているアクセス可能なインターネット上にこれらの IP プレフィックスの後の再配布の準備、ExpressRoute 回路を Office 365 サービスのパブリック IP のプレフィックスに基づいてください。ネットワークです。ExpressRoute するいくつか異なるルーティング パス、ExpressRoute、およびインターネットを通じて多くの Office 365 サービスを効果的に可能になります。ネットワーク上のルーティングのこの状態は、内部ネットワークのトポロジを設計する方法に大幅な変更を表します。
-ms.openlocfilehash: c4479a236d1419293dbd433e8d3c10a11ea5fb45
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541868"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25715873"
 ---
-# <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute での実装
+# <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
 Office 365 の ExpressRoute は、Office 365 サービスが直面している多くのインターネットに代替ルーティング パスを提供します。Office 365 の ExpressRoute のアーキテクチャがアドバタイズされているアクセス可能なインターネット上にこれらの IP プレフィックスの後の再配布の準備、ExpressRoute 回路を Office 365 サービスのパブリック IP のプレフィックスに基づいてください。ネットワークです。ExpressRoute するいくつか異なるルーティング パス、ExpressRoute、およびインターネットを通じて多くの Office 365 サービスを効果的に可能になります。ネットワーク上のルーティングのこの状態は、内部ネットワークのトポロジを設計する方法に大幅な変更を表します。
   
@@ -106,7 +106,7 @@ Office 365 の ExpressRoute は、Office 365 サービスが直面している�
 |**公開の Office 365 エンドポイント (ソース)** <br/> |Exchange Online (IP アドレス)  <br/> |
 |**パブリックの設置型エンドポイント (移動先)** <br/> |5.5.5.5  <br/> |
 |**パブリック (インターネット) DNS エントリ** <br/> |Autodiscover.contoso.com  <br/> |
-|**この設置型のエンドポイントに使用するその他の (非-Office 365) マイクロソフトのサービス** <br/> |いいえ  <br/> |
+|**この設置型のエンドポイントに使用するその他の (非-Office 365) マイクロソフトのサービス** <br/> |不要  <br/> |
 |**この設置型エンドポイントによって使用されるインターネット上のユーザーとシステム** <br/> |はい  <br/> |
 |**パブリック エンドポイントを公開する内部のシステム** <br/> |Exchange Server のクライアント アクセスの役割 (設置型) 192.168.101, 192.168.102, 192.168.103  <br/> |
 |**パブリック エンドポイントの IP の提供情報** <br/> |**インターネットへ**: 5.5.0.0/16  <br/> **ExpressRoute に**: 5.5.5.0/24  <br/> |
@@ -115,6 +115,7 @@ Office 365 の ExpressRoute は、Office 365 サービスが直面している�
 |**パス対称コントロール** <br/> |**方法**: ソース NAT  <br/> **インターネット パス**: ソース NAT への着信接続 192.168.5.5  <br/> |**ExpressRoute パス**: ソース NAT 接続が 192.168.1.0 (シカゴ)、192.168.2.0 (ダラス)  <br/> |
 
 のみで送信されているサービスの例を以下に示します。
+
 |**接続のプロパティ**|**値**|
 |:-----|:-----|
 |**ネットワーク トラフィックの方向** <br/> |送信  <br/> |
@@ -563,7 +564,7 @@ QoS では、Skype のオンライン ビジネスの音声と会議の利点を
   
 注意してください ExpressRoute の両方のネットワーク構成を確認する必要があります ExpressRoute 接続を使用して Office 365 の展開中に、最適に設計されていて、クライアント コンピューターなど、ネットワーク上の他のコンポーネントを最適化してもします。この計画ガイドを使用して、トラブルシューティングの手順を実行したことがある、他も用意されています[パフォーマンスのトラブルシューティング Office 365 のプラン](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c)です。
   
-戻るを使用することができます短いリンクを以下に示します。[https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
 ## <a name="related-topics"></a>関連項目
 
@@ -577,15 +578,15 @@ QoS では、Skype のオンライン ビジネスの音声と会議の利点を
   
 [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
   
-[ExpressRoute に BGP のコミュニティを使用して Office 365 シナリオ (プレビュー)](bgp-communities-in-expressroute.md)
+[Office 365 向け ExpressRoute での BGP コミュニティの使用のシナリオ (プレビュー)](bgp-communities-in-expressroute.md)
   
-[メディアの品質とオンライン ビジネスの Skype でのネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Skype のオンライン ビジネスのネットワークを最適化します。](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Skype for Business Online 向けのネットワークの最適化](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute とオンライン ビジネスの Skype での QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute を使用して通話フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
   
@@ -593,4 +594,4 @@ QoS では、Skype のオンライン ビジネスの音声と会議の利点を
   
 [Office 365 の URL と IP アドレス範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Office 365 のネットワークとパフォーマンスの調整](network-planning-and-performance.md)
+[Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

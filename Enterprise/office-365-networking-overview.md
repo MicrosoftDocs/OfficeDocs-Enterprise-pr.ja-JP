@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: ネットワークの最適化が SaaS サービスでは、Office 365 のネットワー キングの目標の重要な理由を説明 SaaS が他の作業負荷から別のネットワークに必要です。
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002356"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897210"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 のネットワーク接続性の概要
 
@@ -84,7 +84,7 @@ Office 365 は、Office 365 の機能とワークロード用に設計された�
 > [!NOTE]
 > _分散サービス フロント ・ ドア_のインフラストラクチャは、地理的に分散した場所に Microsoft のグローバル ネットワークの可用性と拡張性の高いネットワークの端です。エンド ・ ユーザーの接続を終了し、マイクロソフトのグローバル ・ ネットワーク内でそれらを効率的にルーティングします。[マイクロソフトではどのように、高速かつ信頼性の高いグローバルなネットワークを構築するの](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)に Microsoft のグローバル ネットワークの詳細を学びます。
 
-理解して、Office 365 のネットワーク接続性の原則を適用する方法については、 [Office 365 のネットワーク接続性の原則](office-365-network-connectivity-principles#office-365-connectivity-principles)を参照してください。
+理解して、Office 365 のネットワーク接続性の原則を適用する方法については、 [Office 365 のネットワーク接続性の原則](office-365-network-connectivity-principles.md)を参照してください。
 
 ## <a name="conclusion"></a>終わりに
 
