@@ -28,7 +28,7 @@ ms.locfileid: "22541588"
 
 [基本的なセットアップ手順](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)は、できるだけ短時間でユーザーが Office 365 のサービスとアプリケーションを利用開始できるようにするためのご案内をいたします。多くの場合、ユーザーが使用を開始する前に構成を行うことをお勧めします。たとえば、メールのルーティング、ファイル ストレージ、共有ポリシーなどの構成が行えます。 
   
-Office 365 の設定でヘルプが必要な場合、** [FastTrack](https://fasttrack.microsoft.com/office)** または [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)をご利用ください。
+Office 365 の設定でヘルプが必要な場合、**[FastTrack](https://fasttrack.microsoft.com/office)** または [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)をご利用ください。
   
 |**サービスおよびアプリケーション**|**リソース**|
 |:-----|:-----|
