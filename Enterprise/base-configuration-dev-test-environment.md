@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: 9ffa35a6318d83d489ec51051547ce22c16b5b5f
-ms.sourcegitcommit: 9ce1da973b8c91b0926142a28c5b90f95f0422d8
+ms.openlocfilehash: 71470a20586a0d1992cfafd35f213ec80286419b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353313"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897380"
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -34,7 +34,7 @@ ms.locfileid: "25353313"
   
 **図 1: 基本構成開発/テスト環境**
 
-図 1 の基本構成開発/テスト環境は、インターネットに接続された簡略化されたプライベート イントラネットをシミュレートする、TestLab というクラウド専用 Azure 仮想ネットワーク内の企業ネットワーク サブネットで構成されています。Windows Server 2016 を実行している次の 3 つの Azure 仮想マシンが含まれます。
+図 1 の基本構成開発/テスト環境は、インターネットに接続された簡略化されたプライベート イントラネットをシミュレートする、TestLab というクラウド専用 Azure Virtual Network 内の企業ネットワーク サブネットで構成されています。Windows Server 2016 を実行している次の 3 つの Azure 仮想マシンが含まれます。
   
 - イントラネット ドメイン コントローラーとドメイン ネーム システム (DNS) サーバーとして構成されている DC1
     
@@ -42,7 +42,7 @@ ms.locfileid: "25353313"
     
 - イントラネット クライアントとして動作する CLIENT1
     
-この構成では、DC1、APP1、CLIENT1、他の企業ネットワークのサブネットのコンピューターを、次のようにできます。 
+この構成では、DC1、APP1、CLIENT1、他の企業ネットワークのサブネットのコンピューターを、次のようにします。 
   
 - 更新プログラムをインストールするためにインターネットに接続して、リアルタイムでインターネット リソースにアクセスし、Microsoft Office 365 とその他の Azure サービスなどのパブリック クラウド テクノロジに参加する。
     
@@ -115,7 +115,7 @@ Azure PowerShell を使った基本構成テスト環境の設定には次の 4 
 > [!NOTE]
 > 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/ja-JP/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
-次のコマンドを使用して Azure アカウントにサインインします。
+次のコマンドを使用して Azure アカウントにログインします。
   
 ```
 Login-AzureRMAccount

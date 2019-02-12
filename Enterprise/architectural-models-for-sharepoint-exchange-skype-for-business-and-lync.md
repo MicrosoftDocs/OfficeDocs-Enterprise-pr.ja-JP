@@ -17,12 +17,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: '概要: アーキテクチャ モデル、展開、および SharePoint、Exchange、Skype for Business、および Lync のプラットフォーム オプションについて説明している IT ポスターを取得します。'
-ms.openlocfilehash: 0965a4389ef61c981e30aeec8dd3b3dcff90d20e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 28cfc1073d54a46976224f115cce43315c7c43fb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915542"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897530"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 
@@ -138,7 +138,7 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![SharePoint 2013 プラットフォーム オプションのサムネイル イメージ](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |ビジネス意思決定者 (BDM) およびアーキテクト向けです。このモデルでは SharePoint 2013 (Office 365 の SharePoint、Office 365 を搭載した社内ハイブリッド、Azure、およびオンプレミスの展開のみ) のプラットフォーム オプションを示します。これには、各アーキテクチャの概要、推奨事項、ライセンス要件、およびプラットフォームごとのアーキテクトと IT 担当者のタスクのリストが含まれています。Azure の SharePoint ソリューションのいくつかは強調表示されています。<br/><br/>このポスターのアクセス可能テキスト版については、「[アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md)」をご覧ください。  <br/> |
+|[![SharePoint 2013 プラットフォーム オプションのサムネイル イメージ](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |ビジネス意思決定者 (BDM) およびアーキテクト向けです。このモデルでは SharePoint 2013 (Office 365 の SharePoint、Office 365 を搭載したオンプレミス ハイブリッド、Azure、およびオンプレミスのデプロイのみ) のプラットフォーム オプションを示します。これには、各アーキテクチャの概要、推奨事項、ライセンス要件、およびプラットフォームごとのアーキテクトと IT 担当者のタスクのリストが含まれています。Azure の SharePoint ソリューションのいくつかは強調表示されています。<br/><br/>このポスターのアクセス可能テキスト版については、「[アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md)」をご覧ください。  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013 プラットフォーム オプション
@@ -188,7 +188,7 @@ SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポ
 
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Azure への SharePoint 障害回復プロセス](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |この IT ポスターは、Azure での障害復旧環境のアーキテクチャ原則を説明しています。このポスターのアクセス可能テキスト版については、「[アクセス可能な図 - Microsoft Azure に対する SharePoint の障害復旧](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)」をご覧ください。<br/><br/> 詳細については、以下の記事を参照してください。  <br/><br/> - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Azure への SharePoint 障害回復プロセス](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |この IT ポスターは、Azure での障害復旧環境のアーキテクチャ原則を示しています。このポスターのアクセス可能テキスト版については、「[アクセス可能な図 - Microsoft Azure に対する SharePoint の障害復旧](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md)」をご覧ください。<br/><br/> 詳細については、以下の記事を参照してください。  <br/><br/> - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="see-also"></a>関連項目

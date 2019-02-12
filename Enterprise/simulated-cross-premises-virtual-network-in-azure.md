@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: '概要: 開発/テスト環境として、シミュレートされたクロスプレミスの仮想ネットワークを Microsoft Azure に作成します。'
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915342"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897140"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Azure でのシミュレートされたクロスプレミスの仮想ネットワーク
 
@@ -79,18 +79,18 @@ ms.locfileid: "22915342"
 最初に、ローカル コンピューターで Azure PowerShell プロンプトを起動します。
   
 > [!NOTE]
-> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/ja-JP/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/ja-JP/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
-次のコマンドを使用して Azure アカウントにサインインします。
+このコマンドを使用して Azure アカウントにサインインします。
   
 ```
 Login-AzureRMAccount
 ```
 
 > [!TIP]
-> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[こちら](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)をクリックしてください。
+> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[ここ](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0)をクリックしてください。
   
-次のコマンドを使用して、サブスクリプションの名前を取得します。
+このコマンドを使用して、サブスクリプションの名前を取得します。
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name

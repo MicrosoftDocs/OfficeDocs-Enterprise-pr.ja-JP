@@ -3,11 +3,13 @@ title: Office 365 開発/テスト環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '概要: このテスト ラボ ガイドを使用すると、評価または開発/テスト用の Office 365 試用版サブスクリプションを作成できます。'
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897270"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 
@@ -38,7 +41,7 @@ Office 365 試用版サブスクリプションを使用できます。また、
 > [!NOTE]
 > この記事を印刷しておき、30 日間の Office 365 試用版サブスクリプションの終了後にこの環境で必要になる特定の値を記録しておくことをお勧めします。試用版サブスクリプションは、追加で 30 日間まで簡単に延長できます。永続的な開発/テスト環境では、少数のライセンスを使用して新しい有料サブスクリプションを作成します。 
   
-![Microsoft Cloud のテスト ラボ ガイド](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Microsoft Cloud のテスト ラボ ガイド](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
@@ -51,7 +54,7 @@ Azure サブスクリプションが必要になります。この構成には�
   
 最終的な構成は、次のようになります。
   
-![Azure の基本構成開発/テスト環境](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Azure の基本構成開発/テスト環境](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ Azure サブスクリプションが必要になります。この構成には�
 
 Office 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
   
-1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![](./images/Common_Images/TableLine.png)
+1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![](./media/Common-Images/TableLine.png)
     
 2. 新しい Microsoft アカウントにサインアップするには、[https://outlook.com](https://outlook.com) に移動して、新しい電子メール アカウントとアドレスでアカウントを作成します。このアカウントを使用して、Office 365 にサインアップします。
     
-  - ここに新しいアカウントの姓名を記録してください: ![](./images/Common_Images/TableLine.png)
+  - ここに新しいアカウントの姓名を記録してください: ![](./media/Common-Images/TableLine.png)
     
-  - ここに新しい電子メール アカウントのアドレスを記録してください: ![](./images/Common_Images/TableLine.png)@outlook.com
+  - ここに新しい電子メール アカウントのアドレスを記録してください: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
@@ -97,7 +100,7 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
     
     入力したパスワードを安全な場所に記録してください。
     
-    架空の会社名を記録してください (この名前を**組織名**と呼ぶことにします): ![](./images/Common_Images/TableLine.png)
+    架空の会社名を記録してください (この名前を**組織名**と呼ぶことにします): ![](./media/Common-Images/TableLine.png)
     
 5. **[アカウントの作成]** をクリックします。
     
@@ -105,9 +108,9 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
     
 7. 受信したテキスト メッセージの認証コードを入力して、**[次へ]** をクリックします。
     
-8. ここにサインイン ページの URL を記録してください (選択してコピー): ![](./images/Common_Images/TableLine.png)
+8. ここにサインイン ページの URL を記録してください (選択してコピー): ![](./media/Common-Images/TableLine.png)
     
-9. ここにユーザー ID を記録してください (選択してコピー): ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. ここにユーザー ID を記録してください (選択してコピー): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     この値を**Office 365 全体管理者名**と呼ぶことにします。
     
@@ -119,7 +122,7 @@ Office 365 ポータルのメイン ページが表示されます。このペ�
   
 シミュレーションのエンタープライズ Office 365 開発/テスト環境の、最終的な構成をここに示します。
   
-![Office 365 開発/テスト環境](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Office 365 開発/テスト環境](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 この構成は、次の内容で成立します。 
   
@@ -184,8 +187,10 @@ New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalNam
   
 次に、Sales (販売)、Production (生産)、および Support (サポート) の各部門ために、新しい SharePoint Online チーム サイトを 3 つ作成します。
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>新しい SharePoint Online チーム サイトを 3 つ作成する
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>フェーズ 4: 新しい SharePoint Online チーム サイトを 3 つ作成する (省略可能)
 
+このフェーズでは、一連の SharePoint Online チーム サイトを構成します。
+  
 1. [SharePoint Online 管理シェル](https://go.microsoft.com/fwlink/p/?LinkId=255251) (x64 バージョン) をインストールします。
     
 2. **[スタート]** をクリックし、「**sharepoint**」と入力してから、**[SharePoint Online 管理シェル]** をクリックします。
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 この環境で作業する場合や、この環境に追加のテスト ラボ ガイドラインを展開するために、次に示す値を記録しておきます。
   
-- Office 365 全体管理者名: ![](./images/Common_Images/TableLine.png).onmicrosoft.com (フェーズ 2 の手順 9 で入力したもの)
+- Office 365 全体管理者名: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 2 の手順 9 で入力したもの)
     
     このアカウントのパスワードも安全な場所に記録してください。
     
-- 試用版サブスクリプションの組織名: ![](./images/Common_Images/TableLine.png) (フェーズ 2 の手順 4 で入力したもの)
+- 試用版サブスクリプションの組織名: ![](./media/Common-Images/TableLine.png) (フェーズ 2 の手順 4 で入力したもの)
     
 - User 2、User 3、User 4、および User 5 のアカウントを一覧表示するには、次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
     
@@ -237,27 +242,27 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     ここにアカウント名を記録してください:
     
-  - User 2 のアカウント名: user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 2 のアカウント名: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 のアカウント名: user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 3 のアカウント名: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 のアカウント名: user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 4 のアカウント名: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 のアカウント名: user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - User 5 のアカウント名: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     これらのアカウントのパスワードも安全な場所に記録してください。
     
-- Sales、Production、および Support チーム サイトの URL を一覧表示するには、次に示すコマンドを SharePoint Online 管理シェル プロンプトから実行します。
+- (省略可能) Sales、Production、および Support チーム サイトの URL を一覧表示するには、次に示すコマンドを SharePoint Online 管理シェル プロンプトから実行します。
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - Production サイトの URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - Production サイトの URL: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/production
     
-  - Sales サイトの URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - Sales サイトの URL: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - Support サイトの URL: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - Support サイトの URL: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>次の手順
 
