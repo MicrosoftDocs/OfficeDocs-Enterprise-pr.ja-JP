@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 概要:Exchange の社内およびハイブリッドと、AD FS、Exchange Online サービス、Exchange Web サービスを使用した SSO に必要な SSL 証明書について説明します。
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546518"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952473"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365 のサード パーティ SSL 証明書の計画
 
@@ -49,7 +49,7 @@ TechNet の記事「[証明書要件について](https://go.microsoft.com/fwlin
   
 ## <a name="certificates-for-single-sign-on"></a>シングル サインオンの証明書
 
-ユーザーに提供する、シンプルなシングル サインオン エクスペリエンスを堅牢なセキュリティが含まれていますが、次の表に示すように証明書が、フェデレーション サーバーまたはフェデレーション サーバー プロキシのいずれかの必要があります。次の表は、Active Directory フェデレーション サービス (AD FS) に焦点を当てています、[サードパーティの id プロバイダーを使用する方法](https://go.microsoft.com/fwlink/?LinkId=532869)についてもあります。
+ユーザーに提供する、シンプルなシングル サインオン エクスペリエンスを堅牢なセキュリティが含まれていますが、次の表に示すように証明書が、フェデレーション サーバーまたはフェデレーション サーバー プロキシのいずれかの必要があります。次の表は、Active Directory フェデレーション サービス (AD FS) に焦点を当てています、[サードパーティの id プロバイダーを使用する方法](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility)についてもあります。
   
 ||||
 |:-----|:-----|:-----|
