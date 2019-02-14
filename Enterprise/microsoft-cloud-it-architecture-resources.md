@@ -61,8 +61,8 @@ See the posters, icon sets, community venues, and other resources that describe 
 |[![Thumbnail for Enterprise Cloud Roadmap](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Swipe through this Sway experience for the resources that describe the industry's most complete cloud solution.  <br/> |
 --->
   
-<a name="cloudarch"> </a>
-<span data-ttu-id="b836e-126">##エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド</span><span class="sxs-lookup"><span data-stu-id="b836e-126">Microsoft Cloud for Enterprise Architects Series</span></span>
+<span data-ttu-id="b836e-126"><a name="cloudarch"> </a>
+##エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド</span><span class="sxs-lookup"><span data-stu-id="b836e-126">Microsoft Cloud for Enterprise Architects Series</span></span>
 
 <span data-ttu-id="b836e-p105">これらのクラウド アーキテクチャ ポスターでは、Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online、およびオンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードに最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。</span><span class="sxs-lookup"><span data-stu-id="b836e-p105">These cloud architecture posters give you information about Microsoft cloud services and platforms, including Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, private cloud datacenter, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -78,8 +78,8 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 --->
 
    
-<a name="identity"> </a>
-<span data-ttu-id="b836e-129">###エンタープライズ アーキテクトのための Microsoft クラウド ID</span><span class="sxs-lookup"><span data-stu-id="b836e-129">Microsoft Cloud Identity for Enterprise Architects</span></span>
+<span data-ttu-id="b836e-129"><a name="identity"> </a>
+###エンタープライズ アーキテクトのための Microsoft クラウド ID</span><span class="sxs-lookup"><span data-stu-id="b836e-129">Microsoft Cloud Identity for Enterprise Architects</span></span>
 
 <span data-ttu-id="b836e-130">Microsoft クラウド サービスおよびプラットフォームを使用して、組織のためのアイデンティティを設計する上で IT アーキテクトが知る必要のある事柄。</span><span class="sxs-lookup"><span data-stu-id="b836e-130">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
@@ -133,8 +133,8 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |:-----|:-----|
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| --->
    
-<a name="BKMK_o365solutions"> </a>
-<span data-ttu-id="b836e-192">## Microsoft 365 Enterprise ソリューション シリーズ</span><span class="sxs-lookup"><span data-stu-id="b836e-192"><!---<a name="santa"> </a>
+<span data-ttu-id="b836e-192"><a name="BKMK_o365solutions"> </a>
+## Microsoft 365 Enterprise ソリューション シリーズ</span><span class="sxs-lookup"><span data-stu-id="b836e-192"><!---<a name="santa"> </a>
 ### The Santa cloud
 
 How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
@@ -159,8 +159,8 @@ Capabilities for enterprise organizations to protect corporate assets.
 |[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
 --->
    
-<a name="BKMK_O365IDP"> </a>
-<span data-ttu-id="b836e-194">### Office 365 の ID とデバイス保護</span><span class="sxs-lookup"><span data-stu-id="b836e-194">Identity and Device Protection for Office 365</span></span>
+<span data-ttu-id="b836e-194"><a name="BKMK_O365IDP"> </a>
+### Office 365 の ID とデバイス保護</span><span class="sxs-lookup"><span data-stu-id="b836e-194">Identity and Device Protection for Office 365</span></span>
 
 <span data-ttu-id="b836e-195">Office 365、他の SaaS サービス、および Azure AD アプリケーション プロキシで公開したオンプレミス アプリケーションにアクセスする ID とデバイスを保護するために推奨される機能。</span><span class="sxs-lookup"><span data-stu-id="b836e-195">Recommended capabilities for protecting identities and devices that access Office 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.</span></span>
   
