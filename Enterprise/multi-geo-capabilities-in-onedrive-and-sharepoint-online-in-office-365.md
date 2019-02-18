@@ -1,5 +1,5 @@
 ---
-title: OneDrive の複数地域機能および Office 365 の SharePoint Online
+title: Office 365 の OneDrive の複数地域機能
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: OneDrive と SharePoint Online の複数地域機能を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: OneDrive Online の複数地域機能を使用して、複数の地域に Office 365 のプレゼンスを展開します。
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200730"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052991"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>OneDrive の複数地域機能および Office 365 の SharePoint Online
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Office 365 の OneDrive の複数地域機能
 
-OneDrive の複数地域機能と SharePoint Online を使用すれば、組織はその組織の Office 365 のプレゼンスを、その既存のテナント内の複数の地域または国に対して展開することができます。お客様の Microsoft アカウント チームと連絡を取って、OneDrive for Business 複数地域用にお客様の多国籍企業のサインアップを行ってください。
+OneDrive Online の複数地域機能を使用すれば、組織はその組織の Office 365 のプレゼンスを、その既存のテナント内の複数の地域または国に対して展開することができます。お客様の Microsoft アカウント チームに問い合わせて、OneDrive for Business 複数地域用にお客様の多国籍企業のサインアップを行ってください。
   
 OneDrive の複数地域機能を使用すれば、データの常駐に関連する要件を満たすと同時に、モダンな生産性向上エクスペリエンスのグローバル展開を要員に開放するために、選択した地理的な場所に保存 (休眠) データをプロビジョニングして蓄えることができます。
   
