@@ -12,15 +12,16 @@ search.appverid: MOE150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 次の手順の概要は、Office 365 の展開、Active Directory の接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
-ms.openlocfilehash: 7540a53f37b08412f24db7798e29fe6149351bc4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4dd2dff88ed9ef435b5e36517cee9b3e76c8132f
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541638"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085276"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Office 365 Enterprise を組織で展開する
 オンプレミス インフラストラクチャで Office 365 Enterprise の展開と統合を開始します。次の手順の概要は、ディレクトリの接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
