@@ -11,72 +11,73 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-subscription-management
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: 計画および Office 365 への移行を準備する際、このチェックリストは、組織に役立ちます。フェーズおよびチェックリストの手順は、契約時のセンターで提供されるガイダンスに揃えて配置されます。
-ms.openlocfilehash: 623cdb436f70355b259588aba53bceb7cc64c865
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。チェックリストのフェーズと手順は、オンボードセンターで提供されるガイダンスに沿っています。
+ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541672"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085306"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 の展開計画チェックリスト
 
-企業組織を Office 365 に移動するには、正確に、どのような手順を実行する場合に、それらを実行するタイミングし実行する人を計画する必要があります。計画および Office 365 への移行を準備する際、このチェックリストは、組織に役立ちます。フェーズおよびチェックリストの手順は、[契約時のセンター](https://go.microsoft.com/fwlink/?LinkId=517115)で提供されるガイダンスに揃えて配置されます。自由に組織のニーズには、このチェックリストを適応します。
+エンタープライズ組織を Office 365 に移行する際には、実行する手順、それらを実行するタイミング、およびそれらを実行するユーザーを正確に計画することが重要です。このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。チェックリストのフェーズと手順は、[オンボードセンター](https://go.microsoft.com/fwlink/?LinkId=517115)で提供されるガイダンスに沿っています。このチェックリストは、組織のニーズに合わせて自由にご利用いただけます。
 
-## <a name="need-help-with-your-deployment"></a>展開に関するヘルプを表示する必要がありますか。
-サポートされている Office 365 をセットアップしますか。[FastTrack](https://fasttrack.microsoft.com/office)または[Office 365 サービスの展開のアドバイザー](deployment-advisors-for-office-365.md)を使用してください。
+## <a name="need-help-with-your-deployment"></a>展開のサポートが必要な場合
+Office 365 のセットアップに関するヘルプを参照してください。[Office 365 サービスに](deployment-advisors-for-office-365.md) [fasttrack](https://fasttrack.microsoft.com/office)または Deployment アドバイザーを使用することを検討してください。
 
-## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 の大規模の展開のチェックリストのサンプル
+## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 Enterprise 展開のサンプルチェックリスト
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**展開タスク/イベント** <br/> |**開始日** <br/> |**終了日** <br/> |**リソース** <br/> |**依存関係** <br/> |
-|**合わせて導入目標を決定します。** <br/> |||||
-| 内部および外部関係者とします。<br>  -スコープとタイムラインに同意します。 <br>  ・ トラッキング ・ メカニズムのプロジェクトに同意します。  <br>  -成功基準との[通信](https://fasttrack.microsoft.com/office)を開発する / [Office 365 を使い始める](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
-|**現在の環境のインベントリを作成し、キーの配置を決定します。** |||||
-|現在の環境のインベントリを作成します。 |||||
-| (ログイン名、電子メール アドレス) のユーザー アカウントの数を収集します。 |||||
-| (共有メールボックスと会議室を含む) のメールボックスのサイズと数を収集します。 |||||
-| クライアントのバージョンと設定 (ブラウザー、オペレーティング システム、office アプリケーション、モバイル バージョンではなど) を収集します。 |||||
-| (DNS ホスト、プロキシおよびファイアウォールの構成、インターネットに接続) ネットワークの設定の詳細情報を収集します。 |||||
-| (ファイル共有、イントラネットのファイル ・ ストレージ) のファイルの格納場所に関する情報を収集します。 |||||
-| 移行を計画しているすべてのイントラネット サイトについての詳細情報を収集します。 |||||
-| オンライン会議、インスタント メッセージングの移行を計画しているシステムを収集します。 |||||
-| (メールが有効なアプリケーション、ワークフロー、CRM、および既存のシステムと統合されているすべてのアプリケーションに関する詳細な情報を収集します。 |||||
-|キーの配置を決定します。 |||||
-| どのようなを[作成したりアカウントの同期](https://go.microsoft.com/fwlink/?LinkId=534819)でしょうか。 |||||
-| どのような[ユーザー アカウントを認証](https://go.microsoft.com/fwlink/?LinkId=534820)しますか。 |||||
-| 任意のデータを移行するためには、方法、その移行が発生する ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)および[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)) でしょうか。 |||||
-| 短いまたは長い期間[設置型システムとの統合](https://go.microsoft.com/fwlink/?LinkId=534822)がありますか。 |||||
-| [はユーザーが接続できるデバイス](https://go.microsoft.com/fwlink/?LinkId=534821)(モバイル デバイスからリモートで、またはネットワークからのみ)。 |||||
-|**潜在的な配置のブロックを修正します。** |||||
-|ツールとマイクロソフトのガイダンス。 |||||
-| ([ガイダンス](https://go.microsoft.com/fwlink/?LinkId=534825)と[ツール](https://go.microsoft.com/fwlink/?LinkId=534826)) の active directory アカウント クリーンアップします。 |||||
-| ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)および[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)) への移行の準備ができて、データを取得します。 |||||
-| ネットワーク準備ができて ([ガイダンスとツール](https://aka.ms/tune)) を取得します。 |||||
-| クライアント ソフトウェアのバージョン ([ガイダンス](https://go.microsoft.com/fwlink/?LinkId=534827)) を更新します。 |||||
-| Active Directory Rights Management サービスの場合: ([ガイダンス](https://go.microsoft.com/fwlink/?linkid=844967)) 環境を準備します。  <br/> |||||
-|**Office 365 サービスを設定すると、組織の機能** |||||
-|Office 365 サブスクリプションを構成します。 |||||
-|[サブスクリプションで使用するドメインを確認します。](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
-| [アプリケーションの設定](https://go.microsoft.com/fwlink/?LinkId=534829)(電子メール、インスタント メッセージング、オンライン会議、web グループ作業機能、ファイル ・ ストレージ、Yammer) を構成します。 |||||
-| [ディレクトリ同期の準備](https://go.microsoft.com/fwlink/?LinkId=534830)をします |||||
-| 必要に応じて[シングル サインオンのための準備](https://go.microsoft.com/fwlink/?LinkId=534831)を |||||
-|組織を準備します。 |||||
-|今後の移行の[準備のサービス デスク](https://fasttrack.microsoft.com/office) |||||
-| 展開、省略可能な移行プロセスをテストします。 |||||
-| に関する[今後の変更とに及ぼす影響に](https://fasttrack.microsoft.com/office)ユーザーに連絡します。 |||||
-|**ユーザーを展開します。** |||||
-|セットアップ アカウントとメールボックス |||||
-| ユーザーおよび[ビジネス向けの Office 365 のユーザーにライセンスを割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)追加します。 |||||
-| オプションでデータを移行 ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)、および[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)を) |||||
-|機能、完全な最後の手順を検証します。 |||||
-| [Office 365 を指すように DNS 設定](https://go.microsoft.com/fwlink/?LinkId=534835)を移行します。 |||||
-| [Office 365 を使い始める](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US)ことができる場合、ユーザーに通知します。 |||||
-| ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836) [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[モバイル デバイス](https://go.microsoft.com/fwlink/?LinkId=534840)) に、Office 365 に接続するクライアント システムを再構成します。  |||||
+|**展開の目標を決定する** <br/> |||||
+| 内部および外部の関係者と:<br>  -スコープとタイムラインに同意します。 <br>  -プロジェクトの追跡メカニズムに同意する  <br>  -成功の基準と[通信](https://fasttrack.microsoft.com/office) / の開発[Office 365 の使用を開始](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)する|||||
+|**現在の環境の一覧を作成し、展開の主要な決定を行う** |||||
+|現在の環境のインベントリを作成する |||||
+| ユーザーアカウントの数 (ログイン名、電子メールアドレス) を収集します。 |||||
+| メールボックスの数とサイズ (共有メールボックスおよび会議室を含む) を収集します。 |||||
+| クライアントのバージョンと構成 (ブラウザー、オペレーティングシステム、office アプリケーション、モバイルバージョンなど) を収集する |||||
+| ネットワーク設定 (DNS ホスト、プロキシ、ファイアウォールの構成、インターネット接続) に関する詳細を収集します。 |||||
+| ファイルの保存場所に関する情報を収集する (ファイル共有、イントラネットファイル記憶域) |||||
+| 移行を計画しているイントラネットサイトの詳細を収集する |||||
+| 移行を計画しているオンライン会議およびインスタントメッセージングシステムを収集する |||||
+| 既存のシステム (メールが有効なアプリケーション、ワークフロー、CRM など) に統合されているすべてのアプリケーションに関する詳細を収集します。 |||||
+|展開に関する重要な決定を行う |||||
+| [アカウントを作成または同期](https://go.microsoft.com/fwlink/?LinkId=534819)する方法を教えてください。 |||||
+| [ユーザーアカウントを認証](https://go.microsoft.com/fwlink/?LinkId=534820)する方法 |||||
+| 任意のデータを移行し、移行の実行方法 ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)と[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)) を教えてください。 |||||
+| [オンプレミスのシステムと](https://go.microsoft.com/fwlink/?LinkId=534822)の短期的または長期的な統合はありますか。 |||||
+| [ユーザーが接続できるデバイス](https://go.microsoft.com/fwlink/?LinkId=534821)(リモート、モバイルデバイス、またはネットワークから) は何ですか。 |||||
+|**潜在的な展開ブロックを修正する** |||||
+|Microsoft のツールとガイダンスを参考にしてください。 |||||
+| active directory アカウントをクリーンアップする ([ガイダンス](https://go.microsoft.com/fwlink/?LinkId=534825)と[ツール](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
+| 移行のためにデータを準備する ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)と[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)) |||||
+| ネットワークの準備 ([ガイダンスとツール](https://aka.ms/tune)) |||||
+| クライアントソフトウェアのバージョンを更新する ([ガイダンス](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
+| Active Directory Rights Management サービスがインストールされている場合: 環境を準備する ([ガイダンス](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
+|**組織で使用する Office 365 サービスをセットアップする** |||||
+|Office 365 サブスクリプションを構成する |||||
+|[サブスクリプションで使用するドメインを確認する](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
+| [アプリケーション設定](https://go.microsoft.com/fwlink/?LinkId=534829)(電子メール、インスタントメッセージング、オンライン会議、web グループ作業、ファイル記憶域、Yammer) を構成する |||||
+| 必要[に応じてディレクトリ同期の準備をする](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
+| [シングルサインオンの準備 (](https://go.microsoft.com/fwlink/?LinkId=534831)オプション) |||||
+|組織を準備する |||||
+|今後の移行のために[サービスデスクを準備](https://fasttrack.microsoft.com/office)する |||||
+| 展開とオプションの移行プロセスをテストする |||||
+| 今後の変更について、[およびそれがどのように影響するかを](https://fasttrack.microsoft.com/office)ユーザーに知らせる |||||
+|**ユーザーへのロールアウト** |||||
+|アカウントとメールボックスをセットアップする |||||
+| 一般[法人向け Office 365 でユーザーを追加し、ライセンスをユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
+| 必要に応じてデータ ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)、[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)など) を移行する |||||
+|機能を検証して最終手順を完了する |||||
+| [Office 365 を指すように DNS 設定を移行する](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
+| [Office 365 の使用を開始](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US)できることをユーザーに通知する |||||
+| office 365 ( [office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[モバイルデバイス](https://go.microsoft.com/fwlink/?LinkId=534840)) に接続するようにクライアントシステムを再構成する  |||||

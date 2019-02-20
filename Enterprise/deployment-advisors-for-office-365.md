@@ -8,126 +8,128 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: Office 365 の展開ウィザードは、Office 365 をセットアップするための自習のサポートを提供します。
-ms.openlocfilehash: 7b677e70332c7a28156c572bb9daf5cc6c9e4e91
-ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
+description: office 365 の展開ウィザードには、office 365 をセットアップするためのセルフガイドサポートが提供されています。
+ms.openlocfilehash: d948363c640896c8c14e695c5588f322756c92d1
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604498"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085436"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Office 365 サービスの展開アドバイザー
 
-Office 365 の展開のアドバイザーは、組織の Office 365 をセットアップするため自身のサポートを提供します。だけで、ウィザードを選択し、Office 365 にサインインします。 
+office 365 の展開アドバイザーでは、組織で office 365 をセットアップするためのセルフガイドサポートが提供されています。ウィザードを選択して、Office 365 にサインインするだけです。 
 
-機能および展開に必要なオプションを選択すると、ウィザードは、お客様のニーズにカスタマイズされているステップ バイ ステップのセットアップの計画を作成します。指示、ビデオ、記事の参照、およびスクリプトの完全なセットが得られます。一部のウィザードでは、ウィザードの他の領域内で変更した設定とデータ ウィザードを使用するときにいくつかの設定の変更の自動化があります。計画時にも、またはされているサービスを Office 365 の機能とオプションの詳細については、いつでも、これらのウィザードを使用できます。
+展開する機能とオプションを選択すると、ウィザードによって、ニーズに合わせてカスタマイズされたステップバイステップのセットアッププランが作成されます。手順、ビデオ、リファレンス記事、およびスクリプトの完全なセットが表示されます。一部のウィザードには、設定の一部を変更する自動化が用意されていますが、ウィザードの他の領域では、設定とデータをウィザードで変更して、ガイドを作成することができます。これらのウィザードは、計画中または既にサービスをセットアップした後でもいつでも使用できます。 Office 365 の機能とオプションの詳細については、「」を参照してください。
   
-## <a name="windows-10-with-office-365"></a>Office 365 では、Windows 10
+## <a name="windows-10-with-office-365"></a>Windows 10 と Office 365
 
-[Microsoft 365 導入アドバイザー](https://aka.ms/microsoft365setupguide)
+[Microsoft 365 展開アドバイザー](https://aka.ms/microsoft365setupguide)
   
-Microsoft 365 は、Office 365、Windows の 10、およびエンタープライズ モビリティ + セキュリティを含む完全なインテリジェントなソリューションです。Microsoft 365 を支援する創造的な作業のすべてのユーザー、セキュリティで保護します。Windows 10 デバイスをセットアップまたは Office アプリケーション、Windows の分析、および Windows Defender 高度な脅威保護 (Microsoft 365 エンタープライズ E5 プランのみ) の省略可能な展開でユーザーのコンピューターを Windows の 10 にアップグレードするには、このガイドを使用します。
+Microsoft 365 は、Office 365、Windows 10、Enterprise Mobility + Security を含む完全なインテリジェントソリューションです。Microsoft 365 では、すべてのユーザーがクリエイティブなので、安全に共同作業を行うことができます。このガイドを使用して、windows 10 デバイスのセットアップ、またはユーザーのコンピューターの windows 10 へのアップグレードを行います。オプションで Office アプリ、windows Analytics、および windows Defender Advanced Threat Protection (Microsoft 365 Enterprise E5 プランのみ) を使用します。
 
 
-## <a name="mail-migration-and-protection"></a>メール アカウントの移行と保護
+## <a name="mail-migration-and-protection"></a>メールの移行と保護
 
 ### <a name="prepare-your-environment"></a>環境を準備する 
-[準備環境は、ガイド](https://go.microsoft.com/fwlink/?linkid=2005213)は、開始する場所です。追加のドメイン、ユーザーを作成して適切な順序でのライセンスを割り当てるかどうかを確認するのには、展開の目標を教えてください。これは、機能は、電子メールの移行またはハイブリッド展開の構成を行う場合に特に重要です。 
+開始する場所として、「[環境を準備するガイド」](https://go.microsoft.com/fwlink/?linkid=2005213)を参照してください。ドメインの追加、ユーザーの作成、および適切な順序でのライセンスの割り当てを行うには、展開の目標をご確認ください。これは、電子メールの移行またはハイブリッド展開の構成を計画している場合に特に重要です。 
 
 ### <a name="exchange-migration-advisor"></a>Exchange 移行アドバイザー
-[Office 365 のメール移行アドバイザー](https://aka.ms/office365setup)を使用すると、自動化ツール、およびステップ バイ ステップ ガイドで、現在のメール システムから Exchange Online では、Office 365 にメールボックスを移動できます。現在のメール システムで、移行するメールボックスとユーザーとユーザーのアクセスを管理するために計画する方法の数に基づいて、組織に最適な移行パスをお勧めします。
+[office 365 メール移行アドバイザー](https://aka.ms/office365setup)は、自動化ツールおよびステップバイステップガイダンスを使用して、メールボックスを現在のメールシステムから Office 365 の Exchange Online に移動するのに役立ちます。現在のメールシステム、移行するメールボックスの数、およびユーザーとユーザーアクセスの管理を計画する方法に基づいて、組織に最適な移行パスをお勧めします。
   
-[Gmail の連絡先と予定表のアシスタント](https://aka.ms/gmailcontactscalendar)、Gmail の連絡先と Google カレンダーのアイテムを Office 365 に移行するための手順を説明します。ユーザーの Gmail のメールボックスを Office 365 に移行するとき、電子メール メッセージを移行するが、連絡先と予定表のアイテムではありません。このウィザードでは、Gmail の連絡先と Google カレンダーのアイテムを Office 365 にインポートする手順を示します。
+[gmail の連絡先と予定表アシスタント](https://aka.ms/gmailcontactscalendar)を使用すると、gmail の連絡先と Google 予定表のアイテムを Office 365 に移行するための手順を追って説明します。ユーザーの Gmail メールボックスを Office 365 に移行すると、電子メールメッセージは移行されますが、連絡先と予定表アイテムは移行されません。このウィザードでは、Gmail 連絡先と Google 予定表アイテムを Office 365 にインポートする手順を説明します。
   
 ### <a name="exchange-online-protection"></a>Exchange Online Protection
-Microsoft Exchange Online[の保護 (EOP)](https://aka.ms/EOPguidance)フィルターでスパムやマルウェアから組織を保護することが、クラウド ベースの電子メールは、ポリシー違反のメッセージから組織を保護する機能が含まれています。
+Microsoft [Exchange Online Protection (EOP)](https://aka.ms/EOPguidance)は、クラウドベースの電子メールフィルター処理サービスであり、スパムやマルウェアから組織を保護し、メッセージングポリシー違反から組織を保護する機能を備えています。
   
 
-## <a name="file-creation-storage-and-sharing"></a>ファイルの作成、格納、および共有
+## <a name="file-creation-storage-and-sharing"></a>ファイルの作成、保存、共有
 
 ### <a name="office-365-proplus"></a>Office 365 ProPlus
-[Office 用リソース クイック スタート ガイド](https://aka.ms/OPPquickstartguide)の手順を説明する、会社の PC または Mac のいずれかの Office をインストールする手順と、すべてのユーザーが Office を起動するためのヒントが含まれています。
+「 [office ProPlus クイックスタートガイド」](https://aka.ms/OPPquickstartguide)では、会社の PC または Mac に office をインストールするための手順について説明します。また、office をすべてのユーザーにとって使い始めるためのヒントが含まれています。
 
-[Office 用のリソースの導入アドバイザー](https://aka.ms/o365proplusdeploy)では、Office の最新バージョンで実行されているユーザーを取得することができます。このアドバイザーでは、オンラインで Office 365 ポータルから直接 Office をインストールするユーザーを支援するか、設置場所から、ユーザーに Office を展開するための手順について説明します。システム センター構成マネージャー、グループ ポリシーのスタートアップ スクリプト、オペレーティング システムのディスク イメージを使用するための手順が含まれています。 またはリモート デスクトップ サービス (RDS) は、ライセンス認証を共有します。
+[office ProPlus 展開アドバイザー](https://aka.ms/o365proplusdeploy)は、ユーザーが最新バージョンの office で稼働していることを確認するのに役立つ情報を表示します。このアドバイザーでは、ユーザーが office 365 ポータル online から office を直接インストールしたり、オンプレミスの場所からユーザーに office を展開したりするのを支援する手順について順を追って説明します。System Center Configuration Manager、グループポリシースタートアップスクリプト、オペレーティングシステムディスクイメージ、またはリモートデスクトップサービス (RDS) 共有ライセンス認証を使用するための手順が含まれています。
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
-[クイック ビジネスの OneDrive スタート ガイド](https://aka.ms/ODfBquickstartguide)をすぐにビジネスのための OneDrive で、ファイル ・ ストレージ、共有、および同期に使用します。
+onedrive for [business クイックスタートガイド](https://aka.ms/ODfBquickstartguide)を使用すると、onedrive for business のファイルの保存、共有、同期をすばやく始めることができます。
   
 ### <a name="sharepoint-online"></a>SharePoint Online
   
-[SharePoint Online クイック スタート](https://aka.ms/SPOquickstartguide)と、文書の保存とコンテンツ管理をクラウドで SharePoint を設定する方法を示します。この基本的なセットアップは、大量のデータを移行するかハイブリッドのセットアップの実行を継続する設置型の SharePoint サーバーを持っていない場合する必要があります。
+[sharepoint Online のクイックスタート](https://aka.ms/SPOquickstartguide)には、ドキュメントの保存とコンテンツ管理のためにクラウドで sharepoint をセットアップする方法が示されています。この基本的なセットアップは、移行するデータが大量にない場合や、ハイブリッドセットアップで引き続き実行するオンプレミスの SharePoint Server を使用している場合にのみ必要です。
   
-[SharePoint Online 導入アドバイザー](https://aka.ms/spoguidance)では、組織にとって最適とお客様のビジネス ニーズを満たすために SharePoint Online の機能を構成するための手順は、展開オプションを選択することができます。クラウドの展開、ハイブリッド展開の場合、または上設置型-に-雲の移行を選択します。ファイル ・ ストレージと共有、外部のファイル共有、サイト コレクション、グローバル設定は、およびユーザー プロファイル、および Office 365 チーム サイトなどの SharePoint Online の機能を構成する手順に従います。
+[sharepoint online 展開アドバイザー](https://aka.ms/spoguidance)は、組織にとって最適な展開オプションを選択するのに役立つと共に、ビジネスニーズに合わせて SharePoint online の機能を構成するための手順を提供します。クラウドの展開、ハイブリッド展開、または社内からクラウドへの移行のいずれかを選択します。次に、[ファイルストレージと共有]、[外部ファイル共有]、[サイトコレクション]、[グローバル設定]、[ユーザープロファイル]、および Office 365 チームサイトなどの SharePoint Online の機能を構成するための手順を実行します。
   
-## <a name="security-and-identity"></a>セキュリティと Id
+## <a name="security-and-identity"></a>セキュリティと id
 
-### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>Azure Active Directory 接続 (Azure AD 接続) アドバイザー
-[Azure AD 接続アドバイザー](https://aka.ms/aadconnectpwsync)は、各ユーザーを手動で作成することがなく、Office 365 にユーザー アカウント情報を追加する方法を示すステップバイ ステップ ガイドです。ユーザーが自分の電子メールと同じパスワードを使用して、ドメインに署名できるようにパスワード ハッシュの同期またはパススルー認証を構成する方法も示します。AD FS のフェデレーション サインインを設定する場合は、このガイドもうえでの手順を新しいサーバーまたは既存の Windows Server 2012 R2 のファーム内の AD FS を展開します。Azure AD 接続はディレクトリ同期] と [Azure AD 同期など、id の統合ツールの以前のバージョンに置き換えられ、Office 365 の Azure Active directory ユーザーとその他のデータを追加するは主に使用します。
+### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>azure Active Directory Connect (azure AD Connect) アドバイザー
+[Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)は、各ユーザーを手動で作成することなく、Office 365 にユーザーアカウント情報を追加する方法を順を追って説明したガイドです。また、パスワードハッシュ同期またはパススルー認証を構成する方法を示しているので、ユーザーは同じパスワードを使用して自分のメールとドメインにサインインできます。ad fs を使用してフェデレーションサインインを設定する場合、このガイドでは、新しいサーバーまたは既存の Windows server 2012 R2 ファームに ad fs を展開する手順についても説明しています。azure ad Connect は、DirSync、azure ad Sync などの id 統合ツールの以前のバージョンに置き換わるもので、Office 365 用の Azure Active Directory にユーザーとその他のデータを追加するために主に使用されています。
   
 ### <a name="azure"></a>Azure
-[Azure AD の基本的なセットアップ ・ ガイド](https://aka.ms/azureadbasic)では、グループ ベースのアクセス管理、セルフ サービス パスワードのリセット、クラウド アプリケーションと Azure Active Directory アプリケーション プロキシの設置型の web アプリケーションを発行するためのような機能を設定できます。
+[azure AD Basic セットアップガイド](https://aka.ms/azureadbasic)を使用すると、グループベースのアクセス管理、クラウドアプリケーションのセルフサービスによるパスワードのリセット、オンプレミスの web アプリケーションを発行するための Azure Active Directory アプリケーションプロキシなどの機能を設定できます。
   
-[Azure AD のプレミアム ・ セットアップ ・ ガイド](https://aka.ms/aadpguidance)では、Azure Active ディレクトリ プレミアム (Azure AD プレミアム) の id の複数要素の認証、シングル サインオン (SSO)、デバイスの登録と同じように管理機能を提供するの機能を有効にできます。セルフ サービスのパスワードとグループの管理、セキュリティを監視します。
+azure [ad premium セットアップガイド](https://aka.ms/aadpguidance)は、多要素認証、シングルサインオン (SSO)、デバイス登録などの id 管理機能を提供する azure Active Directory Premium (azure ad premium) の機能を有効にするために使用できます。セルフサービスのパスワードとグループ管理、セキュリティの監視。
   
-### <a name="verify-your-domain"></a>Verify your domain
-[確認ドメインを Office 365 の](https://aka.ms/verifyyourdomaino365)アドバイザーを使用して、独自のドメイン名 (web サイト名とも呼ばれます) を追加することによって Office 365 をカスタマイズできます。
+### <a name="verify-your-domain"></a>ドメインの検証
+[office 365 advisor でドメインを確認](https://aka.ms/verifyyourdomaino365)すると、独自のドメイン名 (web サイト名とも呼ばれる) を追加して office 365 をカスタマイズできます。
   
-## <a name="communication-and-online-conferencing"></a>通信とオンライン会議
+## <a name="communication-and-online-conferencing"></a>コミュニケーションとオンライン会議
 
 ### <a name="office-365-groups"></a>Office 365 グループ
-[Office 365 のグループのセットアップ ・ ガイド](https://aka.ms/groupsguide)
+[Office 365 グループのセットアップガイド](https://aka.ms/groupsguide)
 
-Office 365 グループは、共有ワークスペースの会話、電子メール、ファイル、およびイベントのグループのメンバーことができますまとめて取得する場所を行うものです。Office 365 内のグループでは、特定の人々 との共同作業し、共有する人のためのリソースのコレクションを簡単に設定するを選択できます。手動でグループにメンバーを自動的に提示するに必要なツール、グループのアクセス許可を追加することを提供するため、すべてのリソースにアクセス許可の割り当てについて心配する必要はありません。
+Office 365 グループは、電子メール、会話、ファイル、およびイベントの共有ワークスペースで、グループメンバーが一括して作業を行うことができます。Office 365 のグループ共同作業を行うユーザーのセットを選択し、それらのユーザーが共有するリソースのコレクションを簡単にセットアップできるようにします。グループにメンバーを追加すると、グループが提供するツールに必要なアクセス許可が自動的に与えられるため、これらすべてのリソースに対して手動でアクセス許可を割り当てる必要はありません。
   
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
-[チーム導入アドバイザー](https://aka.ms/teamsguidance)
+[Teams の展開アドバイザー](https://aka.ms/teamsguidance)
   
-マイクロソフト チームは、チャット、通話、会議、およびプライベート メッセージをチームのワークスペースを提供する Office 365 でチャット ベースのコラボレーション サービスです。チームの導入アドバイザーを設定し、ビジネス、および Office 365 のグループの Exchange Online、SharePoint のオンライン、OneDrive 最適なチームの経験を構成できます。テナント設定、チーム、および、プロジェクトでは、呼び出し、会議、メッセージング、アプリ、Bot の情報、およびコネクタにサードパーティのサービスへのクイック アクセス タブのチャネルの構成に関する情報が含まれています。
+Microsoft Teams は、Office 365 のチャットベースのコラボレーションサービスで、チャット、通話、会議、およびプライベートメッセージのチームワークスペースを提供します。teams の展開アドバイザーを使用すると、Exchange online、SharePoint online、OneDrive for business、および Office 365 グループで最適なチーム環境をセットアップして構成することができます。ここには、テナントの設定、プロジェクトのチームとチャネル、通話と会議、メッセージ、アプリにすばやくアクセスするためのタブ、情報ボット、およびサードパーティ製のサービスへのコネクタについての情報が含まれています。
   
 ### <a name="skype-for-business"></a>Skype for Business
 
-[Skype ビジネス クイック スタート ガイド](https://aka.ms/SfBquickstartguide)
+[Skype for business クイックスタートガイド](https://aka.ms/SfBquickstartguide)
   
-進むビジネス用の Skype で高速のインスタント メッセージング (IM)、プレゼンス、オンライン会議、および画面共有します。高度な機能しない場合は、この基本的なセットアップに必要なです。
+インスタントメッセージング (IM)、プレゼンス、オンライン会議、および画面共有については、Skype for business を使用して迅速にご利用いただけます。高度な機能が必要ない場合は、この基本設定だけで十分です。
   
-[Skype のビジネス展開アドバイザー](https://aka.ms/skypeguidance)
+[Skype for business 展開アドバイザー](https://aka.ms/skypeguidance)
   
-ビジネス展開アドバイザーの Skype は、Skype でオンライン ビジネスを起動および実行を取得することができます。このウィザードでは、インスタント メッセージング (IM) のように、ビジネス機能、オンライン会議、ビデオ会議、公衆交換電話網 (PSTN) 会議、クラウドのプライベート ブランドの交換機 (PBX)、および Skype 会議のブロードキャストの Skype を設定する方法を示します。手順に接続する Skype のビジネスのオンライン ビジネスを展開するため、設置型の Skype、ハイブリッド環境を設定するために含まれています。
+skype for business 展開アドバイザーは、skype for business Online を使用して作業を開始するのに役立つ情報を表示します。このウィザードは、インスタントメッセージング (IM)、オンライン会議、ビデオ会議、公衆交換電話網 (PSTN) 会議、クラウド民間ブランド exchange (PBX)、skype 会議ブロードキャストなど、skype for business の機能をセットアップする方法を示しています。skype for business Online をオンプレミスの skype for business 展開に接続するハイブリッド環境をセットアップする手順について説明します。
   
 ### <a name="yammer"></a>Yammer
 
-[Yammer 入門: 企業のソーシャル ネットワーク](https://aka.ms/yamquickstartguide)
+[Yammer への導入: 会社のソーシャルネットワーク](https://aka.ms/yamquickstartguide)
   
-このクイック スタート ガイドでは、組織内、Yammer を正常に展開する方法を示します。統合または移行する既存の Yammer ネットワークをお持ちでない場合は、この基本的なセットアップに必要なです。
+このクイックスタートガイドは、組織内で Yammer を正常にロールアウトする方法を示しています。既存の Yammer ネットワークを統合または移行する必要がない場合は、この基本設定だけで十分です。
   
-[Yammer エンタープライズのセットアップ ・ ガイド](https://aka.ms/yammerdeploy)
+[Yammer Enterprise セットアップガイド](https://aka.ms/yammerdeploy)
   
-Yammer のエンタープライズ展開のアドバイザーを使用して、Yammer のエンタープライズで稼働している組織を取得するのに役立ちます。このガイドには、Office 365 にする必要があります既存の Yammer ネットワークを接続するか、新しい Yammer ドメインの設定が含まれています。Yammer の複数のネットワークがあれば、Yammer ネットワークを 1 つのエンタープライズの Yammer ネットワークに統合する方法についても説明します。
+yammer enterprise 展開アドバイザーは、組織を yammer enterprise で稼働し、実行する際に役に立ちます。Office 365 に必要な既存の yammer ネットワークの接続、または新しい yammer ドメインのセットアップについてのガイダンスが含まれています。yammer ネットワークが複数ある場合は、yammer ネットワークを1つの yammer エンタープライズネットワークに統合する方法についても説明します。
   
-## <a name="business-apps"></a>ビジネス アプリケーション
+## <a name="business-apps"></a>ビジネスアプリ
 
-[Microsoft StaffHub のセットアップ ・ ガイド](https://aka.ms/staffhubguide)
+[Microsoft StaffHub セットアップガイド](https://aka.ms/staffhubguide)
   
-マイクロソフト StaffHub は、すべてのデバイスで動作するクラウド ベースのプラットフォームです。先頭行の作業者 (従業員、コンピューターを必要としない役割を持つ) を有効にし、shift キーを押しのスケジュールを管理するマネージャーは、チームとの通信しコンテンツを共有します。
+Microsoft StaffHub は、すべてのデバイスで動作する、クラウドベースのプラットフォームです。これにより、最初の回線ワーカー (コンピューターを必要としない役割を持つ従業員) とその管理者は、交代制のスケジュールを管理したり、チームと通信したり、コンテンツを共有したりできます。
   
-## <a name="videos-for-it-pros"></a>IT プロフェッショナル向けのビデオ
+## <a name="videos-for-it-pros"></a>IT 担当者向けビデオ
 
 ### <a name="admin-center"></a>管理センター
-[管理センター方向](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+[管理センターの向き](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
 
-[管理センターでユーザーを作成します。](https://aka.ms/ac-createusers)
+[管理センターでユーザーを作成する](https://aka.ms/ac-createusers)
 
 [DNS レコードと管理センター](https://aka.ms/ac-dnsrecords)
 
-[管理センターでドメインを確認します。](https://aka.ms/ac-verifydns)
+[管理センターでドメインを確認する](https://aka.ms/ac-verifydns)
 
 
 ### <a name="device-security"></a>デバイスのセキュリティ
@@ -135,32 +137,32 @@ Yammer のエンタープライズ展開のアドバイザーを使用して、Y
 [Intune](https://go.microsoft.com/fwlink/?linkid=2054124)
 
 
-### <a name="mail-migration-and-protection"></a>メール アカウントの移行と保護
+### <a name="mail-migration-and-protection"></a>メールの移行と保護
 
 [環境を準備する](https://go.microsoft.com/fwlink/?linkid=2043822)
 
 
 ### <a name="office-365-proplus"></a>Office 365 ProPlus
 
-[サブスクリプション サービスとしての Office の操作性](https://aka.ms/qo45jf)
+[サブスクリプションサービスとしての Office の利便性](https://aka.ms/qo45jf)
   
 [Office 365 ProPlus の概要](https://aka.ms/r359zr)
   
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-[OneDrive ビジネスの利点を統合します。](https://aka.ms/f66hqa)
+[OneDrive for business の統合された利点](https://aka.ms/f66hqa)
 
-[OneDrive へようこそ: 他のクラウド ストレージ プロバイダーからの](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432)
+[OneDrive へようこそ: 別のクラウドストレージプロバイダーから送られる](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432)
 
 
 ### <a name="outlook"></a>Outlook
 
-[Outlook の iOS の導入とセットアップ](https://aka.ms/mpuwwm)
+[iOS の Outlook の概要とセットアップ](https://aka.ms/mpuwwm)
 
-[Outlook の Android の概要とセットアップ](https://aka.ms/qrbfm3)
+[Outlook for Android の概要とセットアップ](https://aka.ms/qrbfm3)
 
-[Outlook の Windows Phone の概要とセットアップ](https://aka.ms/kkw96x)
+[Outlook for Windows Phone の導入とセットアップ](https://aka.ms/kkw96x)
 
 
 ### <a name="sharepoint"></a>SharePoint
@@ -174,17 +176,17 @@ Yammer のエンタープライズ展開のアドバイザーを使用して、Y
   
 ### <a name="skype-for-business"></a>Skype for Business
 
-[Skype のビジネス支援のクイック スタート](https://aka.ms/cjfutd)
+[Skype for business の有効化クイックスタート](https://aka.ms/cjfutd)
 
-[Skype を使うにあたって](https://aka.ms/ofg77x)
+[Skype の概要](https://aka.ms/ofg77x)
 
 
 ### <a name="teams"></a>Teams
 
-[チームの概要](https://youtu.be/ENEQzM2u_vA)
+[Teams の概要](https://youtu.be/ENEQzM2u_vA)
 
     
-## <a name="walkthroughs-for-users"></a>ユーザーについてのチュートリアル
+## <a name="walkthroughs-for-users"></a>ユーザー向けのチュートリアル
 
 [Office モバイル アプリ](https://aka.ms/officemobileappsetup)
 

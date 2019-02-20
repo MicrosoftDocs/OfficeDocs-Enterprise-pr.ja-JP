@@ -9,85 +9,88 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Office 365、Active Directory のクリーンアップ、Azure Active Directory 接続ツールとディレクトリの同期について説明します。
-ms.openlocfilehash: cc2a2ca050facaf53f0a235898c31ae7aaeff4ae
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Office 365、Active directory クリーンアップ、および Azure active directory Connect ツールとのディレクトリ同期について説明します。
+ms.openlocfilehash: 5f380efe3293d25e2e208c5fef836a89f6fa0cc8
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541670"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085286"
 ---
 # <a name="plan-for-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期の計画
-によって、ビジネス ・ ニーズと技術的な要件では、ディレクトリ同期処理は、Office 365 に移行する企業のお客様の最も一般的なプロビジョニングの選択です。ディレクトリ同期により、オンプレミスの Active Directory で管理するユーザーとそのユーザーにすべての更新プログラムが Office 365 に同期されます。
+ビジネスニーズと技術上の要件に応じて、Office 365 に移行するエンタープライズお客様にとって最も一般的なプロビジョニングの選択として、ディレクトリ同期があります。ディレクトリ同期を使用すると、オンプレミスの Active Directory で id を管理でき、その id に対するすべての更新が Office 365 に同期されます。
   
-いくつかのディレクトリの準備、および要件と Azure Active Directory の機能を含め、ディレクトリの同期の実装を計画する際に留意することがあります。ディレクトリの準備では、非常に多くの領域について説明します。属性の更新、監査、およびドメイン コント ローラー配置の計画が含まれます。要件と機能の計画には、multiforest/ディレクトリの場合、容量計画、および双方向同期を計画する必要なアクセス許可の決定が含まれます。
+ディレクトリの準備を含むディレクトリ同期の実装を計画するときには、Azure Active directory の要件と機能について、いくつかの点に注意する必要があります。ディレクトリの準備には、多くの領域が含まれています。これには、属性の更新、監査、およびドメインコントローラーの配置計画が含まれます。要件と機能の計画には、必要なアクセス許可の決定、マルチフォレスト/ディレクトリシナリオの計画、処理能力の計画、双方向同期などが含まれます。
   
-## <a name="office-365-identity-models"></a>Office 365 のユーザー モデル
-Office 365 は、2 つの主な認証と id モデルを使用して: クラウドの認証と統合認証します。
+## <a name="office-365-identity-models"></a>Office 365 の id モデル
+Office 365 では、2つの主要な認証と id モデルを使用しています。クラウド認証とフェデレーション認証です。
   
-### <a name="cloud-authentication"></a>クラウドの認証
-[クラウドのアイデンティティ](about-office-365-identity.md)を作成し、Office 365 の管理センターでユーザーを管理、ユーザーを管理するために、Windows PowerShell、または Active Directory の Azure を使用することもできます。 
+### <a name="cloud-authentication"></a>クラウド認証
+[クラウド id](about-office-365-identity.md) -ユーザーの作成と管理 Office 365 管理センターでは、Windows PowerShell または Azure Active Directory を使用してユーザーを管理することもできます。 
   
-[シームレスなシングル サインオンとパスワードのハッシュが同期](about-office-365-identity.md)の Azure AD で設置ディレクトリ オブジェクトの認証を有効にする簡単な方法です。パスワード ハッシュ (PHS)、同期に、オンプレミスの Active Directory ユーザー アカウント オブジェクトを Office 365 と同期して、ユーザーの設置型の管理します。 
+[シームレスなシングルサインオンを使用したパスワードハッシュ同期](about-office-365-identity.md)Azure AD でオンプレミスのディレクトリオブジェクトの認証を有効にする最も簡単な方法です。パスワードハッシュ同期 (phs) を使用して、オンプレミスの Active Directory ユーザーアカウントオブジェクトを Office 365 と同期し、オンプレミスでユーザーを管理します。 
   
-Azure AD の認証サービスと直接ユーザーを検証するためにソフトウェア エージェントは、1 つまたは複数のオンプレミスのサーバーで実行されているを使用して単純なパスワードの検証を提供する[シームレスなシングル サインオンでのパススルー認証](about-office-365-identity.md)が、Active Directory を設置します。 
+[シームレスなシングルサインオンを使用したパススルー認証](about-office-365-identity.md)-1 つまたは複数のオンプレミスサーバーで実行されているソフトウェアエージェントを使用して Azure AD 認証サービスのパスワード検証を行い、ユーザーの直接の確認をオンプレミスの Active Directory。 
   
 ### <a name="federated-authentication"></a>フェデレーション認証
-[に Active Directory フェデレーション サービスの AD FS のフェデレーション id](about-office-365-identity.md)でより複雑な認証の要件を持つ大規模な組織に主に設置型のディレクトリ オブジェクトは、Office 365 と同期し、ユーザー アカウントは、マネージ設置します。 
+[Active Directory フェデレーションサービス AD FS を使用したフェデレーション id](about-office-365-identity.md) -主に、より複雑な認証要件を持つ大規模な企業組織では、オンプレミスのディレクトリオブジェクトは Office 365 と同期され、ユーザーアカウントはオンプレミスで管理されます。 
   
-[サード ・ パーティ製の認証と id プロバイダー](about-office-365-identity.md)の設置型のディレクトリ オブジェクトが Office 365 に同期させることがあり、クラウドのリソースへのアクセスは、主にサードパーティの id プロバイダー (IdP) によって管理されます。 
+[サードパーティの認証および id プロバイダー](about-office-365-identity.md) -オンプレミスのディレクトリオブジェクトは、Office 365 に同期される場合があります。また、クラウドリソースへのアクセスは、主にサードパーティの id プロバイダー (IdP) によって管理されます。 
   
 ## <a name="active-directory-cleanup"></a>Active Directory のクリーンアップ
-同期を使用して Office 365 へのシームレスな移行を確保するためには、強くお勧め、Office 365 のディレクトリ同期の展開を開始する前に、Active Directory フォレストを準備することです。
+同期を使用して office 365 にシームレスに移行できるようにするには、office 365 ディレクトリ同期の展開を開始する前に、Active Directory フォレストを準備することを強くお勧めします。
   
-[ダウンロードして IdFix ツールを実行](install-and-run-idfix.md)するときの手順の 1 つは[Office 365 のディレクトリ同期を設定](set-up-directory-synchronization.md)すると、.[ディレクトリのクリーンアップ](prepare-directory-attributes-for-synch-with-idfix.md)を支援する IdFix ツールを使用することができます。
+[Office 365 でディレクトリ同期](set-up-directory-synchronization.md)をセットアップする場合の手順の1つとして、 [idfix ツールをダウンロードして実行](install-and-run-idfix.md)する方法があります。idfix ツールを使用して、[ディレクトリのクリーンアップ](prepare-directory-attributes-for-synch-with-idfix.md)に役立てることができます。
   
-ディレクトリのクリーンアップは、次のタスクに集中する必要があります。
+ディレクトリのクリーンアップでは、次のタスクに焦点を当てる必要があります。
 
-- **メタベース**および**userPrincipalName**属性の重複を削除します。
+- 重複している**proxyAddress**属性と**userPrincipalName**属性を削除します。
 - 空白および無効な **userPrincipalName** 属性を有効な **userPrincipalName** 属性で更新します。
-- **GivenName**姓 ( **sn** )、 **sAMAccountName**、**表示名**、**メール**、 **proxyAddresses**、 **mailNickname**、 **userPrincipalName**で信用できない無効な文字を削除します。属性。属性を準備する方法の詳細は、 [Azure Active Directory 同期ツールで同期する、属性の一覧](https://go.microsoft.com/fwlink/p/?LinkId=396719)を参照してください。
+- **givenName**、姓 ( **sn** )、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**、および**userPrincipalName**の無効な文字と疑わしい文字を削除するattributes.属性の準備の詳細については、「 [Azure Active Directory 同期ツールによって同期される属性の一覧](https://go.microsoft.com/fwlink/p/?LinkId=396719)」を参照してください。
     
     > [!NOTE]
-    > これらは、Azure AD 接続を同期するのと同じ属性です。 
+    > Azure AD Connect が同期するのと同じ属性です。 
   
 ## <a name="multiforest-deployment-considerations"></a>マルチフォレスト展開について考慮事項
-複数のフォレストと SSO オプションでは、 [Azure のインストールをユーザー設定の AD 接続](https://go.microsoft.com/fwlink/p/?LinkId=698430)を使用します。
+複数のフォレストおよび SSO オプションでは、 [Azure AD Connect のカスタムインストール](https://go.microsoft.com/fwlink/p/?LinkId=698430)を使用します。
   
-組織に認証 (ログオン フォレスト) に複数のフォレストがある場合は、強くお勧め以下。
+組織に認証用に複数のフォレストがある場合 (ログオンフォレスト)、次のことを強くお勧めします。
   
-- **、フォレストの統合を評価します**。一般に、複数のフォレストを維持するために必要な多くのオーバーヘッドがあります。組織に別々 のフォレストが必要になるセキュリティ上の制約がある場合を除き、オンプレミス環境の簡素化を検討してください。
-- **プライマリ ログオン フォレスト内でのみ使用します**。Office 365 の初期ロールアウトは、優先的にログオンするフォレストでのみ Office 365 の展開を検討してください。 
+- **フォレストの統合を評価します。** 一般に、複数のフォレストを維持するには、より多くのオーバーヘッドが必要になります。個別のフォレストの必要性を判断するセキュリティ上の制約が組織にない限り、オンプレミスの環境を簡素化することを検討してください。
+- **プライマリのログオンフォレストでのみ使用します。** office 365 を最初に展開する場合は、プライマリのログオンフォレストにのみ office 365 を展開することを検討してください。 
     
-複数フォレストの Active Directory の展開を統合することはできませんか id を管理するその他のディレクトリ サービスを使用している場合は、マイクロソフトまたはパートナーの支援によりこれらを同期することができます。
+複数フォレストの Active Directory 展開を統合できない場合や、他のディレクトリサービスを使用して id を管理している場合は、Microsoft またはパートナーのヘルプと同期することができます。
   
-詳細については、[シングル サインオンのシナリオでディレクトリ同期を複数のフォレスト](https://go.microsoft.com/fwlink/p/?LinkId=525321)を参照してください。
+詳細については、「[マルチフォレストディレクトリ同期とシングルサインオンシナリオ](https://go.microsoft.com/fwlink/p/?LinkId=525321)」を参照してください。
   
 ## <a name="directory-integration-tools"></a>ディレクトリ統合ツール
-ディレクトリが同期ディレクトリのオブジェクト (ユーザー、グループ、および連絡先) の同期、オンプレミスの Active Directory 環境から Office 365 のディレクトリ インフラストラクチャにします。[ディレクトリの統合ツール](https://go.microsoft.com/fwlink/p/?LinkID=510956)を使用できるツールとその機能の一覧についてを参照してください。使用することをお勧めのツールでは、 [Azure Active Directory の接続です](https://go.microsoft.com/fwlink/?LinkId=525323)。
+ディレクトリ同期とは、オンプレミスの Active directory 環境から Office 365 ディレクトリインフラストラクチャへのディレクトリオブジェクト (ユーザー、グループ、および連絡先) の同期です。使用可能なツールとその機能の一覧については、「[ディレクトリ統合ツール](https://go.microsoft.com/fwlink/p/?LinkID=510956)」を参照してください。使用する推奨ツールは、 [Azure Active Directory Connect](https://go.microsoft.com/fwlink/?LinkId=525323)です。
   
-ユーザー アカウントは、最初に Office 365 のディレクトリと同期は、ときに、非アクティブとしてマークされています。送信したり、電子メールを受信できないし、サブスクリプション ライセンスを消費しません。特定のユーザーに Office 365 のサブスクリプションを割り当てる準備ができたら、選択して、有効なライセンスを割り当てることによってそれらをアクティブ化する必要があります。
+ユーザーアカウントが初めて Office 365 ディレクトリと同期されると、それらは非アクティブとしてマークされます。電子メールを送受信することはできません。サブスクリプションのライセンスは使用されません。Office 365 サブスクリプションを特定のユーザーに割り当てる準備ができたら、有効なライセンスを割り当てることによって、それらを選択してアクティブ化する必要があります。
   
-ディレクトリ同期は、次の機能と機能の必要です。
+次の機能には、ディレクトリ同期が必要です。
   
 - SSO
     
-- Lync の共存
+- Lync 共存
     
-- Exchange ハイブリッド展開を含みます。
+- Exchange ハイブリッド展開 (次のものが含まれる)
     
-  - 完全に、オンプレミスの Exchange 環境と Office 365 の間でグローバル アドレス一覧 (GAL) を共有します。
+  - オンプレミスの Exchange 環境と Office 365 間の完全に共有されたグローバルアドレス一覧 (GAL)。
   - 他のメール システムの GAL 情報の同期。
-  - ユーザーを追加し、Office 365 サービスからユーザーを削除する機能。次必要があります。
-  - ディレクトリ同期のセットアップ中に、双方向同期を構成しなければなりません。既定では、ディレクトリ同期ツールは、クラウドへの移行のみディレクトリ情報を記述します。双方向同期を構成するとき、オブジェクトの属性の数に制限が、クラウドからコピーし、書きして、ローカルの Active Directory に戻すように、書き戻し機能が有効にします。書き戻しは、Exchange ハイブリッド モードとも呼ばれます。 
-  - オンプレミス Exchange ハイブリッド展開
-  - 他のユーザーのメールボックスの設置型を維持しながら Office 365 によってユーザーのメールボックスを移動する機能。
-  - 差出人セーフ リストと受信拒否リストの設置型は、Office 365 に複製されます。
+  - Office 365 サービスオファーリングにユーザーを追加したり、ユーザーを削除したりする機能。これには、次のものが必要です。
+  - ディレクトリ同期のセットアップ中に、双ウェイの同期を構成する必要があります。既定では、ディレクトリ同期ツールは、ディレクトリ情報をクラウドにのみ書き込みます。双ウェイの同期を構成する場合は、制限された数のオブジェクト属性がクラウドからコピーされるように書き戻し機能を有効にしてから、ローカルの Active Directory に書き戻します。書き戻しは、Exchange ハイブリッドモードとも呼ばれます。 
+  - オンプレミスの Exchange ハイブリッド展開
+  - 他のユーザーのメールボックスをオンプレミスに保持したまま、一部のユーザーメールボックスを Office 365 に移動する機能。
+  - 社内の信頼できる差出人と受信拒否リストは、Office 365 に複製されます。
   - 基本的な委任と代理送信メールの機能。
-  - オンプレミスで統合されたスマート カードまたは多要素認証ソリューションがあります。
+  - オンプレミスのスマートカードまたは多要素認証ソリューションが統合されている。
     
-- 写真、サムネイル、会議室、およびセキュリティ グループの同期
+- 写真、サムネイル、会議室、セキュリティグループの同期

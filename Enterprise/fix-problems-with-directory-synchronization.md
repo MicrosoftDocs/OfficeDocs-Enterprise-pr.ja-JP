@@ -8,92 +8,95 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
-description: Office 365 のディレクトリ同期の問題の一般的な原因を説明し、トラブルシューティングし、解決に役立ついくつかのメソッドを提供します。
-ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Office 365 のディレクトリ同期に関する問題の一般的な原因について説明し、トラブルシューティングと解決に役立ついくつかの方法について説明します。
+ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897310"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085396"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期に関する問題の修正
 
-ディレクトリ同期によって、ユーザーとグループの設置を管理し、追加、削除、およびクラウドへの変更の同期を続行できます。セットアップは少し複雑な問題の原因を特定することは困難があります。潜在的な問題を識別し、それらを修正するためのリソースがあります。
+ディレクトリ同期を使用すると、ユーザーとグループを社内で管理し続け、追加、削除、および変更をクラウドに同期できます。しかし、セットアップは少し複雑で、問題の原因を特定するのが困難な場合があります。潜在的な問題を特定して修正するのに役立つリソースが用意されています。
   
-## <a name="how-do-i-know-if-something-is-wrong"></a>何かが間違った方法を教えてください。
+## <a name="how-do-i-know-if-something-is-wrong"></a>問題があるかどうかを確認する方法
 
-何かが間違っていることを示す最初の兆候は、Office 365 の管理センターのディレクトリ同期の状態のタイルでは、問題が示されている場合です。
+最初に間違ったことが示されている場合は、Office 365 管理センターの [DirSync Status] タイルに問題があることを示しています。
   
-![管理センターのプレビュー] で、ディレクトリ同期の状態を並べて表示します。](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+![管理センタープレビューの [DirSync Status] タイル](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-Office 365 のテナントには、ディレクトリ同期のエラーが発生したためであることを示すからメールを別の電子メールなど、管理者の電子メールにも表示されます。詳細については、 [Office 365 のディレクトリ同期エラーを識別する](identify-directory-synchronization-errors.md)を参照してください。
+また、テナントがディレクトリ同期エラーを検出したことを示す、Office 365 からのメール (連絡メールと管理者の電子メールへ) を受信することになります。詳細については、「 [Office 365 でのディレクトリ同期エラーの識別](identify-directory-synchronization-errors.md)」を参照してください。
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory 接続ツールを取得する方法は?
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Azure Active Directory Connect ツールを入手するにはどうすればよいですか?
 
-Office 365 管理センターで、[に移動 * * ユーザー * * \> **アクティブなユーザー**です。[**詳細**] メニューのをクリックし、**ディレクトリ同期**を選択します。 
+Office 365 管理センターで、[* * ユーザー \> ]、[**アクティブユーザー**] の順に移動します。[**その他**] メニューをクリックし、[**ディレクトリ同期**] を選択します。 
   
-![[詳細] メニューの [ディレクトリ同期を選択します](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+![[その他] メニューで、[ディレクトリ同期] を選択します。](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-古い Office 365 管理センターでは、**ユーザー**に移動\>**アクティブなユーザー**、および選択**の設定****作業中のディレクトリ同期**の横にあります。 
+古い Office 365 管理センターで、[**ユーザー** \>の**アクティブなユーザー**] に移動し、[ **active Directory 同期**の次に**設定**] を選択します。 
   
-![Active Directory の同期の横のセットを選択します。](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
+![Active Directory の同期の横にある [セットアップ] を選択します。](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
-Azure AD 接続をダウンロードするのには[、ウィザードの指示](set-up-directory-synchronization.md)に従います。 
+ウィザードの[指示](set-up-directory-synchronization.md)に従って、Azure AD Connect をダウンロードします。 
   
-まだ Azure Active ディレクトリ同期 (ディレクトリ同期) を使用している場合を見て[Azure Active Directory 同期ツールのインストールと Office 365 の構成ウィザードのエラー メッセージをトラブルシューティングする方法](https://go.microsoft.com/fwlink/p/?LinkId=396717)をインストールするシステムの要件についてディレクトリ同期、必要なアクセス許可および一般的なエラーのトラブルシューティングを行う方法です。 
+まだ azure active directory 同期 (DirSync) を使用している場合は、「 [Office 365 の azure active directory 同期ツールのインストールと構成ウィザードのエラーメッセージ」](https://go.microsoft.com/fwlink/p/?LinkId=396717)を参照してください。インストールするシステム要件については、dirsync、必要なアクセス許可、および一般的なエラーのトラブルシューティング方法。 
   
-Azure Active Directory 同期から Azure AD 接続を更新するには、[アップグレードの手順](https://go.microsoft.com/fwlink/p/?LinkId=733240)を参照してください。
+azure Active Directory 同期から azure AD Connect に更新するには、[アップグレード手順](https://go.microsoft.com/fwlink/p/?LinkId=733240)を参照してください。
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Office 365 のディレクトリ同期の問題の原因は一般的な解決
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Office 365 でのディレクトリ同期に関する問題の一般的な原因の解決
 
-### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**同期されたオブジェクトは表示されないようにしたり、オンラインで更新またはサービスから同期エラーのレポートを取得します。**
+### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**同期されたオブジェクトは、オンラインで表示または更新されません。または、サービスから同期エラーレポートを取得しています。**
 
-- [アイデンティティの同期化と重複している属性の弾力性](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [id 同期と重複属性の復元](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Office 365 管理センターで、アラートがあるか、または最新の同期イベントが発生されていない自動の電子メールを受信しています。**
-- [Azure AD 接続と接続の問題のトラブルシューティングを行う](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
-- [Azure AD 接続アカウントとアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD 接続の同期: Azure AD のサービス アカウントを管理する方法](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
-- [Azure Active Directory が停止するか、またはディレクトリ同期は 1 日以上で、同期していない登録されている警告メッセージが表示しています。](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
+### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Office 365 管理センターに通知があります。または、最近の同期イベントが発生していない自動メールを受信しています。**
+- [Azure AD Connect による接続の問題のトラブルシューティング](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
+- [Azure AD Connect のアカウントとアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=820598)
+- [azure ad Connect sync: azure ad サービスアカウントを管理する方法](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Azure Active Directory とのディレクトリ同期が停止するか、同期が1日以上登録されていないことを示す警告が表示される](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**パスワード ハッシュが同期されていない、または最近使用したパスワード ハッシュの同期がありますされていない Office 365 管理センターの警告が表示**
-- [Azure AD 接続の同期でのパスワード ハッシュの同期を実装します。](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**パスワードハッシュが同期されていないか、Office 365 管理センターで最近のパスワードハッシュの同期がないことを通知しています。**
+- [Azure AD Connect 同期を使用したパスワードハッシュ同期の実装](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**オブジェクト クォータを超過したアラートが表示します。**
-- サービスを保護するための組み込みオブジェクトのクォータがあります。Office 365 に同期する必要のあるディレクトリに多数のオブジェクトがある場合は、クォータを増やすには、[ビジネス製品に関するサポートの連絡先](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)に必要があります。
+### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**オブジェクトクォータを超えたという警告が表示されています**
+- サービスを保護するために、組み込みのオブジェクトクォータが用意されています。Office 365 と同期する必要があるディレクトリ内のオブジェクトが多すぎる場合は、[ビジネス製品のサポートに連絡](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)してクォータを増やす必要があります。
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**どの属性が同期されているか知る必要があります。**
-- オンプレミスとクラウド[は、ここで右](https://go.microsoft.com/fwlink/p/?LinkId=396719)の間で同期されるすべての属性の一覧が表示されます。
+- オンプレミスとクラウドの間で同期されているすべての属性の一覧については、[こちら](https://go.microsoft.com/fwlink/p/?LinkId=396719)を参照してください。
 
-### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**管理またはクラウドに同期されたオブジェクトを削除できません。**
-- クラウドのみでオブジェクトを管理する準備ができて、ですか。または、オブジェクトを削除した設置が、クラウドに詰まっているではないでしょうか。見てこの[同期中にエラーのトラブルシューティング](https://go.microsoft.com/fwlink/p/?linkid=842044)とガイダンスの[サポート資料](https://go.microsoft.com/fwlink/p/?LinkId=396720)をこれらの問題を解決する方法にします。
+### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**クラウドに同期されたオブジェクトを管理または削除できません**
+- クラウド内のオブジェクトのみを管理する準備はできていますか。または、オンプレミスで削除されたオブジェクトは存在しますか。クラウドに保持されていますか?これらの問題を解決する方法については、「同期とサポート」の[記事に記載](https://go.microsoft.com/fwlink/p/?LinkId=396720)されている[トラブルシューティングエラー](https://go.microsoft.com/fwlink/p/?linkid=842044)を参照してください。
 
 ### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**会社で同期可能なオブジェクトの数を超えたというエラー メッセージが表示されました。**
-- 詳細を読み取ることができますこの問題について[は、ここ](https://go.microsoft.com/fwlink/p/?LinkId=396721)です。
+- この問題の詳細については、[こちら](https://go.microsoft.com/fwlink/p/?LinkId=396721)を参照してください。
    
 ## <a name="other-resources"></a>その他のリソース
 
 - [ユーザー プリンシパル名の重複を修正するためのスクリプト](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
-- [ディレクトリ同期 (.local ドメイン) などのルーティング不可能なドメインを準備する方法](prepare-a-non-routable-domain-for-directory-synchronization.md)
+- [ディレクトリ同期にルーティング可能ではないドメイン (たとえば、ローカルドメイン) を準備する方法](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
-- [同期オブジェクトの総数をカウントするためのスクリプト](https://go.microsoft.com/fwlink/p/?LinkId=396726)
+- [同期されたオブジェクトの合計数をカウントするためのスクリプト](https://go.microsoft.com/fwlink/p/?LinkId=396726)
     
-- [AD FS 2.0 のトラブルシューティングを行う](https://go.microsoft.com/fwlink/p/?LinkId=396727)
+- [AD FS 2.0 のトラブルシューティング](https://go.microsoft.com/fwlink/p/?LinkId=396727)
     
-- [PowerShell を使用して、メールが有効なグループを空の DisplayName 属性を修正するには](https://go.microsoft.com/fwlink/p/?LinkId=396728)
+- [PowerShell を使用して、メールが有効なグループの空の DisplayName 属性を修正する](https://go.microsoft.com/fwlink/p/?LinkId=396728)
     
-- [PowerShell を使用して、重複する UPN を解決するには](https://go.microsoft.com/fwlink/p/?LinkId=396730)
+- [PowerShell を使用して重複した UPN を修正する](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     
-- [PowerShell を使用して、重複する電子メール アドレスを修正するには](https://go.microsoft.com/fwlink/p/?LinkId=396731)
+- [PowerShell を使用して重複した電子メールアドレスを修正する](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
 ## <a name="diagnostic-tools"></a>診断ツール
 
-[IDFix ツール](prepare-directory-attributes-for-synch-with-idfix.md)を使用して、Office 365 への移行の準備として、オンプレミス Active Directory 環境での検出と id オブジェクトとその属性の修復を実行します。IDFix は、Active Directory の管理者は、Office 365 サービスとディレクトリ同期の責任です。 
+[idfix ツール](prepare-directory-attributes-for-synch-with-idfix.md)は、Office 365 への移行の準備として、オンプレミスの Active Directory 環境での id オブジェクトとその属性の検出と修復を実行するために使用されます。idfix は、Office 365 サービスとの DirSync を担当する Active Directory 管理者を対象としています。 
 
-Microsoft ダウンロード センターから[IDFix ツールをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=396718)をしてください。
+[idfix ツール](https://go.microsoft.com/fwlink/p/?LinkId=396718)を Microsoft ダウンロードセンターからダウンロードします。

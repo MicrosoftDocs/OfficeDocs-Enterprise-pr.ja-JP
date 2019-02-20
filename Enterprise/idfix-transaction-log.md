@@ -1,5 +1,5 @@
 ---
-title: Office 365 IdFix トランザクション ・ ログ
+title: Office 365 idfix トランザクションログ
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,25 +9,28 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: 例を提供し、Office 365 の IdFix トランザクション ・ ログの既定のログ レベル、名前付け規則について説明します。
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: 例を示し、Office 365 idfix トランザクションログの名前付け規則と既定のログレベルについて説明します。
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541664"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085066"
 ---
-# <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix トランザクション ・ ログ
+# <a name="office-365-idfix-transaction-log"></a>Office 365 idfix トランザクションログ
 
-例を提供し、Office 365 の IdFix トランザクション ・ ログの既定のログ レベル、名前付け規則について説明します。
+例を示し、Office 365 idfix トランザクションログの名前付け規則と既定のログレベルについて説明します。
   
 ## <a name="idfix-transaction-log-location"></a>IdFix トランザクション ログの場所
 
-Office 365 の IdFix ツールは、IdFix で、 **[適用**] をクリックし、Active Directory フォレストに変更を適用するたびに新しいトランザクション ・ ログを作成します。トランザクション ・ ログは、IdFix がインストールされている同じフォルダーに保存されます。既定では、このフォルダーは C:\Deployment の Tools\IDFix です。トランザクション ログ ファイル名の例では、Verbose 2018 1-6-6-17-22 PM 6 17:22 午後に、2018 年 6 月 1 日に生成されたファイルを指定する日付と時刻のスタンプ形式を使用して詳細をログ出力のレベルを示します。 
+Office 365 idfix ツールは、[idfix で**適用**] をクリックし、変更を Active Directory フォレストに適用するたびに、新しいトランザクションログを作成します。トランザクションログは、idfix をインストールしたのと同じフォルダーに保存されます。既定では、このフォルダーは c:\windows 展開ツール \ [fix] になります。トランザクションログファイル名には、日付と時刻の形式が使用されます。たとえば、verbose 6-1-2018 6-17-22 pm は、2018年6月1日 (6:17:22 pm) に生成されたファイルを示します。 verbose は、ログレベルを示します。 
   
 ## <a name="idfix-transaction-log-logging-level"></a>IdFix トランザクション ログのログ出力レベル
 
@@ -35,7 +38,7 @@ Office 365 の IdFix ツールは、IdFix で、 **[適用**] をクリックし
   
 ## <a name="idfix-transaction-log-format"></a>IdFix トランザクション ログの形式
 
-IdFix では、各**更新**操作の結果を次の例のように、トランザクション ・ ログに書き込まれます。
+idfix は、次の例に示すように、各**UPDATE**アクションの結果をトランザクションログに書き込みます。
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant
