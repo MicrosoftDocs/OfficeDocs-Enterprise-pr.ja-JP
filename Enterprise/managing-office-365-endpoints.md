@@ -3,7 +3,7 @@ title: Office 365 エンドポイントを管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/11/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ ネットワークの中には、一般的なインターネット上の場所へのアクセスや、強固なバックホールの導入、ネットワーク トラフィックの処理を制限しているものがあります。そのようなネットワーク上のコンピュータから Office 365 にアクセスできるようにするために、ネットワーク管理者およびプロキシ管理者は、Office 365 エンドポイントのリストを構成する FQDN、URL、および IP アドレスのリストを管理する必要があります。これらを直接ルート、プロキシ バイパス、またはファイアウォール ルールおよび PAC ファイルに追加して、ネットワーク要求が Office 365 に到達できるようにする必要があります。
-ms.openlocfilehash: ed3a64ad3cd840987d105ae99a5ba5cbf41567e9
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 469c1fa91fc2695c4175a4eccea26a0ffc46c52a
+ms.sourcegitcommit: bc565081b64d374d43b1bf3bb3d92edaaa24e4c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30053001"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30176747"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -30,7 +30,7 @@ Microsoft では、[Office 365 IP アドレスと URL の Web サービス](offi
 
 重要な Office 365 ネットワーク トラフィックの管理方法にかかわらず、Office 365 にはインターネット接続が必要です。接続が必要なその他のネットワーク エンドポイントは、「[Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](additional-office365-ip-addresses-and-urls.md)」に記載されています。
 
-Office 365 ネットワーク エンドポイントの使用方法は、エンタープライズ組織のネットワーク アーキテクチャによって決まります。この記事では、エンタープライズ ネットワーク アーキテクチャを Office 365 IP アドレスおよび URL と統合するためのいくつかの方法を概説しています。信頼できるネットワーク要求を選択するための最も簡単な方法は、各オフィスの所在地で Office 365 の自動構成をサポートする SDWAN デバイスを使用することです。 
+Office 365 ネットワーク エンドポイントの使用方法は、エンタープライズ組織のネットワーク アーキテクチャによって決まります。この記事では、エンタープライズ ネットワーク アーキテクチャを Office 365 IP アドレスおよび URL と統合するためのいくつかの方法を概説しています。信頼できるネットワーク要求を選択するための最も簡単な方法は、各オフィスの所在地で Office 365 の自動構成をサポートする SDWAN デバイスを使用することです。
 
 ## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>重要な Office 365 ネットワーク トラフィックのローカル ブランチ送信用 SDWAN
 
@@ -43,13 +43,13 @@ Microsoft は SDWAN のプロバイダーと協力し、自動構成を可能に
 
 PAC または WPAD ファイルを使用して、Office 365 と関連付けられているが、IP アドレスを持たないネットワーク要求を管理します。プロキシまたは境界デバイスを介して送信される一般的なネットワーク要求は、待機時間を増大させます。SSL の中断と検査によって待機時間が最長になる一方、プロキシ認証や評価の検索などのその他のサービスは、パフォーマンスとユーザー エクスペリエンスを低下させます。また、これらの境界ネットワーク デバイスには、すべてのネットワーク接続要求を処理するために十分な容量が必要です。直接の Office 365 ネットワーク要求のために、プロキシまたは検査デバイスをバイパスすることをお勧めします。
   
-[PowerShell Gallery の Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) は、Office 365 IP アドレスと URL Web サービスから最新のネットワーク エンドポイントを読み取り、サンプル PAC ファイルを作成する PowerShell スクリプトです。このスクリプトを変更して、既存の PAC ファイル管理と統合させることができます。 
+[PowerShell Gallery の Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) は、Office 365 IP アドレスと URL Web サービスから最新のネットワーク エンドポイントを読み取り、サンプル PAC ファイルを作成する PowerShell スクリプトです。このスクリプトを変更して、既存の PAC ファイル管理と統合させることができます。
 
 ![ファイアウォールとプロキシ経由で Office 365 に接続する。](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
 **図 1 - 単純なエンタープライズ ネットワーク境界**
 
-PAC ファイルは、図 1 のポイント 1 で Web ブラウザーに展開されます。重要な Office 365 ネットワーク トラフィックの直接送信に PAC ファイルを使用する場合は、ご使用のネットワーク境界ファイアウォールでこれらの URL の背後にある IP アドレスへの接続も許可する必要があります。これには、PAC ファイルで指定されているものと同じ Office 365 エンドポイント カテゴリの IP アドレスを取得し、これらのアドレスに基づくファイアウォール ACL を作成します。ファイアウォールは、図 1 のポイント 3 です。 
+PAC ファイルは、図 1 のポイント 1 で Web ブラウザーに展開されます。重要な Office 365 ネットワーク トラフィックの直接送信に PAC ファイルを使用する場合は、ご使用のネットワーク境界ファイアウォールでこれらの URL の背後にある IP アドレスへの接続も許可する必要があります。これには、PAC ファイルで指定されているものと同じ Office 365 エンドポイント カテゴリの IP アドレスを取得し、これらのアドレスに基づくファイアウォール ACL を作成します。ファイアウォールは、図 1 のポイント 3 です。
 
 それとは別に、最適化カテゴリのエンドポイントの直接ルーティングのみを行う場合は、それ以降の処理をバイパスするために、プロキシ サーバーに送信する必要なすべての許可カテゴリのエンドポイントをプロキシ サーバーにリストする必要があります。たとえば、SSL の中断と検査およびプロキシ認証は、最適化および許可いずれのカテゴリのエンドポイントとも互換性がありません。プロキシ サーバーは、図 1 のポイント 2 です。
 
@@ -64,7 +64,7 @@ Get-PacFile スクリプトでは、次の 2 種類の PAC ファイルが生成
 
 PowerShell スクリプトを呼び出す簡単な例を次に示します。
 
-```
+```powershell
 Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
 
@@ -79,20 +79,20 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 追加のパラメーターを指定して PowerShell スクリプトを呼び出す別の例を、次に示します。
 
+```powershell
+Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
-Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
-```
 
-## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>プロキシ サーバーによる Office 365 ネットワーク トラフィック処理のバイパス 
+## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>プロキシ サーバーによる Office 365 ネットワーク トラフィック処理のバイパス
 
-PAC ファイルを直接送信トラフィックに使用しない場合でも、プロキシ サーバーを構成して、ネットワーク境界での処理をバイパスすることをお勧めします。一部のプロキシ サーバー ベンダーでは、[Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)で説明されているように、これが自動構成されています。 
+PAC ファイルを直接送信トラフィックに使用しない場合でも、プロキシ サーバーを構成して、ネットワーク境界での処理をバイパスすることをお勧めします。一部のプロキシ サーバー ベンダーでは、[Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)で説明されているように、これが自動構成されています。
 
-この構成を手動で行う場合は、Office 365 IP アドレスと URL の Web サービスから最適化および許可カテゴリのエンドポイント データを取得して、これらの処理をバイパスするようにプロキシ サーバーを構成する必要があります。最適化および許可カテゴリのエンドポイントに対しては、SSL 中断と検査およびプロキシ認証を行わないようにすることが重要です。 
+この構成を手動で行う場合は、Office 365 IP アドレスと URL の Web サービスから最適化および許可カテゴリのエンドポイント データを取得して、これらの処理をバイパスするようにプロキシ サーバーを構成する必要があります。最適化および許可カテゴリのエンドポイントに対しては、SSL 中断と検査およびプロキシ認証を行わないようにすることが重要です。
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Office 365 IP アドレスと URL の変更管理
 
-ご使用のネットワーク境界に適切な構成を選択することに加え、Office 365 エンドポイントの変更管理プロセスを採用することも重要です。これらのエンドポイントは定期的に変更され、変更を管理しない場合、新しい IP アドレスや URL の追加後に、ユーザーのブロックやパフォーマンスの低下が引き起こされる可能性があります。 
+ご使用のネットワーク境界に適切な構成を選択することに加え、Office 365 エンドポイントの変更管理プロセスを採用することも重要です。これらのエンドポイントは定期的に変更され、変更を管理しない場合、新しい IP アドレスや URL の追加後に、ユーザーのブロックやパフォーマンスの低下が引き起こされる可能性があります。
 
 Office 365 IP アドレスと URL の変更は通常、各月の末日近くに公開されます。場合によっては、運用、サポート、またはセキュリティ上の必要により、このスケジュール外に変更が公開されることもあります。
 
@@ -100,7 +100,7 @@ IP アドレスまたは URL が追加されたために、ユーザーによる
 
 ### <a name="change-notification-using-the-web-service"></a>Web サービスを使用した変更通知
 
-Office 365 IP アドレスと URL Web サービスを使用して、変更通知を取得できます。1 時間に 1 回 **/version** Web メソッドを呼び出して、Office 365 に接続するために使用しているエンドポイントのバージョンを確認することをお勧めします。使用中のバージョンと比べて、このバージョンが変更されている場合は、**/endpoints** Web メソッドから最新のエンドポイント データを取得する必要があります。また、必要に応じて、**/changes** Web メソッドから差分も取得します。検出されたバージョンに変更がない場合は、**/endpoints** および **/changes** Web メソッドを呼び出す必要はありません。 
+Office 365 IP アドレスと URL Web サービスを使用して、変更通知を取得できます。1 時間に 1 回 **/version** Web メソッドを呼び出して、Office 365 に接続するために使用しているエンドポイントのバージョンを確認することをお勧めします。使用中のバージョンと比べて、このバージョンが変更されている場合は、**/endpoints** Web メソッドから最新のエンドポイント データを取得する必要があります。また、必要に応じて、**/changes** Web メソッドから差分も取得します。検出されたバージョンに変更がない場合は、**/endpoints** および **/changes** Web メソッドを呼び出す必要はありません。
 
 詳細については、「[Office 365 IP アドレスと URL の Web サービス](office-365-ip-web-service.md)」を参照してください。
 
@@ -110,7 +110,7 @@ Office 365 IP アドレスと URL の Web サービスでは、Outlook で登録
 
 ### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Microsoft Flow を使用した変更通知および承認確認
 
-毎月行われるネットワーク エンドポイントの変更を手動で処理する必要がある方もいらっしゃるでしょう。Microsoft Flow を使用すれば、Office 365 のネットワーク エンドポイントに変更があったときに、電子メールで通知し、必要に応じて、変更の承認プロセスを実行するフローを作成できます。確認が完了したら、ファイアウォールとプロキシ サーバーの管理チームに、自動的に電子メールで変更を通知するように設定できます。 
+毎月行われるネットワーク エンドポイントの変更を手動で処理する必要がある方もいらっしゃるでしょう。Microsoft Flow を使用すれば、Office 365 のネットワーク エンドポイントに変更があったときに、電子メールで通知し、必要に応じて、変更の承認プロセスを実行するフローを作成できます。確認が完了したら、ファイアウォールとプロキシ サーバーの管理チームに、自動的に電子メールで変更を通知するように設定できます。
 
 Microsoft Flow のサンプルおよびテンプレートの詳細については、「[Microsoft Flow を使用して、Office 365 IP アドレスや URL への変更のメール通知を受け取る](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)」を参照してください。
   
@@ -131,7 +131,7 @@ Office 365 の接続についてよく寄せられる管理者の質問です。
 
  **ピアリング場所**の詳細については、[Microsoft とのピアリングのページ](https://www.microsoft.com/peering)を参照してください。
   
-世界中に 2,500 を超える ISP ピアリング リレーションシップと 70 を超えるポイントがあるため、ユーザーのネットワークから Microsoft のネットワークへの接続はシームレスであるはずです。数分あれば、ISP のピアリング リレーションシップが最適であることを確認することができます。Microsoft ネットワークとのピアリング手順の[よい例と悪い例については、こちら](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/)を参照してください。 
+世界中に 2,500 を超える ISP ピアリング リレーションシップと 70 を超えるポイントがあるため、ユーザーのネットワークから Microsoft のネットワークへの接続はシームレスであるはずです。数分あれば、ISP のピアリング リレーションシップが最適であることを確認することができます。Microsoft ネットワークとのピアリング手順の[よい例と悪い例については、こちら](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/)を参照してください。
   
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>公開済みの一覧に掲載されていない IP アドレスに対してネットワーク要求を受け取ります。それらの IP アドレスに対してアクセス権を付与する必要はありますか?
 <a name="bkmk_MissingIP"> </a>
@@ -144,12 +144,25 @@ Office 365 と関連付けられた IP の詳細を確認するには、以下�
 2. [whois クエリ](https://dnsquery.org/)を使用して、パートナーが IP を所有しているかどうかを確認します。Microsoft 所有の場合は、内部パートナーの可能性があります。
 3. 証明書を確認し、ブラウザーで *HTTPS://\<IP_ADDRESS\>* を使用して IP アドレスに接続し、証明書に表示されるドメインを確認して、IP アドレスに関連付けられているドメインを把握します。Microsoft 所有の IP アドレスで、Office 365 の IP アドレス一覧に掲載されていない場合、その IP アドレスは、*MSOCDN.NET* や IP 情報が公開されていない他の Microsoft ドメインなど、Microsoft CDN に関連付けられている可能性があります。証明書のドメインが、Microsoft が IP アドレスの登録を主張しているドメインの場合は、お知らせください。
 
+<a name="bkmk_cname"> </a>
+### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>一部の Office 365 URL が、DNS 内の A レコードではなく CNAME レコードを指しています。CNAME レコードはどのように扱えばよいでしょうか?
+
+クライアント コンピューターがクラウド サービスに接続するには、1 つ以上の IP アドレスが含まれる DNS A レコードまたは AAAA レコードが必要です。Office 365 に含まれる一部の URL は、A レコードまたは AAAA レコードではなく CNAME レコードを示します。こうした CNAME レコードは中間レコードで、一連の処理の途中であるものもあります。最終的には、特定の IP アドレスの A レコードまたは AAAA レコードに必ず解決されます。たとえば、最終的に IP アドレス _IP_1_ に解決される以下の一連の DNS レコードについて考慮してみましょう。
+
+```
+serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
+```
+
+これらの CNAME リダイレクトは DNS の通常の一部分であり、クライアント コンピューターとプロキシ サーバーに対して透過的です。負荷分散、コンテンツ配信ネットワーク、高可用性、サービス インシデントの軽減に使用されます。Microsoft はこうした中間 CNAME レコードを公開せず、任意の時点で変更する可能性があります。そのため、ご使用のプロキシ サーバーで許可されている方法で構成する必要はありません。
+
+プロキシ サーバーは最初の URL (前述の例の場合、serviceA.office.com) を検証し、この URL が Office 365 の発行に含まれるようになります。プロキシ サーバーはこの URL の DNS を解決して特定の IP アドレスになるように要求し、IP_1 が戻されることになります。中間の CNAME リダイレクト レコードの検証は行いません。
+
+ハードコーディングされた構成や、間接 Office 365 FQDN に基づくホワイトリストの使用は推奨されておらず、Microsoft もサポートしていませんし、ユーザー接続の問題が生じる原因となることが分かっています。CNAME リダイレクトをブロックしたり、Office 365 DNS エントリを不適切に解決したりする DNS ソリューションは、DNS 再帰が有効な状態の DNS 条件付き転送 (直接使用される Office 365 FQDN がスコープ対象) を介して解決できます。多くのサード パーティのネットワーク境界製品では、[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/ja-JP/office365/enterprise/office-365-ip-web-service)を使用して、推奨されている Office 365 エンドポイント ホワイトリストを自社の構成にネイティブに統合しています。
+
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft ドメイン名に nsatc.net や akadns.net などの名前が表示されるのはなぜですか?
 <a name="bkmk_akamai"> </a>
 
-Office 365 と他の Microsoft サービスは、Akamai や MarkMonitor などのいくつかのサードパーティ サービスを使用し、Office 365 の操作性を高めています。お客様の操作性を可能な限り高めるために、今後もこれらのサービスを変更する可能性があります。その一環で、サード パーティが所有しているドメイン、A レコード、または IP アドレスを示す CNAME レコードを発行することがよくあります。サード パーティ ドメインは、CDN などのコンテンツをホストする場合があります。また、地理的なトラフィック管理サービスなどのサービスをホストする場合があります。このようなサード パーティへの接続が表示される場合、クライアントからの最初の要求ではなく、リダイレクトまたは参照の形式です。ユーザーによっては、この形式の参照またはリダイレクトを許可することで、サード パーティ サービスが使用できる FQDN リストに多数の FQDN を明示的に追加することなく通過できるようにする必要があります。
-  
-このサービスのリストは、常に変化する可能性があります。現在使用されているサービスの一部を次に示します。
+Office 365 と他の Microsoft サービスは、Akamai や MarkMonitor などのいくつかのサードパーティ サービスを使用し、Office 365 の操作性を高めています。お客様の操作性を可能な限り高めるために、将来これらのサービスを変更する可能性があります。サード パーティ ドメインは、CDN などのコンテンツをホストする場合があります。また、地理的なトラフィック管理サービスなどのサービスをホストする場合があります。現在、次のようなサービスが使用されています:
   
 *\*.nsatc.net* を含む要求が表示される場合、[MarkMonitor](https://www.markmonitor.com/) が使用されています。このサービスは、ドメイン名の保護と、悪意のある動作に対して保護するための監視サービスを提供しています。
   
