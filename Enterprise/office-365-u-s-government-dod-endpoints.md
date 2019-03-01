@@ -1,34 +1,36 @@
 ---
-title: Office 365 の米国政府の DoD のエンドポイント
+title: Office 365 米国政府の DoD エンドポイント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/28/2019
+ms.date: 02/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
 search.appverid:
 - OGA150
 - OGC150
 - OGD150
 - MOE150
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
-description: '概要: Office 365 には、インターネットへの接続が必要です。次のエンドポイントは、Office 365 の米国政府の DoD のプランのみを使用して顧客に到達できる必要があります。'
+description: '概要: Office 365 には、インターネットへの接続が必要です。以下のエンドポイントには、Office 365 米国政府の DoD プランのみを使用しているお客様には到達可能である必要があります。'
 hideEdit: true
-ms.openlocfilehash: f1d18de6426700d135ab2c2a42c39f01e84a76cd
-ms.sourcegitcommit: 51cb8941a15f6d77b85f47cdf95822ae00d8f7e6
+ms.openlocfilehash: d51d44a4793d476f2083e5bb66b766b4e52fb3d9
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612146"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341958"
 ---
-# <a name="office-365-us-government-dod-endpoints"></a>Office 365 の米国政府の DoD のエンドポイント
+# <a name="office-365-us-government-dod-endpoints"></a>Office 365 米国政府の DoD エンドポイント
 
-*Office 365 の管理者用に適用されます。*
+*適用対象: Office 365 Admin*
 
- **の概要:** Office 365 には、インターネットへの接続が必要です。次のエンドポイントは、Office 365 の米国政府の DoD のプランのみを使用して顧客に到達できる必要があります。
+ **概要:** Office 365 には、インターネットへの接続が必要です。以下のエンドポイントには、Office 365 米国政府の DoD プランのみを使用しているお客様には到達可能である必要があります。
   
 > [!NOTE]
 > Microsoft は、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開始しました。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、このページからリンクされている XML ドキュメント (2018 年 10 月 2 日に廃止済み) に代わるものです。この新しいサービスを試すには、[[Web サービス]](office-365-ip-web-service.md) にアクセスします。
@@ -37,9 +39,9 @@ ms.locfileid: "29612146"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 01/28/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログの購読](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**をダウンロード:** 、 [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
+|**最終更新日:** 02/28/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[変更ログサブスクリプション](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
    
- このデータを使用してネットワーク接続を管理するための当社の推奨事項を理解するのには[Office 365 の管理するエンドポイント](managing-office-365-endpoints.md)を開始します。エンドポイントのデータは、毎月新規の IP アドレスとアクティブにする前に 30 日間の公開 Url の先頭に更新されます。これにより、自動的に新しい接続が要求される前に、プロセスを完了するのには更新しないとはまだのお客様です。エンドポイントのアドレスのサポートのエスカレーション、セキュリティの問題、またはその他の即時の運用上の要件が必要な場合、月の中に更新も可能です。REST ベースの web サービスからは、このページの下に表示されているデータすべてが生成されます。このデータにアクセスするスクリプト、またはネットワーク デバイスを使用している場合、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
+ [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用したネットワーク接続の管理に関する推奨事項を理解してください。エンドポイントのデータは、各月の最初に、アクティブになる前に30日間公開された新しい IP アドレスと url で更新されます。これにより、自動更新を行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。サポートのエスカレーション、セキュリティインシデント、またはその他の即時運用要件に対処する必要がある場合は、その月にエンドポイントを更新することもできます。このページに表示されるデータはすべて、REST ベースの web サービスから生成されます。このデータにアクセスするためにスクリプトまたはネットワークデバイスを使用している場合は、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
 
 次のエンドポイント データは、ユーザーのコンピューターを Office 365 に接続するための要件の一覧です。Microsoft からお客様のネットワークへの接続 (“ハイブリッド ネットワーク接続” や ”受信ネットワーク接続” と呼ばれる場合があります) は含まれません。
 
@@ -51,7 +53,7 @@ ms.locfileid: "29612146"
 
 - **カテゴリ**: エンドポイントのセットが「最適化」、「許可」または「既定」のどれに分類されているかを示します。これらのカテゴリとその管理ガイダンスについては、[http://aka.ms/pnc](http://aka.ms/pnc) を参照してください。この列には、ネットワーク接続に必要なエンドポイントのセットが表示されます。ネットワーク接続が必要ないエンドポイントのセットの場合、このコラムには、エンドポイントのセットがブロックされた場合に使えなくなる機能に関する注意書きが書かれます。サービス領域全体を除外する場合は、ネットワーク接続が必要と記載されているエンドポイントのセットの接続は不要です。
 
-- **ER**: これは、 **[はい]** エンドポイントの設定は Office 365 のルートのプレフィックスを持つ Azure ExpressRoute 経由でサポートされている場合。一覧に [サービス] 領域に表示されているルートのプレフィックスを含む BGP コミュニティを配置します。ER が**No**の場合、このエンドポイントのセットの ExpressRoute がサポートされていないことを意味します。ただし、その必要がありますが想定されていなかった**なし**の ER が、エンドポイントのセットのルートをアドバタイズしないことです。Azure AD 接続を使用する場合は、適切ながあることを確認するのには[特別な考慮事項のセクション](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud)を読んで Azure AD 接続を構成します。
+- **ER**: エンドポイントセットが Office 365 のルートプレフィックスを使用して Azure ExpressRoute でサポートされている場合は、これが**Yes**になります。ルートプレフィックスを含む BGP コミュニティは、表示されている [サービス] 領域に配置されています。ER が**No**の場合、このエンドポイントセットに対して ExpressRoute がサポートされていないことを意味します。ただし、ER が**no**であるエンドポイントセットに対してルートがアドバタイズされていないと仮定してはなりません。azure ad connect の使用を計画している場合は、 [「特別な考慮事項」セクション](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud)を参照して、適切な azure ad connect 構成を持っていることを確認してください。
 
 - **アドレス**: FQDN またはワイルドカードを含むドメイン名と、エンドポイントのセットの IP アドレス範囲を一覧表示します。IP アドレスの範囲は CIDR 形式となり、指定されたネットワークの個別の IP アドレスが多数含まれる場合があることに注意してください。
  
@@ -61,6 +63,6 @@ ms.locfileid: "29612146"
   
 この表に関するメモ :
 
-- セキュリティとコンプライアンス センター (SCC) は、Office 365 の Azure ExpressRoute のサポートを提供します。SCC レポート作成、監査、高度な電子的証拠開示、DLP の統合、データ ・ ガバナンスなどを通じて公開される多くの機能にも当てはまります。、PST のインポートとエクスポートで電子的証拠開示の 2 つの特定機能はサポートされていません Azure ExpressRoute Azure のブロブ ストレージへの依存関係のためのルート フィルターのみを Office 365 にします。これらの機能を利用するには、Azure パブリック ルート フィルターを使用してインターネットに接続または Azure ExpressRoute が含まれて、Azure 接続をサポート可能なオプションを使用した Azure のブロブ ストレージへの個別の接続が必要です。これらの機能の両方のような接続を確立することを評価する必要があります。Office 365 の情報保護チームがこの制限を認識してルート フィルターを Office 365 にこれらの機能の両方の制限としての Office 365 の Azure ExpressRoute のサポートを提供する作業は、積極的にします。
+- セキュリティ/コンプライアンスセンター (SCC) は、Office 365 用の Azure ExpressRoute のサポートを提供します。レポート作成、監査、高度な電子情報開示、統合 DLP、データガバナンスなど、SCC を通じて公開されている多くの機能についても同様です。2つの特定の機能、PST インポートと電子情報開示のエクスポートは、現時点では、azure Blob ストレージへの依存関係により、Office 365 ルートフィルターのみの azure ExpressRoute をサポートしていません。これらの機能を使用するには、azure のパブリックルートフィルターを使用したインターネット接続または azure ExpressRoute を含む、サポート可能な azure 接続オプションを使用して、azure Blob ストレージに個別に接続する必要があります。これらの機能の両方について、このような接続の確立を評価する必要があります。office 365 Information Protection team は、この制限を認識しており、両方の機能の office 365 ルートフィルターに制限されているため、office 365 用の Azure ExpressRoute のサポートを積極的に実行しています。
 
-- Office 365 用リソースに示されていないと、ユーザーが Office 365 用リソースのアプリケーションを起動し、ドキュメントを編集する必要はありませんがその他の省略可能なエンドポイントがあります。省略可能なエンドポイント マイクロソフトのデータ センターでホストされているとは処理、転送では、や顧客データを格納します。これらのエンドポイントへのユーザー接続は、既定のインターネットの出口周辺に転送することをお勧めします。
+- office 365 ProPlus には追加オプションのエンドポイントがありますが、ユーザーが office 365 ProPlus アプリケーションを起動してドキュメントを編集するために必要ではありません。オプションのエンドポイントは Microsoft データセンターでホストされ、顧客データの処理、転送、保存は行われません。これらのエンドポイントへのユーザー接続は、既定のインターネット出口境界に向けられるようにすることをお勧めします。
