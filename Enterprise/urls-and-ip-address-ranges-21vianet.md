@@ -8,6 +8,9 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
 search.appverid:
 - GMA150
 - GPA150
@@ -15,12 +18,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: この記事は、中国の 21 vianet が運営する Office 365 に適用されます。この記事では、21Vianet が運営する Office 365 で使用される URL と IP アドレス範囲の一覧が表示されます。
 hideEdit: true
-ms.openlocfilehash: 0e07d8d1d4163bcb2e6cf11daceb3349444cabfe
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 5ab1da87673d422001aa826ec9411ce31fa323d1
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872288"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341978"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
