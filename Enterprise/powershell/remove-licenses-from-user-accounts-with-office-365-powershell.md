@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してユーザー アカウントから�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 03/07/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
-ms.openlocfilehash: 5b5f4550a5fade7f95669ad455aebd5d5f7fbf34
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 66ffe7275bcfd936c7df70d3969b96fefafb355d
+ms.sourcegitcommit: 0a99abcb67fc8ee7594cb66f5f7fd0e6e94eb3fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651221"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474178"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
 
@@ -32,15 +32,15 @@ ms.locfileid: "29651221"
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
-次に、ライセンスの一覧は、このコマンドを使用して、テナントの予定です。
+次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-次に、ライセンスとも呼ばれるユーザー プリンシパル名 (UPN) を削除するアカウントのサインイン名を取得します。
+次に、ユーザープリンシパル名 (UPN) とも呼ばれるライセンスを削除するアカウントのサインイン名を取得します。
 
-最後に、ユーザーのサインインとライセンスのプラン名を指定、「_lt _」と"_gt"の文字を削除し、これらのコマンドを実行します。
+最後に、ユーザーのサインインとライセンスプラン名を指定し、"<" および ">" の文字を削除して、次のコマンドを実行します。
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -60,7 +60,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
    
-組織の計画 (**AccountSkuID** ) のライセンス情報を表示するには、次のトピックを参照してください。
+組織のライセンスプラン (**AccountSkuID** ) 情報を表示するには、以下のトピックを参照してください。
     
   - [Office 365 PowerShell でライセンスとサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -68,7 +68,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
     
 _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
-### <a name="removing-licenses-from-user-accounts"></a>ユーザー アカウントからライセンスを削除します。
+### <a name="removing-licenses-from-user-accounts"></a>ユーザーアカウントからライセンスを削除する
 
 既存のユーザー アカウントからライセンスを削除するには、次の構文を使用します:
   
@@ -76,7 +76,7 @@ _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使�
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
-この例で削除、 `litwareinc:ENTERPRISEPACK` BelindaN@litwareinc.com のユーザー アカウントからの (Office 365 エンタープライズ E3) のライセンスです。
+この例では`litwareinc:ENTERPRISEPACK` 、ユーザーアカウント BelindaN@litwareinc.com から (Office 365 Enterprise E3) ライセンスを削除します。
   
 ```
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -111,27 +111,27 @@ kakers@contoso.com
 2. 次の構文を使用してください。
     
   ```
-  Get-Content "<FileNameAndPath>" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
+  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
   ```
 
 この例では、テキスト ファイル C:\My Documents\Accounts.txt で定義されているユーザー アカウントから `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"
+  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
 既存のすべてのユーザー アカウントからライセンスを削除するには、次の構文を使用します。
   
 ```
-$x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
+$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
 次の例では、ライセンスを付与された既存の全ユーザー アカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。
   
 ```
-$x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
 別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。詳細については、「[Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)」を参照してください。
