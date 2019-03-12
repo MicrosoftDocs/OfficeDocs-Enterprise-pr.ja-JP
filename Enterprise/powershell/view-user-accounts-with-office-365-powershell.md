@@ -3,7 +3,7 @@ title: Office 365 PowerShell でユーザー アカウントを表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 03/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,33 +14,33 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: '概要: 表示、リスト、または Office 365 の PowerShell でのさまざまな方法でユーザー アカウントを表示します。'
-ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
-ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
+description: '概要: Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示、一覧表示、または表示できます。'
+ms.openlocfilehash: 10b6d209e76f94b8b001718abd35368f9d1bc29c
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27730322"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30539015"
 ---
-# <a name="view-user-accounts-with-office-365-powershell"></a><span data-ttu-id="57c2e-103">Office 365 PowerShell でユーザー アカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="57c2e-103">View user accounts with Office 365 PowerShell</span></span>
+# <a name="view-user-accounts-with-office-365-powershell"></a><span data-ttu-id="68aab-103">Office 365 PowerShell でユーザー アカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-103">View user accounts with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="57c2e-104">**の概要:** Office 365 の PowerShell でのさまざまな方法でユーザー アカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-104">**Summary:** View your user accounts in various ways with Office 365 PowerShell.</span></span>
+<span data-ttu-id="68aab-104">**概要:** Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-104">**Summary:** View your user accounts in various ways with Office 365 PowerShell.</span></span>
   
-<span data-ttu-id="57c2e-105">Office 365 の管理センターを使用するには、Office 365 テナントのアカウントを表示するのも Office 365 の PowerShell を使用して Office 365 の管理センターができないことがいくつかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="57c2e-105">Although you can use the Office 365 Admin center to view the accounts for your Office 365 tenant, you can also use Office 365 PowerShell and do some things that the Office 365 Admin center cannot.</span></span>
+<span data-ttu-id="68aab-105">office 365 管理センターを使用して office 365 テナントのアカウントを表示することはできますが、office 365 PowerShell を使用して、office 365 管理センターでは実行できないいくつかの操作を実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="68aab-105">Although you can use the Office 365 Admin center to view the accounts for your Office 365 tenant, you can also use Office 365 PowerShell and do some things that the Office 365 Admin center cannot.</span></span>
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="57c2e-106">Azure Active Directory の PowerShell を使用して、グラフのモジュールの</span><span class="sxs-lookup"><span data-stu-id="57c2e-106">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="68aab-106">Graph モジュールの Azure Active Directory PowerShell を使用する</span><span class="sxs-lookup"><span data-stu-id="68aab-106">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="57c2e-107">最初は[、Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-107">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="68aab-107">まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="68aab-107">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-### <a name="view-all-accounts"></a><span data-ttu-id="57c2e-108">すべてのアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-108">View all accounts</span></span>
+### <a name="view-all-accounts"></a><span data-ttu-id="68aab-108">すべてのアカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-108">View all accounts</span></span>
 
-<span data-ttu-id="57c2e-109">ユーザー アカウントの完全な一覧を表示するには、このコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-109">To display the full list of user accounts, run this command:</span></span>
+<span data-ttu-id="68aab-109">ユーザーアカウントの完全な一覧を表示するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="68aab-109">To display the full list of user accounts, run this command:</span></span>
   
 ```
 Get-AzureADUser
 ```
 
-<span data-ttu-id="57c2e-110">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-110">You should see information similar to this:</span></span>
+<span data-ttu-id="68aab-110">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-110">You should see information similar to this:</span></span>
   
 ```
 ObjectId                             DisplayName                                           UserPrincipalName
@@ -53,96 +53,95 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="view-a-specific-account"></a><span data-ttu-id="57c2e-111">特定のアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-111">View a specific account</span></span>
+### <a name="view-a-specific-account"></a><span data-ttu-id="68aab-111">特定のアカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-111">View a specific account</span></span>
 
-<span data-ttu-id="57c2e-112">呼ばれるユーザー プリンシパル名 (UPN)、ユーザー アカウントのアカウントでサインイン名を入力を削除する特定のユーザー アカウントを表示するに、"<"と">"文字、および次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-112">To display a specific user account, fill in the sign-in account name of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
+<span data-ttu-id="68aab-112">特定のユーザーアカウントを表示するには、ユーザーアカウントのサインインアカウント名 (UPN) を入力し、"<" および ">" 文字を削除して、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="68aab-112">To display a specific user account, fill in the sign-in account name of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
   
 ```
 Get-AzureADUser -ObjectID <sign-in name of the user account>
 ```
 
-<span data-ttu-id="57c2e-113">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-113">Here is an example:</span></span>
+<span data-ttu-id="68aab-113">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-113">Here is an example:</span></span>
   
 ```
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
-### <a name="view-additional-property-values-for-a-specific-account"></a><span data-ttu-id="57c2e-114">特定のアカウントの追加のプロパティの値を表示します</span><span class="sxs-lookup"><span data-stu-id="57c2e-114">View additional property values for a specific account</span></span>
+### <a name="view-additional-property-values-for-a-specific-account"></a><span data-ttu-id="68aab-114">特定のアカウントの追加のプロパティ値を表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-114">View additional property values for a specific account</span></span>
 
-<span data-ttu-id="57c2e-115">既定では、 **Get AzureADUser**コマンドレットには、アカウントのオブジェクト Id、表示名、および UserPrincipalName プロパティのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-115">By default, the **Get-AzureADUser** cmdlet only displays the ObjectID, DisplayName, and UserPrincipalName properties of accounts.</span></span>
+<span data-ttu-id="68aab-115">既定では、 **set-azureaduser**コマンドレットでは、アカウントの ObjectID、DisplayName、および UserPrincipalName のプロパティのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-115">By default, the **Get-AzureADUser** cmdlet only displays the ObjectID, DisplayName, and UserPrincipalName properties of accounts.</span></span>
 
-<span data-ttu-id="57c2e-p101">詳細に表示するにはプロパティの一覧のオプションを選択できるコマンドレットを使用する**選択オブジェクト** **Get AzureADUser**コマンドレットと組み合わせて。「パイプ」文字を使用する 2 つのコマンドレットを結合するには、"|"、1 つのコマンドの結果を取得し、次のコマンドを送信するのにはグラフのアクティブなディレクトリの PowerShell を Azure に伝えます。すべてのユーザー アカウントの表示名、部署、および UsageLocation を表示するコマンドの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p101">To be more selective about the list of properties to display, you can use the **Select-Object** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here is an example command that displays the DisplayName, Department, and UsageLocation for every user account:</span></span>
+<span data-ttu-id="68aab-116">表示するプロパティの一覧についてより詳細な情報を得るには、 **set-azureaduser**コマンドレットと組み合わせて、**オブジェクト**のコマンドレットを使用できます。</span><span class="sxs-lookup"><span data-stu-id="68aab-116">To be more selective about the list of properties to display, you can use the **Select-Object** cmdlet in combination with the **Get-AzureADUser** cmdlet.</span></span> <span data-ttu-id="68aab-117">2つのコマンドレットを組み合わせるには、"pipe" 文字 "|" を使用します。これは、Azure Active Directory PowerShell が1つのコマンドの結果を取得して次のコマンドに送信するように指示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-117">To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="68aab-118">次に、すべてのユーザーアカウントの DisplayName、Department、および使用場所を表示するコマンドの例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-118">Here is an example command that displays the DisplayName, Department, and UsageLocation for every user account:</span></span>
   
 ```
 Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 ```
 
-<span data-ttu-id="57c2e-119">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-119">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="68aab-119">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-119">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="57c2e-120">ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="57c2e-120">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="68aab-120">ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-120">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="57c2e-121">のみユーザー アカウント名、部署、および使用法の場所 (**選択オブジェクトの表示名、部門、UsageLocation** ) を表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-121">Display only the user account name, department, and usage location ( **Select-Object DisplayName, Department, UsageLocation** ).</span></span>
+- <span data-ttu-id="68aab-121">ユーザーアカウント名、部署、使用場所のみを表示する (**選択-オブジェクト DisplayName、部署、使用場所**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-121">Display only the user account name, department, and usage location ( **Select-Object DisplayName, Department, UsageLocation** ).</span></span>
   
-<span data-ttu-id="57c2e-p102">すべてのユーザー アカウントのプロパティを表示するには、 **Select-object**コマンドレット、ワイルドカード文字 (\*) を特定のユーザー アカウントのすべてを表示するのに使用します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p102">To see all of the properties for user accounts, use the **Select-Object** cmdlet and the wildcard character (\*) to display them all for a specific user account. Here is an example:</span></span>
+<span data-ttu-id="68aab-122">ユーザーアカウントのすべてのプロパティを表示するには、**オブジェクトの選択**コマンドレットとワイルドカード文字 (\*) を使用して、特定のユーザーアカウントについてすべてのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-122">To see all of the properties for user accounts, use the **Select-Object** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="68aab-123">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-123">Here is an example:</span></span>
   
 ```
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
-<span data-ttu-id="57c2e-124">別の例としては、次のコマンドを使用して特定のユーザー アカウントの有効な状態をチェックできます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-124">As another example, you can check the enabled status of a specific user account with the following command:</span></span>
+<span data-ttu-id="68aab-124">別の例として、次のコマンドを使用して、特定のユーザーアカウントの有効な状態を確認できます。</span><span class="sxs-lookup"><span data-stu-id="68aab-124">As another example, you can check the enabled status of a specific user account with the following command:</span></span>
   
 ```
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="57c2e-125">一般的なプロパティに基づいていくつかのアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-125">View some accounts based on a common property</span></span>
+### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="68aab-125">共通プロパティに基づいて一部のアカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-125">View some accounts based on a common property</span></span>
 
-<span data-ttu-id="57c2e-p103">詳細表示するにはアカウントの一覧のオプションを選択することができます**Where-object**コマンドレットと組み合わせて使用**Get AzureADUser**コマンドレットです。「パイプ」文字を使用する 2 つのコマンドレットを結合するには、"|"、1 つのコマンドの結果を取得し、次のコマンドを送信するのにはグラフのアクティブなディレクトリの PowerShell を Azure に伝えます。指定されていない使用法は、場所を持っているユーザーのアカウントのみを表示するコマンドの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p103">To be more selective about the list of accounts to display, you can use the **Where-Object** cmdlet in combination with the **Get-AzureADUser** cmdlet. To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command. Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
+<span data-ttu-id="68aab-126">表示するアカウントのリストをより詳細に選択できるようにするには、 **set-azureaduser**コマンドレットと組み合わせて、**オブジェクト**のコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="68aab-126">To be more selective about the list of accounts to display, you can use the **Where-Object** cmdlet in combination with the **Get-AzureADUser** cmdlet.</span></span> <span data-ttu-id="68aab-127">2つのコマンドレットを組み合わせるには、"pipe" 文字 "|" を使用します。これは、Azure Active Directory PowerShell が1つのコマンドの結果を取得して次のコマンドに送信するように指示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-127">To combine the two cmdlets, we use the "pipe" character "|", which tells Azure Active Directory PowerShell for Graph to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="68aab-128">次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-128">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
   
 ```
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-<span data-ttu-id="57c2e-129">このコマンドは、グラフのアクティブなディレクトリの PowerShell を Azure を指示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-129">This command instructs Azure Active Directory PowerShell for Graph to:</span></span>
+<span data-ttu-id="68aab-129">次のコマンドは、Azure Active Directory PowerShell を Graph に対して次のように指示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-129">This command instructs Azure Active Directory PowerShell for Graph to:</span></span>
   
-- <span data-ttu-id="57c2e-130">ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="57c2e-130">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="68aab-130">ユーザー アカウントのすべての情報を取得 (**Get-AzureADUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-130">Get all of the information on the user accounts ( **Get-AzureADUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="57c2e-p104">指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** )。コマンドが UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell を指示する中かっこ、( \*\* $ \_。UsageLocation\*\* ) は指定されたものであるか ( **eq $Null** ) ではありません。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p104">Find all of the user accounts that have an unspecified usage location ( **Where-Object {$\_.UsageLocation -eq $Null}** ). Inside the braces, the command instructs Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
+- <span data-ttu-id="68aab-131">使用できない場所が指定されているすべてのユーザーアカウントを検索し**ます\_(Where オブジェクト {$.の場合は、-eq $Null}** ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="68aab-131">Find all of the user accounts that have an unspecified usage location ( **Where-Object {$\_.UsageLocation -eq $Null}** ).</span></span> <span data-ttu-id="68aab-132">中かっこの内側では、コマンドは、Office 365 PowerShell に対して、"アクセス先" ユーザーアカウントプロパティ ( \*\* $ \_) のアカウントセットのみを検索するように指示します。\*\* は、無効な場所) を指定しません ( **-eq $Null** )。</span><span class="sxs-lookup"><span data-stu-id="68aab-132">Inside the braces, the command instructs Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
     
-<span data-ttu-id="57c2e-p105">**UsageLocation**プロパティは、ユーザー アカウントに関連付けられている多くのプロパティの 1 つだけです。すべてのユーザー アカウントのプロパティを表示するには、 **Select-object**コマンドレット、ワイルドカード文字 (\*) を特定のユーザー アカウントのすべてを表示するのに使用します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p105">The **UsageLocation** property is only one of many properties associated with a user account. To see all of the properties for user accounts, use the **Select-Object** cmdlet and the wildcard character (\*) to display them all for a specific user account. Here is an example:</span></span>
+<span data-ttu-id="68aab-133">使用**場所**プロパティは、ユーザーアカウントに関連付けられている多くのプロパティのうちの1つにすぎません。</span><span class="sxs-lookup"><span data-stu-id="68aab-133">The **UsageLocation** property is only one of many properties associated with a user account.</span></span> <span data-ttu-id="68aab-134">ユーザーアカウントのすべてのプロパティを表示するには、**オブジェクトの選択**コマンドレットとワイルドカード文字 (\*) を使用して、特定のユーザーアカウントについてすべてのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-134">To see all of the properties for user accounts, use the **Select-Object** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="68aab-135">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-135">Here is an example:</span></span>
   
 ```
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
-<span data-ttu-id="57c2e-p106">たとえば、この一覧で、**City** がユーザー アカウント プロパティの名前であるとします。つまり、以下のコマンドを使用すると、ロンドン在住のユーザーのユーザー アカウントすべての一覧を表示できます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p106">For example, from this list, **City** is the name of a user account property. This means you can use the following command to list all of the user accounts for users living in London:</span></span>
+<span data-ttu-id="68aab-136">たとえば、このリストから、 **City**はユーザーアカウントプロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="68aab-136">For example, from this list, **City** is the name of a user account property.</span></span> <span data-ttu-id="68aab-137">これは、次のコマンドを使用して、London に住むユーザーのすべてのユーザーアカウントを一覧表示できることを意味します。</span><span class="sxs-lookup"><span data-stu-id="68aab-137">This means you can use the following command to list all of the user accounts for users living in London:</span></span>
   
 ```
 Get-AzureADUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  <span data-ttu-id="57c2e-p107">これらの例に示すように**Where-object**コマンドレットの構文は、 **、オブジェクト {$\_です**。[ユーザー アカウントのプロパティ名][比較演算子][値]**}**. > [比較演算子] が等号の**eq**の等しくないため、 **ne**より大きいは、 **-gt**と他の人の**強い**。 [値] は、通常の文字列 (文字、数字、およびその他の文字のシーケンス)、数値、または **$Null**未指定の > 詳細については[、オブジェクト](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p107">The syntax for the **Where-Object** cmdlet shown in these examples is **Where-Object {$\_.** [user account property name] [comparison operator] [value] **}**.>  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) for more information.</span></span>
+>  <span data-ttu-id="68aab-138">これらの例に\*\*\*\* 示されている where-object コマンドレットの構文は、 **where オブジェクト {\_$ にあります。**</span><span class="sxs-lookup"><span data-stu-id="68aab-138">The syntax for the **Where-Object** cmdlet shown in these examples is **Where-Object {$\_.**</span></span> <span data-ttu-id="68aab-139">[ユーザーアカウントのプロパティ名][比較演算子]金額\*\*\*\*> [comparison operator] は **-eq** (等しい)、 **-ne** for not equals、 **-lt** (より小さい、- **gT** (より大きい)、または他の場合) です。</span><span class="sxs-lookup"><span data-stu-id="68aab-139">[user account property name] [comparison operator] [value] **}**.>  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.</span></span>  <span data-ttu-id="68aab-140">[value] は通常、unspecified> の文字列 (一連の文字、数字、およびその他の文字)、数値、または **$Null**を示します。詳細については、「 [Where オブジェクト](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68aab-140">[value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified>  See [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) for more information.</span></span>
   
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="57c2e-141">モジュールを使用して、Microsoft Azure Active Directory Windows PowerShell の</span><span class="sxs-lookup"><span data-stu-id="57c2e-141">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="68aab-141">Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="68aab-141">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="57c2e-142">最初は[、Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-142">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="68aab-142">まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="68aab-142">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-### <a name="view-all-accounts"></a><span data-ttu-id="57c2e-143">すべてのアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-143">View all accounts</span></span>
+### <a name="view-all-accounts"></a><span data-ttu-id="68aab-143">すべてのアカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-143">View all accounts</span></span>
 
-<span data-ttu-id="57c2e-144">ユーザー アカウントの完全な一覧を表示するには、このコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-144">To display the full list of user accounts, run this command:</span></span>
+<span data-ttu-id="68aab-144">ユーザーアカウントの完全な一覧を表示するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="68aab-144">To display the full list of user accounts, run this command:</span></span>
   
 ```
 Get-MsolUser
 ```
 
-<span data-ttu-id="57c2e-145">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-145">You should see information similar to this:</span></span>
+<span data-ttu-id="68aab-145">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-145">You should see information similar to this:</span></span>
   
 ```
 UserPrincipalName                     DisplayName           isLicensed
 -----------------                     -----------           ----------
-ZrinkaM@litwareinc.onmicrosoft.com    Zrinka Makovac        True
 BonnieK@litwareinc.onmicrosoft.com    Bonnie Kearney        True
 FabriceC@litwareinc.onmicrosoft.com   Fabrice Canel         True
 BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False 
@@ -150,13 +149,13 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-<span data-ttu-id="57c2e-p108">**Get MsolUser**コマンドレットでは、表示されるユーザー アカウントのセットをフィルター処理するパラメーターのセットもあります。など、ライセンスのないユーザー (ユーザーが、Office 365 に追加されたこと、サービスのいずれかを使用するのにはライセンスされていないはまだ) の一覧の場合は、このコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p108">The **Get-MsolUser** cmdlet also has a set of parameters to filter the set of user accounts displayed. For example, for the list of unlicensed users (users who've been added to Office 365 but haven't yet been licensed to use any of the services), run this command.</span></span>
+<span data-ttu-id="68aab-146">**Get-MsolUser** コマンドレットには、表示するユーザー アカウントのセットをフィルターにかけるための一連のパラメーターもあります。</span><span class="sxs-lookup"><span data-stu-id="68aab-146">The **Get-MsolUser** cmdlet also has a set of parameters to filter the set of user accounts displayed.</span></span> <span data-ttu-id="68aab-147">たとえば、ライセンスのないユーザー (Office 365 に追加されていても、まだライセンスを持っていないユーザー) の一覧については、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="68aab-147">For example, for the list of unlicensed users (users who've been added to Office 365 but haven't yet been licensed to use any of the services), run this command.</span></span>
   
 ```
 Get-MsolUser -UnlicensedUsersOnly
 ```
 
-<span data-ttu-id="57c2e-148">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-148">You should see information similar to this:</span></span>
+<span data-ttu-id="68aab-148">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-148">You should see information similar to this:</span></span>
   
 ```
 UserPrincipalName                     DisplayName           isLicensed
@@ -165,32 +164,32 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-<span data-ttu-id="57c2e-149">表示をフィルター処理する追加のパラメーターの詳細について表示するには、ユーザー アカウントの設定では、 [Get MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100))を参照してください。</span><span class="sxs-lookup"><span data-stu-id="57c2e-149">For more information about additional parameters to filter the display the set of user accounts displayed, see [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).</span></span>
+<span data-ttu-id="68aab-149">表示されるユーザーアカウントのセットをフィルター処理するための追加パラメーターの詳細については、「 [get-msoluser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100))」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68aab-149">For more information about additional parameters to filter the display the set of user accounts displayed, see [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).</span></span>
   
 
-### <a name="view-a-specific-account"></a><span data-ttu-id="57c2e-150">特定のアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-150">View a specific account</span></span>
+### <a name="view-a-specific-account"></a><span data-ttu-id="68aab-150">特定のアカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-150">View a specific account</span></span>
 
-<span data-ttu-id="57c2e-151">呼ばれるユーザー プリンシパル名 (UPN)、ユーザー アカウントのユーザー アカウントのサインイン名を入力を削除する特定のユーザー アカウントを表示するに、"<"と">"文字、および次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-151">To display a specific user account, fill in the sign-in name of the user account of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
+<span data-ttu-id="68aab-151">特定のユーザーアカウントを表示するには、ユーザーアカウントのユーザーアカウントのサインイン名 (UPN) を記入し、"<" および ">" 文字を削除して、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="68aab-151">To display a specific user account, fill in the sign-in name of the user account of the user account, also known as the user principal name (UPN), remove the "<" and ">" characters, and run this command:</span></span>
   
 ```
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
-### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="57c2e-152">一般的なプロパティに基づいていくつかのアカウントを表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-152">View some accounts based on a common property</span></span>
+### <a name="view-some-accounts-based-on-a-common-property"></a><span data-ttu-id="68aab-152">共通プロパティに基づいて一部のアカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-152">View some accounts based on a common property</span></span>
 
-<span data-ttu-id="57c2e-p109">詳細表示するにはアカウントの一覧のオプションを選択することができます**Where-object**コマンドレットと組み合わせて使用**Get MsolUser**コマンドレットです。「パイプ」文字を使用する 2 つのコマンドレットを結合するには、"|"、Office 365 の PowerShell コマンドを 1 つの結果を取得し、次のコマンドを送信することを指示します。指定されていない使用法は、場所を持っているユーザーのアカウントのみを表示するコマンドの例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p109">To be more selective about the list of accounts to display, you can use the **Where-Object** cmdlet in combination with the **Get-MsolUser** cmdlet. To combine the two cmdlets, we use the "pipe" character "|", which tells Office 365 PowerShell to take the results of one command and send it to the next command. Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
+<span data-ttu-id="68aab-153">表示するアカウントのリストをより詳細に選択できるようにするには、 **get-msoluser**コマンドレットと組み合わせて、**オブジェクト**のコマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="68aab-153">To be more selective about the list of accounts to display, you can use the **Where-Object** cmdlet in combination with the **Get-MsolUser** cmdlet.</span></span> <span data-ttu-id="68aab-154">2つのコマンドレットを組み合わせるには、"pipe" 文字 "|" を使用します。これは、Office 365 PowerShell に対して1つのコマンドの結果を取得し、次のコマンドに送信するように指示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-154">To combine the two cmdlets, we use the "pipe" character "|", which tells Office 365 PowerShell to take the results of one command and send it to the next command.</span></span> <span data-ttu-id="68aab-155">次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-155">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
   
 ```
 Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-<span data-ttu-id="57c2e-156">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-156">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="68aab-156">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-156">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="57c2e-157">ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="57c2e-157">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="68aab-157">ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-157">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="57c2e-p110">指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** )。コマンドが UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell を指示する中かっこ、( \*\* $ \_。UsageLocation\*\* ) は指定されたものであるか ( **eq $Null** ) ではありません。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p110">Find all of the user accounts that have an unspecified usage location ( **Where-Object {$\_.UsageLocation -eq $Null}** ). Inside the braces, the command instructs Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
+- <span data-ttu-id="68aab-158">使用できない場所が指定されているすべてのユーザーアカウントを検索し**ます\_(Where オブジェクト {$.の場合は、-eq $Null}** ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="68aab-158">Find all of the user accounts that have an unspecified usage location ( **Where-Object {$\_.UsageLocation -eq $Null}** ).</span></span> <span data-ttu-id="68aab-159">中かっこの内側では、コマンドは、Office 365 PowerShell に対して、"アクセス先" ユーザーアカウントプロパティ ( \*\* $ \_) のアカウントセットのみを検索するように指示します。\*\* は、無効な場所) を指定しません ( **-eq $Null** )。</span><span class="sxs-lookup"><span data-stu-id="68aab-159">Inside the braces, the command instructs Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
     
-<span data-ttu-id="57c2e-160">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-160">You should see information similar to this:</span></span>
+<span data-ttu-id="68aab-160">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-160">You should see information similar to this:</span></span>
   
 ```
 UserPrincipalName                     DisplayName           isLicensed
@@ -200,55 +199,54 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-<span data-ttu-id="57c2e-p111">**UsageLocation**プロパティは、ユーザー アカウントに関連付けられている多くのプロパティの 1 つだけです。すべてのユーザー アカウントのプロパティを表示するには、 **Select-object**コマンドレット、ワイルドカード文字 (\*) を特定のユーザー アカウントのすべてを表示するのに使用します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p111">The **UsageLocation** property is only one of many properties associated with a user account. To see all of the properties for user accounts, use the **Select-Object** cmdlet and the wildcard character (\*) to display them all for a specific user account. Here is an example:</span></span>
+<span data-ttu-id="68aab-161">使用**場所**プロパティは、ユーザーアカウントに関連付けられている多くのプロパティのうちの1つにすぎません。</span><span class="sxs-lookup"><span data-stu-id="68aab-161">The **UsageLocation** property is only one of many properties associated with a user account.</span></span> <span data-ttu-id="68aab-162">ユーザーアカウントのすべてのプロパティを表示するには、**オブジェクトの選択**コマンドレットとワイルドカード文字 (\*) を使用して、特定のユーザーアカウントについてすべてのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-162">To see all of the properties for user accounts, use the **Select-Object** cmdlet and the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="68aab-163">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-163">Here is an example:</span></span>
   
 ```
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
-<span data-ttu-id="57c2e-p112">たとえば、この一覧で、**City** がユーザー アカウント プロパティの名前であるとします。つまり、以下のコマンドを使用すると、ロンドン在住のユーザーのユーザー アカウントすべての一覧を表示できます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p112">For example, from this list, **City** is the name of a user account property. This means you can use the following command to list all of the user accounts for users living in London:</span></span>
+<span data-ttu-id="68aab-164">たとえば、このリストから、 **City**はユーザーアカウントプロパティの名前です。</span><span class="sxs-lookup"><span data-stu-id="68aab-164">For example, from this list, **City** is the name of a user account property.</span></span> <span data-ttu-id="68aab-165">これは、次のコマンドを使用して、London に住むユーザーのすべてのユーザーアカウントを一覧表示できることを意味します。</span><span class="sxs-lookup"><span data-stu-id="68aab-165">This means you can use the following command to list all of the user accounts for users living in London:</span></span>
   
 ```
 Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  <span data-ttu-id="57c2e-p113">これらの例に示すように**Where-object**コマンドレットの構文は、 **、オブジェクト {$\_です**。[ユーザー アカウントのプロパティ名][比較演算子][値]**}**. [比較演算子] は、equals の**eq**が、等しくないため、 **ne**より大きいは、 **-gt**と他の人の**強い**です。 [値] は、通常 (文字、数字、およびその他の文字のシーケンス)、文字列、数値、または **$Null**指定されていないのです。詳細については[、オブジェクト](https://technet.microsoft.com/en-us/library/hh849715.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p113">The syntax for the **Where-Object** cmdlet shown in these examples is **Where-Object {$\_.** [user account property name] [comparison operator] [value] **}**.  [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. See [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) for more information.</span></span>
+>  <span data-ttu-id="68aab-166">これらの例に\*\*\*\* 示されている where-object コマンドレットの構文は、 **where オブジェクト {\_$ にあります。**</span><span class="sxs-lookup"><span data-stu-id="68aab-166">The syntax for the **Where-Object** cmdlet shown in these examples is **Where-Object {$\_.**</span></span> <span data-ttu-id="68aab-167">[ユーザーアカウントのプロパティ名][比較演算子]金額 **}**.</span><span class="sxs-lookup"><span data-stu-id="68aab-167">[user account property name] [comparison operator] [value] **}**.</span></span>  <span data-ttu-id="68aab-168">[comparison operator] は **-eq** (等しい)、 **-ne** for not equals、 **-lt** (より小さい)、- **gt** (より大きい)、または他のものです。</span><span class="sxs-lookup"><span data-stu-id="68aab-168">[comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.</span></span>  <span data-ttu-id="68aab-169">[value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または **$Null**指定なしの場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="68aab-169">[value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified.</span></span> <span data-ttu-id="68aab-170">詳細については[、「Where オブジェクト](https://technet.microsoft.com/en-us/library/hh849715.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="68aab-170">See [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) for more information.</span></span>
   
-<span data-ttu-id="57c2e-171">ブロックされた次のコマンドでユーザー アカウントの状態を確認できます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-171">You can check the blocked status of a user account with the following command:</span></span>
+<span data-ttu-id="68aab-171">ユーザーアカウントのブロックされた状態を確認するには、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="68aab-171">You can check the blocked status of a user account with the following command:</span></span>
   
 ```
 Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-### <a name="view-additional-property-values-for-accounts"></a><span data-ttu-id="57c2e-172">アカウントの追加のプロパティの値を表示します</span><span class="sxs-lookup"><span data-stu-id="57c2e-172">View additional property values for accounts</span></span>
+### <a name="view-additional-property-values-for-accounts"></a><span data-ttu-id="68aab-172">アカウントの追加のプロパティ値を表示する</span><span class="sxs-lookup"><span data-stu-id="68aab-172">View additional property values for accounts</span></span>
 
-<span data-ttu-id="57c2e-173">既定で**Get MsolUser**コマンドレットでは、ユーザー アカウントの 3 つのプロパティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-173">The **Get-MsolUser** cmdlet by default displays three properties of user accounts:</span></span>
+<span data-ttu-id="68aab-173">**get-msoluser**コマンドレットでは、既定でユーザーアカウントの3つのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-173">The **Get-MsolUser** cmdlet by default displays three properties of user accounts:</span></span>
   
-- <span data-ttu-id="57c2e-174">UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="57c2e-174">UserPrincipalName</span></span>
+- <span data-ttu-id="68aab-174">UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="68aab-174">UserPrincipalName</span></span>
     
-- <span data-ttu-id="57c2e-175">DisplayName</span><span class="sxs-lookup"><span data-stu-id="57c2e-175">DisplayName</span></span>
+- <span data-ttu-id="68aab-175">DisplayName</span><span class="sxs-lookup"><span data-stu-id="68aab-175">DisplayName</span></span>
     
-- <span data-ttu-id="57c2e-176">isLicensed</span><span class="sxs-lookup"><span data-stu-id="57c2e-176">isLicensed</span></span>
+- <span data-ttu-id="68aab-176">isLicensed</span><span class="sxs-lookup"><span data-stu-id="68aab-176">isLicensed</span></span>
     
-<span data-ttu-id="57c2e-p114">ユーザー アカウントの一覧を指定するのに**Select-object**コマンドレットと組み合わせて**取得 MsolUser**を実行するには部門のユーザーの動作と、ユーザーが Office 365 のサービスを使用する国/地域などの追加のプロパティを作成する必要がある場合プロパティです。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p114">If you need additional properties, such as the department the user works for and the country/region where the user uses Office 365 services, you can run **Get-MsolUser** in combination with the **Select-Object** cmdlet to specify the list of user account properties. Here is an example:</span></span>
+<span data-ttu-id="68aab-177">ユーザーが作業する部署や、ユーザーが Office 365 サービスを使用する国/地域など、追加のプロパティが必要な場合は、get-msoluser コマンドレットと組み合わせて\*\*\*\* を\*\*\*\* 実行して、ユーザーアカウントの一覧を指定することができます。プロパティ.</span><span class="sxs-lookup"><span data-stu-id="68aab-177">If you need additional properties, such as the department the user works for and the country/region where the user uses Office 365 services, you can run **Get-MsolUser** in combination with the **Select-Object** cmdlet to specify the list of user account properties.</span></span> <span data-ttu-id="68aab-178">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-178">Here is an example:</span></span>
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
 ```
 
-<span data-ttu-id="57c2e-179">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-179">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="68aab-179">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-179">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="57c2e-180">ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="57c2e-180">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="68aab-180">ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-180">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="57c2e-181">のみユーザー アカウント名、部署、および使用法の場所 (**選択オブジェクトの表示名、部門、UsageLocation** ) を表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-181">Display only the user account name, department, and usage location ( **Select-Object DisplayName, Department, UsageLocation** ).</span></span>
+- <span data-ttu-id="68aab-181">ユーザーアカウント名、部署、使用場所のみを表示する (**選択-オブジェクト DisplayName、部署、使用場所**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-181">Display only the user account name, department, and usage location ( **Select-Object DisplayName, Department, UsageLocation** ).</span></span>
     
-<span data-ttu-id="57c2e-182">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-182">You should see information similar to this:</span></span>
+<span data-ttu-id="68aab-182">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-182">You should see information similar to this:</span></span>
   
 ```
 DisplayName             Department                       UsageLocation
 -----------             ----------                       -------------
-Zrinka Makovac          Sales & Marketing                    US
 Bonnie Kearney          Sales & Marketing                    US
 Fabrice Canel           Legal                                US
 Brian Johnson
@@ -257,27 +255,27 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-<span data-ttu-id="57c2e-p115">**Select-object**コマンドレットでは、目的のプロパティを表示するコマンドを選択することができます。すべてのユーザー アカウントのプロパティを参照してくださいするのにには、特定のユーザー アカウントのすべてを表示するのにはワイルドカード文字 (\*) を使用します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p115">The **Select-Object** cmdlet lets you pick and choose the properties you want a command to display. To see all of the properties for user accounts, use the wildcard character (\*) to display them all for a specific user account. Here is an example:</span></span>
+<span data-ttu-id="68aab-183">**オブジェクトの選択**コマンドレットを使用すると、コマンドに表示するプロパティを選択して選択できます。</span><span class="sxs-lookup"><span data-stu-id="68aab-183">The **Select-Object** cmdlet lets you pick and choose the properties you want a command to display.</span></span> <span data-ttu-id="68aab-184">ユーザーアカウントのすべてのプロパティを表示するには、ワイルドカード文字 (\*) を使用して、特定のユーザーアカウントに対してすべてのプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-184">To see all of the properties for user accounts, use the wildcard character (\*) to display them all for a specific user account.</span></span> <span data-ttu-id="68aab-185">次に例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-185">Here is an example:</span></span>
   
 ```
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
-<span data-ttu-id="57c2e-p116">アカウントの一覧をより選択的に表示する場合には、**Where-object** コマンドレットも使用できます。次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p116">To be more selective about the list of accounts to display, you can also use the **Where-Object** cmdlet. Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
+<span data-ttu-id="68aab-186">表示するアカウントのリストをより詳細に選択できるようにするには、 \*\*\*\* where-object コマンドレットを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="68aab-186">To be more selective about the list of accounts to display, you can also use the **Where-Object** cmdlet.</span></span> <span data-ttu-id="68aab-187">次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。</span><span class="sxs-lookup"><span data-stu-id="68aab-187">Here is an example command that displays only those user accounts that have an unspecified usage location:</span></span>
   
 ```
 Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
 ```
 
-<span data-ttu-id="57c2e-188">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-188">This command instructs Office 365 PowerShell to:</span></span>
+<span data-ttu-id="68aab-188">このコマンドによって Office 365 PowerShell に対して次の処理が命令されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-188">This command instructs Office 365 PowerShell to:</span></span>
   
-- <span data-ttu-id="57c2e-189">ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="57c2e-189">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
+- <span data-ttu-id="68aab-189">ユーザー アカウントのすべての情報を取得 (**Get-MsolUser**) して、次のコマンドにそれを送信する (**|**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-189">Get all of the information on the user accounts ( **Get-MsolUser** ) and send it to the next command ( **|** ).</span></span>
     
-- <span data-ttu-id="57c2e-p117">指定されていない使用法は、場所を持っているユーザーのアカウントのすべてを検索 ( **、オブジェクト {$\_。$Null を eq - UsageLocation}** ) し、結果の情報を次のコマンドを送信する ( **|** )。かっこの中には、コマンドは UsageLocation ユーザー アカウントのプロパティでアカウントの設定だけを検索する Office 365 の PowerShell ように指示する ( \*\* $ \_。UsageLocation\*\* ) は指定されたものであるか ( **eq $Null** ) ではありません。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p117">Find all of the user accounts that have an unspecified usage location ( **Where-Object {$\_.UsageLocation -eq $Null}** ) and send the resulting information to the next command ( **|** ). Inside the braces, the command is instructing Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
+- <span data-ttu-id="68aab-190">使用できない場所が指定されているすべてのユーザーアカウントを検索し**ます\_(Where オブジェクト {$.[実行場所-eq $Null}** )] を指定して、結果の情報**|** を次のコマンドに送信します ()。</span><span class="sxs-lookup"><span data-stu-id="68aab-190">Find all of the user accounts that have an unspecified usage location ( **Where-Object {$\_.UsageLocation -eq $Null}** ) and send the resulting information to the next command ( **|** ).</span></span> <span data-ttu-id="68aab-191">中かっこ内では、コマンドは、Office 365 PowerShell に対して、"アクセス先" ユーザーアカウントプロパティ ( \*\* $ \_) のアカウントセットのみを検索するように指示します。\*\* は、無効な場所) を指定しません ( **-eq $Null** )。</span><span class="sxs-lookup"><span data-stu-id="68aab-191">Inside the braces, the command is instructing Office 365 PowerShell to only find the set of accounts in which the UsageLocation user account property ( **$\_.UsageLocation** ) is not specified ( **-eq $Null** ).</span></span>
     
-- <span data-ttu-id="57c2e-192">のみユーザー アカウント名、部署、および使用法の場所 (**選択オブジェクトの表示名、部門、UsageLocation** ) を表示します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-192">Display only the user account name, department, and usage location ( **Select-Object DisplayName, Department, UsageLocation** ).</span></span>
+- <span data-ttu-id="68aab-192">ユーザーアカウント名、部署、使用場所のみを表示する (**選択-オブジェクト DisplayName、部署、使用場所**)。</span><span class="sxs-lookup"><span data-stu-id="68aab-192">Display only the user account name, department, and usage location ( **Select-Object DisplayName, Department, UsageLocation** ).</span></span>
     
-<span data-ttu-id="57c2e-193">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="57c2e-193">You should see information similar to this:</span></span>
+<span data-ttu-id="68aab-193">次のような情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="68aab-193">You should see information similar to this:</span></span>
   
 ```
 DisplayName              Department                      UsageLocation
@@ -286,18 +284,18 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-<span data-ttu-id="57c2e-p118">作成し、Office 365 のユーザーを管理するにディレクトリ同期を使用する場合、Office 365 ユーザーがから投影されたローカル アカウントを表示します。次は、ObjectGUID の既定のソース アンカーを使用するのには、Azure AD 接続が構成されていると仮定しています (ソース アンカーの設定に関する詳細を参照してください[Azure AD 接続: 概念のデザイン](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) powershell の Active Directory のモジュールを持っているを前提としていますされてインストールされている (を参照してください[RSAT ツール](https://www.microsoft.com/en-gb/download/details.aspx?id=45520))。</span><span class="sxs-lookup"><span data-stu-id="57c2e-p118">If you are using directory synchronization to create and manage your Office 365 users, you can display which local account an Office 365 user has been projected from. The following assumes that Azure AD Connect has been configured to use the default source anchor of ObjectGUID (for more on configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) and assumes that the Active Directory module for powershell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):</span></span>
+<span data-ttu-id="68aab-194">ディレクトリ同期を使用して office 365 ユーザーを作成および管理している場合は、office 365 ユーザーがどのローカルアカウントから射影されているかを表示できます。</span><span class="sxs-lookup"><span data-stu-id="68aab-194">If you are using directory synchronization to create and manage your Office 365 users, you can display which local account an Office 365 user has been projected from.</span></span> <span data-ttu-id="68aab-195">次の例では、azure ad connect が ObjectGUID の既定のソースアンカーを使用するように構成されていると仮定しています (ソースアンカーの構成の詳細については、「 [azure ad connect: デザインの概念](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)」を参照してください)。また、powershell の Active Directory モジュールがインストールされている場合 (「 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)」を参照):</span><span class="sxs-lookup"><span data-stu-id="68aab-195">The following assumes that Azure AD Connect has been configured to use the default source anchor of ObjectGUID (for more on configuring a source anchor, see [Azure AD Connect: Design concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) and assumes that the Active Directory module for powershell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):</span></span>
 
 ```
 (Get-ADUser [guid][system.convert]::frombase64string((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).Guid
 ```
 
     
-## <a name="see-also"></a><span data-ttu-id="57c2e-196">関連項目</span><span class="sxs-lookup"><span data-stu-id="57c2e-196">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="68aab-196">関連項目</span><span class="sxs-lookup"><span data-stu-id="68aab-196">See also</span></span>
 
-[<span data-ttu-id="57c2e-197">Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。</span><span class="sxs-lookup"><span data-stu-id="57c2e-197">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="68aab-197">Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。</span><span class="sxs-lookup"><span data-stu-id="68aab-197">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="57c2e-198">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="57c2e-198">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="68aab-198">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="68aab-198">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="57c2e-199">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="57c2e-199">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="68aab-199">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="68aab-199">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 
