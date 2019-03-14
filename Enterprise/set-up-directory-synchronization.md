@@ -19,20 +19,20 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365 とオンプレミスの Active directory との間のディレクトリ同期をセットアップする方法について説明します。
-ms.openlocfilehash: 5f6e5be2a2137ee183a7d592d9a3e6b086e5be9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085266"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492947"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期のセットアップ
 
-Office 365 は、クラウドベースのユーザー id 管理サービス Azure Active Directory を使用してユーザーを管理します。オンプレミスの環境と Office 365 を同期することによって、オンプレミスの Active Directory を Azure AD と統合することもできます。同期を設定すると、ユーザーの認証を Azure AD 内で行うか、オンプレミスのディレクトリ内で行うかを決定できます。
+Office 365 は、クラウドベースのユーザー id 管理サービス Azure Active Directory を使用してユーザーを管理します。 オンプレミスの環境と Office 365 を同期することによって、オンプレミスの Active Directory を Azure AD と統合することもできます。 同期を設定すると、ユーザーの認証を Azure AD 内で行うか、オンプレミスのディレクトリ内で行うかを決定できます。
   
 ## <a name="office-365-directory-synchronization"></a>Office 365 ディレクトリ同期
 
-オンプレミスの組織と Office 365 の間で、同期された id またはフェデレーション id を使用できます。同期された id を使用すると、オンプレミスのユーザーを管理できます。また、クラウドでオンプレミスと同じパスワードを使用する場合は、Azure AD によって認証されます。これは、最も一般的なディレクトリ同期のシナリオです。パススルー認証またはフェデレーション id を使用して、オンプレミスのユーザーを管理し、オンプレミスのディレクトリによって認証されます。フェデレーション id には追加の構成が必要であり、ユーザーは一度だけサインインできるようになります。詳細については、「 [Office 365 id と Azure Active Directory について](about-office-365-identity.md)」を参照してください。
+オンプレミスの組織と Office 365 の間で、同期された id またはフェデレーション id を使用できます。 同期された id を使用すると、オンプレミスのユーザーを管理できます。また、クラウドでオンプレミスと同じパスワードを使用する場合は、Azure AD によって認証されます。 これは、最も一般的なディレクトリ同期のシナリオです。 パススルー認証またはフェデレーション id を使用して、オンプレミスのユーザーを管理し、オンプレミスのディレクトリによって認証されます。 フェデレーション id には追加の構成が必要であり、ユーザーは一度だけサインインできるようになります。 詳細については、「 [Office 365 id と Azure Active Directory について](about-office-365-identity.md)」を参照してください。
   
 ## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>Windows azure active directory 同期 (DirSync) から azure active directory Connect へのアップグレードを希望する場合
 
@@ -40,7 +40,7 @@ Office 365 は、クラウドベースのユーザー id 管理サービス Azur
   
 ## <a name="prerequisites-for-azure-ad-connect"></a>Azure AD Connect の前提条件
 
-Office 365 サブスクリプションを使用して Azure AD への無料サブスクリプションを取得します。ディレクトリ同期をセットアップすると、オンプレミスサーバーの1つに Azure Active directory Connect がインストールされます。
+Office 365 サブスクリプションを使用して Azure AD への無料サブスクリプションを取得します。 ディレクトリ同期をセットアップすると、オンプレミスサーバーの1つに Azure Active directory Connect がインストールされます。
   
 Office 365 の場合は、次の操作を行う必要があります。
   
@@ -51,14 +51,14 @@ Azure AD Connect をインストールするオンプレミスサーバーでは
   
 |**サーバー OS**|**その他のソフトウェア**|
 |:-----|:-----|
-|**Windows Server 2012 R2** | -PowerShell は既定でインストールされます。既定では、アクションは必要ありません。  <br> -Net 4.5.1 以降のリリースは、Windows Update を通じて提供されます。コントロールパネルで、Windows Server に最新の更新プログラムがインストールされていることを確認してください。 |
-|**windows server 2008 R2 Service Pack 1 (SP1)** または**windows server 2012** | -最新バージョンの PowerShell は、Windows Management Framework 4.0 で利用できます。[Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)で検索します。<br> -.net 4.5.1 以降のリリースは、 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)から入手できます。 |
+|**Windows Server 2012 R2** | -PowerShell は既定でインストールされます。既定では、アクションは必要ありません。  <br> -Net 4.5.1 以降のリリースは、Windows Update を通じて提供されます。 コントロールパネルで、Windows Server に最新の更新プログラムがインストールされていることを確認してください。 |
+|**windows server 2008 R2 Service Pack 1 (SP1)** または**windows server 2012** | -最新バージョンの PowerShell は、Windows Management Framework 4.0 で利用できます。 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)で検索します。  <br> -.net 4.5.1 以降のリリースは、 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)から入手できます。 |
 |**Windows Server 2008** | -最新サポートされている PowerShell のバージョンは、 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)で利用可能な Windows Management Framework 3.0 で利用できます。  <br> -.net 4.5.1 以降のリリースは、 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)から入手できます。 |
 
 > [!NOTE]
-> azure active directory DirSync を使用している場合、オンプレミスの active directory から azure active directory に同期できる配布グループメンバーの最大数は15000です。Azure AD Connect の場合、この番号は5万です。 
+> azure active directory DirSync を使用している場合、オンプレミスの active directory から azure active directory に同期できる配布グループメンバーの最大数は15000です。 Azure AD Connect の場合、この番号は5万です。 
   
-ハードウェア、ソフトウェア、アカウントとアクセス許可の要件、SSL 証明書の要件、および azure AD Connect のオブジェクト制限を慎重に確認するには、「 [azure Active Directory Connect の前提条件](https://go.microsoft.com/fwlink/p/?LinkId=716896)」を参照してください。
+ハードウェア、ソフトウェア、アカウントとアクセス許可の要件、SSL 証明書の要件、および azure AD Connect のオブジェクト制限を慎重に確認するには、「 [azure Active Directory Connect の前提条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)」を参照してください。
   
 また、Azure AD Connect[バージョンのリリース履歴](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history)で、各リリースに含まれているものを確認することもできます。
 
@@ -69,11 +69,11 @@ Azure AD Connect をインストールするオンプレミスサーバーでは
 
     ![[その他] メニューで、[ディレクトリ同期] を選択します。](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-3. [ **active directory の準備**] ページで、[ **Microsoft Azure Active directory Connect ツールのダウンロード**] リンクをクリックして開始します。azure Active Directory 接続のインストールプロセスの詳細については、「 [azure ad connect と azure ad connect 正常性インストールのロードマップ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)」を参照してください。
+3. [ **active directory の準備**] ページで、[ **Microsoft Azure Active directory Connect ツールのダウンロード**] リンクをクリックして開始します。 azure Active Directory 接続のインストールプロセスの詳細については、「 [azure ad connect と azure ad connect 正常性インストールのロードマップ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)」を参照してください。
 
 ## <a name="assign-licenses-to-synchronized-users"></a>同期されたユーザーにライセンスを割り当てる
 
-ユーザーを office 365 に同期した後は、それらのユーザーが作成されますが、メールなどの office 365 機能を使用できるようにするためにライセンスを割り当てる必要があります。手順については、「一般[法人向け Office 365 のユーザーにライセンスを割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)」を参照してください。
+ユーザーを office 365 に同期した後は、それらのユーザーが作成されますが、メールなどの office 365 機能を使用できるようにするためにライセンスを割り当てる必要があります。 手順については、「一般[法人向け Office 365 のユーザーにライセンスを割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)」を参照してください。
 
 ## <a name="finish-setting-up-domains"></a>ドメインのセットアップを完了する
 

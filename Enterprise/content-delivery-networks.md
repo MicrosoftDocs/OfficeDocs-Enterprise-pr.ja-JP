@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、コンテンツ配信ネットワーク (cdns) と、Office 365 がそれらを活用する方法について説明します。 cdns は、エンドユーザーにとって Office 365 を高速かつ信頼性の高い状態に保つことができます。 cdns を使用すると、Office 365 などのクラウドサービスは、web クライアントを介してサービスを使用しているときに、アイコンなどの一般的なコンテンツをユーザーのブラウザーにすばやくダウンロードします。
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458337"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492957"
 ---
 # <a name="content-delivery-networks"></a>コンテンツ配信ネットワーク
 
@@ -77,7 +77,7 @@ office 365 CDN の使用方法については、「 [SharePoint Online で offic
   
 ## <a name="is-my-data-safe"></a>データは安全ですか?
 
-当社では、ビジネスを実行するデータを確実に保護するために十分に注意してください。 cdns に格納されている顧客固有のデータは、送信と保存の両方で暗号化され、CDN に格納されていないデータと同じファイルレベルのアクセス許可で保護されます。
+当社では、ビジネスを実行するデータを確実に保護するために十分に注意してください。 cdns に格納されている顧客固有のデータは、送信と保存の両方で暗号化されます。
 
 CDN プロバイダーには、Office 365 セキュリティセンターで規定されているコミットメントとは異なるプライバシーとコンプライアンスの標準があります。 CDN サービスを使用してキャッシュされたデータは、Microsoft データ処理条件 (DPT) に準拠していない可能性があり、Office 365 セキュリティセンターのコンプライアンス境界の外にある場合があります。
 
@@ -89,7 +89,7 @@ Office 365 CDN プロバイダーのプライバシーとデータ保護の詳�
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>これらのサードパーティ製サービスを使用してネットワークをセキュリティで保護するにはどうすればよいですか?
 
-一連のパートナーサービスを活用することにより、office 365 は、office 365 を使用しているときに、可用性の要件を拡大縮小し、ユーザーの利便性を向上させることができます。 サードパーティ製サービスの Office 365 では、両方の証明書失効リストが含まれています。crl.microsoft.com、sa.symcb.com、cdns など。r3.res.outlook.com など。 office 365 で使用されるすべての CDN fqdn は、office 365 のカスタム fqdn で、office 365 の要求で fqdn に送信すると、その場所にある fqdn と基になるコンテンツを制御することができます。
+一連のパートナーサービスを活用することにより、office 365 は、office 365 を使用しているときに、可用性の要件を拡大縮小し、ユーザーの利便性を向上させることができます。 サードパーティ製サービスの Office 365 では、両方の証明書失効リストが含まれています。crl.microsoft.com、sa.symcb.com、cdns など。r3.res.outlook.com など。 office 365 で使用されるすべての CDN fqdn は、office 365 のカスタム fqdn です。 Office 365 の要求で fqdn に送信した場合は、CDN プロバイダーが fqdn およびその場所の基になるコンテンツを制御することができます。
   
 サードパーティに対する要求から Microsoft または office 365 データセンター宛ての要求を分離する必要があるお客様のために、 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)に関するガイダンスを作成しました。
   

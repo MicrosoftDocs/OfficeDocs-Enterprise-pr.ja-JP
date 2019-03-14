@@ -3,7 +3,7 @@ title: 単一の Windows PowerShell ウィンドウですべての Office 365 �
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 02/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Office 365 サービスに接続します。'
-ms.openlocfilehash: f863879fd83fb09fc748066fb25ca4b73895eb98
-ms.sourcegitcommit: c6efb42ffa0e81122152b67a3568a1ad1ff30aba
+ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
+ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "27521673"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30339515"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する
 
@@ -34,10 +34,10 @@ PowerShell を使用して Office 365 を管理する場合は、最大 5 つの
 これは Office 365 の管理に最適な状況ではありません。サービス間管理のために 5 つのウィンドウ間でデータを交換できないからです。このトピックでは、Office 365、Skype for Business Online、Exchange Online、SharePoint Online、および セキュリティ センターとコンプライアンス センター を管理する Windows PowerShell のインスタンスを使用する方法について説明します。
 
 >[!Note]
->この記事には現在のみが含まれています Office 365 ワールドワイド (+ GCC) クラウドに接続するためのコマンドにはです。追加の注記は、他の Office 365 のクラウドへの接続に関する情報が含まれる記事へのリンクを提供します。
+>現時点では、Office 365 ワールドワイド (+ GCC) クラウドに接続するためのコマンドのみが含まれています。 その他のノートには、他の Office 365 クラウドへの接続に関する情報を含む記事へのリンクが記載されています。
 >
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Windows PowerShell の単一のインスタンスからすべての Office 365 を管理する前に、次の前提条件を考慮してください。
   
@@ -59,11 +59,11 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
     
   - Windows Server 2008 R2 SP1*
     
-    \*Microsoft.NET Framework 4.5 をインストールする必要があります。*x*とし、いずれかの Windows Management Framework 3.0 または Windows Management Framework 4.0 です。詳細については、 [ [.NET Framework をインストールして](https://go.microsoft.com/fwlink/p/?LinkId=257868)Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)または[4.0 の Windows Management Framework](https://go.microsoft.com/fwlink/p/?LinkId=391344)を参照してください。
+    \*Microsoft .net Framework 4.5 をインストールする必要があります。*x*をクリックし、windows management framework 3.0 または windows management framework 4.0 のどちらかを選択します。 詳細については、「.net Framework と[windows management framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)または[windows management framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)[のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)」を参照してください。
     
     Skype for Business Online モジュール、および Office 365 モジュールの 1 つの要件のため、64 ビット バージョンの Windows を使用する必要があります。
     
-- Azure AD に必要なモジュールをインストールする必要があり、SharePoint Online では、ビジネス オンラインの Skype。
+- Azure AD、SharePoint online、Skype for business online に必要なモジュールをインストールする必要があります。
     
    - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
@@ -77,7 +77,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
 
 ## <a name="connection-steps-when-using-a-password"></a>パスワードを使用する場合の接続手順
 
-ここでは、1 つの PowerShell ウィンドウ内のすべてのサービスに接続する手順を実行します。
+1つの PowerShell ウィンドウですべてのサービスに接続する手順を次に示します。
   
 1. 管理者として Windows PowerShell を開きます ( **[管理者として実行]** を使用)。
     
@@ -87,19 +87,19 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   $credential = Get-Credential
   ```
 
-3. Azure Active ディレクトリ (AD) Azure Active Directory の PowerShell を使用してグラフ モジュールを接続するには、このコマンドを実行します。
+3. このコマンドを実行して、azure active directory PowerShell for Graph モジュールを使用して azure active directory (AD) に接続します。
     
   ```
   Connect-AzureAD -Credential $credential
   ```
   
-  または、Microsoft Azure Active Directory モジュールを Windows PowerShell モジュールを使用する場合は、このコマンドを実行します。
+  または、Windows PowerShell 用 Microsoft Azure Active Directory モジュールモジュールを使用している場合は、次のコマンドを実行します。
       
   ```
   Connect-MsolService -Credential $credential
  ```
 
-4. SharePoint Online に接続するためのこれらのコマンドを実行します。交換_\<domainhost >_ ドメインの実際の値とします。たとえば、"litwareinc.onmicrosoft.com"を_\<domainhost >_ の値は、"litwareinc"です。
+4. 次のコマンドを実行して、SharePoint Online に接続します。 _ \<domainhost>_ をドメインの実際の値に置き換えます。 たとえば、"litwareinc.onmicrosoft.com" の場合、 _ \<domainhost>_ の値は "litwareinc" です。
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -122,7 +122,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   ```
 
 >[!Note]
->世界の検索サイト以外の Office 365 のクラウドの Exchange Online に接続するには、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)を参照してください。
+>全世界以外の Office 365 クラウドの exchange online に接続する方法については、「 [exchange online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 >
 
 7. 次のコマンドを実行して、セキュリティ センターとコンプライアンス センター に接続します。
@@ -133,17 +133,17 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   ```
 
 >[!Note]
->セキュリティへの接続に&amp;以外の世界の検索サイトは、Office 365 のクラウドのコンプライアンス センターは、 [Office 365 のセキュリティとコンプライアンス センター PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)を参照してください。
+>全世界以外の office 365 &amp;クラウドのセキュリティコンプライアンスセンターに接続する方法については、「 [connect to office 365 Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
 >
 
-ここでグラフ モジュールの Azure Active Directory の PowerShell を使用する場合は、1 つのブロックですべてのコマンドを示します。、自分のドメインのホストの名前を指定し、それらすべてを同時に実行します。
+Azure Active Directory PowerShell for Graph モジュールを使用している場合、1つのブロック内のすべてのコマンドがあります。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```
-$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
@@ -153,14 +153,14 @@ $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
 Import-PSSession $SccSession -Prefix cc
 ```
 
-代わりに、ここではコマンドをすべて 1 つのブロックで、Microsoft Azure Active Directory モジュールを Windows PowerShell モジュールを使用する場合です。、自分のドメインのホストの名前を指定し、それらすべてを同時に実行します。
+また、「Windows PowerShell 用 Microsoft Azure Active Directory モジュール」モジュールを使用している場合は、1つのブロック内のすべてのコマンドを次に示します。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```
-$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
 Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
 Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
@@ -178,40 +178,40 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>多要素認証を使用する場合の接続手順
 
-Azure AD に接続する 1 つのブロック内のすべてのコマンドをここでは、SharePoint Online と多要素認証を使用して 1 つのウィンドウで Buiness の Skype です。グローバル管理者アカウントのユーザー プリンシパル名 (UPN) の名前と、ドメインのホスト名を指定し、それらすべてを同時に実行します。
+azure Active Directory PowerShell for Graph モジュールを使用して、単一のウィンドウで多要素認証を使用して、azure AD、SharePoint Online、および Skype for buiness 接続するすべてのコマンドが、1つのブロックに含まれています。 ユーザーアカウントのユーザープリンシパル名 (UPN) 名とドメインホスト名を指定し、それらを一度にすべて実行します。
 
 ````
-$acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-AzureAD
 #SharePoint Online
-Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 ````
 
-Microsoft Azure Active Directory モジュールを Windows PowerShell モジュールを使用する場合は、すべてのコマンドをここでは代わりに、します。
+または、「Windows PowerShell 用 Microsoft Azure Active Directory モジュール」モジュールを使用する場合のすべてのコマンドを次に示します。
 
 ````
-$acctName="<UPN of a global administrator account>"
-$domainHost="<domain host name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
 Connect-MsolService
 #SharePoint Online
-Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 ````
 
-Exchange Online とセキュリティの&amp;コンプライアンス センターでは、多要素認証を使用して接続するのには次のトピックを参照してください。
+Exchange Online およびセキュリティ&amp;コンプライアンスセンターでは、多要素認証を使用して接続するための次のトピックを参照してください。
 
 - [多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
-- [Office 365 のセキュリティとコンプライアンス センター PowerShell の多要素認証を使用してへの接続します。](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
+- [多要素認証を使用して Office 365 Security & コンプライアンスセンターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
-どちらの場合で、Exchange オンライン リモート PowerShell モジュールの別のセッションを使用して接続する必要があります。
+どちらの場合も、Exchange Online リモート PowerShell モジュールの個別のセッションを使用して接続する必要があることに注意してください。
 
 
 ## <a name="see-also"></a>関連項目

@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用する必要がある理由
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: 管理者が Office 365 PowerShell を使って Office 365 を管理すべき理由を説明します。ある場合は効率のため、他の場合は必要であるためです。'
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897470"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538995"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell を使用する必要がある理由
 
@@ -33,9 +33,9 @@ Office 365 管理センター では、Office 365 ユーザー アカウント�
     
 - Office 365 PowerShell は一括操作の実行に優れています。
     
-- Office 365 PowerShell はデータのフィルター処理に優れている
+- Office 365 PowerShell はデータのフィルター処理に優れています。
     
-- Office 365 PowerShell を使用するとデータの印刷や保存が簡単にできる
+- Office 365 PowerShell を使用すると、データの印刷や保存が簡単にできます。
     
 - Office 365 PowerShell を使用すると複数のサーバー製品を管理できる
     
@@ -65,7 +65,7 @@ Office 365 管理センター には多くの有用な情報が表示されま�
   
 ![Office 365 管理センター内のユーザーとグループの表示の例です。](media/o365-powershell-users-and-groups.png)
   
-多くの目的で、必要な情報が表示されます。ただし、必要なときよりもあります。たとえば、Office 365 のライセンス (Office 365 機能を利用してユーザーに) 部分的に依存してそのユーザーの地理的な場所に。ポリシーと機能を米国に住むユーザーに拡張することができない場合がありますポリシーおよびインドまたはベルギーに住むユーザーに拡張することができます機能と同じです。Office 365 管理センターを使用するには次の手順に、ユーザーの地理的な位置を決定します。
+ここには、さまざまな理由で把握すべき情報が表示されます。 しかし、もっと多くの情報が必要な場合もあります。 たとえば、office 365 ライセンス (およびユーザーが使用できる office 365 機能) は、そのユーザーの地理的な場所によって異なります。 米国内に在住しているユーザーに対して拡張可能なポリシーと機能は、インドやベルギー在住のユーザーに対して拡張可能なポリシーと機能と同じではない場合があります。 ユーザーの地理的な場所は Office 365 管理センター で次の手順を使用して判別できます。
   
 1. ユーザーの **表示名** をダブルクリックします。
     
@@ -93,7 +93,6 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell を使用するとデータの印刷や保存が簡単にできる
 
-Office 365 の管理センターでは、データのリストを表示できます。Skype のオンライン ビジネスに有効になっているユーザーの一覧を表示するビジネスのオンライン管理センターの Skype の例を以下に示します。
+Office 365 管理センターでは、データのリストを表示することができます。 以下に、skype for business online 管理センターの例を示します。このリストには、skype for business online が有効になっているユーザーの一覧が表示されます。
   
 ![Skype for Business Online 管理センターで、Skype for Business Online に対して有効になっているユーザーの一覧を表示する例です。](media/o365-powershell-lync-users.png)
   
@@ -407,7 +404,6 @@ $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False

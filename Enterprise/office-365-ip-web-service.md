@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "26985772"
 ---
-# <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP アドレスと URL の Web サービス **
+# <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP アドレスと URL の Web サービス**
 
 Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、また変更の最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。XML 形式は、2018 年 10 月 2 日に廃止される予定です。
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 のセッションのタイムアウト
+title: Office 365 のセッションタイムアウト
 ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
@@ -16,31 +16,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
-description: Securtiy と Office 365 クライアント アプリケーションでのアクセスの容易さのバランスをとるには、セッションのタイムアウトが使用されます。
-ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
-ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
+ms.collection:
+- M365-security-compliance
+description: セッションタイムアウトは、Office 365 クライアントアプリでの安全なアクセスと、アクセスの容易さを両立させるために使用されます。
+ms.openlocfilehash: 05e0ddbfb569f476986567e55bbf93428125b3af
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27378493"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372884"
 ---
-# <a name="session-timeouts-for-office-365"></a>Office 365 のセッションのタイムアウト
+# <a name="session-timeouts-for-office-365"></a>Office 365 のセッションタイムアウト
 
-セッションの有効期間は、Office 365 の認証の重要な部分であり、セキュリティと資格情報のユーザーが表示されたら回数のバランスの重要なコンポーネントです。
+セッションの有効期限は、Office 365 の認証の重要な部分であり、セキュリティのバランスの重要なコンポーネントであり、ユーザーが資格情報の入力を求められる回数です。
   
 ## <a name="session-times-for-office-365-services"></a>Office 365 サービスのセッション時間
 
-ユーザーは、Office 365 の web アプリケーションやモバイル アプリケーションのいずれかで認証、セッションが確立されます。セッションが終了するまで、ユーザーは再認証する必要はありません。セッションは、ブラウザーやタブを閉じるとき、またはなど、パスワードをリセットすると、他の理由により、認証トークンの有効期限が切れると、ユーザーがアクティブになっている場合に期限が切れることができます。Office 365 サービスでは、各サービスの一般的な使用に対応する別のセッションのタイムアウトがあります。
+ユーザーが Office 365 web apps またはモバイルアプリのいずれかで認証を行うと、セッションが確立されます。 セッションの期間中は、ユーザーを再認証する必要はありません。 ユーザーがアクティブでないとき、ブラウザーまたはタブを閉じるとき、またはパスワードがリセットされたなどの理由で認証トークンの有効期限が切れたときに、セッションが期限切れになることがあります。 Office 365 サービスのセッションタイムアウトは、各サービスの一般的な使用に対応しています。
   
-次の表に、Office 365 サービスのセッションの有効期間を示します。
+次の表に、Office 365 サービスのセッション有効期間を示します。
   
 |**Office 365 サービス**|**セッションのタイムアウト**|
 |:-----|:-----|
-|Office 365 管理センター  <br/> |8 時間ごとに管理センターの資格情報を提供するように求められます。  <br/> |
-|SharePoint Online  <br/> |5 日間のアクティブでない限り、ユーザーは、**サインインを維持**するかを選択します。ユーザーがアクセスする SharePoint Online 再度前のサインインから 24 以上の時間が経過した後、タイムアウト値は 5 日にリセットされます。<br/> |
-|Outlook Web App  <br/> |6 時間です。  <br/> [セット OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378)コマンドレットの_ActivityBasedAuthenticationTimeoutInterval_パラメーターを使用して、この値を変更できます。  <br/> |
-|Azure Active Directory  <br/> (現代の認証が有効になっているとは、Office 2013 の Windows クライアントで使用)  <br/> | 現代の認証では、アクセス ・ トークンとトークンの更新を使用して、Azure Active Directory を使用して Office 365 リソースへのユーザー アクセスを許可します。アクセス トークンは JSON Web トークン認証に成功した後、有効な 1 時間です。更新トークンの有効期間が長くなりますがも用意されています。アクセス トークンが期限切れに、Office クライアントは新しいアクセス トークンを取得するのには有効な更新トークンを使用します。ユーザーの最初の認証が有効の場合、この交換が成功します。  <br/>  リフレッシュ トークンは 90 日間、有効期間は、継続的な使用は、失効するまで有効なことができます。  <br/>  更新トークンは、次のようにいくつかのイベントによって無効にすることができます。  <br/>  リフレッシュ トークンが発行されてから、ユーザーのパスワードが変更されました。  <br/>  管理者は、ユーザーがアクセスしようとしてリソースへのアクセスを制限する条件付きのアクセス ポリシーを適用できます。  <br/> |
-|Android、iOS、および Windows の 10 のモバイル アプリケーションを SharePoint と OneDrive  <br/> |アクセス トークンの既定の有効期間は、1 時間です。更新トークンの既定の最大使用頻度の低い時間は、90 日間です。<br/> [トークンおよびトークンの有効期間を構成する方法の詳細についてください。](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> 更新を取り消すにはトークンがパスワードをリセットするユーザーの Office 365  <br/> |
-|Yammer を Office 365 にサインイン  <br/> |ブラウザーの有効期間。ユーザーがブラウザーを閉じるし、Yammer に新しいブラウザーでアクセス、Yammer を再認証に Office 365 にします。ユーザーは、サード ・ パーティ製のブラウザーをキャッシュ cookie を使用している場合、ブラウザーを再度開き、ときに再認証する必要はありません。<br/> > [!NOTE]> これは、Yammer の Office 365 にサインインを使用してネットワークでのみ有効です。           |
+|Office 365 管理センター  <br/> |管理センターの資格情報を8時間ごとに提供するように求められます。  <br/> |
+|SharePoint Online  <br/> |ユーザーが **[サインイン状態を保持**] を選択した場合に限り、5日間非アクティブです。 以前のサインインから24時間以上経過した後に SharePoint Online にアクセスすると、タイムアウト値は5日にリセットされます。  <br/> |
+|Outlook Web App  <br/> |6時間。  <br/> この値を変更するには、このコマンドレットの_activityの authenticationtimeoutinterval_パラメーターを使用します。 [](https://go.microsoft.com/fwlink/p/?LinkId=615378)  <br/> |
+|Azure Active Directory  <br/> (モダン認証が有効になっている Office 2013 Windows クライアントによって使用されます)  <br/> | モダン認証は、アクセストークンと更新トークンを使用して、Azure Active Directory を使用して Office 365 リソースへのユーザーアクセスを付与します。 アクセストークンは、認証が成功した後に提供される JSON Web トークンで、1時間有効です。 有効期間の長い更新トークンも提供されます。 アクセストークンが期限切れになると、Office クライアントは有効な更新トークンを使用して新しいアクセストークンを取得します。 この exchange は、ユーザーの初期認証がまだ有効である場合に成功します。  <br/>  更新トークンは90日に有効であり、継続的に使用することで、失効するまで有効にすることができます。  <br/>  更新トークンは、次のようないくつかのイベントによって無効にすることができます。  <br/>  更新トークンが発行されてから、ユーザーのパスワードが変更されました。  <br/>  管理者は、ユーザーがアクセスしようとしているリソースへのアクセスを制限する条件付きアクセスポリシーを適用できます。  <br/> |
+|Android、iOS、Windows 10 用の SharePoint および OneDrive モバイルアプリ  <br/> |アクセストークンの既定の有効期間は1時間です。 更新トークンの既定の最大非アクティブ時間は90日です。  <br/> [トークンの詳細とトークンの有効期間を構成する方法について](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> 更新トークンを取り消すには、ユーザーの Office 365 パスワードをリセットします。  <br/> |
+|Office 365 サインインを使用する Yammer  <br/> |ブラウザーの有効期間。 ユーザーが新しいブラウザーでブラウザーを終了し、yammer にアクセスすると、yammer は Office 365 を使用してそれらを再認証します。 ユーザーが cookie をキャッシュするサードパーティ製ブラウザーを使用している場合は、ブラウザーを再度開いたときに再認証する必要はありません。  <br/> > [!NOTE]> これは、Yammer の Office 365 サインインを使用しているネットワークに対してのみ有効です。           |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ
+title: office 2013 および office 2016 クライアントアプリでの先進認証のしくみ
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -18,37 +18,39 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
-description: Office 365 最新認証のしくみが異なる Office 2013 および 2016 クライアント アプリケーションについて説明します。
-ms.openlocfilehash: 2a5e218ca751f341e2a3a0ffd164f000ee503279
-ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
+ms.collection:
+- M365-security-compliance
+description: office 365 モダン認証の動作が office 2013 および2016クライアントアプリによって異なる方法について説明します。
+ms.openlocfilehash: 0e7b1a91a13fdd1ea5bb5fd3b42fcda60c704d6f
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27378503"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372914"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ
+# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>office 2013 および office 2016 クライアントアプリでの先進認証のしくみ
 
-Office 365 テナントに認証の構成を Exchange Online、SharePoint Online では、Skype のオンライン ビジネスのに基づいて、Office 2013 および 2016 の Office クライアント アプリケーションの最新の認証機能を使用する方法を学習するには、この資料を参照してください。
+この記事では、office 2013 および office 2016 クライアントアプリが、Exchange online、SharePoint online、Skype for business online の office 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
   
-## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 サービスの最新の認証の可用性
+## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 サービスの先進認証の利用可能性
 
-Office 365 サービスは、最新の認証の既定の状態は次のとおりです。
+Office 365 サービスの場合、モダン認証の既定の状態は次のとおりです。
   
-- オンラインの Exchange の既定で有効**に**します。[を有効または無効にする最新の認証では、Exchange オンライン](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662)を無効または有効にするを参照してください。 
+- 既定では、Exchange Online に対してオン**に**なっています。 オフまたはオンにするには、「 [Exchange Online で先進認証を有効または無効](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662)にする」を参照してください。 
     
-- SharePoint Online に既定でオン**に**します。 
+- 既定では、SharePoint Online に対してオン**に**なっています。 
     
-- Skype のオンライン ビジネスの既定で有効**に**します。オフまたはオンにするには、[現代の認証のビジネスのオンラインの Skype を有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)を参照してください。
+- 既定では、Skype for business Online に対してオン**に**なっています。 この機能をオフまたはオンにするには、「[モダン認証のために Skype for business Online を有効](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)にする」を参照してください。
     
-## <a name="sign-in-behavior-of-office-client-apps"></a>Office クライアント アプリケーションのサインインの問題
+## <a name="sign-in-behavior-of-office-client-apps"></a>Office クライアントアプリのサインイン動作
 
-Office 2013 のクライアント アプリケーションは、既定で、従来の認証をサポートします。レガシは、サインインのマイクロソフト オンライン アシスタント認証または基本認証をサポートすることを意味します。クライアントは、Windows ではこれらのクライアントを最新の認証機能を使用するためには、レジストリ キーの設定があります。手順については、 [Windows デバイスでの Office 2013 の最新認証を有効にする](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)を参照してください。
+Office 2013 クライアントアプリは、既定で従来の認証をサポートしています。 従来の場合は、Microsoft Online サインインアシスタントまたは基本認証のいずれかをサポートしています。 これらのクライアントが先進認証機能を使用するためには、Windows クライアントにレジストリキーが設定されています。 手順については、「 [Windows デバイスで Office 2013 の先進認証を有効にする](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)」を参照してください。
   
-ビジネス用の Skype との連携について説明する[ビジネス用の Skype で最新の認証 (ADAL) を使用する方法](https://go.microsoft.com/fwlink/p/?LinkId=785431)を確認するには。 
+skype for business での[先進認証 (ADAL) の使用](https://go.microsoft.com/fwlink/p/?LinkId=785431)方法については、「方法」を参照してください。 
   
-2016 の Office クライアントは、既定では、最新の認証をサポートし、これらの新しいフローを使用するクライアントの操作は必要ありません。ただし、従来の認証を使用する明示的なアクションが必要です。
+Office 2016 クライアントは既定で先進認証をサポートしており、クライアントがこれらの新しいフローを使用するために必要な操作はありません。 ただし、従来の認証を使用するには、明示的なアクションが必要です。
   
-現代の認証を有効にするかどうかによって Office 365 サービスを使用して Office 2013 および Office 2016 のクライアント認証の動作を確認するのには以下のリンクをクリックします。
+次のリンクをクリックすると、モダン認証が有効になっているかどうかに応じて、office 2013 と office 2016 クライアント認証が office 365 サービスでどのように動作するかを確認できます。
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -58,46 +60,46 @@ Office 2013 のクライアント アプリケーションは、既定で、従�
     
 ### <a name="exchange-online"></a>Exchange Online
 
-次の表は、最新の認証の有無にかかわらず、Exchange Online に接続するときに Office 2013 または Office 2016 のクライアント アプリケーションの認証の動作を説明します。
+次の表は、モダン認証を使用して、または使用しない状態で Exchange Online に接続した場合の office 2013 または office 2016 クライアントアプリの認証動作を示しています。
   
-|Office クライアント アプリケーションのバージョン。|レジストリ キーが存在します。|現代の認証をします。|テナント (既定値) の最新の認証と認証動作が有効に。|現代の認証と認証動作電源をオフにテナント。|
+|Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 (既定) * * * *|テナントの先進認証がオフになっている認証動作 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2016  <br/> |いいえ、または EnableADAL = 1  <br/> |Yes  <br/> |現代の認証が試みられます。現代認証接続を拒否して、基本認証が使用されます。テナントが有効でない場合、サーバーは最新の認証を拒否します。  <br/> |現代の認証が試みられます。現代認証接続を拒否して、基本認証が使用されます。テナントが有効でない場合、サーバーは最新の認証を拒否します。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |Yes  <br/> |現代の認証が試みられます。現代認証接続を拒否して、基本認証が使用されます。テナントが有効でない場合、サーバーは最新の認証を拒否します。  <br/> |現代の認証が試みられます。現代認証接続を拒否して、基本認証が使用されます。テナントが有効でない場合、サーバーは最新の認証を拒否します。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
-|Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
-|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |Yes  <br/> |現代の認証が試みられます。現代認証接続を拒否して、基本認証が使用されます。テナントが有効でない場合、サーバーは最新の認証を拒否します。  <br/> |現代の認証が試みられます。現代認証接続を拒否して、基本認証が使用されます。テナントが有効でない場合、サーバーは最新の認証を拒否します。  <br/> |
+|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |有  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |有  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 0  <br/> |無  <br/> |基本認証  <br/> |基本認証  <br/> |
+| Office 2013   <br/> |いいえ  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
+| Office 2013   <br/> |はい、EnableADAL = 1  <br/> |有  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
    
 ### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
 
-次の表は、最新の認証の有無にかかわらず、SharePoint Online に接続するときに Office 2013 または Office 2016 のクライアント アプリケーションの認証の動作を説明します。
+次の表に、モダン認証を使用して、または使用しない状態で SharePoint Online に接続した場合の office 2013 または office 2016 クライアントアプリの認証動作を示します。
   
-|Office クライアント アプリケーションのバージョン。|レジストリ キーが存在します。|現代の認証をします。|テナント (既定値) の最新の認証と認証動作が有効に。|現代の認証と認証動作電源をオフにテナント。|
+|Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 (既定) * * * *|テナントの先進認証がオフになっている認証動作 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2016  <br/> |いいえ、または EnableADAL = 1  <br/> |Yes  <br/> |現代認証のみです。  <br/> |接続に失敗しました。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |Yes  <br/> |現代認証のみです。  <br/> |接続に失敗しました。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |
-|Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |
-|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |Yes  <br/> |現代認証のみです。  <br/> |接続に失敗しました。  <br/> |
+|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |有  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |有  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 0  <br/> |無  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
+| Office 2013   <br/> |いいえ  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
+| Office 2013   <br/> |はい、EnableADAL = 1  <br/> |有  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
    
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 <a name="BK_SFBO"> </a>
 
-次の表は、接続するとき Skype オンライン ビジネスの最新の認証の有無にかかわらず、Office 2013 または 2016 の Office クライアント アプリケーションの認証の動作を説明します。
+次の表に、office 2013 または office 2016 クライアントアプリが先進認証を使用して、または使用していない Skype for business Online に接続する場合の認証動作を示します。
   
-|Office クライアント アプリケーションのバージョン。|レジストリ キーが存在します。|現代の認証をします。|現代の認証と認証動作が有効のテナント。|テナント (既定値) の最新の認証と認証動作が無効になって。|
+|Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 * * * *|テナントの先進認証がオフになっている認証動作 (既定) * * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2016  <br/> |いいえ、または EnableADAL = 1  <br/> |Yes  <br/> |現代の認証が試みられます。現代認証接続を拒否して、マイクロソフトのオンラインでサインイン アシスタントが使用されます。Skype オンライン ビジネスのテナントに対しては有効でない場合、サーバーは最新の認証を拒否します。  <br/> |現代の認証が試みられます。現代認証接続を拒否して、マイクロソフトのオンラインでサインイン アシスタントが使用されます。Skype オンライン ビジネスのテナントに対しては有効でない場合、サーバーは最新の認証を拒否します。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |Yes  <br/> |現代の認証が試みられます。現代認証接続を拒否して、マイクロソフトのオンラインでサインイン アシスタントが使用されます。Skype オンライン ビジネスのテナントに対しては有効でない場合、サーバーは最新の認証を拒否します。  <br/> |現代の認証が試みられます。現代認証接続を拒否して、マイクロソフトのオンラインでサインイン アシスタントが使用されます。Skype オンライン ビジネスのテナントに対しては有効でない場合、サーバーは最新の認証を拒否します。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |
-|Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |
-|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |Yes  <br/> |現代の認証が試みられます。現代認証接続を拒否して、マイクロソフトのオンラインでサインイン アシスタントが使用されます。Skype オンライン ビジネスのテナントに対しては有効でない場合、サーバーは最新の認証を拒否します。  <br/> |マイクロソフト オンライン サインイン アシスタントのみです。  <br/> |
+|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |有  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |有  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 0  <br/> |無  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
+| Office 2013   <br/> |いいえ  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
+| Office 2013   <br/> |はい、EnableADAL = 1  <br/> |有  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-[Windows デバイスの Office 2013 の先進認証を有効にする](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Windows デバイスで Office 2013 の先進認証を有効にする](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
-[(Office 365 の管理者) の Office 365 の展開の多要素認証の計画](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[office 365 の展開で多要素認証を計画する (office 365 管理者向け)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
-[(エンドユーザー用) の 2 段階の検証を Office 365 にサインインします。](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+[2段階認証を使用して Office 365 にサインインします (エンドユーザー向け)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
