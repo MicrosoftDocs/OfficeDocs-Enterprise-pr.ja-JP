@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897060"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573681"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
  **概要:** Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。
   
-Office 365 高度なセキュリティ管理、ポリシーを監視し、調査し、可能な改善策を実行できるように、Office 365 サブスクリプションの場合、不審なアクティビティの通知を作成することと呼ばれていた、office 365 のクラウド アプリケーション セキュリティアクションです。詳細については、[概要のクラウド アプリケーションのセキュリティでは、Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)を参照してください。
+office 365 Cloud App Security (以前の office 365 Advanced Security Management) を使用すると、office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。これにより、問題を調査して修復できるようになります。action. 詳細については、「 [Office 365 の Cloud App Security の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
   
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
@@ -50,15 +50,15 @@ Office 365 高度なセキュリティ管理、ポリシーを監視し、調査
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Office 365 の既定の通知動作をテストする
 
-1. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
+1. Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
   - ライトウェイトの Office 365 開発/テスト環境を使用している場合は、ローカル コンピューターからサインインします。
     
   - シミュレーションのエンタープライズ Office 365 開発/テスト環境を使用している場合は、[Azure ポータル](https://portal.azure.com) を使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。
     
-2. ポータルのメイン ページで、 **[管理]** をクリックします。
+2. ポータルのメイン ページで、**[管理]** をクリックします。
     
-3. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
+3. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
 4. **[User 4]** アカウントをクリックします。
     
@@ -80,9 +80,9 @@ Office 365 高度なセキュリティ管理、ポリシーを監視し、調査
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Cloud App Security を有効にし、構成する
 
-1. Office 365 ポータルに移動 ([https://portal.office.com](https://portal.office.com)) し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
+1. Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
-2. **管理者**のタイルをクリックします。[場所] タブの [ **Office 管理者センター** **管理者 _gt セキュリティ & 準拠の中央に配置**] をクリックします。
+2. **[管理]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
     
 3. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
     
@@ -112,7 +112,7 @@ Office 365 高度なセキュリティ管理、ポリシーを監視し、調査
 
 1. 右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。
     
-2. [https://portal.office.com](https://portal.office.com) に移動します。
+2. [https://www.office.com](https://www.office.com) に移動します。
     
 3. Office 365 のサインイン ページで、 **[別のアカウントを使用する]** をクリックします。
     
@@ -126,7 +126,7 @@ Office 365 高度なセキュリティ管理、ポリシーを監視し、調査
     
 8. ポータルのメイン ページで、**[管理]** をクリックします。
     
-9. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
+9. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
 10. **[User 5]** アカウントをクリックします。
     
@@ -136,13 +136,13 @@ Office 365 高度なセキュリティ管理、ポリシーを監視し、調査
     
 13. 右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。 
     
-14. [https://portal.office.com](https://portal.office.com) に移動します。
+14. [https://www.office.com](https://www.office.com)を開きます。
     
 15. **[Office 365 サインイン]** ページで、全体管理者のアカウント名をクリックします。
     
 16. パスワードを入力し、 **[サインイン]** をクリックします。
     
-17. ポータルのメイン ページで、 **[管理]** をクリックします。
+17. Office 365 ポータルページで、[**管理者**] をクリックします。
     
 18. **[セキュリティとコンプライアンス]** タイルをクリックします。
     
