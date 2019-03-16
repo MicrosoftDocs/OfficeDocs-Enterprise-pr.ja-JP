@@ -3,7 +3,7 @@ title: データ移行をリクエストする方法
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
-ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
+ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604508"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650080"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -39,13 +39,12 @@ ms.locfileid: "29604508"
 |英国  <br/> |2017 年 3 月 15 日  <br/> |2017 年 9 月 15 日  <br/> |
 |韓国  <br/> |2017 年 5 月 1 日  <br/> |2017 年 10 月 31 日  <br/> |
 |フランス  <br/> |2018 年 3 月 14 日  <br/> |2018 年 9 月 15 日  <br/> |
+|アラブ首長国連邦  <br/> |計画  <br/> |計画  <br/> |
+|南アフリカ  <br/> |計画  <br/> |計画  <br/> |
    
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
 
-> [!NOTE]
-> このオプションは、Office 365 管理センター プレビューでのみ使用可能です。アクセス方法については、「[一般法人向け Office 365 - 管理者向けヘルプ](https://aka.ms/365admin)」を参照してください。移行のための要求は、すべて Office 365 管理センター を通じて行う必要があります。サポートがユーザーの代わりにこの選択内容を有効にしたり、無効にしたりすることはできません。 
-  
-対象となるお客様は、 [Office 365 管理者センター](https://aka.ms/365admin)、主要な顧客データ、新しいデータ センターの領域に移動するように依頼することができる内のページで表示されます。  
+対象となるお客様には、 [Office 365 管理センター](https://aka.ms/365admin)にページが表示されます。これにより、お客様は自社のコア顧客データを新しいデータセンターリージョンに移動するよう要求できます。  
   
 Office 365 管理センター のページにアクセスするには、左側のナビゲーション ウィンドウで **[設定]** を展開し、 **[組織プロファイル]** をクリックします。
   
@@ -55,7 +54,7 @@ Office 365 管理センター のページにアクセスするには、左側�
   
 ![データ常駐のカード](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
-**次のいずれかの場合このセクションは表示されません**。
+**次のいずれかに該当する場合は、このセクションは表示されません**。
 - テナントが移動プログラムの対象ではありません。 
 - すべてのデータが既に新しい geo に配置されています (ページの [データの場所] セクションを参照してください)。 
   
@@ -80,7 +79,7 @@ Office 365 管理センター のページにアクセスするには、左側�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-まだ、マイクロソフトのチームでは、マイクロソフトのチームのデータの常駐サービスが利用可能な国のデータ ・ センターを地域内の残りの部分にお客様のコンテンツの移行をサポートしていません。 そのため、新規のお客様だけではすべての国では、マイクロソフトのチームがデータの常駐サービスをサポートしている新しい領域に格納されているデータがあります。 貴社での Office 365 のデータの常駐サービスの詳細については[があるデータですか?](https://products.office.com/where-is-your-data-located)   
+microsoft teams では、microsoft teams のデータ常駐サービスが利用可能な国内のデータセンターへの、お客様のコンテンツのインプレース移行はまだサポートされていません。  そのため、Microsoft Teams がデータ常駐をサポートしている新しい地域では、新しい顧客のみが国内にデータを格納することになります。  Office 365 データ常駐の詳細については、「データの保存場所」を参照[してください。](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>移行をリクエストする前に選択可能なアクション
 
@@ -108,11 +107,11 @@ IP アドレスを追加した後には、新しいデータセンター geo へ
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>モバイル デバイス上の古い Exchange 設定を更新するようユーザーに通知する
 
-ユーザーは、 **m.outlook.com**または**podxxxxx.outlook.com**に設定する Exchange Server でモバイル デバイスを持って、お勧め**outlook.office365.com**にそれらを切り替える[セットを同期するモバイル デバイス上の指示に従う自分のアカウントで](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)。
+Exchange Server が**m.outlook.com**または**podxxxxx.outlook.com**に設定されているモバイルデバイスをユーザーが所有している場合は、 **outlook.office365.com**に切り替えることをお勧めします。「[同期するモバイルデバイスの設定」の手順に従ってください。自分のアカウントを使用](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)します。
 
 ## <a name="related-topics"></a>関連項目
 
-[コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
+[コアデータを新しい Office 365 データセンター geo に移行する](moving-data-to-new-datacenter-geos.md)
 
 [データ移行についての一般的な FAQ](data-move-faq.md)
 
