@@ -1,9 +1,9 @@
 ---
-title: フェデレーション認証フェーズ 1 を構成する Azure を高可用性を実現
+title: 高可用性フェデレーション認証のフェーズ 1 Azure を構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,165 +12,167 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897480"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650160"
 ---
-# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a><span data-ttu-id="6b3c1-103">高可用性フェデレーション認証のフェーズ 1:Azure を構成する</span><span class="sxs-lookup"><span data-stu-id="6b3c1-103">High availability federated authentication Phase 1: Configure Azure</span></span>
+# <a name="high-availability-federated-authentication-phase-1-configure-azure"></a><span data-ttu-id="2ec2b-103">高可用性フェデレーション認証のフェーズ 1:Azure を構成する</span><span class="sxs-lookup"><span data-stu-id="2ec2b-103">High availability federated authentication Phase 1: Configure Azure</span></span>
 
- <span data-ttu-id="6b3c1-104">**概要:** Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-104">**Summary:** Configure the Microsoft Azure infrastructure to host high availability federated authentication for Office 365.</span></span>
+ <span data-ttu-id="2ec2b-104">**概要:** Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-104">**Summary:** Configure the Microsoft Azure infrastructure to host high availability federated authentication for Office 365.</span></span>
   
-<span data-ttu-id="6b3c1-p101">このフェーズでは、リソース グループ、2、3、および 4 の段階で仮想マシンをホストする Azure 内の仮想ネットワーク (VNet)、および可用性を設定を作成します。上に移動する前に、このフェーズを完了する必要があります[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)です。フェーズのすべては、 [Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p101">In this phase, you create the resource groups, virtual network (VNet), and availability sets in Azure that will host the virtual machines in phases 2, 3, and 4. You must complete this phase before moving on to [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
+<span data-ttu-id="2ec2b-105">このフェーズでは、フェーズ2、3、4で仮想マシンをホストする Azure で、リソースグループ、仮想ネットワーク (VNet)、および可用性セットを作成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-105">In this phase, you create the resource groups, virtual network (VNet), and availability sets in Azure that will host the virtual machines in phases 2, 3, and 4.</span></span> <span data-ttu-id="2ec2b-106">[「高可用性フェデレーション認証のフェーズ 2: ドメインコントローラーを構成](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)する」に進む前に、このフェーズを完了する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-106">You must complete this phase before moving on to [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md).</span></span> <span data-ttu-id="2ec2b-107">すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-107">See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-<span data-ttu-id="6b3c1-108">Azure は、これらの基本的なコンポーネントを準備する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-108">Azure must be provisioned with these basic components:</span></span>
+<span data-ttu-id="2ec2b-108">Azure は、次の基本コンポーネントを使用してプロビジョニングする必要があります。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-108">Azure must be provisioned with these basic components:</span></span>
   
-- <span data-ttu-id="6b3c1-109">リソース グループ</span><span class="sxs-lookup"><span data-stu-id="6b3c1-109">Resource groups</span></span>
+- <span data-ttu-id="2ec2b-109">リソース グループ</span><span class="sxs-lookup"><span data-stu-id="2ec2b-109">Resource groups</span></span>
     
-- <span data-ttu-id="6b3c1-110">Azure 仮想マシンをホストするためのサブネットを含むクロスプレミスの Azure 仮想ネットワーク</span><span class="sxs-lookup"><span data-stu-id="6b3c1-110">A cross-premises Azure virtual network (VNet) with subnets for hosting the Azure virtual machines</span></span>
+- <span data-ttu-id="2ec2b-110">Azure 仮想マシンをホストするためのサブネットを含むクロスプレミスの Azure 仮想ネットワーク</span><span class="sxs-lookup"><span data-stu-id="2ec2b-110">A cross-premises Azure virtual network (VNet) with subnets for hosting the Azure virtual machines</span></span>
     
-- <span data-ttu-id="6b3c1-111">サブネットの分離を実行するためのネットワーク セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="6b3c1-111">Network security groups for performing subnet isolation</span></span>
+- <span data-ttu-id="2ec2b-111">サブネットの分離を実行するためのネットワーク セキュリティ グループ</span><span class="sxs-lookup"><span data-stu-id="2ec2b-111">Network security groups for performing subnet isolation</span></span>
     
-- <span data-ttu-id="6b3c1-112">可用性セット</span><span class="sxs-lookup"><span data-stu-id="6b3c1-112">Availability sets</span></span>
+- <span data-ttu-id="2ec2b-112">可用性セット</span><span class="sxs-lookup"><span data-stu-id="2ec2b-112">Availability sets</span></span>
     
-## <a name="configure-azure-components"></a><span data-ttu-id="6b3c1-113">Azure のコンポーネントの構成</span><span class="sxs-lookup"><span data-stu-id="6b3c1-113">Configure Azure components</span></span>
+## <a name="configure-azure-components"></a><span data-ttu-id="2ec2b-113">Azure のコンポーネントの構成</span><span class="sxs-lookup"><span data-stu-id="2ec2b-113">Configure Azure components</span></span>
 
-<span data-ttu-id="6b3c1-p102">Azure のコンポーネントの構成を開始する前に、次の表に入力します。Azure の構成の手順を支援する、このセクションを印刷する必要な情報をメモまたはこのセクションをドキュメントにコピーしで塗りつぶします。VNet の設定、テーブル V を入力します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p102">Before you begin configuring Azure components, fill in the following tables. To assist you in the procedures for configuring Azure, print this section and write down the needed information or copy this section to a document and fill it in. For the settings of the VNet, fill in Table V.</span></span>
+<span data-ttu-id="2ec2b-114">Azure のコンポーネントの構成を開始する前に、次に示す表に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-114">Before you begin configuring Azure components, fill in the following tables.</span></span> <span data-ttu-id="2ec2b-115">Azure の構成の手順で役立つように、このセクションを印刷して、必要な情報を書き込むか、このセクションをドキュメントにコピーして必要事項を記入してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-115">To assist you in the procedures for configuring Azure, print this section and write down the needed information or copy this section to a document and fill it in.</span></span> <span data-ttu-id="2ec2b-116">VNet の設定は、「表 V」に記入します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-116">For the settings of the VNet, fill in Table V.</span></span>
   
-|<span data-ttu-id="6b3c1-117">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-117">**Item**</span></span>|<span data-ttu-id="6b3c1-118">**構成設定**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-118">**Configuration setting**</span></span>|<span data-ttu-id="6b3c1-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-119">**Description**</span></span>|<span data-ttu-id="6b3c1-120">**値**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-120">**Value**</span></span>|
+|<span data-ttu-id="2ec2b-117">**Item**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-117">**Item**</span></span>|<span data-ttu-id="2ec2b-118">**構成設定**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-118">**Configuration setting**</span></span>|<span data-ttu-id="2ec2b-119">**説明**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-119">**Description**</span></span>|<span data-ttu-id="2ec2b-120">**値**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-120">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="6b3c1-121">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-121">1.</span></span>  <br/> |<span data-ttu-id="6b3c1-122">VNet 名</span><span class="sxs-lookup"><span data-stu-id="6b3c1-122">VNet name</span></span>  <br/> |<span data-ttu-id="6b3c1-123">VNet に割り当てる名前 (例 FedAuthNet)。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-123">A name to assign to the VNet (example FedAuthNet).</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-124">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-124">2.</span></span>  <br/> |<span data-ttu-id="6b3c1-125">VNet の場所</span><span class="sxs-lookup"><span data-stu-id="6b3c1-125">VNet location</span></span>  <br/> |<span data-ttu-id="6b3c1-126">仮想ネットワークが含まれる地域の Azure データセンター。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-126">The regional Azure datacenter that will contain the virtual network.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-127">3.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-127">3.</span></span>  <br/> |<span data-ttu-id="6b3c1-128">VPN デバイスの IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-128">VPN device IP address</span></span>  <br/> |<span data-ttu-id="6b3c1-129">インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-129">The public IPv4 address of your VPN device's interface on the Internet.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-130">4.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-130">4.</span></span>  <br/> |<span data-ttu-id="6b3c1-131">VNet アドレス空間</span><span class="sxs-lookup"><span data-stu-id="6b3c1-131">VNet address space</span></span>  <br/> |<span data-ttu-id="6b3c1-p103">仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p103">The address space for the virtual network. Work with your IT department to determine this address space.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-134">5.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-134">5.</span></span>  <br/> |<span data-ttu-id="6b3c1-135">IPsec 共有キー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-135">IPsec shared key</span></span>  <br/> |<span data-ttu-id="6b3c1-p104">32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  </span><span class="sxs-lookup"><span data-stu-id="6b3c1-p104">A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  </span></span><br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-121">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-121">1.</span></span>  <br/> |<span data-ttu-id="2ec2b-122">VNet 名</span><span class="sxs-lookup"><span data-stu-id="2ec2b-122">VNet name</span></span>  <br/> |<span data-ttu-id="2ec2b-123">VNet に割り当てる名前 (例 FedAuthNet)。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-123">A name to assign to the VNet (example FedAuthNet).</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-124">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-124">2.</span></span>  <br/> |<span data-ttu-id="2ec2b-125">VNet の場所</span><span class="sxs-lookup"><span data-stu-id="2ec2b-125">VNet location</span></span>  <br/> |<span data-ttu-id="2ec2b-126">仮想ネットワークが含まれる地域の Azure データセンター。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-126">The regional Azure datacenter that will contain the virtual network.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-127">3.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-127">3.</span></span>  <br/> |<span data-ttu-id="2ec2b-128">VPN デバイスの IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-128">VPN device IP address</span></span>  <br/> |<span data-ttu-id="2ec2b-129">インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-129">The public IPv4 address of your VPN device's interface on the Internet.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-130">4.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-130">4.</span></span>  <br/> |<span data-ttu-id="2ec2b-131">VNet アドレス空間</span><span class="sxs-lookup"><span data-stu-id="2ec2b-131">VNet address space</span></span>  <br/> |<span data-ttu-id="2ec2b-p103">仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p103">The address space for the virtual network. Work with your IT department to determine this address space.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-134">5.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-134">5.</span></span>  <br/> |<span data-ttu-id="2ec2b-135">IPsec 共有キー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-135">IPsec shared key</span></span>  <br/> |<span data-ttu-id="2ec2b-p104">32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  </span><span class="sxs-lookup"><span data-stu-id="2ec2b-p104">A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  </span></span><br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- <span data-ttu-id="6b3c1-139">**表 V:クロスプレミスの仮想ネットワーク構成**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-139">**Table V: Cross-premises virtual network configuration**</span></span>
+ <span data-ttu-id="2ec2b-139">**表 V:クロスプレミスの仮想ネットワーク構成**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-139">**Table V: Cross-premises virtual network configuration**</span></span>
   
-<span data-ttu-id="6b3c1-p105">次に、このソリューションのサブネットついて、「表 S」に必要事項を記入します。すべてのアドレス空間は、クラスレス ドメイン間ルーティング (CIDR) 形式 (別称: ネットワーク プレフィックス形式) にする必要があります。たとえば、10.24.64.0/20 のようにします。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p105">Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.</span></span>
+<span data-ttu-id="2ec2b-p105">次に、このソリューションのサブネットついて、「表 S」に必要事項を記入します。すべてのアドレス空間は、クラスレス ドメイン間ルーティング (CIDR) 形式 (別称: ネットワーク プレフィックス形式) にする必要があります。たとえば、10.24.64.0/20 のようにします。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p105">Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.</span></span>
   
-<span data-ttu-id="6b3c1-p106">最初の 3 つのサブネットについて、仮想ネットワークのアドレス空間に基づいた名前と単一の IP アドレス空間を指定します。ゲートウェイ サブネットについて、次を実行して、Azure ゲートウェイ サブネットの 27 ビット アドレス空間 (プレフィックス長 /27) を決定します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p106">For the first three subnets, specify a name and a single IP address space based on the virtual network address space. For the gateway subnet, determine the 27-bit address space (with a /27 prefix length) for the Azure gateway subnet with the following:</span></span>
+<span data-ttu-id="2ec2b-p106">最初の 3 つのサブネットについて、仮想ネットワークのアドレス空間に基づいた名前と単一の IP アドレス空間を指定します。ゲートウェイ サブネットについて、次を実行して、Azure ゲートウェイ サブネットの 27 ビット アドレス空間 (プレフィックス長 /27) を決定します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p106">For the first three subnets, specify a name and a single IP address space based on the virtual network address space. For the gateway subnet, determine the 27-bit address space (with a /27 prefix length) for the Azure gateway subnet with the following:</span></span>
   
-1. <span data-ttu-id="6b3c1-145">VNet アドレス空間の可変ビットを 1 に設定します (ゲートウェイ サブネットに使用しているビット数まで)。残りのビットは 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-145">Set the variable bits in the address space of the VNet to 1, up to the bits being used by the gateway subnet, then set the remaining bits to 0.</span></span>
+1. <span data-ttu-id="2ec2b-145">VNet アドレス空間の可変ビットを 1 に設定します (ゲートウェイ サブネットに使用しているビット数まで)。残りのビットは 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-145">Set the variable bits in the address space of the VNet to 1, up to the bits being used by the gateway subnet, then set the remaining bits to 0.</span></span>
     
-2. <span data-ttu-id="6b3c1-146">その結果のビットを 10 進数に変換して、ゲートウェイ サブネットのサイズに設定されたプレフィックス長のアドレス空間として表現します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-146">Convert the resulting bits to decimal and express it as an address space with the prefix length set to the size of the gateway subnet.</span></span>
+2. <span data-ttu-id="2ec2b-146">その結果のビットを 10 進数に変換して、ゲートウェイ サブネットのサイズに設定されたプレフィックス長のアドレス空間として表現します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-146">Convert the resulting bits to decimal and express it as an address space with the prefix length set to the size of the gateway subnet.</span></span>
     
-<span data-ttu-id="6b3c1-147">PowerShell コマンドのブロックとするこの計算を実行するコンソール アプリケーションを C# または Python の[Azure ゲートウェイのサブネットのアドレス領域の計算](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-147">See [Address space calculator for Azure gateway subnets](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) for a PowerShell command block and C# or Python console application that performs this calculation for you.</span></span>
+<span data-ttu-id="2ec2b-147">この計算を実行する PowerShell コマンドブロックおよび C# または Python コンソールアプリケーションについては、「 [Azure gateway のサブネットのアドレス空間計算ツール](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-147">See [Address space calculator for Azure gateway subnets](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) for a PowerShell command block and C# or Python console application that performs this calculation for you.</span></span>
   
-<span data-ttu-id="6b3c1-148">これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-148">Work with your IT department to determine these address spaces from the virtual network address space.</span></span>
+<span data-ttu-id="2ec2b-148">これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-148">Work with your IT department to determine these address spaces from the virtual network address space.</span></span>
   
-|<span data-ttu-id="6b3c1-149">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-149">**Item**</span></span>|<span data-ttu-id="6b3c1-150">**サブネット名**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-150">**Subnet name**</span></span>|<span data-ttu-id="6b3c1-151">**サブネット アドレス スペース**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-151">**Subnet address space**</span></span>|<span data-ttu-id="6b3c1-152">**用途**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-152">**Purpose**</span></span>|
+|<span data-ttu-id="2ec2b-149">**Item**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-149">**Item**</span></span>|<span data-ttu-id="2ec2b-150">**サブネット名**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-150">**Subnet name**</span></span>|<span data-ttu-id="2ec2b-151">**サブネット アドレス スペース**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-151">**Subnet address space**</span></span>|<span data-ttu-id="2ec2b-152">**目的**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-152">**Purpose**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="6b3c1-153">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-153">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-154">Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-154">The subnet used by the Windows Server Active Directory (AD) domain controller and DirSync server virtual machines (VMs).</span></span>  <br/> |
-|<span data-ttu-id="6b3c1-155">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-155">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-156">AD FS VM が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-156">The subnet used by the AD FS VMs.</span></span>  <br/> |
-|<span data-ttu-id="6b3c1-157">3.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-157">3.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-158">Web アプリケーション プロキシ VM が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-158">The subnet used by the web application proxy VMs.</span></span>  <br/> |
-|<span data-ttu-id="6b3c1-159">4.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-159">4.</span></span>  <br/> |<span data-ttu-id="6b3c1-160">GatewaySubnet</span><span class="sxs-lookup"><span data-stu-id="6b3c1-160">GatewaySubnet</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-161">Azure ゲートウェイ VM が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-161">The subnet used by the Azure gateway VMs.</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-153">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-153">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-154">Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-154">The subnet used by the Windows Server Active Directory (AD) domain controller and DirSync server virtual machines (VMs).</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-155">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-155">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-156">AD FS VM が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-156">The subnet used by the AD FS VMs.</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-157">3.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-157">3.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-158">Web アプリケーション プロキシ VM が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-158">The subnet used by the web application proxy VMs.</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-159">4.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-159">4.</span></span>  <br/> |<span data-ttu-id="2ec2b-160">GatewaySubnet</span><span class="sxs-lookup"><span data-stu-id="2ec2b-160">GatewaySubnet</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-161">Azure ゲートウェイ VM が使用するサブネット。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-161">The subnet used by the Azure gateway VMs.</span></span>  <br/> |
    
- <span data-ttu-id="6b3c1-162">**表 S:仮想ネットワーク内のサブネット**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-162">**Table S: Subnets in the virtual network**</span></span>
+ <span data-ttu-id="2ec2b-162">**表 S:仮想ネットワーク内のサブネット**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-162">**Table S: Subnets in the virtual network**</span></span>
   
-<span data-ttu-id="6b3c1-163">次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-163">Next, fill in Table I for the static IP addresses assigned to virtual machines and load balancer instances.</span></span>
+<span data-ttu-id="2ec2b-163">次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-163">Next, fill in Table I for the static IP addresses assigned to virtual machines and load balancer instances.</span></span>
   
-|<span data-ttu-id="6b3c1-164">**項目**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-164">**Item**</span></span>|<span data-ttu-id="6b3c1-165">**用途**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-165">**Purpose**</span></span>|<span data-ttu-id="6b3c1-166">**サブネット上の IP アドレス**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-166">**IP address on the subnet**</span></span>|<span data-ttu-id="6b3c1-167">**値**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-167">**Value**</span></span>|
+|<span data-ttu-id="2ec2b-164">**項目**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-164">**Item**</span></span>|<span data-ttu-id="2ec2b-165">**用途**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-165">**Purpose**</span></span>|<span data-ttu-id="2ec2b-166">**サブネット上の IP アドレス**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-166">**IP address on the subnet**</span></span>|<span data-ttu-id="2ec2b-167">**値**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-167">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="6b3c1-168">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-168">1.</span></span>  <br/> |<span data-ttu-id="6b3c1-169">最初のドメイン コントローラーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-169">Static IP address of the first domain controller</span></span>  <br/> |<span data-ttu-id="6b3c1-170">「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-170">The fourth possible IP address for the address space of the subnet defined in Item 1 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-171">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-171">2.</span></span>  <br/> |<span data-ttu-id="6b3c1-172">2 番目のドメイン コントローラーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-172">Static IP address of the second domain controller</span></span>  <br/> |<span data-ttu-id="6b3c1-173">「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-173">The fifth possible IP address for the address space of the subnet defined in Item 1 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-174">3.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-174">3.</span></span>  <br/> |<span data-ttu-id="6b3c1-175">DirSync サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-175">Static IP address of the DirSync server</span></span>  <br/> |<span data-ttu-id="6b3c1-176">「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-176">The sixth possible IP address for the address space of the subnet defined in Item 1 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-177">4.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-177">4.</span></span>  <br/> |<span data-ttu-id="6b3c1-178">AD FS サーバーの内部ロード バランサーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-178">Static IP address of the internal load balancer for the AD FS servers</span></span>  <br/> |<span data-ttu-id="6b3c1-179">「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-179">The fourth possible IP address for the address space of the subnet defined in Item 2 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-180">5.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-180">5.</span></span>  <br/> |<span data-ttu-id="6b3c1-181">最初の AD FS サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-181">Static IP address of the first AD FS server</span></span>  <br/> |<span data-ttu-id="6b3c1-182">「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-182">The fifth possible IP address for the address space of the subnet defined in Item 2 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-183">6.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-183">6.</span></span>  <br/> |<span data-ttu-id="6b3c1-184">2 番目の AD FS サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-184">Static IP address of the second AD FS server</span></span>  <br/> |<span data-ttu-id="6b3c1-185">「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-185">The sixth possible IP address for the address space of the subnet defined in Item 2 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-186">7.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-186">7.</span></span>  <br/> |<span data-ttu-id="6b3c1-187">最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-187">Static IP address of the first web application proxy server</span></span>  <br/> |<span data-ttu-id="6b3c1-188">「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-188">The fourth possible IP address for the address space of the subnet defined in Item 3 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-189">8.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-189">8.</span></span>  <br/> |<span data-ttu-id="6b3c1-190">2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="6b3c1-190">Static IP address of the second web application proxy server</span></span>  <br/> |<span data-ttu-id="6b3c1-191">「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-191">The fifth possible IP address for the address space of the subnet defined in Item 3 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-168">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-168">1.</span></span>  <br/> |<span data-ttu-id="2ec2b-169">最初のドメイン コントローラーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-169">Static IP address of the first domain controller</span></span>  <br/> |<span data-ttu-id="2ec2b-170">「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-170">The fourth possible IP address for the address space of the subnet defined in Item 1 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-171">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-171">2.</span></span>  <br/> |<span data-ttu-id="2ec2b-172">2 番目のドメイン コントローラーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-172">Static IP address of the second domain controller</span></span>  <br/> |<span data-ttu-id="2ec2b-173">「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-173">The fifth possible IP address for the address space of the subnet defined in Item 1 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-174">3.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-174">3.</span></span>  <br/> |<span data-ttu-id="2ec2b-175">DirSync サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-175">Static IP address of the DirSync server</span></span>  <br/> |<span data-ttu-id="2ec2b-176">「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-176">The sixth possible IP address for the address space of the subnet defined in Item 1 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-177">4.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-177">4.</span></span>  <br/> |<span data-ttu-id="2ec2b-178">AD FS サーバーの内部ロード バランサーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-178">Static IP address of the internal load balancer for the AD FS servers</span></span>  <br/> |<span data-ttu-id="2ec2b-179">「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-179">The fourth possible IP address for the address space of the subnet defined in Item 2 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-180">5.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-180">5.</span></span>  <br/> |<span data-ttu-id="2ec2b-181">最初の AD FS サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-181">Static IP address of the first AD FS server</span></span>  <br/> |<span data-ttu-id="2ec2b-182">「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-182">The fifth possible IP address for the address space of the subnet defined in Item 2 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-183">6.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-183">6.</span></span>  <br/> |<span data-ttu-id="2ec2b-184">2 番目の AD FS サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-184">Static IP address of the second AD FS server</span></span>  <br/> |<span data-ttu-id="2ec2b-185">「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-185">The sixth possible IP address for the address space of the subnet defined in Item 2 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-186">7.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-186">7.</span></span>  <br/> |<span data-ttu-id="2ec2b-187">最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-187">Static IP address of the first web application proxy server</span></span>  <br/> |<span data-ttu-id="2ec2b-188">「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-188">The fourth possible IP address for the address space of the subnet defined in Item 3 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-189">8.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-189">8.</span></span>  <br/> |<span data-ttu-id="2ec2b-190">2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス</span><span class="sxs-lookup"><span data-stu-id="2ec2b-190">Static IP address of the second web application proxy server</span></span>  <br/> |<span data-ttu-id="2ec2b-191">「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-191">The fifth possible IP address for the address space of the subnet defined in Item 3 of Table S.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- <span data-ttu-id="6b3c1-192">**表 I: 仮想ネットワークの静的 IP アドレス**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-192">**Table I: Static IP addresses in the virtual network**</span></span>
+ <span data-ttu-id="2ec2b-192">**表 I: 仮想ネットワークの静的 IP アドレス**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-192">**Table I: Static IP addresses in the virtual network**</span></span>
   
-<span data-ttu-id="6b3c1-193">仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-193">For two Domain Name System (DNS) servers in your on-premises network that you want to use when initially setting up the domain controllers in your virtual network, fill in Table D. Work with your IT department to determine this list.</span></span>
+<span data-ttu-id="2ec2b-193">仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-193">For two Domain Name System (DNS) servers in your on-premises network that you want to use when initially setting up the domain controllers in your virtual network, fill in Table D. Work with your IT department to determine this list.</span></span>
   
-|<span data-ttu-id="6b3c1-194">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-194">**Item**</span></span>|<span data-ttu-id="6b3c1-195">**DNS サーバーのフレンドリ名**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-195">**DNS server friendly name**</span></span>|<span data-ttu-id="6b3c1-196">**DNS サーバーの IP アドレス**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-196">**DNS server IP address**</span></span>|
+|<span data-ttu-id="2ec2b-194">**Item**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-194">**Item**</span></span>|<span data-ttu-id="2ec2b-195">**DNS サーバーのフレンドリ名**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-195">**DNS server friendly name**</span></span>|<span data-ttu-id="2ec2b-196">**DNS サーバーの IP アドレス**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-196">**DNS server IP address**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="6b3c1-197">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-197">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-198">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-198">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-197">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-197">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-198">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-198">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- <span data-ttu-id="6b3c1-199">**表 D:オンプレミスの DNS サーバー**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-199">**Table D: On-premises DNS servers**</span></span>
+ <span data-ttu-id="2ec2b-199">**表 D:オンプレミスの DNS サーバー**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-199">**Table D: On-premises DNS servers**</span></span>
   
-<span data-ttu-id="6b3c1-p107">サイト間 VPN 接続を介して組織のネットワークに複数の環境に関するネットワークからのパケットをルーティングするには、CIDR 表記で、到達可能なすべてのアドレス スペースのリストを持つローカル ネットワークと仮想ネットワークを構成する必要があります。組織の設置型のネットワーク上の場所です。ローカル ネットワークを定義するアドレス スペースの一覧は、一意である必要があり、他の仮想ネットワーク、または他のローカル ネットワークに使用されるアドレス領域と重複していません。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p107">To route packets from the cross-premises network to your organization network across the site-to-site VPN connection, you must configure the virtual network with a local network that has a list of the address spaces (in CIDR notation) for all of the reachable locations on your organization's on-premises network. The list of address spaces that define your local network must be unique and must not overlap with the address space used for other virtual networks or other local networks.</span></span>
+<span data-ttu-id="2ec2b-200">クロスプレミスネットワークから組織のネットワークへのパケットをサイト間 VPN 接続を介してルーティングするには、すべての到達可能なアドレススペース (CIDR 表記) のリストを持つローカルネットワークを使用して仮想ネットワークを構成する必要があります。組織のオンプレミスネットワーク上の場所。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-200">To route packets from the cross-premises network to your organization network across the site-to-site VPN connection, you must configure the virtual network with a local network that has a list of the address spaces (in CIDR notation) for all of the reachable locations on your organization's on-premises network.</span></span> <span data-ttu-id="2ec2b-201">このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-201">The list of address spaces that define your local network must be unique and must not overlap with the address space used for other virtual networks or other local networks.</span></span>
   
-<span data-ttu-id="6b3c1-p108">一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p108">For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.</span></span>
+<span data-ttu-id="2ec2b-p108">一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p108">For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.</span></span>
   
-|<span data-ttu-id="6b3c1-204">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-204">**Item**</span></span>|<span data-ttu-id="6b3c1-205">**ローカル ネットワークのアドレス スペース**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-205">**Local network address space**</span></span>|
+|<span data-ttu-id="2ec2b-204">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-204">**Item**</span></span>|<span data-ttu-id="2ec2b-205">**ローカル ネットワークのアドレス スペース**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-205">**Local network address space**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="6b3c1-206">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-206">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-207">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-207">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-208">3.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-208">3.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-206">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-206">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-207">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-207">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-208">3.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-208">3.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- <span data-ttu-id="6b3c1-209">**表 L:ローカル ネットワークのアドレス プレフィックス**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-209">**Table L: Address prefixes for the local network**</span></span>
+ <span data-ttu-id="2ec2b-209">**表 L:ローカル ネットワークのアドレス プレフィックス**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-209">**Table L: Address prefixes for the local network**</span></span>
   
-<span data-ttu-id="6b3c1-210">ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-210">Now let's begin building the Azure infrastructure to host your federated authentication for Office 365.</span></span>
+<span data-ttu-id="2ec2b-210">ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-210">Now let's begin building the Azure infrastructure to host your federated authentication for Office 365.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="6b3c1-p109">次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p109">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
+> <span data-ttu-id="2ec2b-p109">次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p109">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
   
-<span data-ttu-id="6b3c1-213">まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-213">First, start an Azure PowerShell prompt and login to your account.</span></span>
+<span data-ttu-id="2ec2b-213">まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-213">First, start an Azure PowerShell prompt and login to your account.</span></span>
   
 ```
-Login-AzureRMAccount
+Connect-AzAccount
 ```
 
+<!--
 > [!TIP]
-> <span data-ttu-id="6b3c1-214">すべての PowerShell コマンドは、この資料で即座に実行の PowerShell コマンド ブロックが、カスタム設定に基づくを生成する Microsoft Excel の構成のブックをテキスト ファイル、Office 365 のフェデレーション認証で、Azure の[を参照してください。展開キット](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)です。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-214">For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span></span> 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
-<span data-ttu-id="6b3c1-215">次のコマンドを使用して、サブスクリプションの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-215">Get your subscription name using the following command.</span></span>
+<span data-ttu-id="2ec2b-214">次のコマンドを使用して、サブスクリプションの名前を取得します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-214">Get your subscription name using the following command.</span></span>
   
 ```
-Get-AzureRMSubscription | Sort Name | Select Name
+Get-AzSubscription | Sort Name | Select Name
 ```
 
-<span data-ttu-id="6b3c1-216">Azure PowerShell の以前のバージョンの代わりにこのコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-216">For older versions of Azure PowerShell, use this command instead.</span></span>
+<span data-ttu-id="2ec2b-215">以前のバージョンの Azure PowerShell では、代わりにこのコマンドを使用してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-215">For older versions of Azure PowerShell, use this command instead.</span></span>
   
 ```
-Get-AzureRMSubscription | Sort Name | Select SubscriptionName
+Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-<span data-ttu-id="6b3c1-p110">Azure サブスクリプションを設定します。二重引用符内のすべて (「\<」と「>」の文字を含む) を正しい名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p110">Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct name.</span></span>
+<span data-ttu-id="2ec2b-216">Azure サブスクリプションを設定します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-216">Set your Azure subscription.</span></span> <span data-ttu-id="2ec2b-217">引用符内のすべての文字 ( \<および > 文字を含む) を正しい名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-217">Replace everything within the quotes, including the \< and > characters, with the correct name.</span></span>
   
 ```
 $subscr="<subscription name>"
-Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
+Select-AzSubscription -SubscriptionName $subscrName -Current
 ```
 
-<span data-ttu-id="6b3c1-p111">次に、新しいリソース グループを作成します。リソース グループ名の一意のセットを決定するために、このコマンドを使用して、既存のリソース グループを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p111">Next, create the new resource groups. To determine a unique set of resource group names, use this command to list your existing resource groups.</span></span>
+<span data-ttu-id="2ec2b-p111">次に、新しいリソース グループを作成します。リソース グループ名の一意のセットを決定するために、このコマンドを使用して、既存のリソース グループを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p111">Next, create the new resource groups. To determine a unique set of resource group names, use this command to list your existing resource groups.</span></span>
   
 ```
-Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-<span data-ttu-id="6b3c1-221">一意のリソース グループ名のセットについて、次に示す表に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-221">Fill in the following table for the set of unique resource group names.</span></span>
+<span data-ttu-id="2ec2b-220">一意のリソース グループ名のセットについて、次に示す表に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-220">Fill in the following table for the set of unique resource group names.</span></span>
   
-|<span data-ttu-id="6b3c1-222">**項目**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-222">**Item**</span></span>|<span data-ttu-id="6b3c1-223">**リソース グループ名**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-223">**Resource group name**</span></span>|<span data-ttu-id="6b3c1-224">**用途**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-224">**Purpose**</span></span>|
+|<span data-ttu-id="2ec2b-221">**項目**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-221">**Item**</span></span>|<span data-ttu-id="2ec2b-222">**リソース グループ名**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-222">**Resource group name**</span></span>|<span data-ttu-id="2ec2b-223">**用途**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-223">**Purpose**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="6b3c1-225">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-225">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-226">ドメイン コントローラー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-226">Domain controllers</span></span>  <br/> |
-|<span data-ttu-id="6b3c1-227">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-227">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-228">AD FS サーバー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-228">AD FS servers</span></span>  <br/> |
-|<span data-ttu-id="6b3c1-229">3.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-229">3.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-230">Web アプリケーション プロキシ サーバー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-230">Web application proxy servers</span></span>  <br/> |
-|<span data-ttu-id="6b3c1-231">4.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-231">4.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="6b3c1-232">インフラストラクチャの要素</span><span class="sxs-lookup"><span data-stu-id="6b3c1-232">Infrastructure elements</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-224">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-224">1.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-225">ドメイン コントローラー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-225">Domain controllers</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-226">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-226">2.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-227">AD FS サーバー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-227">AD FS servers</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-228">3.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-228">3.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-229">Web アプリケーション プロキシ サーバー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-229">Web application proxy servers</span></span>  <br/> |
+|<span data-ttu-id="2ec2b-230">4.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-230">4.</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |<span data-ttu-id="2ec2b-231">インフラストラクチャの要素</span><span class="sxs-lookup"><span data-stu-id="2ec2b-231">Infrastructure elements</span></span>  <br/> |
    
- <span data-ttu-id="6b3c1-233">**表 R: リソース グループ**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-233">**Table R: Resource groups**</span></span>
+ <span data-ttu-id="2ec2b-232">**表 R: リソース グループ**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-232">**Table R: Resource groups**</span></span>
   
-<span data-ttu-id="6b3c1-234">次に示すコマンドで、新しいリソース グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-234">Create your new resource groups with these commands.</span></span>
+<span data-ttu-id="2ec2b-233">次に示すコマンドで、新しいリソース グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-233">Create your new resource groups with these commands.</span></span>
   
 ```
 $locName="<an Azure location, such as West US>"
 $rgName="<Table R - Item 1 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 2 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 3 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 4 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-<span data-ttu-id="6b3c1-235">次に、Azure 仮想ネットワークとそのサブネットを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-235">Next, you create the Azure virtual network and its subnets.</span></span>
+<span data-ttu-id="2ec2b-234">次に、Azure 仮想ネットワークとそのサブネットを作成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-234">Next, you create the Azure virtual network and its subnets.</span></span>
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -179,142 +181,142 @@ $vnetName="<Table V - Item 1 - Value column>"
 $vnetAddrPrefix="<Table V - Item 4 - Value column>"
 $dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
-$locShortName=(Get-AzureRmResourceGroup -Name $rgName).Location
+$locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
 # Create the subnets
 $subnet1Name="<Table S - Item 1 - Subnet name column>"
 $subnet1Prefix="<Table S - Item 1 - Subnet address space column>"
-$subnet1=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet1Name -AddressPrefix $subnet1Prefix
+$subnet1=New-AzVirtualNetworkSubnetConfig -Name $subnet1Name -AddressPrefix $subnet1Prefix
 $subnet2Name="<Table S - Item 2 - Subnet name column>"
 $subnet2Prefix="<Table S - Item 2 - Subnet address space column>"
-$subnet2=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet2Name -AddressPrefix $subnet2Prefix
+$subnet2=New-AzVirtualNetworkSubnetConfig -Name $subnet2Name -AddressPrefix $subnet2Prefix
 $subnet3Name="<Table S - Item 3 - Subnet name column>"
 $subnet3Prefix="<Table S - Item 3 - Subnet address space column>"
-$subnet3=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet3Name -AddressPrefix $subnet3Prefix
+$subnet3=New-AzVirtualNetworkSubnetConfig -Name $subnet3Name -AddressPrefix $subnet3Prefix
 $gwSubnet4Prefix="<Table S - Item 4 - Subnet address space column>"
-$gwSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnet4Prefix
+$gwSubnet=New-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnet4Prefix
 
 # Create the virtual network
-New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gwSubnet,$subnet1,$subnet2,$subnet3 -DNSServer $dnsServers
+New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gwSubnet,$subnet1,$subnet2,$subnet3 -DNSServer $dnsServers
 
 ```
 
-<span data-ttu-id="6b3c1-p112">次に、セキュリティ グループを各仮想マシンのあるサブネットのネットワークを作成します。サブネットの分離を実行するのには、トラフィックを許可または拒否するサブネットのネットワークのセキュリティ グループの特定の種類の規則を追加できます。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p112">Next, you create network security groups for each subnet that has virtual machines. To perform subnet isolation, you can add rules for the specific types of traffic allowed or denied to the network security group of a subnet.</span></span>
+<span data-ttu-id="2ec2b-235">次に、仮想マシンを持つ各サブネットのネットワークセキュリティグループを作成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-235">Next, you create network security groups for each subnet that has virtual machines.</span></span> <span data-ttu-id="2ec2b-236">サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-236">To perform subnet isolation, you can add rules for the specific types of traffic allowed or denied to the network security group of a subnet.</span></span>
   
 ```
 # Create network security groups
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 
-New-AzureRMNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet1Name -AddressPrefix $subnet1Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet1Name -AddressPrefix $subnet1Prefix -NetworkSecurityGroup $nsg
 
-New-AzureRMNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -AddressPrefix $subnet2Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -AddressPrefix $subnet2Prefix -NetworkSecurityGroup $nsg
 
-New-AzureRMNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
 ```
 
-<span data-ttu-id="6b3c1-238">次に、これらのコマンドを使用して、サイト間 VPN 接続のゲートウェイを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-238">Next, use these commands to create the gateways for the site-to-site VPN connection.</span></span>
+<span data-ttu-id="2ec2b-237">次に、これらのコマンドを使用して、サイト間 VPN 接続のゲートウェイを作成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-237">Next, use these commands to create the gateways for the site-to-site VPN connection.</span></span>
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "GatewaySubnet"
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "GatewaySubnet"
 
 # Attach a virtual network gateway to a public IP address and the gateway subnet
 $publicGatewayVipName="PublicIPAddress"
 $vnetGatewayIpConfigName="PublicIPConfig"
-New-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$publicGatewayVip=Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
-$vnetGatewayIpConfig=New-AzureRMVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -Subnet $subnet
+New-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$publicGatewayVip=Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
+$vnetGatewayIpConfig=New-AzVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -Subnet $subnet
 
 # Create the Azure gateway
 $vnetGatewayName="AzureGateway"
-$vnetGateway=New-AzureRMVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
+$vnetGateway=New-AzVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
 
 # Create the gateway for the local network
 $localGatewayName="LocalNetGateway"
 $localGatewayIP="<Table V - Item 3 - Value column>"
 $localNetworkPrefix=@( <comma-separated, double-quote enclosed list of the local network address prefixes from Table L, example: "10.1.0.0/24", "10.2.0.0/24"> )
-$localGateway=New-AzureRMLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
+$localGateway=New-AzLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
 
 # Define the Azure virtual network VPN connection
 $vnetConnectionName="S2SConnection"
 $vnetConnectionKey="<Table V - Item 5 - Value column>"
-$vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
+$vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 
 ```
 
 > [!NOTE]
-> <span data-ttu-id="6b3c1-p113">個々 のユーザーのフェデレーション認証は、社内設置型のリソースには依存しません。ただし、このサイト間 VPN 接続が利用できなくなった場合、VNet のドメイン コント ローラーではこのユーザー アカウントとグループの設置型の Windows Server AD に加えられた更新プログラムが受信しません。そうでないことを確認するには、サイト間 VPN 接続の高可用性を構成できます。詳細については、[高度利用可能な間、設置型および VNet-VNet への接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p113">Federated authentication of individual users does not rely on any on-premises resources. However, if this site-to-site VPN connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Windows Server AD. To ensure this does not happen, you can configure high availability for your site-to-site VPN connection. For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)</span></span>
+> <span data-ttu-id="2ec2b-238">個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-238">Federated authentication of individual users does not rely on any on-premises resources.</span></span> <span data-ttu-id="2ec2b-239">ただし、このサイト間 VPN 接続が使用できなくなった場合、VNet 内のドメインコントローラーは、オンプレミスの Windows Server AD で行われたユーザーアカウントおよびグループに対する更新を受信しません。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-239">However, if this site-to-site VPN connection becomes unavailable, the domain controllers in the VNet will not receive updates to user accounts and groups made in the on-premises Windows Server AD.</span></span> <span data-ttu-id="2ec2b-240">これが行われないようにするには、サイト間 VPN 接続の高可用性を構成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-240">To ensure this does not happen, you can configure high availability for your site-to-site VPN connection.</span></span> <span data-ttu-id="2ec2b-241">詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-241">For more information, see [Highly Available Cross-Premises and VNet-to-VNet Connectivity](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)</span></span>
   
-<span data-ttu-id="6b3c1-243">次に、このコマンドの表示から得られる、仮想ネットワーク用の Azure VPN ゲートウェイのパブリック IPv4 アドレスを記録します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-243">Next, record the public IPv4 address of the Azure VPN gateway for your virtual network from the display of this command:</span></span>
+<span data-ttu-id="2ec2b-242">次に、このコマンドの表示から得られる、仮想ネットワーク用の Azure VPN ゲートウェイのパブリック IPv4 アドレスを記録します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-242">Next, record the public IPv4 address of the Azure VPN gateway for your virtual network from the display of this command:</span></span>
   
 ```
-Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
+Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-<span data-ttu-id="6b3c1-p114">次に、Azure VPN ゲートウェイに接続するようにオンプレミスの VPN デバイスを構成します。詳細については、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p114">Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).</span></span>
+<span data-ttu-id="2ec2b-p114">次に、Azure VPN ゲートウェイに接続するようにオンプレミスの VPN デバイスを構成します。詳細については、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p114">Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).</span></span>
   
-<span data-ttu-id="6b3c1-246">オンプレミス VPN デバイスを構成するには、次のものが必要になります。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-246">To configure your on-premises VPN device, you will need the following:</span></span>
+<span data-ttu-id="2ec2b-245">オンプレミス VPN デバイスを構成するには、次のものが必要になります。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-245">To configure your on-premises VPN device, you will need the following:</span></span>
   
-- <span data-ttu-id="6b3c1-247">Azure VPN ゲートウェイのパブリック IPv4 アドレス。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-247">The public IPv4 address of the Azure VPN gateway.</span></span>
+- <span data-ttu-id="2ec2b-246">Azure VPN ゲートウェイのパブリック IPv4 アドレス。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-246">The public IPv4 address of the Azure VPN gateway.</span></span>
     
-- <span data-ttu-id="6b3c1-248">サイト間 VPN 接続の IPsec 事前共有キー (「表 V」-「項目 5」-「値」列)。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-248">The IPsec pre-shared key for the site-to-site VPN connection (Table V - Item 5 - Value column).</span></span>
+- <span data-ttu-id="2ec2b-247">サイト間 VPN 接続の IPsec 事前共有キー (「表 V」-「項目 5」-「値」列)。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-247">The IPsec pre-shared key for the site-to-site VPN connection (Table V - Item 5 - Value column).</span></span>
     
-<span data-ttu-id="6b3c1-p115">次に、仮想ネットワークのアドレス空間がオンプレミスのネットワークからアクセスできることを確認します。一般に、これは、仮想ネットワークのアドレス空間から VPN デバイスに対応するルートを追加してから、そのルートを組織ネットワークの残りのルーティング インフラストラクチャに公示することで実行します。IT 部門と協議して、この方法について決定してください。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p115">Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.</span></span>
+<span data-ttu-id="2ec2b-p115">次に、仮想ネットワークのアドレス空間がオンプレミスのネットワークからアクセスできることを確認します。一般に、これは、仮想ネットワークのアドレス空間から VPN デバイスに対応するルートを追加してから、そのルートを組織ネットワークの残りのルーティング インフラストラクチャに公示することで実行します。IT 部門と協議して、この方法について決定してください。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p115">Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.</span></span>
   
-<span data-ttu-id="6b3c1-p116">次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-p116">Next, define the names of three availability sets. Fill out Table A.</span></span> 
+<span data-ttu-id="2ec2b-p116">次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-p116">Next, define the names of three availability sets. Fill out Table A.</span></span> 
   
-|<span data-ttu-id="6b3c1-254">**アイテム**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-254">**Item**</span></span>|<span data-ttu-id="6b3c1-255">**用途**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-255">**Purpose**</span></span>|<span data-ttu-id="6b3c1-256">**可用性セット名**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-256">**Availability set name**</span></span>|
+|<span data-ttu-id="2ec2b-253">**Item**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-253">**Item**</span></span>|<span data-ttu-id="2ec2b-254">**用途**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-254">**Purpose**</span></span>|<span data-ttu-id="2ec2b-255">**可用性セット名**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-255">**Availability set name**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="6b3c1-257">1.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-257">1.</span></span>  <br/> |<span data-ttu-id="6b3c1-258">ドメイン コントローラー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-258">Domain controllers</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-259">2.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-259">2.</span></span>  <br/> |<span data-ttu-id="6b3c1-260">AD FS サーバー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-260">AD FS servers</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|<span data-ttu-id="6b3c1-261">3.</span><span class="sxs-lookup"><span data-stu-id="6b3c1-261">3.</span></span>  <br/> |<span data-ttu-id="6b3c1-262">Web アプリケーション プロキシ サーバー</span><span class="sxs-lookup"><span data-stu-id="6b3c1-262">Web application proxy servers</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-256">1.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-256">1.</span></span>  <br/> |<span data-ttu-id="2ec2b-257">ドメイン コントローラー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-257">Domain controllers</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-258">2.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-258">2.</span></span>  <br/> |<span data-ttu-id="2ec2b-259">AD FS サーバー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-259">AD FS servers</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|<span data-ttu-id="2ec2b-260">3.</span><span class="sxs-lookup"><span data-stu-id="2ec2b-260">3.</span></span>  <br/> |<span data-ttu-id="2ec2b-261">Web アプリケーション プロキシ サーバー</span><span class="sxs-lookup"><span data-stu-id="2ec2b-261">Web application proxy servers</span></span>  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- <span data-ttu-id="6b3c1-263">**表 A: 可用性セット**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-263">**Table A: Availability sets**</span></span>
+ <span data-ttu-id="2ec2b-262">**表 A: 可用性セット**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-262">**Table A: Availability sets**</span></span>
   
-<span data-ttu-id="6b3c1-264">これらの名前は、フェーズ 2、3、および 4 で仮想マシンを作成する際に必要になります。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-264">You will need these names when you create the virtual machines in phases 2, 3, and 4.</span></span>
+<span data-ttu-id="2ec2b-263">これらの名前は、フェーズ 2、3、および 4 で仮想マシンを作成する際に必要になります。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-263">You will need these names when you create the virtual machines in phases 2, 3, and 4.</span></span>
   
-<span data-ttu-id="6b3c1-265">次に示す Azure PowerShell コマンドで、新しい可用性セットを作成します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-265">Create the new availability sets with these Azure PowerShell commands.</span></span>
+<span data-ttu-id="2ec2b-264">次に示す Azure PowerShell コマンドで、新しい可用性セットを作成します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-264">Create the new availability sets with these Azure PowerShell commands.</span></span>
   
 ```
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
-<span data-ttu-id="6b3c1-266">次に、このフェーズが正常に完了した結果の構成を示します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-266">This is the configuration resulting from the successful completion of this phase.</span></span>
+<span data-ttu-id="2ec2b-265">次に、このフェーズが正常に完了した結果の構成を示します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-265">This is the configuration resulting from the successful completion of this phase.</span></span>
   
-<span data-ttu-id="6b3c1-267">**フェーズ 1:Office 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**</span><span class="sxs-lookup"><span data-stu-id="6b3c1-267">**Phase 1: The Azure infrastructure for high availability federated authentication for Office 365**</span></span>
+<span data-ttu-id="2ec2b-266">**フェーズ 1:Office 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**</span><span class="sxs-lookup"><span data-stu-id="2ec2b-266">**Phase 1: The Azure infrastructure for high availability federated authentication for Office 365**</span></span>
 
-![Azure インフラストラクチャによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ 1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![azure インフラストラクチャによる azure での高可用性 Office 365 フェデレーション認証のフェーズ1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a><span data-ttu-id="6b3c1-269">次の手順</span><span class="sxs-lookup"><span data-stu-id="6b3c1-269">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="2ec2b-268">次の手順</span><span class="sxs-lookup"><span data-stu-id="2ec2b-268">Next step</span></span>
 
-<span data-ttu-id="6b3c1-270">「[High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」を使用して、このワークロードの構成を続行します。</span><span class="sxs-lookup"><span data-stu-id="6b3c1-270">Use [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) to continue with the configuration of this workload.</span></span>
+<span data-ttu-id="2ec2b-269">「[High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」を使用して、このワークロードの構成を続行します。</span><span class="sxs-lookup"><span data-stu-id="2ec2b-269">Use [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) to continue with the configuration of this workload.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="6b3c1-271">関連項目</span><span class="sxs-lookup"><span data-stu-id="6b3c1-271">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2ec2b-270">関連項目</span><span class="sxs-lookup"><span data-stu-id="2ec2b-270">See Also</span></span>
 
-[<span data-ttu-id="6b3c1-272">Azure に Office 365 の高可用性フェデレーション認証を展開する</span><span class="sxs-lookup"><span data-stu-id="6b3c1-272">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="2ec2b-271">Azure に Office 365 の高可用性フェデレーション認証を展開する</span><span class="sxs-lookup"><span data-stu-id="2ec2b-271">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[<span data-ttu-id="6b3c1-273">Office 365 開発/テスト環境のフェデレーション ID</span><span class="sxs-lookup"><span data-stu-id="6b3c1-273">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="2ec2b-272">Office 365 開発/テスト環境のフェデレーション ID</span><span class="sxs-lookup"><span data-stu-id="2ec2b-272">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="6b3c1-274">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="6b3c1-274">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="2ec2b-273">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="2ec2b-273">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-[<span data-ttu-id="6b3c1-275">Office 365 ID と Azure Active Directory について</span><span class="sxs-lookup"><span data-stu-id="6b3c1-275">Understanding Office 365 identity and Azure Active Directory</span></span>](about-office-365-identity.md)
+[<span data-ttu-id="2ec2b-274">Office 365 ID と Azure Active Directory について</span><span class="sxs-lookup"><span data-stu-id="2ec2b-274">Understanding Office 365 identity and Azure Active Directory</span></span>](about-office-365-identity.md)
 
 
