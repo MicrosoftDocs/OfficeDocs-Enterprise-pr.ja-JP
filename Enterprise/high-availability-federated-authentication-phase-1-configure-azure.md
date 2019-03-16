@@ -1,9 +1,9 @@
 ---
-title: フェデレーション認証フェーズ 1 を構成する Azure を高可用性を実現
+title: 高可用性フェデレーション認証のフェーズ 1 Azure を構成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,20 +12,20 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897480"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650160"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
  **概要:** Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
   
-このフェーズでは、リソース グループ、2、3、および 4 の段階で仮想マシンをホストする Azure 内の仮想ネットワーク (VNet)、および可用性を設定を作成します。上に移動する前に、このフェーズを完了する必要があります[高可用性の統合認証フェーズ 2: ドメイン コント ローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)です。フェーズのすべては、 [Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
+このフェーズでは、フェーズ2、3、4で仮想マシンをホストする Azure で、リソースグループ、仮想ネットワーク (VNet)、および可用性セットを作成します。 [「高可用性フェデレーション認証のフェーズ 2: ドメインコントローラーを構成](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)する」に進む前に、このフェーズを完了する必要があります。 すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。
   
-Azure は、これらの基本的なコンポーネントを準備する必要があります。
+Azure は、次の基本コンポーネントを使用してプロビジョニングする必要があります。
   
 - リソース グループ
     
@@ -37,9 +37,9 @@ Azure は、これらの基本的なコンポーネントを準備する必要�
     
 ## <a name="configure-azure-components"></a>Azure のコンポーネントの構成
 
-Azure のコンポーネントの構成を開始する前に、次の表に入力します。Azure の構成の手順を支援する、このセクションを印刷する必要な情報をメモまたはこのセクションをドキュメントにコピーしで塗りつぶします。VNet の設定、テーブル V を入力します。
+Azure のコンポーネントの構成を開始する前に、次に示す表に必要事項を記入します。 Azure の構成の手順で役立つように、このセクションを印刷して、必要な情報を書き込むか、このセクションをドキュメントにコピーして必要事項を記入してください。 VNet の設定は、「表 V」に記入します。
   
-|**アイテム**|**構成設定**|**説明**|**値**|
+|**Item**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -57,11 +57,11 @@ Azure のコンポーネントの構成を開始する前に、次の表に入�
     
 2. その結果のビットを 10 進数に変換して、ゲートウェイ サブネットのサイズに設定されたプレフィックス長のアドレス空間として表現します。
     
-PowerShell コマンドのブロックとするこの計算を実行するコンソール アプリケーションを C# または Python の[Azure ゲートウェイのサブネットのアドレス領域の計算](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)を参照してください。
+この計算を実行する PowerShell コマンドブロックおよび C# または Python コンソールアプリケーションについては、「 [Azure gateway のサブネットのアドレス空間計算ツール](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed)」を参照してください。
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
+|**Item**|**サブネット名**|**サブネット アドレス スペース**|**目的**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
@@ -87,14 +87,14 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
   
 仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。
   
-|**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
+|**Item**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 D:オンプレミスの DNS サーバー**
   
-サイト間 VPN 接続を介して組織のネットワークに複数の環境に関するネットワークからのパケットをルーティングするには、CIDR 表記で、到達可能なすべてのアドレス スペースのリストを持つローカル ネットワークと仮想ネットワークを構成する必要があります。組織の設置型のネットワーク上の場所です。ローカル ネットワークを定義するアドレス スペースの一覧は、一意である必要があり、他の仮想ネットワーク、または他のローカル ネットワークに使用されるアドレス領域と重複していません。
+クロスプレミスネットワークから組織のネットワークへのパケットをサイト間 VPN 接続を介してルーティングするには、すべての到達可能なアドレススペース (CIDR 表記) のリストを持つローカルネットワークを使用して仮想ネットワークを構成する必要があります。組織のオンプレミスネットワーク上の場所。 このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。
   
 一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。
   
@@ -109,40 +109,42 @@ PowerShell コマンドのブロックとするこの計算を実行するコン
 ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
 ```
-Login-AzureRMAccount
+Connect-AzAccount
 ```
 
+<!--
 > [!TIP]
-> すべての PowerShell コマンドは、この資料で即座に実行の PowerShell コマンド ブロックが、カスタム設定に基づくを生成する Microsoft Excel の構成のブックをテキスト ファイル、Office 365 のフェデレーション認証で、Azure の[を参照してください。展開キット](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664)です。 
+> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+-->
   
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
 ```
-Get-AzureRMSubscription | Sort Name | Select Name
+Get-AzSubscription | Sort Name | Select Name
 ```
 
-Azure PowerShell の以前のバージョンの代わりにこのコマンドを使用します。
+以前のバージョンの Azure PowerShell では、代わりにこのコマンドを使用してください。
   
 ```
-Get-AzureRMSubscription | Sort Name | Select SubscriptionName
+Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Azure サブスクリプションを設定します。二重引用符内のすべて (「\<」と「>」の文字を含む) を正しい名前に置き換えます。
+Azure サブスクリプションを設定します。 引用符内のすべての文字 ( \<および > 文字を含む) を正しい名前に置き換えます。
   
 ```
 $subscr="<subscription name>"
-Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
+Select-AzSubscription -SubscriptionName $subscrName -Current
 ```
 
 次に、新しいリソース グループを作成します。リソース グループ名の一意のセットを決定するために、このコマンドを使用して、既存のリソース グループを一覧表示します。
   
 ```
-Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 一意のリソース グループ名のセットについて、次に示す表に必要事項を記入します。
@@ -161,13 +163,13 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 $locName="<an Azure location, such as West US>"
 $rgName="<Table R - Item 1 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 2 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 3 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 $rgName="<Table R - Item 4 - Name column>"
-New-AzureRMResourceGroup -Name $rgName -Location $locName
+New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 次に、Azure 仮想ネットワークとそのサブネットを作成します。
@@ -179,43 +181,43 @@ $vnetName="<Table V - Item 1 - Value column>"
 $vnetAddrPrefix="<Table V - Item 4 - Value column>"
 $dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
-$locShortName=(Get-AzureRmResourceGroup -Name $rgName).Location
+$locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
 # Create the subnets
 $subnet1Name="<Table S - Item 1 - Subnet name column>"
 $subnet1Prefix="<Table S - Item 1 - Subnet address space column>"
-$subnet1=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet1Name -AddressPrefix $subnet1Prefix
+$subnet1=New-AzVirtualNetworkSubnetConfig -Name $subnet1Name -AddressPrefix $subnet1Prefix
 $subnet2Name="<Table S - Item 2 - Subnet name column>"
 $subnet2Prefix="<Table S - Item 2 - Subnet address space column>"
-$subnet2=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet2Name -AddressPrefix $subnet2Prefix
+$subnet2=New-AzVirtualNetworkSubnetConfig -Name $subnet2Name -AddressPrefix $subnet2Prefix
 $subnet3Name="<Table S - Item 3 - Subnet name column>"
 $subnet3Prefix="<Table S - Item 3 - Subnet address space column>"
-$subnet3=New-AzureRMVirtualNetworkSubnetConfig -Name $subnet3Name -AddressPrefix $subnet3Prefix
+$subnet3=New-AzVirtualNetworkSubnetConfig -Name $subnet3Name -AddressPrefix $subnet3Prefix
 $gwSubnet4Prefix="<Table S - Item 4 - Subnet address space column>"
-$gwSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnet4Prefix
+$gwSubnet=New-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -AddressPrefix $gwSubnet4Prefix
 
 # Create the virtual network
-New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gwSubnet,$subnet1,$subnet2,$subnet3 -DNSServer $dnsServers
+New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locName -AddressPrefix $vnetAddrPrefix -Subnet $gwSubnet,$subnet1,$subnet2,$subnet3 -DNSServer $dnsServers
 
 ```
 
-次に、セキュリティ グループを各仮想マシンのあるサブネットのネットワークを作成します。サブネットの分離を実行するのには、トラフィックを許可または拒否するサブネットのネットワークのセキュリティ グループの特定の種類の規則を追加できます。
+次に、仮想マシンを持つ各サブネットのネットワークセキュリティグループを作成します。 サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。
   
 ```
 # Create network security groups
-$vnet=Get-AzureRMVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
+$vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 
-New-AzureRMNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet1Name -AddressPrefix $subnet1Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet1Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet1Name -AddressPrefix $subnet1Prefix -NetworkSecurityGroup $nsg
 
-New-AzureRMNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -AddressPrefix $subnet2Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet2Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -AddressPrefix $subnet2Prefix -NetworkSecurityGroup $nsg
 
-New-AzureRMNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
-$nsg=Get-AzureRMNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
-Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
+$nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
+Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
 ```
 
 次に、これらのコマンドを使用して、サイト間 VPN 接続のゲートウェイを作成します。
@@ -224,40 +226,40 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
-$vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
-$subnet=Get-AzureRmVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "GatewaySubnet"
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+$subnet=Get-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "GatewaySubnet"
 
 # Attach a virtual network gateway to a public IP address and the gateway subnet
 $publicGatewayVipName="PublicIPAddress"
 $vnetGatewayIpConfigName="PublicIPConfig"
-New-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
-$publicGatewayVip=Get-AzureRMPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
-$vnetGatewayIpConfig=New-AzureRMVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -Subnet $subnet
+New-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
+$publicGatewayVip=Get-AzPublicIpAddress -Name $vnetGatewayIpConfigName -ResourceGroupName $rgName
+$vnetGatewayIpConfig=New-AzVirtualNetworkGatewayIpConfig -Name $vnetGatewayIpConfigName -PublicIpAddressId $publicGatewayVip.Id -Subnet $subnet
 
 # Create the Azure gateway
 $vnetGatewayName="AzureGateway"
-$vnetGateway=New-AzureRMVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
+$vnetGateway=New-AzVirtualNetworkGateway -Name $vnetGatewayName -ResourceGroupName $rgName -Location $locName -GatewayType Vpn -VpnType RouteBased -IpConfigurations $vnetGatewayIpConfig
 
 # Create the gateway for the local network
 $localGatewayName="LocalNetGateway"
 $localGatewayIP="<Table V - Item 3 - Value column>"
 $localNetworkPrefix=@( <comma-separated, double-quote enclosed list of the local network address prefixes from Table L, example: "10.1.0.0/24", "10.2.0.0/24"> )
-$localGateway=New-AzureRMLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
+$localGateway=New-AzLocalNetworkGateway -Name $localGatewayName -ResourceGroupName $rgName -Location $locName -GatewayIpAddress $localGatewayIP -AddressPrefix $localNetworkPrefix
 
 # Define the Azure virtual network VPN connection
 $vnetConnectionName="S2SConnection"
 $vnetConnectionKey="<Table V - Item 5 - Value column>"
-$vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
+$vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 
 ```
 
 > [!NOTE]
-> 個々 のユーザーのフェデレーション認証は、社内設置型のリソースには依存しません。ただし、このサイト間 VPN 接続が利用できなくなった場合、VNet のドメイン コント ローラーではこのユーザー アカウントとグループの設置型の Windows Server AD に加えられた更新プログラムが受信しません。そうでないことを確認するには、サイト間 VPN 接続の高可用性を構成できます。詳細については、[高度利用可能な間、設置型および VNet-VNet への接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)を参照してください。
+> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。 ただし、このサイト間 VPN 接続が使用できなくなった場合、VNet 内のドメインコントローラーは、オンプレミスの Windows Server AD で行われたユーザーアカウントおよびグループに対する更新を受信しません。 これが行われないようにするには、サイト間 VPN 接続の高可用性を構成します。 詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
   
 次に、このコマンドの表示から得られる、仮想ネットワーク用の Azure VPN ゲートウェイのパブリック IPv4 アドレスを記録します。
   
 ```
-Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
+Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
 次に、Azure VPN ゲートウェイに接続するようにオンプレミスの VPN デバイスを構成します。詳細については、「[サイト間 VPN Gateway 接続の VPN デバイスについて](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)」を参照してください。
@@ -272,7 +274,7 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。 
   
-|**アイテム**|**用途**|**可用性セット名**|
+|**Item**|**用途**|**可用性セット名**|
 |:-----|:-----|:-----|
 |1.  <br/> |ドメイン コントローラー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -288,20 +290,20 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
+New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
 次に、このフェーズが正常に完了した結果の構成を示します。
   
 **フェーズ 1:Office 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**
 
-![Azure インフラストラクチャによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ 1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![azure インフラストラクチャによる azure での高可用性 Office 365 フェデレーション認証のフェーズ1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>次の手順
 
