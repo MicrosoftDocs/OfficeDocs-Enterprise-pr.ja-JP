@@ -12,149 +12,147 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839595"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "30665240"
 ---
-# <a name="data-move-general-faq"></a><span data-ttu-id="a0d79-103">データ移行についての一般的な FAQ</span><span class="sxs-lookup"><span data-stu-id="a0d79-103">Data move general FAQ</span></span>
+# <a name="data-move-general-faq"></a><span data-ttu-id="1d89c-103">データ移行についての一般的な FAQ</span><span class="sxs-lookup"><span data-stu-id="1d89c-103">Data move general FAQ</span></span>
 
-<span data-ttu-id="a0d79-104">ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。</span><span class="sxs-lookup"><span data-stu-id="a0d79-104">Here are answers to general questions about moving core data to a new datacenter geo.</span></span>
+<span data-ttu-id="1d89c-104">ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。</span><span class="sxs-lookup"><span data-stu-id="1d89c-104">Here are answers to general questions about moving core data to a new datacenter geo.</span></span>
   
- <span data-ttu-id="a0d79-105">**Q. どのように確実に移行中の顧客データを保護し、ダウンタイムが発生しないようにするのですか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-105">**Q. How do you make sure my customer data is safe during the move and that I won't experience downtime?**</span></span>
+## <a name="what-customers-are-eligible-to-request-a-move"></a><span data-ttu-id="1d89c-105">移行をリクエストする対象となるのは、どんなお客様ですか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-105">What customers are eligible to request a move?</span></span>
   
-<span data-ttu-id="a0d79-p101">A: データの移動は、エンド ・ ユーザーへの影響を最小限に抑えるとバックエンド ・ サービスの操作です。[中とデータの移動後](during-and-after-your-data-move.md)に、影響を受けることができる機能が一覧表示されます。おは、お客様は、準備や移動中に監視する必要があることはありませんので場合に、可用性を実現する[Microsoft Online Services サービス レベル契約 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)に準拠します。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p101">A. Data moves are a back-end service operation with minimal impact to end-users. Features that can be impacted are listed in [During and after your data move](during-and-after-your-data-move.md). We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move.</span></span> 
-  
-<span data-ttu-id="a0d79-p102">Office 365 サービスは、どのデータセンターでもすべて同じバージョンが実行されるため、機能の一貫性が確保されます。このプロセス中、サービスは完全にサポートされます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p102">All Office 365 services run the same versions in the datacenters, so you can be assured of consistent functionality. Your service is fully supported throughout the process.</span></span>
-  
- <span data-ttu-id="a0d79-112">**Q. 異なる geo に異なるサービスがあることには、どんな影響がありますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-112">**Q. What is the impact of having different services located in different geos?**</span></span>
-  
-<span data-ttu-id="a0d79-p103">A. 一部の既存のお客様と移行プロセス中のお客様は、いくつかの Office 365 サービスが異なる geo にあることがあります。当社のサービスはそれぞれ独立して動作するため、この場合、ユーザーへの影響はありません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p103">A. For some existing customers and customers in the middle of the move process, some of the Office 365 services may be located in different geos. Our services run independently of each other and there is no user impact if this is the case.</span></span>
-  
- <span data-ttu-id="a0d79-116">**Q. 新しい Office 365 のユーザーは自動的に新しいデータセンター geo でプロビジョニングされますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-116">**Q. Will new Office 365 customers be automatically provisioned in the new datacenter geos?**</span></span>
-  
-<span data-ttu-id="a0d79-p104">A. はい。新しいデータセンター geo が利用可能になると、サインアップ中に自分の国として新しい geo の対象となる国を選択した新しい Office 365 ビジネス ユーザーのコア データは、新しいデータセンター geo でホストされます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p104">A. Yes. Once a new datacenter geo is available, new Office 365 for business customers who select a country eligible for the new geo as their country during sign-up will have their core data hosted in the new datacenter geo.</span></span>
-  
- <span data-ttu-id="a0d79-120">**Q. データの保存場所はどこですか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-120">**Q. Where is my data is located?**</span></span>
-  
-<span data-ttu-id="a0d79-p105">[ Office 365 対話型データ センター マップ ](https://o365datacentermap.azurewebsites.net) で、データセンター geo の場所、データセンター、および顧客データの場所を公開します。8 月 1 日現在、顧客データの場所は、Office 365 管理センターの [組織プロファイル] の [データ場所] セクションから確認できます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p105">We publish the location of datacenter geos, datacenters, and location of customer data on the [ Office 365 interactive datacenter maps ](https://o365datacentermap.azurewebsites.net). As of August 1, you will be able to verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Office 365 Admin Center.</span></span>
-  
- <span data-ttu-id="a0d79-123">**Q. 既存の Office 365 のユーザーは新しいデータ センター geo に移行されますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-123">**Q. Will existing Office 365 customers be moved to the new datacenter geos?**</span></span>
-  
-<span data-ttu-id="a0d79-p106">A. 対象となる Office 365 のユーザーは、コア データを新しい geo に移行することをリクエストできます。お客様は、自分の geo の期限までにリクエストを送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p106">A. Eligible Office 365 customers can request to have their core data moved to the new geos. Customers will need to submit a request before the deadline for their geo in order to participate.</span></span> 
-  
- <span data-ttu-id="a0d79-127">**Q. 移行をリクエストする対象となるのは、どんなお客様ですか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-127">**Q. What customers are eligible to request a move?**</span></span>
-  
-<span data-ttu-id="a0d79-p107">A. 新しいデータセンター geo の対象となる国を選択した既存の Office 365 の商用ユーザーは、移行をリクエストできます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p107">A. Existing Office 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move.</span></span> 
-  
- <span data-ttu-id="a0d79-130">**Q. いつから移行をリクエストできますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-130">**Q. When will I be able to request a move?**</span></span>
-  
-<span data-ttu-id="a0d79-p108">A. リクエスト期間は [データ移行をリクエストする方法](request-your-data-move.md) ページで発表されます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p108">A. The request period will be announced on the [How to request your data move](request-your-data-move.md) page.</span></span> 
-  
- <span data-ttu-id="a0d79-133">**Q. どのように移行をリクエストしますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-133">**Q. How can I request to be moved?**</span></span>
-  
-<span data-ttu-id="a0d79-p109">A. 対象となるお客様には、[Office 365 管理ポータル](https://portal.office.com/)のページが表示されます。移行をリクエストする手順については「[データ移行をリクエストする方法](request-your-data-move.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p109">A. Eligible customers will see a page in their [Office 365 Admin Portal](https://portal.office.com/). Please see [How to request your data move](request-your-data-move.md) for instructions on how to request a move.</span></span> 
-  
- <span data-ttu-id="a0d79-137">**Q. 移行をリクエストした後で自分の決定を変更できますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-137">**Q. Can I change my selection after requesting a move?**</span></span>
-  
-<span data-ttu-id="a0d79-p110">A. リクエストを送信した後に、Microsoft 側で移行プロセスからお客様を削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p110">A. It is not possible for us to remove you from the process after you submit your request.</span></span>
-  
- <span data-ttu-id="a0d79-140">**Q. 期限までに移行をリクエストしないと、どうなりますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-140">**Q. What happens if I do not request a move before the deadline?**</span></span>
-  
-<span data-ttu-id="a0d79-p111">A. 各 geo の期限が過ぎた後に、移行に関するリクエストを受け付けることはできません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p111">A. We are unable to accept requests to be moved after the deadline in each geo.</span></span>
-  
- <span data-ttu-id="a0d79-143">**Q. ネットワークのパフォーマンスを向上するために、データを移動したらどうなりますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-143">**Q. What if I want to move my data in order to get better network performance?**</span></span>
-  
-<span data-ttu-id="a0d79-p112">Office 365 のデータ センターの距離が近いことは、ネットワークのパフォーマンスを向上させる保証ではありません。多くの要因とエンド ・ ユーザーと Office 365 サービスの間のネットワーク パフォーマンスに影響を与えるコンポーネントがあります。詳細については、パフォーマンス ・ チューニング、[ネットワークを計画し Office 365 のパフォーマンスの調整](network-planning-and-performance.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p112">Being close to an Office 365 datacenter is not a guarantee for a better networking performance. There are many factors and components that impact the network performance between the end user and the Office 365 service. For more information about this and performance tuning see [Network planning and performance tuning for Office 365](network-planning-and-performance.md).</span></span>
-  
- <span data-ttu-id="a0d79-147">**Q. すべてのサービスは同じ日にデータを移行しますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-147">**Q. Do all the services move their data on the same day?**</span></span>
-  
-<span data-ttu-id="a0d79-p113">A. サービスはデータを同時に移行しません。各サービスはデータを個別に移行します。移行する時期も異なる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p113">A. The services do not move their data at the same time. Each service will move independently and will likely move their data at different times.</span></span>
-  
- <span data-ttu-id="a0d79-151">**Q. データを移行する時期を自分で選ぶことはできますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-151">**Q. Can I choose when I want my data to be moved?**</span></span>
-  
-<span data-ttu-id="a0d79-p114">A. お客様は特定の日を選択したり、移行を遅らせたりできません。Microsoft が移行の具体的な日付や期間を共有することもできません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p114">A. Customers are not able to select a specific date, they cannot delay their move, and we cannot share a specific date or timeframe for the moves.</span></span>
-  
- <span data-ttu-id="a0d79-154">**Q. データの移動時に共有することは可能ですか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-154">**Q. Can you share when my data will be be moved?**</span></span>
-  
-<span data-ttu-id="a0d79-p115">A.データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。グローバルに操作され自動化された環境内でデータ移動を実行する際に必要になる複雑さ、精度およびスケールは、テナントまたはその他の任意の単一テナントがデータ移動の完了を期待しているときに、共有の妨げになります。お客様のデータ移動が完了すると、お客様はメッセージ センターで、参加しているサービスごとに 1 つの確認メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p115">A. Data moves are a back-end operation with minimal impact to end-users. The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant. Customers will receive one confirmation in Message Center per participating service when its data move has completed.</span></span> 
-  
- <span data-ttu-id="a0d79-159">**Q. データの移行中に、ユーザーがサービスにアクセスすると、どうなりますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-159">**Q. What happens if users access services while the data is being moved?**</span></span>
-  
-<span data-ttu-id="a0d79-p116">A. 各サービスのデータの移行中に制限される機能の詳細な一覧については「[データの移行中および移行後](during-and-after-your-data-move.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p116">A. See [During and after your data move](during-and-after-your-data-move.md) for a complete list of features that may be limited during portions of the data move for each service.</span></span> 
-  
- <span data-ttu-id="a0d79-162">**Q. 移行が完了したことはどのようにわかりますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-162">**Q. How do I know the move is complete?**</span></span>
-  
-<span data-ttu-id="a0d79-p117">A. Office 365 メッセージ センターをご覧いただき、各サービスのデータ移行が完了したことをご確認ください。各サービスのデータ移行時には完了通知が投稿されます。そのため、Exchange Online、SharePoint Online、Skype for Business Online の 3 件の完了通知を受け取ることになります。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p117">A. Watch the Office 365 message center for confirmation that the move of each service's data is complete. When each service's data is moved, we'll post a completion notice so you'll get three completion notices: one each for Exchange Online, SharePoint Online, and Skype for Business Online.</span></span>
-  
-<span data-ttu-id="a0d79-166">移行後に問題が見られた場合は、[Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="a0d79-166">If you see any issues after the move, contact [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) to get assistance.</span></span> 
-  
- <span data-ttu-id="a0d79-167">**Q. 新しいデータセンター geo には、Office 365 のどのデータが格納されますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-167">**Q. What data for Office 365 is stored in the new datacenter geos?**</span></span>
-  
-<span data-ttu-id="a0d79-p118">A. お客様が新しいデータセンター geo のいずれか 1 つにテナントをプロビジョニングする場合、Microsoft はその geo に次の顧客データを格納します。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p118">A. If a customer provisions its tenant in one of the new datacenter geos, Microsoft stores the following customer data at rest within the geo:</span></span>
-  
-- <span data-ttu-id="a0d79-170">ExchangeOnline メールボックスのコンテンツ (メール本文、予定表のエントリ、メール添付ファイルのコンテンツ)。</span><span class="sxs-lookup"><span data-stu-id="a0d79-170">Exchange Online mailbox content (e-mail body, calendar entries, and the content of email attachments)</span></span>
-    
-- <span data-ttu-id="a0d79-171">SharePointOnline サイトのコンテンツとそのサイト内に入っているファイル (Project Online と Access Online のコンテンツを含む)。</span><span class="sxs-lookup"><span data-stu-id="a0d79-171">SharePoint Online site content and the files stored within that site, including Project Online and Access Online content.</span></span>
-    
-<span data-ttu-id="a0d79-172">さらに、このデータは geo の外ではレプリケートされません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-172">In addition, this data is not replicated outside of the geo.</span></span>
-  
- <span data-ttu-id="a0d79-173">**Q. 私は新しいデータセンター geo にいる Office 365 のユーザーですが、サインアップ時には別の国を選択しました。新しいデータセンター geo に移行するにはどうすればよいですか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-173">**Q. I am an Office 365 customer in one of the new datacenter geos, but when I signed up, I selected a different country. How can I be moved to the new datacenter geo?**</span></span>
-  
-<span data-ttu-id="a0d79-p119">A. 残念ながら、テナントに関連付けられた国を変更することはできません。代わりに、新しいサブスクリプションで新しい Office 365 テナントを作成し、ユーザーとデータを手動で新しいテナントに移行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p119">A. Unfortunately, it is not possible to change the country associated with your tenant. Instead, you need to create a new Office 365 tenant with a new subscription and manually move your users and data to the new tenant.</span></span>
-  
- <span data-ttu-id="a0d79-177">**Q. 課金については、何らかの変更がありますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-177">**Q. Will there be any changes on my bill?**</span></span>
-  
-<span data-ttu-id="a0d79-p120">A. ほとんどの場合、お客様がご覧になる請求書に変更はありません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p120">A. In most cases there are no changes that customers in will see on their billing statement.</span></span>
-  
-<span data-ttu-id="a0d79-p121">Microsoft は Office 365 のオーストラリアのすべてのお客様に対して、Office 365 サービスのオーストラリア物品サービス税 (GST) を加算して課金し、税の請求書を発行いたします。これは、オーストラリアの商品サービス税の課税対象がオーストラリア国内で提供される商品サービスであることに伴う変更です。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p121">Microsoft will charge all Australian customers of Office 365 an additional amount equal to the Australian GST for Office 365 services and will issue tax invoices. This change will occur because Australian GST is payable on taxable supplies of goods and services provided and offered in Australia.</span></span>
-  
- <span data-ttu-id="a0d79-182">**Q. Exchange Online の移行中にメール データの Office 365 への移行が進行中の場合、どんなことが生じますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-182">**Q. What happens if we are in process of email data migration to Office 365 during the Exchange Online move?**</span></span>
-  
-<span data-ttu-id="a0d79-p122">A. メールの移行が進行中の場合、現在移行中のそれぞれのメールボックスはテナントの移行が完了するまでキャンセルされ、こうしたメールボックスの移行はテナントが宛先のデータセンターに配置されると自動的に再開されます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p122">A. If email migrations are in progress, any individual mailboxes that are currently being migrated will be canceled while the tenant move finalizes, and migration of those mailboxes will automatically restart once the tenant is in the target datacenters.</span></span>
-  
- <span data-ttu-id="a0d79-185">**Q. データが以前のデータセンター geo から移行した後、そのデータは元のデータセンターから削除されるのですか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-185">**Q. After data is moved out of the previous datacenter geo, is it removed from those datacenters?**</span></span>
-  
-<span data-ttu-id="a0d79-p123">A. はい。前のデータは、一定期間後に削除されます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p123">A. Yes, the old data will be purged after a period of time.</span></span>
-  
- <span data-ttu-id="a0d79-188">**Q. 一部のユーザーを先に移行できますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-188">**Q. Can I pilot some users?**</span></span>
-  
-<span data-ttu-id="a0d79-p124">A. Office 365 テナントが新しいデータセンター geo に移行されるときには、すべてのユーザーが一度に移行されます。接続をテストするために別の試用版テナントを作成することはできますが、試用版テナントと既存のテナントを統合することはできません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p124">A. When your Office 365 tenant is moved to a new datacenter geo, all users are moved at once. You can create a separate trial tenant to test connectivity, but the trial tenant can't be combined in any way with your existing tenant.</span></span>
-  
- <span data-ttu-id="a0d79-192">**Q. 移行について私にはどのように通知され、私の会社ではだれに通知されますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-192">**Q. How will I be notified about the move and who at my company will be notified?**</span></span>
-  
-<span data-ttu-id="a0d79-p125">A. Office 365 メッセージ センターを利用します。これは、Office 365 で管理者アクセス許可を持つすべてのユーザーが閲覧できます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p125">A. We'll use the Office 365 message center, which is visible to anyone with any admin permissions in Office 365.</span></span>
-  
- <span data-ttu-id="a0d79-195">**Q. Microsoft が私のデータを移行するのを待ちたくありません。新しいテナントを作成して自分で移行することはできますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-195">**Q. I don't want to wait for Microsoft to move my data. Can I just create a new tenant and move myself?**</span></span>
-  
-<span data-ttu-id="a0d79-p126">A: はい。だたし、プロセスは Microsoft がデータ移行を実行するときと同じようにシームレスではありません。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p126">A. Yes, however the process will not be as seamless as if Microsoft were to perform the data move.</span></span>
-  
-<span data-ttu-id="a0d79-p127">新しいデータセンター geo が利用可能になった後に新しいテナントを作成すると、新しいテナントは新しい geo でホストされます。この新しいテナントは以前のテナントとは完全に別個のものであり、すべてのユーザー メールボックス、サイトのコンテンツ、ドメイン名、その他のデータの移行をお客様自身の責任で実行していただくことになります。なお、テナント名は 1 つのテナントから別のテナントへ移行できないことに注意してください。Microsoft によって提供される移行プログラムをお待ちいただくことをお勧めします。すべての設定、データ、ユーザーのサブスクリプションの移行は、弊社にお任せください。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p127">If you create a new tenant after the new datacenter geo is available, the new tenant will be hosted in the new geo. This new tenant is completely separate from your previous tenant and you would be responsible for moving all user mailboxes, site content, domain names, and any other data. Note that you can't move the tenant name from one tenant to another. We recommend that you wait for the move program provided by Microsoft as we'll take care of moving all settings, data, and subscriptions for your users.</span></span>
-  
- <span data-ttu-id="a0d79-202">**Q. 移行の準備がまだできていないので、特定の移行日を選ぶことはできますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-202">**Q. I'm not ready to be moved, can I pick a specific move date?**</span></span>
-  
-<span data-ttu-id="a0d79-p128">A. 各サービスの顧客データの移行日は変更できません。データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p128">A. It is not possible for you to change when each service's customer data will be moved. Data moves are a back-end operation with minimal impact to end-users.</span></span>
-  
- <span data-ttu-id="a0d79-206">**Q. 私の顧客データは新しいデータセンター geo に既に移行しました。戻すことはできますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-206">**Q. My customer data has already been moved to a new datacenter geo. Can I move back?**</span></span>
-  
-<span data-ttu-id="a0d79-p129">A. できません。新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p129">A. This is not possible. Customers who have been moved to new geo datacenters cannot be moved back. As a customer in any geo, you will experience the same quality of service, performance, and security controls as you did before.</span></span>
-  
- <span data-ttu-id="a0d79-211">**Q. 新しいデータセンター geo では、現在のデータセンター geo と同じバージョンの Office 365 サービスを使いますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-211">**Q. Do the new datacenter geos use the same versions of Office 365 services as the current datacenter geos?**</span></span>
-  
-<span data-ttu-id="a0d79-p130">A. はい。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p130">A. Yes.</span></span>
-  
- <span data-ttu-id="a0d79-214">**Q. 新しいデータセンターでホストされる Office 365 テナントは、国外のユーザーも利用できますか?**</span><span class="sxs-lookup"><span data-stu-id="a0d79-214">**Q. Will Office 365 tenants hosted in the new datacenters be available to users outside of the country?**</span></span>
-  
-<span data-ttu-id="a0d79-p131">A. はい。Microsoft は、世界中の 23 か国の 50 を超える場所で公衆インターネットに接続する大規模なグローバル ネットワークを保有しており、1,500 を超えるインターネット サービス プロバイダー (ISP) と相互接続契約を結んでいます。インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="a0d79-p131">A. Yes. Microsoft maintains a large global network with public Internet connections in more than 50 locations in 23 countries around the world with peering agreements with more than 1,500 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.</span></span>
-  
-## <a name="related-topics"></a><span data-ttu-id="a0d79-219">関連項目</span><span class="sxs-lookup"><span data-stu-id="a0d79-219">Related topics</span></span>
+<span data-ttu-id="1d89c-106">新しいデータセンター geo の対象となる国を選択した既存の Office 365 の商用ユーザーは、移行をリクエストできます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-106">Existing Office 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move.</span></span>  <span data-ttu-id="1d89c-107">このプログラムは、office 365 テナントに割り当てられている資格のある国コードを持つテナントにのみ存在し、対応する office 365 データセンター geo への適用可能なワークロードに対して、コア顧客データを移行します。</span><span class="sxs-lookup"><span data-stu-id="1d89c-107">The program exists only for tenants with an eligible country code assigned to the Office 365 tenant to migrate core customer data at rest for eligible workloads to the corresponding Office 365 datacenter geo.</span></span>  <span data-ttu-id="1d89c-108">「[データの移動を要求する](request-your-data-move.md)」ページを参照して、国の適格性を確認してください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-108">Please refer to the [How to request your data move](request-your-data-move.md) page to confirm country eligibility.</span></span>   
 
-[<span data-ttu-id="a0d79-220">コア データを新しい Office 365 データ センター geo に移行する</span><span class="sxs-lookup"><span data-stu-id="a0d79-220">Moving core data to new Office 365 datacenter geos</span></span>](moving-data-to-new-datacenter-geos.md)
+## <a name="how-do-we-define-core-customer-data"></a><span data-ttu-id="1d89c-109">重要な顧客データをどのように定義するか。</span><span class="sxs-lookup"><span data-stu-id="1d89c-109">How do we define Core Customer Data?</span></span>
+ 
+<span data-ttu-id="1d89c-110">コア顧客データは、 [Microsoft Online Services の用語](https://go.microsoft.com/fwlink/p/?LinkID=249048)で定義されている顧客データのサブセットを参照する用語です。</span><span class="sxs-lookup"><span data-stu-id="1d89c-110">Core customer data is a term that refers to a subset of customer data defined in the [Microsoft Online Services Terms](https://go.microsoft.com/fwlink/p/?LinkID=249048):</span></span> 
+- <span data-ttu-id="1d89c-111">Exchange Online メールボックスのコンテンツ (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容)</span><span class="sxs-lookup"><span data-stu-id="1d89c-111">Exchange Online mailbox content (email body, calendar entries, and the content of email attachments)</span></span>
+- <span data-ttu-id="1d89c-112">SharePoint Online サイトのコンテンツと、そのサイト内に格納されているファイル</span><span class="sxs-lookup"><span data-stu-id="1d89c-112">SharePoint Online site content and the files stored within that site</span></span>
+- <span data-ttu-id="1d89c-113">OneDrive for business にアップロードされたファイル</span><span class="sxs-lookup"><span data-stu-id="1d89c-113">Files uploaded to OneDrive for Business</span></span> 
 
-[<span data-ttu-id="a0d79-221">データ移行をリクエストする方法</span><span class="sxs-lookup"><span data-stu-id="a0d79-221">How to request your data move</span></span>](request-your-data-move.md)
+## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a><span data-ttu-id="1d89c-114">移行が完了した時点で、テナントのコア顧客データが新しい geo に保存されます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-114">At what point is my migration complete so that my tenant’s core customer data is being stored at rest in my new geo?</span></span>
 
-[<span data-ttu-id="a0d79-222">Microsoft Dynamics CRM Online の新しいデータ センター geo</span><span class="sxs-lookup"><span data-stu-id="a0d79-222">New datacenter geos for Microsoft Dynamics CRM Online</span></span>](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+<span data-ttu-id="1d89c-115">Exchange online と SharePoint online/OneDrive for business の間で共有される依存関係により、両方のサービスが移行されるまで、移行を完了しないことを考慮することはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-115">Due to shared dependencies between Exchange Online and SharePoint Online/OneDrive for Business, any migration cannot be considered completed until both services are migrated.</span></span>  <span data-ttu-id="1d89c-116">Exchange online と SharePoint online または OneDrive for business は、多くの場合、別々の時間に個別に移行されます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-116">Exchange Online and SharePoint Online/OneDrive for Business often migrate at separate times and independently from one another.</span></span>  <span data-ttu-id="1d89c-117">テナント管理者は、各サービスの移行が完了すると、メッセージセンターで確認を受け取り、管理センターでデータの場所カードを表示することができます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-117">Tenant admins receive confirmation in Message Center when each service migration is completed and can view the data location card in the Admin Center at any time to confirm the core customer data at rest location for each service.</span></span>
+
+## <a name="will-my-tenant-automatically-be-moved-to-the-new-datacenter-geo"></a><span data-ttu-id="1d89c-118">自分のテナントは新しいデータセンター geo に自動的に移動しますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-118">Will my tenant automatically be moved to the new datacenter geo?</span></span>
+ 
+<span data-ttu-id="1d89c-119">テナント管理者として実行できるアクションは2つあります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-119">There are two actions that you can take as a tenant administrator.</span></span>
+
+- <span data-ttu-id="1d89c-120">オプトイン。</span><span class="sxs-lookup"><span data-stu-id="1d89c-120">Opt-in.</span></span><span data-ttu-id="1d89c-121">Office 365 引っ越しプログラムに登録し、お客様のサービスが主要な顧客データを新しいデータセンター geo に移行するための、コミットされた期限を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-121">  Enroll in the Office 365 Move Program and receive a committed deadline for your services to migrate core customer data at rest to the new datacenter geo.</span></span><span data-ttu-id="1d89c-122">プログラムにオプトインする方法については、「[データの移動を要求する方法](request-your-data-move.md)」ページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-122">  See the [How to request your data move](request-your-data-move.md) page for instructions on how to opt-in to the program.</span></span>
+- <span data-ttu-id="1d89c-123">何もしません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-123">Do nothing.</span></span><span data-ttu-id="1d89c-124">何もしないでください。 Microsoft は、サービスの管理と最適化の一環として、お客様の主要な顧客データを時間の経過と共に新しいデータセンター geo に移行できます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-124">  Take no action, which results in Microsoft being able to move your core customer data at rest to your new datacenter geo over time as part of service management and optimization.</span></span><span data-ttu-id="1d89c-125">データは、他の geo ではなく、新しいデータセンター geo にのみ移行する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-125">  Your data can only potentially move to your new datacenter geo, not to any other geo.</span></span><span data-ttu-id="1d89c-126">このようなサービス管理移動が完了すると、メッセージセンター経由で通知を行います。</span><span class="sxs-lookup"><span data-stu-id="1d89c-126">  We notify via Message Center when such a service management move has completed.</span></span>
+
+## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a><span data-ttu-id="1d89c-127">どのように確実に移行中の顧客データを保護し、ダウンタイムが発生しないようにするのですか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-127">How do you make sure my customer data is safe during the move and that I won't experience downtime?</span></span>
   
-[<span data-ttu-id="a0d79-223">Azure のリージョン</span><span class="sxs-lookup"><span data-stu-id="a0d79-223">Azure services by region</span></span>](https://azure.microsoft.com/en-us/regions/)
+<span data-ttu-id="1d89c-128">データの移動は、エンドユーザーへの影響を最小限に抑えたバックエンドのサービス操作です。</span><span class="sxs-lookup"><span data-stu-id="1d89c-128">Data moves are a back-end service operation with minimal impact to end-users.</span></span> <span data-ttu-id="1d89c-129">影響を受ける可能性がある機能は、[データの移行中および移行後](during-and-after-your-data-move.md)に一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-129">Features that can be impacted are listed in [During and after your data move](during-and-after-your-data-move.md).</span></span> <span data-ttu-id="1d89c-130">Microsoft は、 [Microsoft Online Services のサービスレベル契約 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)を利用できるようにしています。そのため、移行中にお客様が準備や監視を行う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-130">We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move.</span></span> 
+  
+<span data-ttu-id="1d89c-p106">Office 365 サービスは、どのデータセンターでもすべて同じバージョンが実行されるため、機能の一貫性が確保されます。このプロセス中、サービスは完全にサポートされます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-p106">All Office 365 services run the same versions in the datacenters, so you can be assured of consistent functionality. Your service is fully supported throughout the process.</span></span>
+  
+## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a><span data-ttu-id="1d89c-133">異なる geo に異なるサービスがあることには、どんな影響がありますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-133">What is the impact of having different services located in different geos?</span></span>
+
+<span data-ttu-id="1d89c-134">一部の Office 365 サービスは、既存のお客様や、移動プロセスの途中にあるお客様の geo によって異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-134">Some of the Office 365 services may be located in different geos for some existing customers and for customers that are in the middle of the move process.</span></span>  <span data-ttu-id="1d89c-135">これらのサービスは互いに独立して実行されます。この場合、ユーザーの利便性に影響を与えることはありません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-135">Our services run independently of each other and there is no impact to the user experience if this is the case.</span></span><span data-ttu-id="1d89c-136">ただし、データ常駐を目的として、Exchange online と SharePoint online/OneDrive for business の両方が同じデータセンター geo に移行されるまで、テナントの移行を完了することはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-136">  However, for data residency purposes, a tenant migration cannot be considered as complete until both Exchange Online and SharePoint Online/OneDrive for Business are migrated to the same datacenter geo.</span></span>
+  
+## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a><span data-ttu-id="1d89c-137">新しい Office 365 のユーザーは自動的に新しいデータセンター geo でプロビジョニングされますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-137">Will new Office 365 customers be automatically provisioned in the new datacenter geos?</span></span>
+  
+<span data-ttu-id="1d89c-138">はい。</span><span class="sxs-lookup"><span data-stu-id="1d89c-138">Yes.</span></span> <span data-ttu-id="1d89c-139">新しいデータセンター geo を利用できるようになると、新しい支社では、新規の geo の資格がある国を登録時に国として選択すると、新しいデータセンター geo に保存されている重要な顧客データが含まれます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-139">Once a new datacenter geo is available, new Office 365 for Business customers who select a country eligible for the new geo as their country during sign-up will have their core customer data stored at rest in the new datacenter geo.</span></span>
+  
+ ## <a name="where-is-my-core-customer-data-is-located"></a><span data-ttu-id="1d89c-140">コア顧客データはどこにありますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-140">Where is my core customer data is located?</span></span>
+
+<span data-ttu-id="1d89c-141">テナント管理者は、管理センターのデータの場所カードを表示して、いつでも各サービスの保存場所にある主要な顧客データを確認することができます (特にそのテナントの場合)。</span><span class="sxs-lookup"><span data-stu-id="1d89c-141">Tenant admins can view the data location card in the Admin Center at any time to confirm the core customer data at rest location for each service, specifically for their tenant.</span></span><span data-ttu-id="1d89c-142">また、データセンターの geo、データセンター、および office 365 の顧客データの場所を、 [ ](https://office.com/datamaps)新しいテナントの保存場所にある現在の既定のコア顧客データの参照として公開しています。</span><span class="sxs-lookup"><span data-stu-id="1d89c-142">  We also publish the location of datacenter geos, datacenters, and location of Office 365 customer data on the [ Office 365 interactive datacenter maps ](https://office.com/datamaps) as a reference for the current default core customer data at rest locations for new tenants.</span></span>  <span data-ttu-id="1d89c-143">Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認できます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-143">You can verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Office 365 Admin Center.</span></span>  
+ 
+## <a name="when-will-i-be-able-to-request-a-move"></a><span data-ttu-id="1d89c-144">いつから移行をリクエストできますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-144">When will I be able to request a move?</span></span>
+  
+<span data-ttu-id="1d89c-145">データセンター geo のサポート対象期間については、「[データの移動を要求する](request-your-data-move.md)」ページを参照してください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-145">Please refer to the [How to request your data move](request-your-data-move.md) page for supported timeframes for your datacenter geo.</span></span>
+  
+## <a name="how-can-i-request-to-be-moved"></a><span data-ttu-id="1d89c-146">どのように移行をリクエストしますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-146">How can I request to be moved?</span></span>
+  
+<span data-ttu-id="1d89c-147">対象となるお客様には、[Office 365 管理ポータル](https://portal.office.com/)のページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-147">Eligible customers will see a page in their [Office 365 Admin Portal](https://portal.office.com/).</span></span> <span data-ttu-id="1d89c-148">移行をリクエストする手順については「[データ移行をリクエストする方法](request-your-data-move.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-148">Please see [How to request your data move](request-your-data-move.md) for instructions on how to request a move.</span></span> 
+  
+## <a name="can-i-change-my-selection-after-requesting-a-move"></a><span data-ttu-id="1d89c-149">移行をリクエストした後で自分の決定を変更できますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-149">Can I change my selection after requesting a move?</span></span>
+  
+<span data-ttu-id="1d89c-150">リクエストを送信した後に、Microsoft 側で移行プロセスからお客様を削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-150">It is not possible for us to remove you from the process after you submit your request.</span></span>
+  
+## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a><span data-ttu-id="1d89c-151">期限までに移行をリクエストしないと、どうなりますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-151">What happens if I do not request a move before the deadline?</span></span>
+  
+ <span data-ttu-id="1d89c-152">移行を完了するために、テナントにコミット期限を付与するために、例外ベースで要求を受け入れることができる場合があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-152">We may be able to accept request on an exception basis to grant your tenant a committed deadline to complete the move.</span></span><span data-ttu-id="1d89c-153">  [Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)に連絡して、要求を行ってください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-153">  Please  contact [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) to make the request.</span></span>  <span data-ttu-id="1d89c-154">Microsoft では、サービスの管理と最適化の一環として、お客様の主要な顧客データを時間の経過と共に新しいデータセンター geo に移行することはできませんが、一部のワークロードは新しい geo に移行する可能性があることを思い出してください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-154">Recall that some workloads may move to your new geo even without an opt-in request as taking no action results in Microsoft being able to move your core customer data at rest to your new datacenter geo over time as part of service management and optimization.</span></span><span data-ttu-id="1d89c-155">データは、他の geo ではなく、新しいデータセンター geo にのみ移行する可能性があります。 </span><span class="sxs-lookup"><span data-stu-id="1d89c-155">  Your data can only potentially move to your new datacenter geo, not to any other geo. </span></span> <span data-ttu-id="1d89c-156">このようなサービス管理移動が完了すると、メッセージセンター経由で通知を行います。</span><span class="sxs-lookup"><span data-stu-id="1d89c-156">We notify via Message Center when such a service management move has completed.</span></span>
+  
+ ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a><span data-ttu-id="1d89c-157">ネットワークのパフォーマンスを向上するために、データを移動したらどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-157">What if I want to move my data in order to get better network performance?</span></span>
+  
+<span data-ttu-id="1d89c-158">Office 365 データセンターに近づいても、ネットワークのパフォーマンスが向上するわけではありません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-158">Being close to an Office 365 datacenter is not a guarantee for a better networking performance.</span></span> <span data-ttu-id="1d89c-159">エンド ユーザーと Office 365 サービス間のネットワークのパフォーマンスに影響を及ぼす要因とコンポーネントは数多くあります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-159">There are many factors and components that impact the network performance between the end user and the Office 365 service.</span></span> <span data-ttu-id="1d89c-160">このおよびパフォーマンスのチューニングの詳細については、「 [Office 365 のネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-160">For more information about this and performance tuning see [Network planning and performance tuning for Office 365](network-planning-and-performance.md).</span></span>
+  
+ ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a><span data-ttu-id="1d89c-161">すべてのサービスは同じ日にデータを移行しますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-161">Do all the services move their data on the same day?</span></span>
+ 
+<span data-ttu-id="1d89c-162">各サービスは独立して移動するため、データは異なる時間に移行される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-162">Each service moves independently and will likely move their data at different times.</span></span>
+  
+ ## <a name="can-i-choose-when-i-want-my-data-to-be-moved"></a><span data-ttu-id="1d89c-163">データを移行する時期を自分で選ぶことはできますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-163">Can I choose when I want my data to be moved?</span></span>
+ 
+ <span data-ttu-id="1d89c-164">Microsoft が移行の具体的な日付や期間を共有することもできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-164">Customers are not able to select a specific date, they cannot delay their move, and we cannot share a specific date or timeframe for the moves.</span></span>
+  
+ ## <a name="can-you-share-when-my-data-will-be-be-moved"></a><span data-ttu-id="1d89c-165">データの移動時に共有することは可能ですか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-165">Can you share when my data will be be moved?</span></span>
+  
+<span data-ttu-id="1d89c-166">データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。</span><span class="sxs-lookup"><span data-stu-id="1d89c-166">Data moves are a back-end operation with minimal impact to end-users.</span></span> <span data-ttu-id="1d89c-167">グローバルに操作され自動化された環境内でデータ移動を実行する際に必要になる複雑さ、精度およびスケールは、テナントまたはその他の任意の単一テナントがデータ移動の完了を期待しているときに、共有の妨げになります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-167">The complexity, precision and scale at which we need to perform data moves within a globally operated and automated environment prohibit us from sharing when a data move is expected to complete for your tenant or any other single tenant.</span></span> <span data-ttu-id="1d89c-168">お客様のデータ移動が完了すると、お客様はメッセージ センターで、参加しているサービスごとに 1 つの確認メッセージを受信します。</span><span class="sxs-lookup"><span data-stu-id="1d89c-168">Customers will receive one confirmation in Message Center per participating service when its data move has completed.</span></span> 
+  
+ ## <a name="what-happens-if-users-access-services-while-the-data-is-being-moved"></a><span data-ttu-id="1d89c-169">データの移行中に、ユーザーがサービスにアクセスすると、どうなりますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-169">What happens if users access services while the data is being moved?</span></span>
+
+<span data-ttu-id="1d89c-170">各サービスのデータの移行中に制限される機能の詳細な一覧については「[データの移行中および移行後](during-and-after-your-data-move.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-170">See [During and after your data move](during-and-after-your-data-move.md) for a complete list of features that may be limited during portions of the data move for each service.</span></span> 
+  
+ ## <a name="how-do-i-know-the-move-is-complete"></a><span data-ttu-id="1d89c-171">移行が完了したことはどのようにわかりますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-171">How do I know the move is complete?</span></span>
+  
+<span data-ttu-id="1d89c-172">各サービスのデータの移行が完了したことを確認するために、Office 365 メッセージセンターを見てください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-172">Watch the Office 365 Message Center for confirmation that the move of each service's data is complete.</span></span> <span data-ttu-id="1d89c-173">各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange online、SharePoint online、Skype for business online の3つの完了通知です。</span><span class="sxs-lookup"><span data-stu-id="1d89c-173">When each service's data is moved, we'll post a completion notice so you'll get three completion notices: one each for Exchange Online, SharePoint Online, and Skype for Business Online.</span></span>  <span data-ttu-id="1d89c-174">また、Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-174">You can also verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Office 365 Admin Center.</span></span>  
+  
+## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a><span data-ttu-id="1d89c-175">私は新しいデータセンター geo にいる Office 365 のユーザーですが、サインアップ時には別の国を選択しました。</span><span class="sxs-lookup"><span data-stu-id="1d89c-175">I am an Office 365 customer in one of the new datacenter geos, but when I signed up, I selected a different country.</span></span> <span data-ttu-id="1d89c-176">新しいデータセンター geo に移行するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-176">How can I be moved to the new datacenter geo?</span></span>
+
+<span data-ttu-id="1d89c-177">テナントに関連付けられているサインアップ国を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-177">It is not possible to change the signup country associated with your tenant.</span></span> <span data-ttu-id="1d89c-178">代わりに、新しいサブスクリプションで新しい Office 365 テナントを作成し、ユーザーとデータを手動で新しいテナントに移行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-178">Instead, you need to create a new Office 365 tenant with a new subscription and manually move your users and data to the new tenant.</span></span>
+  
+## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-office-365-during-the-exchange-online-move"></a><span data-ttu-id="1d89c-179">Exchange Online の移行中にメール データの Office 365 への移行が進行中の場合、どんなことが生じますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-179">What happens if we are in process of email data migration to Office 365 during the Exchange Online move?</span></span>
+
+<span data-ttu-id="1d89c-180">これは非常に一般的なシナリオであり、完全にサポートされています。</span><span class="sxs-lookup"><span data-stu-id="1d89c-180">This is a very common scenario and is fully supported.</span></span>  <span data-ttu-id="1d89c-181">データセンター geo 間のクラウドの移行では、オンプレミスとの間ではクラウドメールボックスの移行が妨げられることはありません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-181">Cloud migration between datacenter geos does not interfere with any on-premisis to cloud mailbox migrations.</span></span>
+  
+ ## <a name="can-i-pilot-some-users"></a><span data-ttu-id="1d89c-182">一部のユーザーを先に移行できますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-182">Can I pilot some users?</span></span>
+  
+<span data-ttu-id="1d89c-183">接続をテストするために別の試用版テナントを作成することはできますが、試用版テナントと既存のテナントを統合することはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-183">You can create a separate trial tenant to test connectivity, but the trial tenant can't be combined in any way with your existing tenant.</span></span>
+
+## <a name="i-dont-want-to-wait-for-microsoft-to-move-my-data-can-i-just-create-a-new-tenant-and-move-myself"></a><span data-ttu-id="1d89c-184">Microsoft がデータを移動するのを待つ必要はありません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-184">I don't want to wait for Microsoft to move my data.</span></span> <span data-ttu-id="1d89c-185">新しいテナントを作成して自分で移行することはできますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-185">Can I just create a new tenant and move myself?</span></span>
+  
+<span data-ttu-id="1d89c-186">だたし、プロセスは Microsoft がデータ移行を実行するときと同じようにシームレスではありません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-186">Yes, however the process will not be as seamless as if Microsoft were to perform the data move.</span></span>
+  
+<span data-ttu-id="1d89c-p119">新しいデータセンター geo が利用可能になった後に新しいテナントを作成すると、新しいテナントは新しい geo でホストされます。この新しいテナントは以前のテナントとは完全に別個のものであり、すべてのユーザー メールボックス、サイトのコンテンツ、ドメイン名、その他のデータの移行をお客様自身の責任で実行していただくことになります。なお、テナント名は 1 つのテナントから別のテナントへ移行できないことに注意してください。Microsoft によって提供される移行プログラムをお待ちいただくことをお勧めします。すべての設定、データ、ユーザーのサブスクリプションの移行は、弊社にお任せください。</span><span class="sxs-lookup"><span data-stu-id="1d89c-p119">If you create a new tenant after the new datacenter geo is available, the new tenant will be hosted in the new geo. This new tenant is completely separate from your previous tenant and you would be responsible for moving all user mailboxes, site content, domain names, and any other data. Note that you can't move the tenant name from one tenant to another. We recommend that you wait for the move program provided by Microsoft as we'll take care of moving all settings, data, and subscriptions for your users.</span></span>
+  
+ ## <a name="im-not-ready-to-be-moved-can-i-pick-a-specific-move-date"></a><span data-ttu-id="1d89c-191">移動の準備ができていませんが、特定の移動日を選択することはできますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-191">I'm not ready to be moved, can I pick a specific move date?</span></span>
+  
+<span data-ttu-id="1d89c-192">いいえ、各サービスの主要な顧客データが移動されるときに変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-192">No, it is not possible for you to change when each service's core customer data will be moved.</span></span>
+  
+ ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a><span data-ttu-id="1d89c-193">私の顧客データは新しいデータセンター geo に既に移行しました。</span><span class="sxs-lookup"><span data-stu-id="1d89c-193">My customer data has already been moved to a new datacenter geo.</span></span> <span data-ttu-id="1d89c-194">戻すことはできますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-194">Can I move back?</span></span>
+ 
+<span data-ttu-id="1d89c-195">いいえ、これはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-195">No, this is not possible.</span></span> <span data-ttu-id="1d89c-196">新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-196">Customers who have been moved to new geo datacenters cannot be moved back.</span></span> <span data-ttu-id="1d89c-197">任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-197">As a customer in any geo, you will experience the same quality of service, performance, and security controls as you did before.</span></span>  <span data-ttu-id="1d89c-198">[Office 365 の複数地域](https://aka.ms/multi-geo)は、一部のお客様がアドオンとして利用でき、1つのテナントで複数のサテライト geo を作成し、データ常駐責任を持つ geo にユーザーデータを移動することができます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-198">[Office 365 Multi Geo](https://aka.ms/multi-geo) is available to some customers as an add-on and lets a single tenant create multiple satellite geos and move user data to those geos with data residency commitments.</span></span>
+  
+ ## <a name="do-the-new-datacenter-geos-use-the-same-versions-of-office-365-services-as-the-current-datacenter-geos"></a><span data-ttu-id="1d89c-199">新しいデータセンター geo では、現在のデータセンター geo と同じバージョンの Office 365 サービスを使いますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-199">Do the new datacenter geos use the same versions of Office 365 services as the current datacenter geos?</span></span>
+
+<span data-ttu-id="1d89c-200">はい。</span><span class="sxs-lookup"><span data-stu-id="1d89c-200">Yes.</span></span>
+  
+## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a><span data-ttu-id="1d89c-201">新しいデータセンターでホストされる Office 365 テナントは、国外のユーザーも利用できますか?</span><span class="sxs-lookup"><span data-stu-id="1d89c-201">Will Office 365 tenants hosted in the new datacenters be available to users outside of the country?</span></span>
+  
+<span data-ttu-id="1d89c-202">A.</span><span class="sxs-lookup"><span data-stu-id="1d89c-202">A.</span></span> <span data-ttu-id="1d89c-203">はい。</span><span class="sxs-lookup"><span data-stu-id="1d89c-203">Yes.</span></span> <span data-ttu-id="1d89c-204">Microsoft は、世界中の35国に130以上の場所でパブリックインターネット接続を使用する大規模なグローバルネットワークを維持しています。これには、2700を超えるインターネットサービスプロバイダー (isp) とのピアリング契約があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-204">Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs).</span></span> <span data-ttu-id="1d89c-205">インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-205">Users will be able to access the datacenters from wherever they are on the Internet.</span></span>
+
+## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a><span data-ttu-id="1d89c-206">My テナントは、 [Office 365 の複数 Geo](https://aka.ms/multi-geo)に対して構成されています。</span><span class="sxs-lookup"><span data-stu-id="1d89c-206">My tenant is configured for [Office 365 Multi Geo](https://aka.ms/multi-geo).</span></span>  <span data-ttu-id="1d89c-207">Office 365 の移動プログラムで自分のテナントに登録したままにして既定の geo を変更し、サテライト地域にないユーザーを新しい既定の geo に移動することはできますか。</span><span class="sxs-lookup"><span data-stu-id="1d89c-207">Can I still enroll in my tenant in the Office 365 Move Program to change my default geo and move any user not in a satellite region to the new default geo?</span></span>
+
+<span data-ttu-id="1d89c-208">はい。テナントは登録する資格があります。</span><span class="sxs-lookup"><span data-stu-id="1d89c-208">Yes, your tenant is eligible to enroll.</span></span>  <span data-ttu-id="1d89c-209">現在の既定の地域から新しいローカルデータセンター geo にすべての exo メールボックスを移動します。</span><span class="sxs-lookup"><span data-stu-id="1d89c-209">We will move all EXO mailboxes from your current default geo to your new local datacenter geo.</span></span>  <span data-ttu-id="1d89c-210">複数地域のサテライト地域で構成されている exo メールボックスは、意図したとおりに、衛星地域のデータ常駐を引き続き尊重するように移行されません。</span><span class="sxs-lookup"><span data-stu-id="1d89c-210">We will not move any EXO mailboxes configured in Multi Geo satellite regions to continue to respect satellite region data residency as you’ve intended.</span></span>  <span data-ttu-id="1d89c-211">SharePoint Online と onedrive for business は、移動プログラムの一部として新しいデータセンター geo に移行できませんが、onedrive for business 共有を構成して、複数地域プログラムで任意の場所に移動することができます。</span><span class="sxs-lookup"><span data-stu-id="1d89c-211">SharePoint Online and OneDrive for Business cannot migrate to the new datacenter geo as part of the Move Program, though you can configure OneDrive for Business shares to move to any region you wish via the Multi Geo program.</span></span>
+  
+## <a name="related-topics"></a><span data-ttu-id="1d89c-212">関連項目</span><span class="sxs-lookup"><span data-stu-id="1d89c-212">Related topics</span></span>
+
+[<span data-ttu-id="1d89c-213">コアデータを新しい Office 365 データセンター geo に移行する</span><span class="sxs-lookup"><span data-stu-id="1d89c-213">Moving core data to new Office 365 datacenter geos</span></span>](moving-data-to-new-datacenter-geos.md)
+
+[<span data-ttu-id="1d89c-214">データ移行をリクエストする方法</span><span class="sxs-lookup"><span data-stu-id="1d89c-214">How to request your data move</span></span>](request-your-data-move.md)
+
+[<span data-ttu-id="1d89c-215">Office 365 複数地域</span><span class="sxs-lookup"><span data-stu-id="1d89c-215">Office 365 Multi Geo</span></span>](https://aka.ms/multi-geo)
+
+[<span data-ttu-id="1d89c-216">Office 365 interactive datacenter map</span><span class="sxs-lookup"><span data-stu-id="1d89c-216">Office 365 interactive datacenter map</span></span>](https://office.com/datamaps)
+
+[<span data-ttu-id="1d89c-217">Office 365 サポート</span><span class="sxs-lookup"><span data-stu-id="1d89c-217">Office 365 Support</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=522459)
+
+[<span data-ttu-id="1d89c-218">Microsoft Dynamics CRM Online の新しいデータ センター geo</span><span class="sxs-lookup"><span data-stu-id="1d89c-218">New datacenter geos for Microsoft Dynamics CRM Online</span></span>](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[<span data-ttu-id="1d89c-219">Azure のリージョン</span><span class="sxs-lookup"><span data-stu-id="1d89c-219">Azure services by region</span></span>](https://azure.microsoft.com/en-us/regions/)
