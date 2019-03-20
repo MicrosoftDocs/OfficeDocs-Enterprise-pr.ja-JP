@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: '概要: このテスト ラボ ガイドを使用して、Microsoft のクラウド サービスすべてを含む開発/テスト環境を作成します。'
-ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897150"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573661"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>One Microsoft Cloud 開発/テスト環境
 
@@ -59,7 +59,7 @@ ms.locfileid: "25897150"
 
 このフェーズでは、EMS 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。
   
-1. デスクトップ コンピューターのブラウザーまたは CLIENT1 のブラウザーのいずれかを使用して、全体管理者アカウントの資格情報で Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. デスクトップ コンピューターのブラウザーまたは CLIENT1 のブラウザーのいずれかを使用して、全体管理者アカウントの資格情報で Office 365 ポータル ([https://www.office.com](https://www.office.com)) にサインインします。
     
 2. **[管理]** タイルをクリックします。
     
@@ -102,11 +102,12 @@ ms.locfileid: "25897150"
 
 このフェーズでは、Dynamics 365 試用版サブスクリプションにサインアップして、Office 365 と EMS の試用版サブスクリプションと同じ組織に追加します。
   
-1. デスクトップ コンピューターのブラウザーまたは CLIENT1 のブラウザーのいずれかを使用して、全体管理者アカウントの資格情報で Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. デスクトップ コンピューターのブラウザーまたは CLIENT1 のブラウザーのいずれかを使用して、全体管理者アカウントの資格情報で Office 365 ポータル ([https://www.office.com](https://www.office.com)) にサインインします。
     
-2. **[管理]** タイルをクリックします。
+2. 
+            **[管理]** タイルをクリックします。
     
-3. **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
+3. **[Microsoft 365 管理センター]** タブの左側のナビゲーションで **[請求]、[サービスを購入する]** の順にクリックします。
     
 4. **[サービスを購入]** ページで、**[Dynamics 365 プラン 1 Enterprise Edition]** の項目を探します。その項目の上にマウス ポインターを移動させ、**[無料試用版を起動する]** をクリックします。
     
@@ -119,7 +120,7 @@ ms.locfileid: "25897150"
   
 次の手順を使用して、Dynamics 365 ライセンスをグローバル管理者、User 2、User 3 のアカウントに割り当て、システム管理者とします。
   
-1. **[Office 管理センター]** タブで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。
+1. **[Microsoft 365 管理センター]** タブで **[ユーザー]、[アクティブなユーザー]** の順にクリックします。
     
 2. アクティブ ユーザーの一覧で、全体管理者アカウントを選択し、**[製品ライセンス]** で **[編集]** をクリックします。
     
@@ -127,7 +128,7 @@ ms.locfileid: "25897150"
     
 4. User 2 と User 3 のアカウントに対して、手順 2 と 3 を実行します。
     
-5. **[Office 管理センター]** タブを閉じます。
+5. **[Microsoft 365 管理センター]** タブを閉じます。
     
 次の手順を使用して、Dynamics 365 のシステム管理者として User 2 と User 3 のアカウントを構成します。
   
