@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL Web サービスに含まれないそ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/16/2019
+ms.date: 03/04/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
+ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242089"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30374410"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -52,7 +52,7 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 | 6  | メールボックスの移行。オンプレミスの [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) から Office 365 へのメールボックスの移行が開始されると、Office 365 は Exchange Web サービス (EWS)/Mailbox Replication サービス (MRS) サーバーに接続されます。Exchange Online サーバーが使用する NAT IP アドレスを特定の送信元 IP の範囲からの受信接続に限定する場合は、「 [Office 365 の URL と IP アドレスの範囲](urls-and-ip-address-ranges.md) 」の「Exchange Online」サービス領域の欄に一覧が掲載されています。TCP 443 接続を特定の送信元 IP 範囲に制限する前に、MRS プロキシが別の FQDN とパブリック IP アドレスに解決するようにして、OWA などの公開済みの EWS エンドポイントへのアクセスが制限されないように注意する必要があります。 | 顧客のオンプレミス EWS/MRS プロキシ<br> TCP ポート 443 | 受信サーバー トラフィック |
 | 7  | [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) 空き時間情報の共有などの共存機能。 | 顧客のオンプレミス Exchange サーバーのバージョン | 受信サーバー トラフィック |
 | 8  | [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) プロキシ認証 | 顧客のオンプレミス STS | 受信サーバー トラフィック |
-| 9  | Exchange ハイブリッド構成ウィザードを使用して [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant)を構成する場合に使用します。 <br> 注: これらのエンドポイントは、Exchange ハイブリッドの構成にのみ必要です。  | TCP ポート 80 と 443 の ```domains.live.com``` は、Exchange 2010 SP3 ハイブリッド構成ウィザードでのみ必要です。 | 送信サーバー トラフィック |
+| 9  | [Exchange ハイブリッド構成ウィザード](https://docs.microsoft.com/exchange/hybrid-configuration-wizard)を使用して [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant)を構成する場合に使用します。 <br> 注: これらのエンドポイントは、Exchange ハイブリッドの構成にのみ必要です。  | TCP ポート 80 と 443 の domains.live.com は、Exchange 2010 SP3 ハイブリッド構成ウィザードでのみ必要です<BR> <BR> GCC High、DoD IP アドレス: 40.118.209.192/32、168.62.190.41/32 <BR> <BR> 世界中の商用および GCC: *.store.core.windows.net、asl.configure.office.com、mshrcstorageprod.blob.core.windows.net、tds.configure.office.com、mshybridservice.trafficmanager.net <BR>  | 送信サーバー トラフィック |
 | 10  | AutoDetect サービスは、[iOS および Android 用の Outlook でハイブリッド先進認証](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)を行う [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) シナリオで使用します。 <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 顧客の TCP 443 のオンプレミス Exchange サーバー | 受信サーバー トラフィック |
 | 11  | Office 2016 の Skype for Business には、UDP ポートを使用するビデオ ベースの画面共有が含まれています。Office 2013 以前の Skype for Business クライアントでは、TCP ポート 443 経由で RDP を使用していました。 | TCP ポート 443 を 52.112.0.0/14 に開く | Office 2013 以前の Skype for Business の古いクライアント バージョン |
 | 12  | Skype for Business ハイブリッド オンプレミス サーバーから Skype for Business Online への接続性 | 13.107.64.0/18、52.112.0.0/14 UDP ポート 50,000-59,999 <BR>  TCP ポート 50,000-59,999 | Skype for Business オンプレミス サーバーの送信接続性 |
