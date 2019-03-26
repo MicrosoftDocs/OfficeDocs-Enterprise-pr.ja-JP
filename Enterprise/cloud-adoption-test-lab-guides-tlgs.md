@@ -3,7 +3,7 @@ title: クラウド導入のテスト ラボ ガイド (TLG) を使用した Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/23/2018
+ms.date: 03/13/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: これらのクラウド導入のテスト ラボ ガイド (TLG) を使用して、Office 365、Dynamics 365、Office Server 製品のデモンストレーション、概念実証、開発/テスト環境を設定します。'
-ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 9d3423c1dadf95cd744a393c08b4303bc5cb8832
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897240"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573751"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>クラウド導入のテスト ラボ ガイド (TLG) を使用した Office 365 のテスト
 
@@ -34,12 +34,7 @@ TLG では短時間で Microsoft 製品について学習できます。ある�
   
 ![Microsoft Cloud のテスト ラボ ガイド](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-開始する前に、これらの追加のリソースを参照してください。
-  
-- Microsoft Virtual Academy セッションの「[クラウド導入のテスト ラボ ガイドを使用した Microsoft Cloud を試す](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 )」(22 分) を視聴してください。
-    
-- 
-            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+[ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
     
 ## <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 

@@ -15,26 +15,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: '概要: は、構成し、不適切な SharePoint Online サイト コレクションに投稿される場合でもに Office 365 の情報権利の管理が、機密性の高いファイルを保護する方法をデモンストレーションします。'
-ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
+ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915702"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574071"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
- **の概要:** 構成し、不適切な SharePoint Online サイト コレクションに投稿される場合でもに Office 365 の情報権利の管理が、機密性の高いファイルを保護する方法をデモンストレーションします。
+ **概要:** Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。
   
 Office 365 の Information Rights Management (IRM) は、SharePoint Online ライブラリとリストからダウンロードしたドキュメントを保護する機能のセットです。ダウンロードしたファイルは暗号化されており、格納されていた SharePoint Online ライブラリを反映するアクセス許可 (オープン、コピー、保存、印刷) を含んでいます。
   
 この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構築する
+## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
 最小要件で機密性の高いファイル保護を簡易な方法でテストする場合は、[Office 365 dev/test environment](office-365-dev-test-environment.md)のフェーズ 2 と 3 の指示に従ってください。
   
@@ -49,7 +49,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
   
 最初に、エグゼクティブを表す 3 つの新しいユーザー アカウントを追加して、Office 365 E5 ライセンスを割り当てます。
   
-PowerShell モジュール (必要な場合) をインストールしてから新しい Office 365 サービスに接続するには、 [Office 365 の PowerShell への接続](https://technet.microsoft.com/library/dn975125.aspx)の手順を使用します。
+「 [office 365 powershell に接続](https://technet.microsoft.com/library/dn975125.aspx)する」の手順を使用して、powershell モジュールをインストールし (必要な場合)、新しい Office 365 サブスクリプションに接続します。
   
 - 自分のコンピューター (軽量の Office 365 開発/テスト環境の場合)。
     
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 次に、プライベート エグゼクティブ グループを作成し、そこに新しいエグゼクティブ アカウントを追加します。
   
-1. お使いのブラウザーで Office のポータルに移動[http://portal.office.com](http://portal.office.com)し、グローバル管理者アカウントを使用して、Office 365 の試用版サブスクリプションにサインインします。
+1. ブラウザーで、office ポータルに移動[http://admin.microsoft.com](http://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
     
   - 簡易版の Office 365 開発/テスト環境を使用している場合は、Internet Explorer か任意のブラウザーのプライベート セッションを開いて、ローカル コンピューターからサインインします。
     
@@ -126,39 +126,39 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
-2. **Office 管理者センター** ] タブで、クリックして**管理センター > SharePoint**。
+2. [ **Office 管理センター** ] タブで、[**管理センター > SharePoint**] をクリックします。
     
-3. [ **SharePoint 管理センター** ] タブをクリックして**新規 > プライベート サイト コレクション**です。
+3. [ **SharePoint 管理センター** ] タブで、[**新しい > のプライベートサイトコレクション**] をクリックします。
     
-4. 新しいサイト コレクション] ウィンドウで、**タイトル**] に、[URL] ボックスで、経営**幹部**を入力で**管理者**は、グローバル管理者アカウントの名前を指定 **]** をクリックします。
+4. [サイトコレクションの新規作成] ウィンドウ**** の [ **** URL] ボックスに「役職」と入力し、**管理者**のグローバル管理者アカウントの名前を指定して、[ **OK]** をクリックします。
     
-5. 新しいサイト コレクションが作成されるまで待機します。完了すると、新しい経営陣のサイト コレクションの URL をコピーし、お使いのブラウザーの新しいタブに貼り付けます。
+5. 新しいサイトコレクションが作成されるまで待機します。 完了したら、新しい重役サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。
     
 6. **エグゼクティブ** サイト コレクションの右上部分にある [設定] アイコンをクリックし、**[共有アイテム]** をクリックします。
     
-7. **共有 '経営'** の場合は、[**詳細**を] をクリックします。
+7. [**共有 ' エグゼクティブ '**] で、[**詳細設定**] をクリックします。
     
 8. SharePoint グループの一覧で、**[エグゼクティブ メンバー]** をクリックします。
     
 9. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
-10. **共有 '経営'** に**経営幹部**を入力、**経営幹部**のグループ、**共有**] をクリックします。
+10. [**共有 ' エグゼクティブ '**] で、「**エグゼクティブ**」と入力し、[**重役**] グループをクリックして、[**共有**] をクリックします。
     
-11. **ユーザーとグループ**] タブを閉じます。
+11. [**ユーザーとグループ**] タブを閉じます。
     
 次に、販売サイト コレクションへのアクセスを許可します。
   
-1. **SharePoint 管理者センター** ] タブで、販売サイト コレクションの URL をコピーし、ブラウザーの新しいタブに貼り付けます.
+1. [ **SharePoint 管理センター** ] タブから、Sales サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。
     
-2. 、右上の設定アイコンをクリックする**と共有**] をクリックします。
+2. 右上部分で [設定] アイコンをクリックし、**[共有アイテム]** をクリックします。
     
-3. **共有 '販売サイト コレクション'** の場合は、[**詳細**] をクリックします。
+3. [**共有 ' 販売サイトコレクション '**] で、[**詳細設定**] をクリックします。
     
 4. SharePoint グループの一覧で、**[販売サイト コレクション メンバー]** をクリックします。
     
 5. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
-6. **共有 '販売サイト コレクション'** に**Everyone**と入力、**外部のユーザーを除くすべて**] をクリックし、**共有**] をクリックします。
+6. [**共有 ' 販売サイトコレクション '**] に「 **everyone**」と入力し、[**外部ユーザー以外のすべてのユーザー**] をクリックして、[**共有**] をクリックします。
     
 7. **[販売サイト コレクション]** と **[SharePoint]** のタブを閉じます。
     
@@ -166,15 +166,15 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://portal.office.com](http://portal.office.com)。
+2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
     
-3. **Office 365 のサインイン**ページで、**別のアカウントを使用**] をクリックします。
+3. **Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。
     
 4. **CEO** アカウント名とパスワードを入力し、**[サインイン]** をクリックします。
     
-5. お使いのブラウザーの新しいタブのエグゼクティブのサイト コレクションの URL を入力します ( **https://**\<組織名 >**.sharepoint.com/sites/executives**)。
+5. ブラウザーの新しいタブで、エグゼクティブサイトコレクション ( **https://**\<organization name>) の URL を入力します****。
     
-6. **ドキュメント**] をクリックして、[**新規作成**] をクリックし、[ **Word 文書**] をクリックします。
+6. [**ドキュメント**]、[**新規作成**]、[ **Word 文書**] の順にクリックします。
     
 7. タイトル バーをクリックして、「**SensitiveData BeforeIRM**」と入力します。
     
@@ -184,13 +184,13 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 次に、SensitiveData BeforeIRM.docx ドキュメントのローカル コピーをダウンロードして、販売サイト コレクションに誤って投稿します。
   
-1. ローカル コンピューターに新しいフォルダーを作成します (たとえば、c:\\TLGs\\SensitiveDataTestFiles)。
+1. ローカルコンピューターで、新しいフォルダーを作成します (たとえば、C:\\tlgs\\SensitiveDataTestFiles)。
     
 2. ブラウザーの **[ドキュメント]** タブで、**SensitiveData BeforeIRM.docx** ドキュメントを選び、省略記号をクリックして、**[ダウンロード]** をクリックします。
     
 3. **SensitiveData BeforeIRM.docx** ドキュメントをステップ 1 で作成したフォルダーに格納します。
     
-4. お使いのブラウザーの新しいタブの販売サイト コレクションの URL を入力します ( **https://**\<組織名 >**.sharepoint.com/sites/sales**)。
+4. ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します ( **https://**\<organization name>)****。
     
 5. **販売サイト コレクション** の **[ドキュメント]** フォルダーをクリックします。
     
@@ -204,13 +204,13 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://portal.office.com](http://portal.office.com)。
+2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
     
-3. **Office 365 のサインイン**ページで、**別のアカウントを使用**] をクリックします。
+3. **Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。
     
 4. User5 アカウント名とパスワードを入力して、**[サインイン]** をクリックします。
     
-5. 、お使いのブラウザーの新しいタブでは、営業サイト コレクションの URL を入力します。
+5. ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。
     
 6. **販売サイト コレクション**の **[ドキュメント]** フォルダーで、**SensitiveData-BeforeIRM.docx** ドキュメントをクリックします。 
     
@@ -224,7 +224,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
   
 1. **[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://portal.office.com](http://portal.office.com)。
+2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
     
 3. **Office 365 のサインイン** ページで、全体管理者のアカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。
     
@@ -242,7 +242,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
   
 最初に、エグゼクティブ サイト コレクションのドキュメント ライブラリ用に IRM を有効にして設定します。  
   
-1. 、お使いのブラウザーの新しいタブでは、経営幹部のサイト コレクションの URL を入力します。
+1. ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します。
     
 2. **[ドキュメント]** をクリックします。
     
@@ -258,7 +258,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
   - **[アクセス許可ポリシーの説明を追加]** に、「**エグゼクティブ用の IRM**」と入力します。
     
-6. [ **オプションの表示**] をクリックします。
+6. [**オプションの表示**] をクリックします。
     
 7. **[IRM ライブラリの追加設定]** で、**[ユーザーに IRM をサポートしないドキュメントのアップロードを許可しない]** を選択します。
     
@@ -266,7 +266,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 9. **[グループの保護および資格情報の間隔を設定]** で、**[グループの保護を許可します]** を選択し、**[既定のグループ]** に対して「**エグゼクティブ**」と入力します。
     
-10. **[OK]** をクリックします。
+10. [**OK**] をクリックします。
     
 次に、CEO として新しいドキュメントをエグゼクティブ ドキュメント フォルダーにアップロードし、それをダウンロードして、販売ドキュメント フォルダーに誤ってアップロードします。
   
@@ -276,15 +276,15 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 3. フォルダー内を右クリックして、**[貼り付け]** をクリックします。
     
-4. **SensitiveData AfterIRM.docx**に新しい**SensitiveData-BeforeIRM - Copy.docx**ファイルの名前を変更します。
+4. 新しい**SensitiveData-beforeirm-.docx**ファイルの名前を**sensitivedata-afterirm.docx**に変更します。
     
 5. ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-6. [http://portal.office.com](http://portal.office.com)。
+6. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
     
 7. **Office 365 のサインイン** ページで、CEO アカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。
     
-8. 、お使いのブラウザーの新しいタブでは、経営幹部のサイト コレクションの URL を入力します。
+8. ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します。
     
 9. **[ドキュメント]** ページで、**[アップロード]** をクリックし、ローカル フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントを指定して、**[開く]** をクリックします。
     
@@ -294,7 +294,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 12. **[ドキュメント]** ページのタブを閉じます。
     
-13. 、お使いのブラウザーの新しいタブでは、営業サイト コレクションの URL を入力します。
+13. ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。
     
 14. **[ドキュメント]** をクリックします。
     
@@ -306,11 +306,11 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
   
 1. ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://portal.office.com](http://portal.office.com)。
+2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
     
-3. **Office 365 のサインイン**ページで、User5 のアカウント名をクリックを選択し、そのパスワードを入力し、[**サインイン**] をクリックします。
+3. **Office 365 のサインイン**ページで、User5 のアカウント名をクリックし、パスワードを入力して、[**サインイン**] をクリックします。
     
-4. 、お使いのブラウザーの新しいタブでは、営業サイト コレクションの URL を入力します。
+4. ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。
     
 5. **[ドキュメント]** をクリックします。
     

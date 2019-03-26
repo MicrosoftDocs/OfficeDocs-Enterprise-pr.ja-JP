@@ -12,22 +12,22 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: 管理者が Office 365 PowerShell を使って Office 365 を管理すべき理由を説明します。ある場合は効率のため、他の場合は必要であるためです。'
-ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
-ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
+ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30538995"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574101"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Office 365 PowerShell を使用する必要がある理由
 
  **概要:** 管理者が Office 365 PowerShell を使って Office 365 を管理すべき理由を説明します。ある場合は効率のため、他の場合は必要であるためです。
   
-Office 365 管理センター では、Office 365 ユーザー アカウントとライセンスの管理だけでなく、Office 365 サーバー製品 (Exchange、Skype for Business Online、SharePoint Online) の管理もできます。しかし、これらの管理は Office 365 PowerShell コマンドでも行うことができ、そうするなら、コマンド ラインやスクリプト言語環境を活用して処理の高速化や自動化を実現させ、機能性が向上する場合もあります。
+Microsoft 365 管理センターを使用すると、office 365 のユーザーアカウントとライセンスを管理できるだけでなく、office 365 サーバー製品: Exchange、Skype for business online、および SharePoint online を管理することもできます。 しかし、これらの管理は Office 365 PowerShell コマンドでも行うことができ、そうするなら、コマンド ラインやスクリプト言語環境を活用して処理の高速化や自動化を実現させ、機能性が向上する場合もあります。
   
 この記事では、Office 365 の管理に Office 365 PowerShell が役立つ、以下の点を示します。
   
-- Office 365 PowerShell は、Office 365 管理センター では表示できない追加情報を取得できます。
+- Office 365 PowerShell では、Microsoft 365 管理センターでは表示できない追加情報を確認できます。
     
 - Office 365 には Office 365 PowerShell を使用することによってのみ構成可能な機能がある
     
@@ -45,9 +45,9 @@ Office 365 管理センター では、Office 365 ユーザー アカウント�
 Get-Mailbox
 ```
 
-メールボックスの一覧の取得は Office 365 管理センター を使用しても実行できますが、すべての Web アプリ用のすべてのサイトのすべての一覧に含まれるアイテム数のカウントは簡単にはできません。
+メールボックスのリストを取得することも、Microsoft 365 管理センターを使用して簡単に行うことができますが、すべての web アプリのすべてのサイトについて、すべてのリストのアイテム数をカウントすることは簡単に行えません。
   
-Office 365 PowerShell は Office 365 の管理機能を増強する目的で設計されており、Office 365 管理センター に取って代わるものではないことに注意してください。Office 365 管理者は少なくとも Office 365 PowerShell を問題なく使用できる程度に理解している必要があります。Office 365 PowerShell コマンドによってのみ可能な構成手順もあるためです。そのような場合には、以下の方法について理解している必要があります。
+office 365 PowerShell は、Microsoft 365 管理センターを置き換えるのではなく、office 365 を管理する機能を強化し、強化するように設計されています。 office 365 の管理者は、office 365 powershell コマンドでしか実行できない構成手順があるため、office 365 PowerShell の使用に関しては、少なくとも使い慣れてはなりません。 このような場合は、次の方法を理解する必要があります。
   
 - Office 365 PowerShell モジュールをインストールする (管理者のコンピューターごとに 1 回のみ行います)。
     
@@ -59,13 +59,13 @@ Office 365 PowerShell は Office 365 の管理機能を増強する目的で設�
     
 これらの基本的なスキルを習得すれば、 **Get-mailbox** コマンドを使用してメールボックス ユーザーの一覧を作成する必要もなければ、すべての Web アプリ用のすべてのサイトのすべての一覧に含まれるすべてのアイテムをカウントするための前述のコマンドのような新しいコマンドを作成する方法を理解する必要もありません。Microsoft や Office 365 管理者のコミュニティが、こうした事柄を必要に応じて実行する際に役立ちます。
   
-## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>Office 365 PowerShell では Office 365 管理センターでは表示できない追加情報を確認できる
+## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-microsoft-365-admin-center"></a>Office 365 PowerShell では、Microsoft 365 管理センターでは表示できない追加情報を確認できます。
 
-Office 365 管理センター には多くの有用な情報が表示されますが、ユーザー、ライセンス、メールボックス、サイトに Office 365 が格納しているすべての情報が表示されるわけではありません。Office 365 管理センター の **[ユーザーとグループ]** の例を次に示します。
+Microsoft 365 管理センターでは、多くの有益な情報が表示されますが、これは、ユーザー、ライセンス、メールボックス、サイトに Office 365 が保存する可能性がある情報をすべて表示するという意味ではありません。 Microsoft 365 管理センターの**ユーザーとグループ**の例を次に示します。
   
-![Office 365 管理センター内のユーザーとグループの表示の例です。](media/o365-powershell-users-and-groups.png)
+![Microsoft 365 管理センターでのユーザーとグループの表示例。](media/o365-powershell-users-and-groups.png)
   
-ここには、さまざまな理由で把握すべき情報が表示されます。 しかし、もっと多くの情報が必要な場合もあります。 たとえば、office 365 ライセンス (およびユーザーが使用できる office 365 機能) は、そのユーザーの地理的な場所によって異なります。 米国内に在住しているユーザーに対して拡張可能なポリシーと機能は、インドやベルギー在住のユーザーに対して拡張可能なポリシーと機能と同じではない場合があります。 ユーザーの地理的な場所は Office 365 管理センター で次の手順を使用して判別できます。
+ここには、さまざまな理由で把握すべき情報が表示されます。 しかし、もっと多くの情報が必要な場合もあります。 たとえば、office 365 ライセンス (およびユーザーが使用できる office 365 機能) は、そのユーザーの地理的な場所によって異なります。 米国内に在住しているユーザーに対して拡張可能なポリシーと機能は、インドやベルギー在住のユーザーに対して拡張可能なポリシーと機能と同じではない場合があります。 Microsoft 365 管理センターを使用して、ユーザーの地理的な場所を確認するには、次の手順を実行します。
   
 1. ユーザーの **表示名** をダブルクリックします。
     
@@ -75,7 +75,7 @@ Office 365 管理センター には多くの有用な情報が表示されま�
     
 4. **[国/地域]** という見出しが表示されるまでスクロールダウンします。
     
-     ![Office 365 管理センター内のユーザーの地域情報の例です。](media/o365-powershell-usage-location.png)
+     ![Microsoft 365 管理センター内のユーザーの地域情報の例。](media/o365-powershell-usage-location.png)
   
 5. ユーザーの表示名と場所を紙に書き留めるか、コピーしてメモ帳に貼り付けます。 
     
@@ -166,7 +166,7 @@ $x | Select DisplayName, UsageLocation
   
 ## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365 には Office 365 PowerShell でのみ構成可能な機能がある
 
-Office 365 管理センター は、ほとんどの場合に対応する最も一般的で重要な管理タスクを利用できるようにすることを目的としています。つまり、Office 365 管理センター は、一般的な管理者がこのツールを使用して最も一般的な管理タスクを実行できるように設計されています。したがって、Office 365 管理センター では実行できないタスクも存在します。
+Microsoft 365 管理センターは、ほとんどのユーザーに適用される最も一般的な管理タスクまたは意味のある管理タスクへのアクセスを提供することを目的としています。 つまり、Microsoft 365 管理センターは、一般的な管理者がツールを使用して最も一般的な管理タスクを実行できるように設計されています。 この定義により、Microsoft 365 管理センターを使用して完了できないタスクがいくつかあることを意味します。
   
 たとえば、Skype for Business Online 管理センターにはカスタムの会議出席依頼を作成するためのいくつかのオプションが備わっています。
   
@@ -202,11 +202,11 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
   
 ## <a name="office-365-powershell-is-great-at-carrying-out-bulk-operations"></a>Office 365 PowerShell は一括操作の実行の点で優れている
 
-これまで、Office 365 管理センター のようなビジュアル インターフェイスは、実行する操作が 1 つである場合に最適でした。たとえば、1 つのユーザー アカウントを無効にする必要がある場合は、Office 365 管理センター を使用することにより、簡単にチェックボックスを見つけて選択を解除できます。こちらのほうが、Office 365 PowerShell で同様の操作を行うよりも簡単な場合があります。
+従来は、単一の操作を実行すると、Microsoft 365 管理センターのようなビジュアルインターフェイスが最も重要になります。 たとえば、1つのユーザーアカウントを無効にする必要がある場合は、Microsoft 365 管理センターを使用して、チェックボックスをすばやく見つけてクリアすることができます。 こちらのほうが、Office 365 PowerShell で同様の操作を行うよりも簡単な場合があります。
   
-しかし、多くのものを変更したり、多くの対象から一部を選択して変更したりする必要がある場合には、Office 365 管理センター が最も効率的であるとはいえません。たとえば、何千もの電話番号の局番を変更したり、使用しているすべての SharePoint Online サイトから特定のユーザー (Ken Myer) を削除する必要がある場合、Office 365 管理センター でどのように実行できるでしょうか。
+しかし、その他の多くの場合に、多数の項目や選択したものを変更する必要がある場合は、Microsoft 365 管理センターがお客様の時間を最適に使用しないことがあります。 たとえば、数千人の電話番号のプレフィックスを変更する必要がある場合や、特定のユーザー (Ken Myer) をすべての SharePoint Online サイトから削除する必要がある場合は、Microsoft 365 管理センターでどうすればよいでしょうか。
   
-後者の例の場合、何百もの SharePoint Online サイトがあり、Ken Meyer がメンバーのサイトも判断できません。つまり、Office 365 管理センター を開き、各サイトに対して以下の手順を実行する必要があります。
+後者の例の場合、何百もの SharePoint Online サイトがあり、Ken Meyer がメンバーのサイトも判断できません。 そのため、Microsoft 365 管理センターから開始して、各サイトでこの手順を実行する必要があります。
   
 1. サイトの **URL** をクリックします。
     
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!TIP]
 >  この Office 365 PowerShell コマンドの説明: 現在の Office 365 サブスクリプションのすべての SharePoint サイトを取得し (**Get-SPOSite**)、各サイトにアクセス可能なユーザーの一覧から Ken Meyer を削除します (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)。
   
-Ken Meyer がアクセス権を持っていないサイトも含めて、すべてのサイトから Ken Meyer を削除するように Office 365 に指示しているため、このコマンドの画面表示には、現在アクセス権を持っていないサイトに関するエラーが示されます。このコマンドで追加条件を使用して Key Meyer がログイン リストに含まれているサイトからのみ削除できます。ただし、表示されるエラーによってサイト自体が悪影響を受けることはありません。Office 365 管理センター で作業するには何時間もかかるのに対し、このコマンドを何百ものサイトに対して実行しても数分しかかかりません。
+ユーザーがアクセス権を持っていないものも含めて、すべてのサイトから Ken Meyer を削除するよう Office 365 に指示しているため、このコマンドの表示では、現在アクセスできないサイトに関するエラーが表示されます。 このコマンドで追加の条件を使用して、彼がログインリストにあるサイトからのみキー Meyer のみを削除することができますが、リストされているエラーによってサイト自体に悪影響が生じることはありません。 このコマンドは、Microsoft 365 管理センターで作業する時間ではなく、数百のサイトに対して実行されるまでに数分かかる場合があります。
   
 別の一括操作の例を次に示します。このコマンドを使用して、新しい SharePoint 管理者である Bonnie Kearney を組織内のすべてのサイトに追加します。
   
@@ -249,9 +249,9 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
   
 ## <a name="office-365-powershell-is-great-at-filtering-data"></a>Office 365 PowerShell はデータのフィルター処理に優れている
 
-Office 365 管理センター では、データをフィルター処理するためのさまざまな方法、つまり、対象になる情報の一部をすばやく簡単に見つけるためのさまざまな方法を使用できます。たとえば、Exchange では、ユーザー メールボックスのほとんどすべてのプロパティに対するフィルターを簡単に適用できます。たとえば、以下は、Bloomington 市に在住のすべてのユーザーのメールボックスを一覧表示する例です。
+Microsoft 365 管理センターでは、データをフィルター処理して、対象となる情報のサブセットを迅速かつ簡単に見つけられるように、さまざまな方法を使用できます。 たとえば、Exchange では、ユーザー メールボックスのほとんどすべてのプロパティに対するフィルターを簡単に適用できます。 たとえば、以下は、Bloomington 市に在住のすべてのユーザーのメールボックスを一覧表示する例です。
   
-![Office 365 管理センターで、ブルーミントン市に住んでいるすべてのユーザーのメールボックスの一覧に対して詳細検索を行う例です。](media/o365-powershell-advanced-search.png)
+![ブルーミントンの市区町村に居住しているすべてのユーザーのメールボックスの一覧については、Microsoft 365 管理センターで高度な検索を実行する例を示します。](media/o365-powershell-advanced-search.png)
   
 Exchange 管理センターでは、フィルター条件を組み合わせることもできます。たとえば、ブルーミントン市に住み、経理部で働いているすべての住民のメールボックスを見つけることができます。 
   
@@ -307,7 +307,7 @@ Janet Schorr                              Bellevue
   
 Office 365 PowerShell フィルターでワイルドカード文字を使って、名前の一部が一致している項目を検出することもできます。たとえば、あるユーザー アカウントを探しているものの、名字が Anderson か Henderson であることしか思い出せず、もしかすると Jorgenson だったかもしれないとします。
   
-Office 365 管理センター では、このユーザーは検索ツールを使用して、次の 3 種類の検索を実行して見つけ出すことができます。
+検索ツールを使用して、次の3つの異なる検索を実行することによって、Microsoft 365 管理センターでそのユーザーを追跡することができます。
   
 - *Anderson*  用のもの 
     
@@ -326,11 +326,11 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell を使用するとデータの印刷や保存が簡単にできる
 
-Office 365 管理センターでは、データのリストを表示することができます。 以下に、skype for business online 管理センターの例を示します。このリストには、skype for business online が有効になっているユーザーの一覧が表示されます。
+Microsoft 365 管理センターでは、データの一覧を表示できます。 以下に、skype for business online 管理センターの例を示します。このリストには、skype for business online が有効になっているユーザーの一覧が表示されます。
   
 ![Skype for Business Online 管理センターで、Skype for Business Online に対して有効になっているユーザーの一覧を表示する例です。](media/o365-powershell-lync-users.png)
   
-この情報をファイルに保存するには、コピーしてドキュメントまたは Excel に貼り付ける必要があります。どちらの場合も、コピー操作には追加の書式設定が必要になる場合があります。また、Office 365 管理センター では、表示された一覧を直接印刷できません。
+この情報をファイルに保存するには、コピーしてドキュメントまたは Excel に貼り付ける必要があります。 どちらの場合も、コピー操作には追加の書式設定が必要になる場合があります。 また、Microsoft 365 管理センターでは、表示されている一覧を直接印刷する方法は提供されていません。
   
 幸い、Office 365 PowerShell を使えば、一覧を表示するだけでなく、ファイルに保存してそれを簡単に Excel にインポートできます。次に示すコマンド例を実行すると、Skype for Business Online ユーザー データがコンマ区切り値 (CSV) ファイルに保存されます。このファイルは、Excel ワークシート内にテーブルとして簡単にインポートできます。
   
@@ -378,7 +378,7 @@ Office 365 を構成する各種のコンポーネントは連動するように
     
 - ユーザーが Skype for Business Online に対して有効になっているかどうか
     
-現時点では、Office 365 管理センター を使用して、このようなレポートを簡単に作成することはできません。それどころか、Excel ワークシートなどの情報を格納するための別のドキュメントを作成し、Office 365 管理センター からすべてのユーザー名とライセンス情報を取得して、Exchange からメールボックス情報を取得し、Skype for Business Online から Skype for Business Online 情報を取得した後に、それらの情報を並べてまとめる必要があります。
+現時点では、Microsoft 365 管理センターを使用してこのようなレポートを簡単に作成することはできません。 代わりに、excel ワークシートなどの情報を格納する別のドキュメントを作成し、Microsoft 365 管理センターからすべてのユーザー名とライセンス情報を取得する必要があります。また、Exchange 管理センターからメールボックス情報を取得して、Skype for business を取得することもできます。Skype for business online 管理センターからのビジネスオンライン情報を入力し、その情報を照合して結合します。
   
 これに代わる方法として、Office 365 PowerShell スクリプトを使ってレポートをコンパイルできます。
   

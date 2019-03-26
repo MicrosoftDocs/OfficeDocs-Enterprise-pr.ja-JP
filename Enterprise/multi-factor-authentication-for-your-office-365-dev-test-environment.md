@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 概要:Office 365 の開発/テスト環境で、スマート フォンに送信されるテキスト メッセージを使用して多要素認証を構成します。
-ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242079"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573981"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境用の多要素認証
 
  **概要:** Office 365 の開発/テスト環境で、スマート フォンに送信されるテキスト メッセージを使用して多要素認証を構成します。
   
-Office 365 サブスクリプションにサインインするための追加のセキュリティレベルについては、Azure 多要素認証を有効にすることができます。これには、アカウントを認証するためにユーザー名とパスワードだけを必要とします。Office 365 に多要素認証を使用する場合、ユーザーは電話での通話の承認、テキストメッセージで送信された検証コードの入力、またはスマートフォンのパスワードを正しく入力した後にアプリのパスワードを指定する必要があります。この2番目の認証要因が満たされている場合にのみ、サインインできます。 
+Office 365 サブスクリプションにサインインするための追加のセキュリティレベルについては、Azure 多要素認証を有効にすることができます。これには、アカウントを認証するためにユーザー名とパスワードだけを必要とします。 Office 365 に多要素認証を使用する場合、ユーザーは電話での通話の承認、テキストメッセージで送信された検証コードの入力、またはスマートフォンのパスワードを正しく入力した後にアプリのパスワードを指定する必要があります。 この第 2 の認証要素が満たされた後でのみ、ユーザーはサインインできます。 
   
 この記事では、特定の Office 365 アカウントに対してテキスト メッセージ ベースの認証を有効にしてテストする方法について説明します。
   
@@ -38,7 +38,8 @@ Office 365 サブスクリプションにサインインするための追加の
 2. User 2 アカウントに対して、多要素認証を有効にしてテストします。
     
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> 
+            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
@@ -53,11 +54,11 @@ Office 365 サブスクリプションにサインインするための追加の
 
 次の手順を実行して、User 2 アカウントに対して多要素認証を有効にしてテストします。
   
-1. ブラウザーの別のインスタンスを開き、office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
+1. ブラウザーの別のインスタンスを開き、office 365 ポータル ([https://www.office.com](https://www.office.com)) に移動し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
     
 2. ポータルのメイン ページで、**[管理]** をクリックします。
     
-3. 左側のナビゲーションで、 **[ユーザー] > [アクティブなユーザー]** をクリックします。
+3. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
 4. [アクティブなユーザー] ウィンドウで、[**その他の > 多要素認証のセットアップ**] をクリックします。
     
@@ -77,7 +78,7 @@ Office 365 サブスクリプションにサインインするための追加の
   
 1. ブラウザーの新しいインスタンスを開きます。
     
-2. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、User 2 アカウント (user2 @\<organization name>) とパスワードを使用してサインインします。
+2. Office 365 ポータル ([https://www.office.com](https://www.office.com)) に移動し、User 2 アカウント (user2 @\<organization name>) とパスワードを使用してサインインします。
     
 3. サインイン後、追加のセキュリティ検証のためにアカウントを設定するように求められます。**[今すぐセットアップ]** をクリックします。
     
@@ -89,7 +90,7 @@ Office 365 サブスクリプションにサインインするための追加の
     
   - [**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。
     
-5. **[次へ]** をクリックします。
+5. [ **次へ**] をクリックします。
     
 6. スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。
     
@@ -109,5 +110,5 @@ Office 365 サブスクリプションにサインインするための追加の
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 展開用の多要素認証の計画](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Office 365 の展開で多要素認証を計画する](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

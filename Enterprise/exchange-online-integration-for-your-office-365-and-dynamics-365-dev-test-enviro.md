@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: '概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。'
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897120"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574021"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合
 
@@ -42,11 +42,11 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 
 以下の手順を使用して、Dynamics 365 と Exchange Online 統合用の全体管理者のメールボックスを構成します。
   
-1. お使いのブラウザーのプライベート ・ セッションを使用して[http://portal.office.com](http://portal.office.com)し、Office 365 のグローバル管理者アカウントを使用してサインインします。
+1. ブラウザーのプライベートセッションを使用して、に[http://admin.microsoft.com](http://admin.microsoft.com)移動し、Office 365 のグローバル管理者アカウントを使用してサインインします。
     
 2. **Microsoft Office ホーム** ページで、 **[メール]** タイルをクリックします。
     
-3. ブラウザーの [新しい**メール**] タブ、[**新規**] をクリックし、メッセージを入力するボックスの下のウィンドウの下隅がマイ テンプレートのアイコンには、方法に注意してください。
+3. ブラウザーの [新しい**メール**] タブで、[**新規**] をクリックし、ウィンドウの下側にある、メッセージの入力ボックスの下に [My Templates] アイコンが表示されていることを確認します。
     
      ![Dynamics 365 との統合なしの、新しい空の電子メール メッセージ。](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
     
 5. ブラウザーの **[Microsoft Office ホーム]** タブをクリックし、次いで **[メール]** タイルをクリックします。
     
-6. ブラウザーの [新しい**メール**] タブ、[**新規**] をクリックします。今すぐメッセージを入力するためのボックスの下のウィンドウの下隅にある Dynamics 365 のアイコンに注目してください。
+6. ブラウザーの新しい **[メール]** タブをクリックし、 **[新規作成]** をクリックします。 ウィンドウの下側に、メッセージを入力するためのボックスの下に、Dynamics 365 のアイコンが表示されることに注意してください。
     
      ![新しいアイコンが表示される、Dynamics 365 と統合された新しい空の電子メール メッセージ。](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 概要:Windows PowerShell を使用して Office 365 の一括移行を実行する方法について説明します。
-ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193687"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574081"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell を使用して Office 365 へのカットオーバーの移行を実行する
 
@@ -75,7 +75,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **、オンプレミスのユーザー アカウントに Exchange 組織内のメールボックスにアクセスするために必要なアクセス許可を割り当てます**。オンプレミス ユーザー アカウント (移行管理者とも呼ばれます)、オンプレミスの Exchange 組織への接続に使用する Office 365 に移行する、オンプレミスのメールボックスにアクセスするために必要なアクセス許可が必要です。このユーザー アカウントを使用して、設置型の組織への移行エンドポイントを作成できます。
+- **Exchange 組織のメールボックスへのアクセスに必要なアクセス許可を社内ユーザー アカウントに割り当てる。** オンプレミスの Exchange 組織 (移行管理者とも呼ばれます) に接続するために使用するオンプレミスのユーザーアカウントは、Office 365 に移行する社内メールボックスにアクセスするために必要なアクセス許可を持っている必要があります。 このユーザー アカウントは、社内組織の移行エンドポイントを作成するために使用されます。
     
     以下の一覧に、一括移行を使用してメールボックスを移行するために必要な管理者権限を示します。3 つの可能なオプションがあります。
     
@@ -195,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>セクション 7:ユーザー ライセンスの割り当て
 <a name="BK_Step7"> </a>
 
- **ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。** ライセンスを割り当てないと、猶予期間が終了したとき (30 日) にメールボックスが無効になります。Office 365 管理センター でライセンスを割り当てるには、「[一般法人向け Office 365 ライセンスの割り当てまたは割り当て解除を行う](https://go.microsoft.com/fwlink/?LinkId=536681)」を参照してください。
+ **ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。** ライセンスを割り当てないと、猶予期間が終了したとき (30 日) にメールボックスが無効になります。 Microsoft 365 管理センターでライセンスを割り当てるには、「[Office 2013 for business のライセンスの割り当てまたは割り当て解除](https://go.microsoft.com/fwlink/?LinkId=536681)を行う」を参照してください。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>ステップ 8:移行後のタスクを完了する
 <a name="BK_Step8"> </a>

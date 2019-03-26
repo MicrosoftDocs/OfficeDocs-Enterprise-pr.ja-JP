@@ -3,7 +3,7 @@ title: エンタープライズ アーキテクトのための Microsoft クラ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: '概要: Microsoft クラウド サービスとプラットフォームのネットワークを設計します。'
-ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 6b224ce2db0d247c553428a2e4bfd6ba475fc89a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123354"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573901"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク
 
@@ -63,8 +63,6 @@ ms.locfileid: "27123354"
     
     サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。
     
-このポスターの重要な点を扱った 30 分間の概要については、「[Microsoft クラウド サービスに合わせてネットワークを最適化する](https://mva.microsoft.com/ja-JP/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)」Microsoft Virtual Academy コースをご覧ください。
-  
 > [!NOTE]
 > これらの記事は、「エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク」のポスターの **2018 年 12 月**リリースを反映しています。
   

@@ -3,7 +3,7 @@ title: Microsoft クラウド接続のためのExpressRoute
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/02/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
-ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
+ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27470169"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574011"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -51,7 +51,7 @@ ISP と Microsoft クラウド エッジとの間のパスは、インターネ�
   
 図 2 は、2 つのネットワーク パスを示しています。Microsoft Intune へのトラフィックは、通常のインターネットのトラフィックと同じパスを通過します。Office 365、Microsoft Azure、Dynamics 365 へのトラフィックは、ExpressRoute 接続を通過します。この接続は、オンプレミス ネットワークのエッジと Microsoft クラウドのエッジとの間の専用パスです。
   
-ExpressRoute 接続では、ここで、サービス ・ プロバイダーとの関係によって、コントロール、クラウドのエッジ、エッジからマイクロソフトへの全体のトラフィック パスを。この接続には、予測可能なパフォーマンスと、 [99.95% の稼働時間 SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)を提供できます。
+ExpressRoute 接続を使用すると、サービス プロバイダーとの関係を通じて、自社のエッジから Microsoft クラウドのヘッジまでのトラフィック パス全体を管理できるようになります。 この接続により、予測可能なパフォーマンスと[99.95% のアップタイム SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)が提供されます。
   
 これにより、Office 365、Azure、Dynamics 365 サービスへの予測可能なスループットと待機時間は、サービス プロバイダーの接続に基づいて、信頼できるものになります。現時点では、Microsoft Intune への ExpressRoute 接続はサポートされていません。
   
@@ -96,30 +96,30 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Microsoft クラウド サービスへの ExpressRoute ピアリング関係
 
-ExpressRoute の単一の接続を 2 つの罫線ゲートウェイ プロトコル (BGP) ピアリング関係が異なるマイクロソフト クラウドのさまざまな部分をサポートしています。BPG は、ピアリング関係を使用して信頼を確立し、ルーティング情報を交換します。
+1つの ExpressRoute 接続は、Microsoft クラウドのさまざまな部分に対して、最大2つの異なる境界ゲートウェイプロトコル (BGP) ピアリング関係をサポートします。 BPG では、信頼を確立してルーティング情報を交換するために、ピアリング関係を使用します。
   
-**図 3: 2 つ異なる BGP の関係で 1 つの ExpressRoute 接続**
+**図 3: 単一の ExpressRoute 接続における2つの異なる BGP 関係**
 
-![図 3: 2 つ異なる BGP の関係で 1 つの ExpressRoute 接続](media/Network-Poster/ERPeering.png)
+![図 3: 単一の ExpressRoute 接続における2つの異なる BGP 関係](media/Network-Poster/ERPeering.png)
   
-図 3 は、オンプレミスのネットワークから、ExpressRoute の接続を示しています。ExpressRoute の接続には、2 つの論理ピアリング関係があります。マイクロソフトのピアリング関係は、Office 365、Dynamcs 365、Azure PaaS のサービスを含め、マイクロソフトの SaaS のサービスに移動します。プライベート ピアリング関係は、Azure IaaS と仮想マシンをホストする仮想ネットワークのゲートウェイに送られます。
+図 3 は、オンプレミス ネットワークからの ExpressRoute 接続を示しています。 ExpressRoute 接続には、2つの論理的なピアリング関係があります。 microsoft ピアリング関係は、Office 365、Dynamcs 365、および Azure PaaS サービスを含む、microsoft の SaaS サービスに送られます。 プライベート ピアリング関係には、Azure IaaSに向けられたものと、仮想マシンをホストする仮想ネットワーク ゲートウェイに向けられたものがあります。
   
-Microsoft ピアリング BGP 関係: 
+Microsoft ピアリング BGP 関係:  
   
-- Office 365、Dynamics 365 では、Azure のサービスのパブリック アドレスは、DMZ 内のルーターからです。 
+- DMZ のルーターから、Office 365、Dynamics 365、および Azure サービスのパブリックアドレスに向けられています。 
     
-- 双方向で開始される通信をサポートします。
+- 	双方向で開始される通信をサポートします。
     
 プライベート ピアリング BGP 関係:
   
-- 組織のネットワークのエッジにあるルーターから Azure VNet に割り当てられたプライベート IP アドレスに向けられています。
+- 	組織のネットワークのエッジにあるルーターから Azure VNet に割り当てられたプライベート IP アドレスに向けられています。
     
-- 双方向で開始される通信をサポートします。
+- 	双方向で開始される通信をサポートします。
     
-- 組織のネットワークのMicrosoft クラウドへの拡張であり、内部的に一貫したアドレス指定とルーティングを備えています。
+- 	組織のネットワークのMicrosoft クラウドへの拡張であり、内部的に一貫したアドレス指定とルーティングを備えています。
 
 >[!Note]
->この資料の以前のバージョンで記載されているパブリックのピアリング BGP 関係は廃止されました。
+>この記事の前のバージョンで説明されているパブリックピアリング BGP 関係は廃止されました。
 >
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>ExpressRoute によるアプリケーション展開とトラフィック フローの例
@@ -151,7 +151,7 @@ Microsoft ピアリング関係とプライベート ピアリング関係があ
     
 - オンプレミスのネットワーク エッジから、ExpressRoute 接続を通じて Azure VNet のプライベート IP アドレスと Office 365 のパブリック IP アドレスが使用できます。
     
-アプリケーションが SharePoint Online の URL にアクセスすると、そのトラフィックは ExpressRoute 接続を通じてエッジにあるプロキシ サーバーに転送されます。 
+アプリケーションが SharePoint Online の URL にアクセスすると、そのトラフィックは ExpressRoute 接続を通じてエッジにあるプロキシ サーバーに転送されます。  
   
 プロキシ サーバーが SharePoint Online の IP アドレスを見つけると、ExpressRoute 接続を通じてトラフィックが戻ります。応答トラフィックは逆方向のパスを通過します。
   
@@ -184,9 +184,9 @@ Microsoft クラウド ピアリングの場所への ExpressRoute 接続を作�
   
 このため、Any-to-Any 接続モデルの場合は、ローカルの Microsoft データセンターへの配信が最適でなくなる可能性があります。
   
-**ExpressRoute の単一の接続を使用する地理的に分散組織の例を図 7:**
+**図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例**
 
-![ExpressRoute の単一の接続を使用する地理的に分散組織の例を図 7:](media/Network-Poster/MSNet1.png)
+![図 7: 単一の ExpressRoute 接続を使用する地理的に分散した組織の例](media/Network-Poster/MSNet1.png)
   
 図 7 は、2 つの場所 (米国の北西にある Location 1 と北東にある Location 2) を持つ組織を示しています。これらは、Any-to-Any の WAN プロバイダーで接続されています。この組織には、西海岸にある Microsoft ピアリングの場所への ExpressRoute 接続もあります。北東にある Location 2 から東海岸のデータセンターに向かうトラフィックは、組織の WAN で西海岸に移動し、Microsoft ピアリングの場所に移動してから、Microsoft クラウド ネットワーク経由で国を横断して東海岸のデータセンターに戻ります。この経路をすべて通過する必要があります。
   
@@ -200,7 +200,7 @@ Microsoft クラウド ピアリングの場所への ExpressRoute 接続を作�
   
 複数の ExpressRoute 接続には、次の利点があります。
   
-- 地域的にローカルな Microsoft データセンターの場所に対するパフォーマンスの向上。
+- 	地域的にローカルな Microsoft データセンターの場所に対するパフォーマンスの向上。
     
 - ローカルの ExpressRoute 接続が使用不能になったときの Microsoft クラウドに対する可用性の向上。
     
@@ -210,17 +210,17 @@ Microsoft クラウド ネットワークを経由する大陸間トラフィッ
   
 ### <a name="expressroute-premium"></a>ExpressRoute Premium
 
-大陸間にグローバルに分散している組織の場合は、ExpressRoute Premium を使用できます。 
+大陸間にグローバルに分散している組織の場合は、ExpressRoute Premium を使用できます。  
   
 ExpressRoute Premium では、どの大陸にある Microsoft ピアリングの場所からでも、あらゆる大陸にある任意の Microsoft データセンターに到達できます。大陸間のトラフィックは、Microsoft クラウド ネットワークを通じて転送されます。
   
 複数の ExpressRoute Premium 接続を使用すると、次の利点が得られます。
   
-- 大陸的にローカルな Microsoft データセンターに対するパフォーマンスの向上。
+- 	大陸的にローカルな Microsoft データセンターに対するパフォーマンスの向上。
     
 - ローカルの ExpressRoute 接続が使用不能になったときのグローバルな Microsoft クラウドに対する可用性の向上。
     
-ExpressRoute プレミアムは、Office 365 に基づく ExpressRoute の接続に必要です。
+Office 365 ベースの ExpressRoute 接続には、ExpressRoute Premium が必要になります。
   
 **図 9: 全世界をカバーする Microsoft のクラウド ネットワーク**
 
@@ -232,7 +232,7 @@ ExpressRoute プレミアムは、Office 365 に基づく ExpressRoute の接続
   
 - 大陸の Office 365 データセンターへのトラフィックは、その大陸内の Microsoft クラウド ネットワークを通じて移動します。
     
-- 別の大陸にある Office 365 データセンターへのトラフィックは、大陸間の Microsoft クラウド ネットワークを通じて移動します。
+- 	別の大陸にある Office 365 データセンターへのトラフィックは、大陸間の Microsoft クラウド ネットワークを通じて移動します。
     
 詳細については、以下を参照してください。
   
@@ -240,15 +240,13 @@ ExpressRoute プレミアムは、Office 365 に基づく ExpressRoute の接続
     
 - [Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
     
-- [Office 365 のパフォーマンス管理](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
-    
 ## <a name="expressroute-options"></a>ExpressRoute のオプション
 
 ExpressRoute の展開には、次に示すオプションを組み込むこともできます。
   
 - **エッジでのセキュリティ:** ExpressRoute 接続を通じて送受信されるトラフィックに高度なセキュリティ (トラフィック検査や侵入/マルウェア検出など) を提供するには、DMZ 内のトラフィック パスまたはインターネット境界にセキュリティ アプライアンスを配置します。
     
-- **Vm 用のインターネット トラフィック:** Azure の仮想マシンがインターネット上の場所に直接トラフィックを開始することを防ぐためには、Microsoft の既定のルートをアドバタイズします。インターネットへのトラフィックは、ExpressRoute 接続を経由し、オンプレミスのプロキシ サーバー経由でルーティングされます。Azure PaaS サービスまたは Office 365 に Azure の仮想マシンからのトラフィックは、ExpressRoute 接続経由でルーティングされます。
+- **vm のインターネットトラフィック:** Azure vm がインターネット上の場所を使用して直接トラフィックを開始できないようにするには、既定のルートを Microsoft にアドバタイズします。 インターネットへのトラフィックは、ExpressRoute 接続を経由して、オンプレミスのプロキシ サーバーを通過するようにルーティングされます。 Azure VM から Azure PaaS サービスや Office 365 へのトラフィックは、ExpressRoute 接続を経由して戻るようにルーティングされます。
     
 - **WAN オプティマイザー:** クロスプレミス Azure 仮想ネットワーク (VNet) のプライベート ピアリング接続の両側に WAN オプティマイザーを展開できます。Azure VNet の内部では、Azure マーケットプレースから得られる WAN オプティマイザー ネットワーク アプライアンスと、トラフィックがアプライアンスを通過するようにルーティングするユーザー定義のルーティングを使用します。
     
