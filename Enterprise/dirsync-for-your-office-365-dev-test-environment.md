@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '概要: Office 365 の開発/テスト環境に向けたディレクトリ同期を構成します。'
-ms.openlocfilehash: 12a352bda387b79016edcc62c08ff15b0bf96ee9
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897500"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573951"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のディレクトリ同期
 
@@ -92,7 +92,7 @@ Stop-Process -Name Explorer -Force
     
 11. **[構成が完了しました]** ページで、**[終了]** をクリックします。
     
-12. Internet Explorer で Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
+12. Internet Explorer で Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、グローバル管理者アカウントで Office 365 試用版サブスクリプションにサインインします。
     
 13. ポータルのメイン ページで、**[管理]** をクリックします。
     

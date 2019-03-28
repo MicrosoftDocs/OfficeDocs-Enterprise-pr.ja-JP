@@ -14,19 +14,20 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 概要:Office 365 PowerShell を使って Microsoft Exchange Online を管理します。これには、メールボックスの構成の表示や詳細なレポートの作成が含まれます。
-ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573931"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Office 365 PowerShell で Exchange Online を管理する
 
  **概要:** Office 365 PowerShell を使って Microsoft Exchange Online を管理します。これには、メールボックスの構成の表示や詳細なレポートの作成が含まれます。
   
-Microsoft Exchange Online 管理者の主要なタスクの 1 つは、メールボックスを管理し、それらに関するレポートを取得することです。Office 365 管理センター でもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早くかつ簡単に実行できます。詳細については、以下のトピックをご覧ください。
+Microsoft Exchange Online 管理者の主要なタスクの 1 つは、メールボックスを管理し、それらに関するレポートを取得することです。 Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早く簡単に実行できます。 詳細については、次のトピックをご覧ください。
   
-- [Office 365 PowerShell を使用して Exchange Online メールボックスの情報を表示する](https://technet.microsoft.com/ja-JP/library/mt771881%28v=exchg.160%29.aspx)
+- [Office 365 PowerShell で Exchange Online メールボックス情報を表示する](https://technet.microsoft.com/ja-JP/library/mt771881%28v=exchg.160%29.aspx)
     
 - [Office 365 PowerShell を使用して Exchange Online レポートを表示する](https://technet.microsoft.com/ja-JP/library/mt771882%28v=exchg.160%29.aspx)
     

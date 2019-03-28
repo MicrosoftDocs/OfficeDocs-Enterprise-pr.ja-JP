@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: '概要: このテスト ラボ ガイドを使用して、Dynamics 365 を Office 365 開発/テスト環境に追加します。'
-ms.openlocfilehash: 195e5ab4fd96d1f238c96d47cc7406a45e0e02b1
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9e4c98129c68ab5d2f0d9fc486ab62740c625af5
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915212"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574061"
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境
 
@@ -66,11 +66,11 @@ Dynamics 365 試用版サブスクリプションでは、上記の 1 つ以上�
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Dynamics 365 試用版サブスクリプションにサインアップする
 
-1. デスクトップ コンピューター (ライトウェイト) のブラウザーまたは CLIENT1 (シミュレーションのエンタープライズ) のブラウザーのいずれかを使用して、全体管理者アカウントの資格情報で Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. デスクトップ コンピューター (ライトウェイト) のブラウザーまたは CLIENT1 (シミュレーションのエンタープライズ) のブラウザーのいずれかを使用して、全体管理者アカウントの資格情報で Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. **[管理]** タイルをクリックします。
     
-3. **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
+3. **[Microsoft 365 管理センター]** タブの左側のナビゲーションで **[請求]、[サービスを購入する]** の順にクリックします。
     
 4. **[サービスを購入]** ページで、**[Dynamics 365 プラン 1 Enterprise Edition]** の項目を探します。その項目の上にマウス ポインターを移動させ、**[無料試用版を起動する]** をクリックします。
     
@@ -89,7 +89,7 @@ Dynamics 365 試用版サブスクリプションでは、上記の 1 つ以上�
   
 Dynamics 365 ライセンスを割り当てるには次の手順を使用します。
   
-1. **[Office 管理センター]** タブで **[ユーザー] > [アクティブなユーザー]** の順にクリックします。
+1. **[Microsoft 365 管理センター]** タブで **[ユーザー]、[アクティブなユーザー]** の順にクリックします。
     
 2. アクティブ ユーザーの一覧で、全体管理者アカウントを選択し、**[製品ライセンス]** で **[編集]** をクリックします。
     
@@ -97,7 +97,7 @@ Dynamics 365 ライセンスを割り当てるには次の手順を使用しま�
     
 4. User 2 と User 3 のアカウントに対して、手順 2 と 3 を実行します。
     
-5. **[Office 管理センター]** タブを閉じます。
+5. **[Microsoft 365 管理センター]** タブを閉じます。
     
 次の手順を使用して、Dynamics 365 のシステム管理者として User 2 と User 3 のアカウントを構成します。
   

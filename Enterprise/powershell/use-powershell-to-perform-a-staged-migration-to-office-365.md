@@ -1,5 +1,5 @@
 ---
-title: "PowerShell を使用して Office 365 への段階的な移行を実行する"
+title: PowerShell を使用して Office 365 への段階的な移行を実行する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: "概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。"
-ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
+ms.openlocfilehash: 3e390502e239573f1b3c93f5e3d46c0aa0f4579a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574111"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell を使用して Office 365 への段階的な移行を実行する
 
@@ -88,7 +89,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   
  **ユニファイド メッセージング (UM) を無効にする**: 移行する社内のメールボックスで UM がオンになっている場合は、移行前に UM をオフにします。移行の完了後に、メールボックスの UM をオンにします。操作手順については、「[ユーザーのユニファイド メッセージングを無効にする方法](https://go.microsoft.com/fwlink/?LinkId=521891)」を参照してください。
   
- **ディレクトリ同期を使用して Office 365 でユーザーを新規作成します。**ディレクトリ同期を使用すると、Office 365 組織のすべての社内ユーザーを作成できます。
+ **ディレクトリ同期を使用して Office 365 でユーザーを新規作成します。** ディレクトリ同期を使用すると、Office 365 組織のすべての社内ユーザーを作成できます。
   
 ユーザーの作成後にライセンスを付与する必要があります。ユーザーの作成後、ライセンスを追加するまでに 30 日間があります。ライセンスを追加する手順については、「[ステップ 8:移行後のタスクを完了する](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration)」を参照してください。
   
@@ -235,12 +236,12 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step7-assign-licenses-to-office-365-users"></a>ステップ 7:Office 365 ユーザーにライセンスを割り当てる
 <a name="BK_Endpoint"> </a>
 
-ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。ライセンスを割り当てないと、猶予期間 (30 日) が終了したときにメールボックスが無効になります。Office 365 管理センター でライセンスを割り当てるには、「[一般法人向け Office 365 ライセンスの割り当てまたは割り当て解除を行う](https://go.microsoft.com/fwlink/?LinkId=536681)」を参照してください。
+ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。 ライセンスを割り当てないと、猶予期間 (30 日) が終了したときにメールボックスが無効になります。 Microsoft 365 管理センターでライセンスを割り当てるには、「[一般法人向け Office 365 ライセンスの割り当てまたは割り当て解除を行う](https://go.microsoft.com/fwlink/?LinkId=536681)」を参照してください。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>ステップ 8:移行後のタスクを完了する
 <a name="BK_Postmigration"> </a>
 
-- **ユーザーが各自のメールボックスに簡単にアクセスできるように、自動検出 DNS レコードを作成します。**すべての社内メールボックスが Office 365 に移行されたら、Office 365 組織に自動検出レコードを構成して、Outlook クライアントとモバイル クライアントを持つ新しい Office 365 メールボックスにユーザーが簡単に接続できるようにします。この新しい自動検出 DNS レコードは、Office 365 組織に使用しているのと同じ名前空間を使用する必要があります。たとえば、クラウドベースの名前空間が cloud.contoso.com の場合、作成する必要のある自動検出 DNS レコードは autodiscover.cloud.contoso.com となります。
+- **ユーザーが各自のメールボックスに簡単にアクセスできるように、自動検出 DNS レコードを作成します。** すべての社内メールボックスが Office 365 に移行されたら、Office 365 組織に自動検出レコードを構成して、Outlook クライアントとモバイル クライアントを持つ新しい Office 365 メールボックスにユーザーが簡単に接続できるようにします。この新しい自動検出 DNS レコードは、Office 365 組織に使用しているのと同じ名前空間を使用する必要があります。たとえば、クラウドベースの名前空間が cloud.contoso.com の場合、作成する必要のある自動検出 DNS レコードは autodiscover.cloud.contoso.com となります。
     
     Office 365 は CNAME レコードを使用して、Outlook クライアントとモバイル クライアントのための自動検出サービスを実装します。自動検出 CNAME レコードには以下の情報が含まれている必要があります。
     
@@ -250,7 +251,7 @@ Get-MigrationBatch StagedBatch1
     
     詳細については、「[DNS レコードを管理するときに Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=535028)」を参照してください。
     
-- **社内の Exchange サーバーの使用を停止します。**すべての電子メールが Office 365 メールボックスに直接ルーティングされていることを確認した後、社内の電子メール組織を維持する必要がもはやないか、SSO ソリューションを実装する予定がない場合は、Exchange をサーバーからアンインストールするとともに、社内の Exchange 組織を削除することができます。
+- **社内の Exchange サーバーの使用を停止します。** すべての電子メールが Office 365 メールボックスに直接ルーティングされていることを確認した後、社内の電子メール組織を維持する必要がもはやないか、SSO ソリューションを実装する予定がない場合は、Exchange をサーバーからアンインストールするとともに、社内の Exchange 組織を削除することができます。
     
     詳細については、以下を参照してください。
     

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '概要: Microsoft のクラウド プラン全体に渡る組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解します。'
-ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897320"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574051"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
@@ -145,14 +145,14 @@ Microsoft のクラウド オファリング間の ID 統合に関する詳細�
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |該当なし  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Office 365 ポータルから Intune/EMS のサブスクリプションを組織に追加します。  <br/> |Office 365 ポータルから Dynamics 365 のサブスクリプションを組織に追加します。  <br/> |
+|**Office 365** <br/> |該当なし  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Microsoft 365 管理センターから Intune/EMS のサブスクリプションを組織に追加します。  <br/> |Microsoft 365 管理センターから Dynamics 365 のサブスクリプションを組織に追加します。  <br/> |
 |**Azure** <br/> |Office 365 のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |Intune/EMS サブスクリプションを組織に追加します。  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
 |**Intune/EMS** <br/> |Office 365 のサブスクリプションを組織に追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
 |**Dynamics 365** <br/> |Office 365 のサブスクリプションを組織に追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Intune/EMS サブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |
    
 Microsoft SaaS ベース サービスの場合は、Office 365 管理センターを使用すると、組織にサブスクリプションを簡単に追加できます。
   
-1. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に全体管理者アカウントでサインインして、**[管理者]** をクリックします。
+1. 全体管理者アカウントを使用して、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. **管理センター**のホームページ左側にあるナビゲーションで、**[課金]**、**[サービスを購入する]** の順にクリックします。
     

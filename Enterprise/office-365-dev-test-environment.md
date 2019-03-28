@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '概要: このテスト ラボ ガイドを使用すると、評価または開発/テスト用の Office 365 試用版サブスクリプションを作成できます。'
-ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 7a7b12038acf914667655decee52993286faab1e
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897270"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574001"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 
@@ -118,7 +118,7 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
     
 11. 次のページで、Office 365 のセットアップが完了して、すべてのタイルが使用できるようになるまで待機します。
     
-Office 365 ポータルのメイン ページが表示されます。このページから、Office Online のサービスと Office 365 管理センターにアクセスできます。
+Office 365 ポータルのメイン ページが表示されます。このページから、Office Online のサービスと Microsoft 365 管理センターにアクセスできます。
   
 シミュレーションのエンタープライズ Office 365 開発/テスト環境の、最終的な構成をここに示します。
   
@@ -153,10 +153,13 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+<!--
 > [!TIP]
-> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[ここ](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34)をクリックしてください。
+> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) to get a text file that has all the PowerShell commands in this article.
+-->
 
-**New-MsolUser** コマンドの表示から、User 2 アカウント用に生成されたパスワードを見つけて、そのパスワードを安全な場所に記録します。
+
+            **New-MsolUser** コマンドの表示から、User 2 アカウント用に生成されたパスワードを見つけて、そのパスワードを安全な場所に記録します。
   
 次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
   
