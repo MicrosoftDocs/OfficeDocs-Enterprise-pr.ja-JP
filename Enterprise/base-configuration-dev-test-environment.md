@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: 6180f9f87509d6ef29c52223c47726ff549de8d5
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650100"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948618"
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -135,8 +135,8 @@ Get-AzSubscription | Sort Name | Select Name
 Azure サブスクリプションを設定します。二重引用符内のすべて (「<」と「>」の文字を含む) を正しい名前に置き換えます。
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 次に、基本構成テスト ラボ用の新しいリソース グループを作成します。一意のリソース グループ名を特定するには、このコマンドを使用して既存のリソース グループを一覧表示します。
