@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650160"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948608"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
@@ -39,7 +39,7 @@ Azure は、次の基本コンポーネントを使用してプロビジョニ�
 
 Azure のコンポーネントの構成を開始する前に、次に示す表に必要事項を記入します。 Azure の構成の手順で役立つように、このセクションを印刷して、必要な情報を書き込むか、このセクションをドキュメントにコピーして必要事項を記入してください。 VNet の設定は、「表 V」に記入します。
   
-|**Item**|**構成設定**|**説明**|**値**|
+|**アイテム**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**Item**|**サブネット名**|**サブネット アドレス スペース**|**目的**|
+|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Windows Server Active Directory (AD) ドメイン コントローラーと DirSync サーバー仮想マシン (VM) が使用するサブネット。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
@@ -72,7 +72,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。
   
-|**項目**|**用途**|**サブネット上の IP アドレス**|**値**|
+|**アイテム**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。
   
-|**Item**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
+|**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -137,8 +137,8 @@ Get-AzSubscription | Sort Name | Select SubscriptionName
 Azure サブスクリプションを設定します。 引用符内のすべての文字 ( \<および > 文字を含む) を正しい名前に置き換えます。
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 次に、新しいリソース グループを作成します。リソース グループ名の一意のセットを決定するために、このコマンドを使用して、既存のリソース グループを一覧表示します。
@@ -274,7 +274,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。 
   
-|**Item**|**用途**|**可用性セット名**|
+|**項目**|**用途**|**可用性セット名**|
 |:-----|:-----|:-----|
 |1.  <br/> |ドメイン コントローラー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
