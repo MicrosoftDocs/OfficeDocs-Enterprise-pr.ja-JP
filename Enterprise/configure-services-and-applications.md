@@ -3,11 +3,10 @@ title: Office 365 Enterprise のサービスおよびアプリケーションを
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: deployment
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -17,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: Office 365 Enterprise のサービスおよびアプリケーションを構成する
-ms.openlocfilehash: cc94d8ee39611f01e2058273e92b845cdcc0c6d8
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
-ms.translationtype: HT
+ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085456"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004364"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Office 365 Enterprise のサービスおよびアプリケーションを構成する
 
@@ -39,7 +38,7 @@ Office 365 の設定でヘルプが必要な場合、**[FastTrack](https://fastt
 |**サイト** <br> (SharePoint Online) | - [SharePoint Server 2013](https://technet.microsoft.com/library/jj838715) と Office 365 間のハイブリッド機能を構成する <br> - [サイト テンプレートを作成して使用](https://support.office.com/article/Create-and-use-site-templates-60371B0F-00E0-4C49-A844-34759EBDD989) し、SharePoint Online の外観をカスタマイズする <br> - [SharePoint Online 計画ガイド](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8)または[SharePoint Online 展開アドバイザー](https://aka.ms/spoguidance)を使用してその他の機能の計画と構成をする <br> - [Office 365 ビデオ ポータルを管理する](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) |
 |**IM および オンライン会議** <br> (Skype for Business Online) | - [Lync Server 2013](https://technet.microsoft.com/library/jj204805) または [Skype for Business 2015](https://technet.microsoft.com/library/jj205403) 環境と Office 365 間の既存のハイブリッド機能を構成する  <br> - [Skype for Business Online のセットアップ](https://support.office.com/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e)を行い、通話ルーティング、電話会議、共有などの一般的な機能を構成する  <br> - [Skype for Business 展開アドバイザー](https://aka.ms/skypeguidance)を使用して、 カスタマイズしたセットアップ ガイダンスを使う |
 | **ファイル ストレージおよび共有** <br> (OneDrive for Business と SharePoint Online) | - [Office 365 ファイル ストレージと共有をセットアップ](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif): OneDrive for Business と Office 365 のチーム サイトをファイル保存場所として使い分ける方法の説明 <br> - [Office 365 ファイル ストレージと共有をセットアップ](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_MoveDocsVideo): ファイルを OneDrive for Business と Office 365 のチーム サイトに簡単にアップロードする方法の説明 <br> - [Office 365 ファイル ストレージと共有をセットアップ](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_Store): OneDrive for Business と Office 365 のチーム サイトにファイルをアップロードする手順をすべて確認できます。ファイルを共有するためのヒントについて参照してください。<br> - [OneDrive for Business セットアップ ガイド](https://aka.ms/OD4Bguidance)を使用して、カスタマイズしたセットアップ ガイダンスを使う |
-|**Office 365 アプリケーション** | - [Mac、PC、またはモバイル用の Office 2016 展開ガイド](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx)は、Office 365 の管理者が企業での Office 365 ProPlus の展開またはアップグレードの計画を立てるためのご案内をいたします。  <br> - [Power BI for Office 365 管理センター](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office 365 管理者向け Office Delve](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Sway についてよく寄せられる質問](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Project Online の使用を開始する](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)。  <br> - [Microsoft Intune 展開アドバイザー](https://aka.ms/intuneguidance) |
+|**Office 365 アプリケーション** | - [Mac、PC、またはモバイル用の Office 2016 展開ガイド](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx)は、Office 365 の管理者が企業での Office 365 ProPlus の展開またはアップグレードの計画を立てるためのご案内をいたします。  <br> - [Power BI for Microsoft 365 管理センター](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office 365 管理者向け Office Delve](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Sway についてよく寄せられる質問](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Project Online の使用を開始する](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)。  <br> - [Microsoft Intune 展開アドバイザー](https://aka.ms/intuneguidance) |
 |**エンタープライズ ソーシャル** <br> (Yammer) | - [Office 365 で Yammer を使用する](https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7)  <br> - [Yammer Enterprise セットアップ ガイド](https://aka.ms/yammerdeploy)を使用して、カスタマイズしたセットアップ ガイダンスを使う |
    
 ## <a name="were-here-to-help"></a>ご不明な点はお問い合わせください。

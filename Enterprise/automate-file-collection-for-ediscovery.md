@@ -3,7 +3,6 @@ title: 電子情報開示用にファイル収集を自動化する
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 概要:電子情報開示用にユーザーのコンピューターのファイル収集を自動化する方法について説明します。
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915752"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001610"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>電子情報開示用にファイル収集を自動化する
 
@@ -273,9 +272,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 |:-----|:-----|:-----|
 |71  <br/> |**$FileTypes** 変数。スクリプトがインベントリ作成と配列変数への収集を行うファイルの種類の拡張子がすべて含まれます。<br/> |省略可能  <br/> |
 |76 と 77  <br/> |**$CaseNo** 変数を構築する方法をニーズに合わせて変更します。スクリプトは、現在の日時をキャプチャし、ユーザー名をそれに追加します。<br/> |省略可能  <br/> |
-| 
-80 
-  <br/> |**$CaseRootLocation** 変数は、ステージング サーバー コレクション ファイル共有に設定する必要があります。例: **\\\\Staging\\Cases$** <br/> |必須  <br/> |
+|80  <br/> |**$CaseRootLocation** 変数は、ステージング サーバー コレクション ファイル共有に設定する必要があります。例: **\\\\Staging\\Cases$** <br/> |必須  <br/> |
    
 4. ドメイン コントローラーの Netlogon ファイル共有に CollectionScript.ps1 ファイルを配置します。 
     
@@ -331,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
-|17  <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
+|個  <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
+|インチ  <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
    
 4. Exchange Trusted Subsystem アカウントに、\\\\Staging\\Cases$ 共有に対する読み取り、書き込み、実行のアクセス許可があることを確認します。
     

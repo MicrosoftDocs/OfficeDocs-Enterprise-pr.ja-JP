@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372894"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001560"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 ID と Azure Active Directory について
 
@@ -37,7 +37,7 @@ Office 365 は、クラウドベースのユーザー id と認証サービス a
   
 ### <a name="cloud-only"></a>クラウド専用
 
-クラウドのみのモデルでは、Office 365 でユーザーアカウントを管理します。 オンプレミスサーバーは必要ありません。これはすべて Azure AD によってクラウドで処理されます。 Office 365 管理センターでユーザーを作成して管理するか、Windows powershell [powershell コマンドレット](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)を使用して id と認証が Azure AD によってクラウド内で完全に処理されます。 通常、クラウドのみのモデルは次のような場合に適しています。 
+クラウドのみのモデルでは、Office 365 でユーザーアカウントを管理します。 オンプレミスサーバーは必要ありません。これはすべて Azure AD によってクラウドで処理されます。 [Microsoft 365 管理センター](https://admin.microsoft.com)でユーザーを作成して管理するか、Windows powershell [powershell コマンドレット](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)を使用して id と認証が Azure AD によってクラウド内で完全に処理されます。 通常、クラウドのみのモデルは次のような場合に適しています。 
   
 - その他のオンプレミスのユーザーディレクトリはありません。
     
