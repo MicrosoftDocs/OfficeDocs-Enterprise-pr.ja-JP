@@ -6,65 +6,57 @@ manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-description: 追加または複数の地域のビジネス OneDrive の地域の管理者を削除する方法について説明します。
-ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: MT
+localization_priority: Priority
+description: Office 365 Multi-Geo で地域管理者を追加または削除する方法について説明します。
+ms.openlocfilehash: 28af776f3afe4e3cc666817eb2d5faff846aa1af
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849813"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931666"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>追加または Busniess 複数の地域の OneDrive の地域の管理者を削除します。
+# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Office 365 Multi-Geo で地域管理者を追加または削除する
 
-テナント内にある場所を地域ごとに個別の管理者を構成することができます。これらの管理者は、SharePoint Online および OneDrive の設定に、geo の場所に固有のアクセスがあります。
+テナント内にある地域の場所ごとに個別の管理者を構成することができます。 これらの管理者は、各自の地域の場所に固有の SharePoint Online と OneDrive の設定にアクセスすることができます。
 
-用語ストア - などの一部のサービスは中央の場所から管理し、サテライトの場所にレプリケートします。中央の場所の地域の管理では、サテライト オフィスの地域の管理者でないが、これらへのアクセスがあります。
+用語ストアなどの一部のサービスは、中央の場所から管理され、サテライトの場所にレプリケートされます。 中央の場所の地域管理者は、これらのサービスにアクセスできますが、サテライトの場所の地理管理者はアクセスできません。
 
-グローバル管理者および SharePoint Online の管理者は、中央の場所とすべてのサテライト オフィスでの設定にアクセスするのには続行します。
+グローバル管理者と SharePoint Online 管理者は、中央の場所とすべてのサテライトの場所の設定に引き続きアクセスできます。
 
-## <a name="configuring-geo-administrators"></a>地域の管理者を構成します。
+## <a name="configuring-geo-administrators"></a>地域管理者の構成
 
-地域の管理者を構成するには、SharePoint のオンライン PowerShell モジュールが必要です。
+地域管理者の構成には、SharePoint Online PowerShell モジュールが必要です。
 
-地域管理者の追加先となる地域の場所の管理センターへの接続に[接続する SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService)を使用してください。(たとえば、接続 SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
+[Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) を使用して、地域管理者を追加する地域の場所の管理センターに接続します。(例: Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
-場所の既存の地域の管理者を表示するのには次のように実行します。`Get-SPOGeoAdministrator`
+場所の既存の地域管理者を表示するには、`Get-SPOGeoAdministrator` を実行します。
 
-### <a name="adding-a-user-as-a-geo-admin"></a>地域の管理者としてユーザーを追加します。
+### <a name="adding-a-user-as-a-geo-admin"></a>地域管理者としてのユーザーの追加
 
-地域の管理者としてユーザーを追加するのには次のように実行します。`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+地域管理者としてのユーザーを追加するには、`Add-SPOGeoAdministrator -UserPrincipalName <UPN>` を実行します。
 
-場所の地域の管理者として、ユーザーを削除するのには次のように実行します。`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+場所の地域管理者としてのユーザーを削除するには、`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>` を実行します。
 
-### <a name="adding-a-group-as-a-geo-admin"></a>地域の管理者として、グループを追加します。
+### <a name="adding-a-group-as-a-geo-admin"></a>地域管理者としてのグループの追加
 
-地域管理者としてセキュリティ グループまたはメールが有効なセキュリティ グループを追加することができます。(配布グループと Office 365 のグループはサポートされません。)
+地域管理者として、セキュリティ グループまたはメールが有効なセキュリティ グループを追加できます。(配布グループと Office 365 グループはサポートされていません。)
 
-地域管理者グループを追加するのには次のように実行します。`Add-SPOGeoAdministrator -GroupAlias <alias>`
+地域管理者としてグループを追加するには、`Add-SPOGeoAdministrator -GroupAlias <alias>` を実行します。
 
-地域管理者グループを削除するには、次のように実行します。`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+地域管理者としてのグループを削除するには、`Remove-SPOGeoAdministrator -GroupAlias <alias>` を実行します。
 
-すべてのセキュリティ グループに、グループのエイリアスがあることに注意してください。エイリアス、グループの一覧を取得する[Get MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup)を実行していないセキュリティ グループを追加する場合、セキュリティ グループのオブジェクト Id を検索し、実行します。
+一部のセキュリティ グループにはグループ エイリアスがないことに注意してください。 エイリアスがないセキュリティ グループを追加する場合は、[Get-MsolGroup](https://docs.microsoft.com/ja-JP/powershell/module/msonline/get-msolgroup) を実行して、グループの一覧を取得し、セキュリティ グループの ObjectID を検索して、次を実行します。
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-オブジェクト Id を使用してグループを削除するのには次のように実行します。`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
-
-### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>特定の地理的な場所の管理センターへのアクセス
-
-地域の OneDrive の設定を管理するには、管理者は次の URL 形式を使用して直接 OneDrive 管理センターにアクセスする必要があります。
-
-https://admin.onedrive.com/?geo=<*地域*>
-
-たとえば、カナダの OneDrive の管理の中心にある: https://admin.onedrive.com/?geo=CAN。
+ObjectID を使用してグループを削除するには、`Remove-SPOGeoAdministrator -ObjectID <ObjectID>` を実行します。
 
 ## <a name="see-also"></a>関連項目
 
-[追加 SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-[Get SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
+[Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
-[削除 SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
+[Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[セキュリティ グループのエイリアス (MailNickName) を設定します。](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/ja-JP/powershell/module/azuread/set-azureadgroup)
