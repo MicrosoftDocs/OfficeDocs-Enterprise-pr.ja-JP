@@ -143,6 +143,7 @@
 #### [Office 365 Multi-Geo eDiscovery の構成](multi-geo-ediscovery-configuration.md)
 #### [特定 PDL でのグループの作成](multi-geo-add-group-with-pdl.md)
 #### [地理的位置の削除](delete-a-geo-location.md)
+#### [あなたの衛星位置情報で、SharePoint Multi-Geo を有効に](enabling-SP-multigeo-satellite-geolocation.md)
 #### [Exchange Multi-Geo の管理](administering-exchange-online-multi-geo.md)
 
 ## [新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
