@@ -3,7 +3,7 @@ title: SharePoint Online での Office 365 コンテンツ配信ネットワー�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039504"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396925"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -289,7 +289,7 @@ _excludeifnoscriptdisabled_プロパティは、サイトレベルの_NoScript_�
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-_path_の値は、アセットが格納されているライブラリまたはフォルダーへのパスです。 相対パスに加え、ワイルドカードも使用できます。 オリジンは、URL に付加されたワイルドカードをサポートします。 これにより、複数のサイトにまたがるオリジンを作成できます。 たとえば、すべてのサイトのすべてのアセットを CDN 内のパブリックの配信元として masterpages フォルダーに含めるには、次のコマンドを入力します。
+_path_の値は、アセットが格納されているライブラリまたはフォルダーへの相対パスです。 相対パスに加え、ワイルドカードも使用できます。 オリジンは、URL に付加されたワイルドカードをサポートします。 これにより、複数のサイトにまたがるオリジンを作成できます。 たとえば、すべてのサイトのすべてのアセットを CDN 内のパブリックの配信元として masterpages フォルダーに含めるには、次のコマンドを入力します。
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -298,18 +298,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - ワイルドカード修飾子は**/** 、パスの先頭にのみ使用でき、指定した url の下にあるすべての url セグメントに一致します。
 - パスは、ドキュメントライブラリ、フォルダー、またはサイトを指すことができます。 たとえば、パス _*/site1_は、サイトのすべてのドキュメントライブラリに一致します。
 
-相対パスまたは完全なパスのいずれかを使用して、特定のパスの送信元を追加できます。
+特定の相対パスを持つ発信元を追加できます。 完全なパスを使用して発信元を追加することはできません。
 
-この例では、相対パスを使用して、特定のサイトに siteassets ライブラリのプライベートオリジンを追加します。
+この例では、特定のサイトに siteassets ライブラリのプライベートオリジンを追加します。
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-この例では、完全パスを使用してサイトコレクションのサイトアセットライブラリに_folder1_フォルダーのプライベートオリジンを追加します。
+この例では、サイトコレクションのサイトアセットライブラリに_folder1_フォルダーのプライベートオリジンを追加します。
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)」を参照してください。
@@ -368,7 +368,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイトコレクションのプライベートオリジンを構成する
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 
-**add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 次に例を示します。
+**add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 例:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -470,7 +470,7 @@ Office 365 cdn を有効にしたときに既定でプロビジョニングさ�
 
 ### <a name="add-an-office-365-cdn-origin"></a>Office 365 CDN の配信元を追加する
 
-> [!NOTE]
+> [!IMPORTANT]
 > パブリックの配信元として構成された SharePoint ドキュメントライブラリで、組織に機密であると見なされるリソースを決して配置しないでください。
 
 [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) コマンドを使用して CDN の配信元を定義します。 複数の配信元を定義できます。 配信元は、CDN でホストする資産が含まれる SharePoint ライブラリまたはフォルダーを指す URL です。
@@ -479,7 +479,7 @@ Office 365 cdn を有効にしたときに既定でプロビジョニングさ�
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-`path` は、資産が含まれるフォルダーのパスです。 相対パスに加え、ワイルドカードも使用できます。
+ここ`path`で、はアセットを含むフォルダーへの相対パスです。 相対パスに加え、ワイルドカードも使用できます。
 
 すべてのサイトの**マスターページギャラリー**内のすべてのアセットをパブリックの配信元として含めるには、次のように実行します。
 
@@ -634,7 +634,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN のプライベートオリジンにあるアセットへのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 送信元によって指定されたフォルダーまたはライブラリへのアクセス許可を持っているユーザーには、アクセス許可レベルに基づいてファイルへのアクセスをユーザーに許可するトークンが自動的に与えられます。 これらのアクセストークンは、トークンリプレイ攻撃を防ぐために生成されてから90分以内に有効になります。
 
-アクセストークンが生成されると、SharePoint Online は、2つの承認パラメーター (エッジ認証__ トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、 _<'expiration time in 紀元 time format'>__<'secure signature'>_ です。 次に例を示します。
+アクセストークンが生成されると、SharePoint Online は、2つの承認パラメーター (エッジ認証__ トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、 _<'expiration time in 紀元 time format'>__<'secure signature'>_ です。 例:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
