@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573681"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038041"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
@@ -32,17 +32,16 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
 > [!TIP]
-> 
-            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
 最小要件で、負荷の小さい方法で Cloud App Security をテストする場合は、[Office 365 開発/テスト環境](office-365-dev-test-environment.md) のフェーズ 2 とフェーズ 3 の手順に従ってください。
   
 シミュレーションのエンタープライズで Cloud App Security をテストする場合は、[Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md) の手順に従ってください。
   
 > [!NOTE]
-> Cloud App Security のテストには、シミュレーションのエンタープライズ開発/テスト環境は必要ありません。シミュレーションのエンタープライズ開発/テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Windows Server AD フォレスト用のディレクトリ同期が含まれています。この機能は、一般的な組織と類似した環境で Cloud App Security をテストしてお試しいただけるよう、オプションとしてここで提供されています。 
+> Cloud App Security のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 これは、クラウドアプリのセキュリティをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>フェーズ 2: Cloud App Security の有効化およびポリシーの作成の前に
 
@@ -82,7 +81,7 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 
 1. Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
-2. **[管理]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
+2. **[管理者]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
     
 3. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
     

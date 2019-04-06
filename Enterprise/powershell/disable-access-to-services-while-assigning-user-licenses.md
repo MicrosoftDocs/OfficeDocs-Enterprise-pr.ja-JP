@@ -3,6 +3,7 @@ title: ユーザー ライセンスを割り当てる間、サービスへのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 04/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -13,26 +14,25 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell を使い、ユーザー アカウントへのライセンスの割り当てと、特定のサービス プランの無効化を同時に行う方法を説明します。
-ms.openlocfilehash: 40abaa37b5a88eb69b01779894e851068a6454ee
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: c93f54fcd5716a0ea53290c24a2594b8bc63cecf
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "20017403"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001850"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
 
 **概要:** Office 365 PowerShell を使い、ユーザー アカウントへのライセンスの割り当てと、特定のサービス プランの無効化を同時に行う方法を説明します。
   
 Office 365 サブスクリプションには、個々のサービスのサービス プランが付属します。Office 365 管理者は、ユーザーにライセンスを割り当てるときに特定のプランを無効にしなければならないことが少なくありません。この資料の手順を使用すると、PowerShell を使用して、1 ユーザー アカウントの、または複数のユーザー アカウントの特定のサービス プランを無効にした状態で、Office 365 ライセンスを割り当てることができます。
-  
-## <a name="before-you-begin"></a>はじめに
 
-このトピックの手順では、Office 365 PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
-  
-## <a name="collect-information-about-subscriptions-and-service-plans"></a>サブスクリプションとサービス プランに関する情報を収集する
 
-現在のサブスクリプションを確認するため、次のコマンドを実行します。
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
+
+まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+
+次に、このコマンドを実行して現在のサブスクリプションを表示します。
   
 ```
 Get-MsolAccountSku
@@ -59,22 +59,26 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 このコマンドの出力に基づいて、ユーザーにライセンスを割り当てるときに無効にするサービス プランを判別します。
   
 サービス プランの一覧の一部と、対応する Office 365 サービスを以下に示します。
+
+次の表は、Office 365 のサービス プランと最も一般的なサービスのフレンドリ名を示します。 実際のサービス プランの一覧とは、異なる場合があります。 
   
 |**サービス プラン**|**説明**|
 |:-----|:-----|
-|SWAY  <br/> |Sway  <br/> |
-|INTUNE_O365  <br/> |Office 365 のモバイル デバイス管理  <br/> |
-|YAMMER_ENTERPRISE  <br/> |Yammer  <br/> |
-|RMS_S_ENTERPRISE  <br/> |Azure Rights Management (RMS)  <br/> |
-|OFFICESUBSCRIPTION  <br/> |Office Professional Plus  <br/> |
-|MCOSTANDARD  <br/> |Skype for Business Online  <br/> |
-|SHAREPOINTWAC  <br/> |Office Online  <br/> |
-|SHAREPOINTENTERPRISE  <br/> |SharePoint Online  <br/> |
-|EXCHANGE_S_ENTERPRISE  <br/> |Exchange Online プラン 2  <br/> |
+| `SWAY` <br/> |Sway  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
+| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
+   
+ライセンスプランの完全な一覧 (製品名とも呼ばれます)、含まれるサービスプラン、およびそれに対応するフレンドリ名については、「[ライセンスの製品名とサービスプラン識別子](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)」を参照してください。
    
 この時点で、AccountSkuId と無効にするサービス プランが決まったため、1 ユーザーまたは複数ユーザーにライセンスを割り当てることができます。
   
-## <a name="for-a-single-user"></a>単一ユーザーの場合
+### <a name="for-a-single-user"></a>単一ユーザーの場合
 
 単一ユーザーの場合、そのユーザー アカウントのユーザー プリンシパル名、AccountSkuId、無効にするサービス プランの一覧を入力し、説明テキスト、\< 記号、> 記号を削除します。次に、完成したコマンドを PowerShell コマンド プロンプトで実行します。
   
@@ -106,7 +110,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 ```
 
-## <a name="for-multiple-users"></a>複数ユーザーの場合
+### <a name="for-multiple-users"></a>複数ユーザーの場合
 
 この管理タスクを複数ユーザーに実行するには、UserPrincipalName フィールドと UsageLocation フィールドが含まれるコンマ区切り値 (CSV) テキスト ファイルを作成します。次に例を示します。
   

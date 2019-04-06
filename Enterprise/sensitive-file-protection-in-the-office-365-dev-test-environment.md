@@ -3,7 +3,7 @@ title: Office 365 の開発/テスト環境での機密性の高いファイル�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574071"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037971"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
@@ -32,7 +32,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
@@ -140,7 +140,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. SharePoint グループの一覧で、**[エグゼクティブ メンバー]** をクリックします。
     
-9. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+9. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
     
 10. [**共有 ' エグゼクティブ '**] で、「**エグゼクティブ**」と入力し、[**重役**] グループをクリックして、[**共有**] をクリックします。
     
@@ -232,7 +232,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 5. **[SharePoint 管理センター]** タブで、**[設定]** をクリックします。
     
-6. **[設定]** ページの **[Information Rights Management (IRM)]** セクションで、**[構成で指定された IRM サービスを使用]** を選択し、**[IRM 設定を更新]** を選択します。
+6. ページの [ **Information Rights Management (irm)** ] セクションで、[**構成で指定された irm サービスを使用する**] を選択し、[ **irm 設定の更新**] を選択します。
     
 7. **[SharePoint 管理センター]** タブを閉じます。
     
@@ -264,7 +264,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 8. **[ドキュメントのアクセス権の構成]** で、**[閲覧者に印刷を許可する]** と **[ダウンロードしたドキュメントのコピーに対する書き込みを閲覧者に許可する]** を選択します。
     
-9. **[グループの保護および資格情報の間隔を設定]** で、**[グループの保護を許可します]** を選択し、**[既定のグループ]** に対して「**エグゼクティブ**」と入力します。
+9. [**グループ保護と資格情報の設定間隔**] で、[グループ保護の許可] を選択し**ます。[既定のグループ**] をクリックし、「**役職**者」と入力します。
     
 10. [**OK**] をクリックします。
     

@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Office 365 管理センターでディレクトリ同期エラーを表示する方法について説明します。
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Microsoft 365 管理センターでディレクトリ同期エラーを表示する方法について説明します。
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085036"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001810"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Office 365 でのディレクトリ同期エラーの表示
 
-Office 365 管理センターでディレクトリ同期エラーを確認できます。ユーザーオブジェクトのエラーのみが表示されます。PowerShell を使用してエラーを表示するには、「 [dirsyncプロビジョニングエラーでオブジェクトを識別](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)する」を参照してください。
+[Microsoft 365 管理センター](https://admin.microsoft.com)でディレクトリ同期エラーを確認できます。 ユーザーオブジェクトのエラーのみが表示されます。 PowerShell を使用してエラーを表示するには、「 [dirsyncプロビジョニングエラーでオブジェクトを識別](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)する」を参照してください。
 
 表示された後、「 [Office 365 のディレクトリ同期に関する問題を解決](fix-problems-with-directory-synchronization.md)して、特定の問題を修正する」を参照してください。
   
@@ -38,7 +38,7 @@ Office 365 管理センターでディレクトリ同期エラーを確認でき
   
 1. 職場または学校のアカウントを使用して、Office 365 にサインインします。 
     
-2. 「 [Office 365 管理センターについて」](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)に移動します。
+2. [[管理センターについて](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23)] に移動します。
     
 3. **ホーム**ページに [ **DirSync Status** ] タイルが表示されます。 
     

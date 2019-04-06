@@ -15,19 +15,21 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
+search.appverid:
+- MET150
 description: Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法を説明します。
-ms.openlocfilehash: ab9b66065e20d0c2d6cfb673dac24ee2ab79e831
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+ms.openlocfilehash: 5040249f29ac8390db5b2933fc04fb1d01f0af2c
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651183"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931766"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる
 
 **概要:** Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法を説明します。
   
-ユーザーは、自分のアカウントは、ライセンスが割り当てられてライセンス プランからまで、すべての Office 365 サービスを使用できません。簡単にライセンスのないアカウントにライセンスを割り当てるには、Office 365 の PowerShell を使用できます。 
+ユーザーがライセンスプランからライセンスを割り当てられるまで、どの Office 365 サービスも使用できません。 Office 365 PowerShell を使用して、ライセンスのないアカウントにライセンスをすばやく割り当てることができます。 
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
@@ -35,15 +37,15 @@ ms.locfileid: "29651183"
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
-次に、ライセンスの一覧は、このコマンドを使用して、テナントの予定です。
+次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-次に、ライセンスとも呼ばれるユーザー プリンシパル名 (UPN) を追加するアカウントのサインイン名を取得します。
+次に、ユーザープリンシパル名 (UPN) とも呼ばれるライセンスを追加するアカウントのサインイン名を取得します。
 
-最後に、ユーザーのサインイン名とライセンス プランの名前を指定し、これらのコマンドを実行します。
+最後に、ユーザーのサインイン名とライセンスプラン名を指定し、これらのコマンドを実行します。
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -59,23 +61,23 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-それぞれの計画、組織内で使用可能なライセンス プランと利用可能なライセンスの数を表示するのには、 **Get MsolAccountSku**コマンドを実行します。各プランで利用可能なライセンスの数は、 **ActiveUnits** - **WarningUnits** - **ConsumedUnits**。計画、ライセンス、およびサービスのライセンスの詳細については、[ライセンスを表示し Office 365 の PowerShell を使用してサービス](view-licenses-and-services-with-office-365-powershell.md)を参照してください。
+**get-msolaccountsku**コマンドを実行して、使用可能なライセンスプランと、組織内の各プランの使用可能なライセンスの数を表示します。 各プランで利用可能なライセンスの数は、 **ActiveUnits** - **WarningUnits** - **ConsumedUnits** です。 ライセンスプラン、ライセンス、およびサービスの詳細については、「 [Office 365 PowerShell でライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。
     
-組織のライセンスのないアカウントを検索するには、このコマンドを実行します。
+組織内のライセンスのないアカウントを検索するには、次のコマンドを実行します。
 
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
     
-**UsageLocation**プロパティが有効な ISO 3166-1 アルファ 2 国コードに設定されているユーザー アカウントにライセンスを割り当てることだけできます。たとえば、アメリカ合衆国およびフランスの FR のことです。いくつかの Office 365 サービスは、特定の国では使用できません。詳細については、[ライセンスによる使用制限の詳細](https://go.microsoft.com/fwlink/p/?LinkId=691730)を参照してください。
+ライセンスは、有効な ISO 3166-1 国コードに設定**** されているユーザーアカウントにのみ割り当てることができます。 たとえば、米国は US、フランスは FR です。 一部の Office 365 サービスは特定の国では使用できません。 詳細については、「[ライセンス制限につい](https://go.microsoft.com/fwlink/p/?LinkId=691730)て」を参照してください。
     
-**UsageLocation**の値を持たないアカウントを検索するには、このコマンドを実行します。
+利用**場所**の値を持たないアカウントを検索するには、次のコマンドを実行します。
 
 ```
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-アカウントの**UsageLocation**値を設定するには、このコマンドを実行します。
+アカウントに対し**** て、使い方の値を設定するには、次のコマンドを実行します。
 
 ```
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
@@ -89,37 +91,37 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
     
 **-All** パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
 
-### <a name="assigning-licenses-to-user-accounts"></a>ユーザー アカウントにライセンスを割り当てる
+### <a name="assigning-licenses-to-user-accounts"></a>ユーザーアカウントへのライセンスの割り当て
     
-ライセンスをユーザーに割り当てるには、Office 365 の PowerShell で次のコマンドを使用します。
+ユーザーにライセンスを割り当てるには、Office 365 PowerShell で次のコマンドを使用します。
   
 ```
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-次の使用例は、 **litwareinc:ENTERPRISEPACK** (Office 365 エンタープライズ E3) ライセンスのライセンスのないユーザーの**belindan@litwareinc.com**するための計画からライセンスを割り当てます。
+この例では、ライセンスを**litwareinc: enterprisepack** (Office 365 Enterprise E3) ライセンスプランからライセンスのないユーザー **belindan@litwareinc.com**に割り当てます。
   
 ```
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-ライセンスをライセンスのない多くのユーザーに割り当てるには、このコマンドを実行します。
+ライセンスをライセンスのない複数のユーザーに割り当てるには、このコマンドを実行します。
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | ForEach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
   
 >[!Note]
->同じライセンス プランから、ユーザーに複数のライセンスを割り当てることはできません。十分な利用可能なライセンスをお持ちでない場合は、取り出されると、 **Get MsolUser**コマンドレットで利用可能なライセンスが不足するまでの順序でユーザーにライセンスが割り当てられます。
+>複数のライセンスを同じライセンス プランのユーザーに割り当てることはできません。 十分な数の利用可能なライセンスをお持ちでない場合は、使用可能なライセンスがなくなるまで、ライセンスは **Get-MsolUser** コマンドレットによって返される順序でユーザーに割り当てられます。
 >
 
-次の使用例は、 **litwareinc:ENTERPRISEPACK** (Office 365 エンタープライズ E3) のライセンスについてのすべてのライセンスのないユーザーにライセンスを割り当てます。
+この例では、ライセンスを**litwareinc: enterprisepack** (Office 365 Enterprise E3) ライセンスプランからすべてのライセンスのないユーザーに割り当てます。
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-この例では、米国内の販売部門でのライセンスのないユーザーに、同じライセンスを割り当てます。
+この例では、米国内の販売部門のライセンスのないユーザーに同じライセンスを割り当てます。
   
 ```
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}

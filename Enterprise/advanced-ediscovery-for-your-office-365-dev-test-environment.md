@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '概要: Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。'
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573821"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038021"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境のアドバンスト eDiscovery
 
@@ -30,7 +30,7 @@ office 365 Advanced 電子情報開示を使用すると、電子メールやド
 この記事の手順では、架空の契約問題に関するデータの小さなセットを作成し、そのデータをアドバンスト eDiscovery で分析します。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 の開発/テスト環境を作成する
 
@@ -39,7 +39,7 @@ office 365 Advanced 電子情報開示を使用すると、電子メールやド
 シミュレートされたエンタープライズで高度な電子情報開示をテストする場合は、「 [Office のディレクトリ同期の開発/テスト環境](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従ってください。
   
 > [!NOTE]
-> アドバンスト eDiscovery のテストには、インターネットに接続されたシミュレーションのイントラネットや Windows サーバー AD フォレストのディレクトリ同期を含むシミュレーションのエンタープライズ環境は必要ありません。 この記事は、一般的な組織を表す環境でテストと実験を実行できるようにするためのオプションとして提供されています。 
+> 高度な電子情報開示のテストでは、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ環境を必要としません。 この記事は、一般的な組織を表す環境でテストと実験を実行できるようにするためのオプションとして提供されています。 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>フェーズ 2:アドバンスト eDiscovery 用のサンプル データを作成する
 

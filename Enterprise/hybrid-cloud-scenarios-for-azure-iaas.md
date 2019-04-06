@@ -1,5 +1,5 @@
 ---
-title: Azure IaaS のハイブリッド クラウド シナリオ
+title: Azure IaaS のハイブリッド クラウドのシナリオ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,175 +11,171 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: '概要: ハイブリッド アーキテクチャと理解シナリオのインフラストラクチャのサービス (IaaS) としてのベースで、Azure クラウド サービスです。'
-ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
-ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
+description: '概要: Microsoft のサービスとしてのインフラストラクチャ (IaaS) ベースの Azure のクラウド製品のハイブリッドアーキテクチャとシナリオについて説明します。'
+ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27181038"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037931"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウドのシナリオ
 
- **の概要:** サービス (IaaS) としてマイクロソフトのインフラストラクチャのハイブリッド アーキテクチャとシナリオを理解するので、Azure クラウド サービスをベースです。
+ **概要:** Microsoft のサービスとしてのインフラストラクチャ (IaaS) ベースの Azure のクラウド製品のハイブリッドアーキテクチャとシナリオについて理解します。
   
-クロスプレミスの Azure 仮想ネットワーク (VNet) で実行されている IT ワークロードをホストすることで、オンプレミスのコンピューティングおよび ID インフラストラクチャをクラウドに拡張します。  
+クロスプレミスの Azure 仮想ネットワーク (vnet) で実行されている IT ワークロードをホストすることにより、オンプレミスのコンピューティングおよび id インフラストラクチャをクラウドに拡張します。 
   
-## <a name="azure-iaas-hybrid-scenario-architecture"></a>Azure IaaS のハイブリッド シナリオ アーキテクチャ
+## <a name="azure-iaas-hybrid-scenario-architecture"></a>Azure IaaS ハイブリッドシナリオのアーキテクチャ
 
-図 1 は、Microsoft IaaS ベースの Azure 内ハイブリッド シナリオのアーキテクチャを示しています。
+図1は、Microsoft IaaS ベースの Azure のハイブリッドシナリオのアーキテクチャを示しています。
   
-**図 1:Microsoft IaaS ベースの Azure 内ハイブリッド シナリオ**
+**図 1: Microsoft IaaS ベースの Azure 内ハイブリッドシナリオ**
 
-![Microsoft IaaS ベースの Azure 内ハイブリッド シナリオ](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
+![Azure での Microsoft IaaS ベースのハイブリッドシナリオ](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 アーキテクチャの各レイヤーについて:
   
 - アプリとシナリオ
     
-    IT ワークロードは、通常、Azure 仮想マシン (VM) で構成されている可用性の高い多層アプリケーションです。
+    IT ワークロードは、通常、Azure 仮想マシン (vm) で構成された複数層の高可用性アプリケーションです。
     
 - ID
     
-    ローカル認証のために、Azure VNet で実行されているサーバーのセットに、Windows Server AD ドメイン コントローラーなどの ID サーバーを追加します。
+    ローカル認証のために Azure vnet で実行されている一連のサーバーに、Windows Server AD ドメインコントローラーなどの id サーバーを追加します。
     
 - ネットワーク
     
-    インターネット経由でのサイト間 VPN 接続、または Azure IaaS に対するプライベート ピアリングとの ExpressRoute 接続を使用します。
+    インターネット経由でのサイト間 VPN 接続、または Azure IaaS に対するプライベートピアリングを備えた ExpressRoute 接続を使用します。
     
-- オンプレミス
+- 社内
     
-    Azure で実行されている ID サーバーと同期している ID サーバーが含まれています。ストレージおよびシステムの管理インフラストラクチャなど、Azure で実行されている VM がアクセスできるリソースが含まれる場合もあります。
+    Azure で実行されている id サーバーと同期された id サーバーを含みます。 また、ストレージやシステム管理インフラストラクチャなど、Azure で実行されている vm がアクセスできるリソースを含めることもできます。
     
-## <a name="directory-synchronization-server-for-office-365"></a>Office 365 のディレクトリ同期サーバー
+## <a name="directory-synchronization-server-for-office-365"></a>Office 用ディレクトリ同期サーバー365
 
-図 2 に示すように、Azure の VNet からディレクトリ同期サーバーを実行しているは、クラウド ・ コンピューティングと id インフラストラクチャを拡張するための例です。
+図2に示されているように、Azure VNet からディレクトリ同期サーバーを実行することは、コンピューティングおよび id インフラストラクチャをクラウドに拡張する例です。
   
-**Azure IaaS で Office 365 のディレクトリ同期サーバーを図 2:**
+**図 2: Azure IaaS の Office 365 用のディレクトリ同期サーバー**
 
-![Azure IaaS で Office 365 のディレクトリ同期サーバー](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Azure IaaS の Office 365 用のディレクトリ同期サーバー](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-図 2 に、オンプレミスのネットワークは、プロキシ サーバーとルーターの端に、Windows サーバーの AD インフラストラクチャをホストします。ルーターは、サイト間の VPN または ExpressRoute の接続を使用して、Azure の VNet の端に、Azure のゲートウェイに接続します。VNet の内部は、ディレクトリ同期サーバーは、Azure AD 接続を実行します。
+図2では、オンプレミスのネットワークが Windows Server AD インフラストラクチャをホストしており、プロキシサーバーとルーターがエッジに配置されています。 ルーターは、サイト間 VPN または ExpressRoute 接続を使用して azure VNet のエッジにある azure ゲートウェイに接続します。 VNet 内で、ディレクトリ同期サーバーは Azure AD Connect を実行します。
   
-Office 365 のディレクトリ同期サーバーでは、Office 365 サブスクリプションの Azure AD テナントと Windows サーバーの AD のアカウントの一覧を同期します。
+office 365 用のディレクトリ同期サーバーは、Windows server AD のアカウントの一覧を office 365 サブスクリプションの Azure AD テナントと同期します。
   
-ディレクトリ同期サーバーは、AD の Azure の接続を実行している Windows ベースのサーバーです。迅速なプロビジョニングや、組織内の設置型サーバーの数を減らすには、Azure IaaS で仮想ネットワーク (VNet) では、ディレクトリ同期サーバーを展開します。
+ディレクトリ同期サーバーは、Azure AD Connect を実行する Windows ベースのサーバーです。 プロビジョニングを高速化したり、組織内のオンプレミスサーバーの数を少なくしたりするには、Azure IaaS の仮想ネットワーク (VNet) にディレクトリ同期サーバーを展開します。
   
-ディレクトリ同期サーバーは、Windows サーバーの AD の変更をポーリングし、し、Office 365 サブスクリプションの同期をとります。
+ディレクトリ同期サーバーは、変更のために Windows server AD をポーリングしてから、それらを Office 365 サブスクリプションと同期します。
   
-詳細については、 [Microsoft Azure で Office 365 ディレクトリ同期を展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)を参照してください。
+詳細については、「 [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)」を参照してください。
   
 ## <a name="line-of-business-lob-application"></a>基幹業務 (LOB) アプリケーション
 
-図 3 は、Azure IaaS で実行されているサーバーベース LOB アプリケーションの構成を示しています。
+図3は、Azure IaaS で実行されているサーバーベースの LOB アプリケーションの構成を示しています。
   
-**図 3: Azure IaaS 内の LOB アプリケーション**
+**図 3: Azure IaaS の LOB アプリケーション**
 
-![Azure IaaS 内のサーバ ベース LOB アプリケーション](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
+![Azure IaaS のサーバーベースの LOB アプリケーション](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
-図 3 では、オンプレミス ネットワークは、ID インフラストラクチャとユーザーをホストしています。サイト間 VPN または ExpressRoute の接続を使用して、Azure IaaS ゲートウェイに接続されています。Azure IaaS は、LOB アプリケーションのサーバーを含む仮想ネットワークをホストします。
+図3では、社内ネットワークによって id インフラストラクチャとユーザーがホストされます。 これは、サイト間 VPN または ExpressRoute 接続を使用して Azure IaaS gateway に接続されています。 Azure IaaS は、LOB アプリケーションのサーバーを含む仮想ネットワークをホストします。
   
-Azure データセンター (場所) 内の Azure VNet のサブネット上に存在する、Azure VM で実行される LOB アプリケーションを作成することができます。 
-
-
-
+azure vm で実行されている LOB アプリケーションを作成できます。これは、azure データセンター (場所とも呼ばれる) の azure VNet のサブネット上に存在します。
   
-本質的にはオンプレミス インフラストラクチャを Azure に拡張しているので、VNet に独自のプライベート アドレス空間を割り当て、オンプレミス ルーティング テーブルを更新して、各 VNet への到達可能性を確保する必要があります 
+基本的に社内インフラストラクチャを Azure に拡張するので、一意のプライベートアドレス空間を vnet に割り当て、オンプレミスルーティングテーブルを更新して、各 VNet に到達できるようにする必要があります。
   
-接続が完了したら、オンプレミス サーバーと同様に、リモート デスクトップ接続またはシステム管理ソフトウェアを使用してこれらの VM を管理できます。
+接続すると、これらの vm は、オンプレミスのサーバーの場合と同様に、リモートデスクトップ接続またはシステム管理ソフトウェアを使用して管理できます。
   
-一般に公開されるポートを構成すると、これらの VM には、モバイル ユーザーまたはリモート ユーザーによってインターネットからもアクセスできます。
+公的で公開されたポートを構成することで、これらの vm は、モバイルまたはリモートユーザーがインターネットからアクセスすることもできます。
   
-概念実証構成については、「[Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md)」を参照してください。
+概念実証の構成については、「 [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](simulated-cross-premises-virtual-network-in-azure.md)」を参照してください。
   
-Azure VM でホストされている LOB アプリケーションの属性を次に示します。
+Azure vm でホストされている LOB アプリケーションの属性は次のとおりです。
   
 - 複数の階層
     
-    通常の LOB アプリケーションでは、階層型アプローチを使用します。サーバーのセットが、従業員や顧客のアクセスのために ID、データベース処理、アプリケーションおよびロジック処理、フロントエンド Web サーバーを提供します。  
+    一般的な LOB アプリケーションは、階層型のアプローチを使用します。 サーバーのセットは、id、データベース処理、アプリケーションとロジックの処理、および社員または顧客へのアクセスのためのフロントエンド web サーバーを提供します。 
     
 - 高可用性
     
-    通常の LOB アプリケーションでは、層ごとに複数のサーバーを使用することによって高可用性が実現します。Azure IaaS では、Azure の可用性セットでサーバーに 99.9% の稼働時間 SLA を提供します。  
+    一般的な LOB アプリケーションでは、各層で複数のサーバーを使用することで高可用性が実現されます。 azure IaaS では、azure の可用性セットのサーバーに 99.9% の稼働時間の SLA が提供されます。 
     
 - 負荷分散
     
-    階層内の複数のサーバー間のネットワーク トラフィックの負荷を分散するには、インターネット接続済みまたは内部の Azure ロード バランサーを使用できます。または、Azure Marketplace から入手可能な専用のロード バランサー アプライアンスを使用できます。
+    階層内の複数のサーバー間でネットワークトラフィックの負荷を分散するには、インターネット接続または内部 Azure ロードバランサーを使用できます。 または、Azure marketplace から入手できる専用のロードバランサーアプライアンスを使用することもできます。
     
 - セキュリティ
     
-    インターネットからの未承諾の着信トラフィックからサーバーを保護するには、Azure ネットワーク セキュリティ グループを使用できます。サブネットの許可または拒否されたトラフィック、または個々の仮想マシンのネットワーク インターフェイスを定義できます。
+    インターネットからの一方的な着信トラフィックからサーバーを保護するには、Azure のネットワークセキュリティグループを使用できます。 サブネットまたは個々の仮想マシンのネットワークインターフェイスに対して許可または拒否されるトラフィックを定義できます。
     
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Azure の SharePoint Server 2016 ファーム
 
-Azure での可用性の高い多層 LOB アプリケーションの例として、図 4 に示すように SharePoint Server 2016 ファームがあります。
+図4に示すように、Azure での多階層の高可用性 LOB アプリケーションの例としては、SharePoint Server 2016 ファームがあります。
   
-**図 4:Azure IaaS の高可用性 SharePoint Server 2016 ファーム**
+**図 4: Azure IaaS の高可用性 SharePoint Server 2016 ファーム**
 
 ![Azure IaaS の高可用性 SharePoint Server 2016 ファーム](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
-図 4 では、オンプレミス ネットワークは、ID インフラストラクチャとユーザーをホストしています。サイト間 VPN または ExpressRoute に接続して、Azure IaaS ゲートウェイに接続されています。Azure VNet には、SharePoint Server 2016 ファームのサーバーが含まれています。これには、フロント エンド サーバー、アプリケーション サーバー、SQL Server クラスター、およびドメイン コントローラーごとに個別の階層が存在します。
+図4では、オンプレミスのネットワークが id インフラストラクチャとユーザーをホストしています。 これは、サイト間 VPN または ExpressRoute 接続を使用して Azure IaaS gateway に接続されています。 Azure VNet には、フロントエンドサーバー、アプリケーションサーバー、SQL Server クラスター、およびドメインコントローラーの各層を含む SharePoint Server 2016 ファームのサーバーが含まれています。
   
-この構成には、次に示す Azure の LOB アプリケーションの属性が含まれています。  
+この構成には、Azure の LOB アプリケーションの次の属性があります。 
   
 - 階層
     
-    ファーム内でさまざまな役割を実行するサーバーは、階層を作成し、各階層には独自のサブネットが存在します。
-
+    ファーム内でさまざまな役割を実行しているサーバーは、層を作成し、各層には独自のサブネットがあります。
     
 - 高可用性
     
-    各階層で複数のサーバーを使用して、階層のすべてのサーバーを同じ可用性セットに配置することによって実現します。
+    各層で複数のサーバーを使用して、層のすべてのサーバーを同じ可用性セットに配置することによって実現されます。
     
 - 負荷分散
     
-    Azure の内部ロード バランサーは、クライアント Web の受信トラフィックをフロントエンド サーバー (WEB1 と WEB2) および SQL Server クラスターのリスナーの IP アドレス (SQL1、SQL2、MN1) に配布します。
+    内部 Azure ロードバランサーは、受信クライアント web トラフィックをフロントエンドサーバー (WEB1 および WEB2) と、SQL Server クラスターのリスナー IP アドレス (SQL1、: sql2、および: mn1) に分配します。
     
 - セキュリティ
     
-    各サブネットのネットワーク セキュリティ グループを使用して、許可する受信トラフィックおよび送信トラフィックを構成できます。
+    各サブネットのネットワークセキュリティグループを使用すると、許可される受信および送信トラフィックを構成できます。
     
-正常に導入するために次のパスに従ってください。
+導入を成功させるには、次のパスを使用します。
   
-1. 評価と試用
+1. 評価とテスト
     
-    Azure で実行中の SharePoint サーバーの 2016年の利点を理解するのには、 [Microsoft Azure 内の SharePoint サーバーの 2016年](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure)を参照してください。
+    azure で sharepoint server 2016 を実行することの利点については、「 [Microsoft azure の sharepoint server 2016](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) 」を参照してください。
     
-    [イントラネットの SharePoint サーバー 2016 Azure 開発/テスト環境で](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment)シミュレートされた開発/テスト環境を構築を参照してください。
+    シミュレートされた開発/テスト環境を構築するには、「 [Azure 開発/テスト環境でのイントラネット SharePoint Server 2016](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) 」を参照してください。
     
 2. デザイン
     
-    Azure IaaS のネットワー キング、コンピューティング、およびファームとその設定をホストするストレージ ・ エレメントのセットを決定するためのプロセスをステップ実行するには[Azure の SharePoint サーバーの 2016年ファームの設計](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure)を参照してください。
+    「 [SharePoint Server 2016 ファームを設計](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure)する」を参照して、プロセスをステップ実行し、ファームをホストする azure IaaS ネットワーク、コンピューティング、およびストレージ要素のセットとそれらの設定を確認してください。
     
 3. 展開
     
-    [Azure で AlwaysOn 可用性グループを SQL Server と SharePoint サーバー 2016 を展開する](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in)5 つの段階では、高可用性ファームのエンド ・ ツー ・ エンドの構成の手順を参照してください。
+    高可用性ファームのエンドツーエンド構成を5段階で手順を追って説明するには、「 [Azure で SharePoint server 2016 を SQL server AlwaysOn 可用性グループと共に展開](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in)する」を参照してください。
     
-## <a name="federated-identity-for-office-365-in-azure"></a>Azure 内の Office 365 のフェデレートされた識別情報
+## <a name="federated-identity-for-office-365-in-azure"></a>Azure での Office 365 のフェデレーション id
 
-Azure 内の複数の層、および高可用性の LOB アプリケーションの別の例は、Office 365 のフェデレーションの id です。
+Azure で高可用性を備えた複数層の LOB アプリケーションの別の例として、Office 365 のフェデレーション id があります。
   
-**図 5: Azure IaaS で Office 365 のフェデレートされた識別情報の高可用性インフラストラクチャが、**
+**図 5: Azure IaaS の Office 365 用の高可用性フェデレーション id インフラストラクチャ**
 
-![高可用性の Office 365 は、Azure での認証インフラストラクチャを連合](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャ](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
-図 5 に、オンプレミスのネットワークとユーザーの識別情報のインフラストラクチャをホストします。サイト間の VPN または ExpressRoute の接続を使用して、Azure の IaaS のゲートウェイに接続されています。Azure VNet には、web プロキシ サーバー、Active Directory フェデレーション サービス (AD FS) サーバー、および Windows Server ・ Active Directory (AD) ドメイン コント ローラーが含まれています。
+図5では、オンプレミスのネットワークが id インフラストラクチャとユーザーをホストしています。 これは、サイト間 VPN または ExpressRoute 接続を使用して Azure IaaS gateway に接続されています。 Azure VNet には、web プロキシサーバー、active directory フェデレーションサービス (ad FS) サーバー、および active directory ドメインサービス (ad DS) ドメインコントローラーが含まれています。
   
-この構成には、次に示す Azure の LOB アプリケーションの属性が含まれています。 
+この構成には、Azure の LOB アプリケーションの次の属性があります。
   
-- **層:** Web プロキシ サーバー、AD FS サーバー、および Windows Server AD ドメイン コント ローラーの階層があります。
+- **層:** web プロキシサーバー、ad FS サーバー、および Windows Server ad ドメインコントローラーには階層があります。
     
-- **負荷分散:** Azure の外部のロード バランサーは、web プロキシを受信したクライアントの認証要求を分散し、Azure の内部ロード バランサーが AD FS サーバーに認証要求を配布します。
+- **負荷分散:** 外部の azure ロードバランサーは、受信クライアント認証要求を web プロキシに配布し、内部 Azure ロードバランサーは、認証要求を AD FS サーバーに配信します。
     
-正常に導入するために次のパスに従ってください。
+導入を成功させるには、次のパスを使用します。
   
-1. 評価と試用
+1. 評価とテスト
     
-    Office 365 とフェデレーションの認証のためにシミュレートされた開発/テスト環境を構築するのには[、Office 365 の開発/テスト環境にフェデレーション ユーザー](federated-identity-for-your-office-365-dev-test-environment.md)を参照してください。
+    office 365 を使用して、フェデレーション認証用のシミュレートされた開発/テスト環境を構築するには[、「office 365 開発/テスト環境のフェデレーション id](federated-identity-for-your-office-365-dev-test-environment.md) 」を参照してください。
     
 2. 展開
     
-    5 つのフェーズでは、AD FS インフラストラクチャの高可用性のエンド ・ ツー ・ エンドの構成をステップ実行するには[Azure で Office 365 の展開の高可用性フェデレーション認証](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
+    高可用性 AD FS インフラストラクチャのエンドツーエンド構成を5段階で手順を追って説明するには、「 [Deploy high availability フェデレーション authentication for Office 365 for Azure」](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)を参照してください。
     
     
 ## <a name="see-also"></a>関連項目

@@ -3,21 +3,22 @@ title: 委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: ''
 ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: 概要:Office 365 の Windows PowerShell を使用すると、顧客のすべてのテナンシーでレポートを取得し、1 つの場所にデータを集約できます。
-ms.openlocfilehash: eba2c3be848b878670321485718317b5552b2db3
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 2a2cfcd5179160e19ff8e95c9748251b92e42e7a
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "18812108"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001790"
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する
 

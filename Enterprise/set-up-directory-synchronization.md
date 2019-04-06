@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365 とオンプレミスの Active directory との間のディレクトリ同期をセットアップする方法について説明します。
-ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492947"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001750"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期のセットアップ
 
@@ -56,7 +56,7 @@ Azure AD Connect をインストールするオンプレミスサーバーでは
 |**Windows Server 2008** | -最新サポートされている PowerShell のバージョンは、 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)で利用可能な Windows Management Framework 3.0 で利用できます。  <br> -.net 4.5.1 以降のリリースは、 [Microsoft ダウンロードセンター](https://go.microsoft.com/fwlink/p/?LinkId=717996)から入手できます。 |
 
 > [!NOTE]
-> azure active directory DirSync を使用している場合、オンプレミスの active directory から azure active directory に同期できる配布グループメンバーの最大数は15000です。 Azure AD Connect の場合、この番号は5万です。 
+> azure active directory DirSync を使用している場合、オンプレミスの active directory から azure active directory に同期できる配布グループメンバーの最大数は15000です。 Azure AD Connect の場合、この番号は5万です。
   
 ハードウェア、ソフトウェア、アカウントとアクセス許可の要件、SSL 証明書の要件、および azure AD Connect のオブジェクト制限を慎重に確認するには、「 [azure Active Directory Connect の前提条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)」を参照してください。
   
@@ -64,8 +64,8 @@ Azure AD Connect をインストールするオンプレミスサーバーでは
 
 ## <a name="to-set-up-directory-synchronization"></a>ディレクトリ同期をセットアップするには
 
-1. Office 365 管理センターにサインインし、左側のナビゲーションで [**ユーザー** \>の**アクティブなユーザー** ] を選択します。
-2. Office 365 管理センターの [**アクティブなユーザー** ] ページで、[**その他** \>の**ディレクトリ同期**] を選択します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインし、左側のナビゲーションで [**ユーザー** \>の**アクティブなユーザー** ] を選択します。
+2. 管理センターの [**アクティブなユーザー** ] ページで、[**その他** \>の**ディレクトリ同期**] を選択します。
 
     ![[その他] メニューで、[ディレクトリ同期] を選択します。](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

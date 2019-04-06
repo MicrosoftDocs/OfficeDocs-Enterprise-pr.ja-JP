@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: '概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。'
-ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123394"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038011"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 
@@ -33,7 +33,7 @@ ms.locfileid: "27123394"
   
 図 1 は、Microsoft ハイブリッド クラウド スタックとそのレイヤーを示しています。レイヤーには、オンプレミス、ネットワーク、ID、アプリとシナリオ、およびクラウド サービスのカテゴリ (Microsoft SaaS、Azure PaaS、Azure PaaS) が含まれます。
   
-アプリケーションおよびシナリオのレイヤーでは、このモデルの他の資料に詳細については、特定のハイブリッド クラウド シナリオを持っています。Id、ネットワーク、および設置レイヤーは、SaaS、PaaS、(PaaS) のクラウド サービスのカテゴリに共通することができます。
+アプリとシナリオのレイヤーには、このモデルの追加記事で詳しく説明されている特定のハイブリッドクラウドのシナリオがあります。 ID、ネットワーク、オンプレミスのレイヤーは、クラウド サービスのカテゴリ (SaaS、PaaS、または PaaS) では共通である場合があります。
   
 - オンプレミス
     
@@ -41,11 +41,11 @@ ms.locfileid: "27123394"
     
 - ネットワーク
     
-    マイクロソフトのクラウド プラットフォームおよびサービスへの接続用の 2 つの選択肢があります。 インターネットの既存のパイプと ExpressRoute。予測可能なパフォーマンスが重要な場合は、ExpressRoute 接続を使用します。マイクロソフトの SaaS サービス (Office 365 と Dynamics 365)、Azure PaaS サービス、および Azure IaaS サービスに直接接続する 1 つの ExpressRoute 接続を使用できます。
+    Microsoft クラウド プラットフォームとサービスに接続するには、既存のインターネット パイプか ExpressRoute のいずれかを使用します。 予測可能なパフォーマンスが重要な場合は、ExpressRoute 接続を使用します。 1つの ExpressRoute 接続を使用して、Microsoft SaaS services (Office 365 および Dynamics 365)、azure PaaS サービス、および azure IaaS services に直接接続することができます。
     
 - ID
     
-    クラウド ID インフラストラクチャについては、Microsoft クラウド プラットフォームによって、2 つの方法があります。SaaS および Azure PaaS については、Azure AD にオンプレミス ID インフラストラクチャを統合するか、オンプレミス ID インフラストラクチャまたはサードパーティ ID プロバイダーでフェデレーションを行います。Azure で実行されている VM については、Windows Server AD などのオンプレミス ID インフラストラクチャを、VM が存在する仮想ネットワーク (VNet) に拡張できます。
+    クラウド ID インフラストラクチャについては、Microsoft クラウド プラットフォームによって、2 つの方法があります。 SaaS および Azure PaaS については、Azure AD にオンプレミス ID インフラストラクチャを統合するか、オンプレミス ID インフラストラクチャまたはサードパーティ ID プロバイダーでフェデレーションを行います。 Azure で実行されている vm では、Active Directory ドメインサービス (AD DS) などのオンプレミスの id インフラストラクチャを、vm が存在する仮想ネットワーク (vnet) に拡張できます。
     
 ## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>3 段階のクラウド導入プロセスのハイブリッド クラウド シナリオ
 

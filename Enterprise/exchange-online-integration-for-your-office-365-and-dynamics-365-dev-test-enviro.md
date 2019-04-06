@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: '概要: このテスト ラボ ガイドを使用して、Office 365 試用版サブスクリプションで Exchange Online 向けの Dynamics 365 統合を有効にします。'
-ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 47153f9321284d0bb30f59645dfe56ab40cb7982
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574021"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038001"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合
 
@@ -36,7 +36,7 @@ Dynamics 365 に電子メールと他のメッセージング レコードを保
 「[Office 365 と Dynamics 365 の開発/テスト環境](office-365-and-dynamics-365-dev-test-environment.md)」の手順を実行して、Office 365 と Dynamics 365 の開発/テスト環境のライトウェイト、またはシミュレーションのエンタープライズ バージョンを作成します。
   
 > [!NOTE]
-> この記事の構成には、シミュレーションのエンタープライズ開発/テスト環境は必要ありません。シミュレーションのエンタープライズ開発/テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Windows Server Active Directory (AD) フォレスト用のディレクトリ同期が含まれています。この機能は、一般的な組織と類似した環境で Office 365 と Dynamics 365 を試していただけるよう、オプションとしてここで提供されています。 
+> この記事の構成では、シミュレートされたエンタープライズ開発/テスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 一般的な組織を表す環境で Office 365 および Dynamics 365 を使用できるようにするためのオプションとして、ここに記載されています。 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>フェーズ 2: Exchange Online の Dynamics 365 統合を構成しデモンストレーションする
 
