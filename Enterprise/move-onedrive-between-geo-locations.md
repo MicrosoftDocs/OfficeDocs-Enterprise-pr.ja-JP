@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 1197d23bdf94fe38ba24138ddde7c1f1fb92b41f
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458327"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931826"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -59,7 +59,7 @@ OneDrive 地域移動を実行するには、まず、管理者がユーザー�
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations-image1.png)
+![Connect-SPOService コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>環境の検証
 
@@ -71,7 +71,7 @@ OneDrive 地域移動の開始前に、目的の環境を検証するように�
 
 地域の場所のリストが表示され、その場所間でコンテンツを移動できるかどうかが「互換性あり」として示されます。 コマンドが「互換性なし」を返した場合は、後日、状態の検証をあとでもう一度お試しください。
 
-訴訟ホールドの状態になっている場合やサブサイトが含まれている場合、OneDrive は移動できません。OneDrive が移動可能かどうかを検証するには、-ValidationOnly パラメーターを指定した Start-SPOUserAndContentMove コマンドレットを使用してください。
+たとえば、サブサイトが含まれている場合、OneDrive は移動できません。 OneDrive が移動可能かどうかを検証するには、-ValidationOnly パラメーターを指定した Start-SPOUserAndContentMove コマンドレットを使用してください。
 
 `Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly`
 
@@ -96,7 +96,7 @@ OneDrive の移動が可能な状態になっている場合は Success が返�
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations-image2.png)
+![Start-SPOUserAndContentMove コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](media/move-onedrive-between-geo-locations-image2.png)
 
 将来の地域移動をスケジュールするには、次に示すパラメーターのいずれかを使用します。
 

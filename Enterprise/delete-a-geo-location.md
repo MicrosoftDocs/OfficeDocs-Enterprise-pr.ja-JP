@@ -3,33 +3,34 @@ title: サテライトの場所を削除する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: OneDrive for Business Multi-Geo でサテライトの場所を削除する方法について説明します。
-ms.openlocfilehash: d13de1b10cfc087337d22f9103afc33057bc40c1
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+description: Office 365 Multi-Geo でサテライトの場所を削除する方法について説明します。
+ms.openlocfilehash: 68152d24c68ad31375cf882340460428424931cb
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849843"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931746"
 ---
-# <a name="delete-a-satellite-location-in-onedrive-for-business-multi-geo"></a>OneDrive for Business Multi-Geo でサテライトの場所を削除する
+# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Office 365 Multi-Geo でサテライトの場所を削除する
 
-サテライトの場所が不要になった場合は、[OneDrive 管理センター](https://admin.onedrive.com)のテナントから削除できます
+サテライトの場所が不要になった場合は、SharePoint 管理センターのテナントから削除できます。
 
 > [!WARNING]
-> サテライトの場所のすべてのユーザー データが完全に削除されます。これには、OneDrive for Business のすべてのコンテンツ、SharePoint サイト、およびグループ サイトが含まれます。サテライトの場所を削除する前に、データを別のサテライトの場所または中央の場所に移行する必要があります。この操作を元に戻すことはできません。
+> すべてのサテライトの場所のユーザー データは永久に削除されます。 これには、OneDrive for Business のすべてのコンテンツ、SharePoint サイト、および Office 365 グループ メール ボックスを含む Exchangeメール ボックスが含まれます。 サテライトの場所を削除する前に、データを別のサテライトの場所または集中管理する場所に移行する必要があります。 この操作は元に戻せません。
 
 サテライトの場所はグローバル管理者のみが削除できます。
 
+![地理的位置の削除の UI を表示する Multi-Geo 管理センターのスクリーンショット](media/multi-geo-delete-satellite-location.png)
+
 サテライトの場所を削除するには
 
-1. [OneDrive 管理センター](https://admin.onedrive.com)を開きます
+1. SharePoint 管理センターを開きます。
 
 2. **[地理的位置]** タブを開きます。
 
@@ -40,6 +41,3 @@ ms.locfileid: "25849843"
 5. 確認のチェック ボックスをオンにして、削除を確認します。
 
 6. **[削除]** をクリックします。
-
-
-

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948618"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037981"
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -121,10 +121,8 @@ Azure PowerShell を使った基本構成テスト環境の設定には次の 4 
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[ここ](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d)をクリックしてください。
 
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
@@ -173,7 +171,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPre
   
 ### <a name="step-2-configure-dc1"></a>ステップ 2: DC1 を構成する
 
-このステップでは、DC1 仮想マシンを作成し、それを Windows Server Active Directory (AD) の corp.contoso.comis ドメインのドメイン コントローラー、および TestLab 仮想ネットワークの仮想マシン用の DNS サーバーとして構成します。
+このステップでは、DC1 仮想マシンを作成し、それを Active Directory Domain Services (AD DS) の corp.contoso.com ドメインのドメイン コントローラー、および TestLab 仮想ネットワークの仮想マシン用の DNS サーバーとして構成します。
 
 > [!NOTE]
 > 以下のコマンド ブロックを実行する前に、選択した Azure リージョン (場所) が Azure の仮想マシンのサイズをサポートしているか確認してください。既定では、Standard_A1 に設定されています。[ここ](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines)をクリックすると Azure 仮想マシンのサイズと場所を確認できます。
