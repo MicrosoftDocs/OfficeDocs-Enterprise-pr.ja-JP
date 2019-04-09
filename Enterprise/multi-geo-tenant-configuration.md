@@ -1,5 +1,5 @@
 ---
-title: OneDrive for Business 複数地域テナントの構成
+title: Office 365 Multi-Geo テナントの構成
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,84 +9,37 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
-description: OneDrive for Business 複数地域の構成方法について説明します。
-ms.openlocfilehash: f521470b024817bbe53bbf3cbb1dd81e2a4a6754
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Office 365 Multi-Geo の構成方法の詳細。
+ms.openlocfilehash: 6a3282c65da79480fe9d7ed1aac24b5e7941c1fc
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200709"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931816"
 ---
-# <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business 複数地域テナントの構成
+# <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 Multi-Geo テナントの構成
 
-OneDrive for Business Multi-Geo のテナントを構成する前に、「[OneDrive for Business Multi-Geo の計画](plan-for-multi-geo.md)」を参照してください。この記事の手順を実行するには、サテライトの場所として有効にする地理的場所と、その場所にプロビジョニングするテスト ユーザーのリストが必要になります。
+Office 365 Multi-Geo 用にテナントを構成する前に、必ず「[Office 365 Multi-Geo のプラン](plan-for-multi-geo.md)」を読んでください。 この記事の手順を実行するには、サテライトの場所として有効にする地理的位置と、それらの場所用にプロビジョニングするテスト ユーザーのリストが必要です。
 
 ## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Office 365 プランの複数地域機能をテナントに追加する
 
-OneDrive for Business 複数地域を使用するには、_Office 365 の複数地域機能_プランが必要になります。アカウント チームと協力して、このプランをテナントに追加してください。アカウント チームは、適切なライセンス スペシャリストを紹介してテナントを構成します。
+Office 365 Multi-Geo を使用するには、_Office 365 の複数地域機能_ のプランが必要です。 アカウント チームと協力して、このプランをテナントに追加してください。 アカウント チームが適切なライセンス スペシャリストと連絡を取り、テナントを構成します。
 
 _Office 365 の複数地域機能_プランは、ユーザー レベルのサービス プランである点に注意してください。サテライトの場所でホストするユーザーごとにライセンスが必要です。サテライトの場所にユーザーを追加するたびに、さらにライセンスを追加できます。
 
-テナントが _Office 365 の複数地域機能_プランでプロビジョニングされると、[OneDrive 管理センター](https://admin.onedrive.com)で **[地理的位置]** タブが使用できるようになります。
+テナントが _Office 365 の複数地域機能_プランでプロビジョニングされると、OneDrive および SharePoint 管理センターで [**地理的位置**] タブが使用できるようになります。
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>サテライトの場所をテナントに追加する
 
-OneDrive for Business を使用する地理的位置ごとに、サテライトの場所を追加する必要があります。次の表に、利用可能な地理的位置を示します。
+データを保存する地理的位置ごとにサテライトの場所を追加する必要があります。 以下の表に、使用可能な地理的位置を示します。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>場所</strong></th>
-<th align="left"><strong>コード</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">アジア太平洋</td>
-<td align="left">APC</td>
-</tr>
-<tr class="even">
-<td align="left">オーストラリア</td>
-<td align="left">AUS</td>
-</tr>
-<tr class="even">
-<td align="left">カナダ</td>
-<td align="left">CAN</td>
-</tr>
-<tr class="even">
-<td align="left">ヨーロッパ/中東/アフリカ</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="even">
-<td align="left">フランス</td>
-<td align="left">FRA</td>
-</tr>
-<tr class="even">
-<td align="left">インド</td>
-<td align="left">IND</td>
-</tr>
-<tr class="odd">
-<td align="left">日本</td>
-<td align="left">JPN</td>
-</tr>
-<tr class="even">
-<td align="left">韓国</td>
-<td align="left">KOR</td>
-</tr>
-<tr class="odd">
-<td align="left">北アメリカ</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="odd">
-<td align="left">イギリス</td>
-<td align="left">GBR</td>
-</tr>
-</tbody>
-</table>
+[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+
+![SharePoint 管理センターの [地域の場所] ページのスクリーン ショット](media/sharepoint-multi-geo-admin-center.png)
 
 サテライトの場所を追加する
 
-1. [OneDrive 管理センター](https://admin.onedrive.com)を開きます。
+1. SharePoint 管理センターを開きます。
 
 2. **[地理的位置]** タブを開きます。
 
@@ -108,19 +61,22 @@ OneDrive for Business を使用する地理的位置ごとに、サテライト�
 
 必要なサテライトの場所を使用可能にすると、適切な優先されるデータの場所を使用するように、ユーザー アカウントを更新できます。ユーザーが中央の場所から移動しない場合でも、すべてのユーザーに対して優先されるデータの場所を設定するようにしてください。
 
+> [!IMPORTANT]
+> ユーザーの優先されるデータの場所がサテライトの場所または中央の場所として構成されていない場所に設定されている場合、OneDrive および SharePoint サイトとグループ メールボックスをプロビジョニングするときに、システムは既定で中央の場所に設定します。
+
 > [!TIP]
 > 組織の広範囲に Multi-Geo をロール アウトする前に、テスト ユーザーまたは少数のユーザーのグループでのテストを開始するようにしてください。
 
-AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類のユーザー オブジェクトがあります。目的のユーザーの種類に該当する指示に従ってください。
+Azure Active Directory には、クラウドのみのユーザーと同期ユーザーの2種類のユーザー オブジェクトがあります。 ユーザーの種類に適した指示に従ってください。
 
-### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>AD Connect を使用してユーザーの優先されるデータの場所を同期する 
+### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Azure Active Directory Connect を使用してユーザーの優先されるデータの場所を同期する 
 
 社内のユーザーがオンプレミスの Active Directory システムから Azure Active Directory に同期される場合は、そうしたユーザーの PreferredDataLocation は AD に移入する必要があり、AAD に同期される必要があります。「[Azure Active Directory Connect 同期: Office 365 リソースの優先されるデータの場所を構成する](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)」の手順に従って、オンプレミスの Active Directory から Azure Active Directory への優先されるデータの場所の同期を構成します。
 
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDrive がプロビジョニングされていない新しいユーザーの場合は、変更内容の反映のためにユーザーの PDL が Azure Active Directory に同期されてから少なくとも 24 時間待機して、OneDrive for Business にログインします (OneDrive for Business をプロビジョニングするためにユーザーがログインする前に優先されるデータの場所を設定することで、ユーザーの新しい OneDrive が正しい場所にプロビジョニングされるようになります)。
+> OneDrive がプロビジョニングされていない新規ユーザーの場合、ユーザーが OneDrive for Business にログインする前に、変更が反映されるまでユーザーの PDL が Azure Active Directory に同期されてから少なくとも 24 時間待ってください。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>クラウド専用ユーザーの優先されるデータの場所を設定する 
 
@@ -140,16 +96,16 @@ AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類の�
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration-image3.png)
+![set-msoluser を示す PowerShell ウィンドウのスクリーン ショット](media/multi-geo-tenant-configuration-image3.png)
 
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDrive がプロビジョニングされていない新しいユーザーの場合は、変更内容の反映のためにユーザーの PDL が設定されてから少なくとも 24 時間待機して、OneDrives にログインします (OneDrive for Business をプロビジョニングするためにユーザーがログインする前に優先されるデータの場所を設定することで、ユーザーの新しい OneDrive が正しい場所にプロビジョニングされるようになります)。
+> OneDrive がプロビジョニングされていない新規ユーザーの場合、ユーザーが OneDrive にログインする前に、変更が反映されるまでユーザーの PDL が 設定されてから少なくとも 24 時間待ってください。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive のプロビジョニングと PDL の効果
 
-既にユーザーがテナントで作成された OneDrive サイトを持っている場合は、そのユーザーの PDL を設定しても既存の OneDrive が自動的に移動されることはありません。ユーザーの OneDrive を移動する場合は、「[OneDrive for Business の地域の移動](move-onedrive-between-geo-locations.md)」を参照して、地域の場所間での OneDrive の移動についての手順に従ってください。
+テナントに OneDrive サイトが既に作成されている場合は、PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには、[OneDrive for Business 地域移動](move-onedrive-between-geo-locations.md)を参照してください。地域間での OneDrive の移動手順に従ってください。 (ユーザーの PDL を設定すると、Exchange メールボックスは自動的に移動します。)
 
 ユーザーがテナント内に OneDrive サイトを持っていないユーザーの場合、ユーザーの PDL が会社のサテライトの場所のいずれかと一致すれば、ユーザーの OneDrive は PDL 値に応じてプロビジョニングされます。
 
@@ -171,13 +127,13 @@ AAD には、クラウド専用ユーザーと同期ユーザーの 2 種類の�
 
 手順と制限事項や相違点などについては、「[OneDrive for Business 複数地域の検索の構成](configure-search-for-multi-geo.md)」を参照してください。
 
-## <a name="validating-the-onedrive-for-business-multi-geo-configuration"></a>OneDrive for Business 複数地域の構成の検証
+## <a name="validating-the-office-365-multi-geo-configuration"></a>Office 365 Multi-Geo の構成を検証する
 
-次に示す、いくつかのユース ケースは、OneDrive for Business 複数地域を会社に広範囲にロール アウトする前の検証計画に含めるようにします。これらのテストと会社に関連する追加のユース ケースを完了してから、最初のパイロット グループにユーザーを追加するようにしてください。
+以下は、Office 365 Multi-Geo を会社に広く展開する前に、検証のプランに含めることができる基本的なユース ケースです。 これらのテストと会社に関連するその他のユース ケースが完了したら、最初のパイロット グループにユーザーを追加することに進むこともできます。
 
 **OneDrive for Business**
 
-Office 365 アプリ起動ツールから OneDrive を選択し、ユーザーの PDL に基づいて、そのユーザーにとって自動的に適切な地域の場所に自動的に移動されることを確認します。その場所で OneDrive for Business のプロビジョニングが開始されます。プロビジョニングが完了したら、ドキュメントのアップロードとダウンロードを試してください。
+Office 365 アプリ起動ツールから OneDrive を選択し、ユーザーの PDLに基づいて、適切な地理的位置に自動的に誘導されることを確認します。 OneDrive for Business はその場所でプロビジョニングを開始するはずです。 プロビジョニングされたら、いくつかのドキュメントをアップロードしてダウンロードしてみます。
 
 **OneDrive モバイル アプリ**
 
