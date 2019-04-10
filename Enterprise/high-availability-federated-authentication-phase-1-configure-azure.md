@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037961"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741313"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1:Azure を構成する
 
@@ -39,7 +39,7 @@ Azure は、次の基本コンポーネントを使用してプロビジョニ�
 
 Azure のコンポーネントの構成を開始する前に、次に示す表に必要事項を記入します。 Azure の構成の手順で役立つように、このセクションを印刷して、必要な情報を書き込むか、このセクションをドキュメントにコピーして必要事項を記入してください。 VNet の設定は、「表 V」に記入します。
   
-|**アイテム**|**構成設定**|**説明**|**値**|
+|**項目**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   
-|**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
+|**項目**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory ドメインサービス (AD DS) ドメインコントローラーと DirSync サーバー仮想マシン (vm) によって使用されるサブネット。  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
@@ -72,7 +72,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。
   
-|**アイテム**|**用途**|**サブネット上の IP アドレス**|**値**|
+|**項目**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 仮想ネットワーク内のドメイン コントローラーを最初にセットアップするときに使用する、オンプレミス ネットワーク内の 2 つのドメイン ネーム システム (DNS) について、「表 D」に必要事項を記入します。IT 部門と協議して、このリストを決定してください。
   
-|**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
+|**項目**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -98,7 +98,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。
   
-|**アイテム**|**ローカル ネットワークのアドレス スペース**|
+|**項目**|**ローカル ネットワークのアドレス スペース**|
 |:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -254,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。 ただし、このサイト間 VPN 接続が使用できなくなった場合、VNet 内のドメインコントローラーは、オンプレミスの Windows Server AD で行われたユーザーアカウントおよびグループに対する更新を受信しません。 これが行われないようにするには、サイト間 VPN 接続の高可用性を構成します。 詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
+> 個々のユーザーのフェデレーション認証は、オンプレミスのリソースには依存しません。 ただし、このサイト間 VPN 接続が使用できなくなった場合、VNet 内のドメインコントローラーは、オンプレミスの Active Directory ドメインサービスで行われたユーザーアカウントとグループの更新を受信しません。 これが行われないようにするには、サイト間 VPN 接続の高可用性を構成します。 詳細については、「[高可用性のクロスプレミス接続および VNet 間接続](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)」を参照してください。
   
 次に、このコマンドの表示から得られる、仮想ネットワーク用の Azure VPN ゲートウェイのパブリック IPv4 アドレスを記録します。
   

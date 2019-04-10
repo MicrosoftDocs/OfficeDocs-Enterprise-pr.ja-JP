@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038041"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741263"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
@@ -32,9 +32,9 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
 最小要件で、負荷の小さい方法で Cloud App Security をテストする場合は、[Office 365 開発/テスト環境](office-365-dev-test-environment.md) のフェーズ 2 とフェーズ 3 の手順に従ってください。
   
@@ -63,7 +63,7 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
     
 5. **[User 4]** ページで、 **[ロール]** 行の **[編集]** をクリックします。
     
-6. **[ユーザー ロールの編集]** ページで、 **[全体管理者]** をクリックし、 **[代替電子メール アドレス]** に **user4@contoso.com** と入力し、 **[保存]** をクリックします。 **[閉じる]** を 2 回クリックします。
+6. [**ユーザーロールの編集**] ページで、[**全体管理者**] をクリックして、別の**user4@contoso.com** **電子メールアドレス**を入力し、[**保存**] をクリックします。 **[閉じる]** を 2 回クリックします。
     
 7. 左上部分にあるアプリ起動ツールのアイコンを選択し、 **[メール]** をクリックします。
     
@@ -81,7 +81,8 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 
 1. Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
-2. **[管理者]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
+2. 
+            **[管理]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
     
 3. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
     
@@ -131,7 +132,7 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
     
 11. **[User 5]** ページで、 **[ロール]** 行の **[編集]** をクリックします。
     
-12. **[ユーザー ロールの編集]** ページで、 **[カスタマイズされた管理者]** をクリックし、 **[パスワード管理者]** と **[ユーザー管理の管理者]** をクリックします。 **[代替電子メール アドレス]** に **user5@contoso.com** と入力し、次に **[保存]** をクリックします。 **[閉じる]** を 2 回クリックします。
+12. [**ユーザーロールの編集**] ページで、[カスタマイズされた**管理者**] をクリックし**user5@contoso.com** 、[**パスワード管理**者と**ユーザー管理者**] をクリックして、別の**電子メールアドレス**を入力し、[**保存**] をクリックします。 **[閉じる]** を 2 回クリックします。
     
 13. 右上部分にあるユーザー アイコンをクリックし、次に **[サインアウト]** をクリックします。 
     

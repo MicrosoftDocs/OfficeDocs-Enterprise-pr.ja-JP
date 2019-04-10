@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '概要: Microsoft のサービスとしてのインフラストラクチャ (IaaS) ベースの Azure のクラウド製品のハイブリッドアーキテクチャとシナリオについて説明します。'
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037931"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741363"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウドのシナリオ
 
@@ -41,7 +41,7 @@ ms.locfileid: "31037931"
     
 - ID
     
-    ローカル認証のために Azure vnet で実行されている一連のサーバーに、Windows Server AD ドメインコントローラーなどの id サーバーを追加します。
+    Active Directory ドメインサービス (AD DS) ドメインコントローラーなどの id サーバーを、Azure vnet で実行されているローカル認証用のサーバーのセットに追加します。
     
 - ネットワーク
     
@@ -59,13 +59,13 @@ ms.locfileid: "31037931"
 
 ![Azure IaaS の Office 365 用のディレクトリ同期サーバー](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-図2では、オンプレミスのネットワークが Windows Server AD インフラストラクチャをホストしており、プロキシサーバーとルーターがエッジに配置されています。 ルーターは、サイト間 VPN または ExpressRoute 接続を使用して azure VNet のエッジにある azure ゲートウェイに接続します。 VNet 内で、ディレクトリ同期サーバーは Azure AD Connect を実行します。
+図2では、社内ネットワークが AD DS インフラストラクチャをホストしており、プロキシサーバーとルーターがエッジに配置されています。 ルーターは、サイト間 VPN または ExpressRoute 接続を使用して azure VNet のエッジにある azure ゲートウェイに接続します。 VNet 内で、ディレクトリ同期サーバーは Azure AD Connect を実行します。
   
-office 365 用のディレクトリ同期サーバーは、Windows server AD のアカウントの一覧を office 365 サブスクリプションの Azure AD テナントと同期します。
+office 365 用のディレクトリ同期サーバーは、AD DS 内のアカウントの一覧を office 365 サブスクリプションの Azure AD テナントと同期します。
   
 ディレクトリ同期サーバーは、Azure AD Connect を実行する Windows ベースのサーバーです。 プロビジョニングを高速化したり、組織内のオンプレミスサーバーの数を少なくしたりするには、Azure IaaS の仮想ネットワーク (VNet) にディレクトリ同期サーバーを展開します。
   
-ディレクトリ同期サーバーは、変更のために Windows server AD をポーリングしてから、それらを Office 365 サブスクリプションと同期します。
+ディレクトリ同期サーバーは、変更に関して AD DS をポーリングしてから、それらを Office 365 サブスクリプションと同期します。
   
 詳細については、「 [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)」を参照してください。
   
@@ -163,7 +163,7 @@ Azure で高可用性を備えた複数層の LOB アプリケーションの別
   
 この構成には、Azure の LOB アプリケーションの次の属性があります。
   
-- **層:** web プロキシサーバー、ad FS サーバー、および Windows Server ad ドメインコントローラーには階層があります。
+- **層:** web プロキシサーバー、ad FS サーバー、ad DS ドメインコントローラーには階層があります。
     
 - **負荷分散:** 外部の azure ロードバランサーは、受信クライアント認証要求を web プロキシに配布し、内部 Azure ロードバランサーは、認証要求を AD FS サーバーに配信します。
     

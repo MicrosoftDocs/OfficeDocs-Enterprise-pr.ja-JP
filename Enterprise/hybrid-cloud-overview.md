@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。'
-ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327349"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741433"
 ---
 # <a name="hybrid-cloud-overview"></a>ハイブリッド クラウドの概要
 
@@ -29,7 +29,7 @@ ms.locfileid: "28327349"
   
 ## <a name="microsoft-hybrid-cloud"></a>Microsoft ハイブリッド クラウド
 
-Microsoft ハイブリッド クラウドは、次のように Microsoft クラウド プラットフォームをオンプレミス コンポーネントと組み合わせるビジネス シナリオのセットです。 
+Microsoft ハイブリッド クラウドは、次のように Microsoft クラウド プラットフォームをオンプレミス コンポーネントと組み合わせるビジネス シナリオのセットです。  
   
 - オンプレミスの SharePoint ファームと Office 365 の SharePoint Online の両方のコンテンツから検索結果を取得します。
     
@@ -55,7 +55,7 @@ Microsoft クラウド サービスを使用するハイブリッド クラウ�
   
 - SaaS
     
-    マイクロソフトの SaaS のサービスには、Office 365、Microsoft Intune では、Microsoft Dynamics 365 などがあります。マイクロソフトの saas を利用してハイブリッド クラウドのシナリオでは、オンプレミスのサービスまたはアプリケーションでこれらのサービスを組み合わせます。たとえば、Office 365 で実行されている Exchange Online と統合できます Skype ビジネス 2019 は、オンプレミスで導入するのです。
+    Microsoft SaaS サービスには、Office 365、Microsoft Intune および Microsoft Dynamics 365 が含まれます。 Microsoft SaaS を使ったハイブリッド クラウド シナリオでは、これらのサービスをオンプレミス サービスまたはアプリケーションと統合します。 たとえば、Office 365 で実行されている Exchange Online は、オンプレミスで展開されている Skype for business 2019 と統合できます。
     
 - Azure PaaS
     
@@ -73,9 +73,9 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
     
     ハイブリッド クラウド シナリオのネットワークには、Microsoft クラウド プラットフォームおよびサービスへの接続と、負荷のピーク時に高パフォーマンスを実現するのに十分な帯域幅とが含まれています。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウド ネットワーク](microsoft-cloud-networking-for-enterprise-architects.md)」をご覧ください。
     
-- Identity
+- ID
     
-    SaaS と Azure PaaS ハイブリッド シナリオの ID には、共通の ID プロバイダーとして Azure AD を含めることができます。このプロバイダーは、オンプレミスの Windows Server AD と同期するか、Windows Server AD またはその他の ID プロバイダーとフェデレーションすることができます。また、オンプレミスの ID インフラストラクチャを Azure IaaS に拡張することもできます。詳細については、「[エンタープライズ アーキテクトのための Microsoft クラウド ID](microsoft-cloud-it-architecture-resources.md#identity)」をご覧ください。
+    SaaS および Azure PaaS ハイブリッドの id には、azure AD を共通の id プロバイダーとして含めることができます。これは、オンプレミスの Active Directory ドメインサービス (AD ds) と同期したり、ad ds やその他の id プロバイダーとのフェデレーションを行うことができます。 オンプレミスの id インフラストラクチャを Azure IaaS に拡張することもできます。 詳細については、「[エンタープライズアーキテクトのための Microsoft クラウド id](microsoft-cloud-it-architecture-resources.md#identity)」を参照してください。
     
 - セキュリティ
     

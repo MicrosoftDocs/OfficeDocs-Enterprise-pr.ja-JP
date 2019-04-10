@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
-ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037971"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741303"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
@@ -32,7 +32,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
@@ -41,7 +41,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 シミュレーション エンタープライズで機密性の高いファイル保護をテストする場合は、[DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md)の指示に従ってください。
   
 > [!NOTE]
-> 機密性の高いファイルの保護をテストするのに、インターネットに接続されたシミュレーション イントラネットと Windows Server AD フォレスト用のディレクトリ同期を含めた、シミュレーション エンタープライズの開発/テスト環境は必要ではありません。この指示は、一般的な組織と類似した環境で機密性の高いファイルの保護をテストしてお試しいただけるようオプションとしてここで提供しています。 
+> 機密ファイル保護のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で機密性の高いファイルの保護をテストしてお試しいただけるようオプションとしてここで提供しています。 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>フェーズ 2:アクセス許可で保護されたサイトのドキュメントがどのようにリークされる場合があるのかをデモする
 
@@ -55,7 +55,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
     
 - CLIENT1 仮想マシン (シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合)。
     
-**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365 全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) と Office 365 試用版のサブスクリプションのパスワードを入力します。
+[ **Windows PowerShell 資格情報の要求**] ダイアログボックスで、office 365 のグローバル管理者名jdoe@contosotoycompany.onmicrosoft.com(例:) と office 365 試用版サブスクリプションのパスワードを入力します。
   
 組織名 (例: contosotoycompany) と、所属地域に該当する 2 文字の国別コードを入力して、Windows PowerShell 用 Windows Azure Active Directory Module のプロンプトから次のコマンドを実行します。
   

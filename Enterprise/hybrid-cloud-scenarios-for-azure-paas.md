@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: '概要: Microsoft のサービスとしてのプラットフォーム (PaaS) ベースの Azure 内クラウド製品のハイブリッド アーキテクチャとシナリオについて説明します。'
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123334"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741373"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Azure PaaS のハイブリッド クラウド シナリオ
 
@@ -69,7 +69,7 @@ ms.locfileid: "27123334"
     
 Azure アプリは、次の資格情報を使用できます。
   
-- Azure AD。Windows Server AD などのオンプレミスの ID プロバイダーと同期させることができます。
+- Azure AD (Active Directory ドメインサービス (AD DS) など、オンプレミスの id プロバイダーと同期させることができます。
     
 - サードパーティ ID プロバイダー。
     

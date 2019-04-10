@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '概要: Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。'
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038021"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741454"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境のアドバンスト eDiscovery
 
@@ -30,7 +30,7 @@ office 365 Advanced 電子情報開示を使用すると、電子メールやド
 この記事の手順では、架空の契約問題に関するデータの小さなセットを作成し、そのデータをアドバンスト eDiscovery で分析します。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 の開発/テスト環境を作成する
 
@@ -53,7 +53,7 @@ office 365 Advanced 電子情報開示を使用すると、電子メールやド
     
 2. **[Outlook メール]** タブで、**[新規作成]** をクリックします。
     
-3. [**宛先**] に、試用版サブスクリプションの User6 アカウントの電子メールアドレスを入力し**ます (User6 @。**<organization name> **. onmicrosoft.com**)。
+3. [**宛先**] に、試用版サブスクリプションの User6 アカウントの電子メールアドレスを入力し** user6@ます (。**<organization name> **. onmicrosoft.com**)。
     
 4. 件名に、「**Test email 1**」と入力します。
     

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用に、ドメイン コントローラーと DirSync サーバーを構成します。
-ms.openlocfilehash: 5ca31f33ef75aeb00dee724dfc6bc86df51cbfef
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650130"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741253"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性フェデレーション認証のフェーズ 2:ドメイン コントローラーを構成する
 
@@ -26,23 +26,23 @@ ms.locfileid: "30650130"
 Azure インフラストラクチャ サービスに Office 365 フェデレーション認証の高可用性を展開するために、このフェーズでは、Azure の仮想ネットワークに 2 つのドメイン コントローラーと 1 つの DirSync サーバーを構成します。オンプレミス ネットワークへのサイト間 VPN 接続を経由して認証トラフィックを送信するのではなく、Azure 仮想ネットワーク内で認証に対するクライアント Web 要求を認証できます。
   
 > [!NOTE]
-> Active Directory フェデレーション サービス (AD FS) では、Windows Server AD ドメイン コントローラーの代用として、Azure Active Directory Domain Services を使用できません。 
+> active directory フェデレーションサービス (AD FS) は、active directory ドメインサービスドメインコントローラーの代用として、Azure active directory ドメインサービスを使用できません。 
   
 このフェーズは、「[High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)」に進む前に完了しておく必要があります。 すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Azure にドメイン コントローラー仮想マシンを作成する
 
-まず、「表 M」の「 **仮想マシン名** 」列に必要事項を入力し、必要に応じて、「 **最小サイズ** 」列で仮想マシンのサイズを変更します。
+まず、「表 M」の「**仮想マシン名**」列に必要事項を入力し、必要に応じて、「**最小サイズ**」列で仮想マシンのサイズを変更します。 
   
-|**アイテム**|**仮想マシン名**|**ギャラリー イメージ**|**ストレージの種類**|**最小サイズ**|
+|**項目**|**仮想マシン名**|**ギャラリー イメージ**|**ストレージの種類**|**最小サイズ**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png) (最初のドメイン コントローラー。例: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png) (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(DirSync サーバー、例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)(最初の AD FS サーバー、例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png)(2 番目の AD FS サーバー、例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(最初の web アプリケーションプロキシサーバー。例: WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(2 番目の web アプリケーションプロキシサーバー。例: WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  (最初のドメイン コントローラー。例: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png) (DirSync サーバー、例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png) (最初の AD FS サーバー、例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png) (2 番目の AD FS サーバー、例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png) (最初の web アプリケーションプロキシサーバー。例: WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png) (2 番目の web アプリケーションプロキシサーバー。例: WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M-Azure での Office 365 の高可用性フェデレーション認証用の仮想マシン**
   
@@ -95,7 +95,7 @@ $vmName="<Table M - Item 1 - Virtual machine name column>"
 $vmSize="<Table M - Item 1 - Minimum size column>"
 $staticIP="<Table I - Item 1 - Value column>"
 $diskStorageType="<Table M - Item 1 - Storage type column>"
-$diskSize=<size of the extra disk for Windows Server AD data in GB>
+$diskSize=<size of the extra disk for Active Directory Domain Services (AD DS) data in GB>
 
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
@@ -114,7 +114,7 @@ $vmName="<Table M - Item 2 - Virtual machine name column>"
 $vmSize="<Table M - Item 2 - Minimum size column>"
 $staticIP="<Table I - Item 2 - Value column>"
 $diskStorageType="<Table M - Item 2 - Storage type column>"
-$diskSize=<size of the extra disk for Windows Server AD data in GB>
+$diskSize=<size of the extra disk for AD DS data in GB>
 
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
@@ -234,10 +234,10 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 任意のリモートデスクトップクライアントを使用して、DirSync サーバー仮想マシンへのリモートデスクトップ接続を作成します。 イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-次に、Windows PowerShell プロンプトでこれらのコマンドを使用して、適切な Windows Server AD ドメインに参加させます。
+次に、Windows PowerShell プロンプトでこれらのコマンドを使用して、適切な AD DS ドメインに参加させます。
   
 ```
-$domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
+$domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer

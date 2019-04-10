@@ -12,22 +12,22 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
-ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915362"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741403"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性フェデレーション認証のフェーズ 5:Office 365 のフェデレーション認証を構成する
 
  **概要:** Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
  
-Azure インフラストラクチャ サービスに Office 365 の高可用性のフェデレーション認証を展開するのこの最終フェーズで取得し、パブリック証明機関によって発行された証明書をインストール、構成を確認して、インストールおよび実行する Azure ADディレクトリ同期サーバーに接続します。Azure AD 接続では、Office 365 サブスクリプションと、Active Directory フェデレーション サービス (AD FS) とフェデレーションの認証のための web アプリケーションのプロキシ サーバーを構成します。
+azure インフラストラクチャサービスで Office 365 用の高可用性フェデレーション認証を展開するための最終フェーズでは、パブリック証明機関によって発行された証明書を取得してインストールし、構成を確認してから、Azure AD をインストールして実行します。ディレクトリ同期サーバーに接続します。 Azure AD Connect は、フェデレーション認証用に Office 365 サブスクリプション、Active Directory フェデレーション サービス (AD FS)、Web アプリケーション プロキシ サーバーを構成します。
   
 すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>パブリック証明書を取得し、ディレクトリ同期サーバーにコピー
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>パブリック証明書を取得し、ディレクトリ同期サーバーにコピーする
 
 次のプロパティを使用して、公開証明機関からデジタル証明書を取得します。
   
@@ -41,7 +41,7 @@ Azure インフラストラクチャ サービスに Office 365 の高可用性�
   
 フェデレーション認証の証明書要件に関する詳細については、「[フェデレーションのインストールと構成の前提条件](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)」を参照してください。
   
-証明書が表示されたら、ディレクトリ同期サーバーの c: ドライブ上のフォルダーにコピーします。たとえば、SSL.pfx ファイルの名前を指定し、c: に保存する\\ディレクトリ同期サーバー上の証明書のフォルダーです。
+証明書を受け取ったら、ディレクトリ同期サーバーの C: ドライブ上のフォルダーにコピーします。 たとえば、ファイルに web.config という名前を指定し、ディレクトリ同期サーバー上\\の C: cert フォルダーに格納します。
   
 ## <a name="verify-your-configuration"></a>構成を確認する
 
@@ -57,7 +57,7 @@ Azure インフラストラクチャ サービスに Office 365 の高可用性�
     
 - フェデレーション サービス FQDN のプライベート DNS A レコードが、AD FS サーバー用の内部の Azure ロード バランサーのプライベート IP アドレスを指している。
     
-- パブリック証明機関 isssued デジタル証明書、san のフェデレーション サービスに SSL 接続に適している FQDN では、ディレクトリ同期サーバーに格納されている PFX ファイルです。
+- フェデレーションサービス FQDN に設定された SAN を使用した SSL 接続に適した公共の証明機関-isssued デジタル証明書は、ディレクトリ同期サーバーに格納されている PFX ファイルです。
     
 - 公的証明機関のルート証明書が、コンピューターとデバイスの信頼されたルート証明機関ストアにインストールされている。
     
@@ -71,23 +71,23 @@ Contoso 組織の例を、以下に示します。
 
 Azure AD Connect ツールは、次に示す手順で、フェデレーション認証用の AD FS サーバー、Web アプリケーション プロキシ サーバー、Office 365 を構成します。
   
-1. ローカル管理者権限を持つドメイン アカウントを使用して、ディレクトリ同期サーバーへのリモート デスクトップ接続を作成します。
+1. ローカル管理者特権を持つドメインアカウントを使用して、ディレクトリ同期サーバーへのリモートデスクトップ接続を作成します。
     
-2. ディレクトリ同期サーバーのデスクトップをクリックし、[Internet Explorer を開くには、 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)。
+2. ディレクトリ同期サーバーのデスクトップから、Internet Explorer を開き、に[https://aka.ms/aadconnect](https://aka.ms/aadconnect)移動します。
     
 3. **[Microsoft Azure Active Directory Connect]** ページで、 **[ダウンロード]** をクリックしてから **[実行]** をクリックします。
     
 4. **[Azure AD Connect へようこそ]** ページで、 **[同意する]** をクリックしてから、 **[続行]** をクリックします。
     
-5. **[簡単設定]** ページで、 **[カスタマイズ]** をクリックします。
+5. **[簡単設定]** ページで、**[カスタマイズ]** をクリックします。
     
-6. **[必須コンポーネントのインストール]** ページで、 **[インストール]** をクリックします。
+6. **[必須コンポーネントのインストール]** ページで、**[インストール]** をクリックします。
     
-7. **[ユーザー サインイン]** ページで、 **[AD FS とのフェデレーション]** をクリックしてから、 **[次へ]** をクリックします。
+7. **[ユーザー サインイン]** ページで、**[AD FS とのフェデレーション]** をクリックしてから、**[次へ]** をクリックします。
     
 8. **[Azure AD に接続]** ページで、Office 365 サブスクリプションのグローバル管理者アカウントの名前とパスワードを入力して、 **[次へ]** をクリックします。
     
-9. **[ディレクトリの接続]** ページで、 **[フォレスト]** でオンプレミスの Windows Server AD フォレストが選択されていることを確認して、ドメイン管理者アカウントの名前とパスワードを入力し、 **[ディレクトリの追加]** をクリックしてから、 **[次へ]** をクリックします。
+9. [**ディレクトリの接続**] ページで、[**フォレスト**] でオンプレミスの Active Directory ドメインサービス (AD DS) フォレストが選択されていることを確認し、ドメイン管理者アカウントの名前とパスワードを入力して、[**ディレクトリの追加**] をクリックし、[**次へ**] をクリックします。
     
 10. **[Azure AD サインインの構成]** ページで、 **[次へ]** をクリックします。
     
