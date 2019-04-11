@@ -1,9 +1,9 @@
 ---
 title: SharePoint Online のキャパシティ プランニングとロード テスト
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/14/2019
+ms.date: 04/10/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この記事では、従来のロードテストを実行せずに SharePoint Online に展開する方法について説明します。これは許可されていないためです。
-ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
+ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665190"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31765059"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量計画と負荷テスト SharePoint Online。
 
@@ -44,7 +44,7 @@ ms.locfileid: "30665190"
 - クラウドの使用に使用されるページ/機能/カスタマイズは、複数の場所に対して最適化する必要があります。これにより、さまざまな領域または地域のユーザーが一貫した環境を持つことができます。 クラウドは、分散ユーザーベース用に最適化するためのコンテンツ配信ネットワーク (CDN) のような最適化を提供します。
 
 従来の発行ページの SharePoint Online では、ユーザーが使用する主要なランディングページの分析を支援する[ページ診断ツール](https://aka.ms/perftool)の Chrome 拡張機能を使用できます。
-F12 開発者ツールを使用して、ブラウザーまたは[Fiddler](https://www.telerik.com/download/fiddler)のページのウエイトを確認し、ページ全体の読み込みに影響を与える呼び出しと要素の数を確認して最適化することができます。 コンテンツ配信ネットワークの使用やその他の最適化を含む推奨事項の一覧は、「 [SharePoint Online のパフォーマンスのチューニング](https://aka.ms/spoperformance)」記事で確認できます。
+F12 開発者ツールを使用して、ブラウザーまたは[Fiddler](https://www.telerik.com/download/fiddler)のページのウエイトを確認し、ページ全体の読み込みに影響を与える呼び出しと要素の数を確認して最適化することができます。 コンテンツ配信ネットワークの使用やその他の最適化を含む推奨事項の一覧は、「 [SharePoint Online のパフォーマンスのチューニング](https://aka.ms/tuneSPO)」記事で確認できます。
 
 ### <a name="wave--phase-approach"></a>ウェーブ/フェーズアプローチ
 従来のサイト起動方式では、カスタマイズ、外部ソース、サービス、またはプロセスが適切な規模でテストされたことを検証できません。 また、サービスとしての SharePoint は、使用率と予測される使用状況に基づいて容量をスケールしますが、サイトの起動を通知する必要はありませんが、次のガイドラインに従って成功を確実にする必要があります。
