@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 概要:Microsoft Azure で Office 365 サブスクリプションの高可用性フェデレーション認証を構成します。
-ms.openlocfilehash: 9e671cabf2e9ca764f4948822da6aa0fb57ef5b5
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 9139019cf53b3a43bcc6d8ebcfbad5d4f7f5506f
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741273"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure に Office 365 の高可用性フェデレーション認証を展開する
 
@@ -54,7 +54,7 @@ ms.locfileid: "31038051"
 > [!NOTE]
 > この VNet はオンプレミスのネットワークに接続されているため、この構成に管理サブネット上の jumpbox や仮想マシンの監視は含まれません。詳細については、「[N 層のアーキテクチャで Windows VM を実行する](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)」を参照してください。 
   
-この構成の結果として、すべての Office 365 ユーザーがフェデレーション認証を使用できるようになります。この認証では、Office 365 アカウントではなく、Windows Server Active Directory の資格情報を使用してサインインすることができます。フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
+この構成の結果として、すべての Office 365 ユーザーがフェデレーション認証を使用できるようになります。この認証では、Office 365 アカウントではなく、Active Directory Domain Services の資格情報を使用してサインインすることができます。フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
   
 ## <a name="bill-of-materials"></a>部品表
 
@@ -72,7 +72,7 @@ ms.locfileid: "31038051"
     
 仮想マシンと、この構成用の既定サイズを次に示します。
   
-|**アイテム**|**仮想マシンの説明**|**Azure ギャラリー イメージ**|**既定のサイズ**|
+|**項目**|**仮想マシンの説明**|**Azure ギャラリー イメージ**|**既定のサイズ**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |1 つ目のドメイン コントローラー  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
 |2.  <br/> |2 つ目のドメイン コントローラー  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |

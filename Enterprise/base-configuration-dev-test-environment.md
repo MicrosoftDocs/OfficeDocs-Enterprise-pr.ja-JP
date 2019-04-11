@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: '概要: Microsoft Azure で、開発/テスト環境として簡略化されたイントラネットを作成します。'
-ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 68edf0dea20674a7dadb4d1e50b8151a9ce13c7b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037981"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741383"
 ---
 # <a name="base-configuration-devtest-environment"></a>基本構成開発/テスト環境
 
@@ -32,7 +32,7 @@ ms.locfileid: "31037981"
   
 ![Azure での基本構成](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-**図 1: 基本構成開発/テスト環境**
+**図 1:基本構成開発/テスト環境**
 
 図 1 の基本構成開発/テスト環境は、インターネットに接続された簡略化されたプライベート イントラネットをシミュレートする、TestLab というクラウド専用 Azure Virtual Network 内の企業ネットワーク サブネットで構成されています。Windows Server 2016 を実行している次の 3 つの Azure 仮想マシンが含まれます。
   
@@ -104,7 +104,7 @@ Azure PowerShell を使った基本構成テスト環境の設定には次の 4 
 ![Microsoft Cloud のテスト ラボ ガイド](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ### <a name="step-1-create-the-virtual-network"></a>ステップ 1: 仮想ネットワークを作成します。
 
@@ -399,7 +399,7 @@ CLIENT1 の再起動後に、CORP\\User1 のアカウント名とパスワード
 Azure の基本構成は、アプリケーション開発とテスト、追加のテスト環境の作成を行うための準備ができました。 
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 <a name="mincost"> </a>
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Azure のテスト環境の仮想マシンのコストを最小限に抑える
