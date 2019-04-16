@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '概要: Microsoft のクラウド プラン全体に渡る組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解します。'
-ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741323"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
@@ -73,7 +73,7 @@ Microsoft は、クラウド プラン全体で ID の使用と課金の一貫�
 
 Microsoft の SaaS クラウド プランの場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド プランのサービスを使用できるようになります。サブスクリプションの一環として、月間の固定料金が課金されます。管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。図 2 の例では、Contoso Corporation は 100 ライセンスの Office 365 Enterprise E5 サブスクリプションを所有しています。このサブスクリプションにより、最大 100 件の個別のユーザー アカウントが Enterprise E5 の機能とサービスを使用できるようになります。
   
-**図 2:1 つの組織の SaaS ベースのサブスクリプションに含まれるライセンス**
+**図 2: 1 つの組織の SaaS ベースのサブスクリプションに含まれるライセンス**
 
 ![Microsoft の SaaS ベース クラウド プランのサブスクリプション内の複数ライセンスの例。](media/Subscriptions/Subscriptions-Fig2.png)
   
@@ -85,7 +85,7 @@ Azure IaaS ベースの仮想マシン場合、仮想マシン イメージに�
   
 ### <a name="user-accounts"></a>ユーザー アカウント
 
-すべての Microsoft のクラウド プランのユーザー アカウントは、Azure Active Directory (AD) テナントに保存されます。これには、ユーザー アカウントとグループが含まれます。Azure AD テナントは、Windows サーバーベースのサービスである Azure AD Connect を使用して、既存の Windows Server AD アカウントと同期できます。これは、ディレクトリ同期 (DirSync) と呼ばれます。
+すべての Microsoft のクラウド プランのユーザー アカウントは、Azure Active Directory (AD) テナントに保存されます。これには、ユーザー アカウントとグループが含まれます。Azure AD テナントは、Windows サーバーベースのサービスである Azure AD Connect を使用して、既存の Active Directory Domain Services (AD DS) アカウントと同期できます。これは、ディレクトリ同期 (DirSync) と呼ばれます。
   
 図 3 は、共通の Azure AD テナントを使用する組織の複数サブスクリプションの例を示しています。このテナントに組織のアカウントが格納されています。
   
@@ -129,13 +129,13 @@ Azure AD テナントは、アカウントおよびグループを収容する A
     
   - 共通の Azure AD テナントにある組織のユーザー アカウント。
     
-複数の Microsoft クラウド製品のサブスクリプションは、同じ Azure AD テナントを使用できます。このテナントは、共通 ID プロバイダーとして機能します。オンプレミスの Windows Server AD の同期されたアカウントを収容する中央 Azure AD テナントを使用すると、クラウドをベースとしたサービスとしての ID (IDaaS) が組織に提供されます。これを図 4 に示します。
+複数の Microsoft クラウド プランのサブスクリプションは、同じ Azure AD テナントを使用できます。このテナントは、共通 ID プロバイダーとして機能します。オンプレミスの AD DS の同期されたアカウントを収容する中央 Azure AD テナントを使用すると、クラウドをベースとしたサービスとしての ID (IDaaS) が組織に提供されます。これを図 4 に示します。
   
 **図 4: 同期されたオンプレミスのアカウントと組織の IDaaS**
 
 ![組織のサービスとしての ID (IaaS) IDaaS。](media/Subscriptions/Subscriptions-Fig4.png)
   
-図 4 は、Microsoft の SaaS クラウド製品、Azure PaaS アプリ、Azure AD Domain Services を使用する Azure IaaS の仮想マシンにより、共通の Azure AD テナントがどのように使用されるかを示します。Azure AD Connect は、オンプレミスの Windows Server AD フォレストを Azure AD テナントと同期します。
+図 4 は、Microsoft の SaaS クラウド プラン、Azure PaaS アプリ、Azure AD Domain Services を使用する Azure IaaS の仮想マシンにより、共通の Azure AD テナントがどのように使用されるかを示します。Azure AD Connect は、オンプレミスの AD DS フォレストを Azure AD テナントと同期します。
   
 Microsoft のクラウド オファリング間の ID 統合に関する詳細は、「[エンタープライズ アーキテクトのための Microsoft クラウド ID](https://aka.ms/cloudarchidentity)」を参照してください。
   

@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Office 365 開発/テスト環境に向けたフェデレーション認証を構成します。'
-ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948638"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741423"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のフェデレーション ID
 
@@ -41,7 +41,7 @@ Office 365 は、フェデレーション ID をサポートします。つま�
   
 - Office 365 E5 試用版サブスクリプション。このサブスクリプションは、作成時から 30 日で有効期限が切れます。
     
-- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された 5 つの仮想マシン (DC1、APP1、CLIENT1、ADFS1、PROXY1) で構成されます。APP1 では、Windows Server AD ドメインのアカウントの一覧を Office 365 に同期するために Azure AD Connect が実行されます。PROXY1 は、受信認証要求を受信します。ADFS1 は、DC1 で資格情報を検証し、セキュリティ トークンを発行します。
+- インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された 5 つの仮想マシン (DC1、APP1、CLIENT1、ADFS1、PROXY1) で構成されます。APP1 では、Active Directory Domain Services ドメインのアカウントの一覧を Office 365 に同期するために Azure AD Connect が実行されます。PROXY1 は、受信認証要求を受信します。ADFS1 は、DC1 で資格情報を検証し、セキュリティ トークンを発行します。
     
 次に示す 5 つのフェーズで、この開発/テスト環境を設定します。
   
@@ -61,11 +61,11 @@ Azure での Office 365 用のフェデレーション認証の運用環境デ�
 > Azure の試用版サブスクリプションで、この開発/テスト環境を構成することはできません。 
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>フェーズ 1: DirSync を使用する、シミュレートされたエンタープライズ Office 365 開発/テスト環境を作成する
 
-「[Office 365 開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従って、シミュレートされたエンタープライズ Office 365 開発/テスト環境を作成します。この環境では、APP1 を DirSync サーバーとし、ID の同期を Office 365 と DC1 上の Windows Server AD アカウントとの間で行います。
+「[Office 365 開発/テスト環境のディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従って、シミュレートされたエンタープライズ Office 365 開発/テスト環境を作成します。この環境では、APP1 を DirSync サーバーとし、ID の同期を Office 365 と DC1 上の AD DS アカウントとの間で行います。
   
 次に、現在のドメイン名に基づいて新しいパブリック DNS ドメイン名を作成し、Office 365 サブスクリプションに追加します。**testlab.**\<パブリック ドメイン> という名前を使用することをお勧めします。たとえば、パブリック ドメイン名が contoso.com である場合は、パブリック ドメイン名 testlab.contoso.com を追加します。
   
@@ -122,7 +122,7 @@ Restart-Computer
 
 最終的な構成をここに示します。
   
-**図 3: AD FS サーバーの追加**
+**図 3:AD FS サーバーの追加**
 
 ![Office 365 開発/テスト環境の DirSync に追加された AD FS サーバー](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -193,7 +193,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
   
 最終的な構成をここに示します。
   
-**図 4: Web アプリケーション プロキシ サーバーの追加**
+**図 4:Web アプリケーション プロキシ サーバーの追加**
 
 ![Office 365 開発/テスト環境の DirSync に追加された Web アプリケーション プロキシ サーバー](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -408,7 +408,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. サインイン資格情報に、**user1@**\<フェース 1 で作成したドメイン> を入力します。 
     
-    たとえば、テスト ドメインが **testlab.contoso.com** の場合は、「**user1@testlab.contoso.com**」と入力します。TAB キーを押すか、Office 365 に自動的にリダイレクトさせます。
+    たとえば、テスト ドメインが **testlab.contoso.com** の場合は、**user1@testlab.contoso.com** と入力します。TAB キーを押すか、Office 365 に自動的にリダイレクトさせます。
     
     **[この接続ではプライバシーが保護されません]** ページが表示されます。これが表示されるのは、デスクトップ コンピューターで検証できない自己署名証明書を ADFS1 にインストールしたためです。フェデレーション認証の運用環境デプロイメントでは、信頼された証明機関からの証明書を使用するため、ユーザーにこのページは表示されません。
     
@@ -422,7 +422,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
     **[Microsoft Office Home]** ページが表示されます。
     
-次の手順で、Office 365 試用版サブスクリプションが、DC1 上でホストされている Windows Server AD corp.contoso.com ドメインとフェデレーションされていることを実証します。認証プロセスに関する基本事項を以下に示します。
+次の手順で、Office 365 試用版サブスクリプションが、DC1 上でホストされている AD DS corp.contoso.com ドメインとフェデレーションされていることを実証します。認証プロセスに関する基本事項を以下に示します。
   
 1. フェーズ 1 で作成したフェデレーション ドメインをサインイン アカウント名で使用すると、Office 365 はブラウザーをフェデレーション サービス FQDN と PROXY1 にリダイレクトします。
     
