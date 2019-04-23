@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 概要:シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナー は Windows PowerShell を使用して Office 365 の顧客テナントを管理できます。
-ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 93b323d8de7016008ba7e4f75ff4b1c011adb9f2
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992817"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 を管理する
 
@@ -36,6 +36,6 @@ ms.locfileid: "31001800"
     
 - [委任アクセス許可 (DAP) パートナー用 Windows PowerShell を使用して顧客のテナント レポート データを取得する](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
     
-- [委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
+
     
 
