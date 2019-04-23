@@ -3,60 +3,6 @@
 
 
 
-## <a name="week-of-march-11-2019"></a>2019 年 3 月 11 日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 3/11/2019 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 更新日時 |
-| 3/11/2019 | [Office 365 PowerShell でユーザー アカウントを表示する](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | 更新日時 |
-| 3/11/2019 | [Office 365 PowerShell を使用する必要がある理由](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | 更新日時 |
-| 2019/3/13 | [Office 365 の開発/テスト環境の Advanced eDiscovery](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境の Advanced Threat Protection](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [クラウド導入のテストラボガイド (tlgs) を使用した Office 365 のテスト](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境の Cloud App Security](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境でのデータ分類とラベルの作成](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Microsoft Azure での Office 365 ディレクトリ同期の展開](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境のディレクトリ同期](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Office 365 と Dynamics 365 の開発/テスト環境の Exchange Online 統合](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | 更新日時 |
-| 2019/3/13 | [Microsoft クラウド接続のための ExpressRoute](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境のフェデレーション ID](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [エンタープライズ アーキテクトのための Microsoft Cloud ネットワーク](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境用の多要素認証](/Office365/Enterprise/multi-factor-authentication-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Office 365 のネットワークと移行の計画](/Office365/Enterprise/network-and-migration-planning) | 更新日時 |
-| 2019/3/13 | [Office 365 と Dynamics 365 の開発/テスト環境](/Office365/Enterprise/office-365-and-dynamics-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Office 365 開発/テスト環境](/Office365/Enterprise/office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | 更新日時 |
-| 2019/3/13 | [Office 365 PowerShell で Exchange Online を管理する](/Office365/Enterprise/powershell/manage-exchange-online-with-office-365-powershell) | 更新日時 |
-| 2019/3/13 | [Office 365 PowerShell を使用して SharePoint Online を管理する](/Office365/Enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) | 更新日時 |
-| 2019/3/13 | [Manage SharePoint Online site groups with Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-site-groups-with-powershell) | 更新日時 |
-| 2019/3/13 | [Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する](/Office365/Enterprise/powershell/manage-sharepoint-users-and-groups-with-powershell) | 更新日時 |
-| 2019/3/13 | [Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。](/Office365/Enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) | 更新日時 |
-| 2019/3/13 | [PowerShell を使用して Office 365 へのカットオーバー移行を実行する](/Office365/Enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365) | 更新日時 |
-| 2019/3/13 | [PowerShell を使用して Office 365 への段階的移行を実行する](/Office365/Enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365) | 更新日時 |
-| 2019/3/13 | [Office 365 PowerShell を使用する必要がある理由](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | 更新日時 |
-| 2019/3/13 | [Office 365 全体管理者アカウントを保護する](/Office365/Enterprise/protect-your-global-administrator-accounts) | 更新日時 |
-| 2019/3/13 | [Office 365 の開発/テスト環境での機密性の高いファイルの保護](/Office365/Enterprise/sensitive-file-protection-in-the-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/13 | [Microsoft のクラウドサービスのサブスクリプション、ライセンス、アカウント、およびテナント](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | 更新日時 |
-| 2019/3/13 | [One Microsoft Cloud 開発/テスト環境](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | 更新日時 |
-| 2019/3/14 | [コンテンツ配信ネットワーク](/Office365/Enterprise/content-delivery-networks) | 更新日時 |
-| 2019/3/14 | [Office 365 のビデオネットワークについてよく寄せられる質問](/Office365/Enterprise/office-365-video-networking-faq) | 更新日時 |
-| 2019/3/15 | [コアデータを新しい Office 365 データセンター geo に移行する](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 更新日時 |
-| 2019/3/15 | [データの移行中および移行後](/Office365/Enterprise/during-and-after-your-data-move) | 更新日時 |
-| 2019/3/15 | [基本構成開発/テスト環境](/Office365/Enterprise/base-configuration-dev-test-environment) | 更新日時 |
-| 2019/3/15 | [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | 更新日時 |
-| 2019/3/15 | [Azure に Office 365 の高可用性フェデレーション認証を展開する](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | 更新日時 |
-| 2019/3/15 | [Microsoft Azure での Office 365 ディレクトリ同期の展開](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | 更新日時 |
-| 2019/3/15 | [Office 365 開発/テスト環境のフェデレーション ID](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 更新日時 |
-| 2019/3/15 | [高可用性フェデレーション認証のフェーズ 1 Azure を構成する](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | 更新日時 |
-| 2019/3/15 | [高可用性フェデレーション認証のフェーズ2ドメインコントローラーを構成する](/Office365/Enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers) | 更新日時 |
-| 2019/3/15 | [高可用性フェデレーション認証のフェーズ 3 AD FS サーバーを構成する](/Office365/Enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers) | 更新日時 |
-| 2019/3/15 | [高可用性フェデレーション認証のフェーズ 4 web アプリケーションプロキシを構成する](/Office365/Enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro) | 更新日時 |
-| 2019/3/15 | [Office 365 開発/テスト環境](/Office365/Enterprise/office-365-dev-test-environment) | 更新日時 |
-| 2019/3/15 | [データ移行をリクエストする方法](/Office365/Enterprise/request-your-data-move) | 更新日時 |
-| 2019/3/15 | [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 更新日時 |
-
-
 ## <a name="week-of-march-18-2019"></a>2019 年 3 月 18 日の週
 
 
@@ -199,3 +145,15 @@
 | 4/12/2019 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 更新日時 |
 | 4/12/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
 | 4/12/2019 | [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 更新日時 |
+
+
+## <a name="week-of-april-15-2019"></a>2019年4月15日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 4/18/2019 | [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 更新日時 |
+| 4/18/2019 | [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 更新日時 |
+| 4/18/2019 | [Office 365 PowerShell でロールをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 更新日時 |
+| 4/18/2019 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 更新日時 |
+| 4/18/2019 | [一元展開 PowerShell コマンドレットを使用してアドインを管理する](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | 更新日時 |
