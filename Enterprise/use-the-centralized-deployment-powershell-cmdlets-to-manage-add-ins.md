@@ -1,5 +1,5 @@
 ---
-title: 一元的な展開の PowerShell コマンドレットを使用して、アドインを管理するには
+title: 一元展開 PowerShell コマンドレットを使用してアドインを管理する
 ms.author: twerner
 author: twernermsft
 manager: scotv
@@ -15,33 +15,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
-description: 展開し、Office 365 の組織での Office のアドインを管理するための一元的な展開の PowerShell コマンドレットを使用します。
-ms.openlocfilehash: 6199ad2d37a11166155b898b52d52304836599d0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: 一元展開 PowerShell コマンドレットを使用すると、office 365 組織の office アドインを展開して管理するのに役立ちます。
+ms.openlocfilehash: ec851fc85273e9f871c20d5075b16cb97472f975
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957638"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="d6415-103">一元的な展開の PowerShell コマンドレットを使用して、アドインを管理するには</span><span class="sxs-lookup"><span data-stu-id="d6415-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="45dca-103">一元展開 PowerShell コマンドレットを使用してアドインを管理する</span><span class="sxs-lookup"><span data-stu-id="45dca-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
 
-<span data-ttu-id="d6415-p101">一元的な展開を使用してユーザーに Office のアドインを配置する、Office 365 の管理者として機能の ( [Office 365 の管理センターでアドインを Office の展開](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)を参照してください)。Office 365 の管理センターを使用して Office のアドインを配置するには、Microsoft の PowerShell を使用することもできます。[ダウンロード](https://go.microsoft.com/fwlink/p/?linkid=850850)Microsoft ダウンロード センターから一元的な展開の PowerShell コマンドレットをします。</span><span class="sxs-lookup"><span data-stu-id="d6415-p101">As an Office 365 admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the Office 365 Admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)). In addition to deploying Office add-ins via the Office 365 admin center, you can also use Microsoft PowerShell. [Download](https://go.microsoft.com/fwlink/p/?linkid=850850) the Centralized Deployment PowerShell cmdlets from the Microsoft Download Center.</span></span> 
+<span data-ttu-id="45dca-104">office 365 管理者は、一元展開機能を使用して office アドインをユーザーに展開することができます (「 [office アドインを office 365 管理センターで展開](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)する」を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="45dca-104">As an Office 365 admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the Office 365 Admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span></span> <span data-ttu-id="45dca-105">office 365 管理センター経由で office アドインを展開することに加えて、Microsoft PowerShell を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="45dca-105">In addition to deploying Office add-ins via the Office 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="45dca-106">[Windows PowerShell 用 O365 中央アドイン展開モジュール](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)をインストールします。</span><span class="sxs-lookup"><span data-stu-id="45dca-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
     
-## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="d6415-107">管理者の資格情報を使用して接続します。</span><span class="sxs-lookup"><span data-stu-id="d6415-107">Connect using your admin credentials</span></span>
+## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="45dca-107">管理者の資格情報を使用して接続する</span><span class="sxs-lookup"><span data-stu-id="45dca-107">Connect using your admin credentials</span></span>
 
-<span data-ttu-id="d6415-108">一元的な展開のコマンドレットを使用できますが、サインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d6415-108">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
+<span data-ttu-id="45dca-108">一元展開のコマンドレットを使用する前に、サインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="45dca-108">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
   
-1. <span data-ttu-id="d6415-109">PowerShell を開始します。</span><span class="sxs-lookup"><span data-stu-id="d6415-109">Start PowerShell.</span></span>
+1. <span data-ttu-id="45dca-109">PowerShell を起動します。</span><span class="sxs-lookup"><span data-stu-id="45dca-109">Start PowerShell.</span></span>
     
-2. <span data-ttu-id="d6415-p102">PowerShell に接続するには、会社の管理者の資格情報を使用します。次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-p102">Connect to PowerShell by using your company admin credentials. Run the following cmdlet.</span></span>
+2. <span data-ttu-id="45dca-110">会社の管理者の資格情報を使用して PowerShell に接続します。</span><span class="sxs-lookup"><span data-stu-id="45dca-110">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="45dca-111">次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-111">Run the following cmdlet.</span></span>
     
   ```
   Connect-OrganizationAddInService
   ```
 
-3. <span data-ttu-id="d6415-p103">**資格情報の入力**」ページで、Office 365 グローバル管理者の資格情報を入力します。代わりに、コマンドレットに直接資格情報を入力できます。</span><span class="sxs-lookup"><span data-stu-id="d6415-p103">In the **Enter Credentials** page, enter your Office 365 global admin credentials. Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
+3. <span data-ttu-id="45dca-112">[**資格情報の入力**] ページで、Office 365 グローバル管理者の資格情報を入力します。</span><span class="sxs-lookup"><span data-stu-id="45dca-112">In the **Enter Credentials** page, enter your Office 365 global admin credentials.</span></span> <span data-ttu-id="45dca-113">または、コマンドレットに直接資格情報を入力することもできます。</span><span class="sxs-lookup"><span data-stu-id="45dca-113">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
     
-    <span data-ttu-id="d6415-114">PSCredential オブジェクトとして管理者の資格情報、会社を指定する次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-114">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
+    <span data-ttu-id="45dca-114">会社の管理者の資格情報を PSCredential オブジェクトとして指定して、次のコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-114">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
     
   ```
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -50,121 +50,121 @@ ms.locfileid: "22541758"
   ```
 
 > [!NOTE]
-> <span data-ttu-id="d6415-115">PowerShell を使用の詳細については、 [Office 365 の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=848585)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d6415-115">For more information about using PowerShell, see [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span></span> 
+> <span data-ttu-id="45dca-115">powershell の使用の詳細については、「 [Connect to Office 365 powershell](https://go.microsoft.com/fwlink/p/?linkid=848585)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45dca-115">For more information about using PowerShell, see [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span></span> 
   
-## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="d6415-116">アドイン マニフェストをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="d6415-116">Upload an add-in manifest</span></span>
+## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="45dca-116">アドインマニフェストをアップロードする</span><span class="sxs-lookup"><span data-stu-id="45dca-116">Upload an add-in manifest</span></span>
 
-<span data-ttu-id="d6415-p104">コマンドレットを実行、新規の OrganizationAdd ので、パスは、ファイルの場所または URL のいずれかから、追加のマニフェストをアップロードします。_ManifestPath_パラメーターの値を作成するファイルの場所の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="d6415-p104">Run the New-OrganizationAdd-In cmdlet to upload an add-in manifest from a path, which can be either a file location or URL. The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
+<span data-ttu-id="45dca-117">新しい組織のアドインコマンドレットを実行して、アドインのマニフェストをパスからアップロードします。これは、ファイルの場所または URL のいずれかにすることができます。</span><span class="sxs-lookup"><span data-stu-id="45dca-117">Run the New-OrganizationAdd-In cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="45dca-118">次の例は、 _manifestpath_パラメーターの値のファイルの場所を示しています。</span><span class="sxs-lookup"><span data-stu-id="45dca-118">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-<span data-ttu-id="d6415-p105">アドインをアップロードし、そのユーザーまたはグループに、_メンバー_のパラメーターを使用すると、次の例のように新規の OrganizationAdd-にコマンドレットを実行することもできます。メンバーの電子メール アドレスをコンマで区切ります。</span><span class="sxs-lookup"><span data-stu-id="d6415-p105">You can also run the New-OrganizationAdd-In cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example. Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="45dca-119">次の例に示すように、新しい組織のアドインコマンドレットを実行して、アドインをアップロードして、ユーザーまたはグループに直接割り当てることもできます。この場合、 _Members_パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="45dca-119">You can also run the New-OrganizationAdd-In cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="45dca-120">メンバーの電子メールアドレスはコンマで区切ります。</span><span class="sxs-lookup"><span data-stu-id="45dca-120">Separate the email addresses of members with a comma.</span></span> 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="d6415-121">Office ストアからのアップロードします。</span><span class="sxs-lookup"><span data-stu-id="d6415-121">Upload an add-in from the Office Store</span></span>
+## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="45dca-121">Office ストアからアドインをアップロードする</span><span class="sxs-lookup"><span data-stu-id="45dca-121">Upload an add-in from the Office Store</span></span>
 
-<span data-ttu-id="d6415-122">Office ストアから、マニフェストをアップロードするのには新規 OrganizationAddIn コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-122">Run the New-OrganizationAddIn cmdlet to upload a manifest from the Office Store.</span></span>
+<span data-ttu-id="45dca-122">新しい-組織の addin コマンドレットを実行して、Office ストアからマニフェストをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="45dca-122">Run the New-OrganizationAddIn cmdlet to upload a manifest from the Office Store.</span></span>
   
-<span data-ttu-id="d6415-123">次の例では、新規 OrganizationAddIn コマンドレットは、アメリカ合衆国の位置とコンテンツ市場のアドインの AssetId を指定します。</span><span class="sxs-lookup"><span data-stu-id="d6415-123">In the following example, the New-OrganizationAddIn cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
+<span data-ttu-id="45dca-123">次の例では、新しい-組織の addin コマンドレットは、米国の場所とコンテンツ市場のためにアドインの assetid を指定しています。</span><span class="sxs-lookup"><span data-stu-id="45dca-123">In the following example, the New-OrganizationAddIn cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
   
 ```
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-<span data-ttu-id="d6415-p106">_AssetId_パラメーターの値を調べるには、"WA"に続けて番号を使用してアドインの AssetIds の web ページが常に開始 Office ストアの URL からコピーすることができます。たとえば、前の例では、WA104099688 の AssetId 値のソースは、アドインを Office ストアの web ページの URL: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688)。</span><span class="sxs-lookup"><span data-stu-id="d6415-p106">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in. AssetIds always begin with "WA" followed by a number. For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
+<span data-ttu-id="45dca-124">_assetid_パラメーターの値を確認するには、アドインの Office ストア web ページの URL からコピーします。</span><span class="sxs-lookup"><span data-stu-id="45dca-124">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="45dca-125">AssetIds は常に "WA" で始まり、その後に数字が続きます。</span><span class="sxs-lookup"><span data-stu-id="45dca-125">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="45dca-126">たとえば、前の例では、WA104099688 の assetid 値のソースは、アドイン[https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688)の Office ストアの web ページの URL です。</span><span class="sxs-lookup"><span data-stu-id="45dca-126">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
   
-<span data-ttu-id="d6415-p107">_ロケール_パラメーターを使用し、 _ContentMarket_パラメーターの値は、同じからアドインをインストールしようとしている国/地域を示します。形式は、EN-US、fr FR. などです。</span><span class="sxs-lookup"><span data-stu-id="d6415-p107">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from. The format is en-US, fr-FR. and so forth.</span></span> 
+<span data-ttu-id="45dca-127">_Locale_パラメーターと_contentmarket_パラメーターの値は一致しており、アドインをインストールしようとしている国/地域を示しています。</span><span class="sxs-lookup"><span data-stu-id="45dca-127">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="45dca-128">この形式は en-us (fr-fr) です。</span><span class="sxs-lookup"><span data-stu-id="45dca-128">The format is en-US, fr-FR.</span></span> <span data-ttu-id="45dca-129">など。</span><span class="sxs-lookup"><span data-stu-id="45dca-129">and so forth.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="d6415-130">Office ストアからアップロードされたアドインは、Office ストアで使用される最新の更新プログラムの数日間で自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="d6415-130">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="45dca-130">office ストアからアップロードされたアドインは、office ストアで入手可能な最新の更新プログラムから数日以内に自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="45dca-130">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="get-details-of-an-add-in"></a><span data-ttu-id="d6415-131">アドインの詳細情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="d6415-131">Get details of an add-in</span></span>
+## <a name="get-details-of-an-add-in"></a><span data-ttu-id="45dca-131">アドインの詳細を取得する</span><span class="sxs-lookup"><span data-stu-id="45dca-131">Get details of an add-in</span></span>
 
-<span data-ttu-id="d6415-132">次のように、Get OrganizationAddIn コマンドレットを実行、テナントにアップロードするすべてのアドインの詳細情報を取得するのには含まれているアドインの製品 id。</span><span class="sxs-lookup"><span data-stu-id="d6415-132">Run the Get-OrganizationAddIn cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
+<span data-ttu-id="45dca-132">次に示すように、get-help addin コマンドレットを実行して、テナントにアップロードされたすべてのアドインの詳細を取得し、アドインの製品 ID を含めます。</span><span class="sxs-lookup"><span data-stu-id="45dca-132">Run the Get-OrganizationAddIn cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
   
 ```
 Get-OrganizationAddIn
 ```
 
-<span data-ttu-id="d6415-133">するアドインを指定の詳細を取得する _[商品コード]_ パラメーターの値を取得 OrganizationAddIn コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-133">Run the Get-OrganizationAddIn cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
+<span data-ttu-id="45dca-133">_ProductId_パラメーターの値を指定して取得し、詳細を取得するアドインを指定するには、このコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-133">Run the Get-OrganizationAddIn cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
   
 ```
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-<span data-ttu-id="d6415-134">すべてのアドインと、割り当てられたユーザーとグループの完全な詳細情報を取得するには、次の例に示すように Format-list コマンドレットでは、Get OrganizationAddIn コマンドレットの出力をパイプします。</span><span class="sxs-lookup"><span data-stu-id="d6415-134">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the Get-OrganizationAddIn cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
+<span data-ttu-id="45dca-134">すべてのアドインおよび割り当てられたユーザーとグループの詳細を取得するには、次の例に示すように、コマンドレットの出力を Format コマンドレットにパイプ処理します。</span><span class="sxs-lookup"><span data-stu-id="45dca-134">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the Get-OrganizationAddIn cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
   
 ```
 Get-OrganizationAddIn |Format-List
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="d6415-135">オンまたはアドインを無効にします。</span><span class="sxs-lookup"><span data-stu-id="d6415-135">Turn on or turn off an add-in</span></span>
+## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="45dca-135">アドインをオンまたはオフにする</span><span class="sxs-lookup"><span data-stu-id="45dca-135">Turn on or turn off an add-in</span></span>
 
-<span data-ttu-id="d6415-136">無効にするアドインをユーザーとそれに割り当てられているグループは、アクセスするため、 _[商品コード]_ パラメーターと設定_Enabled_パラメーター セット OrganizationAddIn コマンドレットを実行`$false`次の例のように、です。</span><span class="sxs-lookup"><span data-stu-id="d6415-136">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the Set-OrganizationAddIn cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
+<span data-ttu-id="45dca-136">ユーザーおよびグループに割り当てられているグループがアクセスできなくなるようにアドインを無効にするには、次の例に示すように、 _ProductId_パラメーターと_Enabled_パラメーターを`$false`に設定して、このコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-136">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the Set-OrganizationAddIn cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-<span data-ttu-id="d6415-137">アドインを追加するには、 _Enabled_パラメーターを設定と同じコマンドレットを実行します。 `$true`。</span><span class="sxs-lookup"><span data-stu-id="d6415-137">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
+<span data-ttu-id="45dca-137">アドインを再び有効にするには、_有効な_パラメーターをに`$true`設定して、同じコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-137">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="d6415-138">追加または削除ユーザーの追加</span><span class="sxs-lookup"><span data-stu-id="d6415-138">Add or remove users from an add-in</span></span>
+## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="45dca-138">アドインに対してユーザーを追加または削除する</span><span class="sxs-lookup"><span data-stu-id="45dca-138">Add or remove users from an add-in</span></span>
 
-<span data-ttu-id="d6415-p108">特定のアドインにユーザーおよびグループを追加するには、 _[商品コード]_、_追加_、および_メンバー_のパラメーターを使用してセット OrganizationAddInAssignments コマンドレットを実行します。メンバーの電子メール アドレスをコンマで区切ります。</span><span class="sxs-lookup"><span data-stu-id="d6415-p108">To add users and groups to a specific add-in, run the Set-OrganizationAddInAssignments cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters. Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="45dca-139">ユーザーおよびグループを特定のアドインに追加するには、 _ProductId_、 _add_、および_Members_の各パラメーターを指定して、リソースの設定コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-139">To add users and groups to a specific add-in, run the Set-OrganizationAddInAssignments cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="45dca-140">メンバーの電子メールアドレスはコンマで区切ります。</span><span class="sxs-lookup"><span data-stu-id="45dca-140">Separate the email addresses of members with a comma.</span></span> 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="d6415-141">ユーザーおよびグループを削除するには、_削除する_パラメーターを使用して同じコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-141">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
+<span data-ttu-id="45dca-141">ユーザーおよびグループを削除するには、 _remove_パラメーターを使用して同じコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-141">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="d6415-142">テナントのすべてのユーザーを追加で割り当てるには、 _AssignToEveryone_パラメーターを使用して値設定して同じコマンドレットを実行`$true`。</span><span class="sxs-lookup"><span data-stu-id="d6415-142">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
+<span data-ttu-id="45dca-142">テナントのすべてのユーザーにアドインを割り当てるには、の値をに`$true`設定して、assign _toeveryone_パラメーターを使用して同じコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-142">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-<span data-ttu-id="d6415-143">ないアドインをすべてのユーザーを割り当てるし、以前に割り当てられたユーザーとグループを元に戻す、同じコマンドレットを実行し、オフに_AssignToEveryone_パラメーターその値を設定する`$false`。</span><span class="sxs-lookup"><span data-stu-id="d6415-143">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
+<span data-ttu-id="45dca-143">すべてのユーザーにアドインを割り当てずに、以前に割り当てられたユーザーおよびグループに戻すには、同じコマンドレットを実行し、その値をに`$false`設定して、assign _toeveryone_パラメーターをオフにします。</span><span class="sxs-lookup"><span data-stu-id="45dca-143">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a><span data-ttu-id="d6415-144">アドインを更新します。</span><span class="sxs-lookup"><span data-stu-id="d6415-144">Update an add-in</span></span>
+## <a name="update-an-add-in"></a><span data-ttu-id="45dca-144">アドインを更新する</span><span class="sxs-lookup"><span data-stu-id="45dca-144">Update an add-in</span></span>
 
-<span data-ttu-id="d6415-145">マニフェストからアドインを更新するには、次の例に示すように、_商品コード_、 _ManifestPath_、および_ロケール_パラメーターをセット OrganizationAddIn コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-145">To update an add-in from a manifest, run the Set-OrganizationAddIn cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
+<span data-ttu-id="45dca-145">マニフェストからアドインを更新するには、次の例に示すように、 _ProductId_、 _manifestpath_、および_Locale_パラメーターを使用して、次のように設定して、このコマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-145">To update an add-in from a manifest, run the Set-OrganizationAddIn cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> <span data-ttu-id="d6415-146">Office ストアからアップロードされたアドインは、Office ストアで使用される最新の更新プログラムの数日間で自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="d6415-146">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="45dca-146">office ストアからアップロードされたアドインは、office ストアで入手可能な最新の更新プログラムから数日以内に自動的に更新されます。</span><span class="sxs-lookup"><span data-stu-id="45dca-146">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="delete-an-add-in"></a><span data-ttu-id="d6415-147">アドインを削除します。</span><span class="sxs-lookup"><span data-stu-id="d6415-147">Delete an add-in</span></span>
+## <a name="delete-an-add-in"></a><span data-ttu-id="45dca-147">アドインを削除する</span><span class="sxs-lookup"><span data-stu-id="45dca-147">Delete an add-in</span></span>
 
-<span data-ttu-id="d6415-148">アドインを削除するには、次の例のように、 _[商品コード]_ パラメーターで削除 OrganizationAddIn コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="d6415-148">To delete an add-in, run the Remove-OrganizationAddIn cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
+<span data-ttu-id="45dca-148">アドインを削除するには、次の例に示されているように、 _ProductId_パラメーターを指定して、[削除] コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="45dca-148">To delete an add-in, run the Remove-OrganizationAddIn cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
   
 ```
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="d6415-149">各コマンドレットの詳細なヘルプを表示します。</span><span class="sxs-lookup"><span data-stu-id="d6415-149">Get detailed help for each cmdlet</span></span>
+## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="45dca-149">各コマンドレットの詳細なヘルプを取得する</span><span class="sxs-lookup"><span data-stu-id="45dca-149">Get detailed help for each cmdlet</span></span>
 
-<span data-ttu-id="d6415-p109">Get-help コマンドレットを使用して、各コマンドレットの詳細なヘルプを表示できます。たとえば、次のコマンドレットは、削除 OrganizationAddIn コマンドレットの詳細についてを提供します。</span><span class="sxs-lookup"><span data-stu-id="d6415-p109">You can look at detailed help for each cmdlet by using the Get-help cmdlet. For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
+<span data-ttu-id="45dca-150">各コマンドレットの詳細については、「get-help」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="45dca-150">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="45dca-151">たとえば、次のコマンドレットは、このコマンドレットに関する詳細な情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="45dca-151">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
   
 ```
 Get-help Remove-OrganizationAddIn -Full
