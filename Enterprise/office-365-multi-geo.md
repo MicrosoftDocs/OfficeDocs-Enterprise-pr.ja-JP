@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: e216f61806ea5d648519ac7217acf7dbaddd1419
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30934044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992837"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -55,7 +55,7 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 
 以下の手順に従って複数地域を開始しましょう。
 
-1. アカウント チームと協力して、_Office 365 複数地域機能_サービス プランを追加します。チームから、必要な数のライセンスを追加するように説明があります。
+1. アカウント チームと協力して、_複数地域機能をOffice 365 の_サービス プランに追加します。 必要なライセンス数の追加方法を説明いたします。 複数地域機能は、少なくとも2,500のOffice 365 サブスクリプションを持つお客様にご利用いただけます。
 
    Office 365 Multi-Geo の使用を開始するには、事前に Microsoft が複数地域サポート用に Exchange Online テナントを構成する必要があります。 この 1 回限りの構成プロセスは、*Office 365 の複数地域機能*サービス プランを注文し、ライセンスがテナントに表示された後に開始されます。 Multi-Geo ライセンスが適用されると、[Office 365 メッセージ センター](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)に通知が送信され、その後、Office 365 Multi-Geo 機能の設定と使用を開始できます。
 
@@ -69,8 +69,8 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 
 ## <a name="see-also"></a>関連項目
 
-[Aka.ms/GoMultiGeo ](https://Aka.ms/GoMultiGeo)
+[Exchange OnlineとOneDriveでの複数地域機能](https://Aka.ms/GoMultiGeo)
 
-[OneDrive および SharePoint Online の複数地域機能](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+[OneDrive および SharePoint Online の複数地域機能](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
-[Exchange Online の複数地域機能](multi-geo-capabilities-in-exchange-online.md)
+[Exchange Online の複数地域機能](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)

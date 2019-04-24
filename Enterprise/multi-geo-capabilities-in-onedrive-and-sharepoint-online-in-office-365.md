@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: OneDrive Online の複数地域機能を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: ce5a846391fd62daafd174baea4144ac1d1aba37
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992847"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive および SharePoint Online の複数地域機能
 
@@ -30,7 +30,9 @@ OneDrive および SharePoint Online の複数地域機能を使用すると、S
 
 各ユーザーの OneDrive は、ユーザーの PDL に従ってサテライトの場所でプロビジョニングされるか、または[管理者が移動させる](move-onedrive-between-geo-locations.md)ことができます。 個人用ファイルはその地域の場所に保存されますが、他の地域の場所にいるユーザーと共有することも可能です。
 
-## <a name="sites-and-groups"></a>サイトとグループ
+## <a name="sharepoint-sites-and-groups"></a>SharePoint サイトとグループ
+
+複数地域機能の管理は、SharePoint管理センターから利用できます。 詳細な情報は[対応するブログ記事](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)にあります。
 
 ユーザーが SharePoint グループに接続されたサイトを作成する場合、サイトおよび関連付けられているグループ メールボックスが作成される地域の場所を決定するのに、PDL が使用されます。 (ユーザーの PDL 値が設定されていない場合、またはサテライトの場所として構成されていない地域の場所に設定されている場合、サイトとメールボックスは中央の場所に作成されます)。
 
@@ -46,7 +48,7 @@ Exchange、OneDrive、SharePoint 以外の Office 365 サービスは複数地�
 
 ## <a name="see-also"></a>関連項目
 
-[Aka.ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
+[SharePointおよびOffice 365グループでの複数地域機能](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
 
 [複数地域環境の管理](administering-a-multi-geo-environment.md)
 
