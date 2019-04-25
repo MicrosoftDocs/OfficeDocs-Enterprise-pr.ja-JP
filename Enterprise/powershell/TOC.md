@@ -37,7 +37,6 @@
 ### [委任アクセス許可パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [委任アクセス許可パートナー用リモート Windows PowerShell 経由で Exchange Online に接続する](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [委任アクセス許可パートナー用 Windows PowerShell 経由で顧客レポート データを取得する](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-### [委任アクセス許可パートナー用 Windows PowerShell 経由で顧客レポート データを集約する](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
 ## [Skype for Business Online を管理する](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Skype for Business Online のポリシーを管理する](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [ユーザーごとに Skype for Business Online のポリシーを割り当てる](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
