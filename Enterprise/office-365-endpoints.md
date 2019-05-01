@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: ''
 description: '概要: 異なる Office 365 クラウドのインターネット エンドポイントについて次の記事を参照してください。'
 ms.openlocfilehash: 1312dd80130d99dba24b0c99f7570a57e70982ac
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341928"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492013"
 ---
 # <a name="office-365-endpoints"></a>Office 365 エンドポイント
 

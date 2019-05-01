@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Office 365 開発/テスト環境に向けたフェデレーション認証を構成します。'
 ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741423"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487967"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のフェデレーション ID
 
@@ -122,7 +122,7 @@ Restart-Computer
 
 最終的な構成をここに示します。
   
-**図 3:AD FS サーバーの追加**
+**図 3: AD FS サーバーの追加**
 
 ![Office 365 開発/テスト環境の DirSync に追加された AD FS サーバー](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -193,7 +193,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv
   
 最終的な構成をここに示します。
   
-**図 4:Web アプリケーション プロキシ サーバーの追加**
+**図 4: Web アプリケーション プロキシ サーバーの追加**
 
 ![Office 365 開発/テスト環境の DirSync に追加された Web アプリケーション プロキシ サーバー](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -408,7 +408,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. サインイン資格情報に、**user1@**\<フェース 1 で作成したドメイン> を入力します。 
     
-    たとえば、テスト ドメインが **testlab.contoso.com** の場合は、**user1@testlab.contoso.com** と入力します。TAB キーを押すか、Office 365 に自動的にリダイレクトさせます。
+    たとえば、テスト ドメインが **testlab.contoso.com** の場合は、「**user1@testlab.contoso.com**」と入力します。TAB キーを押すか、Office 365 に自動的にリダイレクトさせます。
     
     **[この接続ではプライバシーが保護されません]** ページが表示されます。これが表示されるのは、デスクトップ コンピューターで検証できない自己署名証明書を ADFS1 にインストールしたためです。フェデレーション認証の運用環境デプロイメントでは、信頼された証明機関からの証明書を使用するため、ユーザーにこのページは表示されません。
     

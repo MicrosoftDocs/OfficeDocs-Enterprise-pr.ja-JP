@@ -23,11 +23,11 @@ ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
 ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
-ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30374410"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490903"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
