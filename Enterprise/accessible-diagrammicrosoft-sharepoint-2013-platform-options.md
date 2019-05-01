@@ -1,5 +1,5 @@
 ---
-title: "アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション"
+title: アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,425 +10,426 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
-description: "この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。"
+description: この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487823"
 ---
-# <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a><span data-ttu-id="0fb2f-103">アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション</span><span class="sxs-lookup"><span data-stu-id="0fb2f-103">Accessible diagram - Microsoft SharePoint 2013 Platform Options</span></span>
+# <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a><span data-ttu-id="3fb55-103">アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション</span><span class="sxs-lookup"><span data-stu-id="3fb55-103">Accessible diagram - Microsoft SharePoint 2013 Platform Options</span></span>
 
-<span data-ttu-id="0fb2f-104">**概要:** この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-104">**Summary:** This article is an accessible text version of the diagram named Microsoft SharePoint 2013 Platform Options.</span></span>
+<span data-ttu-id="3fb55-104">**概要:** この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。</span><span class="sxs-lookup"><span data-stu-id="3fb55-104">**Summary:** This article is an accessible text version of the diagram named Microsoft SharePoint 2013 Platform Options.</span></span>
   
-<span data-ttu-id="0fb2f-105">ビジネス意思決定者 (BDM) とアーキテクトが Office 365、Microsoft Azure、およびオンプレミス 展開について知る必要があることは何でしょうか。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-105">What business decision makers (BDMs) and architects need to know about Office 365, Microsoft Azure, and on-premises deployments.</span></span> 
+<span data-ttu-id="3fb55-105">ビジネス意思決定者 (BDM) とアーキテクトが Office 365、Microsoft Azure、およびオンプレミス 展開について知る必要があることは何でしょうか。</span><span class="sxs-lookup"><span data-stu-id="3fb55-105">What business decision makers (BDMs) and architects need to know about Office 365, Microsoft Azure, and on-premises deployments.</span></span> 
   
-<span data-ttu-id="0fb2f-106">このポスターには 2 つのセクションがあります。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-106">This poster has two sections:</span></span> 
+<span data-ttu-id="3fb55-106">このポスターには 2 つのセクションがあります。</span><span class="sxs-lookup"><span data-stu-id="3fb55-106">This poster has two sections:</span></span> 
   
-- <span data-ttu-id="0fb2f-107">SharePoint 2013 の 4 つの異なる展開の比較:Office 365 の SharePoint、SharePoint 2013、Azure のオンプレミス 展開と SharePoint 2013 の社内展開による Office 365 のハイブリッド。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-107">A comparison of four different deployments for SharePoint 2013: SharePoint in Office 365, a hybrid of Office 365 with an on-premises deployment of SharePoint 2013, Azure, and an on-premises deployment of SharePoint 2013.</span></span> 
+- <span data-ttu-id="3fb55-107">SharePoint 2013 の 4 つの異なる展開の比較:Office 365 の SharePoint、SharePoint 2013、Azure のオンプレミス 展開と SharePoint 2013 の社内展開による Office 365 のハイブリッド。</span><span class="sxs-lookup"><span data-stu-id="3fb55-107">A comparison of four different deployments for SharePoint 2013: SharePoint in Office 365, a hybrid of Office 365 with an on-premises deployment of SharePoint 2013, Azure, and an on-premises deployment of SharePoint 2013.</span></span> 
     
-- <span data-ttu-id="0fb2f-108">Azure に移動する 3 つの一般的なワークロードの説明。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-108">A description of three typical workloads to move to Azure.</span></span> 
+- <span data-ttu-id="3fb55-108">Azure に移動する 3 つの一般的なワークロードの説明。</span><span class="sxs-lookup"><span data-stu-id="3fb55-108">A description of three typical workloads to move to Azure.</span></span> 
     
-## <a name="comparison-of-four-different-deployments-for-the-sharepoint-2013-platform"></a><span data-ttu-id="0fb2f-109">SharePoint 2013 プラットフォームの 4 つの異なる展開の比較</span><span class="sxs-lookup"><span data-stu-id="0fb2f-109">Comparison of four different deployments for the SharePoint 2013 platform</span></span>
+## <a name="comparison-of-four-different-deployments-for-the-sharepoint-2013-platform"></a><span data-ttu-id="3fb55-109">SharePoint 2013 プラットフォームの 4 つの異なる展開の比較</span><span class="sxs-lookup"><span data-stu-id="3fb55-109">Comparison of four different deployments for the SharePoint 2013 platform</span></span>
 
-<span data-ttu-id="0fb2f-110">比較により、以下の領域に関係する各展開オプションに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-110">The comparison provides information about each deployment option related to the following areas:</span></span> 
+<span data-ttu-id="3fb55-110">比較により、以下の領域に関係する各展開オプションに関する情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-110">The comparison provides information about each deployment option related to the following areas:</span></span> 
   
-- <span data-ttu-id="0fb2f-111">各種の展開機能の概要</span><span class="sxs-lookup"><span data-stu-id="0fb2f-111">An overview of the different deployment features</span></span> 
+- <span data-ttu-id="3fb55-111">各種の展開機能の概要</span><span class="sxs-lookup"><span data-stu-id="3fb55-111">An overview of the different deployment features</span></span> 
     
-- <span data-ttu-id="0fb2f-112">各種類の展開が最適な場合</span><span class="sxs-lookup"><span data-stu-id="0fb2f-112">What each type of deployment is best for</span></span> 
+- <span data-ttu-id="3fb55-112">各種類の展開が最適な場合</span><span class="sxs-lookup"><span data-stu-id="3fb55-112">What each type of deployment is best for</span></span> 
     
-- <span data-ttu-id="0fb2f-113">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="0fb2f-113">License requirements</span></span> 
+- <span data-ttu-id="3fb55-113">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="3fb55-113">License requirements</span></span> 
     
-- <span data-ttu-id="0fb2f-114">実装に必要なアーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="0fb2f-114">Architecture tasks required to implement</span></span> 
+- <span data-ttu-id="3fb55-114">実装に必要なアーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="3fb55-114">Architecture tasks required to implement</span></span> 
     
-- <span data-ttu-id="0fb2f-115">実装に対する IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="0fb2f-115">IT pro responsibilities for implementation</span></span> 
+- <span data-ttu-id="3fb55-115">実装に対する IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="3fb55-115">IT pro responsibilities for implementation</span></span> 
     
-### <a name="overview"></a><span data-ttu-id="0fb2f-116">概要</span><span class="sxs-lookup"><span data-stu-id="0fb2f-116">Overview</span></span>
+### <a name="overview"></a><span data-ttu-id="3fb55-116">概要</span><span class="sxs-lookup"><span data-stu-id="3fb55-116">Overview</span></span>
 
-#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="0fb2f-117">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="0fb2f-117">SharePoint 2013 in Office 365</span></span>
+#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="3fb55-117">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="3fb55-117">SharePoint 2013 in Office 365</span></span>
 
-<span data-ttu-id="0fb2f-118">Office 365 マルチテナント プランにより、効率を高めコストを最適化できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-118">Gain efficiency and optimize for cost with Office 365 multitenant plans.</span></span> 
+<span data-ttu-id="3fb55-118">Office 365 マルチテナント プランにより、効率を高めコストを最適化できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-118">Gain efficiency and optimize for cost with Office 365 multitenant plans.</span></span> 
   
-<span data-ttu-id="0fb2f-119">付随図は、Azure Active Directory テナントを伴う SharePoint Online を示しています。これは、オンプレミス の Active Directory 環境と Azure Active Directory テナントの間で、アカウント名およびパスワードを同期させます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-119">The accompanying diagram shows SharePoint Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span> 
+<span data-ttu-id="3fb55-119">付随図は、Azure Active Directory テナントを伴う SharePoint Online を示しています。これは、オンプレミス の Active Directory 環境と Azure Active Directory テナントの間で、アカウント名およびパスワードを同期させます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-119">The accompanying diagram shows SharePoint Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span> 
   
-<span data-ttu-id="0fb2f-120">機能の説明:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-120">Description of features:</span></span> 
+<span data-ttu-id="3fb55-120">機能の説明:</span><span class="sxs-lookup"><span data-stu-id="3fb55-120">Description of features:</span></span> 
   
-- <span data-ttu-id="0fb2f-121">サービスとしてのソフトウェア (SaaS)。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-121">Software as a Service (SaaS).</span></span> 
+- <span data-ttu-id="3fb55-121">サービスとしてのソフトウェア (SaaS)。</span><span class="sxs-lookup"><span data-stu-id="3fb55-121">Software as a Service (SaaS).</span></span> 
     
-- <span data-ttu-id="0fb2f-122">豊富な機能セットは常に最新のものを利用できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-122">Rich feature set is always up to date.</span></span> 
+- <span data-ttu-id="3fb55-122">豊富な機能セットは常に最新のものを利用できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-122">Rich feature set is always up to date.</span></span> 
     
-- <span data-ttu-id="0fb2f-123">Azure Active Directory テナント (他のアプリケーションと併用可能) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-123">Includes an Azure Active Directory tenant (can be used with other applications).</span></span> 
+- <span data-ttu-id="3fb55-123">Azure Active Directory テナント (他のアプリケーションと併用可能) が含まれます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-123">Includes an Azure Active Directory tenant (can be used with other applications).</span></span> 
     
-- <span data-ttu-id="0fb2f-124">ディレクトリの統合には、オンプレミス Active Direcotry 環境と Azure Active Directory テナント間でアカウント名とパスワードを同期させることが含まれます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-124">Directory integration includes synchronizing account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span> 
+- <span data-ttu-id="3fb55-124">ディレクトリの統合には、オンプレミス Active Direcotry 環境と Azure Active Directory テナント間でアカウント名とパスワードを同期させることが含まれます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-124">Directory integration includes synchronizing account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span> 
     
-- <span data-ttu-id="0fb2f-125">シングル サインオン (SSO) が要件である場合、Active Directory フェデレーション サービス (AD FS) を実装できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-125">If single sign-on (SSO) is a requirement, Active Directory Federation Services (AD FS) can be implemented.</span></span> 
+- <span data-ttu-id="3fb55-125">シングル サインオン (SSO) が要件である場合、Active Directory フェデレーション サービス (AD FS) を実装できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-125">If single sign-on (SSO) is a requirement, Active Directory Federation Services (AD FS) can be implemented.</span></span> 
     
-- <span data-ttu-id="0fb2f-126">暗号化された認証済みアクセス (ポート 443) によるインターネット上のクライアント通信。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-126">Client communication over the Internet through encrypted and authenticated access (port 443).</span></span> 
+- <span data-ttu-id="3fb55-126">暗号化された認証済みアクセス (ポート 443) によるインターネット上のクライアント通信。</span><span class="sxs-lookup"><span data-stu-id="3fb55-126">Client communication over the Internet through encrypted and authenticated access (port 443).</span></span> 
     
-- <span data-ttu-id="0fb2f-127">データ移行はインターネット上にアップロード可能なものに限られます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-127">Data migration is limited to what can be uploaded over the Internet.</span></span> 
+- <span data-ttu-id="3fb55-127">データ移行はインターネット上にアップロード可能なものに限られます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-127">Data migration is limited to what can be uploaded over the Internet.</span></span> 
     
-- <span data-ttu-id="0fb2f-128">カスタマイズ:Office 用アプリ、SharePoint、および SharePoint Designer 2013。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-128">Customizations: Apps for Office, SharePoint, and SharePoint Designer 2013.</span></span> 
+- <span data-ttu-id="3fb55-128">カスタマイズ:Office 用アプリ、SharePoint、および SharePoint Designer 2013。</span><span class="sxs-lookup"><span data-stu-id="3fb55-128">Customizations: Apps for Office, SharePoint, and SharePoint Designer 2013.</span></span> 
     
-#### <a name="hybrid-with-office-365"></a><span data-ttu-id="0fb2f-129">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="0fb2f-129">Hybrid with Office 365</span></span>
+#### <a name="hybrid-with-office-365"></a><span data-ttu-id="3fb55-129">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="3fb55-129">Hybrid with Office 365</span></span>
 
-<span data-ttu-id="0fb2f-130">Office 365 の利点を SharePoint 2013 のオンプレミス 展開と組み合わせます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-130">Combine the benefits of Office 365 with an on-premises deployment of SharePoint 2013.</span></span> 
+<span data-ttu-id="3fb55-130">Office 365 の利点を SharePoint 2013 のオンプレミス 展開と組み合わせます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-130">Combine the benefits of Office 365 with an on-premises deployment of SharePoint 2013.</span></span> 
   
-<span data-ttu-id="0fb2f-131">付属図は、オンプレミスの SharePoint Server 2013 ファームに接続するために Business Connectivity Services (BCS) を使用する Office 365 および SharePoint Online を示しています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-131">The accompanying diagram shows Office 365 with SharePoint Online using Business Connectivity Services (BCS) to connect to an on-premises SharePoint Server 2013 farm.</span></span> 
+<span data-ttu-id="3fb55-131">付属図は、オンプレミスの SharePoint Server 2013 ファームに接続するために Business Connectivity Services (BCS) を使用する Office 365 および SharePoint Online を示しています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-131">The accompanying diagram shows Office 365 with SharePoint Online using Business Connectivity Services (BCS) to connect to an on-premises SharePoint Server 2013 farm.</span></span> 
   
-<span data-ttu-id="0fb2f-132">次の機能のいずれかを選択して統合します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-132">Choose which of the following features to integrate:</span></span> 
+<span data-ttu-id="3fb55-132">次の機能のいずれかを選択して統合します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-132">Choose which of the following features to integrate:</span></span> 
   
-<span data-ttu-id="0fb2f-133">SharePoint Search</span><span class="sxs-lookup"><span data-stu-id="0fb2f-133">SharePoint Search</span></span> 
+<span data-ttu-id="3fb55-133">SharePoint Search</span><span class="sxs-lookup"><span data-stu-id="3fb55-133">SharePoint Search</span></span> 
   
-- <span data-ttu-id="0fb2f-134">ユーザーは、両方の環境から検索結果を確認できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-134">Users can see search results from both environments.</span></span> 
+- <span data-ttu-id="3fb55-134">ユーザーは、両方の環境から検索結果を確認できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-134">Users can see search results from both environments.</span></span> 
     
-- <span data-ttu-id="0fb2f-135">エクストラネット ユーザーは、オンプレミス Active Directory アカウントによりリモートでログオンし、ハイブリッド機能をすべて使用できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-135">Extranet users can remotely log on with an on-premises Active Directory account and use all available hybrid functionality.</span></span> 
+- <span data-ttu-id="3fb55-135">エクストラネット ユーザーは、オンプレミス Active Directory アカウントによりリモートでログオンし、ハイブリッド機能をすべて使用できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-135">Extranet users can remotely log on with an on-premises Active Directory account and use all available hybrid functionality.</span></span> 
     
-<span data-ttu-id="0fb2f-136">BCS</span><span class="sxs-lookup"><span data-stu-id="0fb2f-136">BCS</span></span>
+<span data-ttu-id="3fb55-136">BCS</span><span class="sxs-lookup"><span data-stu-id="3fb55-136">BCS</span></span>
   
-<span data-ttu-id="0fb2f-p101">SharePoint Online から:ユーザーは、読み取りと書き込み両方の操作を実行できます。BCS サービスは、オンプレミスの SharePoint Server 2013 ファームに接続します。オンプレミス ファーム上で構成された BCS サービスは、オンプレミスの OData サービス エンドポイントへの接続を仲介します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p101">From SharePoint Online: Users can perform both read and write operations. The BCS service connects to an on-premises SharePoint Server 2013 farm. The BCS service configured on the on-premises farm brokers the connection to on-premises OData Service endpoints.</span></span> 
+<span data-ttu-id="3fb55-p101">SharePoint Online から:ユーザーは、読み取りと書き込み両方の操作を実行できます。BCS サービスは、オンプレミスの SharePoint Server 2013 ファームに接続します。オンプレミス ファーム上で構成された BCS サービスは、オンプレミスの OData サービス エンドポイントへの接続を仲介します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p101">From SharePoint Online: Users can perform both read and write operations. The BCS service connects to an on-premises SharePoint Server 2013 farm. The BCS service configured on the on-premises farm brokers the connection to on-premises OData Service endpoints.</span></span> 
   
-<span data-ttu-id="0fb2f-140">Duet Enterprise Online</span><span class="sxs-lookup"><span data-stu-id="0fb2f-140">Duet Enterprise Online</span></span> 
+<span data-ttu-id="3fb55-140">Duet Enterprise Online</span><span class="sxs-lookup"><span data-stu-id="3fb55-140">Duet Enterprise Online</span></span> 
   
-<span data-ttu-id="0fb2f-141">SharePoint Online から、ユーザーは、オンプレミスの SAP システムに対して読み取りおよび書き込みの操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-141">From SharePoint Online, users can perform read and write operations against an on-premises SAP system.</span></span> 
+<span data-ttu-id="3fb55-141">SharePoint Online から、ユーザーは、オンプレミスの SAP システムに対して読み取りおよび書き込みの操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-141">From SharePoint Online, users can perform read and write operations against an on-premises SAP system.</span></span> 
   
-#### <a name="azure"></a><span data-ttu-id="0fb2f-142">Azure</span><span class="sxs-lookup"><span data-stu-id="0fb2f-142">Azure</span></span>
+#### <a name="azure"></a><span data-ttu-id="3fb55-142">Azure</span><span class="sxs-lookup"><span data-stu-id="3fb55-142">Azure</span></span>
 
-<span data-ttu-id="0fb2f-143">プラットフォームと機能のフル コントロールを維持しつつ、クラウドを活用します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-143">Take advantage of the cloud while maintaining full control of the platform and features.</span></span> 
+<span data-ttu-id="3fb55-143">プラットフォームと機能のフル コントロールを維持しつつ、クラウドを活用します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-143">Take advantage of the cloud while maintaining full control of the platform and features.</span></span> 
   
-<span data-ttu-id="0fb2f-144">付属図は、SharePoint 2013 ファーム、およびインターネット上でユーザーと接続するか、VPN トンネル経由でオンプレミスの Active Directory と接続する DNS を伴う Windows Server の Active Directory という 2 つのクラウド サービスを含む Azure を示しています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-144">The accompanying diagram shows Azure, which contains two cloud services, a SharePoint 2013 farm, and Windows Server Active Directory with DNS connecting to users over the Internet or connecting to on-premises Active Directory via VPN tunnel.</span></span> 
+<span data-ttu-id="3fb55-144">付属図は、SharePoint 2013 ファーム、およびインターネット上でユーザーと接続するか、VPN トンネル経由でオンプレミスの Active Directory と接続する DNS を伴う Windows Server の Active Directory という 2 つのクラウド サービスを含む Azure を示しています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-144">The accompanying diagram shows Azure, which contains two cloud services, a SharePoint 2013 farm, and Windows Server Active Directory with DNS connecting to users over the Internet or connecting to on-premises Active Directory via VPN tunnel.</span></span> 
   
-<span data-ttu-id="0fb2f-145">以下の機能があります。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-145">Features include:</span></span> 
+<span data-ttu-id="3fb55-145">以下の機能があります。</span><span class="sxs-lookup"><span data-stu-id="3fb55-145">Features include:</span></span> 
   
--  <span data-ttu-id="0fb2f-146">Azure は、SharePoint 2013 ファームをホストするのに必要なインフラストラクチャとアプリ サービスを提供するプラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-146">Azure is a platform that provides the infrastructure and app services needed to host a SharePoint 2013 farm.</span></span>
+-  <span data-ttu-id="3fb55-146">Azure は、SharePoint 2013 ファームをホストするのに必要なインフラストラクチャとアプリ サービスを提供するプラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="3fb55-146">Azure is a platform that provides the infrastructure and app services needed to host a SharePoint 2013 farm.</span></span>
     
-- <span data-ttu-id="0fb2f-147">インフラストラクチャ サービス。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-147">Infrastructure Services.</span></span> 
+- <span data-ttu-id="3fb55-147">インフラストラクチャ サービス。</span><span class="sxs-lookup"><span data-stu-id="3fb55-147">Infrastructure Services.</span></span> 
     
-- <span data-ttu-id="0fb2f-148">SQL Server および SharePoint にとって最適なネイティブ クラウド プラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-148">Best native cloud platform for SQL Server and SharePoint.</span></span> 
+- <span data-ttu-id="3fb55-148">SQL Server および SharePoint にとって最適なネイティブ クラウド プラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="3fb55-148">Best native cloud platform for SQL Server and SharePoint.</span></span> 
     
-- <span data-ttu-id="0fb2f-149">無料でコンピューティング リソースをほぼただちに利用できます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-149">Computing resources are available almost immediately with no commitment.</span></span> 
+- <span data-ttu-id="3fb55-149">無料でコンピューティング リソースをほぼただちに利用できます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-149">Computing resources are available almost immediately with no commitment.</span></span> 
     
-- <span data-ttu-id="0fb2f-150">データセンターやインフラストラクチャではなく、アプリケーションに焦点を合わせます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-150">Focus on applications, instead of datacenters and infrastructure.</span></span> 
+- <span data-ttu-id="3fb55-150">データセンターやインフラストラクチャではなく、アプリケーションに焦点を合わせます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-150">Focus on applications, instead of datacenters and infrastructure.</span></span> 
     
-- <span data-ttu-id="0fb2f-151">安価な開発およびテスト環境。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-151">Inexpensive development and test environments.</span></span> 
+- <span data-ttu-id="3fb55-151">安価な開発およびテスト環境。</span><span class="sxs-lookup"><span data-stu-id="3fb55-151">Inexpensive development and test environments.</span></span> 
     
-- <span data-ttu-id="0fb2f-152">SharePoint ソリューションは、インターネットからアクセス可能にすることも、サイト間 VPN トンネルを介して企業環境のみからアクセス可能にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-152">SharePoint solutions can be accessible from the Internet or accessible only from a corporate environment through a site-to-site VPN tunnel.</span></span> 
+- <span data-ttu-id="3fb55-152">SharePoint ソリューションは、インターネットからアクセス可能にすることも、サイト間 VPN トンネルを介して企業環境のみからアクセス可能にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-152">SharePoint solutions can be accessible from the Internet or accessible only from a corporate environment through a site-to-site VPN tunnel.</span></span> 
     
-- <span data-ttu-id="0fb2f-153">カスタマイズに制限はありません。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-153">Customizations are not limited.</span></span> 
+- <span data-ttu-id="3fb55-153">カスタマイズに制限はありません。</span><span class="sxs-lookup"><span data-stu-id="3fb55-153">Customizations are not limited.</span></span> 
     
-#### <a name="on-premises"></a><span data-ttu-id="0fb2f-154">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-154">On premises</span></span>
+#### <a name="on-premises"></a><span data-ttu-id="3fb55-154">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="3fb55-154">On premises</span></span>
 
-<span data-ttu-id="0fb2f-155">すべてを自ら所有しています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-155">You own everything.</span></span> 
+<span data-ttu-id="3fb55-155">すべてを自ら所有しています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-155">You own everything.</span></span> 
   
-<span data-ttu-id="0fb2f-156">付属図は、すべてのデータベースおよび検索用の専用のアプリケーション サーバーと通信する Web サーバー、アプリケーション サーバー、および Active Directory を伴うオンプレミス 環境を示しています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-156">The accompanying diagram shows an on-premises environment with web servers, application servers, and Active Directory communicating with all databases and dedicated application servers for search.</span></span> 
+<span data-ttu-id="3fb55-156">付属図は、すべてのデータベースおよび検索用の専用のアプリケーション サーバーと通信する Web サーバー、アプリケーション サーバー、および Active Directory を伴うオンプレミス 環境を示しています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-156">The accompanying diagram shows an on-premises environment with web servers, application servers, and Active Directory communicating with all databases and dedicated application servers for search.</span></span> 
   
-<span data-ttu-id="0fb2f-157">以下の機能があります。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-157">Features include:</span></span> 
+<span data-ttu-id="3fb55-157">以下の機能があります。 </span><span class="sxs-lookup"><span data-stu-id="3fb55-157">Features include:</span></span> 
   
-- <span data-ttu-id="0fb2f-158">容量計画とサイジング。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-158">Capacity planning and sizing.</span></span> 
+- <span data-ttu-id="3fb55-158">容量計画とサイジング。</span><span class="sxs-lookup"><span data-stu-id="3fb55-158">Capacity planning and sizing.</span></span> 
     
-- <span data-ttu-id="0fb2f-159">サーバーの購入とセットアップ。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-159">Server acquisition and setup.</span></span> 
+- <span data-ttu-id="3fb55-159">サーバーの購入とセットアップ。</span><span class="sxs-lookup"><span data-stu-id="3fb55-159">Server acquisition and setup.</span></span> 
     
-- <span data-ttu-id="0fb2f-160">展開。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-160">Deployment.</span></span> 
+- <span data-ttu-id="3fb55-160">展開。</span><span class="sxs-lookup"><span data-stu-id="3fb55-160">Deployment.</span></span> 
     
-- <span data-ttu-id="0fb2f-161">スケール アウト、修正、および操作。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-161">Scaling out, patching, and operations.</span></span> 
+- <span data-ttu-id="3fb55-161">スケール アウト、修正、および操作。</span><span class="sxs-lookup"><span data-stu-id="3fb55-161">Scaling out, patching, and operations.</span></span> 
     
-- <span data-ttu-id="0fb2f-162">データのバックアップ。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-162">Backing up data.</span></span> 
+- <span data-ttu-id="3fb55-162">データのバックアップ。</span><span class="sxs-lookup"><span data-stu-id="3fb55-162">Backing up data.</span></span> 
     
-- <span data-ttu-id="0fb2f-163">障害回復環境の維持。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-163">Maintaining a disaster recovery environment.</span></span> 
+- <span data-ttu-id="3fb55-163">障害回復環境の維持。</span><span class="sxs-lookup"><span data-stu-id="3fb55-163">Maintaining a disaster recovery environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-164">カスタマイズに制限はありません。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-164">Customizations are not limited.</span></span> 
+- <span data-ttu-id="3fb55-164">カスタマイズに制限はありません。</span><span class="sxs-lookup"><span data-stu-id="3fb55-164">Customizations are not limited.</span></span> 
     
-### <a name="deployment-type-is-best-for---"></a><span data-ttu-id="0fb2f-p102">最適な展開の種類</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p102">Deployment type is best for . . .</span></span>
+### <a name="deployment-type-is-best-for---"></a><span data-ttu-id="3fb55-p102">最適な展開の種類</span><span class="sxs-lookup"><span data-stu-id="3fb55-p102">Deployment type is best for . . .</span></span>
 
-#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="0fb2f-168">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="0fb2f-168">SharePoint 2013 in Office 365</span></span>
+#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="3fb55-168">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="3fb55-168">SharePoint 2013 in Office 365</span></span>
 
-- <span data-ttu-id="0fb2f-p103">安全な外部共有とコラボレーション。(独自機能)</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p103">Secure external sharing and collaboration. (Unique feature!)</span></span> 
+- <span data-ttu-id="3fb55-p103">安全な外部共有とコラボレーション。(独自機能)</span><span class="sxs-lookup"><span data-stu-id="3fb55-p103">Secure external sharing and collaboration. (Unique feature!)</span></span> 
     
-- <span data-ttu-id="0fb2f-171">イントラネット — チーム サイト、個人用サイト、および内部コラボレーション。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-171">Intranet — Team sites, My Sites, and internal collaboration.</span></span> 
+- <span data-ttu-id="3fb55-171">イントラネット — チーム サイト、個人用サイト、および内部コラボレーション。</span><span class="sxs-lookup"><span data-stu-id="3fb55-171">Intranet — Team sites, My Sites, and internal collaboration.</span></span> 
     
-- <span data-ttu-id="0fb2f-172">クラウド内のドキュメント ストレージおよびバージョン管理。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-172">Document storage and versioning in the cloud.</span></span> 
+- <span data-ttu-id="3fb55-172">クラウド内のドキュメント ストレージおよびバージョン管理。</span><span class="sxs-lookup"><span data-stu-id="3fb55-172">Document storage and versioning in the cloud.</span></span> 
     
-- <span data-ttu-id="0fb2f-173">基本的な一般向け Web サイト。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-173">Basic public-facing website.</span></span> 
+- <span data-ttu-id="3fb55-173">基本的な一般向け Web サイト。</span><span class="sxs-lookup"><span data-stu-id="3fb55-173">Basic public-facing website.</span></span> 
     
-<span data-ttu-id="0fb2f-174">Office 365 の専用サブスクリプション プランによる追加機能:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-174">Additional features with Office 365 Dedicated subscription plans:</span></span> 
+<span data-ttu-id="3fb55-174">Office 365 の専用サブスクリプション プランによる追加機能:</span><span class="sxs-lookup"><span data-stu-id="3fb55-174">Additional features with Office 365 Dedicated subscription plans:</span></span> 
   
-- <span data-ttu-id="0fb2f-175">他の組織と共有ではない、自社組織専用の Microsoft データ センター機器。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-175">Microsoft datacenter equipment that is dedicated to your organization and not shared with any other organization.</span></span> 
+- <span data-ttu-id="3fb55-175">他の組織と共有ではない、自社組織専用の Microsoft データ センター機器。</span><span class="sxs-lookup"><span data-stu-id="3fb55-175">Microsoft datacenter equipment that is dedicated to your organization and not shared with any other organization.</span></span> 
     
-- <span data-ttu-id="0fb2f-176">お客様それぞれの環境は、物理的に別個のネットワーク上に存在します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-176">Each customer environment resides in a physically separate network.</span></span> 
+- <span data-ttu-id="3fb55-176">お客様それぞれの環境は、物理的に別個のネットワーク上に存在します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-176">Each customer environment resides in a physically separate network.</span></span> 
     
-- <span data-ttu-id="0fb2f-p104">IPSec で保護された VPN またはお客様所有のプライベート接続におけるクライアント通信。2 要素認証はオプションです。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p104">Client communication across an IPSec-secured VPN or customer-owned private connection. Two-factor authentication is optional.</span></span> 
+- <span data-ttu-id="3fb55-p104">IPSec で保護された VPN またはお客様所有のプライベート接続におけるクライアント通信。2 要素認証はオプションです。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p104">Client communication across an IPSec-secured VPN or customer-owned private connection. Two-factor authentication is optional.</span></span> 
     
-- <span data-ttu-id="0fb2f-179">ITAR サポート プラン。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-179">ITAR-support plans.</span></span> 
+- <span data-ttu-id="3fb55-179">ITAR サポート プラン。</span><span class="sxs-lookup"><span data-stu-id="3fb55-179">ITAR-support plans.</span></span> 
     
-#### <a name="hybrid-with-office-365"></a><span data-ttu-id="0fb2f-180">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="0fb2f-180">Hybrid with Office 365</span></span>
+#### <a name="hybrid-with-office-365"></a><span data-ttu-id="3fb55-180">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="3fb55-180">Hybrid with Office 365</span></span>
 
-- <span data-ttu-id="0fb2f-181">エクストラネット環境を設定する代わりに、外部共有およびコラボレーションに Office 365 を使用します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-181">Use Office 365 for external sharing and collaboration instead of setting up an extranet environment.</span></span> 
+- <span data-ttu-id="3fb55-181">エクストラネット環境を設定する代わりに、外部共有およびコラボレーションに Office 365 を使用します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-181">Use Office 365 for external sharing and collaboration instead of setting up an extranet environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-182">個人用サイト (OneDrive for Business) をクラウドに移動させ、ユーザーがリモートで簡単にファイルにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-182">Move My Sites (OneDrive for Business) to the cloud to make it easier for users to access their files remotely.</span></span> 
+- <span data-ttu-id="3fb55-182">個人用サイト (OneDrive for Business) をクラウドに移動させ、ユーザーがリモートで簡単にファイルにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="3fb55-182">Move My Sites (OneDrive for Business) to the cloud to make it easier for users to access their files remotely.</span></span> 
     
-- <span data-ttu-id="0fb2f-183">Office 365 で新しいチーム サイトを開始します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-183">Start new team sites in Office 365.</span></span> 
+- <span data-ttu-id="3fb55-183">Office 365 で新しいチーム サイトを開始します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-183">Start new team sites in Office 365.</span></span> 
     
-- <span data-ttu-id="0fb2f-184">Office 365 サイトをオンプレミスの BCS SharePoint 環境と統合します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-184">Integrate an Office 365 site with on-premises BCS SharePoint environment.</span></span> 
+- <span data-ttu-id="3fb55-184">Office 365 サイトをオンプレミスの BCS SharePoint 環境と統合します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-184">Integrate an Office 365 site with on-premises BCS SharePoint environment.</span></span> 
     
-#### <a name="azure"></a><span data-ttu-id="0fb2f-185">Azure</span><span class="sxs-lookup"><span data-stu-id="0fb2f-185">Azure</span></span>
+#### <a name="azure"></a><span data-ttu-id="3fb55-185">Azure</span><span class="sxs-lookup"><span data-stu-id="3fb55-185">Azure</span></span>
 
-- <span data-ttu-id="0fb2f-p105">インターネット サイト向け SharePoint  一般向けサイト。顧客アカウントおよび認証において Azure AD を活用します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p105">SharePoint for Internet Sites — Public facing sites. Take advantage of Azure AD for customer accounts and authentication.</span></span> 
+- <span data-ttu-id="3fb55-p105">インターネット サイト向け SharePoint  一般向けサイト。顧客アカウントおよび認証において Azure AD を活用します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p105">SharePoint for Internet Sites — Public facing sites. Take advantage of Azure AD for customer accounts and authentication.</span></span> 
     
-- <span data-ttu-id="0fb2f-188">開発者環境、テスト環境、ステージング環境 — 環境全体のプロビジョニング (およびその解除) を迅速に行います。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-188">Developer, test, and staging environments — Quickly provision and deprovision entire environments.</span></span> 
+- <span data-ttu-id="3fb55-188">開発者環境、テスト環境、ステージング環境 — 環境全体のプロビジョニング (およびその解除) を迅速に行います。</span><span class="sxs-lookup"><span data-stu-id="3fb55-188">Developer, test, and staging environments — Quickly provision and deprovision entire environments.</span></span> 
     
-- <span data-ttu-id="0fb2f-189">ハイブリッド アプリケーション — データセンターとクラウドの両方に関係するアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-189">Hybrid applications — Applications that span your datacenter and the cloud.</span></span> 
+- <span data-ttu-id="3fb55-189">ハイブリッド アプリケーション — データセンターとクラウドの両方に関係するアプリケーション。</span><span class="sxs-lookup"><span data-stu-id="3fb55-189">Hybrid applications — Applications that span your datacenter and the cloud.</span></span> 
     
-- <span data-ttu-id="0fb2f-p106">障害回復環境  障害から迅速に回復します。料金は使用した分にのみかかります。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p106">Disaster recovery environment — Quickly recover from a disaster. Pay only for use.</span></span> 
+- <span data-ttu-id="3fb55-p106">障害回復環境  障害から迅速に回復します。料金は使用した分にのみかかります。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p106">Disaster recovery environment — Quickly recover from a disaster. Pay only for use.</span></span> 
     
-- <span data-ttu-id="0fb2f-192">詳細なレポートまたは監査を必要とするファーム</span><span class="sxs-lookup"><span data-stu-id="0fb2f-192">Farms that require deep reporting or auditing.</span></span> 
+- <span data-ttu-id="3fb55-192">詳細なレポートまたは監査を必要とするファーム</span><span class="sxs-lookup"><span data-stu-id="3fb55-192">Farms that require deep reporting or auditing.</span></span> 
     
-- <span data-ttu-id="0fb2f-193">Web 分析</span><span class="sxs-lookup"><span data-stu-id="0fb2f-193">Web analytics.</span></span> 
+- <span data-ttu-id="3fb55-193">Web 分析</span><span class="sxs-lookup"><span data-stu-id="3fb55-193">Web analytics.</span></span> 
     
-- <span data-ttu-id="0fb2f-194">保存されたデータの暗号化 (データは SQL データベースで暗号化されます)。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-194">Data encryption at rest (data is encrypted in the SQL databases).</span></span> 
+- <span data-ttu-id="3fb55-194">保存されたデータの暗号化 (データは SQL データベースで暗号化されます)。</span><span class="sxs-lookup"><span data-stu-id="3fb55-194">Data encryption at rest (data is encrypted in the SQL databases).</span></span> 
     
-#### <a name="data-encryption-at-rest-data-is-encrypted-in-the-sql-databases"></a><span data-ttu-id="0fb2f-195">保存されたデータの暗号化 (データは SQL データベースで暗号化されます)</span><span class="sxs-lookup"><span data-stu-id="0fb2f-195">Data encryption at rest (data is encrypted in the SQL databases)</span></span>
+#### <a name="data-encryption-at-rest-data-is-encrypted-in-the-sql-databases"></a><span data-ttu-id="3fb55-195">保存されたデータの暗号化 (データは SQL データベースで暗号化されます)</span><span class="sxs-lookup"><span data-stu-id="3fb55-195">Data encryption at rest (data is encrypted in the SQL databases)</span></span>
 
-- <span data-ttu-id="0fb2f-196">国内ファーム (データを管轄内に置く必要がある場合)。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-196">In-country farms (when data is required to reside within a jurisdiction).</span></span> 
+- <span data-ttu-id="3fb55-196">国内ファーム (データを管轄内に置く必要がある場合)。</span><span class="sxs-lookup"><span data-stu-id="3fb55-196">In-country farms (when data is required to reside within a jurisdiction).</span></span> 
     
-- <span data-ttu-id="0fb2f-197">BI データの近くに置く必要のある複雑な BI ソリューション。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-197">Complex BI solutions that must reside close to BI data.</span></span> 
+- <span data-ttu-id="3fb55-197">BI データの近くに置く必要のある複雑な BI ソリューション。</span><span class="sxs-lookup"><span data-stu-id="3fb55-197">Complex BI solutions that must reside close to BI data.</span></span> 
     
-- <span data-ttu-id="0fb2f-198">プライベート クラウド ソリューション</span><span class="sxs-lookup"><span data-stu-id="0fb2f-198">Private cloud solutions.</span></span> 
+- <span data-ttu-id="3fb55-198">プライベート クラウド ソリューション</span><span class="sxs-lookup"><span data-stu-id="3fb55-198">Private cloud solutions.</span></span> 
     
-- <span data-ttu-id="0fb2f-199">高度にカスタマイズされたソリューション。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-199">Highly customized solutions.</span></span> 
+- <span data-ttu-id="3fb55-199">高度にカスタマイズされたソリューション。</span><span class="sxs-lookup"><span data-stu-id="3fb55-199">Highly customized solutions.</span></span> 
     
-- <span data-ttu-id="0fb2f-200">Azure インフラストラクチャ サービスでサポートされていないハードウェアおよびソフトウェアに依存するサード パーティ製コンポーネントを使用するレガシー ソリューション。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-200">Legacy solutions with third-party components that depend on hardware and software that are not supported on Azure Infrastructure Services.</span></span> 
+- <span data-ttu-id="3fb55-200">Azure インフラストラクチャ サービスでサポートされていないハードウェアおよびソフトウェアに依存するサード パーティ製コンポーネントを使用するレガシー ソリューション。</span><span class="sxs-lookup"><span data-stu-id="3fb55-200">Legacy solutions with third-party components that depend on hardware and software that are not supported on Azure Infrastructure Services.</span></span> 
     
-- <span data-ttu-id="0fb2f-201">Active Directory アカウントと Azure Active Directory の同期 (Office 365 の要件) を妨げるプライバシー制限。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-201">Privacy restrictions that prevent synchronization of Active Directory accounts with Azure Active Directory (a requirement for Office 365).</span></span> 
+- <span data-ttu-id="3fb55-201">Active Directory アカウントと Azure Active Directory の同期 (Office 365 の要件) を妨げるプライバシー制限。</span><span class="sxs-lookup"><span data-stu-id="3fb55-201">Privacy restrictions that prevent synchronization of Active Directory accounts with Azure Active Directory (a requirement for Office 365).</span></span> 
     
-- <span data-ttu-id="0fb2f-202">プラットフォームとソリューション全体のコントロールを好む組織。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-202">Organizations that prefer control of the entire platform and solution.</span></span> 
+- <span data-ttu-id="3fb55-202">プラットフォームとソリューション全体のコントロールを好む組織。</span><span class="sxs-lookup"><span data-stu-id="3fb55-202">Organizations that prefer control of the entire platform and solution.</span></span> 
     
-### <a name="license-requirements"></a><span data-ttu-id="0fb2f-203">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="0fb2f-203">License requirements</span></span>
+### <a name="license-requirements"></a><span data-ttu-id="3fb55-203">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="3fb55-203">License requirements</span></span>
 
-#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="0fb2f-204">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="0fb2f-204">SharePoint 2013 in Office 365</span></span>
+#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="3fb55-204">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="3fb55-204">SharePoint 2013 in Office 365</span></span>
 
-<span data-ttu-id="0fb2f-p107">サブスクリプション モデル。追加のライセンスは不要です。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p107">Subscription model. No additional licenses needed.</span></span> 
+<span data-ttu-id="3fb55-p107">サブスクリプション モデル。追加のライセンスは不要です。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p107">Subscription model. No additional licenses needed.</span></span> 
   
-#### <a name="hybrid-with-office-365"></a><span data-ttu-id="0fb2f-207">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="0fb2f-207">Hybrid with Office 365</span></span>
+#### <a name="hybrid-with-office-365"></a><span data-ttu-id="3fb55-207">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="3fb55-207">Hybrid with Office 365</span></span>
 
-- <span data-ttu-id="0fb2f-p108">Office 365  サブスクリプション モデル。追加のライセンスは不要です。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p108">Office 365 — Subscription model. No additional licenses needed.</span></span> 
+- <span data-ttu-id="3fb55-p108">Office 365  サブスクリプション モデル。追加のライセンスは不要です。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p108">Office 365 — Subscription model. No additional licenses needed.</span></span> 
     
-- <span data-ttu-id="0fb2f-210">オンプレミス — すべてのオンプレミス ライセンスが適用されます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-210">On-premises — All on-premises licenses apply.</span></span> 
+- <span data-ttu-id="3fb55-210">オンプレミス — すべてのオンプレミス ライセンスが適用されます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-210">On-premises — All on-premises licenses apply.</span></span> 
     
-#### <a name="azure"></a><span data-ttu-id="0fb2f-211">Azure</span><span class="sxs-lookup"><span data-stu-id="0fb2f-211">Azure</span></span>
+#### <a name="azure"></a><span data-ttu-id="3fb55-211">Azure</span><span class="sxs-lookup"><span data-stu-id="3fb55-211">Azure</span></span>
 
--  <span data-ttu-id="0fb2f-212">Azure サブスクリプション (サーバーのオペレーティング システムを含む)</span><span class="sxs-lookup"><span data-stu-id="0fb2f-212">Azure subscription (includes the server operating system)</span></span>
+-  <span data-ttu-id="3fb55-212">Azure サブスクリプション (サーバーのオペレーティング システムを含む)</span><span class="sxs-lookup"><span data-stu-id="3fb55-212">Azure subscription (includes the server operating system)</span></span>
     
-- <span data-ttu-id="0fb2f-213">SQL Server</span><span class="sxs-lookup"><span data-stu-id="0fb2f-213">SQL Server</span></span> 
+- <span data-ttu-id="3fb55-213">SQL Server</span><span class="sxs-lookup"><span data-stu-id="3fb55-213">SQL Server</span></span> 
     
-- <span data-ttu-id="0fb2f-214">SharePoint 2013 サーバー ライセンス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-214">SharePoint 2013 Server License</span></span> 
+- <span data-ttu-id="3fb55-214">SharePoint 2013 サーバー ライセンス</span><span class="sxs-lookup"><span data-stu-id="3fb55-214">SharePoint 2013 Server License</span></span> 
     
-- <span data-ttu-id="0fb2f-215">SharePoint 2013 クライアント アクセス ライセンス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-215">SharePoint 2013 Client Access License</span></span> 
+- <span data-ttu-id="3fb55-215">SharePoint 2013 クライアント アクセス ライセンス</span><span class="sxs-lookup"><span data-stu-id="3fb55-215">SharePoint 2013 Client Access License</span></span> 
     
-#### <a name="on-premises"></a><span data-ttu-id="0fb2f-216">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-216">On premises</span></span>
+#### <a name="on-premises"></a><span data-ttu-id="3fb55-216">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="3fb55-216">On premises</span></span>
 
-- <span data-ttu-id="0fb2f-217">サーバー オペレーティング システム</span><span class="sxs-lookup"><span data-stu-id="0fb2f-217">Server operating system</span></span> 
+- <span data-ttu-id="3fb55-217">サーバー オペレーティング システム</span><span class="sxs-lookup"><span data-stu-id="3fb55-217">Server operating system</span></span> 
     
-- <span data-ttu-id="0fb2f-218">SQL Server</span><span class="sxs-lookup"><span data-stu-id="0fb2f-218">SQL Server</span></span> 
+- <span data-ttu-id="3fb55-218">SQL Server</span><span class="sxs-lookup"><span data-stu-id="3fb55-218">SQL Server</span></span> 
     
-- <span data-ttu-id="0fb2f-219">SharePoint 2013 サーバー ライセンス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-219">SharePoint 2013 Server License</span></span> 
+- <span data-ttu-id="3fb55-219">SharePoint 2013 サーバー ライセンス</span><span class="sxs-lookup"><span data-stu-id="3fb55-219">SharePoint 2013 Server License</span></span> 
     
-- <span data-ttu-id="0fb2f-220">SharePoint 2013 クライアント アクセス ライセンス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-220">SharePoint 2013 Client Access License</span></span> 
+- <span data-ttu-id="3fb55-220">SharePoint 2013 クライアント アクセス ライセンス</span><span class="sxs-lookup"><span data-stu-id="3fb55-220">SharePoint 2013 Client Access License</span></span> 
     
-### <a name="architecture-tasks"></a><span data-ttu-id="0fb2f-221">アーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="0fb2f-221">Architecture tasks</span></span>
+### <a name="architecture-tasks"></a><span data-ttu-id="3fb55-221">アーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="3fb55-221">Architecture tasks</span></span>
 
-#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="0fb2f-222">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="0fb2f-222">SharePoint 2013 in Office 365</span></span>
+#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="3fb55-222">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="3fb55-222">SharePoint 2013 in Office 365</span></span>
 
-- <span data-ttu-id="0fb2f-p109">ディレクトリ統合の計画と設計。オプションは 2 つあります。いずれのオプションも社内または Azure に展開できます: パスワード同期 (1 台の 64 ビット サーバーが必要)。 SSO (AD FS と複数のサーバーが必要)。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p109">Plan and design directory integration. Two options. Either option can be deployed on premises or in Azure: Password sync (requires one 64-bit server). SSO (requires AD FS and multiple servers).</span></span> 
+- <span data-ttu-id="3fb55-p109">ディレクトリ統合の計画と設計。オプションは 2 つあります。いずれのオプションも社内または Azure に展開できます: パスワード同期 (1 台の 64 ビット サーバーが必要)。 SSO (AD FS と複数のサーバーが必要)。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p109">Plan and design directory integration. Two options. Either option can be deployed on premises or in Azure: Password sync (requires one 64-bit server). SSO (requires AD FS and multiple servers).</span></span> 
     
-- <span data-ttu-id="0fb2f-227">ファイアウォール、プロキシ サーバー、ゲートウェイ、および WAN リンク全体におけるネットワークの容量と可用性を確保します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-227">Ensure network capacity and availability through firewalls, proxy servers, gateways, and across WAN links.</span></span> 
+- <span data-ttu-id="3fb55-227">ファイアウォール、プロキシ サーバー、ゲートウェイ、および WAN リンク全体におけるネットワークの容量と可用性を確保します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-227">Ensure network capacity and availability through firewalls, proxy servers, gateways, and across WAN links.</span></span> 
     
-- <span data-ttu-id="0fb2f-228">Office 365 サービス内容にエンタープライズ セキュリティを付加するために、サード パーティの SSL 証明書を取得します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-228">Acquire third-party SSL certificates to provide enterprise-security for Office 365 service offerings.</span></span> 
+- <span data-ttu-id="3fb55-228">Office 365 サービス内容にエンタープライズ セキュリティを付加するために、サード パーティの SSL 証明書を取得します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-228">Acquire third-party SSL certificates to provide enterprise-security for Office 365 service offerings.</span></span> 
     
-- <span data-ttu-id="0fb2f-229">テナント名を計画し、サイト コレクション アーキテクチャとガバナンスを設計します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-229">Plan the tenant name, and design the site collection architecture and governance.</span></span> 
+- <span data-ttu-id="3fb55-229">テナント名を計画し、サイト コレクション アーキテクチャとガバナンスを設計します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-229">Plan the tenant name, and design the site collection architecture and governance.</span></span> 
     
-- <span data-ttu-id="0fb2f-230">SharePoint Online のカスタマイズ、ソリューション、およびアプリを計画します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-230">Plan customizations, solutions, and apps for SharePoint Online.</span></span> 
+- <span data-ttu-id="3fb55-230">SharePoint Online のカスタマイズ、ソリューション、およびアプリを計画します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-230">Plan customizations, solutions, and apps for SharePoint Online.</span></span> 
     
-- <span data-ttu-id="0fb2f-p110">Internet Protocol 6 (IPv6) を使用して Office 365 に接続するかどうかを決定します。これは一般的ではありません。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p110">Decide if you want to connect to Office 365 by using the Internet Protocol 6 (IPv6). This is not common.</span></span> 
+- <span data-ttu-id="3fb55-p110">Internet Protocol 6 (IPv6) を使用して Office 365 に接続するかどうかを決定します。これは一般的ではありません。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p110">Decide if you want to connect to Office 365 by using the Internet Protocol 6 (IPv6). This is not common.</span></span> 
     
-#### <a name="hybrid-with-office-365"></a><span data-ttu-id="0fb2f-233">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="0fb2f-233">Hybrid with Office 365</span></span>
+#### <a name="hybrid-with-office-365"></a><span data-ttu-id="3fb55-233">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="3fb55-233">Hybrid with Office 365</span></span>
 
-<span data-ttu-id="0fb2f-234">Office 365 と社内環境の両方のタスクに加えて:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-234">In addition to tasks for both the Office 365 and on-premises environments:</span></span> 
+<span data-ttu-id="3fb55-234">Office 365 と社内環境の両方のタスクに加えて:</span><span class="sxs-lookup"><span data-stu-id="3fb55-234">In addition to tasks for both the Office 365 and on-premises environments:</span></span> 
   
-- <span data-ttu-id="0fb2f-p111">どの程度の機能統合が必要かを見定め、ハイブリッド トポロジを選択します。このモデル ポスターを参照してください。どのハイブリッド トポロジを使用しますか。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p111">Determine how much feature integration you want and choose the hybrid topology. See this model poster: Which hybrid topology should I use?</span></span> 
+- <span data-ttu-id="3fb55-p111">どの程度の機能統合が必要かを見定め、ハイブリッド トポロジを選択します。このモデル ポスターを参照してください。どのハイブリッド トポロジを使用しますか。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p111">Determine how much feature integration you want and choose the hybrid topology. See this model poster: Which hybrid topology should I use?</span></span> 
     
-- <span data-ttu-id="0fb2f-237">必要であれば、どのプロキシ サーバー デバイスを使用するかを見定めます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-237">If required, determine which proxy server device will be used.</span></span> 
+- <span data-ttu-id="3fb55-237">必要であれば、どのプロキシ サーバー デバイスを使用するかを見定めます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-237">If required, determine which proxy server device will be used.</span></span> 
     
-#### <a name="azure"></a><span data-ttu-id="0fb2f-238">Azure</span><span class="sxs-lookup"><span data-stu-id="0fb2f-238">Azure</span></span>
+#### <a name="azure"></a><span data-ttu-id="3fb55-238">Azure</span><span class="sxs-lookup"><span data-stu-id="3fb55-238">Azure</span></span>
 
-<span data-ttu-id="0fb2f-239">Azure ネットワーク環境の設計:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-239">Design the Azure network environment:</span></span> 
+<span data-ttu-id="3fb55-239">Azure ネットワーク環境の設計:</span><span class="sxs-lookup"><span data-stu-id="3fb55-239">Design the Azure network environment:</span></span> 
   
-- <span data-ttu-id="0fb2f-240">サブネットを含む Azure 内の仮想ネットワーク。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-240">Virtual network within Azure, including subnets.</span></span> 
+- <span data-ttu-id="3fb55-240">サブネットを含む Azure 内の仮想ネットワーク。</span><span class="sxs-lookup"><span data-stu-id="3fb55-240">Virtual network within Azure, including subnets.</span></span> 
     
-- <span data-ttu-id="0fb2f-241">ドメイン環境およびオンプレミス サーバーとの統合。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-241">Domain environment and integration with on-premises servers.</span></span> 
+- <span data-ttu-id="3fb55-241">ドメイン環境およびオンプレミス サーバーとの統合。</span><span class="sxs-lookup"><span data-stu-id="3fb55-241">Domain environment and integration with on-premises servers.</span></span> 
     
-- <span data-ttu-id="0fb2f-242">IP アドレスと DNS。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-242">IP addresses and DNS.</span></span> 
+- <span data-ttu-id="3fb55-242">IP アドレスと DNS。</span><span class="sxs-lookup"><span data-stu-id="3fb55-242">IP addresses and DNS.</span></span> 
     
-- <span data-ttu-id="0fb2f-243">アフィニティ グループとストレージ アカウント。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-243">Affinity groups and storage accounts.</span></span> 
+- <span data-ttu-id="3fb55-243">アフィニティ グループとストレージ アカウント。</span><span class="sxs-lookup"><span data-stu-id="3fb55-243">Affinity groups and storage accounts.</span></span> 
     
-<span data-ttu-id="0fb2f-244">Azure における SharePoint 環境の設計:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-244">Design the SharePoint environment in Azure:</span></span> 
+<span data-ttu-id="3fb55-244">Azure における SharePoint 環境の設計:</span><span class="sxs-lookup"><span data-stu-id="3fb55-244">Design the SharePoint environment in Azure:</span></span> 
   
-- <span data-ttu-id="0fb2f-245">SharePoint ファーム トポロジと論理アーキテクチャ。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-245">SharePoint farm topology and logical architecture.</span></span> 
+- <span data-ttu-id="3fb55-245">SharePoint ファーム トポロジと論理アーキテクチャ。</span><span class="sxs-lookup"><span data-stu-id="3fb55-245">SharePoint farm topology and logical architecture.</span></span> 
     
--  <span data-ttu-id="0fb2f-246">Azure の可用性設定とドメインの更新。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-246">Azure availability sets and update domains.</span></span>
+-  <span data-ttu-id="3fb55-246">Azure の可用性設定とドメインの更新。</span><span class="sxs-lookup"><span data-stu-id="3fb55-246">Azure availability sets and update domains.</span></span>
     
-- <span data-ttu-id="0fb2f-247">仮想マシン サイズ。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-247">Virtual machines sizes.</span></span> 
+- <span data-ttu-id="3fb55-247">仮想マシン サイズ。</span><span class="sxs-lookup"><span data-stu-id="3fb55-247">Virtual machines sizes.</span></span> 
     
-- <span data-ttu-id="0fb2f-248">負荷分散エンドポイント。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-248">Load balanced endpoint.</span></span> 
+- <span data-ttu-id="3fb55-248">負荷分散エンドポイント。</span><span class="sxs-lookup"><span data-stu-id="3fb55-248">Load balanced endpoint.</span></span> 
     
-- <span data-ttu-id="0fb2f-249">パブリック アクセス用の外部エンドポイント (適切な場合)。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-249">External endpoints for public access, if that is preferable.</span></span> 
+- <span data-ttu-id="3fb55-249">パブリック アクセス用の外部エンドポイント (適切な場合)。</span><span class="sxs-lookup"><span data-stu-id="3fb55-249">External endpoints for public access, if that is preferable.</span></span> 
     
-- <span data-ttu-id="0fb2f-250">障害復旧環境。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-250">Disaster recovery environment.</span></span> 
+- <span data-ttu-id="3fb55-250">障害復旧環境。</span><span class="sxs-lookup"><span data-stu-id="3fb55-250">Disaster recovery environment.</span></span> 
     
-#### <a name="on-premises"></a><span data-ttu-id="0fb2f-251">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-251">On premises</span></span>
+#### <a name="on-premises"></a><span data-ttu-id="3fb55-251">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="3fb55-251">On premises</span></span>
 
-<span data-ttu-id="0fb2f-252">既存のオンプレミス環境における SharePoint 環境の設計:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-252">Design the SharePoint environment in an existing on-premises environment:</span></span> 
+<span data-ttu-id="3fb55-252">既存のオンプレミス環境における SharePoint 環境の設計:</span><span class="sxs-lookup"><span data-stu-id="3fb55-252">Design the SharePoint environment in an existing on-premises environment:</span></span> 
   
-- <span data-ttu-id="0fb2f-253">SharePoint ファーム トポロジと論理アーキテクチャ。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-253">SharePoint farm topology and logical architecture.</span></span> 
+- <span data-ttu-id="3fb55-253">SharePoint ファーム トポロジと論理アーキテクチャ。 </span><span class="sxs-lookup"><span data-stu-id="3fb55-253">SharePoint farm topology and logical architecture.</span></span> 
     
-- <span data-ttu-id="0fb2f-254">サーバー ハードウェア。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-254">Server hardware.</span></span> 
+- <span data-ttu-id="3fb55-254">サーバー ハードウェア。</span><span class="sxs-lookup"><span data-stu-id="3fb55-254">Server hardware.</span></span> 
     
-- <span data-ttu-id="0fb2f-255">仮想環境 (使用している場合)。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-255">Virtual environment, if used.</span></span> 
+- <span data-ttu-id="3fb55-255">仮想環境 (使用している場合)。</span><span class="sxs-lookup"><span data-stu-id="3fb55-255">Virtual environment, if used.</span></span> 
     
-- <span data-ttu-id="0fb2f-256">負荷分散。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-256">Load balancing.</span></span> 
+- <span data-ttu-id="3fb55-256">負荷分散。</span><span class="sxs-lookup"><span data-stu-id="3fb55-256">Load balancing.</span></span> 
     
-- <span data-ttu-id="0fb2f-257">AD DS と DNS の統合。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-257">Integration with AD DS and DNS.</span></span> 
+- <span data-ttu-id="3fb55-257">AD DS と DNS の統合。</span><span class="sxs-lookup"><span data-stu-id="3fb55-257">Integration with AD DS and DNS.</span></span> 
     
-- <span data-ttu-id="0fb2f-258">障害復旧環境。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-258">Disaster recovery environment.</span></span> 
+- <span data-ttu-id="3fb55-258">障害復旧環境。</span><span class="sxs-lookup"><span data-stu-id="3fb55-258">Disaster recovery environment.</span></span> 
     
-### <a name="it-pro-responsibilities"></a><span data-ttu-id="0fb2f-259">IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="0fb2f-259">IT pro responsibilities</span></span>
+### <a name="it-pro-responsibilities"></a><span data-ttu-id="3fb55-259">IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="3fb55-259">IT pro responsibilities</span></span>
 
-#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="0fb2f-260">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="0fb2f-260">SharePoint 2013 in Office 365</span></span>
+#### <a name="sharepoint-2013-in-office-365"></a><span data-ttu-id="3fb55-260">Office 365 での SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="3fb55-260">SharePoint 2013 in Office 365</span></span>
 
-- <span data-ttu-id="0fb2f-261">ユーザーのワークステーションが Office 365 クライアントの前提条件を満たしているかを確認します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-261">Ensure user workstations meet Office 365 client prerequisites.</span></span> 
+- <span data-ttu-id="3fb55-261">ユーザーのワークステーションが Office 365 クライアントの前提条件を満たしているかを確認します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-261">Ensure user workstations meet Office 365 client prerequisites.</span></span> 
     
-- <span data-ttu-id="0fb2f-262">ディレクトリ統合計画を実行します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-262">Implement the directory integration plan.</span></span> 
+- <span data-ttu-id="3fb55-262">ディレクトリ統合計画を実行します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-262">Implement the directory integration plan.</span></span> 
     
-- <span data-ttu-id="0fb2f-263">内部および外部の DNS レコードとルーティングを計画し、実装します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-263">Plan and implement internal and external DNS records and routing.</span></span> 
+- <span data-ttu-id="3fb55-263">内部および外部の DNS レコードとルーティングを計画し、実装します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-263">Plan and implement internal and external DNS records and routing.</span></span> 
     
-- <span data-ttu-id="0fb2f-264">Office 365 の IP アドレスおよび URL 要件に合わせてプロキシまたはファイアウォールを構成します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-264">Configure the proxy or firewall for Office 365 IP address and URL requirements.</span></span> 
+- <span data-ttu-id="3fb55-264">Office 365 の IP アドレスおよび URL 要件に合わせてプロキシまたはファイアウォールを構成します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-264">Configure the proxy or firewall for Office 365 IP address and URL requirements.</span></span> 
     
-- <span data-ttu-id="0fb2f-265">サイト コレクションへのアクセス許可を作成して割り当てます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-265">Create and assign permissions to site collections.</span></span> 
+- <span data-ttu-id="3fb55-265">サイト コレクションへのアクセス許可を作成して割り当てます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-265">Create and assign permissions to site collections.</span></span> 
     
-- <span data-ttu-id="0fb2f-266">SharePoint Online のカスタマイズ、ソリューション、およびアプリを実装します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-266">Implement customizations, solutions, and apps for SharePoint Online.</span></span> 
+- <span data-ttu-id="3fb55-266">SharePoint Online のカスタマイズ、ソリューション、およびアプリを実装します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-266">Implement customizations, solutions, and apps for SharePoint Online.</span></span> 
     
-- <span data-ttu-id="0fb2f-267">ネットワークの可用性を監視し、潜在的なボトルネックを識別します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-267">Monitor network availability and identify possible bottlenecks.</span></span> 
+- <span data-ttu-id="3fb55-267">ネットワークの可用性を監視し、潜在的なボトルネックを識別します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-267">Monitor network availability and identify possible bottlenecks.</span></span> 
     
-#### <a name="hybrid-with-office-365"></a><span data-ttu-id="0fb2f-268">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="0fb2f-268">Hybrid with Office 365</span></span>
+#### <a name="hybrid-with-office-365"></a><span data-ttu-id="3fb55-268">Office 365 とのハイブリッド</span><span class="sxs-lookup"><span data-stu-id="3fb55-268">Hybrid with Office 365</span></span>
 
-<span data-ttu-id="0fb2f-269">Office 365 と社内環境の両方のタスクに加えて:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-269">In addition to tasks for both the Office 365 and on-premises environments:</span></span> 
+<span data-ttu-id="3fb55-269">Office 365 と社内環境の両方のタスクに加えて:</span><span class="sxs-lookup"><span data-stu-id="3fb55-269">In addition to tasks for both the Office 365 and on-premises environments:</span></span> 
   
-- <span data-ttu-id="0fb2f-270">必要であれば、プロキシ サーバー デバイスを構成します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-270">Configure the proxy server device, if required.</span></span> 
+- <span data-ttu-id="3fb55-270">必要であれば、プロキシ サーバー デバイスを構成します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-270">Configure the proxy server device, if required.</span></span> 
     
-- <span data-ttu-id="0fb2f-271">ハイブリッド ID 管理インフラストラクチャを構成します:SSO および 2 つの環境間のサーバー間認証。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-271">Configure the hybrid identity management infrastructure: SSO and server-to-server authentication between the two environments.</span></span> 
+- <span data-ttu-id="3fb55-271">ハイブリッド ID 管理インフラストラクチャを構成します:SSO および 2 つの環境間のサーバー間認証。</span><span class="sxs-lookup"><span data-stu-id="3fb55-271">Configure the hybrid identity management infrastructure: SSO and server-to-server authentication between the two environments.</span></span> 
     
-- <span data-ttu-id="0fb2f-272">選択した機能の統合を構成します:検索、BCS、Duet Enterprise Online。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-272">Configure the integration of chosen features: Search, BCS, Duet Enterprise Online.</span></span> 
+- <span data-ttu-id="3fb55-272">選択した機能の統合を構成します:検索、BCS、Duet Enterprise Online。</span><span class="sxs-lookup"><span data-stu-id="3fb55-272">Configure the integration of chosen features: Search, BCS, Duet Enterprise Online.</span></span> 
     
-#### <a name="azure"></a><span data-ttu-id="0fb2f-273">Azure</span><span class="sxs-lookup"><span data-stu-id="0fb2f-273">Azure</span></span>
+#### <a name="azure"></a><span data-ttu-id="3fb55-273">Azure</span><span class="sxs-lookup"><span data-stu-id="3fb55-273">Azure</span></span>
 
-<span data-ttu-id="0fb2f-274">Azure および SharePoint 環境を展開および管理します:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-274">Deploy and manage the Azure and SharePoint environment:</span></span> 
+<span data-ttu-id="3fb55-274">Azure および SharePoint 環境を展開および管理します:</span><span class="sxs-lookup"><span data-stu-id="3fb55-274">Deploy and manage the Azure and SharePoint environment:</span></span> 
   
-- <span data-ttu-id="0fb2f-275">Azure ネットワーク環境を実装および管理します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-275">Implement and manage the Azure network environment.</span></span> 
+- <span data-ttu-id="3fb55-275">Azure ネットワーク環境を実装および管理します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-275">Implement and manage the Azure network environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-276">SharePoint 環境を展開します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-276">Deploy the SharePoint environment.</span></span> 
+- <span data-ttu-id="3fb55-276">SharePoint 環境を展開します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-276">Deploy the SharePoint environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-277">SharePoint ファーム サーバーを更新します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-277">Update SharePoint farm servers.</span></span> 
+- <span data-ttu-id="3fb55-277">SharePoint ファーム サーバーを更新します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-277">Update SharePoint farm servers.</span></span> 
     
-- <span data-ttu-id="0fb2f-278">ファームの使用状況に応じて、仮想マシンを追加または終了します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-278">Add or shut down virtual machines as needed based on farm utilization.</span></span> 
+- <span data-ttu-id="3fb55-278">ファームの使用状況に応じて、仮想マシンを追加または終了します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-278">Add or shut down virtual machines as needed based on farm utilization.</span></span> 
     
-- <span data-ttu-id="0fb2f-279">必要に応じて、仮想マシンのサイズを拡大または縮小します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-279">Increase or decrease virtual machine sizes, as needed.</span></span> 
+- <span data-ttu-id="3fb55-279">必要に応じて、仮想マシンのサイズを拡大または縮小します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-279">Increase or decrease virtual machine sizes, as needed.</span></span> 
     
-- <span data-ttu-id="0fb2f-280">SharePoint 環境をバックアップします。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-280">Back up the SharePoint environment.</span></span> 
+- <span data-ttu-id="3fb55-280">SharePoint 環境をバックアップします。</span><span class="sxs-lookup"><span data-stu-id="3fb55-280">Back up the SharePoint environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-281">障害回復環境およびプロトコルを実装します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-281">Implement the disaster recovery environment and protocol.</span></span> 
+- <span data-ttu-id="3fb55-281">障害回復環境およびプロトコルを実装します。 </span><span class="sxs-lookup"><span data-stu-id="3fb55-281">Implement the disaster recovery environment and protocol.</span></span> 
     
-#### <a name="on-premises"></a><span data-ttu-id="0fb2f-282">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="0fb2f-282">On premises</span></span>
+#### <a name="on-premises"></a><span data-ttu-id="3fb55-282">オンプレミス</span><span class="sxs-lookup"><span data-stu-id="3fb55-282">On premises</span></span>
 
-<span data-ttu-id="0fb2f-283">社内環境における SharePoint の展開と管理:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-283">Deploy and manage the SharePoint on premises environment:</span></span> 
+<span data-ttu-id="3fb55-283">社内環境における SharePoint の展開と管理:</span><span class="sxs-lookup"><span data-stu-id="3fb55-283">Deploy and manage the SharePoint on premises environment:</span></span> 
   
-- <span data-ttu-id="0fb2f-284">サーバーを準備します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-284">Provision servers.</span></span> 
+- <span data-ttu-id="3fb55-284">サーバーを準備します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-284">Provision servers.</span></span> 
     
-- <span data-ttu-id="0fb2f-285">SharePoint 環境を展開します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-285">Deploy the SharePoint environment.</span></span> 
+- <span data-ttu-id="3fb55-285">SharePoint 環境を展開します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-285">Deploy the SharePoint environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-286">SharePoint ファーム サーバーを更新します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-286">Update SharePoint farm servers.</span></span> 
+- <span data-ttu-id="3fb55-286">SharePoint ファーム サーバーを更新します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-286">Update SharePoint farm servers.</span></span> 
     
-- <span data-ttu-id="0fb2f-287">ファームの使用状況に応じて、ファーム サーバーを追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-287">Add or remove farm servers as needed based on farm utilization.</span></span> 
+- <span data-ttu-id="3fb55-287">ファームの使用状況に応じて、ファーム サーバーを追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-287">Add or remove farm servers as needed based on farm utilization.</span></span> 
     
-- <span data-ttu-id="0fb2f-288">SharePoint 環境をバックアップします。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-288">Back up the SharePoint environment.</span></span> 
+- <span data-ttu-id="3fb55-288">SharePoint 環境をバックアップします。</span><span class="sxs-lookup"><span data-stu-id="3fb55-288">Back up the SharePoint environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-289">障害回復環境およびプロトコルを実装します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-289">Implement the disaster recovery environment and protocol.</span></span> 
+- <span data-ttu-id="3fb55-289">障害回復環境およびプロトコルを実装します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-289">Implement the disaster recovery environment and protocol.</span></span> 
     
-## <a name="three-typical-workloads-to-move-to-azure"></a><span data-ttu-id="0fb2f-290">Azure に移動する 3 つの一般的なワークロード</span><span class="sxs-lookup"><span data-stu-id="0fb2f-290">Three typical workloads to move to Azure</span></span>
+## <a name="three-typical-workloads-to-move-to-azure"></a><span data-ttu-id="3fb55-290">Azure に移動する 3 つの一般的なワークロード</span><span class="sxs-lookup"><span data-stu-id="3fb55-290">Three typical workloads to move to Azure</span></span>
 
-### <a name="office-365-plus-directory-components-in-azure"></a><span data-ttu-id="0fb2f-291">Office 365 および Azure のディレクトリ コンポーネント</span><span class="sxs-lookup"><span data-stu-id="0fb2f-291">Office 365 plus Directory Components in Azure</span></span>
+### <a name="office-365-plus-directory-components-in-azure"></a><span data-ttu-id="3fb55-291">Office 365 および Azure のディレクトリ コンポーネント</span><span class="sxs-lookup"><span data-stu-id="3fb55-291">Office 365 plus Directory Components in Azure</span></span>
 
-<span data-ttu-id="0fb2f-292">Azure における Office 365 ディレクトリ統合コンポーネントの展開は、オンデマンドで仮想マシンを展開できるため、短時間で行えます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-292">Deploying Office 365 directory integration components in Azure is faster because it can deploy virtual machines on-demand.</span></span> 
+<span data-ttu-id="3fb55-292">Azure における Office 365 ディレクトリ統合コンポーネントの展開は、オンデマンドで仮想マシンを展開できるため、短時間で行えます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-292">Deploying Office 365 directory integration components in Azure is faster because it can deploy virtual machines on-demand.</span></span> 
   
-#### <a name="directory-synchronization-server-only"></a><span data-ttu-id="0fb2f-293">ディレクトリ同期サーバーのみ</span><span class="sxs-lookup"><span data-stu-id="0fb2f-293">Directory synchronization server only</span></span>
+#### <a name="directory-synchronization-server-only"></a><span data-ttu-id="3fb55-293">ディレクトリ同期サーバーのみ</span><span class="sxs-lookup"><span data-stu-id="3fb55-293">Directory synchronization server only</span></span>
 
-<span data-ttu-id="0fb2f-294">64 ビットのディレクトリ同期サーバーをオンプレミス環境に展開する代わりに、Azure に仮想マシンをプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-294">Instead of deploying the 64-bit directory synchronization server in your on-premises environment, provision a virtual machine in Azure instead.</span></span> 
+<span data-ttu-id="3fb55-294">64 ビットのディレクトリ同期サーバーをオンプレミス環境に展開する代わりに、Azure に仮想マシンをプロビジョニングします。</span><span class="sxs-lookup"><span data-stu-id="3fb55-294">Instead of deploying the 64-bit directory synchronization server in your on-premises environment, provision a virtual machine in Azure instead.</span></span> 
   
-<span data-ttu-id="0fb2f-295">付随図は、Azure Active Directory テナントを伴う SharePoint Online を示しています。これは、オンプレミスの Active Directory 環境と Azure Active Directory テナントの間で、アカウント名およびパスワードを同期させます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-295">The accompanying diagram shows SharePoint Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span> 
+<span data-ttu-id="3fb55-295">付随図は、Azure Active Directory テナントを伴う SharePoint Online を示しています。これは、オンプレミスの Active Directory 環境と Azure Active Directory テナントの間で、アカウント名およびパスワードを同期させます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-295">The accompanying diagram shows SharePoint Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span> 
   
-#### <a name="directory-synchronization-plus-ad-fs"></a><span data-ttu-id="0fb2f-296">ディレクトリ同期および AD FS</span><span class="sxs-lookup"><span data-stu-id="0fb2f-296">Directory synchronization plus AD FS</span></span>
+#### <a name="directory-synchronization-plus-ad-fs"></a><span data-ttu-id="3fb55-296">ディレクトリ同期および AD FS</span><span class="sxs-lookup"><span data-stu-id="3fb55-296">Directory synchronization plus AD FS</span></span>
 
-<span data-ttu-id="0fb2f-p112">このオプションにより、オンプレミス インフラストラクチャにハードウェアを追加しなくても、Office 365 フェデレーション ID (SSO) をサポートできます。さらに、オンプレミス Active Directory 環境が使用できない場合に、回復性を提供します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p112">This option allows you to support Office 365 federated identities (SSO) without adding hardware to your on-premises infrastructure. It also provides resiliency if the on-premises Active Directory environment is unavailable.</span></span> 
+<span data-ttu-id="3fb55-p112">このオプションにより、オンプレミス インフラストラクチャにハードウェアを追加しなくても、Office 365 フェデレーション ID (SSO) をサポートできます。さらに、オンプレミス Active Directory 環境が使用できない場合に、回復性を提供します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p112">This option allows you to support Office 365 federated identities (SSO) without adding hardware to your on-premises infrastructure. It also provides resiliency if the on-premises Active Directory environment is unavailable.</span></span> 
   
-- <span data-ttu-id="0fb2f-299">Azure に存在するディレクトリ統合コンポーネント。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-299">Directory integration components reside in Azure.</span></span> 
+- <span data-ttu-id="3fb55-299">Azure に存在するディレクトリ統合コンポーネント。</span><span class="sxs-lookup"><span data-stu-id="3fb55-299">Directory integration components reside in Azure.</span></span> 
     
-- <span data-ttu-id="0fb2f-300">Azure の AD FS プロキシを介してインターネットに AD FS が公開されます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-300">AD FS is published to the Internet through AD FS proxies in Azure.</span></span> 
+- <span data-ttu-id="3fb55-300">Azure の AD FS プロキシを介してインターネットに AD FS が公開されます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-300">AD FS is published to the Internet through AD FS proxies in Azure.</span></span> 
     
-- <span data-ttu-id="0fb2f-301">任意の場所から接続するユーザーのためのクライアント認証トラフィックは、Azure で展開された AD FS サーバーおよびプロキシにより処理されます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-301">Client authentication traffic, for users that are connecting from any location, is handled by AD FS servers and proxies that are deployed on Azure.</span></span> 
+- <span data-ttu-id="3fb55-301">任意の場所から接続するユーザーのためのクライアント認証トラフィックは、Azure で展開された AD FS サーバーおよびプロキシにより処理されます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-301">Client authentication traffic, for users that are connecting from any location, is handled by AD FS servers and proxies that are deployed on Azure.</span></span> 
     
-### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a><span data-ttu-id="0fb2f-302">一般向けインターネット サイトおよび顧客認証用の Azure AD</span><span class="sxs-lookup"><span data-stu-id="0fb2f-302">Public-facing Internet site and Azure AD for customer authentication</span></span>
+### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a><span data-ttu-id="3fb55-302">一般向けインターネット サイトおよび顧客認証用の Azure AD</span><span class="sxs-lookup"><span data-stu-id="3fb55-302">Public-facing Internet site and Azure AD for customer authentication</span></span>
 
-<span data-ttu-id="0fb2f-p113">インターネット サイトを Azure 上に配置することにより、必要に応じて簡単に拡大縮小できる機能を活用します。Azure AD を使用して顧客のアカウントを格納します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p113">Take advantage of the ability to easily scale to demand by placing your Internet site in Azure. Use Azure AD to store customer accounts.</span></span> 
+<span data-ttu-id="3fb55-p113">インターネット サイトを Azure 上に配置することにより、必要に応じて簡単に拡大縮小できる機能を活用します。Azure AD を使用して顧客のアカウントを格納します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p113">Take advantage of the ability to easily scale to demand by placing your Internet site in Azure. Use Azure AD to store customer accounts.</span></span> 
   
-#### <a name="azure-advantages-for-internet-sites"></a><span data-ttu-id="0fb2f-305">インターネット サイトにおける Azure の利点</span><span class="sxs-lookup"><span data-stu-id="0fb2f-305">Azure advantages for Internet sites</span></span>
+#### <a name="azure-advantages-for-internet-sites"></a><span data-ttu-id="3fb55-305">インターネット サイトにおける Azure の利点</span><span class="sxs-lookup"><span data-stu-id="3fb55-305">Azure advantages for Internet sites</span></span>
 
-- <span data-ttu-id="0fb2f-306">ファームの使用状況に基づいて仮想マシンの数を増減させることにより、必要なリソースに対してのみ料金を支払います。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-306">Pay only for the resources you need by scaling the number of virtual machines based on farm utilization.</span></span> 
+- <span data-ttu-id="3fb55-306">ファームの使用状況に基づいて仮想マシンの数を増減させることにより、必要なリソースに対してのみ料金を支払います。</span><span class="sxs-lookup"><span data-stu-id="3fb55-306">Pay only for the resources you need by scaling the number of virtual machines based on farm utilization.</span></span> 
     
-- <span data-ttu-id="0fb2f-307">詳細なレポートおよび Web 分析を追加します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-307">Add deep reporting and web analytics.</span></span> 
+- <span data-ttu-id="3fb55-307">詳細なレポートおよび Web 分析を追加します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-307">Add deep reporting and web analytics.</span></span> 
     
-- <span data-ttu-id="0fb2f-308">インフラストラクチャの構築よりも優れたサイトの開発に注意を向けます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-308">Focus on developing a great site rather than building infrastructure.</span></span> 
+- <span data-ttu-id="3fb55-308">インフラストラクチャの構築よりも優れたサイトの開発に注意を向けます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-308">Focus on developing a great site rather than building infrastructure.</span></span> 
     
-#### <a name="azure-ad"></a><span data-ttu-id="0fb2f-309">Azure AD</span><span class="sxs-lookup"><span data-stu-id="0fb2f-309">Azure AD</span></span>
+#### <a name="azure-ad"></a><span data-ttu-id="3fb55-309">Azure AD</span><span class="sxs-lookup"><span data-stu-id="3fb55-309">Azure AD</span></span>
 
-<span data-ttu-id="0fb2f-p114">Azure AD は、クラウド サービスに ID 管理機能とアクセス制御機能を提供します。機能には、クラウド ベースのディレクトリ データ ストアや ID サービスのコア セット (ユーザー ログオン プロセス、認証サービス、および AD FS を含む) があります。Azure AD に付属する ID サービスは、オンプレミス Active Directory の展開と簡単に統合でき、サード パーティの ID プロバイダーを十分にサポートしています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p114">Azure AD provides identity management and access control capabilities for cloud services. Capabilities include a cloud-based store for directory data and a core set of identity services, including user logon processes, authentication services, and AD FS. The identity services that are included with Azure AD easily integrate with your on-premises Active Directory deployments and fully support third-party identity providers.</span></span> 
+<span data-ttu-id="3fb55-p114">Azure AD は、クラウド サービスに ID 管理機能とアクセス制御機能を提供します。機能には、クラウド ベースのディレクトリ データ ストアや ID サービスのコア セット (ユーザー ログオン プロセス、認証サービス、および AD FS を含む) があります。Azure AD に付属する ID サービスは、オンプレミス Active Directory の展開と簡単に統合でき、サード パーティの ID プロバイダーを十分にサポートしています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p114">Azure AD provides identity management and access control capabilities for cloud services. Capabilities include a cloud-based store for directory data and a core set of identity services, including user logon processes, authentication services, and AD FS. The identity services that are included with Azure AD easily integrate with your on-premises Active Directory deployments and fully support third-party identity providers.</span></span> 
   
-<span data-ttu-id="0fb2f-p115">付属図は、インターネットに直接接続されたサイトにとって重要な領域と認証の構成を示しています。図は、Azure Active Directory テナントを示しています。これには、Azure の SharePoint ファームと次の 2 つのゾーンが含まれています:</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p115">The accompanying diagram shows the configuration of zones and authentication that is important for Internet-facing sites. The diagram shows the Azure Active Directory Tenant, which contains a SharePoint Farm on Azure with two zones:</span></span> 
+<span data-ttu-id="3fb55-p115">付属図は、インターネットに直接接続されたサイトにとって重要な領域と認証の構成を示しています。図は、Azure Active Directory テナントを示しています。これには、Azure の SharePoint ファームと次の 2 つのゾーンが含まれています:</span><span class="sxs-lookup"><span data-stu-id="3fb55-p115">The accompanying diagram shows the configuration of zones and authentication that is important for Internet-facing sites. The diagram shows the Azure Active Directory Tenant, which contains a SharePoint Farm on Azure with two zones:</span></span> 
   
-- <span data-ttu-id="0fb2f-315">インターネット ゾーン。ここでは、匿名の訪問者と認証済みの訪問者およびネットワーク外部の顧客とやり取りします。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-315">An Internet zone that interacts with Anonymous and Authenticated visitors and customers outside the network</span></span> 
+- <span data-ttu-id="3fb55-315">インターネット ゾーン。ここでは、匿名の訪問者と認証済みの訪問者およびネットワーク外部の顧客とやり取りします。</span><span class="sxs-lookup"><span data-stu-id="3fb55-315">An Internet zone that interacts with Anonymous and Authenticated visitors and customers outside the network</span></span> 
     
-- <span data-ttu-id="0fb2f-316">既定のゾーン。これには、クロール用の NTLM と、VPN トンネルを介してオンプレミス Active Directory 展開とやり取りする Windows 認証が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-316">A default zone that contains NTLM for Crawl and Windows Authentication that interacts with your on-premises Active Directory deployment over a VPN tunnel.</span></span> 
+- <span data-ttu-id="3fb55-316">既定のゾーン。これには、クロール用の NTLM と、VPN トンネルを介してオンプレミス Active Directory 展開とやり取りする Windows 認証が含まれます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-316">A default zone that contains NTLM for Crawl and Windows Authentication that interacts with your on-premises Active Directory deployment over a VPN tunnel.</span></span> 
     
-### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a><span data-ttu-id="0fb2f-317">オンプレミス ファーム + Azure の障害復旧</span><span class="sxs-lookup"><span data-stu-id="0fb2f-317">On-premises Farm plus Disaster Recovery in Azure</span></span>
+### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a><span data-ttu-id="3fb55-317">オンプレミス ファーム + Azure の障害復旧</span><span class="sxs-lookup"><span data-stu-id="3fb55-317">On-premises Farm plus Disaster Recovery in Azure</span></span>
 
-<span data-ttu-id="0fb2f-p116">ビジネス要件に合った障害復旧オプションを選択します。Azure は、障害回復をこれから始めようとする企業に対して基本レベルのオプションを提供するとともに、高い復元要件を持つ企業に対しては詳細なオプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p116">Choose a disaster recovery option that matches your business requirements. Azure provides entry-level options for companies getting started with disaster recovery and advanced options for enterprises with high resiliency requirements.</span></span> 
+<span data-ttu-id="3fb55-p116">ビジネス要件に合った障害復旧オプションを選択します。Azure は、障害回復をこれから始めようとする企業に対して基本レベルのオプションを提供するとともに、高い復元要件を持つ企業に対しては詳細なオプションを提供します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p116">Choose a disaster recovery option that matches your business requirements. Azure provides entry-level options for companies getting started with disaster recovery and advanced options for enterprises with high resiliency requirements.</span></span> 
   
-#### <a name="cold-standby"></a><span data-ttu-id="0fb2f-320">コールド スタンバイ</span><span class="sxs-lookup"><span data-stu-id="0fb2f-320">Cold standby</span></span>
+#### <a name="cold-standby"></a><span data-ttu-id="3fb55-320">コールド スタンバイ</span><span class="sxs-lookup"><span data-stu-id="3fb55-320">Cold standby</span></span>
 
-- <span data-ttu-id="0fb2f-p117">ファームは完全に構築されていますが、仮想マシンは停止状態です。(料金は仮想マシンの稼働時のみ発生します。)</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p117">The farm is fully built, but the virtual machines are stopped. (You're paying only when they're running!)</span></span> 
+- <span data-ttu-id="3fb55-p117">ファームは完全に構築されていますが、仮想マシンは停止状態です。(料金は仮想マシンの稼働時のみ発生します。)</span><span class="sxs-lookup"><span data-stu-id="3fb55-p117">The farm is fully built, but the virtual machines are stopped. (You're paying only when they're running!)</span></span> 
     
-- <span data-ttu-id="0fb2f-323">環境の保守には、仮想マシンを時折始動すること、環境への修正プログラムの適用、更新、検証が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-323">Maintaining the environment includes starting the virtual machines from time-to-time, patching, updating, and verifying the environment.</span></span> 
+- <span data-ttu-id="3fb55-323">環境の保守には、仮想マシンを時折始動すること、環境への修正プログラムの適用、更新、検証が含まれます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-323">Maintaining the environment includes starting the virtual machines from time-to-time, patching, updating, and verifying the environment.</span></span> 
     
-- <span data-ttu-id="0fb2f-324">障害発生時に、環境全体を開始します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-324">Start the full environment in the event of a disaster.</span></span> 
+- <span data-ttu-id="3fb55-324">障害発生時に、環境全体を開始します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-324">Start the full environment in the event of a disaster.</span></span> 
     
-#### <a name="warm-standby"></a><span data-ttu-id="0fb2f-325">ウォーム スタンバイ</span><span class="sxs-lookup"><span data-stu-id="0fb2f-325">Warm standby</span></span>
+#### <a name="warm-standby"></a><span data-ttu-id="3fb55-325">ウォーム スタンバイ</span><span class="sxs-lookup"><span data-stu-id="3fb55-325">Warm standby</span></span>
 
-- <span data-ttu-id="0fb2f-326">これには、プロビジョニング済みで稼働中の小規模のファームが含まれます。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-326">This includes a small farm that is provisioned and running.</span></span> 
+- <span data-ttu-id="3fb55-326">これには、プロビジョニング済みで稼働中の小規模のファームが含まれます。</span><span class="sxs-lookup"><span data-stu-id="3fb55-326">This includes a small farm that is provisioned and running.</span></span> 
     
-- <span data-ttu-id="0fb2f-327">フェールオーバー時には、このファームがただちにユーザーに対応します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-327">The farm can immediately serve users in the event of a failover.</span></span> 
+- <span data-ttu-id="3fb55-327">フェールオーバー時には、このファームがただちにユーザーに対応します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-327">The farm can immediately serve users in the event of a failover.</span></span> 
     
-- <span data-ttu-id="0fb2f-328">迅速にスケール アウトを実行して、ユーザー全体に対応します。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-328">Scale out the farm quickly to serve the full user base.</span></span> 
+- <span data-ttu-id="3fb55-328">迅速にスケール アウトを実行して、ユーザー全体に対応します。</span><span class="sxs-lookup"><span data-stu-id="3fb55-328">Scale out the farm quickly to serve the full user base.</span></span> 
     
-#### <a name="hot-standby"></a><span data-ttu-id="0fb2f-329">ホット スタンバイ</span><span class="sxs-lookup"><span data-stu-id="0fb2f-329">Hot standby</span></span>
+#### <a name="hot-standby"></a><span data-ttu-id="3fb55-329">ホット スタンバイ</span><span class="sxs-lookup"><span data-stu-id="3fb55-329">Hot standby</span></span>
 
-<span data-ttu-id="0fb2f-330">フルサイズのファームがプロビジョニングされ、スタンバイ状態で稼働しています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-330">A fully-sized farm is provisioned and running on standby.</span></span> 
+<span data-ttu-id="3fb55-330">フルサイズのファームがプロビジョニングされ、スタンバイ状態で稼働しています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-330">A fully-sized farm is provisioned and running on standby.</span></span> 
   
-<span data-ttu-id="0fb2f-p118">付属図は、Azure の SharePoint 災害復旧環境と相互作用するオンプレミスのファームを示しています。オンプレミス データベースは、VPN トンネルを介した SQL Server のログ配布を使用して、SharePoint 災害復旧環境にアクセスします。この環境には、SharePoint データベース、2 つの Web フロントエンド サーバー、および 2 つの SharePoint アプリケーション サーバーを含む 2 つの SQL データベース サーバーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="0fb2f-p118">The accompanying diagram shows an on-premises farm interacting with the SharePoint Disaster Recovery Environment on Azure. The on-premises databases use SQL Server Log Shipping over the VPN tunnel to access the SharePoint Disaster Recovery environment, which includes two SQL database servers that contain the SharePoint databases, two Web Front End servers, and two SharePoint Application servers.</span></span> 
+<span data-ttu-id="3fb55-p118">付属図は、Azure の SharePoint 災害復旧環境と相互作用するオンプレミスのファームを示しています。オンプレミス データベースは、VPN トンネルを介した SQL Server のログ配布を使用して、SharePoint 災害復旧環境にアクセスします。この環境には、SharePoint データベース、2 つの Web フロントエンド サーバー、および 2 つの SharePoint アプリケーション サーバーを含む 2 つの SQL データベース サーバーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="3fb55-p118">The accompanying diagram shows an on-premises farm interacting with the SharePoint Disaster Recovery Environment on Azure. The on-premises databases use SQL Server Log Shipping over the VPN tunnel to access the SharePoint Disaster Recovery environment, which includes two SQL database servers that contain the SharePoint databases, two Web Front End servers, and two SharePoint Application servers.</span></span> 
   
 

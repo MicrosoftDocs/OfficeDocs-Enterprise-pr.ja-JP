@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 では、コラボレーション、セキュリティとコンプライアンス、モビリティ、および intellgence および分析を可能にする強力なオンラインのクラウド サービスを提供します。このページでは、管理者および IT プロフェッショナルを対象と、展開、構成および企業の組織で Office 365 サービスを管理するためのガイダンスを提供します。
+description: Microsoft Office 365 は、コラボレーション、セキュリティとコンプライアンス、モビリティ、intellgence および分析を可能にするパワフルなオンラインクラウドサービスを提供しています。 このページでは、エンタープライズ組織で Office 365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスを提供します。
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "27745321"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487133"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 は、コラボレーション、セキュリティとコンプライアンス、モビリティ、および intellgence および分析を有効にする強力なオンラインのクラウド サービスを提供します。このページには、管理者とは、展開、構成、および Office を管理する IT プロフェッショナル向けのガイダンスへのリンクが用意されています&nbsp;365 サービス企業です。</p>
+<p>Microsoft Office&nbsp;365 は、コラボレーション、セキュリティとコンプライアンス、モビリティ、intellgence および分析を可能にするパワフルなオンラインクラウドサービスを提供しています。 このページでは、エンタープライズ組織で Office&nbsp;365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスへのリンクを提供します。</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -35,8 +35,8 @@ ms.locfileid: "27745321"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>FastTrack とガイドの配置</h3>
-                <p>FastTrack センターの利点を使用して、Office の&nbsp;ガイドについての計画、展開、および Office の導入を促進するに 365&nbsp;365 サービスを組織します。</p>
+                        <h3>fasttrack を使用したガイド付きの展開</h3>
+                <p>office&nbsp;365 の fasttrack Center 特典は、組織で office&nbsp;365 サービスを計画、展開、推進するためのガイド付きの支援に使用します。</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "27745321"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 への移行</h3>
-                <p>Office に、既存のオンプレミス インフラストラクチャを移行&nbsp;365 と、マイクロソフトのクラウドです。</p>
+                <p>既存のオンプレミスインフラストラクチャを Office&nbsp;365 および Microsoft クラウドに移行します。</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@ ms.locfileid: "27745321"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 ProPlus</h3>
-                <p>Office を計画、展開、および&nbsp;、エンタープライズ環境での 365 ProPlus。</p>
+                <p>エンタープライズ環境で Office&nbsp;365 ProPlus を計画、展開、管理します。</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ ms.locfileid: "27745321"
                     </div>
                     <div class="cardText">
                         <h3>Office 365 を展開する</h3>
-                <p>Office を展開する&nbsp;、テナントの設定、ネットワークを構成して、ユーザーのプロビジョニングを含む、365 です。</p>
+                <p>Office&nbsp;365 を展開します。テナントの設定、ネットワークの構成、ユーザーのプロビジョニングなどを行います。</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "27745321"
                     </div>
                     <div class="cardText">
                         <h3>ハイブリッド展開</h3>
-                <p>構成し、既存のオンプレミス インフラストラクチャと Office との間のハイブリッド展開の管理&nbsp;365 です。</p>
+                <p>既存のオンプレミスのインフラストラクチャと Office&nbsp;365 間のハイブリッド展開を構成および管理します。</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +130,8 @@ ms.locfileid: "27745321"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 のトレーニング</h3>
-                <p>Office を改善する&nbsp;365 の管理知識とスキルを持つ Office&nbsp;IT プロフェッショナル向けのトレーニング コースを 365 です。</p>
+                        <h3>Office 365 トレーニング</h3>
+                <p>IT 担当者&nbsp;向け office&nbsp;365 トレーニングコースを使用して、office 365 の管理に関する知識とスキルを向上させます。</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ ms.locfileid: "27745321"
     </li>
 </ul>
 
-<h2>Office 365 のワークロードを展開します。</h2>
+<h2>Office 365 ワークロードの展開</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -243,7 +243,7 @@ ms.locfileid: "27745321"
 </ul>
 
 <hr>
-<h2>多くのリソース</h2>
+<h2>その他の技術情報</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -256,8 +256,8 @@ ms.locfileid: "27745321"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 テクニカル コミュニティ</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">ベスト ・ プラクティス、ニュース、および最新の傾向および Office に関連するトピックについて&nbsp;365 です。</a></p>
+                        <h3>Office 365 Tech Community</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Office&nbsp;365 に関するベストプラクティス、ニュース、および最新の傾向とトピックについて説明します。</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "27745321"
                     </div>
                     <div class="cardText">
                         <h3>サポートを受ける</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Office のヘルプのサポートにお問い合わせください&nbsp;365 です。</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Office&nbsp;365 のヘルプについては、サポートに問い合わせてください。</a></p>
                     </div>
                 </div>
             </div>
@@ -291,7 +291,7 @@ ms.locfileid: "27745321"
                     </div>
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
-                        <p><a href="https://docs.microsoft.com/microsoft-365">Microsoft 365 について学習します。</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">詳細については、「Microsoft 365」を参照してください。</a></p>
                     </div>
                 </div>
             </div>

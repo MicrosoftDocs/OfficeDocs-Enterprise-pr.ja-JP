@@ -1,5 +1,5 @@
 ---
-title: Skype for business のオンプレミスでハイブリッド先進認証を使用するように構成する方法
+title: Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,161 +14,168 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。
-ms.openlocfilehash: 23a9262659ae47f5aeb5577b9bb45ea2c1aad235
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372934"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490327"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a><span data-ttu-id="22f8a-103">Skype for business のオンプレミスでハイブリッド先進認証を使用するように構成する方法</span><span class="sxs-lookup"><span data-stu-id="22f8a-103">How to configure Skype for Business on-premises to use Hybrid Modern Authentication</span></span>
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a><span data-ttu-id="b9126-103">Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには</span><span class="sxs-lookup"><span data-stu-id="b9126-103">How to configure Skype for Business on-premises to use Hybrid Modern Authentication</span></span>
 
-<span data-ttu-id="22f8a-104">先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-104">Modern Authentication, is a method of identity management that offers more secure user authentication and authorization, is available for Skype for Business server on-premises and Exchange server on-premises, as well as split-domain Skype for Business hybrids.</span></span>
+<span data-ttu-id="b9126-104">先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。</span><span class="sxs-lookup"><span data-stu-id="b9126-104">Modern Authentication, is a method of identity management that offers more secure user authentication and authorization, is available for Skype for Business server on-premises and Exchange server on-premises, as well as split-domain Skype for Business hybrids.</span></span>
   
- <span data-ttu-id="22f8a-105">**重要**モダン認証 (MA) の詳細と、会社や組織での使用を希望する理由は何ですか。</span><span class="sxs-lookup"><span data-stu-id="22f8a-105">**Important** Would you like to know more about Modern Authentication (MA) and why you might prefer to use it in your company or organization?</span></span> <span data-ttu-id="22f8a-106">概要については、[このドキュメント](hybrid-modern-auth-overview.md)を確認してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-106">Check [this document](hybrid-modern-auth-overview.md) for an overview.</span></span> <span data-ttu-id="22f8a-107">MA でサポートされている Skype for business のトポロジについて知る必要がある場合は、ここで説明します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-107">If you need to know what Skype for Business topologies are supported with MA, that's documented here!</span></span> 
+ <span data-ttu-id="b9126-105">**重要**モダン認証 (MA) の詳細と、会社や組織での使用を希望する理由は何ですか。</span><span class="sxs-lookup"><span data-stu-id="b9126-105">**Important** Would you like to know more about Modern Authentication (MA) and why you might prefer to use it in your company or organization?</span></span> <span data-ttu-id="b9126-106">概要については、[このドキュメント](hybrid-modern-auth-overview.md)を確認してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-106">Check [this document](hybrid-modern-auth-overview.md) for an overview.</span></span> <span data-ttu-id="b9126-107">MA でサポートされている Skype for business のトポロジについて知る必要がある場合は、ここで説明します。</span><span class="sxs-lookup"><span data-stu-id="b9126-107">If you need to know what Skype for Business topologies are supported with MA, that's documented here!</span></span> 
   
- <span data-ttu-id="22f8a-108">**開始する前に**、次のように呼び出します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-108">**Before we begin**, I call:</span></span> 
+ <span data-ttu-id="b9126-108">**開始する前に**、次のように呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b9126-108">**Before we begin**, I call:</span></span> 
   
-- <span data-ttu-id="22f8a-109">モダン認証\> MA</span><span class="sxs-lookup"><span data-stu-id="22f8a-109">Modern Authentication \> MA</span></span>
+- <span data-ttu-id="b9126-109">モダン認証\> MA</span><span class="sxs-lookup"><span data-stu-id="b9126-109">Modern Authentication \> MA</span></span>
     
-- <span data-ttu-id="22f8a-110">ハイブリッド先進認証\>の HMA</span><span class="sxs-lookup"><span data-stu-id="22f8a-110">Hybrid Modern Authentication \> HMA</span></span>
+- <span data-ttu-id="b9126-110">ハイブリッド先進認証\>の HMA</span><span class="sxs-lookup"><span data-stu-id="b9126-110">Hybrid Modern Authentication \> HMA</span></span>
     
-- <span data-ttu-id="22f8a-111">Exchange オンプレミス\>の EXCH</span><span class="sxs-lookup"><span data-stu-id="22f8a-111">Exchange on-premises \> EXCH</span></span>
+- <span data-ttu-id="b9126-111">Exchange オンプレミス\>の EXCH</span><span class="sxs-lookup"><span data-stu-id="b9126-111">Exchange on-premises \> EXCH</span></span>
     
-- <span data-ttu-id="22f8a-112">Exchange Online \> exo</span><span class="sxs-lookup"><span data-stu-id="22f8a-112">Exchange Online \> EXO</span></span>
+- <span data-ttu-id="b9126-112">Exchange Online \> exo</span><span class="sxs-lookup"><span data-stu-id="b9126-112">Exchange Online \> EXO</span></span>
     
-- <span data-ttu-id="22f8a-113">Skype for business オンプレミス\>の sfb</span><span class="sxs-lookup"><span data-stu-id="22f8a-113">Skype for Business on-premises \> SFB</span></span>
+- <span data-ttu-id="b9126-113">Skype for business オンプレミス\>の sfb</span><span class="sxs-lookup"><span data-stu-id="b9126-113">Skype for Business on-premises \> SFB</span></span>
     
-- <span data-ttu-id="22f8a-114">と Skype for business Online \> sfbo</span><span class="sxs-lookup"><span data-stu-id="22f8a-114">and Skype for Business Online \> SFBO</span></span>
+- <span data-ttu-id="b9126-114">と Skype for business Online \> sfbo</span><span class="sxs-lookup"><span data-stu-id="b9126-114">and Skype for Business Online \> SFBO</span></span>
     
-<span data-ttu-id="22f8a-115">また、この記事のグラフィックに ' グレイアウト ' または ' 淡色 ' のオブジェクトが含まれている場合は、グレーの要素が MA 固有の構成に含まれて**いない**ことを意味します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-115">Also,  \*if a graphic in this article has an object that's 'grayed-out' or 'dimmed' that means the element shown in gray **is not** included in MA-specific configuration.</span></span> * 
+<span data-ttu-id="b9126-115">また、この記事のグラフィックに ' グレイアウト ' または ' 淡色 ' のオブジェクトが含まれている場合は、グレーの要素が MA 固有の構成に含まれて**いない**ことを意味します。</span><span class="sxs-lookup"><span data-stu-id="b9126-115">Also,  \*if a graphic in this article has an object that's 'grayed-out' or 'dimmed' that means the element shown in gray **is not** included in MA-specific configuration.</span></span> * 
   
-## <a name="read-the-summary"></a><span data-ttu-id="22f8a-116">概要の読み取り</span><span class="sxs-lookup"><span data-stu-id="22f8a-116">Read the summary</span></span>
+## <a name="read-the-summary"></a><span data-ttu-id="b9126-116">概要の読み取り</span><span class="sxs-lookup"><span data-stu-id="b9126-116">Read the summary</span></span>
 
-<span data-ttu-id="22f8a-117">この概要では、実行中に失われる可能性のある手順にプロセスを要約します。また、処理中の場所を追跡するためのチェックリスト全体に適しています。</span><span class="sxs-lookup"><span data-stu-id="22f8a-117">This summary boils the process into steps that might otherwise get lost during the execution, and is good for an overall check-list to keep track of where you are in the process.</span></span>
+<span data-ttu-id="b9126-117">この概要では、実行中に失われる可能性のある手順にプロセスを要約します。また、処理中の場所を追跡するためのチェックリスト全体に適しています。</span><span class="sxs-lookup"><span data-stu-id="b9126-117">This summary boils the process into steps that might otherwise get lost during the execution, and is good for an overall check-list to keep track of where you are in the process.</span></span>
   
-1. <span data-ttu-id="22f8a-118">最初に、すべての前提条件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-118">First, make sure you meet all the prerequisites.</span></span>
+1. <span data-ttu-id="b9126-118">最初に、すべての前提条件を満たしていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-118">First, make sure you meet all the prerequisites.</span></span>
     
-1. <span data-ttu-id="22f8a-119">Skype for business と Exchange の両方に共通の**前提条件**が多数存在するため、[事前要件チェックリストの概要記事を参照してください](hybrid-modern-auth-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="22f8a-119">Since many **prerequisites** are common for both Skype for Business and Exchange, [see the overview article for your pre-req checklist](hybrid-modern-auth-overview.md).</span></span> <span data-ttu-id="22f8a-120">この手順を実行する*前*に、この記事の手順を開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-120">Do this  *before*  you begin any of the steps in this article.</span></span> 
+1. <span data-ttu-id="b9126-119">Skype for business と Exchange の両方に共通の**前提条件**が多数存在するため、[事前要件チェックリストの概要記事を参照してください](hybrid-modern-auth-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="b9126-119">Since many **prerequisites** are common for both Skype for Business and Exchange, [see the overview article for your pre-req checklist](hybrid-modern-auth-overview.md).</span></span> <span data-ttu-id="b9126-120">この手順を実行する*前*に、この記事の手順を開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9126-120">Do this  *before*  you begin any of the steps in this article.</span></span> 
     
-2. <span data-ttu-id="22f8a-121">ファイルまたは OneNote で必要な HMA 固有の情報を収集します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-121">Collect the HMA-specific info you'll need in a file, or OneNote.</span></span>
+2. <span data-ttu-id="b9126-121">ファイルまたは OneNote で必要な HMA 固有の情報を収集します。</span><span class="sxs-lookup"><span data-stu-id="b9126-121">Collect the HMA-specific info you'll need in a file, or OneNote.</span></span>
     
-3. <span data-ttu-id="22f8a-122">exo のモダン認証を有効にします (まだ有効になっていない場合)。</span><span class="sxs-lookup"><span data-stu-id="22f8a-122">Turn ON Modern Authentication for EXO (if it is not already turned on).</span></span>
+3. <span data-ttu-id="b9126-122">exo のモダン認証を有効にします (まだ有効になっていない場合)。</span><span class="sxs-lookup"><span data-stu-id="b9126-122">Turn ON Modern Authentication for EXO (if it is not already turned on).</span></span>
     
-4. <span data-ttu-id="22f8a-123">sfbo の先進認証を有効にします (まだ有効になっていない場合)。</span><span class="sxs-lookup"><span data-stu-id="22f8a-123">Turn ON Modern Authentication for SFBO (if it is not already turned on).</span></span>
+4. <span data-ttu-id="b9126-123">sfbo の先進認証を有効にします (まだ有効になっていない場合)。</span><span class="sxs-lookup"><span data-stu-id="b9126-123">Turn ON Modern Authentication for SFBO (if it is not already turned on).</span></span>
     
-5. <span data-ttu-id="22f8a-124">Exchange on-premises のハイブリッド先進認証を有効にします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-124">Turn ON Hybrid Modern Authentication for Exchange on-premises.</span></span>
+5. <span data-ttu-id="b9126-124">Exchange on-premises のハイブリッド先進認証を有効にします。</span><span class="sxs-lookup"><span data-stu-id="b9126-124">Turn ON Hybrid Modern Authentication for Exchange on-premises.</span></span>
     
-6. <span data-ttu-id="22f8a-125">オンプレミスの Skype for business のハイブリッドモダン認証を有効にします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-125">Turn ON Hybrid Modern Authentication for Skype for Business on-premises.</span></span>
+6. <span data-ttu-id="b9126-125">オンプレミスの Skype for business のハイブリッドモダン認証を有効にします。</span><span class="sxs-lookup"><span data-stu-id="b9126-125">Turn ON Hybrid Modern Authentication for Skype for Business on-premises.</span></span>
     
-<span data-ttu-id="22f8a-126">メモこれらの手順では、sfb、sfbo、EXCH、exo に対して MA を有効にします。これは、sfb および sfbo (EXCH/exo への依存関係を含む) の HMA 構成に参加できるすべての製品です。</span><span class="sxs-lookup"><span data-stu-id="22f8a-126">Note These steps turn on MA for SFB, SFBO, EXCH, and EXO -- that is, all the products that can participate in a HMA configuration of SFB and SFBO (including dependencies on EXCH/EXO).</span></span> <span data-ttu-id="22f8a-127">言い換えると、ユーザーがハイブリッドの一部 (exo + sfbo、exo + sfb、EXCH + sfbo、または EXCH + sfb) で作成したメールボックスを持つ場合、完成した製品は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-127">In other words, if your users are homed in/have mailboxes created in any part of the Hybrid (EXO + SFBO, EXO + SFB, EXCH + SFBO, or EXCH + SFB), your finished product will look like this:</span></span>
+<span data-ttu-id="b9126-126">メモこれらの手順では、sfb、sfbo、EXCH、exo に対して MA を有効にします。これは、sfb および sfbo (EXCH/exo への依存関係を含む) の HMA 構成に参加できるすべての製品です。</span><span class="sxs-lookup"><span data-stu-id="b9126-126">Note These steps turn on MA for SFB, SFBO, EXCH, and EXO -- that is, all the products that can participate in a HMA configuration of SFB and SFBO (including dependencies on EXCH/EXO).</span></span> <span data-ttu-id="b9126-127">言い換えると、ユーザーがハイブリッドの一部 (exo + sfbo、exo + sfb、EXCH + sfbo、または EXCH + sfb) で作成したメールボックスを持つ場合、完成した製品は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="b9126-127">In other words, if your users are homed in/have mailboxes created in any part of the Hybrid (EXO + SFBO, EXO + SFB, EXCH + SFBO, or EXCH + SFB), your finished product will look like this:</span></span>
   
 ![混在した6つの Skype for business HMA トポロジは、可能なすべての場所で MA になります。](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-<span data-ttu-id="22f8a-129">MA を有効にするには、4つの異なる場所が存在します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-129">As you can see there are four different places to turn on MA!</span></span> <span data-ttu-id="22f8a-130">最適なユーザー環境を実現するには、これらのすべての場所で MA をオンにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-130">For the best user experience we recommend you turn on MA in all four of these locations.</span></span> <span data-ttu-id="22f8a-131">これらのすべての場所で ma をオンにできない場合は、環境に必要な場所で ma のみを有効にするように手順を調整します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-131">If you can't turn MA on in all these locations, adjust the steps so that you turn on MA only in the locations that are necessary for your environment.</span></span>
+<span data-ttu-id="b9126-129">MA を有効にするには、4つの異なる場所が存在します。</span><span class="sxs-lookup"><span data-stu-id="b9126-129">As you can see there are four different places to turn on MA!</span></span> <span data-ttu-id="b9126-130">最適なユーザー環境を実現するには、これらのすべての場所で MA をオンにすることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b9126-130">For the best user experience we recommend you turn on MA in all four of these locations.</span></span> <span data-ttu-id="b9126-131">これらのすべての場所で ma をオンにできない場合は、環境に必要な場所で ma のみを有効にするように手順を調整します。</span><span class="sxs-lookup"><span data-stu-id="b9126-131">If you can't turn MA on in all these locations, adjust the steps so that you turn on MA only in the locations that are necessary for your environment.</span></span>
   
-<span data-ttu-id="22f8a-132">サポートされているトポロジについては、「 [Skype for business での Skype for business のサポート」を](https://technet.microsoft.com/en-us/library/mt803262.aspx)参照してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-132">See the [Supportability topic for Skype for Business with MA](https://technet.microsoft.com/en-us/library/mt803262.aspx) for supported topologies.</span></span> 
+<span data-ttu-id="b9126-132">サポートされているトポロジについては、「 [Skype for business での Skype for business のサポート」を](https://technet.microsoft.com/en-us/library/mt803262.aspx)参照してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-132">See the [Supportability topic for Skype for Business with MA](https://technet.microsoft.com/en-us/library/mt803262.aspx) for supported topologies.</span></span> 
   
- <span data-ttu-id="22f8a-133">**重要**開始する前に、すべての前提条件を満たしていることをもう一度確認してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-133">**Important** Double-check that you've met all the prerequisites before you begin.</span></span> <span data-ttu-id="22f8a-134">この情報について[は、こちら](hybrid-modern-auth-overview.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-134">You'll find that information [here](hybrid-modern-auth-overview.md).</span></span>
+ <span data-ttu-id="b9126-133">**重要**開始する前に、すべての前提条件を満たしていることをもう一度確認してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-133">**Important** Double-check that you've met all the prerequisites before you begin.</span></span> <span data-ttu-id="b9126-134">この情報について[は、こちら](hybrid-modern-auth-overview.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-134">You'll find that information [here](hybrid-modern-auth-overview.md).</span></span>
   
-## <a name="collect-all-hma-specific-info-youll-need"></a><span data-ttu-id="22f8a-135">必要なすべての HMA 固有の情報を収集する</span><span class="sxs-lookup"><span data-stu-id="22f8a-135">Collect all HMA-specific info you'll need</span></span>
+## <a name="collect-all-hma-specific-info-youll-need"></a><span data-ttu-id="b9126-135">必要なすべての HMA 固有の情報を収集する</span><span class="sxs-lookup"><span data-stu-id="b9126-135">Collect all HMA-specific info you'll need</span></span>
 
-<span data-ttu-id="22f8a-136">先進認証を使用するための[前提条件](hybrid-modern-auth-overview.md)を満たしていることを再度確認した後、前の手順で HMA を構成するために必要な情報を保持するためのファイルを作成しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-136">After you've double-checked that you meet the [prerequisites](hybrid-modern-auth-overview.md) to use Modern Authentication (see the note above), you should create a file to hold the info you'll need for configuring HMA in the steps ahead.</span></span> <span data-ttu-id="22f8a-137">この記事で使用されている例:</span><span class="sxs-lookup"><span data-stu-id="22f8a-137">Examples used in this article:</span></span> 
+<span data-ttu-id="b9126-136">先進認証を使用するための[前提条件](hybrid-modern-auth-overview.md)を満たしていることを再度確認した後、前の手順で HMA を構成するために必要な情報を保持するためのファイルを作成しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9126-136">After you've double-checked that you meet the [prerequisites](hybrid-modern-auth-overview.md) to use Modern Authentication (see the note above), you should create a file to hold the info you'll need for configuring HMA in the steps ahead.</span></span> <span data-ttu-id="b9126-137">この記事で使用されている例:</span><span class="sxs-lookup"><span data-stu-id="b9126-137">Examples used in this article:</span></span> 
   
-- <span data-ttu-id="22f8a-138">**SIP/SMTP ドメイン**</span><span class="sxs-lookup"><span data-stu-id="22f8a-138">**SIP/SMTP domain**</span></span>
+- <span data-ttu-id="b9126-138">**SIP/SMTP ドメイン**</span><span class="sxs-lookup"><span data-stu-id="b9126-138">**SIP/SMTP domain**</span></span>
     
-  - <span data-ttu-id="22f8a-139">渡し.</span><span class="sxs-lookup"><span data-stu-id="22f8a-139">Ex.</span></span> <span data-ttu-id="22f8a-140">contoso.com (Office 365 と連携している)</span><span class="sxs-lookup"><span data-stu-id="22f8a-140">contoso.com (is federated with Office 365)</span></span>
+  - <span data-ttu-id="b9126-139">渡し.</span><span class="sxs-lookup"><span data-stu-id="b9126-139">Ex.</span></span> <span data-ttu-id="b9126-140">contoso.com (Office 365 と連携している)</span><span class="sxs-lookup"><span data-stu-id="b9126-140">contoso.com (is federated with Office 365)</span></span>
     
-- <span data-ttu-id="22f8a-141">**テナント ID**</span><span class="sxs-lookup"><span data-stu-id="22f8a-141">**Tenant ID**</span></span>
+- <span data-ttu-id="b9126-141">**テナント ID**</span><span class="sxs-lookup"><span data-stu-id="b9126-141">**Tenant ID**</span></span>
     
-  - <span data-ttu-id="22f8a-142">Office 365 テナント (contoso.onmicrosoft.com のログイン時) を表す GUID。</span><span class="sxs-lookup"><span data-stu-id="22f8a-142">The GUID that represents your Office 365 tenant (at the login of contoso.onmicrosoft.com).</span></span>
+  - <span data-ttu-id="b9126-142">Office 365 テナント (contoso.onmicrosoft.com のログイン時) を表す GUID。</span><span class="sxs-lookup"><span data-stu-id="b9126-142">The GUID that represents your Office 365 tenant (at the login of contoso.onmicrosoft.com).</span></span>
     
-- <span data-ttu-id="22f8a-143">**sfb 2015 CU5 Web サービスの url**</span><span class="sxs-lookup"><span data-stu-id="22f8a-143">**SFB 2015 CU5 Web Service URLs**</span></span>
+- <span data-ttu-id="b9126-143">**sfb 2015 CU5 Web サービスの url**</span><span class="sxs-lookup"><span data-stu-id="b9126-143">**SFB 2015 CU5 Web Service URLs**</span></span>
     
-<span data-ttu-id="22f8a-144">展開されているすべての sfb 2015 プールについて、内部および外部 web サービスの URL が必要になります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-144">You will need internal and external web service URL's for all SfB 2015 pools deployed.</span></span> <span data-ttu-id="22f8a-145">これらを取得するには、Skype for business 管理シェルから次のように実行します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-145">To obtain these, run the following from Skype for Business Management Shell:</span></span>
+<span data-ttu-id="b9126-144">展開されているすべての sfb 2015 プールについて、内部および外部 web サービスの URL が必要になります。</span><span class="sxs-lookup"><span data-stu-id="b9126-144">You will need internal and external web service URL's for all SfB 2015 pools deployed.</span></span> <span data-ttu-id="b9126-145">これらを取得するには、Skype for business 管理シェルから次のように実行します。</span><span class="sxs-lookup"><span data-stu-id="b9126-145">To obtain these, run the following from Skype for Business Management Shell:</span></span>
   
-<span data-ttu-id="22f8a-146">取得-csservice-WebServer |Select-Object poolfqdn、internalfqdn、externalfqdn |州</span><span class="sxs-lookup"><span data-stu-id="22f8a-146">Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL</span></span>
-  
-- <span data-ttu-id="22f8a-147">渡し.</span><span class="sxs-lookup"><span data-stu-id="22f8a-147">Ex.</span></span> <span data-ttu-id="22f8a-148">社外https://lyncwebint01.contoso.com</span><span class="sxs-lookup"><span data-stu-id="22f8a-148">Internal: https://lyncwebint01.contoso.com</span></span>
-    
-- <span data-ttu-id="22f8a-149">渡し.</span><span class="sxs-lookup"><span data-stu-id="22f8a-149">Ex.</span></span> <span data-ttu-id="22f8a-150">社外https://lyncwebext01.contoso.com</span><span class="sxs-lookup"><span data-stu-id="22f8a-150">External: https://lyncwebext01.contoso.com</span></span>
-    
-<span data-ttu-id="22f8a-151">Standard Edition サーバーを使用している場合、内部 URL は空白になります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-151">If you are using a Standard Edition server, the internal URL will be blank.</span></span> <span data-ttu-id="22f8a-152">この場合は、内部 URL にプールの fqdn を使用します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-152">In this case, use the pool fqdn for the internal URL.</span></span>
-  
-## <a name="turn-on-modern-authentication-for-exo"></a><span data-ttu-id="22f8a-153">exo の先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="22f8a-153">Turn on Modern Authentication for EXO</span></span>
+```
+Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
+```
 
-<span data-ttu-id="22f8a-154">「 [Exchange Online: テナントの先進認証を有効にする方法](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)」の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="22f8a-154">Follow the instructions here: [Exchange Online: How to enable your tenant for modern authentication.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)</span></span>
+- <span data-ttu-id="b9126-146">渡し.</span><span class="sxs-lookup"><span data-stu-id="b9126-146">Ex.</span></span> <span data-ttu-id="b9126-147">社外https://lyncwebint01.contoso.com</span><span class="sxs-lookup"><span data-stu-id="b9126-147">Internal: https://lyncwebint01.contoso.com</span></span>
+    
+- <span data-ttu-id="b9126-148">渡し.</span><span class="sxs-lookup"><span data-stu-id="b9126-148">Ex.</span></span> <span data-ttu-id="b9126-149">社外https://lyncwebext01.contoso.com</span><span class="sxs-lookup"><span data-stu-id="b9126-149">External: https://lyncwebext01.contoso.com</span></span>
+    
+<span data-ttu-id="b9126-150">Standard Edition サーバーを使用している場合、内部 URL は空白になります。</span><span class="sxs-lookup"><span data-stu-id="b9126-150">If you are using a Standard Edition server, the internal URL will be blank.</span></span> <span data-ttu-id="b9126-151">この場合は、内部 URL にプールの fqdn を使用します。</span><span class="sxs-lookup"><span data-stu-id="b9126-151">In this case, use the pool fqdn for the internal URL.</span></span>
   
-## <a name="turn-on-modern-authentication-for-sfbo"></a><span data-ttu-id="22f8a-155">sfbo の先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="22f8a-155">Turn on Modern Authentication for SFBO</span></span>
+## <a name="turn-on-modern-authentication-for-exo"></a><span data-ttu-id="b9126-152">exo の先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="b9126-152">Turn on Modern Authentication for EXO</span></span>
 
-<span data-ttu-id="22f8a-156">「 [Skype for business Online: テナントで先進認証を有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-156">Follow the instructions here: [Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).</span></span>
+<span data-ttu-id="b9126-153">「 [Exchange Online: テナントの先進認証を有効にする方法](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)」の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="b9126-153">Follow the instructions here: [Exchange Online: How to enable your tenant for modern authentication.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)</span></span>
   
-## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a><span data-ttu-id="22f8a-157">Exchange on-premises のハイブリッド先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="22f8a-157">Turn on Hybrid Modern Authentication for Exchange on-premises</span></span>
+## <a name="turn-on-modern-authentication-for-sfbo"></a><span data-ttu-id="b9126-154">sfbo の先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="b9126-154">Turn on Modern Authentication for SFBO</span></span>
 
-<span data-ttu-id="22f8a-158">この記事の手順に従ってください:[ハイブリッド先進認証を使用するように Exchange Server をオンプレミスで構成する方法](configure-exchange-server-for-hybrid-modern-authentication.md)。</span><span class="sxs-lookup"><span data-stu-id="22f8a-158">Follow the instructions here: [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](configure-exchange-server-for-hybrid-modern-authentication.md).</span></span>
+<span data-ttu-id="b9126-155">「 [Skype for business Online: テナントで先進認証を有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="b9126-155">Follow the instructions here: [Skype for Business Online: Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).</span></span>
   
-## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a><span data-ttu-id="22f8a-159">オンプレミスの Skype for business のハイブリッドモダン認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="22f8a-159">Turn on Hybrid Modern Authentication for Skype for Business on-premises</span></span>
+## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a><span data-ttu-id="b9126-156">Exchange on-premises のハイブリッド先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="b9126-156">Turn on Hybrid Modern Authentication for Exchange on-premises</span></span>
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a><span data-ttu-id="22f8a-160">オンプレミスの web サービス url を spn として Azure AD に追加する</span><span class="sxs-lookup"><span data-stu-id="22f8a-160">Add on-premises web service URLs as SPNs in Azure AD</span></span>
+<span data-ttu-id="b9126-157">この記事の手順に従ってください:[ハイブリッド先進認証を使用するように Exchange Server をオンプレミスで構成する方法](configure-exchange-server-for-hybrid-modern-authentication.md)。</span><span class="sxs-lookup"><span data-stu-id="b9126-157">Follow the instructions here: [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](configure-exchange-server-for-hybrid-modern-authentication.md).</span></span>
+  
+## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a><span data-ttu-id="b9126-158">オンプレミスの Skype for business のハイブリッドモダン認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="b9126-158">Turn on Hybrid Modern Authentication for Skype for Business on-premises</span></span>
 
-<span data-ttu-id="22f8a-161">ここで、sfbo のサービスプリンシパルとして、前の手順で収集した url を追加するコマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-161">Now you'll need to run commands to add the URLs (collected earlier) as Service Principals in SFBO.</span></span>
-  
- <span data-ttu-id="22f8a-162">**メモ**サービスプリンシパル名 (spn) は、web サービスを識別し、それをセキュリティプリンシパル (アカウント名やグループなど) に関連付けて、サービスが権限のあるユーザーの代理として機能できるようにします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-162">**Note** Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user.</span></span> <span data-ttu-id="22f8a-163">クライアントがサーバーに対して認証を行うと、spn に含まれる情報が利用されます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-163">Clients authenticating to a server make use of information that's contained in SPNs.</span></span> 
-  
-1. <span data-ttu-id="22f8a-164">最初に、[次の手順に従っ](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)て AAD に接続します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-164">First, connect to AAD with [these instructions](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).</span></span>
-    
-2. <span data-ttu-id="22f8a-165">このコマンドをオンプレミスで実行して、sfb web サービス url の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-165">Run this command, on-premises, to get a list of SFB web service URLs.</span></span>
-    
-  - <span data-ttu-id="22f8a-166">new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 |Select-expandproperty serviceprincipalnames</span><span class="sxs-lookup"><span data-stu-id="22f8a-166">Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames</span></span>
-    
-    <span data-ttu-id="22f8a-167">AppPrincipalId は ' 00000004 ' で始まっていることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-167">Notice that the AppPrincipalId begins with '00000004'.</span></span> <span data-ttu-id="22f8a-168">これは、Skype for business Online に対応しています。</span><span class="sxs-lookup"><span data-stu-id="22f8a-168">This corresponds to Skype for Business Online.</span></span>
-    
-    <span data-ttu-id="22f8a-169">このコマンドの出力には、SE と WS の URL が含まれていますが、ほとんどは、00000004-0000-0ff1-ce00-000000000000/で始まる spn から構成されていますのでメモしておいてください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-169">Take note of (and screenshot for later comparison) the output of this command, which will include an SE and WS URL, but mostly consist of SPNs that begin with 00000004-0000-0ff1-ce00-000000000000/.</span></span>
-    
-3. <span data-ttu-id="22f8a-170">オンプレミスの内部**または**外部の sfb url が欠落してhttps://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)いる場合 (たとえば、である場合)、それらのレコードをこのリストに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="22f8a-170">If the internal **or** external SFB URLs from on-premises are missing (for example, https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com) we will need to add those specific records to this list.</span></span> 
-    
-    <span data-ttu-id="22f8a-171">次の url の*例は*、Add コマンドで実際の url に置き換えてください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-171">Be sure to replace  *the example URLs*  , below, with your actual URLs in the Add commands!</span></span> 
-    
-  - <span data-ttu-id="22f8a-172">$x = new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000</span><span class="sxs-lookup"><span data-stu-id="22f8a-172">$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000</span></span>
-    
-  - <span data-ttu-id="22f8a-173">$x します。 Add (" *https://lyncwebint01.contoso.com/* ")</span><span class="sxs-lookup"><span data-stu-id="22f8a-173">$x.ServicePrincipalnames.Add(" *https://lyncwebint01.contoso.com/*  ")</span></span> 
-    
-  - <span data-ttu-id="22f8a-174">$x します。 Add (" *https://lyncwebext01.contoso.com/* ")</span><span class="sxs-lookup"><span data-stu-id="22f8a-174">$x.ServicePrincipalnames.Add(" *https://lyncwebext01.contoso.com/*  ")</span></span> 
-    
-  - <span data-ttu-id="22f8a-175">new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000-serviceprincipalnames $x serviceprincipalnames</span><span class="sxs-lookup"><span data-stu-id="22f8a-175">Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames</span></span>
-    
-4. <span data-ttu-id="22f8a-176">手順2で new-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-176">Verify your new records were added by running the Get-MsolServicePrincipal command from step 2 again, and looking through the output.</span></span> <span data-ttu-id="22f8a-177">リスト/スクリーンショットを以前から新しい spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。</span><span class="sxs-lookup"><span data-stu-id="22f8a-177">Compare the list / screenshot from before to the new list of SPNs (you may also screenshot the new list for your records).</span></span> <span data-ttu-id="22f8a-178">成功した場合は、2つの新しい url が一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-178">If you were successful, you will see the two new URLs in the list.</span></span> <span data-ttu-id="22f8a-179">この例では、spn の一覧に特定の url https://lyncweb01.contoso.comとhttps://autodiscover.contoso.comが含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="22f8a-179">Going by our example, the list of SPNs will now include the specific URLs https://lyncweb01.contoso.com and https://autodiscover.contoso.com.</span></span>
-    
-### <a name="create-the-evosts-auth-server-object"></a><span data-ttu-id="22f8a-180">evosts 認証サーバーオブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="22f8a-180">Create the EvoSTS Auth Server Object</span></span>
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a><span data-ttu-id="b9126-159">オンプレミスの web サービス url を spn として Azure AD に追加する</span><span class="sxs-lookup"><span data-stu-id="b9126-159">Add on-premises web service URLs as SPNs in Azure AD</span></span>
 
-<span data-ttu-id="22f8a-181">Skype for business 管理シェルで次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-181">Run the following command in the Skype for Business Management Shell.</span></span>
+<span data-ttu-id="b9126-160">ここで、sfbo のサービスプリンシパルとして、前の手順で収集した url を追加するコマンドを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9126-160">Now you'll need to run commands to add the URLs (collected earlier) as Service Principals in SFBO.</span></span>
   
-- <span data-ttu-id="22f8a-182">New-csoauthserver-Identity evosts-metadataurl https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -acceptsecurityidentifierinformation $true-Type AzureAD</span><span class="sxs-lookup"><span data-stu-id="22f8a-182">New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD</span></span>
+ <span data-ttu-id="b9126-161">**メモ**サービスプリンシパル名 (spn) は、web サービスを識別し、それをセキュリティプリンシパル (アカウント名やグループなど) に関連付けて、サービスが権限のあるユーザーの代理として機能できるようにします。</span><span class="sxs-lookup"><span data-stu-id="b9126-161">**Note** Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user.</span></span> <span data-ttu-id="b9126-162">クライアントがサーバーに対して認証を行うと、spn に含まれる情報が利用されます。</span><span class="sxs-lookup"><span data-stu-id="b9126-162">Clients authenticating to a server make use of information that's contained in SPNs.</span></span> 
+  
+1. <span data-ttu-id="b9126-163">最初に、[次の手順に従っ](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)て AAD に接続します。</span><span class="sxs-lookup"><span data-stu-id="b9126-163">First, connect to AAD with [these instructions](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).</span></span>
     
-### <a name="enable-hybrid-modern-authentication"></a><span data-ttu-id="22f8a-183">ハイブリッド先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="22f8a-183">Enable Hybrid Modern Authentication</span></span>
+2. <span data-ttu-id="b9126-164">このコマンドをオンプレミスで実行して、sfb web サービス url の一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="b9126-164">Run this command, on-premises, to get a list of SFB web service URLs.</span></span>
 
-<span data-ttu-id="22f8a-184">これは、実際に MA を有効にする手順です。</span><span class="sxs-lookup"><span data-stu-id="22f8a-184">This is the step that actually turns MA on.</span></span> <span data-ttu-id="22f8a-185">以前のすべての手順は、クライアント認証フローを変更せずに、前もって実行することができます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-185">All the previous steps can be run ahead of time without changing the client authentication flow.</span></span> <span data-ttu-id="22f8a-186">認証フローを変更する準備ができたら、Skype for business 管理シェルで次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-186">When you are ready to change the authentication flow, run this command in the Skype for Business Management Shell.</span></span> 
-  
-- <span data-ttu-id="22f8a-187">Set-csoauthconfiguration-clientauthorizationoauthserveridentity evosts</span><span class="sxs-lookup"><span data-stu-id="22f8a-187">Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS</span></span>
+   <span data-ttu-id="b9126-165">AppPrincipalId はから始まることに`00000004`注意してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-165">Note that the AppPrincipalId begins with `00000004`.</span></span> <span data-ttu-id="b9126-166">これは、Skype for business Online に対応しています。</span><span class="sxs-lookup"><span data-stu-id="b9126-166">This corresponds to Skype for Business Online.</span></span>
     
-## <a name="verify"></a><span data-ttu-id="22f8a-188">ことを確認</span><span class="sxs-lookup"><span data-stu-id="22f8a-188">Verify</span></span>
+   <span data-ttu-id="b9126-167">このコマンドの出力では、SE と WS の URL が含まれていますが、ほとんどは、で`00000004-0000-0ff1-ce00-000000000000/`始まる spn から構成されていますのでメモを取ります。</span><span class="sxs-lookup"><span data-stu-id="b9126-167">Take note of (and screenshot for later comparison) the output of this command, which will include an SE and WS URL, but mostly consist of SPNs that begin with `00000004-0000-0ff1-ce00-000000000000/`.</span></span>
+    
+```
+Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+```
+    
+3. <span data-ttu-id="b9126-168">オンプレミスの内部**または**外部の sfb url が欠落してhttps://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)いる場合 (たとえば、である場合)、それらのレコードをこのリストに追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b9126-168">If the internal **or** external SFB URLs from on-premises are missing (for example, https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com) we will need to add those specific records to this list.</span></span> 
+    
+    <span data-ttu-id="b9126-169">次の url の*例は*、Add コマンドで実際の url に置き換えてください。</span><span class="sxs-lookup"><span data-stu-id="b9126-169">Be sure to replace  *the example URLs*  , below, with your actual URLs in the Add commands!</span></span> 
+  
+```  
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```
+  
+4. <span data-ttu-id="b9126-170">手順2で new-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="b9126-170">Verify your new records were added by running the Get-MsolServicePrincipal command from step 2 again, and looking through the output.</span></span> <span data-ttu-id="b9126-171">リスト/スクリーンショットを以前から新しい spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。</span><span class="sxs-lookup"><span data-stu-id="b9126-171">Compare the list / screenshot from before to the new list of SPNs (you may also screenshot the new list for your records).</span></span> <span data-ttu-id="b9126-172">成功した場合は、2つの新しい url が一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9126-172">If you were successful, you will see the two new URLs in the list.</span></span> <span data-ttu-id="b9126-173">この例では、spn の一覧に特定の url https://lyncweb01.contoso.comとhttps://lyncwebext01.contoso.com/が含まれるようになりました。</span><span class="sxs-lookup"><span data-stu-id="b9126-173">Going by our example, the list of SPNs will now include the specific URLs https://lyncweb01.contoso.com and https://lyncwebext01.contoso.com/.</span></span>
+    
+### <a name="create-the-evosts-auth-server-object"></a><span data-ttu-id="b9126-174">evosts 認証サーバーオブジェクトを作成する</span><span class="sxs-lookup"><span data-stu-id="b9126-174">Create the EvoSTS Auth Server Object</span></span>
 
-<span data-ttu-id="22f8a-189">HMA を有効にすると、クライアントの次のログインは新しい認証フローを使用します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-189">Once you enable HMA, a client's next login will use the new auth flow.</span></span> <span data-ttu-id="22f8a-190">HMA を有効にしても、クライアントに対しては再認証はトリガーされませんので注意してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-190">Note that just turning on HMA won't trigger a re-authentication for any client.</span></span> <span data-ttu-id="22f8a-191">クライアントは、認証トークンまたは証明書の有効期間に基づいて再認証を行います。</span><span class="sxs-lookup"><span data-stu-id="22f8a-191">The clients re-authenticate based on the lifetime of the auth tokens and/or certs they have.</span></span>
+<span data-ttu-id="b9126-175">Skype for business 管理シェルで次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="b9126-175">Run the following command in the Skype for Business Management Shell.</span></span>
   
-<span data-ttu-id="22f8a-192">HMA が機能していることを確認した後で、その機能が動作していることをテストするには、テスト用の sfb Windows クライアントからサインアウトし、[資格情報の削除] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-192">To test that HMA is working after you've enabled it, sign out of a test SFB Windows client and be sure to click 'delete my credentials'.</span></span> <span data-ttu-id="22f8a-193">もう一度サインインします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-193">Sign in again.</span></span> <span data-ttu-id="22f8a-194">クライアントは、最新の認証フローを使用するようになり、ログインに ' 職場または学校のアカウントに対する**Office 365**プロンプトが含まれるようになりました。これで、クライアントがサーバーに接続してログインする前に表示されます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-194">The client should now use the Modern Auth flow and your login will now include an **Office 365** prompt for a 'Work or school' account, seen right before the client contacts the server and logs you in.</span></span> 
+```
+New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
+```
+    
+### <a name="enable-hybrid-modern-authentication"></a><span data-ttu-id="b9126-176">ハイブリッド先進認証を有効にする</span><span class="sxs-lookup"><span data-stu-id="b9126-176">Enable Hybrid Modern Authentication</span></span>
+
+<span data-ttu-id="b9126-177">これは、実際に MA を有効にする手順です。</span><span class="sxs-lookup"><span data-stu-id="b9126-177">This is the step that actually turns MA on.</span></span> <span data-ttu-id="b9126-178">以前のすべての手順は、クライアント認証フローを変更せずに、前もって実行することができます。</span><span class="sxs-lookup"><span data-stu-id="b9126-178">All the previous steps can be run ahead of time without changing the client authentication flow.</span></span> <span data-ttu-id="b9126-179">認証フローを変更する準備ができたら、Skype for business 管理シェルで次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="b9126-179">When you are ready to change the authentication flow, run this command in the Skype for Business Management Shell.</span></span> 
   
-<span data-ttu-id="22f8a-195">「OAuth Authority」については、「Skype for business クライアント」の「構成情報」も確認してください。</span><span class="sxs-lookup"><span data-stu-id="22f8a-195">You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'.</span></span> <span data-ttu-id="22f8a-196">クライアントコンピューターでこれを行うには、CTRL キーを押しながら、Windows 通知トレイの [Skype for business] アイコンを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-196">To do this on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray.</span></span> <span data-ttu-id="22f8a-197">表示されるメニューの [構成情報] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-197">Click Configuration Information in the menu that appears.</span></span> <span data-ttu-id="22f8a-198">デスクトップに表示される [Skype for business の構成情報] ウィンドウで、次のものを探します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-198">In the 'Skype for Business Configuration Information' window that will appear on the desktop, look for the following:</span></span>
+```
+Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
+```
+    
+## <a name="verify"></a><span data-ttu-id="b9126-180">ことを確認</span><span class="sxs-lookup"><span data-stu-id="b9126-180">Verify</span></span>
+
+<span data-ttu-id="b9126-181">HMA を有効にすると、クライアントの次のログインは新しい認証フローを使用します。</span><span class="sxs-lookup"><span data-stu-id="b9126-181">Once you enable HMA, a client's next login will use the new auth flow.</span></span> <span data-ttu-id="b9126-182">HMA を有効にしても、クライアントに対しては再認証はトリガーされませんので注意してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-182">Note that just turning on HMA won't trigger a re-authentication for any client.</span></span> <span data-ttu-id="b9126-183">クライアントは、認証トークンまたは証明書の有効期間に基づいて再認証を行います。</span><span class="sxs-lookup"><span data-stu-id="b9126-183">The clients re-authenticate based on the lifetime of the auth tokens and/or certs they have.</span></span>
+  
+<span data-ttu-id="b9126-184">HMA が機能していることを確認した後で、その機能が動作していることをテストするには、テスト用の sfb Windows クライアントからサインアウトし、[資格情報の削除] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9126-184">To test that HMA is working after you've enabled it, sign out of a test SFB Windows client and be sure to click 'delete my credentials'.</span></span> <span data-ttu-id="b9126-185">もう一度サインインします。</span><span class="sxs-lookup"><span data-stu-id="b9126-185">Sign in again.</span></span> <span data-ttu-id="b9126-186">クライアントは、最新の認証フローを使用するようになり、ログインに ' 職場または学校のアカウントに対する**Office 365**プロンプトが含まれるようになりました。これで、クライアントがサーバーに接続してログインする前に表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9126-186">The client should now use the Modern Auth flow and your login will now include an **Office 365** prompt for a 'Work or school' account, seen right before the client contacts the server and logs you in.</span></span> 
+  
+<span data-ttu-id="b9126-187">「OAuth Authority」については、「Skype for business クライアント」の「構成情報」も確認してください。</span><span class="sxs-lookup"><span data-stu-id="b9126-187">You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'.</span></span> <span data-ttu-id="b9126-188">クライアントコンピューターでこれを行うには、CTRL キーを押しながら、Windows 通知トレイの [Skype for business] アイコンを右クリックします。</span><span class="sxs-lookup"><span data-stu-id="b9126-188">To do this on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray.</span></span> <span data-ttu-id="b9126-189">表示されるメニューの [構成情報] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9126-189">Click Configuration Information in the menu that appears.</span></span> <span data-ttu-id="b9126-190">デスクトップに表示される [Skype for business の構成情報] ウィンドウで、次のものを探します。</span><span class="sxs-lookup"><span data-stu-id="b9126-190">In the 'Skype for Business Configuration Information' window that will appear on the desktop, look for the following:</span></span>
   
 ![モダン認証を使用した Skype for business クライアントの構成情報は、のhttps://login.windows.net/common/oauth2/authorizeLync および EWS OAUTH Authority の URL を示しています。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-<span data-ttu-id="22f8a-200">また、CTRL キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイにもあります) を右クリックし、[接続の状態] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="22f8a-200">You should also hold down the CTRL key at the same time you right click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'.</span></span> <span data-ttu-id="22f8a-201">OAuth で使用されるベアラートークンを表す、認証の種類 '\*ベアラー ' に対してクライアントの SMTP アドレスを検索します。</span><span class="sxs-lookup"><span data-stu-id="22f8a-201">Look for the client's SMTP address against an Authn type of 'Bearer\*', which represents the bearer token used in OAuth.</span></span>
+<span data-ttu-id="b9126-192">また、CTRL キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイにもあります) を右クリックし、[接続の状態] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="b9126-192">You should also hold down the CTRL key at the same time you right click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'.</span></span> <span data-ttu-id="b9126-193">OAuth で使用されるベアラートークンを表す、認証の種類 '\*ベアラー ' に対してクライアントの SMTP アドレスを検索します。</span><span class="sxs-lookup"><span data-stu-id="b9126-193">Look for the client's SMTP address against an Authn type of 'Bearer\*', which represents the bearer token used in OAuth.</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="22f8a-202">関連記事</span><span class="sxs-lookup"><span data-stu-id="22f8a-202">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="b9126-194">関連記事</span><span class="sxs-lookup"><span data-stu-id="b9126-194">Related articles</span></span>
 
-<span data-ttu-id="22f8a-203">[モダン認証の概要に戻る](hybrid-modern-auth-overview.md)</span><span class="sxs-lookup"><span data-stu-id="22f8a-203">[Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md) .</span></span> 
+<span data-ttu-id="b9126-195">[モダン認証の概要に戻る](hybrid-modern-auth-overview.md)</span><span class="sxs-lookup"><span data-stu-id="b9126-195">[Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md) .</span></span> 
   
-<span data-ttu-id="22f8a-204">Skype for business クライアントで先進認証 (ADAL) を使用する方法を知る必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="22f8a-204">Do you need to know how to use Modern Authentication (ADAL) for your Skype for Business clients?</span></span> <span data-ttu-id="22f8a-205">[ここでは](https://technet.microsoft.com/en-us/library/mt710548.aspx)、手順を示しました。</span><span class="sxs-lookup"><span data-stu-id="22f8a-205">We've got steps [here](https://technet.microsoft.com/en-us/library/mt710548.aspx).</span></span>
+<span data-ttu-id="b9126-196">Skype for business クライアントで先進認証 (ADAL) を使用する方法を知る必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="b9126-196">Do you need to know how to use Modern Authentication (ADAL) for your Skype for Business clients?</span></span> <span data-ttu-id="b9126-197">[ここでは](https://technet.microsoft.com/en-us/library/mt710548.aspx)、手順を示しました。</span><span class="sxs-lookup"><span data-stu-id="b9126-197">We've got steps [here](https://technet.microsoft.com/en-us/library/mt710548.aspx).</span></span>
   
-<span data-ttu-id="22f8a-206">これらの手順は、sfb を使用せずにオンプレミスで実行されている Exchange サーバーに対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-206">Would you like to read these steps as they appear for Exchange Server, on-premises, running without SFB?</span></span> <span data-ttu-id="22f8a-207">これらの手順はこちらで入手できます。</span><span class="sxs-lookup"><span data-stu-id="22f8a-207">Those steps are available here.</span></span>
+<span data-ttu-id="b9126-198">これらの手順は、sfb を使用せずにオンプレミスで実行されている Exchange サーバーに対して表示されます。</span><span class="sxs-lookup"><span data-stu-id="b9126-198">Would you like to read these steps as they appear for Exchange Server, on-premises, running without SFB?</span></span> <span data-ttu-id="b9126-199">これらの手順はこちらで入手できます。</span><span class="sxs-lookup"><span data-stu-id="b9126-199">Those steps are available here.</span></span>
   
 
