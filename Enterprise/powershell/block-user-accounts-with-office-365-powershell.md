@@ -13,34 +13,34 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Office 365 の PowerShell を使用してブロックし、Office 365 アカウントへのアクセスをブロック解除する方法について説明します。
+description: office 365 PowerShell を使用して office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
 ms.openlocfilehash: 0e1ac3f61acafedd77c2af760b8316aa6b936e7b
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546478"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491393"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントをブロックする
 
-**の概要:** Office 365 の PowerShell を使用してブロックし、Office 365 アカウントへのアクセスをブロック解除する方法について説明します。
+**概要:** office 365 PowerShell を使用して office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
   
-Office 365 アカウントへのアクセスをブロックできなくなりますアカウントを使用してサインインして、サービスと Office 365 の組織内のデータにアクセスします。Office 365 の PowerShell を使用するには個別にアクセスし、複数のユーザー アカウントをブロックします。
+office 365 アカウントへのアクセスをブロックすると、ユーザーがアカウントを使用して office 365 組織のサービスとデータにサインインしてアクセスするのを防ぐことができます。 Office 365 PowerShell を使用して、個別および複数のユーザーアカウントへのアクセスをブロックすることができます。
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Azure Active Directory の PowerShell を使用して、グラフのモジュールの
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
-最初は[、Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  
-### <a name="block-access-to-individual-user-accounts"></a>個々 のユーザー アカウントへのアクセスをブロック
+### <a name="block-access-to-individual-user-accounts"></a>個別のユーザーアカウントへのアクセスをブロックする
 
-個々 のユーザー アカウントをブロックするのにには、次の構文を使用します。
+個々のユーザーアカウントをブロックするには、次の構文を使用します。
   
 ```
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
 > [!NOTE]
-> セット AzureAD コマンドレットでのオブジェクト Id パラメーターは、どちらかのアカウントでサインイン名、ユーザー プリンシパル名、またはアカウントのオブジェクト ID とも呼ばれますを受け入れます。 
+> AzureAD コマンドレットの-ObjectID パラメーターは、アカウントのサインイン名 (ユーザープリンシパル名とも呼ばれる)、またはアカウントのオブジェクト ID のいずれかを受け入れます。 
   
 この例では、ユーザー アカウント fabricec@litwareinc.com へのアクセスをブロックします。
   
@@ -54,7 +54,7 @@ Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
-UPN は、ユーザーの表示名に基づくユーザー アカウントを表示するには、次のコマンドを使用します。
+ユーザーの表示名に基づいてユーザーアカウント UPN を表示するには、次のコマンドを使用します。
   
 ```
 $userName="<display name>"
@@ -62,14 +62,14 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-この例では、氏の窓台をという名前のユーザーのユーザー アカウント UPN を使用します。
+この例では、caleb/ls という名前のユーザーのユーザーアカウント UPN を表示します。
   
 ```
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-ユーザーの表示名を基に、アカウントをブロックするには、次のコマンドを使用します。
+ユーザーの表示名に基づいてアカウントをブロックするには、次のコマンドを使用します。
   
 ```
 $userName="<display name>"
@@ -77,15 +77,15 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-いつでも、次のコマンドでユーザー アカウントのブロック状態をチェックできます。
+次のコマンドを使用して、ユーザーアカウントのブロックされた状態をいつでも確認できます。
   
 ```
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a>複数のユーザー アカウントへのアクセスをブロック
+### <a name="block-access-to-multiple-user-accounts"></a>複数のユーザーアカウントへのアクセスをブロックする
 
-複数のユーザー アカウントへのアクセスをブロックするには、1 アカウントでサインイン名次のように各行に含まれているテキスト ファイルを作成します。
+複数のユーザーアカウントへのアクセスをブロックするには、次のように各行に1つのアカウントサインイン名を含むテキストファイルを作成します。
     
   ```
 akol@contoso.com
@@ -93,7 +93,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-次のコマンドでは、テキスト ファイルの例とは、C:\My Documents\Accounts.txt です。これをテキスト ファイルのパスとファイル名で置き換えます。
+次のコマンドでは、サンプルテキストファイルは C:\My documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
   
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     
@@ -107,12 +107,12 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>モジュールを使用して、Microsoft Azure Active Directory Windows PowerShell の
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
 
-最初は[、Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
     
-### <a name="block-access-to-individual-user-accounts"></a>個々 のユーザー アカウントへのアクセスをブロック
+### <a name="block-access-to-individual-user-accounts"></a>個別のユーザーアカウントへのアクセスをブロックする
 
 個々のユーザー アカウントへのアクセスをブロックするには、次の構文を使用します。
   
@@ -132,22 +132,22 @@ Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
-いつでも、次のコマンドでユーザー アカウントのブロック状態をチェックできます。
+次のコマンドを使用して、ユーザーアカウントのブロックされた状態をいつでも確認できます。
   
 ```
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a>複数のユーザー アカウントへのアクセスをブロック
+### <a name="block-access-to-multiple-user-accounts"></a>複数のユーザーアカウントへのアクセスをブロックする
 
-最初に、次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成します。
+最初に、次のような各行に1つのアカウントを含むテキストファイルを作成します。
     
   ```
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
   ```
-次のコマンドでは、テキスト ファイルの例とは、C:\My Documents\Accounts.txt です。これをテキスト ファイルのパスとファイル名で置き換えます。
+次のコマンドでは、サンプルテキストファイルは C:\My documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
     
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     

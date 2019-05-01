@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: '概要: これらの記事を活用して、Microsoft のクラウド オファリングを使用したセキュリティ ソリューションを展開できます。'
 ms.openlocfilehash: 17bb89553b97d1a15c076d9bb4ce9acca19e62d2
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915272"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487213"
 ---
 # <a name="security-solutions"></a>セキュリティ ソリューション
 

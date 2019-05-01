@@ -1,5 +1,5 @@
 ---
-title: "アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション"
+title: アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
-description: "この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。"
+description: この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487823"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション
 
@@ -121,7 +122,7 @@ SharePoint Online から、ユーザーは、オンプレミスの SAP システ
   
 付属図は、すべてのデータベースおよび検索用の専用のアプリケーション サーバーと通信する Web サーバー、アプリケーション サーバー、および Active Directory を伴うオンプレミス 環境を示しています。 
   
-以下の機能があります。 
+以下の機能があります。  
   
 - 容量計画とサイジング。 
     
@@ -287,7 +288,7 @@ Azure における SharePoint 環境の設計:
 
 既存のオンプレミス環境における SharePoint 環境の設計: 
   
-- SharePoint ファーム トポロジと論理アーキテクチャ。 
+- SharePoint ファーム トポロジと論理アーキテクチャ。  
     
 - サーバー ハードウェア。 
     
@@ -343,7 +344,7 @@ Azure および SharePoint 環境を展開および管理します:
     
 - SharePoint 環境をバックアップします。 
     
-- 障害回復環境およびプロトコルを実装します。 
+- 障害回復環境およびプロトコルを実装します。  
     
 #### <a name="on-premises"></a>オンプレミス
 

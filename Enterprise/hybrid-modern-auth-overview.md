@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの skype for business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの skype for business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: 26efa77e3c98c0395188e6ca7a2f65cd3b8b939e
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458347"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491403"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for business および Exchange サーバーで使用するための前提条件
 
@@ -90,6 +90,18 @@ evosts への変更により、オンプレミスのサーバーは、クライ�
   - Office 365 でフェデレーションドメインとして追加された SIP ドメイン
     
   - すべての sfb フロントエンドは、インターネットへの接続を、office 365 認証 url (tcp 443) および既知の証明書ルート crl (tcp 80) のように、「office の制限[url および IP」セクションの「Microsoft 125 Common and Office Online」に記載されているとおりに設定する必要があります。アドレス範囲](urls-and-ip-address-ranges.md)。
+  
+- **ハイブリッド Office 365 環境の Skype for business オンプレミス**
+  - skype for business server 2019 を skype for business server 2019 を実行しているすべてのサーバーと共に展開します。
+  
+  - skype for business server 2015 を skype for business server 2015 を実行しているすべてのサーバーと共に展開します。
+  
+  - 以下にリストされているように、2つの異なるサーバーバージョンを持つ展開。
+  
+     - skype for business server 2015 と skype for business server 2019
+     
+  - すべての Skype for business サーバーに最新の cummulative 更新プログラムがインストールされている必要があります。使用可能なすべての更新プログラムを検索して管理するには、 [skype for business Server 更新](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates)プログラムを参照してください
+  - ハイブリッド環境に Lync Server 2010 または2013がありません。
     
  **メモ**Skype for business フロントエンドサーバーがインターネットアクセスにプロキシサーバーを使用している場合は、使用するプロキシサーバーの IP アドレスとポート番号を、各フロントエンドの web.config ファイルの構成セクションに入力する必要があります。 
   
@@ -120,7 +132,17 @@ evosts への変更により、オンプレミスのサーバーは、クライ�
     
   - SSL オフロードが構成されていません。 SSL の終了と再暗号化がサポートされています。
     
-  - 環境がプロキシサーバーインフラストラクチャを利用して、サーバーをインターネットに接続できるようにする場合は、すべての Exchange サーバーに[internetwebproxy](https://technet.microsoft.com/en-us/library/bb123716%28v=exchg.160%29.aspx)プロパティで定義されたプロキシサーバーがあることを確認してください。
+  - 環境がプロキシサーバーインフラストラクチャを利用して、サーバーをインターネットに接続できるようにする場合は、すべての Exchange サーバーに[internetwebproxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx)プロパティで定義されたプロキシサーバーがあることを確認してください。
+  
+- **ハイブリッド Office 365 環境の Exchange Server オンプレミス**
+
+  - Exchange server 2013 を使用している場合は、少なくとも1つのサーバーにメールボックスとクライアントアクセスサーバーの役割がインストールされている必要があります。 メールボックスとクライアントアクセスの役割を別々のサーバーにインストールすることもできますが、信頼性を高め、パフォーマンスを向上させるために、各サーバーに両方の役割をインストールすることを強くお勧めします。
+  
+  - Exchange server 2016 以降のバージョンを使用している場合は、少なくとも1つのサーバーにメールボックスサーバーの役割がインストールされている必要があります。
+  
+  - ハイブリッド環境では、Exchange server 2007 または2010はありません。
+  
+  - すべての Exchange サーバーに最新の cummulative 更新プログラムがインストールされている必要があります。すべての利用可能な更新を検索して管理するには、「 [exchange を最新の累積更新プログラムにアップグレード](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019)する」を参照
     
 - **Exchange クライアントとプロトコルの要件**
   
@@ -164,6 +186,6 @@ evosts への変更により、オンプレミスのサーバーは、クライ�
     
 - [Skype for business のオンプレミスで先進認証を使用するように構成する方法](configure-skype-for-business-for-hybrid-modern-authentication.md)
     
-- [Skype for business と Exchange からハイブリッド先進認証を削除または無効にする](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [Skype for Business および Exchange からのハイブリッド先進認証の削除または無効化](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
     
 

@@ -1,5 +1,5 @@
 ---
-title: "アクセス可能な図 - Microsoft Office Server 製品のネットワーク統合"
+title: アクセス可能な図 - Microsoft Office Server 製品のネットワーク統合
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
-description: "この記事は、「Microsoft Office Server 製品のネットワーク統合」という名前の図のアクセス可能なテキスト バージョンです。"
+description: この記事は、「Microsoft Office Server 製品のネットワーク統合」という名前の図のアクセス可能なテキスト バージョンです。
 ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487774"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品のネットワーク統合
 

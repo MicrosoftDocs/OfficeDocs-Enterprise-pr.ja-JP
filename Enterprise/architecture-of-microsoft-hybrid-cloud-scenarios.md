@@ -1,5 +1,5 @@
 ---
-title: Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
+title: Microsoft ハイブリッド クラウドのシナリオのアーキテクチャ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: '概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。'
 ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038011"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490270"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 

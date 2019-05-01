@@ -13,13 +13,13 @@ ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用に、Active Directory フェデレーション サービス (AD FS) を作成して構成します。
 ms.openlocfilehash: add154dbce67c76b3f88e205c683711f72cb7b9a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741163"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487850"
 ---
-# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3:AD FS サーバーを構成する
+# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3: AD FS サーバーを構成する
 
  **概要:** Microsoft Azure で Office 365 の高可用性フェデレーション認証用に、Active Directory フェデレーション サービス (AD FS) を作成して構成します。
   

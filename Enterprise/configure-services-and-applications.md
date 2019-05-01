@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: Office 365 Enterprise のサービスおよびアプリケーションを構成する
 ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004364"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490133"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Office 365 Enterprise のサービスおよびアプリケーションを構成する
 

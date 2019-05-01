@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
 ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665240"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490070"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -141,7 +141,7 @@ A. はい。 Microsoft は、世界中の35国に130以上の場所でパブリ�
 
 はい。テナントは登録する資格があります。  現在の既定の地域から新しいローカルデータセンター geo にすべての exo メールボックスを移動します。  複数地域のサテライト地域で構成されている exo メールボックスは、意図したとおりに、衛星地域のデータ常駐を引き続き尊重するように移行されません。  SharePoint Online と onedrive for business は、移動プログラムの一部として新しいデータセンター geo に移行できませんが、onedrive for business 共有を構成して、複数地域プログラムで任意の場所に移動することができます。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コアデータを新しい Office 365 データセンター geo に移行する](moving-data-to-new-datacenter-geos.md)
 

@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが含まれています。
 ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574041"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487280"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
@@ -108,7 +108,7 @@ Office 365 の動作を向上させる方法の詳細については、これら
     
 - [Office 365 のビデオネットワークについてよく寄せられる質問 (FAQ)](office-365-video-networking-faq.md)
     
-- [Office 365 サービスに接続するネットワークデバイスを計画する](plan-for-network-devices.md)
+- [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
     
 - [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
     

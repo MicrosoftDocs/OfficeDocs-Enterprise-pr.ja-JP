@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
 ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001560"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487764"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Office 365 ID と Azure Active Directory について
 

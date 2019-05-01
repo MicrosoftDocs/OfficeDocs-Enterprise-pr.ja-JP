@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。'
 ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741343"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490153"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Advanced Threat Protection
 
@@ -156,7 +156,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
 これで、この環境を使用して、新しいポリシーを作成し ATP を試すことができるようになりました。
   
 > [!TIP]
-> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="see-also"></a>関連項目
 

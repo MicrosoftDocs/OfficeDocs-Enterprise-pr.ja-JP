@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 概要:電子情報開示用にユーザーのコンピューターのファイル収集を自動化する方法について説明します。
 ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001610"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490837"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>電子情報開示用にファイル収集を自動化する
 
@@ -328,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
-|個  <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
-|インチ  <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
+|12  <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
+|17   <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
    
 4. Exchange Trusted Subsystem アカウントに、\\\\Staging\\Cases$ 共有に対する読み取り、書き込み、実行のアクセス許可があることを確認します。
     

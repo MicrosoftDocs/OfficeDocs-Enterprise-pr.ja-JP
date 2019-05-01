@@ -13,11 +13,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
 ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741403"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487937"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性フェデレーション認証のフェーズ 5:Office 365 のフェデレーション認証を構成する
 

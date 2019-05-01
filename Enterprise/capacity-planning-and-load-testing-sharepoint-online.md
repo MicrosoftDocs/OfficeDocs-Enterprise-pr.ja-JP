@@ -14,11 +14,11 @@ search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この記事では、従来のロードテストを実行せずに SharePoint Online に展開する方法について説明します。これは許可されていないためです。
 ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765059"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490220"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量計画と負荷テスト SharePoint Online。
 

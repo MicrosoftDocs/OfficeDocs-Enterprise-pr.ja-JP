@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: '概要: Microsoft の SaaS ベースのクラウド製品のハイブリッドアーキテクチャとシナリオについて説明します (Office 365)。'
 ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741393"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487518"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Microsoft SaaS (Office 365) のハイブリッド クラウドのシナリオ
 
@@ -106,7 +106,7 @@ sharepoint ハイブリッドは、Office 365 の sharepoint Online とオンプ
   
 SharePoint ハイブリッドシナリオ:
   
-- [ハイブリッド OneDrive for Business](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
+- [ハイブリッドの OneDrive for Business](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
     
 - [ハイブリッドエクストラネットの B2B](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
     

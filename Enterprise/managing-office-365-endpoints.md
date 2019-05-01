@@ -16,11 +16,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ ネットワークの中には、一般的なインターネット上の場所へのアクセスや、強固なバックホールの導入、ネットワーク トラフィックの処理を制限しているものがあります。そのようなネットワーク上のコンピュータから Office 365 にアクセスできるようにするために、ネットワーク管理者およびプロキシ管理者は、Office 365 エンドポイントのリストを構成する FQDN、URL、および IP アドレスのリストを管理する必要があります。これらを直接ルート、プロキシ バイパス、またはファイアウォール ルールおよび PAC ファイルに追加して、ネットワーク要求が Office 365 に到達できるようにする必要があります。
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458357"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487090"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -53,7 +53,7 @@ PAC ファイルは、図 1 のポイント 1 で Web ブラウザーに展開�
 
 それとは別に、最適化カテゴリのエンドポイントの直接ルーティングのみを行う場合は、それ以降の処理をバイパスするために、プロキシ サーバーに送信する必要なすべての許可カテゴリのエンドポイントをプロキシ サーバーにリストする必要があります。たとえば、SSL の中断と検査およびプロキシ認証は、最適化および許可いずれのカテゴリのエンドポイントとも互換性がありません。プロキシ サーバーは、図 1 のポイント 2 です。
 
-一般的な構成は、プロキシ サーバーからの送信トラフィックをまったく処理せずに、プロキシ サーバーに到達する Office 365 ネットワーク トラフィックの宛先 IP アドレスを許可するというものです。SSL の中断と検査に関する問題の詳細については、「[Office 365 トラフィックに対するサード パーティ製のネットワーク デバイスまたはソリューションの使用](https://support.microsoft.com/ja-JP/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)」を参照してください。
+一般的な構成は、プロキシ サーバーからの送信トラフィックをまったく処理せずに、プロキシ サーバーに到達する Office 365 ネットワーク トラフィックの宛先 IP アドレスを許可するというものです。SSL の中断と検査に関する問題の詳細については、「[Office 365 トラフィックに対するサード パーティ製のネットワーク デバイスまたはソリューションの使用](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)」を参照してください。
 
 Get-PacFile スクリプトでは、次の 2 つの型のPAC ファイルが生成されます。
 
@@ -157,7 +157,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 プロキシ サーバーは最初の URL (前述の例の場合、serviceA.office.com) を検証し、この URL が Office 365 の発行に含まれるようになります。プロキシ サーバーはこの URL の DNS を解決して特定の IP アドレスになるように要求し、IP_1 が戻されることになります。中間の CNAME リダイレクト レコードの検証は行いません。
 
-ハードコーディングされた構成や、間接 Office 365 FQDN に基づくホワイトリストの使用は推奨されておらず、Microsoft もサポートしていませんし、ユーザー接続の問題が生じる原因となることが分かっています。CNAME リダイレクトをブロックしたり、Office 365 DNS エントリを不適切に解決したりする DNS ソリューションは、DNS 再帰が有効な状態の DNS 条件付き転送 (直接使用される Office 365 FQDN がスコープ対象) を介して解決できます。多くのサード パーティのネットワーク境界製品では、[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/ja-JP/office365/enterprise/office-365-ip-web-service)を使用して、推奨されている Office 365 エンドポイント ホワイトリストを自社の構成にネイティブに統合しています。
+ハードコーディングされた構成や、間接 Office 365 FQDN に基づくホワイトリストの使用は推奨されておらず、Microsoft もサポートしていませんし、ユーザー接続の問題が生じる原因となることが分かっています。CNAME リダイレクトをブロックしたり、Office 365 DNS エントリを不適切に解決したりする DNS ソリューションは、DNS 再帰が有効な状態の DNS 条件付き転送 (直接使用される Office 365 FQDN がスコープ対象) を介して解決できます。多くのサード パーティのネットワーク境界製品では、[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service)を使用して、推奨されている Office 365 エンドポイント ホワイトリストを自社の構成にネイティブに統合しています。
 
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft ドメイン名に nsatc.net や akadns.net などの名前が表示されるのはなぜですか?
 <a name="bkmk_akamai"> </a>

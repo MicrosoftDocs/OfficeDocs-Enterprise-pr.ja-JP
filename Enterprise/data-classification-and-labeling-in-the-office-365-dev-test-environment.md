@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 概要：Office 365 開発/テスト環境で Azure Information Protection (AIP) クライアントを使用して、データ分類とラベルの設定とデモを行います。
 ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741353"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490069"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境でのデータ分類とラベルの作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "31741353"
 Azure Information Protection クライアントを使用すると、Office 365 の SharePoint Online フォルダーにドキュメントをアップロードする前に、ドキュメントを分類できます。 この記事の指示に従って、Azure Information Protection クライアントをインストールし、データ分類をデモします。 詳細については、「 [Azure information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)」を参照してください。
   
 > [!TIP]
-> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
@@ -52,7 +52,7 @@ Azure Information Protection クライアントを使用すると、Office 365 �
     
 4. **[サービスを購入]** ページで、**[Azure Information Protection Premium P2]** の項目を探します。マウスでポイントし、**[無料試用版の開始]** をクリックします。
     
-5. **[注文の確認]** ページで、**[今すぐ実行]** をクリックします。
+5. **[注文の確認]** ページで、 **[今すぐ実行]** をクリックします。
     
 6. **[注文の受領書]** ページで、**[続行]** をクリックします。
     

@@ -3,19 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>2019 年 3 月 18 日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 2019/3/18 | [データ移行についての一般的な FAQ](/Office365/Enterprise/data-move-faq) | 更新日時 |
-| 2019/3/18 | [データの移行中および移行後](/Office365/Enterprise/during-and-after-your-data-move) | 更新日時 |
-| 2019/3/18 | 
-  [SharePoint Online のキャパシティ プランニングとロード テスト](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | 更新日時 |
-| 2019/3/18 | [Office 365 テナント間コラボレーション](/Office365/Enterprise/office-365-inter-tenant-collaboration) | 更新日時 |
-| 2019/3/19 | [Office 365 PowerShell でユーザー アカウントを表示する](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | 更新日時 |
-
-
 ## <a name="week-of-march-25-2019"></a>2019 年 3 月 25 日の週
 
 
@@ -23,22 +10,22 @@
 |------|------------|--------|
 | 2019/3/27 | [地域管理者を追加または削除する](/Office365/Enterprise/add-a-sharepoint-geo-admin) | 更新日時 |
 | 2019/3/27 | [複数地域環境の管理](/Office365/Enterprise/administering-a-multi-geo-environment) | 更新日時 |
-| 2019/3/27 | [複数地域環境での Exchange Online メールボックスの管理](/Office365/Enterprise/administering-exchange-online-multi-geo) | 追加 |
+| 2019/3/27 | [複数地域環境での Exchange Online メールボックスの管理](/Office365/Enterprise/administering-exchange-online-multi-geo) | 追加済み |
 | 2019/3/27 | [Office の検索を構成する365複数地域](/Office365/Enterprise/configure-search-for-multi-geo) | 更新日時 |
 | 2019/3/27 | [サテライトの場所を削除する](/Office365/Enterprise/delete-a-geo-location) | 更新日時 |
 | 2019/3/27 | [別の地域の場所に OneDrive サイトを移動する](/Office365/Enterprise/move-onedrive-between-geo-locations) | 更新日時 |
-| 2019/3/27 | [SharePoint サイトを別のジオ位置情報（プレビュー）へ移動します。](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 追加 |
-| 2019/3/27 | [特定 PDL で Office 365 グループを作成する](/Office365/Enterprise/multi-geo-add-group-with-pdl) | 追加 |
+| 2019/3/27 | [SharePoint サイトを別のジオ位置情報（プレビュー）へ移動します。](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 追加済み |
+| 2019/3/27 | [特定 PDL で Office 365 グループを作成する](/Office365/Enterprise/multi-geo-add-group-with-pdl) | 追加済み |
 | 2019/3/27 | [Exchange Multi-Geo](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | 更新日時 |
 | 2019/3/27 | [OneDrive および SharePoint Online の複数地域機能](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 更新日時 |
-| 2019/3/27 | [Office 365 Multi-Geo eDiscovery の構成](/Office365/Enterprise/multi-geo-ediscovery-configuration) | 追加 |
+| 2019/3/27 | [Office 365 Multi-Geo eDiscovery の構成](/Office365/Enterprise/multi-geo-ediscovery-configuration) | 追加済み |
 | 2019/3/27 | [Office 365 Multi-Geo テナントの構成](/Office365/Enterprise/multi-geo-tenant-configuration) | 更新日時 |
 | 2019/3/27 | [複数地域環境でのユーザー エクスペリエンス](/Office365/Enterprise/multi-geo-user-experience) | 更新日時 |
-| 2019/3/27 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 追加 |
+| 2019/3/27 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 追加済み |
 | 2019/3/27 | [Office 365 Multi-Geo のプラン](/Office365/Enterprise/plan-for-multi-geo) | 更新日時 |
 | 2019/3/27 | [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 更新日時 |
-| 2019/3/27 | [地理的位置にコンテンツを制限する](/Office365/Enterprise/restrict-content-to-geo-location) | 追加 |
-| 2019/3/27 | [複数地域環境における SharePoint ストレージ クォータ](/Office365/Enterprise/sharepoint-multi-geo-storage-quota) | 追加 |
+| 2019/3/27 | [地理的位置にコンテンツを制限する](/Office365/Enterprise/restrict-content-to-geo-location) | 追加済み |
+| 2019/3/27 | [複数地域環境における SharePoint ストレージ クォータ](/Office365/Enterprise/sharepoint-multi-geo-storage-quota) | 追加済み |
 | 2019/3/27 | [SharePoint サイトを別の地域の場所に移動する-プレビュー](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 更新日時 |
 | 2019/3/27 | [SharePoint サイトを別のジオ位置情報（プレビュー）へ移動します。](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 更新日時 |
 | 2019/3/28 | [OneDrive および SharePoint Online の複数地域機能](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 更新日時 |
@@ -47,7 +34,7 @@
 | 2019/3/28 | [Office 365 開発/テスト環境のフェデレーション ID](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | 更新日時 |
 | 2019/3/28 | [高可用性フェデレーション認証のフェーズ 1 Azure を構成する](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | 更新日時 |
 | 2019/3/28 | [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 更新日時 |
-| 3/29/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
+| 3/29/2019 | [Office 365 の URL と IP アドレス範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
 | 3/29/2019 | [コンテンツ配信ネットワーク](/Office365/Enterprise/content-delivery-networks) | 更新日時 |
 | 3/29/2019 | [SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](/Office365/Enterprise/use-office-365-cdn-with-spo) | 更新日時 |
 | 3/29/2019 | [ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする](/Office365/Enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) | 更新日時 |
@@ -138,8 +125,7 @@
 | 4/9/2019 | [Microsoft のクラウドサービスのサブスクリプション、ライセンス、アカウント、およびテナント](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | 更新日時 |
 | 4/9/2019 | One Microsoft Cloud 開発/テスト環境 | 削除 |
 | 4/9/2019 | [Office 365 のパフォーマンスをチューニングする](/Office365/Enterprise/tune-office-365-performance) | 更新日時 |
-| 2019 年 4 月 10 日 | 
-  [SharePoint Online のキャパシティ プランニングとロード テスト](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | 更新日時 |
+| 2019 年 4 月 10 日 | [SharePoint Online のキャパシティ プランニングとロード テスト](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | 更新日時 |
 | 2019 年 4 月 10 日 | [複数地域環境での Exchange Online メールボックスの管理](/Office365/Enterprise/administering-exchange-online-multi-geo) | 更新日時 |
 | 2019 年 4 月 10 日 | [Exchange Multi-Geo](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | 更新日時 |
 | 4/12/2019 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 更新日時 |
@@ -147,7 +133,7 @@
 | 4/12/2019 | [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | 更新日時 |
 
 
-## <a name="week-of-april-15-2019"></a>2019年4月15日の週
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日の週
 
 
 | 公開日 |トピックのタイトル | 変更 |
@@ -157,3 +143,15 @@
 | 4/18/2019 | [Office 365 PowerShell でロールをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 更新日時 |
 | 4/18/2019 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 更新日時 |
 | 4/18/2019 | [一元展開 PowerShell コマンドレットを使用してアドインを管理する](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | 更新日時 |
+
+
+## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 4/22/2019 | [OneDrive および SharePoint Online の複数地域機能](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 更新日時 |
+| 4/22/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 更新日時 |
+| 4/22/2019 | 委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する | 削除 |
+| 4/22/2019 | [委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 を管理する](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | 更新日時 |
+| 4/22/2019 | [委任アクセス許可 (DAP) パートナー用 Windows PowerShell を使用して顧客のテナント レポート データを取得する](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | 変更 |

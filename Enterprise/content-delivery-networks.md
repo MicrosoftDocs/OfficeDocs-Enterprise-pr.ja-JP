@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (cdns) を使用してパフォーマンスを向上させる方法について説明します。
 ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039484"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490441"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (cdns)
 
@@ -95,9 +95,9 @@ Office 365 テナントに対して構成する CDN に関係なく、基本的�
 
 2. Office 365 は、クライアントにデータを直接返すか、またはデータが cdn によってホストされるコンテンツセットの一部である場合、クライアントを cdn URL にリダイレクトします。
 
-    a: データが_パブリック_の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    a. データが_パブリック_の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
 
-    b: データが既に_プライベート_の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム url を動的に生成し、クライアントにカスタム url を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    b. データが既に_プライベート_の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム url を動的に生成し、クライアントにカスタム url を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
 
 3. cdn でデータがキャッシュされていない場合、cdn ノードは Office 365 のデータを要求し、クライアントがデータをダウンロードした後、しばらくの間データをキャッシュします。
 
@@ -184,9 +184,9 @@ cdns の使用は sharepoint Online のコンテキストでのみ有効であ�
 
 [Office 365 へのネットワーク接続](network-connectivity.md)
 
-[Office 365 エンドポイントを管理する](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
+[Office 365 エンドポイントの管理](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
-[Office 365 の URL と IP アドレスの範囲](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[Office 365 の URL と IP アドレス範囲](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [SharePoint Online での Office 365 コンテンツ配信ネットワークの使用](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 

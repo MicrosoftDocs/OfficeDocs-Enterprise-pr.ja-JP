@@ -1,5 +1,5 @@
 ---
-title: Office 365 管理者向けの統合アプリおよび Azure AD
+title: Office 365 管理者の統合アプリおよび Azure AD
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure AD で O365 統合アプリを登録および管理する方法について説明します。
 ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001880"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487124"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 管理者向けの統合アプリおよび Azure AD
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 管理者の統合アプリおよび Azure AD
 
 統合アプリ[の管理は、統合アプリをオンまたはオフにするだけでは](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114)ありません。 office 365 REST api の出現により、ユーザーは、メール、予定表、連絡先、ユーザー、グループ、ファイル、およびフォルダーなどの office 365 データへのアクセスをアプリに許可できます。 既定では、ユーザーは各アプリに対して個別にアクセス許可を付与する必要がありますが、アプリケーションをグローバル管理者レベルで承認し、アプリ起動ツールを使用して組織全体にロールアウトする場合は、これは適切ではありません。 これを行うには、Azure AD にアプリを登録する必要があります。 Azure AD にアプリを登録するために必要ないくつかの手順があります。また、Office 365 組織のアプリの管理に役立つ可能性があるいくつかのバックグラウンド情報を知る必要があります。 この記事では、これらのリソースについて説明します。
   

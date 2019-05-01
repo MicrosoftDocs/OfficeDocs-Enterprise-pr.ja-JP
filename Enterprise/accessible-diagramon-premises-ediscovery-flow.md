@@ -1,5 +1,5 @@
 ---
-title: "アクセス可能な図 - オンプレミスの電子情報開示のフロー"
+title: アクセス可能な図 - オンプレミスの電子情報開示のフロー
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: "この記事は、「オンプレミスの電子情報開示のフロー」という名前の図のアクセス可能なテキスト バージョンです。"
+description: この記事は、「オンプレミスの電子情報開示のフロー」という名前の図のアクセス可能なテキスト バージョンです。
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487703"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>アクセス可能な図 - オンプレミスの電子情報開示のフロー
 
@@ -77,7 +78,7 @@ SharePoint 2013 エンタープライズ アプリケーション ファーム�
   
 - EDC
     
-- SSA プロキシ 
+- SSA プロキシ  
     
 - タイマー ジョブ 
     

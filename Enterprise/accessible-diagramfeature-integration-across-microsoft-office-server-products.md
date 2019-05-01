@@ -1,5 +1,5 @@
 ---
-title: "アクセス可能な図 - Microsoft Office Server 製品間の機能統合"
+title: アクセス可能な図 - Microsoft Office Server 製品間の機能統合
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: "この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。"
+description: この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。
 ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487813"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品間の機能統合
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 02/09/2018
   
 機能とタブは次のとおりです。 
   
-- はじめに
+- 概要
     
 - サーバー間認証 
     
@@ -127,7 +128,7 @@ Outlook Web App での Lync のプレゼンス。この機能は以下に適用�
     
 - Lync
     
-### <a name="office-web-apps-server"></a>Office Web Apps サーバー
+### <a name="office-web-apps-server"></a>Office Web Apps Server
 
 Office Web Apps サーバーは、Office ファイル用のブラウザー ベースのファイルの表示と編集サービスを提供する Office サーバー製品です。Office Web Apps サーバーは、Web Application Open Platform Interface (WOPI) プロトコルをサポートする製品とサービスで動作します。ホストとして知られるこれらの製品には、SharePoint 2013、Lync Server 2013、および Exchange Server 2013 などがあります。 
   
@@ -139,7 +140,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
 
 サーバー間認証は、サーバーがユーザーのために別のサーバーのリソースを要求することを可能にする Exchange Server 2013、Lync Server 2013、および SharePoint Server 2013 の新機能です。この機能では、業界標準の Open Authorization (OAuth) 2.0 プロトコルが使用されています。サーバー間認証によって、電子情報開示、高解像度のユーザーの写真、サイト メールボックスなどのさまざまな新しいシナリオが可能になります。 
   
- **サーバー製品**
+ **サーバー製品** 
   
 - Exchange Server 2013 
     
@@ -155,7 +156,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
   
 付属図は、双方向の信頼として確立されるサーバー間の信頼関係を示しています。Exchange サーバー、SharePoint サーバー、および Lync サーバーの間で双方向の信頼関係が示されています。各種類のサーバーが、他の 2 種類のサーバーのそれぞれと双方向に信頼しています。 
   
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a>構成
 
 サーバー間認証の信頼を構成するには、ユーザーのためにリソース要求を送信する各サーバーに対応する、信頼できるセキュリティ トークン発行者を新しく追加する必要があります。それぞれの種類のサーバーには、構成情報およびアクセス トークン署名証明書のパブリックな部分を含む JavaScript Object Notation (JSON) メタデータ エンドポイントがあります。サーバー間認証の信頼を構成することの一環として、他のサーバーの JSON メタデータ エンドポイントを指定します。 
   
@@ -268,7 +269,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
 
 統合連絡先ストア (UCS) は、Microsoft Office 製品間で一貫した連絡先を用意しています。ユーザーは、Exchange 2013 メールボックスにすべての連絡先情報を格納します。同じ連絡先情報は、Lync、Exchange、Outlook、Outlook Web App 間でグローバルに利用できます。 
   
- **サーバー製品**
+ **サーバー製品** 
   
 - Exchange Server 2013 
     
@@ -284,7 +285,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
   
 - 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Oyg7fh) を参照してください。 
     
- **動作のしくみ**
+ **動作のしくみ** 
   
 - ユーザーが Lync 2013 にログインする際、ユーザーの Lync の連絡先は Exchange 2013 に自動的に移行されます。 
     
@@ -298,7 +299,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 3. ユーザーが Lync 2013 リッチ クライアントを使用して Lync にサインインしている。 
     
-ユーザーが Lync 2013 リッチ クライアントを使用して Lync にサインインしている。 
+ユーザーが Lync 2013 リッチ クライアントを使用して Lync にサインインしている。  
   
 1. ユーザーが、HTTPS (ポート 443) 経由で、Outlook クライアントまたは Outlook Web App (OWA) を使用して Exchange クライアント アクセス サーバーの Exchange 2013 メールボックスにサインインしている。 Exchange メールボックス サーバーは、Exchange の内部の通信を使用して Exchange クライアント アクセス サーバーと通信します。 
     
@@ -520,7 +521,7 @@ Lync のプレゼンス情報を使用すると、Lync、Outlook、SharePoint �
     
 - SharePoint Server 2013 
     
- **動作のしくみ**
+ **動作のしくみ** 
   
 Lync 2013 がユーザーのローカル コンピューターにインストールされている限り、Outlook と SharePoint Server は自動的にユーザーのプレゼンス情報を表示します。 
   
@@ -576,7 +577,7 @@ Outlook Web App ユーザーの場合、Exchange CAS は、ユーザーの代わ
     
 - 発信者は、PSTN デバイス (PBX、携帯電話、POTS) を使用して通話を開始します。 
     
-発信者は、Lync 2013 を使用して次のように通話を開始します。 
+発信者は、Lync 2013 を使用して次のように通話を開始します。  
   
 1. 発信者 A は、Lync 2013 を使用して、受信者への通話を開始します。通話が開始され、Lync Server に送信されます。 
     
@@ -610,7 +611,7 @@ Outlook Web App ユーザーの場合、Exchange CAS は、ユーザーの代わ
     
 サーバー製品: 
   
-- サーバー製品: 
+- サーバー製品:  
     
 - SharePoint 2013 
     
@@ -638,9 +639,9 @@ Outlook Web App ユーザーの場合、Exchange CAS は、ユーザーの代わ
   
 ポスターには、2 種類のシナリオ用に 2 つの図があります。 
   
-- ミーティングのレコーディングを公開するための準備 
+- ミーティングのレコーディングを公開するための準備  
     
-- Lync クライアントを使用したミーティングの記録および公開 
+- Lync クライアントを使用したミーティングの記録および公開  
     
 ### <a name="preparing-for-publishing-meeting-recordings"></a>ミーティングのレコーディングを公開するための準備
 
@@ -666,7 +667,7 @@ IIS サーバーには IIS 設定が含まれます。
     
  **デジタル アセット ライブラリ**
   
-デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」(http://aka.ms/O1vq5w) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」(http://aka.ms/O1vq5w を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Lync クライアントを使用したミーティングの記録および公開
 
@@ -682,10 +683,10 @@ IIS サーバーには IIS 設定が含まれます。
     
 4. SharePoint アセット ライブラリに、ミーティングのレコーディングをドラッグ アンド ドロップします。 
     
-5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」(http://aka.ms/R61q35) を参照してください。 
+5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」(http://aka.ms/R61q35 を参照してください。 
     
  **ビデオの縮小表示**
   
-ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」(http://aka.ms/Kupj85) を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」(http://aka.ms/Kupj85 を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 

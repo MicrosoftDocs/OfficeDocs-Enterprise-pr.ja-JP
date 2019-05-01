@@ -1,5 +1,5 @@
 ---
-title: Microsoft クラウド接続の一般的な要素
+title: Microsoft のクラウド接続の一般的な要素
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: '概要: ネットワーク インフラストラクチャの一般的な要素とネットワークを準備する方法を理解します。'
 ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872218"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490200"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Microsoft クラウド接続の一般的な要素
 
@@ -60,9 +60,9 @@ ms.locfileid: "26872218"
     
 - **外部ワークロード:** インターネット上で、外部のユーザーに対して利用可能になっている Web サイトまたはその他のワークロード。
     
-- **プロキシ サーバー:** イントラネット ユーザーの代わりに web コンテンツの要求をサービスします。リバース プロキシでは、未承諾の受信要求を許可します。
+- **プロキシ サーバー:** イントラネット ユーザーのための Web コンテンツの要求にサービスします。 リバースプロキシは、未承諾の受信要求を許可します。
     
-- **外部ファイアウォール:** 発信トラフィックと着信トラフィックを指定したことができます。アドレス変換、パケット検査、SSL を解除し、検査、またはデータ損失の防止を実行することができます。
+- **外部ファイアウォール:** 送信トラフィックおよび指定した着信トラフィックを許可します。 アドレス変換、パケット検査、SSL ブレークと調査、またはデータ損失防止を行うことができます。
     
 - **ISP への WAN 接続:** 接続およびルーティングに関してインターネットと同等であるキャリア ベースの ISP への接続。
     

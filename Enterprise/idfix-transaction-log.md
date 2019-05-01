@@ -18,25 +18,25 @@ search.appverid:
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: 例を示し、Office 365 idfix トランザクションログの名前付け規則と既定のログレベルについて説明します。
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085066"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490943"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 idfix トランザクションログ
 
 例を示し、Office 365 idfix トランザクションログの名前付け規則と既定のログレベルについて説明します。
   
-## <a name="idfix-transaction-log-location"></a>IdFix トランザクション ログの場所
+## <a name="idfix-transaction-log-location"></a>idfix トランザクションログの場所
 
-Office 365 idfix ツールは、[idfix で**適用**] をクリックし、変更を Active Directory フォレストに適用するたびに、新しいトランザクションログを作成します。トランザクションログは、idfix をインストールしたのと同じフォルダーに保存されます。既定では、このフォルダーは c:\windows 展開ツール \ [fix] になります。トランザクションログファイル名には、日付と時刻の形式が使用されます。たとえば、verbose 6-1-2018 6-17-22 pm は、2018年6月1日 (6:17:22 pm) に生成されたファイルを示します。 verbose は、ログレベルを示します。 
+Office 365 idfix ツールは、[idfix で**適用**] をクリックし、変更を Active Directory フォレストに適用するたびに、新しいトランザクションログを作成します。 トランザクションログは、idfix をインストールしたのと同じフォルダーに保存されます。 既定では、このフォルダーは c:\windows 展開ツール \ [fix] になります。 トランザクションログファイル名には、日付と時刻の形式が使用されます。たとえば、Verbose 6-1-2018 6-17-22 pm は、2018年6月1日 (6:17:22 pm) に生成されたファイルを示します。 Verbose ログレベルを示します。 
   
-## <a name="idfix-transaction-log-logging-level"></a>IdFix トランザクション ログのログ出力レベル
+## <a name="idfix-transaction-log-logging-level"></a>idfix トランザクションログのログ出力レベル
 
-トランザクション ログ ファイル名に含まれる verbose という単語は、ファイルのログ出力のレベルを示します。Verbose は、ログ内に最大量の情報が収集されることを表しています。既定では、このログ出力レベルになっています。現状では、ログ出力レベルを変更することはできません。
+トランザクションログファイル名に verbose という語を指定すると、ファイル内のログ記録のレベルを示します。 Verbose は、ログに最大量の情報をキャプチャすることを意味します。 これは、既定のログ出力レベルです。 現時点では、ログ出力レベルを変更することはできません。
   
-## <a name="idfix-transaction-log-format"></a>IdFix トランザクション ログの形式
+## <a name="idfix-transaction-log-format"></a>idfix トランザクションログの形式
 
 idfix は、次の例に示すように、各**UPDATE**アクションの結果をトランザクションログに書き込みます。
   

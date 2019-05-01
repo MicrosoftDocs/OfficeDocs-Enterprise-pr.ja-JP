@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
 ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574011"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33488157"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 

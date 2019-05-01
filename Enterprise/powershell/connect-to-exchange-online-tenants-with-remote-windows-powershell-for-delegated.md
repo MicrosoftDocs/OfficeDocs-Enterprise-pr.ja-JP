@@ -13,11 +13,11 @@ ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: '概要: リモート Windows PowerShell で DelegatedOrg 値を使用して、Exchange Online に接続します。'
 ms.openlocfilehash: d14726a2983bf3f2d569305e1a7e2e1a86811ff5
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849903"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491323"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
 

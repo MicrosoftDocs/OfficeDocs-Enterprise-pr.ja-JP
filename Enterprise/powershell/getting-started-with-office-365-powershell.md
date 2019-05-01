@@ -15,10 +15,11 @@ ms.custom:
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 概要:Office 365 PowerShell の重要性を理解し、Office 365 テナントに接続し、ヘルプを取得します。
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491233"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell の概要
 

@@ -12,79 +12,79 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
-description: この資料では、SharePoint Online での最適なパフォーマンスのページをデザインするときに考慮する必要がどのような特定の側面について説明します。
+description: この記事では、SharePoint Online で最適なパフォーマンスを得るためにページを設計するときに考慮する必要がある具体的な事柄について説明します。
 ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26219877"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487167"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online のパフォーマンス チューニングの概要
 
-この資料では、SharePoint Online での最適なパフォーマンスのページをデザインするときに考慮する必要がどのような特定の側面について説明します。
+この記事では、SharePoint Online で最適なパフォーマンスを得るためにページを設計するときに考慮する必要がある具体的な事柄について説明します。
      
-## <a name="sharepoint-online-metrics"></a>SharePoint Online のメトリックス
+## <a name="sharepoint-online-metrics"></a>SharePoint Online の指標
 
-以下の SharePoint Online の広範なメトリックスには、パフォーマンスに関する実際のデータが記載されています。
+次の広範な SharePoint Online の指標は、パフォーマンスに関する現実世界のデータを提供します。
   
-- ページの読み取り速度
+- 高速ページの読み込み方法
     
-- ページごとに必要なラウンド トリップの数
+- ページごとに必要なラウンドトリップの数
     
-- サービスの問題
+- サービスに関する問題
     
-- パフォーマンスの低下を引き起こすその他の事項
+- パフォーマンス低下の原因となるその他の要因
     
-### <a name="conclusions-reached-because-of-the-data"></a>データからたどり着いた結論
+### <a name="conclusions-reached-because-of-the-data"></a>データのために到着した結論
 
-データは以下を示しています。
+データは次のように伝えます。
   
-- ほとんどのページは SharePoint Online で良好に動作しています。
+- ほとんどのページは SharePoint Online で適切に実行されます。
     
-- カスタマイズされていないページは、非常に速く読み込まれています。
+- カスタマイズされていないページは、非常に短時間で読み込まれます。
     
-- OneDrive for Business、チーム サイト、_layouts などのシステムのページは、すべて速く読み込まれています。
+- OneDrive for business、チームサイト、および _layouts などのシステムページはすべてすぐに読み込むことができます。
     
-- 1% の最も読み込み時間が長い SharePoint Online ページは、読み込みに 5,000 ミリ秒を超える時間がかかります。
+- SharePoint Online のページのうち、最低でも 1% の負荷は、5000ミリ秒を超えると読み込みが行われます。
     
-使用できる 1 つの単純なベンチマーク テストは、自社のポータルの読み込み時間と OneDrive for Business のホーム ページの読み込み時間を比較してパフォーマンスを測定することです。OneDrive for Business のホーム ページではカスタマイズ機能がほとんど使用されないためです。これは、ネットワークのパフォーマンスの問題についてのトラブルシューティングを実行する際にサポート完了のためにお願いする最初の手順になることがよくあります。
+1つの簡単なベンチマークテストを使用して、OneDrive for business のホームページの読み込み時間と、カスタマイズされた一部の機能を使用することで、パフォーマンスを測定できます。 これは、多くの場合、ネットワークパフォーマンスの問題をトラブルシューティングするときに完了することを求める最初の手順のサポートになります。
   
-## <a name="use-a-standard-user-account-when-checking-performance"></a>パフォーマンスをチェックするときに、標準ユーザー アカウントを使用します。
+## <a name="use-a-standard-user-account-when-checking-performance"></a>パフォーマンスをチェックするときに標準ユーザーアカウントを使用する
 
-サイト コレクションの管理者、サイト所有者、エディター、または共同作成者は、追加のセキュリティ グループに属しているし、追加のアクセス許可がある SharePoint は、ページに読み込まれるその他の要素があるため。
+サイトコレクション管理者、サイト所有者、編集者、または投稿者は、追加のセキュリティグループに属し、追加のアクセス許可が与えられるため、SharePoint がページに読み込む追加要素を持つことになります。
   
-これは SharePoint 設置し、SharePoint Online に適用できるが、設置型のシナリオでの違いは簡単には気づかれない SharePoint Online のように。
+これは、オンプレミスの sharepoint と sharepoint online に適用されますが、オンプレミスのシナリオでは、相違点は sharepoint Online のように簡単にはわかりません。
   
-ユーザーは、ページを実行する方法を正確に評価をするためにコントロールを作成し、セキュリティ グループに関連するその他のトラフィックが読み込まれないようにするのには、標準ユーザー アカウントを使用する必要があります。
+ユーザーに対してページがどのように実行されるかを正しく評価するには、標準のユーザーアカウントを使用して、作成コントロールおよびセキュリティグループに関連する追加のトラフィックを読み込まないようにする必要があります。
   
-## <a name="connection-categories-for-performance-tuning"></a>パフォーマンス チューニングの接続のカテゴリ
+## <a name="connection-categories-for-performance-tuning"></a>パフォーマンスチューニングの接続カテゴリ
 
-サーバーとユーザーの間の接続は、主な 3 つのコンポーネントに分類できます。読み込み時間の見通しについて SharePoint Online ページを設計する際は、これらのコンポーネントを考慮してください。
+サーバーとユーザーの間の接続を、3つの主要なコンポーネントに分類できます。 読み込み時間についての洞察を得るために SharePoint Online ページを設計する場合は、これらを考慮してください。
   
-- **サーバー**マイクロソフトがデータ センターでホストするサーバーです。
+- **サーバー**Microsoft がデータセンターでホストするサーバー。
     
-- **ネットワーク**Microsoft のネットワーク、インターネット、およびデータ センターとユーザーの間で、オンプレミスのネットワークです。
+- **ネットワーク**データセンターとユーザーの間の Microsoft ネットワーク、インターネット、およびオンプレミスネットワーク。
     
-- **ブラウザー**ページが読み込まれます。
+- **ブラウザー**ページが読み込まれている場所。
     
-これら 3 つの接続内では、一般的に、読み込み時間が長いページのうち 95% は 5 つの理由によるものです。この記事では、それぞれの理由について説明します。
+これら3つの接続では、通常、5つの理由で、低速ページの 95% が発生します。 この記事では、これらの各理由について説明します。
   
 - ナビゲーションの問題
     
-- コンテンツ ロールアップ
+- コンテンツロールアップ
     
 - 大きなファイル
     
-- サーバーへの多数の要求
+- サーバーへの多くの要求
     
 - Web パーツの処理
     
-### <a name="server-connection"></a>サーバーの接続
+### <a name="server-connection"></a>サーバー接続
 
-オンプレミスの SharePoint でのパフォーマンスに影響する問題の多くは、SharePoint Online にも該当します。
+sharepoint オンプレミスのパフォーマンスに影響する問題の多くは、sharepoint Online にも適用されます。
   
-予想どおり、サーバーがオンプレミスの SharePoint で実行する内容にははるかに多くの制御があります。SharePoint Online では、作業は少し異なります。サーバーが実行する作業を多くすればするほど、ページの表示に時間がかかります。SharePoint では、この点において最大の原因は、複数の Web パーツを含む複雑なページです。
+ご想像のとおり、サーバーがオンプレミスの SharePoint で実行する方法をより細かく制御できます。 SharePoint Online は少し異なります。 サーバーに対して実行する作業が多いほど、ページの表示に時間がかかります。 SharePoint では、この点で最も大きな原因は、複数の web パーツを持つ複雑なページです。
   
 オンプレミスの SharePoint Server
   
@@ -94,21 +94,21 @@ SharePoint Online
   
 ![オンラインのサーバーのスクリーンショット](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-SharePoint Online では、特定のページの要求が、実際は複数のサーバーを呼び出すという結果になります。個別の要求に対し、結果的としてサーバー間で要求の表が生成されることがあります。この通信は、ページの読み込みの観点から費用がかかり、動作を遅くします。
+SharePoint Online では、特定のページ要求が、実際には複数のサーバーを呼び出すことがあります。 個々の要求について、サーバー間の要求のマトリックスが表示されることがあります。 これらの相互作用は、ページの読み込みの観点から費用がかかり、処理が遅くなることがあります。
   
-サーバー間の通信の例は次のとおりです。
+これらのサーバー間の相互作用の例を次に示します。
   
-- Web サーバーと SQL サーバー
+- Web サーバーと SQL server
     
-- Web サーバーとアプリケーション サーバー
+- Web からアプリケーションサーバーへ
     
-サーバーの通信時間が長くなるもう 1 つの原因は、キャッシュ ミスです。オンプレミスの SharePoint とは異なり、以前アクセスしたページと同じサーバーに当たる機会は非常に少なくなり、オブジェクトのキャッシュが最新ではなくなります。
+他にも、サーバーとの通信を遅くすることができますが、キャッシュミスがあります。 オンプレミスの SharePoint とは異なり、以前に参照したページに対して同じサーバーがヒットする可能性が非常にスリムになります。これにより、オブジェクトキャッシュは廃止されます。
   
 ### <a name="network-connection"></a>ネットワーク接続
 
-設置がないため、wan を使用する、データ ・ センターとエンド ・ ユーザーとの間の高速接続を使用することがあります。一般に、点は、ネットワークの観点から管理が容易です。
+WAN を使用していないオンプレミスの SharePoint では、データセンターとエンドユーザーの間で高速接続を使用できます。 一般的に、ネットワークの観点からは管理が容易です。
   
-SharePoint Online では、さらにいくつか考慮する要因があります。次に例を示します。
+SharePoint Online では、いくつかの要素を考慮する必要があります。例えば：
   
 - Microsoft ネットワーク
     
@@ -116,31 +116,32 @@ SharePoint Online では、さらにいくつか考慮する要因がありま�
     
 - ISP
     
-どのバージョンの SharePoint (およびどのネットワーク) を使用するかに関係なく、一般的にネットワークをビジー状態にするものには以下があります。
+どのバージョンの SharePoint (およびどのネットワーク) を使用しているかに関係なく、通常、ネットワークのビジー状態になるのは次のような状況です。
   
-- 大きいペイロード
+- 大きなペイロード
     
-- 多数のファイル
+- 多くのファイル
     
-- サーバーへの物理的な距離が長いこと
+- サーバーへの物理的な距離が大きい
     
-SharePoint Online で利用できる機能の 1 つは、マイクロソフトの CDN (コンテンツ配信ネットワーク) です。CDN は、基本的に複数のデータ センターに展開サーバーの分散型のコレクションです。、CDN ではクライアントが元の SharePoint サーバーからは遠く離れている場合でもにページ上のコンテンツ クライアントにサーバーでホストできます。マイクロソフトが使用しているより、将来的にページをカスタマイズできない、たとえば、SharePoint Online 管理ホーム ページのローカル インスタンスを格納します。Cdn の詳細については、[コンテンツ配信ネットワーク](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)を参照してください。
+SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテンツ配信ネットワーク) があります。 CDN は基本的に、複数のデータセンターにまたがって展開されたサーバーの分散コレクションです。 CDN を使用すると、クライアントが元の SharePoint サーバーから離れている場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストできます。 Microsoft では、カスタマイズできないページのローカルインスタンス (SharePoint Online 管理者のホームページなど) を格納するために、今後もこれを使用しています。 cdns の詳細については、「[コンテンツ配信ネットワーク](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)」を参照してください。
   
-知っておく必要がありますがあまり多くはできないこととして、ISP の接続速度があります。単純な速度テスト ツールによって、接続速度が表示されます。
+知っておく必要があるものの、多くのことを行うことができないものは、ISP の接続速度です。 簡単なスピードテストツールを使用すると、接続速度がわかります。
   
-### <a name="browser-connection"></a>ブラウザーの接続
+### <a name="browser-connection"></a>ブラウザー接続
 
-パフォーマンスの観点から、Web ブラウザーで考慮するいくつかの要因があります。
+パフォーマンスの観点から、web ブラウザーについて考慮するいくつかの要因があります。
   
-複雑なページを訪問するとパフォーマンスに影響します。ほとんどのブラウザーは、キャッシュを小さく (約 90 MB)、平均値の中にのみある web ページは、通常、約 1.6 MB です。これは、get 使用するのに時間はかかります。
+複雑なページにアクセスすると、パフォーマンスに影響します。 ほとんどのブラウザーでは、25 mb (約 90 mb) のキャッシュしかありませんが、平均的な web ページは通常 1.6 mb です。 これを使用するには時間がかかります。
   
-帯域幅も問題となる場合があります。などの場合は、ユーザーは、別のセッションでビデオを鑑賞するが、この SharePoint ページのパフォーマンスに影響が。ストリーミング メディアからユーザーを防ぐことはできません、中には、ユーザーのページが読み込まれます方法を制御できます。
+また、帯域幅が問題になることもあります。 たとえば、ユーザーが別のセッションのビデオを視聴している場合、SharePoint ページのパフォーマンスが低下します。 ユーザーがメディアをストリーミングするのを防ぐことはできませんが、ユーザーに対してページを読み込む方法を制御することができます。
   
-SharePoint Online のページの別のカスタマイズ方法については、以下の資料および他の最適なパフォーマンスを実現するためのベスト プラクティスを確認してください。
+最適なパフォーマンスを実現するのに役立つ、SharePoint Online ページのカスタマイズ方法やその他のベストプラクティスについては、次の記事を参照してください。
   
-- [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
+- 
+  [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
     
-- [SharePoint Online のページの診断ツールを使用してください。](page-diagnostics-for-spo.md)
+- [SharePoint Online のページ診断ツールを使用する](page-diagnostics-for-spo.md)
     
 - [SharePoint Online のイメージの最適化](image-optimization-for-sharepoint-online.md)
     
@@ -150,14 +151,14 @@ SharePoint Online のページの別のカスタマイズ方法については�
     
 - [コンテンツ配信ネットワークの使用](using-content-delivery-networks-with-sharepoint-online.md)
     
-- [コンテンツ クエリ Web パーツではなくコンテンツ検索 Web パーツを使用して SharePoint Online でのパフォーマンスを向上させる](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ web パーツの代わりにコンテンツ検索 web パーツを使用する](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- [容量計画および SharePoint Online のテスト負荷](capacity-planning-and-load-testing-sharepoint-online.md)
+- [SharePoint Online のキャパシティ プランニングとロード テスト](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [SharePoint Online のパフォーマンスの問題の診断](diagnosing-performance-issues-with-sharepoint-online.md)
+- [Diagnosing performance issues with SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     
-- [SharePoint Online でのオブジェクト キャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
+- [SharePoint Online でのオブジェクトキャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
     
-- [SharePoint Online で調整またはブロックを回避する方法](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [方法:SharePoint Online で調整またはブロックを回避する](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
     
 

@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: office 365 の展開アドバイザーでは、office 365 をセットアップするためのセルフガイドサポートが提供されています。
 ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741474"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490083"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Office 365 サービスの展開アドバイザー
 
@@ -181,13 +181,13 @@ Microsoft StaffHub は、すべてのデバイスで動作する、クラウド�
 [Skype の概要](https://aka.ms/ofg77x)
 
 
-### <a name="teams"></a>チーム
+### <a name="teams"></a>Teams
 
 [Teams の概要](https://youtu.be/ENEQzM2u_vA)
 
     
 ## <a name="walkthroughs-for-users"></a>ユーザー向けのチュートリアル
 
-[Office モバイルアプリ](https://aka.ms/officemobileappsetup)
+[Office モバイル アプリ](https://aka.ms/officemobileappsetup)
 
 [生産性向上ライブラリ](https://aka.ms/productivitylibraryguidance)

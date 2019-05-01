@@ -1,5 +1,5 @@
 ---
-title: Office 365 アカウントを管理するツール
+title: Office 365 アカウントを管理するためのツール
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 ユーザーを管理するためにどのようなツールを使用するか、およびどのように使用できるかについては、ユーザー id の管理方法によって異なります。 '
 ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001770"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487073"
 ---
-# <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するツール
+# <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するためのツール
 
 構成に応じて、さまざまな方法で Office 365 ユーザーを管理することができます。 [Microsoft 365 管理センター](https://admin.microsoft.com)、Windows PowerShell、社内ディレクトリ、または Azure Active directory 管理ポータルでユーザーを管理できます。 Office 365 を購入するとすぐに、管理センターと Windows PowerShell を使用してアカウントを管理できるようになります。 クラウド id を管理する際には、組織内のすべてのユーザーが Office 365 に対して個別のユーザー ID とパスワードを使用します。 オンプレミスのインフラストラクチャと統合して、ユーザーアカウントを Office 365 と同期させる場合は、Azure Active Directory Connect を使用して id の同期を提供し、必要に応じてパスワード同期を提供できます。または、完全シングルサインオン機能。
   
@@ -75,7 +75,7 @@ ms.locfileid: "31001770"
     > [!IMPORTANT]
     > office 365 で、ライセンスを割り当てずにアカウントを作成する (SharePoint Online の場合) とは、アカウント所有者が office 365 ポータルを表示できるが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Office 365 とオンプレミス環境との統合](office-365-integration.md)
   

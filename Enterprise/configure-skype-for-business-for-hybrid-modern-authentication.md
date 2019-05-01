@@ -1,5 +1,5 @@
 ---
-title: Skype for business のオンプレミスでハイブリッド先進認証を使用するように構成する方法
+title: Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -14,14 +14,14 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。
-ms.openlocfilehash: 23a9262659ae47f5aeb5577b9bb45ea2c1aad235
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372934"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490327"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for business のオンプレミスでハイブリッド先進認証を使用するように構成する方法
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。
   
@@ -87,8 +87,10 @@ MA を有効にするには、4つの異なる場所が存在します。 最適
     
 展開されているすべての sfb 2015 プールについて、内部および外部 web サービスの URL が必要になります。 これらを取得するには、Skype for business 管理シェルから次のように実行します。
   
-取得-csservice-WebServer |Select-Object poolfqdn、internalfqdn、externalfqdn |州
-  
+```
+Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
+```
+
 - 渡し. 社外https://lyncwebint01.contoso.com
     
 - 渡し. 社外https://lyncwebext01.contoso.com
@@ -115,41 +117,46 @@ Standard Edition サーバーを使用している場合、内部 URL は空白�
   
  **メモ**サービスプリンシパル名 (spn) は、web サービスを識別し、それをセキュリティプリンシパル (アカウント名やグループなど) に関連付けて、サービスが権限のあるユーザーの代理として機能できるようにします。 クライアントがサーバーに対して認証を行うと、spn に含まれる情報が利用されます。 
   
-1. 最初に、[次の手順に従っ](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)て AAD に接続します。
+1. 最初に、[次の手順に従っ](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)て AAD に接続します。
     
 2. このコマンドをオンプレミスで実行して、sfb web サービス url の一覧を取得します。
+
+   AppPrincipalId はから始まることに`00000004`注意してください。 これは、Skype for business Online に対応しています。
     
-  - new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 |Select-expandproperty serviceprincipalnames
+   このコマンドの出力では、SE と WS の URL が含まれていますが、ほとんどは、で`00000004-0000-0ff1-ce00-000000000000/`始まる spn から構成されていますのでメモを取ります。
     
-    AppPrincipalId は ' 00000004 ' で始まっていることに注意してください。 これは、Skype for business Online に対応しています。
-    
-    このコマンドの出力には、SE と WS の URL が含まれていますが、ほとんどは、00000004-0000-0ff1-ce00-000000000000/で始まる spn から構成されていますのでメモしておいてください。
+```
+Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+```
     
 3. オンプレミスの内部**または**外部の sfb url が欠落してhttps://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)いる場合 (たとえば、である場合)、それらのレコードをこのリストに追加する必要があります。 
     
     次の url の*例は*、Add コマンドで実際の url に置き換えてください。 
-    
-  - $x = new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
-    
-  - $x します。 Add (" *https://lyncwebint01.contoso.com/* ") 
-    
-  - $x します。 Add (" *https://lyncwebext01.contoso.com/* ") 
-    
-  - new-msolserviceprincipal-AppPrincipalId 00000004-0000-0ff1-ce00-000000000000-serviceprincipalnames $x serviceprincipalnames
-    
-4. 手順2で new-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい url が一覧に表示されます。 この例では、spn の一覧に特定の url https://lyncweb01.contoso.comとhttps://autodiscover.contoso.comが含まれるようになりました。
+  
+```  
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```
+  
+4. 手順2で new-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい url が一覧に表示されます。 この例では、spn の一覧に特定の url https://lyncweb01.contoso.comとhttps://lyncwebext01.contoso.com/が含まれるようになりました。
     
 ### <a name="create-the-evosts-auth-server-object"></a>evosts 認証サーバーオブジェクトを作成する
 
 Skype for business 管理シェルで次のコマンドを実行します。
   
-- New-csoauthserver-Identity evosts-metadataurl https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -acceptsecurityidentifierinformation $true-Type AzureAD
+```
+New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
+```
     
 ### <a name="enable-hybrid-modern-authentication"></a>ハイブリッド先進認証を有効にする
 
 これは、実際に MA を有効にする手順です。 以前のすべての手順は、クライアント認証フローを変更せずに、前もって実行することができます。 認証フローを変更する準備ができたら、Skype for business 管理シェルで次のコマンドを実行します。 
   
-- Set-csoauthconfiguration-clientauthorizationoauthserveridentity evosts
+```
+Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
+```
     
 ## <a name="verify"></a>ことを確認
 

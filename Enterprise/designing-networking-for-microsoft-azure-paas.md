@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: '概要: Microsoft Azure PaaS へのアクセスのためにネットワークを最適化する方法を理解します。'
 ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872238"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491374"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Microsoft Azure PaaS のためのネットワーク デザイン
 

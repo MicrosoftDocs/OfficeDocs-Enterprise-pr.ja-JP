@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647995"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487233"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -127,7 +127,7 @@ SharePoint Online データを移行する過程で、検索インデックス�
 
 Exchange Online、SharePoint Online、および Skype for Business の顧客データのみを移動します。その他のサービスのデータは移動しません。これらの別サービスの顧客やユーザーにとって、変更や影響はありません。移動プロセスも影響しません。また、顧客データの場所は変更されません。
   
-## <a name="related-topics"></a>関連項目 
+## <a name="related-topics"></a>関連トピック 
  
 [データ移行をリクエストする方法](request-your-data-move.md)
     

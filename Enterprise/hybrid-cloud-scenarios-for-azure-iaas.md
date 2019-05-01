@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: '概要: Microsoft のサービスとしてのインフラストラクチャ (IaaS) ベースの Azure のクラウド製品のハイブリッドアーキテクチャとシナリオについて説明します。'
 ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741363"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487648"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Azure IaaS のハイブリッド クラウドのシナリオ
 

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
 ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31396925"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492225"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -647,7 +647,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online では、プライベートな出所のアセットに対してアイテムレベルのアクセス許可がサポートされていないことに注意してください。 たとえば、に`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`あるファイルの場合、次の条件に該当するファイルへのアクセスが有効になります。
 
-|ユーザー  |アクセス許可  |有効なアクセス  |
+|User  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー1     |folder1 へのアクセス権         |CDN から image1 にアクセスできる         |
 |User 2     |folder1 へのアクセス権がありません。         |CDN から image1 にアクセスできません         |
@@ -719,5 +719,5 @@ office 365 CDN の操作は、 **SharePoint Online Management Shell** PowerShell
 
 [Content Delivery Network](https://aka.ms/o365cdns)
 
-[Office 365 のネットワーク計画とパフォーマンスのチューニング](https://aka.ms/tune)
+[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
 

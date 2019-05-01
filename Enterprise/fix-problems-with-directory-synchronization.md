@@ -1,5 +1,5 @@
 ---
-title: Office 365 のディレクトリ同期に関する問題の修正
+title: Office 365 のディレクトリ同期の問題を解決する
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期に関する問題の一般的な原因について説明し、トラブルシューティングと解決に役立ついくつかの方法について説明します。
 ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001840"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487467"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期に関する問題の修正
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期の問題を解決する
 
 ディレクトリ同期を使用すると、ユーザーとグループを社内で管理し続け、追加、削除、および変更をクラウドに同期できます。 しかし、セットアップは少し複雑で、問題の原因を特定するのが困難な場合があります。 潜在的な問題を特定して修正するのに役立つリソースが用意されています。
   

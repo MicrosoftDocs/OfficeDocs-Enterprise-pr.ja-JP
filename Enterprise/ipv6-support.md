@@ -15,78 +15,78 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
-description: '概要: は、Microsoft Office 365 コンポーネントと Office 365 の政府サービスの IPv6 のサポートについて説明します。'
+description: '概要: Microsoft office 365 コンポーネントおよび Office 365 government 製品の IPv6 サポートについて説明します。'
 ms.openlocfilehash: 82af5c7659b3c16c8e92b45b65b6868a404eca23
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327359"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487754"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 サービスでの IPv6 サポート
 
- **概要**: Microsoft Office 365 コンポーネントと Office 365 の政府サービスの IPv6 のサポートについて説明します。
+ **概要**: Microsoft office 365 コンポーネントおよび Office 365 government 製品の IPv6 サポートについて説明します。
   
-Office 365 は、IPv6 と IPv4 の両方はサポートしています。ただし、すべての Office 365 の機能は完全に ipv6 が有効になります。つまり、Office 365 への接続に IPv4 と IPv6 の両方を使用する必要があります。Office 365 へ送信されたトラフィックをフィルターする場合、 [Office 365 の Url と IP アドレスの範囲](urls-and-ip-address-ranges.md)の記事で Office 365 でサポートされている IPv6 アドレスの完全な一覧を参照しています。ネットワークを構成して、適切な IPv6 アドレスが許可されて後からダウンロードできます[Office 365 の IPv6 のテスト計画](https://go.microsoft.com/fwlink/?LinkId=293447)を Microsoft ダウンロード センター。
+Office 365 は IPv6 と IPv4 の両方をサポートしています。ただし、すべての Office 365 機能が IPv6 で完全に有効になっているわけではありません。 これは、Office 365 に接続するために IPv4 と IPv6 の両方を使用する必要があることを意味します。 office 365 への送信トラフィックをフィルタリングする場合は、office 365 でサポートされる IPv6 アドレスの完全な一覧については、記事「 [office 365 url および IP アドレス範囲](urls-and-ip-address-ranges.md)」を参照してください。 ネットワークが構成され、適切な IPv6 アドレスが許可されたら、Microsoft ダウンロードセンターから[Office 365 IPv6 テスト計画](https://go.microsoft.com/fwlink/?LinkId=293447)をダウンロードすることができます。
   
 ||
 |:-----|
-| この資料は、[ネットワークの計画と Office 365 のパフォーマンスの調整](https://aka.ms/tune)の一部です。|
+| この記事は[、Office 365 のネットワーク計画とパフォーマンスチューニング](https://aka.ms/tune)に含まれています。|
 
-## <a name="ipv6-support-in-office-365-subscription-service"></a>Office 365 サブスクリプション サービスで IPv6 のサポート
+## <a name="ipv6-support-in-office-365-subscription-service"></a>Office 365 サブスクリプションサービスでの IPv6 サポート
 
-### <a name="exchange-online-and-ipv6"></a>Exchange Online と IPv6
+### <a name="exchange-online-and-ipv6"></a>Exchange Online および IPv6
 
-Exchange Online への接続に使用するプログラムでは、IPv6 をサポートする場合は、IPv6 をワイヤード (有線) とワイヤレスの両方のネットワークでは、既定で使います。Exchange Online への通信を制御する場合は、 [Office 365 の Url と IP アドレスの範囲](urls-and-ip-address-ranges.md)の IP アドレスの範囲を使用します。
+Exchange Online への接続に使用するプログラムが ipv6 をサポートしている場合は、有線ネットワークとワイヤレスネットワークの両方で ipv6 を既定で使用します。 Exchange Online への通信を制御するには、Office 365 の ip アドレスの範囲[と ip アドレス範囲](urls-and-ip-address-ranges.md)を使用します。
   
 ### <a name="sharepoint-online-and-ipv6"></a>SharePoint Online と IPv6
 
- **Office 365 の政府 G1/G3/G4/K1**SharePoint Online への接続に使用するプログラムでは、IPv6 をサポートする場合は、既定で IPv6 を使用するを試みます。
+ **Office 365 Government G1/G3/G4/K1**SharePoint Online への接続に使用するプログラムが ipv6 をサポートしている場合は、既定で ipv6 の使用を試みます。
   
- **マルチ テナント型のパブリック クラウド**マイクロソフトでは、ご要望により SharePoint のオンラインの IPv6 を有効にします。CIDR 表記の IP アドレスを組織の DNS インフラストラクチャを提供する必要があります。この DNS インフラストラクチャを ipv6 の場合、テナントを有効にするには、他の組織と共有できないことに留意してください。IPv6 を有効にする、SharePoint Online への接続に使用するプログラムは、IPv6 をサポートしている場合、既定で IPv6 を使用します。
+ **パブリックマルチテナントクラウド**Microsoft は、お客様の要求で SharePoint Online の IPv6 を有効にします。 組織の DNS インフラストラクチャには、CIDR で入力された IP アドレスを指定する必要があります。 この DNS インフラストラクチャは、テナントに対して IPv6 を有効にするために他の組織と共有できないことに注意してください。 ipv6 を有効にした後、SharePoint Online への接続に使用するプログラムが ipv6 をサポートしている場合は、ipv6 が既定で使用されます。
   
-SharePoint Online への接続に使用するプログラムでは、IPv6 をサポートする場合は、ワイヤード (有線) とワイヤレスの両方のネットワークでは、既定で IPv6 が使用されます。SharePoint Online への通信を制御する場合は、 [Office 365 の Url と IP アドレスの範囲](urls-and-ip-address-ranges.md)の IP アドレスの範囲を使用します。
+SharePoint Online への接続に使用するプログラムが ipv6 をサポートしている場合は、有線ネットワークとワイヤレスネットワークの両方で ipv6 を既定で使用します。 SharePoint Online との通信を制御する場合は、「Office 365 の ip アドレスの範囲」の[url と ip アドレスの範囲](urls-and-ip-address-ranges.md)を使用します。
   
- **Office 365 の政府 G1/G3/G4/K1**SharePoint Online への接続に使用するプログラムでは、IPv6 をサポートする場合は、既定で IPv6 を使用するを試みます。
+ **Office 365 Government G1/G3/G4/K1**SharePoint Online への接続に使用するプログラムが ipv6 をサポートしている場合は、既定で ipv6 の使用を試みます。
   
-### <a name="skype-for-business-and-ipv6"></a>ビジネスと IPv6 の Skype
+### <a name="skype-for-business-and-ipv6"></a>Skype for business および IPv6
 
-IPv6 は、ビジネスの Skype ではサポートされていません、有効になっていないことに注意してください。
+Skype for business では IPv6 がサポートされておらず、有効にできないことに注意してください。
   
-### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection と IPv6
+### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection および IPv6
 
-Exchange オンライン保護 (EOP) は、トランスポート層セキュリティ プロトコル経由で転送が発生した場合、IPv6 をサポートしています。EOP を範囲のセルには、 [Office 365 の Url と IP アドレスの範囲](urls-and-ip-address-ranges.md)を使用します。
+Exchange Online Protection (EOP) は、転送がトランスポート層セキュリティプロトコルで行われている場合、IPv6 をサポートします。 EOP の範囲については、 [Office 365 の url と IP アドレスの範囲](urls-and-ip-address-ranges.md)を使用します。
   
-### <a name="ipv6-support-for-office-365-government-offerings"></a>Office 365 Government 製品の IPv6 サポート
+### <a name="ipv6-support-for-office-365-government-offerings"></a>Office 365 government 製品の IPv6 サポート
 
-経営部門や機関などと同様の連邦政府機関採用のインターネット プロトコル バージョン 6 (IPv6 の最高情報責任者の Office の管理および予算 (OMB) のメモに、政府の製品の IPv6 サポートを office 365 に準拠しています。) メモします。[政府向けの Microsoft Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414)は、分離されたコミュニティ クラウドで米国政府のデータが格納されているマルチ テナント サービスです。他の Office 365 の製品と同じように Exchange Online、Skype のビジネス、SharePoint Online では、Office Professional Plus を含む、生産性とコラボレーションのサービスを提供します。 
+米国政府機関向けの office 365 IPv6 サポート (OMB) Memorandum は、経営部門および省庁の最高情報責任者、およびインターネットプロトコルバージョン 6 (IPv6) の連邦政府機関による採用に準拠しています。) memorandum。 [Microsoft Office 365 for government](https://go.microsoft.com/fwlink/p/?LinkId=325414)は、政府機関のデータを分離されたコミュニティクラウドに保存するマルチテナントサービスです。 他の Office 365 製品と同様に、Exchange Online、Skype for business、SharePoint Online、office Professional Plus など、生産性とコラボレーションのサービスを提供します。 
 
-2013 についてのみ、後で、Microsoft Office 365 の政府サービスが適用されます。Office 365 の政府サービスの詳細についてを参照してください[政府向けの Office 365 の発表: A 米国政府のコミュニティ クラウド](https://go.microsoft.com/fwlink/p/?LinkId=325414)。国際トラフィックのアームの規制 (ITAR) では、防御に関連する資料と[米国兵器リスト (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)上のサービスのインポートとエクスポートを制御する米国政府の規制のセットです。 
+Microsoft Office 365 government のサービスは2013以降にのみ適用されます。 office 365 government 製品の詳細については、「米国政府機関[向け office 365 の発表: US government Community Cloud](https://go.microsoft.com/fwlink/p/?LinkId=325414)」を参照してください。 国際通話のトラフィック (ITAR) とは、米国の[munitions リスト (usml)](https://go.microsoft.com/fwlink/p/?LinkId=325415)での、防衛関連の記事およびサービスのエクスポートとインポートを制御する米国政府規制のセットです。 
 
-企業向けの Microsoft Office 365 には、マイクロソフトの生産性をサポートするソリューション、セキュリティ、プライバシー、および規制へのコンプライアンス要件の連邦政府機関の連邦政府の情報セキュリティを必要とするための専用のホスティング サービスが用意されています。管理 (FISMA) 証明書および営利団体は、ITAR にさらされます。
+microsoft Office 365 for enterprise では、連邦情報セキュリティを必要とする米国連邦機関のセキュリティ、プライバシー、および規制コンプライアンスの要件をサポートする microsoft の生産性向上ソリューションに専用のホスティングサービスを提供しています。ITAR の対象となる管理 (FISMA) 証明書と商用エンティティ。
   
-## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>IPv6 および Office 365 の使用に関する考慮事項
+## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>IPv6 および Office 365 を使用する場合の考慮事項
 
-IPv6 を無効にしないことをお勧めします。詳細については、この[ガイダンスの資料](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users)を参照してください。ネットワーク上にどのような IP のバージョンを使用されているを確認するのには、以下を考慮してください。
+IPv6 を無効にしないことをお勧めします。 詳細については、この[ガイダンス記事](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users)を参照してください。 ネットワークで使用されている IP バージョンを確認するには、次の点を考慮してください。
   
-- コマンド プロンプトで**IPConfig**コマンドの表示に「IPv6 アドレス」または「一時的 IPv6 アドレス」という名前の行が含まれている場合、環境内で IPv6 がいます。
+- コマンドプロンプトでの**IPConfig**コマンドの表示に "ipv6 address" または "Temporary ipv6 address" という名前の行が含まれている場合は、環境内に ipv6 が存在します。
 
-- すべての IPv6 アドレス"fe80"で、「リンク ローカル IPv6 アドレス」をという名前行に対応している場合は、環境内で IPv6 がありません。
+- すべての ipv6 アドレスが "fe80" で始まり、"リンクローカル ipv6 アドレス" という名前の行に対応している場合は、環境内に ipv6 がありません。
 
-以下の事項がネットワークに適用される場合があります。
+ネットワークには、次のような考慮事項が適用されます。
   
-- パブリック サブスクリプション サービスでは、IPv6 を介したクレジット カードでの購入はサポートされません。ただし、政府機関コミュニティ クラウド (GCC) の場合、政府機関には Enterprise Agreement (EA) ライセンスがあるため、これは適用されません。
+- パブリックサブスクリプションサービスは、IPv6 経由のクレジットカードによる購入をサポートしていません。 これは、自治体がエンタープライズアグリーメント (EA) ライセンスを所有しているため、Government Community Cloud (GCC) には適用されません。
 
-- IPv6 では、Rights Management サービス (RMS) の一部のシナリオはサポートされません。
+- IPv6 は、一部の Rights Management Services (RMS) シナリオをサポートしていません。
 
-- IPv6 では、BlackBerry は、IPv6 をサポートしていませんので BlackBerry® エンタープライズ サーバー (BE) をサポートしていません。
+- blackberry は ipv6 をサポートしていないため、ipv6 は blackberry ® Enterprise Server (be) をサポートしていません。
 
-- を Office 365 を Active Directory フェデレーション サービス (AD FS) を使用する場合は、Office 365 AD FS ネットワーク エンドポイントを提供する IPv6 を使用してサポートされていません。、Exchange Online を使用する場合、AAAA レコードを AD FS の DNS エントリに含める必要があります。 
+- office 365 で Active Directory フェデレーションサービス (ad fs) を使用している場合は、IPv6 を使用して ad fs ネットワークエンドポイントを office 365 にアドバタイズすることはサポートされていません。 Exchange Online を使用している場合は、AD FS DNS エントリに AAAA レコードを含めないでください。 
 
 ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>関連項目
 
-[IPv6 の学習のロードマップ](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
+[IPv6 の学習ロードマップ](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
-[IPv6 のサバイバル ガイド](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)
+[IPv6 サバイバルガイド](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)

@@ -1,5 +1,5 @@
 ---
-title: "アクセス可能な図 - SharePoint 2013 のための Microsoft Azure のインターネット サイト"
+title: アクセス可能な図 - SharePoint 2013 のための Microsoft Azure のインターネット サイト
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "この資料は、「SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。"
+description: この資料は、「SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487694"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>アクセス可能な図 - SharePoint 2013 のための Microsoft Azure のインターネット サイト
 
@@ -233,7 +234,7 @@ Web アプリケーションを使用してサイト コレクションとやり
   
 オンプレミス環境には、Azure 環境のオプションの要素である次のコンポーネントが含まれています。 
   
-- Windows Server 2012 RRAS 
+- Windows Server 2012 RRAS  
     
 - AD DS 
     

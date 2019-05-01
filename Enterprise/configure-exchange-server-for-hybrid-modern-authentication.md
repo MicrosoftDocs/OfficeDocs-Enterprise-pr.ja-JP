@@ -1,5 +1,5 @@
 ---
-title: ハイブリッド先進認証を使用するように Exchange Server をオンプレミスで構成する方法
+title: Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
 ms.openlocfilehash: 364f95bbbc06f477d258ed55a8711864e7a87e69
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372864"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490093"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>ハイブリッド先進認証を使用するように Exchange Server をオンプレミスで構成する方法
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
 ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
   
@@ -155,7 +155,7 @@ HMA を有効にすると、クライアントの次のログインは新しい�
  **メモ**HMA を使用して Skype for business を構成する必要がありますか? [サポートされているトポロジ](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)の一覧と、[構成方法](configure-skype-for-business-for-hybrid-modern-authentication.md)を示す2つの記事が必要になります。
   
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [ハイブリッド先進認証の概要と、オンプレミスの Skype for business および Exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md) 
   
