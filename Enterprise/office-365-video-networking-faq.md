@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: Office 365 のビデオリポジトリおよびストリーミングサービスを使用すると、組織内のビデオを簡単に保存およびストリーミングすることができます。 Office 365 ビデオについて多くの重要な情報があります。このネットワーク FAQ は、帯域幅の計画、暗号化、およびサービスがコンテンツ配信ネットワーク (cdns) を活用する方法に関してよく寄せられる質問に回答するように設計されています。
 ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30641524"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491930"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 のビデオネットワークについてよく寄せられる質問
 

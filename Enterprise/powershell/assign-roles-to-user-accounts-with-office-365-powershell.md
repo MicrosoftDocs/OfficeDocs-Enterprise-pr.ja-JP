@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '概要: Office 365 PowerShell を使用して、ロールをユーザー アカウントに割り当てます。'
 ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957708"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491993"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
 

@@ -1,5 +1,5 @@
 ---
-title: ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング
+title: ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -19,13 +19,13 @@ ms.collection:
 - Ent_O365
 description: Office 365 と企業間の接続のパフォーマンスを確認する簡単な方法がいくつかあります。これにより、接続の大まかなベースラインを確立することができます。 クライアントコンピューター接続のパフォーマンス履歴を把握しておくと、問題を早期に発見し、問題を特定して予測するのに役立ちます。
 ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372944"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491856"
 ---
-# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング
+# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 
 Office 365 と企業間の接続のパフォーマンスを確認する簡単な方法がいくつかあります。これにより、接続の大まかなベースラインを確立することができます。 クライアントコンピューター接続のパフォーマンス履歴を把握しておくと、問題を早期に発見し、問題を特定して予測するのに役立ちます。
   

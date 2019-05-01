@@ -1,5 +1,5 @@
 ---
-title: Office 365 のディレクトリ同期の状態を表示する
+title: Office 365 でディレクトリの同期状態を表示する
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: ディレクトリ同期を非アクティブ化する方法について説明します。 その状態を表示することもできます。
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001570"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492103"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Office 365 のディレクトリ同期の状態を表示する
+# <a name="view-directory-synchronization-status-in-office-365"></a>Office 365 でディレクトリの同期状態を表示する
 
 オンプレミス環境と Office 365 を同期することによって、オンプレミスの Active Directory を Azure AD に統合している場合は、同期の状態を確認することもできます。
   
@@ -39,7 +39,7 @@ ms.locfileid: "31001570"
   
 ディレクトリ同期に問題がある場合は、このページにもエラーが表示されます。 発生する可能性のあるさまざまなエラーの詳細については、「 [Office 365 でのディレクトリ同期エラーの識別](identify-directory-synchronization-errors.md)」を参照してください。
   
-|**アイテム**|**目的**|
+|**Item**|**目的**|
 |:-----|:-----|
 |**確認されたドメイン** | 自分が所有していることが確認された Office 365 テナント内のドメインの数。 |
 |**確認されていないドメイン** | 追加されたが確認されていないドメイン。 |
