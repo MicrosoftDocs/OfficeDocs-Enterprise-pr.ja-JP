@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL の Web サービス
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/4/2018
+ms.date: 4/30/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
-ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
+ms.openlocfilehash: 8dedb88c830d51d9d2cf16df783be75fc9d66450
+ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26985772"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497699"
 ---
-# <a name="office-365-ip-address-and-url-web-service"></a>**Office 365 IP アドレスと URL の Web サービス**
+# <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービス
 
 Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、また変更の最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。XML 形式は、2018 年 10 月 2 日に廃止される予定です。
 
@@ -46,27 +46,30 @@ Office 365 のネットワーク トラフィックをよりよく識別し区�
 - 現在のバージョンを確認します。
 - 最近の変更を取得します。
 
+> [!NOTE]
+> Azure ExpressRoute を使って Office 365 に接続する場合は、Azure ExpressRoute でサポートされている Office 365 サービスについて詳しく説明している[Office 365 の Azure ExpressRoute](https://docs.microsoft.com/office365/enterprise/azure-expressroute) をお読みください。 また、Office 365 アプリのネットワーク 要求でインターネット接続が必要なものについて [Office 365 URL と IP アドレス範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) もお読みください。 これは、perimeter セキュリティ デバイスの設定に役立ちます。
+
 追加情報については、次を参照してください。
 
 - [Office 365 技術コミュニティ フォーラムでのお知らせブログの投稿](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-Office-365-endpoint-categories-and-Office-365-IP/ba-p/177638)
 - [Web サービスの使用に関する質問のための Office 365 技術コミュニティ フォーラム](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
 
-## <a name="common-parameters"></a>**共通パラメーター**
+## <a name="common-parameters"></a>共通パラメーター
 
-次のパラメーターは、すべての Web サービス メソッド共通です。
+これらのパラメーターは、すべての Web サービス メソッドで共通です。
 
-- **format=CSV | JSON** - クエリ文字列パラメーター。既定では、返されるデータ形式は JSON です。コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを含めます。
-- **ClientRequestId** - クエリ文字列パラメーター。クライアントの関連付けのために生成する必要がある GUID。Web サービスを呼び出す各コンピューターに GUID を生成する必要があります。今後、この Web サービスによってブロックされる可能性があるため、次の例に示す GUID は使用しないでください。GUID 形式 _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_、x は 16 進数。GUID を生成するには、[New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell コマンドを使用します。
+- **format=<JSON | CSV>** - 初期設定では、返されるデータ形式は JSON です。 コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
+- **ClientRequestId=\<guid>** - クライアントの関連付けのために必要な GUID。 web サービスを呼び出す各コンピューターに GUID を作成しなければなりません。 次の例に示す GUID は、今後この web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_で、x は 16進数を表します。 GUID を作成するには、[New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell コマンドを使用します。
 
-## <a name="version-web-method"></a>**バージョン Web メソッド**
+## <a name="version-web-method"></a>バージョン web メソッド
 
 Microsoft では、Office 365 の IP アドレスと FQDN のエントリを毎月末に更新し、運用またはサポートの要件については不定期に更新します。公開済みの各インスタンスのデータには、バージョン番号が割り当てられます。バージョン Web メソッドを使用すると、Office 365 サービスの各インスタンスの最新のバージョンをポーリングできます。毎日、または最短で 1 時間ごとにバージョンを確認することをお勧めします。新しいバージョンは、毎月の初めに出る予定です。場合によっては、サポート インシデント、セキュリティ、その他の運用要件などのため、月の初め以外にも新しいバージョンが出ることもあります。
 
-バージョン Web メソッドには 1 つのパラメーターがあります。
+バージョン Web メソッドのパラメーターは次のとおりです。
 
-- **AllVersions=true** - クエリ文字列パラメーター。既定では、返されるバージョンは最新のものです。すべての公開済みバージョンを要求するには、このオプション パラメーターを含めます。
-- **Format=JSON** | **CSV** | **RSS** – JSON 形式および CSV 形式に加えて、バージョン Web メソッドは RSS もサポートしています。これを AllVersions=true パラメーターと共に使用して、Outlook や他の RSS リーダーで使用できる RSS フィードを要求できます。
-- **Instance** - ルート パラメーター。この省略可能なパラメーターは、バージョンを返すインスタンスを指定します。省略した場合は、すべてのインスタンスが返されます。有効なインスタンスは次のとおりです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **AllVersions=<true | false>** - 初期設定では、返されるバージョンは最新のものです。 web サービスの最初のリリースからすべての公開済みバージョンを要求するには、このオプションのパラメーターを含めます。
+- **Format=<JSON | CSV | RSS>** – JSON 形式と CSV 形式に加えて、このバージョン web メソッドは RSS もサポートします。 このオプションのパラメーターは、_AllVersions=true_ パラメーターと共に使用でき、Outlook や その他の RSS リーダーで使用できる RSS フィードを要求できます。
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - このオプション パラメーターはバージョンを返すインスタンスを指定します。 省略する場合は、すべてのインスタンスが返されます。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
 バージョン Web メソッドはレート制限がなく、429 HTTP 応答コードも返しません。バージョン Web メソッドへの応答には、1 時間のデータのキャッシュを推奨する cache-control ヘッダーが含まれます。バージョン Web メソッドからの結果は、単一のレコードの場合も、レコードの配列の場合もあります。各レコードの要素は、次のとおりです。
 
@@ -76,7 +79,7 @@ Microsoft では、Office 365 の IP アドレスと FQDN のエントリを毎�
 
 Microsoft Flow を使用して、IP アドレスや URL への変更のメール通知を受け取れます。「[Microsoft Flow を使用して、Office 365 IP アドレスや URL への変更のメール通知を受け取る](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」をご覧ください。
 
-### <a name="examples"></a>**例:**
+### <a name="examples"></a>例:
 
 例 1 要求 URI: [https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
@@ -166,16 +169,18 @@ Worldwide,2018063000
 ...
 ```
 
-## <a name="endpoints-web-method"></a>**エンドポイント Web メソッド**
+## <a name="endpoints-web-method"></a>エンドポイント web メソッド
 
-エンドポイント Web メソッドは、Office 365 サービスを構成する IP アドレスの範囲および URL のすべてのレコードを返します。エンドポイント Web メソッドからの最新データをネットワーク デバイスの構成に使用する必要がありますが、追加の事前通知によって公開後 30 日間、データをキャッシュすることができます。エンドポイント Web メソッドの再呼び出しは、バージョン Web メソッドにより新しいデータのバージョンが利用可能なことが示された場合のみ行うことをお勧めします。エンドポイント Web メソッドのパラメーターは次のとおりです。
+エンドポイント web メソッドは、Office 365 サービスを構成する IP アドレスの範囲および URL のすべてのレコードを返します。 エンドポイント web メソッドからの最新データをネットワーク デバイスの設定に使用する必要がありますが、追加の事前通知によって公開後 30 日間、データをキャッシュできます。 エンドポイント web メソッドをもう一度呼び出す場合は、バージョン web メソッドにより新しいデータのバージョンが使用可能なことが示された場合にのみ行うことをお勧めします。
 
-- **ServiceAreas** - クエリ文字列パラメーター。サービス エリアのコンマ区切りリスト。有効な項目は、Common、Exchange、SharePoint、Skype です。Common サービス エリア項目は、他のすべてのサービス エリアの前提条件であるため、この Web サービスに常に含まれます。このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
-- **TenantName** - クエリ文字列パラメーター。お使いの Office 365 テナント名。この Web サービスでは、指定された名前を、テナント名を含む URL の一部に挿入します。テナント名を指定しない場合、URL のこれらの部分にはワイルドカード文字 (\*) が使用されます。
-- **NoIPv6** - クエリ文字列パラメーター。お使いのネットワークで IPv6 を使用しない場合など、出力から IPv6 アドレスを除外するには true に設定します。
-- **Instance** - ルート パラメーター。この必須パラメーターは、エンドポイントを返すインスタンスを指定します。有効なインスタンスは次のとおりです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+エンドポイント web メソッドのパラメーターは次の通りです、
 
-エンドポイント Web メソッドの呼び出しを同じクライアント IP アドレスから過剰な回数行うと、HTTP 応答コード 429 Too Many Requests が返される場合があります。ほとんどのユーザーは、この応答コードを見ることはありません。この応答コードが表示された場合は、もう一度メソッドを呼び出す前に、1 時間待機する必要があります。エンドポイント Web メソッドは、バージョン Web メソッドにより新しいバージョンが利用可能なことが示された場合のみ呼び出すように計画してください。 
+- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - サービス エリアのコンマ区切リストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および_Skype_です。 Common サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、この web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
+- **TenantName=<tenant_name>** - Office 365 のテナント名。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
+- **NoIPv6=<true | false>** - 例えば、お使いのネットワークで IPv6 を使用しない場合は、true に設定し出力から IPv6 アドレスを除外します。
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+
+同じクライアント IP アドレスから、エンドポイント web メソッドを呼び出す回数が多いと HTTP Response Code 429 (要求が多すぎます) の応答コードが返される場合があります。 ほとんどのユーザーはこの応答コードを返されることはありません。 この応答コードを受けた場合は、1時間おいてからもう一度メソッドを呼び出してください。 バージョン web メソッドが、新しいバージョンのデータが使用可能だと示したときにのみ、エンドポイントを呼び出すよう計画してください。
 
 エンドポイント Web メソッドの結果は、エンドポイント セットを表す各レコードを含むレコードの配列です。各レコードの要素は次のとおりです。
 
@@ -185,7 +190,7 @@ Worldwide,2018063000
 - tcpPorts - エンドポイント セットの TCP ポート。すべてのポート要素は、コンマで区切られたポートまたはダッシュ文字 (-) で区切られたポート範囲のリストとです。ポートは、そのカテゴリのエンドポイント セットのすべての IP アドレスとすべての URL に適用されます。空白の場合は省略します。
 - udpPorts - このエンドポイント セット内の IP アドレス範囲の UDP ポート。空白の場合は省略します。
 - ips - 一覧表示された TCP ポートまたは UDP ポートに関連付けられたものとして、このエンドポイントセットに関連付けられている IP アドレスの範囲。IP アドレス範囲の JSON 配列。空白の場合は省略します。
-- category - エンドポイント セットの接続のカテゴリ。有効な値は、Optimize、Allow、Default です。エンドポイント データを使用して IP アドレスまたは URL のカテゴリを検索する場合、クエリが複数のカテゴリを返す可能性があります。これにはいくつかの原因が考えられますので、複数のカテゴリが返された場合は、最優先のカテゴリの推奨事項に従ってください。たとえば、エンドポイントが Optimize と Allow の両方に表示される場合は、Optimize の要件に従う必要があります。必須です。 
+- category - エンドポイント セットの接続のカテゴリ。有効な値は、Optimize、Allow、Default です。エンドポイント データを使用して IP アドレスまたは URL のカテゴリを検索する場合、クエリが複数のカテゴリを返す可能性があります。これにはいくつかの原因が考えられますので、複数のカテゴリが返された場合は、最優先のカテゴリの推奨事項に従ってください。たとえば、エンドポイントが Optimize と Allow の両方に表示される場合は、Optimize の要件に従う必要があります。必須です。
 - expressRoute - このエンドポイント セットが ExpressRoute を経由してルーティングされるかどうかを示す True または False。
 - required - Office 365 のサポートを受けるためにこのエンドポイント セットの接続性が必要な場合は True。このエンドポイント セットが省略可能な場合は False。
 - notes - オプションのエンドポイントで、ネットワーク層でエンドポイント セットの IP アドレスまたは URL にアクセスできない場合に、このテキストは見つからない Office 365 の機能について説明します。空白の場合は省略します。
@@ -239,15 +244,15 @@ Worldwide,2018063000
 
 変更 Web メソッドのパラメーターは次のとおりです。
 
-- **Version** - 必須の URL ルート パラメーター。現在実装しているバージョンであり、そのバージョン以降の変更を確認する場合。形式は _YYYYMMDDNN_ です。
+- **Version=<YYYYMMDDNN>** - 必要な URL ルート パラメーター。 この値は、現在実装しているバージョンでなければなりません。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_です。
 
-変更 Web メソッドは、エンドポイント Web メソッドと同じようにレート制限されています。429 HTTP 応答コードを受け取った場合、もう一度呼び出す前に、1 時間待機する必要があります。 
+変更 Web メソッドは、エンドポイント Web メソッドと同じようにレート制限されています。429 HTTP 応答コードを受け取った場合、もう一度呼び出す前に、1 時間待機する必要があります。
 
 変更 Web メソッドの結果はレコードの配列であり、各レコードが特定のバージョンのエンドポイントでの変更を表しています。各レコードの要素は次のとおりです。
 
 - id - 変更レコードの不変 ID。
-- endpointSetId - 変更されたエンドポイント セット レコードの ID。必須です。
-- disposition - 変更、追加、削除のいずれかを指定し、エンドポイント セット レコードに対して行った変更の内容について説明します。必須です。
+- endpointSetId - 変更されたエンドポイント セット レコードの ID。
+- disposition - 変更、追加、もしくは削除のいずれかを指定し、エンドポイント セット レコードに対して行った変更の内容を説明します。
 - impact - すべての変更がどの環境に対しても同じ重要度を持つわけではありません。impact は、この変更の結果、エンタープライズ ネットワーク境界環境に対して期待される影響度を示します。この属性は、バージョン 2018112800 以降の変更レコードにのみ含まれます。impact のオプションは次のとおりです。
   - AddedIp – IP アドレスが Office 365 に追加され、間もなくサービスで有効になります。これは、ファイアウォールまたはその他のレイヤ 3 ネットワーク境界デバイスを装備する必要がある変更を表します。IP アドレスの使用開始前に追加しないと、サービスが停止する可能性があります。
   - AdedUrl – URL が Office 365 に追加され、間もなくサービスで有効になります。これは、プロキシ サーバーまたは URL 解析ネットワーク境界デバイスを装備する必要がある変更を表します。URL の使用開始前に追加しないと、サービスが停止する可能性があります。
@@ -259,16 +264,16 @@ Worldwide,2018063000
   - OtherNonPriorityChanges – メモ フィールドなど、その他のすべてのオプションよりも重要度が低いものを変更しました。
 - version - 変更が導入された公開エンドポイント セットのバージョン。バージョン番号は _YYYYMMDDNN_ の形式で、複数のバージョンを 1 日のうちに発行する必要がある場合、NN が自然数として増分されます。
 - previous - エンドポイント セット上の変更された要素の以前の値を詳述したサブストラクチャ。これは、新しく追加されたエンドポイント セットには含まれません。tcpPorts、udpPorts、ExpressRoute、category、required、notes が含まれます。
-- current - エンドポイント セットの変更要素の更新された値を詳述するサブストラクチャ。tcpPorts、udpPorts、ExpressRoute、category、required、notes が含まれます。
+- current - エンドポイント セットの変更要素の更新された値を詳述するサブストラクチャ。 _tcpPorts_、_udpPorts_、_ExpressRoute_、_category_、_required_、および_notes_が含まれます。
 - add - エンドポイント セット コレクションに追加する項目の詳細を示すサブストラクチャ。追加がない場合は省略します。
   - effectiveDate - 追加がサービス内で有効になる時点を示すデータを定義します。
-  - ips - IP 配列に追加する項目。
-  - urls - URL 配列に追加する項目。
-- remove - エンドポイント セットから削除するサブストラクチャの詳細項目。削除がない場合は省略します。
-  - ips - IP 配列から削除する項目。
-  - urls - URL 配列から削除する項目。
+  - ips - _ips_ 配列に追加する項目。
+  - urls - _urls_ 配列に追加する項目。
+- remove - エンドポイント セットから削除するサブストラクチャの詳細項目。 削除することがない場合は省略します。
+  - ips - _ips_ 配列から削除する項目。
+  - urls - _urls_ 配列から削除する項目。
 
-### <a name="examples"></a>**例:**
+### <a name="examples"></a>例:
 
 例 1 要求 URI: [https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
@@ -340,9 +345,9 @@ Worldwide,2018063000
 ]
 ```
 
-## <a name="example-powershell-script"></a>**PowerShell のサンプル スクリプト**
+## <a name="example-powershell-script"></a>PowerShell スクリプト
 
-ここに示した PowerShell スクリプトを実行して、更新されたデータに対して必要なアクションがあるかどうかを確認できます。このスクリプトは、Office 365 ワールドワイド インスタンス エンドポイントのバージョン番号をチェックします。変更がある場合は、エンドポイントをダウンロードし、&quot;Allow&quot; カテゴリと &quot;Optimize&quot; カテゴリのエンドポイントのフィルター処理を行います。また、複数の呼び出しにわたって一意の ClientRequestId を使用し、見つかった最新バージョンを一時ファイルに保存します。バージョンの更新を確認するために、1 時間に 1 回このスクリプトを呼び出す必要があります。
+これは、アップデートされたデータに対して必要なアクションがあるかどうかを確認するために実行する PowerShell スクリプトです。 このスクリプトは、Office 365 Worldwide のインスタンス エンドポイントのバージョン番号を確認します。 変更がある場合は、エンドポイントをダウンロードし、「許可」および「最適化」カテゴリ エンドポイントのフィルター処理を行います。 また、複数の呼び出しに_ClientRequestId_を使ったり、見つかった最新バージョンを一時ファイルに保存します。 このスクリプトはバージョンの更新を確認するために 1 時間に 1 回呼び出す必要があります。
 
 ```powershell
 # webservice root URL
@@ -416,7 +421,7 @@ else {
 }
 ```
 
-## <a name="example-python-script"></a>**Python のサンプル スクリプト**
+## <a name="example-python-script"></a>Python スクリプト
 
 ここに示した Python スクリプトは、Windows 10 で Python 3.6.3 を使用してテストしたもので、これを実行すれば、更新されたデータに対して必要なアクションがあるかどうかを確認できます。このスクリプトは、Office 365 ワールドワイド インスタンス エンドポイントのバージョン番号をチェックします。変更がある場合は、エンドポイントをダウンロードし、_Allow_ カテゴリと _Optimize_ カテゴリのエンドポイントのフィルター処理を行います。また、複数の呼び出しにわたって一意の ClientRequestId を使用し、見つかった最新バージョンを一時ファイルに保存します。バージョンの更新を確認するために、1 時間に 1 回このスクリプトを呼び出す必要があります。
 
@@ -482,13 +487,62 @@ else:
     print('Office 365 worldwide commercial service instance endpoints are up-to-date')
 ```
 
-## <a name="web-service-interface-versioning"></a>**Web サービス インターフェイスのバージョン管理**
+## <a name="web-service-interface-versioning"></a>Web サービス インターフェース バージョニング
 
 今後、これらの Web サービス メソッドのパラメーターまたは結果の更新が必要になる場合があります。これらの Web サービスの一般的提供バージョンが公開された後、Microsoft では、Web サービスのマテリアル更新の事前通知を提供するために適切な努力を払います。Microsoft は、更新プログラムにより Web サービスを使用しているクライアントが変更を行う必要が生じると判断した場合、新しいバージョンのリリース後、少なくとも 12 か月間、その Web サービスの以前のバージョン (1 つ前のバージョン) を使用できるようにします。その間にアップグレードを行わない顧客は、Web サービスとそのメソッドにアクセスできなくなる場合があります。Web サービス インターフェイスのシグネチャに次の変更が加えられた場合、顧客は Web サービスのクライアントがエラーなしで引き続き動作することを確認する必要があります。
 
 - 古いクライアントによって提供される必要がなく、古いクライアントが受け取る結果に影響を与えない、新しいオプションのパラメーターを既存の Web メソッドに追加する。
 - 応答 REST 項目の 1 つに新しい名前付き属性を追加する、または応答 CSV に列を追加する。
 - 新しい Web メソッドに、古いクライアントから呼び出されない新しい名前を追加する。
+
+## <a name="office-365-endpoint-functions-module"></a>Office 365 エンドポイント関数モジュール
+
+Microsoft は、Office 365 サービスの最新の URI を取得するための REST サービスをホストしています。  コレクションとして URI を使用するために、このモジュールといくつかのコマンドレットを活用します。
+
+### <a name="calling-the-rest-service"></a>REST サービスを呼び出す
+
+このモジュールを使うには、お持ちのハード ディスクにこのモジュール ファイルをコピーして、このコマンドで直接インポートしてください。 [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) 
+
+```powershell
+    Import-Module O365EndpointFunctions.psm1
+```
+
+モジュールをインポートしたら、REST サービスを呼び出せます。 これにより、URI をコレクションとして返し、直接 PowerShell で処理する事ができます。 次のコマンドの説明に従って、Office 365 テナント名を入力します。
+
+```powershell
+    Invoke-O365EnpointService -tenantName [Name of your tenant]
+```
+
+> [!NOTE]
+> コマンドレットのスペルは **Invoke-O365EnpointService**、 _d_ を付けません。 これは、入力ミスではありません。
+
+#### <a name="parameters"></a>パラメーター
+
+- **tenantName** - Office 365 テナントの名前。 このパラメーターは必須です。
+- **ForceLatest** - このスイッチは REST API が常に最新の URI のリスト全体を返すよう強制します。
+- **IPv6** - このスイッチは IPv6 アドレスを返します。 既定値として IPv4 のみが返されます。
+
+### <a name="examples"></a>例
+
+IPv6 アドレスを含むすべての URI の完全なリストを返します
+
+```powershell
+    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+```
+
+Exchange Online Service の IP アドレスのみを返します
+
+```powershell
+    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+```
+
+### <a name="exporting-a-proxy-pac-file"></a>Proxy PAC ファイルをエクスポートします
+
+このモジュールを使用して、Proxy PAC ファイルを作成します。 この例では、最初にエンドポイントを取得し、URL を選択するために結果をフィルター処理します。 これらの URL はエクスポートするためにパイプされます。  
+
+```powershell
+ Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+```
 
 ## <a name="related-topics"></a>関連項目
   
