@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 概要：これらのクラウド採用テストラボガイド（TLG）を使用して、Office 365のデモンストレーション、概念実証、または開発/テスト環境を設定します。
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741173"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490233"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>クラウド導入のテスト ラボ ガイド (TLG) を使用した Office 365 のテスト
 
@@ -58,7 +58,7 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     
     Office 365 サブスクリプションのアカウントに対応するスマートフォンに送信されたテキスト メッセージを使用して、セカンダリ認証を構成してテストします。
     
-- [Office 365 開発/テスト環境の連合アイデンティティ](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Active Directoryドメインサービス（AD DS）ドメインのアカウントを使用してフェデレーション認証を構成し、実演します。
     
@@ -70,7 +70,7 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     
     Advanced Threat Protection の構成とデモンストレーションを行います。これは Exchange Online Protection (EOP) の機能であり、マルウェアからメールを保護します。
     
-- [Office 365 の開発/テスト環境の高度な電子情報開示](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Office 365 の開発/テスト環境の Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
     サンプル データを追加して Advanced eDiscovery のデモンストレーションを行います。これにより、メールやドキュメントなどの Office 365 に格納されているデータをすばやく見つけて分析できます。
     
@@ -82,7 +82,7 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
     
     Azure Information Protection クライアントを使用して、さまざまなレベルのセキュリティでドキュメントを分類する方法を示します。
     
-- [分離した SharePoint Online チーム サイト開発/テスト環境](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
     重要なリソースや機密性の高いリソース用に、組織の他の部分から分離されている SharePoint Online チーム サイトを作成する方法を示します。
     
@@ -103,7 +103,7 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
 
 Azure インフラストラクチャ サービス内に作成できる、SharePoint Server 2016の開発/テスト環境は次のとおりです。
   
-- [Azure における SharePoint Server 2016 開発/テスト環境](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
+- [Azure における SharePoint Server 2016 の開発/テスト環境](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
     
     Azure インフラストラクチャ サービスに単一サーバーの SharePoint Server 2016 ファームを構築します。
 

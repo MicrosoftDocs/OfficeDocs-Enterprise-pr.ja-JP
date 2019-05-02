@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Microsoft PowerShell を使用した Exchange Online 複数地域設定の管理方法を説明します。
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765049"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490883"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>複数地域環境での Exchange Online メールボックスの管理
 
@@ -42,7 +42,7 @@ Office 365 環境で複数地域プロパティを表示および構成するに
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   たとえば、olga@contoso.onmicrosoft.comが接続先の地理的位置にある有効なメールボックスの電子メールアドレスである場合は、次のコマンドを実行します。
+   たとえば、olga@contoso.onmicrosoft.com が、接続したい地理的位置で有効なメール ボックスのメール アドレスである場合、次のコマンドを実行します。
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -86,7 +86,7 @@ Exchange Online PowerShell の **Get-Mailbox** コマンドレットでは、メ
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-たとえば、メールボックスchris@contoso.onmicrosoft.comの地理的位置情報を表示するには、次のコマンドを実行します。
+たとえば、メール ボックスの chris@contoso.onmicrosoft.com の地理的位置の情報を表示するには、次のコマンドを実行します。
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -112,7 +112,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalName,PreferredDataLocation
 ```
 
-例えば、ユーザーmichelle@contoso.onmicrosoft.comの** PreferredDataLocation **の値を確認するには、次のコマンドを実行します。
+たとえば、ユーザー michelle@contoso.onmicrosoft.com の **PreferredDataLocation** 値を表示するには、次のコマンドを実行します。
 
 ```powershell
 Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
@@ -124,7 +124,7 @@ Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoLocationCode>
 ```
 
-例えば、ユーザーmichelle@contoso.onmicrosoft.comの** PreferredDataLocation **値を欧州連合（EUR）の位置に設定するには、次のコマンドを実行します。
+たとえば、**PreferredDataLocation** 値をユーザー michelle@contoso.onmicrosoft.com の欧州連合 (EUR) 地域に設定するには、次のコマンドを実行します。
 
 ```powershell
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
@@ -168,7 +168,7 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 
 この例では、次の値を使用して Elizabeth Brunner 用に新しいユーザー アカウントを作成します。
 
-- ユーザー識別名：ebrunner@contoso.onmicrosoft.com
+- ユーザー プリンシパル名: ebrunner@contoso.onmicrosoft.com
 
 - 名: Elizabeth
 
