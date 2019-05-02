@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL の Web サービス
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 5/1/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: 8dedb88c830d51d9d2cf16df783be75fc9d66450
-ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
+ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
+ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497699"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33512683"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービス
 
@@ -180,7 +180,7 @@ Worldwide,2018063000
 - **NoIPv6=<true | false>** - 例えば、お使いのネットワークで IPv6 を使用しない場合は、true に設定し出力から IPv6 アドレスを除外します。
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
 
-同じクライアント IP アドレスから、エンドポイント web メソッドを呼び出す回数が多いと HTTP Response Code 429 (要求が多すぎます) の応答コードが返される場合があります。 ほとんどのユーザーはこの応答コードを返されることはありません。 この応答コードを受けた場合は、1時間おいてからもう一度メソッドを呼び出してください。 バージョン web メソッドが、新しいバージョンのデータが使用可能だと示したときにのみ、エンドポイントを呼び出すよう計画してください。
+同じクライアント IP アドレスから、エンドポイント web メソッドを呼び出す回数が多いと、 HTTP Response Code 429 (要求が多すぎます) の応答コードが返される場合があります。 ほとんどのユーザーはこの応答コードを返されることはありません。 この応答コードを取得した場合、リクエストを繰り返す前に1 時間待ちます。 バージョン web メソッドが、新しいバージョンのデータが使用可能だと示したときにのみ、エンドポイントを呼び出すよう計画してください。
 
 エンドポイント Web メソッドの結果は、エンドポイント セットを表す各レコードを含むレコードの配列です。各レコードの要素は次のとおりです。
 
@@ -227,7 +227,6 @@ Worldwide,2018063000
    [
     "*.mail.protection.outlook.com"
    ],
-...
 ```
 
 この例では、追加のエンドポイント セットは含まれていません。
@@ -244,9 +243,9 @@ Worldwide,2018063000
 
 変更 Web メソッドのパラメーターは次のとおりです。
 
-- **Version=<YYYYMMDDNN>** - 必要な URL ルート パラメーター。 この値は、現在実装しているバージョンでなければなりません。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_です。
+- **Version=\<YYYYMMDDNN>** - 必要な URL ルート パラメーターです。 この値は、現在実装しているバージョンでなければなりません。 この web サービスはそのバージョン以降の変更を返します。 形式はYYYYMMDDNNとなり、_NN_ のところはゼロになります。 Web サービスでは、正確に 10 桁の数字を含む上記のパラメーターを要求します。
 
-変更 Web メソッドは、エンドポイント Web メソッドと同じようにレート制限されています。429 HTTP 応答コードを受け取った場合、もう一度呼び出す前に、1 時間待機する必要があります。
+Web メソッドの変更では、エンドポイント web メソッドと同じ方法でレート制限がされています。 429 HTTP 応答コードを受け取った場合、リクエストを繰り返す前に1 時間待ちます。
 
 変更 Web メソッドの結果はレコードの配列であり、各レコードが特定のバージョンのエンドポイントでの変更を表しています。各レコードの要素は次のとおりです。
 
@@ -255,7 +254,7 @@ Worldwide,2018063000
 - disposition - 変更、追加、もしくは削除のいずれかを指定し、エンドポイント セット レコードに対して行った変更の内容を説明します。
 - impact - すべての変更がどの環境に対しても同じ重要度を持つわけではありません。impact は、この変更の結果、エンタープライズ ネットワーク境界環境に対して期待される影響度を示します。この属性は、バージョン 2018112800 以降の変更レコードにのみ含まれます。impact のオプションは次のとおりです。
   - AddedIp – IP アドレスが Office 365 に追加され、間もなくサービスで有効になります。これは、ファイアウォールまたはその他のレイヤ 3 ネットワーク境界デバイスを装備する必要がある変更を表します。IP アドレスの使用開始前に追加しないと、サービスが停止する可能性があります。
-  - AdedUrl – URL が Office 365 に追加され、間もなくサービスで有効になります。これは、プロキシ サーバーまたは URL 解析ネットワーク境界デバイスを装備する必要がある変更を表します。URL の使用開始前に追加しないと、サービスが停止する可能性があります。
+  - AddedUrl – Office 365 に追加された URL は、すぐにサービスで有効になります。 これは、プロキシ サーバーまたは URL 解析ネットワーク境界デバイスを装備する必要がある変更を表します。 URL の使用開始前に追加しないと、サービスが停止する可能性があります。
   - AddedIpAndUrl - IP アドレスと URL の両方が追加されました。これは、ファイアウォール、レイヤ 3 デバイス、プロキシ サーバー、または URL 解析デバイスのいずれかを装備する必要がある変更を表します。IP アドレスと URL の使用開始前に装備しないと、サービスが停止する可能性があります。
   - RemovedIpOrUrl – 少なくとも 1 つの IP アドレスまたは URL が Office 365 から削除されました。境界デバイスからネットワーク エンドポイントを削除する必要があります。ただし、期限はありません。
   - ChangedIsExpressRoute – ExpressRoute サポート属性が変更されました。ExpressRoute を使用している場合、構成によっては何らかのアクションが必要となります。
@@ -263,8 +262,8 @@ Worldwide,2018063000
   - RemovedDuplicateIpOrUrl – 重複する IP アドレスまたは URL を削除しましたが、引き続き Office 365 用に公開されています。通常、必要なアクションはありません。
   - OtherNonPriorityChanges – メモ フィールドなど、その他のすべてのオプションよりも重要度が低いものを変更しました。
 - version - 変更が導入された公開エンドポイント セットのバージョン。バージョン番号は _YYYYMMDDNN_ の形式で、複数のバージョンを 1 日のうちに発行する必要がある場合、NN が自然数として増分されます。
-- previous - エンドポイント セット上の変更された要素の以前の値を詳述したサブストラクチャ。これは、新しく追加されたエンドポイント セットには含まれません。tcpPorts、udpPorts、ExpressRoute、category、required、notes が含まれます。
-- current - エンドポイント セットの変更要素の更新された値を詳述するサブストラクチャ。 _tcpPorts_、_udpPorts_、_ExpressRoute_、_category_、_required_、および_notes_が含まれます。
+- previous - エンドポイント セットの変更された要素の以前の値を詳述するサブストラクチャです。 これは、新しく追加されたエンドポイント セットには含まれていません。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、_notes_ が含まれます。
+- current - エンドポイント セットの変更要素の更新された値を詳述するサブストラクチャです。 _ExpressRoute_、_serviceArea_、_category_、_required_、_tcpPorts_、_udpPorts_、_notes_が含まれます。
 - add - エンドポイント セット コレクションに追加する項目の詳細を示すサブストラクチャ。追加がない場合は省略します。
   - effectiveDate - 追加がサービス内で有効になる時点を示すデータを定義します。
   - ips - _ips_ 配列に追加する項目。
@@ -311,7 +310,6 @@ Worldwide,2018063000
    {
     "ips":
      [
-...
 ```
 
 例 2 要求 URI: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
