@@ -28,7 +28,7 @@ ms.locfileid: "31038061"
 
  **概要:** Azure インフラストラクチャ サービスの仮想マシン上に Azure AD Connect をデプロイし、オンプレミス ディレクトリと Office 365 サブスクリプションの Azure AD テナントとの間でアカウントを同期します。
   
-Azure Active Directory (AD) Connect (以前は、ディレクトリ同期ツール、Directory Sync ツール、DirSync.exe ツールなどと呼ばれていました) は、ドメインに参加しているサーバーにインストールして、オンプレミスの Active Directory ドメイン サービス (AD DS) ユーザーを Office 365 サブスクリプションの Azure AD テナントに同期するアプリケーションです。Office 365 では、ディレクトリ サービスに Azure Active Directory (Azure AD) を使用しています。Office 365 サブスクリプションには、Azure AD テナントが含まれています。このテナントは、他の SaaS アプリケーションや Azure のアプリなど、別のクラウド ワークロードで組織の ID を管理するためにも使用できます。
+Azure Active Directory (AD) Connect (以前は、ディレクトリ同期ツール、Directory Sync ツール、DirSync.exe ツールなどと呼ばれていました) は、ドメインに参加しているサーバーにインストールして、オンプレミスの Active Directory Domain Services (AD DS) ユーザーを Office 365 サブスクリプションの Azure AD テナントに同期するアプリケーションです。Office 365 では、ディレクトリ サービスに Azure Active Directory (Azure AD) を使用しています。Office 365 サブスクリプションには、Azure AD テナントが含まれています。このテナントは、他の SaaS アプリケーションや Azure のアプリなど、別のクラウド ワークロードで組織の ID を管理するためにも使用できます。
 
 Azure AD Connect はオンプレミス サーバーにインストールできますが、次の理由により、Azure の仮想マシンにもインストールできます。
   

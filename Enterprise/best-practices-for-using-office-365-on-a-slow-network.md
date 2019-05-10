@@ -17,19 +17,19 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: インターネット接続が常に高速でダウンしていない場合は、よいでしょうか。 その日が来るかもしれません。 しかし、それまでの間に、低機能のネットワークを回避して日常の作業を行うことができる実用的な事柄があります。
-ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3ddc6483956657485b75a20a540ea83a55b61564
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655771"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>低速のネットワークで Office 365 を使用するためのベストプラクティス
 
 インターネット接続が常に高速でダウンしていない場合は、よいでしょうか。 その日が来るかもしれません。 しかし、それまでの間に、低機能のネットワークを回避して日常の作業を行うことができる実用的な事柄があります。 Office 365 はクラウドベースのサービスですが、コンテンツをオフラインで操作したり、変更をスムーズに同期したりするための多くの方法も提供しています。 それに加えて、アプリケーションの実行速度が速く、ユーザーインターフェイスの応答性が向上するため、コンテンツをオフラインで操作する方が効率的な場合もあります。 この点は次のとおりです。 Office 365 では、両方のメリットが得られます。 その利点を活用する方法は次のとおりです。 
   
 > [!TIP]
-> ネットワーク接続の速度 (または高速) を確認する [OOKLA speed テスト](https://www.speedtest.net/)または[ネットワーク速度テストアプリ](https://www.windowsphone.com/en-us/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70)を試してみてください。 
+> ネットワーク接続の速度 (または高速) を確認する [OOKLA speed テスト](https://www.speedtest.net/)または[ネットワーク速度テストアプリ](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70)を試してみてください。 
      
 ## <a name="why-is-my-network-so-slow"></a>ネットワークが遅くなるのはなぜですか?
 
@@ -57,11 +57,11 @@ ms.locfileid: "33490250"
     
 - 可能であれば、追加のメモリを購入します。 メモリの追加は、デバイスのパフォーマンスを向上させる最もシンプルで頻繁に使用される方法です。 大きなファイルやビデオを扱う場合に特に役立ちます。
     
-詳細については、「 [windows パフォーマンスとメンテナンス](https://windows.microsoft.com/en-us/windows/performance-maintenance-help#performance-maintenance-help)」および「 [windows システムのパフォーマンスの問題を修正](https://support.microsoft.com/mats/slow_windows_performance/)する」を参照してください。
-   
+詳細については、「windows[パフォーマンスとメンテナンス](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help)」および「 [WINDOWS 10 で PC のパフォーマンスを向上](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance)させるためのヒント」を参照してください。
+
 ## <a name="best-practices-for-using-your-browser"></a>ブラウザーを使用するためのベストプラクティス
 
-ブラウザーは office 365 へのゲートウェイです。特に、ページの読み込みにかかる時間と office 365 サービスへのラウンドトリップの頻度によっては、パフォーマンスに影響を与える可能性があります。 
+ブラウザーは Office 365 へのゲートウェイです。特に、ページの読み込みにかかる時間と Office 365 サービスへのラウンドトリップの頻度によっては、パフォーマンスに影響を与える可能性があります。 
   
  **一般的なブラウザー**
   
@@ -85,19 +85,19 @@ ms.locfileid: "33490250"
   
 以下に、特定のブラウザーに関する推奨事項を示します。
   
-- **Internet Explorer**以前のバージョンよりも大幅にパフォーマンスを向上させるには、Internet Explorer バージョン11以降にアップグレードします。 詳細については、「 [Internet Explorer の問題を修正](https://support.microsoft.com/mats/ie_performance_and_safety)する」を参照してください。
+- **Internet Explorer**以前のバージョンよりも大幅にパフォーマンスを向上させるには、Internet Explorer バージョン11以降にアップグレードします。 詳細については、「 [Internet Explorer のトラブルシューティングガイド](https://support.microsoft.com/help/2437121/troubleshooting-guide-for-internet-explorer-when-you-access-office-365)」を参照してください。
     
-- **FireFox**詳細については、「 [Firefox が低速または動作を停止](https://support.mozilla.org/en-US/products/firefox/fix-problems/slowness-or-hanging)する」を参照してください。
+- **FireFox**詳細については、「 [Firefox が低速または動作を停止](https://support.mozilla.org/products/firefox/fix-problems/slowness-or-hanging)する」を参照してください。
     
 - **Safari**詳細については、「 [Apple-Safari](https://www.apple.com/safari/)」を参照してください。
     
 - **クロム**詳細については、「 [Chrome Help](https://support.google.com/chrome/?hl=en)」を参照してください。
   
-## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>outlook および outlook Web App を使用するためのベストプラクティス
+## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>Outlook および Outlook Web App を使用するためのベストプラクティス
 
-電子メールの読み取り、書き込み、および整理は、全員の一日にとって重要な部分です。 outlook と outlook Web App (OWA) の両方でオフラインサポートが提供されます。 スマートフォンで電子メールアプリを使用すると、別の便利な代替手段となります。 ニーズに合った次のオプションを使用します。
+電子メールの読み取り、書き込み、および整理は、全員の一日にとって重要な部分です。 Outlook と Outlook Web App (OWA) の両方でオフラインサポートが提供されます。 スマートフォンで電子メールアプリを使用すると、別の便利な代替手段となります。 ニーズに合った次のオプションを使用します。
   
-- 以前のバージョンよりも大幅にパフォーマンスを向上させるには、Outlook 2013 SP1 以降にアップグレードします。 
+- 以前のバージョンよりも大幅にパフォーマンスを向上させるために、最新バージョンの Outlook にアップグレードします。 
     
 -  Outlook Web App を使用すると、OWA が次回 Office 365 に接続できるときにアップロードされるオフラインのメッセージ、連絡先、および予定表イベントを作成できます。 OWA をオフラインモードで設定および使用する方法の詳細については、「 [Outlook Web App をオフラインで使用する](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36)」を参照してください。
     
@@ -112,55 +112,49 @@ ms.locfileid: "33490250"
   
 ## <a name="best-practices-for-using-onedrive-for-business"></a>OneDrive for business を使用するためのベストプラクティス
 
-OneDrive for business は、オンラインでオフラインでファイルを操作できるように、地上から設計されています。 設定すると、変更の同期は、いつでも、どこでも確実に行われます。 ネットワークの速度が遅い場合は、オフラインバージョンのファイルを操作できます。
+OneDrive for Business は、オンラインでオフラインでファイルを操作できるように、地上から設計されています。 設定すると、変更の同期は、いつでも、どこでも確実に行われます。 ネットワークの速度が遅い場合は、オフラインバージョンのファイルを操作できます。
   
-OneDrive for business 同期アプリは、office 2013 (Professional Plus または Standard edition)、または office 2013 アプリケーションを含む office 365 サブスクリプションで利用できます。 Office 2013 がインストールされていない場合は、OneDrive for business 同期アプリを無料で[ダウンロード](https://support.microsoft.com/kb/2903984)できます。 このアプリは、[**エクスプローラーで開く**] または [**アップロード**] コマンドを使用するよりも高速です。 詳細については、「 [Office 365 で OneDrive for business ファイルを同期するようにコンピューター](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)をセットアップする」を参照してください。
+OneDrive for Business 同期アプリには、SharePoint Online と Office 365 の両方のサブスクリプションが付属しています。また、OneDrive for business 同期アプリを無料で[ダウンロード](https://support.microsoft.com/kb/2903984)することもできます。 このアプリは、[**エクスプローラーで開く**] または [**アップロード**] コマンドを使用するよりも高速です。 詳細については、「 [Office 365 で OneDrive for business ファイルを同期するようにコンピューター](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)をセットアップする」を参照してください。
   
-OneDrive for business 同期アプリの使用に関するその他のガイダンスを次に示します。
+OneDrive for Business 同期アプリの使用に関するその他のガイダンスを次に示します。
   
 - 大規模なライブラリを最初に同期している場合は、オフ時間帯に同期を開始します (一晩など)。 
     
-- [OneDrive for business アプリ](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330)機能を使用したライブラリの同期を停止して、更新プログラムの同期を一時的に停止することができます。 ただし、この機能は、一度に数時間、大量の更新をキューに入れないようにするために使用します。また、複数のユーザーが同じドキュメントで作業する場合のマージの競合のリスクを最小限に抑えます。 
+- [OneDrive For business アプリ](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330)機能を使用したライブラリの同期を停止して、更新プログラムの同期を一時的に停止することができます。 ただし、この機能は、一度に数時間、大量の更新をキューに入れないようにするために使用します。また、複数のユーザーが同じドキュメントで作業する場合のマージの競合のリスクを最小限に抑えます。 
   
 ## <a name="best-practices-for-using-onenote"></a>OneNote を使用するためのベストプラクティス
 
 すべての SharePoint チームサイトには、組み込みの OneNote ノートブックがあり、自分で簡単に作成できます。 OneNote は、タスクを完了するために毎日必要な情報をタイムリーに収集するための最適な方法です。 たとえば、多くのチームでは、毎週の会議、プロジェクトメモ、アイデア、プラン、進捗レポートのコレクションポイントとして OneNote を使用しています。 ページ、セクション、タブを使用して、このような異種情報を整然と整理することができます。
   
-しかし、OneNote の利点は、デスクトップ、ノート pc、タブレット、スマートフォンなど、ほぼすべてのデバイスからコンテンツにアクセスできることです。 また、OneNote によって実行されるため、保存や同期について心配する必要はありません。 
+OneNote の利点は、デスクトップ、ノート pc、タブレット、スマートフォンなど、ほぼすべてのデバイスからコンテンツにアクセスできることです。 また、OneNote によって実行されるため、保存や同期について心配する必要はありません。 
   
-詳細については、「 [Microsoft OneNote](https://office.microsoft.com/en-us/onenote/)」を参照してください。
-  
-## <a name="best-practices-for-using-lync-online"></a>Lync Online を使用するためのベストプラクティス
+詳細については、「 [Microsoft OneNote](https://office.microsoft.com/onenote)」を参照してください。
 
-以下に、ネットワークの速度が遅い場合に Lync Online を使用するための一般的なガイドラインを示します。
-  
+## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>Skype for Business と Lync Online を使用するためのベストプラクティス
+
+次に、ネットワークの速度が遅い場合に Skype for Business または Lync Online を使用するための一般的なガイドラインを示します。
+
 - 低速のネットワークで正常に動作するために、インスタントメッセージングを使用している場合はいつでも使用できます。
     
 - 仮想プライベートネットワーク (VPN) またはリモートアクセスサービス (RAS) 接続経由で電話をかけることは避けてください。
     
-- オーディオデバイスが承認されていることを確認します。 詳細については、「 [Microsoft Lync で認定](https://technet.microsoft.com/en-us/office/dn788944)されている電話とデバイス」を参照してください。
+- オーディオデバイスが承認されていることを確認します。 詳細については、「 [Microsoft Lync で認定](https://docs.microsoft.com/skypeforbusiness/lync-cert/ip-phones)されている電話とデバイス」を参照してください。
     
 -  PowerPoint をオンラインプレゼンテーションで使用する場合は、スライドのサイズと複雑さを軽減します。 詳細については、「[プレゼンテーションのパフォーマンスを向上させるためのヒント](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949)」を参照してください。
-    
-- 可能な限り、プログラムまたはデスクトップではなく、モニターを共有します。 詳細については、「 [Lync でデスクトップまたはプログラムを共有する](https://support.office.com/article/33aaa965-eb32-42a9-8a9b-cdfffa364842)」を参照してください。
-    
-- 出席者がクライアントデバイスでスライドを表示できるように、共有するのではなく、PowerPoint のスライドを会議出席依頼の添付ファイルとして事前に送信します。 詳細については、「 [Lync 会議をセットアップする](https://support.office.com/article/258f9d20-f06c-49a4-a77f-7f5ac635bb5d)」を参照してください。
-    
+            
 -  ビデオのパフォーマンスは、ネットワークのパフォーマンスに大きく依存します。 ネットワークの速度が遅い場合は、ビデオの使用を避けてください。 
-    
-詳細については、「lync [Online でのオーディオまたはビデオの品質低下](https://support.microsoft.com/kb/2386655)」および「 [lync 2013 での画面の更新の低速](https://support.microsoft.com/kb/2958375)」を参照してください。
+
+詳細については、「 [Lync Online でのオーディオまたはビデオの品質の低さ](https://support.microsoft.com/kb/2386655)」または「 [Skype for business での接続の問題のトラブルシューティング](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771)方法」を参照してください。
   
 ## <a name="best-practices-for-using-sharepoint-lists"></a>SharePoint リストを使用するためのベストプラクティス
 
-リストデータをオフラインで使用して "スクラブ"、分析、またはレポートのデータを処理することは、低速なネットワークの影響を最小限に抑えるために役立ちます。 ほとんどのリストは、リンクを設定することによって、Microsoft access 2013 から読み書きできます。 excel テーブルにリストをエクスポートすることもできます。これにより、excel テーブルとリストとの間の一対一のデータ接続が作成されます。
-  
-さらに、Access Services 機能がアクティブ化されている場合は、リストビューのしきい値よりも多くのデータを使用できます。既定では、最大5万アイテムです。 Access 2013 と Excel 2013 はどちらも、小さなバッチでリストデータを自動的に処理してから、データを再構築します。これにより、リストビューのしきい値を超えるデータの操作が可能になり、サービスのパフォーマンスに悪影響を及ぼすことがなくなります。その他のユーザー。 
+リストデータをオフラインで使用して "スクラブ"、分析、またはレポートのデータを処理することは、低速なネットワークの影響を最小限に抑えるために役立ちます。 ほとんどのリストは、リンクを設定することによって、Microsoft Access 2019 および Microsoft Access 2016 から読み書きできます。 Excel テーブルにリストをエクスポートすることもできます。これにより、Excel テーブルとリストとの間の一対一のデータ接続が作成されます。 [SharePoint リストにリンクされているテーブルをオフラインで操作](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e)する方法について説明します。
   
 詳細については、「 [Office 365 の大規模なリストとライブラリを管理](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784)する」の「大規模なリストの管理について」を参照してください。
   
-## <a name="best-practices-for-customizing-web-pages"></a>web ページをカスタマイズするためのベストプラクティス
+## <a name="best-practices-for-customizing-web-pages"></a>Web ページをカスタマイズするためのベストプラクティス
 
-web ページをカスタマイズするとき、ページのパフォーマンスが低下することがあります。 さまざまな要因によって、ページの複雑さとサイズ、追加される web パーツの数、最初に表示されるリストまたはライブラリのアイテムの数、ページのコーディング方法などの影響を与えることができます。
+Web ページをカスタマイズするとき、ページのパフォーマンスが低下することがあります。 さまざまな要因によって、ページの複雑さとサイズ、追加される web パーツの数、最初に表示されるリストまたはライブラリのアイテムの数、ページのコーディング方法などの影響を与えることができます。
   
 詳細については、「 [SharePoint Online のパフォーマンスをチューニング](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)する」を参照してください。
   
@@ -168,7 +162,7 @@ web ページをカスタマイズするとき、ページのパフォーマン�
 
 次のガイドラインは、ネットワークのパフォーマンスを向上させるのに役立ちます。
   
-- Project online と SharePoint online には同期が必要ですが、時間がかかる場合があります。 プロジェクトチームの売上高が少ない場合は、プロジェクトサイトの同期を無効にして、プロジェクトの発行とプロジェクト詳細ページのパフォーマンスを向上させます。 実際にシステムを使用する必要があるリソースのグループに Active Directory の同期を制限し、大規模なグループの同期後に発生する可能性のあるアクセス許可の問題を監視します。 
+- Project Online と SharePoint Online には同期が必要ですが、時間がかかる場合があります。 プロジェクトチームの売上高が少ない場合は、プロジェクトサイトの同期を無効にして、プロジェクトの発行とプロジェクト詳細ページのパフォーマンスを向上させます。 実際にシステムを使用する必要があるリソースのグループに Active Directory の同期を制限し、大規模なグループの同期後に発生する可能性のあるアクセス許可の問題を監視します。 
     
 - 組織がプロジェクトサイトを使用している場合は、自動的にではなく、需要に基づいて作成します。 これにより、最初の発行手順が高速化され、不要なサイトやコンテンツが作成されることがなくなります。
     
@@ -182,13 +176,13 @@ web ページをカスタマイズするとき、ページのパフォーマン�
   
 ## <a name="whats-the-best-way-to-report-problems"></a>問題を報告する最善の方法は何ですか。
 
-Microsoft では、ネットワークを監視し、帯域幅と待機時間を測定し、ページの読み込み時間を短縮し、ディスク i/o を減らし、最小限のダウンロード戦略を使用するようにページを再設計し、データセンターにハードウェアを追加することで、Office 365 の全体的なパフォーマンスが絶えず向上しています。データセンターを追加する。 現在の状態とレポートの問題を確認する方法の詳細については、「[サービスの状態を表示する](https://office.microsoft.com/en-us/office365-suite-help/view-the-status-of-your-services-HA102817837.aspx)」を参照してください。
+Microsoft では、ネットワークを監視し、帯域幅と待機時間を測定し、ページの読み込み時間を短縮し、ディスク i/o を減らし、最小限のダウンロード戦略を使用するようにページを再設計し、データセンターにハードウェアを追加することで、Office 365 の全体的なパフォーマンスが絶えず向上しています。データセンターを追加する。 現在の状態とレポートの問題を確認する方法の詳細については、「 [Office 365 サービスの正常性を確認する方法](https://docs.microsoft.com/office365/enterprise/view-service-health)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 [Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
   
-[Microsoft Virtual Academy コース-Office 365 のパフォーマンス管理](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
+[Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
   
 [Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
