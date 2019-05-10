@@ -65,7 +65,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 -->
   
 <a name="cloudarch"></a>
-<span data-ttu-id="b8712-128">## エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド</span><span class="sxs-lookup"><span data-stu-id="b8712-128">## Microsoft cloud for enterprise architects series</span></span>
+## <span data-ttu-id="b8712-128">エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド</span><span class="sxs-lookup"><span data-stu-id="b8712-128">Microsoft cloud for enterprise architects series</span></span>
 
 <span data-ttu-id="b8712-p105">これらのクラウド アーキテクチャ ポスターでは、Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online、およびオンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードに最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。</span><span class="sxs-lookup"><span data-stu-id="b8712-p105">These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -82,7 +82,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
    
 <a name="identity"></a>
-<span data-ttu-id="b8712-131">### エンタープライズ アーキテクトのための Microsoft クラウド ID</span><span class="sxs-lookup"><span data-stu-id="b8712-131">### Microsoft cloud identity for enterprise architects</span></span>
+### <span data-ttu-id="b8712-131">エンタープライズ アーキテクトのための Microsoft クラウド ID</span><span class="sxs-lookup"><span data-stu-id="b8712-131">Microsoft cloud identity for enterprise architects</span></span>
 
 <span data-ttu-id="b8712-132">Microsoft クラウド サービスおよびプラットフォームを使用して、組織のためのアイデンティティを設計する上で IT アーキテクトが知る必要のある事柄。</span><span class="sxs-lookup"><span data-stu-id="b8712-132">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
@@ -137,7 +137,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
-<span data-ttu-id="b8712-189">## Microsoft 365 Enterprise ソリューション シリーズ</span><span class="sxs-lookup"><span data-stu-id="b8712-189">## Microsoft 365 enterprise solution series</span></span>
+## <span data-ttu-id="b8712-189">Microsoft 365 Enterprise ソリューション シリーズ</span><span class="sxs-lookup"><span data-stu-id="b8712-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="b8712-190">Microsoft 365 Enterprise ソリューション シリーズには、Microsoft 365 の機能、特にざまざまなプラットフォームで使える機能を実装するためのガイダンスが用意されています。</span><span class="sxs-lookup"><span data-stu-id="b8712-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 
