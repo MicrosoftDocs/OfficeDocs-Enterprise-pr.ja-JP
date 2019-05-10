@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL の Web サービス
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/1/2019
+ms.date: 5/7/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
-ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
+ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33512683"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655791"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービス
 
@@ -122,7 +122,6 @@ Microsoft Flow を使用して、IP アドレスや URL への変更のメール
  "instance": "Worldwide",
  "latest": "2018063000"
 }
-
 ```
 
 例 3 要求 URI: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
@@ -166,7 +165,6 @@ Worldwide,2018063000
 <link>https://endpoints.office.com/changes/Worldwide/2018080200?singleVersion&clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7</link> <description>Version 2018080200 includes 2 changes. IPs: 2 added and 0 removed.</description>
 <pubDate>Thu, 02 Aug 2018 00:00:00 Z</pubDate>
 </item>
-...
 ```
 
 ## <a name="endpoints-web-method"></a>エンドポイント web メソッド
@@ -178,7 +176,7 @@ Worldwide,2018063000
 - **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - サービス エリアのコンマ区切リストです。 有効な項目は、_Common_、_Exchange_、_SharePoint_、および_Skype_です。 Common サービス エリア項目はその他のすべてのサービス エリアの前提条件であるため、この web サービスに常に含まれます。 このパラメーターを含めない場合は、すべてのサービス エリアが返されます。
 - **TenantName=<tenant_name>** - Office 365 のテナント名。 この web サービスでは、指定した名前を テナント名を含む URL の一部に挿入します。 テナント名を指定しない場合、URL のそれらの部分にワイルドカード文字が使用されます (\*)。
 - **NoIPv6=<true | false>** - 例えば、お使いのネットワークで IPv6 を使用しない場合は、true に設定し出力から IPv6 アドレスを除外します。
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは次の通りです。Worldwide、China、Germany、USGovDoD、USGovGCCHigh。
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - このパラメーターはエンドポイントを返すインスタンスを指定します。 有効なインスタンスは、_Worldwide_、_China_、_Germany_、_USGovDoD_、_USGovGCCHigh_ です。
 
 同じクライアント IP アドレスからのエンドポイント Web メソッドの呼び出し回数が多い場合、 HTTP Response Code 429 (要求が多すぎます) の応答コードが返される場合があります。 ほとんどのユーザーはこの応答コードを返されることはありません。 この応答コードを取得した場合、リクエストを再度行うまでに 1 時間待ちます。 バージョン web メソッドが、新しいバージョンのデータが使用可能だと示したときにのみ、エンドポイントを呼び出すよう計画してください。
 
@@ -243,7 +241,7 @@ Worldwide,2018063000
 
 変更 Web メソッドのパラメーターは次のとおりです。
 
-- **Version=\<YYYYMMDDNN>** - 必要な URL ルート パラメーターです。 この値は、現在実装しているバージョンでなければなりません。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_ となり、_NN_ の部分はゼロになります。 Web サービスでは、このパラメーターが正確に 10 桁であることが要求されます。
+- **Version=\<YYYYMMDDNN>** - 必要な URL ルート パラメーターです。 この値は、現在実装しているバージョンでなければなりません。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_ で、_NN_ は 1 日に発行する必要がある複数のバージョンがある場合に増加する自然数で、_00_ は特定日における最初の更新を表します。 Web サービスでは、この_バージョン_のパラメーターが正確に 10 桁であることが要求されます。
 
 エンドポイント Web メソッドと同様に、変更 Web メソッドはレート制限されています。 応答コード 429 HTTP 受け取った場合、リクエストを再度行うまでに 1 時間待ちます。
 
@@ -252,7 +250,7 @@ Worldwide,2018063000
 - id - 変更レコードの不変 ID。
 - endpointSetId - 変更されたエンドポイント セット レコードの ID。
 - disposition - 変更、追加、もしくは削除のいずれかを指定し、エンドポイント セット レコードに対して行った変更の内容を説明します。
-- impact - すべての変更がどの環境に対しても同じ重要度を持つわけではありません。impact は、この変更の結果、エンタープライズ ネットワーク境界環境に対して期待される影響度を示します。この属性は、バージョン 2018112800 以降の変更レコードにのみ含まれます。impact のオプションは次のとおりです。
+- impact - すべての変更がどの環境に対しても同じ重要度を持つわけではありません。impact は、この変更の結果、エンタープライズ ネットワーク境界環境に対して期待される影響度を示します。この属性は、バージョン **2018112800** 以降の変更レコードにのみ含まれます。impact のオプションは次のとおりです。
   - AddedIp – IP アドレスが Office 365 に追加され、間もなくサービスで有効になります。これは、ファイアウォールまたはその他のレイヤ 3 ネットワーク境界デバイスを装備する必要がある変更を表します。IP アドレスの使用開始前に追加しないと、サービスが停止する可能性があります。
   - AddedUrl – Office 365 に追加された URL は、間もなくサービスで有効になります。 これは、プロキシ サーバーまたは URL 解析ネットワーク境界デバイスを装備する必要がある変更を表します。 URL の使用開始前にこれを追加しない場合、サービスが停止する可能性があります。
   - AddedIpAndUrl - IP アドレスと URL の両方が追加されました。これは、ファイアウォール、レイヤ 3 デバイス、プロキシ サーバー、または URL 解析デバイスのいずれかを装備する必要がある変更を表します。IP アドレスと URL の使用開始前に装備しないと、サービスが停止する可能性があります。
@@ -508,13 +506,10 @@ Microsoft は、Office 365 サービスの最新の URI を取得するための
 モジュールをインポートしたら、REST サービスを呼び出せます。 これにより、URI をコレクションとして返し、直接 PowerShell で処理する事ができます。 次のコマンドの説明に従って、Office 365 テナント名を入力します。
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant]
+    Invoke-O365EndpointService -tenantName [Name of your tenant]
 ```
 
-> [!NOTE]
-> コマンドレットのスペルは **Invoke-O365EnpointService**、 _d_ を付けません。 これは、入力ミスではありません。
-
-#### <a name="parameters"></a>パラメーター
+#### <a name="parameters"></a>Parameters
 
 - **tenantName** - Office 365 テナントの名前。 このパラメーターは必須です。
 - **ForceLatest** - このスイッチは REST API が常に最新の URI のリスト全体を返すよう強制します。
@@ -525,13 +520,13 @@ Microsoft は、Office 365 サービスの最新の URI を取得するための
 IPv6 アドレスを含むすべての URI の完全なリストを返します
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
 ```
 
 Exchange Online Service の IP アドレスのみを返します
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
 ```
 
 ### <a name="exporting-a-proxy-pac-file"></a>Proxy PAC ファイルをエクスポートします
@@ -539,7 +534,7 @@ Exchange Online Service の IP アドレスのみを返します
 このモジュールを使用して、Proxy PAC ファイルを作成します。 この例では、最初にエンドポイントを取得し、URL を選択するために結果をフィルター処理します。 これらの URL はエクスポートするためにパイプされます。  
 
 ```powershell
- Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+ Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
 ```
 
 ## <a name="related-topics"></a>関連項目
