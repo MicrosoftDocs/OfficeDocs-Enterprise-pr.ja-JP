@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
-ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
+ms.openlocfilehash: 35a34071a76e551cde8342566a912e4fd4d0100e
+ms.sourcegitcommit: 9c6e31204aa326c31d60befe80e610f702e65800
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33655791"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33976522"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービス
 
@@ -406,8 +406,28 @@ if ($version.latest -gt $lastVersion) {
         }
         $ipCustomObjects
     }
+    $flatIp6s = $endpointSets | ForEach-Object {
+    $endpointSet = $_
+    $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
+    # IPv6 strings have colons while IPv6 strings have dots
+    $ip6s = $ips | Where-Object { $_ -like '*:*' }
+    $ipCustomObjects = @()
+    if ($endpointSet.category -in ("Optimize")) {
+        $ipCustomObjects = $ip6s | ForEach-Object {
+            [PSCustomObject]@{
+                category = $endpointSet.category;
+                ip = $_;
+                tcpPorts = $endpointSet.tcpPorts;
+                udpPorts = $endpointSet.udpPorts;
+            }
+        }
+    }
+    $ipCustomObjects
+}
     Write-Output "IPv4 Firewall IP Address Ranges"
     ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
+    Write-Output "IPv6 Firewall IP Address Ranges"
+    ($flatIp6s.ip | Sort-Object -Unique) -join "," | Out-String
     Write-Output "URLs for Proxy Server"
     ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
     # TODO Call Send-MailMessage with new endpoints data
