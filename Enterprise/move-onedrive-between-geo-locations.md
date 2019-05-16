@@ -3,19 +3,19 @@ title: 別の地域の場所に OneDrive サイトを移動する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: 1197d23bdf94fe38ba24138ddde7c1f1fb92b41f
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: 3315c14debf14c6876e2da90a2ade10ca8a7499a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30931826"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070133"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 

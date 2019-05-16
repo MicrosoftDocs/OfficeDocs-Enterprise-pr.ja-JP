@@ -3,19 +3,19 @@ title: Office 365 Multi-Geo 用に検索を構成する
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Multi-Geo 環境で検索を構成する方法について説明します。
-ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068073"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 用に検索を構成する
 
@@ -85,7 +85,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo 検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
-<td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
+<td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
 </tr>
 <tr class="even">
 <td align="left">ドキュメント ID</td>

@@ -3,19 +3,19 @@ title: Office 365 Multi-Geo のプラン
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo 複数地域、複数地域のしくみ、およびデータ ストレージに使用できる地域の場所について説明します。
-ms.openlocfilehash: 4f7905c55cbb926978a43d70300a70d451512f6f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069423"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Office 365 Multi-Geo のプラン
 

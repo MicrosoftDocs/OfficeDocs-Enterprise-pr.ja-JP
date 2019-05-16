@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365 の展開後は、以下のツールや方法を使用して Office 365 の接続を維持することができます。公式の「サービスの正常性および継続性のガイドライン」と「低速のネットワークで Office 365 を使用するためのベスト プラクティス」を確認しておくようにしてください。また、 Office 365 管理者アプリを入手し、「Office 365 for Business - 管理者ヘルプ」をブックマークしておくことをお勧めします。
-ms.openlocfilehash: 80e1f56ed3ef7ae2e013239ac286e2a804bd9696
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070053"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 の接続の監視をする
 
@@ -35,7 +35,7 @@ Office 365 の展開後は、以下で説明するツールや方法を使用し
 |**System Center を使って Office 365 を監視する** <br/> |Microsoft System Center を使っている場合、[Office 365 用 System Center 管理パック](https://www.microsoft.com/download/details.aspx?id=43708)をダウンロードして、今すぐ Office 365 の監視を開始できます。 ガイダンスの詳細については、管理パックの操作ガイド、または [System Centre Operations Manager を使った Office 365 の監視](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx)に関するブログ投稿を参照してください。 <br/> |
 |**Azure ExpressRoute の正常性の監視** <br/> |Azure ExpressRoute for Office 365 を使って Office 365 に接続している場合、Office 365 サービス正常性ダッシュボードと Azure の両方を使用していることを確認することをお勧めします。[Azure リソースの正常性を使ったトラブルシューティング時間の短縮](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**AD FS を使って Azure AD Connect Health を使用する** <br/> |Office 365 のシングル サインオン用に AD FS を使用している場合、[Azure AD Connect Health を使った AD FS インフラストラクチャの監視](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)を開始することをお勧めします。  <br/> |
-|**プログラムを使って Office 365 を監視する** <br/> |[Office 365 管理 API](https://msdn.microsoft.com/library/jj984343%28v=office.15%29.aspx) に関するマイクロソフトのガイダンスを参照してください。  <br/> |
+|**プログラムを使って Office 365 を監視する** <br/> |[Office 365 管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) に関するマイクロソフトのガイダンスを参照してください。  <br/> |
 
 ここに戻る場合は、次のショート リンクをご利用ください: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   

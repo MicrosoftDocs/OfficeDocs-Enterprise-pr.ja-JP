@@ -3,19 +3,19 @@ title: 複数地域環境の管理
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
-ms.openlocfilehash: 7a9865424a18a681dcdbf89b607ab2ae73f44098
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4f219b81882ce22faa5bec1b885d1a38629c18db
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068436"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 

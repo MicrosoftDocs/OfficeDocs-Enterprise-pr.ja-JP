@@ -3,19 +3,19 @@ title: Office 365 Multi-Geo
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 25621a0a8c833c4334fe6f70e7cb04d15690ba71
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069753"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 

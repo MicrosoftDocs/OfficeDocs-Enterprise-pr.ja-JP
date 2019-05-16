@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '概要: Office 365 の展開を計画するときに使用する DNS レコードのリファレンス リスト。'
-ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bc1bb822bc0baf376c96c95ff637b93f131605e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487260"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067663"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
@@ -31,7 +31,7 @@ ms.locfileid: "33487260"
   
 |||
 |:-----|:-----|
-|![ドメイン](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/ja-JP/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。<br/> **GoDaddy や eNom などのドメインの DNS ホストでこれらのレコードを追加するための手順が必要な場合** [多くの一般的な DNS ホストでの詳しい操作手順へのリンクをご覧ください](https://go.microsoft.com/fwlink/?LinkId=286745)。<br/> 「[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)」**に戻ります**。  <br/> |
+|![ドメイン](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。<br/> **GoDaddy や eNom などのドメインの DNS ホストでこれらのレコードを追加するための手順が必要な場合** [多くの一般的な DNS ホストでの詳しい操作手順へのリンクをご覧ください](https://go.microsoft.com/fwlink/?LinkId=286745)。<br/> 「[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)」**に戻ります**。  <br/> |
 
  **そのまま残って自分のカスタムの展開用のリファレンス リストを使用する場合** 以下のリストは、Office 365 のカスタム展開用のリファレンスとして使用されます。組織に適用するレコードを選択して、適切な値を入力する必要があります。
   

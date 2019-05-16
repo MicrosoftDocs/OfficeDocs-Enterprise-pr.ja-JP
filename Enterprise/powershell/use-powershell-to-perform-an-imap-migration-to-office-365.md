@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 概要:Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。
-ms.openlocfilehash: 7f50097cc918d0c334ab34ba48624df8c43c5d1e
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: c7b80ea444fd9e8f0324cb0bc29edf46cd1219d0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071163"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell を使用した Office 365 への IMAP 移行の実行
 
@@ -50,9 +51,9 @@ IMAP の移行には次の制限が適用されます。
 ### <a name="step-1-prepare-for-an-imap-migration"></a>ステップ 1:IMAP 移行を準備する
 <a name="BK_Step1"> </a>
 
-- **IMAP 組織のドメインをお持ちの場合は、Office 365 組織の承認済みドメインとして追加します。**Office 365 のメールボックス用に既に所有している同じドメインを使用する場合は、最初にこのドメインを承認済みドメインとして Office 365 に追加する必要があります。追加したら、Office 365 でユーザーを作成できます。詳細については、「[Office 365 でドメインを確認する](https://go.microsoft.com/fwlink/p/?LinkId=534110)」を参照してください。
+- **IMAP 組織のドメインをお持ちの場合は、Office 365 組織の承認済みドメインとして追加します。** Office 365 のメールボックス用に既に所有している同じドメインを使用する場合は、最初にこのドメインを承認済みドメインとして Office 365 に追加する必要があります。追加したら、Office 365 でユーザーを作成できます。詳細については、「[Office 365 でドメインを確認する](https://go.microsoft.com/fwlink/p/?LinkId=534110)」を参照してください。
     
-- **各ユーザーを Office 365 に追加します。そうすることで、ユーザーは Office 365 メールボックスを持つことができます。**手順については、「[一般法人向け Office 365 にユーザーを追加する](https://go.microsoft.com/fwlink/p/?LinkId=535065)」を参照してください。
+- **各ユーザーを Office 365 に追加します。そうすることで、ユーザーは Office 365 メールボックスを持つことができます。** 手順については、「[一般法人向け Office 365 にユーザーを追加する](https://go.microsoft.com/fwlink/p/?LinkId=535065)」を参照してください。
     
 - **IMAP サーバーの FQDN を取得します**。IMAP 移行エンドポイントを作成するときに、メールボックス データの移行元の IMAP サーバーの完全修飾ドメイン名 (FQDN) (フル コンピューター名ともいう) を指定する必要があります。IMAP クライアントまたは PING コマンドを使用して、インターネット経由での FQDN サーバーとの通信に FQDN を使用できることを確認します。
     

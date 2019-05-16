@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから管理センター タスクを実行します。'
-ms.openlocfilehash: 4c70f067558773ce7e2a6e27bab78f5c64965872
-ms.sourcegitcommit: 0516a15c72f4bc8423a1d8112fd4d3e5f69896c8
+ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33639778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069093"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -36,7 +36,8 @@ Office 365 および管理者のユーザー アカウント、グループ、�
 この記事の日付の時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールのコマンドレットの機能に完全に置き換わるものではありません。多くの場合、両方のバージョンを使用する必要があります。同じコンピューターに両方のバージョンを安全にインストールできます。
 
 > [!TIP]
-> **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/ja-JP/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn ラーニングにアクセスしてください。 
+> 
+  **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/ja-JP/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn ラーニングにアクセスしてください。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 

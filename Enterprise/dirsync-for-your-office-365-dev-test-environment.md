@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/18/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: '概要: Office 365 の開発/テスト環境に向けたディレクトリ同期を構成します。'
-ms.openlocfilehash: 74457cca2d199fe7bfa8839908b0f6a413890f8a
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0b51e3cb6c348c5c6f9bb1a6d818a18fb123e1b6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067763"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のディレクトリ同期
 
