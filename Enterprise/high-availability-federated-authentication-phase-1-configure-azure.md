@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
-ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
+ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067503"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 

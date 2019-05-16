@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: '概要: Microsoft のハイブリッド クラウド製品のアーキテクチャについて説明します。'
-ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 513e45629a7092803cc644241d84985a37e43876
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490270"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068323"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Microsoft ハイブリッド クラウド シナリオのアーキテクチャ
 
@@ -41,11 +41,11 @@ ms.locfileid: "33490270"
     
 - ネットワーク
     
-    Microsoft クラウド プラットフォームとサービスに接続するには、既存のインターネット パイプか ExpressRoute のいずれかを使用します。 予測可能なパフォーマンスが重要な場合は、ExpressRoute 接続を使用します。 1つの ExpressRoute 接続を使用して、Microsoft SaaS services (Office 365 および Dynamics 365)、azure PaaS サービス、および azure IaaS services に直接接続することができます。
+    Microsoft クラウド プラットフォームとサービスに接続するには、既存のインターネット パイプか ExpressRoute のいずれかを使用します。 予測可能なパフォーマンスが重要な場合は、ExpressRoute 接続を使用します。 1つの ExpressRoute 接続を使用して、Microsoft SaaS services (Office 365 および Dynamics 365)、Azure PaaS サービス、および Azure IaaS services に直接接続することができます。
     
 - ID
     
-    クラウド ID インフラストラクチャについては、Microsoft クラウド プラットフォームによって、2 つの方法があります。 SaaS および Azure PaaS については、Azure AD にオンプレミス ID インフラストラクチャを統合するか、オンプレミス ID インフラストラクチャまたはサードパーティ ID プロバイダーでフェデレーションを行います。 Azure で実行されている vm では、Active Directory ドメインサービス (AD DS) などのオンプレミスの id インフラストラクチャを、vm が存在する仮想ネットワーク (vnet) に拡張できます。
+    クラウド ID インフラストラクチャについては、Microsoft クラウド プラットフォームによって、2 つの方法があります。 SaaS および Azure PaaS については、Azure AD にオンプレミス ID インフラストラクチャを統合するか、オンプレミス ID インフラストラクチャまたはサードパーティ ID プロバイダーでフェデレーションを行います。 Azure で実行されている Vm では、Active Directory ドメインサービス (AD DS) などのオンプレミスの id インフラストラクチャを、Vm が存在する仮想ネットワーク (Vnet) に拡張できます。
     
 ## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>3 段階のクラウド導入プロセスのハイブリッド クラウド シナリオ
 

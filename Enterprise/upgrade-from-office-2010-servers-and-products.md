@@ -1,10 +1,10 @@
 ---
-title: 2010 のサーバーとクライアントの Office からアップグレードするためのリソース
+title: Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -20,39 +20,39 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Office 2010 のサーバーおよびクライアント アプリケーションのサポートがすぐに終了して、カスタム サポート契約をご利用いただけません。今すぐアップグレードの計画を開始するのにには、この資料を使用します。
-ms.openlocfilehash: 10ec20fea5cd40c5ed24d1a24a7f4e4a1a2875d7
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
+ms.openlocfilehash: cb1aa32f77a7a1f5490565cc269d5b93b842c229
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070693"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>2010 のサーバーとクライアントの Office からアップグレードするためのリソース
+# <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
-Office 2010 製品およびサービスを使用している場合かもしれませんが、Office 2010 製品およびサービスが間近に迫って、サポート終了です。アップグレードを計画している、これが Office 365 で始まる、マイクロソフトのクラウドへの移行を検討する絶好の機会です。開始点としてこの資料を使用すると、オプションを確認します。
+Office 2010 製品とサービスを使用している場合は、Office 2010 製品とサービスがサポートの終了間近に近づいていることに気付く可能性があります。 アップグレードを計画している間は、Office 365 以降の Microsoft Cloud への移行を検討するのに非常に役立ちます。 この記事は、オプションを確認する出発点として使用します。
       
-## <a name="office-2010-planning-content"></a>Office 2010 の計画の内容
+## <a name="office-2010-planning-content"></a>Office 2010 の計画コンテンツ
   
-|**この製品の**|**このリソースを参照してください。**|
+|**この製品の場合**|**このリソースを表示する**|
 |:-----|:-----|
-|Office 2010 の Word 2010、Excel 2010、PowerPoint 2010、および Outlook 2010 など  <br/> |[サポート ロードマップの Office 2010 の終了](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> |[サポート ロードマップの Exchange 2010 の終了](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 または SharePoint Server 2010  <br/> |[SharePoint 2010 からアップグレードします。](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | [サポート ロードマップのプロジェクト Server 2010 の終了](project-server-2010-end-of-support.md) <br/> |
-|Lync Server 2010 <br/> | [Skype ビジネス サーバーをアップグレードしようとしてください。](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
+|Office 2010 (Word 2010、Excel 2010、PowerPoint 2010、Outlook 2010 を含む)  <br/> |[Office 2010 サポート終了のロードマップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
+|Exchange Server 2010  <br/> |[Exchange 2010 のサポート終了ロードマップ](exchange-2010-end-of-support.md) <br/> |
+|SharePoint 2010 または SharePoint Server 2010  <br/> |[SharePoint 2010 からアップグレードする](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | [Project Server 2010 サポート終了ロードマップ](project-server-2010-end-of-support.md) <br/> |
+|Lync Server 2010 <br/> | [Skype for Business Server へのアップグレードを計画する](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
-## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。どうしようか。
+## <a name="im-a-home-user-what-do-i-do"></a>自宅のユーザーです。 What do I do?
 
-Office 2010 製品およびアプリケーションを自宅で使用して場合、は、[この情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)を参照してください。
+自宅で Office 2010 製品とアプリケーションを使用している場合は、[次の情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
-[Office 退職グループ (マイクロソフト テクニカル コミュニティ)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Office の退職グループ (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
 [ビデオ: Office 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Office 2007 または Office 2010 のサーバーとクライアントのアップグレードを計画します。](plan-upgrade-previous-versions-office.md)
+[Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する](plan-upgrade-previous-versions-office.md)
 

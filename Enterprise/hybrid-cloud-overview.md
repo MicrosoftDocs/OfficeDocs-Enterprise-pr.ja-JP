@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: '概要: Microsoft ハイブリッド クラウドの定義と要素について説明します。'
-ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f44251c0a0da79475c1cc391dd409db6b2faba0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067446"
 ---
 # <a name="hybrid-cloud-overview"></a>ハイブリッド クラウドの概要
 
@@ -55,7 +55,7 @@ Microsoft クラウド サービスを使用するハイブリッド クラウ�
   
 - SaaS
     
-    Microsoft SaaS サービスには、Office 365、Microsoft Intune および Microsoft Dynamics 365 が含まれます。 Microsoft SaaS を使ったハイブリッド クラウド シナリオでは、これらのサービスをオンプレミス サービスまたはアプリケーションと統合します。 たとえば、Office 365 で実行されている Exchange Online は、オンプレミスで展開されている Skype for business 2019 と統合できます。
+    Microsoft SaaS サービスには、Office 365、Microsoft Intune および Microsoft Dynamics 365 が含まれます。 Microsoft SaaS を使ったハイブリッド クラウド シナリオでは、これらのサービスをオンプレミス サービスまたはアプリケーションと統合します。 たとえば、Office 365 で実行されている Exchange Online は、オンプレミスで展開されている Skype for Business 2019 と統合できます。
     
 - Azure PaaS
     
@@ -75,7 +75,7 @@ Microsoft クラウド プラットフォームおよびサービスを使用す
     
 - ID
     
-    SaaS および Azure PaaS ハイブリッドの id には、azure AD を共通の id プロバイダーとして含めることができます。これは、オンプレミスの Active Directory ドメインサービス (AD ds) と同期したり、ad ds やその他の id プロバイダーとのフェデレーションを行うことができます。 オンプレミスの id インフラストラクチャを Azure IaaS に拡張することもできます。 詳細については、「[エンタープライズアーキテクトのための Microsoft クラウド id](microsoft-cloud-it-architecture-resources.md#identity)」を参照してください。
+    SaaS および Azure PaaS ハイブリッドの Id には、Azure AD を共通の id プロバイダーとして含めることができます。これは、オンプレミスの Active Directory ドメインサービス (AD DS) と同期したり、AD DS やその他の id プロバイダーとのフェデレーションを行うことができます。 オンプレミスの Id インフラストラクチャを Azure IaaS に拡張することもできます。 詳細については、「[エンタープライズアーキテクトのための Microsoft クラウド id](microsoft-cloud-it-architecture-resources.md#identity)」を参照してください。
     
 - セキュリティ
     

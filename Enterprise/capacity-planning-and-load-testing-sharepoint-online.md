@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この記事では、従来のロードテストを実行せずに SharePoint Online に展開する方法について説明します。これは許可されていないためです。
-ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f8de9ee2eb28b4cafef469a078a3700b1ffbbbb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490220"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068163"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>容量計画と負荷テスト SharePoint Online。
 
-この記事では、sharepoint online でロードテストが許可されていないため、従来のロードテストを行わずに sharepoint online に展開する方法について説明します。 SharePoint Online はクラウドサービスです。サービスにおける負荷の負荷の状態と全体的なバランスが Microsoft によって管理されています。
+この記事では、SharePoint Online でロードテストが許可されていないため、従来のロードテストを行わずに SharePoint Online に展開する方法について説明します。 SharePoint Online はクラウドサービスです。サービスにおける負荷の負荷の状態と全体的なバランスが Microsoft によって管理されています。
   
 サイトを正常に起動するための最善の方法は、以下で強調表示されている基本的な原則、ベストプラクティス、推奨事項に従うことです。
   
@@ -37,7 +37,7 @@ ms.locfileid: "33490220"
 ## <a name="how-do-i-plan-for-a-site-launch"></a>サイトの起動を計画するにはどうすればよいですか。
 
 ### <a name="optimize-pages-by-following-recommended-guidelines"></a>推奨ガイドラインに従ってページを最適化する
-オンプレミス展開からのページは、sharepoint online の推奨ガイドラインに対して確認することなく、sharepoint online 上にある場合にのみ実行するようにしてください。
+オンプレミス展開からのページは、sharepoint online の推奨ガイドラインに対して確認することなく、SharePoint Online 上にある場合にのみ実行するようにしてください。
 
 いくつかの重要な要素を考慮する必要があります。
 - オンプレミスの展開では、オブジェクトキャッシュなどの従来のサーバー側キャッシュを利用できますが、クラウドでのトポロジの違いにより、これらのオプションは使用できません。

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 search.appverid:
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067733"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -38,8 +38,8 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |韓国  <br/> |2018 年 10 月 31 日  <br/> |
 |英国  <br/> |2019 年 9 月 15 日  <br/> |
 |フランス  <br/> |2020 年 9 月 15 日  <br/> |
-|アラブ首長国連邦  <br/> |avct  <br/> |
-|南アフリカ  <br/> |avct  <br/> |
+|アラブ首長国連邦  <br/> |Avct  <br/> |
+|南アフリカ  <br/> |Avct  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -52,7 +52,7 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |**構成**|**説明**|
 |:-----|:-----|
 |別のメールボックスへのメールボックス フォルダー アクセス許可があるユーザー  <br/> |制限される可能性があります。  <br/> テナントの移動中にユーザー A とメールボックス B が同じ geo になく、ユーザー A が持っているアクセス許可がメールボックス B の特定のフォルダーに対してのみの場合、ユーザー A は Outlook Web Access でメールボックス B のフォルダーを開くことができません。  <br/> 共有フォルダーを追加するには、左側のナビゲーション ウィンドウでユーザー名を右クリックし、 **[共有フォルダーの追加]** を選択します。  <br/> |
-|別のメールボックスへのメールボックス フル アクセス許可があるユーザー  <br/> |完全にサポートされます。  <br/> ユーザー a がメールボックス b に "フルアクセス" アクセス許可を持っている場合、ユーザー a は Outlook Web Access の左側のナビゲーションパネルで共有フォルダーをクリックして、メールボックス b が表示されているウィンドウを開くことができます。 ユーザーは、移動中に Outlook Web Access を使用して共有メールボックスを開くことができ、悪影響を与えることはありません。 制限は、メールボックス内のフォルダー レベルの共有だけに適用されます。           |
+|別のメールボックスへのメールボックス フル アクセス許可があるユーザー  <br/> |完全にサポートされます。  <br/> ユーザー A がメールボックス B に "フルアクセス" アクセス許可を持っている場合、ユーザー A は Outlook Web Access の左側のナビゲーションパネルで共有フォルダーをクリックして、メールボックス B が表示されているウィンドウを開くことができます。 ユーザーは、移動中に Outlook Web Access を使用して共有メールボックスを開くことができ、悪影響を与えることはありません。 制限は、メールボックス内のフォルダー レベルの共有だけに適用されます。           |
    
 ### <a name="public-folders"></a>パブリック フォルダー
 
@@ -60,7 +60,7 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
   
 ### <a name="online-archives"></a>オンライン アーカイブ
 
-移行中は、Outlook for Mac を使用して接続しているユーザーがオンラインアーカイブメールボックスに接続できない場合があります。 outlook および outlook Web Access を使用して接続しているユーザーのアーカイブメールボックスへのアクセスがサポートされています。
+移行中は、Outlook for Mac を使用して接続しているユーザーがオンラインアーカイブメールボックスに接続できない場合があります。 Outlook および Outlook Web Access を使用して接続しているユーザーのアーカイブメールボックスへのアクセスがサポートされています。
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -120,14 +120,14 @@ SharePoint Online データを移行する過程で、検索インデックス�
 |:-----|
 | 会議データ (アップロードされたプレゼンテーションなど) は移動されないため、再アップロードする必要があります。  <br/>  Lync 2010 クライアントや Lync for Mac 2011 クライアントなど、以前の Lync クライアントでは、サービスへの DNS 情報のキャッシュに起因するサインインの問題が発生することが確認されています。ユーザーが最新の Skype for Business Windows クライアントではない場合、DNS キャッシュのクリアが必要になる可能性があります。ユーザーに、 [トラブルシューティング ウィザード](https://support.microsoft.com/en-us/kb/2541980)を実施して、クライアント キャッシュをクリアする方法の手順に従うように依頼します。Lync for Mac クライアントのユーザーは、[このリンクの手順](https://support.microsoft.com/en-us/kb/2629861)に従う必要があります。  <br/> |
    
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>サードパーティの電話会議プロバイダーを含む Skype for business の移動
+### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>サードパーティの電話会議プロバイダーを含む Skype for Business の移動
 新しい geo 固有のデータセンターのユーザーは、Skype for Business 用のサードパーティの電話会議プロバイダーのアドオン サービスを使用することができません。  サードパーティの電話会議プロバイダーを使用している既存のお客様は、新しい geo 固有のデータセンターへの移動を要求する必要はありません。  新しい geo 固有のデータセンターの新規のお客様は、サードパーティの電話会議プロバイダーを使用するために、地域データセンターへの移動を要求する必要があります。
 
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Teams、Yammer、power BI などの他のサービスのデータ
+## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Teams、Yammer、Power BI などの他のサービスのデータ
 
 Exchange Online、SharePoint Online、および Skype for Business の顧客データのみを移動します。その他のサービスのデータは移動しません。これらの別サービスの顧客やユーザーにとって、変更や影響はありません。移動プロセスも影響しません。また、顧客データの場所は変更されません。
   
-## <a name="related-topics"></a>関連トピック 
+## <a name="related-topics"></a>関連項目 
  
 [データ移行をリクエストする方法](request-your-data-move.md)
     

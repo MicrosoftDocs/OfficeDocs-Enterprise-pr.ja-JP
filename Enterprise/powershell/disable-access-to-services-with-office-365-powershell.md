@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/28/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: office 365 PowerShell を使用して、ユーザーの office 365 サービスへのアクセスを無効にします。
-ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+description: Office 365 PowerShell を使用して、ユーザーの Office 365 サービスへのアクセスを無効にします。
+ms.openlocfilehash: bd6961f0de52d95026bae3a743613b33a4af918b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001820"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069033"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell を使ったサービスへのアクセスを無効にする
 
-**概要:** office 365 PowerShell を使用して、組織内のユーザーに対して office 365 サービスへのアクセスを無効にする方法について説明します。
+**概要:** Office 365 PowerShell を使用して、組織内のユーザーに対して Office 365 サービスへのアクセスを無効にする方法について説明します。
   
-office 365 アカウントにライセンスプランのライセンスが割り当てられている場合、そのライセンスから office 365 サービスがユーザーに対して利用可能になります。 ただし、ユーザーがアクセスできる Office 365 サービスを制御することができます。 たとえば、ライセンスで SharePoint Online サービスへのアクセスが許可されている場合でも、アクセスを無効にすることができます。 PowerShell を使用して、次のような特定のライセンスプランで任意の数のサービスへのアクセスを無効にすることができます。
+Office 365 アカウントにライセンスプランのライセンスが割り当てられている場合、そのライセンスから Office 365 サービスがユーザーに対して利用可能になります。 ただし、ユーザーがアクセスできる Office 365 サービスを制御することができます。 たとえば、ライセンスで SharePoint Online サービスへのアクセスが許可されている場合でも、アクセスを無効にすることができます。 PowerShell を使用して、次のような特定のライセンスプランで任意の数のサービスへのアクセスを無効にすることができます。
 
 - 個々のアカウント。
     
@@ -38,7 +38,7 @@ office 365 アカウントにライセンスプランのライセンスが割り
 
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-次に、このコマンドを使用して、使用可能なライセンスプラン (accountskuids とも呼ばれます) を表示します。
+次に、このコマンドを使用して、使用可能なライセンスプラン (AccountSkuIds とも呼ばれます) を表示します。
 
 ```
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
@@ -61,7 +61,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  次の例では、という名前`litwareinc:ENTERPRISEPACK`のライセンスプラン (office 365 Enterprise E3) で Office online サービスと SharePoint online サービスを無効にする**licenseoptions**オブジェクトを作成します。
+  次の例では、という名前`litwareinc:ENTERPRISEPACK`のライセンスプラン (Office 365 Enterprise E3) で Office online サービスと SharePoint online サービスを無効にする**licenseoptions**オブジェクトを作成します。
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -81,7 +81,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  office 365 powershell でユーザーアカウントを作成する方法の詳細については、「 [office 365 powershell を使用してユーザーアカウントを作成](create-user-accounts-with-office-365-powershell.md)する」を参照してください。
+  Office 365 PowerShell でユーザーアカウントを作成する方法の詳細については、「 [office 365 powershell を使用してユーザーアカウントを作成](create-user-accounts-with-office-365-powershell.md)する」を参照してください。
     
   - ライセンスを付与された既存のユーザー用のサービスを無効にするには、次の構文を使用します。
     
@@ -95,7 +95,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
-  - 既存のライセンスを持つすべてのユーザーについて、手順1で説明されているサービスを無効にするには、 **get-msolaccountsku**コマンドレット ( **litwareinc: enterprisepack**など) の表示から Office 365 プランの名前を指定し、次のコマンドを実行します。
+  - 既存のライセンスを持つすべてのユーザーについて、手順1で説明されているサービスを無効にするには、 **get-msolaccountsku**コマンドレット ( **LITWAREINC: enterprisepack**など) の表示から Office 365 プランの名前を指定し、次のコマンドを実行します。
     
   ```
   $acctSKU="<AccountSkuId>"

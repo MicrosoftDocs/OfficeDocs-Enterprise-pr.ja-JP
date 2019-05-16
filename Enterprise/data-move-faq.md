@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067902"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -25,7 +25,7 @@ ms.locfileid: "33490070"
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>移行をリクエストする対象となるのは、どんなお客様ですか?
   
-新しいデータセンター geo の対象となる国を選択した既存の Office 365 の商用ユーザーは、移行をリクエストできます。  このプログラムは、office 365 テナントに割り当てられている資格のある国コードを持つテナントにのみ存在し、対応する office 365 データセンター geo への適用可能なワークロードに対して、コア顧客データを移行します。  「[データの移動を要求する](request-your-data-move.md)」ページを参照して、国の適格性を確認してください。   
+新しいデータセンター geo の対象となる国を選択した既存の Office 365 の商用ユーザーは、移行をリクエストできます。  このプログラムは、Office 365 テナントに割り当てられている資格のある国コードを持つテナントにのみ存在し、対応する Office 365 データセンター geo への適用可能なワークロードに対して、コア顧客データを移行します。  「[データの移動を要求する](request-your-data-move.md)」ページを参照して、国の適格性を確認してください。   
 
 ## <a name="how-do-we-define-core-customer-data"></a>重要な顧客データをどのように定義するか。
  
@@ -36,7 +36,7 @@ ms.locfileid: "33490070"
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>移行が完了した時点で、テナントのコア顧客データが新しい geo に保存されます。
 
-Exchange online と SharePoint online/OneDrive for business の間で共有される依存関係により、両方のサービスが移行されるまで、移行を完了しないことを考慮することはできません。  Exchange online と SharePoint online または OneDrive for business は、多くの場合、別々の時間に個別に移行されます。  テナント管理者は、各サービスの移行が完了すると、メッセージセンターで確認を受け取り、管理センターでデータの場所カードを表示することができます。
+Exchange Online と SharePoint Online/OneDrive for Business の間で共有される依存関係により、両方のサービスが移行されるまで、移行を完了しないことを考慮することはできません。  Exchange Online と SharePoint Online または OneDrive for Business は、多くの場合、別々の時間に個別に移行されます。  テナント管理者は、各サービスの移行が完了すると、メッセージセンターで確認を受け取り、管理センターでデータの場所カードを表示することができます。
 
 ## <a name="will-my-tenant-automatically-be-moved-to-the-new-datacenter-geo"></a>自分のテナントは新しいデータセンター geo に自動的に移動しますか?
  
@@ -53,15 +53,15 @@ Office 365 サービスは、どのデータセンターでもすべて同じバ
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>異なる geo に異なるサービスがあることには、どんな影響がありますか?
 
-一部の Office 365 サービスは、既存のお客様や、移動プロセスの途中にあるお客様の geo によって異なる場合があります。  これらのサービスは互いに独立して実行されます。この場合、ユーザーの利便性に影響を与えることはありません。ただし、データ常駐を目的として、Exchange online と SharePoint online/OneDrive for business の両方が同じデータセンター geo に移行されるまで、テナントの移行を完了することはできません。
+一部の Office 365 サービスは、既存のお客様や、移動プロセスの途中にあるお客様の geo によって異なる場合があります。  これらのサービスは互いに独立して実行されます。この場合、ユーザーの利便性に影響を与えることはありません。ただし、データ常駐を目的として、Exchange Online と SharePoint Online/OneDrive for business の両方が同じデータセンター geo に移行されるまで、テナントの移行を完了することはできません。
   
 ## <a name="will-new-office-365-customers-be-automatically-provisioned-in-the-new-datacenter-geos"></a>新しい Office 365 のユーザーは自動的に新しいデータセンター geo でプロビジョニングされますか?
   
-はい。 新しいデータセンター geo を利用できるようになると、新しい支社では、新規の geo の資格がある国を登録時に国として選択すると、新しいデータセンター geo に保存されている重要な顧客データが含まれます。
+はい。 新しいデータセンター geo を利用できるようになると、新しい365支社では、新規の geo の資格がある国を登録時に国として選択すると、新しいデータセンター geo に保存されている重要な顧客データが含まれます。
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>コア顧客データはどこにありますか?
 
-テナント管理者は、管理センターのデータの場所カードを表示して、いつでも各サービスの保存場所にある主要な顧客データを確認することができます (特にそのテナントの場合)。また、データセンターの geo、データセンター、および office 365 の顧客データの場所を、 [ ](https://office.com/datamaps)新しいテナントの保存場所にある現在の既定のコア顧客データの参照として公開しています。  Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認できます。  
+テナント管理者は、管理センターのデータの場所カードを表示して、いつでも各サービスの保存場所にある主要な顧客データを確認することができます (特にそのテナントの場合)。また、データセンターの geo、データセンター、および office 365 の顧客365データの場所を、新しいテナントの保存場所にある現在の既定のコア顧客データの参照として公開しています。  Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認できます。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>いつから移行をリクエストできますか?
   
@@ -101,7 +101,7 @@ Office 365 データセンターに近づいても、ネットワークのパフ
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>移行が完了したことはどのようにわかりますか?
   
-各サービスのデータの移行が完了したことを確認するために、Office 365 メッセージセンターを見てください。 各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange online、SharePoint online、Skype for business online の3つの完了通知です。  また、Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。  
+各サービスのデータの移行が完了したことを確認するために、Office 365 メッセージセンターを見てください。 各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange Online、SharePoint Online、Skype for Business Online の3つの完了通知です。  また、Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>私は新しいデータセンター geo にいる Office 365 のユーザーですが、サインアップ時には別の国を選択しました。 新しいデータセンター geo に移行するにはどうすればよいですか?
 
@@ -135,13 +135,13 @@ Office 365 データセンターに近づいても、ネットワークのパフ
   
 ## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>新しいデータセンターでホストされる Office 365 テナントは、国外のユーザーも利用できますか?
   
-A. はい。 Microsoft は、世界中の35国に130以上の場所でパブリックインターネット接続を使用する大規模なグローバルネットワークを維持しています。これには、2700を超えるインターネットサービスプロバイダー (isp) とのピアリング契約があります。 インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。
+A. はい。 Microsoft は、世界中の35国に130以上の場所でパブリックインターネット接続を使用する大規模なグローバルネットワークを維持しています。これには、2700を超えるインターネットサービスプロバイダー (Isp) とのピアリング契約があります。 インターネット上のどの場所にいるユーザーでも、データセンターにアクセスできます。
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>My テナントは、 [Office 365 の複数 Geo](https://aka.ms/multi-geo)に対して構成されています。  Office 365 の移動プログラムで自分のテナントに登録したままにして既定の geo を変更し、サテライト地域にないユーザーを新しい既定の geo に移動することはできますか。
 
-はい。テナントは登録する資格があります。  現在の既定の地域から新しいローカルデータセンター geo にすべての exo メールボックスを移動します。  複数地域のサテライト地域で構成されている exo メールボックスは、意図したとおりに、衛星地域のデータ常駐を引き続き尊重するように移行されません。  SharePoint Online と onedrive for business は、移動プログラムの一部として新しいデータセンター geo に移行できませんが、onedrive for business 共有を構成して、複数地域プログラムで任意の場所に移動することができます。
+はい。テナントは登録する資格があります。  現在の既定の地域から新しいローカルデータセンター geo にすべての EXO メールボックスを移動します。  複数地域のサテライト地域で構成されている EXO メールボックスは、意図したとおりに、衛星地域のデータ常駐を引き続き尊重するように移行されません。  SharePoint Online と OneDrive for business は、移動プログラムの一部として新しいデータセンター geo に移行できませんが、OneDrive for Business 共有を構成して、複数地域プログラムで任意の場所に移動することができます。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [コアデータを新しい Office 365 データセンター geo に移行する](moving-data-to-new-datacenter-geos.md)
 

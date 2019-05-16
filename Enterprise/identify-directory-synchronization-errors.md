@@ -1,9 +1,9 @@
 ---
 title: Office 365 でのディレクトリ同期エラーの表示
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,16 +19,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Microsoft 365 管理センターでディレクトリ同期エラーを表示する方法について説明します。
-ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491267"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067523"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Office 365 でのディレクトリ同期エラーの表示
 
-[Microsoft 365 管理センター](https://admin.microsoft.com)でディレクトリ同期エラーを確認できます。 ユーザーオブジェクトのエラーのみが表示されます。 PowerShell を使用してエラーを表示するには、「 [dirsyncプロビジョニングエラーでオブジェクトを識別](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)する」を参照してください。
+[Microsoft 365 管理センター](https://admin.microsoft.com)でディレクトリ同期エラーを確認できます。 ユーザーオブジェクトのエラーのみが表示されます。 PowerShell を使用してエラーを表示するには、「 [Dirsyncプロビジョニングエラーでオブジェクトを識別](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)する」を参照してください。
 
 表示された後、「 [Office 365 のディレクトリ同期に関する問題を解決](fix-problems-with-directory-synchronization.md)して、特定の問題を修正する」を参照してください。
   
@@ -53,7 +53,7 @@ ms.locfileid: "33491267"
     ディレクトリ同期エラーの詳細表示に移動するには、 **DirSync オブジェクトのエラーが検出**されたことを選択します。 
     
     > [!NOTE]
-    > dirsync の**状態**のタイルで**dirsync オブジェクトのエラーが検出**された場合は、[ **dirsync errors** ] ページに移動することもできます。 
+    > Dirsync の**状態**のタイルで**dirsync オブジェクトのエラーが検出**された場合は、[ **dirsync errors** ] ページに移動することもできます。 
   
 ![DirSync errors ページ](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   

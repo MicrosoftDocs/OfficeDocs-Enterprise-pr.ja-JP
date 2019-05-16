@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 概要：Office 365 開発/テスト環境で Azure Information Protection (AIP) クライアントを使用して、データ分類とラベルの設定とデモを行います。
-ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490069"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067935"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境でのデータ分類とラベルの作成
 
  **概要：** Office 365 開発/テスト環境で Azure Information Protection (AIP) クライアントを使用して、データ分類とラベルの設定とデモを行います。
   
-Azure Information Protection クライアントを使用すると、Office 365 の SharePoint Online フォルダーにドキュメントをアップロードする前に、ドキュメントを分類できます。 この記事の指示に従って、Azure Information Protection クライアントをインストールし、データ分類をデモします。 詳細については、「 [Azure information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)」を参照してください。
+Azure Information Protection クライアントを使用すると、Office 365 の SharePoint Online フォルダーにドキュメントをアップロードする前に、ドキュメントを分類できます。 この記事の指示に従って、Azure Information Protection クライアントをインストールし、データ分類をデモします。 詳細については、「 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)」を参照してください。
   
 > [!TIP]
 > [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
@@ -126,7 +126,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
     
 9. タスクバーの **[ファイル エクスプローラー]** をクリックして、**[ドキュメント]** フォルダーを開きます。
     
-    **BeforeAIP** と **AfterAIP** のドキュメントのファイル サイズの違いに注意します。 beforeaip ドキュメントは、分類情報を持っているため、大きくなります。
+    **BeforeAIP** と **AfterAIP** のドキュメントのファイル サイズの違いに注意します。 Beforeaip ドキュメントは、分類情報を持っているため、大きくなります。
     
 次に、すべてのユーザーにサポート サイト コレクションへのアクセスを許可します。
   

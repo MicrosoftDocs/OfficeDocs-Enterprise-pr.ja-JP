@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 概要:Office 365 PowerShell を使用して、ポリシーが割り当てられている Skype for Business Online ユーザー アカウントのプロパティを管理します。
-ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
-ms.translationtype: HT
+ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037901"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068843"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 
@@ -104,7 +104,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> このコマンドは、使用可能なすべての音声ポリシーのリストを返します。ただし、すべてのポリシーをすべてのユーザーに割り当てられるとは限らない点に注意してください。これは、ライセンスや地理的な位置など、さまざまな制限によります (いわゆる「[使用場所](https://msdn.microsoft.com/ja-JP/library/azure/dn194136.aspx)」のことです)。特定のユーザーに割り当てることが可能な外部アクセス ポリシーと会議ポリシーを知りたい場合は、次のようなコマンドを使用します。 
+> このコマンドは、使用可能なすべての音声ポリシーのリストを返します。ただし、すべてのポリシーをすべてのユーザーに割り当てられるとは限らない点に注意してください。これは、ライセンスや地理的な位置など、さまざまな制限によります (いわゆる「[使用場所](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx)」のことです)。特定のユーザーに割り当てることが可能な外部アクセス ポリシーと会議ポリシーを知りたい場合は、次のようなコマンドを使用します。 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

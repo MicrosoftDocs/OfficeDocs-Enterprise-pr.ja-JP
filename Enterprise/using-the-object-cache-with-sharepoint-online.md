@@ -1,10 +1,10 @@
 ---
-title: SharePoint Online でのオブジェクト キャッシュの使用
+title: SharePoint Online でのオブジェクトキャッシュの使用
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/20/2015
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,43 +12,44 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
-description: この資料では、SharePoint Server 2013 設置し、SharePoint Online でのオブジェクト キャッシュを使用しての違いについて説明します。
-ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: この記事では、SharePoint Server 2013 オンプレミスと SharePoint Online でのオブジェクトキャッシュの使用との違いについて説明します。
+ms.openlocfilehash: 16805aee0c6c6828fc2bf81370046dfd0f1c5a70
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25769856"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070543"
 ---
-# <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint Online でのオブジェクト キャッシュの使用
+# <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint Online でのオブジェクトキャッシュの使用
 
-この資料では、SharePoint Server 2013 設置し、SharePoint Online でのオブジェクト キャッシュを使用しての違いについて説明します。
+この記事では、SharePoint Server 2013 オンプレミスと SharePoint Online でのオブジェクトキャッシュの使用との違いについて説明します。
   
-SharePoint Online の展開では、オブジェクト キャッシュに依存するという悪影響があります。SharePoint Online でのオブジェクト キャッシュの依存関係はすべて、ページの信頼性を低下させます。 
+SharePoint Online 展開のオブジェクトキャッシュに依存することによって、重大な悪影響があります。 SharePoint Online のオブジェクトキャッシュに依存している場合は、ページの信頼性が低下します。 
   
-## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>SharePoint Online と SharePoint Server 2013 オブジェクトのキャッシュのしくみ
+## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>SharePoint Online と SharePoint Server 2013 のオブジェクトキャッシュのしくみ
 
-SharePoint Server 2013 は、オンプレミスでホストされているが、お客様には、オブジェクト キャッシュをホストするプライベートのフロント エンド web サーバーが持っています。これは、キャッシュを選択し、1 人の顧客は、専用メモリの量は、使用可能で、オブジェクト キャッシュに割り当てられているによってのみ制限を意味します。設置型のシナリオで 1 つだけのお客様に配信されるためフロント エンド web サーバーはユーザーが同じサイトに要求を作成すると、何度でも通常あります。つまり、キャッシュが完全に迅速に取得し、クエリ結果のリストと、ユーザーが定期的に要求している SharePoint オブジェクトのフルのままです。
+SharePoint Server 2013 がオンプレミスでホストされている場合、お客様は、オブジェクトキャッシュをホストする独自のフロントエンド web サーバーを備えています。 これは、キャッシュが1つの顧客専用となり、使用可能なメモリ容量によって制限されるだけで、オブジェクトキャッシュに割り当てることができることを意味します。 オンプレミスのシナリオでは1人の顧客のみが提供されるので、通常、フロントエンド web サーバーでは、同じサイトに対してユーザーが繰り返し要求を行うことになります。 これは、キャッシュが短時間でいっぱいになり、ユーザーが定期的に要求しているリストクエリの結果と SharePoint オブジェクトを完全に保持することを意味します。
   
 ![オンプレミスのフロントエンド Web サーバーへのトラフィックと負荷を示しています](media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
-結果として、ユーザーが 2 回目にページにアクセスするとき、ページの読み込み時間が短縮します。同じページを 4 回以上読み込むと、ページはすべてのフロントエンド Web サーバーにキャッシュされます。
+その結果、ユーザーがページを訪問すると、ページの読み込み時間が短縮されます。 同じページの少なくとも4つの負荷の後、ページはすべてのフロントエンド web サーバーにキャッシュされます。
   
-対照的に、SharePoint Online は、多くのより多くのサーバがより多くのサイトもいます。各ユーザーは、キャッシュ設定を設定していない別のフロント エンド web サーバーに接続できます。または、おそらくキャッシュが値を設定、サーバーが次のユーザーのページがそのフロント エンド web サーバーの要求を別のサイトから。または、場合でも、次のユーザーは、同じページを要求の場合、前回の訪問と、キャッシュ内にそのページを持たない別のフロント エンド web サーバーに負荷分散します。この最後の場合では、キャッシュ問題が解決しないユーザーにします。
+一方、SharePoint Online では、多くのサーバーがありますが、さらに多くのサイトもあります。 各ユーザーは、キャッシュが設定されていない別のフロントエンド web サーバーに接続することができます。 また、キャッシュがサーバーに対して設定されている場合もありますが、そのフロントエンド web サーバーの次のユーザーは別のサイトからページを要求します。 または、次のユーザーが前の訪問と同じページを要求した場合でも、そのページがキャッシュ内にない別のフロントエンド web サーバーに負荷分散されます。 この最後のケースでは、キャッシュを使用してユーザーをまったくサポートしていません。
   
-次の図で、各ドットはユーザーが要求していて、キャッシュされているページを表しています。さまざまな色は、SaaS インフラストラクチャを共用しているさまざまな顧客を表します。
+次の図では、各ドットは、ユーザーが要求しているページと、キャッシュされた場所を表しています。 さまざまな色は、SaaS インフラストラクチャを共有するために使用するさまざまな顧客を表します。
   
 ![SharePoint Online におけるオブジェクト キャッシュの結果を示します](media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
-図からわかるように、スリムには特定のユーザーにそのページのキャッシュされたバージョンのサーバーの可能性があります。また、大規模なスループットとサーバーは、多くのサイト間で共有されるという事実、キャッシュは最後のだけ領域をキャッシュするため、使用のために長いです。
+図からわかるように、特定のユーザーがキャッシュされたページを使用してサーバーにヒットする可能性はスリムです。 また、スループットが大きく、サーバーが多数のサイト間で共有されているため、キャッシュが使用可能な領域が1つしかないため、キャッシュが最後まで長くなっているわけではありません。
   
-これらすべての理由から、ユーザーがキャッシュされたオブジェクトを取得するのに依存することは、SharePoint Online でユーザー体験とページの読み込み時間の品質を保証する効果的な方法ではありません。
+これらのすべての理由から、ユーザーにキャッシュされたオブジェクトを取得することは、SharePoint Online でユーザーの品質を向上させるための効果的な方法ではありません。
   
-## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>SharePoint Online でパフォーマンスを向上させるためにオブジェクト キャッシュに依存できないとしたら、代わりに何を使用すればよいでしょうか。
+## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>SharePoint Online のパフォーマンスを向上させるためにオブジェクトキャッシュを使用できない場合は、どうすればよいでしょうか。
 
-SharePoint Online でのキャッシュに依存しないほうがよいため、オブジェクト キャッシュを使用する SharePoint のカスタマイズに関する代わりの設計アプローチを評価する必要があります。つまり、ユーザーに良い結果をもたらすため、オブジェクトのキャッシュに依存しないパフォーマンスの問題のアプローチを使用するということです。これについては、このシリーズの他の記事で説明しています。それらは次のとおりです。
+SharePoint Online ではキャッシュを使用しないようにする必要があるため、オブジェクトキャッシュを使用する SharePoint カスタマイズの代替デザイン方法を評価する必要があります。 これは、ユーザーにとって適切な結果を得るために、オブジェクトキャッシュに依存しないパフォーマンスの問題を解決する手法を使用することを意味します。 これについては、このシリーズの他の記事に記載されている内容を参照してください。
   
-- [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
+- 
+  [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
     
 - [SharePoint Online での縮小とバンドル](minification-and-bundling-in-sharepoint-online.md)
     

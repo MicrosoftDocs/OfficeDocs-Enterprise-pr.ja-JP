@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/8/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,29 +16,29 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: エンタープライズ組織の Office 365 を計画および管理するためのリソース。
-ms.openlocfilehash: 7d28f68b0f33e02c9101abcac479d75675f1d0bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33489729"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067693"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>エンタープライズ組織および Office 365
 
-it 専門家がスタッフを持つ大規模な組織では、環境を維持するための特定の要件と基準があります。 エンタープライズ向けに Office 365 を計画し、管理するために必要な情報は次のとおりです。
+IT 専門家がスタッフを持つ大規模な組織では、環境を維持するための特定の要件と基準があります。 エンタープライズ向けに Office 365 を計画し、管理するために必要な情報は次のとおりです。
   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d08b637c-66dc-4f0e-afc2-56da92e99589?autoplay=false]
   
 ## <a name="key-resources"></a>主なリソース
 
-![構想を示す fasttrack の視点](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
+![構想を示す FastTrack の視点](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
   
- **fasttrack からサポートを受ける**
+ **FastTrack からサポートを受ける**
   
-fasttrack のヘルプを使用して、Office 365 へのデータの計画、セットアップ、移行を行います。
+FastTrack のヘルプを使用して、Office 365 へのデータの計画、セットアップ、移行を行います。
   
-[fasttrack で取得する](https://go.microsoft.com/fwlink/?linkid=238431)
+[FastTrack で取得する](https://go.microsoft.com/fwlink/?linkid=238431)
   
 ![セキュリティとコンプライアンスの記号](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   

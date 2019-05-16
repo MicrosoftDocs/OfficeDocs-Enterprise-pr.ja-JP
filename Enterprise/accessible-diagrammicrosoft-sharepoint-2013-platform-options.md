@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: この記事は、「Microsoft SharePoint 2013 プラットフォームのオプション」という名前の図のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4a0b068ffb8abbe11c2286f3daa70c5f62295425
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487823"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068603"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>アクセス可能な図 - Microsoft SharePoint 2013 プラットフォーム オプション
 

@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 04/17/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。'
-ms.openlocfilehash: 56d9fa039bfe533afbc5ac7c1e060d43c0801aef
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915802"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070443"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -256,7 +256,7 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>フェーズ 1: 障害復旧環境の設計
 
-[Microsoft Azure](microsoft-azure-architectures-for-sharepoint-2013.md)アーキテクチャでは SharePoint 2013 のガイダンスを使用すると、回復の SharePoint ファームを含め、災害復旧環境をデザインできます。設計プロセスを開始するのには、 [Azure での災害復旧ソリューションを SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=392554)の Visio ファイルにグラフィックを使用できます。Azure 環境で作業を開始する前に、環境全体を設計することをお勧めします。
+「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されているガイダンスに従って、SharePoint 復旧ファームを含む、障害復旧環境を設計します。 Azure Visio ファイル[の SharePoint 障害復旧ソリューション](https://go.microsoft.com/fwlink/p/?LinkId=392554)のグラフィックスを使用して、設計プロセスを開始できます。 環境全体を設計してから、Azure 環境で作業を開始することをお勧めします。
   
 「[SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md)」に記されている仮想ネットワーク、VPN 接続、Active Directory、および SharePoint ファームを設計するためのガイダンスに加え、Azure 環境にファイル共有ロールを追加してください。
   
@@ -349,7 +349,7 @@ DFSR によるファイル レプリケーションを設定するには、DNS �
   
 **表: DFSR のリファレンス記事**
 
-|**Title**|**説明**|
+|**タイトル**|**説明**|
 |:-----|:-----|
 |[レプリケーション](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |レプリケーションに関するリンクが含まれる DFS 管理のための TechNet トピック  <br/> |
 |[DFS レプリケーション: サバイバル ガイド](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |DFS 情報へのリンクが含まれる Wiki  <br/> |
@@ -450,7 +450,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
 
 |**ログ配布先データベースから復元するサービス**|**データベースが含まれるものの、データベースを復元しないでサービスを開始することが推奨されているサービス**|**データベースにデータを格納しないサービス (フェールオーバー後にサービスを開始します)。**|
 |:-----|:-----|:-----|
-| Machine Translation Service <br/>  Managed Metadata Service <br/>  Secure Store Service <br/>  User Profile (プロファイル データベースとソーシャル タグ データベースのみがサポートされています。同期データベースはサポートされていません)。 <br/>  Microsoft SharePoint Foundation Subscription Settings Service <br/> | Usage and Health Data Collection <br/>  State Service <br/>  Word Automation <br/> | Excel Services <br/>  PerformancePoint Services <br/>  PowerPoint Conversion <br/>  Visio Graphics Service <br/>  Work Management <br/> |
+| Machine Translation Service <br/>  Managed Metadata Service <br/>  Secure Store Service <br/>  User Profile (プロファイル データベースとソーシャル タグ データベースのみがサポートされています。同期データベースはサポートされていません)。 <br/>  Microsoft SharePoint Foundation Subscription Settings Service <br/> | Usage and Health Data Collection <br/>  State Service <br/>  Word Automation <br/> | Excel Services <br/>  PerformancePoint Service <br/>  PowerPoint Conversion <br/>  Visio Graphics Service <br/>  Work Management <br/> |
    
 次の例は、データベースから Managed Metadata Service を復元する方法を示しています。
   
@@ -476,7 +476,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
   
 通常、ネットワーク負荷分散を設定する場合、クラスターが単一の IP アドレスに割り当てられます。その後、そのクラスターを指すネットワーク用に、DNS プロバイダーで DNS ホスト レコードを作成します (このプロジェクトでは、オンプレミス データセンターで障害が発生した場合の回復性を確保するために Azure に DNS サーバーを配置しています)。たとえば、負荷分散クラスターの IP アドレスを指す  `http://sharepoint.contoso.com` という DNS レコードを、Active Directory の DNS マネージャーで作成できます。
   
-外部のアクセスを SharePoint ファームでは、イントラネット上のクライアントを使用している同じ URL を使用して外部 DNS サーバーのホスト レコードを作成できます (たとえば、 `http://sharepoint.contoso.com`)、ファイアウォールの外部 IP アドレスを指しています。(この例を使用して、ベスト ・ プラクティスは、内部の DNS サーバーの権限があるように分割 DNS を設定するのには`contoso.com`と、SharePoint ファームのクラスターに直接要求をルーティングではなく、外部の DNS サーバーへのルーティングに DNS を要求します)。クライアントが探しているリソースを検出できるように、設置型クラスターの内部 IP アドレスを外部 IP アドレスにマッピングできます。
+SharePoint ファームへの外部アクセスの場合は、ファイアウォールの外部 IP アドレスをポイントするイントラネット`http://sharepoint.contoso.com`上でクライアントが使用するのと同じ URL を使用して、外部 DNS サーバー上にホストレコードを作成できます。 (この例を使用して、DNS 要求を外部 DNS サーバーにルーティングするのではなく、内部 DNS `contoso.com`サーバーが権限を持ち、要求を直接 SharePoint ファームクラスターにルーティングするように、分割 DNS を設定するのがベストプラクティスです。)その後、外部 IP アドレスをオンプレミスクラスターの内部 IP アドレスにマップして、クライアントが探しているリソースを見つけられるようにすることができます。
   
 以下に、考えられるいくつかの異なる障害復旧シナリオを記します。
   
@@ -484,7 +484,7 @@ Search Service を復元するには、各コンテンツ ソースのフル ク
   
  **シナリオ例: オンプレミス データセンターが完全に消失しました。** このシナリオは、火災や洪水などの自然災害によって生じる恐れがあります。その場合、企業であれば、別の地域にセカンダリ データセンターがあったり、独自のディレクトリ サービスと DNS を持つ Azure サブネットがあったりする可能性があります。前述の障害シナリオと同様、内部と外部の DNS レコードを、Azure SharePoint ファームを指すようにリダイレクトできます。この場合も、DNS レコードの伝達には若干時間がかかる可能性があります。
   
-[ホスト名が付いたサイト コレクションのアーキテクチャと展開 (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)の推奨事項に従って、ホスト名が付いたサイト コレクションを使用する場合は、一意で、SharePoint ファーム内の同じ web アプリケーションでホストされているいくつかのサイト コレクションがあります。DNS 名 (たとえば、`http://sales.contoso.com`と`http://marketing.contoso.com`)。この例では、サイト コレクションごとに、クラスター IP アドレスをポイントする DNS レコードを作成できます。要求には、SharePoint の web フロント エンド サーバーに達すると、適切なサイト コレクションへの各要求のルーティングを処理します。
+ホスト[名付きサイトコレクションのアーキテクチャと展開 (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)で推奨されているように、ホスト名付きサイトコレクションを使用している場合は、sharepoint ファーム内の同じ web アプリケーションによってホストされている複数のサイトコレクションが存在することがあります (固有)DNS 名 ( `http://sales.contoso.com`と`http://marketing.contoso.com`など)。 その場合、使用しているクラスター IP アドレスを指すサイト コレクションごとに、DNS レコードを作成できます。 SharePoint Web フロントエンド サーバーに要求が到着すると、適切なサイト コレクションにそれぞれの要求がルーティングされます。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft の概念実証環境
 
@@ -564,7 +564,7 @@ SQL Server がインストールされたデータベース サーバーを作�
     
 - 分散キャッシュをホストするための SP-WFE1 と SP-WFE2 を準備します。 
     
-**Psconfig.exe**をコマンドラインで実行するときに、 _skipRegisterAsDistributedCachehost_パラメーターを使用しました。詳細については、[フィードおよび SharePoint Server 2013 では、分散キャッシュ サービスの計画](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)を参照してください。 
+コマンド ラインで _psconfig.exe_ を実行する際、 **skipRegisterAsDistributedCachehost** パラメーターを使用しました。 詳細については、「[SharePoint Server 2013 でフィードおよび Distributed Cache service を計画する](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)」を参照してください。 
   
 復旧環境で次のステップを繰り返しました。
   
@@ -654,7 +654,7 @@ SQL Server エージェントが、既定の資格情報ではなく、ネット
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Managed Metadata Service (または他の SharePoint サービス) がインストール後に自動的に開始されない
 
-サービスは、パフォーマンスと、SharePoint サーバーの現在の負荷によっては、起動するまでに数分をかかる場合があります。手動でサービスの [**開始**] をクリックし、場合によってはその状態を監視するサービスを [サーバー] 画面の更新中に起動用の十分な時間を提供します。場合に、サービスが停止するいると、SharePoint の診断ログを有効にする、サービスを再度起動し、エラーのログを確認しようとしてください。詳細については、[診断ログでは、SharePoint 2013 の構成](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)を参照してください。
+サービスは、SharePoint Server のパフォーマンスとその時点における負荷によっては開始するまでに数分かかる場合があります。 **[開始]** をクリックしてサービスを手動で開始し、[サーバーのサービス] 画面をときどき更新して状態を監視しながら、サービスが開始されるまで適切な時間を取ります。 サービスが依然として停止状態の場合には、SharePoint 診断ログを有効にしてからサービスの開始をもう一度試みて、ログでエラーを確認します。 詳細については、「 [Configure diagnostic logging In SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging) 」を参照してください。
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>DNS を Azure フェールオーバー環境に変更した後も、SharePoint サイトに関して従来の IP アドレスをクライアント ブラウザーが使用し続ける
 
@@ -666,7 +666,7 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>その他の技術情報
 
-[サポートされている SharePoint データベース用の高可用性のオプションと障害復旧のオプション](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[サポートされている SharePoint データベース用の高可用性と障害回復のオプション](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
 [SQL Server 2012 の AlwaysOn 可用性グループを SharePoint 2013 用に構成する](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   

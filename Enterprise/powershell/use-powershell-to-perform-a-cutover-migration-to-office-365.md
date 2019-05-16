@@ -3,7 +3,7 @@ title: PowerShell を使用して Office 365 へのカットオーバーの移�
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 概要:Windows PowerShell を使用して Office 365 の一括移行を実行する方法について説明します。
-ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071203"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell を使用して Office 365 へのカットオーバーの移行を実行する
 
@@ -195,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>セクション 7:ユーザー ライセンスの割り当て
 <a name="BK_Step7"> </a>
 
- **ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。** ライセンスを割り当てないと、猶予期間が終了したとき (30 日) にメールボックスが無効になります。 Microsoft 365 管理センターでライセンスを割り当てるには、「[Office 2013 for business のライセンスの割り当てまたは割り当て解除](https://go.microsoft.com/fwlink/?LinkId=536681)を行う」を参照してください。
+ **ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。** ライセンスを割り当てないと、猶予期間が終了したとき (30 日) にメールボックスが無効になります。 Microsoft 365 管理センターでライセンスを割り当てるには、「365 Office 2013 for business のライセンスの割り当てまたは割り当て解除を行う」を参照してください。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>ステップ 8:移行後のタスクを完了する
 <a name="BK_Step8"> </a>

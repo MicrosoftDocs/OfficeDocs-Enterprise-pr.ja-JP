@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '概要: Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示、一覧表示、または表示できます。'
-ms.openlocfilehash: 2858efef6220beed76894414ea99ed922353afc3
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: e1a99aef4f2045dcba8d7f3894ef82f9e7c36a15
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037921"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071103"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントを表示する
 
 **概要:** Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示します。
   
-office 365 管理センターを使用して office 365 テナントのアカウントを表示することはできますが、office 365 PowerShell を使用して、office 365 管理センターでは実行できないいくつかの操作を実行することもできます。
+Office 365 管理センターを使用して Office 365 テナントのアカウントを表示することはできますが、office 365 PowerShell を使用して、Office 365 管理センターでは実行できないいくつかの操作を実行することもできます。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
@@ -222,7 +222,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayNam
 
 ### <a name="view-additional-property-values-for-accounts"></a>アカウントの追加のプロパティ値を表示する
 
-**get-msoluser**コマンドレットでは、既定でユーザーアカウントの3つのプロパティを表示します。
+**Get-msoluser**コマンドレットでは、既定でユーザーアカウントの3つのプロパティを表示します。
   
 - UserPrincipalName
     
@@ -230,7 +230,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayNam
     
 - isLicensed
     
-ユーザーが作業する部署や、ユーザーが Office 365 サービスを使用する国/地域など、追加のプロパティが必要な場合は、get-msoluser コマンドレットと組み合わせて**** を**** 実行して、ユーザーアカウントの一覧を指定することができます。プロパティ. 次に例を示します。
+ユーザーが作業する部署や、ユーザーが Office 365 サービスを使用する国/地域など、追加のプロパティが必要な場合は、Get-msoluser コマンドレットと組み合わせて**** を**** 実行して、ユーザーアカウントの一覧を指定することができます。プロパティ. 次に例を示します。
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
@@ -284,7 +284,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-ディレクトリ同期を使用して office 365 ユーザーを作成および管理している場合は、office 365 ユーザーがどのローカルアカウントから射影されているかを表示できます。 次の例では、azure ad connect が ObjectGUID の既定のソースアンカーを使用するように構成されていると仮定しています (ソースアンカーの構成の詳細については、「 [azure ad connect: デザインの概念](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)」を参照してください)。また、powershell の Active Directory モジュールがインストールされている場合 (「 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)」を参照):
+ディレクトリ同期を使用して Office 365 ユーザーを作成および管理している場合は、Office 365 ユーザーがどのローカルアカウントから射影されているかを表示できます。 次の例では、Azure AD Connect が ObjectGUID の既定のソースアンカーを使用するように構成されていると仮定しています (ソースアンカーの構成の詳細については、「 [AZURE Ad connect: デザインの概念](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)」を参照してください)。また、Powershell の Active Directory モジュールがインストールされている場合 (「 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)」を参照):
 
 ```
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

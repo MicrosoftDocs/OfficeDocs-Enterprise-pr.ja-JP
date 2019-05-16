@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '概要: ネットワーク アドレス変換 (NAT) を使用して、組織内で IP アドレスごとに使用できるクライアントの正しい数を見積もる方法の詳細について説明します。'
-ms.openlocfilehash: 733d591bded599cfaece988a624baa7a3c0d4b06
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
-ms.translationtype: HT
+ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069883"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 の NAT サポート
 

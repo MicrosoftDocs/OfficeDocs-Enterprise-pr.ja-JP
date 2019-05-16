@@ -4,7 +4,7 @@ ms.author: krowley
 author: tracyp
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: この記事には、Exchange Online のパフォーマンスを向上させる方法を説明する一般的なヒントとその他のリソースへのリンクが含まれています。
-ms.openlocfilehash: f75869ba6d83a92b1e19743c8b38c4bcbb6762cf
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d736568687da5ffe0ebed5a57a6afa6f93173c54
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372854"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070353"
 ---
 # <a name="tune-exchange-online-performance"></a>Exchange Online のパフォーマンスをチューニングする
 
@@ -35,12 +35,12 @@ ms.locfileid: "30372854"
     
 - **メールボックスの移動は、インターネットトラフィックが少ない時間帯やオンプレミスの Exchange の使用中に発生するようにスケジュールします。** 移動をスケジュールするとき、メールボックスレプリケーションプロキシに移行要求が送信され、すぐには実行されない場合があります。 
     
-- **web 上の Outlook のリーンポップアウトを使用します。** リーンポップアウトは、サーバー上にいくつかのコンポーネントをレンダリングすることによって、Microsoft Edge または Internet Explorer で特定の電子メールメッセージのより小さなメモリを消費するバージョンを少なくします。 詳細については、「[リーンポップアウトを使用してメールメッセージの読み取り時に使用されるメモリを減らす](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)」を参照してください。
+- **Web 上の Outlook のリーンポップアウトを使用します。** リーンポップアウトは、サーバー上にいくつかのコンポーネントをレンダリングすることによって、Microsoft Edge または Internet Explorer で特定の電子メールメッセージのより小さなメモリを消費するバージョンを少なくします。 詳細については、「[リーンポップアウトを使用してメールメッセージの読み取り時に使用されるメモリを減らす](https://support.office.com/article/a6d6ba01-2562-4c3d-a8f1-78748dd506cf)」を参照してください。
 
 
 ## <a name="general-advice"></a>一般的なアドバイス
 
-- outlook.office.com の DNS 参照が、場所の論理的なエントリの場所で MS データセンターに入力されていることを確認します。
+- Outlook.office.com の DNS 参照が、場所の論理的なエントリの場所で MS データセンターに入力されていることを確認します。
 
 - メールボックスのキャッシュを調査し、適切なオプション (re を選択します。 キャッシュ期間、共有メールボックスのキャッシュ、et cetera)。
 

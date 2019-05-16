@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: この記事では、SharePoint Online で最適なパフォーマンスを得るためにページを設計するときに考慮する必要がある具体的な事柄について説明します。
-ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4743364f6e8a1e84800085d0875abad84491780b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487167"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067213"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online のパフォーマンス チューニングの概要
 
@@ -44,17 +44,17 @@ ms.locfileid: "33487167"
     
 - カスタマイズされていないページは、非常に短時間で読み込まれます。
     
-- OneDrive for business、チームサイト、および _layouts などのシステムページはすべてすぐに読み込むことができます。
+- OneDrive for Business、チームサイト、および _layouts などのシステムページはすべてすぐに読み込むことができます。
     
 - SharePoint Online のページのうち、最低でも 1% の負荷は、5000ミリ秒を超えると読み込みが行われます。
     
-1つの簡単なベンチマークテストを使用して、OneDrive for business のホームページの読み込み時間と、カスタマイズされた一部の機能を使用することで、パフォーマンスを測定できます。 これは、多くの場合、ネットワークパフォーマンスの問題をトラブルシューティングするときに完了することを求める最初の手順のサポートになります。
+1つの簡単なベンチマークテストを使用して、OneDrive for Business のホームページの読み込み時間と、カスタマイズされた一部の機能を使用することで、パフォーマンスを測定できます。 これは、多くの場合、ネットワークパフォーマンスの問題をトラブルシューティングするときに完了することを求める最初の手順のサポートになります。
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>パフォーマンスをチェックするときに標準ユーザーアカウントを使用する
 
 サイトコレクション管理者、サイト所有者、編集者、または投稿者は、追加のセキュリティグループに属し、追加のアクセス許可が与えられるため、SharePoint がページに読み込む追加要素を持つことになります。
   
-これは、オンプレミスの sharepoint と sharepoint online に適用されますが、オンプレミスのシナリオでは、相違点は sharepoint Online のように簡単にはわかりません。
+これは、オンプレミスの sharepoint と SharePoint Online に適用されますが、オンプレミスのシナリオでは、相違点は SharePoint Online のように簡単にはわかりません。
   
 ユーザーに対してページがどのように実行されるかを正しく評価するには、標準のユーザーアカウントを使用して、作成コントロールおよびセキュリティグループに関連する追加のトラフィックを読み込まないようにする必要があります。
   
@@ -82,7 +82,7 @@ ms.locfileid: "33487167"
     
 ### <a name="server-connection"></a>サーバー接続
 
-sharepoint オンプレミスのパフォーマンスに影響する問題の多くは、sharepoint Online にも適用されます。
+SharePoint オンプレミスのパフォーマンスに影響する問題の多くは、SharePoint Online にも適用されます。
   
 ご想像のとおり、サーバーがオンプレミスの SharePoint で実行する方法をより細かく制御できます。 SharePoint Online は少し異なります。 サーバーに対して実行する作業が多いほど、ページの表示に時間がかかります。 SharePoint では、この点で最も大きな原因は、複数の web パーツを持つ複雑なページです。
   
@@ -98,7 +98,7 @@ SharePoint Online では、特定のページ要求が、実際には複数の�
   
 これらのサーバー間の相互作用の例を次に示します。
   
-- Web サーバーと SQL server
+- Web サーバーと SQL Server
     
 - Web からアプリケーションサーバーへ
     
@@ -124,7 +124,7 @@ SharePoint Online では、いくつかの要素を考慮する必要があり�
     
 - サーバーへの物理的な距離が大きい
     
-SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテンツ配信ネットワーク) があります。 CDN は基本的に、複数のデータセンターにまたがって展開されたサーバーの分散コレクションです。 CDN を使用すると、クライアントが元の SharePoint サーバーから離れている場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストできます。 Microsoft では、カスタマイズできないページのローカルインスタンス (SharePoint Online 管理者のホームページなど) を格納するために、今後もこれを使用しています。 cdns の詳細については、「[コンテンツ配信ネットワーク](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)」を参照してください。
+SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテンツ配信ネットワーク) があります。 CDN は基本的に、複数のデータセンターにまたがって展開されたサーバーの分散コレクションです。 CDN を使用すると、クライアントが元の SharePoint サーバーから離れている場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストできます。 Microsoft では、カスタマイズできないページのローカルインスタンス (SharePoint Online 管理者のホームページなど) を格納するために、今後もこれを使用しています。 CDNs の詳細については、「[コンテンツ配信ネットワーク](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)」を参照してください。
   
 知っておく必要があるものの、多くのことを行うことができないものは、ISP の接続速度です。 簡単なスピードテストツールを使用すると、接続速度がわかります。
   
@@ -132,7 +132,7 @@ SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテ�
 
 パフォーマンスの観点から、web ブラウザーについて考慮するいくつかの要因があります。
   
-複雑なページにアクセスすると、パフォーマンスに影響します。 ほとんどのブラウザーでは、25 mb (約 90 mb) のキャッシュしかありませんが、平均的な web ページは通常 1.6 mb です。 これを使用するには時間がかかります。
+複雑なページにアクセスすると、パフォーマンスに影響します。 ほとんどのブラウザーでは、25 mb (約 90 MB) のキャッシュしかありませんが、平均的な web ページは通常 1.6 MB です。 これを使用するには時間がかかります。
   
 また、帯域幅が問題になることもあります。 たとえば、ユーザーが別のセッションのビデオを視聴している場合、SharePoint ページのパフォーマンスが低下します。 ユーザーがメディアをストリーミングするのを防ぐことはできませんが、ユーザーに対してページを読み込む方法を制御することができます。
   
@@ -151,11 +151,11 @@ SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテ�
     
 - [コンテンツ配信ネットワークの使用](using-content-delivery-networks-with-sharepoint-online.md)
     
-- [SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ web パーツの代わりにコンテンツ検索 web パーツを使用する](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用する](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
 - [SharePoint Online のキャパシティ プランニングとロード テスト](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [Diagnosing performance issues with SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [SharePoint Online のパフォーマンスの問題の診断](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [SharePoint Online でのオブジェクトキャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
     

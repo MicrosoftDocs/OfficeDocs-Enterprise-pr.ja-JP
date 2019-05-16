@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: '概要: Office 365、Microsoft Intune、Dynamics 365 を含む Microsoft の SaaS サービスにアクセスするためにネットワークを最適化する方法を理解します。'
-ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 695e3255bf1afcb5314985caccb15ead410d93f6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067773"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Microsoft SaaS のためのネットワーク デザイン
 
@@ -35,7 +35,7 @@ Microsoft SaaS サービス向けにネットワークを最適化するには�
     
 2. 各オフィスにインターネット接続を追加します。
     
-3. すべてのインターネット接続の isp が、ローカル IP アドレスを持つ DNS サーバーを使用していることを確認します。
+3. すべてのインターネット接続の Isp が、ローカル IP アドレスを持つ DNS サーバーを使用していることを確認します。
     
 4. ネットワークヘアピン、クラウドベースのセキュリティサービスなどの中間にある宛先を調べ、可能であれば削除します。
     
@@ -47,7 +47,7 @@ Microsoft SaaS トラフィックには、次の3つのカテゴリがありま�
 
 - 最適化
 
-  すべての microsoft saas サービスに接続するために必要です。また、microsoft saas の帯域幅、接続、およびデータ量の 75% を表しています。
+  すべての Microsoft SaaS サービスに接続するために必要です。また、Microsoft SaaS の帯域幅、接続、およびデータ量の 75% を表しています。
 
 - 許可
 
@@ -65,7 +65,7 @@ Microsoft SaaS トラフィックには、次の3つのカテゴリがありま�
 図1は、ブランチオフィス、地域または中央1つを含むすべてのオフィスに推奨される構成を示しています。
 
 - **既定**のカテゴリと一般的なインターネットトラフィックは、プロキシサーバーやその他のエッジデバイスを使用してインターネットベースのセキュリティリスクに対する保護を提供するオフィスにルーティングされます。
-- [**最適化**と**許可**] カテゴリトラフィックは、接続しているユーザーが含まれている office に最も近い Microsoft ネットワークフロントエンドの端に直接転送されます。プロキシサーバーやその他のエッジデバイスは使用しません。
+- [**最適化**と**許可**] カテゴリトラフィックは、接続しているユーザーが含まれている Office に最も近い Microsoft ネットワークフロントエンドの端に直接転送されます。プロキシサーバーやその他のエッジデバイスは使用しません。
 
 ブランチオフィスのソフトウェア定義ワイドエリアネットワーク (SD) デバイスは、トラフィックを分離して、次のことを行います。 
 

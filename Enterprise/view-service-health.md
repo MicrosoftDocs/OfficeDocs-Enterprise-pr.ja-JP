@@ -1,9 +1,9 @@
 ---
 title: Office 365 サービスの正常性をチェックする方法
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_ServiceHealthModern
@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: サポートを呼び出す前に Office 365 サービスの正常性の状態を表示して、アクティブなサービスが中断していないかどうかを確認する
-ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 67595bddaed23222d09c0e7f6f5353b764722f83
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071223"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Office 365 サービスの正常性をチェックする方法
 
-[microsoft 365 管理センター](https://admin.microsoft.com)の [office 365**サービス正常性**] ページで、office 365、Yammer、microsoft Dynamics CRM、microsoft Intune cloud services の正常性を表示できます。 クラウド サービスの問題が発生している場合は、サポートに連絡するかトラブルシューティングに時間を費やす前に、サービス正常性を確認することで、解決に向けて取り組み中の既知の問題であるかどうかを判別できます。 
+[Microsoft 365 管理センター](https://admin.microsoft.com)の [Office 365**サービス正常性**] ページで、office 365、YAMMER、Microsoft Dynamics CRM、microsoft Intune cloud services の正常性を表示できます。 クラウド サービスの問題が発生している場合は、サポートに連絡するかトラブルシューティングに時間を費やす前に、サービス正常性を確認することで、解決に向けて取り組み中の既知の問題であるかどうかを判別できます。 
 
 サービスポータルにサインインできない場合は、[[サービスの状態] ページ](https://status.office365.com)を使用して既知の問題があるかどうかを確認し、テナントへのログインを妨げることができます。
   

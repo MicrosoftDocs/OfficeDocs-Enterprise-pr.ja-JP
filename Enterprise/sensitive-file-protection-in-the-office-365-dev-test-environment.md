@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
-ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070893"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
@@ -32,7 +32,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。
   
 > [!TIP]
-> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
@@ -41,7 +41,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 シミュレーション エンタープライズで機密性の高いファイル保護をテストする場合は、[DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md)の指示に従ってください。
   
 > [!NOTE]
-> 機密ファイル保護のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で機密性の高いファイルの保護をテストしてお試しいただけるようオプションとしてここで提供しています。 
+> 機密ファイル保護のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で機密性の高いファイルの保護をテストしてお試しいただけるようオプションとしてここで提供しています。 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>フェーズ 2:アクセス許可で保護されたサイトのドキュメントがどのようにリークされる場合があるのかをデモする
 
@@ -49,13 +49,13 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
   
 最初に、エグゼクティブを表す 3 つの新しいユーザー アカウントを追加して、Office 365 E5 ライセンスを割り当てます。
   
-「 [office 365 powershell に接続](https://technet.microsoft.com/library/dn975125.aspx)する」の手順を使用して、powershell モジュールをインストールし (必要な場合)、新しい Office 365 サブスクリプションに接続します。
+「 [Office 365 powershell に接続](https://technet.microsoft.com/library/dn975125.aspx)する」の手順を使用して、powershell モジュールをインストールし (必要な場合)、新しい Office 365 サブスクリプションに接続します。
   
 - 自分のコンピューター (軽量の Office 365 開発/テスト環境の場合)。
     
 - CLIENT1 仮想マシン (シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合)。
     
-[ **Windows PowerShell 資格情報の要求**] ダイアログボックスで、office 365 のグローバル管理者名jdoe@contosotoycompany.onmicrosoft.com(例:) と office 365 試用版サブスクリプションのパスワードを入力します。
+**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365 全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) と Office 365 試用版のサブスクリプションのパスワードを入力します。
   
 組織名 (例: contosotoycompany) と、所属地域に該当する 2 文字の国別コードを入力して、Windows PowerShell 用 Windows Azure Active Directory Module のプロンプトから次のコマンドを実行します。
   
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 次に、プライベート エグゼクティブ グループを作成し、そこに新しいエグゼクティブ アカウントを追加します。
   
-1. ブラウザーで、office ポータルに移動[http://admin.microsoft.com](http://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
+1. ブラウザーで、Office ポータルに移動[http://admin.microsoft.com](http://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
     
   - 簡易版の Office 365 開発/テスト環境を使用している場合は、Internet Explorer か任意のブラウザーのプライベート セッションを開いて、ローカル コンピューターからサインインします。
     
@@ -140,7 +140,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. SharePoint グループの一覧で、**[エグゼクティブ メンバー]** をクリックします。
     
-9. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+9. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
 10. [**共有 ' エグゼクティブ '**] で、「**エグゼクティブ**」と入力し、[**重役**] グループをクリックして、[**共有**] をクリックします。
     
@@ -232,7 +232,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 5. **[SharePoint 管理センター]** タブで、**[設定]** をクリックします。
     
-6. ページの [ **Information Rights Management (irm)** ] セクションで、[**構成で指定された irm サービスを使用する**] を選択し、[ **irm 設定の更新**] を選択します。
+6. ページの [ **Information Rights Management (irm)** ] セクションで、[**構成で指定された Irm サービスを使用する**] を選択し、[ **irm 設定の更新**] を選択します。
     
 7. **[SharePoint 管理センター]** タブを閉じます。
     
@@ -276,7 +276,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 3. フォルダー内を右クリックして、**[貼り付け]** をクリックします。
     
-4. 新しい**SensitiveData-beforeirm-.docx**ファイルの名前を**sensitivedata-afterirm.docx**に変更します。
+4. 新しい**SensitiveData-BeforeIRM-.docx**ファイルの名前を**sensitivedata-afterirm.docx**に変更します。
     
 5. ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。'
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490153"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068303"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Advanced Threat Protection
 
@@ -38,7 +38,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
 エンタープライズのシミュレーションで ATP をテストする場合は、[Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md) の手順に従ってください。
   
 > [!NOTE]
-> ATP のテストでは、シミュレートされたエンタープライズ開発/テスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 これは、ATP をテストして、一般的な組織を表す環境でテストするためのオプションとして提供されています。 
+> ATP のテストでは、シミュレートされたエンタープライズ開発/テスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 これは、ATP をテストして、一般的な組織を表す環境でテストするためのオプションとして提供されています。 
   
 ## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>フェーズ 2: Office 365 の既定の電子メール配信動作をデモンストレーションする
 

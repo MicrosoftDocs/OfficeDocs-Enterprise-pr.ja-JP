@@ -1,9 +1,9 @@
 ---
 title: 組織のデータを Office 365 Enterprise に移行する
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: FastTrack による展開は行わず、データを Office 365 に移行する準備が整った場合は、こちらの案内に沿って移行を開始してください。
-ms.openlocfilehash: ffa239c4f91c4229bb28e918909da06502ba9198
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
-ms.translationtype: HT
+ms.openlocfilehash: 9efaad6da9723d588cc0e42151bf297b271e4e5c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004398"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070123"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>組織のデータを Office 365 Enterprise に移行する
 

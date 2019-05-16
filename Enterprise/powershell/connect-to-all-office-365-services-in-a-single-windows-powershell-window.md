@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/28/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Office 365 サービスに接続します。'
-ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: ae9487f48439c6f8d98f927c610e5f2af4c1b361
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573971"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069183"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する
 
  **概要:** 別々の PowerShell コンソール ウィンドウで各種 Office 365 サービスを管理するのではなく、1 つのコンソール ウィンドウからすべての Office 365 サービスに接続して管理できます。
   
-PowerShell を使用して Office 365 を管理する場合は、Microsoft 365 管理センター、SharePoint online、Exchange online、Skype for business online、およびセキュリティに対応して、最大5つの Windows PowerShell セッションを同時に開くことができます。&amp;コンプライアンスセンター 別々の Windows PowerShell セッションで 5 つの異なる接続方法を使用すると、デスクトップは以下のようになります。
+PowerShell を使用して Office 365 を管理する場合は、Microsoft 365 管理センター、SharePoint Online、Exchange Online、Skype for Business Online、およびセキュリティに対応して、最大5つの Windows PowerShell セッションを同時に開くことができます。&amp;コンプライアンスセンター 別々の Windows PowerShell セッションで 5 つの異なる接続方法を使用すると、デスクトップは以下のようになります。
   
 ![一度に実行している 5 つの Windows PowerShell コンソール](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
@@ -37,7 +37,7 @@ PowerShell を使用して Office 365 を管理する場合は、Microsoft 365 �
 >現時点では、Office 365 ワールドワイド (+ GCC) クラウドに接続するためのコマンドのみが含まれています。 その他のノートには、他の Office 365 クラウドへの接続に関する情報を含む記事へのリンクが記載されています。
 >
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 Windows PowerShell の単一のインスタンスからすべての Office 365 を管理する前に、次の前提条件を考慮してください。
   
@@ -59,11 +59,11 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
     
   - Windows Server 2008 R2 SP1*
     
-    \*Microsoft .net Framework 4.5 をインストールする必要があります。*x*をクリックし、windows management framework 3.0 または windows management framework 4.0 のどちらかを選択します。 詳細については、「.net Framework と[windows management framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)または[windows management framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)[のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)」を参照してください。
+    \*Microsoft .NET Framework 4.5 をインストールする必要があります。*x*をクリックし、Windows management framework 3.0 または Windows management framework 4.0 のどちらかを選択します。 詳細については、「.NET Framework と[Windows management framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)または[windows management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)[のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)」を参照してください。
     
     Skype for Business Online モジュール、および Office 365 モジュールの 1 つの要件のため、64 ビット バージョンの Windows を使用する必要があります。
     
-- Azure AD、SharePoint online、Skype for business online に必要なモジュールをインストールする必要があります。
+- Azure AD、SharePoint Online、Skype for Business Online に必要なモジュールをインストールする必要があります。
     
    - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
@@ -87,7 +87,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   $credential = Get-Credential
   ```
 
-3. このコマンドを実行して、azure active directory PowerShell for Graph モジュールを使用して azure active directory (AD) に接続します。
+3. このコマンドを実行して、azure active directory PowerShell for Graph モジュールを使用して Azure Active Directory (AD) に接続します。
     
   ```
   Connect-AzureAD -Credential $credential
@@ -99,7 +99,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   Connect-MsolService -Credential $credential
  ```
 
-4. 次のコマンドを実行して、SharePoint Online に接続します。 _ \<domainhost>_ をドメインの実際の値に置き換えます。 たとえば、"litwareinc.onmicrosoft.com" の場合、 _ \<domainhost>_ の値は "litwareinc" です。
+4. 次のコマンドを実行して、SharePoint Online に接続します。 _ \<Domainhost>_ をドメインの実際の値に置き換えます。 たとえば、"litwareinc.onmicrosoft.com" の場合、 _ \<domainhost>_ の値は "litwareinc" です。
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -122,7 +122,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   ```
 
 >[!Note]
->全世界以外の Office 365 クラウドの exchange online に接続する方法については、「 [exchange online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+>全世界以外の Office 365 クラウドの Exchange Online に接続する方法については、「 [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 >
 
 7. 次のコマンドを実行して、セキュリティ センターとコンプライアンス センター に接続します。
@@ -133,7 +133,7 @@ Windows PowerShell の単一のインスタンスからすべての Office 365 �
   ```
 
 >[!Note]
->全世界以外の office 365 &amp;クラウドのセキュリティコンプライアンスセンターに接続する方法については、「 [connect to office 365 Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
+>全世界以外の Office 365 &amp;クラウドのセキュリティコンプライアンスセンターに接続する方法については、「 [connect To Office 365 Security _AMP_ コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
 >
 
 Azure Active Directory PowerShell for Graph モジュールを使用している場合、1つのブロック内のすべてのコマンドがあります。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
@@ -178,7 +178,7 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>多要素認証を使用する場合の接続手順
 
-azure Active Directory PowerShell for Graph モジュールを使用して、単一のウィンドウで多要素認証を使用して、azure AD、SharePoint Online、および Skype for buiness 接続するすべてのコマンドが、1つのブロックに含まれています。 ユーザーアカウントのユーザープリンシパル名 (UPN) 名とドメインホスト名を指定し、それらを一度にすべて実行します。
+Azure Active Directory PowerShell for Graph モジュールを使用して、単一のウィンドウで多要素認証を使用して、Azure AD、SharePoint Online、および Skype for Buiness 接続するすべてのコマンドが、1つのブロックに含まれています。 ユーザーアカウントのユーザープリンシパル名 (UPN) 名とドメインホスト名を指定し、それらを一度にすべて実行します。
 
 ````
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"

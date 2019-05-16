@@ -1,10 +1,9 @@
 ---
 title: Office 365 のサード パーティ SSL 証明書の計画
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/24/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,19 +16,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
-description: '概要: exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、exchange Online サービス、および exchange Web サービスについて説明します。'
-ms.openlocfilehash: 3c22daa2315e36c45b5b5dd6271842168c90726d
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: '概要: Exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、Exchange Online サービス、および Exchange Web サービスについて説明します。'
+ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491413"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069353"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365 のサード パーティ SSL 証明書の計画
 
- **概要:** exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、exchange Online サービス、および exchange Web サービスについて説明します。 
+ **概要:** Exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、Exchange Online サービス、および Exchange Web サービスについて説明します。 
   
-クライアントと Office 365 環境の間の通信を暗号化するには、サードパーティの Secure sockets Layer (SSL) 証明書をインフラストラクチャサーバーにインストールする必要があります。
+クライアントと Office 365 環境の間の通信を暗号化するには、サードパーティの Secure Sockets Layer (SSL) 証明書をインフラストラクチャサーバーにインストールする必要があります。
 
 ||
 |:-----|
@@ -39,15 +38,15 @@ ms.locfileid: "33491413"
   
 - Exchange オンプレミス
     
-- シングルサインオン (SSO) (Active Directory フェデレーションサービス (ad fs) フェデレーションサーバーと ad fs フェデレーションサーバープロキシの両方)
+- シングルサインオン (SSO) (Active Directory フェデレーションサービス (AD FS) フェデレーションサーバーと AD FS フェデレーションサーバープロキシの両方)
     
-- exchange Online サービス (自動検出、Outlook Anywhere、exchange Web サービスなど)
+- Exchange Online サービス (自動検出、Outlook Anywhere、Exchange Web サービスなど)
     
 - Exchange ハイブリッドサーバー
     
 ## <a name="certificates-for-exchange-on-premises"></a>オンプレミスの Exchange の証明書
 
-デジタル証明書を使用してオンプレミスの exchange 組織と exchange Online の間の通信を確立する方法の概要については、TechNet の記事「[証明書の要件につい](https://go.microsoft.com/fwlink/p/?LinkID=243657)て」を参照してください。
+デジタル証明書を使用してオンプレミスの Exchange 組織と Exchange Online の間の通信を確立する方法の概要については、TechNet の記事「[証明書の要件につい](https://go.microsoft.com/fwlink/p/?LinkID=243657)て」を参照してください。
   
 ## <a name="certificates-for-single-sign-on"></a>シングルサインオンの証明書
 
@@ -56,7 +55,7 @@ ms.locfileid: "33491413"
 ||||
 |:-----|:-----|:-----|
 |**証明書の種類** <br/> |**説明** <br/> |**を展開する前に把握しておくべき情報** <br/> |
-|**SSL 証明書 (サーバー認証証明書とも呼ばれる)** <br/> |これは、フェデレーションサーバー、クライアント、およびフェデレーションサーバープロキシコンピューター間の通信をセキュリティで保護するために使用される標準の SSL 証明書です。  <br/> |AD FS には SSL 証明書が必要です。 既定では、AD FS は、インターネットインフォメーションサービス (IIS) 内の既定の web サイトに対して構成された SSL 証明書を使用します。  <br/> この SSL 証明書のサブジェクト名は、展開する AD FS の各インスタンスのフェデレーションサービス (fs) 名を決定するために使用されます。 Office 365 に対して会社または組織の名前を最もよく表す新しい証明機関 (CA) で発行された証明書のサブジェクト名を選択することを検討してください。 この名前は、インターネット経由でルーティング可能である必要があります。  <br/>**注意:** AD FS では、この SSL 証明書に、ドット形式 (省略形) のサブジェクト名が含まれていないことが必要です。          <br/> **推奨事項:** この証明書は AD FS のクライアントによって信頼される必要があるため、パブリック (サードパーティ) ca または公的に信頼されたルートに従属する ca によって発行される SSL 証明書を使用することをお勧めします。たとえば、VeriSign または Thawte のようになります。  <br/> |
+|**SSL 証明書 (サーバー認証証明書とも呼ばれる)** <br/> |これは、フェデレーションサーバー、クライアント、およびフェデレーションサーバープロキシコンピューター間の通信をセキュリティで保護するために使用される標準の SSL 証明書です。  <br/> |AD FS には SSL 証明書が必要です。 既定では、AD FS は、インターネットインフォメーションサービス (IIS) 内の既定の web サイトに対して構成された SSL 証明書を使用します。  <br/> この SSL 証明書のサブジェクト名は、展開する AD FS の各インスタンスのフェデレーションサービス (FS) 名を決定するために使用されます。 Office 365 に対して会社または組織の名前を最もよく表す新しい証明機関 (CA) で発行された証明書のサブジェクト名を選択することを検討してください。 この名前は、インターネット経由でルーティング可能である必要があります。  <br/>**注意:** AD FS では、この SSL 証明書に、ドット形式 (省略形) のサブジェクト名が含まれていないことが必要です。          <br/> **推奨事項:** この証明書は AD FS のクライアントによって信頼される必要があるため、パブリック (サードパーティ) CA または公的に信頼されたルートに従属する CA によって発行される SSL 証明書を使用することをお勧めします。たとえば、VeriSign または Thawte のようになります。  <br/> |
 |**トークン署名証明書** <br/> |これは、フェデレーションサーバーが発行するすべてのトークンに安全に署名するために使用される標準の x.509 証明書で、Office 365 が受け入れて検証します。  <br/> |トークン署名証明書には、FS の信頼されたルートにチェーンする秘密キーが含まれている必要があります。 既定では、AD FS は自己署名証明書を作成します。 ただし、組織のニーズによっては、AD FS 管理スナップインを使用して、この証明書を CA によって発行された証明書に変更することができます。  <br/>**注意:** トークン署名証明書は、FS の安定性にとって重要です。 証明書が変更された場合、Office 365 に変更を通知する必要があります。 通知が提供されていない場合、ユーザーは Office 365 サービスオファーリングにサインインできません。<br/>**推奨事項:** AD FS によって生成される自己署名入りのトークン署名証明書を使用することをお勧めします。 これにより、既定でこの証明書が管理されます。 たとえば、この証明書が期限切れになると、AD FS は新しい自己署名証明書を生成します。  <br/> |
    
 フェデレーションサーバープロキシには、次の表に記載されている証明書が必要です。
@@ -68,14 +67,14 @@ ms.locfileid: "33491413"
    
 ## <a name="certificates-for-autodiscover-outlook-anywhere-and-active-directory-synchronization"></a>自動検出、Outlook Anywhere、および Active Directory 同期の証明書
 
-外部に接続された exchange 2013、exchange 2010、exchange 2007、および exchange 2003 クライアントアクセスサーバー (cass) には、自動検出、Outlook Anywhere、および Active Directory 同期サービスのために、サードパーティの SSL 証明書が必要です。 この証明書は、オンプレミス環境に既にインストールされている可能性があります。
+外部に接続された Exchange 2013、Exchange 2010、Exchange 2007、および Exchange 2003 クライアントアクセスサーバー (CASs) には、自動検出、Outlook Anywhere、および Active Directory 同期サービスのために、サードパーティの SSL 証明書が必要です。 この証明書は、オンプレミス環境に既にインストールされている可能性があります。
   
 ## <a name="certificate-for-an-exchange-hybrid-server"></a>Exchange ハイブリッドサーバーの証明書
 
-外部に接続された exchange ハイブリッドサーバーでは、exchange Online サービスとの接続をセキュリティで保護するために、サードパーティの SSL 証明書が必要です。 この証明書は、サードパーティの SSL プロバイダーから入手する必要があります。
+外部に接続された Exchange ハイブリッドサーバーでは、Exchange Online サービスとの接続をセキュリティで保護するために、サードパーティの SSL 証明書が必要です。 この証明書は、サードパーティの SSL プロバイダーから入手する必要があります。
   
 ## <a name="office-365-certificate-chains"></a>Office 365 証明書チェーン
 
-この記事では、インフラストラクチャにインストールする必要がある証明書について説明します。 office 365 サーバーにインストールされている証明書の詳細については、「 [office 365 証明書チェーン](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb)」を参照してください。
+この記事では、インフラストラクチャにインストールする必要がある証明書について説明します。 Office 365 サーバーにインストールされている証明書の詳細については、「 [office 365 証明書チェーン](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb)」を参照してください。
   
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/13/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: office 365 PowerShell を使用して、ユーザーに割り当てられている office 365 サービスを確認する方法について説明します。
-ms.openlocfilehash: 113107df75880a21210991d5b301245d75c5c739
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
+ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052971"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071123"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
-**概要:** office 365 PowerShell を使用して、ユーザーに割り当てられている office 365 サービスを確認する方法について説明します。
+**概要:** Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
   
-office 365 のライセンスプラン (sku または Office 365 プランとも呼ばれます) からのライセンスでは、これらのプランに対して定義されている Office 365 サービスへのアクセス権がユーザーに付与されます。ただし、ユーザーには、現在割り当てられているライセンスで利用可能なすべてのサービスへのアクセス権がない可能性があります。Office 365 PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。 
+Office 365 のライセンスプラン (Sku または Office 365 プランとも呼ばれます) からのライセンスでは、これらのプランに対して定義されている Office 365 サービスへのアクセス権がユーザーに付与されます。 しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。 Office 365 PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。 
 
 ライセンスプラン、ライセンス、およびサービスの詳細については、「 [Office 365 PowerShell でライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。
 
@@ -86,7 +86,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 ````
 
 >[!Note]
->_All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
+>**All** パラメーターなしで _Get-MsolUser_ コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
 >
    
 
@@ -98,7 +98,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-この例では、ユーザー BelindaN@litwareinc.com がアクセスできるサービスを表示します。これにより、自分のアカウントに割り当てられているすべてのライセンスに関連付けられているサービスが表示されます。
+この例では、ユーザー BelindaN@litwareinc.com がアクセスできるサービスを表示します。 これにより、このユーザーのアカウントに割り当てられているすべてのライセンスに関連付けられているサービスが表示されます。
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
-description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。
-ms.openlocfilehash: a9fb93d0269628c0c1d4cd374e3bca36482f7eee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
+ms.openlocfilehash: a6f1b64aade9cd7c2fa5b44e18e1075008676f90
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067993"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
-先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの skype for business server とオンプレミスの Exchange server、およびスプリットドメイン skype for business ハイブリッドで利用できます。
+先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
   
- **重要**モダン認証 (MA) の詳細と、会社や組織での使用を希望する理由は何ですか。 概要については、[このドキュメント](hybrid-modern-auth-overview.md)を確認してください。 MA でサポートされている Skype for business のトポロジについて知る必要がある場合は、ここで説明します。 
+ **重要**モダン認証 (MA) の詳細と、会社や組織での使用を希望する理由は何ですか。 概要については、[このドキュメント](hybrid-modern-auth-overview.md)を確認してください。 MA でサポートされている Skype for Business のトポロジについて知る必要がある場合は、ここで説明します。 
   
  **開始する前に**、次のように呼び出します。 
   
@@ -37,9 +37,9 @@ ms.locfileid: "33490327"
     
 - Exchange Online \> exo
     
-- Skype for business オンプレミス\>の sfb
+- Skype for Business オンプレミス\>の sfb
     
-- と Skype for business Online \> sfbo
+- と Skype for Business Online \> sfbo
     
 また、この記事のグラフィックに ' グレイアウト ' または ' 淡色 ' のオブジェクトが含まれている場合は、グレーの要素が MA 固有の構成に含まれて**いない**ことを意味します。 * 
   
@@ -49,25 +49,25 @@ ms.locfileid: "33490327"
   
 1. 最初に、すべての前提条件を満たしていることを確認してください。
     
-1. Skype for business と Exchange の両方に共通の**前提条件**が多数存在するため、[事前要件チェックリストの概要記事を参照してください](hybrid-modern-auth-overview.md)。 この手順を実行する*前*に、この記事の手順を開始する必要があります。 
+1. Skype for Business と Exchange の両方に共通の**前提条件**が多数存在するため、[事前要件チェックリストの概要記事を参照してください](hybrid-modern-auth-overview.md)。 この手順を実行する*前*に、この記事の手順を開始する必要があります。 
     
 2. ファイルまたは OneNote で必要な HMA 固有の情報を収集します。
     
-3. exo のモダン認証を有効にします (まだ有効になっていない場合)。
+3. EXO のモダン認証を有効にします (まだ有効になっていない場合)。
     
-4. sfbo の先進認証を有効にします (まだ有効になっていない場合)。
+4. SFBO の先進認証を有効にします (まだ有効になっていない場合)。
     
 5. Exchange on-premises のハイブリッド先進認証を有効にします。
     
-6. オンプレミスの Skype for business のハイブリッドモダン認証を有効にします。
+6. オンプレミスの Skype for Business のハイブリッドモダン認証を有効にします。
     
-メモこれらの手順では、sfb、sfbo、EXCH、exo に対して MA を有効にします。これは、sfb および sfbo (EXCH/exo への依存関係を含む) の HMA 構成に参加できるすべての製品です。 言い換えると、ユーザーがハイブリッドの一部 (exo + sfbo、exo + sfb、EXCH + sfbo、または EXCH + sfb) で作成したメールボックスを持つ場合、完成した製品は次のようになります。
+メモこれらの手順では、SFB、SFBO、EXCH、EXO に対して MA を有効にします。これは、SFB および SFBO (EXCH/EXO への依存関係を含む) の HMA 構成に参加できるすべての製品です。 言い換えると、ユーザーがハイブリッドの一部 (EXO + SFBO、EXO + SFB、EXCH + SFBO、または EXCH + SFB) で作成したメールボックスを持つ場合、完成した製品は次のようになります。
   
 ![混在した6つの Skype for business HMA トポロジは、可能なすべての場所で MA になります。](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
-MA を有効にするには、4つの異なる場所が存在します。 最適なユーザー環境を実現するには、これらのすべての場所で MA をオンにすることをお勧めします。 これらのすべての場所で ma をオンにできない場合は、環境に必要な場所で ma のみを有効にするように手順を調整します。
+MA を有効にするには、4つの異なる場所が存在します。 最適なユーザー環境を実現するには、これらのすべての場所で MA をオンにすることをお勧めします。 これらのすべての場所で MA をオンにできない場合は、環境に必要な場所で MA のみを有効にするように手順を調整します。
   
-サポートされているトポロジについては、「 [Skype for business での Skype for business のサポート」を](https://technet.microsoft.com/en-us/library/mt803262.aspx)参照してください。 
+サポートされているトポロジについては、「 [Skype for business での Skype For business のサポート」を](https://technet.microsoft.com/en-us/library/mt803262.aspx)参照してください。 
   
  **重要**開始する前に、すべての前提条件を満たしていることをもう一度確認してください。 この情報について[は、こちら](hybrid-modern-auth-overview.md)を参照してください。
   
@@ -83,9 +83,9 @@ MA を有効にするには、4つの異なる場所が存在します。 最適
     
   - Office 365 テナント (contoso.onmicrosoft.com のログイン時) を表す GUID。
     
-- **sfb 2015 CU5 Web サービスの url**
+- **SFB 2015 CU5 Web サービスの Url**
     
-展開されているすべての sfb 2015 プールについて、内部および外部 web サービスの URL が必要になります。 これらを取得するには、Skype for business 管理シェルから次のように実行します。
+展開されているすべての SfB 2015 プールについて、内部および外部 web サービスの URL が必要になります。 これらを取得するには、Skype for Business 管理シェルから次のように実行します。
   
 ```
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -97,31 +97,31 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
     
 Standard Edition サーバーを使用している場合、内部 URL は空白になります。 この場合は、内部 URL にプールの fqdn を使用します。
   
-## <a name="turn-on-modern-authentication-for-exo"></a>exo の先進認証を有効にする
+## <a name="turn-on-modern-authentication-for-exo"></a>EXO の先進認証を有効にする
 
 「 [Exchange Online: テナントの先進認証を有効にする方法](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)」の手順に従います。
   
-## <a name="turn-on-modern-authentication-for-sfbo"></a>sfbo の先進認証を有効にする
+## <a name="turn-on-modern-authentication-for-sfbo"></a>SFBO の先進認証を有効にする
 
-「 [Skype for business Online: テナントで先進認証を有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」の手順に従ってください。
+「 [Skype For Business Online: テナントで先進認証を有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」の手順に従ってください。
   
 ## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>Exchange on-premises のハイブリッド先進認証を有効にする
 
 この記事の手順に従ってください:[ハイブリッド先進認証を使用するように Exchange Server をオンプレミスで構成する方法](configure-exchange-server-for-hybrid-modern-authentication.md)。
   
-## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>オンプレミスの Skype for business のハイブリッドモダン認証を有効にする
+## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>オンプレミスの Skype for Business のハイブリッドモダン認証を有効にする
 
-### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>オンプレミスの web サービス url を spn として Azure AD に追加する
+### <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>オンプレミスの web サービス Url を Spn として Azure AD に追加する
 
-ここで、sfbo のサービスプリンシパルとして、前の手順で収集した url を追加するコマンドを実行する必要があります。
+ここで、SFBO のサービスプリンシパルとして、前の手順で収集した Url を追加するコマンドを実行する必要があります。
   
- **メモ**サービスプリンシパル名 (spn) は、web サービスを識別し、それをセキュリティプリンシパル (アカウント名やグループなど) に関連付けて、サービスが権限のあるユーザーの代理として機能できるようにします。 クライアントがサーバーに対して認証を行うと、spn に含まれる情報が利用されます。 
+ **メモ**サービスプリンシパル名 (Spn) は、web サービスを識別し、それをセキュリティプリンシパル (アカウント名やグループなど) に関連付けて、サービスが権限のあるユーザーの代理として機能できるようにします。 クライアントがサーバーに対して認証を行うと、Spn に含まれる情報が利用されます。 
   
 1. 最初に、[次の手順に従っ](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)て AAD に接続します。
     
-2. このコマンドをオンプレミスで実行して、sfb web サービス url の一覧を取得します。
+2. このコマンドをオンプレミスで実行して、SFB web サービス Url の一覧を取得します。
 
-   AppPrincipalId はから始まることに`00000004`注意してください。 これは、Skype for business Online に対応しています。
+   AppPrincipalId はから始まることに`00000004`注意してください。 これは、Skype for Business Online に対応しています。
     
    このコマンドの出力では、SE と WS の URL が含まれていますが、ほとんどは、で`00000004-0000-0ff1-ce00-000000000000/`始まる spn から構成されていますのでメモを取ります。
     
@@ -129,9 +129,9 @@ Standard Edition サーバーを使用している場合、内部 URL は空白�
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
 ```
     
-3. オンプレミスの内部**または**外部の sfb url が欠落してhttps://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)いる場合 (たとえば、である場合)、それらのレコードをこのリストに追加する必要があります。 
+3. オンプレミスの内部**または**外部の Sfb url が欠落してhttps://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)いる場合 (たとえば、である場合)、それらのレコードをこのリストに追加する必要があります。 
     
-    次の url の*例は*、Add コマンドで実際の url に置き換えてください。 
+    次の Url の*例は*、Add コマンドで実際の url に置き換えてください。 
   
 ```  
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
@@ -140,11 +140,11 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 手順2で new-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい url が一覧に表示されます。 この例では、spn の一覧に特定の url https://lyncweb01.contoso.comとhttps://lyncwebext01.contoso.com/が含まれるようになりました。
+4. 手順2で New-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい Spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい Url が一覧に表示されます。 この例では、Spn の一覧に特定の Url https://lyncweb01.contoso.comとhttps://lyncwebext01.contoso.com/が含まれるようになりました。
     
-### <a name="create-the-evosts-auth-server-object"></a>evosts 認証サーバーオブジェクトを作成する
+### <a name="create-the-evosts-auth-server-object"></a>EvoSTS 認証サーバーオブジェクトを作成する
 
-Skype for business 管理シェルで次のコマンドを実行します。
+Skype for Business 管理シェルで次のコマンドを実行します。
   
 ```
 New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
@@ -152,7 +152,7 @@ New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common
     
 ### <a name="enable-hybrid-modern-authentication"></a>ハイブリッド先進認証を有効にする
 
-これは、実際に MA を有効にする手順です。 以前のすべての手順は、クライアント認証フローを変更せずに、前もって実行することができます。 認証フローを変更する準備ができたら、Skype for business 管理シェルで次のコマンドを実行します。 
+これは、実際に MA を有効にする手順です。 以前のすべての手順は、クライアント認証フローを変更せずに、前もって実行することができます。 認証フローを変更する準備ができたら、Skype for Business 管理シェルで次のコマンドを実行します。 
   
 ```
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
@@ -162,11 +162,11 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 HMA を有効にすると、クライアントの次のログインは新しい認証フローを使用します。 HMA を有効にしても、クライアントに対しては再認証はトリガーされませんので注意してください。 クライアントは、認証トークンまたは証明書の有効期間に基づいて再認証を行います。
   
-HMA が機能していることを確認した後で、その機能が動作していることをテストするには、テスト用の sfb Windows クライアントからサインアウトし、[資格情報の削除] をクリックします。 もう一度サインインします。 クライアントは、最新の認証フローを使用するようになり、ログインに ' 職場または学校のアカウントに対する**Office 365**プロンプトが含まれるようになりました。これで、クライアントがサーバーに接続してログインする前に表示されます。 
+HMA が機能していることを確認した後で、その機能が動作していることをテストするには、テスト用の SFB Windows クライアントからサインアウトし、[資格情報の削除] をクリックします。 もう一度サインインします。 クライアントは、最新の認証フローを使用するようになり、ログインに ' 職場または学校のアカウントに対する**Office 365**プロンプトが含まれるようになりました。これで、クライアントがサーバーに接続してログインする前に表示されます。 
   
-「OAuth Authority」については、「Skype for business クライアント」の「構成情報」も確認してください。 クライアントコンピューターでこれを行うには、CTRL キーを押しながら、Windows 通知トレイの [Skype for business] アイコンを右クリックします。 表示されるメニューの [構成情報] をクリックします。 デスクトップに表示される [Skype for business の構成情報] ウィンドウで、次のものを探します。
+「OAuth Authority」については、「Skype for Business クライアント」の「構成情報」も確認してください。 クライアントコンピューターでこれを行うには、CTRL キーを押しながら、Windows 通知トレイの [Skype for Business] アイコンを右クリックします。 表示されるメニューの [構成情報] をクリックします。 デスクトップに表示される [Skype for Business の構成情報] ウィンドウで、次のものを探します。
   
-![モダン認証を使用した Skype for business クライアントの構成情報は、のhttps://login.windows.net/common/oauth2/authorizeLync および EWS OAUTH Authority の URL を示しています。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![モダン認証を使用した Skype for Business クライアントの構成情報は、のhttps://login.windows.net/common/oauth2/authorizeLYNC および EWS OAUTH AUTHORITY の URL を示しています。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
 また、CTRL キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイにもあります) を右クリックし、[接続の状態] をクリックします。 OAuth で使用されるベアラートークンを表す、認証の種類 '\*ベアラー ' に対してクライアントの SMTP アドレスを検索します。
   
@@ -174,8 +174,8 @@ HMA が機能していることを確認した後で、その機能が動作し�
 
 [モダン認証の概要に戻る](hybrid-modern-auth-overview.md) 
   
-Skype for business クライアントで先進認証 (ADAL) を使用する方法を知る必要がありますか。 [ここでは](https://technet.microsoft.com/en-us/library/mt710548.aspx)、手順を示しました。
+Skype for Business クライアントで先進認証 (ADAL) を使用する方法を知る必要がありますか。 [ここでは](https://technet.microsoft.com/en-us/library/mt710548.aspx)、手順を示しました。
   
-これらの手順は、sfb を使用せずにオンプレミスで実行されている Exchange サーバーに対して表示されます。 これらの手順はこちらで入手できます。
+これらの手順は、SFB を使用せずにオンプレミスで実行されている Exchange サーバーに対して表示されます。 これらの手順はこちらで入手できます。
   
 

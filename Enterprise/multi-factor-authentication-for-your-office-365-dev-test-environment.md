@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/20/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 概要:Office 365 の開発/テスト環境で、スマート フォンに送信されるテキスト メッセージを使用して多要素認証を構成します。
-ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741223"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069953"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境用の多要素認証
 
@@ -38,28 +38,28 @@ Office 365 サブスクリプションにサインインするための追加の
 2. User 2 アカウントに対して、多要素認証を有効にしてテストします。
     
 > [!TIP]
-> Office 365 のテストラボガイドスタックにあるすべての記事のビジュアルマップについては、[ここ](http://aka.ms/catlgstack)をクリックしてください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
 最小要件での軽量な方法で多要素認証をテストするだけの場合は、 [Office 365 開発/テスト環境](office-365-dev-test-environment.md)のフェーズ2とフェーズ3の手順に従ってください。
   
-シミュレートされたエンタープライズで多要素認証をテストする場合は、「 [Office のディレクトリ同期の開発/テスト環境](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従ってください。
+シミュレートされたエンタープライズで多要素認証をテストする場合は、「365 Office のディレクトリ同期の開発/テスト環境」の手順に従ってください。
   
 > [!NOTE]
-> 多要素認証のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で多要素認証をテストしてお試しいただけるようオプションとしてここで提供しています。 
+> 多要素認証のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で多要素認証をテストしてお試しいただけるようオプションとしてここで提供しています。 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>フェーズ 2:User 2 アカウントに対して、多要素認証を有効にしてテストする
 
 次の手順を実行して、User 2 アカウントに対して多要素認証を有効にしてテストします。
   
-1. ブラウザーの別のインスタンスを開き、office 365 ポータル ([https://www.office.com](https://www.office.com)) に移動し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
+1. ブラウザーの別のインスタンスを開き、Office 365 ポータル ([https://www.office.com](https://www.office.com)) に移動し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
     
 2. ポータルのメイン ページで、**[管理]** をクリックします。
     
 3. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
-4. [アクティブなユーザー] ウィンドウで、[**その他の > 多要素認証のセットアップ**] をクリックします。
+4. [アクティブなユーザー] ウィンドウで、[**その他の _GT_ 多要素認証のセットアップ**] をクリックします。
     
 5. リストで、 **User 2**アカウントを選択します。
     
@@ -97,7 +97,7 @@ Office 365 サブスクリプションにサインインするための追加の
     
 8. User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。
     
-    ブラウザーの [ **Microsoft office Home** ] タブに、ユーザー2用の Office 365 ポータルが表示されます。
+    ブラウザーの [ **Microsoft Office Home** ] タブに、ユーザー2用の Office 365 ポータルが表示されます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -109,5 +109,5 @@ Office 365 サブスクリプションにサインインするための追加の
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 展開用の多要素認証の計画](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Office 365 の展開で多要素認証を計画する](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

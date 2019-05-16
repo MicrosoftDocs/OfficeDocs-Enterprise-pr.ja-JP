@@ -1,9 +1,9 @@
 ---
 title: Office 365 のディレクトリ同期の問題を解決する
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期に関する問題の一般的な原因について説明し、トラブルシューティングと解決に役立ついくつかの方法について説明します。
-ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067673"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期の問題を解決する
 
@@ -44,20 +44,20 @@ ms.locfileid: "33487467"
   
 ウィザードの[指示](set-up-directory-synchronization.md)に従って、Azure AD Connect をダウンロードします。 
   
-まだ azure active directory 同期 (DirSync) を使用している場合は、「 [Office 365 の azure active directory 同期ツールのインストールと構成ウィザードのエラーメッセージ」](https://go.microsoft.com/fwlink/p/?LinkId=396717)を参照してください。インストールするシステム要件については、dirsync、必要なアクセス許可、および一般的なエラーのトラブルシューティング方法。 
+まだ Azure Active Directory 同期 (DirSync) を使用している場合は、「 [Office 365 の Azure Active Directory 同期ツールのインストールと構成ウィザードのエラーメッセージ」](https://go.microsoft.com/fwlink/p/?LinkId=396717)を参照してください。インストールするシステム要件については、dirsync、必要なアクセス許可、および一般的なエラーのトラブルシューティング方法。 
   
-azure Active Directory 同期から azure AD Connect に更新するには、[アップグレード手順](https://go.microsoft.com/fwlink/p/?LinkId=733240)を参照してください。
+Azure Active Directory 同期から Azure AD Connect に更新するには、[アップグレード手順](https://go.microsoft.com/fwlink/p/?LinkId=733240)を参照してください。
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Office 365 でのディレクトリ同期に関する問題の一般的な原因の解決
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**同期されたオブジェクトは、オンラインで表示または更新されません。または、サービスから同期エラーレポートを取得しています。**
 
-- [id 同期と重複属性の復元](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [Id 同期と重複属性の復元](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**管理センターに通知があります。または、最近の同期イベントが発生していない自動メールを受信しています。**
 - [Azure AD Connect による接続の問題のトラブルシューティング](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD Connect のアカウントとアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [azure ad Connect sync: azure ad サービスアカウントを管理する方法](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Azure AD Connect sync: Azure AD サービスアカウントを管理する方法](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Azure Active Directory とのディレクトリ同期が停止するか、同期が1日以上登録されていないことを示す警告が表示される](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**パスワードハッシュが同期されていない、または管理センターに最近のパスワードハッシュ同期がないことを示すアラートが表示されている**
@@ -93,6 +93,6 @@ azure Active Directory 同期から azure AD Connect に更新するには、[�
     
 ## <a name="diagnostic-tools"></a>診断ツール
 
-[idfix ツール](prepare-directory-attributes-for-synch-with-idfix.md)は、Office 365 への移行の準備として、オンプレミスの Active Directory 環境での id オブジェクトとその属性の検出と修復を実行するために使用されます。 idfix は、Office 365 サービスとの DirSync を担当する Active Directory 管理者を対象としています。 
+[Idfix ツール](prepare-directory-attributes-for-synch-with-idfix.md)は、Office 365 への移行の準備として、オンプレミスの Active Directory 環境での id オブジェクトとその属性の検出と修復を実行するために使用されます。 IDFix は、Office 365 サービスとの DirSync を担当する Active Directory 管理者を対象としています。 
 
-[idfix ツール](https://go.microsoft.com/fwlink/p/?LinkId=396718)を Microsoft ダウンロードセンターからダウンロードします。
+[IDFix ツール](https://go.microsoft.com/fwlink/p/?LinkId=396718)を Microsoft ダウンロードセンターからダウンロードします。

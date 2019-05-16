@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,19 +13,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: office 365 PowerShell を使用して office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
-ms.openlocfilehash: 0e1ac3f61acafedd77c2af760b8316aa6b936e7b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Office 365 PowerShell を使用して Office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
+ms.openlocfilehash: a2edecf7bc47d39aa9aeb965c7b2834e37820a36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069213"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントをブロックする
 
-**概要:** office 365 PowerShell を使用して office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
+**概要:** Office 365 PowerShell を使用して Office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
   
-office 365 アカウントへのアクセスをブロックすると、ユーザーがアカウントを使用して office 365 組織のサービスとデータにサインインしてアクセスするのを防ぐことができます。 Office 365 PowerShell を使用して、個別および複数のユーザーアカウントへのアクセスをブロックすることができます。
+Office 365 アカウントへのアクセスをブロックすると、ユーザーがアカウントを使用して Office 365 組織のサービスとデータにサインインしてアクセスするのを防ぐことができます。 Office 365 PowerShell を使用して、個別および複数のユーザーアカウントへのアクセスをブロックすることができます。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
@@ -62,7 +62,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-この例では、caleb/ls という名前のユーザーのユーザーアカウント UPN を表示します。
+この例では、Caleb/Ls という名前のユーザーのユーザーアカウント UPN を表示します。
   
 ```
 $userName="Caleb Sills"
@@ -93,7 +93,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-次のコマンドでは、サンプルテキストファイルは C:\My documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
+次のコマンドでは、サンプルテキストファイルは C:\My Documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
   
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     
@@ -147,7 +147,7 @@ akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
   ```
-次のコマンドでは、サンプルテキストファイルは C:\My documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
+次のコマンドでは、サンプルテキストファイルは C:\My Documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
     
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 概要:Office 365 PowerShell を使用して、Office 365 テナント内の個別のまたは複数のユーザー アカウントのプロパティを構成します。
-ms.openlocfilehash: 4db63482fdcc1d6cb186e663fd55c13186b33813
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491433"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069242"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウント プロパティを構成する
 
@@ -94,7 +94,7 @@ $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-この例では、caleb が ls の表示名を持つユーザーアカウントのユーザープリンシパル名を表示します。
+この例では、Caleb が Ls の表示名を持つユーザーアカウントのユーザープリンシパル名を表示します。
   
 ```
 $userName="Caleb Sills"
@@ -141,7 +141,7 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用して、ユーザーアカウントのプロパティを構成するには、get-msoluser コマンドレットを使用して、設定または変更するプロパティを指定します。 
+Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用して、ユーザーアカウントのプロパティを構成するには、Get-msoluser コマンドレットを使用して、設定または変更するプロパティを指定します。 
 
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   

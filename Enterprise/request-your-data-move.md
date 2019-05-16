@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650080"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071013"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -79,7 +79,7 @@ Office 365 管理センター のページにアクセスするには、左側�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-microsoft teams では、microsoft teams のデータ常駐サービスが利用可能な国内のデータセンターへの、お客様のコンテンツのインプレース移行はまだサポートされていません。  そのため、Microsoft Teams がデータ常駐をサポートしている新しい地域では、新しい顧客のみが国内にデータを格納することになります。  Office 365 データ常駐の詳細については、「データの保存場所」を参照[してください。](https://products.office.com/where-is-your-data-located)   
+Microsoft Teams では、Microsoft Teams のデータ常駐サービスが利用可能な国内のデータセンターへの、お客様のコンテンツのインプレース移行はまだサポートされていません。  そのため、Microsoft Teams がデータ常駐をサポートしている新しい地域では、新しい顧客のみが国内にデータを格納することになります。  Office 365 データ常駐の詳細については、「データの保存場所」を参照[してください。](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>移行をリクエストする前に選択可能なアクション
 

@@ -4,24 +4,24 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
-description: 新しいデータセンター geo 継続的な顧客需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 コア顧客データは、Microsoft online Services の用語で定義されている、Exchange online のメールボックスの内容 (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容) および SharePoint online サイトのコンテンツとファイルのサブセットを参照する用語です。そのサイト内に格納され、OneDrive for business にアップロードされたファイル。
-ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+description: 新しいデータセンター geo 継続的な顧客需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 コア顧客データは、Microsoft Online Services の用語で定義されている、Exchange Online のメールボックスの内容 (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容) および SharePoint Online サイトのコンテンツとファイルのサブセットを参照する用語です。そのサイト内に格納され、OneDrive for Business にアップロードされたファイル。
+ms.openlocfilehash: 8dd9295618c765bb9eeaffbcec82ff83af8b2e21
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069993"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>コア データを新しい Office 365 データ センター geo に移行する
 
-business services 用 Office 365 の新しいデータセンター geo を引き続き開きます。 これらの新しいデータセンター geo は、継続的な顧客需要と利用状況の増加をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 
+Business services 用 Office 365 の新しいデータセンター geo を引き続き開きます。 これらの新しいデータセンター geo は、継続的な顧客需要と利用状況の増加をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 
 
 コア顧客データは、 [Microsoft Online Services の用語](https://go.microsoft.com/fwlink/p/?LinkID=249048)で定義されている顧客データのサブセットを参照する用語です。 
 - Exchange Online メールボックスのコンテンツ (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容)
@@ -36,11 +36,11 @@ business services 用 Office 365 の新しいデータセンター geo を引き
 |****オーストラリア、ニュージーランド、フィジー****| アジア/太平洋 | オーストラリア | 2015 年 3 月 |
 |****インド****| アジア/太平洋 | インド | 2015 年 10 月 |
 |****カナダ****| 北アメリカ | カナダ | 2016 年 5 月 |
-|****英国****| 地区 | 英国 | 2016 年 9 月 |
+|****英国****| ヨーロッパ | 英国 | 2016 年 9 月 |
 |****韓国****| アジア/太平洋 | 韓国 | 2017 年 4 月 |
-|****フランス****| 地区 | フランス | 2018 年 3 月 |
-|アラブ首長国連邦 * * * * * *| 地区 | アラブ首長国連邦 | avct |
-|南アフリカ * * * *| 地区 | 南アフリカ | avct |
+|****フランス****| ヨーロッパ | フランス | 2018 年 3 月 |
+|アラブ首長国連邦 * * * * * *| ヨーロッパ | アラブ首長国連邦 | Avct |
+|南アフリカ * * * *| ヨーロッパ | 南アフリカ | Avct |
    
 > [!NOTE]
 > データ常駐オプション、およびお客様のデータを新しい geo へ移動するための可用性は、マイクロソフトが立ち上げる新しい geo のすべてに既定になるわけではありません。将来、新しい geo に拡張する際には、geo ごとの単位でデータ移動の可用性と条件を評価する予定です。 

@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: '概要: SharePoint 2013 ソリューションは、Microsoft Azure 仮想マシンでホストできます。適切なソリューションの種類と、ソリューションをホストするように Microsoft Azure を設定する方法について説明します。'
-ms.openlocfilehash: 7e40b7c4d37e5646d44a14f12a80a9c6cd25834b
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 913910af1acf1353c3ee9b553178c4f0736eb290
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038071"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070293"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '概要: Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。'
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491223"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068343"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境の Advanced eDiscovery
 
  **概要:** Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。
   
-office 365 Advanced 電子情報開示を使用すると、電子メールやドキュメントなど、office 365 に保存されているデータに関する関連情報をすばやく検索して分析できます。 これにより、特に訴訟の状況では、時間と経費を大幅に節約できます。 詳細については、「[Office 365 の高度な電子情報開示](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)」をご覧ください。
+Office 365 Advanced 電子情報開示を使用すると、電子メールやドキュメントなど、Office 365 に保存されているデータに関する関連情報をすばやく検索して分析できます。 これにより、特に訴訟の状況では、時間と経費を大幅に節約できます。 詳細については、「[Office 365 の高度な電子情報開示](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)」をご覧ください。
   
 この記事の手順では、架空の契約問題に関するデータの小さなセットを作成し、そのデータをアドバンスト eDiscovery で分析します。
   
@@ -36,10 +36,10 @@ office 365 Advanced 電子情報開示を使用すると、電子メールやド
 
 最小限の要件で高度な電子情報開示をテストする場合は、「フェーズ2」と「フェーズ 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md)」の手順に従ってください。
   
-シミュレートされたエンタープライズで高度な電子情報開示をテストする場合は、「 [Office のディレクトリ同期の開発/テスト環境](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従ってください。
+シミュレートされたエンタープライズで高度な電子情報開示をテストする場合は、「365 Office のディレクトリ同期の開発/テスト環境」の手順に従ってください。
   
 > [!NOTE]
-> 高度な電子情報開示のテストでは、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ環境を必要としません。 この記事は、一般的な組織を表す環境でテストと実験を実行できるようにするためのオプションとして提供されています。 
+> 高度な電子情報開示のテストでは、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ環境を必要としません。 この記事は、一般的な組織を表す環境でテストと実験を実行できるようにするためのオプションとして提供されています。 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>フェーズ 2:アドバンスト eDiscovery 用のサンプル データを作成する
 

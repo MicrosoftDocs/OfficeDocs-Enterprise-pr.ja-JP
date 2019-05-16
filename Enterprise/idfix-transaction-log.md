@@ -1,10 +1,9 @@
 ---
-title: Office 365 idfix トランザクションログ
-ms.author: robmazz
-author: robmazz
+title: Office 365 IdFix トランザクションログ
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,29 +15,29 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: 例を示し、Office 365 idfix トランザクションログの名前付け規則と既定のログレベルについて説明します。
-ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: 例を示し、Office 365 IdFix トランザクションログの名前付け規則と既定のログレベルについて説明します。
+ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067263"
 ---
-# <a name="office-365-idfix-transaction-log"></a>Office 365 idfix トランザクションログ
+# <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix トランザクションログ
 
-例を示し、Office 365 idfix トランザクションログの名前付け規則と既定のログレベルについて説明します。
+例を示し、Office 365 IdFix トランザクションログの名前付け規則と既定のログレベルについて説明します。
   
-## <a name="idfix-transaction-log-location"></a>idfix トランザクションログの場所
+## <a name="idfix-transaction-log-location"></a>IdFix トランザクションログの場所
 
-Office 365 idfix ツールは、[idfix で**適用**] をクリックし、変更を Active Directory フォレストに適用するたびに、新しいトランザクションログを作成します。 トランザクションログは、idfix をインストールしたのと同じフォルダーに保存されます。 既定では、このフォルダーは c:\windows 展開ツール \ [fix] になります。 トランザクションログファイル名には、日付と時刻の形式が使用されます。たとえば、Verbose 6-1-2018 6-17-22 pm は、2018年6月1日 (6:17:22 pm) に生成されたファイルを示します。 Verbose ログレベルを示します。 
+Office 365 IdFix ツールは、[IdFix で**適用**] をクリックし、変更を Active Directory フォレストに適用するたびに、新しいトランザクションログを作成します。 トランザクションログは、IdFix をインストールしたのと同じフォルダーに保存されます。 既定では、このフォルダーは C:\windows 展開ツール \ [fix] になります。 トランザクションログファイル名には、日付と時刻の形式が使用されます。たとえば、Verbose 6-1-2018 6-17-22 PM は、2018年6月1日 (6:17:22 PM) に生成されたファイルを示します。 Verbose ログレベルを示します。 
   
-## <a name="idfix-transaction-log-logging-level"></a>idfix トランザクションログのログ出力レベル
+## <a name="idfix-transaction-log-logging-level"></a>IdFix トランザクションログのログ出力レベル
 
 トランザクションログファイル名に verbose という語を指定すると、ファイル内のログ記録のレベルを示します。 Verbose は、ログに最大量の情報をキャプチャすることを意味します。 これは、既定のログ出力レベルです。 現時点では、ログ出力レベルを変更することはできません。
   
-## <a name="idfix-transaction-log-format"></a>idfix トランザクションログの形式
+## <a name="idfix-transaction-log-format"></a>IdFix トランザクションログの形式
 
-idfix は、次の例に示すように、各**UPDATE**アクションの結果をトランザクションログに書き込みます。
+IdFix は、次の例に示すように、各**UPDATE**アクションの結果をトランザクションログに書き込みます。
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

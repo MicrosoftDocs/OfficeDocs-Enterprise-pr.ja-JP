@@ -1,10 +1,10 @@
 ---
-title: Office for Mac でネットワーク要求
+title: Office for Mac でのネットワーク要求
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/9/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,238 +12,238 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office for Mac アプリケーションでは、macOS のプラットフォーム上でネイティブ アプリケーション エクスペリエンスを提供します。各アプリケーションは、さまざまなシナリオでは、ネットワーク アクセスが利用できないときは、国を含むで動作する設計されています。マシンがネットワークに接続されているときに一連の拡張機能を提供する web ベースのサービス アプリケーションが自動的に接続します。このホワイト ペーパーでは、どのエンドポイントと、到達しようとしているアプリケーションの Url で提供されるサービスについて説明します。この情報は、トラブルシューティング、ネットワーク構成の問題、およびネットワークのプロキシ サーバーにポリシーを設定するときに便利です。詳細についてこの資料では、Office 365 の URL とアドレス範囲の資料を補完するものです。
-ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
-ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
+description: Office for Mac アプリケーションは、macOS プラットフォームでネイティブのアプリ環境を提供します。 各アプリは、ネットワークアクセスが利用できない場合の状態など、さまざまなシナリオで動作するように設計されています。 コンピューターがネットワークに接続されている場合、アプリケーションは自動的に一連の web ベースのサービスに接続して、強化された機能を提供します。 このホワイトペーパーでは、アプリケーションが到達しようとしているエンドポイントと Url、および提供されるサービスについて説明します。 この情報は、ネットワーク構成の問題をトラブルシューティングしたり、ネットワークプロキシサーバーのポリシーを設定するときに役立ちます。 この記事の詳細は、「Office 365 の URL とアドレスの範囲」の記事を補完することを目的としています。
+ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26219897"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069659"
 ---
-# <a name="network-requests-in-office-for-mac"></a>Office for Mac でネットワーク要求
+# <a name="network-requests-in-office-for-mac"></a>Office for Mac でのネットワーク要求
 
-Office for Mac アプリケーションでは、macOS のプラットフォーム上でネイティブ アプリケーション エクスペリエンスを提供します。各アプリケーションは、さまざまなシナリオでは、ネットワーク アクセスが利用できないときは、国を含むで動作する設計されています。マシンがネットワークに接続されているときに一連の拡張機能を提供する web ベースのサービス アプリケーションが自動的に接続します。次の情報は、どのエンドポイントと、到達しようとしているアプリケーションの Url で提供されるサービスについて説明します。この情報は、ネットワーク構成の問題とネットワークのプロキシ サーバーのポリシーの設定のトラブルシューティングを行う場合に便利です。詳細についてこの資料では、 [Office 365 の URL とアドレスの範囲の資料](urls-and-ip-address-ranges.md)、Microsoft Windows を実行しているコンピューターのエンドポイントを含むを補完する目的としています。記載されていない限り、この資料の情報もに適用されます Mac 用の Office 2019 for Mac Office 2016 として 1 回限りの購入販売店またはボリューム ライセンス契約を通じて利用可能であります。 
+Office for Mac アプリケーションは、macOS プラットフォームでネイティブのアプリ環境を提供します。 各アプリは、ネットワークアクセスが利用できない場合の状態など、さまざまなシナリオで動作するように設計されています。 コンピューターがネットワークに接続されている場合、アプリケーションは自動的に一連の web ベースのサービスに接続して、強化された機能を提供します。 次の情報は、アプリケーションが到達しようとしているエンドポイントと Url、および提供されているサービスについて説明しています。 この情報は、ネットワーク構成の問題をトラブルシューティングし、ネットワークプロキシサーバーのポリシーを設定するときに役立ちます。 この記事の詳細は、Microsoft Windows を実行しているコンピューターのエンドポイントを含む[Office 365 の URL とアドレス範囲の記事](urls-and-ip-address-ranges.md)を補完することを目的としています。 記載されていない限り、この記事の情報は Office 2019 for Mac および Office 2016 for Mac にも適用されます。これは、小売店からのワンタイム購入またはボリュームライセンス契約を通じて利用できます。 
 
   
-この記事の大半は、ネットワークの Url、種類、およびサービスまたはエンドポイントによって提供される機能の説明の詳細を示す表です。サービスとエンドポイントの使用状況で Office アプリケーションの各に異なる場合があります。次の表には、次のアプリケーションが定義されています。
+この記事のほとんどは、ネットワーク Url、種類、およびそのエンドポイントによって提供される機能の説明を詳述している表です。 各 Office アプリは、サービスとエンドポイントの使用状況によって異なる場合があります。 以下の表では、次のアプリが定義されています。
   
-- W: 単語
+- W: Word
 - P: PowerPoint
 - X: Excel
-- O: outlook
+- O: Outlook
 - N: OneNote
    
-URL の種類の定義は次のとおりです。
+URL の種類は次のように定義されています。
   
-- ST: 静的 - URL は、クライアント アプリケーションにハードコーディングします。
+- ST: Static-URL はクライアントアプリケーションにハードコーディングされます。
     
-- SS: 準静的-の URL は、web ページまたはリダイレクターの一部としてエンコードされます。
+- SS: 準静的-URL は web ページまたはリダイレクターの一部としてエンコードされます。
     
-- CS: サービスの構成に、URL が返されます、Office の構成サービスの一部として。
+- CS: Config Service-URL は Office 構成サービスの一部として返されます。
 
     
 ## <a name="office-for-mac-default-configuration"></a>Office for Mac の既定の構成
 
- **インストールと更新プログラム**
+ **インストールと更新**
   
-Microsoft コンテンツ配信ネットワーク (CDN) から、Office for Mac のインストール プログラムをダウンロードするには、次のネットワーク エンドポイントを使用します。
+次のネットワークエンドポイントを使用して、Microsoft コンテンツ配信ネットワーク (CDN) から Office for Mac インストールプログラムをダウンロードします。
   
 |**URL**|**型**|**説明**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |最新のインストール パッケージを office 365 ポータルのインストールのリンク サービス。  <br/> |
-|```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |コンテンツ配信ネットワーク上のインストール パッケージの場所です。  <br/> |
-|```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |コンテンツ配信ネットワーク上のインストール パッケージの場所です。  <br/> |
-|```https://officeci-mauservice.azurewebsites.net/```  <br/> |ST  <br/> |マイクロソフトの自動更新の管理制御のエンドポイント  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |停止  <br/> |Office 365 インストールポータルの転送リンクサービスを最新のインストールパッケージに移動します。  <br/> |
+|```https://officecdn-microsoft-com.akamaized.net/```  <br/> |秒  <br/> |コンテンツ配信ネットワーク上のインストールパッケージの場所。  <br/> |
+|```https://officecdn.microsoft.com/```  <br/> |秒  <br/> |コンテンツ配信ネットワーク上のインストールパッケージの場所。  <br/> |
+|```https://officeci-mauservice.azurewebsites.net/```  <br/> |停止  <br/> |Microsoft AutoUpdate の管理制御エンドポイント  <br/> |
    
- **最初のアプリケーションの起動**
+ **最初のアプリの起動**
   
-次のネットワーク エンドポイントには、Office アプリケーションの初回起動時に接続します。これらのエンドポイントは、ユーザーに対して Office 機能の強化を提供し、(ボリューム ライセンスのインストールを含む)、ライセンスの種類に関係なく Url に接続されます。
+Office アプリを初めて起動したときに、次のネットワークエンドポイントに連絡します。 これらのエンドポイントは、ユーザーに対して Office の機能が強化されており、ライセンスの種類 (ボリュームライセンスのインストールを含む) に関係なく、Url に連絡します。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting' の構成で機能ライト アップおよび実験できます。  <br/> |
-|```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting' のネットワーク構成のテスト  <br/> |
-|```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting' のネットワーク構成のテスト  <br/> |
-|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office の構成サービスのサービス エンドポイントの一覧をマスターします。  <br/> |
-|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office の遠隔測定の規則のダウンロード - は、データおよび遠隔測定のサービスにアップロードするのにはイベントをクライアントに通知します。  <br/> |
-|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |CS  <br/> |OneNote の遠隔測定サービス  <br/> |
-|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office の遠隔測定レポートの"Heartbeart"をアップロードして、クライアントで発生するエラー イベントは、「遠隔測定」のサービスにアップロードされます。  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Office オンラインのテンプレート サービスのオンライン ドキュメントのテンプレートをユーザーに提供します。  <br/> |
-|```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |CS  <br/> |Office テンプレートのダウンロード - テンプレートの PNG イメージのストレージです。  <br/> |
-|```https://store.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Office アプリケーションの構成を保存します。  <br/> |
-|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Office ドキュメントの統合サービス カタログ (サービスおよびエンドポイントのリスト)、ホーム領域の検出。  <br/> |
-|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |ホーム領域の検出の v2 (15.40 とそれ以降) のためのリソース  <br/> |
-|```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |マイクロソフトの自動更新のマニフェスト ・ チェックを使用可能な更新プログラムがあるかどうかを参照してください。  <br/> |
-|```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SS  <br/> |Microsoft Ajax JavaScript ライブラリ  <br/> |
-|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Office の構成とリソースの Wikipedia アプリケーションです。  <br/> |
-|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Office の構成とリソースの Bing マップ アプリケーションです。  <br/> |
-|```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |ユーザーが Office の構成とリソースのグラフのアプリケーションです。  <br/> |
-|```https://www.onenote.com/```  <br/> |N  <br/> |ST  <br/> |OneNote の新しいコンテンツとは何です。  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |ST  <br/> |OneNote の新しいコンテンツです。  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |SS  <br/> |OneNote の新しいイメージとは何です。  <br/> |
-|```https://acompli.helpshift.com/```  <br/> |O  <br/> |ST  <br/> |アプリケーションのサポート サービスです。  <br/> |
-|```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ST  <br/> |電子メール アカウントの検出サービスです。  <br/> |
-|```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ST  <br/> |Outlook の自動検出  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ST  <br/> |Office 365 サービスのエンドポイントを outlook です。  <br/> |
-|```https://r1.res.office365.com/```  <br/> |O  <br/> |ST  <br/> |Outlook アドイン用のアイコンです。  <br/> |
+|```https://config.edge.skype.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |' Flighting ' 構成-機能が明るくなり、実験ができます。  <br/> |
+|```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPS ON  <br/> |停止  <br/> |' Flighting ' ネットワーク構成テスト  <br/> |
+|```https://client-office365-tas.msedge.net/```  <br/> |WXPS ON  <br/> |停止  <br/> |' Flighting ' ネットワーク構成テスト  <br/> |
+|```https://officeclient.microsoft.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Office 構成サービス-サービスエンドポイントのマスターリスト。  <br/> |
+|```https://nexusrules.officeapps.live.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Office ルールテレメトリダウンロード-テレメトリサービスにアップロードするデータとイベントについてクライアントに通知します。  <br/> |
+|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |座標  <br/> |OneNote テレメトリサービス  <br/> |
+|```https://nexus.officeapps.live.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Office テレメトリアップロードのレポート-クライアント上で発生する "Heartbeart" およびエラーイベントがテレメトリサービスにアップロードされます。  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |座標  <br/> |Office Online テンプレートサービス-ユーザーにオンラインドキュメントテンプレートを提供します。  <br/> |
+|```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |座標  <br/> |Office テンプレートのダウンロード-PNG テンプレートイメージの保存。  <br/> |
+|```https://store.office.com/```  <br/> |WXP  <br/> |座標  <br/> |Office アプリの構成を保存します。  <br/> |
+|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |座標  <br/> |Office Document Integration Services Catalog (サービスとエンドポイントの一覧) およびホーム領域の検出。  <br/> |
+|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPS ON  <br/> |座標  <br/> |ホーム領域検出 v2 のリソース (15.40 以降)  <br/> |
+|```https://officecdn.microsoft.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Microsoft AutoUpdate マニフェスト-利用可能な更新プログラムがあるかどうかを確認します。  <br/> |
+|```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |秒  <br/> |Microsoft Ajax JavaScript ライブラリ  <br/> |
+|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |秒  <br/> |Office の構成とリソースのウィキペディアアプリ。  <br/> |
+|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Office の構成とリソース用の Bing マップアプリ。  <br/> |
+|```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Office の構成とリソース用の People Graph アプリ。  <br/> |
+|```https://www.onenote.com/```  <br/> |N  <br/> |停止  <br/> |OneNote の新しいコンテンツ。  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |停止  <br/> |OneNote の新しいコンテンツ。  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |秒  <br/> |OneNote の新しい画像について説明します。  <br/> |
+|```https://acompli.helpshift.com/```  <br/> |O  <br/> |停止  <br/> |アプリ内サポートサービス。  <br/> |
+|```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |停止  <br/> |電子メールアカウント検出サービス。  <br/> |
+|```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |停止  <br/> |Outlook 自動検出  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |停止  <br/> |Office 365 サービス用の Outlook エンドポイント。  <br/> |
+|```https://r1.res.office365.com/```  <br/> |O  <br/> |停止  <br/> |Outlook アドインのアイコン。  <br/> |
    
 > [!NOTE]
-> Office 構成サービスは、Microsoft Office のすべてのクライアントだけではなく for mac は、自動検出サービスとして機能します。応答で返されたエンドポイントは、準静的な変更では、非常にまれですが、こともあります。 
+> Office 構成サービスは、Mac だけでなく、すべての Microsoft Office クライアントに対して自動検出サービスとして機能します。 応答で返されたエンドポイントは、その変更では非常に静的なので、それでも可能です。 
   
- **サインインする**
+ **サインイン**
   
-次のネットワーク エンドポイントは、クラウド ・ ベースのストレージへのサインイン時に接続します。アカウントの種類に応じてさまざまなサービスに接続があります。例えば：
+クラウドベースのストレージにサインインするときに、次のネットワークエンドポイントに連絡します。 アカウントの種類に応じて、異なるサービスに連絡することができます。 次に例を示します。
   
-- **MSA: Microsoft アカウント**- 消費者と小売のシナリオで一般的に使用されます。 
+- **MSA: Microsoft アカウント**-一般に、コンシューマーおよびリテールシナリオで使用されます。 
     
-- **OrgID: 組織のアカウント**- 商用のシナリオで一般的に使用されます。 
+- **Orgid: 組織アカウント**-一般に、商業シナリオで使用されます。 
     
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Windows 認証サービス  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office 365 ログイン サービス (OrgID)  <br/> |
-|```https://login.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |ログイン サービスの Microsoft アカウント (MSA)  <br/> |
-|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |Microsoft アカウントのログイン サービス ヘルパー (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |(OrgID) をブランド化する office 365 ログイン  <br/> |
-|```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |ドキュメントおよびストレージ ・ ロケーターの場所  <br/> |
-|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |ほとんどの最近使用した (MRU) のドキュメント サービス  <br/> |
+|```https://login.windows.net/```  <br/> |WXPS ON  <br/> |停止  <br/> |Windows 認証サービス  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Office 365 ログインサービス (OrgID)  <br/> |
+|```https://login.live.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Microsoft アカウントログインサービス (MSA)  <br/> |
+|```https://auth.gfx.ms/```  <br/> |WXPS ON  <br/> |座標  <br/> |Microsoft アカウントログインサービスヘルパー (MSA)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPS ON  <br/> |秒  <br/> |Office 365 ログインブランド化 (OrgID)  <br/> |
+|```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |座標  <br/> |ドキュメントと場所のストレージロケーター  <br/> |
+|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |座標  <br/> |最近使用した (MRU) ドキュメントサービス  <br/> |
    
 > [!NOTE]
-> サブスクリプション ・ ベースおよび販売店のライセンスの両方の署名は製品をアクティブにし、OneDrive などのクラウド リソースへのアクセスを有効にします。ボリューム ライセンス インストールの場合、ユーザー入力を求められます (既定) でのサインインがのみ製品が既にアクティブ化されるように、クラウド リソースへのアクセスに必要な。 
+> サブスクリプションベースおよびリテールライセンスの場合、両方のサインインで製品がアクティブ化され、OneDrive などのクラウドリソースにアクセスできるようになります。 ボリュームライセンスがインストールされている場合、ユーザーは (既定では) サインインを求められますが、その製品は既にアクティブ化されているので、クラウドリソースにアクセスする場合にのみ必要になります。 
   
  **製品のライセンス認証**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションとリテール ライセンスのアクティブ化に適用されます。具体的には、ボリューム ライセンスのインストールにこれは当てはまりません。
+次のネットワークエンドポイントは、Office 365 のサブスクリプションとリテールライセンスのライセンス認証に適用されます。 具体的には、ボリュームライセンスのインストールには適用されません。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://ols.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |Office Licensing Service  <br/> |
+|```https://ols.officeapps.live.com/```  <br/> |WXPS ON  <br/> |座標  <br/> |Office Licensing Service  <br/> |
    
- **新しいコンテンツとは**
+ **新しいコンテンツ**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
+次のネットワークエンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |新しい JSON ページ コンテンツとは何です。  <br/> |
+|```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |秒  <br/> |新しい JSON ページのコンテンツ。  <br/> |
    
  **リサーチ ツール**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
+次のネットワークエンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |研究者の Web サービス  <br/> |
-|```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |研究者の静的なコンテンツ  <br/> |
-|```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |コンテンツ プロバイダーの研究者  <br/> |
+|```https://entity.osi.office.net/```  <br/> |W  <br/> |座標  <br/> |リサーチ Web サービス  <br/> |
+|```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |座標  <br/> |リサーチの静的コンテンツ  <br/> |
+|```https://www.bing.com/```  <br/> |W  <br/> |座標  <br/> |リサーチコンテンツプロバイダー  <br/> |
    
  **スマート検索**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションとリテールまたはボリューム ライセンスのアクティブ化に適用されます。
+次のネットワークエンドポイントは、Office 365 サブスクリプションとリテール/ボリュームライセンスのライセンス認証の両方に適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Web サービスの情報  <br/> |
-|```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |JQuery ライブラリ  <br/> |
-|```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |JavaScript ライブラリをサポートしています。  <br/> |
-|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |コンテンツ プロバイダーの情報  <br/> |
-|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |コンテンツ プロバイダーの情報  <br/> |
+|```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |座標  <br/> |Insights Web サービス  <br/> |
+|```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |座標  <br/> |JQuery ライブラリ  <br/> |
+|```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |座標  <br/> |JavaScript ライブラリをサポートする  <br/> |
+|```https://www.bing.com/```  <br/> |WXPN  <br/> |座標  <br/> |Insights コンテンツプロバイダー  <br/> |
+|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |座標  <br/> |Insights コンテンツプロバイダー  <br/> |
    
  **PowerPoint デザイナー**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
+次のネットワークエンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint のデザイナーの web サービス  <br/> |
+|```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |座標  <br/> |PowerPoint Designer web サービス  <br/> |
    
  **PowerPoint クイックスターター**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
+次のネットワークエンドポイントは、Office 365 のサブスクリプションにのみ適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint QuickStarter web サービス  <br/> |
+|```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |座標  <br/> |PowerPoint クイックスターター web サービス  <br/> |
    
- **笑顔としかめつらを送信します。**
+ **スマイル/Frown を送信する**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションとリテールまたはボリューム ライセンスのアクティブ化に適用されます。
+次のネットワークエンドポイントは、Office 365 サブスクリプションとリテール/ボリュームライセンスのライセンス認証の両方に適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |笑顔サービスに送信します。  <br/> |
+|```https://sas.office.microsoft.com/```  <br/> |WXPS ON  <br/> |座標  <br/> |スマイルサービスを送信する  <br/> |
    
- **サポートにお問い合わせください。**
+ **サポートに問い合わせる**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションとリテールまたはボリューム ライセンスのアクティブ化に適用されます。
+次のネットワークエンドポイントは、Office 365 サブスクリプションとリテール/ボリュームライセンスのライセンス認証の両方に適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |CS  <br/> |サポート サービスにお問い合わせください。  <br/> |
-|```https://acompli.helpshift.com/```  <br/> |O  <br/> |CS  <br/> |アプリケーションのサポート サービス  <br/> |
+|```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |座標  <br/> |サポートサービスに問い合わせる  <br/> |
+|```https://acompli.helpshift.com/```  <br/> |O  <br/> |座標  <br/> |アプリ内サポートサービス  <br/> |
    
- **PDF として保存します。**
+ **PDF として保存**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションとリテールまたはボリューム ライセンスのアクティブ化に適用されます。
+次のネットワークエンドポイントは、Office 365 サブスクリプションとリテール/ボリュームライセンスのライセンス認証の両方に適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |CS  <br/> |Word のドキュメント変換サービス (PDF)  <br/> |
+|```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |座標  <br/> |Word 文書変換サービス (PDF)  <br/> |
    
- **Office アプリケーション (別名アドインの場合)**
+ **Office アプリ (別名: アドイン)**
   
-次のネットワーク エンドポイントは、Office アプリケーションのアドインが信頼されている場合、Office 365 のサブスクリプションとリテールまたはボリューム ライセンスのアクティブ化に適用されます。
+次のネットワークエンドポイントは、office アプリアドインが信頼されている場合に、Office 365 サブスクリプションとリテール/ボリュームライセンスのライセンス認証の両方に適用されます。
   
 |**URL**|**アプリ**|**型**|**説明**|
 |:-----|:-----|:-----|:-----|
-|```https://store.office.com/```  <br/> |WXPO  <br/> |CS  <br/> |Office アプリケーションの [設定の保存  <br/> |
-|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia アプリケーション リソース  <br/> |
-|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Bing マップ アプリケーションのリソース  <br/> |
-|```https://peoplegraph.firstpartyapps.oaspapps.com```  <br/> |X  <br/> |SS  <br/> |ユーザー グラフのアプリケーションのリソース  <br/> |
-|```https://o15.officeredir.microsoft.com/```  <br/> |WPX  <br/> |SS  <br/> |Office リダイレクト サービス  <br/> |
-|```https://appsforoffice.microsoft.com/```  <br/> |WXP  <br/> |SS  <br/> |Office JavaScript ライブラリ  <br/> |
-|```https://telemetry.firstpartyapps.oaspapps.com/```  <br/> |WX  <br/> |SS  <br/> |遠隔操作」と、Office アプリケーション エラー報告サービス  <br/> |
-|```https://ajax.microsoft.com/```  <br/> |W  <br/> |SS  <br/> |Microsoft Ajax JavaScript ライブラリ  <br/> |
-|```https://ajax.aspnetcdn.com/```  <br/> |X  <br/> |SS  <br/> |Microsoft Ajax JavaScript ライブラリ  <br/> |
-|```https://c.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Office JavaScript ライブラリ  <br/> |
-|```https://c1.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |サポート リソース  <br/> |
-|```https://cs.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |サポート リソース  <br/> |
-|```https://c.bing.com/```  <br/> |WPXO  <br/> |SS  <br/> |サポート リソース  <br/> |
-|```https://*.cdn.optimizely.com/```  <br/> |WPXO  <br/> |SS  <br/> |JavaScript ライブラリ  <br/> |
-|```https://errors.client.optimizely.com/```  <br/> |WPX  <br/> |SS  <br/> |エラー報告  <br/> |
-|```https://*-contentstorage.osi.office.net/```  <br/> |WPXO  <br/> |SS  <br/> |フォント リソース  <br/> |
-|```https://nexus.ensighten.com/```  <br/> |WPXO  <br/> |SS  <br/> |遠隔測定サービス  <br/> |
-|```https://browser.pipe.aria.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |「遠隔測定」の報告  <br/> |
-|```https://*.vo.msecnd.net/```  <br/> |WPXO  <br/> |SS  <br/> |マイクロソフト ストアの [アセット ライブラリ  <br/> |
-|```https://*.wikipedia.org/```  <br/> |W  <br/> |SS  <br/> |Wikipedia ページのリソース  <br/> |
-|```https://upload.wikimedia.org/```  <br/> |W  <br/> |SS  <br/> |Wikipedia メディア リソース  <br/> |
-|```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia サンド ボックス フレーム  <br/> |
-|```https://*.virtualearth.net/```  <br/> |X  <br/> |SS  <br/> |マップのテンプレート  <br/> |
+|```https://store.office.com/```  <br/> |WXPO  <br/> |座標  <br/> |Office アプリストアの構成  <br/> |
+|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |秒  <br/> |ウィキペディアアプリのリソース  <br/> |
+|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |秒  <br/> |Bing マップアプリのリソース  <br/> |
+|```https://peoplegraph.firstpartyapps.oaspapps.com```  <br/> |X  <br/> |秒  <br/> |ユーザーグラフアプリのリソース  <br/> |
+|```https://o15.officeredir.microsoft.com/```  <br/> |WPX  <br/> |秒  <br/> |Office リダイレクトサービス  <br/> |
+|```https://appsforoffice.microsoft.com/```  <br/> |WXP  <br/> |秒  <br/> |Office JavaScript ライブラリ  <br/> |
+|```https://telemetry.firstpartyapps.oaspapps.com/```  <br/> |WX  <br/> |秒  <br/> |Office アプリのテレメトリおよび Reporting Service  <br/> |
+|```https://ajax.microsoft.com/```  <br/> |W  <br/> |秒  <br/> |Microsoft Ajax JavaScript ライブラリ  <br/> |
+|```https://ajax.aspnetcdn.com/```  <br/> |X  <br/> |秒  <br/> |Microsoft Ajax JavaScript ライブラリ  <br/> |
+|```https://c.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |Office JavaScript ライブラリ  <br/> |
+|```https://c1.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |サポートリソース  <br/> |
+|```https://cs.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |サポートリソース  <br/> |
+|```https://c.bing.com/```  <br/> |WPXO  <br/> |秒  <br/> |サポートリソース  <br/> |
+|```https://*.cdn.optimizely.com/```  <br/> |WPXO  <br/> |秒  <br/> |JavaScript ライブラリ  <br/> |
+|```https://errors.client.optimizely.com/```  <br/> |WPX  <br/> |秒  <br/> |エラー報告  <br/> |
+|```https://*-contentstorage.osi.office.net/```  <br/> |WPXO  <br/> |秒  <br/> |フォントリソース  <br/> |
+|```https://nexus.ensighten.com/```  <br/> |WPXO  <br/> |秒  <br/> |テレメトリサービス  <br/> |
+|```https://browser.pipe.aria.microsoft.com/```  <br/> |WPXO  <br/> |秒  <br/> |テレメトリレポート  <br/> |
+|```https://*.vo.msecnd.net/```  <br/> |WPXO  <br/> |秒  <br/> |Microsoft Store アセットライブラリ  <br/> |
+|```https://*.wikipedia.org/```  <br/> |W  <br/> |秒  <br/> |ウィキペディアページのリソース  <br/> |
+|```https://upload.wikimedia.org/```  <br/> |W  <br/> |秒  <br/> |ウィキペディアメディアリソース  <br/> |
+|```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |W  <br/> |秒  <br/> |ウィキペディアサンドボックスフレーム  <br/> |
+|```https://*.virtualearth.net/```  <br/> |X  <br/> |秒  <br/> |マップテンプレート  <br/> |
    
- **リンク保護**
+ **安全なリンク**
   
-次のネットワーク エンドポイントは、すべて Office のアプリケーションに Office 365 のサブスクリプションにのみ適用されます。
+次のネットワークエンドポイントは、Office 365 のすべてのサブスクリプションに対してのみ適用されます。
   
 |**URL**|**型**|**説明**|
 |:-----|:-----|:-----|
-|```https://*.oscs.protection.outlook.com/```  <br/> |CS  <br/> |マイクロソフトの安全なリンク サービス  <br/> |
+|```https://*.oscs.protection.outlook.com/```  <br/> |座標  <br/> |Microsoft セーフリンクサービス  <br/> |
    
- **レポートがクラッシュします。**
+ **クラッシュの報告**
   
-次のネットワーク エンドポイントは、Office 365 のサブスクリプションとリテールまたはボリューム ライセンスの両方のアクティベーションのためのすべての Office アプリケーションに適用されます。プロセスが予期せずクラッシュすると、レポートが生成され、ワトソンのサービスに送信します。
+次のネットワークエンドポイントは、Office 365 のサブスクリプションとリテール/ボリュームライセンスのライセンス認証の両方において、すべての Office アプリケーションに適用されます。 プロセスが予期せずクラッシュすると、レポートが生成され、Watson サービスに送信されます。
   
 |**URL**|**型**|**説明**|
 |:-----|:-----|:-----|
-|```https://watson.microsoft.com/```  <br/> |ST  <br/> |Microsoft エラー報告サービス  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office コラボレーション情報サービス  <br/> |
+|```https://watson.microsoft.com/```  <br/> |停止  <br/> |Microsoft エラー報告サービス  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |停止  <br/> |Office 共同作業インサイトサービス  <br/> |
    
-## <a name="options-for-reducing-network-requests-and-traffic"></a>ネットワーク要求し、トラフィックを削減するためのオプション
+## <a name="options-for-reducing-network-requests-and-traffic"></a>ネットワーク要求およびトラフィックを減らすためのオプション
 
-Office for Mac の既定の構成では、両方の機能と、コンピューターを常に最新の状態に保つという点では最高のユーザー エクスペリエンスを提供します。一部のシナリオでは、アプリケーションがネットワークのエンドポイントに接続しないようにすることもできます。このセクションでは、これを行うためのオプションについて説明します。
+Office for Mac の既定の構成では、機能の観点からコンピューターを最新の状態に保つことが最高のユーザー環境を提供します。 シナリオによっては、アプリケーションがネットワークエンドポイントに接続できないようにする必要があります。 このセクションでは、そのためのオプションについて説明します。
   
- ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>クラウドにサインインし、Office のアドインを無効にします。
+ ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>クラウドサインインと Office アドインを無効にする
   
-ボリューム ライセンスのお客様は、クラウド ・ ベース ・ ストレージへの文書の保存に関する厳格なポリシーがあります。MSA/OrgID サインインを無効にして、Office アドインへのアクセスには、以下のアプリケーションごとの設定を設定できます。
+ボリュームライセンスのお客様には、クラウドベースのストレージにドキュメントを保存するための厳しいポリシーがあります。 次のアプリケーションごとの設定を設定して、MSA/OrgID サインインを無効にし、Office アドインにアクセスすることができます。
   
 - ```defaults write com.microsoft.Word UseOnlineContent -integer 0```
 
@@ -251,34 +251,34 @@ Office for Mac の既定の構成では、両方の機能と、コンピュー�
 
 - ```defaults write com.microsoft.Powerpoint UseOnlineContent -integer 0```
 
-ユーザーは、サインインの機能にアクセスすると、ネットワーク接続が存在しないこと、エラーが表示されます。この設定は、オンラインの製品のライセンス認証をブロックするため、ボリューム ライセンス インストールの場合のみ使用する必要があります。具体的には、この設定を使用すると、Office アプリケーションが次のエンドポイントにアクセスします。
+ユーザーがサインイン機能にアクセスしようとすると、ネットワーク接続が存在しないというエラーが表示されます。 この優先順位は、オンラインでの製品のライセンス認証もブロックするため、ボリュームライセンスのインストールにのみ使用してください。 具体的には、この設定を使用すると、Office アプリケーションは次のエンドポイントにアクセスできなくなります。
   
 - ```https://odc.officeapps.live.com```
     
 - ```https://*.firstpartyapps.oaspapps.com```
     
-- 'サインイン' 項に記載されているすべてのエンドポイントです。
+- 上記の「サインイン」セクションにリストされているすべてのエンドポイント。
     
-- 'スマート検索' に記載されているすべてのエンドポイントです。
+- 上記の「スマートルックアップ」セクションにリストされているすべてのエンドポイント。
     
-- ' 製品のライセンス認証] に記載されているすべてのエンドポイントです。
+- 上記の「製品のライセンス認証」セクションにリストされているすべてのエンドポイント。
     
-- ' Office アプリケーション (別名アドイン)' に記載されているすべてのエンドポイントです。
+- 上記の「Office アプリ (別名: アドイン)」に記載されているすべてのエンドポイント。
     
-'2' にプリファレンスを設定して、ユーザーの完全な機能を再確立するには、いずれかまたはそれを削除します。
+ユーザーのすべての機能を再確立するには、優先度を ' 2 ' に設定するか削除します。
   
 > [!NOTE]
-> ビルド 15.25 [160726] この設定で Office for Mac が必要ですか、後で。 
+> この設定には、Office for Mac ビルド 15.25 [160726] 以降が必要です。 
   
-### <a name="telemetry"></a>「遠隔測定」
+### <a name="telemetry"></a>テレメトリ
   
-Office for Mac では、定期的に、マイクロソフトに「遠隔測定」の情報をを送信します。'ネクサス' のエンドポイントには、データがアップロードされます。遠隔測定データは、稼働状態と各 Office アプリケーションのすべての予期しない動作の評価、エンジニア リング チームに役立ちます。「遠隔測定」の 2 つに分類されます。
+Office for Mac は、一定の間隔でテレメトリ情報を Microsoft に送り返します。 データは ' ' の ' ' ' の ' のエンドポイントにアップロードされます。 テレメトリデータは、エンジニアリングチームが各 Office アプリの正常性と予期しない動作を評価する際に役に立ちます。 テレメトリには、次の2つのカテゴリがあります。
   
-- **ハートビートには**、バージョン情報およびライセンス情報が含まれています。このデータは、アプリケーションの起動時にすぐに送信されます。 
+- **ハートビート**には、バージョンとライセンスの情報が含まれています。 このデータは、アプリの起動時に直ちに送信されます。 
     
-- **使用法**には、アプリケーションの使用方法に関する情報と、致命的でないエラーが含まれています。このデータは 60 分ごとに送信されます。 
+- **使用状況**には、アプリの使用方法と致命的ではないエラーに関する情報が含まれています。 このデータは、60分ごとに送信されます。 
     
-マイクロソフトでは、お客様のプライバシーを非常に真剣には。については、マイクロソフトのデータ収集ポリシーを読むことができます[https://privacy.microsoft.com](https://privacy.microsoft.com)。'使用' の遠隔測定の送信からアプリケーションを防ぐためには、 **SendAllTelemetryEnabled**の優先順位を調整できます。優先順位はアプリケーションごとのであり、macOS 構成のプロファイルを使用してまたはターミナルから手動に設定することができます。 
+Microsoft は、プライバシーを非常に真剣に受け止めています。 Microsoft のデータ収集ポリシーについては、 [https://privacy.microsoft.com](https://privacy.microsoft.com)「」を参照してください。 アプリケーションが ' Usage ' テレメトリを送信しないようにするには、 **SendAllTelemetryEnabled**の設定を調整します。 この優先順位はアプリケーションごとに設定され、macOS 構成プロファイルまたは手動でターミナルから設定できます。 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -294,30 +294,30 @@ Office for Mac では、定期的に、マイクロソフトに「遠隔測定�
 
 ```defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE```
 
-ハートビートの遠隔測定は、常に送信され、無効にすることはできません。
+ハートビートテレメトリは常に送信され、無効にすることはできません。
   
-### <a name="crash-reporting"></a>レポートがクラッシュします。
+### <a name="crash-reporting"></a>クラッシュの報告
   
-致命的なアプリケーション エラーが発生した場合、アプリケーションが予期せず終了し、'ワトソン' のサービスをクラッシュ レポートをアップロードします。クラッシュ レポートは、コール スタック、アプリケーションのクラッシュにつながる処理の手順の一覧であるので構成されます。次の手順のため、エンジニア リング チームが失敗した正確な関数を識別してその理由です。
+致命的なアプリケーションエラーが発生すると、アプリケーションは予期せず終了し、クラッシュレポートを ' Watson ' サービスにアップロードします。 クラッシュレポートは、クラッシュにつながる前にアプリケーションが処理していた手順の一覧である呼び出し履歴で構成されます。 これらの手順は、エンジニアリングチームが、失敗した正確な関数とその理由を特定するのに役立ちます。
   
-場合によっては、ドキュメントの内容が、アプリケーションがクラッシュすると発生します。アプリケーションでは、原因としてドキュメントを識別する場合はユーザーにたずねるかどうかは、コール スタックの付属ドキュメントを送信しても問題がないです。ユーザーは、この質問に十分な情報に基づいて選択を行うことができます。IT 管理者は、ドキュメントの送信に関する厳格な要件があります、ドキュメントを送信しないユーザーのための意思決定を下すことがあります。ドキュメントが、送信されないようにするのには、ユーザーにプロンプトを非表示にして、次の優先順位を設定できます。
+場合によっては、ドキュメントのコンテンツが原因でアプリケーションがクラッシュすることがあります。 アプリでドキュメントが原因として識別された場合、ドキュメントを呼び出し履歴と共に送信することができているかどうかをユーザーに確認します。 ユーザーは、この質問に関する情報を選択することができます。 IT 管理者は、ドキュメントの送信に関して厳密な要件を持つ場合があり、ドキュメントを送信しないことをユーザーに代わって判断します。 ドキュメントが送信されないようにするには、次のように設定する必要があります。また、ユーザーへのプロンプトを表示しないように設定することもできます。
   
 ```defaults write com.microsoft.errorreporting IsAttachFilesEnabled -bool FALSE```
 
 > [!NOTE]
-> **SendAllTelemetryEnabled**を**FALSE**に設定すると、すべてがクラッシュ レポート作成のプロセスが無効になっています。クラッシュが遠隔測定の使用状況を送信せずにレポートを有効にするには、次の優先順位を設定できます。```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
+> **SendAllTelemetryEnabled**が**FALSE**に設定されている場合、そのプロセスのすべてのクラッシュレポートが無効になります。 利用状況統計情報を送信せずにクラッシュレポートを有効にするには、次の設定を行うことができます。```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
 ### <a name="updates"></a>更新プログラム
   
-マイクロソフトでは、定期的 (通常 1 回 1 か月) に更新プログラムを Office for Mac を解放します。ユーザーを強くお勧めし、IT 管理者は、コンピューターを最新のセキュリティ修正プログラムを確実に最新の状態に保つには、インストールされています。厳密に制御し、コンピューターの更新プログラムを管理する IT 管理者が必要な場合、自動更新プロセスを自動的に検出して製品の更新プログラムを提供することを防ぐために次の優先順位を設定できます。
+Microsoft は、通常の間隔 (月に1回) で Office for Mac の更新プログラムをリリースします。 最新のセキュリティ修正プログラムがインストールされていることを確認するために、ユーザーと IT 管理者にコンピューターを最新の状態に保つよう強くお勧めします。 IT 管理者がコンピューターの更新を細かく制御して管理しようとしている場合は、次の設定を行って、自動検出の製品更新プログラムが自動的に検出されて提供されないようにすることができます。
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
-### <a name="blocking-requests-with-a-firewallproxy"></a>ファイアウォール/プロキシの要求をブロックします。
+### <a name="blocking-requests-with-a-firewallproxy"></a>ファイアウォール/プロキシを使用して要求をブロックする
   
-ファイアウォールまたはプロキシ サーバー経由で、組織のブロックが Url を要求した場合が許可されているいずれかの方法としては、このドキュメントに記載されている Url を構成するか、ブロック 40 X 応答例: 403 (404) を一覧表示します。40 X 応答は、Office アプリケーションのリソースにアクセスできないことを問題なく受け入れるし、だけで、接続は、クライアントが再試行すると次に、削除するより高速なユーザー エクスペリエンスを提供します。
+組織がファイアウォールまたはプロキシサーバー経由で Url への要求をブロックしている場合は、このドキュメントに記載されている Url を許可するか、または40X 応答 (403 または404など) で一覧表示する必要があります。 40X 応答を使用すると、Office アプリケーションは、リソースにアクセスできないことを適切に受け入れることができます。また、単に接続を切断するだけでなく、クライアントの再試行を行うことができます。
   
-プロキシ サーバーで認証が必要な場合は、407 応答がクライアントに返されます。最高のエクスペリエンスでは、使用している Office for Mac 15.27 以降のビルドとして、NTLM および Kerberos サーバーを操作するための特定の修正プログラムが含まれていることを確認します。
+プロキシサーバーで認証が必要な場合は、407応答がクライアントに返されます。 最良の結果を得るために、NTLM および Kerberos サーバーを使用するための特定の修正プログラムが含まれている場合は、Office for Mac ビルド15.27 以降を使用していることを確認してください。
   
   
 ## <a name="see-also"></a>関連項目

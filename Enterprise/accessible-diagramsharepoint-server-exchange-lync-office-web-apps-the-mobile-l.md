@@ -3,19 +3,19 @@ title: アクセス可能な図 - SharePoint Server、Exchange、Lync、Office W
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487683"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068442"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>アクセス可能な図 - SharePoint Server、Exchange、Lync、Office Web Apps - モバイルの展望
 

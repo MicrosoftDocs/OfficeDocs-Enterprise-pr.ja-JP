@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490123"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068103"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
  **概要:** Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。
   
-office 365 Cloud App Security (以前の office 365 Advanced Security Management) を使用すると、office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。これにより、問題を調査して修復できるようになります。action. 詳細については、「 [Office 365 の Cloud App Security の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
+Office 365 Cloud App Security (以前の Office 365 Advanced Security Management) を使用すると、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。これにより、問題を調査して修復できるようになります。action. 詳細については、「 [Office 365 の Cloud App Security の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
   
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
@@ -41,7 +41,7 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 シミュレーションのエンタープライズで Cloud App Security をテストする場合は、[Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md) の手順に従ってください。
   
 > [!NOTE]
-> Cloud App Security のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 これは、クラウドアプリのセキュリティをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
+> Cloud App Security のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 これは、クラウドアプリのセキュリティをテストし、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>フェーズ 2: Cloud App Security の有効化およびポリシーの作成の前に
 
@@ -81,7 +81,7 @@ office 365 Cloud App Security (以前の office 365 Advanced Security Management
 
 1. Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
-2. **[管理者]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
+2. **[管理者]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター _GT_ セキュリティ & コンプライアンス**] をクリックします。
     
 3. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
     

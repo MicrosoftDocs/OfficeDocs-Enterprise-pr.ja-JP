@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用して SharePoint Online サイトを作�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,27 +12,27 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '概要: Office 365 PowerShell を使用して SharePoint Online の新しいサイトを作成し、それらのサイトにユーザーおよびグループを追加します。'
-ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: '概要: Office 365 PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
+ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069103"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
- **の概要:** Office 365 の PowerShell を使用して、新しい SharePoint Online サイトを作成し、それらのサイトにユーザーおよびグループを追加します。
+ **概要:** Office 365 PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。
 
-Office 365 の PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、迅速かつ繰り返しタスクを実行できます Office 356 管理センターでよりもはるかに高速です。Office 356 管理センターで実行することができないタスクも実行できます。 
+Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Office 356 管理センターでの作業よりも迅速かつ繰り返しタスクを実行することができます。 また、Office 356 管理センターでは実行できないタスクも実行できます。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-このトピックの手順では、SharePoint Online に接続する必要があります。手順については、 [SharePoint のオンライン PowerShell への接続](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)を参照してください。
+このトピックの手順では、SharePoint Online に接続する必要があります。 手順については、「 [SharePoint Online PowerShell への接続](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>手順 1: Office 365 PowerShell を使って新しいサイト コレクションを作成する
 
-Office 365 の PowerShell とサンプル コードが用意されているとメモ帳を使用して作成した .csv ファイルを使用して複数のサイトを作成します。この手順では、独自のサイトやテナント固有の情報をかっこで囲んで表示されているプレース ホルダー情報を交換することです。このプロセスでは、1 つのファイルを作成し、そのファイルを使用する 1 つの Office 365 の PowerShell コマンドを実行することができます。これは、繰り返しとポータブルの両方を実行する操作し、SharePoint のオンライン管理シェルに長いコマンドを入力することによってもたらされる、すべてのエラーの場合、多くが不要します。このプロシージャに 2 つの部分があります。まず .csv ファイルを作成し、その内容を使用してサイトを作成する、Office 365 PowerShell を使用して .csv ファイルを参照します。
+Office 365 PowerShell を使用して複数のサイトを作成し、指定されたコード例およびメモ帳を使用して作成した .csv ファイルを作成します。 この手順では、角かっこに示されているプレースホルダー情報を、独自のサイトとテナント固有の情報に置き換えます。 このプロセスにより、1つのファイルを作成し、そのファイルを使用する1つの Office 365 PowerShell コマンドを実行することができます。 これにより、アクションが繰り返し可能で持ち運び可能になるため、SharePoint Online 管理シェルに長いコマンドを入力することによって発生する可能性のある多くのエラーが発生しなくなります。 この手順には2つの部分があります。 最初に .csv ファイルを作成してから、Office 365 PowerShell を使用してその .csv ファイルを参照します。これにより、そのコンテンツを使用してサイトが作成されます。
 
 Office 365 PowerShell コマンドレットは、その .csv ファイルをインポートし、ファイルの最初の行を列見出しとして読み取る、中かっこ内のループにパイプします。次に、Office 365 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新規のサイト コレクションを作成し、列見出しに従ってサイト コレクションのプロパティを割り当てます。
 
@@ -47,12 +47,12 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>プライマリ サイト コレクション管理者の役割を付与する*テナント*が、テナントの名前、*所有者*は、先のテナントのユーザーのユーザー名。<br/>(することができます押して Ctrl + H 置換を高速に一括してメモ帳を使用する場合)。<br/>
+<br/>ここで、 *tenant*はテナントの名前で、 *owner*は、サイトコレクションの管理者の役割を付与するテナントのユーザー名です。<br/>メモ帳を使用して一括置換をすばやく実行するには、Ctrl + H キーを押します。<br/>
 
-2. デスクトップ上のファイルを**SiteCollections.csv**として保存します。<br/>
+2. ファイルを**SiteCollections**としてデスクトップに保存します。<br/>
 
 > [!TIP]
-> これまたはその他の .csv ファイルまたは Windows PowerShell スクリプト ファイルを使用する前に不要なまたは印刷されない文字がないかどうかを確認することをお勧めします。Word と、リボンの [ファイルを開く、編集記号を表示するのには [段落] アイコンをクリックします。不要な記号はないはずです。などはないはず、ファイルの末尾に最後の 1 つ以上の段落記号です。
+> この .csv ファイルやそれ以外の .csv ファイル、または Windows PowerShell スクリプト ファイルを使用する前に、余分の文字または印刷されない文字がないか確認することをお勧めします。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
 
 ### <a name="run-the-windows-powershell-command"></a>Windows PowerShell コマンドの実行
 
@@ -60,7 +60,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>場所*MyAlias*は、ユーザーのエイリアスと同じです。<br/>
+<br/>*Myalias*はユーザーエイリアスと同じです。<br/>
 
 2. WindowsPowerShell プロンプトが再度表示されるまで待機します。これには 1 - 2 分かかる場合があります。<br/>
 
@@ -71,7 +71,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. 一覧に新しいサイト コレクションに注意してください。次のサイト コレクションを参照する必要があります: **contosotest**、 **TeamSite01**、 **Blog01**、および**Project01**
+4. リストに新しいサイトコレクションが表示されることを確認します。 次のサイトコレクションが表示されます。 **contosotest**、 **TeamSite01**、 **Blog01**、および**Project01**
 
 これで完了です。作成した .csv ファイルと 1 つの WindowsPowerShell コマンドレットを使用して、複数のサイト コレクションを作成しました。これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
 
@@ -95,9 +95,9 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>*テナント*に等しい、テナント名を指定します。<br/>
+<br/>*テナント*はテナント名と同じです。<br/>
 
-2. **GroupsAndPermissions.csv**として、ファイルをデスクトップに保存します。<br/>
+2. ファイルをグループ名、**アクセス許可 .csv**としてデスクトップに保存します。<br/>
 
 3. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
 
@@ -112,9 +112,9 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>*テナント*に等しい、テナント名、*ユーザー名*が既存のユーザーのユーザー名と同じです。<br/>
+<br/>*テナント*はテナント名と同じで、 *username*は既存のユーザーのユーザー名と同じです。<br/>
 
-4. として**ユーザー.csv**ファイルをデスクトップに保存します。<br/>
+4. ファイルを**ユーザー .csv**としてデスクトップに保存します。<br/>
 
 5. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
 
@@ -122,9 +122,9 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
-<br/>MyAlias に等しい現在ログオンしているユーザーのユーザー名を指定します。<br/>
+<br/>MyAlias は、現在ログオンしているユーザーのユーザー名と同じです。<br/>
 
-6. **UsersAndGroups.ps1**として、ファイルをデスクトップに保存します。これは、単純な Windows PowerShell スクリプトです。
+6. ファイルを**usersandgroups.ps1**としてデスクトップに保存します。 これは、単純な Windows PowerShell スクリプトです。
 
 これで、UsersAndGroup.ps1 スクリプトを実行して複数のサイト コレクションにユーザーとグループを追加する準備ができました。
 
@@ -137,14 +137,14 @@ Set-ExecutionPolicy Bypass
 ```
 <br/>
 
-3. 確認プロンプトで、 **Y**をキーを押します。<br/>
+3. 確認のプロンプトで、 **Y**キーを押します。<br/>
 
 4. Windows PowerShell プロンプトで、次のコマンドを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
 
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>*MyAlias*に等しい自分のユーザー名を指定します。<br/>
+<br/>*Myalias*は、ユーザー名と同じです。<br/>
 
 5. プロンプトが戻るまで待機してから、次に進みます。最初に、作成したとおりにグループが表示されます。次に、ユーザーを追加するたびに、グループの一覧が繰り返し表示されます。
 
@@ -152,7 +152,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [SharePoint Online PowerShell に接続する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Office 365 の PowerShell SharePoint Online のサイト グループを管理します。](manage-sharepoint-site-groups-with-powershell.md)
+[SharePoint Online サイトグループの管理 Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
   

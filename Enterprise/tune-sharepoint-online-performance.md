@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online のページダウンロード時間のパフォーマンスを向上させる方法を説明する、他の記事へのリンクが含まれています。
-ms.openlocfilehash: 8c4f3c0545408457b2c0b5150ea062b9666f7e44
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070673"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online のパフォーマンスをチューニングする
 
@@ -47,12 +47,11 @@ SharePoint Online のパフォーマンスを微調整するには、以下の�
     
  - [Office 365 CDN の一般提供](https://dev.office.com/blogs/general-availability-of-office-365-cdn)
     
-- [SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ web パーツの代わりにコンテンツ検索 web パーツを使用する](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用する](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- 
-  [SharePoint Online のキャパシティ プランニングとロード テスト](capacity-planning-and-load-testing-sharepoint-online.md)
+- [SharePoint Online のキャパシティ プランニングとロード テスト](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [Diagnosing performance issues with SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [SharePoint Online のパフォーマンスの問題の診断](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [SharePoint Online でのオブジェクトキャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
     

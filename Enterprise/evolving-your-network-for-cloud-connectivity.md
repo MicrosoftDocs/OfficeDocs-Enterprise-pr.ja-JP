@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: '概要: クラウド導入において、新しいアプローチによるネットワーク インフラストラクチャ投資が必要となることを理解します。'
-ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 47d24a4f545cfae8a6bd1c507a61f48b6d26cc7d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487243"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067633"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>クラウド接続のためにネットワークを進化させる
 
@@ -45,7 +45,7 @@ ms.locfileid: "33487243"
     
 - **サービスとしての Azure インフラストラクチャ (IaaS)** Microsoft SaaS サービスおよび PaaS サービスへの投資に加えて、IaaS における IT ワークロードの実行においては、仮想マシンをホストする Azure 仮想ネットワーク、仮想マシン上で実行されるアプリケーションへのセキュアな接続、ルーティング、IP アドレス指定、DNS、および負荷分散の設計と構成が必要となります。継続的な投資には、パフォーマンスおよびセキュリティの監視、並びにトラブルシューティングが含まれます。
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365)は、Office 365、Enterprise Management + Security (EMS)、Windows 10 の組み合わせで構成されています。 Microsoft 365 では、複数の SaaS および Azure サービスが統合され、すべてのユーザーがクリエイティブに共同作業し、安全に共同作業できるようにする完全なインテリジェントソリューションを実現しています。
+[Microsoft 365](https://www.microsoft.com/microsoft-365)は、Office 365、Enterprise Management + SECURITY (EMS)、Windows 10 の組み合わせで構成されています。 Microsoft 365 では、複数の SaaS および Azure サービスが統合され、すべてのユーザーがクリエイティブに共同作業し、安全に共同作業できるようにする完全なインテリジェントソリューションを実現しています。
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>クラウドで成功するためのネットワーク投資の領域
 

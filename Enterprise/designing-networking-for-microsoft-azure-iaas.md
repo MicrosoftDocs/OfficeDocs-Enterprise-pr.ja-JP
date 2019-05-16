@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: '概要: Microsoft Azure IaaS のワークロード用に最適化されたネットワークの設計方法について説明します。'
-ms.openlocfilehash: c41e92445dd01a94b7d305b521bbd4330311fcb4
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b06564c8a86c59dac4ac9a5380cd88cf9d045974
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491086"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068133"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Microsoft Azure IaaS のためのネットワークの設計
 
@@ -123,11 +123,11 @@ Azure では、各サブネットの最初の 3 つのアドレスを使用し�
   
 |**必要な仮想マシン**|**ホスト ビット**|**サブネットのサイズ**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3   <br/> |/29  <br/> |
-|4-11  <br/> |4   <br/> |/28  <br/> |
-|12-27  <br/> |5   <br/> |/27  <br/> |
-|28-59  <br/> |6   <br/> |/26  <br/> |
-|60-123  <br/> |7   <br/> |/25  <br/> |
+|1-3  <br/> |1/3  <br/> |/29  <br/> |
+|4-11  <br/> |2/4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |シックス  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
  **表 3: 仮想マシンの要件とサブネットのサイズ**
   

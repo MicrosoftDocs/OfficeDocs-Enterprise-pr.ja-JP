@@ -1,9 +1,9 @@
 ---
 title: ディレクトリ同期のために非ルーティング ドメインの準備を整える
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365E_SetupDirSyncLocalDir
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミス ユーザーに非ルーティング ドメインが関連付けられている場合、Office 365 との同期前に実行する手順について説明します。
-ms.openlocfilehash: 150e670e58419cda0f8ba08a5fb1e375478a27b1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085316"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071083"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 Office 365 とオンプレミス ディレクトリとの同期時には、Azure Active Directory 内に確認済みのドメインを用意する必要があります。オンプレミス ドメインに関連付けられたユーザー プリンシパル名 (UPN) のみが同期されます。ただし、.local などの非ルーティング ドメインが含まれている UPN (例: billa@contoso.local) は、.onmicrosoft.com ドメイン (例: billa@contoso.onmicrosoft.com) と同期されるようになります。 

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,17 +12,17 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: この記事では、javascript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
-ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
+ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067983"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
-この記事では、javascript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。 
+この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。 
   
 SharePoint Online では、画像がページの読み込み速度に悪影響を及ぼす可能性があります。 既定では、ほとんどのモダンインターネットブラウザーは、HTML ページの読み込み時に画像を事前に取得します。 このため、ユーザーが下にスクロールするまで画像が画面に表示されない場合は、ページが不必要に読み込まれることがあります。 画像は、ページの可視部分を読み込むことをブラウザーにブロックできます。 この問題を回避するには、まず、JavaScript を使用して画像の読み込みをスキップします。 また、必須ではない JavaScript を読み込むと、SharePoint ページの読み込み時間が遅くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript を使用してページの読み込み時間を向上させる方法について説明します。 
   
@@ -38,7 +38,7 @@ JavaScript を使用して、web ブラウザーが画像を事前に取得で�
   
 すべての操作を行うには、JavaScript を使用する必要があります。
   
-テキストファイルで、 **iselementinviewport ()** 関数を定義し、要素がブラウザーのユーザーに表示される部分にあるかどうかを確認します。 
+テキストファイルで、 **Iselementinviewport ()** 関数を定義し、要素がブラウザーのユーザーに表示される部分にあるかどうかを確認します。 
   
 ```
 function isElementInViewport(el) {
@@ -55,7 +55,7 @@ function isElementInViewport(el) {
 
 ```
 
-次に、 **loadItemsInView ()** 関数で**iselementinviewport ()** を使用します。 **loadItemsInView ()** 関数は、データソース属性の値がユーザーに表示されるブラウザーの部分にある場合、その値を持つすべての画像を読み込みます。 テキストファイルに次の関数を追加します。 
+次に、 **loadItemsInView ()** 関数で**Iselementinviewport ()** を使用します。 **LoadItemsInView ()** 関数は、データソース属性の値がユーザーに表示されるブラウザーの部分にある場合、その値を持つすべての画像を読み込みます。 テキストファイルに次の関数を追加します。 
   
 ```
 function loadItemsInView() {
@@ -90,15 +90,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-テキストファイルを拡張子 .js の JavaScript ファイルとして保存します。たとえば、: delayloadimages.js) のようにします。
+テキストファイルを拡張子 .js の JavaScript ファイルとして保存します。たとえば、: Delayloadimages.js) のようにします。
   
-: delayloadimages.js) の記述が終了したら、ファイルの内容を SharePoint Online のマスターページに追加できます。 これを行うには、マスターページのヘッダーにスクリプトリンクを追加します。 マスターページでは、そのマスターページレイアウトを使用する SharePoint Online サイトのすべてのページに JavaScript が適用されます。 または、サイトの1つのページでのみこれを使用する場合は、スクリプトエディター Web パーツを使用して JavaScript をページに埋め込みます。 詳細については、以下のトピックを参照してください。
+: Delayloadimages.js) の記述が終了したら、ファイルの内容を SharePoint Online のマスターページに追加できます。 これを行うには、マスターページのヘッダーにスクリプトリンクを追加します。 マスターページでは、そのマスターページレイアウトを使用する SharePoint Online サイトのすべてのページに JavaScript が適用されます。 または、サイトの1つのページでのみこれを使用する場合は、スクリプトエディター Web パーツを使用して JavaScript をページに埋め込みます。 詳細については、以下のトピックを参照してください。
   
 - [[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
 - [[方法]: SharePoint 2013 でページ レイアウトを作成する方法](https://go.microsoft.com/fwlink/p/?LinkId=525628)
     
- **例: SharePoint Online でマスターページから JavaScript の: delayloadimages.js) ファイルを参照する**
+ **例: SharePoint Online でマスターページから JavaScript の: Delayloadimages.js) ファイルを参照する**
   
 これを動作させるには、マスターページで jQuery を参照する必要もあります。 次の例では、最初のページの読み込みで、読み込まれたイメージは1つだけですが、ページ上にはさらにいくつかのページがあることがわかります。
   
@@ -116,7 +116,7 @@ GitHub で提供されている[JavaScript インジェクション](https://go.
   
 ## <a name="see-also"></a>関連項目
 
-[office 2013 および office 365 ProPlus でサポートされているブラウザー](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 および Office 365 ProPlus でサポートされているブラウザー](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

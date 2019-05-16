@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Office 365 コラボレーションがテナント間や組織間でどのように機能するかを説明します。
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069673"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 テナント間コラボレーション
 

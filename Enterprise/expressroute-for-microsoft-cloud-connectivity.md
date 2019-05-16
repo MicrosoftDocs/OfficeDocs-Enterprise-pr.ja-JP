@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: '概要: ExpressRoute による Microsoft のクラウド サービスとプラットフォームへのより早く信頼できる接続が、どのように役立つか説明します。'
-ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0bab6cf3d400293221692a595346445afd242e48
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488157"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067683"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>Microsoft クラウド接続のためのExpressRoute
 
@@ -102,7 +102,7 @@ ExpressRoute with Office 365 の使用に関する最新の推奨事項につい
 
 ![図 3: 単一の ExpressRoute 接続における2つの異なる BGP 関係](media/Network-Poster/ERPeering.png)
   
-図 3 は、オンプレミス ネットワークからの ExpressRoute 接続を示しています。 ExpressRoute 接続には、2つの論理的なピアリング関係があります。 microsoft ピアリング関係は、Office 365、Dynamcs 365、および Azure PaaS サービスを含む、microsoft の SaaS サービスに送られます。 プライベート ピアリング関係には、Azure IaaSに向けられたものと、仮想マシンをホストする仮想ネットワーク ゲートウェイに向けられたものがあります。
+図 3 は、オンプレミス ネットワークからの ExpressRoute 接続を示しています。 ExpressRoute 接続には、2つの論理的なピアリング関係があります。 Microsoft ピアリング関係は、Office 365、Dynamcs 365、および Azure PaaS サービスを含む、Microsoft の SaaS サービスに送られます。 プライベート ピアリング関係には、Azure IaaSに向けられたものと、仮想マシンをホストする仮想ネットワーク ゲートウェイに向けられたものがあります。
   
 Microsoft ピアリング BGP 関係:  
   
@@ -246,7 +246,7 @@ ExpressRoute の展開には、次に示すオプションを組み込むこと�
   
 - **エッジでのセキュリティ:** ExpressRoute 接続を通じて送受信されるトラフィックに高度なセキュリティ (トラフィック検査や侵入/マルウェア検出など) を提供するには、DMZ 内のトラフィック パスまたはインターネット境界にセキュリティ アプライアンスを配置します。
     
-- **vm のインターネットトラフィック:** Azure vm がインターネット上の場所を使用して直接トラフィックを開始できないようにするには、既定のルートを Microsoft にアドバタイズします。 インターネットへのトラフィックは、ExpressRoute 接続を経由して、オンプレミスのプロキシ サーバーを通過するようにルーティングされます。 Azure VM から Azure PaaS サービスや Office 365 へのトラフィックは、ExpressRoute 接続を経由して戻るようにルーティングされます。
+- **Vm のインターネットトラフィック:** Azure Vm がインターネット上の場所を使用して直接トラフィックを開始できないようにするには、既定のルートを Microsoft にアドバタイズします。 インターネットへのトラフィックは、ExpressRoute 接続を経由して、オンプレミスのプロキシ サーバーを通過するようにルーティングされます。 Azure VM から Azure PaaS サービスや Office 365 へのトラフィックは、ExpressRoute 接続を経由して戻るようにルーティングされます。
     
 - **WAN オプティマイザー:** クロスプレミス Azure 仮想ネットワーク (VNet) のプライベート ピアリング接続の両側に WAN オプティマイザーを展開できます。Azure VNet の内部では、Azure マーケットプレースから得られる WAN オプティマイザー ネットワーク アプライアンスと、トラフィックがアプライアンスを通過するようにルーティングするユーザー定義のルーティングを使用します。
     

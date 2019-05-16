@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 5/11/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,18 +15,18 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Office 365 で Rights Management サービスをアクティブ化して使用する方法について説明するトピックへのリンクを示します。
-ms.openlocfilehash: b3df1f7ff39214d5ab7ab8f5c730299c1c22f30b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ffbb88de88b5f90d239698c0600e914266e84048
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068453"
 ---
 # <a name="activate-rights-management-in-the-office-365-admin-center"></a>Office 365 管理センターで Rights Management をアクティブにする
 
 このトピックでは、Office 365 で RMS を有効にし、使用する方法について説明するトピックを示します。
   
-Office 365 のアプリケーションとサービスの Information Rights management (IRM) 機能を使用するには、その前に Rights management service (RMS) をアクティブ化する必要があります。 rms をアクティブ化すると、組織は Azure RMS を使用して重要なドキュメントや電子メールを保護することができます。 この情報保護ソリューションでは、すべてのファイルの種類を保護し、Excel、microsoft Word、その他のクライアントアプリケーション (exchange online や sharepoint online など)、microsoft exchange や microsoft sharepoint などのサーバーを統合することができます。
+Office 365 のアプリケーションとサービスの Information Rights Management (IRM) 機能を使用するには、その前に Rights Management service (RMS) をアクティブ化する必要があります。 RMS をアクティブ化すると、組織は Azure RMS を使用して重要なドキュメントや電子メールを保護することができます。 この情報保護ソリューションでは、すべてのファイルの種類を保護し、Excel、Microsoft Word、その他のクライアントアプリケーション (Exchange Online や SharePoint Online など)、Microsoft Exchange や Microsoft SharePoint などのサーバーを統合することができます。
   
 > [!TIP]
 > 権限管理が必要かどうかがわからない場合は、組織に[これらのビジネス上の問題または要件](https://docs.microsoft.com/rights-management/understand-explore/azure-rms-problems-it-solves)が1つ以上存在するかどうかを確認し、 [rights Management の動作に](https://docs.microsoft.com/rights-management/understand-explore/what-admins-users-see)関するいくつかの例を参照してください。 

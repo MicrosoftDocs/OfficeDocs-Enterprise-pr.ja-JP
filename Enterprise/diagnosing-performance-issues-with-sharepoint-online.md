@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 2/23/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: この記事では、Internet Explorer 開発者ツールを使用して SharePoint Online サイトの一般的な問題を診断する方法について説明します。
-ms.openlocfilehash: 89d4544bfabf6424b5f401bad7d63bd7fa41b5ca
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: dfc66822a98ce26bfd9fd94d9d58882b8b140831
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492278"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067863"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>SharePoint Online のパフォーマンスの問題の診断
 
@@ -61,12 +61,12 @@ SharePoint Online サイトのページに、カスタマイズに関するパ�
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>SharePoint Online のカスタマイズされていないベースラインの設定
 <a name="F12ToolInfo"> </a>
 
-サイトのパフォーマンスの強度を判断する最良の方法は、SharePoint Online に完全に使用されていないサイトコレクションをセットアップすることです。 このようにすると、サイトのさまざまな要素を、ページ上でカスタマイズしなくても、その内容と比較できます。 OneDrive for business ホームページは、カスタマイズが必要となる可能性がある別のサイトコレクションの良い例です。
+サイトのパフォーマンスの強度を判断する最良の方法は、SharePoint Online に完全に使用されていないサイトコレクションをセットアップすることです。 このようにすると、サイトのさまざまな要素を、ページ上でカスタマイズしなくても、その内容と比較できます。 OneDrive for Business ホームページは、カスタマイズが必要となる可能性がある別のサイトコレクションの良い例です。
   
 ## <a name="viewing-sharepoint-response-header-information"></a>SharePoint 応答ヘッダー情報を表示する
 <a name="F12ToolInfo"> </a>
 
-sharepoint Online と sharepoint Server 2013 では、各ファイルの応答ヘッダーでブラウザーに送り返される情報にアクセスできます。 パフォーマンスの問題を診断するための最も有用な2つの値は、sprequestduration および SharePointHealthScore です。
+SharePoint Online と SharePoint Server 2013 では、各ファイルの応答ヘッダーでブラウザーに送り返される情報にアクセスできます。 パフォーマンスの問題を診断するための最も有用な2つの値は、SPRequestDuration および SharePointHealthScore です。
   
 - **SPRequestDuration**
     
@@ -93,7 +93,7 @@ sharepoint Online と sharepoint Server 2013 では、各ファイルの応答�
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>SharePoint Online でパフォーマンスの問題が発生する原因
 <a name="F12ToolInfo"> </a>
 
-「 [SharePoint Online のナビゲーションオプション](navigation-options-for-sharepoint-online.md)」では、sprequestduration 値を使用して、複雑な構造ナビゲーションによって、ページの処理に長い時間がかかることを判断する例を示します。 ベースラインサイト (カスタマイズなし) の値を取得することによって、特定のファイルの読み込みに時間がかかるかどうかを判断できます。 [SharePoint Online のナビゲーションオプション](navigation-options-for-sharepoint-online.md)で使用されている例は、主に .aspx ファイルです。 このファイルには、ページの読み込みに対して実行される ASP.NET コードの大部分が含まれています。 使用するサイトテンプレートによっては、ホームページをカスタマイズする場合、default.aspx、default.aspx、default.aspx、またはその他の名前の場合があります。 この数値がベースラインサイトよりかなり大きい場合は、パフォーマンスの問題を発生させる、ページに複雑な処理が発生していることを示しています。 
+「 [SharePoint Online のナビゲーションオプション](navigation-options-for-sharepoint-online.md)」では、SPRequestDuration 値を使用して、複雑な構造ナビゲーションによって、ページの処理に長い時間がかかることを判断する例を示します。 ベースラインサイト (カスタマイズなし) の値を取得することによって、特定のファイルの読み込みに時間がかかるかどうかを判断できます。 [SharePoint Online のナビゲーションオプション](navigation-options-for-sharepoint-online.md)で使用されている例は、主に .aspx ファイルです。 このファイルには、ページの読み込みに対して実行される ASP.NET コードの大部分が含まれています。 使用するサイトテンプレートによっては、ホームページをカスタマイズする場合、default.aspx、default.aspx、default.aspx、またはその他の名前の場合があります。 この数値がベースラインサイトよりかなり大きい場合は、パフォーマンスの問題を発生させる、ページに複雑な処理が発生していることを示しています。 
   
 サイトに固有の問題を特定した後、パフォーマンスが低下していることを確認するには、ページのカスタマイズなど、考えられるすべての原因を除去して、それらを1つずつサイトに追加することをお勧めします。 ページが正常に実行されているカスタマイズを削除すると、特定のカスタマイズを1つずつ追加することができます。
   
