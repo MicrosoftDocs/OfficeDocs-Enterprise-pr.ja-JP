@@ -21,7 +21,8 @@
 ### [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
 ### [Office 365 のサード パーティ SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
 ### [Office 365 ID と Azure Active Directory について](about-office-365-identity.md)
-### [MDM または Intune を選択する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/choose-between-mdm-and-intune)
+### 
+  [MDM または Intune を選択する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)
 ### [Office 365 へのネットワーク接続](network-connectivity.md)
 ### [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
@@ -32,9 +33,11 @@
 ### [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](modern-auth-for-office-2013-and-2016.md)
 ### [Office 365 テナント間コラボレーション](office-365-inter-tenant-collaboration.md)
 ## Office 365 クライアント サポート
+### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
 ### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
 ### [先進認証](office-365-client-support-modern-authentication.md)
+### [シングル サインオン](office-365-client-support-single-sign-on.md)
 ## ハイブリッド オプション
 ### [Skype for Business Server および Exchange Server 向けのハイブリッド先進認証と前提条件](hybrid-modern-auth-overview.md)
 ### [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -72,7 +75,7 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [組織用に Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
 ### [Office 365 の展開計画チェックリスト](deployment-planning-checklist.md)
-### [Office 365 のセキュリティのベスト プラクティス](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
+### [Office 365 のセキュリティのベスト プラクティス](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
 ## [ネットワークをセットアップする](set-up-network-for-office-365.md)
 ### [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
 ### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
@@ -161,8 +164,10 @@
 # Office 365 の管理
 ## [サービス正常性](view-service-health.md)
 ### [接続性を監視する](monitor-connectivity.md)
-### [サポート オプション](https://support.office.com/ja-JP/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [管理ツール](https://support.office.com/ja-JP/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### 
+  [サポート オプション](https://support.office.com/ja-JP/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## 
+  [管理ツール](https://support.office.com/ja-JP/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Office 365 アカウントを管理するツール](manage-office-365-accounts.md)
 ### [複数のユーザーを同時に Office 365 に追加する - 管理者ヘルプ](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ](recover-deleted-items-in-a-mailbox.md)
