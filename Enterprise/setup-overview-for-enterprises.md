@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: 次の手順の概要は、Office 365 の展開、Active Directory の接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
-ms.openlocfilehash: 16e6c60404a9e1f2c49b2e8e23920540e1dd8e49
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070813"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102545"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Office 365 Enterprise を組織で展開する
 オンプレミス インフラストラクチャで Office 365 Enterprise の展開と統合を開始します。次の手順の概要は、ディレクトリの接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
@@ -38,12 +38,12 @@ Office 365 の**[FastTrack](https://docs.microsoft.com/fasttrack)** は、Office
 
 1. **[Office 365 のための準備](get-your-organization-ready-for-office-365.md)**。Office 365 の導入に向けて、ネットワーク、ディレクトリ、およびエンド ユーザーの準備をお手伝いするツールやリソースを提供します。
 
-2. **[サインインしてインターネット ドメインを Office 365 に追加](https://portal.office.com/Domains/AddDomainWizard.aspx?Scenario=AdvancedSetup)** します。ポータルにサインインし、ユーザーの追加やメールの移行はしないまま、ドメインを Office 365 サブスクリプションに追加します。すべてのユーザーとサービスも同時に構成する場合は、「[基本的なセットアップ手順](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)」に従ってください。
+2. **サインインして、Office 365 にインターネットドメインを追加**します。 [Microsoft 365 管理センター](https://portal.microsoft.com)にサインインし、[**セットアップ > Domains**] をクリックして、[**新しいドメイン**] をクリックします。 ユーザーを追加したり、メールを移行したりせずに、1つ以上のドメインを Office 365 サブスクリプションに追加します。 
 
 >[!IMPORTANT] 
 >オンプレミスのディレクトリからユーザーを同期したりシングル サインオンを利用したりする場合は、基本的なセットアップ手順はお使いいただけません。
 
-3. **[ディレクトリを Office 365 に接続](https://support.office.com/article/Understanding-Office-365-Identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9)** します。ID の同期やシングル サインオンの構成オプションに関するガイドです。[AAD Connect アドバイザー](https://aka.ms/aadconnectpwsync)、[Azure AD Premium セットアップ ガイド](https://aka.ms/aadpguidance)を使用して、カスタマイズしたセットアップ ガイダンスを使います。
+3. **[ディレクトリを Office 365 に接続](about-office-365-identity.md)** します。ID の同期やシングル サインオンの構成オプションに関するガイドです。[AAD Connect アドバイザー](https://aka.ms/aadconnectpwsync)、[Azure AD Premium セットアップ ガイド](https://aka.ms/aadpguidance)を使用して、カスタマイズしたセットアップ ガイダンスを使います。
 4. **[Office 365 のサービスとアプリケーションを構成](configure-services-and-applications.md)** します。メール、ファイル共有、インスタント メッセージング、またはその他の Office 365 サービスとアプリケーションのいずれかを構成するには、ここから開始します。
 5. **[Office 365 へデータの移行](migrate-data-to-office-365.md)** をします。サービスを構成すると、データの移行を開始できるようになります。
 6. **[ユーザーが Office 365 を使用できるようにする](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)** します。組織内のユーザーが Office 365 の利用に慣れるためのお手伝いをするには、このリソースをお使いください。

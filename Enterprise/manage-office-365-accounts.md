@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 ユーザーを管理するためにどのようなツールを使用するか、およびどのように使用できるかについては、ユーザー id の管理方法によって異なります。 '
-ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067193"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102445"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するためのツール
 
@@ -35,15 +35,15 @@ ms.locfileid: "34067193"
   
 ### <a name="cloud-authentication"></a>クラウド認証
 
-- [クラウド認証](about-office-365-identity.md#cloud-authentication)-管理センターでユーザーを作成および管理します。また、Windows PowerShell または Azure Active Directory を使用してユーザーを管理することもできます。 
+- クラウド認証-管理センターでユーザーを作成および管理します。また、Windows PowerShell または Azure Active Directory を使用してユーザーを管理することもできます。 
     
-- [シームレスなシングルサインオンを使用したパスワードハッシュ同期](about-office-365-identity.md)Azure AD でオンプレミスのディレクトリオブジェクトの認証を有効にする最も簡単な方法です。 パスワードハッシュ同期 (PHS) を使用して、オンプレミスの Active Directory ユーザーアカウントオブジェクトを Office 365 と同期し、オンプレミスでユーザーを管理します。 
+- シームレスなシングルサインオンを使用したパスワードハッシュ同期 Azure AD でオンプレミスのディレクトリオブジェクトの認証を有効にする最も簡単な方法です。 パスワードハッシュ同期 (PHS) を使用して、オンプレミスの Active Directory ユーザーアカウントオブジェクトを Office 365 と同期し、オンプレミスでユーザーを管理します。 
     
-- [シームレスなシングルサインオンを使用したパススルー認証](about-office-365-identity.md)-1 つまたは複数のオンプレミスサーバーで実行されているソフトウェアエージェントを使用して Azure AD 認証サービスのパスワード検証を行い、ユーザーの直接の確認をオンプレミスの Active Directory。 
+- シームレスなシングルサインオンを使用したパススルー認証-1 つまたは複数のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、オンプレミスの Active Directory を使用してユーザーを直接検証することにより、Azure AD 認証サービスの簡単なパスワード検証を提供します。名簿. 
     
 ### <a name="federated-authentication"></a>フェデレーション認証
 
-- [フェデレーション認証オプション](about-office-365-identity.md#federated-authentication-options)-主に、より複雑な認証要件を持つ大規模なエンタープライズ組織では、オンプレミスのディレクトリオブジェクトは Office 365 と同期され、ユーザーアカウントは社内で管理されます。 
+- フェデレーション認証オプション-主に、より複雑な認証要件を持つ大規模なエンタープライズ組織では、オンプレミスのディレクトリオブジェクトは Office 365 と同期され、ユーザーアカウントは社内で管理されます。 
     
 - [サードパーティの認証および id プロバイダー](about-office-365-identity.md) -オンプレミスのディレクトリオブジェクトは、Office 365 に同期される場合があります。また、クラウドリソースへのアクセスは、主にサードパーティの id プロバイダー (IdP) によって管理されます。 
     
@@ -74,7 +74,7 @@ ms.locfileid: "34067193"
     > [!IMPORTANT]
     > Office 365 で、ライセンスを割り当てずにアカウントを作成する (SharePoint Online の場合) とは、アカウント所有者が Office 365 ポータルを表示できるが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Office 365 とオンプレミス環境との統合](office-365-integration.md)
   
