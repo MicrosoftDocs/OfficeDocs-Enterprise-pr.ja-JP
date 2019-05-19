@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: IdFix を使用して、Office 365 に同期する前に社内ディレクトリを準備し、クリーンアップする方法について説明します。
-ms.openlocfilehash: 134f9cd60e65b64b91fb42fd7cbfa300626fc867
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071073"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162370"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix ツールを使用して Office 365 と同期するためにディレクトリ属性を準備する
 このトピックでは、IdFix ツールの実行方法、発生する可能性のある一般的なエラー、推奨される修正、例、および多数のエラーが発生した場合の対処に関するベストプラクティスについて説明します。
@@ -81,3 +81,7 @@ IdFix を再度実行して、修正によって新しいエラーが発生し�
   
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>IdFix GUI を使用して変更をロールバックする
 [**適用**] をクリックして変更を適用するたびに、idfix ツールは、加えた変更を一覧表示するトランザクションログと呼ばれる個別のファイルを作成します。 トランザクションログを使用して、誤った変更を行った場合に最新のログに含まれていた変更のみをロールバックすることができます。 更新中に間違いを犯した場合は、[**元に戻す**] をクリックすると、最近適用した変更を元に戻すことができます。 [元に**戻す**] をクリックすると、idfix は、トランザクションログを使用して、最新のトランザクションログにある変更のみをロールバックします。 トランザクションログの使用の詳細については、「 [Reference: Office 365 IdFix トランザクションログ](idfix-transaction-log.md)」を参照してください。
+
+## <a name="next-step"></a>次の手順
+
+[ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)

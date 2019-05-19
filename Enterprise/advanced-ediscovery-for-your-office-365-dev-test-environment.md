@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '概要: Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。'
-ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068343"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162410"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境の Advanced eDiscovery
 
@@ -190,8 +190,6 @@ Office 365 Advanced 電子情報開示を使用すると、電子メールやド
 [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
   
 [Office 365 開発/テスト環境の DirSync](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Office 365 開発/テスト環境の Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
 

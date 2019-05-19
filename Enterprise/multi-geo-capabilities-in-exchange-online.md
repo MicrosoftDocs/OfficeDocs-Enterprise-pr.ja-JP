@@ -3,55 +3,55 @@ title: Exchange Multi-Geo
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Exchange Online の複数地域機能について説明します。
-ms.openlocfilehash: 70db45bb7626c49a2c9cd6ec827bff6ca16d4673
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
-ms.translationtype: MT
+description: Exchange Online の Multi-Geo 機能について説明します。
+ms.openlocfilehash: d518121c69ee29ee246c6947e361a74a3933310f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765069"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069933"
 ---
-# <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の複数地域機能
+# <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 
-複数地域環境では、ユーザーごとに Exchange Online メールボックスコンテンツ (rest のデータ) の場所を選択できます。
+Multi-Geo の環境では、Exchange Online メールボックスのコンテンツ (保管中のデータ) の場所をユーザー別に選択できます。
 
-メールボックスは、次の方法でサテライトの地理的な場所に配置できます。
+次の方法でメールボックスをサテライトの地理的位置に配置できます。
 
-- サテライトの地理的位置に、新しい Exchange Online メールボックスを直接作成する。
+- サテライトの地理的位置に新しい Exchange Online メールボックスを直接作成します。
 
-- ユーザーの優先するデータの場所を変更することによって、既存の Exchange Online メールボックスをサテライトの地理的な場所に移動します。
+- ユーザーが希望するデータの場所を変更することで、既存の Exchange Online メールボックスをサテライトの地理的位置に移動します。
 
-- オンプレミスの Exchange 組織からメールボックスを直接サテライトの地理的な場所にオンボードする。
+- メールボックスをオンプレミスの Exchange 組織から、サテライトの地理的位置に直接移動します。
 
 ## <a name="mailbox-placement-and-moves"></a>メールボックスの配置と移動
 
-Microsoft が前提条件となる複数地域構成手順を完了すると、Exchange Online は Azure AD のユーザーオブジェクトに対して**PreferredDataLocation**属性を優先します。
+Microsoft が事前に必要な複数地域の構成手順を完了すると、Exchange Online は Azure AD のユーザーオブジェクトで **PreferredDataLocation** 属性を受け入れます。
 
-exchange online は、 **PreferredDataLocation**プロパティを Azure AD から exchange online ディレクトリサービスの**MailboxRegion**プロパティに同期します。 **MailboxRegion**の値は、ユーザーのメールボックスと、関連付けられたアーカイブメールボックスを配置する地域の場所を決定します。 ユーザーのプライマリメールボックスとアーカイブメールボックスを異なる地域の場所に配置するように構成することはできません。 ユーザーオブジェクトごとに構成できる geo の場所は1つだけです。
+Exchange online は、** PreferredDataLocation** プロパティを、Azure AD から Exchange online ディレクトリサービスの** MailboxRegion** プロパティに同期します。 **MailboxRegion**の値は、ユーザーのメールボックスと、関連付けられている アーカイブ メールボックス が配置されている地理的位置を決定します。 別の地理的位置に存在するユーザーの プライマリ メールボックス と アーカイブ メールボックス を構成することはできません。 ユーザーオブジェクトごとに構成できる地理的位置は1つだけです。
 
-- 既存のメールボックスを持つユーザーに対して**PreferredDataLocation**が構成されている場合、メールボックスは再配置キューに入れられ、指定した地域の場所に自動的に移動されます。
+- ユーザーの既存のメールボックスを使用して **PreferredDataLocation** を構成した場合、メールボックスは再配置キューに入れられ、指定された地理的位置に自動的に移動されます。
 
-- 既存のメールボックスがないユーザーに対して**PreferredDataLocation**が構成されている場合、メールボックスのプロビジョニング時に、指定された地理的位置にプロビジョニングされます。
+- 既存のメールボックスを持たないユーザーに** PreferredDataLocation** を構成したてメールボックスをプロビジョンする場合、そのメールボックスは指定された地理的位置にプロビジョニングされます。
 
-- **PreferredDataLocation**がユーザーに対して指定されていない場合、メールボックスを準備すると、そのメールボックスは中央の地域の場所にプロビジョニングされます。
+- **PreferredDataLocation**がユーザーに指定されていない場合、メールボックスは中央の地理的位置にプロビジョニングされます。
 
-- **PreferredDataLocation**のコードが正しくない場合 (たとえば、タイプが NAN ではなく NAN)、メールボックスは中央地域の場所でプロビジョニングされます。
+- **PreferredDataLocation**コードが誤っている場合 (たとえば、NAMでなくNANと入力した場合)、メールボックスは中央の 地理的位置にプロビジョニングされます。
 
-**注**: 複数地域機能と Skype for business Online 地域的 hosted 会議の両方で、ユーザーオブジェクトの**PreferredDataLocation**プロパティを使用してサービスを検索します。 地域的でホストされている会議のユーザーオブジェクトに対して**PreferredDataLocation**値を構成すると、そのユーザーのメールボックスは、Office 365 テナントで複数地域を有効にした後、指定した地域の場所に自動的に移動されます。
+**注**: 複数地域の機能と Skype for Business Online が地域的にホストする会議のいずれの場合も、ユーザーオブジェクトの **PreferredDataLocation** プロパティがサービスを見つけます。 地域的に管理されている会議用のユーザーオブジェクトに** PreferredDataLocation** の値を構成すると、そのユーザーのメールボックスは、Office 365 テナントで複数地域が有効になった後、指定した地理的位置に自動的に移動します。
 
-## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online の複数地域における機能上の制限
+## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online における複数地域の機能に関する制限
 
-- Exchange 管理センター (EAC) で使用可能なセキュリティおよびコンプライアンス機能 (監査、電子情報開示など) は、複数地域の組織では使用できません。 代わりに、 [Office 365 security & コンプライアンスセンター](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)を使用して、セキュリティとコンプライアンスの機能を構成する必要があります。
+- Exchange 管理センター (EAC) で利用できるセキュリティ機能およびコンプライアンス機能（たとえば、監査や電子情報開示）は、複数地域の組織では利用できません。 セキュリティとコンプライアンスの機能を構成するには、[Office 365 セキュリティ/コンプライアンス センター](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)を使用する必要があります。
 
-- Outlook for Mac のユーザーは、自分のメールボックスを新しい地域の場所に移動している間、オンラインアーカイブフォルダーへのアクセスが一時的に失われる可能性があります。 この条件は、ユーザーのプライマリメールボックスとアーカイブメールボックスが異なる地域の場所にある場合に発生します。これは、異なる地域間メールボックスの移動が異なる時間に完了する可能性があるためです。
+- Outlook for Mac を使用している場合は、メールボックスを新しい地理的位置に移動する際、オンラインアーカイブ フォルダーに一時的にアクセスできなくなることがあります。 この状態は、ユーザーのプライマリメールボックスとアーカイブメールボックスが異なる地理的位置にある場合に発生します。これは、複数地域のメールボックスの移動が異なる時刻に完了する可能性があるためです。
 
-- ユーザーが*メールボックスフォルダー*を web 上の outlook (旧称 outlook web App または OWA) の地理的な場所の間で共有することはできません。 たとえば、欧州連合のユーザーは、Outlook on the web を使用して、米国にあるメールボックス内の共有フォルダーを開くことができません。 ただし、Web 上の outlook では、「[別のユーザーのメールボックスを outlook Web App の別のブラウザーウィンドウで開く](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)」の説明に従って、別の地域の場所にある別*のメールボックス*を開くことができます。
+- ユーザーは、Outlook on the web (旧 Outlook web App または OWA) の地理的位置を跨いで*メールボックスフォルダー*を共有できません。 たとえば、欧州連合のユーザーが Outlook on the web を使用して、米国にあるメールボックス内の共有フォルダーを開くことはできません。 ただし、Outlook on the web では、 *「Outlook Web App の別のブラウザーウィンドウで他のユーザーのメールボックスを開く」* の説明に従って、別のブラウザーウィンドウを使って異なる地理的位置にある[他のメールボックス](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)を開くことができます。
 
-  **注**: 地域間メールボックスフォルダーの共有は、Outlook on Windows でサポートされています。
+  **注**: 地域間のメールボックスフォルダーの共有は、Outlook on the Windows でサポートされています。
 
-- パブリックフォルダーは、複数地域の組織でサポートされています。 ただし、パブリックフォルダーは中央の地理的な場所に保持されている必要があります。 パブリックフォルダーをサテライトの地域の場所に移動することはできません。
+- 複数地域にある組織では、パブリックフォルダーがサポートされています。 ただし、パブリックフォルダーは中央の地理的位置に設定する必要があります。 パブリックフォルダーをサテライトの地理的位置に移動することはできません。

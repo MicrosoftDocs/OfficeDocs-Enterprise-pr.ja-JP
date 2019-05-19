@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 のネットワーク接続の計画を開始する前に、Office 365 トラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則を理解しておくことが重要です。 この記事は、Office 365 ネットワーク接続を安全に最適化するための最新のガイダンスを理解するのに役立ちます。
-ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069823"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162500"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 ネットワーク接続の原則
 
@@ -200,7 +200,7 @@ Microsoft は、さまざまな Office 365 セキュリティ機能を提供し�
   
 - **多要素認証 (MFA) を使用する**MFA は、パスワードを正確に入力した後に、スマートフォンでの通話、テキストメッセージ、またはアプリの通知の確認をユーザーに要求することで、強力なパスワード戦略に保護の層を追加します。
 
-- **Office 365 Cloud App Security の使用**ポリシーを設定して異常なアクティビティを追跡し、処理を行います。 Office 365 Cloud App Security で通知を設定することで、管理者は、大量のデータのダウンロード、複数のサインイン試行、または不明または危険な IP アドレスからの接続など、異常または危険なユーザーアクティビティを確認できます。
+- **Microsoft Cloud App Security の使用**ポリシーを設定して異常なアクティビティを追跡し、処理を行います。 Microsoft Cloud App Security を使用して通知を設定します。管理者は、大量のデータのダウンロード、サインインに失敗した場合や、不明または危険な IP アドレスからの接続など、異常または危険なユーザーアクティビティを確認できます。
 
 - **データ損失防止 (DLP) を構成する**DLP を使用すると、機密データを識別し、ポリシーを作成して、ユーザーが偶然または故意にデータを共有するのを防ぐのに役立ちます。 DLP は、Exchange Online、SharePoint Online、および OneDrive を含む Office 365 に対して機能するため、ワークフローを中断することなく、ユーザーが準拠し続けることができます。
 

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: cd7fb1db2d5372097f3da0e6a2521335d7933015
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102468"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162390"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 identity モデルと Azure Active Directory
 
@@ -43,14 +43,14 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
 
 |||
 |:-------|:-----|:-----|
-|  | クラウド専用の id | ハイブリッド id |
-| 定義 | ユーザーアカウントは、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントにのみ存在します。 | ユーザーアカウントが AD DS に存在し、Microsoft 365 サブスクリプションの Azure AD テナントにもコピーがあります。 Azure AD のユーザーアカウントには、ユーザーアカウントのパスワードのハッシュ化されたバージョンも含まれる場合があります。 |
-| Microsoft 365 でユーザー資格情報を認証する方法 | Microsoft 365 サブスクリプションの Azure AD テナントは、クラウド id アカウントを使用して認証を実行します。 | Microsoft 365 サブスクリプションの Azure AD テナントは、認証プロセスを処理するか、またはユーザーを別の id プロバイダーにリダイレクトします。 |
-| 最適な対象 | 社内の AD DS を必要としない、または必要としない組織。 | AD DS または別の id プロバイダーを使用している組織。 |
-| 最大のメリット | 簡単に使用できます。 その他のディレクトリツールやサーバーは必要ありません。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
+|  | **クラウド専用の id** | **ハイブリッド id** |
+| **定義** | ユーザーアカウントは、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントにのみ存在します。 | ユーザーアカウントが AD DS に存在し、Microsoft 365 サブスクリプションの Azure AD テナントにもコピーがあります。 Azure AD のユーザーアカウントには、ユーザーアカウントのパスワードのハッシュ化されたバージョンも含まれる場合があります。 |
+| **Microsoft 365 でユーザー資格情報を認証する方法** | Microsoft 365 サブスクリプションの Azure AD テナントは、クラウド id アカウントを使用して認証を実行します。 | Microsoft 365 サブスクリプションの Azure AD テナントは、認証プロセスを処理するか、またはユーザーを別の id プロバイダーにリダイレクトします。 |
+| **最適シナリオ** | 社内の AD DS を必要としない、または必要としない組織。 | AD DS または別の id プロバイダーを使用している組織。 |
+| **最大のメリット** | 簡単に使用できます。 その他のディレクトリツールやサーバーは必要ありません。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
 ||||
 
-### <a name="cloud-only-identity"></a>クラウド専用の id
+## <a name="cloud-only-identity"></a>クラウド専用の id
 
 クラウド専用の id は、Azure AD のみに存在するユーザーアカウントを使用します。 クラウド id は、通常、オンプレミスサーバーを持たない小規模な組織、または AD DS を使用してローカル id を管理しない小規模な組織で使用されます。 
 
@@ -60,7 +60,7 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
 
 オンプレミスとリモート (オンライン) の両方のユーザーは、Azure AD のユーザーアカウントとパスワードを使用して Office 365 cloud services にアクセスします。 Azure AD は、保存されたユーザーアカウントとパスワードに基づいてユーザー資格情報を認証します。
 
-#### <a name="administration"></a>管理
+### <a name="administration"></a>管理
 ユーザーアカウントは Azure AD のみに格納されているため、クラウド id は、 [Microsoft 365 管理センター](https://admin.microsoft.com)と Windows PowerShell のツールを使用して、graph モジュール用 Azure Active Directory PowerShell を使用して管理します。 
 
 ## <a name="hybrid-identity"></a>ハイブリッド id
@@ -81,14 +81,15 @@ Azure AD テナントには、AD DS アカウントのコピーがあります�
 >ハイブリッド id のユーザーアカウントを同期するには、常に Azure AD Connect を使用する必要があります。 ライセンスの割り当てとグループ管理、アクセス許可の構成、およびユーザーアカウントに関連するその他の管理タスクを実行するには、Azure AD の同期されたユーザーアカウントが必要です。
 >
 
-#### <a name="administration"></a>管理
+### <a name="administration"></a>管理
 
 元のユーザーアカウントと権限のあるユーザーアカウントは、オンプレミスの AD DS に格納されるので、Active Directory ユーザーおよびコンピューターツールなどの AD DS と同じツールを使用して id を管理します。 
 
 Microsoft 365 管理センターまたは Windows PowerShell を使用して、Azure AD で同期されたユーザーアカウントを管理することはありません。
 
-
 ## <a name="next-step"></a>次の手順
+
+クラウド専用の id モデルが必要な場合は、「[クラウド専用](cloud-only-identities.md)の id」を参照してください。
 
 ハイブリッド id モデルが必要な場合は、「[同期 id と認証方法の計画](plan-for-directory-synchronization.md)」を参照してください。
   

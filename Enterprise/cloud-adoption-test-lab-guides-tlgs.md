@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 概要：これらのクラウド採用テストラボガイド（TLG）を使用して、Office 365のデモンストレーション、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: a61716ae34d8dbe3f710696570c46cefd0f4aa4c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 37a99c313339f0894bf6fba0040bf2f7c2160fa6
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068143"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162380"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>クラウド導入のテスト ラボ ガイド (TLG) を使用した Office 365 のテスト
 
@@ -61,10 +61,6 @@ Office 365 の開発/テスト環境では、Office 365 のエンタープライ
 - [Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Active Directoryドメインサービス（AD DS）ドメインのアカウントを使用してフェデレーション認証を構成し、実演します。
-    
-- [Office 365 開発/テスト環境の Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
-    
-    Office 365 Cloud App Security の構成とデモンストレーションを行い、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成します。
     
 - [Office 365 開発/テスト環境の Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
