@@ -204,8 +204,7 @@
 ### [ディレクトリ同期を無効にする](turn-off-directory-synchronization.md)
 
 ## ユーザー
-### 
-  [Office 365 Admin ヘルプ センター](https://support.office.com/ja-JP/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 Admin ヘルプ センター](https://support.office.com/ja-JP/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [ユーザー アカウント管理ツール](manage-office-365-accounts.md)
 ### [同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
@@ -223,8 +222,7 @@
 
 ## サービス正常性
 ### [確認方法](view-service-health.md)
-### 
-  [サポート オプション](https://support.office.com/ja-JP/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [サポート オプション](https://support.office.com/ja-JP/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## パフォーマンス
 ### [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
