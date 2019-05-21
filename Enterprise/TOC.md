@@ -31,7 +31,7 @@
 
 ### [Office 365 のサード パーティ SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
 ### [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
-### [Office 365 管理者向けの統合アプリおよび Azure AD](integrated-apps-and-azure-ads.md)
+### [統合アプリおよび Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Office 365 の統合
 #### [オンプレミスとの統合](office-365-integration.md)
@@ -43,8 +43,7 @@
 ## Office 365 クライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
-### 
-  [MDM または Intune を選択する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/choose-between-mdm-and-intune)
+### [MDM または Intune を選択する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
 ### [先進認証](office-365-client-support-modern-authentication.md)
 ### [シングル サインオン](office-365-client-support-single-sign-on.md)
@@ -80,7 +79,6 @@
 ### [ディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)
 ### [多要素認証](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [フェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Cloud App Security](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 ### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [機密性の高いファイルの保護](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
@@ -122,22 +120,25 @@
 #### [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
 #### [Office 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
 
-## 2. ID をセキュリティで保護する
-### [ディレクトリ同期を準備する](prepare-for-directory-synchronization.md)
-### IdFix ツールを使用する
-#### [IdFix ツールを使用してディレクトリ属性を準備する](prepare-directory-attributes-for-synch-with-idfix.md)
-#### [IdFix ツールのインストールと実行](install-and-run-idfix.md)
-#### [IdFix で除外されるオブジェクトと属性、およびサポートされるオブジェクトと属性](idfix-excluded-and-supported-objects-and-attributes.md)
-#### [IdFix トランザクション ログ](idfix-transaction-log.md)
-### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
-### [全体管理者アカウントを保護する](protect-your-global-administrator-accounts.md)
+## 2. ID をセットアップする
+### [グローバル管理者アカウントを保護する](protect-your-global-administrator-accounts.md)
+### [クラウド専用の ID](cloud-only-identities.md)
+### ハイブリッド ID
+#### [ディレクトリ同期を準備する](prepare-for-directory-synchronization.md)
+#### IdFix ツールを使用する
+##### [IdFix ツールを使用してディレクトリ属性を準備する](prepare-directory-attributes-for-synch-with-idfix.md)
+##### [IdFix ツールのインストールと実行](install-and-run-idfix.md)
+##### [IdFix で除外されるオブジェクトと属性、およびサポートされるオブジェクトと属性](idfix-excluded-and-supported-objects-and-attributes.md)
+##### [IdFix トランザクション ログ](idfix-transaction-log.md)
+#### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
+### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
 
 ## 3. クライアント ソフトウェアを展開する
 ### [Office 365 ProPlus を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Skype for Business クライアントを展開する](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [モバイル アプリの展開と管理](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Intune でのデバイス管理を構成する](https://docs.microsoft.com/intune/setup-steps)
+## [4. モバイル デバイス管理を構成する](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
 ## 5. サービスとアプリケーションを構成する
 ### [準備する](configure-services-and-applications.md)
