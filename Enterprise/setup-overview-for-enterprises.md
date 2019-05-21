@@ -15,35 +15,65 @@ ms.collection:
 - M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 次の手順の概要は、Office 365 の展開、Active Directory の接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
-ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+description: これらの概要手順は、ネットワークのセットアップ、id の作成、Office 365 ProPlus の展開、データの移行、組織内のユーザーが Office 365 の使用を開始する際に役立つように設計されています。
+ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102545"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249505"
 ---
-# <a name="deploy-office-365-enterprise-for-your-organization"></a><span data-ttu-id="5c9af-103">Office 365 Enterprise を組織で展開する</span><span class="sxs-lookup"><span data-stu-id="5c9af-103">Deploy Office 365 Enterprise for your organization</span></span>
-<span data-ttu-id="5c9af-p101">オンプレミス インフラストラクチャで Office 365 Enterprise の展開と統合を開始します。次の手順の概要は、ディレクトリの接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p101">Ready to deploy and integrate Office 365 Enterprise with your on-premises infrastructure? These overview steps are designed to help you connect your directory, migrate your data, and help the people in your organization begin using the latest version of Office 2016.</span></span>
-  
-<span data-ttu-id="5c9af-106">次の手順は、Office 365 Enterprise のカスタム展開を開始する企業と[非営利団体](https://go.microsoft.com/fwlink/?LinkId=627221) に向けたものです。</span><span class="sxs-lookup"><span data-stu-id="5c9af-106">These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Office 365 Enterprise.</span></span> 
-  
-<span data-ttu-id="5c9af-p102">Office 365 Enterprise をお持ちでない場合は、「[一般法人向け Office 365 のセットアップ](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)」で中小企業向けの手順を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p102">Don't have Office 365 Enterprise? See [Set up Office 365 for business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) for instructions for small businesses.</span></span> 
-  
-## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a><span data-ttu-id="5c9af-109">FastTrack を使ったガイドに沿ったエンタープライズ Office 365 のセットアップ プロセス</span><span class="sxs-lookup"><span data-stu-id="5c9af-109">Guided enterprise Office 365 setup process with FastTrack</span></span>
-<span data-ttu-id="5c9af-p103">Office 365 の**[FastTrack](https://docs.microsoft.com/fasttrack)** は、Office 365 を展開するための最適な方法です。FastTrack は最も一般的な展開構成の手順をご案内し、途中で質問にお答えすることもできます。セルフ ヘルプまたはパートナーによるガイダンスをご希望する場合は、「[Office 365 のセットアップ](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)」、「[Office 365 のセットアップ ウィザード](https://aka.ms/o365fasttrack)」、または「[認定パートナーを見つける](https://partnercenter.microsoft.com/en-us/pcv/search)」をご利用ください。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p103">Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** is the best method for deploying Office 365. FastTrack guides you through the most common deployment configurations and can answer questions along the way. If you want to self-help or guidance from a partner, use our [Office 365 setup guide](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), our [Office 365 setup wizards](https://aka.ms/o365fasttrack), or [find a qualified partner](https://partnercenter.microsoft.com/en-us/pcv/search).</span></span>
+# <a name="deploy-office-365-enterprise-for-your-organization"></a><span data-ttu-id="8b797-103">Office 365 Enterprise を組織で展開する</span><span class="sxs-lookup"><span data-stu-id="8b797-103">Deploy Office 365 Enterprise for your organization</span></span>
 
-## <a name="self-deployment-of-office-365"></a><span data-ttu-id="5c9af-113">管理者自身による Office 365 の展開</span><span class="sxs-lookup"><span data-stu-id="5c9af-113">Self-deployment of Office 365</span></span>
-<span data-ttu-id="5c9af-114">管理者自身がOffice 365 を導入する場合は、次の展開の手順をお役立てください。</span><span class="sxs-lookup"><span data-stu-id="5c9af-114">If you want to deploy Office 365 on your own, the following deployment steps are here to help.</span></span>
+<span data-ttu-id="8b797-104">Office 365 Enterprise を展開し、オンプレミスのインフラストラクチャと統合し、従業員がクラウドベースの生産性とコラボレーションを活用できるようにする準備ができていますか。</span><span class="sxs-lookup"><span data-stu-id="8b797-104">Are you ready to deploy Office 365 Enterprise, integrate it with your on-premises infrastructure, and enable your employees to take advantage of cloud-based productivity and collaboration?</span></span>
 
-1. <span data-ttu-id="5c9af-p104">**[Office 365 のための準備](get-your-organization-ready-for-office-365.md)**。Office 365 の導入に向けて、ネットワーク、ディレクトリ、およびエンド ユーザーの準備をお手伝いするツールやリソースを提供します。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p104">**[Get ready for Office 365](get-your-organization-ready-for-office-365.md)**. These tools and resources will help you get your network, directory, and end users ready for Office 365.</span></span>
+<span data-ttu-id="8b797-105">この記事では、2つの展開オプションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="8b797-105">This article describes two deployment options, whether you want help or are doing it on your own.</span></span> <span data-ttu-id="8b797-106">いずれの場合も、展開が成功するには、次に示すガイド付きのパスが提供されます。</span><span class="sxs-lookup"><span data-stu-id="8b797-106">In each case, Microsoft provides a guided path for you to follow for deployment success.</span></span>
 
-2. <span data-ttu-id="5c9af-117">**サインインして、Office 365 にインターネットドメインを追加**します。</span><span class="sxs-lookup"><span data-stu-id="5c9af-117">**Sign in and add your internet domain(s) to Office 365**.</span></span> <span data-ttu-id="5c9af-118">[Microsoft 365 管理センター](https://portal.microsoft.com)にサインインし、[**セットアップ > Domains**] をクリックして、[**新しいドメイン**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5c9af-118">Sign into the [Microsoft 365 admin center](https://portal.microsoft.com), click **Setup > Domains**, and then click **New domain**.</span></span> <span data-ttu-id="5c9af-119">ユーザーを追加したり、メールを移行したりせずに、1つ以上のドメインを Office 365 サブスクリプションに追加します。</span><span class="sxs-lookup"><span data-stu-id="5c9af-119">Add one or more domains to your Office 365 subscription without adding users or migrating email.</span></span> 
+## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a><span data-ttu-id="8b797-107">FastTrack を使ったガイドに沿ったエンタープライズ Office 365 のセットアップ プロセス</span><span class="sxs-lookup"><span data-stu-id="8b797-107">Guided enterprise Office 365 setup process with FastTrack</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="5c9af-120">オンプレミスのディレクトリからユーザーを同期したりシングル サインオンを利用したりする場合は、基本的なセットアップ手順はお使いいただけません。</span><span class="sxs-lookup"><span data-stu-id="5c9af-120">The basic set up instructions won't work if you want to synchronize your users from an on-premises directory or utilize Single Sign-On.</span></span>
+<span data-ttu-id="8b797-108">Office 365 を展開するための最適な方法は、 **[Fasttrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** です。</span><span class="sxs-lookup"><span data-stu-id="8b797-108">**[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** is the best method for deploying Office 365.</span></span> <span data-ttu-id="8b797-109">FastTrack では、最も一般的な展開構成を順を追って説明し、その方法についての質問に答えることができます。</span><span class="sxs-lookup"><span data-stu-id="8b797-109">FastTrack guides you through the most common deployment configurations and can answer questions along the way.</span></span> 
 
-3. <span data-ttu-id="5c9af-p106">**[ディレクトリを Office 365 に接続](about-office-365-identity.md)** します。ID の同期やシングル サインオンの構成オプションに関するガイドです。[AAD Connect アドバイザー](https://aka.ms/aadconnectpwsync)、[Azure AD Premium セットアップ ガイド](https://aka.ms/aadpguidance)を使用して、カスタマイズしたセットアップ ガイダンスを使います。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p106">**[Connect your directory to Office 365](about-office-365-identity.md)**. Guide to the identity synchronization and/or single sign-on configuration options. Use the [AAD Connect advisor](https://aka.ms/aadconnectpwsync) and the [Azure AD Premium setup guide](https://aka.ms/aadpguidance) to get customized set up guidance.</span></span>
-4. <span data-ttu-id="5c9af-p107">**[Office 365 のサービスとアプリケーションを構成](configure-services-and-applications.md)** します。メール、ファイル共有、インスタント メッセージング、またはその他の Office 365 サービスとアプリケーションのいずれかを構成するには、ここから開始します。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p107">**[Configure Office 365 services and applications](configure-services-and-applications.md)**. Start here to configure email, file sharing, instant messaging, or any of the other Office 365 services and applications.</span></span>
-5. <span data-ttu-id="5c9af-p108">**[Office 365 へデータの移行](migrate-data-to-office-365.md)** をします。サービスを構成すると、データの移行を開始できるようになります。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p108">**[Migrate data to Office 365](migrate-data-to-office-365.md)**. Once the services are configured, you can start migrating data.</span></span>
-6. <span data-ttu-id="5c9af-p109">**[ユーザーが Office 365 を使用できるようにする](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)** します。組織内のユーザーが Office 365 の利用に慣れるためのお手伝いをするには、このリソースをお使いください。</span><span class="sxs-lookup"><span data-stu-id="5c9af-p109">**[Get people using Office 365](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)**. Help people in your organization build confidence using Office 365 with these resources.</span></span>
+<span data-ttu-id="8b797-110">一連のセットアップガイドにアクセスするには、Office 365 サブスクリプションにサインインして、 [office 365](https://aka.ms/o365fasttrack)のセットアップに進みます。</span><span class="sxs-lookup"><span data-stu-id="8b797-110">To access a series of setup guides, sign in to your Office 365 subscription, and then go to [Setting up Office 365](https://aka.ms/o365fasttrack).</span></span>
+
+>[!Note]
+><span data-ttu-id="8b797-111">[Microsoft パートナー](https://www.microsoft.com/solution-providers/home)からサポートを受けることもできます。</span><span class="sxs-lookup"><span data-stu-id="8b797-111">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
+>
+
+## <a name="self-deployment-of-office-365-enterprise"></a><span data-ttu-id="8b797-112">Office 365 Enterprise の自己展開</span><span class="sxs-lookup"><span data-stu-id="8b797-112">Self-deployment of Office 365 Enterprise</span></span>
+
+<span data-ttu-id="8b797-113">Office 365 Enterprise を独自に展開するには、クラウドサービスの構成とユーザーの導入を簡素化する設計上の決定を行うために詳細な調査を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b797-113">Deploying Office 365 Enterprise on your own requires that you perform detailed research to make the design decisions that streamline cloud service configuration and user adoption.</span></span> <span data-ttu-id="8b797-114">[ここ](get-your-organization-ready-for-office-365.md)から計画を開始します。</span><span class="sxs-lookup"><span data-stu-id="8b797-114">Start your planning [here](get-your-organization-ready-for-office-365.md).</span></span>
+
+<span data-ttu-id="8b797-115">Office 365 Enterprise を独自に展開するには、以下の手順を実行することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="8b797-115">To deploy Office 365 Enterprise on your own, here are the recommended steps.</span></span>
+
+1. <span data-ttu-id="8b797-116">ネットワークをセットアップする</span><span class="sxs-lookup"><span data-stu-id="8b797-116">Set up your network</span></span>
+
+   <span data-ttu-id="8b797-117">インターネットドメインの追加とオンプレミスユーザーのネットワークパフォーマンスの最適化について説明します。</span><span class="sxs-lookup"><span data-stu-id="8b797-117">Includes adding your Internet domains and optimizing the network performance for your on-premises users.</span></span> <span data-ttu-id="8b797-118">[ここ](set-up-network-for-office-365.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-118">Start [here](set-up-network-for-office-365.md).</span></span>
+ 
+2. <span data-ttu-id="8b797-119">Id を設定する</span><span class="sxs-lookup"><span data-stu-id="8b797-119">Set up your identities</span></span>
+
+   <span data-ttu-id="8b797-120">Id モデル (クラウドのみまたはハイブリッド) を決定し、ハイブリッド id に対して、オンプレミスの Active Directory ドメインサービス (AD DS) と Office 365 サブスクリプションとの間のディレクトリ同期をセットアップします。</span><span class="sxs-lookup"><span data-stu-id="8b797-120">Includes determining an identity model (cloud-only or hybrid), and for hybrid identity, setting up directory synchronization between your on-premises Active Directory Domain Services (AD DS) and your Office 365 subscription.</span></span> <span data-ttu-id="8b797-121">[ここ](protect-your-global-administrator-accounts.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-121">Start [here](protect-your-global-administrator-accounts.md).</span></span>
+
+3. <span data-ttu-id="8b797-122">セキュリティ機能を実装する</span><span class="sxs-lookup"><span data-stu-id="8b797-122">Implement security capabilities</span></span>
+
+   <span data-ttu-id="8b797-123">最初の30日間、90日以降に、テナントと id に対する基本および強化されたセキュリティ、脅威、情報保護を構成およびロールアウトする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8b797-123">Includes configuring and rolling out basic and enhanced security, threat, and information protections for your tenant and identities in the first 30 days, 90 days, and beyond.</span></span> <span data-ttu-id="8b797-124">[ここ](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-124">Start [here](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).</span></span>
+ 
+4. <span data-ttu-id="8b797-125">クライアントソフトウェアを展開する</span><span class="sxs-lookup"><span data-stu-id="8b797-125">Deploy client software</span></span>
+
+   <span data-ttu-id="8b797-126">Office 365 ProPlus を展開します。これには、デバイス上の Office スイート (Word、Excel、PowerPoint、その他のバージョン) のクラウド更新および常に最新バージョンが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8b797-126">Includes deploying Office 365 ProPlus, the cloud-updated and always-current version of the Office suite (Word, Excel, PowerPoint, and others) on your devices.</span></span> <span data-ttu-id="8b797-127">すべての Office 365 クライアントライセンスには、Office 365 ProPlus のライセンスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8b797-127">Every Office 365 client license includes a license for Office 365 ProPlus.</span></span> <span data-ttu-id="8b797-128">[ここ](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-128">Start [here](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus).</span></span>
+ 
+5. <span data-ttu-id="8b797-129">モバイルデバイス管理の設定</span><span class="sxs-lookup"><span data-stu-id="8b797-129">Set up mobile device management</span></span>
+
+   <span data-ttu-id="8b797-130">Office 365 Enterprise には、ユーザーのモバイルデバイスをセキュリティで保護し、管理するのに役立つ、モバイルデバイス管理機能が含まれています。</span><span class="sxs-lookup"><span data-stu-id="8b797-130">Office 365 Enterprise includes mobile device management capabilities that help you secure and manage your users' mobile devices.</span></span> <span data-ttu-id="8b797-131">[ここ](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-131">Start [here](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).</span></span>
+ 
+6. <span data-ttu-id="8b797-132">サービスとアプリケーションを構成する</span><span class="sxs-lookup"><span data-stu-id="8b797-132">Configure services and applications</span></span>
+
+   <span data-ttu-id="8b797-133">データの移行についての情報と、Exchange Online、SharePoint Online、Teams などの主要な Office 365 サービスで開始する記事へのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8b797-133">Includes information on migration of your data and links to articles that get you started on key Office 365 services such as Exchange Online, SharePoint Online, and Teams.</span></span> <span data-ttu-id="8b797-134">[ここ](configure-services-and-applications.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-134">Start [here](configure-services-and-applications.md).</span></span>
+ 
+7. <span data-ttu-id="8b797-135">ユーザーをトレーニングする</span><span class="sxs-lookup"><span data-stu-id="8b797-135">Train your users</span></span>
+
+   <span data-ttu-id="8b797-136">ユーザーが迅速に Office 365 を最大限に利用できるようにするための短いビデオが含まれています。</span><span class="sxs-lookup"><span data-stu-id="8b797-136">Includes short videos that help your users get the most out of Office 365 quickly.</span></span> <span data-ttu-id="8b797-137">[ここ](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="8b797-137">Start [here](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users).</span></span>
+ 
+
+>[!Note]
+><span data-ttu-id="8b797-138">これらの手順は、Office 365 Enterprise のカスタム展開で開始する必要があるビジネスおよび[非](https://go.microsoft.com/fwlink/?LinkId=627221)営利団体にも適用されます。</span><span class="sxs-lookup"><span data-stu-id="8b797-138">These steps are also for businesses and [nonprofits](https://go.microsoft.com/fwlink/?LinkId=627221) that want to start with a custom deployment of Office 365 Enterprise.</span></span> 
+>
