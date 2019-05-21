@@ -15,35 +15,65 @@ ms.collection:
 - M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: 次の手順の概要は、Office 365 の展開、Active Directory の接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
-ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+description: これらの概要手順は、ネットワークのセットアップ、id の作成、Office 365 ProPlus の展開、データの移行、組織内のユーザーが Office 365 の使用を開始する際に役立つように設計されています。
+ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102545"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249505"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Office 365 Enterprise を組織で展開する
-オンプレミス インフラストラクチャで Office 365 Enterprise の展開と統合を開始します。次の手順の概要は、ディレクトリの接続、データの移行、および最新バージョンの Office 2016 の利用開始に向けて組織のユーザーのヘルプを行う際に役立つよう作られています。
-  
-次の手順は、Office 365 Enterprise のカスタム展開を開始する企業と[非営利団体](https://go.microsoft.com/fwlink/?LinkId=627221) に向けたものです。 
-  
-Office 365 Enterprise をお持ちでない場合は、「[一般法人向け Office 365 のセットアップ](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)」で中小企業向けの手順を参照してください。 
-  
+
+Office 365 Enterprise を展開し、オンプレミスのインフラストラクチャと統合し、従業員がクラウドベースの生産性とコラボレーションを活用できるようにする準備ができていますか。
+
+この記事では、2つの展開オプションについて説明します。 いずれの場合も、展開が成功するには、次に示すガイド付きのパスが提供されます。
+
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>FastTrack を使ったガイドに沿ったエンタープライズ Office 365 のセットアップ プロセス
-Office 365 の**[FastTrack](https://docs.microsoft.com/fasttrack)** は、Office 365 を展開するための最適な方法です。FastTrack は最も一般的な展開構成の手順をご案内し、途中で質問にお答えすることもできます。セルフ ヘルプまたはパートナーによるガイダンスをご希望する場合は、「[Office 365 のセットアップ](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)」、「[Office 365 のセットアップ ウィザード](https://aka.ms/o365fasttrack)」、または「[認定パートナーを見つける](https://partnercenter.microsoft.com/en-us/pcv/search)」をご利用ください。
 
-## <a name="self-deployment-of-office-365"></a>管理者自身による Office 365 の展開
-管理者自身がOffice 365 を導入する場合は、次の展開の手順をお役立てください。
+Office 365 を展開するための最適な方法は、 **[Fasttrack For office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** です。 FastTrack では、最も一般的な展開構成を順を追って説明し、その方法についての質問に答えることができます。 
 
-1. **[Office 365 のための準備](get-your-organization-ready-for-office-365.md)**。Office 365 の導入に向けて、ネットワーク、ディレクトリ、およびエンド ユーザーの準備をお手伝いするツールやリソースを提供します。
+一連のセットアップガイドにアクセスするには、Office 365 サブスクリプションにサインインして、 [office 365](https://aka.ms/o365fasttrack)のセットアップに進みます。
 
-2. **サインインして、Office 365 にインターネットドメインを追加**します。 [Microsoft 365 管理センター](https://portal.microsoft.com)にサインインし、[**セットアップ > Domains**] をクリックして、[**新しいドメイン**] をクリックします。 ユーザーを追加したり、メールを移行したりせずに、1つ以上のドメインを Office 365 サブスクリプションに追加します。 
+>[!Note]
+>[Microsoft パートナー](https://www.microsoft.com/solution-providers/home)からサポートを受けることもできます。
+>
 
->[!IMPORTANT] 
->オンプレミスのディレクトリからユーザーを同期したりシングル サインオンを利用したりする場合は、基本的なセットアップ手順はお使いいただけません。
+## <a name="self-deployment-of-office-365-enterprise"></a>Office 365 Enterprise の自己展開
 
-3. **[ディレクトリを Office 365 に接続](about-office-365-identity.md)** します。ID の同期やシングル サインオンの構成オプションに関するガイドです。[AAD Connect アドバイザー](https://aka.ms/aadconnectpwsync)、[Azure AD Premium セットアップ ガイド](https://aka.ms/aadpguidance)を使用して、カスタマイズしたセットアップ ガイダンスを使います。
-4. **[Office 365 のサービスとアプリケーションを構成](configure-services-and-applications.md)** します。メール、ファイル共有、インスタント メッセージング、またはその他の Office 365 サービスとアプリケーションのいずれかを構成するには、ここから開始します。
-5. **[Office 365 へデータの移行](migrate-data-to-office-365.md)** をします。サービスを構成すると、データの移行を開始できるようになります。
-6. **[ユーザーが Office 365 を使用できるようにする](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)** します。組織内のユーザーが Office 365 の利用に慣れるためのお手伝いをするには、このリソースをお使いください。
+Office 365 Enterprise を独自に展開するには、クラウドサービスの構成とユーザーの導入を簡素化する設計上の決定を行うために詳細な調査を行う必要があります。 [ここ](get-your-organization-ready-for-office-365.md)から計画を開始します。
+
+Office 365 Enterprise を独自に展開するには、以下の手順を実行することをお勧めします。
+
+1. ネットワークをセットアップする
+
+   インターネットドメインの追加とオンプレミスユーザーのネットワークパフォーマンスの最適化について説明します。 [ここ](set-up-network-for-office-365.md)から開始してください。
+ 
+2. Id を設定する
+
+   Id モデル (クラウドのみまたはハイブリッド) を決定し、ハイブリッド id に対して、オンプレミスの Active Directory ドメインサービス (AD DS) と Office 365 サブスクリプションとの間のディレクトリ同期をセットアップします。 [ここ](protect-your-global-administrator-accounts.md)から開始してください。
+
+3. セキュリティ機能を実装する
+
+   最初の30日間、90日以降に、テナントと id に対する基本および強化されたセキュリティ、脅威、情報保護を構成およびロールアウトする方法を示します。 [ここ](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)から開始してください。
+ 
+4. クライアントソフトウェアを展開する
+
+   Office 365 ProPlus を展開します。これには、デバイス上の Office スイート (Word、Excel、PowerPoint、その他のバージョン) のクラウド更新および常に最新バージョンが含まれています。 すべての Office 365 クライアントライセンスには、Office 365 ProPlus のライセンスが含まれています。 [ここ](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)から開始してください。
+ 
+5. モバイルデバイス管理の設定
+
+   Office 365 Enterprise には、ユーザーのモバイルデバイスをセキュリティで保護し、管理するのに役立つ、モバイルデバイス管理機能が含まれています。 [ここ](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)から開始してください。
+ 
+6. サービスとアプリケーションを構成する
+
+   データの移行についての情報と、Exchange Online、SharePoint Online、Teams などの主要な Office 365 サービスで開始する記事へのリンクが含まれています。 [ここ](configure-services-and-applications.md)から開始してください。
+ 
+7. ユーザーをトレーニングする
+
+   ユーザーが迅速に Office 365 を最大限に利用できるようにするための短いビデオが含まれています。 [ここ](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)から開始してください。
+ 
+
+>[!Note]
+>これらの手順は、Office 365 Enterprise のカスタム展開で開始する必要があるビジネスおよび[非](https://go.microsoft.com/fwlink/?LinkId=627221)営利団体にも適用されます。 
+>

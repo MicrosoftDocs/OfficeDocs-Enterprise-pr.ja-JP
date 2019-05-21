@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162390"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249465"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 identity モデルと Azure Active Directory
 
@@ -91,7 +91,7 @@ Microsoft 365 管理センターまたは Windows PowerShell を使用して、A
 
 クラウド専用の id モデルが必要な場合は、「[クラウド専用](cloud-only-identities.md)の id」を参照してください。
 
-ハイブリッド id モデルが必要な場合は、「[同期 id と認証方法の計画](plan-for-directory-synchronization.md)」を参照してください。
+ハイブリッド id モデルが必要な場合は、「[ディレクトリ同期](plan-for-directory-synchronization.md)」を参照してください。
   
 
 ## <a name="video-training"></a>ビデオ トレーニング

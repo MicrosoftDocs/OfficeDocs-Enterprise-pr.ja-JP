@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。 チェックリストのフェーズと手順は、オンボードセンターで提供されるガイダンスに沿っています。
-ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。
+ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067883"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249495"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 の展開計画チェックリスト
 
