@@ -4,7 +4,6 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの Skype for Business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの Skype for Business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
+ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067203"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34404219"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件
 
@@ -30,7 +29,7 @@ ms.locfileid: "34067203"
     
 - [オンプレミス環境の先進認証の状態を確認する](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
     
-- [先進認証の前提条件を満たしているか。](hybrid-modern-auth-overview.md#BKMK_MeetPrereq)
+- [先進認証の前提条件を満たしているか。](#do-you-meet-modern-authentication-prerequisites)
     
 - [開始する前に知っておくべきその他の情報](hybrid-modern-auth-overview.md#BKMK_Whatelse)
     
@@ -43,7 +42,7 @@ ms.locfileid: "34067203"
   
 先進認証は、認証方法と承認方法の組み合わせに加えて、既に熟知している可能性のあるアクセスポリシーに依存するいくつかのセキュリティ対策をするための包括的な用語です。 次のとおりです。
   
-- **認証方法**: 多要素認証。クライアント証明書ベースの認証。Active Directory 認証ライブラリ ( [ADAL](https://technet.microsoft.com/en-us/library/mt710548.aspx))。
+- **認証方法**: 多要素認証。クライアント証明書ベースの認証。
     
 - **承認方法**: Microsoft がオープン認証を実装しています (OAuth)。 
     
