@@ -14,8 +14,7 @@
 ### [Azure IaaS のハイブリッド クラウド シナリオ](hybrid-cloud-scenarios-for-azure-iaas.md)
 ## [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# Office 365 の計画
-## [組織を準備する](get-your-organization-ready-for-office-365.md)
+# [Office 365 の計画](get-your-organization-ready-for-office-365.md)
 
 ## Office 365 テナント
 ### [サブスクリプション、ライセンス、およびテナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
@@ -26,7 +25,7 @@
 #### [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)
 
 ### ID の計画
-#### [Office 365 の ID モデル](about-office-365-identity.md)
+#### [ID モデル](about-office-365-identity.md)
 #### [ハイブリッド ID](plan-for-directory-synchronization.md)
 
 ### [Office 365 のサード パーティ SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
@@ -85,12 +84,7 @@
 ### [データの分類とラベル付け](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](simulated-cross-premises-virtual-network-in-azure.md)
 
-# Office 365 を展開する
-
-## チェックリストとベスト プラクティス
-### [組織で Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
-### [展開計画チェックリスト](deployment-planning-checklist.md)
-### [Office 365 のセキュリティ ロードマップ](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+# [Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
 
 ## 1. ネットワークをセットアップする
 ### [ネットワークをセットアップする](set-up-network-for-office-365.md)
@@ -133,14 +127,16 @@
 #### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
 ### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
 
-## 3. クライアント ソフトウェアを展開する
+## [3. セキュリティ機能を実装する](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 4. クライアント ソフトウェアを展開する
 ### [Office 365 ProPlus を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Skype for Business クライアントを展開する](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [モバイル アプリの展開と管理](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. モバイル デバイス管理を構成する](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+## [5. モバイル デバイス管理を設定する](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-## 5. サービスとアプリケーションを構成する
+## 6. サービスとアプリケーションを構成する
 ### [準備する](configure-services-and-applications.md)
 ### [Office 365 へのデータの移行](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
@@ -151,7 +147,7 @@
 ### [Azure 著作権管理](activate-rms-in-office-365.md)
 ### [リリース オプションの構成](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [6. ユーザーをトレーニングする](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+## [7. ユーザーをトレーニングする](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## 高度な展開
 
