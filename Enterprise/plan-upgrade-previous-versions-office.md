@@ -1,7 +1,7 @@
 ---
 title: Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/12/2019
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古いアプリで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102435"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539279"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
 

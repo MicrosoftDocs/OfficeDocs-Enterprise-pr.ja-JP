@@ -1,9 +1,9 @@
 ---
 title: Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 05/28/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,18 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: cb1aa32f77a7a1f5490565cc269d5b93b842c229
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539213"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
-Office 2010 製品とサービスを使用している場合は、Office 2010 製品とサービスがサポートの終了間近に近づいていることに気付く可能性があります。 アップグレードを計画している間は、Office 365 以降の Microsoft Cloud への移行を検討するのに非常に役立ちます。 この記事は、オプションを確認する出発点として使用します。
+Office 2010 製品とサービスを使用している場合は、Office 2010 の製品とサービスが**2020 年10月 13**日にサポートを受けることになる可能性があることにご注意ください。 アップグレードを計画している間は、Office 365 への移行を検討するのに非常に時間がかかる場合があります。 Office 365 には、Exchange Server、SharePoint Server などの Office 2010 server 製品用のクラウドベースのサービスと、Teams や OneDrive for business などの新しいサービスがあります。 Office 365 ProPlus は、ローカルデバイスにインストールした Office 2010 クライアントアプリで、Microsoft クラウドから ongoign ベースで新しい生産性およびセキュリティ機能で更新されています。 Office 365 ProPlus は、Office 365 E3 および E5 に含まれています。
+
+この記事は、オプションを確認する出発点として使用します。
       
 ## <a name="office-2010-planning-content"></a>Office 2010 の計画コンテンツ
   
