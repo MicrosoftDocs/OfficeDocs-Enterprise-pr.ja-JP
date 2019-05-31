@@ -3,7 +3,7 @@ title: Office 365 PowerShell でロールをユーザー アカウントに割�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2019
+ms.date: 05/30/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '概要: Office 365 PowerShell を使用して、ロールをユーザー アカウントに割り当てます。'
-ms.openlocfilehash: d7177dc05aff8725a72edf7c9ab7b6ef93c36aaf
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d06b305c348d014ce526448d7f8401c26f4d1c47
+ms.sourcegitcommit: 3100813cd7dff8b27b1a30a6d6ed5a7c4765c60f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069223"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34586983"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
 
@@ -79,7 +79,11 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
   
 ### <a name="for-a-single-role-change"></a>単一ロールの変更の場合
 
-以下を判別します。
+特定のユーザーアカウントの最も一般的な方法は、その表示名または電子メール名 (サインイン名ユーザープリンシパル名 (UPN) とも呼ばれる) です。
+
+#### <a name="display-names-of-user-accounts"></a>ユーザーアカウントの表示名
+
+ユーザーアカウントの表示名の処理に使用する場合は、次の点を確認してください。
   
 - 構成するユーザー アカウント。
     
@@ -92,7 +96,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     このコマンドにより、ユーザー アカウントの表示名の一覧が、表示名順に並び替えられて、一度に 1 画面ずつ示されます。 **Where** コマンドレットを使用すると、一覧をフィルター処理して、出力するセットを小さくできます。次に例を示します。
     
   ```
-  Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
+  Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
     このコマンドは、表示名が「John」で始まるユーザー アカウントのみを一覧表示します。
@@ -110,7 +114,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 ```
 $dispName="<The Display Name of the account>"
 $roleName="<The role name you want to assign to the account>"
-Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
+Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
 コマンドをコピーし、メモ帳に貼り付けます。**$dispName** 変数と **$roleName** 変数に関しては、説明テキスト部分を値に置き換えて、\< 記号と > 記号を削除します。引用符はそのまま残します。変更後の行をコピーし、[Windows PowerShell 用 Windows Azure Active Directory モジュール] ウィンドウに貼り付けて実行します。または、Windows PowerShell 統合スクリプト環境 (ISE) を使用することができます。
@@ -120,28 +124,60 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
 ```
 $dispName="Scott Wallace"
 $roleName="SharePoint Service Administrator"
-Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
+Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
+```
+
+#### <a name="sign-in-names-of-user-accounts"></a>ユーザーアカウントのサインイン名
+
+ユーザーアカウントのサインイン名または Upn を使用する場合は、次の点を確認してください。
+  
+- ユーザーアカウントの UPN。
+    
+    UPN がまだわからない場合は、次のコマンドを使用します。
+    
+  ```
+  Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
+  ```
+
+    このコマンドは、UPN で並べ替えて、一度に1画面ずつ、ユーザーアカウントの UPN を一覧表示します。 **Where** コマンドレットを使用すると、一覧をフィルター処理して、出力するセットを小さくできます。 次に例を示します。
+    
+  ```
+  Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
+  ```
+
+    このコマンドは、表示名が「John」で始まるユーザー アカウントのみを一覧表示します。
+    
+- 割り当てるロール。
+    
+    ユーザー アカウントに割り当てることができるロールの一覧を表示するには、次のコマンドを使用します。
+    
+  ```
+  Get-MsolRole | Sort Name | Select Name,Description
+  ```
+
+アカウントの UPN と役割の名前を取得したら、次のコマンドを使用してアカウントに役割を割り当てます。
+  
+```
+$upnName="<The UPN of the account>"
+$roleName="<The role name you want to assign to the account>"
+Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
+```
+
+コマンドをコピーしてメモ帳に貼り付けます。 **$UpnName**変数と **$roleName**変数については、説明テキストをその値に置き換え\< 、および > 文字を削除して、引用符を残します。 変更された行をコピーして、windows PowerShell 用 Windows Azure Active Directory モジュールウィンドウに貼り付けます。 または、Windows PowerShell ISE を使用することもできます。
+  
+コマンド セットの完成例を以下に示します。
+  
+```
+$upnName="scottw@contoso.com"
+$roleName="SharePoint Service Administrator"
+Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
 ### <a name="for-multiple-role-changes"></a>複数ロールの変更の場合
 
 以下を判別します。
   
-- 構成するユーザー アカウント。
-    
-    ユーザー アカウントを指定するには、その表示名を判別する必要があります。アカウントの一覧を取得するには、次のコマンドを使用します。
-    
-  ```
-  Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
-  ```
-
-    このコマンドにより、すべてのユーザー アカウントの表示名の一覧が、表示名順に並び替えられて、一度に 1 画面ずつ示されます。**Where** コマンドレットを使用すると、一覧をフィルター処理して、出力するセットを小さくできます。次に例を示します。
-    
-  ```
-  Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
-  ```
-
-    このコマンドは、表示名が「John」で始まるユーザー アカウントのみを一覧表示します。
+- 構成するユーザー アカウント。 前のセクションの方法を使用して、表示名または Upn のセットを収集できます。
     
 - 各ユーザー アカウントに割り当てるロール。
     
@@ -151,13 +187,14 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-次に、DisplayName フィールドとロール名フィールドが含まれるコンマ区切り値 (CSV) テキスト ファイルを作成します。次に例を示します。
+次に、[表示名] または [UPN] および [役割名] フィールドを含むコンマ区切り値 (CSV) テキストファイルを作成します。 これは、Microsoft Excel で簡単に実行できます。
+
+表示名の例を次に示します。
   
 ```
 DisplayName,RoleName
 "Belinda Newman","Billing Administrator"
-"John Doe","SharePoint Service Administrator"
-"Alice Smithers","Lync Service Administrator"
+"Scott Wallace","SharePoint Service Administrator"
 ```
 
 その後、PowerShell コマンド プロンプトで CSV ファイルの場所を入力し、完成したコマンドを実行します。
@@ -167,6 +204,23 @@ $fileName="<path and file name of the input CSV file that has the role changes, 
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
+
+次に、Upn の例を示します。
+  
+```
+UserPrincipalName,RoleName
+"belindan@contoso.com","Billing Administrator"
+"scottw@contoso.com","SharePoint Service Administrator"
+```
+
+その後、PowerShell コマンド プロンプトで CSV ファイルの場所を入力し、完成したコマンドを実行します。
+  
+```
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
+$roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmailAddress $_.UserPrincipalName -RoleName $_.RoleName }
+
+```
+
 
 ## <a name="see-also"></a>関連項目
 
