@@ -121,7 +121,7 @@
 #### [ディレクトリ同期を準備する](prepare-for-directory-synchronization.md)
 #### IdFix ツールを使用する
 ##### [IdFix ツールを使用してディレクトリ属性を準備する](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [IdFix ツールのインストールと実行](install-and-run-idfix.md)
+##### [IdFix ツールのダウンロードと実行](install-and-run-idfix.md)
 ##### [IdFix で除外されるオブジェクトと属性、およびサポートされるオブジェクトと属性](idfix-excluded-and-supported-objects-and-attributes.md)
 ##### [IdFix トランザクション ログ](idfix-transaction-log.md)
 #### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
