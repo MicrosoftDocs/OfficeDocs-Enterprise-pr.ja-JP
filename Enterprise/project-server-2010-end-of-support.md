@@ -3,7 +3,7 @@ title: Project Server 2010 サポート終了のロードマップ
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 10/12/2018
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,30 +15,29 @@ search.appverid:
 - ZPJ120
 - PJU120
 - PJW120
-description: 2020年10月13日に、Project Server 2010 のサポートが終了します。 この記事を使用して、今すぐアップグレードを計画します。
-ms.openlocfilehash: 1c8e6eab592e2974c334367e7931395e867ad97e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
+ms.openlocfilehash: 277c41b96afa3b2424b0943427eff6a0a1f6dc1c
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071043"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704118"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
 
-Office 2010 のサーバーとアプリケーションのサポートは2010で終了し、移行の計画を検討する必要があります。 現在 Project Server 2010 を使用している場合は、その関連製品に次のサポート終了日があることに注意してください。
+Project Server 2010 は **、2020年10月 13**日にサポート終了日に到達します。 現在 Project Server 2010 を使用している場合は、これらの他の関連製品に次のサポート終了日があることに注意してください。
   
 |**Product**|**サポート終了日**|
 |:-----|:-----|
-|Project Server 2010  <br/> |2020年10月13日  <br/> |
 |Project Portfolio Server 2010  <br/> |2020年10月13日  <br/> |
 |Project 2010 Standard  <br/> |2020年10月13日  <br/> |
 |Project 2010 Professional  <br/> |2020年10月13日  <br/> |
    
-退職に到達する Office 2010 サーバーの詳細については、「 [Upgrade From office 2010 servers and client products](https://docs.microsoft.com/office365/enterprise/plan-upgrade-previous-versions-office)」を参照してください。
+Office 2010 サーバーのサポートが終了するまでの詳細については、「 [Upgrade From office 2010 servers and client products](https://docs.microsoft.com/office365/enterprise/plan-upgrade-previous-versions-office)」を参照してください。
   
 ## <a name="what-does-end-of-support-mean"></a>サポートが終了するとどうなるのか
 
-ほぼすべての Microsoft 製品と同様に、Project Server には、新機能、バグ修正、セキュリティ修正プログラムなどを提供する、サポートライフサイクルがあります。 このライフサイクルは通常、製品の最初のリリースから10年後に持続し、このライフサイクルの最後は製品のサポート終了と呼ばれます。 Project Server 2010 は、2020年10月10日にサポート終了に達したため、Microsoft は提供しなくなります。
+ほぼすべての Microsoft 製品と同様に、Project Server には、新機能、バグ修正、およびセキュリティ更新プログラムを提供するサポートライフサイクルがあります。 このライフサイクルは通常、製品の最初のリリースから10年後に持続し、このライフサイクルの最後は製品のサポート終了と呼ばれます。 Project Server 2010 が2020年10月13日のサポート終了日に達すると、Microsoft は提供しなくなります。
   
 - 発生する可能性のある問題のテクニカルサポート。
     
@@ -58,9 +57,9 @@ Project Server 2010 を使用している場合は、次のような移行オプ
     
 - 新しいオンプレミスバージョンの Project Server に移行します (Project Server 2019 を推奨)。
     
-|**Project Online への移行を希望する理由**|**Project Server 2019 への移行を希望する理由**|
+|**Project Online への移行を希望するのはなぜですか?**|**Project Server 2019 への移行を希望するのはなぜですか?**|
 |:-----|:-----|
-| モバイルユーザーがいます。  <br/>  移行のコストは大きな懸念事項です (ハードウェア、ソフトウェア、時間と導入の労力など)。  <br/>  移行後に、環境を維持するためのコストは大きな懸念事項です (たとえば、自動更新、稼働状態の保証など)。  <br/> | ビジネスルールは、クラウドでのビジネスの運営から制限されています。  <br/>  環境に対して更新プログラムを制御する必要がある。  <br/> |
+| モバイルまたはリモートのユーザーがいます。  <br/>  オンプレミスサーバーを移行するためのコストとしては、大きな懸念があります (ハードウェア、ソフトウェア、時間および実装の労力など)。  <br/>  移行後に、環境を維持するためのコストは大きな懸念事項です (たとえば、自動更新、稼働状態の保証など)。  <br/> | ビジネスルールは、クラウドでのビジネスの運営から制限されています。  <br/>  環境に対して更新プログラムを制御する必要がある。  <br/> |
    
 > [!NOTE]
 > Office 2010 サーバーから移行するためのオプションの詳細については、「 [office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)」を参照してください。 Project server と Project Online は同じリソース共有元を共有できないため、Project Server はハイブリッド構成をサポートしていないことに注意してください。 
@@ -69,11 +68,11 @@ Project Server 2010 を使用している場合は、次のような移行オプ
 
 Project Server 2010 からの移行を計画する場合は、次の点を考慮する必要があります。
   
-- **Microsoft パートナーからのサポートを得る**-Project Server 2010 からのアップグレードは、課題となることがあり、多くの準備と計画を必要とします。 Project Server 2010 を最初にセットアップして構成する必要がない場合は、特に難しいことがあります。 さいわい、Project Server 2019 への移行または Project Online への移行を計画している場合でも、Microsoft のパートナーによって、この作業を行うことができます。 Microsoft パートナーを検索して、 [Microsoft パートナーセンター](https://go.microsoft.com/fwlink/p/?linkid=841249)での移行に役立てることができます。 「*ゴールドプロジェクト」と「ポートフォリオ管理*」で検索することによって、project の専門知識を持つすべての Microsoft パートナーの一覧を取得することができます。 
+- **Microsoft solution provider からのヘルプの取得**-Project Server 2010 からのアップグレードは課題となり、多くの準備と計画が必要になることがあります。 Project Server 2010 を最初にセットアップして構成する必要がない場合は、特に難しいことがあります。 さいわい、Project Server 2019 への移行または Project Online への移行を計画している場合には、この作業を行うことができる Microsoft ソリューションプロバイダーがあります。 Microsoft solution provider を検索すると、microsoft ソリューション[プロバイダセンター](https://go.microsoft.com/fwlink/p/?linkid=841249)での移行に役立てることができます。 
     
 - **カスタマイズを計画**する-project server 2019 または project Online に移行する場合、project server 2010 環境で作業しているカスタマイズの多くが機能しない可能性があることに注意してください。 バージョン間の Project Server アーキテクチャには大きな違いがあります。また、必要なオペレーティングシステム、データベースサーバー、および新しいバージョンとの連携がサポートされているクライアント web ブラウザーもあります。 新しい環境で必要に応じてカスタマイズをテストまたは再構築する方法について、計画を立ててください。 アップグレードを計画することも、前方に移動するときに特定のカスタマイズが本当に必要かどうかを確認するのに十分な機会となります。 「2013 SharePoint へのアップグレード時に現在のカスタマイズの計画を作成する」には、アップグレード時に現在のカスタマイズの評価と計画に関する重要な情報が含まれています。 
     
-- **時間および**アップグレードの計画、実行、およびテストは、特に Project Server 2019 にアップグレードする場合には、多くの時間と労力を必要とします。 たとえば、Project Server 2010 から Project Server 2019 に移行する場合は、最初に Project Server 2010 から project Server 2013 に移行してから、データをチェックして、以降の各バージョンに移行するときに同じ操作を実行する必要があります (Projectサーバー2016、Project Server 2019)。 Microsoft のパートナーに確認して、予想されるコストと、それが実現するのにかかる時間とコストを比較します。 
+- **時間および**アップグレードの計画、実行、およびテストは、特に Project Server 2019 にアップグレードする場合には、多くの時間と労力を必要とします。 たとえば、Project Server 2010 から Project Server 2019 に移行する場合は、まず Project Server 2010 から project Server 2013 に移行してから、データを確認してから、各バージョンに移行するときに同じ操作を実行する必要があります (プロジェクトに対して)。サーバー2016、次に Project Server 2019)。 Microsoft ソリューションプロバイダーに確認して、見積もりコストと、それが実現するのにかかる時間とコストを比較することができます。 
     
 ## <a name="migrate-to-project-online"></a>Project Online への移行
 
@@ -83,7 +82,7 @@ Project Server 2010 から Project Online に移行することを選択した�
     
 2. Project Professional 2016、Project Professional 2019、または Project Online デスクトップクライアントを使用して、各 .mpp ファイルを開き、Project Online に保存して発行します。
     
-Project Online で手動で PWA 構成を作成できます (たとえば、必要なユーザー設定フィールドやエンタープライズカレンダーを再作成します)。 また、Microsoft のパートナーもお手伝いできます。
+Project Online で手動で PWA 構成を作成できます (たとえば、必要なユーザー設定フィールドやエンタープライズカレンダーを再作成します)。 Microsoft ソリューションプロバイダーは、このことを支援することもできます。
   
 主なリソース:
   
@@ -107,13 +106,13 @@ Project Online に移行できない場合は、Project Server 2019 に移行す
 
 Project Server 2010 と Project Server 2019 のアーキテクチャの違いにより、直接移行のパスが妨げられています。 これは、project server 2019 にアップグレードするまで、project server 2010 データを次のバージョンの Project Server に移行する必要があることを意味します。
   
-Project Server 2019 にアップグレードするには、次の手順を実行する必要があります。
+Project Server 2010 を Project Server 2019 にアップグレードするには、次の手順を実行する必要があります。
   
-1. 手順 1: Project Server 2010 から Project Server 2013 にデータを移行します。
+1. Project Server 2013 に移行します。
     
-2. 手順 2: Project Server 2013 から Project Server 2016 にデータを移行します。
+2. プロジェクトサービス2013から Project Server 2016 に移行します。
     
-3. 手順 3: Project Server 2016 から Project Server 2019 にデータを移行します。
+3. Project Server 2016 から Project Server 2019 に移行します。
     
 各移行が完了したら、データが正常に移行されたことを確認する必要があります。
   
@@ -122,26 +121,24 @@ Project Server 2019 にアップグレードするには、次の手順を実行
 
 Project server 2010 データを Project Server 2019 に移行するための最初の手順は、最初に Project Server 2013 に移行することです。 
   
-Project Server 2010 から Project Server 2013 にアップグレードするために必要な作業を完全に理解するには、TechNet の「 [Project server 2013](https://go.microsoft.com/fwlink/p/?linkid=841822)コンテンツセットへのアップグレード」を参照してください。 
+Project Server 2010 から Project Server 2013 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2013](https://go.microsoft.com/fwlink/p/?linkid=841822)」を参照してください。 
   
 主なリソース:
   
-|**Resource**|**説明**|
+|||
 |:-----|:-----|
 |[Project Server 2013 のアップグレード プロセスの概要](https://go.microsoft.com/fwlink/p/?linkid=841822) <br/> |Project Server 2010 から Project Server 2013 にアップグレードするために必要な作業についての高度な理解を得ることができます。  <br/> |
 |[Project Server 2013 へのアップグレードを計画する](https://go.microsoft.com/fwlink/p/?linkid=841823) <br/> |システム要件を含め、Project Server 2010 から Project Server 2013 にアップグレードするときに必要な計画の考慮事項について確認します。  <br/> |
    
-#### <a name="things-to-know-about-upgrading-to-this-version"></a>このバージョンへのアップグレードに関する注意事項
-
 [Project Server 2013 アップグレードの新機能](https://go.microsoft.com/fwlink/p/?linkid=841824)このバージョンでのアップグレードに関していくつかの重要な変更を示します。 
   
 - Project Server 2013 への一括アップグレードはありません。 Project Server 2010 から Project Server 2013 へのアップグレードでサポートされている唯一の方法は、データベース接続方式です。
     
 - アップグレードプロセスでは、Project Server 2010 のデータを Project server 2013 形式に変換するだけでなく、4つの Project Server 2010 データベースを1つの Project Web App データベースにも統合するようになります。
     
-- SharePoint Server 2013 と Project Server 2013 の両方が、以前のバージョンからクレームベース認証に変更されました。 従来の認証を使用している場合は、アップグレード時に考慮する必要があります。 詳細については、「[SharePoint 2013 でクラシックモードからクレームベース認証に移行する](https://go.microsoft.com/fwlink/p/?linkid=841825)」を参照してください。
+- SharePoint Server 2013 と Project Server 2013 の両方が、以前のバージョンからクレームベース認証に変更されました。 従来の認証を使用している場合は、アップグレード時に考慮する必要があります。 詳細については、「[SharePoint 2013 でクラシックモードからクレームベース認証に移行する]( https://docs.microsoft.com/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)」を参照してください。
     
-その他のリソース:
+主なリソース:
   
 - [Project Server 2013 へのアップグレード プロセスの概要](https://go.microsoft.com/fwlink/p/?linkid=841274)
     
@@ -151,45 +148,41 @@ Project Server 2010 から Project Server 2013 にアップグレードするた
     
 - [高度なデータベース統合、Project Server 2010 から2013への移行は、簡単な手順で8つ](https://go.microsoft.com/fwlink/p/?linkid=841271)
     
-### <a name="step-2-migrate-to-project-server-2016"></a>ステップ 2 Project Server 2016 への移行
+### <a name="step-2-migrate-to-project-server-2016"></a>手順 2: Project Server 2016 に移行する
 
 Project Server 2013 に移行し、データが正常に移行されたことを確認した後、次の手順では、データを Project Server 2016 に移行します。
   
-Project Server 2013 から Project Server 2016 にアップグレードするために必要な作業を完全に理解するためには、「 [Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)コンテンツセットへのアップグレード」を参照してください。
+Project Server 2013 から Project Server 2016 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)」を参照してください。
   
 主なリソース:
   
-|**Resource**|**説明**|
+|||
 |:-----|:-----|
 |[Project Server 2016 のアップグレード プロセスの概要](https://docs.microsoft.com/Project/overview-of-the-project-server-2016-upgrade-process) <br/> |Project Server 2013 から Project Server 2016 にアップグレードするために必要な作業についての高度な理解を得ることができます。  <br/> |
 |[Project Server 2016 へのアップグレードを計画する](https://docs.microsoft.com/Project/plan-for-upgrade-to-project-server-2016) <br/> |Project Server 2013 から Project Server 2016 にアップグレードするときに必要な計画の考慮事項について確認します。  <br/> |
    
-#### <a name="things-to-know-about-upgrading-to-this-version"></a>このバージョンへのアップグレードに関する注意事項
-
-[Project Server 2016 アップグレードに関して知っておく必要のある](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2016#thingknow)ことは、このバージョンのアップグレードに関する重要な変更点を示しています。次のようにします。 
+[Project Server 2016 アップグレードに関して知っておく必要のある](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2016#thingknow)ことは、このバージョンへのアップグレードに関する重要な変更点を示しています。これには次のようなものがあります。 
   
 - Project server 2013 データを移行する Project Server 2016 環境を作成する場合は、Project server の2016インストールファイルが SharePoint Server 2016 に含まれていることに注意してください。 詳細については、「 [Deploy Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=841829)」を参照してください。
     
 - Project Server 2016 では、リソース計画は廃止されました。 Project Server 2013 のリソース計画は、project Server 2016 および Project Online のリソース予約に移行されます。 詳細については、「[概要: リソース予約](https://support.office.com/article/73eefb5a-81fe-42bf-980e-9532b1bdc870)」を参照してください。 
     
-### <a name="step-3-migrate-to-project-server-2019"></a>手順 3 Project Server 2019 への移行
+### <a name="step-3-migrate-to-project-server-2019"></a>手順 3: Project Server 2019 に移行する
 
 Project Server 2016 に移行し、データが正常に移行されたことを確認した後、次の手順では、データを Project Server 2019 に移行します。
   
-Project Server 2016 から Project Server 2019 にアップグレードするために必要な作業を完全に理解するためには、「 [Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)コンテンツセットへのアップグレード」を参照してください。
+Project Server 2016 から Project Server 2019 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)」を参照してください。
   
 主なリソース:
   
-|**Resource**|**説明**|
+|||
 |:-----|:-----|
 |[Project Server 2019 のアップグレードプロセスの概要](https://docs.microsoft.com/project/overview-of-the-project-server-2019-upgrade-process) <br/> |Project Server 2013 から Project Server 2016 にアップグレードするために必要な作業についての高度な理解を得ることができます。  <br/> |
 |[Project Server 2019 へのアップグレードを計画する](https://docs.microsoft.com/project/plan-for-upgrade-to-project-server-2019) <br/> |Project Server 2016 から Project Server 2019 にアップグレードするときに必要な計画の考慮事項について確認します。  <br/> |
    
-#### <a name="things-to-know-about-upgrading-to-this-version"></a>このバージョンへのアップグレードに関する注意事項
-
-[Project Server 2019 アップグレードに関して知っておく必要のある](https://go.microsoft.com/fwlink/p/?linkid=841827)ことは、このバージョンのアップグレードに関する重要な変更点を示しています。次のようにします。 
+[Project Server 2019 アップグレードに関して知っておく必要のある](https://go.microsoft.com/fwlink/p/?linkid=841827)ことは、このバージョンへのアップグレードに関する重要な変更点を示しています。これには次のようなものがあります。 
   
-- アップグレードプロセスによって、Project Server 2016 データベースから SharePoint Server 2019 コンテンツデータベースにデータが移行されます。  Project Server 2019 は、SharePoint Server ファーム内の Project Server データベースを所有していません。
+- アップグレードプロセスによって、Project Server 2016 データベースから SharePoint Server 2019 コンテンツデータベースにデータが移行されます。  Project Server 2019 は、SharePoint Server ファームに独自の Project Server データベースを作成しなくなります。
 
 - アップグレード後に、Project Web App のいくつかの変更に注意してください。  これらの詳細については、「 [Project Server 2019 の新機能](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)」を参照してください。
 
@@ -208,6 +201,6 @@ Project Server 2016 から Project Server 2019 にアップグレードするた
 
 [SharePoint 2010 からアップグレードする](upgrade-from-sharepoint-2010.md)
   
-[Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](upgrade-from-office-2010-servers-and-products.md)
+[Office 2010 のサーバーとクライアントからのアップグレード](upgrade-from-office-2010-servers-and-products.md)
   
 

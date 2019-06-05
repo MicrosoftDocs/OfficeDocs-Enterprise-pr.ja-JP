@@ -3,7 +3,7 @@ title: Office 2007 または2010のサーバーとクライアントからのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2019
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古いアプリで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 1867661c158667a6da6108380841f8d9d692ba15
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539279"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704108"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
 
-以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービスは、サポートが終了し、Office 2010 製品とサービスが**2020 年10月 13**日にサポートを終了することになりました。 開始するには、このセクションのリソースを使用します。
+以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービスのサポートが終了しました。 Exchange 2010 は **、2020年1月14日**のサポート終了に到達します。 その他の Office 2010 製品とサービスは、 **2020 年10月 13**日にサポートが終了します。 開始するには、このセクションのリソースを使用します。
 
 - [Office 2007 のサーバーとクライアントからのアップグレード](upgrade-from-office-2007-servers-and-products.md)
 
@@ -71,8 +71,8 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 - **家庭向け Office 365 をご利用ください**。 [要件](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)を確認してから、 [office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)または[office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)のどちらかを選択します。 試用版を開始し、Office 365 の動作を確認します。 Office 365 では、クラウドストレージを OneDrive で利用できるようになります。携帯電話と有線電話網番号の Skype 通話は60分で、他にも多くの機能が用意されています。 詳細については、「office の[大部分を office 365 で取得](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)する」を参照してください。
     
 - **Office Home &amp;の学生を購入**します。 このオプションを選択する場合は、1回限りの購入を行い、Windows PC または Mac に Office をインストールします。 これはサブスクリプションではありません。1台のコンピューターに対して1回限りの永続的なライセンスを使用します。 [要件](http://office.com/systemrequirements)を確認してから、使用するバージョンを選択します。
-    - Windows 10 を実行している Windows PC では、 [Office Home _AMP_ Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)を入手することを検討してください。
-    - Windows 7、8、または8.1 を実行していて、現時点で Windows 10 にアップグレードしていない場合は、認証された販売店から Office Home & Student 2016 (または別のエディションの Microsoft Office) を入手することを検討してください。
+    - Windows 10 を実行している Windows PC では、 [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)を入手することを検討してください。
+    - Windows 7、8、または8.1 を実行していて、現時点で Windows 10 にアップグレードしていない場合は、承認された販売店から Office Home & Student 2016 (または他のエディションの Microsoft Office) を入手することを検討してください。
 
 この時点では、アップグレードしないことを選択することもできます。 Office アプリは引き続き実行されます。 (Office サポート日付のタイムラインは[こちら](https://go.microsoft.com/fwlink/p/?linkid=2085724)から入手できます)。ただし、アップグレードによって、セキュリティ更新プログラムを含む、新機能と強化された機能にアクセスできるようになります。 
    

@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 4/18/2019 | [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 更新日時 |
-| 4/18/2019 | [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 更新日時 |
-| 4/18/2019 | [Office 365 PowerShell でロールをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 更新日時 |
-| 4/18/2019 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 更新日時 |
-| 4/18/2019 | [一元展開 PowerShell コマンドレットを使用してアドインを管理する](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | 更新日時 |
-
-
-## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 4/22/2019 | [OneDrive および SharePoint Online の複数地域機能](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | 更新日時 |
-| 4/22/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 更新日時 |
-| 4/22/2019 | 委任アクセス許可 (DAP) パートナー用 Windows PowerShell 経由で顧客レポート データを集約する | 削除 |
-| 4/22/2019 | [委任アクセス許可 (DAP) パートナー用 Windows PowerShell で Office 365 を管理する](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | 更新日時 |
-| 4/22/2019 | [委任アクセス許可 (DAP) パートナー用 Windows PowerShell を使用して顧客のテナント レポート データを取得する](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | 更新日時 |
-
-
 ## <a name="week-of-april-29-2019"></a>2019年4月29日の週
 
 
@@ -342,3 +318,38 @@
 | 5/17/2019 | [Office 365 全体管理者アカウントを保護する](/Office365/Enterprise/protect-your-global-administrator-accounts) | 更新日時 |
 | 5/17/2019 | [Office 365 のディレクトリ同期のセットアップ](/Office365/Enterprise/set-up-directory-synchronization) | 更新日時 |
 | 5/17/2019 | [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | 更新日時 |
+
+
+## <a name="week-of-may-20-2019"></a>2019年5月20日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 5/20/2019 | [Office 365 identity モデルと Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | 更新日時 |
+| 5/20/2019 | [Office 365 の展開計画チェックリスト](/Office365/Enterprise/deployment-planning-checklist) | 更新日時 |
+| 5/20/2019 | [Office 365 Enterprise を計画する](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 更新日時 |
+| 5/20/2019 | [組織用に Office 365 Enterprise を展開する](/Office365/Enterprise/setup-overview-for-enterprises) | 更新日時 |
+| 5/21/2019 | [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | 更新日時 |
+| 5/21/2019 | SharePoint Online でのコンテンツ配信ネットワークの使用 | 削除 |
+| 5/22/2019 | [ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 更新日時 |
+| 5/22/2019 | Azure AD for SharePoint サーバー認証の使用 | 削除 |
+
+
+## <a name="week-of-may-27-2019"></a>2019年5月27日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 5/28/2019 | [Office 365 Enterprise](/Office365/Enterprise/index) | 更新日時 |
+| 5/28/2019 | [Office 365 IdFix ツールをダウンロードして実行する](/Office365/Enterprise/install-and-run-idfix) | 更新日時 |
+| 5/28/2019 | [Office 365 アカウントを管理するツール](/Office365/Enterprise/manage-office-365-accounts) | 更新日時 |
+| 5/28/2019 | [IdFix ツールを使用して Office 365 と同期するためにディレクトリ属性を準備する](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | 更新日時 |
+| 5/28/2019 | [Office 365 へのディレクトリ同期の準備](/Office365/Enterprise/prepare-for-directory-synchronization) | 更新日時 |
+| 5/28/2019 | [Office 365 アカウントを管理するツール](/Office365/Enterprise/tools-to-manage-office-365-accounts) | 更新日時 |
+| 5/28/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
+| 5/28/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
+| 5/28/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
+| 5/29/2019 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 更新日時 |
+| 5/29/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
+| 5/29/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
+| 5/30/2019 | [Office 365 PowerShell でロールをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 更新日時 |
