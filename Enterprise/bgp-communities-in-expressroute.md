@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068183"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722576"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
@@ -103,7 +103,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

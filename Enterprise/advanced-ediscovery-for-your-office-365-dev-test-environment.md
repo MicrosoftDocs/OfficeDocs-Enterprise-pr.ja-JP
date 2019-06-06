@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '概要: Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。'
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162410"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726233"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境の Advanced eDiscovery
 
@@ -95,11 +95,11 @@ Office 365 Advanced 電子情報開示を使用すると、電子メールやド
     
 3. **[実稼働サイト コレクション]** タブの **[ドキュメント]** で **[新規] > [Word 文書]** をクリックします。
     
-4. **[Word Online]** ページで、「**Tailspin draft contract**」と入力して、タイトルに **[保存済み]** と表示されるまで待ってから、**[Word Online]** ページのタブを閉じます。
+4. [ **Word** ] ページで、「 **Tailspin draft contract**」と入力し、タイトルに**保存**されるまで待機してから、[ **word**ページ] タブを閉じます。
     
 5. **[実稼働サイト コレクション]** タブの **[ドキュメント]** で **[新規] > [Word 文書]** をクリックします。
     
-6. **[Word Online]** タブで、「**Tailspin contract dispute notes**」と入力して、タイトルに **[保存済み]** と表示されるまで待ってから、**[Word Online]** タブを閉じます。
+6. [ **Word** ] タブで、「 **Tailspin contract 申し立て notes**」と入力し、タイトルに**保存**されるまで待機してから、[ **word** ] タブを閉じます。
     
 7. **[運用サイト コレクション]** タブのドキュメントの一覧に、**Document** および **Document1** が表示されます。
     
