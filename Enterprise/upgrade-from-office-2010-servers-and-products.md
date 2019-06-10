@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704087"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780866"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
-Exchange 2010 は **、2020年1月14日**のサポート終了に到達します。 その他の Office 2010 製品とサービスは、 **2020 年10月 13**日にサポートが終了します。 アップグレードを計画している間は、Office 365 への移行を検討するのに非常に時間がかかる場合があります。 
+Exchange Server 2010 は **、2020年1月14日**のサポート終了に到達します。 Office 2010、SharePoint 2010、および Project Server 2010 は、 **2020 年10月 13**日にサポート終了に到達します。 アップグレードを計画している間は、Office 365 への移行を検討するのに非常に時間がかかる場合があります。 
 
 Office 365 には、Exchange Server、SharePoint Server などの Office 2010 server 製品用のクラウドベースのサービスと、Teams や OneDrive for business などの新しいサービスがあります。 
 
