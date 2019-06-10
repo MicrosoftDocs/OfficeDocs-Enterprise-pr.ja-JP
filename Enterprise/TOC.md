@@ -20,7 +20,7 @@
 ### [サブスクリプション、ライセンス、およびテナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### ネットワークの計画
-#### [Office 365 へのネットワーク接続](network-connectivity.md)
+#### [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 #### [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
 #### [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)
 
@@ -92,7 +92,7 @@
 ### [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
 ### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
 ### [Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
-### [Office 365 へのネットワーク接続](network-connectivity.md)
+### [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 ### [Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)
 ### Office 365 の IP アドレスおよび URL
 #### [Office 365 エンドポイント](office-365-endpoints.md)
