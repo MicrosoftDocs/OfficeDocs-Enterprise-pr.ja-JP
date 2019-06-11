@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>2019年4月29日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 2019 年 4 月 30 日 | [Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには](/Office365/Enterprise/configure-skype-for-business-for-hybrid-modern-authentication) | 更新日時 |
-| 2019 年 4 月 30 日 | [Microsoft Azure IaaS のためのネットワークの設計](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | 更新日時 |
-| 2019 年 4 月 30 日 | [ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 の接続を監視をする](/Office365/Enterprise/monitor-connectivity) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 Germany エンドポイント](/Office365/Enterprise/office-365-germany-endpoints) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 IP アドレスと URL の Web サービス ](/Office365/Enterprise/office-365-ip-web-service) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 更新日時 |
-| 2019 年 4 月 30 日 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
-| 2019 年 4 月 30 日 | [Azure AD for SharePoint サーバー認証の使用](/Office365/Enterprise/using-azure-ad-for-sharepoint-server-authentication) | 更新日時 |
-| 5/1/2019 | [Office 365 IP アドレスと URL の Web サービス ](/Office365/Enterprise/office-365-ip-web-service) | 更新日時 |
-
-
 ## <a name="week-of-may-06-2019"></a>2019年5月6日の週
 
 
@@ -353,3 +334,34 @@
 | 5/29/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
 | 5/29/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
 | 5/30/2019 | [Office 365 PowerShell でロールをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 更新日時 |
+
+
+## <a name="week-of-june-03-2019"></a>2019年6月3日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 6/4/2019 | [Office 365 クライアントアプリのサポート-モダン認証](/Office365/Enterprise/office-365-client-support-modern-authentication) | 更新日時 |
+| 6/4/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
+| 6/4/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
+| 6/4/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
+| 6/4/2019 | [Project Server 2010 サポート終了のロードマップ](/Office365/Enterprise/project-server-2010-end-of-support) | 更新日時 |
+| 6/4/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
+| 6/4/2019 | [SharePoint 2010 からアップグレードする](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 更新日時 |
+| 6/5/2019 | [Office 365 向け Azure ExpressRoute](/Office365/Enterprise/azure-expressroute) | 更新日時 |
+| 6/5/2019 | [Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する](/Office365/Enterprise/bgp-communities-in-expressroute) | 更新日時 |
+| 6/5/2019 | [クライアント接続](/Office365/Enterprise/client-connectivity) | 更新日時 |
+| 6/5/2019 | [コンテンツ配信ネットワーク](/Office365/Enterprise/content-delivery-networks) | 更新日時 |
+| 6/5/2019 | [Office 365 向け ExpressRoute の実装](/Office365/Enterprise/implementing-expressroute) | 更新日時 |
+| 6/5/2019 | [Office 365 向け ExpressRoute でのネットワーク計画](/Office365/Enterprise/network-planning-with-expressroute) | 更新日時 |
+| 6/5/2019 | [Office 365 IP アドレスと URL の Web サービス ](/Office365/Enterprise/office-365-ip-web-service) | 更新日時 |
+| 6/5/2019 | [Office 365 ネットワーク接続の原則](/Office365/Enterprise/office-365-network-connectivity-principles) | 更新日時 |
+| 6/5/2019 | [Office 365 のネットワーク接続の概要](/Office365/Enterprise/office-365-networking-overview) | 更新日時 |
+| 6/5/2019 | [Office 365 サービスに接続するネットワーク デバイスの計画](/Office365/Enterprise/plan-for-network-devices) | 更新日時 |
+| 6/5/2019 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 更新日時 |
+| 6/5/2019 | [Office 365 のネットワークをセットアップする](/Office365/Enterprise/set-up-network-for-office-365) | 更新日時 |
+| 6/5/2019 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 更新日時 |
+| 6/5/2019 | [Office 365 の開発/テスト環境の Advanced eDiscovery](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | 更新日時 |
+| 6/7/2019 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 更新日時 |
+| 6/7/2019 | [Project Server 2010 サポート終了のロードマップ](/Office365/Enterprise/project-server-2010-end-of-support) | 更新日時 |
+| 6/7/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
