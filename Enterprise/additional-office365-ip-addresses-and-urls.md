@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL Web サービスに含まれないそ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2019
+ms.date: 06/11/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: 01d0acfd832df47dd5cabd95b7b8137dd76ab049
+ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726243"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857360"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -61,7 +61,9 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 | 15  |  **Microsoft Teams FQDN** <br> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](https://docs.microsoft.com/microsoftteams/known-issues)」を参照してください。 |  | 信頼済みサイト |
 | 16  |  **Sharepoint Online と OneDrive for Business FQDN** <br> “\<tenant>” が入ったすべての FQDN (“.sharepoint.com”) を機能させるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加えて、これらのエンドポイントも追加する必要があります。 |  | 信頼済みサイト |
 | 17  | **Yammer**  <br> Yammer はブラウザーでのみ利用でき、認証されたユーザーはプロキシを経由する必要があります。Yammer のすべての FQDN をさせるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。 |  | 信頼済みサイト |
-| 18  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/)を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。 | 詳細については、「[ハイブリッド ID で必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)」、「[Azure AD の接続のトラブルシューティング](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) 」および「[Azure AD Connect Health エージェントのインストール](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)」を参照してください。 | 送信サーバーのみのトラフィック |
+| 18  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。 | 詳細については、「[ハイブリッド ID で必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)」、「[Azure AD の接続のトラブルシューティング](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)」、および「[Azure AD Connect Health エージェントのインストール](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)」を参照してください。 | 送信サーバーのみのトラフィック |
+| 19  | Microsoft Stream (Azure AD ユーザー トークンが必要)。 <BR> Office 365 ワールドワイド (GCC を含む) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP ポート 443  | 受信サーバー トラフィック |
+|||||
 
 ## <a name="related-topics"></a>関連項目
 
