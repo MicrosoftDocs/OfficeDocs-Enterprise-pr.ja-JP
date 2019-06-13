@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 277c41b96afa3b2424b0943427eff6a0a1f6dc1c
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704118"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780876"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
 
@@ -70,7 +70,7 @@ Project Server 2010 からの移行を計画する場合は、次の点を考慮
   
 - **Microsoft solution provider からのヘルプの取得**-Project Server 2010 からのアップグレードは課題となり、多くの準備と計画が必要になることがあります。 Project Server 2010 を最初にセットアップして構成する必要がない場合は、特に難しいことがあります。 さいわい、Project Server 2019 への移行または Project Online への移行を計画している場合には、この作業を行うことができる Microsoft ソリューションプロバイダーがあります。 Microsoft solution provider を検索すると、microsoft ソリューション[プロバイダセンター](https://go.microsoft.com/fwlink/p/?linkid=841249)での移行に役立てることができます。 
     
-- **カスタマイズを計画**する-project server 2019 または project Online に移行する場合、project server 2010 環境で作業しているカスタマイズの多くが機能しない可能性があることに注意してください。 バージョン間の Project Server アーキテクチャには大きな違いがあります。また、必要なオペレーティングシステム、データベースサーバー、および新しいバージョンとの連携がサポートされているクライアント web ブラウザーもあります。 新しい環境で必要に応じてカスタマイズをテストまたは再構築する方法について、計画を立ててください。 アップグレードを計画することも、前方に移動するときに特定のカスタマイズが本当に必要かどうかを確認するのに十分な機会となります。 「2013 SharePoint へのアップグレード時に現在のカスタマイズの計画を作成する」には、アップグレード時に現在のカスタマイズの評価と計画に関する重要な情報が含まれています。 
+- **カスタマイズを計画**する-project server 2019 または project Online に移行する場合、project server 2010 環境で作業しているカスタマイズの多くが機能しない可能性があることに注意してください。 バージョン間の Project Server アーキテクチャには大きな違いがあります。また、必要なオペレーティングシステム、データベースサーバー、および新しいバージョンとの連携がサポートされているクライアント web ブラウザーもあります。 新しい環境で必要に応じてカスタマイズをテストまたは再構築する方法について、計画を立ててください。 アップグレードを計画することも、前方に移動するときに特定のカスタマイズが本当に必要かどうかを確認するのに十分な機会となります。 「 [2013 SharePoint へのアップグレード時に現在のカスタマイズの計画を作成]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013)する」には、アップグレード時に現在のカスタマイズの評価と計画に関する重要な情報が含まれています。 
     
 - **時間および**アップグレードの計画、実行、およびテストは、特に Project Server 2019 にアップグレードする場合には、多くの時間と労力を必要とします。 たとえば、Project Server 2010 から Project Server 2019 に移行する場合は、まず Project Server 2010 から project Server 2013 に移行してから、データを確認してから、各バージョンに移行するときに同じ操作を実行する必要があります (プロジェクトに対して)。サーバー2016、次に Project Server 2019)。 Microsoft ソリューションプロバイダーに確認して、見積もりコストと、それが実現するのにかかる時間とコストを比較することができます。 
     
