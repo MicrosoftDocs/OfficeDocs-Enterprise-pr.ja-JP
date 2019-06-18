@@ -3,7 +3,7 @@ title: SharePoint Online での Office 365 コンテンツ配信ネットワー�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2019
+ms.date: 5/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +15,21 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070633"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017317"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
 組み込みの Office 365 コンテンツ配信ネットワーク (CDN) を使用して静的資産をホストすることで、SharePoint Online ページのパフォーマンスを向上させることができます。 Office 365 CDN では、静的資産を要求しているブラウザーの近くに静的資産をキャッシュするとパフォーマンスが向上します。これにより、ダウンロードが速くなり、待ち時間が短縮されます。 また、Office 365 CDN は、強化された圧縮と HTTP パイプライン処理に[http/2 プロトコル](https://en.wikipedia.org/wiki/HTTP/2)を使用します。 Office 365 CDN サービスは、SharePoint Online サブスクリプションの一部として含まれます。
+
+> [!NOTE]
+> Office 365 CDN を使用する場合の制限事項:
+> + Office 365 CDN は、**運用環境**(世界規模) のクラウドのテナントでのみ使用できます。 米国政府機関のテナント、中国およびドイツのクラウドでは、現在 Office 365 CDN をサポートしていません。
+> + Office 365 CDN は、現在、カスタムまたは "バニティ" ドメインで構成されているテナントをサポートしていません。 「 [Office 365 にドメインを追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)する」の手順を使用してテナントにドメインを追加した場合、cdn からコンテンツにアクセスしようとすると、OFFICE 365 CDN からエラーが返されます。
 
 Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 Office 365 CDN でホストするコンテンツの種類に応じて、**公開**、**非公開**、またはその両方の元の場所を追加できます。 パブリックとプライベートオリジンの違いに関する詳細については、[各配信元がパブリックかプライベートかを選択](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)するを参照してください。
 
@@ -309,7 +314,17 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 この例では、サイトコレクションのサイトアセットライブラリに_folder1_フォルダーのプライベートオリジンを追加します。
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+パスにスペースが含まれている場合は、パスを二重引用符で囲むか、スペースを URL エンコーディング% 20 に置き換えることができます。 次の例では、サイトコレクションのサイトアセットライブラリに_フォルダー 1_フォルダーのプライベートオリジンを追加します。
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
 このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)」を参照してください。
@@ -599,7 +614,7 @@ SharePoint 発行機能によって自動的に書き換えられるのは次の
 ![ワークフローダイアグラム: パブリックの配信元から Office 365 CDN アセットを取得する](media/O365-CDN/o365-cdn-public-steps-transparent.svg "ワークフロー: パブリックの配信元から Office 365 CDN アセットを取得する")
 
 > [!TIP]
-> ページ上の特定の Url に対する自動書き換えを無効にする場合は、ページをチェックアウトして、無効にする各リンクの最後にクエリ文字列パラメーター **?NoAutoReWrites = true**を追加します。
+> ページ上の特定の Url に対する自動書き換えを無効にする場合は、ページをチェックアウトし、クエリ文字列パラメーターを追加し**ます。** 無効にする各リンクの最後に、NoAutoReWrites = true を指定します。
 
 #### <a name="hardcoding-cdn-urls-for-public-assets"></a>パブリックアセットの CDN の Url をハードコーディングする
 
@@ -634,7 +649,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN のプライベートオリジンにあるアセットへのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 送信元によって指定されたフォルダーまたはライブラリへのアクセス許可を持っているユーザーには、アクセス許可レベルに基づいてファイルへのアクセスをユーザーに許可するトークンが自動的に与えられます。 これらのアクセストークンは、トークンリプレイ攻撃を防ぐために生成されてから90分以内に有効になります。
 
-アクセストークンが生成されると、SharePoint Online は、2つの承認パラメーター (エッジ認証__ トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、 _<'expiration time In 紀元 Time Format'>__<'secure signature'>_ です。 次に例を示します。
+アクセストークンが生成されると、SharePoint Online は、2つの承認パラメーター (エッジ認証__ トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 次に例を示します。
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312

@@ -3,7 +3,7 @@ title: Office 365 のネットワーク接続の概要
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/12/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: SaaS サービスでネットワークの最適化が重要な理由、Office 365 ネットワークの目標、および他のワークロードとの間で SaaS が異なるネットワークを必要とする理由について説明します。
-ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069622"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017287"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 のネットワーク接続の概要
 
@@ -94,18 +94,26 @@ Office 365 の最適化ネットワークパフォーマンスは、不要な障
 
 [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
 
-[Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
-
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
 
+[Office 365 の URL と IP アドレスの範囲](urls-and-ip-address-ranges.md)
+
 [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
+
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
 
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
 
+[Content Delivery Network](content-delivery-networks.md)
+
+[Office 365 ネットワークオンボードツール](https://aka.ms/netonboard)
+
 [Microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Office 365 ネットワークのブログ](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
