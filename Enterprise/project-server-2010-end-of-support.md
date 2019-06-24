@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 8cdfc4a8362df65ca238b9478061dc8e9bda1166
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
+ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780876"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35128704"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
 
@@ -186,10 +186,6 @@ Project Server 2016 から Project Server 2019 にアップグレードするた
 
 - アップグレード後に、Project Web App のいくつかの変更に注意してください。  これらの詳細については、「 [Project Server 2019 の新機能](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)」を参照してください。
 
-
-## <a name="migrate-from-portfolio-server-2010"></a>ポートフォリオサーバーからの移行2010
-
-プロジェクトポートフォリオサーバー2010は、ポートフォリオ戦略、優先度設定、および最適化のために Project Server 2010 で使用されていました。 このバージョン以降、プロジェクトポートフォリオサーバーの追加バージョンは作成されていません。 ただし、ポートフォリオ管理機能は、以降の Project Server バージョンおよび Project Online の Premium バージョンで利用できます。 Project ポートフォリオ2010サーバーからのデータは、に移行できません。 ビジネスドライバーなどのデータは再作成する必要があります。
   
 その他の技術情報:
   

@@ -50,7 +50,7 @@
 ## ハイブリッド先進認証
 ### [Skype for Business Server と Exchange Server の前提条件](hybrid-modern-auth-overview.md)
 ### [Exchange Server の構成](configure-exchange-server-for-hybrid-modern-authentication.md)
-### [Skype for Business の構成](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
+### [Skype for Business の構成](configure-skype-for-business-for-hybrid-modern-authentication.md)
 ### [Skype for Business と Exchange の削除または無効化](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
 
 ## Office クライアントとサーバー
