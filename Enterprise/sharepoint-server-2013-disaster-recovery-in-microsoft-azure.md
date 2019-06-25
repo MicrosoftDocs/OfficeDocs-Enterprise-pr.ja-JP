@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。'
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070443"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203646"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -36,34 +36,6 @@ ms.locfileid: "34070443"
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-この記事の内容
-  
-- [障害復旧のための Azure インフラストラクチャ サービスの使用](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [ソリューションの説明](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [詳細なアーキテクチャ](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [障害復旧のロードマップ](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [フェーズ 1: 障害復旧環境の設計](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [フェーズ 2: Azure Virtual Network と VPN 接続の作成](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [フェーズ 3: Active Directory とドメイン ネーム サービスの Azure Virtual Network への展開](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [フェーズ 4: Azure における SharePoint 復旧ファームの展開](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [フェーズ 5: ファーム間の DFSR の設定](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [フェーズ 6: 復旧ファームに対するログ配布の設定](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [フェーズ 7: フェールオーバーと復旧の検証](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Microsoft の概念実証環境](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [トラブルシューティングのヒント](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>障害復旧のための Azure インフラストラクチャ サービスの使用
 
 多くの組織には、SharePoint 用の障害復旧環境はありません。この環境を内部設置型として構築して保守するには費用が高額になる可能性があります。Azure インフラストラクチャ サービス が提供する魅力的な障害復旧環境は、内部設置型の代替方法よりも柔軟性があり、費用が少なくて済みます。
@@ -297,7 +269,7 @@ Windows PowerShell の他にも、SQL Server、SharePoint Server、Azure 用の 
   
 **図: Active Directory ドメインのハイブリッド構成**
 
-![Azure の仮想ネットワークと SharePoint ファームのサブネットに配置された 2 つの仮想マシンは、レプリカ ドメイン コントローラーおよび DNS サーバーです](media/AZarch-HyADdomainConfig.png)
+![Azure 仮想ネットワークに展開された2つの仮想マシンと、SharePoint ファームサブネットがレプリカドメインコントローラーおよび DNS サーバーである](media/AZarch-HyADdomainConfig.png)
   
 この図には、同じサブネットに対して 2 つの仮想マシンが展開されています。これらの仮想マシンは、Active Directory と DNS という 2 つのロールをそれぞれホストしています。
   

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミス ユーザーに非ルーティング ドメインが関連付けられている場合、Office 365 との同期前に実行する手順について説明します。
-ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071083"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203636"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 Office 365 とオンプレミス ディレクトリとの同期時には、Azure Active Directory 内に確認済みのドメインを用意する必要があります。オンプレミス ドメインに関連付けられたユーザー プリンシパル名 (UPN) のみが同期されます。ただし、.local などの非ルーティング ドメインが含まれている UPN (例: billa@contoso.local) は、.onmicrosoft.com ドメイン (例: billa@contoso.onmicrosoft.com) と同期されるようになります。 
@@ -40,7 +40,7 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
   
 ### <a name="change-your-primary-domain"></a>**プライマリ ドメインを変更する**
 
-Office 365 で確認済みのドメイン (例: contoso.com) にプライマリ ドメインを変更します。その後で、ドメインが contoso.local のすべてのユーザーを contoso.com に更新します。手順については、「[ドメイン名変更の動作について](https://go.microsoft.com/fwlink/p/?LinkId=624174)」を参照してください。これは、非常に複雑なプロセスになります。ただし、それよりも簡単な解決方法があります。その方法は、[UPN サフィックスを追加してユーザーを更新する](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register)ことです。次のセクションでは、この方法について説明します。
+プライマリドメインを Office 365 で確認したドメイン (contoso.com など) に変更します。 ドメイン contoso. local を持つすべてのユーザーが contoso.com に更新されます。 手順については、「[ドメイン名の変更のしくみ](https://go.microsoft.com/fwlink/p/?LinkId=624174)」を参照してください。 ただし、これは非常に複雑なプロセスであり、次のセクションではより簡単な解決方法について説明します。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN サフィックスを追加してユーザーを更新する**
 
@@ -84,8 +84,7 @@ Office 365 で確認済みのドメイン (例: contoso.com) にプライマリ 
   
 4. すべてのユーザに対して、ここまでの手順を実行します。
     
-    または、UPN サフィックスを一括更新します。「[すべてのユーザーの UPN サフィックスを変更するために Windows PowerShell を使用する](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh)」を参照してください。
-    
+   
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**すべてのユーザーの UPN サフィックスを変更するために Windows PowerShell を使用する**
 
 更新するユーザー数が大量になる場合は、Windows PowerShell を使用すると作業が簡単になります。次の例では、コマンドレット [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) と [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) を使用して、すべての contoso.local サフィックスを contoso.com に変更します。 

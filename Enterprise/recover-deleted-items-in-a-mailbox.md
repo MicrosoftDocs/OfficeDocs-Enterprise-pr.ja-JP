@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'この記事は、管理者を対象としています。 ユーザーが Outlook メールボックスからアイテムを完全に削除したかどうか。 ユーザーはそれらを回復することはできません。 削除されたアイテムがユーザーのメールボックスから完全に削除されていない場合は、それらを回復できることがあります。 '
-ms.openlocfilehash: 5ec1ba41924d773859d742bc06bbfe76582072c1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071213"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203656"
 ---
+<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ
 
 **この記事は、管理者を対象としています。自分のメールボックス内の削除済みアイテムを復元しようとしていますか?** 次のどちらかの操作を試します。 
@@ -230,7 +231,8 @@ ms.locfileid: "34071213"
     
 次のセクションの手順は、削除されたアイテムをメールボックスに復元するためにユーザーによって実行されます。
   
- **PST ファイルを使用して削除済みアイテムをメールボックスに復元する**
+ <a name="restoredeleteditems"></a>
+**PST ファイルを使用して削除済みアイテムをメールボックスに復元する**
   
 PST ファイルを使用して削除済みのアイテムを復元するには、Outlook デスクトップアプリを使用する必要があります。 Outlook Web App または Outlook on the web を使用して PST ファイルを開くことはできません。
   

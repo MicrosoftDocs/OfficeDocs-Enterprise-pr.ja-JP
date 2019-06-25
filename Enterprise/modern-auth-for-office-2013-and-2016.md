@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 80a5f557fc1f3d189e8852ac3039521cfc31fb2c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070063"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203626"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
 
@@ -61,6 +61,7 @@ Office 2016 クライアントは既定で先進認証をサポートしてお�
     
 - [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
+<a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
 次の表は、モダン認証を使用して、または使用しない状態で Exchange Online に接続した場合の Office 2013 または Office 2016 クライアントアプリの認証動作を示しています。
@@ -73,8 +74,8 @@ Office 2016 クライアントは既定で先進認証をサポートしてお�
 |Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
 |Office 2013  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
    
-### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
+### <a name="sharepoint-online"></a>SharePoint Online
 
 次の表に、モダン認証を使用して、または使用しない状態で SharePoint Online に接続した場合の Office 2013 または Office 2016 クライアントアプリの認証動作を示します。
   

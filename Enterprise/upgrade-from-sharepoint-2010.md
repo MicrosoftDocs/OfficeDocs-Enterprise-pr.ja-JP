@@ -15,20 +15,20 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 のサポートが終了し、SharePoint Server 2010 が2020年10月13日に終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704158"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203616"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
-Microsoft SharePoint 2010 と SharePoint Server 2010 は **、2020年10月 13**日にサポートの終了に到達します。 この記事では、ユーザーが既存の SharePoint Server 2010 データを SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースについて説明します。
+Microsoft SharePoint 2010 と SharePoint Server 2010 は **、2020年10月 13**日にサポートの終了に到達します。 この記事では、既存の SharePoint Server 2010 データを Office 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースについて説明します。
   
 ## <a name="what-is-end-of-support"></a>サポート終了とは
 
-SharePoint Server 2010 と SharePoint Foundation 2010 ソフトウェアがサポートライフサイクルの最後に達すると (Microsoft が新機能、バグ修正プログラム、セキュリティ修正プログラムなどを提供している時間)、これはソフトウェアの "サポート終了" と呼ばれます。' 定年 ' のような場合があります。 製品のサポート終了 (または EOS) によって、実際には機能しなくなります。ただし、ソフトウェアのサポートが終了すると、Microsoft は次の機能を提供しなくなります。
+SharePoint Server 2010 と SharePoint Foundation 2010 ソフトウェアがサポートライフサイクルの最終段階 (Microsoft が新機能を提供している期間、バグ修正プログラム、セキュリティ修正プログラムなど) に到達すると、これはソフトウェアの「サポートの終了」と呼ばれます。' 定年 ' のような場合があります。 製品のサポート終了 (または EOS) によって、実際には機能しなくなります。ただし、ソフトウェアのサポートが終了すると、Microsoft は次の機能を提供しなくなります。
   
 - 発生する可能性のある問題のテクニカル サポート。
     
@@ -74,7 +74,7 @@ SharePoint Server 2013 と SharePoint Foundation 2013 は、オンプレミス�
     
 - 上記の両方の実施
     
-- [SharePoint ハイブリッド](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) ソリューションの実装 
+- [SharePoint ハイブリッド](https://docs.microsoft.com/sharepoint/hybrid/hybrid) ソリューションの実装 
     
 サーバーファームの保持、カスタマイズの維持または移行、および SharePoint Server が依存するハードウェアのアップグレードに関連する非表示のコストに注意してください。 これらのすべてについて把握しておくと、オンプレミスのアップグレードを続行するのが容易になります。 それ以外の場合は、カスタマイズされていない従来の SharePoint サーバーでファームを実行すると、SharePoint Online への計画された移行の恩恵を受けることができます。 オンプレミスの SharePoint Server 環境では、すべてのデータをオンプレミスで保持するハードウェア管理の量を減らすために、SharePoint Online に何らかのデータを配置することを選択することもできます。 データの一部を SharePoint Online に移動する方が経済的な場合があります。
   
