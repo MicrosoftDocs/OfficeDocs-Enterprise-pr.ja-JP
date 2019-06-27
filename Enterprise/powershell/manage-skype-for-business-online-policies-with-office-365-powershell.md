@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用して Skype for Business Online を管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 概要:Office 365 PowerShell を使用して、ポリシーが割り当てられている Skype for Business Online ユーザー アカウントのプロパティを管理します。
-ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
+ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068843"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253687"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 
@@ -84,15 +84,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 このコマンドでは、ユーザーに割り当てられたポリシーを探してから、そのポリシー内で有効または無効になっている機能を探します。
   
-ただし、ポリシーを作成または変更するためのコマンドレットは存在しないため、Office 365 から事前に提供されているポリシーを使用する必要があります。他に使用可能なポリシーを調べたい場合は、次のコマンドを使用できます。
-  
-- Get-CsClientPolicy       
-- Get-CsConferencingPolicy        
-- Get-CsDialPlan            
-- Get-CsExternalAccessPolicy                         
-- Get-CsHostedVoicemailPolicy                        
-- Get-CsPresencePolicy                               
-- Get-CsVoicePolicy                                  
+PowerShell を使用して Skype for Business Online のポリシーを管理するには、次のコマンドレットを参照してください。
+
+- [クライアント ポリシー](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [会議ポリシー](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [モバイルポリシー](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [オンラインボイスメールポリシー](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [音声ルーティングポリシー](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+
 
 > [!NOTE]
 > Skype for Business Online ダイヤル プランは、名前以外はポリシーそのものです。「ダイヤル プラン」という名前は、Office Communications Server と Exchange との下位互換性を維持するために「ダイヤル ポリシー」の代わりに選択されたものです。 
