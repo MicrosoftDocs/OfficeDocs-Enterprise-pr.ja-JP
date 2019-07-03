@@ -3,21 +3,6 @@
 
 
 
-## <a name="week-of-may-20-2019"></a>2019年5月20日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 5/20/2019 | [Office 365 identity モデルと Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | 更新日時 |
-| 5/20/2019 | [Office 365 の展開計画チェックリスト](/Office365/Enterprise/deployment-planning-checklist) | 更新日時 |
-| 5/20/2019 | [Office 365 Enterprise を計画する](/Office365/Enterprise/get-your-organization-ready-for-office-365) | 更新日時 |
-| 5/20/2019 | [組織用に Office 365 Enterprise を展開する](/Office365/Enterprise/setup-overview-for-enterprises) | 更新日時 |
-| 5/21/2019 | [Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | 更新日時 |
-| 5/21/2019 | SharePoint Online でのコンテンツ配信ネットワークの使用 | 削除 |
-| 5/22/2019 | [ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](/Office365/Enterprise/hybrid-modern-auth-overview) | 更新日時 |
-| 5/22/2019 | Azure AD for SharePoint サーバー認証の使用 | 削除 |
-
-
 ## <a name="week-of-may-27-2019"></a>2019年5月27日の週
 
 
@@ -92,3 +77,26 @@
 | 6/17/2019 | [SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](/Office365/Enterprise/use-office-365-cdn-with-spo) | 更新日時 |
 | 6/19/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | 更新日時 |
 | 6/21/2019 | [Project Server 2010 サポート終了のロードマップ](/Office365/Enterprise/project-server-2010-end-of-support) | 更新日時 |
+
+
+## <a name="week-of-june-24-2019"></a>2019年6月24日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 6/24/2019 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 更新日時 |
+| 6/24/2019 | [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 更新日時 |
+| 6/24/2019 | [ディレクトリ同期のために非ルーティング ドメインの準備を整える](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | 更新日時 |
+| 6/24/2019 | [ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | 更新日時 |
+| 6/24/2019 | [Microsoft Azure での SharePoint Server 2013 の障害復旧](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | 更新日時 |
+| 6/24/2019 | [SharePoint 2010 からアップグレードする](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 更新日時 |
+| 6/26/2019 | [Office 365 PowerShell を使用して Skype for Business Online を管理する](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | 更新日時 |
+| 6/26/2019 | [Office 365 へのディレクトリ同期の準備](/Office365/Enterprise/prepare-for-directory-synchronization) | 更新日時 |
+| 6/26/2019 | [SharePoint Online のパフォーマンスをチューニングする](/Office365/Enterprise/tune-sharepoint-online-performance) | 更新日時 |
+| 6/28/2019 | [Office 365 Germany エンドポイント](/Office365/Enterprise/office-365-germany-endpoints) | 更新日時 |
+| 6/28/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
+| 6/28/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
+| 6/28/2019 | [21Vianet が運営する Office 365の URL と IP アドレス範囲](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 更新日時 |
+| 6/28/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
+| 6/28/2019 | [コアデータを新しい Office 365 データセンター geo に移行する](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 更新日時 |
+| 6/28/2019 | [データ移行をリクエストする方法](/Office365/Enterprise/request-your-data-move) | 更新日時 |
