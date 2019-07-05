@@ -1,5 +1,5 @@
 ---
-title: SharePoint サイトを別のジオ位置情報（プレビュー）へ移動します。
+title: 別の地域の場所に SharePoint サイトを移動する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,16 +9,16 @@ ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: SharePoint サイトを別のジオ位置情報に移動する方法について説明します。
-ms.openlocfilehash: 74a1ccf7dcfa60d74135211d7b74a2e7096d09b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
+ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070113"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35422376"
 ---
-# <a name="move-a-sharepoint-site-to-a-different-geo-location-preview"></a>SharePoint サイトを別のジオ位置情報（プレビュー）へ移動します。
+# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
-SharePoint サイトの地域移動を使って、SharePoint サイトを複数の地域環境内にある別のジオ位置情報へ移動させることができます。 この機能は現在プレビューの段階です。
+SharePoint サイトの地域移動を使って、SharePoint サイトを複数の地域環境内にある別の地域の場所へ移動させることができます。
 
 次のサイトの種類は地域のジオ位置情報間を移動することができます。
 
@@ -95,11 +95,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 既定値では、サイトの最初のURL は移動先のジオ位置情報の URL に変更されます。 例:
 
-https://Contoso.sharepoint.com/sites/projectx から https://Contoso.sharepointEUR.com/sites/projectx
+https://Contoso.sharepoint.com/sites/projectx から https://ContosoEUR.sharepoint.com/sites/projectx
 
 Office 365 グループとの関連がないサイトは、`-DestinationUrl` パラメーターを使ってサイト名を変更できます。 例:
 
-https://Contoso.sharepoint.com/sites/projectx から https://Contoso.sharepointEUR.com/sites/projecty
+https://Contoso.sharepoint.com/sites/projectx から https://ContosoEUR.sharepoint.com/sites/projecty
 
 サイトの移動を開始するには、次のコマンドを実行します:
 
