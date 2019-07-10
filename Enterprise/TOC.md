@@ -205,6 +205,8 @@
 ### [ユーザー アカウント管理ツール](manage-office-365-accounts.md)
 ### [同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
+### ゲストと共同で作業する
+#### [ゲストで共有するリファレンス](microsoft-365-guest-settings.md)
 
 ## デバイス
 ### [MDM または Intune を選択する](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
