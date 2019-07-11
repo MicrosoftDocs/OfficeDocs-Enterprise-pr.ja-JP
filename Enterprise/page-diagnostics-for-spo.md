@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online のページ診断ツールを使用する
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Sharepoint Online の推奨されるベストプラクティスについて、従来のページを分析するには、SharePoint 用ページ診断ツールを使用します。
-ms.openlocfilehash: a188b5dbe52a92cd536ef7145534288345b74c22
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f61d680ab4470429436cd0bb88925c2f1fc63323
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069513"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616800"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>SharePoint Online のページ診断ツールを使用する
 

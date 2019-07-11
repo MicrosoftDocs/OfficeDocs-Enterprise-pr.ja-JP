@@ -1,5 +1,5 @@
 ---
-title: Office 365 管理センターで Rights Management をアクティブにする
+title: Office 365 管理センターの Rights Management に関する情報へのポインター
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Office 365 で Rights Management サービスをアクティブ化して使用する方法について説明するトピックへのリンクを示します。
-ms.openlocfilehash: ffbb88de88b5f90d239698c0600e914266e84048
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068453"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616710"
 ---
-# <a name="activate-rights-management-in-the-office-365-admin-center"></a>Office 365 管理センターで Rights Management をアクティブにする
+# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>Office 365 管理センターの Rights Management に関する情報へのポインター
 
 このトピックでは、Office 365 で RMS を有効にし、使用する方法について説明するトピックを示します。
   
@@ -34,13 +34,11 @@ Office 365 のアプリケーションとサービスの Information Rights Mana
 RMS の詳細については、次のリンクを参照してください。
   
 - RMS の詳細については、「 [Azure Rights Management とは](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms)」を参照してください。
-    
-- RMS を初めて使用する場合は、「 [Azure Rights Management の概要](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management)」を参照してください。
-    
-- 展開の手順の概要については、「 [Azure Rights Management の展開のロードマップ](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)」を参照してください。
-    
-- Office 365 の RMS をアクティブ化する方法については、「 [Azure Rights Management をアクティブ](https://technet.microsoft.com/library/jj658941.aspx)化する」を参照してください。
-    
-- Office での Azure RMS と IRM の違いについては、混乱していますか? 他の権限管理条件についてのヘルプが必要ですか? 「 [Rights Management の用語」を](https://technet.microsoft.com/library/dn595132.aspx)参照してください。
-    
 
+- RMS を初めて使用する場合は、「 [Azure Rights Management の概要](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management)」を参照してください。
+
+- 展開の手順の概要については、「 [Azure Rights Management 展開のロードマップ](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)」を参照してください。
+
+- Office 365 の RMS をアクティブ化する方法については、「 [Azure Rights Management をアクティブ](https://technet.microsoft.com/library/jj658941.aspx)化する」を参照してください。
+
+- Office での Azure RMS と IRM の違いについては、混乱していますか? 他の権限管理条件についてのヘルプが必要ですか? 「 [Rights Management の用語」を](https://technet.microsoft.com/library/dn595132.aspx)参照してください。

@@ -1,7 +1,7 @@
 ---
 title: Skype for Business Online のパフォーマンスの調整
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 9/29/2016
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: この記事では、ネットワーク帯域幅の要件を計画する場合、または Skype for Business Online のパフォーマンスを改善する必要があるシステム管理者へのリンクを示します。
-ms.openlocfilehash: 9475f94678836842b6e6cf3b49084b4a6de3c77d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 57b326849fbb4fb1448824da1682d8f7ca66a473
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070393"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616820"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Skype for Business Online のパフォーマンスの調整
 

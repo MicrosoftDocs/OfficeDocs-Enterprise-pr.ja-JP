@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online のパフォーマンスをチューニングする
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/21/2018
 audience: Admin
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online のページダウンロード時間のパフォーマンスを向上させる方法を説明する、他の記事へのリンクが含まれています。
-ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9049041be082aae0f574a8bd2f8ac3c5729f50d2
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070673"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616750"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online のパフォーマンスをチューニングする
 
@@ -36,6 +36,8 @@ SharePoint Online のパフォーマンスを微調整するには、以下の�
     
 - 
   [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
+
+- [SharePoint Online ポータル パフォーマンス ガイダンス](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
     
 - [SharePoint Online のイメージの最適化](image-optimization-for-sharepoint-online.md)
     

@@ -1,7 +1,7 @@
 ---
 title: Office 365 のネットワークと移行の計画
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが含まれています。
-ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069923"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616781"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
@@ -73,7 +73,7 @@ Office 365 の動作を向上させる方法の詳細については、これら
     
 2. 「 [Office 365 のネットワーク接続の原則](https://aka.ms/o365networkingprinciples)」を参照して、office 365 のトラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則について理解します。 この記事は、Office 365 ネットワーク接続を安全に最適化するための最新のガイダンスを理解するのに役立ちます。 
     
-3. Windows 更新プログラムのスケジュールを慎重に管理することによって、メールの移行のパフォーマンスを向上させます。 クライアントコンピューターをバッチ処理で更新し、ネットワーク帯域幅の使用を制限するために Office 365 に移行する前にすべてのクライアントコンピューターが更新されるようにすることができます。 詳細については、「365 Office のデスクトップを手動で更新および構成する (最新の更新プログラム)」を参照してください。
+3. Windows 更新プログラムのスケジュールを慎重に管理することによって、メールの移行のパフォーマンスを向上させます。 クライアントコンピューターをバッチ処理で更新し、ネットワーク帯域幅の使用を制限するために Office 365 に移行する前にすべてのクライアントコンピューターが更新されるようにすることができます。 詳細については、「 [365 Office のデスクトップを手動で更新および構成する (最新の更新プログラム](https://support.microsoft.com/gp/office-2013-365-update))」を参照してください。
     
 4. Office 365 のネットワークトラフィックは、信頼されたインターネットサービスとして扱われ、組織によっては、信頼されていないインターネットサービスへのネットワークトラフィックに関する、従来のフィルタリングやスキャンの多くをバイパスできるようになります。 これには、プロキシユーザー認証やパケット検査などの送信処理の削除に加えて、適切なネットワークアドレス変換 (NAT) を使用してインターネットへのローカル出口を保証することや、増加を処理するのに十分な帯域幅容量が含まれます。ネットワーク要求。 ネットワーク上の信頼されたインターネットサービスとして Office 365 を処理するようにネットワークを構成する方法の詳細については、「 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」を参照してください。
     
@@ -111,5 +111,4 @@ Office 365 の動作を向上させる方法の詳細については、これら
 - [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
     
 - [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
-    
-
+ 

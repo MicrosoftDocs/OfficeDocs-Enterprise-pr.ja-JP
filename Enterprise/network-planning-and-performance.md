@@ -1,7 +1,7 @@
 ---
 title: Office 365 のネットワーク計画とパフォーマンスのチューニング
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Microsoft Office 365 のネットワーク帯域幅要件を計画するのに役立つ情報を示します。 展開後、Office 365 のパフォーマンスを微調整してトラブルシューティングを行うために、ここに戻ってください。
-ms.openlocfilehash: 3497ab5ec006011cefd6e09db323847c97999a34
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c7ea169fbb39a16612c957f0d0275de60c83de1e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069893"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616740"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365 のネットワーク計画とパフォーマンス チューニング
 Office 365 に初めて展開するか、Office に移行する前に、これらのトピックの情報を使用して必要な帯域幅を推定し、Office 365 に展開または移行するのに十分な帯域幅があるかどうかをテストして確認することができます。 概要については、「 [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)」を参照してください。

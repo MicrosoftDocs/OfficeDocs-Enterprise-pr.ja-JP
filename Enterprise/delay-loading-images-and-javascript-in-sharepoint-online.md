@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online での画像の読み込み遅延と JavaScript
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/29/2016
 audience: Admin
@@ -13,24 +13,24 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
-ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067983"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616790"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
-この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。 
+この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
   
-SharePoint Online では、画像がページの読み込み速度に悪影響を及ぼす可能性があります。 既定では、ほとんどのモダンインターネットブラウザーは、HTML ページの読み込み時に画像を事前に取得します。 このため、ユーザーが下にスクロールするまで画像が画面に表示されない場合は、ページが不必要に読み込まれることがあります。 画像は、ページの可視部分を読み込むことをブラウザーにブロックできます。 この問題を回避するには、まず、JavaScript を使用して画像の読み込みをスキップします。 また、必須ではない JavaScript を読み込むと、SharePoint ページの読み込み時間が遅くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript を使用してページの読み込み時間を向上させる方法について説明します。 
+SharePoint Online では、画像がページの読み込み速度に悪影響を及ぼす可能性があります。 既定では、ほとんどのモダンインターネットブラウザーは、HTML ページの読み込み時に画像を事前に取得します。 このため、ユーザーが下にスクロールするまで画像が画面に表示されない場合は、ページが不必要に読み込まれることがあります。 画像は、ページの可視部分を読み込むことをブラウザーにブロックできます。 この問題を回避するには、まず、JavaScript を使用して画像の読み込みをスキップします。 また、必須ではない JavaScript を読み込むと、SharePoint ページの読み込み時間が遅くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript を使用してページの読み込み時間を向上させる方法について説明します。
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用して SharePoint Online ページで画像の読み込みを遅延することで、ページの読み込み時間を短縮する
 
 JavaScript を使用して、web ブラウザーが画像を事前に取得できないようにすることができます。 これにより、ドキュメント全体のレンダリングが高速化されます。 これを行うには、 \<img\>タグから src 属性の値を削除し、次のような data 属性のファイルへのパスに置き換えます。例えば：
   
-```
+```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,7 +40,7 @@ JavaScript を使用して、web ブラウザーが画像を事前に取得で�
   
 テキストファイルで、 **Iselementinviewport ()** 関数を定義し、要素がブラウザーのユーザーに表示される部分にあるかどうかを確認します。 
   
-```
+```txt
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -52,7 +52,6 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
   );
 }
-
 ```
 
 次に、 **loadItemsInView ()** 関数で**Iselementinviewport ()** を使用します。 **LoadItemsInView ()** 関数は、データソース属性の値がユーザーに表示されるブラウザーの部分にある場合、その値を持つすべての画像を読み込みます。 テキストファイルに次の関数を追加します。 

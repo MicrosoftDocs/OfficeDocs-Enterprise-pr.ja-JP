@@ -1,7 +1,7 @@
 ---
 title: SharePoint Online での縮小とバンドル
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 3/1/2017
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: この記事では、Web Essentials での縮小とバンドルの手法を使用して、HTTP 要求の数を減らし、SharePoint Online でページを読み込むのにかかる時間を短縮する方法について説明します。
-ms.openlocfilehash: d73bc6cc86ea1ea4ecba5395f22a20befdc64b13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 823011894019e9602d949f1301994d79dc209664
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070263"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616850"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online での縮小とバンドル
 

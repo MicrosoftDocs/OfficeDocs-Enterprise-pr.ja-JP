@@ -1,7 +1,7 @@
 ---
 title: Office 365 の NAT サポート
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '概要: ネットワーク アドレス変換 (NAT) を使用して、組織内で IP アドレスごとに使用できるクライアントの正しい数を見積もる方法の詳細について説明します。'
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069883"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616870"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 の NAT サポート
 
@@ -50,12 +50,12 @@ Outlook は、(アドイン、共有の予定表、メールボックスなど�
   
  **たとえば、次のような条件だとします。**
   
-- **制限されたポート:** オペレーティング システムで 4,000 
-    
-- **ピーク ポート消費量:** デバイスあたり 6 
-    
-- **ピーク係数:** 4 
-    
+- **制限されたポート:** オペレーティング システムで 4,000
+
+- **ピーク ポート消費量:** デバイスあたり 6
+
+- **ピーク係数:** 4
+
 このような条件の場合、単一のパブリック IP アドレスにサポートされるデバイスの最大数 = (64,000 - 4,000) / (6 + 4) = 6,000 
   
 Office 365 ホスティング パック (Microsoft Office Outlook 2007 用の 2011 年 9 月の更新プログラム、Microsoft Outlook 2010 用の 2011 年 11 月の更新プログラム、またはそれ以降の更新プログラムに含まれています) のリリースでの、Outlook (Office Outlook 2007 Service Pack 2 と Outlook 2010 の両方) から Exchange への最小接続数は 2 つです。ピーク時のネットワークに必要な最小または最大のポート数を決定するには、異なるオペレーティング システムやユーザーの行動などを考慮する必要があります。
@@ -79,4 +79,3 @@ Office 365 ホスティング パック (Microsoft Office Outlook 2007 用の 20
 [Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Office 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-
