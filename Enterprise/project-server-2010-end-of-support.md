@@ -3,7 +3,7 @@ title: Project Server 2010 サポート終了のロードマップ
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 06/03/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
-ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
+ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
+ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35128704"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630401"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
 
@@ -56,6 +56,11 @@ Project Server 2010 を使用している場合は、次のような移行オプ
 - Project Online への移行
     
 - 新しいオンプレミスバージョンの Project Server に移行します (Project Server 2019 を推奨)。
+
+Project Server 2010 のサポート終了を回避するために取ることができる2つのパスを次に示します。
+
+![Project Server 2010 のアップグレードパス](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
+
     
 |**Project Online への移行を希望するのはなぜですか?**|**Project Server 2019 への移行を希望するのはなぜですか?**|
 |:-----|:-----|
