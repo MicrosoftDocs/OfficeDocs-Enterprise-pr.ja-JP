@@ -59,5 +59,4 @@ ObjectID を使用してグループを削除するには、`Remove-SPOGeoAdmini
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-
-  [セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/ja-JP/powershell/module/azuread/set-azureadgroup)
+[セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/ja-JP/powershell/module/azuread/set-azureadgroup)

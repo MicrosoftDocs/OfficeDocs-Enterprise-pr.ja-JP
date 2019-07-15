@@ -36,8 +36,7 @@ Office 365 および管理者のユーザー アカウント、グループ、�
 この記事の日付の時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールのコマンドレットの機能に完全に置き換わるものではありません。多くの場合、両方のバージョンを使用する必要があります。同じコンピューターに両方のバージョンを安全にインストールできます。
 
 > [!TIP]
-> 
-  **PowerShell を初めて使用されますか。**[PowerShell の概要に関するビデオ](https://support.office.com/ja-JP/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn ラーニングにアクセスしてください。 
+> **PowerShell を初めて使用されますか。** [PowerShell の概要に関するビデオ](https://support.office.com/ja-JP/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)を視聴し、LinkedIn ラーニングにアクセスしてください。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
