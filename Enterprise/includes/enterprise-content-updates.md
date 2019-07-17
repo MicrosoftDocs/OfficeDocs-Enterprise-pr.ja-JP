@@ -3,57 +3,6 @@
 
 
 
-## <a name="week-of-may-27-2019"></a>2019年5月27日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 5/28/2019 | [Office 365 Enterprise](/Office365/Enterprise/index) | 更新日時 |
-| 5/28/2019 | [Office 365 IdFix ツールをダウンロードして実行する](/Office365/Enterprise/install-and-run-idfix) | 更新日時 |
-| 5/28/2019 | [Office 365 アカウントを管理するツール](/Office365/Enterprise/manage-office-365-accounts) | 更新日時 |
-| 5/28/2019 | [IdFix ツールを使用して Office 365 と同期するためにディレクトリ属性を準備する](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | 更新日時 |
-| 5/28/2019 | [Office 365 へのディレクトリ同期の準備](/Office365/Enterprise/prepare-for-directory-synchronization) | 更新日時 |
-| 5/28/2019 | [Office 365 アカウントを管理するツール](/Office365/Enterprise/tools-to-manage-office-365-accounts) | 更新日時 |
-| 5/28/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
-| 5/28/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
-| 5/28/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
-| 5/29/2019 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 更新日時 |
-| 5/29/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
-| 5/29/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
-| 5/30/2019 | [Office 365 PowerShell でロールをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | 更新日時 |
-
-
-## <a name="week-of-june-03-2019"></a>2019年6月3日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 6/4/2019 | [Office 365 クライアントアプリのサポート-モダン認証](/Office365/Enterprise/office-365-client-support-modern-authentication) | 更新日時 |
-| 6/4/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
-| 6/4/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
-| 6/4/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
-| 6/4/2019 | [Project Server 2010 サポート終了のロードマップ](/Office365/Enterprise/project-server-2010-end-of-support) | 更新日時 |
-| 6/4/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
-| 6/4/2019 | [SharePoint 2010 からアップグレードする](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 更新日時 |
-| 6/5/2019 | [Office 365 向け Azure ExpressRoute](/Office365/Enterprise/azure-expressroute) | 更新日時 |
-| 6/5/2019 | [Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する](/Office365/Enterprise/bgp-communities-in-expressroute) | 更新日時 |
-| 6/5/2019 | [クライアント接続](/Office365/Enterprise/client-connectivity) | 更新日時 |
-| 6/5/2019 | [コンテンツ配信ネットワーク](/Office365/Enterprise/content-delivery-networks) | 更新日時 |
-| 6/5/2019 | [Office 365 向け ExpressRoute の実装](/Office365/Enterprise/implementing-expressroute) | 更新日時 |
-| 6/5/2019 | [Office 365 向け ExpressRoute でのネットワーク計画](/Office365/Enterprise/network-planning-with-expressroute) | 更新日時 |
-| 6/5/2019 | [Office 365 IP アドレスと URL の Web サービス ](/Office365/Enterprise/office-365-ip-web-service) | 更新日時 |
-| 6/5/2019 | [Office 365 ネットワーク接続の原則](/Office365/Enterprise/office-365-network-connectivity-principles) | 更新日時 |
-| 6/5/2019 | [Office 365 のネットワーク接続の概要](/Office365/Enterprise/office-365-networking-overview) | 更新日時 |
-| 6/5/2019 | [Office 365 サービスに接続するネットワーク デバイスの計画](/Office365/Enterprise/plan-for-network-devices) | 更新日時 |
-| 6/5/2019 | [Office 365 向け ExpressRoute でのルーティング](/Office365/Enterprise/routing-with-expressroute) | 更新日時 |
-| 6/5/2019 | [Office 365 のネットワークをセットアップする](/Office365/Enterprise/set-up-network-for-office-365) | 更新日時 |
-| 6/5/2019 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 更新日時 |
-| 6/5/2019 | [Office 365 の開発/テスト環境の Advanced eDiscovery](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | 更新日時 |
-| 6/7/2019 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 更新日時 |
-| 6/7/2019 | [Project Server 2010 サポート終了のロードマップ](/Office365/Enterprise/project-server-2010-end-of-support) | 更新日時 |
-| 6/7/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
-
-
 ## <a name="week-of-june-10-2019"></a>2019年6月10日の週
 
 
@@ -100,3 +49,43 @@
 | 6/28/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
 | 6/28/2019 | [コアデータを新しい Office 365 データセンター geo に移行する](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 更新日時 |
 | 6/28/2019 | [データ移行をリクエストする方法](/Office365/Enterprise/request-your-data-move) | 更新日時 |
+
+
+## <a name="week-of-july-01-2019"></a>2019年7月01日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 7/2/2019 | [SharePoint サイトを別の地域の場所に移動する](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 更新日時 |
+
+
+## <a name="week-of-july-08-2019"></a>2019年7月8日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 7/9/2019 | [組織のデータを Office 365 Enterprise に移行する](/Office365/Enterprise/migrate-data-to-office-365) | 更新日時 |
+| 7/9/2019 | [SharePoint Online のパフォーマンスの問題の診断](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | 更新日時 |
+| 7/10/2019 | [Office 2007 または2010のサーバーとクライアントからのアップグレードを計画する](/Office365/Enterprise/plan-upgrade-previous-versions-office) | 更新日時 |
+| 7/10/2019 | [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | 更新日時 |
+| 7/10/2019 | [Microsoft クラウド IT アーキテクチャのリソース](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | 更新日時 |
+| 7/10/2019 | [Office 365 管理センターの Rights Management に関する情報へのポインター](/Office365/Enterprise/activate-rms-in-office-365) | 更新日時 |
+| 7/10/2019 | [低速のネットワークで Office 365 を使用するためのベストプラクティス](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | 更新日時 |
+| 7/10/2019 | [SharePoint Online での画像の読み込み遅延と JavaScript](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | 更新日時 |
+| 7/10/2019 | [SharePoint Online のイメージの最適化](/Office365/Enterprise/image-optimization-for-sharepoint-online) | 更新日時 |
+| 7/10/2019 | [SharePoint Online のパフォーマンスのチューニングの概要](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | 更新日時 |
+| 7/10/2019 | [SharePoint Online での縮小とバンドル](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | 更新日時 |
+| 7/10/2019 | [Office 365 の NAT サポート](/Office365/Enterprise/nat-support-with-office-365) | 更新日時 |
+| 7/10/2019 | 
+  [SharePoint Online のナビゲーション オプション](/Office365/Enterprise/navigation-options-for-sharepoint-online) | 更新日時 |
+| 7/10/2019 | [Office 365 のネットワークと移行の計画](/Office365/Enterprise/network-and-migration-planning) | 更新日時 |
+| 7/10/2019 | [Office 365 のネットワーク計画とパフォーマンス チューニング](/Office365/Enterprise/network-planning-and-performance) | 更新日時 |
+| 7/10/2019 | [SharePoint Online のページ診断ツールを使用する](/Office365/Enterprise/page-diagnostics-for-spo) | 更新日時 |
+| 7/10/2019 | [Office 365 のパフォーマンスをチューニングする](/Office365/Enterprise/tune-office-365-performance) | 更新日時 |
+| 7/10/2019 | [SharePoint Online のパフォーマンスをチューニングする](/Office365/Enterprise/tune-sharepoint-online-performance) | 更新日時 |
+| 7/10/2019 | [Skype for Business Online のパフォーマンスをチューニングする](/Office365/Enterprise/tune-skype-for-business-online-performance) | 更新日時 |
+| 7/10/2019 | [リーンポップアウトを使用してメールメッセージの読み取り時に使用されるメモリを削減する](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | 更新日時 |
+| 7/10/2019 | [SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用する](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | 更新日時 |
+| 7/10/2019 | [SharePoint Online でのオブジェクトキャッシュの使用](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | 更新日時 |
+| 7/11/2019 | [Project Server 2010 サポート終了のロードマップ](/Office365/Enterprise/project-server-2010-end-of-support) | 更新日時 |
+| 7/12/2019 | [SharePoint 2010 からアップグレードする](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 更新日時 |
