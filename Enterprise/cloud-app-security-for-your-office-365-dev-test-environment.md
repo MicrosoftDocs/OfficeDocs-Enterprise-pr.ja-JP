@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068103"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782257"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
@@ -81,7 +81,7 @@ Office 365 Cloud App Security (以前の Office 365 Advanced Security Management
 
 1. Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
-2. **[管理者]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター _GT_ セキュリティ & コンプライアンス**] をクリックします。
+2. **[管理者]** タイルをクリックします。 [ **Office 管理センター** ] タブで、[**管理センター > セキュリティ & コンプライアンス**] をクリックします。
     
 3. 左側のナビゲーション ウィンドウで、 **[アラート] > [高度な警告の管理]** をクリックします。
     
@@ -153,7 +153,7 @@ Office 365 Cloud App Security (以前の Office 365 Advanced Security Management
     
 22. **[Microsoft Office Home]** タブで、 **[メール]** をクリックします。最大 30 分間待ちます。 
     
-    受信トレイに 2 件の「 **Microsoft Azure AD Notification Service**」という題名の新しい電子メール メッセージが届いているはずです。1 件のメッセージは、User 5 のアカウントが **パスワード管理者**ロール に追加されたことを示しています。別のメッセージは、User 5 のアカウントが **ユーザー管理者**ロール (Office 365 管理センターでのユーザー管理の管理者ロールに等しい) に追加されたことを示しています。
+    **Microsoft AZURE AD Notification Service**というタイトルの新しい電子メールメッセージが受信トレイに2つ表示されます。 1つのメッセージは、User 5 アカウントが**パスワード管理**者ロールに追加されたこと、および別のメッセージがユーザー5アカウントが**ユーザー**管理者ロールに追加されたことを示している (Microsoft 365 管理センター)。
     
 この環境を使用して新しいポリシーを作成し、さらに Office 365 Cloud App Security を試すことができます。その他の構成に関する記事へのリンクは、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」を参照してください。
   

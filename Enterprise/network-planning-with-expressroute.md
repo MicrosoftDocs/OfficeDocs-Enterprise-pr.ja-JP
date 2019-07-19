@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
-ms.openlocfilehash: 459850a29e87650f1aecfc6a6977cd6e5b77ae07
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069703"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782237"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
@@ -34,7 +34,7 @@ Azure ExpressRoute は、Microsoft のデータセンター内の Office 365 サ
 |**ネットワーク計画の相違点**|**インターネットネットワーク接続**|**ExpressRoute ネットワーク接続**|
 |:-----|:-----|:-----|
 | 必要なインターネットサービスへのアクセス (を含む)  <br/>  DNS 名前解決  <br/>  証明書失効の検証  <br/>  コンテンツ配信ネットワーク  <br/> |はい  <br/> |Microsoft が所有する DNS または CDN インフラストラクチャへの要求は、ExpressRoute ネットワークを使用する場合があります。  <br/> |
-| Office 365 サービスへのアクセス (以下を含む)  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365 ポータルと認証  <br/> |○ (すべてのアプリケーションと機能)  <br/> |はい、[特定のアプリケーションおよび機能](https://aka.ms/o365endpoints) <br/> |
+| Office 365 サービスへのアクセス (以下を含む)  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  ブラウザー内の Office  <br/>  Office 365 ポータルと認証  <br/> |○ (すべてのアプリケーションと機能)  <br/> |はい、[特定のアプリケーションおよび機能](https://aka.ms/o365endpoints) <br/> |
 |境界でのオンプレミスのセキュリティ。  <br/> |はい  <br/> |はい  <br/> |
 |高可用性の計画。  <br/> |代替のインターネットネットワーク接続へのフェールオーバー  <br/> |代替 ExpressRoute 接続へのフェールオーバー  <br/> |
 |予測可能なネットワークプロファイルを使用した直接接続。  <br/> |いいえ  <br/> |はい  <br/> |
@@ -190,7 +190,7 @@ Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つこと�
 ## <a name="related-topics"></a>関連項目
 <a name="BKMK_high-availability"> </a>
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

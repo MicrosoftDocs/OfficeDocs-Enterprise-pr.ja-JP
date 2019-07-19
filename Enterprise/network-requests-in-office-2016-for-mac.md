@@ -13,12 +13,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Office for Mac アプリケーションは、macOS プラットフォームでネイティブのアプリ環境を提供します。 各アプリは、ネットワークアクセスが利用できない場合の状態など、さまざまなシナリオで動作するように設計されています。 コンピューターがネットワークに接続されている場合、アプリケーションは自動的に一連の web ベースのサービスに接続して、強化された機能を提供します。 このホワイトペーパーでは、アプリケーションが到達しようとしているエンドポイントと Url、および提供されるサービスについて説明します。 この情報は、ネットワーク構成の問題をトラブルシューティングしたり、ネットワークプロキシサーバーのポリシーを設定するときに役立ちます。 この記事の詳細は、「Office 365 の URL とアドレスの範囲」の記事を補完することを目的としています。
-ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069659"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781957"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac でのネットワーク要求
 
@@ -68,7 +68,7 @@ Office アプリを初めて起動したときに、次のネットワークエ�
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Office ルールテレメトリダウンロード-テレメトリサービスにアップロードするデータとイベントについてクライアントに通知します。  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |座標  <br/> |OneNote テレメトリサービス  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPS ON  <br/> |停止  <br/> |Office テレメトリアップロードのレポート-クライアント上で発生する "Heartbeart" およびエラーイベントがテレメトリサービスにアップロードされます。  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |座標  <br/> |Office Online テンプレートサービス-ユーザーにオンラインドキュメントテンプレートを提供します。  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |座標  <br/> |Office テンプレートサービス-ユーザーにオンラインドキュメントテンプレートを提供します。  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |座標  <br/> |Office テンプレートのダウンロード-PNG テンプレートイメージの保存。  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |座標  <br/> |Office アプリの構成を保存します。  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |座標  <br/> |Office Document Integration Services Catalog (サービスとエンドポイントの一覧) およびホーム領域の検出。  <br/> |

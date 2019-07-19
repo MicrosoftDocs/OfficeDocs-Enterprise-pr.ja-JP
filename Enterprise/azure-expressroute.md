@@ -3,7 +3,7 @@ title: Office 365 向け Azure ExpressRoute
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068273"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782357"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
-Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。 多くの場合、Azure で実行されるインフラストラクチャおよびプラットフォームサービスは、ネットワークアーキテクチャとパフォーマンスに関する考慮事項に対処することでメリットを得られます。 このような場合は、Azure に ExpressRoute をお勧めします。 Office 365 や Dynamics 365 などのサービスとしてのソフトウェアは、インターネットを介して安全かつ確実にアクセスできるように構築されています。 この記事では、インターネットのパフォーマンスとセキュリティについて説明し、「 [Network connectivity To office 365](network-connectivity.md)」の「office 365 用の Azure ExpressRoute」を参照してください。
+Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。 多くの場合、Azure で実行されるインフラストラクチャおよびプラットフォームサービスは、ネットワークアーキテクチャとパフォーマンスに関する考慮事項に対処することでメリットを得られます。 このような場合は、Azure に ExpressRoute をお勧めします。 Office 365 や Dynamics 365 などのサービスとしてのソフトウェアは、インターネットを介して安全かつ確実にアクセスできるように構築されています。 「 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)」の記事では、インターネットのパフォーマンスとセキュリティについて説明し、「office 365 用の Azure ExpressRoute」を検討することができます。
 
 > [!NOTE]
-> Office 365 の ExpressRoute を使用するには、Microsoft の承認が必要です。 お客様の規制要件で直接的な接続が義務付けられている場合、Microsoft はお客様のすべての要求をレビューし、Office 365 の使用状況を承認します。 このような要件がある場合は、テキストの抜粋と web リンクを入力してください。これは、Microsoft レビューを開始するために、 [Office 365 の ExpressRoute の要求フォーム](https://aka.ms/O365ERReview)に直接接続する必要があることを意味します。 承認されていないサブスクリプション Office 365 のルートフィルターを作成しようとすると、[エラーメッセージ](https://support.microsoft.com/kb/3181709)が表示されます。 
+> Office 365 の ExpressRoute を使用するには、Microsoft の承認が必要です。 お客様の規制要件で直接的な接続が義務付けられている場合、Microsoft はお客様のすべての要求をレビューし、Office 365 の使用状況を承認します。 このような要件がある場合は、テキストの抜粋と web リンクを入力してください。これは、Microsoft レビューを開始するために、 [Office 365 の ExpressRoute の要求フォーム](https://aka.ms/O365ERReview)に直接接続する必要があることを意味します。 承認されていないサブスクリプション Office 365 のルートフィルターを作成しようとすると、[エラーメッセージ](https://support.microsoft.com/kb/3181709)が表示されます。
 
 これで、選択した Office 365 のネットワークトラフィックに対して、Office 365 への直接ネットワーク接続を追加できるようになります。 Azure ExpressRoute は直接接続で予測可能なパフォーマンスを提供し、Microsoft ネットワークコンポーネントの稼働時間の SLA を 99.95% にします。 Azure ExpressRoute でサポートされていないサービスに対しては、インターネット接続が依然として必要になります。
 
@@ -50,8 +50,6 @@ Office 365、Windows Update、TechNet などのすべての Microsoft アプリ�
 
 さらに情報が必要な場合 [Azure expressroute For office 365 を使用してネットワークトラフィックを管理](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)する方法と、 [office 365 用に azure expressroute を構成](https://azure.microsoft.com/documentation/articles/expressroute-faqs/)する方法について説明します。 また、より詳細な概念を説明するため、Channel 9 の「 [Office 365 の Azure ExpressRoute のための10の](https://channel9.msdn.com/series/aer)パーツを記録しました。
 
-([Office 365 用 Azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
-
 ## <a name="what-office-365-services-are-included"></a>どの Office 365 サービスが含まれていますか?
 <a name="BKMK_WhatDoIGet"> </a>
 
@@ -62,13 +60,11 @@ Office 365、Windows Update、TechNet などのすべての Microsoft アプリ�
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|ポータルと共有<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office Online<sup>1</sup> <br/> |
+|ポータルと共有<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup>これらの各アプリケーションには、ExpressRoute でサポートされていないインターネット接続要件があります。詳細については、「 [Office 365 endpoints](https://aka.ms/o365endpoints) 」の記事を参照してください。
 
 Office 365 の ExpressRoute に含まれていないサービスには、Office 365 ProPlus クライアントダウンロード、社内 Id プロバイダーのサインイン、および中国での Office 365 (21 Vianet) サービスがあります。
-
-([Office 365 用 Azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -100,11 +96,9 @@ Office 365 の ExpressRoute を購入するには、1つまたは複数の[承�
 
 [Office 365 の ExpressRoute](https://aka.ms/ert)にサインアップする準備ができましたか?
 
-([Office 365 用 Azure ExpressRoute](azure-expressroute.md#BKMK_HOME))
-
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 向け ExpressRoute の管理](managing-expressroute-for-connectivity.md)
 

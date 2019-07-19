@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: 57b957d151bf49d67577ebd0d75f3a87e102d904
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722576"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782347"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
@@ -54,7 +54,7 @@ Contoso Corporation は、現在 Office 365 を使用して Exchange Online と 
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp;の OneDrive for business  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; office Online  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp;の OneDrive for business  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
 
 > [!NOTE]
 > 各サービスに対してより低いプレフィックス数を実現するために、サービス間で最小限の重複が保持されます。 これは予想どおりの動作です。
@@ -67,7 +67,7 @@ Contoso Corporation は、現在 Office 365 を使用して Exchange Online と 
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; office Online  <br/>  Skype for Business テレメトリ、Skype クライアントのクイックヒント、パブリック IM 接続  <br/>  Exchange Online、Exchange Online Protection、および SharePoint Online  <br/> |
+|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/>  Skype for Business テレメトリ、Skype クライアントのクイックヒント、パブリック IM 接続  <br/>  Exchange Online、Exchange Online Protection、および SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>シナリオ 3: Office 365 サービス用にのみ Azure ExpressRoute のスコープを限定する
 
@@ -77,7 +77,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|Exchange、Skype for Business、SharePoint、 &amp;その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp;の OneDrive for business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp; office Online  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
+|Exchange、Skype for Business、SharePoint、 &amp;その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp;の OneDrive for business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP コミュニティを使用するための主要な計画に関する考慮事項
 

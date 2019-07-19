@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067902"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782327"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -61,7 +61,7 @@ Office 365 サービスは、どのデータセンターでもすべて同じバ
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>コア顧客データはどこにありますか?
 
-テナント管理者は、管理センターのデータの場所カードを表示して、いつでも各サービスの保存場所にある主要な顧客データを確認することができます (特にそのテナントの場合)。また、データセンターの geo、データセンター、および office 365 の顧客365データの場所を、新しいテナントの保存場所にある現在の既定のコア顧客データの参照として公開しています。  Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認できます。  
+テナント管理者は、管理センターのデータの場所カードを表示して、いつでも各サービスの保存場所にある主要な顧客データを確認することができます (特にそのテナントの場合)。また、データセンターの geo、データセンター、および Office 365 の顧客 [365](https://office.com/datamaps)データの場所を、新しいテナントの保存場所にある現在の既定のコア顧客データの参照として公開しています。  Microsoft 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認できます。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>いつから移行をリクエストできますか?
   
@@ -101,7 +101,7 @@ Office 365 データセンターに近づいても、ネットワークのパフ
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>移行が完了したことはどのようにわかりますか?
   
-各サービスのデータの移行が完了したことを確認するために、Office 365 メッセージセンターを見てください。 各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange Online、SharePoint Online、Skype for Business Online の3つの完了通知です。  また、Office 365 管理センターの組織プロファイルの下にある [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。  
+各サービスのデータの移行が完了したことを確認するために、Office 365 メッセージセンターを見てください。 各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange Online、SharePoint Online、Skype for Business Online の3つの完了通知です。  また、Microsoft 365 管理センターの組織プロファイルの下の [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>私は新しいデータセンター geo にいる Office 365 のユーザーですが、サインアップ時には別の国を選択しました。 新しいデータセンター geo に移行するにはどうすればよいですか?
 

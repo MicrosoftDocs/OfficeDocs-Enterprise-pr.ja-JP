@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '概要: Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示、一覧表示、または表示できます。'
-ms.openlocfilehash: e1a99aef4f2045dcba8d7f3894ef82f9e7c36a15
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c23e9106873aa32e8daccb1e35a16862e6f9bb7d
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071103"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782067"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントを表示する
 
 **概要:** Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示します。
   
-Office 365 管理センターを使用して Office 365 テナントのアカウントを表示することはできますが、office 365 PowerShell を使用して、Office 365 管理センターでは実行できないいくつかの操作を実行することもできます。
+Microsoft 365 管理センターを使用して Office 365 テナントのアカウントを表示することはできますが、Office 365 PowerShell を使用して、管理センターではできないいくつかの操作を実行することもできます。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
@@ -55,7 +55,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>特定のアカウントを表示する
 
-特定のユーザーアカウントを表示するには、ユーザーアカウントのサインインアカウント名 (UPN) を入力し、"<" および ">" 文字を削除して、次のコマンドを実行します。
+特定のユーザーアカウントを表示するには、ユーザーアカウントのサインインアカウント名 (UPN) を入力し、"<" と ">" 文字を削除して、次のコマンドを実行します。
   
 ```
 Get-AzureADUser -ObjectID <sign-in name of the user account>
@@ -122,7 +122,7 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  これらの例に**** 示されている where-object コマンドレットの構文は、 **where オブジェクト {\_$ にあります。** [ユーザーアカウントのプロパティ名][比較演算子]金額****> [comparison operator] は **-eq** (等しい)、 **-ne** for not equals、 **-lt** (より小さい、- **gT** (より大きい)、または他の場合) です。  [value] は通常、unspecified> の文字列 (一連の文字、数字、およびその他の文字)、数値、または **$Null**を示します。詳細については、「 [Where オブジェクト](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)」を参照してください。
+>  これらの例に**** 示されている where-object コマンドレットの構文は、 **where オブジェクト {\_$ にあります。** [ユーザーアカウントのプロパティ名][比較演算子]金額 **}**. > [比較演算子] は、equals、 **-ne** for not equals、 **-lt** (より小さい、-gt (より大きい)、- **gt** (より大きい)、およびその他の場合に- **eq**を指定します。  [value] は通常、指定されていない文字列 (一連の文字、数字、およびその他の文字)、数値、または **$Null**を指定しない> の場合は、 [Where オブジェクト](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)を参照してください。詳細については、ここを参照してください。
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
@@ -169,7 +169,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ### <a name="view-a-specific-account"></a>特定のアカウントを表示する
 
-特定のユーザーアカウントを表示するには、ユーザーアカウントのユーザーアカウントのサインイン名 (UPN) を記入し、"<" および ">" 文字を削除して、次のコマンドを実行します。
+特定のユーザーアカウントを表示するには、ユーザーアカウントのユーザーアカウントのサインイン名 (UPN) を記入し、"<" と ">" 文字を削除して、次のコマンドを実行します。
   
 ```
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>

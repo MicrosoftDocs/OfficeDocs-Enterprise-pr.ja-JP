@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 のネットワーク接続の計画を開始する前に、Office 365 トラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則を理解しておくことが重要です。 この記事は、Office 365 ネットワーク接続を安全に最適化するための最新のガイダンスを理解するのに役立ちます。
-ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017297"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782207"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 ネットワーク接続の原則
 
@@ -42,7 +42,7 @@ Office 365 などの SaaS アプリケーションの導入により、サービ
 ## <a name="office-365-architecture"></a>Office 365 アーキテクチャ
 <a name="BKMK_Architecture"> </a>
 
-Office 365 は、Exchange Online、SharePoint Online、Skype for Business Online などのさまざまなマイクロサービスおよびアプリケーションを使用して生産性とコラボレーションのシナリオを実現する、サービス (SaaS) の分散型ソフトウェア (SaaS) クラウドです。Teams、Exchange Online Protection、Office Online およびその他の多くの人。 特定の Office 365 アプリケーションは、お客様のネットワークとクラウドへの接続に適用される独自の機能を備えていますが、すべての主要なプリンシパル、目標、およびアーキテクチャパターンを共有しています。 接続のためのこれらのプリンシパルとアーキテクチャパターンは、他の多くの SaaS クラウドで一般的に使用されており、Microsoft などのプラットフォームとしてのプラットフォームとしてのプラットフォームとしてのプラットフォームとしての一般的な展開モデルとは大きく異なります。Azure.
+Office 365 は、Exchange Online、SharePoint Online、Skype for Business Online などのさまざまなマイクロサービスおよびアプリケーションを使用して生産性とコラボレーションのシナリオを実現する、サービス (SaaS) の分散型ソフトウェア (SaaS) クラウドです。Teams、Exchange Online Protection、ブラウザー内の Office など、多くのユーザー。 特定の Office 365 アプリケーションは、お客様のネットワークとクラウドへの接続に適用される独自の機能を備えていますが、すべての主要なプリンシパル、目標、およびアーキテクチャパターンを共有しています。 接続のためのこれらのプリンシパルとアーキテクチャパターンは、他の多くの SaaS クラウドで一般的に使用されており、Microsoft などのプラットフォームとしてのプラットフォームとしてのプラットフォームとしてのプラットフォームとしての一般的な展開モデルとは大きく異なります。Azure.
   
 Office 365 の最も重要なアーキテクチャ機能の1つは、ユーザーが接続する方法について、完全にグローバルに分散されたサービスであるということです。 ターゲットの Office 365 テナントの場所は、顧客データがクラウド内に格納されている場所の局所性を理解するうえで重要ですが、Office 365 を使用したユーザーの利便性は、データを含むディスクへの直接接続には関係ありません。 Office 365 のユーザー環境 (パフォーマンス、信頼性、その他の重要な品質特性を含む) は、世界中の何百もの Microsoft の場所でスケールアウトされている、高度に分散されたサービスのフロントドアを経由した接続に関係しています。 多くの場合、顧客のネットワークでは、ユーザーの要求を中央の場所または地域の出口に365接続するのではなく、最も近い Office 365 サービスエントリポイントにルーティングできるようにすることによって、最高のユーザー環境が実現されます。
   

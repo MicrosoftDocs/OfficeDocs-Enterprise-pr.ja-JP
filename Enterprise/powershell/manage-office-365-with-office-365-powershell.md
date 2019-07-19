@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: '概要: Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Exchange Online、Office 365 セキュリティ/コンプライアンス センターで Office 365 PowerShell を使用する方法について説明します。'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068904"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782107"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Office 365 PowerShell による Office 365 の管理
 
  **概要:** Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Exchange Online、Office 365 セキュリティ/コンプライアンス センターで Office 365 PowerShell を使用する方法について説明します。
   
-Office 365 PowerShell は、Office 365 管理センターを補完する強力な管理ツールです。たとえば、Office 365 PowerShell の自動化機能を使用すると、複数のユーザー アカウントとライセンスの管理やレポートの作成をすばやく行えます。Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Exchange Online、Office 365 セキュリティ/コンプライアンス センターで Office 365 PowerShell を使用する方法について説明します。
+Office 365 PowerShell は、Microsoft 365 管理センターを補完する強力な管理ツールです。 たとえば、Office 365 PowerShell の自動化機能を使用すると、複数のユーザー アカウントとライセンスをより簡単に管理したり、レポートを作成したりできます。 Office 365 ユーザーとライセンス、Skype for Business Online、SharePoint Online、Exchange Online、および Office 365 Security & コンプライアンスセンターで Office 365 PowerShell を使用する方法について説明します。
   
 以下から必要に合うトピックを選択してください。
   

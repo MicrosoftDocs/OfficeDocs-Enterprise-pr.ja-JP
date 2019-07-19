@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: この記事は、「Microsoft Office Server 製品間での機能の統合-SharePoint Server、Exchange Server、Lync Server、および Office Online Server」という名前の図のアクセス可能なテキストバージョンです。
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068773"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782247"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品間の機能統合
 
-**概要:** この資料は、「Microsoft Office Server 製品間での機能の統合 - SharePoint Server、Exchange Server、Lync Server、および Office Online」という名前の図のアクセス可能なテキスト バージョンです。
+**概要:** この記事は、「Microsoft Office Server 製品間での機能の統合-SharePoint Server、Exchange Server、Lync Server、および Office Online Server」という名前の図のアクセス可能なテキストバージョンです。
   
 この図は、ドキュメントのセクションのタイトルが示すとおり、いくつかのタブで構成しています。
   
@@ -86,7 +86,7 @@ Windows Phone を使用するか、QR コード リーダーをダウンロー�
     
 - Lync
     
-- Office Online (旧 Office Web App) 
+- Office Online Server (以前の Office Web Apps) 
     
 高解像度のユーザーの写真。この機能は以下に適用できます。 
   
