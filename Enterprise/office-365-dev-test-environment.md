@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: '概要: このテスト ラボ ガイドを使用すると、評価または開発/テスト用の Office 365 試用版サブスクリプションを作成できます。'
-ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162510"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781937"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
 
@@ -118,7 +118,7 @@ Office 365 E5 試用版サブスクリプションを開始するには、最初
     
 11. 次のページで、Office 365 のセットアップが完了して、すべてのタイルが使用できるようになるまで待機します。
     
-Office 365 ポータルのメイン ページが表示されます。このページから、Office Online のサービスと Microsoft 365 管理センターにアクセスできます。
+Office 365 ポータルのメイン ページが表示されます。このページから、Office のサービスと Microsoft 365 管理センターにアクセスできます。
   
 シミュレーションのエンタープライズ Office 365 開発/テスト環境の、最終的な構成をここに示します。
   
