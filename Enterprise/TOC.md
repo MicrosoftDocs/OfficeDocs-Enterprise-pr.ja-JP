@@ -172,10 +172,10 @@
 ##### [あなたの衛星位置情報で、SharePoint Multi-Geo を有効に](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Exchange Multi-Geo の管理](administering-exchange-online-multi-geo.md)
 
-#### [新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
-##### [データ移行をリクエストする方法](request-your-data-move.md)
-##### [データの移行中および移行後](during-and-after-your-data-move.md)
-##### [データ移行についての一般的な FAQ](data-move-faq.md)
+### [新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
+#### [データ移行をリクエストする方法](request-your-data-move.md)
+#### [データの移行中および移行後](during-and-after-your-data-move.md)
+#### [データ移行についての一般的な FAQ](data-move-faq.md)
 
 ### ハイブリッド ソリューション
 #### [SharePoint Server 2016 認証に Azure Active Directory を使用する](using-azure-ad-for-sharepoint-server-authentication.md)
