@@ -3,7 +3,7 @@ title: コア データを新しい Office 365 データ センター geo に移
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 新しいデータセンター geo 継続的な顧客需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 コア顧客データは、Microsoft Online Services の用語で定義されている、Exchange Online のメールボックスの内容 (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容) および SharePoint Online サイトのコンテンツとファイルのサブセットを参照する用語です。そのサイト内に格納され、OneDrive for Business にアップロードされたファイル。
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392347"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907640"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>コア データを新しい Office 365 データ センター geo に移行する
 
@@ -39,8 +39,8 @@ Business services 用 Office 365 の新しいデータセンター geo を引き
 |****英国****| ヨーロッパ | 英国 | 2016 年 9 月 |
 |****韓国****| アジア/太平洋 | 韓国 | 2017 年 4 月 |
 |****フランス****| ヨーロッパ | フランス | 2018 年 3 月 |
-|アラブ首長国連邦 * * * * * *| ヨーロッパ | アラブ首長国連邦 | Avct |
-|南アフリカ * * * *| ヨーロッパ | 南アフリカ | Avct |
+|アラブ首長国連邦 * * * * * *| ヨーロッパ | アラブ首長国連邦 | 2019年6月 |
+|南アフリカ * * * *| ヨーロッパ | 南アフリカ | 2019年7月 |
   
 新規のお客様、または新しいデータセンター geo の後に作成された Office 365 テナントには、自動的に新しいデータセンター geo に格納されているコア カスタマー データがあります。
   
