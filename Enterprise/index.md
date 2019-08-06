@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 は、コラボレーション、セキュリティとコンプライアンス、モビリティ、intellgence および分析を可能にするパワフルなオンラインクラウドサービスを提供しています。 このページでは、エンタープライズ組織で Office 365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスを提供します。
+description: Microsoft Office 365 には、コラボレーション、セキュリティとコンプライアンス、モビリティ、およびインテリジェンスと分析を可能にするパワフルなオンラインクラウドサービスが用意されています。 このページでは、エンタープライズ組織で Office 365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスを提供します。
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -14,15 +14,15 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487133"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490730"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 は、コラボレーション、セキュリティとコンプライアンス、モビリティ、intellgence および分析を可能にするパワフルなオンラインクラウドサービスを提供しています。 このページでは、エンタープライズ組織で Office&nbsp;365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスへのリンクを提供します。</p>
+<p>Microsoft Office&nbsp;365 には、コラボレーション、セキュリティとコンプライアンス、モビリティ、およびインテリジェンスと分析を可能にするパワフルなオンラインクラウドサービスが用意されています。 このページでは、エンタープライズ組織で Office&nbsp;365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスへのリンクを提供します。</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -35,8 +35,8 @@ ms.locfileid: "33487133"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>fasttrack を使用したガイド付きの展開</h3>
-                <p>office&nbsp;365 の fasttrack Center 特典は、組織で office&nbsp;365 サービスを計画、展開、推進するためのガイド付きの支援に使用します。</p>
+                        <h3>FastTrack を使用したガイド付きの展開</h3>
+                <p>Office&nbsp;365 の Fasttrack Center 特典は、組織で office&nbsp;365 サービスを計画、展開、推進するためのガイド付きの支援に使用します。</p>
                     </div>
                 </div>
             </div>
