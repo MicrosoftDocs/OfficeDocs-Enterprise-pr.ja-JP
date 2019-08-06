@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070893"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782497"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
@@ -128,7 +128,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 2. [ **Office 管理センター** ] タブで、[**管理センター > SharePoint**] をクリックします。
     
-3. [ **SharePoint 管理センター** ] タブで、[**新しい > のプライベートサイトコレクション**] をクリックします。
+3. [ **SharePoint 管理センター** ] タブで、[**新しい > [プライベートサイトコレクション**] をクリックします。
     
 4. [サイトコレクションの新規作成] ウィンドウ**** の [ **** URL] ボックスに「役職」と入力し、**管理者**のグローバル管理者アカウントの名前を指定して、[ **OK]** をクリックします。
     
@@ -172,7 +172,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. **CEO** アカウント名とパスワードを入力し、**[サインイン]** をクリックします。
     
-5. ブラウザーの新しいタブで、エグゼクティブサイトコレクション ( **https://**\<organization name>) の URL を入力します****。
+5. ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します ( **https://**\<organization name>**sharepoint.com/sites/executives**)。
     
 6. [**ドキュメント**]、[**新規作成**]、[ **Word 文書**] の順にクリックします。
     
@@ -190,7 +190,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. **SensitiveData BeforeIRM.docx** ドキュメントをステップ 1 で作成したフォルダーに格納します。
     
-4. ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します ( **https://**\<organization name>)****。
+4. ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します ( **https://**\<organization name>**sharepoint.com/sites/sales**)。
     
 5. **販売サイト コレクション** の **[ドキュメント]** フォルダーをクリックします。
     
@@ -316,7 +316,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 6. **[ドキュメント]** ページで、**SensitiveData-AfterIRM.docx** を開きます。 
     
-    「申し訳ありません。このドキュメントは Information Rights Management (IRM) によって保護されているため、Word Online で開くことはできません。」というメッセージが表示されます。  
+    "申し訳ございません。この文書は Information Rights Management (IRM) で保護されているため、Word で開くことができません。" というメッセージが表示されます。 
     
 7. **[Word で編集]** をクリックします。ファイルを開くかどうかを尋ねられます。**[はい]** をクリックします。
     

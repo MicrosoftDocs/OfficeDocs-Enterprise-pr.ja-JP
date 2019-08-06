@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 用 ExpressRoute は、多くのインターネットに接続された Office 365 サービスへの代替ルーティングパスを提供します。 Office 365 用 ExpressRoute のアーキテクチャは、既にインターネット経由でインターネット経由で提供されている Office 365 サービスのアドバタイズに基づいています。これらの IP プレフィックスを以降に再配布するにはネットワーク。 ExpressRoute を使用すると、多くの Office 365 サービスで、インターネットおよび ExpressRoute を介して、いくつかの異なるルーティングパスを効果的に有効にすることができます。 ネットワーク上のルーティングの状態が、内部ネットワークトポロジの設計方法に大きな変化を表すことがあります。
-ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067403"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722726"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -89,7 +89,7 @@ Office 365 用 ExpressRoute は、多くのインターネットに接続され�
 
 - 受信ネットワークトラフィックフローは、Microsoft クラウドから社内ホストへの接続が開始されるすべてのシナリオです。 これらの接続は、一般に、外部で送信されるフローに対して顧客のセキュリティポリシーが必要とする、ファイアウォールやその他のセキュリティインフラストラクチャを経由する必要があります。
 
-「Office 365 の expressroute と共に expressroute をルーティングする」の記事の「route の対称を保証する」セクションを読んで、受信トラフィックを送信し、office 365 で 365 expressroute としてマークされた列を確認します。残りの接続情報を決定するためのエンドポイントの参照記事。
+「Office [365 の expressroute と共に expressroute をルーティング](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)する」の記事の「 **route の対称を保証**する」セクションを読んで、受信トラフィックを送信し、Office 365 で**365 expressroute**としてマークされた列を確認します。 [](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)残りの接続情報を決定するためのエンドポイントの参照記事。
   
 送信接続を必要とするサービスごとに、ネットワークルーティング、プロキシ構成、パケット検査、および帯域幅ニーズを含む、サービスの計画された接続について説明します。
   
@@ -237,13 +237,13 @@ Office 365 地域、ExpressRoute ネットワークサービスプロバイダ�
 
 各主要 Office 365 ワークロードに必要な帯域幅の計画を作成します。 Exchange Online、SharePoint Online、Skype for Business Online の帯域幅要件を個別に見積もります。 開始点として、Exchange Online と Skype for Business で提供されている見積もり電卓を使用できます。ただし、ユーザープロファイルと場所の代表的なサンプルを含むパイロットテストは、組織の帯域幅の要件を十分に理解するために必要です。
   
-各インターネットでのセキュリティの処理方法、および expressroute の出力場所を計画に追加します。すべての expressroute 365 接続がパブリックピアリングを使用し、外部への接続に関する会社のセキュリティポリシーに従ってセキュリティ保護されたままである必要があることを覚えておいてください。網.
+各インターネットでのセキュリティの処理方法、および ExpressRoute の出力場所を計画に追加します。すべての ExpressRoute 365 接続がパブリックピアリングを使用し、外部への接続に関する会社のセキュリティポリシーに従ってセキュリティ保護されたままである必要があることを覚えておいてください。網.
   
 どのユーザーに影響を与えるかについての計画に詳細を追加し、それらのユーザーが最も簡単な方法でどのユーザーがどのように作業を実行できるようにするかを決定します。
   
 #### <a name="plan-bandwidth-requirements-including-skype-for-business-requirements-on-jitter-latency-congestion-and-headroom"></a>ジッタ、待機時間、輻輳、ヘッドルームの Skype for Business 要件を含む帯域幅要件を計画する
   
-また、Skype for Business Online には、「[メディア品質と skype For Business Online でのネットワーク接続のパフォーマンス](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)」の記事で詳しく説明する、特定の追加のネットワーク要件があります。
+また、skype for Business Online には、「[メディア品質と skype For Business Online でのネットワーク接続のパフォーマンス](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)」の記事で詳しく説明する、特定の追加のネットワーク要件があります。
   
 「 [Office 365 の ExpressRoute を使用したネットワークの計画](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)」の「 **Azure ExpressRoute の帯域幅計画**」を参照してください。
   
@@ -251,7 +251,7 @@ Office 365 地域、ExpressRoute ネットワークサービスプロバイダ�
   
 #### <a name="plan-for-high-availability-requirements"></a>高可用性の要件を計画する
   
-ニーズに合わせて高可用性の計画を作成し、それを更新したネットワークトポロジダイアグラムに組み込みます。 「365 Office の expressroute を使用したネットワークの計画」の「Azure expressroute での高可用性とフェールオーバー」セクションを参照してください。
+ニーズに合わせて高可用性の計画を作成し、それを更新したネットワークトポロジダイアグラムに組み込みます。 「 [365 Office の expressroute を使用したネットワークの計画](https://support.office.com/article/Network-planning-with-ExpressRoute-for-Office-365-103208f1-e788-4601-aa45-504f896511cd)」の「 **Azure Expressroute での高可用性とフェールオーバー** 」セクションを参照してください。
   
 #### <a name="plan-for-network-security-requirements"></a>ネットワークセキュリティ要件を計画する
   
@@ -568,7 +568,7 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

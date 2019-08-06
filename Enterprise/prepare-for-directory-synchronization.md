@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Office 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162470"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249198"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365 へのディレクトリ同期の準備
 
@@ -113,7 +113,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
   - 値あたりの最大文字数: 256
   - 属性の値にスペースを含めることはできません。
   - この属性の値は、ディレクトリ内で一意である必要があります。
-  - 無効な文字\< \> : ();, [ ] "
+  - 無効な文字\< \> : ();, [ ] " '
     
     無効な文字は、SMTP:User@contso.com が許可されていても、SMTP:user:M@contoso.com は許可されていませんが、型区切り記号の後の文字と ":" に適用されることに注意してください。
     
@@ -124,7 +124,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
     
   - 最大文字数:20
   - この属性の値は、ディレクトリ内で一意である必要があります。
-  - 無効な文字: [\ "|,/ \< \> : + =;? \* ]
+  - 無効な文字: [\ "|,/ \< \> : + =;? \* ']
   - ユーザーの**sAMAccountName**属性が無効で、 **userPrincipalName**属性が有効な場合、Office 365 でユーザーアカウントが作成されます。 
   - **SAMAccountName**と**userPrincipalName**の両方が無効な場合は、AD DS **userPrincipalName**属性を更新する必要があります。 
     
@@ -148,7 +148,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
   - **UserPrincipalName**属性の最大文字数は113です。 アットマーク (@) の前後には、次のように特定の文字数が許可されます。 
   - アットマーク (@) の前にあるユーザー名の最大文字数:64
   - アットマーク記号 (@) の後に続くドメイン名の最大文字数:48
-  - 無効な文字: \ &amp; \* % +/=? { } | \< \> ( ) ; : , [ ] "
+  - 無効な文字: \ &amp; \* % +/=? { } | \< \> ( ) ; : , [ ] " '
   - ウムラウトは、無効な文字でもあります。
   - 各**userPrincipalName**値には @ 文字が必要です。 
   - 各**userPrincipalName**値の先頭文字に @ 文字を使用することはできません。 
@@ -160,9 +160,9 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
 
 IdFIx ツールを使用して AD DS の属性のエラーを識別するには[、IdFix ツール](prepare-directory-attributes-for-synch-with-idfix.md)を使用して directory 属性を準備するを参照してください。
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. userPrincipalName 属性を準備する
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. userPrincipalName 属性を準備する
 
-Active Directory は、組織内のエンドユーザーが**sAMAccountName**または**userPrincipalName**のいずれかを使用してディレクトリにサインインできるように設計されています。 同様に、エンドユーザーは職場または学校アカウントのユーザープリンシパル名 (UPN) を使用して Office 365 にサインインできます。 ディレクトリ同期では、AD SD にある同じ UPN を使用して、Azure Active Directory で新しいユーザーを作成しようとしています。 UPN は、電子メールアドレスのように書式設定されます。 
+Active Directory は、組織内のエンドユーザーが**sAMAccountName**または**userPrincipalName**のいずれかを使用してディレクトリにサインインできるように設計されています。 同様に、エンドユーザーは職場または学校アカウントのユーザープリンシパル名 (UPN) を使用して Office 365 にサインインできます。 ディレクトリ同期では、AD DS 内の同じ UPN を使用して、Azure Active Directory で新しいユーザーを作成しようとしています。 UPN は、電子メールアドレスのように書式設定されます。 
 
 Office 365 では、UPN は電子メールアドレスの生成に使用される既定の属性です。 **UserPrincipalName** (ad DS および Azure ad) と**proxyAddresses**のプライマリ電子メールアドレスは、異なる値に設定するのが簡単です。 複数の値が設定されている場合、管理者とエンドユーザーに混乱が生じることがあります。 
   
@@ -181,7 +181,7 @@ Active Directory に代替 UPN サフィックスを追加する方法の詳細�
 また[、ディレクトリ同期にルーティング不能なドメイン (たとえば、ローカルドメイン) を準備する方法に](prepare-a-non-routable-domain-for-directory-synchronization.md)ついても説明します。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ディレクトリ同期の前に AD DS の属性のエラーを修正するに[は、IdFix ツールを使用してディレクトリ属性を準備](prepare-directory-attributes-for-synch-with-idfix.md)するを参照してください。
 

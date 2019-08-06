@@ -3,7 +3,7 @@ title: データの移行中および移行後
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067733"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786232"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -38,7 +38,7 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |韓国  <br/> |2018 年 10 月 31 日  <br/> |
 |英国  <br/> |2019 年 9 月 15 日  <br/> |
 |フランス  <br/> |2020 年 9 月 15 日  <br/> |
-|アラブ首長国連邦  <br/> |Avct  <br/> |
+|アラブ首長国連邦  <br/> |2022年2月1日  <br/> |
 |南アフリカ  <br/> |Avct  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -74,7 +74,7 @@ SharePoint Online を移行すると、以下のサービスのデータも移�
     
 - Office 365 ビデオ サービス
     
-- Office Online
+- S ブラウザーの Office
     
 - Office 365 ProPlus
     

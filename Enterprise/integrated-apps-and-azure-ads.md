@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure AD で O365 統合アプリを登録および管理する方法について説明します。
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067253"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782527"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 管理者の統合アプリおよび Azure AD
 
@@ -32,7 +32,7 @@ Azure AD で Office 365 アプリを管理する前に、これらの2つの手�
   
 |**前提条件**|**コメント**|
 |:-----|:-----|
-|[無料の Azure Active Directory サブスクリプションの登録](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Office 365 へのすべての有料サブスクリプションには、Azure Active Directory への無料サブスクリプションが付属しています。 Azure AD を使用して、アプリを管理したり、ユーザーアカウントおよびグループアカウントを作成および管理したりできます。 このサブスクリプションをアクティブ化して Azure 管理ポータルにアクセスするには、1 度限りの登録プロセスを完了する必要があります。 その後、Office 365 管理センターから Azure AD に移動できます。  <br/> |
+|[無料の Azure Active Directory サブスクリプションの登録](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Office 365 へのすべての有料サブスクリプションには、Azure Active Directory への無料サブスクリプションが付属しています。 Azure AD を使用して、アプリを管理したり、ユーザーアカウントおよびグループアカウントを作成および管理したりできます。 このサブスクリプションをアクティブ化して Azure 管理ポータルにアクセスするには、1 度限りの登録プロセスを完了する必要があります。 その後、Microsoft 365 管理センターから Azure AD に移動できます。  <br/> |
 |[統合アプリをオンまたはオフにする](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |サードパーティ製アプリが Office 365 情報にアクセスできるようにし、Azure AD でアプリを登録するには、ユーザーに対して統合アプリを有効にする必要があります。 たとえば、ユーザーがサードパーティ製のアプリを使用している場合、そのアプリは予定表にアクセスするためのアクセス許可や、OneDrive for Business フォルダー内のファイルを編集するためのアクセス許可を要求することがあります。  <br/> |
    
 Office 365 アプリを管理するには、Azure AD のアプリに関する知識を持っている必要があります。 これらの記事は、必要な背景を提供するのに役立ちます。

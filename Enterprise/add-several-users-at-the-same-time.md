@@ -24,28 +24,27 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'ワークシートまたはその他の CSV 形式のファイルのリストから、複数のユーザーを Office 365 に追加する方法について説明します。 Office 365 にアカウントを追加する方法を説明する YouTube のビデオを視聴してください。 このプロセスが完了すると、アカウントを持つ各ユーザーに Office 365 メールボックスが割り当てられます。 '
-ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068693"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198659"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同時に複数のユーザーを Office 365 に追加する - 管理者ヘルプ
 
 メールや Office などの Office 365 サービスにサインインしてアクセスするには、チームの各メンバーにユーザー アカウントが必要です。 ユーザー数が多い場合、Excel のスプレッドシートまたは CSV 形式で保存された他のファイルから、ユーザー アカウントを一括で追加することができます。 [CSV 書式の定義](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Office 365 管理センターで複数のユーザーを Office 365 に追加する
+## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの Office 365 に複数のユーザーを追加する
 
 1. 職場または学校のアカウントを使用して、Office 365 にサインインします。 
     
-2. In the Office 365 admin center, choose **Users** \> **Active users**.
+2. In the admin center, choose **Users** \> **Active users**.
     
-    ![In the Admin center choose Users and then Active users](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![管理センターで、[ユーザー]、[アクティブユーザー] の順に選択します。](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. [ **詳細**] ドロップダウンで [ **複数のユーザーをインポート**] を選びます。
     
-4. [ **複数のユーザーをインポート**] パネルで、サンプルの CSV ファイルをサンプル データがある状態、またはない状態でダウンロードできます。 
+3. [ **複数のユーザーをインポート**] パネルで、サンプルの CSV ファイルをサンプル データがある状態、またはない状態でダウンロードできます。 
     
     ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
   
@@ -63,15 +62,15 @@ ms.locfileid: "34068693"
   
   ```
 
-5. ボックスにファイル パスを入力するか、[ **参照**] を選択して CSV ファイルの場所を参照し、[ **確認**] を選びます。
+4. ボックスにファイル パスを入力するか、[ **参照**] を選択して CSV ファイルの場所を参照し、[ **確認**] を選びます。
     
     ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
     ファイルに問題がある場合は、パネルにその問題が表示されます。ログ ファイルをダウンロードすることもできます。
     
-6. [ **ユーザー オプションの設定**] ダイアログで、サインイン状態を設定し、すべてのユーザーに割り当てられる製品ライセンスを選択できます。 
+5. [ **ユーザー オプションの設定**] ダイアログで、サインイン状態を設定し、すべてのユーザーに割り当てられる製品ライセンスを選択できます。 
     
-7. [ **結果の表示**] ダイアログで、結果を自分や他のユーザーに送信するかどうかを選択できます (パスワードはプレーン テキストとなります)。作成されたユーザーの数も表示されます。新規ユーザーに割り当てるライセンスを追加購入することもできます。 
+6. [ **結果の表示**] ダイアログで、結果を自分や他のユーザーに送信するかどうかを選択できます (パスワードはプレーン テキストとなります)。作成されたユーザーの数も表示されます。新規ユーザーに割り当てるライセンスを追加購入することもできます。 
     
 ## <a name="watch-the-video"></a>ビデオの視聴
 <a name="bk_preview"> </a>
@@ -146,7 +145,7 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 - ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>以前の Office 365 管理センターで複数のユーザーを Office 365 に追加する
+## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>以前の管理センターで Office 365 に複数のユーザーを追加する
 
 1. [このサンプル スプレッドシート](https://www.microsoft.com/en-us/download/details.aspx?id=45485)をダウンロードし、Excel で開きます。 
     
@@ -162,13 +161,13 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。 
     
-3. Office 365 管理センターに移動します。
+3. 管理センターに移動します。
     
 4. For people to use Office 365 services, they need to be assigned a license. Before continuing, you might want to check that you have enough licenses for everyone listed in your spreadsheet. Choose **Billing** \> **Subscriptions** to see if you have enough. If you need to buy more licenses, choose ** Change license quantity **. Or, you can run the wizard and assign the licenses you have, then buy more licenses later and rerun the wizard. 
     
 5. ユーザーの一括追加ウィザードを開き、[ **ユーザー**] \> [ **アクティブなユーザー**] を選びます。 次の図のように、![Office 365 に多数のユーザーを追加するためのアイコン](media/3481ffea-d552-4a7f-9a3b-014504e69746.png) を選びます。 
     
-    ![Office 365 管理センターの [ユーザー] セクションの画像](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
+    ![管理センターの [ユーザー] セクションのイメージ](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
   
     ユーザーの一括追加ウィザードが表示されます。画面の手順に従って、複数のユーザーを Office 365 に追加することができます。 
     
@@ -188,7 +187,7 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
     ![ユーザーの一括追加ウィザードのステップ 4 - ライセンス](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
   
-    [ **ライセンスを追加購入する**] を選ぶこともできますが、ユーザーの一括追加ウィザードを終了して Office 365 管理センター の [ **課金**] に移動することになります。ライセンスを追加購入したら、注文の処理が完了するまで数分待ち、その後でユーザーの一括追加ウィザードを最初から実行する必要があります。 
+    [追加の**ライセンスを購入**する] を選択することもできますが、ユーザーの一括追加ウィザードを使用して、Microsoft 365 管理センターの**請求書**に移動します。 ライセンスを追加購入したら、注文の処理が完了するまで数分待ち、その後でユーザーの一括追加ウィザードを最初から実行する必要があります。 
     
     ライセンスを追加購入しない場合、スプレッドシートに記載されている全員分のアカウントは作成されません。 
     

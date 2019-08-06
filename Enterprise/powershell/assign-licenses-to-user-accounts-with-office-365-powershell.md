@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してライセンスをユーザー ア�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2019
+ms.date: 08/05/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,23 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法を説明します。
-ms.openlocfilehash: 91fe9f3a14663ebb9adb61700de3004edd236e0c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法について説明します。
+ms.openlocfilehash: c244e60016cb04008e27e2df444703ac7e41db12
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069283"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198649"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる
 
-**概要:** Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法を説明します。
+**概要:** Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法について説明します。
   
 ユーザーがライセンスプランからライセンスを割り当てられるまで、どの Office 365 サービスも使用できません。 Office 365 PowerShell を使用して、ライセンスのないアカウントにライセンスをすばやく割り当てることができます。 
 
+>[!Note]
+>ユーザーアカウントには、場所を割り当てる必要があります。 これを行うには、Microsoft 365 管理センターまたは PowerShell からユーザーアカウントのプロパティを使用します。
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
@@ -44,6 +47,20 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 次に、ユーザープリンシパル名 (UPN) とも呼ばれるライセンスを追加するアカウントのサインイン名を取得します。
+
+次に、ユーザーアカウントに使用場所が割り当てられていることを確認します。
+
+```
+Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
+```
+
+割り当てられている場所がない場合は、次のコマンドを使用して割り当てを割り当てることができます。
+
+```
+$userUPN="<user sign-in name (UPN)>"
+$userLoc="<ISO 3166-1 alpha-2 country code>"
+Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
+```
 
 最後に、ユーザーのサインイン名とライセンスプラン名を指定し、これらのコマンドを実行します。
 
@@ -68,7 +85,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
-    
+
 ライセンスは、有効な ISO 3166-1 国コードに設定**** されているユーザーアカウントにのみ割り当てることができます。 たとえば、米国は US、フランスは FR です。 一部の Office 365 サービスは特定の国では使用できません。 詳細については、「[ライセンス制限につい](https://go.microsoft.com/fwlink/p/?LinkId=691730)て」を参照してください。
     
 利用**場所**の値を持たないアカウントを検索するには、次のコマンドを実行します。

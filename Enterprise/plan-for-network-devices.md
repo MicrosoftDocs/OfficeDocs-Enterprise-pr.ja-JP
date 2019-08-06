@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '概要: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。'
-ms.openlocfilehash: 6ff63232d4efe581ed4a6ba0a83730a5362ecff7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069373"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722626"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
@@ -66,7 +66,7 @@ Windows Server に組み込まれているソフトウェアベースの NLB ソ
   
 ## <a name="firewalls-and-proxies"></a>ファイアウォールとプロキシ
 
-Office 365 に接続するためのファイアウォールとプロキシの構成の詳細については、「 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」、「 [office 365 へのネットワーク接続](network-connectivity.md)」、および「 [office 365 エンドポイント](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)に関する FAQ」を参照して、デバイスと回線の選択について確認してください。
+Office 365 に接続するためのファイアウォールとプロキシの構成の詳細については、「 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」、「 [office 365 ネットワーク接続の評価](assessing-network-connectivity.md)」、および「 [OFFICE 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 」を参照して、デバイスと回線の詳細を確認してください。選択範囲.
   
 ## <a name="see-also"></a>関連項目
 

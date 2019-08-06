@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 ユーザーを管理するためにどのようなツールを使用するか、およびどのように使用できるかについては、ユーザー id の管理方法によって異なります。 '
-ms.openlocfilehash: 3b1a869825991d9c85e16b1cc5f50646806ab3fd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070381"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490770"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するためのツール
 
@@ -51,7 +51,7 @@ Office 365 を購入するとすぐに、管理センターと Windows PowerShel
 組織がアカウントを作成および管理する方法を決定するときは、次の点を考慮してください。
   
 - Office 365 とオンプレミスのディレクトリ間で id を接続するには、ディレクトリ同期ソフトウェアをオンプレミス環境のサーバーにインストールする必要があります。
-- SSO オプションを含むディレクトリ同期オプションでは、オンプレミスのディレクトリ属性が標準に適合している必要があります。 ディレクトリ同期を使用して、「 [Office 365 へのディレクトリ同期を通してユーザーをプロビジョニングする](prepare-for-directory-synchronization.md)」で説明されている、ディレクトリで使用されている属性と、必要に応じてクリーンアップを実行する方法について説明します。 IdFix を使用してディレクトリのクリーンアップを自動化する方法については[、「Install and run The Office 365 idfix Tool](install-and-run-idfix.md) 」を参照してください。 
+- SSO オプションを含むディレクトリ同期オプションでは、オンプレミスのディレクトリ属性が標準に適合している必要があります。 ディレクトリ同期を使用して、「 [Office 365 へのディレクトリ同期を通してユーザーをプロビジョニングする](prepare-for-directory-synchronization.md)」で説明されている、ディレクトリで使用されている属性と、必要に応じてクリーンアップを実行する方法について説明します。 IdFix を使用してディレクトリのクリーンアップを自動化する方法について[は、「Office 365 idfix ツールをダウンロードして実行](install-and-run-idfix.md)する」を参照してください。 
 
 ## <a name="plan-how-you-are-going-to-create-office-365-accounts"></a>Office 365 アカウントを作成する方法を計画する
 

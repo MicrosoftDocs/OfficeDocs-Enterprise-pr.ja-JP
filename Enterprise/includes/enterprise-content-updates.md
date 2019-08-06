@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>2019年6月24日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 6/24/2019 | [Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | 更新日時 |
-| 6/24/2019 | [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | 更新日時 |
-| 6/24/2019 | [ディレクトリ同期のために非ルーティング ドメインの準備を整える](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | 更新日時 |
-| 6/24/2019 | [ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | 更新日時 |
-| 6/24/2019 | [Microsoft Azure での SharePoint Server 2013 の障害復旧](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | 更新日時 |
-| 6/24/2019 | [SharePoint 2010 からアップグレードする](/Office365/Enterprise/upgrade-from-sharepoint-2010) | 更新日時 |
-| 6/26/2019 | [Office 365 PowerShell を使用して Skype for Business Online を管理する](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | 更新日時 |
-| 6/26/2019 | [Office 365 へのディレクトリ同期の準備](/Office365/Enterprise/prepare-for-directory-synchronization) | 更新日時 |
-| 6/26/2019 | [SharePoint Online のパフォーマンスをチューニングする](/Office365/Enterprise/tune-sharepoint-online-performance) | 更新日時 |
-| 6/28/2019 | [Office 365 Germany エンドポイント](/Office365/Enterprise/office-365-germany-endpoints) | 更新日時 |
-| 6/28/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
-| 6/28/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
-| 6/28/2019 | [21Vianet が運営する Office 365の URL と IP アドレス範囲](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 更新日時 |
-| 6/28/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
-| 6/28/2019 | [コアデータを新しい Office 365 データセンター geo に移行する](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 更新日時 |
-| 6/28/2019 | [データ移行をリクエストする方法](/Office365/Enterprise/request-your-data-move) | 更新日時 |
-
-
 ## <a name="week-of-july-01-2019"></a>2019年7月01日の週
 
 
@@ -132,3 +109,15 @@
 | 7/24/2019 | [委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する](/Office365/Enterprise/powershell/add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe) | 更新日時 |
 | 7/25/2019 | [コアデータを新しい Office 365 データセンター geo に移行する](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | 更新日時 |
 | 7/25/2019 | [データ移行をリクエストする方法](/Office365/Enterprise/request-your-data-move) | 更新日時 |
+
+
+## <a name="week-of-july-29-2019"></a>2019年7月29日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 7/29/2019 | [Office 365 Germany エンドポイント](/Office365/Enterprise/office-365-germany-endpoints) | 更新日時 |
+| 7/29/2019 | [Office 365 米国政府の DoD エンドポイント](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | 更新日時 |
+| 7/29/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
+| 7/29/2019 | [21Vianet が運営する Office 365の URL と IP アドレス範囲](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 更新日時 |
+| 7/29/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |

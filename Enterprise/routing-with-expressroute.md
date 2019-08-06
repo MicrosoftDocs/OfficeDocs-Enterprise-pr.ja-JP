@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure ExpressRoute を使用して Office 365 へのルーティングトラフィックを適切に理解するには、コア ExpressRoute ルーティング要件と ExpressRoute 回線およびルーティングドメインをしっかりと理解している必要があります。 これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトしています。
-ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071003"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722716"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
@@ -103,7 +103,7 @@ Microsoft ピアリングを使用して利用できる Office 365 の各機能�
   
 1. PAC ファイルの先頭にある上記の表の2列目のサブ Fqdn を含め、プロキシにトラフィックを送信します。 [Office 365 エンドポイントの管理](https://aka.ms/manageexpressroute365)に関する記事で使用するサンプルの PAC ファイルを作成しました。
 
-2. [この記事](https://aka.ms/o365endpoints)の最初のセクションの下にある expressroute にアドバタイズされているすべての Fqdn を含め、expressroute 回線にトラフィックを直接送信します。
+2. [この記事](https://aka.ms/o365endpoints)の最初のセクションの下にある expressroute にアドバタイズされているすべての fqdn を含め、expressroute 回線にトラフィックを直接送信します。
 
 3. その他のネットワークエンドポイントまたはその他の規則をこの2つのエントリの下に含め、プロキシにトラフィックを送信します。
 
@@ -230,7 +230,7 @@ Humongous に複数の大陸の主要なオフィスがある場合は、Skype f
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

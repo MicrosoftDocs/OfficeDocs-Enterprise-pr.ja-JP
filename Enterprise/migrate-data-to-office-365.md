@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: FastTrack による展開は行わず、データを Office 365 に移行する準備が整った場合は、こちらの案内に沿って移行を開始してください。
-ms.openlocfilehash: 9efaad6da9723d588cc0e42151bf297b271e4e5c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
+ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070123"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35597553"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>組織のデータを Office 365 Enterprise に移行する
 
@@ -35,9 +35,8 @@ Office 365 セットアップでヘルプが必要な場合は、[FastTrack](htt
 - [組織内のユーザーが自分のメール、連絡先、および予定表を移行する](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)ための別の方法を見ます。
 
 ## <a name="migrate-files-and-folders"></a>ファイルとフォルダーを移行する
-- [コンテンツを SharePoint Online に移行](https://support.office.com/article/d8c6ce52-f8a2-4661-97f7-45e49351bdb9)します。(管理者)
-- [ハイブリッド OneDrive for Business の構成のロードマップ](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)。(管理者)
-- [SharePoint オンプレミス ドキュメント ライブラリまたはオンプレミスのファイル共有から、リストまたはファイルを SharePoint または Office 365 の OneDrive に移行](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)します。(エンドユーザー)
+- [SharePoint Online および OneDrive に移行](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)します。 者
+- [SharePoint Server のハイブリッド構成のロードマップ](https://docs.microsoft.com/SharePoint/hybrid/configuration-roadmaps)。 者
 
 ## <a name="migrate-skype-for-business-users"></a>Skype for Business ユーザーを移行する
 - [Skype for Business Online に移行](https://technet.microsoft.com/library/jj204969.aspx)します。(管理者)

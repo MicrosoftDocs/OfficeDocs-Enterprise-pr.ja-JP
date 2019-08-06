@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの Skype for Business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの Skype for Business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404219"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782457"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件
 
@@ -88,7 +88,7 @@ EvoSTS への変更により、オンプレミスのサーバーは、クライ�
     
   - Office 365 でフェデレーションドメインとして追加された SIP ドメイン
     
-  - すべての sfb フロントエンドは、インターネットへの接続を、office 365 認証 url (tcp 443) および既知の証明書ルート crl (tcp 80) のように、「office の制限 url および IP」セクションの「Microsoft 125 Common and Office Online」に記載さ56れているとおりに設定する必要があります。アドレス範囲。
+  - すべての SFB フロントエンドは、インターネットへの接続を、office 365 認証 Url (TCP 443) および既知の証明書ルート Crl (TCP 80) のように、「Office の制限[url および IP アドレス」の「Microsoft 125 Common And Office」セクションの「56」および「365」に記載されている必要があります。範囲](urls-and-ip-address-ranges.md)。
   
 - **ハイブリッド Office 365 環境の Skype for Business オンプレミス**
   - Skype for business Server 2019 を Skype for business Server 2019 を実行しているすべてのサーバーと共に展開します。

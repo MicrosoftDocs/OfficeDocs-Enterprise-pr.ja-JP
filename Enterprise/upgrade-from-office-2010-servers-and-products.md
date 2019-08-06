@@ -3,7 +3,7 @@ title: Office 2010 サーバーおよびクライアントからのアップグ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/03/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,32 +21,38 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
-ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
+ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
+ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34780866"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613453"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
-Exchange Server 2010 は **、2020年1月14日**のサポート終了に到達します。 Office 2010、SharePoint 2010、および Project Server 2010 は、 **2020 年10月 13**日にサポート終了に到達します。 アップグレードを計画している間は、Office 365 への移行を検討するのに非常に時間がかかる場合があります。 
+次の点に注意してください。
 
-Office 365 には、Exchange Server、SharePoint Server などの Office 2010 server 製品用のクラウドベースのサービスと、Teams や OneDrive for business などの新しいサービスがあります。 
+- Exchange Server 2010 は **、2020年1月14日**のサポート終了に到達します。 
 
-Office 365 ProPlus には、office 365 E3 および E5 と共に、ローカルデバイスにインストールする Office クライアントアプリのセットが含まれています。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
+- Office 2010、SharePoint 2010、および Project Server 2010 は、 **2020 年10月 13**日にサポート終了に到達します。 
+
+アップグレードを計画している間は、Office 365 への移行を検討するのに非常に時間がかかる場合があります。 
+
+- Office 365 には、Exchange Server、SharePoint Server、Teams や OneDrive for business などのサービスといった Office 2010 サーバー製品用のクラウドベースのサービスがあります。 
+
+- Office 365 ProPlus には、Office 365 E3 および E5 と Microsoft 365 Enterprise に含まれていますが、ローカルデバイスにインストールする Office クライアントアプリのセットです。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
 
 この記事は、オプションを確認する出発点として使用します。
       
-## <a name="office-2010-planning-content"></a>Office 2010 の計画コンテンツ
+## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 クライアントおよびサーバーのアップグレードの計画
   
-|**この製品の場合**|**このリソースを表示する**|
-|:-----|:-----|
-|Office 2010 (Word 2010、Excel 2010、PowerPoint 2010、Outlook 2010 を含む)  <br/> |[Office 2010 サポート終了のロードマップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> |[Exchange 2010 のサポート終了ロードマップ](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 または SharePoint Server 2010  <br/> |[SharePoint 2010 からアップグレードする](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | [Project Server 2010 サポート終了ロードマップ](project-server-2010-end-of-support.md) <br/> |
-|Lync Server 2010 <br/> | [Skype for Business Server へのアップグレードを計画する](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
+|**この製品の場合**|**サポート終了日**|**このリソースを表示する**|
+|:-----|:-----|:-----|
+|Office 2010 (Word 2010、Excel 2010、PowerPoint 2010、Outlook 2010 を含む)  <br/> | 2020年10月13日 |[Office 2010 サポート終了のロードマップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
+|Exchange Server 2010  <br/> | 2020年1月14日  |[Exchange 2010 のサポート終了ロードマップ](exchange-2010-end-of-support.md) <br/> |
+|SharePoint 2010 または SharePoint Server 2010  <br/> | 2020年10月13日 |[SharePoint 2010 からアップグレードする](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | 2020年10月13日 | [Project Server 2010 サポート終了ロードマップ](project-server-2010-end-of-support.md) <br/> |
+|Lync Server 2010 <br/> | 2021年4月13日 | [Skype for Business Server へのアップグレードを計画する](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="im-a-home-user-what-do-i-do"></a>自宅のユーザーです。 What do I do?
 

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDNs) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068025"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722666"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDNs)
 
@@ -48,6 +48,11 @@ CDNs は、クラウドサービスのパフォーマンスを次のように改
 ## <a name="the-office-365-cdn"></a>Office 365 CDN
 
 組み込みの Office 365 のコンテンツ配信ネットワーク (CDN) を使用すると、Office 365 管理者は、それを要求するブラウザーに近い静的なアセットをキャッシュすることによって、組織の SharePoint Online ページのパフォーマンスを向上させることができます。ダウンロードして待機時間を短縮します。 Office 365 CDN は、強化された圧縮およびダウンロード速度を実現するために、 [HTTP/2 プロトコル](https://en.wikipedia.org/wiki/HTTP/2)を使用します。
+
+> [!NOTE]
+> Office 365 CDN を使用する場合の制限事項:
+> + Office 365 CDN は、**運用環境**(世界規模) のクラウドのテナントでのみ使用できます。 米国政府機関のテナント、中国およびドイツのクラウドでは、現在 Office 365 CDN をサポートしていません。
+> + Office 365 CDN は、現在、カスタムまたは "バニティ" ドメインで構成されているテナントをサポートしていません。 「 [Office 365 にドメインを追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)する」の手順を使用してテナントにドメインを追加した場合、cdn からコンテンツにアクセスしようとすると、OFFICE 365 CDN からエラーが返されます。
 
 Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 Office 365 CDN でホストするコンテンツの種類に応じて、**公開**、**非公開**、またはその両方の元の場所を追加できます。
 
@@ -182,7 +187,7 @@ CDNs の使用は SharePoint Online のコンテキストでのみ有効であ�
 
 [Office 365 ネットワーク接続の原則](https://aka.ms/o365networkingprinciples)
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 エンドポイントの管理](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 

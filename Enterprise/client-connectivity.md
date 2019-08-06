@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '概要: クライアントコンピューターと Office 365 テナントデータセンターの場所に応じて、クライアントコンピューターが Office 365 テナントに接続する方法について説明します。'
-ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068203"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722696"
 ---
 # <a name="client-connectivity"></a>クライアント接続
 
@@ -130,4 +130,4 @@ Exchange Online は、さらに一歩進んでいきます。 クライアント
 
 [Office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
