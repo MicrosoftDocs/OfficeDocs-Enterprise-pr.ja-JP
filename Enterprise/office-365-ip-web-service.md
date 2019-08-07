@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 のネットワーク トラフィックをよりよく識別し区別するために、新しい Web サービスによって Office 365 エンドポイントが公開されます。これにより、変更を評価し、構成し、最新の状況を把握することが容易になります。この新しい Web サービスは、現在利用できるダウンロード可能な XML ファイルに代わるものです。
-ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8571a91e1ede5d281269b7209f4ddd69a70d586f
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069733"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786252"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービス
 
@@ -511,55 +511,15 @@ else:
 - 応答 REST 項目の 1 つに新しい名前付き属性を追加する、または応答 CSV に列を追加する。
 - 新しい Web メソッドに、古いクライアントから呼び出されない新しい名前を追加する。
 
-## <a name="office-365-endpoint-functions-module"></a>Office 365 エンドポイント関数モジュール
+## <a name="exporting-a-proxy-pac-file"></a>プロキシ PAC ファイルのエクスポート
 
-Microsoft は、Office 365 サービスの最新の URI を取得するための REST サービスをホストしています。  コレクションとして URI を使用するために、このモジュールといくつかのコマンドレットを活用します。
-
-### <a name="calling-the-rest-service"></a>REST サービスを呼び出す
-
-このモジュールを使うには、お持ちのハード ディスクにこのモジュール ファイルをコピーして、このコマンドで直接インポートしてください。 [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) 
-
-```powershell
-    Import-Module O365EndpointFunctions.psm1
-```
-
-モジュールをインポートしたら、REST サービスを呼び出せます。 これにより、URI をコレクションとして返し、直接 PowerShell で処理する事ができます。 次のコマンドの説明に従って、Office 365 テナント名を入力します。
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant]
-```
-
-#### <a name="parameters"></a>Parameters
-
-- **tenantName** - Office 365 テナントの名前。 このパラメーターは必須です。
-- **ForceLatest** - このスイッチは REST API が常に最新の URI のリスト全体を返すよう強制します。
-- **IPv6** - このスイッチは IPv6 アドレスを返します。 既定値として IPv4 のみが返されます。
-
-### <a name="examples"></a>例
-
-IPv6 アドレスを含むすべての URI の完全なリストを返します
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
-```
-
-Exchange Online Service の IP アドレスのみを返します
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
-```
-
-### <a name="exporting-a-proxy-pac-file"></a>Proxy PAC ファイルをエクスポートします
-
-このモジュールを使用して、Proxy PAC ファイルを作成します。 この例では、最初にエンドポイントを取得し、URL を選択するために結果をフィルター処理します。 これらの URL はエクスポートするためにパイプされます。  
-
-```powershell
- Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
-```
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) は PowerShell スクリプトであり、Office 365 の IP アドレスと URL Web サービスから最新のネットワーク エンドポイントを読み取り、サンプルの PAC ファイルを作成します。 Get-PacFile の使用に関する詳細情報については、「[重要な Office 365 トラフィックの直接ルーティング用 PAC ファイルの使用](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
   
 [Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+
+[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)
   
 [Office 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
@@ -567,7 +527,7 @@ Exchange Online Service の IP アドレスのみを返します
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 
-[Office 365 へのネットワーク接続](network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

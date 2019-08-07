@@ -11,19 +11,19 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 概要:Office 365 PowerShell を使用して、Office 365 管理センターでは作成できないレポートを作成します。
-ms.openlocfilehash: 541811c81da3085c1f90140e6f1e81b79f985b41
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: '概要: Office 365 PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。'
+ms.openlocfilehash: 6ad41169c11150706381c45bf13e24a2ac1baf5c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071113"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782577"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Windows PowerShell を使用して Office 365 でレポートを作成する
 
- **概要:** Office 365 PowerShell を使用して、Office 365 管理センターでは作成できないレポートを作成します。
+ **概要:** Office 365 PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。
   
-Office 365 管理者センターでは、数多くのさまざまなレポートを使用できます。ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。そんなときに、Office 365 PowerShell が必要になります。
+Microsoft 365 管理者センターでは、数多くのさまざまなレポートを使用できます。 ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。 そんなときに、Office 365 PowerShell が必要になります。
   
 次に示す記事では、Office 365 PowerShell を使用して Office 365 テナントから情報を取得する方法について説明しています。
   

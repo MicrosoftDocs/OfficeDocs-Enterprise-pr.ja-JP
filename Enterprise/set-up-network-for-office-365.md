@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Office 365 のネットワークを理解するには、このページに記載されている記事を参照してください。'
-ms.openlocfilehash: 6fb1d4d441719f61886b9263b30cdf27cbe7eaf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070823"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722686"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Office 365 のネットワークをセットアップする
 
@@ -38,7 +38,7 @@ Office 365 の接続の概要については、次の記事を参照してくだ
 
 - [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
 - [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
-- [Office 365 へのネットワーク接続](network-connectivity.md)
+- [Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 パフォーマンスの向上に関するアドバイスについては、「[Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)」を参照してください。
 
