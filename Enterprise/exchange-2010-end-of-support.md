@@ -3,7 +3,7 @@ title: Exchange 2010 のサポート終了ロードマップ
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 は、サポート終了間近に近づいています。 この計画ロードマップは、Exchange Online またはオンプレミスの Exchange Server の新しいバージョンへのアップグレードを準備するためのガイドとして使用してください。
-ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067573"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302755"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了ロードマップ
 
@@ -51,6 +51,10 @@ Exchange 2010 がサポートの終了に到達すると、これは、オプシ
 
 > [!NOTE]
 > もう少し複雑ですが、オンプレミスの Exchange 2010 サーバーを Exchange 2016 に移行する際に、メールボックスを Office 365 に移行する場合もあります。
+
+Exchange Server 2010 のサポート終了を回避するために実行できる3つのパスを次に示します。
+
+![Exchange Server 2010 のアップグレードパス](./media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 次のセクションでは、それぞれのオプションについて詳しく説明します。
 

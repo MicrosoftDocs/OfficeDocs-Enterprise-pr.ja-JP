@@ -3,14 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>2019年7月01日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 7/2/2019 | [SharePoint サイトを別の地域の場所に移動する](/Office365/Enterprise/move-sharepoint-between-geo-locations) | 更新日時 |
-
-
 ## <a name="week-of-july-08-2019"></a>2019年7月8日の週
 
 
@@ -121,3 +113,14 @@
 | 7/29/2019 | [Office 365 米国政府 GCC GCC (高) エンドポイント](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | 更新日時 |
 | 7/29/2019 | [21Vianet が運営する Office 365の URL と IP アドレス範囲](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | 更新日時 |
 | 7/29/2019 | [Office 365 の URL と IP アドレスの範囲](/Office365/Enterprise/urls-and-ip-address-ranges) | 更新日時 |
+
+
+## <a name="week-of-august-05-2019"></a>2019年8月5日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 8/5/2019 | [複数のユーザーを同時に Office 365 に追加する - 管理者ヘルプ](/Office365/Enterprise/add-several-users-at-the-same-time) | 更新日時 |
+| 8/5/2019 | [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | 更新日時 |
+| 8/6/2019 | [Office 365 の IP アドレスと URL web サービス](/Office365/Enterprise/office-365-ip-web-service) | 更新日時 |
+| 8/7/2019 | [Office 365 のネットワーク接続の評価](/Office365/Enterprise/assessing-network-connectivity) | 更新日時 |

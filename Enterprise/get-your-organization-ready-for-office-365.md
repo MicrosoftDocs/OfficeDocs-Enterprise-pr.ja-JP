@@ -3,6 +3,7 @@ title: Office 365 Enterprise を計画する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Office 365 エンタープライズ展開を計画するためのリソースへのアクセスを取得します。
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249475"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302689"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Office 365 Enterprise を計画する
 
@@ -38,7 +39,7 @@ Office [365 の Fasttrack](https://docs.microsoft.com/fasttrack/O365-fasttrack-b
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>Office 365 を計画する
 
-自分で Office 365 を計画するには、以下の領域について適切な設計上の決定を決定します。
+自分で Office 365 を計画するには、以下の領域の計画と設計の決定について手順を追って説明します。
 
 - Office 365 テナント
 
@@ -56,7 +57,12 @@ Office [365 の Fasttrack](https://docs.microsoft.com/fasttrack/O365-fasttrack-b
 
   Office 2007 および Office 2010 クライアントおよびサーバー製品の移行情報が含まれています。 [ここ](plan-upgrade-previous-versions-office.md)から開始してください。
 
-また、サブスクリプションにサインインして、 [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)を使用することもできます。
+>[!Note]
+>このプロセスは、 [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)サブスクリプションでも使用できます。
+>
+
+Office 365 サブスクリプションにサインインして、 [office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)を使用することもできます。
+
 
 
 <!--

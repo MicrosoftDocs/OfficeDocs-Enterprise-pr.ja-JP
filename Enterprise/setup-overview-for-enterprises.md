@@ -3,6 +3,7 @@ title: Office 365 Enterprise を組織で展開する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: これらの概要手順は、ネットワークのセットアップ、id の作成、Office 365 ProPlus の展開、データの移行、組織内のユーザーが Office 365 の使用を開始する際に役立つように設計されています。
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249505"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302719"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Office 365 Enterprise を組織で展開する
 
@@ -77,3 +78,5 @@ Office 365 Enterprise を独自に展開するには、以下の手順を実行�
 >[!Note]
 >これらの手順は、Office 365 Enterprise のカスタム展開で開始する必要があるビジネスおよび[非](https://go.microsoft.com/fwlink/?LinkId=627221)営利団体にも適用されます。 
 >
+
+Microsoft 365 Enterprise サブスクリプションがある場合は、[ここ](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)から開始してください。
