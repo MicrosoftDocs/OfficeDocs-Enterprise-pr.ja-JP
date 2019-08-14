@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017317"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385195"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -29,7 +29,7 @@ ms.locfileid: "35017317"
 > [!NOTE]
 > Office 365 CDN を使用する場合の制限事項:
 > + Office 365 CDN は、**運用環境**(世界規模) のクラウドのテナントでのみ使用できます。 米国政府機関のテナント、中国およびドイツのクラウドでは、現在 Office 365 CDN をサポートしていません。
-> + Office 365 CDN は、現在、カスタムまたは "バニティ" ドメインで構成されているテナントをサポートしていません。 「 [Office 365 にドメインを追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)する」の手順を使用してテナントにドメインを追加した場合、cdn からコンテンツにアクセスしようとすると、OFFICE 365 CDN からエラーが返されます。
+> + Office 365 CDN は、現在、カスタムまたは "バニティ" ドメインで構成されているテナントをサポートしていません。 「[ドメインを 365 office に追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)する」の手順に従って office 365 テナントのコンポーネントにドメインを追加した場合、cdn からコンテンツにアクセスしようとすると、OFFICE 365 CDN によってエラーが返されます。
 
 Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 Office 365 CDN でホストするコンテンツの種類に応じて、**公開**、**非公開**、またはその両方の元の場所を追加できます。 パブリックとプライベートオリジンの違いに関する詳細については、[各配信元がパブリックかプライベートかを選択](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)するを参照してください。
 
