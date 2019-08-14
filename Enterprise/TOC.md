@@ -72,16 +72,13 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # Office 365 をテストする
-## [クラウド導入のテスト ラボ ガイド](cloud-adoption-test-lab-guides-tlgs.md)
+## [Office 365 をテストする](cloud-adoption-test-lab-guides-tlgs.md)
 ## [基本構成開発/テスト環境](base-configuration-dev-test-environment.md)
 ## [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
 ### [ディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)
 ### [多要素認証](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [フェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [機密性の高いファイルの保護](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [データの分類とラベル付け](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
