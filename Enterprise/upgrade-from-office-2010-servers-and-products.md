@@ -3,7 +3,7 @@ title: Office 2010 サーバーおよびクライアントからのアップグ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
-ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
+ms.openlocfilehash: b75aea4775f2471827f472e726ccae8657a22278
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613453"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491336"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
@@ -42,7 +42,13 @@ ms.locfileid: "35613453"
 
 - Office 365 ProPlus には、Office 365 E3 および E5 と Microsoft 365 Enterprise に含まれていますが、ローカルデバイスにインストールする Office クライアントアプリのセットです。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
 
-この記事は、オプションを確認する出発点として使用します。
+Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、クラウド移行オプションの概要については、「[サービスの終了」ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)をダウンロードしてください。
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+このワンページポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 がサービスのエンドに到達できないようにするための、Microsoft 365 Enterprise で推奨されるパスとオプションのサポートが強調表示された、さまざまなパスを簡単に理解する方法です。
+
+このポスターは、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 クライアントおよびサーバーのアップグレードの計画
   

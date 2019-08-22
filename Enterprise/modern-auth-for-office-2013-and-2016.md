@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203626"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491296"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
 
@@ -44,6 +44,9 @@ Office 365 サービスの場合、モダン認証の既定の状態は次のと
 - 既定では、SharePoint Online に対してオン**に**なっています。 
     
 - 既定では、Skype for Business Online に対してオン**に**なっています。 この機能をオフまたはオンにするには、「[モダン認証のために Skype For Business Online を有効](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)にする」を参照してください。
+
+> [!NOTE]
+> 2017年8月1日**より前に**作成されたテナントの場合、Exchange Online と Skype For business online では、先進認証は既定で**無効**になっています。
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office クライアントアプリのサインイン動作
 
