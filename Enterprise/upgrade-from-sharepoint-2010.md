@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 のサポートが終了し、SharePoint Server 2010 が2020年10月13日に終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491326"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782434"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
@@ -181,14 +181,14 @@ SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用す�
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 のクライアントおよびサーバーおよび Windows 7 のオプションの概要
 
-Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、クラウド移行オプションの視覚的な概要については、「[サービスの終了」ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)をダウンロードしてください。
+Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-このワンページポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 がサービスのエンドに到達できないようにするための、Microsoft 365 Enterprise で推奨されるパスとオプションのサポートが強調表示された、さまざまなパスを簡単に理解する方法です。
+この1ページのポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために実行できるさまざまなパスを簡単に理解する方法です。 Microsoft 365 Enterprise では、優先パスとオプションのサポートが強調表示されています。
 
-このポスターは、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
-  
+このポスターを[ダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
+        
 ## <a name="related-topics"></a>関連項目
 
 [Office 2007 または2010サーバーおよびクライアントからのアップグレードに役立つリソース](upgrade-from-office-2010-servers-and-products.md)

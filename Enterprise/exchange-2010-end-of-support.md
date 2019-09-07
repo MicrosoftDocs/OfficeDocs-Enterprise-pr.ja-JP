@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 は、サポート終了間近に近づいています。 この計画ロードマップは、Exchange Online またはオンプレミスの Exchange Server の新しいバージョンへのアップグレードを準備するためのガイドとして使用してください。
-ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 94efc456df67017a557b14edcc9348433c862c6a
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491246"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782391"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了ロードマップ
 
@@ -212,14 +212,14 @@ Exchange 2016 には、Exchange の以前のリリースに含まれていたす
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Office 2010 のクライアントおよびサーバーおよび Windows 7 のオプションの概要
 
-Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、クラウド移行オプションの視覚的な概要については、「[サービスの終了」ポスター](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)をダウンロードしてください。
+Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-このワンページポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 がサービスのエンドに到達できないようにするための、Microsoft 365 Enterprise で推奨されるパスとオプションのサポートが強調表示された、さまざまなパスを簡単に理解する方法です。
+この1ページのポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために実行できるさまざまなパスを簡単に理解する方法です。 Microsoft 365 Enterprise では、優先パスとオプションのサポートが強調表示されています。
 
-このポスターは、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
-
+このポスターを[ダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
+      
 ## <a name="what-if-i-need-help"></a>サポートが必要な場合はどうすればよいですか?
 
 Office 365 に移行している場合は、Microsoft FastTrack サービスを使用することができます。 FastTrack は、Office 365 を可能な限りシームレスに移行できるように、ベストプラクティス、ツール、およびリソースを提供します。 どのような場合も、最新のメールボックスを移行するすべての方法を計画し、設計することによって、移行を進めるための実際のサポートエンジニアが用意されています。 FastTrack の詳細を知りたい場合は、「 [Microsoft fasttrack](https://fasttrack.microsoft.com/)」を参照してください。
