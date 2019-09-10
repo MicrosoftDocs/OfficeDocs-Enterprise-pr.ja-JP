@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: モダン認証に対する Office 365 クライアントアプリのサポート。
-ms.openlocfilehash: d5d17f3395b7eec736403c75b4e2b571c1123fe7
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: 29abfdc5a9974b3e581e08556b675a725a6076dc
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672937"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817263"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Office 365 クライアントアプリのサポート-モダン認証
 
@@ -48,7 +48,7 @@ Office 365 のプラットフォームサポートの詳細については、「
 | ![Office.com アイコン](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Office 365 管理者アイコン](media/o365-o365admin-64x64.png) <br> [Office 365 <br>管理者](https://products.office.com/business/manage-office-365-admin-app) | ![レンズアイコン](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive for Business アイコン](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![OneNote アイコン](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) 
 | ![Outlook アイコン](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner アイコン](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps アイコン](media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![PowerBI アイコン](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![[PowerPoint] アイコン](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![プロジェクトアイコン](media/o365-project-64x64.png) <br> [プロジェクト](https://products.office.com/project) | ![Publisher のアイコン](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint アイコン](media/o365-sharepoint-64x64.png) <br> [Sharepoint](https://products.office.com/sharepoint) | ![Skype for Business アイコン](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> business<sup>1</sup>](https://www.skype.com/business/) | ![StaffHub アイコン](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
-| ![付箋アイコン](media/o365-stickynotes-64x64.png) <br> [付箋](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![ストリームアイコン](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway アイコン](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams アイコン](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![To Do アイコン](media/o365-todo-64x64.png) <br> [To Do](https://todo.microsoft.com) 
+| ![付箋アイコン](media/o365-stickynotes-64x64.png) <br> [付箋](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![ストリームアイコン](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway アイコン](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams アイコン](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![To Do アイコン](media/o365-todo-64x64.png) <br> [作業](https://todo.microsoft.com) 
 | ![Visio アイコン](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![ホワイトボードアイコン](media/o365-whiteboard-64x64.png) <br> [ホワイトボード<sup>1</sup>、<sup>2</sup>](https://whiteboard.microsoft.com/) | ![[Word] アイコン](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer アイコン](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Yammer アイコン](media/o365-yammer-64x64.png) <br> [Yammer <br>の Notifier](https://products.office.com/yammer/yammer-overview) |  |
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
