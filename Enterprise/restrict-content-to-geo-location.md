@@ -1,5 +1,5 @@
 ---
-title: 地域の場所にコンテンツを制限する
+title: SharePoint サイトのコンテンツを地域の場所に制限する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,14 +10,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境で SharePoint サイトを指定の地域の場所に制限する方法について説明します。
-ms.openlocfilehash: 42c382abd254afcf74dd6bdd15e4c69f65b64f85
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9319ed6229acc7cda48cc52b3a27681c53f1359c
+ms.sourcegitcommit: 7bb48195079ce14aabfa0384771b17db0e4908b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070993"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36828481"
 ---
-# <a name="restrict-content-to-a-geo-location"></a>地域の場所にコンテンツを制限する
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>SharePoint サイトのコンテンツを地域の場所に制限する
 
 状況によっては、サイトが移動されないようにするか、サイトのファイル コンテンツが別の地域の場所にキャッシュされないようにすることで、サイトが作成された地域の場所にサイトとそのファイル コンテンツを保持するように選択できます。
 
