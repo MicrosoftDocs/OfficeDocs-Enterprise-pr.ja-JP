@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 80f13afb751775010a613be41b7f9fa6dec40c72
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385195"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017335"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -649,7 +649,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN のプライベートオリジンにあるアセットへのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 送信元によって指定されたフォルダーまたはライブラリへのアクセス許可を持っているユーザーには、アクセス許可レベルに基づいてファイルへのアクセスをユーザーに許可するトークンが自動的に与えられます。 これらのアクセストークンは、トークンリプレイ攻撃を防ぐために生成されてから90分以内に有効になります。
 
-アクセストークンが生成されると、SharePoint Online は、2つの承認パラメーター (エッジ認証__ トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 次に例を示します。
+アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 次に例を示します。
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -685,6 +685,8 @@ CDN アセットへのリンクをページに追加すると、そのページ�
 SharePoint Online からの参照が必要になるため、web ブラウザーで CDN Url を直接テストすることはできません。 ただし、CDN アセット URL を SharePoint ページに追加し、そのページをブラウザーで開くと、CDN アセットがページに表示されます。
 
 Microsoft Edge ブラウザーでの開発者ツールの使用の詳細については、「 [Microsoft Edge Developer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)」を参照してください。
+
+CDN が機能していることを示す[パターンおよびプラクティスの YouTube チャネル](https://aka.ms/sppnp-videos)でホストされているビデオについては、「 [cdn の使用状況を確認する」と「ネットワーク接続が最適](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)であることを確認する」をご覧ください。
 
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>新しい配信元からのアセットが利用できないのはなぜですか?
 新しいオリジンにあるアセットは、登録が CDN 経由で伝達され、アセットを送信元から CDN ストレージにアップロードするのに時間がかかるため、すぐに使用できなくなります。 CDN でアセットを使用できるようになるために必要な時間は、アセットとファイルのサイズによって異なります。

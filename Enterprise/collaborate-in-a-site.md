@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 23f55e22d4c85dcd168c403f50b35f574be9ac07
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992386"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017315"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイト内のゲストと共同作業する
 
@@ -72,28 +72,6 @@ SharePoint 組織レベルの共有設定を設定するには
 2. SharePoint 管理センターの左側のナビゲーションで、[**共有**] をクリックします。
 3. SharePoint の外部共有が [**すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 4. 変更を加えた場合は、[**保存**] をクリックします。
-
-
-## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織レベルの既定のリンク設定
-
-既定のファイルとフォルダーのリンク設定によって、ユーザーがファイルまたはフォルダーを共有するときに、どのリンクオプションが既定で表示されるかが決まります。 ユーザーは、必要に応じて、共有する前に、リンクの種類を他のオプションのいずれかに変更できます。
-
-この設定は、組織内のすべての teams および SharePoint サイトに影響を与えることに注意してください。
-
-ユーザーがファイルやフォルダーを共有するときに既定で選択されるリンクの種類を選択します。
-
-- [すべてのユーザー]**リンクを持つすべて**のファイルとフォルダーを匿名ユーザーと共有する予定がある場合は、このオプションを選択します。 *すべて*のリンクを許可するが、偶発的な匿名共有について懸念している場合は、他のオプションのいずれかを既定として検討してください。 このリンクの種類は、**すべて**の共有を有効にした場合にのみ使用できます。
-- [**組織内のユーザーのみ**]-ほとんどのファイルとフォルダーの共有が組織内のユーザーと想定される場合は、このオプションを選択します。
-- **特定のユーザー** -多数のファイルとフォルダーをゲストで共有することが予想される場合は、このオプションを検討してください。 この種類のリンクはゲストと連動しており、認証を必要とします。
- 
-![SharePoint 組織レベルのファイルとフォルダー共有設定のスクリーンショット](media/sharepoint-organization-files-folders-sharing-settings.png)
-
-
-SharePoint 組織レベルの既定のリンク設定を設定するには
-
-1. SharePoint 管理センターの [共有] ページに移動します。
-2. [**ファイルとフォルダーのリンク**] で、使用する既定の共有リンクを選択します。
-3. 変更を加えた場合は、[**保存**] をクリックします。
 
 ## <a name="create-a-site"></a>サイトを作成する
 
