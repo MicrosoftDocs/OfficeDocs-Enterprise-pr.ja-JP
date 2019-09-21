@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007、ProClarity、および SharePoint Server 2007 がサポートの終了に達しました。 この記事は、BI ソリューションのアップグレードを計画する場合にお読みください。
-ms.openlocfilehash: 9fde75724bf82a37f98fd98ddda1017198b850dd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 507e6c1707844fed3ecd7cf4d3a69174a10b3dc4
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782537"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067092"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 のサポート終了ロードマップ
 
@@ -72,8 +72,8 @@ ProClarity、SharePoint Server 2007 SP3、および PerformancePoint Server 2007
   
 |**オプション**|**クラウドまたはオンプレミスの場合**|
 |:-----|:-----|
-|[Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |Both/フォーム/データシート  <br/> |
-|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |Both/フォーム/データシート  <br/> |
+|[Excel](#excel-with-sharepoint-server-on-premises) <br/> |Both/フォーム/データシート  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |Both/フォーム/データシート  <br/> |
 |[レポート サービス](#use-reporting-services-on-premises) <br/> |オンプレミスのみ  <br/> |
 |[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |オンプレミスのみ  <br/> |
    

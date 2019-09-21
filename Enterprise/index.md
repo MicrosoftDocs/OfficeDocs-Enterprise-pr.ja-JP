@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490730"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067112"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365 には、コラボレーション、セキュリティとコンプライアンス、モビリティ、およびインテリジェンスと分析を可能にするパワフルなオンラインクラウドサービスが用意されています。 このページでは、エンタープライズ組織で Office&nbsp;365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスへのリンクを提供します。</p>
@@ -292,6 +292,8 @@ ms.locfileid: "34490730"
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
                         <p><a href="https://docs.microsoft.com/microsoft-365">詳細については、「Microsoft 365」を参照してください。</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/compliance/">詳細については、「Microsoft 365 コンプライアンス」を参照してください。</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/">詳細については、「Microsoft 365 セキュリティ」を参照してください。</a></p>
                     </div>
                 </div>
             </div>
