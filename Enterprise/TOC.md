@@ -124,7 +124,7 @@
 #### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
 ### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
 
-## [3. セキュリティ機能を実装する](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. セキュリティ機能を実装する](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 
 ## 4. クライアント ソフトウェアを展開する
 ### [Office 365 ProPlus を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
@@ -204,6 +204,11 @@
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
 ### ゲストと共同で作業する
 #### [ゲストで共有するリファレンス](microsoft-365-guest-settings.md)
+#### ゲストで共有するソリューション
+##### [ゲストの共同作業の概要](collaborating-with-people-outside-your-organization.md)
+##### [ドキュメントでの共同作業](collaborate-on-documents.md)
+##### [サイトで共同作業をする](collaborate-in-a-site.md)
+##### [チームで共同作業をする](collaborate-as-a-team.md)
 
 ## デバイス
 ### [MDM または Intune を選択する](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
