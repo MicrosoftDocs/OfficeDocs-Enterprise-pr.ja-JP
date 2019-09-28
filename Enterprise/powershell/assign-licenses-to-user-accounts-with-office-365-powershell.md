@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Office 365 PowerShell を使用して、ライセンスのないユーザーに Office 365 ライセンスを割り当てる方法について説明します。
-ms.openlocfilehash: 1f12c7b55e6766db5b2afc661ee5337448336ba1
-ms.sourcegitcommit: 71e6a99fb585b4eb1aea3f215c234688f28d2050
+ms.openlocfilehash: e963b9a0f24ae5b573dfe9612d9d09419809defe
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37273682"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282932"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる
 
@@ -159,7 +159,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 次に、ユーザーアカウントがこれらのコマンドで現在持っているサブスクリプションを一覧表示します。
 
 ```
-$userUPN=”<user account UPN>”
+$userUPN="<user account UPN>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }

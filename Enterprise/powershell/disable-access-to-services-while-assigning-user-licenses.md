@@ -3,7 +3,7 @@ title: ユーザー ライセンスを割り当てる間、サービスへのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/27/2019
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell を使い、ユーザー アカウントへのライセンスの割り当てと、特定のサービス プランの無効化を同時に行う方法を説明します。
-ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: ac356e5cc70ef36ad2e45b84f0dcd9d2252c79a4
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782147"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282922"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
 
@@ -27,6 +27,40 @@ ms.locfileid: "35782147"
   
 Office 365 サブスクリプションには、個々のサービスのサービス プランが付属します。Office 365 管理者は、ユーザーにライセンスを割り当てるときに特定のプランを無効にしなければならないことが少なくありません。この資料の手順を使用すると、PowerShell を使用して、1 ユーザー アカウントの、または複数のユーザー アカウントの特定のサービス プランを無効にした状態で、Office 365 ライセンスを割り当てることができます。
 
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
+
+まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+  
+
+次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+次に、ユーザープリンシパル名 (UPN) とも呼ばれるライセンスを追加するアカウントのサインイン名を取得します。
+
+次に、有効にするサービスの一覧をコンパイルします。 ライセンスプランの完全な一覧 (製品名とも呼ばれます)、含まれるサービスプラン、およびそれに対応するフレンドリ名については、「[ライセンスの製品名とサービスプラン識別子](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)」を参照してください。
+
+次のコマンドブロックの場合は、ユーザーアカウントのユーザープリンシパル名、SKU パーツ番号、およびサービスプランのリストを入力して、説明テキストと\<文字 > を有効にし、削除します。 次に、完成したコマンドを PowerShell コマンド プロンプトで実行します。
+  
+```
+$userUPN="<user account UPN>"
+$skuPart="<SKU part number>"
+$serviceList=<double-quoted enclosed, comma-separated list of enabled services>
+$user = Get-AzureADUser -ObjectID $userUPN
+$skuID= (Get-AzureADSubscribedSku  | Where {$_.SkuPartNumber -eq $skuPart}).SkuID
+$SkuFeaturesToEnable = @($serviceList)
+$StandardLicense = Get-AzureADSubscribedSku | Where {$_.SkuId -eq $skuID}
+$SkuFeaturesToDisable = $StandardLicense.ServicePlans | ForEach-Object { $_ | Where {$_.ServicePlanName -notin $SkuFeaturesToEnable }}
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = $StandardLicense.SkuId
+$License.DisabledPlans = $SkuFeaturesToDisable.ServicePlanId
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
 
