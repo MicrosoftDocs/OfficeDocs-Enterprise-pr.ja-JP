@@ -3,7 +3,7 @@ title: Office 365 PowerShell への接続
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 09/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: '概要: Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから管理センター タスクを実行します。'
-ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c5bf5204d8ca1c8db35635f080031838e9fbea03
+ms.sourcegitcommit: 86a740dccf273d679a8938e11e60d2a497c01689
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069093"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328155"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -47,6 +47,9 @@ Office 365 および管理者のユーザー アカウント、グループ、�
   - Windows 10、Windows 8.1、Windows 8、または Windows 7 Service Pack 1 (SP1) 
     
   - Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2012、または Windows Server 2008 R2 SP1
+
+    > [!NOTE]
+    > PowerShell バージョン 5.1 以降を使用する必要があります。 Windows 8.1、Windows 8、Windows 7 Service Pack 1 (SP1)、Windows Server 2012 R2、Windows Server 2012、および Windows Server 2008 R2 SP1 の場合は、[Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616) をダウンロードしてインストールします。 
     
     > [!NOTE]
     >64 ビット バージョンの Windows を使用してください。Microsoft PowerShell の Microsoft Azure Active Directory モジュールの 32 ビット バージョンのサポートは 2014 年 10 月に終了しました。
