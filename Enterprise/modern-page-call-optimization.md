@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online サービス エンドポイントへの呼び出し数を制限することにより、SharePoint Onlineで最新および従来の発行サイト ページを最適化する方法を学びます。
-ms.openlocfilehash: d44cb2273d550cea3a9ec7bfb1ffaeb10bbdd333
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 1e355aee6d55e3e45238cdf09853ddebb922ae53
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028204"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375505"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online の最新および従来の発行サイト ページでページ呼び出しを最適化する
 
@@ -71,7 +71,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
 
-[最新の SharePoint エクスペリエンスでのパフォーマンス](https://docs.microsoft.com/ja-JP/sharepoint/modern-experience-performance.md)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 
