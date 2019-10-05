@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL Web サービスに含まれないそ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: b674d5d9de64431207f6a31289cb4f5fa463616f
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: da69876f4b189d11e46ee6a01d87fecde03480ca
+ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203586"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37388165"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -55,7 +55,7 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 | 9  | [Exchange ハイブリッド構成ウィザード](https://docs.microsoft.com/exchange/hybrid-configuration-wizard)を使用して [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant)を構成する場合に使用します。 <br> 注: これらのエンドポイントは、Exchange ハイブリッドの構成にのみ必要です。  | TCP ポート 80 と 443 の domains.live.com は、Exchange 2010 SP3 ハイブリッド構成ウィザードでのみ必要です<BR> <BR> GCC High、DoD IP アドレス: 40.118.209.192/32、168.62.190.41/32 <BR> <BR> 世界中の商用および GCC: *.store.core.windows.net、asl.configure.office.com、mshrcstorageprod.blob.core.windows.net、tds.configure.office.com、mshybridservice.trafficmanager.net <BR>  | 送信サーバー トラフィック |
 | 10  | AutoDetect サービスは、[iOS および Android 用の Outlook でハイブリッド先進認証](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)を行う [Exchange ハイブリッド](https://docs.microsoft.com/exchange/exchange-deployment-assistant) シナリオで使用します。 <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 顧客の TCP 443 のオンプレミス Exchange サーバー | 受信サーバー トラフィック |
 | 11  | Office 2016 の Skype for Business には、UDP ポートを使用するビデオ ベースの画面共有が含まれています。Office 2013 以前の Skype for Business クライアントでは、TCP ポート 443 経由で RDP を使用していました。 | TCP ポート 443 を 52.112.0.0/14 に開く | Office 2013 以前の Skype for Business の古いクライアント バージョン |
-| 12  | Skype for Business ハイブリッド オンプレミス サーバーから Skype for Business Online への接続性 | 13.107.64.0/18、52.112.0.0/14 UDP ポート 50,000-59,999 <BR>  TCP ポート 50,000-59,999 | Skype for Business オンプレミス サーバーの送信接続性 |
+| 12  | Skype for Business ハイブリッド オンプレミス サーバーから Skype for Business Online への接続性 | 13.107.64.0/18, 52.112.0.0/14  <BR> UDP ポート 50,000-59,999 <BR>  TCP ポート 50,000-59,999; 5061 | Skype for Business オンプレミス サーバーの送信接続性 |
 | 13  | オンプレミスのハイブリッド接続を使用するクラウド PSTN では、オンプレミスのホストへのネットワーク接続を開く必要があります。Skype for Business Online のハイブリッド構成の詳細については、  | 「[Skype for Business Server と Office 365 間のハイブリッド接続を計画する](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity)」を参照してください。 | Skype for Business オンプレミス ハイブリッド受信 |
 | 14  | **認証と ID FQDN** <br> FQDN (```secure.aadcdn.microsoftonline-p.com```) を機能させるには、クライアントの Internet Explorer (IE) またはエッジの信頼済みサイト ゾーンに含める必要があります。 |  | 信頼済みサイト |
 | 15  |  **Microsoft Teams FQDN** <br> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](https://docs.microsoft.com/microsoftteams/known-issues)」を参照してください。 |  | 信頼済みサイト |
