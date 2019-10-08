@@ -3,7 +3,7 @@ title: Office 365 PowerShell でユーザー アカウント プロパティを�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 10/07/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 概要:Office 365 PowerShell を使用して、Office 365 テナント内の個別のまたは複数のユーザー アカウントのプロパティを構成します。
-ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
+ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782607"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "37411516"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウント プロパティを構成する
 
@@ -71,7 +71,11 @@ Graph モジュールの Azure Active Directory PowerShell を使用してユー
     これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。
     
 その他のパラメーターについては、[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) を参照してください。
-  
+
+>[!Note]
+> **メール**のプロパティは、 **-othermails**パラメーターを使用して設定します。
+>
+ 
 ユーザー アカウントのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
   
 ```
@@ -186,7 +190,11 @@ Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用
     これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。
     
 その他のパラメーターについては、[Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) をご覧ください。
-  
+
+>[!Note]
+> **-Alternateemailaddresses**パラメーターを使用して、 **Mail**プロパティを設定します。
+>
+ 
 すべてのユーザーのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
   
 ```
