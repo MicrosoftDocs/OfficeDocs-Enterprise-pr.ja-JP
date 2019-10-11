@@ -21,14 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491296"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435361"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 この記事では、office 2013 および Office 2016 クライアントアプリが、Exchange Online、SharePoint Online、Skype for Business Online の Office 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
 
@@ -110,3 +112,5 @@ Office 2016 クライアントは既定で先進認証をサポートしてお�
 [Office 365 の展開で多要素認証を計画する (Office 365 管理者向け)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [2段階認証を使用して Office 365 にサインインします (エンドユーザー向け)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

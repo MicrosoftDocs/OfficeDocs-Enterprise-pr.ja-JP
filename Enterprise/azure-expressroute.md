@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: b12310d9a82a1adafd82ce0c3b6554e7ceea9550
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385185"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435411"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。 多くの場合、Azure で実行されるインフラストラクチャおよびプラットフォームサービスは、ネットワークアーキテクチャとパフォーマンスに関する考慮事項に対処することでメリットを得られます。 このような場合は、Azure に ExpressRoute をお勧めします。 Office 365 や Dynamics 365 などのサービスとしてのソフトウェアは、インターネットを介して安全かつ確実にアクセスできるように構築されています。 「 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)」の記事では、インターネットのパフォーマンスとセキュリティについて説明し、「office 365 用の Azure ExpressRoute」を検討することができます。
 
@@ -72,7 +74,7 @@ ExpressRoute を実装するには、ネットワークとアプリケーショ�
 
 1. Office 365 の接続計画で ExpressRoute が満たす必要があることを完全に理解します。 インターネットまたは ExpressRoute を使用するアプリケーションについて理解し、Office 365 トラフィック用のインターネットと ExpressRoute の両方を使用して、ネットワークの容量、セキュリティ、高可用性の要件を十分に計画します。
 
-2. インターネットと ExpressRoute の両方のトラフィックについて、出口<sup></sup>およびピアリングの場所を決定します。
+2. インターネットと ExpressRoute の両方のトラフィックについて、出口およびピアリングの場所を<sup>決定します</sup>。
 
 3. インターネットおよび ExpressRoute の接続に必要な容量を決定します。
 
@@ -119,3 +121,7 @@ Office 365 の ExpressRoute を購入するには、1つまたは複数の[承�
 [Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
+
+## <a name="see-also"></a>関連項目
+
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '概要: Exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、Exchange Online サービス、および Exchange Web サービスについて説明します。'
-ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069353"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428094"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365 のサード パーティ SSL 証明書の計画
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
  **概要:** Exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、Exchange Online サービス、および Exchange Web サービスについて説明します。 
   
@@ -77,4 +80,6 @@ ms.locfileid: "34069353"
 
 この記事では、インフラストラクチャにインストールする必要がある証明書について説明します。 Office 365 サーバーにインストールされている証明書の詳細については、「 [office 365 証明書チェーン](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb)」を参照してください。
   
+## <a name="see-also"></a>関連項目
 
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

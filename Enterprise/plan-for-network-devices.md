@@ -16,17 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '概要: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722626"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428104"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
- **概要**: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
   
+**概要**: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。
+
 ネットワークハードウェアによっては、サポートされている同時セッション数に制限がある場合があります。 ユーザー数が2000を超える組織では、ネットワークデバイスを監視して、追加の Office 365 サービストラフィックを処理できることを確認することをお勧めします。 簡易ネットワーク管理プロトコル (SNMP) 監視ソフトウェアを使用すると、この操作を行うことができます。
 
 ||
@@ -71,3 +73,5 @@ Office 365 に接続するためのファイアウォールとプロキシの構
 ## <a name="see-also"></a>関連項目
 
 [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
+
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

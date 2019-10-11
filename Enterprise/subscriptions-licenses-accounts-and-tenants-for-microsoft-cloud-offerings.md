@@ -3,7 +3,7 @@ title: マイクロソフトのクラウド プランのサブスクリプショ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/12/2018
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '概要: Microsoft のクラウド プラン全体に渡る組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解します。'
-ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782517"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428134"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
@@ -31,21 +31,12 @@ ms.locfileid: "35782517"
 Microsoft は、クラウド プラン全体で ID の使用と課金の一貫性を維持するために、組織、サブスクリプション、ライセンス、ユーザー アカウントなどの階層を提供しています。
   
 - Microsoft Office 365
-    
-    詳細については、「[ビジネス プランと価格](https://products.office.com/business/compare-office-365-for-business-plans)」を参照してください。
-    
 - Microsoft Azure
-    
-    詳細については、「[Azure の価格](https://azure.microsoft.com/pricing/)」を参照してください。
-    
 - Microsoft Intune および Enterprise Mobility + Security (EMS)
-    
-    詳細については、「[Intune の価格](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)」を参照してください。
-    
 - Microsoft Dynamics 365
-    
-    詳細については、「[Dynamics 365 の価格](https://dynamics.microsoft.com/)」を参照してください。
-    
+
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/) Office 365、EMS、および Windows 10 Enterprise が 1 つのサブスクリプションと統合型サービスセットに結合されます。
+
 ## <a name="elements-of-the-hierarchy"></a>階層の要素
 
 階層の要素を以下に示します。
@@ -56,22 +47,23 @@ Microsoft は、クラウド プラン全体で ID の使用と課金の一貫�
   
 ### <a name="subscriptions"></a>サブスクリプション
 
-サブスクリプションとは、1 つ以上の Microsoft クラウドのプラットフォームやサービスを使用するための Microsoft との契約のことです。この契約では、ユーザー単位のライセンス料またはクラウドベースのリソース消費量に基づいた課金が発生します。Microsoft のサービスとしてのソフトウェア (SaaS) ベースのクラウド プラン (Office 365、Intune/EMS、および Dynamics 365) は、ユーザー ライセンス料が課金されます。Microsoft のサービスとしてのプラットフォーム (PaaS) およびサービスとしてのインフラストラクチャ (IaaS) クラウド プラン (Azure) は、クラウド リソース消費量に基づいた課金が発生します。
-  
+サブスクリプションとは、1 つ以上の Microsoft クラウドのプラットフォームやサービスを使用するための Microsoft との契約のことです。この契約では、ユーザー単位のライセンス料またはクラウドベースのリソース消費量に基づいて請求されます。 
+
+- Microsoft のサービスとしてのソフトウェア (SaaS) ベースのクラウド商品 (Office 365、Intune/EMS、および Dynamics 365) では、ユーザーごとのライセンス料金が請求されます。 
+- Microsoft のサービスとしてのプラットフォーム (PaaS) およびサービスとしてのインフラストラクチャ (IaaS) のクラウド サービス (Azure) では、クラウド リソースの消費量に基づいて請求されます。
+ 
 試用版サブスクリプションを使用することもできます。ただし、このサブスクリプションは、特定の期間を過ぎるか、特定の消費料金を超えると失効します。試用版サブスクリプションは、有料サブスクリプションに変更できます。
   
-組織は、Microsoft のクラウド プランの複数のサブスクリプションを所有できます。図 1 は一例を示しています。
-  
+組織は、Microsoft のクラウド商品の複数のサブスクリプションを所有できます。 図 1 は、複数の Office 365 サブスクリプション、1 つの Intune サブスクリプション、1 つの Dynamics 365 サブスクリプション、複数の Azure サブスクリプションを持つ 1 つの組織を示しています。
+
 **図 1: 1 つの組織に複数のサブスクリプションの例**
 
 ![Microsoft のクラウド プランの複数のサブスクリプションのある組織の例。](media/Subscriptions/Subscriptions-Fig1.png)
 
   
-図 1 は、複数の Office 365 サブスクリプション、1 つの Intune サブスクリプション、1 つの Dynamics 365 サブスクリプション、複数の Azure サブスクリプションを持つ単一の組織を示しています。
-  
 ### <a name="licenses"></a>ライセンス
 
-Microsoft の SaaS クラウド プランの場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド プランのサービスを使用できるようになります。サブスクリプションの一環として、月間の固定料金が課金されます。管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。図 2 の例では、Contoso Corporation は 100 ライセンスの Office 365 Enterprise E5 サブスクリプションを所有しています。このサブスクリプションにより、最大 100 件の個別のユーザー アカウントが Enterprise E5 の機能とサービスを使用できるようになります。
+Microsoft の SaaS クラウド商品の場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド商品のサービスを使用できるようになります。 サブスクリプションの一環として、月間の固定料金が課金されます。 管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。 図 2 の例では、Contoso Corporation は 100 ライセンスの Office 365 Enterprise E5 サブスクリプションを所有しています。このサブスクリプションにより、最大 100 件の個別のユーザー アカウントが Office 365 Enterprise E5 の機能とサービスを使用できるようになります。
   
 **図 2:1 つの組織の SaaS ベースのサブスクリプションに含まれるライセンス**
 
@@ -85,7 +77,7 @@ Azure IaaS ベースの仮想マシン場合、仮想マシン イメージに�
   
 ### <a name="user-accounts"></a>ユーザー アカウント
 
-すべての Microsoft のクラウド プランのユーザー アカウントは、Azure Active Directory (AD) テナントに保存されます。これには、ユーザー アカウントとグループが含まれます。Azure AD テナントは、Windows サーバーベースのサービスである Azure AD Connect を使用して、既存の Active Directory Domain Services (AD DS) アカウントと同期できます。これは、ディレクトリ同期 (DirSync) と呼ばれます。
+すべての Microsoft のクラウド商品のユーザー アカウントは、Azure Active Directory (Azure AD) テナントに保存されます。これには、ユーザー アカウントとグループが含まれます。 Azure AD テナントは、Windows サーバーベースのサービスである Azure AD Connect を使用して、既存の Active Directory Domain Services (AD DS) アカウントと同期できます。 これは、ディレクトリ同期 (DirSync) と呼ばれます。
   
 図 3 は、共通の Azure AD テナントを使用する組織の複数サブスクリプションの例を示しています。このテナントに組織のアカウントが格納されています。
   
@@ -129,15 +121,13 @@ Azure AD テナントは、アカウントおよびグループを収容する A
     
   - 共通の Azure AD テナントにある組織のユーザー アカウント。
     
-複数の Microsoft クラウド プランのサブスクリプションは、同じ Azure AD テナントを使用できます。このテナントは、共通 ID プロバイダーとして機能します。オンプレミスの AD DS の同期されたアカウントを収容する中央 Azure AD テナントを使用すると、クラウドをベースとしたサービスとしての ID (IDaaS) が組織に提供されます。これを図 4 に示します。
+複数の Microsoft クラウド商品のサブスクリプションは、同じ Azure AD テナントを使用できます。このテナントは、共通の ID プロバイダーとして機能します。 オンプレミスの AD DS の同期されたユーザー アカウントを収容しているセントラル Azure AD テナントを使用することで、組織にサービス (IDaaS) としてのクラウドベース ID が提供されます。 
   
 **図 4: 同期されたオンプレミスのアカウントと組織の IDaaS**
 
 ![組織のサービスとしての ID (IaaS) IDaaS。](media/Subscriptions/Subscriptions-Fig4.png)
   
 図 4 は、Microsoft の SaaS クラウド プラン、Azure PaaS アプリ、Azure AD Domain Services を使用する Azure IaaS の仮想マシンにより、共通の Azure AD テナントがどのように使用されるかを示します。Azure AD Connect は、オンプレミスの AD DS フォレストを Azure AD テナントと同期します。
-  
-Microsoft のクラウド オファリング間の ID 統合に関する詳細は、「[エンタープライズ アーキテクトのための Microsoft クラウド ID](https://aka.ms/cloudarchidentity)」を参照してください。
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>複数の Microsoft クラウド プランのサブスクリプションの組み合わせ
 
@@ -168,15 +158,17 @@ Office 365 サブスクリプションと同じ組織および Azure AD テナ�
     
 3. **[サブスクリプションの追加]** ページでプランを選択し、支払情報を記入して契約します。
     
-Azure と Office 365 のサブスクリプションを個別に購入済みで、Azure サブスクリプションから Office 365 の Azure AD テナントへのアクセスを希望する場合は、「[Azure サブスクリプションを Azure Active Directory テナントに関連付けるまたは追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)」の説明を参照してください。
+Azure と Office 365 のサブスクリプションを個別に購入済みで、Azure サブスクリプションから Office 365 の Azure AD テナントへのアクセスを希望する場合は、「[既存の Azure サブスクリプションを Azure Active Directory テナントに追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)」の説明を参照してください。
  
 ## <a name="see-also"></a>関連項目
 
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
   
-[クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
-  
 [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [ハイブリッド ソリューション](hybrid-solutions.md)
+
+## <a name="next-step"></a>次の手順
+
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   

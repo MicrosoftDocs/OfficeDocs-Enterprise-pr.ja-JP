@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
+ms.date: 05/20/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,14 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249465"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428084"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 identity モデルと Azure Active Directory
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 では、Azure Active Directory (Azure AD) を使用して、office 365 サブスクリプションに含まれているクラウドベースのユーザー id と認証サービスを使用して、Office 365 の id と認証を管理します。 Id インフラストラクチャを正しく構成することは、組織の Office 365 のユーザーアクセスとアクセス許可を管理するために不可欠です。
 
@@ -43,7 +46,7 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
 
 |||
 |:-------|:-----|:-----|
-|  | **クラウド専用の id** | **ハイブリッド id** |
+|  | **クラウド専用の id** | **ハイブリッド ID** |
 | **定義** | ユーザーアカウントは、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントにのみ存在します。 | ユーザーアカウントが AD DS に存在し、Microsoft 365 サブスクリプションの Azure AD テナントにもコピーがあります。 Azure AD のユーザーアカウントには、ユーザーアカウントのパスワードのハッシュ化されたバージョンも含まれる場合があります。 |
 | **Microsoft 365 でユーザー資格情報を認証する方法** | Microsoft 365 サブスクリプションの Azure AD テナントは、クラウド id アカウントを使用して認証を実行します。 | Microsoft 365 サブスクリプションの Azure AD テナントは、認証プロセスを処理するか、またはユーザーを別の id プロバイダーにリダイレクトします。 |
 | **最適シナリオ** | 社内の AD DS を必要としない、または必要としない組織。 | AD DS または別の id プロバイダーを使用している組織。 |
@@ -63,7 +66,7 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
 ### <a name="administration"></a>管理
 ユーザーアカウントは Azure AD のみに格納されているため、クラウド id は、 [Microsoft 365 管理センター](https://admin.microsoft.com)と Windows PowerShell のツールを使用して、graph モジュール用 Azure Active Directory PowerShell を使用して管理します。 
 
-## <a name="hybrid-identity"></a>ハイブリッド id
+## <a name="hybrid-identity"></a>ハイブリッド ID
 
 ハイブリッド id は、オンプレミスの AD DS で開始され、Microsoft 365 サブスクリプションの Azure AD テナントにコピーを持つアカウントを使用します。 ただし、ほとんどの変更は1つの方法でのみフローします。 AD DS ユーザーアカウントに加えた変更は、Azure AD のコピーと同期されます。 しかし、新しいユーザーアカウントなどの Azure AD のクラウドベースのアカウントに加えられた変更は、AD DS と同期されません。
 
@@ -97,3 +100,7 @@ Microsoft 365 管理センターまたは Windows PowerShell を使用して、A
 ## <a name="video-training"></a>ビデオ トレーニング
 
 「 [Office 365: AZURE AD Connect を使用して id を管理](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)する」を参照して、LinkedIn Learning に連絡してください。
+
+## <a name="see-also"></a>関連項目
+
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 は、世界中のお客様がインターネット接続を使用してサービスに接続できるように設計されています。 サービスの進化に伴って、Office 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立するお客様によって改善されています。
-ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
-ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
+ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233427"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428074"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Office 365 のネットワーク接続の評価
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 は、世界中のお客様がインターネット接続を使用してサービスに接続できるように設計されています。 サービスの進化に伴って、Office 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立するお客様によって改善されています。
   
@@ -101,7 +103,7 @@ Office 365 を評価していて、ネットワーク評価の開始位置がわ
 
 Office 365 ネットワークオンボードツールに関する情報を参照して、[新しいネットワーク設計の推奨事項に関するブログ投稿を使用して、更新された office 365 ネットワークオンボードツールの POC](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130)にフィードバックを提供することができます。 このツールおよびその他の Office 365 ネットワーク更新プログラムに関する今後の更新プログラムについては、「 [office 365 のネットワーク](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)ブログ」に掲載されています。
   
-次の短いリンクを使用して、に戻ることができます。 [ https://aka.ms/o365networkconnectivity](https://aka.ms/o365networkconnectivity)
+次の短いリンクを使用して、に戻ることができ[ https://aka.ms/o365networkconnectivityます。](https://aka.ms/o365networkconnectivity)
   
 ## <a name="see-also"></a>関連項目
 
@@ -116,3 +118,5 @@ Office 365 ネットワークオンボードツールに関する情報を参照
 [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
+
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

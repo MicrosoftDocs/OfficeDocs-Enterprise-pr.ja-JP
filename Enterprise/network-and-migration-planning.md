@@ -17,14 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが含まれています。
-ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616781"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428144"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 この記事には、ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが記載されています。
   
@@ -112,3 +114,6 @@ Office 365 の動作を向上させる方法の詳細については、これら
     
 - [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
  
+## <a name="see-also"></a>関連項目
+
+[Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

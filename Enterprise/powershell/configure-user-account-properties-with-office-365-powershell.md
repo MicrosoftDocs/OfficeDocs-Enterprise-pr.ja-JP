@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 概要:Office 365 PowerShell を使用して、Office 365 テナント内の個別のまたは複数のユーザー アカウントのプロパティを構成します。
-ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
-ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
+ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "37411516"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435351"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウント プロパティを構成する
 
@@ -72,10 +72,7 @@ Graph モジュールの Azure Active Directory PowerShell を使用してユー
     
 その他のパラメーターについては、[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) を参照してください。
 
->[!Note]
-> **メール**のプロパティは、 **-othermails**パラメーターを使用して設定します。
->
- 
+
 ユーザー アカウントのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
   
 ```
@@ -191,10 +188,6 @@ Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用
     
 その他のパラメーターについては、[Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) をご覧ください。
 
->[!Note]
-> **-Alternateemailaddresses**パラメーターを使用して、 **Mail**プロパティを設定します。
->
- 
 すべてのユーザーのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
   
 ```
