@@ -45,7 +45,7 @@ ms.locfileid: "34068473"
 
 地域管理者としてのグループを削除するには、`Remove-SPOGeoAdministrator -GroupAlias <alias>` を実行します。
 
-一部のセキュリティ グループにはグループ エイリアスがないことに注意してください。 エイリアスがないセキュリティ グループを追加する場合は、[Get-MsolGroup](https://docs.microsoft.com/ja-JP/powershell/module/msonline/get-msolgroup) を実行して、グループの一覧を取得し、セキュリティ グループの ObjectID を検索して、次を実行します。
+一部のセキュリティ グループにはグループ エイリアスがないことに注意してください。 エイリアスがないセキュリティ グループを追加する場合は、[Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) を実行して、グループの一覧を取得し、セキュリティ グループの ObjectID を検索して、次を実行します。
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -59,4 +59,4 @@ ObjectID を使用してグループを削除するには、`Remove-SPOGeoAdmini
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/ja-JP/powershell/module/azuread/set-azureadgroup)
+[セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)

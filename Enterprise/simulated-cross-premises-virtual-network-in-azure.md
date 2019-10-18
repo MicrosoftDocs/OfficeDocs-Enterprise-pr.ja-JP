@@ -79,7 +79,7 @@ ms.locfileid: "34162490"
 最初に、ローカル コンピューターで Azure PowerShell プロンプトを起動します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/ja-JP/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 このコマンドを使用して Azure アカウントにサインインします。
   

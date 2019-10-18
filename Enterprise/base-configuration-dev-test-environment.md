@@ -113,7 +113,7 @@ Azure PowerShell を使った基本構成テスト環境の設定には次の 4 
 最初に、Azure PowerShell プロンプトを起動します。
   
 > [!NOTE]
-> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/ja-JP/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次に示すコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 次のコマンドを使用して Azure アカウントにログインします。
   
