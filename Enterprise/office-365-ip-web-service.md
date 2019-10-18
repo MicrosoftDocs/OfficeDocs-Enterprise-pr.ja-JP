@@ -603,7 +603,7 @@ IP アドレスと URL の変更が Web サービスに発行された際にメ�
 
 - Microsoft Flow ソリューションを使用する方法については、「[Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs (Microsoft Flow を使用して Office 365 IP アドレスと URL への変更の通知メールを受け取る)](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651)」を参照してください。
 - ARM テンプレートを使用して Azure Logic App を展開する場合は、「[Office 365 Update Notification (v1.1) (Office 365 更新通知 (v 1.1))](https://aka.ms/ipurlws-updates-template)」を参照してください。
-- PowerShell を使用して独自の通知スクリプトを作成するには、「[Send-MailMessage](https://docs.microsoft.com/ja-JP/powershell/module/microsoft.powershell.utility/send-mailmessage)」 を参照してください。
+- PowerShell を使用して独自の通知スクリプトを作成するには、「[Send-MailMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage)」 を参照してください。
 
 ## <a name="exporting-a-proxy-pac-file"></a>プロキシ PAC ファイルのエクスポート
 
