@@ -3,7 +3,7 @@ title: Office 365 開発/テスト環境のフェデレーション ID
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 09/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: '概要: Office 365 開発/テスト環境に向けたフェデレーション認証を構成します。'
-ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
-ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
+ms.openlocfilehash: c2cb4bcd9085cd8dd91df5de2ad936076d11432c
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37046992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37207393"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境のフェデレーション ID
 
@@ -189,13 +189,10 @@ Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPA
 次に、[Azure portal](http://portal.azure.com) で、CORP\\User1 の資格情報を使用して DC1 仮想マシンに接続し、管理者レベルの Windows PowerShell コマンド プロンプトで次のコマンドを実行します。
   
 ```
-$testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
-$testZoneFile= $testZone + ".dns"
-Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
-Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
+Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
+Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-
-これらのコマンドは、Azure 仮想ネットワーク上の仮想マシンが ADFS1 のプライベート IP アドレスに解決できる、フェデレーション サービス FQDN の DNS A レコードを作成します。
+これらのコマンドは、内部 DNS A レコードを作成します。これにより、Azure 仮想ネットワーク上の仮想マシンは内部フェデレーション FQDN を、ADFS1 のプライベート IP アドレスに解決できます。
   
 最終的な構成をここに示します。
   
@@ -414,7 +411,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. サインイン資格情報に、**user1@**\<フェース 1 で作成したドメイン> を入力します。 
     
-    たとえば、テスト ドメインが **testlab.contoso.com** の場合は、「**user1@testlab.contoso.com**」と入力します。TAB キーを押すか、Office 365 に自動的にリダイレクトさせます。
+    たとえば、テスト ドメインが **testlab.contoso.com** の場合は、「user1@testlab.contoso.com」と入力します。TAB キーを押すか、Office 365 に自動的にリダイレクトさせます。
     
     **[この接続ではプライバシーが保護されません]** ページが表示されます。これが表示されるのは、デスクトップ コンピューターで検証できない自己署名証明書を ADFS1 にインストールしたためです。フェデレーション認証の運用環境デプロイメントでは、信頼された証明機関からの証明書を使用するため、ユーザーにこのページは表示されません。
     
