@@ -3,7 +3,7 @@ title: Office 365 の外部ドメイン ネーム システムのレコード
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '概要: Office 365 の展開を計画するときに使用する DNS レコードのリファレンス リスト。'
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387054"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616140"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
@@ -45,7 +45,7 @@ SPF と MX レコードは、見つけ出すのが最も困難です。この記
 ||||
 |:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
-|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。   |**エイリアス:** msoid  <br/> **リンク先:** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。   |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(ドメインの確認)** <br/> |このレコードは、ドメインを所有していることを確認するためだけに Office 365 で使用されます。他のものには影響しません。  <br/> |**ホスト:** @ (または、一部の DNS ホスティング プロバイダーでは自分のドメイン名)  <br/> **TXT 値:** Office 365 "_から提供されるテキスト文字列_"  <br/> このレコードを作成するために使用する値は、Office 365 の **ドメイン セットアップ ウィザード** で指定されます。  <br/> |
 
 
