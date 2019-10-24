@@ -3,7 +3,7 @@ title: コンテンツ配信ネットワーク
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 10/22/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDNs) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722666"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643290"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDNs)
 
@@ -37,7 +37,7 @@ CDNs は、ほとんどのエンタープライズクラウドサービスで使
 
 ## <a name="how-do-cdns-make-services-work-faster"></a>CDNs を使用してサービスを高速化する方法
 
-アイコンなどの一般的なオブジェクトをもう一度にダウンロードすると、電子メールやドキュメントなどの重要な個人コンテンツをダウンロードするために使用できるネットワーク帯域幅が必要になることがあります。 Office 365 は CDNs を含むアーキテクチャを使用しているため、アイコン、スクリプト、およびその他の汎用コンテンツをサーバーからクライアントコンピューターに近い場所にダウンロードして、ダウンロードを高速化することができます。 これは、Office 365 データセンターに安全に格納されている個人コンテンツへのアクセスが高速になることを意味します。
+サイトイメージやアイコンなどの一般的なオブジェクトをもう一度にダウンロードすると、電子メールやドキュメントなどの重要な個人コンテンツをダウンロードするために使用できるネットワーク帯域幅を占有することができます。 Office 365 は CDNs を含むアーキテクチャを使用しているため、アイコン、スクリプト、およびその他の汎用コンテンツをサーバーからクライアントコンピューターに近い場所にダウンロードして、ダウンロードを高速化することができます。 これは、Office 365 データセンターに安全に格納されている個人コンテンツへのアクセスが高速になることを意味します。
 
 CDNs は、クラウドサービスのパフォーマンスを次のように改善するために役立ちます。
 
@@ -50,9 +50,7 @@ CDNs は、クラウドサービスのパフォーマンスを次のように改
 組み込みの Office 365 のコンテンツ配信ネットワーク (CDN) を使用すると、Office 365 管理者は、それを要求するブラウザーに近い静的なアセットをキャッシュすることによって、組織の SharePoint Online ページのパフォーマンスを向上させることができます。ダウンロードして待機時間を短縮します。 Office 365 CDN は、強化された圧縮およびダウンロード速度を実現するために、 [HTTP/2 プロトコル](https://en.wikipedia.org/wiki/HTTP/2)を使用します。
 
 > [!NOTE]
-> Office 365 CDN を使用する場合の制限事項:
-> + Office 365 CDN は、**運用環境**(世界規模) のクラウドのテナントでのみ使用できます。 米国政府機関のテナント、中国およびドイツのクラウドでは、現在 Office 365 CDN をサポートしていません。
-> + Office 365 CDN は、現在、カスタムまたは "バニティ" ドメインで構成されているテナントをサポートしていません。 「 [Office 365 にドメインを追加](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)する」の手順を使用してテナントにドメインを追加した場合、cdn からコンテンツにアクセスしようとすると、OFFICE 365 CDN からエラーが返されます。
+> Office 365 CDN は、**運用環境**(世界規模) のクラウドのテナントでのみ使用できます。 米国政府機関のテナント、中国およびドイツのクラウドでは、現在 Office 365 CDN をサポートしていません。
 
 Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホストできる複数の CDN で構成されているため、静的資産をグローバルな高速ネットワークから提供することができます。 Office 365 CDN でホストするコンテンツの種類に応じて、**公開**、**非公開**、またはその両方の元の場所を追加できます。
 
@@ -60,11 +58,13 @@ Office 365 CDN は静的資産を複数の場所 _(元の場所)_ でホスト�
 
 Office 365 CDN 内で**公開されている**元の場所のコンテンツは匿名でのアクセスが可能で、ホストされた資産への URL があれば誰でもアクセスできます。 公開されている元の場所のコンテンツへのアクセスは匿名になるため、アクセスしたコンテンツは、機密データ以外の一般的なコンテンツ (JavaScript ファイル、スクリプト、アイコン、画像など) をキャッシュする場合にのみ使用するようにしてください。 Office 365 CDN は、Office 365 クライアント アプリケーションのような一般リソースを、公開されている元の場所からダウンロードする際に既定で使用します。
 
-Office 365 CDN 内の**非公開**の元の場所は、SharePoint Online ドキュメント ライブラリ、サイト、メディア (例: 動画) など、ユーザー コンテンツへのプライベート アクセスを行う場合に使用します。 公開されている元のファイルのコンテンツへのアクセスは、動的に生成されたトークンで保護されているため、元のドキュメント ライブラリまたは保存場所へのアクセス許可を持つユーザーのみがアクセスできます。 Office 365 CDN で公開されている元の場所は SharePoint Online コンテンツに対してのみ使用することができ、SharePoint Online テナントからのリダイレクトによってのみ資産にアクセスすることができます。
+Office 365 CDN 内部の出所は、SharePoint Online のドキュメントライブラリ、サイト、独自の画像などのユーザーコンテンツへ**のプライベートアクセス**を提供します。 公開されている元のファイルのコンテンツへのアクセスは、動的に生成されたトークンで保護されているため、元のドキュメント ライブラリまたは保存場所へのアクセス許可を持つユーザーのみがアクセスできます。 Office 365 CDN で公開されている元の場所は SharePoint Online コンテンツに対してのみ使用することができ、SharePoint Online テナントからのリダイレクトによってのみ資産にアクセスすることができます。
 
 Office 365 CDN サービスは、SharePoint Online サブスクリプションの一部として含まれます。
 
 Office 365 CDN の使用方法の詳細については、「 [SharePoint Online で office 365 コンテンツ配信ネットワークを使用](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)する」を参照してください。
+
+Office 365 CDN の使用方法についての概念および HOWTO 情報を提供する一連の短いビデオを視聴するには、 [SharePoint 開発者パターンとプラクティス YouTube チャネル](https://aka.ms/sppnp-videos)にアクセスしてください。
 
 ## <a name="other-microsoft-cdns"></a>その他の Microsoft CDNs
 
@@ -196,3 +196,5 @@ CDNs の使用は SharePoint Online のコンテキストでのみ有効であ�
 [SharePoint Online での Office 365 コンテンツ配信ネットワークの使用](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
+
+[Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
