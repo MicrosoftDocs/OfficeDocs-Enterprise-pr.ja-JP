@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Multi-Geo 環境で検索を構成する方法について説明します。
-ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068073"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643280"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 用に検索を構成する
 
@@ -172,11 +172,11 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 **要件**
 
-地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの**読み取り**アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso**APAC**.sharepoint.com/ および contoso**EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
+地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの**読み取り**アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso**APAC**.sharepoint.com/ および contoso**EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/ja-JP/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>クエリ パラメーター
 
-EnableMultiGeoSearch - Multi-Geo テナントの他の地域の場所のインデックスへクエリをファンアウトすべきかどうかを指定するブール値です。 クエリをファンアウトする場合は **true** と設定し、クエリをファンアウトしない場合は **false** と設定します。 既定値は **false** です。 このパラメーターを指定しない場合は、クエリは他の地域の場所へファンアウトされません。 Multi-Geo ではない環境でこのパラメーターを使用する場合、パラメーターは無視されます。
+EnableMultiGeoSearch - Multi-Geo テナントの他の地域の場所のインデックスへクエリをファンアウトすべきかどうかを指定するブール値です。 クエリをファンアウトする場合は **true** と設定し、クエリをファンアウトしない場合は **false** と設定します。 このパラメータを含めない場合、既定値は **false** です。ただし、エンタープライズ検索センター テンプレートを使用するサイトに対して REST API 呼び出しを行う場合は、この既定値は **true** になります。 Multi-Geo ではない環境でこのパラメーターを使用する場合、パラメーターは無視されます。
 
 ClientType - これは文字列です。 検索アプリケーションごとに一意のクライアント名を入力します。 このパラメーターを指定しない場合は、クエリは他の地域の場所へファンアウトされません。
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - **EnableMultiGeoSearch** が **true** に設定さ
 </tbody>
 </table>
 
-DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery)。
+DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](https://docs.microsoft.com/ja-JP/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>応答データ
 
