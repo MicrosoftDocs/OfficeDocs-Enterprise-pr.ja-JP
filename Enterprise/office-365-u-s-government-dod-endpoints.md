@@ -3,7 +3,7 @@ title: Office 365 米国政府の DoD エンドポイント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/28/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: '概要: Office 365 には、インターネットへの接続が必要です。 以下のエンドポイントには、Office 365 米国政府の DoD プランのみを使用しているお客様には到達可能である必要があります。'
 hideEdit: true
-ms.openlocfilehash: 58f3000767574fcc0d75f4f7525d3c870d394d1a
-ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
+ms.openlocfilehash: c7b685adc7abfe5f561bdddc484c632780178dad
+ms.sourcegitcommit: 653bd752db6be18f2f0d31e5abeb8ad734704772
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37388175"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37765714"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 米国政府の DoD エンドポイント
 
@@ -39,13 +39,13 @@ ms.locfileid: "37388175"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 9/30/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[変更ログサブスクリプション](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
+|**最終更新日:** 10/28/2019 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[変更ログサブスクリプション](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
    
  [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用したネットワーク接続の管理に関する推奨事項を理解してください。 エンドポイントのデータは、各月の最初に、アクティブになる前に30日間公開された新しい IP アドレスと Url で更新されます。 これにより、自動更新を行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。 サポートのエスカレーション、セキュリティインシデント、またはその他の即時運用要件に対処する必要がある場合は、その月にエンドポイントを更新することもできます。 このページに表示されるデータはすべて、REST ベースの web サービスから生成されます。 このデータにアクセスするためにスクリプトまたはネットワークデバイスを使用している場合は、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
 
 以下のエンドポイントデータは、ユーザーのコンピューターから Office 365 への接続の要件を示しています。 Microsoft からお客様のネットワークへのネットワーク接続は含まれません。これは、ハイブリッドまたは受信ネットワーク接続と呼ばれることもあります。 詳細については、「 [web サービスに含まれていない追加のエンドポイント](additional-office365-ip-addresses-and-urls.md)」を参照してください。 
 
-エンドポイントは4つのサービス領域にグループ化されます。 最初の3つのサービス領域は、接続のために個別に選択できます。 4番目のサービスエリアは、一般的な依存関係 (Microsoft 365 Common および Office) で、常にネットワーク接続が必要です。
+エンドポイントは 4 つのサービス領域にグループ分けされます。最初の 3 つのサービス領域は個別に接続の選択ができます。4 番目のサービス領域は共通の依存関係 ("Microsoft 365 Common および Office Online" と呼ばれる) で、常時ネットワーク接続されている必要があります。
 
 次のデータ列が表示されます。
 
