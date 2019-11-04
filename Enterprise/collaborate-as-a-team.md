@@ -1,5 +1,5 @@
 ---
-title: チーム内のゲストと共同作業する
+title: チームでゲストと共同で作業する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Teams でゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 9a169e33a9cbd8f079966443bd3d830aa79f4971
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992416"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920160"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>チーム内のゲストと共同作業する
+# <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
 ドキュメント、タスク、会話でゲストと共同作業を行う必要がある場合は、Microsoft Teams を使用することをお勧めします。 Teams は、常設チャットと、カスタマイズ可能で拡張可能なコラボレーションツールのセットを統合されたユーザーの環境で使用できる、Office および SharePoint で利用可能なすべてのコラボレーション機能を提供します。
 
 この記事では、ゲストとの共同作業のためにチームをセットアップするために必要な Microsoft 365 の構成手順について説明します。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+このビデオでは、このドキュメントで説明されている構成手順を示します。</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure の組織上の関係の設定
 
@@ -27,7 +33,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 組織上の関係の設定を確認して、ゲストとの共有がブロックされないようにしてください。
 
-![Azure Active Directory の組織上の関係の設定ページのスクリーンショット](media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory における組織の関係の設定ページのスクリーンショット](media/azure-ad-organizational-relationships-settings.png)
 
 組織上の関係の設定を設定するには
 
@@ -46,7 +52,7 @@ Teams には、ゲストアクセス用のマスターオン/オフスイッチ�
 
 Teams でゲストアクセスが有効になっていることを確認し、ビジネスニーズに基づいてゲスト設定を調整してください。 これらの設定はすべてのチームに影響を与えることに注意してください。
 
-![Teams のゲストアクセスのトグルのスクリーンショット](media/teams-guest-access-toggle-on.png)
+![Teams ゲスト アクセスのトグルのスクリーンショット](media/teams-guest-access-toggle-on.png)
 
 Teams ゲストアクセス設定を設定するには
 
@@ -64,7 +70,7 @@ Teams ゲストアクセス設定を設定するには
 
 Teams では、チームメンバーシップに Office 365 グループを使用します。 Teams でゲストアクセスを機能させるには、Office 365 グループのゲスト設定をオンにする必要があります。
 
-![Microsoft 365 管理センターの Office 365 グループのゲスト設定のスクリーンショット](media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理センターにおける Office 365 グループのゲスト設定のスクリーンショット](media/office-365-groups-guest-settings.png)
 
 Office 365 グループのゲスト設定を設定するには
 
@@ -77,7 +83,7 @@ Office 365 グループのゲスト設定を設定するには
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織レベルの共有設定
 
-ゲストが Teams のファイルにアクセスできるようにするには、SharePoint の組織レベルの共有設定でゲストとの共有が許可されている必要があります。
+ファイル、フォルダー、リストなどの Teams コンテンツはすべて SharePoint に格納されます。 ゲストがこれらのアイテムに Teams でアクセスできるようにするには、SharePoint の組織レベルの共有設定でゲストとの共有が許可されている必要があります。
 
 組織レベルの設定は、teams に関連付けられたサイトを含む、個々のサイトで使用可能な設定を決定します。 サイトの設定は、組織レベルの設定よりも制限することはできません。
 
@@ -106,7 +112,7 @@ SharePoint 組織レベルの共有設定を設定するには
 - [**組織内のユーザーのみ**]-ほとんどのファイルとフォルダーの共有が組織内のユーザーと想定される場合は、このオプションを選択します。
 - **特定のユーザー** -多数のファイルとフォルダーをゲストで共有することが予想される場合は、このオプションを検討してください。 この種類のリンクはゲストと連動しており、認証を必要とします。
  
-![SharePoint 組織レベルのファイルとフォルダー共有設定のスクリーンショット](media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint における組織レベルのファイルとフォルダー設定のスクリーンショット](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 SharePoint 組織レベルの既定のリンク設定を設定するには
@@ -137,9 +143,9 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 
 サイトレベルの共有設定を設定するには
-1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開し、[**アクティブなサイト**] をクリックします。
-2. 作成したばかりのチームのサイトを選択します。
-3. リボンの [**共有**] をクリックします。
+1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。
+2. 作成したチームのサイトを選択します。
+3. リボンで [**共有**] をクリックします。
 4. 共有が [**すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 5. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -160,4 +166,11 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 5. **[追加]** をクリックして、**[閉じる]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
+
+[匿名ユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
+
+[ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
+
+[セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md))
+
 

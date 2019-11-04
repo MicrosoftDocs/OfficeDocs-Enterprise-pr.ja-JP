@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365 の展開後は、以下のツールや方法を使用して Office 365 の接続を維持することができます。公式の「サービスの正常性および継続性のガイドライン」と「低速のネットワークで Office 365 を使用するためのベスト プラクティス」を確認しておくようにしてください。また、 Office 365 管理者アプリを入手し、「Office 365 for Business - 管理者ヘルプ」をブックマークしておくことをお勧めします。
-ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
+ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070053"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931695"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 の接続の監視をする
 
-Office 365 の展開後は、以下で説明するツールや方法を使用して、Office 365 の接続を維持することができます。公式の「[サービスの正常性および継続性のガイドライン](https://technet.microsoft.com/library/office-365-service-health.aspx)」と「[低速のネットワークで Office 365 を使用するためのベスト プラクティス](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)」を確認しておくようにしてください。また、 [Office 365 管理者アプリ](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)を入手し、「[Office 365 for Business - 管理者ヘルプ](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)」をブックマークしておくことをお勧めします。
+Office 365 の展開後は、以下で説明するツールや方法を使用して、Office 365 の接続を維持することができます。公式の「[サービスの正常性および継続性のガイドライン](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」と「[低速のネットワークで Office 365 を使用するためのベスト プラクティス](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)」を確認しておくようにしてください。また、 [Office 365 管理者アプリ](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)を入手し、「[Office 365 for Business - 管理者ヘルプ](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)」をブックマークしておくことをお勧めします。
   
 ## <a name="monitoring-office-365-connectivity"></a>Office 365 の接続の監視
 

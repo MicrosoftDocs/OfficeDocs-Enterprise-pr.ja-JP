@@ -1,5 +1,5 @@
 ---
-title: サイト内のゲストと共同作業する
+title: サイトでゲストと共同で作業する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,18 +8,24 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017315"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920170"
 ---
-# <a name="collaborate-with-guests-in-a-site"></a>サイト内のゲストと共同作業する
+# <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
 ドキュメント、データ、およびリスト間でゲストと共同作業を行う必要がある場合は、SharePoint サイトを使用できます。 モダン SharePoint サイトは Office 365 グループに接続されており、サイトメンバーシップを管理したり、共有メールボックスや予定表などのその他のコラボレーションツールを提供したりできます。
 
 この記事では、ゲストとのグループ作業のために SharePoint サイトをセットアップするために必要な Microsoft 365 の構成手順について説明します。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+このビデオでは、このドキュメントで説明されている構成手順を示します。</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure の組織上の関係の設定
 
@@ -27,7 +33,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 組織上の関係の設定を確認して、ゲストとの共有がブロックされないようにしてください。
 
-![Azure Active Directory の組織上の関係の設定ページのスクリーンショット](media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory における組織の関係の設定ページのスクリーンショット](media/azure-ad-organizational-relationships-settings.png)
 
 組織上の関係の設定を設定するには
 
@@ -44,7 +50,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 モダン SharePoint サイトは、Office 365 グループを使用してサイトアクセスを制御します。 SharePoint サイトでゲストアクセスを機能させるには、Office 365 グループのゲスト設定をオンにする必要があります。
 
-![Microsoft 365 管理センターの Office 365 グループのゲスト設定のスクリーンショット](media/office-365-groups-guest-settings.png)
+![Microsoft 365 管理センターにおける Office 365 グループのゲスト設定のスクリーンショット](media/office-365-groups-guest-settings.png)
 
 Office 365 グループのゲスト設定を設定するには
 
@@ -79,7 +85,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 サイトを作成するには
 1. SharePoint 管理センターの [**サイト**] で、[**アクティブなサイト**] をクリックします。
-2. [**作成**] をクリックします。
+2. **[作成]** をクリックします。
 3. [**チームサイト**] をクリックします。
 4. サイト名を入力し、グループの所有者 (サイト所有者) の名前を入力します。
 5. [**詳細設定**] で、これをパブリックサイトまたはプライベートサイトにするかどうかを選択します。
@@ -97,9 +103,9 @@ SharePoint 組織レベルの共有設定を設定するには
 ![SharePoint サイトの外部共有設定のスクリーンショット](media/sharepoint-site-external-sharing-settings.png)
 
 サイトレベルの共有設定を設定するには
-1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開し、[**アクティブなサイト**] をクリックします。
+1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。
 2. 作成したサイトを選択します。
-3. リボンの [**共有**] をクリックします。
+3. リボンで [**共有**] をクリックします。
 4. 共有が [**すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 5. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -122,3 +128,10 @@ SharePoint 組織レベルの共有設定を設定するには
 4. **[閉じる]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
+
+[匿名ユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
+
+[ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
+
+[セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md))
+

@@ -1,5 +1,5 @@
 ---
-title: 文書でのゲストとの共同作業
+title: ゲストと共同でドキュメントの作業をする
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,16 +8,22 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint および OneDrive のドキュメントでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: ebb887e4fc337b4c0e94e85e0a08e87be0e74490
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 1160e26c0aa23da499b8c0ef96bc5dd5d8e77004
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108227"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920150"
 ---
-# <a name="collaborate-with-guests-on-a-document"></a>文書でのゲストとの共同作業
+# <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
 SharePoint または OneDrive のドキュメントでゲストと共同作業を行う必要がある場合は、ドキュメントへの共有リンクを送信することができます。 この記事では、組織のニーズに合わせて SharePoint と OneDrive の共有リンクを設定するために必要な、Microsoft 365 の構成手順について説明します。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+このビデオでは、このドキュメントで説明されている構成手順を示します。</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE450Vt?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure の組織上の関係の設定
 
@@ -25,7 +31,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 組織上の関係の設定を確認して、ゲストとの共有がブロックされないようにしてください。
 
-![Azure Active Directory の組織上の関係の設定ページのスクリーンショット](media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory における組織の関係の設定ページのスクリーンショット](media/azure-ad-organizational-relationships-settings.png)
 
 組織上の関係の設定を設定するには
 
@@ -44,7 +50,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 SharePoint の組織レベルの設定により、個々の SharePoint サイトで使用できる設定が決定されます。 サイトの設定は、組織レベルの設定よりも制限することはできません。 OneDrive の組織レベルの設定により、ユーザーの OneDrive ライブラリで利用可能な共有のレベルが決定されます。
 
-SharePoint と OneDrive の場合、匿名ユーザーとのファイルとフォルダーの共有を許可する場合は、[**すべて**のユーザー] を選択します。 すべてのゲストが認証を必要とするようにするには、[**新規および既存のゲスト**] を選択します。 *すべて*のリンクは、最も簡単に共有する方法です。ゲストは、認証なしでリンクを開くことができ、他のユーザーに渡すことができます。
+SharePoint と OneDrive の場合、匿名ユーザーとのファイルとフォルダーの共有を許可する場合は、[**すべて**のユーザー] を選択します。 すべてのゲストが認証を必要とするようにするには、[**新規および既存のゲスト**] を選択します。 *[すべてのユーザー]* リンクは、最も簡単な共有方法です。ゲストは認証なしでリンクを開くことができ、そのリンクを他のユーザーに自由に渡すことができます。
 
 SharePoint の場合は、組織内のすべてのサイトで必要とされる最も寛容な設定を選択します。
 
@@ -70,7 +76,7 @@ SharePoint 組織レベルの共有設定を設定するには
 - [**組織内のユーザーのみ**]-ほとんどのファイルとフォルダーの共有が組織内のユーザーと想定される場合は、このオプションを選択します。
 - **特定のユーザー** -多数のファイルとフォルダーをゲストで共有することが予想される場合は、このオプションを検討してください。 この種類のリンクはゲストと連動しており、認証を必要とします。
  
-![SharePoint 組織レベルのファイルとフォルダー共有設定のスクリーンショット](media/sharepoint-organization-files-folders-sharing-settings.png)
+![SharePoint における組織レベルのファイルとフォルダー設定のスクリーンショット](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 SharePoint と OneDrive の組織レベルの既定のリンク設定を設定するには
@@ -86,9 +92,9 @@ SharePoint サイトにあるファイルや dler を共有している場合は
 ![SharePoint サイトの外部共有設定のスクリーンショット](media/sharepoint-site-external-sharing-settings.png)
 
 サイトレベルの共有設定を設定するには
-1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開し、[**アクティブなサイト**] をクリックします。
+1. SharePoint 管理センターの左側のナビゲーションで、[**サイト**] を展開して [**アクティブなサイト**] をクリックします。
 2. 作成したサイトを選択します。
-3. リボンの [**共有**] をクリックします。
+3. リボンで [**共有**] をクリックします。
 4. 共有が [**すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 5. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -97,3 +103,7 @@ SharePoint サイトにあるファイルや dler を共有している場合は
 ゲスト共有の設定が構成されるようになったため、ユーザーはゲストでファイルやフォルダーを共有できるようになりました。 詳細については、「 [OneDrive ファイルとフォルダーを共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)する」および「 [SharePoint ファイルまたはフォルダーを共有](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
+[匿名ユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
+
+[ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
