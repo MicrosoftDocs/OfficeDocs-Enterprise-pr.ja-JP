@@ -124,7 +124,7 @@
 #### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
 ### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
 
-## [3. セキュリティ機能を実装する](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. セキュリティ機能を実装する](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. クライアント ソフトウェアを展開する
 ### [Office 365 ProPlus を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
