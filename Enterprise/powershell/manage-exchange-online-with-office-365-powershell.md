@@ -14,30 +14,30 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 概要:Office 365 PowerShell を使って Microsoft Exchange Online を管理します。これには、メールボックスの構成の表示や詳細なレポートの作成が含まれます。
-ms.openlocfilehash: f60c28be58796d16d4b04e42e421ed97475cc8e0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 06524431ee98a0f5119544da9278d8c672155fd9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068963"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031012"
 ---
-# <a name="manage-exchange-online-with-office-365-powershell"></a><span data-ttu-id="cda9b-103">Office 365 PowerShell で Exchange Online を管理する</span><span class="sxs-lookup"><span data-stu-id="cda9b-103">Manage Exchange Online with Office 365 PowerShell</span></span>
+# <a name="manage-exchange-online-with-office-365-powershell"></a><span data-ttu-id="b96fa-103">Office 365 PowerShell で Exchange Online を管理する</span><span class="sxs-lookup"><span data-stu-id="b96fa-103">Manage Exchange Online with Office 365 PowerShell</span></span>
 
- <span data-ttu-id="cda9b-104">**概要:** Office 365 PowerShell を使って Microsoft Exchange Online を管理します。これには、メールボックスの構成の表示や詳細なレポートの作成が含まれます。</span><span class="sxs-lookup"><span data-stu-id="cda9b-104">**Summary:** Use Office 365 PowerShell to manage Microsoft Exchange Online, including displaying mailbox configuration and advanced reporting.</span></span>
+ <span data-ttu-id="b96fa-104">**概要:** Office 365 PowerShell を使って Microsoft Exchange Online を管理します。これには、メールボックスの構成の表示や詳細なレポートの作成が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b96fa-104">**Summary:** Use Office 365 PowerShell to manage Microsoft Exchange Online, including displaying mailbox configuration and advanced reporting.</span></span>
   
-<span data-ttu-id="cda9b-105">Microsoft Exchange Online 管理者の主要なタスクの 1 つは、メールボックスを管理し、それらに関するレポートを取得することです。</span><span class="sxs-lookup"><span data-stu-id="cda9b-105">One of the primary tasks of any Microsoft Exchange Online administrator is managing mailboxes and getting reports on them.</span></span> <span data-ttu-id="cda9b-106">Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早く簡単に実行できます。</span><span class="sxs-lookup"><span data-stu-id="cda9b-106">Although you can accomplish some of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> <span data-ttu-id="cda9b-107">詳細については、次のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="cda9b-107">For more information, see the following topics:</span></span>
+<span data-ttu-id="b96fa-105">Microsoft Exchange Online 管理者の主要なタスクの 1 つは、メールボックスを管理し、それらに関するレポートを取得することです。</span><span class="sxs-lookup"><span data-stu-id="b96fa-105">One of the primary tasks of any Microsoft Exchange Online administrator is managing mailboxes and getting reports on them.</span></span> <span data-ttu-id="b96fa-106">Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早く簡単に実行できます。</span><span class="sxs-lookup"><span data-stu-id="b96fa-106">Although you can accomplish some of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> <span data-ttu-id="b96fa-107">詳細については、次のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="b96fa-107">For more information, see the following topics:</span></span>
   
-- [<span data-ttu-id="cda9b-108">Office 365 PowerShell で Exchange Online メールボックス情報を表示する</span><span class="sxs-lookup"><span data-stu-id="cda9b-108">Display Exchange Online mailbox information with Office 365 PowerShell</span></span>](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
+- [<span data-ttu-id="b96fa-108">Office 365 PowerShell で Exchange Online メールボックス情報を表示する</span><span class="sxs-lookup"><span data-stu-id="b96fa-108">Display Exchange Online mailbox information with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/mt771881%28v=exchg.160%29.aspx)
     
-- [<span data-ttu-id="cda9b-109">Office 365 PowerShell を使用して Exchange Online レポートを表示する</span><span class="sxs-lookup"><span data-stu-id="cda9b-109">Display Exchange Online reports with Office 365 PowerShell</span></span>](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
+- [<span data-ttu-id="b96fa-109">Office 365 PowerShell を使用して Exchange Online レポートを表示する</span><span class="sxs-lookup"><span data-stu-id="b96fa-109">Display Exchange Online reports with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/mt771882%28v=exchg.160%29.aspx)
     
-- [<span data-ttu-id="cda9b-110">Office 365 PowerShell を使用する Exchange Online 管理者が利用できるコマンドレットを特定する</span><span class="sxs-lookup"><span data-stu-id="cda9b-110">Determine which cmdlets are available to Exchange Online administrators with Office 365 PowerShell</span></span>](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
+- [<span data-ttu-id="b96fa-110">Office 365 PowerShell を使用する Exchange Online 管理者が利用できるコマンドレットを特定する</span><span class="sxs-lookup"><span data-stu-id="b96fa-110">Determine which cmdlets are available to Exchange Online administrators with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/mt771883%28v=exchg.160%29.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="cda9b-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="cda9b-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b96fa-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="b96fa-111">See also</span></span>
 
 #### 
 
-[<span data-ttu-id="cda9b-112">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="cda9b-112">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="b96fa-112">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="b96fa-112">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="cda9b-113">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="cda9b-113">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="b96fa-113">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="b96fa-113">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 
