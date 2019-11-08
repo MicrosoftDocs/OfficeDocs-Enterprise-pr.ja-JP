@@ -10,314 +10,314 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068593"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027571"
 ---
-# <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a><span data-ttu-id="e0b58-103">アクセス可能な図 - Microsoft Exchange 2013 プラットフォーム オプション</span><span class="sxs-lookup"><span data-stu-id="e0b58-103">Accessible diagram - Microsoft Exchange 2013 Platform Options</span></span>
+# <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a><span data-ttu-id="c2c78-103">アクセス可能な図 - Microsoft Exchange 2013 プラットフォーム オプション</span><span class="sxs-lookup"><span data-stu-id="c2c78-103">Accessible diagram - Microsoft Exchange 2013 Platform Options</span></span>
 
-<span data-ttu-id="e0b58-104">**概要:** この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。</span><span class="sxs-lookup"><span data-stu-id="e0b58-104">**Summary:** This article is an accessible text version of the diagram named Microsoft Exchange 2013 Platform Options, which is available at [Technical Diagrams](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span></span>
+<span data-ttu-id="c2c78-104">**概要:** この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。</span><span class="sxs-lookup"><span data-stu-id="c2c78-104">**Summary:** This article is an accessible text version of the diagram named Microsoft Exchange 2013 Platform Options, which is available at [Technical Diagrams](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span></span>
   
-<span data-ttu-id="e0b58-105">このポスターは、ビジネスの意思決定者 (Bdm) と設計者が Exchange Online および Exchange Server の展開に関して知る必要のある情報を説明しており、内容は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e0b58-105">This poster describes what business decision makers (BDMs) and architects need to know about Exchange Online and Exchange Server deployments and includes:</span></span> 
+<span data-ttu-id="c2c78-105">このポスターは、ビジネスの意思決定者 (Bdm) と設計者が Exchange Online および Exchange Server の展開に関して知る必要のある情報を説明しており、内容は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c2c78-105">This poster describes what business decision makers (BDMs) and architects need to know about Exchange Online and Exchange Server deployments and includes:</span></span> 
   
-- <span data-ttu-id="e0b58-106">Exchange 2013 で使用可能な 4 つのプラットフォーム オプションの比較: Exchange Online (Office 365)、Exchange ハイブリッド、Exchange Server オンプレミス、プロバイダー向けのホスト型 Exchange。</span><span class="sxs-lookup"><span data-stu-id="e0b58-106">A comparison of four available platform options for Exchange 2013: Exchange Online (Office 365), Exchange Hybrid, Exchange Server on-premises, and Provider-Hosted Exchange.</span></span> 
+- <span data-ttu-id="c2c78-106">Exchange 2013 で使用可能な 4 つのプラットフォーム オプションの比較: Exchange Online (Office 365)、Exchange ハイブリッド、Exchange Server オンプレミス、プロバイダー向けのホスト型 Exchange。</span><span class="sxs-lookup"><span data-stu-id="c2c78-106">A comparison of four available platform options for Exchange 2013: Exchange Online (Office 365), Exchange Hybrid, Exchange Server on-premises, and Provider-Hosted Exchange.</span></span> 
     
-- <span data-ttu-id="e0b58-107">Exchange 2013 での 3 つの新しいまたは更新された機能の説明。</span><span class="sxs-lookup"><span data-stu-id="e0b58-107">Descriptions of three new or updated features in Exchange 2013.</span></span> 
+- <span data-ttu-id="c2c78-107">Exchange 2013 での 3 つの新しいまたは更新された機能の説明。</span><span class="sxs-lookup"><span data-stu-id="c2c78-107">Descriptions of three new or updated features in Exchange 2013.</span></span> 
     
-## <a name="comparison-of-four-different-deployments-for-the-exchange-2013-platform"></a><span data-ttu-id="e0b58-108">Exchange 2013 プラットフォーム用の 4 つの異なる展開の比較</span><span class="sxs-lookup"><span data-stu-id="e0b58-108">Comparison of four different deployments for the Exchange 2013 platform</span></span>
+## <a name="comparison-of-four-different-deployments-for-the-exchange-2013-platform"></a><span data-ttu-id="c2c78-108">Exchange 2013 プラットフォーム用の 4 つの異なる展開の比較</span><span class="sxs-lookup"><span data-stu-id="c2c78-108">Comparison of four different deployments for the Exchange 2013 platform</span></span>
 
-<span data-ttu-id="e0b58-109">比較の結果は以下の領域での各展開オプションに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-109">The comparison provides information about each deployment option in the following areas:</span></span> 
+<span data-ttu-id="c2c78-109">比較の結果は以下の領域での各展開オプションに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-109">The comparison provides information about each deployment option in the following areas:</span></span> 
   
-- <span data-ttu-id="e0b58-110">各種の展開機能の概要</span><span class="sxs-lookup"><span data-stu-id="e0b58-110">An overview of the different deployment features</span></span> 
+- <span data-ttu-id="c2c78-110">各種の展開機能の概要</span><span class="sxs-lookup"><span data-stu-id="c2c78-110">An overview of the different deployment features</span></span> 
     
-- <span data-ttu-id="e0b58-111">各展開オプションを実装するメリット</span><span class="sxs-lookup"><span data-stu-id="e0b58-111">Benefits of implementing each deployment option</span></span> 
+- <span data-ttu-id="c2c78-111">各展開オプションを実装するメリット</span><span class="sxs-lookup"><span data-stu-id="c2c78-111">Benefits of implementing each deployment option</span></span> 
     
-- <span data-ttu-id="e0b58-112">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="e0b58-112">Licensing requirements</span></span> 
+- <span data-ttu-id="c2c78-112">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="c2c78-112">Licensing requirements</span></span> 
     
-- <span data-ttu-id="e0b58-113">必要なアーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="e0b58-113">Required architectural tasks</span></span> 
+- <span data-ttu-id="c2c78-113">必要なアーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="c2c78-113">Required architectural tasks</span></span> 
     
-- <span data-ttu-id="e0b58-114">各展開オプションを実装するための IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="e0b58-114">IT Pro responsibilities for implementing each deployment option</span></span> 
+- <span data-ttu-id="c2c78-114">各展開オプションを実装するための IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="c2c78-114">IT Pro responsibilities for implementing each deployment option</span></span> 
     
-### <a name="overview"></a><span data-ttu-id="e0b58-115">概要</span><span class="sxs-lookup"><span data-stu-id="e0b58-115">Overview</span></span>
+### <a name="overview"></a><span data-ttu-id="c2c78-115">概要</span><span class="sxs-lookup"><span data-stu-id="c2c78-115">Overview</span></span>
 
-#### <a name="exchange-online-office-365"></a><span data-ttu-id="e0b58-116">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="e0b58-116">Exchange Online (Office 365)</span></span>
+#### <a name="exchange-online-office-365"></a><span data-ttu-id="c2c78-116">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="c2c78-116">Exchange Online (Office 365)</span></span>
 
-<span data-ttu-id="e0b58-117">Office 365 によって効率を上げ、コストを下げられます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-117">You gain efficiency and reduce costs with Office 365.</span></span>
+<span data-ttu-id="c2c78-117">Office 365 によって効率を上げ、コストを下げられます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-117">You gain efficiency and reduce costs with Office 365.</span></span>
   
-<span data-ttu-id="e0b58-p101">付随する図は Exchange Online に伴う Azure Active Directory テナントを示しています。これは、オンプレミスの Active Directory ドメイン サービス (AD DS) 環境と Azure Active Directory テナントの間で、アカウント名およびパスワードを同期させます。シングル サインオンには Active Directory フェデレーション サービス (AD FS) が必要です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p101">The accompanying diagram shows Exchange Online with an Azure Active Directory tenant which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant. Active Directory Federation Services (AD FS) is necessary for single sign-on.</span></span> 
+<span data-ttu-id="c2c78-p101">付随する図は Exchange Online に伴う Azure Active Directory テナントを示しています。これは、オンプレミスの Active Directory ドメイン サービス (AD DS) 環境と Azure Active Directory テナントの間で、アカウント名およびパスワードを同期させます。シングル サインオンには Active Directory フェデレーション サービス (AD FS) が必要です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p101">The accompanying diagram shows Exchange Online with an Azure Active Directory tenant which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant. Active Directory Federation Services (AD FS) is necessary for single sign-on.</span></span> 
   
-<span data-ttu-id="e0b58-120">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="e0b58-120">Description of features and functionality:</span></span>
+<span data-ttu-id="c2c78-120">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="c2c78-120">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="e0b58-121">サーバーおよびサーバー ソフトウェアの動作は、Microsoft によって処理されます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-121">The operation of servers and server software is handled by Microsoft.</span></span>
+- <span data-ttu-id="c2c78-121">サーバーおよびサーバー ソフトウェアの動作は、Microsoft によって処理されます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-121">The operation of servers and server software is handled by Microsoft.</span></span>
     
-- <span data-ttu-id="e0b58-122">クラウドベースのサービスとしての Exchange Server 2013 の豊富な機能セット。</span><span class="sxs-lookup"><span data-stu-id="e0b58-122">Rich feature set of Exchange Server 2013 as a cloud-based service.</span></span>
+- <span data-ttu-id="c2c78-122">クラウドベースのサービスとしての Exchange Server 2013 の豊富な機能セット。</span><span class="sxs-lookup"><span data-stu-id="c2c78-122">Rich feature set of Exchange Server 2013 as a cloud-based service.</span></span>
     
-- <span data-ttu-id="e0b58-123">最新の機能で常に最新です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-123">Always up-to-date with the newest features.</span></span>
+- <span data-ttu-id="c2c78-123">最新の機能で常に最新です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-123">Always up-to-date with the newest features.</span></span>
     
-- <span data-ttu-id="e0b58-124">スパム対策およびマルウェア対策の保護のため、Exchange Online Protection (EOP) が組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-124">Exchange Online Protection (EOP) is included for anti-spam/anti-malware protection.</span></span>
+- <span data-ttu-id="c2c78-124">スパム対策およびマルウェア対策の保護のため、Exchange Online Protection (EOP) が組み込まれています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-124">Exchange Online Protection (EOP) is included for anti-spam/anti-malware protection.</span></span>
     
-- <span data-ttu-id="e0b58-125">99.9% のサービス レベル契約 (SLA) を実現する組み込みの高可用性。</span><span class="sxs-lookup"><span data-stu-id="e0b58-125">Built-in high availability with a 99.9% Service Level Agreement (SLA).</span></span>
+- <span data-ttu-id="c2c78-125">99.9% のサービス レベル契約 (SLA) を実現する組み込みの高可用性。</span><span class="sxs-lookup"><span data-stu-id="c2c78-125">Built-in high availability with a 99.9% Service Level Agreement (SLA).</span></span>
     
-- <span data-ttu-id="e0b58-p102">オンプレミスの Active Directory ドメイン サービス (AD DS) と Azure Active Directory テナントとの間でのパスワードの同期を含む Directory 同期。シングル サインオンには Active Directory フェデレーション サービス (AD FS) が必要です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p102">Directory synchronization including passwords between the on-premises Active Directory Domain Services (AD DS) and the Azure Active Directory tenant. Active Directory Federation Services (AD FS) is necessary for single sign-on.</span></span>
+- <span data-ttu-id="c2c78-p102">オンプレミスの Active Directory ドメイン サービス (AD DS) と Azure Active Directory テナントとの間でのパスワードの同期を含む Directory 同期。シングル サインオンには Active Directory フェデレーション サービス (AD FS) が必要です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p102">Directory synchronization including passwords between the on-premises Active Directory Domain Services (AD DS) and the Azure Active Directory tenant. Active Directory Federation Services (AD FS) is necessary for single sign-on.</span></span>
     
-#### <a name="exchange-hybrid"></a><span data-ttu-id="e0b58-128">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="e0b58-128">Exchange Hybrid</span></span>
+#### <a name="exchange-hybrid"></a><span data-ttu-id="c2c78-128">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="c2c78-128">Exchange Hybrid</span></span>
 
-<span data-ttu-id="e0b58-129">Exchange Server オンプレミスを維持しながら Office 365 の利点を活用できます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-129">You can leverage the benefits of Office 365 while maintaining Exchange Server on-premises.</span></span>
+<span data-ttu-id="c2c78-129">Exchange Server オンプレミスを維持しながら Office 365 の利点を活用できます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-129">You can leverage the benefits of Office 365 while maintaining Exchange Server on-premises.</span></span>
   
-<span data-ttu-id="e0b58-p103">付随する図は、一部のユーザーが社内に配置され、他のユーザーがオンラインに配置されている、Exchange Online での Office 365 を示しています。それには Azure Active Directory テナントも示されていますが、それは、オンプレミスの Active Directory ドメイン サービス (AD DS) 環境と Azure Active Directory テナントとの間でアカウント名およびパスワードを同期させます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p103">The accompanying diagram shows Office 365 with Exchange Online where some users are homed on-premises and some users are homed online. It also shows an Azure Active Directory tenant which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span>
+<span data-ttu-id="c2c78-p103">付随する図は、一部のユーザーが社内に配置され、他のユーザーがオンラインに配置されている、Exchange Online での Office 365 を示しています。それには Azure Active Directory テナントも示されていますが、それは、オンプレミスの Active Directory ドメイン サービス (AD DS) 環境と Azure Active Directory テナントとの間でアカウント名およびパスワードを同期させます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p103">The accompanying diagram shows Office 365 with Exchange Online where some users are homed on-premises and some users are homed online. It also shows an Azure Active Directory tenant which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span>
   
-<span data-ttu-id="e0b58-132">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="e0b58-132">Description of features and functionality:</span></span>
+<span data-ttu-id="c2c78-132">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="c2c78-132">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="e0b58-133">一部のユーザーは社内に配置され、他のユーザーはオンラインに配置されていて、それらのユーザーは同じ電子メール アドレス スペースを共有します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-133">Some users are homed on-premises and some users are homed online, and users share the same e-mail address space.</span></span>
+- <span data-ttu-id="c2c78-133">一部のユーザーは社内に配置され、他のユーザーはオンラインに配置されていて、それらのユーザーは同じ電子メール アドレス スペースを共有します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-133">Some users are homed on-premises and some users are homed online, and users share the same e-mail address space.</span></span>
     
-- <span data-ttu-id="e0b58-134">既存の Exchange Server のインフラストラクチャを活用します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-134">Leverages your existing Exchange Server infrastructure.</span></span>
+- <span data-ttu-id="c2c78-134">既存の Exchange Server のインフラストラクチャを活用します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-134">Leverages your existing Exchange Server infrastructure.</span></span>
     
-- <span data-ttu-id="e0b58-135">スケジュールに従って、時の経過と共に Exchange オンプレミスから Exchange Online に移行します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-135">Migrate from Exchange on-premises to Exchange Online over time, on your schedule.</span></span>
+- <span data-ttu-id="c2c78-135">スケジュールに従って、時の経過と共に Exchange オンプレミスから Exchange Online に移行します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-135">Migrate from Exchange on-premises to Exchange Online over time, on your schedule.</span></span>
     
-- <span data-ttu-id="e0b58-136">Lync Online や SharePoint Online など、他の Office 365 アプリケーションと統合します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-136">Integrate with other Office 365 applications, including Lync Online and SharePoint Online.</span></span>
+- <span data-ttu-id="c2c78-136">Lync Online や SharePoint Online など、他の Office 365 アプリケーションと統合します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-136">Integrate with other Office 365 applications, including Lync Online and SharePoint Online.</span></span>
     
-#### <a name="exchange-server-on-premises"></a><span data-ttu-id="e0b58-137">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="e0b58-137">Exchange Server on-premises</span></span>
+#### <a name="exchange-server-on-premises"></a><span data-ttu-id="c2c78-137">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="c2c78-137">Exchange Server on-premises</span></span>
 
-<span data-ttu-id="e0b58-138">独自の Exchange Server 2013 インフラストラクチャを設計して管理できます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-138">You can design and manage your own Exchange Server 2013 infrastructure.</span></span>
+<span data-ttu-id="c2c78-138">独自の Exchange Server 2013 インフラストラクチャを設計して管理できます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-138">You can design and manage your own Exchange Server 2013 infrastructure.</span></span>
   
-<span data-ttu-id="e0b58-139">付随する図は、オンプレミスの Active Directory ドメイン サービス (AD DS) 環境を持つ Exchange Server インフラストラクチャを示しています。ここでは、ユーザーは社内に配置されています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-139">The accompanying diagram shows an Exchange Server infrastructure with an on-premises Active Directory Domain Services (AD DS) environment where users are homed on-premises.</span></span>
+<span data-ttu-id="c2c78-139">付随する図は、オンプレミスの Active Directory ドメイン サービス (AD DS) 環境を持つ Exchange Server インフラストラクチャを示しています。ここでは、ユーザーは社内に配置されています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-139">The accompanying diagram shows an Exchange Server infrastructure with an on-premises Active Directory Domain Services (AD DS) environment where users are homed on-premises.</span></span>
   
-<span data-ttu-id="e0b58-140">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="e0b58-140">Description of features and functionality:</span></span>
+<span data-ttu-id="c2c78-140">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="c2c78-140">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="e0b58-141">ご使用の環境にとって最高度のコントロールとカスタマイズ。</span><span class="sxs-lookup"><span data-stu-id="e0b58-141">Greatest degree of control and customization for your configuration.</span></span>
+- <span data-ttu-id="c2c78-141">ご使用の環境にとって最高度のコントロールとカスタマイズ。</span><span class="sxs-lookup"><span data-stu-id="c2c78-141">Greatest degree of control and customization for your configuration.</span></span>
     
-- <span data-ttu-id="e0b58-142">負荷分散のレイヤーでセッション類似性を維持するための依存関係はありません。</span><span class="sxs-lookup"><span data-stu-id="e0b58-142">No dependency on maintaining session affinity at the load balancing layer.</span></span>
+- <span data-ttu-id="c2c78-142">負荷分散のレイヤーでセッション類似性を維持するための依存関係はありません。</span><span class="sxs-lookup"><span data-stu-id="c2c78-142">No dependency on maintaining session affinity at the load balancing layer.</span></span>
     
-- <span data-ttu-id="e0b58-143">データベース可用性グループ (DAG) の使用によるシンプルな高可用性とサイト復元。</span><span class="sxs-lookup"><span data-stu-id="e0b58-143">Simple high availability and site resilience using database availability groups (DAGs).</span></span>
+- <span data-ttu-id="c2c78-143">データベース可用性グループ (DAG) の使用によるシンプルな高可用性とサイト復元。</span><span class="sxs-lookup"><span data-stu-id="c2c78-143">Simple high availability and site resilience using database availability groups (DAGs).</span></span>
     
-- <span data-ttu-id="e0b58-144">優れたユーザー エクスペリエンスを維持するのに役立つ、管理された可用性。</span><span class="sxs-lookup"><span data-stu-id="e0b58-144">Managed availability that helps you maintain a great user experience.</span></span>
+- <span data-ttu-id="c2c78-144">優れたユーザー エクスペリエンスを維持するのに役立つ、管理された可用性。</span><span class="sxs-lookup"><span data-stu-id="c2c78-144">Managed availability that helps you maintain a great user experience.</span></span>
     
-- <span data-ttu-id="e0b58-145">既存のハードウェアと記憶域インフラストラクチャを活用できます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-145">Leverage existing hardware and storage infrastructure.</span></span>
+- <span data-ttu-id="c2c78-145">既存のハードウェアと記憶域インフラストラクチャを活用できます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-145">Leverage existing hardware and storage infrastructure.</span></span>
     
-#### <a name="provider-hosted-exchange"></a><span data-ttu-id="e0b58-146">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="e0b58-146">Provider-Hosted Exchange</span></span>
+#### <a name="provider-hosted-exchange"></a><span data-ttu-id="c2c78-146">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="c2c78-146">Provider-Hosted Exchange</span></span>
 
-<span data-ttu-id="e0b58-147">Exchange Server ワークロードを Exchange Server ソリューション プロバイダーにアウトソースすることができます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-147">You can outsource your Exchange Server workload to an Exchange Server solutions provider.</span></span>
+<span data-ttu-id="c2c78-147">Exchange Server ワークロードを Exchange Server ソリューション プロバイダーにアウトソースすることができます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-147">You can outsource your Exchange Server workload to an Exchange Server solutions provider.</span></span>
   
-<span data-ttu-id="e0b58-148">付随する図は、プロバイダーによって操作され、管理される Exchange Server 環境を示しています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-148">The accompanying diagram shows an Exchange Server environment that is operated and maintained by a provider.</span></span>
+<span data-ttu-id="c2c78-148">付随する図は、プロバイダーによって操作され、管理される Exchange Server 環境を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-148">The accompanying diagram shows an Exchange Server environment that is operated and maintained by a provider.</span></span>
   
-<span data-ttu-id="e0b58-149">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="e0b58-149">Description of features and functionality:</span></span>
+<span data-ttu-id="c2c78-149">フィーチャーと機能の説明:</span><span class="sxs-lookup"><span data-stu-id="c2c78-149">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="e0b58-150">サーバーおよびサーバー ソフトウェアの動作は、プロバイダーによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-150">The operation of servers and server software is handled by your provider.</span></span>
+- <span data-ttu-id="c2c78-150">サーバーおよびサーバー ソフトウェアの動作は、プロバイダーによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-150">The operation of servers and server software is handled by your provider.</span></span>
     
-- <span data-ttu-id="e0b58-151">Exchange Server インフラストラクチャの計画、サイズ変更、スケール、および保守は、プロバイダーに委任されます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-151">Planning, sizing, scaling, and maintenance of the Exchange Server infrastructure are delegated to your provider.</span></span>
+- <span data-ttu-id="c2c78-151">Exchange Server インフラストラクチャの計画、サイズ変更、スケール、および保守は、プロバイダーに委任されます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-151">Planning, sizing, scaling, and maintenance of the Exchange Server infrastructure are delegated to your provider.</span></span>
     
-- <span data-ttu-id="e0b58-152">サービスの保守は、プロバイダーによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-152">Service maintenance is handled by your provider.</span></span>
+- <span data-ttu-id="c2c78-152">サービスの保守は、プロバイダーによって処理されます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-152">Service maintenance is handled by your provider.</span></span>
     
-- <span data-ttu-id="e0b58-153">Exchange の機能セットは、プロバイダーで展開されているソフトウェアのバージョンに限定されます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-153">The Exchange feature set is limited to the software version deployed by your provider.</span></span>
+- <span data-ttu-id="c2c78-153">Exchange の機能セットは、プロバイダーで展開されているソフトウェアのバージョンに限定されます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-153">The Exchange feature set is limited to the software version deployed by your provider.</span></span>
     
-### <a name="benefits-of-implementing-each-deployment-option"></a><span data-ttu-id="e0b58-154">各展開オプションを実装するメリット</span><span class="sxs-lookup"><span data-stu-id="e0b58-154">Benefits of implementing each deployment option</span></span>
+### <a name="benefits-of-implementing-each-deployment-option"></a><span data-ttu-id="c2c78-154">各展開オプションを実装するメリット</span><span class="sxs-lookup"><span data-stu-id="c2c78-154">Benefits of implementing each deployment option</span></span>
 
-#### <a name="exchange-online-office-365"></a><span data-ttu-id="e0b58-155">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="e0b58-155">Exchange Online (Office 365)</span></span>
+#### <a name="exchange-online-office-365"></a><span data-ttu-id="c2c78-155">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="c2c78-155">Exchange Online (Office 365)</span></span>
 
-<span data-ttu-id="e0b58-156">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-156">This deployment option is best for:</span></span>
+<span data-ttu-id="c2c78-156">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-156">This deployment option is best for:</span></span>
   
-- <span data-ttu-id="e0b58-157">オンプレミスの Exchange 展開のための運用コストの削減を検討している組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-157">Organizations looking to reduce operations costs for on-premises Exchange deployments.</span></span>
+- <span data-ttu-id="c2c78-157">オンプレミスの Exchange 展開のための運用コストの削減を検討している組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-157">Organizations looking to reduce operations costs for on-premises Exchange deployments.</span></span>
     
-- <span data-ttu-id="e0b58-158">SharePoint Online や Lync Online など、他の Office 365 提供物を活用することを計画している組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-158">Organizations that plan to leverage other Office 365 offerings, such as SharePoint Online and Lync Online.</span></span>
+- <span data-ttu-id="c2c78-158">SharePoint Online や Lync Online など、他の Office 365 提供物を活用することを計画している組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-158">Organizations that plan to leverage other Office 365 offerings, such as SharePoint Online and Lync Online.</span></span>
     
-#### <a name="exchange-hybrid"></a><span data-ttu-id="e0b58-159">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="e0b58-159">Exchange Hybrid</span></span>
+#### <a name="exchange-hybrid"></a><span data-ttu-id="c2c78-159">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="c2c78-159">Exchange Hybrid</span></span>
 
-<span data-ttu-id="e0b58-160">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-160">This deployment option is best for:</span></span>
+<span data-ttu-id="c2c78-160">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-160">This deployment option is best for:</span></span>
   
-- <span data-ttu-id="e0b58-161">Exchange オンプレミスから Exchange Online への移行を容易にします。</span><span class="sxs-lookup"><span data-stu-id="e0b58-161">Facilitating a migration from Exchange on-premises to Exchange Online.</span></span>
+- <span data-ttu-id="c2c78-161">Exchange オンプレミスから Exchange Online への移行を容易にします。</span><span class="sxs-lookup"><span data-stu-id="c2c78-161">Facilitating a migration from Exchange on-premises to Exchange Online.</span></span>
     
-- <span data-ttu-id="e0b58-162">支店のインフラストラクチャに投資することなく、リモート サイトをサポートします。</span><span class="sxs-lookup"><span data-stu-id="e0b58-162">Supporting remote sites without investing in branch office infrastructure.</span></span>
+- <span data-ttu-id="c2c78-162">支店のインフラストラクチャに投資することなく、リモート サイトをサポートします。</span><span class="sxs-lookup"><span data-stu-id="c2c78-162">Supporting remote sites without investing in branch office infrastructure.</span></span>
     
-- <span data-ttu-id="e0b58-163">データを社内で保持する必要のある、子会社を持つ多国籍企業。</span><span class="sxs-lookup"><span data-stu-id="e0b58-163">Multinational corporations with subsidiaries that require data to reside on-premises.</span></span>
+- <span data-ttu-id="c2c78-163">データを社内で保持する必要のある、子会社を持つ多国籍企業。</span><span class="sxs-lookup"><span data-stu-id="c2c78-163">Multinational corporations with subsidiaries that require data to reside on-premises.</span></span>
     
-#### <a name="exchange-server-on-premises"></a><span data-ttu-id="e0b58-164">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="e0b58-164">Exchange Server on-premises</span></span>
+#### <a name="exchange-server-on-premises"></a><span data-ttu-id="c2c78-164">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="c2c78-164">Exchange Server on-premises</span></span>
 
-<span data-ttu-id="e0b58-165">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-165">This deployment option is best for:</span></span>
+<span data-ttu-id="c2c78-165">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-165">This deployment option is best for:</span></span>
   
-- <span data-ttu-id="e0b58-166">高度にカスタマイズされたソリューション。</span><span class="sxs-lookup"><span data-stu-id="e0b58-166">Highly customized solutions.</span></span>
+- <span data-ttu-id="c2c78-166">高度にカスタマイズされたソリューション。</span><span class="sxs-lookup"><span data-stu-id="c2c78-166">Highly customized solutions.</span></span>
     
-- <span data-ttu-id="e0b58-167">Exchange Online でサポートされていないハードウェアおよびソフトウェアに依存するサード パーティ製コンポーネントを使用するレガシー ソリューション。</span><span class="sxs-lookup"><span data-stu-id="e0b58-167">Legacy solutions with third-party components that depend on hardware and software that are not supported by Exchange Online.</span></span>
+- <span data-ttu-id="c2c78-167">Exchange Online でサポートされていないハードウェアおよびソフトウェアに依存するサード パーティ製コンポーネントを使用するレガシー ソリューション。</span><span class="sxs-lookup"><span data-stu-id="c2c78-167">Legacy solutions with third-party components that depend on hardware and software that are not supported by Exchange Online.</span></span>
     
-- <span data-ttu-id="e0b58-168">データを社内で保持することを必要とするデータ ガバナンス規制のもとにある組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-168">Organizations subject to data governance regulations that require data to reside on-premises.</span></span>
+- <span data-ttu-id="c2c78-168">データを社内で保持することを必要とするデータ ガバナンス規制のもとにある組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-168">Organizations subject to data governance regulations that require data to reside on-premises.</span></span>
     
-- <span data-ttu-id="e0b58-169">プラットフォームとソリューションの全体のコントールを維持することを求める組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-169">Organizations that wish to retain control of the entire platform and solution.</span></span>
+- <span data-ttu-id="c2c78-169">プラットフォームとソリューションの全体のコントールを維持することを求める組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-169">Organizations that wish to retain control of the entire platform and solution.</span></span>
     
-#### <a name="provider-hosted-exchange"></a><span data-ttu-id="e0b58-170">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="e0b58-170">Provider-Hosted Exchange</span></span>
+#### <a name="provider-hosted-exchange"></a><span data-ttu-id="c2c78-170">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="c2c78-170">Provider-Hosted Exchange</span></span>
 
-<span data-ttu-id="e0b58-171">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="e0b58-171">This deployment option is best for:</span></span>
+<span data-ttu-id="c2c78-171">この展開オプションは次の場合に最適です。</span><span class="sxs-lookup"><span data-stu-id="c2c78-171">This deployment option is best for:</span></span>
   
-- <span data-ttu-id="e0b58-172">Exchange Server の機能を必要とするものの、その展開と保守を外部委託することを希望している組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-172">Organizations that need Exchange Server functionality, but want to outsource its deployment and maintenance.</span></span>
+- <span data-ttu-id="c2c78-172">Exchange Server の機能を必要とするものの、その展開と保守を外部委託することを希望している組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-172">Organizations that need Exchange Server functionality, but want to outsource its deployment and maintenance.</span></span>
     
-- <span data-ttu-id="e0b58-173">個人用のサポート オプションが必要な組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-173">Organizations that need personalized support options.</span></span>
+- <span data-ttu-id="c2c78-173">個人用のサポート オプションが必要な組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-173">Organizations that need personalized support options.</span></span>
     
-- <span data-ttu-id="e0b58-174">カスタマイズしたソリューションと、プロバイダーによって提供されるカスタム アプリケーションとの統合。</span><span class="sxs-lookup"><span data-stu-id="e0b58-174">Customized solutions and integration with custom applications offered by the provider.</span></span>
+- <span data-ttu-id="c2c78-174">カスタマイズしたソリューションと、プロバイダーによって提供されるカスタム アプリケーションとの統合。</span><span class="sxs-lookup"><span data-stu-id="c2c78-174">Customized solutions and integration with custom applications offered by the provider.</span></span>
     
-- <span data-ttu-id="e0b58-175">Exchange Online でサポートされていないハードウェアおよびソフトウェアに依存するサード パーティ製コンポーネントを使用するレガシー ソリューション。</span><span class="sxs-lookup"><span data-stu-id="e0b58-175">Legacy solutions with third-party components that depend on hardware and software that are not supported by Exchange Online.</span></span>
+- <span data-ttu-id="c2c78-175">Exchange Online でサポートされていないハードウェアおよびソフトウェアに依存するサード パーティ製コンポーネントを使用するレガシー ソリューション。</span><span class="sxs-lookup"><span data-stu-id="c2c78-175">Legacy solutions with third-party components that depend on hardware and software that are not supported by Exchange Online.</span></span>
     
-### <a name="license-requirements"></a><span data-ttu-id="e0b58-176">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="e0b58-176">License requirements</span></span>
+### <a name="license-requirements"></a><span data-ttu-id="c2c78-176">ライセンス要件</span><span class="sxs-lookup"><span data-stu-id="c2c78-176">License requirements</span></span>
 
-<span data-ttu-id="e0b58-177">次の表は、各展開オプションのライセンス要件の詳細を示しています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-177">The following table details the license requirements for each deployment option.</span></span>
+<span data-ttu-id="c2c78-177">次の表は、各展開オプションのライセンス要件の詳細を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-177">The following table details the license requirements for each deployment option.</span></span>
   
-|<span data-ttu-id="e0b58-178">**展開オプション**</span><span class="sxs-lookup"><span data-stu-id="e0b58-178">**Deployment option**</span></span>|<span data-ttu-id="e0b58-179">**ライセンス要件**</span><span class="sxs-lookup"><span data-stu-id="e0b58-179">**License requirements**</span></span>|
+|<span data-ttu-id="c2c78-178">**展開オプション**</span><span class="sxs-lookup"><span data-stu-id="c2c78-178">**Deployment option**</span></span>|<span data-ttu-id="c2c78-179">**ライセンス要件**</span><span class="sxs-lookup"><span data-stu-id="c2c78-179">**License requirements**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e0b58-180">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="e0b58-180">Exchange Online (Office 365)</span></span>  <br/> |<span data-ttu-id="e0b58-181">サブスクリプション モデル</span><span class="sxs-lookup"><span data-stu-id="e0b58-181">Subscription model</span></span>  <br/> |
-|<span data-ttu-id="e0b58-182">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="e0b58-182">Exchange Hybrid</span></span>  <br/> | <span data-ttu-id="e0b58-183">Office 365 - サブスクリプション モデル</span><span class="sxs-lookup"><span data-stu-id="e0b58-183">Office 365 - Subscription model</span></span> <br/>  <span data-ttu-id="e0b58-184">オンプレミス - すべてのオンプレミス ライセンスが当てはまります (Exchanges Server オンプレミスのライセンスを確認してください)</span><span class="sxs-lookup"><span data-stu-id="e0b58-184">On-premises - All on-premises licenses apply (review licenses for Exchanges Server on-premises)</span></span> <br/>  <span data-ttu-id="e0b58-185">ハイブリッド サーバー ライセンス \*</span><span class="sxs-lookup"><span data-stu-id="e0b58-185">Hybrid server license\*</span></span> <br/> |
-|<span data-ttu-id="e0b58-186">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="e0b58-186">Exchange Server on-premises</span></span>  <br/> | <span data-ttu-id="e0b58-187">サーバー オペレーティング システム</span><span class="sxs-lookup"><span data-stu-id="e0b58-187">Server Operating System</span></span> <br/>  <span data-ttu-id="e0b58-188">Exchange 2013 サーバー ライセンス</span><span class="sxs-lookup"><span data-stu-id="e0b58-188">Exchange 2013 Server License</span></span> <br/>  <span data-ttu-id="e0b58-189">Exchange 2013 クライアント アクセス ライセンス</span><span class="sxs-lookup"><span data-stu-id="e0b58-189">Exchange 2013 Client Access License</span></span> <br/> |
-|<span data-ttu-id="e0b58-190">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="e0b58-190">Provider-Hosted Exchange</span></span>  <br/> |<span data-ttu-id="e0b58-191">コストは、プロバイダーとの契約に基づきます</span><span class="sxs-lookup"><span data-stu-id="e0b58-191">Costs are based on the agreement with the provider</span></span>  <br/> |
+|<span data-ttu-id="c2c78-180">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="c2c78-180">Exchange Online (Office 365)</span></span>  <br/> |<span data-ttu-id="c2c78-181">サブスクリプション モデル</span><span class="sxs-lookup"><span data-stu-id="c2c78-181">Subscription model</span></span>  <br/> |
+|<span data-ttu-id="c2c78-182">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="c2c78-182">Exchange Hybrid</span></span>  <br/> | <span data-ttu-id="c2c78-183">Office 365 - サブスクリプション モデル</span><span class="sxs-lookup"><span data-stu-id="c2c78-183">Office 365 - Subscription model</span></span> <br/>  <span data-ttu-id="c2c78-184">オンプレミス - すべてのオンプレミス ライセンスが当てはまります (Exchanges Server オンプレミスのライセンスを確認してください)</span><span class="sxs-lookup"><span data-stu-id="c2c78-184">On-premises - All on-premises licenses apply (review licenses for Exchanges Server on-premises)</span></span> <br/>  <span data-ttu-id="c2c78-185">ハイブリッド サーバー ライセンス \*</span><span class="sxs-lookup"><span data-stu-id="c2c78-185">Hybrid server license\*</span></span> <br/> |
+|<span data-ttu-id="c2c78-186">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="c2c78-186">Exchange Server on-premises</span></span>  <br/> | <span data-ttu-id="c2c78-187">サーバー オペレーティング システム</span><span class="sxs-lookup"><span data-stu-id="c2c78-187">Server Operating System</span></span> <br/>  <span data-ttu-id="c2c78-188">Exchange 2013 サーバー ライセンス</span><span class="sxs-lookup"><span data-stu-id="c2c78-188">Exchange 2013 Server License</span></span> <br/>  <span data-ttu-id="c2c78-189">Exchange 2013 クライアント アクセス ライセンス</span><span class="sxs-lookup"><span data-stu-id="c2c78-189">Exchange 2013 Client Access License</span></span> <br/> |
+|<span data-ttu-id="c2c78-190">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="c2c78-190">Provider-Hosted Exchange</span></span>  <br/> |<span data-ttu-id="c2c78-191">コストは、プロバイダーとの契約に基づきます</span><span class="sxs-lookup"><span data-stu-id="c2c78-191">Costs are based on the agreement with the provider</span></span>  <br/> |
    
-### <a name="architecture-tasks"></a><span data-ttu-id="e0b58-192">アーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="e0b58-192">Architecture tasks</span></span>
+### <a name="architecture-tasks"></a><span data-ttu-id="c2c78-192">アーキテクチャ タスク</span><span class="sxs-lookup"><span data-stu-id="c2c78-192">Architecture tasks</span></span>
 
-<span data-ttu-id="e0b58-193">ここでは各展開オプションのアーキテクチャのタスクを示します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-193">This section lists the architectural tasks for each deployment option.</span></span>
+<span data-ttu-id="c2c78-193">ここでは各展開オプションのアーキテクチャのタスクを示します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-193">This section lists the architectural tasks for each deployment option.</span></span>
   
-#### <a name="exchange-online-office-365"></a><span data-ttu-id="e0b58-194">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="e0b58-194">Exchange Online (Office 365)</span></span>
+#### <a name="exchange-online-office-365"></a><span data-ttu-id="c2c78-194">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="c2c78-194">Exchange Online (Office 365)</span></span>
 
-- <span data-ttu-id="e0b58-195">ディレクトリ同期を計画および設計します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-195">Plan and design the directory synchronization.</span></span>
+- <span data-ttu-id="c2c78-195">ディレクトリ同期を計画および設計します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-195">Plan and design the directory synchronization.</span></span>
     
-- <span data-ttu-id="e0b58-196">ネットワーク容量を確認し、ファイアウォール、プロキシ サーバー、ゲートウェイ、および WAN リンクを介した接続を確認します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-196">Ensure network capacity and connectivity through firewalls, proxy servers, gateways, and across WAN links.</span></span>
+- <span data-ttu-id="c2c78-196">ネットワーク容量を確認し、ファイアウォール、プロキシ サーバー、ゲートウェイ、および WAN リンクを介した接続を確認します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-196">Ensure network capacity and connectivity through firewalls, proxy servers, gateways, and across WAN links.</span></span>
     
-#### <a name="exchange-hybrid"></a><span data-ttu-id="e0b58-197">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="e0b58-197">Exchange Hybrid</span></span>
+#### <a name="exchange-hybrid"></a><span data-ttu-id="c2c78-197">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="c2c78-197">Exchange Hybrid</span></span>
 
-<span data-ttu-id="e0b58-198">Office 365 環境とオンプレミス環境の両方のアーキテクチャ タスクに加えて:</span><span class="sxs-lookup"><span data-stu-id="e0b58-198">In addition to the architecture tasks for both the Office 365 and on-premises environments:</span></span>
+<span data-ttu-id="c2c78-198">Office 365 環境とオンプレミス環境の両方のアーキテクチャ タスクに加えて:</span><span class="sxs-lookup"><span data-stu-id="c2c78-198">In addition to the architecture tasks for both the Office 365 and on-premises environments:</span></span>
   
-- <span data-ttu-id="e0b58-199">シングル サインオン エクスペリエンスを提供するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-199">Decide whether to provide a single-sign on experience.</span></span>
+- <span data-ttu-id="c2c78-199">シングル サインオン エクスペリエンスを提供するかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-199">Decide whether to provide a single-sign on experience.</span></span>
     
-- <span data-ttu-id="e0b58-200">受信インターネット メールを社内組織を通してルーティングするか、 Exchange Online Protection を介してルーティングするかを決定します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-200">Decide whether to route inbound Internet mail through an on-premises organization or through Exchange Online Protection.</span></span>
+- <span data-ttu-id="c2c78-200">受信インターネット メールを社内組織を通してルーティングするか、 Exchange Online Protection を介してルーティングするかを決定します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-200">Decide whether to route inbound Internet mail through an on-premises organization or through Exchange Online Protection.</span></span>
     
-#### <a name="exchange-server-on-premises"></a><span data-ttu-id="e0b58-201">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="e0b58-201">Exchange Server on-premises</span></span>
+#### <a name="exchange-server-on-premises"></a><span data-ttu-id="c2c78-201">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="c2c78-201">Exchange Server on-premises</span></span>
 
-- <span data-ttu-id="e0b58-202">Exchange トポロジを設計します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-202">Design the Exchange topology.</span></span>
+- <span data-ttu-id="c2c78-202">Exchange トポロジを設計します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-202">Design the Exchange topology.</span></span>
     
-- <span data-ttu-id="e0b58-203">サーバー ハードウェアの容量を計画します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-203">Plan the capacity for server hardware.</span></span>
+- <span data-ttu-id="c2c78-203">サーバー ハードウェアの容量を計画します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-203">Plan the capacity for server hardware.</span></span>
     
-- <span data-ttu-id="e0b58-204">メッセージのルーティング トポロジを設計します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-204">Design the message routing topology.</span></span>
+- <span data-ttu-id="c2c78-204">メッセージのルーティング トポロジを設計します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-204">Design the message routing topology.</span></span>
     
-- <span data-ttu-id="e0b58-205">クライアント アクセス サーバーの負荷分散を設計します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-205">Design load balancing for Client Access servers.</span></span>
+- <span data-ttu-id="c2c78-205">クライアント アクセス サーバーの負荷分散を設計します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-205">Design load balancing for Client Access servers.</span></span>
     
-- <span data-ttu-id="e0b58-206">データベース可用性グループを使用して高可用性を計画します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-206">Plan for high availability using database availability groups.</span></span>
+- <span data-ttu-id="c2c78-206">データベース可用性グループを使用して高可用性を計画します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-206">Plan for high availability using database availability groups.</span></span>
     
-#### <a name="provider-hosted-exchange"></a><span data-ttu-id="e0b58-207">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="e0b58-207">Provider-Hosted Exchange</span></span>
+#### <a name="provider-hosted-exchange"></a><span data-ttu-id="c2c78-207">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="c2c78-207">Provider-Hosted Exchange</span></span>
 
-<span data-ttu-id="e0b58-208">ネットワーク容量を確認し、ファイアウォール、プロキシ サーバー、ゲートウェイ、および WAN リンクを介した可用性がプロバイダーで使用可能であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-208">Ensure that the network capacity and availability through firewalls, proxy servers, gateways, and across WAN links are available to your provider.</span></span>
+<span data-ttu-id="c2c78-208">ネットワーク容量を確認し、ファイアウォール、プロキシ サーバー、ゲートウェイ、および WAN リンクを介した可用性がプロバイダーで使用可能であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-208">Ensure that the network capacity and availability through firewalls, proxy servers, gateways, and across WAN links are available to your provider.</span></span>
   
-### <a name="it-pro-responsibilities"></a><span data-ttu-id="e0b58-209">IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="e0b58-209">IT Pro responsibilities</span></span>
+### <a name="it-pro-responsibilities"></a><span data-ttu-id="c2c78-209">IT 技術者の責任</span><span class="sxs-lookup"><span data-stu-id="c2c78-209">IT Pro responsibilities</span></span>
 
-<span data-ttu-id="e0b58-210">ここでは、各展開オプションについて、IT 担当者の責任を示します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-210">This section lists the IT Pro responsibilities for each deployment option.</span></span>
+<span data-ttu-id="c2c78-210">ここでは、各展開オプションについて、IT 担当者の責任を示します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-210">This section lists the IT Pro responsibilities for each deployment option.</span></span>
   
-#### <a name="exchange-online-office-365"></a><span data-ttu-id="e0b58-211">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="e0b58-211">Exchange Online (Office 365)</span></span>
+#### <a name="exchange-online-office-365"></a><span data-ttu-id="c2c78-211">Exchange Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="c2c78-211">Exchange Online (Office 365)</span></span>
 
-- <span data-ttu-id="e0b58-212">ディレクトリ同期の計画を実装します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-212">Implement the directory synchronization plan.</span></span>
+- <span data-ttu-id="c2c78-212">ディレクトリ同期の計画を実装します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-212">Implement the directory synchronization plan.</span></span>
     
-- <span data-ttu-id="e0b58-213">内部および外部の DNS レコードとルーティングを計画し、実装します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-213">Plan and implement internal and external DNS records and routing.</span></span>
+- <span data-ttu-id="c2c78-213">内部および外部の DNS レコードとルーティングを計画し、実装します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-213">Plan and implement internal and external DNS records and routing.</span></span>
     
-- <span data-ttu-id="e0b58-214">Office 365 の IP アドレスおよび URL の要件に合うように、プロキシ サーバーまたはファイアウォールを構成します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-214">Configure the proxy server or firewall for the Office 365 IP address and URL requirements.</span></span>
+- <span data-ttu-id="c2c78-214">Office 365 の IP アドレスおよび URL の要件に合うように、プロキシ サーバーまたはファイアウォールを構成します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-214">Configure the proxy server or firewall for the Office 365 IP address and URL requirements.</span></span>
     
-- <span data-ttu-id="e0b58-215">ユーザー アカウントと Exchange Online の設定を管理します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-215">Administer the user accounts and the Exchange Online settings.</span></span>
+- <span data-ttu-id="c2c78-215">ユーザー アカウントと Exchange Online の設定を管理します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-215">Administer the user accounts and the Exchange Online settings.</span></span>
     
-#### <a name="exchange-hybrid"></a><span data-ttu-id="e0b58-216">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="e0b58-216">Exchange Hybrid</span></span>
+#### <a name="exchange-hybrid"></a><span data-ttu-id="c2c78-216">Exchange ハイブリッド</span><span class="sxs-lookup"><span data-stu-id="c2c78-216">Exchange Hybrid</span></span>
 
-<span data-ttu-id="e0b58-217">Office 365 環境とオンプレミス環境の両方の IT 技術者の責任に加えて:</span><span class="sxs-lookup"><span data-stu-id="e0b58-217">In addition to the IT Pro responsibilities for both the Office 365 and on-premises environments:</span></span>
+<span data-ttu-id="c2c78-217">Office 365 環境とオンプレミス環境の両方の IT 技術者の責任に加えて:</span><span class="sxs-lookup"><span data-stu-id="c2c78-217">In addition to the IT Pro responsibilities for both the Office 365 and on-premises environments:</span></span>
   
-- <span data-ttu-id="e0b58-218">Active Directory フェデレーション サービス (AD FS) をシングル サインオン用に構成します (希望する場合)。</span><span class="sxs-lookup"><span data-stu-id="e0b58-218">Configure Active Directory Federation Services (AD FS) for single-sign on (if desired).</span></span>
+- <span data-ttu-id="c2c78-218">Active Directory フェデレーション サービス (AD FS) をシングル サインオン用に構成します (希望する場合)。</span><span class="sxs-lookup"><span data-stu-id="c2c78-218">Configure Active Directory Federation Services (AD FS) for single-sign on (if desired).</span></span>
     
-- <span data-ttu-id="e0b58-219">Exchange 2013 サーバーと Office 365 との保護された通信のために、Exchange 証明書を構成します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-219">Configure Exchange certificates for secure communications between Exchange 2013 servers and Office 365.</span></span>
+- <span data-ttu-id="c2c78-219">Exchange 2013 サーバーと Office 365 との保護された通信のために、Exchange 証明書を構成します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-219">Configure Exchange certificates for secure communications between Exchange 2013 servers and Office 365.</span></span>
     
-- <span data-ttu-id="e0b58-220">DNS レコードを、希望する受信インターネット メール パス向けに構成します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-220">Configure DNS records for the desired inbound Internet mail path.</span></span>
+- <span data-ttu-id="c2c78-220">DNS レコードを、希望する受信インターネット メール パス向けに構成します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-220">Configure DNS records for the desired inbound Internet mail path.</span></span>
     
-#### <a name="exchange-server-on-premises"></a><span data-ttu-id="e0b58-221">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="e0b58-221">Exchange Server on-premises</span></span>
+#### <a name="exchange-server-on-premises"></a><span data-ttu-id="c2c78-221">Exchange Server オンプレミス</span><span class="sxs-lookup"><span data-stu-id="c2c78-221">Exchange Server on-premises</span></span>
 
-- <span data-ttu-id="e0b58-222">Exchange サービスのために必要な証明書を構成します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-222">Configure the necessary certificates for Exchange services.</span></span>
+- <span data-ttu-id="c2c78-222">Exchange サービスのために必要な証明書を構成します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-222">Configure the necessary certificates for Exchange services.</span></span>
     
-- <span data-ttu-id="e0b58-223">サーバーを準備します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-223">Provision the servers.</span></span>
+- <span data-ttu-id="c2c78-223">サーバーを準備します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-223">Provision the servers.</span></span>
     
-- <span data-ttu-id="e0b58-224">Exchange のメッセージ ルーティング トポロジを実装します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-224">Implement the Exchange message routing topology.</span></span>
+- <span data-ttu-id="c2c78-224">Exchange のメッセージ ルーティング トポロジを実装します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-224">Implement the Exchange message routing topology.</span></span>
     
-- <span data-ttu-id="e0b58-225">データベース可用性グループを実装します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-225">Implement database availability groups.</span></span>
+- <span data-ttu-id="c2c78-225">データベース可用性グループを実装します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-225">Implement database availability groups.</span></span>
     
-- <span data-ttu-id="e0b58-226">Exchange サーバーを更新し、維持します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-226">Update and maintain Exchange servers.</span></span>
+- <span data-ttu-id="c2c78-226">Exchange サーバーを更新し、維持します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-226">Update and maintain Exchange servers.</span></span>
     
-- <span data-ttu-id="e0b58-227">使用率に応じて、必要なときにサーバーを追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-227">Depending on utilization, add or remove servers as needed.</span></span>
+- <span data-ttu-id="c2c78-227">使用率に応じて、必要なときにサーバーを追加または削除します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-227">Depending on utilization, add or remove servers as needed.</span></span>
     
-#### <a name="provider-hosted-exchange"></a><span data-ttu-id="e0b58-228">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="e0b58-228">Provider-Hosted Exchange</span></span>
+#### <a name="provider-hosted-exchange"></a><span data-ttu-id="c2c78-228">プロバイダー向けのホスト型 Exchange</span><span class="sxs-lookup"><span data-stu-id="c2c78-228">Provider-Hosted Exchange</span></span>
 
-<span data-ttu-id="e0b58-229">プロバイダーの責任は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e0b58-229">The provider's responsibilities include:</span></span>
+<span data-ttu-id="c2c78-229">プロバイダーの責任は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="c2c78-229">The provider's responsibilities include:</span></span>
   
-- <span data-ttu-id="e0b58-230">システムとサービスの保守。</span><span class="sxs-lookup"><span data-stu-id="e0b58-230">System and service maintenance.</span></span>
+- <span data-ttu-id="c2c78-230">システムとサービスの保守。</span><span class="sxs-lookup"><span data-stu-id="c2c78-230">System and service maintenance.</span></span>
     
-- <span data-ttu-id="e0b58-231">機能の展開。</span><span class="sxs-lookup"><span data-stu-id="e0b58-231">Feature rollouts.</span></span>
+- <span data-ttu-id="c2c78-231">機能の展開。</span><span class="sxs-lookup"><span data-stu-id="c2c78-231">Feature rollouts.</span></span>
     
-- <span data-ttu-id="e0b58-232">データの保護と災害復旧。</span><span class="sxs-lookup"><span data-stu-id="e0b58-232">Data protection and disaster recovery.</span></span>
+- <span data-ttu-id="c2c78-232">データの保護と災害復旧。</span><span class="sxs-lookup"><span data-stu-id="c2c78-232">Data protection and disaster recovery.</span></span>
     
-<span data-ttu-id="e0b58-233">組織内の IT スタッフの責任には、ユーザー アカウントの作成と管理が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-233">The IT staff's responsibilities in your organization include creating and managing user accounts.</span></span>
+<span data-ttu-id="c2c78-233">組織内の IT スタッフの責任には、ユーザー アカウントの作成と管理が含まれます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-233">The IT staff's responsibilities in your organization include creating and managing user accounts.</span></span>
   
-#### <a name="more-information"></a><span data-ttu-id="e0b58-234">詳細情報</span><span class="sxs-lookup"><span data-stu-id="e0b58-234">More information</span></span>
+#### <a name="more-information"></a><span data-ttu-id="c2c78-234">詳細情報</span><span class="sxs-lookup"><span data-stu-id="c2c78-234">More information</span></span>
 
-<span data-ttu-id="e0b58-235">Exchange Online (Office 365) の詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="e0b58-235">To learn more about Exchange Online (Office 365), see the following:</span></span>
+<span data-ttu-id="c2c78-235">Exchange Online (Office 365) の詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="c2c78-235">To learn more about Exchange Online (Office 365), see the following:</span></span>
   
-- [<span data-ttu-id="e0b58-236">Exchange Online サービスの説明</span><span class="sxs-lookup"><span data-stu-id="e0b58-236">Exchange Online service description</span></span>](https://aka.ms/EXOSD)
+- [<span data-ttu-id="c2c78-236">Exchange Online サービスの説明</span><span class="sxs-lookup"><span data-stu-id="c2c78-236">Exchange Online service description</span></span>](https://aka.ms/EXOSD)
     
-- [<span data-ttu-id="e0b58-237">TechNet の Exchange Online のライブラリ</span><span class="sxs-lookup"><span data-stu-id="e0b58-237">Exchange Online library on TechNet</span></span>](https://aka.ms/EXOTN)
+- [<span data-ttu-id="c2c78-237">TechNet の Exchange Online のライブラリ</span><span class="sxs-lookup"><span data-stu-id="c2c78-237">Exchange Online library on TechNet</span></span>](https://aka.ms/EXOTN)
     
-- [<span data-ttu-id="e0b58-238">Exchange Online ポータル</span><span class="sxs-lookup"><span data-stu-id="e0b58-238">Exchange Online portal</span></span>](https://aka.ms/EXO)
+- [<span data-ttu-id="c2c78-238">Exchange Online ポータル</span><span class="sxs-lookup"><span data-stu-id="c2c78-238">Exchange Online portal</span></span>](https://aka.ms/EXO)
     
-<span data-ttu-id="e0b58-239">Exchange ハイブリッドの詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="e0b58-239">To learn more about Exchange Hybrid, see the following:</span></span>
+<span data-ttu-id="c2c78-239">Exchange ハイブリッドの詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="c2c78-239">To learn more about Exchange Hybrid, see the following:</span></span>
   
-- <span data-ttu-id="e0b58-p104">[Exchange 2013 ハイブリッド展開](https://aka.ms/ExchangeHybrid)。ハイブリッド サーバーのライセンスが必要になるのは、以下のシナリオの場合だけです: Exchange 2013 のハイブリッド サーバーと共に Exchange 2010 を持つ組織。Exchange 2013 または Exchange 2010 のハイブリッド サーバーと共に Exchange 2007 を持つ組織。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p104">[Exchange 2013 hybrid deployments](https://aka.ms/ExchangeHybrid). You should note that the Hybrid server license is only required for the following scenarios: Exchange 2010 organization with Exchange 2013 hybrid server and Exchange 2007 organization with Exchange 2013 or Exchange 2010 hybrid server.</span></span>
+- <span data-ttu-id="c2c78-p104">[Exchange 2013 ハイブリッド展開](https://aka.ms/ExchangeHybrid)。ハイブリッド サーバーのライセンスが必要になるのは、以下のシナリオの場合だけです: Exchange 2013 のハイブリッド サーバーと共に Exchange 2010 を持つ組織。Exchange 2013 または Exchange 2010 のハイブリッド サーバーと共に Exchange 2007 を持つ組織。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p104">[Exchange 2013 hybrid deployments](https://aka.ms/ExchangeHybrid). You should note that the Hybrid server license is only required for the following scenarios: Exchange 2010 organization with Exchange 2013 hybrid server and Exchange 2007 organization with Exchange 2013 or Exchange 2010 hybrid server.</span></span>
     
-- [<span data-ttu-id="e0b58-242">Office 365 へのサインイン</span><span class="sxs-lookup"><span data-stu-id="e0b58-242">Office 365 Sign in</span></span>](https://aka.ms/HybridKey)
+- [<span data-ttu-id="c2c78-242">Office 365 へのサインイン</span><span class="sxs-lookup"><span data-stu-id="c2c78-242">Office 365 Sign in</span></span>](https://aka.ms/HybridKey)
     
-<span data-ttu-id="e0b58-243">Exchange Server オンプレミスの詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="e0b58-243">To learn more about Exchange Server on-premises, see the following:</span></span>
+<span data-ttu-id="c2c78-243">Exchange Server オンプレミスの詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="c2c78-243">To learn more about Exchange Server on-premises, see the following:</span></span>
   
-- [<span data-ttu-id="e0b58-244">TechNet の Exchange Server 2013 ライブラリ</span><span class="sxs-lookup"><span data-stu-id="e0b58-244">Exchange Server 2013 library on TechNet</span></span>](https://aka.ms/Ex2013TN)
+- [<span data-ttu-id="c2c78-244">TechNet の Exchange Server 2013 ライブラリ</span><span class="sxs-lookup"><span data-stu-id="c2c78-244">Exchange Server 2013 library on TechNet</span></span>](https://aka.ms/Ex2013TN)
     
-- [<span data-ttu-id="e0b58-245">Exchange Server 2013 ポータル</span><span class="sxs-lookup"><span data-stu-id="e0b58-245">Exchange Server 2013 portal</span></span>](https://aka.ms/Exchange2013)
+- [<span data-ttu-id="c2c78-245">Exchange Server 2013 ポータル</span><span class="sxs-lookup"><span data-stu-id="c2c78-245">Exchange Server 2013 portal</span></span>](https://aka.ms/Exchange2013)
     
-- [<span data-ttu-id="e0b58-246">Exchange Server 2013 のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="e0b58-246">Exchange Server 2013 architecture</span></span>](https://aka.ms/Ex2013SP1ArchPoster)
+- [<span data-ttu-id="c2c78-246">Exchange Server 2013 のアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="c2c78-246">Exchange Server 2013 architecture</span></span>](https://aka.ms/Ex2013SP1ArchPoster)
     
-<span data-ttu-id="e0b58-247">プロバイダー向けのホスト型 Exchange の詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="e0b58-247">To learn more about Provider-Hosted Exchange, see the following:</span></span>
+<span data-ttu-id="c2c78-247">プロバイダー向けのホスト型 Exchange の詳細については、以下を参照してください:</span><span class="sxs-lookup"><span data-stu-id="c2c78-247">To learn more about Provider-Hosted Exchange, see the following:</span></span>
   
-[<span data-ttu-id="e0b58-248">Exchange Server 2013 のホスティングおよびマルチ テナント ソリューションとガイダンス</span><span class="sxs-lookup"><span data-stu-id="e0b58-248">Exchange Server 2013 hosting and multi-tenancy solutions and guidance</span></span>](https://aka.ms/Ex2013Hosting)
+[<span data-ttu-id="c2c78-248">Exchange Server 2013 のホスティングおよびマルチ テナント ソリューションとガイダンス</span><span class="sxs-lookup"><span data-stu-id="c2c78-248">Exchange Server 2013 hosting and multi-tenancy solutions and guidance</span></span>](https://aka.ms/Ex2013Hosting)
   
-## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a><span data-ttu-id="e0b58-249">Exchange 2013 での 3 つの新規または更新された機能の説明</span><span class="sxs-lookup"><span data-stu-id="e0b58-249">Descriptions of three new or updated features in Exchange 2013</span></span>
+## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a><span data-ttu-id="c2c78-249">Exchange 2013 での 3 つの新規または更新された機能の説明</span><span class="sxs-lookup"><span data-stu-id="c2c78-249">Descriptions of three new or updated features in Exchange 2013</span></span>
 
-### <a name="exchange-online-protection"></a><span data-ttu-id="e0b58-250">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="e0b58-250">Exchange Online Protection</span></span>
+### <a name="exchange-online-protection"></a><span data-ttu-id="c2c78-250">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="c2c78-250">Exchange Online Protection</span></span>
 
-<span data-ttu-id="e0b58-p105">Exchange Online Protection (EOP) は、データ センターのグローバルなネットワークにまたがって展開された保護機能の層を提供することによって、任意の展開のためのスパム対策およびマルウェア対策の保護を提供します。これにより、メッセージング環境の管理を簡略化することができます。EOP は Exchange Online のサブスクリプションに含まれていますが、ハイブリッド展開およびオンプレミス展開のためにそれを活用することもできます。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p105">Exchange Online Protection (EOP) provides anti-spam and anti-malware protection for any deployment by providing a layer of protection features that are deployed across a global network of data centers. This helps you to simplify the management of your messaging environments. EOP is included in Exchange Online subscriptions, but you can also leverage it for hybrid and on-premises deployments.</span></span>
+<span data-ttu-id="c2c78-p105">Exchange Online Protection (EOP) は、データ センターのグローバルなネットワークにまたがって展開された保護機能の層を提供することによって、任意の展開のためのスパム対策およびマルウェア対策の保護を提供します。これにより、メッセージング環境の管理を簡略化することができます。EOP は Exchange Online のサブスクリプションに含まれていますが、ハイブリッド展開およびオンプレミス展開のためにそれを活用することもできます。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p105">Exchange Online Protection (EOP) provides anti-spam and anti-malware protection for any deployment by providing a layer of protection features that are deployed across a global network of data centers. This helps you to simplify the management of your messaging environments. EOP is included in Exchange Online subscriptions, but you can also leverage it for hybrid and on-premises deployments.</span></span>
   
-<span data-ttu-id="e0b58-254">付随する図は、グローバル ネットワーク内に EOP を含む、Exchange Online、Exchange ハイブリッド、および Exchange オンプレミスの展開を示しています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-254">The accompanying diagrams show deployments for Exchange Online, Exchange Hybrid, and Exchange on-premises that include the EOP layer in the global network.</span></span>
+<span data-ttu-id="c2c78-254">付随する図は、グローバル ネットワーク内に EOP を含む、Exchange Online、Exchange ハイブリッド、および Exchange オンプレミスの展開を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-254">The accompanying diagrams show deployments for Exchange Online, Exchange Hybrid, and Exchange on-premises that include the EOP layer in the global network.</span></span>
   
-### <a name="exchange-server-deployment-assistant"></a><span data-ttu-id="e0b58-255">Exchange Server 展開アシスタント</span><span class="sxs-lookup"><span data-stu-id="e0b58-255">Exchange Server Deployment Assistant</span></span>
+### <a name="exchange-server-deployment-assistant"></a><span data-ttu-id="c2c78-255">Exchange Server 展開アシスタント</span><span class="sxs-lookup"><span data-stu-id="c2c78-255">Exchange Server Deployment Assistant</span></span>
 
-<span data-ttu-id="e0b58-p106">Exchange Server 展開アシスタントは、現在の環境に関するいくつかの点に関して質問してから、カスタムのステップごとのチェックリストを生成することにより、各種のシナリオに対して Exchange Server を展開するのを支援する、Web ベースのツールです。以前のバージョンの Exchange から Exchange 2013 に移行しているか、Exchange Online に移行しているか、あるいはハイブリッド インフラストラクチャを計画しているかどうかに応じて、Exchange Server 展開アシスタントは、ご使用のシナリオ向けの、カスタマイズされた展開チェックリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p106">The Exchange Server Deployment Assistant is a web-based tool that asks you a few questions about your current environment, and then generates a custom step-by-step checklist to help you deploy Exchange Server for different types of scenarios. Whether you are migrating from a previous version of Exchange to Exchange 2013, migrating to Exchange Online, or planning a hybrid infrastructure, the Exchange Server Deployment Assistant creates a customized deployment checklist for your scenario.</span></span>
+<span data-ttu-id="c2c78-p106">Exchange Server 展開アシスタントは、現在の環境に関するいくつかの点に関して質問してから、カスタムのステップごとのチェックリストを生成することにより、各種のシナリオに対して Exchange Server を展開するのを支援する、Web ベースのツールです。以前のバージョンの Exchange から Exchange 2013 に移行しているか、Exchange Online に移行しているか、あるいはハイブリッド インフラストラクチャを計画しているかどうかに応じて、Exchange Server 展開アシスタントは、ご使用のシナリオ向けの、カスタマイズされた展開チェックリストを作成します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p106">The Exchange Server Deployment Assistant is a web-based tool that asks you a few questions about your current environment, and then generates a custom step-by-step checklist to help you deploy Exchange Server for different types of scenarios. Whether you are migrating from a previous version of Exchange to Exchange 2013, migrating to Exchange Online, or planning a hybrid infrastructure, the Exchange Server Deployment Assistant creates a customized deployment checklist for your scenario.</span></span>
   
-<span data-ttu-id="e0b58-258">付随するスクリーン ショットは、Exchange Server 展開アシスタントを使用して作成されたチェックリスト例を示しています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-258">The accompanying screenshot shows an example checklist that was created using the Exchange Server Deployment Assistant.</span></span>
+<span data-ttu-id="c2c78-258">付随するスクリーン ショットは、Exchange Server 展開アシスタントを使用して作成されたチェックリスト例を示しています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-258">The accompanying screenshot shows an example checklist that was created using the Exchange Server Deployment Assistant.</span></span>
   
-### <a name="integration-with-lync-and-sharepoint"></a><span data-ttu-id="e0b58-259">Lync および SharePoint との統合</span><span class="sxs-lookup"><span data-stu-id="e0b58-259">Integration with Lync and SharePoint</span></span>
+### <a name="integration-with-lync-and-sharepoint"></a><span data-ttu-id="c2c78-259">Lync および SharePoint との統合</span><span class="sxs-lookup"><span data-stu-id="c2c78-259">Integration with Lync and SharePoint</span></span>
 
-<span data-ttu-id="e0b58-p107">Exchange Server 2013 には、Lync Server 2013 および SharePoint Server 2013 と統合する多くの機能が含まれています。これらの製品が一緒になって、豊富な一連の機能が提供され、組織全体での共同作業が向上します。</span><span class="sxs-lookup"><span data-stu-id="e0b58-p107">Exchange Server 2013 includes many features that integrate with Lync Server 2013 and SharePoint Server 2013. Together, these products offer a rich suite of features and improve collaboration across your organization.</span></span> 
+<span data-ttu-id="c2c78-p107">Exchange Server 2013 には、Lync Server 2013 および SharePoint Server 2013 と統合する多くの機能が含まれています。これらの製品が一緒になって、豊富な一連の機能が提供され、組織全体での共同作業が向上します。</span><span class="sxs-lookup"><span data-stu-id="c2c78-p107">Exchange Server 2013 includes many features that integrate with Lync Server 2013 and SharePoint Server 2013. Together, these products offer a rich suite of features and improve collaboration across your organization.</span></span> 
   
-<span data-ttu-id="e0b58-262">付随する図はサーバー間認証のポスターを示し、ポスターへのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-262">An accompanying diagram shows the Server-to-Server Authentication poster and includes a link to the poster.</span></span> 
+<span data-ttu-id="c2c78-262">付随する図はサーバー間認証のポスターを示し、ポスターへのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-262">An accompanying diagram shows the Server-to-Server Authentication poster and includes a link to the poster.</span></span> 
   
-- <span data-ttu-id="e0b58-263">アーカイブ、保持、および電子情報開示</span><span class="sxs-lookup"><span data-stu-id="e0b58-263">Archiving, hold and eDiscovery</span></span>
+- <span data-ttu-id="c2c78-263">アーカイブ、保持、および電子情報開示</span><span class="sxs-lookup"><span data-stu-id="c2c78-263">Archiving, hold and eDiscovery</span></span>
     
-- <span data-ttu-id="e0b58-264">サイト メールボックス</span><span class="sxs-lookup"><span data-stu-id="e0b58-264">Site mailboxes</span></span>
+- <span data-ttu-id="c2c78-264">サイト メールボックス</span><span class="sxs-lookup"><span data-stu-id="c2c78-264">Site mailboxes</span></span>
     
-- <span data-ttu-id="e0b58-265">統合連絡先ストア</span><span class="sxs-lookup"><span data-stu-id="e0b58-265">Unified contact store</span></span>
+- <span data-ttu-id="c2c78-265">統合連絡先ストア</span><span class="sxs-lookup"><span data-stu-id="c2c78-265">Unified contact store</span></span>
     
-- <span data-ttu-id="e0b58-266">高解像度のユーザーの写真</span><span class="sxs-lookup"><span data-stu-id="e0b58-266">High-resolution user photos</span></span>
+- <span data-ttu-id="c2c78-266">高解像度のユーザーの写真</span><span class="sxs-lookup"><span data-stu-id="c2c78-266">High-resolution user photos</span></span>
     
-- <span data-ttu-id="e0b58-267">Outlook および Outlook Web App での Lync プレゼンス</span><span class="sxs-lookup"><span data-stu-id="e0b58-267">Lync presence in Outlook and Outlook Web App</span></span>
+- <span data-ttu-id="c2c78-267">Outlook および Outlook Web App での Lync プレゼンス</span><span class="sxs-lookup"><span data-stu-id="c2c78-267">Lync presence in Outlook and Outlook Web App</span></span>
     
-- <span data-ttu-id="e0b58-268">サーバー間認証</span><span class="sxs-lookup"><span data-stu-id="e0b58-268">Server-to-server authentication</span></span>
+- <span data-ttu-id="c2c78-268">サーバー間認証</span><span class="sxs-lookup"><span data-stu-id="c2c78-268">Server-to-server authentication</span></span>
     
-- <span data-ttu-id="e0b58-269">ボイスメール</span><span class="sxs-lookup"><span data-stu-id="e0b58-269">Voicemail</span></span>
+- <span data-ttu-id="c2c78-269">ボイスメール</span><span class="sxs-lookup"><span data-stu-id="c2c78-269">Voicemail</span></span>
     
-- <span data-ttu-id="e0b58-270">ミーティングのレコーディング</span><span class="sxs-lookup"><span data-stu-id="e0b58-270">Meeting recordings</span></span>
+- <span data-ttu-id="c2c78-270">ミーティングのレコーディング</span><span class="sxs-lookup"><span data-stu-id="c2c78-270">Meeting recordings</span></span>
     
-- <span data-ttu-id="e0b58-271">Exchange タスクの同期</span><span class="sxs-lookup"><span data-stu-id="e0b58-271">Exchange task synchronization</span></span>
+- <span data-ttu-id="c2c78-271">Exchange タスクの同期</span><span class="sxs-lookup"><span data-stu-id="c2c78-271">Exchange task synchronization</span></span>
     
-<span data-ttu-id="e0b58-272">付随する図は Exchange Server 2013 SP1 アーキテクチャのポスターを示し、ポスターへのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="e0b58-272">An accompanying diagram shows the Exchange Server 2013 SP1 Architecture poster and includes a link to the poster.</span></span>
+<span data-ttu-id="c2c78-272">付随する図は Exchange Server 2013 SP1 アーキテクチャのポスターを示し、ポスターへのリンクが含まれています。</span><span class="sxs-lookup"><span data-stu-id="c2c78-272">An accompanying diagram shows the Exchange Server 2013 SP1 Architecture poster and includes a link to the poster.</span></span>
   
 

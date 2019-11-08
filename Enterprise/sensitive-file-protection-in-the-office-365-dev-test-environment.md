@@ -16,48 +16,48 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031572"
 ---
-# <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a><span data-ttu-id="53fea-103">Office 365 の開発/テスト環境での機密性の高いファイルの保護</span><span class="sxs-lookup"><span data-stu-id="53fea-103">Sensitive file protection in the Office 365 dev/test environment</span></span>
+# <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a><span data-ttu-id="e5342-103">Office 365 の開発/テスト環境での機密性の高いファイルの保護</span><span class="sxs-lookup"><span data-stu-id="e5342-103">Sensitive file protection in the Office 365 dev/test environment</span></span>
 
- <span data-ttu-id="53fea-104">**概要:** Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="53fea-104">**Summary:** Configure and demonstrate how Office 365 Information Rights Management protects your sensitive files, even when they are posted to the wrong SharePoint Online site collection.</span></span>
+ <span data-ttu-id="e5342-104">**概要:** Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。</span><span class="sxs-lookup"><span data-stu-id="e5342-104">**Summary:** Configure and demonstrate how Office 365 Information Rights Management protects your sensitive files, even when they are posted to the wrong SharePoint Online site collection.</span></span>
   
-<span data-ttu-id="53fea-p101">Office 365 の Information Rights Management (IRM) は、SharePoint Online ライブラリとリストからダウンロードしたドキュメントを保護する機能のセットです。ダウンロードしたファイルは暗号化されており、格納されていた SharePoint Online ライブラリを反映するアクセス許可 (オープン、コピー、保存、印刷) を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="53fea-p101">Information Rights Management (IRM) in Office 365 is a set of capabilities to protect documents that are downloaded from SharePoint Online libraries and lists. Downloaded files are encrypted and contain the open, copy, save, and print permissions that reflect the SharePoint Online library in which they were stored.</span></span>
+<span data-ttu-id="e5342-p101">Office 365 の Information Rights Management (IRM) は、SharePoint Online ライブラリとリストからダウンロードしたドキュメントを保護する機能のセットです。ダウンロードしたファイルは暗号化されており、格納されていた SharePoint Online ライブラリを反映するアクセス許可 (オープン、コピー、保存、印刷) を含んでいます。</span><span class="sxs-lookup"><span data-stu-id="e5342-p101">Information Rights Management (IRM) in Office 365 is a set of capabilities to protect documents that are downloaded from SharePoint Online libraries and lists. Downloaded files are encrypted and contain the open, copy, save, and print permissions that reflect the SharePoint Online library in which they were stored.</span></span>
   
-<span data-ttu-id="53fea-107">この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。</span><span class="sxs-lookup"><span data-stu-id="53fea-107">With the instructions in this article, you enable and test IRM in Office 365 for files containing possible sensitive information in your Office 365 trial subscription.</span></span>
+<span data-ttu-id="e5342-107">この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。</span><span class="sxs-lookup"><span data-stu-id="e5342-107">With the instructions in this article, you enable and test IRM in Office 365 for files containing possible sensitive information in your Office 365 trial subscription.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="53fea-108">[ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。</span><span class="sxs-lookup"><span data-stu-id="53fea-108">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the Office 365 Test Lab Guide stack.</span></span>
+> <span data-ttu-id="e5342-108">[ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e5342-108">Click [here](https://aka.ms/catlgstack) for a visual map to all the articles in the Office 365 Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-build-out-your-office-365-devtest-environment"></a><span data-ttu-id="53fea-109">フェーズ 1: Office 365 開発/テスト環境を構成する</span><span class="sxs-lookup"><span data-stu-id="53fea-109">Phase 1: Build out your Office 365 dev/test environment</span></span>
+## <a name="phase-1-build-out-your-office-365-devtest-environment"></a><span data-ttu-id="e5342-109">フェーズ 1: Office 365 開発/テスト環境を構成する</span><span class="sxs-lookup"><span data-stu-id="e5342-109">Phase 1: Build out your Office 365 dev/test environment</span></span>
 
-<span data-ttu-id="53fea-110">最小要件で機密性の高いファイル保護を簡易な方法でテストする場合は、[Office 365 dev/test environment](office-365-dev-test-environment.md)のフェーズ 2 と 3 の指示に従ってください。</span><span class="sxs-lookup"><span data-stu-id="53fea-110">If you just want to test sensitive file protection in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="e5342-110">最小要件で機密性の高いファイル保護を簡易な方法でテストする場合は、[Office 365 dev/test environment](office-365-dev-test-environment.md)のフェーズ 2 と 3 の指示に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e5342-110">If you just want to test sensitive file protection in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
   
-<span data-ttu-id="53fea-111">シミュレーション エンタープライズで機密性の高いファイル保護をテストする場合は、[DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md)の指示に従ってください。</span><span class="sxs-lookup"><span data-stu-id="53fea-111">If you want to test sensitive file protection in a simulated enterprise, follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="e5342-111">シミュレーション エンタープライズで機密性の高いファイル保護をテストする場合は、[DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md)の指示に従ってください。</span><span class="sxs-lookup"><span data-stu-id="e5342-111">If you want to test sensitive file protection in a simulated enterprise, follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="53fea-112">機密ファイル保護のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。</span><span class="sxs-lookup"><span data-stu-id="53fea-112">Testing sensitive file protection does not require the simulated enterprise dev/test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="53fea-113">この指示は、一般的な組織と類似した環境で機密性の高いファイルの保護をテストしてお試しいただけるようオプションとしてここで提供しています。</span><span class="sxs-lookup"><span data-stu-id="53fea-113">It is provided here as an option so that you can test sensitive file protection and experiment with it in an environment that represents a typical organization.</span></span> 
+> <span data-ttu-id="e5342-112">機密ファイル保護のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e5342-112">Testing sensitive file protection does not require the simulated enterprise dev/test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="e5342-113">この指示は、一般的な組織と類似した環境で機密性の高いファイルの保護をテストしてお試しいただけるようオプションとしてここで提供しています。</span><span class="sxs-lookup"><span data-stu-id="e5342-113">It is provided here as an option so that you can test sensitive file protection and experiment with it in an environment that represents a typical organization.</span></span> 
   
-## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a><span data-ttu-id="53fea-114">フェーズ 2:アクセス許可で保護されたサイトのドキュメントがどのようにリークされる場合があるのかをデモする</span><span class="sxs-lookup"><span data-stu-id="53fea-114">Phase 2: Demonstrate how documents from permissions-protected sites can be leaked</span></span>
+## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a><span data-ttu-id="e5342-114">フェーズ 2:アクセス許可で保護されたサイトのドキュメントがどのようにリークされる場合があるのかをデモする</span><span class="sxs-lookup"><span data-stu-id="e5342-114">Phase 2: Demonstrate how documents from permissions-protected sites can be leaked</span></span>
 
-<span data-ttu-id="53fea-115">このフェーズでは、何者かによってドキュメントがアクセス許可で保護されたサイトからダウンロードされて、制限が緩いサイトにアップロードされることがあり得るということをデモします。</span><span class="sxs-lookup"><span data-stu-id="53fea-115">In this phase, you demonstrate that someone can download a document from a permissions-protected site and then upload it to a site that has wide-open permissions.</span></span>
+<span data-ttu-id="e5342-115">このフェーズでは、何者かによってドキュメントがアクセス許可で保護されたサイトからダウンロードされて、制限が緩いサイトにアップロードされることがあり得るということをデモします。</span><span class="sxs-lookup"><span data-stu-id="e5342-115">In this phase, you demonstrate that someone can download a document from a permissions-protected site and then upload it to a site that has wide-open permissions.</span></span>
   
-<span data-ttu-id="53fea-116">最初に、エグゼクティブを表す 3 つの新しいユーザー アカウントを追加して、Office 365 E5 ライセンスを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="53fea-116">First, you add three new user accounts that represent executives and assign them Office 365 E5 licenses.</span></span>
+<span data-ttu-id="e5342-116">最初に、エグゼクティブを表す 3 つの新しいユーザー アカウントを追加して、Office 365 E5 ライセンスを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="e5342-116">First, you add three new user accounts that represent executives and assign them Office 365 E5 licenses.</span></span>
   
-<span data-ttu-id="53fea-117">「 [Office 365 powershell に接続](https://technet.microsoft.com/library/dn975125.aspx)する」の手順を使用して、powershell モジュールをインストールし (必要な場合)、新しい Office 365 サブスクリプションに接続します。</span><span class="sxs-lookup"><span data-stu-id="53fea-117">Use the instructions in [Connect to Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) to install the PowerShell modules (if needed) and connect to your new Office 365 subscription from:</span></span>
+<span data-ttu-id="e5342-117">「 [Office 365 powershell に接続](https://technet.microsoft.com/library/dn975125.aspx)する」の手順を使用して、powershell モジュールをインストールし (必要な場合)、新しい Office 365 サブスクリプションに接続します。</span><span class="sxs-lookup"><span data-stu-id="e5342-117">Use the instructions in [Connect to Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) to install the PowerShell modules (if needed) and connect to your new Office 365 subscription from:</span></span>
   
-- <span data-ttu-id="53fea-118">自分のコンピューター (軽量の Office 365 開発/テスト環境の場合)。</span><span class="sxs-lookup"><span data-stu-id="53fea-118">Your computer (for the lightweight Office 365 dev/test environment).</span></span>
+- <span data-ttu-id="e5342-118">自分のコンピューター (軽量の Office 365 開発/テスト環境の場合)。</span><span class="sxs-lookup"><span data-stu-id="e5342-118">Your computer (for the lightweight Office 365 dev/test environment).</span></span>
     
-- <span data-ttu-id="53fea-119">CLIENT1 仮想マシン (シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合)。</span><span class="sxs-lookup"><span data-stu-id="53fea-119">The CLIENT1 virtual machine (for the simulated enterprise Office 365 dev/test environment).</span></span>
+- <span data-ttu-id="e5342-119">CLIENT1 仮想マシン (シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合)。</span><span class="sxs-lookup"><span data-stu-id="e5342-119">The CLIENT1 virtual machine (for the simulated enterprise Office 365 dev/test environment).</span></span>
     
-<span data-ttu-id="53fea-120">**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365 全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) と Office 365 試用版のサブスクリプションのパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-120">In the **Windows PowerShell Credential Request** dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password of your Office 365 trial subscription.</span></span>
+<span data-ttu-id="e5342-120">**[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、Office 365 全体管理者名 (例: jdoe@contosotoycompany.onmicrosoft.com) と Office 365 試用版のサブスクリプションのパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-120">In the **Windows PowerShell Credential Request** dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password of your Office 365 trial subscription.</span></span>
   
-<span data-ttu-id="53fea-121">組織名 (例: contosotoycompany) と、所属地域に該当する 2 文字の国別コードを入力して、Windows PowerShell 用 Windows Azure Active Directory Module のプロンプトから次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="53fea-121">Fill in your organization name (example: contosotoycompany) and the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
+<span data-ttu-id="e5342-121">組織名 (例: contosotoycompany) と、所属地域に該当する 2 文字の国別コードを入力して、Windows PowerShell 用 Windows Azure Active Directory Module のプロンプトから次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="e5342-121">Fill in your organization name (example: contosotoycompany) and the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $orgName="<organization name>"
@@ -68,9 +68,9 @@ New-MsolUser -DisplayName "CEO" -FirstName "Chief" -LastName "Executive Officer"
 
 ```
 
-<span data-ttu-id="53fea-122">**New-MsolUser** コマンドの表示から、CEO アカウント用に生成されたパスワードを見つけて、安全な場所に記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="53fea-122">From the display of the **New-MsolUser** command, note the generated password for the CEO account and record it in a safe location.</span></span>
+<span data-ttu-id="e5342-122">**New-MsolUser** コマンドの表示から、CEO アカウント用に生成されたパスワードを見つけて、安全な場所に記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="e5342-122">From the display of the **New-MsolUser** command, note the generated password for the CEO account and record it in a safe location.</span></span>
   
-<span data-ttu-id="53fea-123">次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。</span><span class="sxs-lookup"><span data-stu-id="53fea-123">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
+<span data-ttu-id="e5342-123">次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。</span><span class="sxs-lookup"><span data-stu-id="e5342-123">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $userName= "cfo@" + $orgName + ".onmicrosoft.com"
@@ -78,9 +78,9 @@ New-MsolUser -DisplayName "CFO" -FirstName "Chief" -LastName "Financial Officer"
 
 ```
 
-<span data-ttu-id="53fea-124">**New-MsolUser** コマンドの表示から、CFO アカウント用に生成されたパスワードを見つけて、安全な場所に記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="53fea-124">From the display of the **New-MsolUser** command, note the generated password for the CFO account and record it in a safe location.</span></span>
+<span data-ttu-id="e5342-124">**New-MsolUser** コマンドの表示から、CFO アカウント用に生成されたパスワードを見つけて、安全な場所に記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="e5342-124">From the display of the **New-MsolUser** command, note the generated password for the CFO account and record it in a safe location.</span></span>
   
-<span data-ttu-id="53fea-125">次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。</span><span class="sxs-lookup"><span data-stu-id="53fea-125">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
+<span data-ttu-id="e5342-125">次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。</span><span class="sxs-lookup"><span data-stu-id="e5342-125">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $userName= "coo@" + $orgName + ".onmicrosoft.com"
@@ -88,256 +88,256 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
 
 ```
 
-<span data-ttu-id="53fea-126">**New-MsolUser** コマンドの表示から、COO アカウント用に生成されたパスワードを見つけて、安全な場所に記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="53fea-126">From the display of the **New-MsolUser** command, note the generated password for the COO account and record it in a safe location.</span></span>
+<span data-ttu-id="e5342-126">**New-MsolUser** コマンドの表示から、COO アカウント用に生成されたパスワードを見つけて、安全な場所に記録しておきます。</span><span class="sxs-lookup"><span data-stu-id="e5342-126">From the display of the **New-MsolUser** command, note the generated password for the COO account and record it in a safe location.</span></span>
   
-<span data-ttu-id="53fea-127">次に、プライベート エグゼクティブ グループを作成し、そこに新しいエグゼクティブ アカウントを追加します。</span><span class="sxs-lookup"><span data-stu-id="53fea-127">Next, you create a private Executives group and add the new executive accounts to it.</span></span>
+<span data-ttu-id="e5342-127">次に、プライベート エグゼクティブ グループを作成し、そこに新しいエグゼクティブ アカウントを追加します。</span><span class="sxs-lookup"><span data-stu-id="e5342-127">Next, you create a private Executives group and add the new executive accounts to it.</span></span>
   
-1. <span data-ttu-id="53fea-128">ブラウザーで、Office ポータルに移動[http://admin.microsoft.com](http://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="53fea-128">In your browser, go to the Office portal at [http://admin.microsoft.com](http://admin.microsoft.com) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+1. <span data-ttu-id="e5342-128">ブラウザーで、Office ポータルに移動[https://admin.microsoft.com](https://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。</span><span class="sxs-lookup"><span data-stu-id="e5342-128">In your browser, go to the Office portal at [https://admin.microsoft.com](https://admin.microsoft.com) and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
-  - <span data-ttu-id="53fea-129">簡易版の Office 365 開発/テスト環境を使用している場合は、Internet Explorer か任意のブラウザーのプライベート セッションを開いて、ローカル コンピューターからサインインします。</span><span class="sxs-lookup"><span data-stu-id="53fea-129">If you are using the lightweight Office 365 dev/test environment, open a private session of Internet Explorer or your browser and sign in from your local computer.</span></span>
+  - <span data-ttu-id="e5342-129">簡易版の Office 365 開発/テスト環境を使用している場合は、Internet Explorer か任意のブラウザーのプライベート セッションを開いて、ローカル コンピューターからサインインします。</span><span class="sxs-lookup"><span data-stu-id="e5342-129">If you are using the lightweight Office 365 dev/test environment, open a private session of Internet Explorer or your browser and sign in from your local computer.</span></span>
     
-  - <span data-ttu-id="53fea-130">シミュレーション エンタープライズの Office 365 開発/テスト環境を使用している場合は、Azure ポータルを使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。</span><span class="sxs-lookup"><span data-stu-id="53fea-130">If you are using the simulated enterprise Office 365 dev/test environment, use the Azure portal to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
+  - <span data-ttu-id="e5342-130">シミュレーション エンタープライズの Office 365 開発/テスト環境を使用している場合は、Azure ポータルを使用して CLIENT1 仮想マシンに接続し、CLIENT1 からサインインします。</span><span class="sxs-lookup"><span data-stu-id="e5342-130">If you are using the simulated enterprise Office 365 dev/test environment, use the Azure portal to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
     
-2. <span data-ttu-id="53fea-131">**[Microsoft Office Home]** タブで、**[管理]、[グループ]、[グループ]** の順にクリックして、**[グループを追加する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-131">On the **Microsoft Office Home** tab, click **Admin > Groups > Groups**, and then click **Add a group**.</span></span>
+2. <span data-ttu-id="e5342-131">**[Microsoft Office Home]** タブで、**[管理]、[グループ]、[グループ]** の順にクリックして、**[グループを追加する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-131">On the **Microsoft Office Home** tab, click **Admin > Groups > Groups**, and then click **Add a group**.</span></span>
     
-3. <span data-ttu-id="53fea-132">**[グループを追加]** で、グループの種類は **[Office 365 グループ]** を選びます。**[名前]** と **[グループ ID]** に「**エグゼクティブ**」と入力します。**[プライバシー]** は **[プライベート]** を選び、**[所有者の選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-132">In **Add a group**, select **Office 365 group** for the group type, type **Executives** in **Name** and **Group Id**, select **Private** for **Privacy**, and then click **Select Owner**.</span></span>
+3. <span data-ttu-id="e5342-132">**[グループを追加]** で、グループの種類は **[Office 365 グループ]** を選びます。**[名前]** と **[グループ ID]** に「**エグゼクティブ**」と入力します。**[プライバシー]** は **[プライベート]** を選び、**[所有者の選択]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-132">In **Add a group**, select **Office 365 group** for the group type, type **Executives** in **Name** and **Group Id**, select **Private** for **Privacy**, and then click **Select Owner**.</span></span>
     
-4. <span data-ttu-id="53fea-133">リストで、全体管理者のアカウント名をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-133">In the list, click your global administrator account name.</span></span>
+4. <span data-ttu-id="e5342-133">リストで、全体管理者のアカウント名をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-133">In the list, click your global administrator account name.</span></span>
     
-5. <span data-ttu-id="53fea-134">**[追加]** をクリックして、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-134">Click **Add**, and then click **Close**.</span></span>
+5. <span data-ttu-id="e5342-134">**[追加]** をクリックして、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-134">Click **Add**, and then click **Close**.</span></span>
     
-6. <span data-ttu-id="53fea-135">グループ リストで、**[エグゼクティブ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-135">In the groups list, click **Executives**.</span></span>
+6. <span data-ttu-id="e5342-135">グループ リストで、**[エグゼクティブ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-135">In the groups list, click **Executives**.</span></span>
     
-7. <span data-ttu-id="53fea-136">**[メンバー用に編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-136">Click **Edit for Members**.</span></span>
+7. <span data-ttu-id="e5342-136">**[メンバー用に編集]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-136">Click **Edit for Members**.</span></span>
     
-8. <span data-ttu-id="53fea-p103">**[メンバーの追加]** をクリックします。メンバー リストで、次のユーザー アカウントを選びます。</span><span class="sxs-lookup"><span data-stu-id="53fea-p103">Click **Add members**. In the member list, select the following user accounts:</span></span>
+8. <span data-ttu-id="e5342-p103">**[メンバーの追加]** をクリックします。メンバー リストで、次のユーザー アカウントを選びます。</span><span class="sxs-lookup"><span data-stu-id="e5342-p103">Click **Add members**. In the member list, select the following user accounts:</span></span>
     
-  - <span data-ttu-id="53fea-139">最高経営責任者</span><span class="sxs-lookup"><span data-stu-id="53fea-139">Chief Executive Officer</span></span>
+  - <span data-ttu-id="e5342-139">最高経営責任者</span><span class="sxs-lookup"><span data-stu-id="e5342-139">Chief Executive Officer</span></span>
     
-  - <span data-ttu-id="53fea-140">最高財務責任者</span><span class="sxs-lookup"><span data-stu-id="53fea-140">Chief Financial Officer</span></span>
+  - <span data-ttu-id="e5342-140">最高財務責任者</span><span class="sxs-lookup"><span data-stu-id="e5342-140">Chief Financial Officer</span></span>
     
-  - <span data-ttu-id="53fea-141">最高執行責任者</span><span class="sxs-lookup"><span data-stu-id="53fea-141">Chief Operations Officer</span></span>
+  - <span data-ttu-id="e5342-141">最高執行責任者</span><span class="sxs-lookup"><span data-stu-id="e5342-141">Chief Operations Officer</span></span>
     
-9. <span data-ttu-id="53fea-142">**[保存]** をクリックし、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-142">Click **Save**, and then click **Close**.</span></span>
+9. <span data-ttu-id="e5342-142">**[保存]** をクリックし、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-142">Click **Save**, and then click **Close**.</span></span>
     
-10. <span data-ttu-id="53fea-143">**[Office 管理センター]** タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-143">Close the **Office Admin center** tab.</span></span>
+10. <span data-ttu-id="e5342-143">**[Office 管理センター]** タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-143">Close the **Office Admin center** tab.</span></span>
     
-<span data-ttu-id="53fea-144">次に、エグゼクティブ サイト コレクションを作成し、エグゼクティブ グループのメンバーのみにこのコレクションへのアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="53fea-144">Next, you create an Executives site collection and allow just the members of the Executives group to access it.</span></span>
+<span data-ttu-id="e5342-144">次に、エグゼクティブ サイト コレクションを作成し、エグゼクティブ グループのメンバーのみにこのコレクションへのアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="e5342-144">Next, you create an Executives site collection and allow just the members of the Executives group to access it.</span></span>
   
-1. <span data-ttu-id="53fea-145">**[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-145">On the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
+1. <span data-ttu-id="e5342-145">**[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-145">On the **Microsoft Office Home** tab, click the **Admin** tile.</span></span>
     
-2. <span data-ttu-id="53fea-146">[ **Office 管理センター** ] タブで、[**管理センター > SharePoint**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-146">On the **Office Admin center** tab, click **Admin centers > SharePoint**.</span></span>
+2. <span data-ttu-id="e5342-146">[ **Office 管理センター** ] タブで、[**管理センター > SharePoint**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-146">On the **Office Admin center** tab, click **Admin centers > SharePoint**.</span></span>
     
-3. <span data-ttu-id="53fea-147">[ **SharePoint 管理センター** ] タブで、[**新しい > [プライベートサイトコレクション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-147">On the **SharePoint admin center** tab, click **New > Private site collection**.</span></span>
+3. <span data-ttu-id="e5342-147">[ **SharePoint 管理センター** ] タブで、[**新しい > [プライベートサイトコレクション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-147">On the **SharePoint admin center** tab, click **New > Private site collection**.</span></span>
     
-4. <span data-ttu-id="53fea-148">[サイトコレクションの新規作成] ウィンドウ\*\*\*\* の [ \*\*\*\* URL] ボックスに「役職」と入力し、**管理者**のグローバル管理者アカウントの名前を指定して、[ **OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-148">In the new site collection pane, type **Executives** in **Title**, executives in the URL box, specify the name of your global administrator account in **Administrator**, and then click **OK**.</span></span>
+4. <span data-ttu-id="e5342-148">[サイト**コレクションの新規**作成] ウィンドウの [URL] ボックスに「**役職」と入力し**、**管理者**のグローバル管理者アカウントの名前を指定して、[ **OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-148">In the new site collection pane, type **Executives** in **Title**, executives in the URL box, specify the name of your global administrator account in **Administrator**, and then click **OK**.</span></span>
     
-5. <span data-ttu-id="53fea-149">新しいサイトコレクションが作成されるまで待機します。</span><span class="sxs-lookup"><span data-stu-id="53fea-149">Wait until the new site collection has been created.</span></span> <span data-ttu-id="53fea-150">完了したら、新しい重役サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="53fea-150">When complete, copy the URL of the new Executives site collection and paste it into a new tab of your browser.</span></span>
+5. <span data-ttu-id="e5342-149">新しいサイトコレクションが作成されるまで待機します。</span><span class="sxs-lookup"><span data-stu-id="e5342-149">Wait until the new site collection has been created.</span></span> <span data-ttu-id="e5342-150">完了したら、新しい重役サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="e5342-150">When complete, copy the URL of the new Executives site collection and paste it into a new tab of your browser.</span></span>
     
-6. <span data-ttu-id="53fea-151">**エグゼクティブ** サイト コレクションの右上部分にある [設定] アイコンをクリックし、**[共有アイテム]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-151">In the upper right of the **Executives** site collection, click the settings icon, and then click **Shared with**.</span></span>
+6. <span data-ttu-id="e5342-151">**エグゼクティブ** サイト コレクションの右上部分にある [設定] アイコンをクリックし、**[共有アイテム]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-151">In the upper right of the **Executives** site collection, click the settings icon, and then click **Shared with**.</span></span>
     
-7. <span data-ttu-id="53fea-152">[**共有 ' エグゼクティブ '**] で、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-152">In **Share 'Executives'**, click **Advanced**.</span></span>
+7. <span data-ttu-id="e5342-152">[**共有 ' エグゼクティブ '**] で、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-152">In **Share 'Executives'**, click **Advanced**.</span></span>
     
-8. <span data-ttu-id="53fea-153">SharePoint グループの一覧で、**[エグゼクティブ メンバー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-153">In the list of SharePoint groups, click **Executives Members**.</span></span>
+8. <span data-ttu-id="e5342-153">SharePoint グループの一覧で、**[エグゼクティブ メンバー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-153">In the list of SharePoint groups, click **Executives Members**.</span></span>
     
-9. <span data-ttu-id="53fea-154">**[ユーザーとグループ]** ページで、**[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-154">On the **People and Groups** page, click **New**.</span></span>
+9. <span data-ttu-id="e5342-154">**[ユーザーとグループ]** ページで、 **[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-154">On the **People and Groups** page, click **New**.</span></span>
     
-10. <span data-ttu-id="53fea-155">[**共有 ' エグゼクティブ '**] で、「**エグゼクティブ**」と入力し、[**重役**] グループをクリックして、[**共有**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-155">In **Share 'Executives'**, type **Executives**, click the **Executives** group, and then click **Share**.</span></span>
+10. <span data-ttu-id="e5342-155">[**共有 ' エグゼクティブ '**] で、「**エグゼクティブ**」と入力し、[**重役**] グループをクリックして、[**共有**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-155">In **Share 'Executives'**, type **Executives**, click the **Executives** group, and then click **Share**.</span></span>
     
-11. <span data-ttu-id="53fea-156">[**ユーザーとグループ**] タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-156">Close the **People and groups** tab.</span></span>
+11. <span data-ttu-id="e5342-156">[**ユーザーとグループ**] タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-156">Close the **People and groups** tab.</span></span>
     
-<span data-ttu-id="53fea-157">次に、販売サイト コレクションへのアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="53fea-157">Next, you allow everyone to access the Sales site collection.</span></span>
+<span data-ttu-id="e5342-157">次に、販売サイト コレクションへのアクセスを許可します。</span><span class="sxs-lookup"><span data-stu-id="e5342-157">Next, you allow everyone to access the Sales site collection.</span></span>
   
-1. <span data-ttu-id="53fea-158">[ **SharePoint 管理センター** ] タブから、Sales サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="53fea-158">From the **SharePoint admin center** tab, copy the URL of the Sales site collection and paste it into a new tab of your browser..</span></span>
+1. <span data-ttu-id="e5342-158">[ **SharePoint 管理センター** ] タブから、Sales サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="e5342-158">From the **SharePoint admin center** tab, copy the URL of the Sales site collection and paste it into a new tab of your browser..</span></span>
     
-2. <span data-ttu-id="53fea-159">右上部分で [設定] アイコンをクリックし、**[共有アイテム]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-159">In the upper right, click the settings icon, and then click **Shared with**.</span></span>
+2. <span data-ttu-id="e5342-159">右上部分で [設定] アイコンをクリックし、**[共有アイテム]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-159">In the upper right, click the settings icon, and then click **Shared with**.</span></span>
     
-3. <span data-ttu-id="53fea-160">[**共有 ' 販売サイトコレクション '**] で、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-160">In **Share 'Sales site collection'**, click **Advanced**.</span></span>
+3. <span data-ttu-id="e5342-160">[**共有 ' 販売サイトコレクション '**] で、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-160">In **Share 'Sales site collection'**, click **Advanced**.</span></span>
     
-4. <span data-ttu-id="53fea-161">SharePoint グループの一覧で、**[販売サイト コレクション メンバー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-161">In the list of SharePoint groups, click **Sales site collection Members**.</span></span>
+4. <span data-ttu-id="e5342-161">SharePoint グループの一覧で、**[販売サイト コレクション メンバー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-161">In the list of SharePoint groups, click **Sales site collection Members**.</span></span>
     
-5. <span data-ttu-id="53fea-162">**[ユーザーとグループ]** ページで、**[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-162">On the **People and Groups** page, click **New**.</span></span>
+5. <span data-ttu-id="e5342-162">**[ユーザーとグループ]** ページで、**[新規]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-162">On the **People and Groups** page, click **New**.</span></span>
     
-6. <span data-ttu-id="53fea-163">[**共有 ' 販売サイトコレクション '**] に「 **everyone**」と入力し、[**外部ユーザー以外のすべてのユーザー**] をクリックして、[**共有**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-163">In **Share 'Sales site collection'**, type **Everyone**, click **Everyone except external users**, and then click **Share**.</span></span>
+6. <span data-ttu-id="e5342-163">[**共有 ' 販売サイトコレクション '**] に「 **everyone**」と入力し、[**外部ユーザー以外のすべてのユーザー**] をクリックして、[**共有**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-163">In **Share 'Sales site collection'**, type **Everyone**, click **Everyone except external users**, and then click **Share**.</span></span>
     
-7. <span data-ttu-id="53fea-164">**[販売サイト コレクション]** と **[SharePoint]** のタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-164">Close the **Sales site collection** and **SharePoint** tabs.</span></span>
+7. <span data-ttu-id="e5342-164">**[販売サイト コレクション]** と **[SharePoint]** のタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-164">Close the **Sales site collection** and **SharePoint** tabs.</span></span>
     
-<span data-ttu-id="53fea-165">次に、エグゼクティブ アカウントでサインインし、エグゼクティブ サイト コレクションでドキュメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="53fea-165">Next, you sign in with an executive account and create a document in the Executives site collection.</span></span>
+<span data-ttu-id="e5342-165">次に、エグゼクティブ アカウントでサインインし、エグゼクティブ サイト コレクションでドキュメントを作成します。</span><span class="sxs-lookup"><span data-stu-id="e5342-165">Next, you sign in with an executive account and create a document in the Executives site collection.</span></span>
   
-1. <span data-ttu-id="53fea-166">**[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-166">On the **Microsoft Office Home** tab, click the user icon in the upper-right, and then click **Sign out**.</span></span>
+1. <span data-ttu-id="e5342-166">**[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-166">On the **Microsoft Office Home** tab, click the user icon in the upper-right, and then click **Sign out**.</span></span>
     
-2. <span data-ttu-id="53fea-167">[http://admin.microsoft.com](http://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="53fea-167">Go to [http://admin.microsoft.com](http://admin.microsoft.com).</span></span>
+2. <span data-ttu-id="e5342-167">[https://admin.microsoft.com](https://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="e5342-167">Go to [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
     
-3. <span data-ttu-id="53fea-168">**Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-168">On the **Office 365 sign in** page, click **Use another account**.</span></span>
+3. <span data-ttu-id="e5342-168">**Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-168">On the **Office 365 sign in** page, click **Use another account**.</span></span>
     
-4. <span data-ttu-id="53fea-169">**CEO** アカウント名とパスワードを入力し、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-169">Type the **CEO** account name and its password, and then click **Sign in**.</span></span>
+4. <span data-ttu-id="e5342-169">**CEO** アカウント名とパスワードを入力し、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-169">Type the **CEO** account name and its password, and then click **Sign in**.</span></span>
     
-5. <span data-ttu-id="53fea-170">ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します ( **https://**\<organization name>**sharepoint.com/sites/executives**)。</span><span class="sxs-lookup"><span data-stu-id="53fea-170">On a new tab of your browser, type the URL to the Executives site collection ( **https://**\<organization name>**.sharepoint.com/sites/executives**).</span></span>
+5. <span data-ttu-id="e5342-170">ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します ( **https://**\<organization name>**sharepoint.com/sites/executives**)。</span><span class="sxs-lookup"><span data-stu-id="e5342-170">On a new tab of your browser, type the URL to the Executives site collection ( **https://**\<organization name>**.sharepoint.com/sites/executives**).</span></span>
     
-6. <span data-ttu-id="53fea-171">[**ドキュメント**]、[**新規作成**]、[ **Word 文書**] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-171">Click **Documents**, click **New,** and then click **Word Document**.</span></span>
+6. <span data-ttu-id="e5342-171">[**ドキュメント**]、[**新規作成**]、[ **Word 文書**] の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-171">Click **Documents**, click **New,** and then click **Word Document**.</span></span>
     
-7. <span data-ttu-id="53fea-172">タイトル バーをクリックして、「**SensitiveData BeforeIRM**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-172">Click in the title bar and type **SensitiveData-BeforeIRM**.</span></span>
+7. <span data-ttu-id="e5342-172">タイトル バーをクリックして、「**SensitiveData BeforeIRM**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-172">Click in the title bar and type **SensitiveData-BeforeIRM**.</span></span>
     
-8. <span data-ttu-id="53fea-173">ドキュメント本文をクリックして、「**取締役会の最新の会議メモ**」と入力し、**[エグゼクティブ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-173">Click in the document body and type **Minutes from the latest board meeting**, and then click **Executives**.</span></span>
+8. <span data-ttu-id="e5342-173">ドキュメント本文をクリックして、「**取締役会の最新の会議メモ**」と入力し、**[エグゼクティブ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-173">Click in the document body and type **Minutes from the latest board meeting**, and then click **Executives**.</span></span>
     
-     <span data-ttu-id="53fea-174">**[ドキュメント]** フォルダーに、**SensitiveData BeforeIRM.docx** が表示されます。</span><span class="sxs-lookup"><span data-stu-id="53fea-174">You should see **SensitiveData-BeforeIRM.docx** in the **Documents** folder.</span></span>
+     <span data-ttu-id="e5342-174">**[ドキュメント]** フォルダーに、**SensitiveData BeforeIRM.docx** が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e5342-174">You should see **SensitiveData-BeforeIRM.docx** in the **Documents** folder.</span></span>
     
-<span data-ttu-id="53fea-175">次に、SensitiveData BeforeIRM.docx ドキュメントのローカル コピーをダウンロードして、販売サイト コレクションに誤って投稿します。</span><span class="sxs-lookup"><span data-stu-id="53fea-175">Next, you download a local copy of the SensitiveData-BeforeIRM.docx document and then accidentally post it to the Sales site collection.</span></span>
+<span data-ttu-id="e5342-175">次に、SensitiveData BeforeIRM.docx ドキュメントのローカル コピーをダウンロードして、販売サイト コレクションに誤って投稿します。</span><span class="sxs-lookup"><span data-stu-id="e5342-175">Next, you download a local copy of the SensitiveData-BeforeIRM.docx document and then accidentally post it to the Sales site collection.</span></span>
   
-1. <span data-ttu-id="53fea-176">ローカルコンピューターで、新しいフォルダーを作成します (たとえば、C:\\tlgs\\SensitiveDataTestFiles)。</span><span class="sxs-lookup"><span data-stu-id="53fea-176">On your local computer, create a new folder (for example, C:\\TLGs\\SensitiveDataTestFiles).</span></span>
+1. <span data-ttu-id="e5342-176">ローカルコンピューターで、新しいフォルダーを作成します (たとえば、C:\\tlgs\\SensitiveDataTestFiles)。</span><span class="sxs-lookup"><span data-stu-id="e5342-176">On your local computer, create a new folder (for example, C:\\TLGs\\SensitiveDataTestFiles).</span></span>
     
-2. <span data-ttu-id="53fea-177">ブラウザーの **[ドキュメント]** タブで、**SensitiveData BeforeIRM.docx** ドキュメントを選び、省略記号をクリックして、**[ダウンロード]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-177">On the **Documents** tab of your browser, select the **SensitiveData-BeforeIRM.docx** document, click the ellipses, and then click **Download**.</span></span>
+2. <span data-ttu-id="e5342-177">ブラウザーの **[ドキュメント]** タブで、**SensitiveData BeforeIRM.docx** ドキュメントを選び、省略記号をクリックして、**[ダウンロード]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-177">On the **Documents** tab of your browser, select the **SensitiveData-BeforeIRM.docx** document, click the ellipses, and then click **Download**.</span></span>
     
-3. <span data-ttu-id="53fea-178">**SensitiveData BeforeIRM.docx** ドキュメントをステップ 1 で作成したフォルダーに格納します。</span><span class="sxs-lookup"><span data-stu-id="53fea-178">Store the **SensitiveData-BeforeIRM.docx** document in the folder created in step 1.</span></span>
+3. <span data-ttu-id="e5342-178">**SensitiveData BeforeIRM.docx** ドキュメントをステップ 1 で作成したフォルダーに格納します。</span><span class="sxs-lookup"><span data-stu-id="e5342-178">Store the **SensitiveData-BeforeIRM.docx** document in the folder created in step 1.</span></span>
     
-4. <span data-ttu-id="53fea-179">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します ( **https://**\<organization name>**sharepoint.com/sites/sales**)。</span><span class="sxs-lookup"><span data-stu-id="53fea-179">On a new tab of your browser, type the URL to the Sales site collection ( **https://**\<organization name>**.sharepoint.com/sites/sales**).</span></span>
+4. <span data-ttu-id="e5342-179">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します ( **https://**\<organization name>**sharepoint.com/sites/sales**)。</span><span class="sxs-lookup"><span data-stu-id="e5342-179">On a new tab of your browser, type the URL to the Sales site collection ( **https://**\<organization name>**.sharepoint.com/sites/sales**).</span></span>
     
-5. <span data-ttu-id="53fea-180">**販売サイト コレクション** の **[ドキュメント]** フォルダーをクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-180">Click the **Documents** folder of the **Sales site collection**.</span></span>
+5. <span data-ttu-id="e5342-180">**販売サイト コレクション** の **[ドキュメント]** フォルダーをクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-180">Click the **Documents** folder of the **Sales site collection**.</span></span>
     
-6. <span data-ttu-id="53fea-181">**[アップロード]** をクリックし、ステップ 1 で作成したフォルダーの **SensitiveData BeforeIRM.docx** ドキュメントを指定して、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-181">Click **Upload**, and then specify **SensitiveData-BeforeIRM.docx** document in the folder created in step 1, and then click **OK**.</span></span>
+6. <span data-ttu-id="e5342-181">**[アップロード]** をクリックし、ステップ 1 で作成したフォルダーの **SensitiveData BeforeIRM.docx** ドキュメントを指定して、**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-181">Click **Upload**, and then specify **SensitiveData-BeforeIRM.docx** document in the folder created in step 1, and then click **OK**.</span></span>
     
-7. <span data-ttu-id="53fea-182">**[ドキュメント]** フォルダーに、**SensitiveData BeforeIRM.docx** ドキュメントが表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="53fea-182">Verify that the **SensitiveData-BeforeIRM.docx** document is in the **Documents** folder.</span></span>
+7. <span data-ttu-id="e5342-182">**[ドキュメント]** フォルダーに、**SensitiveData BeforeIRM.docx** ドキュメントが表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e5342-182">Verify that the **SensitiveData-BeforeIRM.docx** document is in the **Documents** folder.</span></span>
     
-8. <span data-ttu-id="53fea-183">**[販売]** と **[SharePoint]** のタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-183">Close the **Sales** and **SharePoint** tabs.</span></span>
+8. <span data-ttu-id="e5342-183">**[販売]** と **[SharePoint]** のタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-183">Close the **Sales** and **SharePoint** tabs.</span></span>
     
-<span data-ttu-id="53fea-184">次に、User5 としてサインインして、販売サイト コレクションのドキュメント noSensitiveData-BeforeIRM.docx を開いてみます。</span><span class="sxs-lookup"><span data-stu-id="53fea-184">Next, you sign in as User5 and try to open the SensitiveData-BeforeIRM.docx document in the Sales site collection.</span></span>
+<span data-ttu-id="e5342-184">次に、User5 としてサインインして、販売サイト コレクションのドキュメント noSensitiveData-BeforeIRM.docx を開いてみます。</span><span class="sxs-lookup"><span data-stu-id="e5342-184">Next, you sign in as User5 and try to open the SensitiveData-BeforeIRM.docx document in the Sales site collection.</span></span>
   
-1. <span data-ttu-id="53fea-185">**[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-185">On the **Microsoft Office Home** tab, click the user icon in the upper-right, and then click **Sign out**.</span></span>
+1. <span data-ttu-id="e5342-185">**[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-185">On the **Microsoft Office Home** tab, click the user icon in the upper-right, and then click **Sign out**.</span></span>
     
-2. <span data-ttu-id="53fea-186">[http://admin.microsoft.com](http://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="53fea-186">Go to [http://admin.microsoft.com](http://admin.microsoft.com).</span></span>
+2. <span data-ttu-id="e5342-186">[https://admin.microsoft.com](https://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="e5342-186">Go to [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
     
-3. <span data-ttu-id="53fea-187">**Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-187">On the **Office 365 sign in** page, click **Use another account**.</span></span>
+3. <span data-ttu-id="e5342-187">**Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-187">On the **Office 365 sign in** page, click **Use another account**.</span></span>
     
-4. <span data-ttu-id="53fea-188">User5 アカウント名とパスワードを入力して、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-188">Type the User5 account name and its password, and then click **Sign in**.</span></span>
+4. <span data-ttu-id="e5342-188">User5 アカウント名とパスワードを入力して、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-188">Type the User5 account name and its password, and then click **Sign in**.</span></span>
     
-5. <span data-ttu-id="53fea-189">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-189">On a new tab of your browser, type the URL to the Sales site collection.</span></span>
+5. <span data-ttu-id="e5342-189">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-189">On a new tab of your browser, type the URL to the Sales site collection.</span></span>
     
-6. <span data-ttu-id="53fea-190">**販売サイト コレクション**の **[ドキュメント]** フォルダーで、**SensitiveData-BeforeIRM.docx** ドキュメントをクリックします。 </span><span class="sxs-lookup"><span data-stu-id="53fea-190">In the **Documents** folder of the **Sales site collection**, click the **SensitiveData-BeforeIRM.docx** document.</span></span>
+6. <span data-ttu-id="e5342-190">**販売サイト コレクション**の **[ドキュメント]** フォルダーで、**SensitiveData-BeforeIRM.docx** ドキュメントをクリックします。 </span><span class="sxs-lookup"><span data-stu-id="e5342-190">In the **Documents** folder of the **Sales site collection**, click the **SensitiveData-BeforeIRM.docx** document.</span></span>
     
-    <span data-ttu-id="53fea-191">内容が表示されます。</span><span class="sxs-lookup"><span data-stu-id="53fea-191">You should see its contents.</span></span>
+    <span data-ttu-id="e5342-191">内容が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e5342-191">You should see its contents.</span></span>
     
-7. <span data-ttu-id="53fea-192">**[ドキュメント]** と **[販売サイト コレクション]** タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-192">Close the **Documents** and **Sales site collection** tabs.</span></span>
+7. <span data-ttu-id="e5342-192">**[ドキュメント]** と **[販売サイト コレクション]** タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-192">Close the **Documents** and **Sales site collection** tabs.</span></span>
     
-<span data-ttu-id="53fea-193">SensitiveData-BeforeIRM.docx ドキュメントを販売サイト コレクションに誤って投稿することにより、CEO はエグゼクティブ サイト コレクションのアクセス許可セキュリティをバイパスします。</span><span class="sxs-lookup"><span data-stu-id="53fea-193">By accidentally posting the SensitiveData-BeforeIRM.docx document on the Sales site collection, the CEO bypassed the permissions security of the Executives site collection.</span></span>
+<span data-ttu-id="e5342-193">SensitiveData-BeforeIRM.docx ドキュメントを販売サイト コレクションに誤って投稿することにより、CEO はエグゼクティブ サイト コレクションのアクセス許可セキュリティをバイパスします。</span><span class="sxs-lookup"><span data-stu-id="e5342-193">By accidentally posting the SensitiveData-BeforeIRM.docx document on the Sales site collection, the CEO bypassed the permissions security of the Executives site collection.</span></span>
   
-<span data-ttu-id="53fea-194">Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint Online の IRM を有効にします。</span><span class="sxs-lookup"><span data-stu-id="53fea-194">To prepare Office 365 for Phases 3 and 4, enable IRM for SharePoint Online.</span></span>
+<span data-ttu-id="e5342-194">Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint Online の IRM を有効にします。</span><span class="sxs-lookup"><span data-stu-id="e5342-194">To prepare Office 365 for Phases 3 and 4, enable IRM for SharePoint Online.</span></span>
   
-1. <span data-ttu-id="53fea-195">**[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-195">On the **Microsoft Office Home** tab, click the user icon in the upper-right, and then click **Sign out**.</span></span>
+1. <span data-ttu-id="e5342-195">**[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-195">On the **Microsoft Office Home** tab, click the user icon in the upper-right, and then click **Sign out**.</span></span>
     
-2. <span data-ttu-id="53fea-196">[http://admin.microsoft.com](http://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="53fea-196">Go to [http://admin.microsoft.com](http://admin.microsoft.com).</span></span>
+2. <span data-ttu-id="e5342-196">[https://admin.microsoft.com](https://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="e5342-196">Go to [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
     
-3. <span data-ttu-id="53fea-197">**Office 365 のサインイン** ページで、全体管理者のアカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-197">On the **Office 365 sign in** page, click the global administrator account name, type its password, and then click **Sign in**.</span></span>
+3. <span data-ttu-id="e5342-197">**Office 365 のサインイン** ページで、全体管理者のアカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-197">On the **Office 365 sign in** page, click the global administrator account name, type its password, and then click **Sign in**.</span></span>
     
-4. <span data-ttu-id="53fea-198">**[Microsoft Office Home]** タブで、**[管理者]、[管理センター]、[SharePoint]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-198">On the **Microsoft Office Home** tab, click **Admin > Admin centers > SharePoint**.</span></span>
+4. <span data-ttu-id="e5342-198">**[Microsoft Office Home]** タブで、**[管理者]、[管理センター]、[SharePoint]** の順にクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-198">On the **Microsoft Office Home** tab, click **Admin > Admin centers > SharePoint**.</span></span>
     
-5. <span data-ttu-id="53fea-199">**[SharePoint 管理センター]** タブで、**[設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-199">On the **SharePoint admin center** tab, click **Settings**.</span></span>
+5. <span data-ttu-id="e5342-199">**[SharePoint 管理センター]** タブで、**[設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-199">On the **SharePoint admin center** tab, click **Settings**.</span></span>
     
-6. <span data-ttu-id="53fea-200">ページの [ **Information Rights Management (irm)** ] セクションで、[**構成で指定された Irm サービスを使用する**] を選択し、[ **irm 設定の更新**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="53fea-200">On the page, in the **Information Rights Management (IRM)** section, select **Use the IRM service specified in your configuration**, and then select **Refresh IRM Settings**.</span></span>
+6. <span data-ttu-id="e5342-200">ページの [ **Information Rights Management (irm)** ] セクションで、[**構成で指定された Irm サービスを使用する**] を選択し、[ **irm 設定の更新**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e5342-200">On the page, in the **Information Rights Management (IRM)** section, select **Use the IRM service specified in your configuration**, and then select **Refresh IRM Settings**.</span></span>
     
-7. <span data-ttu-id="53fea-201">**[SharePoint 管理センター]** タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-201">Close the **SharePoint admin center** tab.</span></span>
+7. <span data-ttu-id="e5342-201">**[SharePoint 管理センター]** タブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-201">Close the **SharePoint admin center** tab.</span></span>
     
-## <a name="phase-3-use-sharepoint-information-rights-management-with-an-office-365-private-group"></a><span data-ttu-id="53fea-202">フェーズ 3：SharePoint Information Rights Management を Office 365 のプライベート グループとともに使用する</span><span class="sxs-lookup"><span data-stu-id="53fea-202">Phase 3: Use SharePoint Information Rights Management with an Office 365 private group</span></span>
+## <a name="phase-3-use-sharepoint-information-rights-management-with-an-office-365-private-group"></a><span data-ttu-id="e5342-202">フェーズ 3：SharePoint Information Rights Management を Office 365 のプライベート グループとともに使用する</span><span class="sxs-lookup"><span data-stu-id="e5342-202">Phase 3: Use SharePoint Information Rights Management with an Office 365 private group</span></span>
 
-<span data-ttu-id="53fea-203">このフェーズでは、SharePoint Information Rights Management を Office 365 のプライベート グループとともに使用することにより、機密性の高いドキュメントが制限の緩いサイトに投稿された場合でも、そのドキュメントへのアクセスが保護されるようにします。</span><span class="sxs-lookup"><span data-stu-id="53fea-203">In this phase, you use SharePoint Information Rights Management with an Office 365 private group to protect access to a document with sensitive information, even when it is posted on a site with open permissions.</span></span>
+<span data-ttu-id="e5342-203">このフェーズでは、SharePoint Information Rights Management を Office 365 のプライベート グループとともに使用することにより、機密性の高いドキュメントが制限の緩いサイトに投稿された場合でも、そのドキュメントへのアクセスが保護されるようにします。</span><span class="sxs-lookup"><span data-stu-id="e5342-203">In this phase, you use SharePoint Information Rights Management with an Office 365 private group to protect access to a document with sensitive information, even when it is posted on a site with open permissions.</span></span>
   
-<span data-ttu-id="53fea-204">最初に、エグゼクティブ サイト コレクションのドキュメント ライブラリ用に IRM を有効にして設定します。 </span><span class="sxs-lookup"><span data-stu-id="53fea-204">First, you enable and configure IRM for the documents library of the Executives site collection.</span></span> 
+<span data-ttu-id="e5342-204">最初に、エグゼクティブ サイト コレクションのドキュメント ライブラリ用に IRM を有効にして設定します。 </span><span class="sxs-lookup"><span data-stu-id="e5342-204">First, you enable and configure IRM for the documents library of the Executives site collection.</span></span> 
   
-1. <span data-ttu-id="53fea-205">ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-205">On a new tab of your browser, type the URL to the Executives site collection.</span></span>
+1. <span data-ttu-id="e5342-205">ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-205">On a new tab of your browser, type the URL to the Executives site collection.</span></span>
     
-2. <span data-ttu-id="53fea-206">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-206">Click **Documents**.</span></span>
+2. <span data-ttu-id="e5342-206">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-206">Click **Documents**.</span></span>
     
-3. <span data-ttu-id="53fea-207">右上部分にある [設定] アイコンをクリックし、**[ライブラリ設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-207">In the upper-right, click the settings icon, and then click **Library settings**.</span></span>
+3. <span data-ttu-id="e5342-207">右上部分にある [設定] アイコンをクリックし、**[ライブラリ設定]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-207">In the upper-right, click the settings icon, and then click **Library settings**.</span></span>
     
-4. <span data-ttu-id="53fea-208">**[設定]** ページの **[権限と管理]** で、**[Information Rights Management]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-208">On the **Settings** page, under **Permissions and Management**, click **Information Rights Management**.</span></span>
+4. <span data-ttu-id="e5342-208">**[設定]** ページの **[権限と管理]** で、**[Information Rights Management]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-208">On the **Settings** page, under **Permissions and Management**, click **Information Rights Management**.</span></span>
     
-5. <span data-ttu-id="53fea-209">**[Information Rights Management 設定]** ページで、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="53fea-209">On the **Information Rights Management Settings** page:</span></span>
+5. <span data-ttu-id="e5342-209">**[Information Rights Management 設定]** ページで、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="e5342-209">On the **Information Rights Management Settings** page:</span></span>
     
-  - <span data-ttu-id="53fea-210">**[このライブラリのドキュメントへのアクセスをダウンロード時に制限する]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53fea-210">Select **Restrict permission to documents in this library on download**.</span></span>
+  - <span data-ttu-id="e5342-210">**[このライブラリのドキュメントへのアクセスをダウンロード時に制限する]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e5342-210">Select **Restrict permission to documents in this library on download**.</span></span>
     
-  - <span data-ttu-id="53fea-211">**[アクセス許可ポリシーのタイトルを作成]** に、「**サポート**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-211">For **Create a permission policy title**, type **Executives**.</span></span>
+  - <span data-ttu-id="e5342-211">**[アクセス許可ポリシーのタイトルを作成]** に、「**サポート**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-211">For **Create a permission policy title**, type **Executives**.</span></span>
     
-  - <span data-ttu-id="53fea-212">**[アクセス許可ポリシーの説明を追加]** に、「**エグゼクティブ用の IRM**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-212">For **Add a permission policy description**, type **IRM for executives**.</span></span>
+  - <span data-ttu-id="e5342-212">**[アクセス許可ポリシーの説明を追加]** に、「**エグゼクティブ用の IRM**」と入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-212">For **Add a permission policy description**, type **IRM for executives**.</span></span>
     
-6. <span data-ttu-id="53fea-213">[**オプションの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-213">Click **Show Options**.</span></span>
+6. <span data-ttu-id="e5342-213">[**オプションの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-213">Click **Show Options**.</span></span>
     
-7. <span data-ttu-id="53fea-214">**[IRM ライブラリの追加設定]** で、**[ユーザーに IRM をサポートしないドキュメントのアップロードを許可しない]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53fea-214">Under **Set additional IRM library settings**, select **Do not allow users to upload documents that do not support IRM**.</span></span>
+7. <span data-ttu-id="e5342-214">**[IRM ライブラリの追加設定]** で、**[ユーザーに IRM をサポートしないドキュメントのアップロードを許可しない]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e5342-214">Under **Set additional IRM library settings**, select **Do not allow users to upload documents that do not support IRM**.</span></span>
     
-8. <span data-ttu-id="53fea-215">**[ドキュメントのアクセス権の構成]** で、**[閲覧者に印刷を許可する]** と **[ダウンロードしたドキュメントのコピーに対する書き込みを閲覧者に許可する]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="53fea-215">Under **Configure document access rights**, select **Allow viewers to print** and **Allow viewers to write on a copy of the downloaded document**.</span></span>
+8. <span data-ttu-id="e5342-215">**[ドキュメントのアクセス権の構成]** で、**[閲覧者に印刷を許可する]** と **[ダウンロードしたドキュメントのコピーに対する書き込みを閲覧者に許可する]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e5342-215">Under **Configure document access rights**, select **Allow viewers to print** and **Allow viewers to write on a copy of the downloaded document**.</span></span>
     
-9. <span data-ttu-id="53fea-216">[**グループ保護と資格情報の設定間隔**] で、[グループ保護の許可] を選択し**ます。[既定のグループ**] をクリックし、「**役職**者」と入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-216">Under **Set group protection and credentials interval**, select **Allow group protection. Default group**, and then type **Executives**.</span></span>
+9. <span data-ttu-id="e5342-216">[**グループ保護と資格情報の設定間隔**] で、[グループ保護の許可] を選択し**ます。[既定のグループ**] をクリックし、「**役職**者」と入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-216">Under **Set group protection and credentials interval**, select **Allow group protection. Default group**, and then type **Executives**.</span></span>
     
-10. <span data-ttu-id="53fea-217">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-217">Click **OK**.</span></span>
+10. <span data-ttu-id="e5342-217">[**OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-217">Click **OK**.</span></span>
     
-<span data-ttu-id="53fea-218">次に、CEO として新しいドキュメントをエグゼクティブ ドキュメント フォルダーにアップロードし、それをダウンロードして、販売ドキュメント フォルダーに誤ってアップロードします。</span><span class="sxs-lookup"><span data-stu-id="53fea-218">Next, acting as the CEO, you upload a new document to the Executives document folder, download it, then accidentally upload it to the Sales document folder.</span></span>
+<span data-ttu-id="e5342-218">次に、CEO として新しいドキュメントをエグゼクティブ ドキュメント フォルダーにアップロードし、それをダウンロードして、販売ドキュメント フォルダーに誤ってアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e5342-218">Next, acting as the CEO, you upload a new document to the Executives document folder, download it, then accidentally upload it to the Sales document folder.</span></span>
   
-1. <span data-ttu-id="53fea-219">**SensitiveData BeforeIRM.docx** ドキュメントを格納したローカル フォルダーを開きます。</span><span class="sxs-lookup"><span data-stu-id="53fea-219">Open the local folder where you stored the **SensitiveData-BeforeIRM.docx** document.</span></span>
+1. <span data-ttu-id="e5342-219">**SensitiveData BeforeIRM.docx** ドキュメントを格納したローカル フォルダーを開きます。</span><span class="sxs-lookup"><span data-stu-id="e5342-219">Open the local folder where you stored the **SensitiveData-BeforeIRM.docx** document.</span></span>
     
-2. <span data-ttu-id="53fea-220">**SensitiveData-BeforeIRM.docx** を右クリックして、**[コピー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-220">Right-click **SensitiveData-BeforeIRM.docx**, and then click **Copy**.</span></span>
+2. <span data-ttu-id="e5342-220">**SensitiveData-BeforeIRM.docx** を右クリックして、**[コピー]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-220">Right-click **SensitiveData-BeforeIRM.docx**, and then click **Copy**.</span></span>
     
-3. <span data-ttu-id="53fea-221">フォルダー内を右クリックして、**[貼り付け]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-221">Right-click within the folder, and then click **Paste**.</span></span>
+3. <span data-ttu-id="e5342-221">フォルダー内を右クリックして、**[貼り付け]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-221">Right-click within the folder, and then click **Paste**.</span></span>
     
-4. <span data-ttu-id="53fea-222">新しい**SensitiveData-BeforeIRM-.docx**ファイルの名前を**sensitivedata-afterirm.docx**に変更します。</span><span class="sxs-lookup"><span data-stu-id="53fea-222">Rename the new **SensitiveData-BeforeIRM - Copy.docx** file to **SensitiveData-AfterIRM.docx**.</span></span>
+4. <span data-ttu-id="e5342-222">新しい**SensitiveData-BeforeIRM-.docx**ファイルの名前を**sensitivedata-afterirm.docx**に変更します。</span><span class="sxs-lookup"><span data-stu-id="e5342-222">Rename the new **SensitiveData-BeforeIRM - Copy.docx** file to **SensitiveData-AfterIRM.docx**.</span></span>
     
-5. <span data-ttu-id="53fea-223">ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-223">From the **Microsoft Office Home** tab in your browser, click the user icon in the upper-right, and then click **Sign out**.</span></span>
+5. <span data-ttu-id="e5342-223">ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-223">From the **Microsoft Office Home** tab in your browser, click the user icon in the upper-right, and then click **Sign out**.</span></span>
     
-6. <span data-ttu-id="53fea-224">[http://admin.microsoft.com](http://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="53fea-224">Go to [http://admin.microsoft.com](http://admin.microsoft.com).</span></span>
+6. <span data-ttu-id="e5342-224">[https://admin.microsoft.com](https://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="e5342-224">Go to [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
     
-7. <span data-ttu-id="53fea-225">**Office 365 のサインイン** ページで、CEO アカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-225">On the **Office 365 sign in** page, click the CEO account name, type its password, and then click **Sign in**.</span></span>
+7. <span data-ttu-id="e5342-225">**Office 365 のサインイン** ページで、CEO アカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-225">On the **Office 365 sign in** page, click the CEO account name, type its password, and then click **Sign in**.</span></span>
     
-8. <span data-ttu-id="53fea-226">ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-226">On a new tab of your browser, type the URL to the Executives site collection.</span></span>
+8. <span data-ttu-id="e5342-226">ブラウザーの新しいタブで、エグゼクティブサイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-226">On a new tab of your browser, type the URL to the Executives site collection.</span></span>
     
-9. <span data-ttu-id="53fea-227">**[ドキュメント]** ページで、**[アップロード]** をクリックし、ローカル フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントを指定して、**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-227">On the **Documents** page, click **Upload**, specify the **SensitiveData-AfterIRM.docx** document in your local folder, and then click **Open**.</span></span>
+9. <span data-ttu-id="e5342-227">**[ドキュメント]** ページで、**[アップロード]** をクリックし、ローカル フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントを指定して、**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-227">On the **Documents** page, click **Upload**, specify the **SensitiveData-AfterIRM.docx** document in your local folder, and then click **Open**.</span></span>
     
-10. <span data-ttu-id="53fea-228">**[ドキュメント]** ページで新しい **SensitiveData-AfterIRM.docx** ドキュメントを選び、メニュー バーの省略記号 (...) をクリックして、**[ダウンロード]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-228">Select the new **SensitiveData-AfterIRM.docx** document in the **Documents** page, click the ellipsis (…) in the menu bar, and then click **Download**.</span></span>
+10. <span data-ttu-id="e5342-228">**[ドキュメント]** ページで新しい **SensitiveData-AfterIRM.docx** ドキュメントを選び、メニュー バーの省略記号 (...) をクリックして、**[ダウンロード]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-228">Select the new **SensitiveData-AfterIRM.docx** document in the **Documents** page, click the ellipsis (…) in the menu bar, and then click **Download**.</span></span>
     
-11. <span data-ttu-id="53fea-229">画面の指示に従って **SensitiveData-AfterIRM.docx** ドキュメントをローカル フォルダーに保存して、元のバージョンを上書きします。</span><span class="sxs-lookup"><span data-stu-id="53fea-229">When prompted, save the **SensitiveData-AfterIRM.docx** document in your local folder, overwriting the original version.</span></span>
+11. <span data-ttu-id="e5342-229">画面の指示に従って **SensitiveData-AfterIRM.docx** ドキュメントをローカル フォルダーに保存して、元のバージョンを上書きします。</span><span class="sxs-lookup"><span data-stu-id="e5342-229">When prompted, save the **SensitiveData-AfterIRM.docx** document in your local folder, overwriting the original version.</span></span>
     
-12. <span data-ttu-id="53fea-230">**[ドキュメント]** ページのタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-230">Close the tab for the **Documents** page.</span></span>
+12. <span data-ttu-id="e5342-230">**[ドキュメント]** ページのタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-230">Close the tab for the **Documents** page.</span></span>
     
-13. <span data-ttu-id="53fea-231">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-231">On a new tab of your browser, type the URL to the Sales site collection.</span></span>
+13. <span data-ttu-id="e5342-231">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-231">On a new tab of your browser, type the URL to the Sales site collection.</span></span>
     
-14. <span data-ttu-id="53fea-232">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-232">Click **Documents**.</span></span>
+14. <span data-ttu-id="e5342-232">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-232">Click **Documents**.</span></span>
     
-15. <span data-ttu-id="53fea-233">**[ドキュメント]** ページで、**[アップロード]** をクリックし、ローカル フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントを指定して、**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-233">On the **Documents** page, click **Upload**, specify the **SensitiveData-AfterIRM.docx** document in your local folder, and then click **Open**.</span></span>
+15. <span data-ttu-id="e5342-233">**[ドキュメント]** ページで、**[アップロード]** をクリックし、ローカル フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントを指定して、**[開く]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-233">On the **Documents** page, click **Upload**, specify the **SensitiveData-AfterIRM.docx** document in your local folder, and then click **Open**.</span></span>
     
-16. <span data-ttu-id="53fea-234">**[販売サイト コレクション]** と **[SharePoint]** のタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="53fea-234">Close the **Sales site collection** and **SharePoint** tabs.</span></span>
+16. <span data-ttu-id="e5342-234">**[販売サイト コレクション]** と **[SharePoint]** のタブを閉じます。</span><span class="sxs-lookup"><span data-stu-id="e5342-234">Close the **Sales site collection** and **SharePoint** tabs.</span></span>
     
-<span data-ttu-id="53fea-235">次に、通常のユーザーとして販売ドキュメント フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="53fea-235">Next, acting as a normal user, you try to access the **SensitiveData-AfterIRM.docx** document in the Sales document folder.</span></span>
+<span data-ttu-id="e5342-235">次に、通常のユーザーとして販売ドキュメント フォルダーの **SensitiveData-AfterIRM.docx** ドキュメントにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="e5342-235">Next, acting as a normal user, you try to access the **SensitiveData-AfterIRM.docx** document in the Sales document folder.</span></span>
   
-1. <span data-ttu-id="53fea-236">ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-236">From the **Microsoft Office Home** tab in your browser, click the user icon in the upper-right, and then click **Sign out**.</span></span>
+1. <span data-ttu-id="e5342-236">ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-236">From the **Microsoft Office Home** tab in your browser, click the user icon in the upper-right, and then click **Sign out**.</span></span>
     
-2. <span data-ttu-id="53fea-237">[http://admin.microsoft.com](http://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="53fea-237">Go to [http://admin.microsoft.com](http://admin.microsoft.com).</span></span>
+2. <span data-ttu-id="e5342-237">[https://admin.microsoft.com](https://admin.microsoft.com) に移動します。</span><span class="sxs-lookup"><span data-stu-id="e5342-237">Go to [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
     
-3. <span data-ttu-id="53fea-238">**Office 365 のサインイン**ページで、User5 のアカウント名をクリックし、パスワードを入力して、[**サインイン**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-238">On the **Office 365 sign in** page, click the User5 account name, type its password, and then click **Sign in**.</span></span>
+3. <span data-ttu-id="e5342-238">**Office 365 のサインイン**ページで、User5 のアカウント名をクリックし、パスワードを入力して、[**サインイン**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-238">On the **Office 365 sign in** page, click the User5 account name, type its password, and then click **Sign in**.</span></span>
     
-4. <span data-ttu-id="53fea-239">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="53fea-239">On a new tab of your browser, type the URL to the Sales site collection.</span></span>
+4. <span data-ttu-id="e5342-239">ブラウザーの新しいタブで、Sales サイトコレクションの URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="e5342-239">On a new tab of your browser, type the URL to the Sales site collection.</span></span>
     
-5. <span data-ttu-id="53fea-240">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-240">Click **Documents**.</span></span>
+5. <span data-ttu-id="e5342-240">**[ドキュメント]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-240">Click **Documents**.</span></span>
     
-6. <span data-ttu-id="53fea-241">**[ドキュメント]** ページで、**SensitiveData-AfterIRM.docx** を開きます。 </span><span class="sxs-lookup"><span data-stu-id="53fea-241">On the **Documents** page, open the **SensitiveData-AfterIRM.docx** document.</span></span>
+6. <span data-ttu-id="e5342-241">**[ドキュメント]** ページで、**SensitiveData-AfterIRM.docx** を開きます。 </span><span class="sxs-lookup"><span data-stu-id="e5342-241">On the **Documents** page, open the **SensitiveData-AfterIRM.docx** document.</span></span>
     
-    <span data-ttu-id="53fea-242">"申し訳ございません。この文書は Information Rights Management (IRM) で保護されているため、Word で開くことができません。" というメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="53fea-242">You should see a message that states, "Sorry, Word can't open this document because it's protected by Information Rights Management (IRM)."</span></span> 
+    <span data-ttu-id="e5342-242">"申し訳ございません。この文書は Information Rights Management (IRM) で保護されているため、Word で開くことができません。" というメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e5342-242">You should see a message that states, "Sorry, Word can't open this document because it's protected by Information Rights Management (IRM)."</span></span> 
     
-7. <span data-ttu-id="53fea-p105">**[Word で編集]** をクリックします。ファイルを開くかどうかを尋ねられます。**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-p105">Click **Edit in Word**. You are prompted if you want to open the file. Click **Yes**.</span></span>
+7. <span data-ttu-id="e5342-p105">**[Word で編集]** をクリックします。ファイルを開くかどうかを尋ねられます。**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-p105">Click **Edit in Word**. You are prompted if you want to open the file. Click **Yes**.</span></span>
     
-8. <span data-ttu-id="53fea-p106">サインインするように要求されます。User5 アカウントのアカウント名を入力し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-p106">You are prompted to sign-in. Type the account name of the User5 account, and then click **Next**.</span></span>
+8. <span data-ttu-id="e5342-p106">サインインするように要求されます。User5 アカウントのアカウント名を入力し、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-p106">You are prompted to sign-in. Type the account name of the User5 account, and then click **Next**.</span></span>
     
-9. <span data-ttu-id="53fea-p107">パスワードを入力するように要求されます。User5 アカウント用のパスワードを入力して、**[サインイン]** をクリックします。 </span><span class="sxs-lookup"><span data-stu-id="53fea-p107">You are prompted to provide the password. Type the password for the User5 account and then click **Sign in**.</span></span> 
+9. <span data-ttu-id="e5342-p107">パスワードを入力するように要求されます。User5 アカウント用のパスワードを入力して、**[サインイン]** をクリックします。 </span><span class="sxs-lookup"><span data-stu-id="e5342-p107">You are prompted to provide the password. Type the password for the User5 account and then click **Sign in**.</span></span> 
     
-    <span data-ttu-id="53fea-250">次のメッセージが表示されます。「このドキュメントを開くための資格情報がありません。」</span><span class="sxs-lookup"><span data-stu-id="53fea-250">You should see the a message that states: "You do not have the credentials that allow you to open this document."</span></span>
+    <span data-ttu-id="e5342-250">次のメッセージが表示されます。「このドキュメントを開くための資格情報がありません。」</span><span class="sxs-lookup"><span data-stu-id="e5342-250">You should see the a message that states: "You do not have the credentials that allow you to open this document."</span></span>
     
-10. <span data-ttu-id="53fea-251">**[いいえ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="53fea-251">Click **No**.</span></span>
+10. <span data-ttu-id="e5342-251">**[いいえ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e5342-251">Click **No**.</span></span>
     
-<span data-ttu-id="53fea-p108">IRM 保護を確認する別の方法として、ローカル フォルダー内のファイルを確認することもできます。**SensitiveData-AfterIRM.docx** ファイルは、**SensitiveData-BeforeIRM.docx** ファイルより大きいはずです。**SensitiveData-AfterIRM.docx** ファイルは暗号化されており、IRM 保護情報が追加されています。</span><span class="sxs-lookup"><span data-stu-id="53fea-p108">Another way to see the IRM protection is to look at the files in your local folder. The **SensitiveData-AfterIRM.docx** should be much larger than the **SensitiveData-BeforeIRM.docx** file. The **SensitiveData-AfterIRM.docx** file is encrypted and has the IRM protection information added to it.</span></span>
+<span data-ttu-id="e5342-p108">IRM 保護を確認する別の方法として、ローカル フォルダー内のファイルを確認することもできます。**SensitiveData-AfterIRM.docx** ファイルは、**SensitiveData-BeforeIRM.docx** ファイルより大きいはずです。**SensitiveData-AfterIRM.docx** ファイルは暗号化されており、IRM 保護情報が追加されています。</span><span class="sxs-lookup"><span data-stu-id="e5342-p108">Another way to see the IRM protection is to look at the files in your local folder. The **SensitiveData-AfterIRM.docx** should be much larger than the **SensitiveData-BeforeIRM.docx** file. The **SensitiveData-AfterIRM.docx** file is encrypted and has the IRM protection information added to it.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="53fea-255">関連項目</span><span class="sxs-lookup"><span data-stu-id="53fea-255">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e5342-255">関連項目</span><span class="sxs-lookup"><span data-stu-id="e5342-255">See Also</span></span>
 
-[<span data-ttu-id="53fea-256">クラウド導入のテスト ラボ ガイド (TLG)</span><span class="sxs-lookup"><span data-stu-id="53fea-256">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="e5342-256">クラウド導入のテスト ラボ ガイド (TLG)</span><span class="sxs-lookup"><span data-stu-id="e5342-256">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[<span data-ttu-id="53fea-257">基本構成開発/テスト環境</span><span class="sxs-lookup"><span data-stu-id="53fea-257">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
+[<span data-ttu-id="e5342-257">基本構成開発/テスト環境</span><span class="sxs-lookup"><span data-stu-id="e5342-257">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
   
-[<span data-ttu-id="53fea-258">Office 365 開発/テスト環境</span><span class="sxs-lookup"><span data-stu-id="53fea-258">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
+[<span data-ttu-id="e5342-258">Office 365 開発/テスト環境</span><span class="sxs-lookup"><span data-stu-id="e5342-258">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[<span data-ttu-id="53fea-259">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="53fea-259">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="e5342-259">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="e5342-259">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 

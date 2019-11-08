@@ -18,50 +18,50 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Office 365 エンタープライズ展開を計画するためのリソースへのアクセスを取得します。
-ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 66b1944b9e98ef60b753c5122655f99870a86ffe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302689"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028811"
 ---
-# <a name="plan-for-office-365-enterprise"></a><span data-ttu-id="5a5ee-103">Office 365 Enterprise を計画する</span><span class="sxs-lookup"><span data-stu-id="5a5ee-103">Plan for Office 365 Enterprise</span></span>
+# <a name="plan-for-office-365-enterprise"></a><span data-ttu-id="b39f9-103">Office 365 Enterprise を計画する</span><span class="sxs-lookup"><span data-stu-id="b39f9-103">Plan for Office 365 Enterprise</span></span>
 
-<span data-ttu-id="5a5ee-104">エンタープライズ組織を Office 365 に移行する際には、IT の展開とユーザーの導入を簡素化するための主要な設計上の決定を事前に計画しておくことが重要です。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-104">When you move an enterprise organization to Office 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
+<span data-ttu-id="b39f9-104">エンタープライズ組織を Office 365 に移行する際には、IT の展開とユーザーの導入を簡素化するための主要な設計上の決定を事前に計画しておくことが重要です。</span><span class="sxs-lookup"><span data-stu-id="b39f9-104">When you move an enterprise organization to Office 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
 
-## <a name="planning-with-office-365-fasttrack"></a><span data-ttu-id="5a5ee-105">Office 365 FastTrack の計画</span><span class="sxs-lookup"><span data-stu-id="5a5ee-105">Planning with Office 365 FastTrack</span></span>
+## <a name="planning-with-office-365-fasttrack"></a><span data-ttu-id="b39f9-105">Office 365 FastTrack の計画</span><span class="sxs-lookup"><span data-stu-id="b39f9-105">Planning with Office 365 FastTrack</span></span>
 
-<span data-ttu-id="5a5ee-106">Office [365 の Fasttrack](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)は、office 365 の展開を計画するために Microsoft からのサポートを得るための最適な方法です。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-106">[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) is the best method for getting help from Microsoft for planning your Office 365 deployment.</span></span> <span data-ttu-id="5a5ee-107">FastTrack は、最も一般的な設計上の考慮事項を確認し、その方法についての質問に答えることができます。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
-
->[!Note]
-><span data-ttu-id="5a5ee-108">[Microsoft パートナー](https://www.microsoft.com/solution-providers/home)からサポートを受けることもできます。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
->
-
-## <a name="do-it-yourself-planning-for-office-365"></a><span data-ttu-id="5a5ee-109">Office 365 を計画する</span><span class="sxs-lookup"><span data-stu-id="5a5ee-109">Do-it-yourself planning for Office 365</span></span>
-
-<span data-ttu-id="5a5ee-110">自分で Office 365 を計画するには、以下の領域の計画と設計の決定について手順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-110">To plan for Office 365 on your own, step through the planning and design decisions for these areas:</span></span>
-
-- <span data-ttu-id="5a5ee-111">Office 365 テナント</span><span class="sxs-lookup"><span data-stu-id="5a5ee-111">Your Office 365 tenant</span></span>
-
-  <span data-ttu-id="5a5ee-112">インターネットへのネットワーク接続の計画、Office 365 id、アプリ、オンプレミス、Azure、その他の要素との統合について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-112">Includes planning for your network connections to the Internet, your Office 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="5a5ee-113">[ここ](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
-
-- <span data-ttu-id="5a5ee-114">クライアントのサポート</span><span class="sxs-lookup"><span data-stu-id="5a5ee-114">Support for your clients</span></span>
-
-  <span data-ttu-id="5a5ee-115">証明書ベースの認証、モバイルデバイス管理、認証オプション、テナント間のコラボレーションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="5a5ee-116">[ここ](office-365-client-support-certificate-based-authentication.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
-
-- <span data-ttu-id="5a5ee-117">ハイブリッド先進認証のサポート</span><span class="sxs-lookup"><span data-stu-id="5a5ee-117">Support for hybrid modern authentication</span></span>
-
-  <span data-ttu-id="5a5ee-118">主要な Office 365 ワークロードのハイブリッド構成を使用する場合の先進認証の計画が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-118">Includes planning for modern authentication when using hybrid configurations of key Office 365 workloads.</span></span> <span data-ttu-id="5a5ee-119">[ここ](hybrid-modern-auth-overview.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
-
-- <span data-ttu-id="5a5ee-120">以前の Office クライアントおよびサーバー</span><span class="sxs-lookup"><span data-stu-id="5a5ee-120">Older Office clients and servers</span></span>
-
-  <span data-ttu-id="5a5ee-121">Office 2007 および Office 2010 クライアントおよびサーバー製品の移行情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="5a5ee-122">[ここ](plan-upgrade-previous-versions-office.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
+<span data-ttu-id="b39f9-106">Office [365 の Fasttrack](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)は、office 365 の展開を計画するために Microsoft からのサポートを得るための最適な方法です。</span><span class="sxs-lookup"><span data-stu-id="b39f9-106">[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) is the best method for getting help from Microsoft for planning your Office 365 deployment.</span></span> <span data-ttu-id="b39f9-107">FastTrack は、最も一般的な設計上の考慮事項を確認し、その方法についての質問に答えることができます。</span><span class="sxs-lookup"><span data-stu-id="b39f9-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
 
 >[!Note]
-><span data-ttu-id="5a5ee-123">このプロセスは、 [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)サブスクリプションでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-123">You can use this process for your [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) subscription as well.</span></span>
+><span data-ttu-id="b39f9-108">[Microsoft パートナー](https://www.microsoft.com/solution-providers/home)からサポートを受けることもできます。</span><span class="sxs-lookup"><span data-stu-id="b39f9-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
 >
 
-<span data-ttu-id="5a5ee-124">Office 365 サブスクリプションにサインインして、 [office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="5a5ee-124">You can also sign in to your Office 365 subscription and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).</span></span>
+## <a name="do-it-yourself-planning-for-office-365"></a><span data-ttu-id="b39f9-109">Office 365 を計画する</span><span class="sxs-lookup"><span data-stu-id="b39f9-109">Do-it-yourself planning for Office 365</span></span>
+
+<span data-ttu-id="b39f9-110">自分で Office 365 を計画するには、以下の領域の計画と設計の決定について手順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="b39f9-110">To plan for Office 365 on your own, step through the planning and design decisions for these areas:</span></span>
+
+- <span data-ttu-id="b39f9-111">Office 365 テナント</span><span class="sxs-lookup"><span data-stu-id="b39f9-111">Your Office 365 tenant</span></span>
+
+  <span data-ttu-id="b39f9-112">インターネットへのネットワーク接続の計画、Office 365 id、アプリ、オンプレミス、Azure、その他の要素との統合について説明します。</span><span class="sxs-lookup"><span data-stu-id="b39f9-112">Includes planning for your network connections to the Internet, your Office 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="b39f9-113">[ここ](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="b39f9-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
+
+- <span data-ttu-id="b39f9-114">クライアントのサポート</span><span class="sxs-lookup"><span data-stu-id="b39f9-114">Support for your clients</span></span>
+
+  <span data-ttu-id="b39f9-115">証明書ベースの認証、モバイルデバイス管理、認証オプション、テナント間のコラボレーションが含まれます。</span><span class="sxs-lookup"><span data-stu-id="b39f9-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="b39f9-116">[ここ](office-365-client-support-certificate-based-authentication.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="b39f9-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
+
+- <span data-ttu-id="b39f9-117">ハイブリッド先進認証のサポート</span><span class="sxs-lookup"><span data-stu-id="b39f9-117">Support for hybrid modern authentication</span></span>
+
+  <span data-ttu-id="b39f9-118">主要な Office 365 ワークロードのハイブリッド構成を使用する場合の先進認証の計画が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b39f9-118">Includes planning for modern authentication when using hybrid configurations of key Office 365 workloads.</span></span> <span data-ttu-id="b39f9-119">[ここ](hybrid-modern-auth-overview.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="b39f9-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
+
+- <span data-ttu-id="b39f9-120">以前の Office クライアントおよびサーバー</span><span class="sxs-lookup"><span data-stu-id="b39f9-120">Older Office clients and servers</span></span>
+
+  <span data-ttu-id="b39f9-121">Office 2007 および Office 2010 クライアントおよびサーバー製品の移行情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b39f9-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="b39f9-122">[ここ](plan-upgrade-previous-versions-office.md)から開始してください。</span><span class="sxs-lookup"><span data-stu-id="b39f9-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
+
+>[!Note]
+><span data-ttu-id="b39f9-123">このプロセスは、 [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)サブスクリプションでも使用できます。</span><span class="sxs-lookup"><span data-stu-id="b39f9-123">You can use this process for your [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) subscription as well.</span></span>
+>
+
+<span data-ttu-id="b39f9-124">Office 365 サブスクリプションにサインインして、 [office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)を使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="b39f9-124">You can also sign in to your Office 365 subscription and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).</span></span>
 
 
 
@@ -84,7 +84,7 @@ If you want help getting Office 365 set up, [FastTrack](https://fasttrack.micros
 |**Use** the [templates and resources in the Office 365 success center](https://www.microsoft.com/fasttrack/resources) to share your deployment and onboarding plans with the people in your organization.  <br> | - Communication with everyone before, during, and after the transition to Office 365 is critical.  <br> - Use our templates, guides, and handouts to improve your communications. |
 |**Read** the article [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.  <br> | - This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. |
    
-Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources).
+Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources).
   
 ## Want to talk with support?
 
