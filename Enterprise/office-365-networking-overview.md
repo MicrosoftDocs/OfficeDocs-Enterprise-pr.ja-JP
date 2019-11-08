@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: SaaS サービスでネットワークの最適化が重要な理由、Office 365 ネットワークの目標、および他のワークロードとの間で SaaS が異なるネットワークを必要とする理由について説明します。
-ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017287"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031892"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 のネットワーク接続の概要
 
@@ -31,7 +31,7 @@ Office 365 は、さまざまなマイクロサービスおよびアプリケー
 
 Office 365 ネットワークの最終目標は、クライアントと最も近い Office 365 エンドポイントとの間で最も制限の少ないアクセスを有効にすることによって、エンドユーザーの環境を最適化することです。 エンドユーザーの環境の品質は、ユーザーが使用しているアプリケーションのパフォーマンスと応答性に直接関係しています。 たとえば、Microsoft Teams は遅延を低くして、ユーザーの電話、会議、および共有の画面コラボレーションが故障しないようにします。また、Outlook は、サーバー側のインデックス作成と AI を活用するクイック検索機能に対して強力なネットワーク接続に依存しています。能力.
 
-ネットワーク設計の主な目標は、クライアントマシンからのラウンドトリップ時間 (RTT) を microsoft のグローバルネットワークにまで減らして、microsoft のパブリックネットワークバックボーンによって、Microsoft のすべてのデータセンターを低遅延の状態で相互接続することによって、遅延を最小限に抑えることです。高可用性クラウドアプリケーションのエントリポイントが世界中に散在しています。 Microsoft グローバルネットワークの詳細については、 [microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を参照してください。
+ネットワーク設計の主な目標は、クライアントマシンからのラウンドトリップ時間 (RTT) を microsoft のグローバルネットワークにまで減らして、microsoft のパブリックネットワークバックボーンによって、Microsoft のすべてのデータセンターを低遅延の状態で相互接続することによって、遅延を最小限に抑えることです。高可用性クラウドアプリケーションのエントリポイントが世界中に散在しています。 Microsoft グローバルネットワークの詳細については、 [microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を参照してください。
 
 Office 365 の最適化ネットワークのパフォーマンスを複雑にする必要はありません。 いくつかの重要な原則に従って、パフォーマンスを最大限に向上させることができます。
 
@@ -53,13 +53,13 @@ Office 365 のネットワークトラフィックを識別し、ネットワー
 
 - ネットワークエンドポイントの新しいカテゴリ。これにより、非常に重要なネットワークトラフィックを、インターネットの遅延の影響を受けないネットワークトラフィックから差別化できます。 最も重要な "最適化" カテゴリには、少数の Url とサポートされている IP アドレスがあります。
 - Office 365 のネットワーク id のスクリプト使用または直接デバイス構成と変更管理のための Web サービス。 変更内容は、web サービス、RSS 形式、または Microsoft Flow テンプレートを使用した電子メールから入手できます。
-- Office [365 ネットワークパートナープログラム](http://aka.ms/Office365NPP)。 office 365 のネットワーク接続の原則に従って、簡単な構成を持つデバイスまたはサービスを提供する Microsoft パートナーが参加しているプログラム。
+- Office [365 ネットワークパートナープログラム](https://aka.ms/Office365NPP)。 office 365 のネットワーク接続の原則に従って、簡単な構成を持つデバイスまたはサービスを提供する Microsoft パートナーが参加しているプログラム。
 
 ## <a name="securing-office-365-connections"></a>Office 365 の接続をセキュリティで保護する
 
 従来のネットワークセキュリティの目的は、侵入や悪意のある攻略から企業ネットワークの境界を強化することです。 ほとんどのエンタープライズネットワークは、プロキシサーバー、ファイアウォール、SSL ブレークと検査、詳細なパケット検査、データ損失防止システムなどのテクノロジを使用して、インターネットトラフィックにネットワークセキュリティを適用します。 これらのテクノロジは、一般的なインターネット要求に対して重要なリスクを軽減しますが、Office 365 エンドポイントに適用された場合、パフォーマンス、スケーラビリティ、およびエンドユーザー環境の品質を大幅に軽減することができます。
 
-Office 365 は、Office 365 の機能とワークロード専用に設計された組み込みのセキュリティおよびガバナンス機能によって、コンテンツのセキュリティとデータ使用法のコンプライアンスに関する組織のニーズを満たすことができます。 Office 365 のセキュリティとコンプライアンスの詳細については、「 [office 365 のセキュリティロードマップ](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap)」を参照してください。 Microsoft の推奨事項と、Office 365 トラフィックで高度な処理を実行する高度なネットワークソリューションでのサポート位置の詳細については、「 [office 365 のサードパーティ製のネットワークデバイスまたはソリューションを使用](https://support.microsoft.com/en-us/help/2690045)する」を参照してください。
+Office 365 は、Office 365 の機能とワークロード専用に設計された組み込みのセキュリティおよびガバナンス機能によって、コンテンツのセキュリティとデータ使用法のコンプライアンスに関する組織のニーズを満たすことができます。 Office 365 のセキュリティとコンプライアンスの詳細については、「 [office 365 のセキュリティロードマップ](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)」を参照してください。 Microsoft の推奨事項と、Office 365 トラフィックで高度な処理を実行する高度なネットワークソリューションでのサポート位置の詳細については、「 [office 365 のサードパーティ製のネットワークデバイスまたはソリューションを使用](https://support.microsoft.com/help/2690045)する」を参照してください。
 
 ## <a name="why-is-office-365-networking-different"></a>Office 365 のネットワークが異なるのはなぜですか?
 
@@ -77,16 +77,16 @@ Office 365 トラフィックがパケット検査および集中型出口の対
 
 従来のモデルでの Office 365 のネットワークトラフィックでは、ローカル出口アーキテクチャには次のような利点があります。
   
-- ルートの長さを最適化することで、Office 365 の最適なパフォーマンスを提供します。 エンドユーザーの接続は、Microsoft グローバルネットワークの_分散サービスフロントドア_インフラストラクチャによって、最も近い Office 365 エントリポイントに動的にルーティングされ、トラフィックは microsoft のデータおよびサービスエンドポイントに内部でルーティングされます。超低遅延高可用性は、濃い光ファイバーです。
+- ルートの長さを最適化することで、Office 365 の最適なパフォーマンスを提供します。 エンドユーザーの接続は、Microsoft グローバルネットワークの_分散サービスフロントドア_インフラストラクチャによって、最も近い Office 365 エントリポイントに動的にルーティングされ、トラフィックは、microsoft の超低遅延高可用性の高可用性の濃いファイバーを介してデータとサービスエンドポイントに内部ルーティングされます。
 - プロキシやトラフィック検査デバイスをバイパスして、Office 365 トラフィックに対してローカル出口を許可することにより、企業ネットワークインフラストラクチャの負荷を軽減します。
 - クライアントエンドポイントのセキュリティ機能とクラウドセキュリティ機能を活用して、ネットワークセキュリティの冗長テクノロジを適用せずに、両端の接続をセキュリティで保護します。
 
 > [!NOTE]
-> _分散サービスのフロントドア_インフラストラクチャは、地理的に分散した場所を持つ Microsoft グローバルネットワークの可用性と拡張性の高いネットワークエッジです。 エンドユーザー接続が終了し、Microsoft グローバルネットワーク内で効率的にルーティングされます。 Microsoft グローバルネットワークの詳細については、 [microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を参照してください。
+> _分散サービスのフロントドア_インフラストラクチャは、地理的に分散した場所を持つ Microsoft グローバルネットワークの可用性と拡張性の高いネットワークエッジです。 エンドユーザー接続が終了し、Microsoft グローバルネットワーク内で効率的にルーティングされます。 Microsoft グローバルネットワークの詳細については、 [microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を参照してください。
 
 Office 365 のネットワーク接続の原則を理解し、適用する方法の詳細については、「 [office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 Office 365 の最適化ネットワークパフォーマンスは、不要な障害を排除することになります。 Office 365 接続を信頼されたトラフィックとして扱うことにより、パケット検査およびプロキシ帯域幅の競合によって遅延が発生するのを防ぐことができます。 クライアントコンピューターと Office 365 エンドポイント間のローカル接続を許可することで、トラフィックを Microsoft グローバルネットワーク経由で動的にルーティングできるようになります。
 
@@ -104,7 +104,7 @@ Office 365 の最適化ネットワークパフォーマンスは、不要な障
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
 
@@ -114,6 +114,6 @@ Office 365 の最適化ネットワークパフォーマンスは、不要な障
 
 [Office 365 ネットワークオンボードツール](https://aka.ms/netonboard)
 
-[Microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Office 365 ネットワークのブログ](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

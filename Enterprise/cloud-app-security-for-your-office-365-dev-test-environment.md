@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782257"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030831"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
@@ -32,7 +32,7 @@ Office 365 Cloud App Security (以前の Office 365 Advanced Security Management
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
@@ -153,7 +153,7 @@ Office 365 Cloud App Security (以前の Office 365 Advanced Security Management
     
 22. **[Microsoft Office Home]** タブで、 **[メール]** をクリックします。最大 30 分間待ちます。 
     
-    **Microsoft AZURE AD Notification Service**というタイトルの新しい電子メールメッセージが受信トレイに2つ表示されます。 1つのメッセージは、User 5 アカウントが**パスワード管理**者ロールに追加されたこと、および別のメッセージがユーザー5アカウントが**ユーザー**管理者ロールに追加されたことを示している (Microsoft 365 管理センター)。
+    **Microsoft AZURE AD Notification Service**というタイトルの新しい電子メールメッセージが受信トレイに2つ表示されます。 1つのメッセージは、User 5 アカウントが**パスワード管理者**ロールに追加されたことを示し、もう1つのメッセージは user 5 アカウントが**ユーザー管理**者ロールに追加されたことを示します (Microsoft 365 管理センターのユーザー管理者ロールと同じ)。
     
 この環境を使用して新しいポリシーを作成し、さらに Office 365 Cloud App Security を試すことができます。その他の構成に関する記事へのリンクは、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」を参照してください。
   

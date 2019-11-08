@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
-ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
+ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786232"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030781"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -118,7 +118,7 @@ SharePoint Online データを移行する過程で、検索インデックス�
    
 |**移行後**|
 |:-----|
-| 会議データ (アップロードされたプレゼンテーションなど) は移動されないため、再アップロードする必要があります。  <br/>  Lync 2010 クライアントや Lync for Mac 2011 クライアントなど、以前の Lync クライアントでは、サービスへの DNS 情報のキャッシュに起因するサインインの問題が発生することが確認されています。ユーザーが最新の Skype for Business Windows クライアントではない場合、DNS キャッシュのクリアが必要になる可能性があります。ユーザーに、 [トラブルシューティング ウィザード](https://support.microsoft.com/en-us/kb/2541980)を実施して、クライアント キャッシュをクリアする方法の手順に従うように依頼します。Lync for Mac クライアントのユーザーは、[このリンクの手順](https://support.microsoft.com/en-us/kb/2629861)に従う必要があります。  <br/> |
+| 会議データ (アップロードされたプレゼンテーションなど) は移動されないため、再アップロードする必要があります。  <br/>  Lync 2010 クライアントや Lync for Mac 2011 クライアントなど、以前の Lync クライアントでは、サービスへの DNS 情報のキャッシュに起因するサインインの問題が発生することが確認されています。ユーザーが最新の Skype for Business Windows クライアントではない場合、DNS キャッシュのクリアが必要になる可能性があります。ユーザーに、 [トラブルシューティング ウィザード](https://support.microsoft.com/kb/2541980)を実施して、クライアント キャッシュをクリアする方法の手順に従うように依頼します。Lync for Mac クライアントのユーザーは、[このリンクの手順](https://support.microsoft.com/kb/2629861)に従う必要があります。  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>サードパーティの電話会議プロバイダーを含む Skype for Business の移動
 新しい geo 固有のデータセンターのユーザーは、Skype for Business 用のサードパーティの電話会議プロバイダーのアドオン サービスを使用することができません。  サードパーティの電話会議プロバイダーを使用している既存のお客様は、新しい geo 固有のデータセンターへの移動を要求する必要はありません。  新しい geo 固有のデータセンターの新規のお客様は、サードパーティの電話会議プロバイダーを使用するために、地域データセンターへの移動を要求する必要があります。
@@ -135,5 +135,5 @@ Exchange Online、SharePoint Online、および Skype for Business の顧客デ�
   
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure のリージョン](https://azure.microsoft.com/en-us/regions/)
+[Azure のリージョン](https://azure.microsoft.com/regions/)
 

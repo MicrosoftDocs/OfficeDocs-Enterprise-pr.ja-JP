@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 概要:Windows PowerShell を使用して Office 365 に電子メールを移行する方法について説明します。
-ms.openlocfilehash: bc1b438db0b1868777d3a3faf0c62d80f843097c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: 604144664c2d1c915218f1fe0607f1fadb6238ca
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071183"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030932"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Office 365 へのメールの移行に PowerShell を使う
 
@@ -48,9 +48,9 @@ ms.locfileid: "34071183"
 [Windows PowerShell を使用して Office 365 でレポートを作成する](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Windows PowerShell を使用して Office 365 を管理する利点](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
+[Windows PowerShell を使用して Office 365 を管理する利点](https://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Office 365 での Windows PowerShell のテクニカル リファレンス](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
+[Office 365 での Windows PowerShell のテクニカル リファレンス](https://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Office 365 ライセンスと Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
+[Office 365 ライセンスと Windows PowerShell](https://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 

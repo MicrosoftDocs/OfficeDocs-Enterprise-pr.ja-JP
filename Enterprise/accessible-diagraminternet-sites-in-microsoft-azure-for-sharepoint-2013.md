@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: この資料は、「SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068643"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028061"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>アクセス可能な図 - SharePoint 2013 のための Microsoft Azure のインターネット サイト
 
@@ -198,23 +198,23 @@ Web アプリケーションとルート サイトの URL
     
 Web アプリケーションを使用してサイト コレクションとやり取りする検索などのアプリケーション プールサービスを付属図に示します。図のサイト コレクションは次のとおりです。 
   
-- http://internal:8000 (ルート サイト) にあるパスベースのサイト コレクション。 
+- https://internal:8000 (ルート サイト) にあるパスベースのサイト コレクション。 
     
 - クロール:https://authoring.contoso.com:8000 などのアドレスにある、ホスト名が付いたサイト コレクション。 
     
 - クエリ:以下のようなアドレスにある、2 つの別々のホスト名が付いたサイト コレクション。 
     
-  - http://www.contoso.com 
+  - https://www.contoso.com 
     
   - https://secure.contoso.com 
     
-  - http://www.contoso.com:8000 
+  - https://www.contoso.com:8000 
     
-  - http://assets.contoso.com 
+  - https://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://assets.contoso.com:8000 
+  - https://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Azure 環境を設計する
 

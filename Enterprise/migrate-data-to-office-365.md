@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: FastTrack による展開は行わず、データを Office 365 に移行する準備が整った場合は、こちらの案内に沿って移行を開始してください。
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597553"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031332"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>組織のデータを Office 365 Enterprise に移行する
 
@@ -40,7 +40,7 @@ Office 365 セットアップでヘルプが必要な場合は、[FastTrack](htt
 
 ## <a name="migrate-skype-for-business-users"></a>Skype for Business ユーザーを移行する
 - [Skype for Business Online に移行](https://technet.microsoft.com/library/jj204969.aspx)します。(管理者)
-- [Skype for Business 会議更新ツール](https://www.microsoft.com/en-us/download/details.aspx?id=51659)と[各ワークステーションで実行する](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4)をダウンロードします。(管理者およびエンドユーザー)
+- [Skype for Business 会議更新ツール](https://www.microsoft.com/download/details.aspx?id=51659)と[各ワークステーションで実行する](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4)をダウンロードします。(管理者およびエンドユーザー)
   
 ## <a name="need-to-talk-to-support"></a>サポートへの問い合わせ
 一般法人向け製品の[サポートにお問い合わせください](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。

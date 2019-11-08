@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 監査機能の概要、および Office 365 の他の検索機能を使用して監査の使用と透明性を実現します。
-ms.openlocfilehash: e9a120f717c04d5e5570e341aa5d3d93f85f80cb
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067631"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032032"
 ---
 # <a name="ediscovery-and-search-features"></a>電子情報開示と検索機能 
 
@@ -28,7 +28,7 @@ ms.locfileid: "37067631"
 
 ## <a name="content-search"></a>コンテンツ検索
 
-[コンテンツ検索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)は、以前の電子情報開示検索ツールよりも向上したスケーリングとパフォーマンスの機能を提供する電子情報開示検索ツールです。 コンテンツ検索を使用して、メールボックス、パブリックフォルダー、SharePoint Online サイト、および OneDrive for Business の場所を検索します。 コンテンツ検索では大規模な検索がサポートされます。 検索できるメールボックスとサイトの数に制限はありません。 同時に実行される検索の数についても制限はありません。 検索を実行すると、検索ページの [詳細] ウィンドウに、コンテンツソースの数と予想される検索結果の数が表示されます。 結果をプレビューしたり、ローカルコンピューターにエクスポートしたりすることができます。 Office 365 Enterprise E5 サブスクリプションがある組織では、 [office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116)の強力な分析機能を使用して分析の[結果を準備](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare)することができます。
+[コンテンツ検索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)は、以前の電子情報開示検索ツールよりも向上したスケーリングとパフォーマンスの機能を提供する電子情報開示検索ツールです。 コンテンツ検索を使用して、メールボックス、パブリックフォルダー、SharePoint Online サイト、および OneDrive for Business の場所を検索します。 コンテンツ検索では大規模な検索がサポートされます。 検索できるメールボックスとサイトの数に制限はありません。 同時に実行される検索の数についても制限はありません。 検索を実行すると、検索ページの [詳細] ウィンドウに、コンテンツソースの数と予想される検索結果の数が表示されます。 結果をプレビューしたり、ローカルコンピューターにエクスポートしたりすることができます。 Office 365 Enterprise E5 サブスクリプションがある組織では、 [office 365 Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?LinkID=620116)の強力な分析機能を使用して分析の[結果を準備](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare)することができます。
 
 ## <a name="audit-log-search"></a>監査ログの検索
 
@@ -46,7 +46,7 @@ SharePoint Online と OneDrive for business からのイベントは、発生す
 | CreationTime | ユーザーがアクティビティを実行したときの協定世界時 (UTC) の日付と時刻。 |
 | EventSource | イベントが発生したことを示します。 可能な値は、SharePoint と ObjectModel です。 |
 | ID | レポートエントリの ID。 ID はレポートエントリを一意に識別します。 |
-| Operation | [このユーザーアクティビティの結果を表示] で選択された値に対応するユーザーまたはアクティビティの名前。 |
+| 操作 | [このユーザーアクティビティの結果を表示] で選択された値に対応するユーザーまたはアクティビティの名前。 |
 | OrganizationId | イベントが発生した組織の Office 365 サービスの GUID。 |
 | UserAgent | ブラウザーによって提供される、ユーザーのブラウザーに関する情報。 |
 | UserId | レコードが記録されるようになった (Operation プロパティで指定された) アクションを実行したユーザー。 |
@@ -54,7 +54,7 @@ SharePoint Online と OneDrive for business からのイベントは、発生す
 |  | 0は、通常のユーザーを示します。 |
 |  | 2は、Office 365 組織の管理者を示します。 |
 |  | 3 Microsoft データセンターの管理者またはデータセンターのシステムアカウントを示します。 |
-| ワークロード | アクティビティが発生した Office 365 サービス。 このプロパティに指定できる値は次のとおりです。 |
+| Workload | アクティビティが発生した Office 365 サービス。 このプロパティに指定できる値は次のとおりです。 |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |

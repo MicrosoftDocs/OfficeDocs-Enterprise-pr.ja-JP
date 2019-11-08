@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: この記事は、「Microsoft Office Server 製品間での機能の統合-SharePoint Server、Exchange Server、Lync Server、および Office Online Server」という名前の図のアクセス可能なテキストバージョンです。
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782247"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027691"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>アクセス可能な図 - Microsoft Office Server 製品間の機能統合
 
@@ -132,7 +132,7 @@ Outlook Web App での Lync のプレゼンス。この機能は以下に適用�
 
 Office Web Apps サーバーは、Office ファイル用のブラウザー ベースのファイルの表示と編集サービスを提供する Office サーバー製品です。Office Web Apps サーバーは、Web Application Open Platform Interface (WOPI) プロトコルをサポートする製品とサービスで動作します。ホストとして知られるこれらの製品には、SharePoint 2013、Lync Server 2013、および Exchange Server 2013 などがあります。 
   
-Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAppsPoster で Office Web App の簡略化されたポスターをダウンロードしてください。 
+Office Web Apps サーバーの詳細については、https://aka.ms/OfficeWebAppsPoster で Office Web App の簡略化されたポスターをダウンロードしてください。 
   
 ## <a name="server-to-server-authentication-tab"></a>[サーバー間認証] タブ
 
@@ -236,9 +236,9 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 構成スクリプトの使用例については、次の Jens Trier Rasmussen のブログ記事を参照してください。 
   
-- 「SharePoint Server 2013 から Exchange 2013 の高解像度の写真を使用する」(http://aka.ms/Bhr4d2) 
+- 「SharePoint Server 2013 から Exchange 2013 の高解像度の写真を使用する」(https://aka.ms/Bhr4d2) 
     
-- 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Pn08dw) 
+- 「Exchange 2013 と Lync Server 2013 を統合する」 (https://aka.ms/Pn08dw) 
     
 ポスターには、これら 2 つのブログ記事の QR コードも含まれます。 
   
@@ -283,7 +283,7 @@ Office Web Apps サーバーの詳細については、http://aka.ms/OfficeWebAp
     
 構成スクリプトの使用例については、Jens Trier Rasmussen のブログ記事 
   
-- 「Exchange 2013 と Lync Server 2013 を統合する」 (http://aka.ms/Oyg7fh) を参照してください。 
+- 「Exchange 2013 と Lync Server 2013 を統合する」 (https://aka.ms/Oyg7fh) を参照してください。 
     
  **動作のしくみ** 
   
@@ -667,7 +667,7 @@ IIS サーバーには IIS 設定が含まれます。
     
  **デジタル アセット ライブラリ**
   
-デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」(http://aka.ms/O1vq5w を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+デジタル アセット ライブラリは、一定の容量がありパフォーマンスに影響を与えるビデオを含むアセット ライブラリです。詳細については、「SharePoint Server 2013 のデジタル アセット ライブラリを計画する」(https://aka.ms/O1vq5w を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Lync クライアントを使用したミーティングの記録および公開
 
@@ -683,10 +683,10 @@ IIS サーバーには IIS 設定が含まれます。
     
 4. SharePoint アセット ライブラリに、ミーティングのレコーディングをドラッグ アンド ドロップします。 
     
-5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」(http://aka.ms/R61q35 を参照してください。 
+5. 省略可能:記録がアセット ライブラリに入れられたなら、任意の SharePoint ページに挿入できます。この手順の詳細については、Office 365 ブログの投稿「SharePoint と Lync Online でトレーニングのビデオを作成および公開する」(https://aka.ms/R61q35 を参照してください。 
     
  **ビデオの縮小表示**
   
-ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」(http://aka.ms/Kupj85 を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
+ビデオの縮小表示により、アセット ライブラリのルック アンド フィールが向上します。ミーティングのレコーディングの縮小表示の作成の詳細については、「ビデオのサムネイルを取り込む、または変更する」(https://aka.ms/Kupj85 を参照してください。ポスターには、この情報にアクセスする QR コードもあります。 
   
 

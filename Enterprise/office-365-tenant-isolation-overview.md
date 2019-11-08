@@ -13,24 +13,26 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Microsoft が Office 365 のテナント分離を強制する方法の概要。
-ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 37d695635a5b7145b8384f1bf69fc357875ac38f
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375525"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035627"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365 でのテナントの分離
 
 クラウドコンピューティングの主な利点の1つは、同時に多数のお客様に共通する共有インフラストラクチャの概念で、スケールの経済につながることです。 この概念を*マルチテナント*と呼びます。 Microsoft は、クラウドサービスのマルチテナントアーキテクチャがエンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、および可用性の標準をサポートするように継続的に取り組みます。
 
-[信頼できるコンピューティング](https://www.microsoft.com/en-us/twc/default.aspx)および[セキュリティ開発ライフサイクル](http://www.microsoft.com/security/sdl/default.aspx)から得られる重要な投資と実績に基づいて、Microsoft cloud services はすべてのテナントがすべてに悪影響を与える可能性があるという前提で設計されていました。その他のテナント。また、1つのテナントのアクションが別のテナントのセキュリティまたはサービスに影響を与えたり、別のテナントのコンテンツにアクセスしたりしないようにセキュリティ対策を実装しています。
+[信頼できるコンピューティング](https://www.microsoft.com/trust-center)および[セキュリティ開発ライフサイクル](https://www.microsoft.com/securityengineering/sdl/)から得られる重要な投資と経験に基づいて、Microsoft cloud services は、すべてのテナントが他のすべてのテナントに悪影響を与える可能性があることを前提として設計されており、1つのテナントのアクションが別のテナントのセキュリティまたはサービスに影響を与えたり、別のテナントのコンテンツ
 
 マルチテナント環境でテナントの分離を維持するための主な目標は次の2つです。
+
 1.  テナント間での顧客コンテンツの漏洩、または不正アクセスを防止する。そして
 2.  あるテナントのアクションが別のテナントのサービスに悪影響を及ぼすことを防ぐ
 
 Office 365 には複数の形式の保護が実装されており、お客様が Office 365 のサービスまたはアプリケーションを侵害したり、他のテナントまたは Office 365 システム自体の情報に無許可でアクセスしたりすることを防ぐことができます。
+
 - Office 365 サービス用の各テナント内の顧客コンテンツの論理的分離は、Azure Active Directory の承認と役割ベースのアクセス制御によって実現されます。
 - SharePoint Online は、データ分離メカニズムをストレージレベルで提供します。
 - Microsoft は、厳密な物理的なセキュリティ、背景審査、および複数層の暗号化戦略を使用して、顧客のコンテンツの機密性と整合性を保護しています。 すべての Office 365 データセンターには、バイオメトリクスアクセスコントロールがあり、ほとんどの場合、物理的なアクセスを得るために palm 印刷が要求されています。 また、米国のすべての Microsoft の従業員は、雇用プロセスの一環として、標準のバックグラウンドチェックを正常に完了する必要があります。 Office 365 の管理アクセスに使用されるコントロールの詳細については、「 [office 365 管理アクセス制御](office-365-administrative-access-controls-overview.md)」を参照してください。
@@ -39,6 +41,7 @@ Office 365 には複数の形式の保護が実装されており、お客様が
 これらの保護によって、物理的な分離だけで提供される脅威の保護と軽減対策を提供する、堅牢な論理的分離コントロールが提供されます。
 
 ## <a name="related-links"></a>関連リンク
+
 - [Azure Active Directory での分離とアクセス制御](office-365-isolation-in-azure-active-directory.md)
 - [Office Graph と Delve でのテナントの分離](office-365-isolation-in-graph-and-delve.md)
 - [Office 365 の検索でのテナントの分離](office-365-isolation-in-office-365-search.md)

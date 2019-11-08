@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: SharePoint Online、OneDrive for Business、Exchange Online、または Skype for Business Online とクライアントコンピューターの間で、遅延、ハング、および低速のパフォーマンスを識別して修正するための手順を把握しておく必要がありますか。 サポートに連絡する前に、この記事は Office 365 のパフォーマンスの問題をトラブルシューティングしたり、最も一般的な問題のいくつかを修正したりするのに役立ちます。
-ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069583"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031132"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 のパフォーマンス トラブルシューティング計画
 
@@ -42,7 +42,7 @@ SharePoint Online、OneDrive for Business、Exchange Online、または Skype fo
 - パフォーマンスの問題を再現できるクライアントコンピューターを見つけます。 このコンピューターは、トラブルシューティングの際に使用されます。
 - パフォーマンスの問題が発生する原因となる手順を記録して、テストするときに備えて準備します。
 - 情報を収集および記録するためのツールをインストールします。
-  - [Netmon 3.4](https://www.microsoft.com/en-us/download/details.aspx?id=4865)をインストールします (または、同等のネットワークトレースツールを使用します)。
+  - [Netmon 3.4](https://www.microsoft.com/download/details.aspx?id=4865)をインストールします (または、同等のネットワークトレースツールを使用します)。
   - [Httpwatch](https://www.httpwatch.com/download/)の無料の基本エディションをインストールします (または、同等のネットワークトレースツールを使用します)。
   - テスト中に実行する手順の記録を保持するために、画面記録機能を使用するか、Windows Vista 以降に付属の手順記録ツール (PSR) を実行します。
 
@@ -100,7 +100,7 @@ Netmon 3.4 をインストールした後、ツールを開き、次の手順を
 
 4. パフォーマンスの問題を示す手順を再現します。
 
-5. \> [ **** \> **ファイル****名を付けて保存] を**クリックします。 タイムゾーンに日付と時刻を指定し、不良または良好なパフォーマンスを示しているかどうかを言及してください。
+5. \> **** [ **** ファイル\> **名を付けて保存] を**クリックします。 タイムゾーンに日付と時刻を指定し、不良または良好なパフォーマンスを示しているかどうかを言及してください。
 
 ## <a name="httpwatch"></a>HTTPWatch
 
@@ -111,9 +111,9 @@ Netmon 3.4 をインストールした後、ツールを開き、次の手順を
   
 ### <a name="run-httpwatch-and-reproduce-the-issue"></a>HTTPWatch を実行し、問題を再現する
   
-HTTPWatch はブラウザープラグインなので、このツールをブラウザーに公開することは、Internet Explorer のバージョンごとに多少異なります。 通常は、Internet Explorer ブラウザーのコマンドバーにある HTTPWatch を見つけることができます。 ブラウザーウィンドウに httpwatch プラグインが表示されない場合は、[**ヘルプ** \> ****] または internet explorer の以降のバージョンで、ブラウザーのバージョンを確認してください。歯車記号と**internet explorer につい**ては、「」を参照してください。 **コマンド**バーを起動するには、Internet Explorer のメニューバーを右クリックし、[**コマンドバー**] をクリックします。
+HTTPWatch はブラウザープラグインなので、このツールをブラウザーに公開することは、Internet Explorer のバージョンごとに多少異なります。 通常は、Internet Explorer ブラウザーのコマンドバーにある HTTPWatch を見つけることができます。 ブラウザーウィンドウに httpwatch プラグインが表示されない場合は、[**ヘルプ** \> **] また**は internet explorer の以降のバージョンで、ブラウザーのバージョンを確認してください。歯車記号と**internet explorer につい**ては、「」を参照してください。 **コマンド**バーを起動するには、Internet Explorer のメニューバーを右クリックし、[**コマンドバー**] をクリックします。
 
-以前は、HTTPWatch はコマンドとエクスプローラーの両方のバーに関連付けられています。インストールすると、(再起動後も) アイコンがすぐに**** 表示されない場合、またはアイコンのツールバーが表示されます。 ツールバーをカスタマイズしたり、オプションを追加したりすることができることを覚えておいてください。
+以前は、HTTPWatch はコマンドとエクスプローラーの両方のバーに関連付けられています。インストールすると、(再起動後も) アイコンがすぐに表示されない場合、またはアイコン**のツールバー**が表示されます。 ツールバーをカスタマイズしたり、オプションを追加したりすることができることを覚えておいてください。
 
 ![HTTPWatch アイコンが表示されている Internet Explorer の [コマンド] ツールバー。](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
@@ -133,7 +133,7 @@ HTTPWatch はブラウザープラグインなので、このツールをブラ�
   
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>問題ステップ記録ツール (PSR) を実行して作業を記録する
   
-1. **Start** \>の**実行** \>の種類**** \>を使用して、 **[OK]** をクリックするか、または**Windows キー** \>を押して、「 **psr** \> 」と入力し、enter キーを押します。
+1. **Start** \>の**実行** \> **の種類** \>を使用して、 **[OK]** をクリックするか、または**Windows キー** \>を押して、「 **psr** \> 」と入力し、enter キーを押します。
 
 2. 小さな PSR .exe ウィンドウが表示されたら、[**開始**] をクリックして、パフォーマンスの問題を再現する手順を再現します。 [**コメントの追加**] をクリックすると、必要に応じてコメントを追加できます。
 
@@ -192,7 +192,7 @@ Office 365 の Outlook Online の使用例として、トラフィックは次�
 
 トラフィックのすべての部分は重要であり、接続されていますが、トレースの小さな部分にはパフォーマンスのトラブルシューティングの観点から特に重要な情報が含まれています。そのため、これらの領域を中心に説明します。 また、Microsoft では、一般的な問題の上位10個のリストをコンパイルするために十分な数の Office 365 パフォーマンストラブルシューティングを行っているので、これらの問題について説明し、次にそれらのツールを使用する方法について取り上げます。
   
-すべての準備が整っていない場合は、下の表でいくつかのツールを利用できます。 可能です。 リンクはインストールポイントに提供されます。 この一覧には、 [Netmon](https://www.microsoft.com/en-us/download/details.aspx?id=4865)や[Wireshark](https://www.wireshark.org/)などの一般的なネットワークトレースツールが含まれていますが、使い慣れたトレースツールを使用します。また、ネットワークトラフィックのフィルター処理に慣れています。 テストを行うときは、次の点に注意してください。
+すべての準備が整っていない場合は、下の表でいくつかのツールを利用できます。 可能です。 リンクはインストールポイントに提供されます。 この一覧には、 [Netmon](https://www.microsoft.com/download/details.aspx?id=4865)や[Wireshark](https://www.wireshark.org/)などの一般的なネットワークトレースツールが含まれていますが、使い慣れたトレースツールを使用します。また、ネットワークトラフィックのフィルター処理に慣れています。 テストを行うときは、次の点に注意してください。
   
 - *ブラウザーを閉じて、実行しているブラウザーが1つだけで*あることをテストします。これにより、キャプチャしたトラフィック全体が減ります。 これにより、使用率の低いトレースが作成されます。
 - *クライアントコンピューターで DNS リゾルバーキャッシュをフラッシュ*する-これにより、クリーンなトレースのためにキャプチャの取得を開始したときに、クリーンな状態が得られます。
@@ -240,7 +240,7 @@ Netmon で、ラウンドトリップの [時間オフセット] フィールド
 例として、Netmon のフィルターは、Wireshark `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`のようになり`ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12`ます。  
 
 > [!TIP]
-> トレース内の IP アドレスが DNS サーバーに属しているかどうかはわかりませんか? コマンドラインで検索してみてください。 [ **** \> **** 実行\>を開始して**cmd**] をクリックするか、 **Windows キー** \>を押して**cmd**と入力します。 プロンプトで、と入力`nslookup <the IP address from the network trace>`します。 テストするには、自分のコンピューターの IP アドレスに対して nslookup を使用します。 > Microsoft の IP 範囲の一覧を表示するには、「 [Office 365 の url と ip アドレスの範囲](https://technet.microsoft.com/en-us/library/hh373144.aspx)」を参照してください。
+> トレース内の IP アドレスが DNS サーバーに属しているかどうかはわかりませんか? コマンドラインで検索してみてください。 [ **** \> **** 実行\>を開始して**cmd**] をクリックするか、 **Windows キー** \>を押して**cmd**と入力します。 プロンプトで、と入力`nslookup <the IP address from the network trace>`します。 テストするには、自分のコンピューターの IP アドレスに対して nslookup を使用します。 > Microsoft の IP 範囲の一覧を表示するには、「 [Office 365 の url と ip アドレスの範囲](https://technet.microsoft.com/library/hh373144.aspx)」を参照してください。
 
 問題が発生した場合は、長い時間のオフセットが表示されます (この例では Outlook Online)、特に TLS の場合はアプリケーションデータの流れを示す TLS パケット (たとえば、Netmon では、 `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`アプリケーションのデータパケットを経由して検索できます)。 セッション全体の時間が滑らかに表示されます。 Outlook Online を更新するときに長い遅延が発生する場合は、リセットが大量に送信されることが原因として考えられます。
 
@@ -250,7 +250,7 @@ Netmon で、ラウンドトリップの [時間オフセット] フィールド
 
 Office 365 用の帯域幅計算機は[、このネットワーク計画とパフォーマンスチューニングの office 365](network-planning-and-performance.md)ページから入手できます。  
 
-接続の速度、または ISP 接続の帯域幅を測定する必要があるかどうか。 このサイト (またはその他のサイト): [Speedtest オフィシャルサイト](https://www.speedtest.net/)および[Ping Test](http://www.pingtest.net/)を試してみてください。
+接続の速度、または ISP 接続の帯域幅を測定する必要があるかどうか。 このサイト (またはその他のサイト): [Speedtest オフィシャルサイト](https://www.speedtest.net/)および[ping test](https://www.pingtest.net/)を試してみてください。
 
 #### <a name="tools"></a>ツール
 
@@ -277,7 +277,7 @@ IP アドレスを取得するために Netmon をフィルター処理する手
 1. URL `ping outlook.office365.com`に ping を実行し、結果に、ping 要求が送信された DNS サーバーの名前と IP アドレスを記録します。
 2. ネットワークトレースページを開くか、パフォーマンスの問題を解決するアクションを実行するか、ping に遅延が大きい場合は、ネットワークトレースします。
 3. Netmon および DNS 用のフィルターでトレースを開きます (このフィルターは Wireshark でも動作します`-- dns`が、大文字と小文字は区別されます)。 Ping の DNS サーバーの名前がわかっているので、次のように、Netmon の speedily をさら`DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`にフィルター処理することもできます。このように、Wireshark DNS と frame に "namnorthwest" が含まれています。<br/>応答パケットを開き、Netmon**フレームの詳細**ウィンドウで、[ **DNS** ] をクリックして詳細情報を展開します。 DNS 情報には、Office 365 で要求が発生した DNS サーバーの IP アドレスが表示されます。 次の手順では、この IP アドレスが必要になります (PsPing ツール)。 フィルターを削除して、Netmon の dns 応答を右クリックし (**フレーム概要** \> **検索のスレッド** \> **DNS**)、dns クエリと応答を並べて表示します。
-4. Netmon の場合は、DNS 要求と応答の間の [時間のオフセット] 列にも注意してください。 次の手順では、簡単にインストールおよび使用できる[psping](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx)ツールは、ICMP がファイアウォールでブロックされることが多いため、また、PsPing は短縮された遅延をミリ秒単位で追跡しているため、どちらも非常に便利です。 PsPing は、アドレスとポートへの TCP 接続を完了します (この場合はオープンポート 443)。
+4. Netmon の場合は、DNS 要求と応答の間の [時間のオフセット] 列にも注意してください。 次の手順では、簡単にインストールおよび使用できる[psping](https://technet.microsoft.com/sysinternals/jj729731.aspx)ツールは、ICMP がファイアウォールでブロックされることが多いため、また、PsPing は短縮された遅延をミリ秒単位で追跡しているため、どちらも非常に便利です。 PsPing は、アドレスとポートへの TCP 接続を完了します (この場合はオープンポート 443)。
 5. PsPing をインストールします。
 6. コマンドプロンプト ( \> Run \> type Cmd、または Windows キー \>の種類 cmd) を開き、psping をインストールしたディレクトリにディレクトリを変更して psping コマンドを実行します。 この例では、C のルートに ' Perf ' フォルダーを作成したことがわかります。この操作は、クイックアクセスに対して行うことができます。
 7. 以前の Netmon トレースから Office 365 DNS サーバーの IP アドレス (ポート番号など) に対して PsPing を行うには、このコマンドを入力し`psping -n 20 132.245.24.82:445`ます。 これにより、20個の ping をサンプリングして、PsPing が停止した場合の待機時間を平均することができます。
@@ -295,7 +295,7 @@ IP アドレスを取得するために Netmon をフィルター処理する手
 ![フレームの概要に Netmon の既定の [時間差] 列が追加された、Netmon の一般的な待ち時間。](media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
 > [!NOTE]
-> IP アドレスがここに示した ip と異なる場合があります。たとえば、ping では 157.56.0.0/16 または同様の範囲が返されることがあります。 Office 365 で使用される範囲の一覧については、「 [office 365 の url と IP アドレスの範囲](https://technet.microsoft.com/en-us/library/hh373144.aspx)」を参照してください。
+> IP アドレスがここに示した ip と異なる場合があります。たとえば、ping では 157.56.0.0/16 または同様の範囲が返されることがあります。 Office 365 で使用される範囲の一覧については、「 [office 365 の url と IP アドレスの範囲](https://technet.microsoft.com/library/hh373144.aspx)」を参照してください。
 
 たとえば、132.245 のように検索する場合は、すべてのノードを展開してください (この場合は上部にボタンが表示されます)。
 
@@ -341,7 +341,7 @@ Wireshark に示されているように、プロキシ認証で4秒遅延しま
 DNS 名前解決が海外で行われている場合は、ページの読み込みに秒数を追加することができます。 100ミリ秒の下で名前解決が行われるのが理想的です。 そうでない場合は、さらに調査する必要があります。
 
 > [!TIP]
-> Office 365 でクライアント接続がどのように機能するかがわからない場合 [ここ](https://technet.microsoft.com/en-us/library/dn741250.aspx)では、「クライアント接続のリファレンス」ドキュメントを見てみましょう。
+> Office 365 でクライアント接続がどのように機能するかがわからない場合 [ここ](https://technet.microsoft.com/library/dn741250.aspx)では、「クライアント接続のリファレンス」ドキュメントを見てみましょう。
 
 #### <a name="tools"></a>ツール
 
@@ -463,7 +463,7 @@ SharePoint Online にアクセスすると、海外で出張するユーザー�
 Lync online には、一度に複数の dC にアクティブなノードがあります。 Lync online インスタンスに対する要求が送信されると、Microsoft の DNS は世界中の要求元の場所を特定し、Lync online がアクティブな地域の最も近い dC から IP アドレスを返します。
 
 > [!TIP]
-> クライアントが Office 365 に接続する方法について詳しく知る必要がありますか? [クライアント接続](https://technet.microsoft.com/en-us/library/dn741250.aspx)のリファレンスの記事 (およびその役に立つグラフィックス) を見てみましょう。
+> クライアントが Office 365 に接続する方法について詳しく知る必要がありますか? [クライアント接続](https://technet.microsoft.com/library/dn741250.aspx)のリファレンスの記事 (およびその役に立つグラフィックス) を見てみましょう。
 
 #### <a name="tools"></a>ツール
 
@@ -492,7 +492,7 @@ Outlook.office365.com に対して Ping ツールを実行して、世界中の 
 - HTTPWatch
 - ブラウザーの F12 コンソール
 
-このネットワーク固有の記事では、アプリケーション固有のトラブルシューティングで使用されるツールについては説明しません。 しかし、[このページで](https://support.office.com/en-us/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)使用*できる*リソースがわかります。
+このネットワーク固有の記事では、アプリケーション固有のトラブルシューティングで使用されるツールについては説明しません。 しかし、[このページで](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)使用*できる*リソースがわかります。
 
 ## <a name="related-topics"></a>関連項目
 

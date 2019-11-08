@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Office 365 コラボレーションがテナント間や組織間でどのように機能するかを説明します。
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: f68b04fe1b4d8acd26fc866bb88c09a16bb242de
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665250"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031222"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Office 365 テナント間コラボレーション
 
@@ -35,16 +35,16 @@ Office 365 テナント間コラボレーションのオプションとしては
 
 |**共有の目的**|**管理操作**|**使い方に関する情報**|
 |:-----|:-----|:-----|
-|別の Office 365 組織と予定表を共有する  <br/> |管理者は、企業が他の企業とコラボレーションを行えるようにするため、およびユーザーが他のユーザーとスケジュール (空き時間情報) を共有するために、Exchange Online で予定表に対するさまざまなレベルのアクセスをセットアップできます。  <br/> |[Exchange Online での共有](https://technet.microsoft.com/ja-JP/library/jj916670%28v=exchg.150%29.aspx) <br/> [Exchange Online での組織の関係](https://technet.microsoft.com/ja-JP/library/jj916658%28v=exchg.150%29.aspx) <br/> [Exchange Online で組織の関係を作成する](https://technet.microsoft.com/ja-JP/library/jj916671%28v=exchg.150%29.aspx) <br/> [Exchange Online の組織の関係を変更する](https://technet.microsoft.com/ja-JP/library/jj916659%28v=exchg.150%29.aspx) <br/> [Exchange Online で組織の関係を削除する](https://technet.microsoft.com/ja-JP/library/jj916657%28v=exchg.150%29.aspx) <br/> [予定表を外部ユーザーと共有する](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
-|ユーザーが組織外のユーザーと予定表を共有する方法を制御する  <br/> |管理者は、共有ポリシーをユーザーのメールボックスに適用して、共有できるユーザーと付与するアクセス レベルを制御します。  <br/> |[Exchange Online での共有ポリシー](https://technet.microsoft.com/ja-JP/library/jj916673%28v=exchg.150%29.aspx) <br/> [Exchange Online で共有ポリシーを作成する](https://technet.microsoft.com/ja-JP/library/jj916676%28v=exchg.150%29.aspx) <br/> [Exchange Online で共有ポリシーをメールボックスに適用する](https://technet.microsoft.com/ja-JP/library/jj916672%28v=exchg.150%29.aspx) <br/> [Exchange Online での共有ポリシーの変更、無効化、削除](https://technet.microsoft.com/ja-JP/library/jj916674%28v=exchg.150%29.aspx) <br/> |
-|セキュリティ保護されたメール チャネルを構成し、パートナー組織とのメール フローを制御する  <br/> |管理者は、パートナー組織またはサービス プロバイダーとのメール交換にセキュリティを適用するコネクタを作成します。 コネクタは、トランスポート層セキュリティ (TLS) による暗号化を適用するだけでなく、パートナーがメールを送信する際のドメイン名または IP アドレス範囲に対する制限を許可します。  <br/> |[Exchange Online で電子メール接続をセキュリティで保護するために Office 365 で TLS を使用する方法](https://technet.microsoft.com/ja-JP/library/mt163898.aspx) <br/> [Office 365 でコネクタを使用してメール フローを構成する](https://technet.microsoft.com/ja-JP/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Exchange Online のリモート ドメイン](https://technet.microsoft.com/ja-JP/library/jj966211%28v=exchg.150%29.aspx) <br/> [パートナー組織とのセキュリティで保護されたメール フロー用のコネクタを設定する](https://technet.microsoft.com/ja-JP/library/dn751021%28v=exchg.150%29.aspx) <br/> [Exchange Online および Office 365 でのメール フローのベスト プラクティス (概要)](https://technet.microsoft.com/ja-JP/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
+|別の Office 365 組織と予定表を共有する  <br/> |管理者は、企業が他の企業とコラボレーションを行えるようにするため、およびユーザーが他のユーザーとスケジュール (空き時間情報) を共有するために、Exchange Online で予定表に対するさまざまなレベルのアクセスをセットアップできます。  <br/> |[Exchange Online での共有](https://technet.microsoft.com/library/jj916670%28v=exchg.150%29.aspx) <br/> [Exchange Online での組織の関係](https://technet.microsoft.com/library/jj916658%28v=exchg.150%29.aspx) <br/> [Exchange Online で組織の関係を作成する](https://technet.microsoft.com/library/jj916671%28v=exchg.150%29.aspx) <br/> [Exchange Online の組織の関係を変更する](https://technet.microsoft.com/library/jj916659%28v=exchg.150%29.aspx) <br/> [Exchange Online で組織の関係を削除する](https://technet.microsoft.com/library/jj916657%28v=exchg.150%29.aspx) <br/> [予定表を外部ユーザーと共有する](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
+|ユーザーが組織外のユーザーと予定表を共有する方法を制御する  <br/> |管理者は、共有ポリシーをユーザーのメールボックスに適用して、共有できるユーザーと付与するアクセス レベルを制御します。  <br/> |[Exchange Online での共有ポリシー](https://technet.microsoft.com/library/jj916673%28v=exchg.150%29.aspx) <br/> [Exchange Online で共有ポリシーを作成する](https://technet.microsoft.com/library/jj916676%28v=exchg.150%29.aspx) <br/> [Exchange Online で共有ポリシーをメールボックスに適用する](https://technet.microsoft.com/library/jj916672%28v=exchg.150%29.aspx) <br/> [Exchange Online での共有ポリシーの変更、無効化、削除](https://technet.microsoft.com/library/jj916674%28v=exchg.150%29.aspx) <br/> |
+|セキュリティ保護されたメール チャネルを構成し、パートナー組織とのメール フローを制御する  <br/> |管理者は、パートナー組織またはサービス プロバイダーとのメール交換にセキュリティを適用するコネクタを作成します。 コネクタは、トランスポート層セキュリティ (TLS) による暗号化を適用するだけでなく、パートナーがメールを送信する際のドメイン名または IP アドレス範囲に対する制限を許可します。  <br/> |[Exchange Online で電子メール接続をセキュリティで保護するために Office 365 で TLS を使用する方法](https://technet.microsoft.com/library/mt163898.aspx) <br/> [Office 365 でコネクタを使用してメール フローを構成する](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Exchange Online のリモート ドメイン](https://technet.microsoft.com/library/jj966211%28v=exchg.150%29.aspx) <br/> [パートナー組織とのセキュリティで保護されたメール フロー用のコネクタを設定する](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx) <br/> [Exchange Online および Office 365 でのメール フローのベスト プラクティス (概要)](https://technet.microsoft.com/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
    
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>SharePoint Online と OneDrive for Business のコラボレーション オプション
 
 |**共有の目的**|**管理操作**|**使い方に関する情報**|
 |:-----|:-----|:-----|
-|外部ユーザーとサイトおよびドキュメントを共有する  <br/> |管理者は、認証された Microsoft アカウント、認証された職場または学校のアカウント、ゲスト アカウントのいずれかに対して、テナント レベルまたはサイト コレクション レベルでの共有を構成します。  <br/> |[SharePoint Online 環境の外部共有を管理する](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online と OneDrive for Business の制限付きドメイン共有](https://support.office.com/ja-JP/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online を企業間 (B2B) エクストラネット ソリューションとして使用する](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
-|エンド ユーザーの外部共有を把握して制御する  <br/> |OneDrive for Business ファイルの所有者および SharePoint Online エンド ユーザーは、サイト共有とドキュメント共有を構成し、共有を把握するための通知を確立します。  <br/> |[OneDrive for Business の外部共有に対する通知をオンにする](https://support.office.com/ja-JP/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Office 365 で SharePoint のファイルやフォルダーを共有する](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
+|外部ユーザーとサイトおよびドキュメントを共有する  <br/> |管理者は、認証された Microsoft アカウント、認証された職場または学校のアカウント、ゲスト アカウントのいずれかに対して、テナント レベルまたはサイト コレクション レベルでの共有を構成します。  <br/> |[SharePoint Online 環境の外部共有を管理する](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Office 365 SharePoint Online と OneDrive for Business の制限付きドメイン共有](https://support.office.com/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [SharePoint Online を企業間 (B2B) エクストラネット ソリューションとして使用する](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
+|エンド ユーザーの外部共有を把握して制御する  <br/> |OneDrive for Business ファイルの所有者および SharePoint Online エンド ユーザーは、サイト共有とドキュメント共有を構成し、共有を把握するための通知を確立します。  <br/> |[OneDrive for Business の外部共有に対する通知をオンにする](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Office 365 で SharePoint のファイルやフォルダーを共有する](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>Skype for Business のコラボレーション オプション
 
@@ -57,13 +57,13 @@ Office 365 テナント間コラボレーションのオプションとしては
 
 |**共有の目的**|**管理操作**|**使い方に関する情報**|
 |:-----|:-----|:-----|
-|Azure AD B2B コラボレーション - 組織のディレクトリ内のグループに外部ユーザーを追加することによるコンテンツ共有  <br/> |ある Office 365 テナントのグローバル管理者は、別の Office 365 テナントのユーザーを招待してディレクトリに参加させ、それらの外部ユーザーをグループに追加し、コンテンツ (グループの SharePoint サイト、ライブラリなど) へのアクセス権を付与することができます。  <br/> |[Azure AD B2B コラボレーション プレビューとは何か?](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: 新しい更新で企業間のコラボレーションが簡単に](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 の外部共有と Azure Active Directory B2B コラボレーション](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory の B2B コラボレーションの API とカスタマイズ](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD と ID の表示： Azure AD B2B コラボレーション (企業間)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
+|Azure AD B2B コラボレーション - 組織のディレクトリ内のグループに外部ユーザーを追加することによるコンテンツ共有  <br/> |ある Office 365 テナントのグローバル管理者は、別の Office 365 テナントのユーザーを招待してディレクトリに参加させ、それらの外部ユーザーをグループに追加し、コンテンツ (グループの SharePoint サイト、ライブラリなど) へのアクセス権を付与することができます。  <br/> |[Azure AD B2B コラボレーション プレビューとは何か?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: 新しい更新で企業間のコラボレーションが簡単に](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 の外部共有と Azure Active Directory B2B コラボレーション](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory の B2B コラボレーションの API とカスタマイズ](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD と ID の表示： Azure AD B2B コラボレーション (企業間)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
    
 ## <a name="office-365-collaboration-options"></a>Office 365 のコラボレーション オプション
 
 |**共有の目的**|**管理操作**|**使い方に関する情報**|
 |:-----|:-----|:-----|
-|Office 365 グループ - メール、予定表、OneNote、および共有ファイルを 1 つの場所で一元管理  <br/> |グループは、Business Essentials プラン、Business Premium プラン、Education プラン、Enterprise E1、E3、E5 プランでサポートされています。 ある Office 365 テナントのユーザーは、グループを作成し、別の Office 365 テナント内のユーザーをゲスト ユーザーとして招待することができます。 Dynamics CRM にも適用されます。  <br/> |[Office 365 グループについて](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) <br/> [Office 365 グループのゲスト アクセス](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) <br/> [Office 365 グループのデプロイ](https://technet.microsoft.com/ja-JP/library/dn896591.aspx) <br/> |
+|Office 365 グループ - メール、予定表、OneNote、および共有ファイルを 1 つの場所で一元管理  <br/> |グループは、Business Essentials プラン、Business Premium プラン、Education プラン、Enterprise E1、E3、E5 プランでサポートされています。 ある Office 365 テナントのユーザーは、グループを作成し、別の Office 365 テナント内のユーザーをゲスト ユーザーとして招待することができます。 Dynamics CRM にも適用されます。  <br/> |[Office 365 グループについて](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) <br/> [Office 365 グループのゲスト アクセス](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) <br/> [Office 365 グループのデプロイ](https://technet.microsoft.com/library/dn896591.aspx) <br/> |
    
 ## <a name="yammer-collaboration-options"></a>Yammer のコラボレーション オプション
 
@@ -75,15 +75,15 @@ Office 365 テナント間コラボレーションのオプションとしては
 
 |**共有の目的**|**管理操作**|**使い方に関する情報**|
 |:-----|:-----|:-----|
-|組織外のユーザーと Teams でコラボレーションを行う  <br/> |招待された Office 365 テナントのグローバル管理者は、Teams での外部コラボレーションを有効にする必要があります。 グローバル管理者とチームの所有者は、Teams でコラボレーションを行うために、メール アドレスを持つすべてのユーザーを招待できるようになります。  <br/> 管理者は、既にテナント内にいるゲストを管理して編集することもできます。  <br/> |[ゲスト アクセスを認証する](https://docs.microsoft.com/ja-JP/microsoftteams/teams-dependencies) <br/> [Teams でゲスト アクセスをオンまたはオフにする](https://docs.microsoft.com/ja-JP/microsoftteams/set-up-guests) <br/> [PowerShell を使用してゲスト アクセスを制御する](https://docs.microsoft.com/ja-JP/microsoftteams/guest-access-powershell) <br/> [ゲスト アクセスのチェックリスト](https://docs.microsoft.com/ja-JP/microsoftteams/guest-access-checklist) <br/> [ゲスト ユーザーを表示する](https://docs.microsoft.com/ja-JP/microsoftteams/view-guests) <br/> [ゲスト ユーザー情報を編集する](https://docs.microsoft.com/ja-JP/microsoftteams/edit-guests-information) <br/> |
-|チームの所有者は、ゲストを招待し、ゲストがチーム内でコラボレーションを行う方法を管理することができる。  <br/> |チームの所有者は、自分のチーム内でゲストが実行できる操作をさらに制御することができます。  <br/> |[ゲストを追加する](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [チームにゲストを追加する](https://docs.microsoft.com/ja-JP/microsoftteams/add-guests) <br/> [Teams でのゲスト アクセスを管理する](https://docs.microsoft.com/ja-JP/microsoftteams/manage-guests) <br/> [チームまたはチャネルにいるユーザーを確認する](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
-|他のテナントからのゲストは、Teams 内のコンテンツを表示し、他のメンバーとコラボレーションすることができる  <br/> |なし。  <br/> |[ゲストのエクスペリエンスについて](https://docs.microsoft.com/ja-JP/microsoftteams/guest-experience) <br/> |
+|組織外のユーザーと Teams でコラボレーションを行う  <br/> |招待された Office 365 テナントのグローバル管理者は、Teams での外部コラボレーションを有効にする必要があります。 グローバル管理者とチームの所有者は、Teams でコラボレーションを行うために、メール アドレスを持つすべてのユーザーを招待できるようになります。  <br/> 管理者は、既にテナント内にいるゲストを管理して編集することもできます。  <br/> |[ゲスト アクセスを認証する](https://docs.microsoft.com/microsoftteams/teams-dependencies) <br/> [Teams でゲスト アクセスをオンまたはオフにする](https://docs.microsoft.com/microsoftteams/set-up-guests) <br/> [PowerShell を使用してゲスト アクセスを制御する](https://docs.microsoft.com/microsoftteams/guest-access-powershell) <br/> [ゲスト アクセスのチェックリスト](https://docs.microsoft.com/microsoftteams/guest-access-checklist) <br/> [ゲスト ユーザーを表示する](https://docs.microsoft.com/microsoftteams/view-guests) <br/> [ゲスト ユーザー情報を編集する](https://docs.microsoft.com/microsoftteams/edit-guests-information) <br/> |
+|チームの所有者は、ゲストを招待し、ゲストがチーム内でコラボレーションを行う方法を管理することができる。  <br/> |チームの所有者は、自分のチーム内でゲストが実行できる操作をさらに制御することができます。  <br/> |[ゲストを追加する](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [チームにゲストを追加する](https://docs.microsoft.com/microsoftteams/add-guests) <br/> [Teams でのゲスト アクセスを管理する](https://docs.microsoft.com/microsoftteams/manage-guests) <br/> [チームまたはチャネルにいるユーザーを確認する](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
+|他のテナントからのゲストは、Teams 内のコンテンツを表示し、他のメンバーとコラボレーションすることができる  <br/> |なし。  <br/> |[ゲストのエクスペリエンスについて](https://docs.microsoft.com/microsoftteams/guest-experience) <br/> |
 
 ## <a name="power-bi-collaboration-options"></a>Power BI のコラボレーション オプション
 
 |**共有の目的**|**管理操作**|**使い方に関する情報**|
 |:-----|:-----|:-----|
-|Power BI を使用すれば、外部ゲスト ユーザーはリンクを介して共有されたコンテンツを使用できます。 これにより、組織内のユーザーは、セキュリティで保護された方法で組織全体にコンテンツを配布できます。<br/> | Power BI 管理者は、ユーザーが組織内のコンテンツを表示するために外部ユーザーを招待できるかどうかを制御できます。 <br/> |[Azure AD B2B で外部ゲスト ユーザーに Power BI コンテンツを配布する](https://docs.microsoft.com/ja-JP/power-bi/service-admin-azure-ad-b2b) <br/> |
+|Power BI を使用すれば、外部ゲスト ユーザーはリンクを介して共有されたコンテンツを使用できます。 これにより、組織内のユーザーは、セキュリティで保護された方法で組織全体にコンテンツを配布できます。<br/> | Power BI 管理者は、ユーザーが組織内のコンテンツを表示するために外部ユーザーを招待できるかどうかを制御できます。 <br/> |[Azure AD B2B で外部ゲスト ユーザーに Power BI コンテンツを配布する](https://docs.microsoft.com/power-bi/service-admin-azure-ad-b2b) <br/> |
  
 ## <a name="points-to-be-aware-of-about-office-365-inter-tenant-collaboration"></a>Office 365 テナント間コラボレーションに関する注意点
 

@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: SharePoint Online のページダウンロード時間のパフォーマンスを向上させる方法を説明する、他の記事へのリンクが含まれています。
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375495"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033433"
 ---
 # <a name="tune-sharepoint-online-performance"></a>SharePoint Online のパフォーマンスをチューニングする
 
@@ -36,7 +38,7 @@ SharePoint Online のパフォーマンスを微調整するには、以下の�
 
 - [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
 
-- [SharePoint Online ポータル パフォーマンス ガイダンス](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+- [SharePoint Online ポータル パフォーマンス ガイダンス](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [SharePoint Online のイメージの最適化](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ SharePoint Online のパフォーマンスを微調整するには、以下の�
 
 - [SharePoint Online でのオブジェクトキャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
 
-- [方法:SharePoint Online で調整またはブロックを回避する](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [方法:SharePoint Online で調整またはブロックを回避する](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [SharePoint Online モダンポータルページでの Iframe の最適化](modern-iframe-optimization.md)
 

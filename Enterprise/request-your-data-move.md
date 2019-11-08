@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907650"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031592"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -37,7 +37,7 @@ ms.locfileid: "35907650"
 |英国  <br/> |2017 年 3 月 15 日  <br/> |2017 年 9 月 15 日  <br/> |
 |韓国  <br/> |2017 年 5 月 1 日  <br/> |2017 年 10 月 31 日  <br/> |
 |フランス  <br/> |2018 年 3 月 14 日  <br/> |2018 年 9 月 15 日  <br/> |
-|アラブ首長国連邦  <br/> |2019年7月15日  <br/> |2020年1月31日  <br/> |
+|アラブ首長国連邦  <br/> |2019 年 7 月 15 日  <br/> |2020年1月31日  <br/> |
 |南アフリカ  <br/> |2019年7月25日  <br/> |2020年1月31日  <br/> |
    
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
@@ -100,7 +100,7 @@ IP アドレスを追加した後には、新しいデータセンター geo へ
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>モバイル デバイス上の古い Exchange 設定を更新するようユーザーに通知する
 
-Exchange Server が**m.outlook.com**または**podxxxxx.outlook.com**に設定されているモバイルデバイスをユーザーが所有している場合は、 **outlook.office365.com**に切り替えることをお勧めします。「[同期するモバイルデバイスの設定」の手順に従ってください。自分のアカウントを使用](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)します。
+Exchange Server が**m.outlook.com**または**podxxxxx.outlook.com**に設定されているモバイルデバイスをユーザーが所有している場合は、「[セットアップするモバイルデバイスをアカウントと同期](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3)させる」の手順に従って、 **outlook.office365.com**に切り替えることをお勧めします。
 
 ## <a name="related-topics"></a>関連項目
 
@@ -110,6 +110,6 @@ Exchange Server が**m.outlook.com**または**podxxxxx.outlook.com**に設定�
 
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure のリージョン](https://azure.microsoft.com/en-us/regions/)
+[Azure のリージョン](https://azure.microsoft.com/regions/)
   
 

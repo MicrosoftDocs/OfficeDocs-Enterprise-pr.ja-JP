@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 Video でのテナントの分離について説明します。'
-ms.openlocfilehash: a9ecd4b2c2d7dc7bf69a43c608312e3893b5009d
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: c9be942e10debeb729cda87a88131c17d736d4a2
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067586"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035587"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 ビデオ でのテナントの分離
 
@@ -26,12 +26,15 @@ ms.locfileid: "37067586"
 > Office 365 のビデオは、Microsoft Stream に置き換えられます。 ビデオコラボレーションにインテリジェンスを追加する新しいエンタープライズビデオサービスの詳細と、現在の Office 365 ビデオのお客様の移行計画については、「 [office 365 からストリームへの移行](https://docs.microsoft.com/stream/)」を参照してください。
 
 ## <a name="introduction"></a>はじめに
+
 Azure Storage は、Office 365 ビデオおよび Sway を含む複数の Office 365 サービスのデータを格納するために使用されます。 Azure ストレージには、構造化されていないデータを格納するために使用される拡張性の高い REST ベースのクラウドオブジェクトストアである Blob ストレージが含まれています。 Azure ストレージは、シンプルなアクセス制御モデルを使用します。各 Azure サブスクリプションは、1つ以上のストレージアカウントを作成できます。 各ストレージアカウントには、そのストレージアカウントのすべてのデータへのアクセスを制御するために使用される単一のシークレットキーがあります。 これは、ストレージがアプリケーションに関連付けられており、それらのアプリケーションが関連するデータを完全に制御する一般的なシナリオをサポートします。たとえば、Sway は Azure ストレージにコンテンツを格納します。 Sway のすべての顧客コンテンツは、共有の Azure ストレージアカウントに保存されます。 各ユーザーのコンテンツは、Azure ストレージ内の blob の独立したディレクトリツリーにあります。
 
 お客様の環境へのアクセスを管理するシステム (たとえば、Azure Portal、SMAPI など) は、Microsoft が運用している Azure アプリケーション内で分離されています。 これにより、顧客のアクセスインフラストラクチャが顧客アプリケーションとストレージ層から論理的に分離されます。
 
 ## <a name="tenant-isolation-in-office-365-video"></a>Office 365 ビデオ でのテナントの分離
+
 [Office 365 video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)は、企業に対して、セキュリティで保護された、組織全体で、ビデオコンテンツを投稿、共有、および検出するための、高度にセキュリティで保護された場所を提供するエンタープライズポータルです。 Office 365 のビデオでは、各テナントのビデオはすべての場所で分離され、暗号化されています。また、組織のビデオに対するアクセス許可とアクセス許可を持つ認証されたユーザーのみが使用できます。 Office 365 Video は、次のようなテクノロジを組み合わせて使用します。
+
 - SharePoint Online は、ビデオファイルとメタデータ (ビデオタイトル、説明など) を格納するために使用されます。 また、セキュリティおよびコンプライアンス層 (認証を含む) と検索機能も提供します。
 - Azure Media Services では、トランスコーディング、アダプティブストリーミング、セキュリティで保護された配信 (AES 暗号化を使用)、およびサムネイル機能が提供されます。
 

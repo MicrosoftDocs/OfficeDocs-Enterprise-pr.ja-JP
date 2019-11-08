@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: '概要: Office 365 PowerShell を使用して、さまざまな方法でユーザーアカウントを表示、一覧表示、または表示できます。'
-ms.openlocfilehash: c23e9106873aa32e8daccb1e35a16862e6f9bb7d
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 63756e29bb4d5f3e749cf4d66ef31c98ffac6182
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782067"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031662"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントを表示する
 
@@ -122,7 +122,7 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  これらの例に**** 示されている where-object コマンドレットの構文は、 **where オブジェクト {\_$ にあります。** [ユーザーアカウントのプロパティ名][比較演算子]金額 **}**. > [比較演算子] は、equals、 **-ne** for not equals、 **-lt** (より小さい、-gt (より大きい)、- **gt** (より大きい)、およびその他の場合に- **eq**を指定します。  [value] は通常、指定されていない文字列 (一連の文字、数字、およびその他の文字)、数値、または **$Null**を指定しない> の場合は、 [Where オブジェクト](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)を参照してください。詳細については、ここを参照してください。
+>  これらの例に示され**ている where-object コマンドレット**の構文は、 **where オブジェクト {\_$ にあります。** [ユーザーアカウントのプロパティ名][比較演算子]金額 **}**. > [比較演算子] は、equals、 **-ne** for not equals、 **-lt** (より小さい、-gt (より大きい)、- **gt** (より大きい)、およびその他の場合に- **eq**を指定します。  [value] は通常、指定されていない文字列 (一連の文字、数字、およびその他の文字)、数値、または **$Null**を指定しない> の場合は、 [Where オブジェクト](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1)を参照してください。詳細については、ここを参照してください。
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
@@ -212,7 +212,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  これらの例に**** 示されている where-object コマンドレットの構文は、 **where オブジェクト {\_$ にあります。** [ユーザーアカウントのプロパティ名][比較演算子]金額 **}**.  [comparison operator] は **-eq** (等しい)、 **-ne** for not equals、 **-lt** (より小さい)、- **gt** (より大きい)、または他のものです。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または **$Null**指定なしの場合に使用します。 詳細については[、「Where オブジェクト](https://technet.microsoft.com/en-us/library/hh849715.aspx)」を参照してください。
+>  これらの例に示され**ている where-object コマンドレット**の構文は、 **where オブジェクト {\_$ にあります。** [ユーザーアカウントのプロパティ名][比較演算子]金額 **}**.  [comparison operator] は **-eq** (等しい)、 **-ne** for not equals、 **-lt** (より小さい)、- **gt** (より大きい)、または他のものです。  [value] は通常、文字列 (一連の文字、数字、その他の文字)、数値、または **$Null**指定なしの場合に使用します。 詳細については[、「Where オブジェクト](https://technet.microsoft.com/library/hh849715.aspx)」を参照してください。
   
 ユーザーアカウントのブロックされた状態を確認するには、次のコマンドを使用します。
   
@@ -230,7 +230,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayNam
     
 - isLicensed
     
-ユーザーが作業する部署や、ユーザーが Office 365 サービスを使用する国/地域など、追加のプロパティが必要な場合は、Get-msoluser コマンドレットと組み合わせて**** を**** 実行して、ユーザーアカウントの一覧を指定することができます。プロパティ. 次に例を示します。
+ユーザーが作業する部署や、ユーザーが Office 365 サービスを使用する国/地域など、追加のプロパティが必要な場合**は、get-msoluser コマンドレット**と組み合わせて**** を実行して、ユーザーアカウントのプロパティの一覧を指定できます。 次に例を示します。
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
@@ -261,7 +261,7 @@ Scott Wallace           Operations
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
-表示するアカウントのリストをより詳細に選択できるようにするには、 **** where-object コマンドレットを使用することもできます。 次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。
+表示するアカウントのリストをより詳細に選択できるようにするに**は、where-object コマンドレット**を使用することもできます。 次に、使用場所が指定されていないユーザー アカウントのみを表示するコマンドの例を示します。
   
 ```
 Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
@@ -284,7 +284,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-ディレクトリ同期を使用して Office 365 ユーザーを作成および管理している場合は、Office 365 ユーザーがどのローカルアカウントから射影されているかを表示できます。 次の例では、Azure AD Connect が ObjectGUID の既定のソースアンカーを使用するように構成されていると仮定しています (ソースアンカーの構成の詳細については、「 [AZURE Ad connect: デザインの概念](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)」を参照してください)。また、Powershell の Active Directory モジュールがインストールされている場合 (「 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)」を参照):
+ディレクトリ同期を使用して Office 365 ユーザーを作成および管理している場合は、Office 365 ユーザーがどのローカルアカウントから射影されているかを表示できます。 次の例では、Azure AD Connect が ObjectGUID の既定のソースアンカーを使用するように構成されていると仮定しています (ソースアンカーの構成の詳細については、「 [AZURE Ad connect: デザインの概念](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)」を参照して[ください)。](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)また、powershell の Active Directory モジュールがインストールされていることを前提とします
 
 ```
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

@@ -13,17 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: サービス拒否 (DoS) 攻撃に対する Microsoft のクラウドサービスの防御方法。
-ms.openlocfilehash: ad15349832c36a7dceae59503055606999a3193c
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: ba4688d965d6cce232f771507df941540acc8e4e
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067610"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035774"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する Microsoft クラウドサービスの防御
 
 ## <a name="introduction"></a>はじめに
-Microsoft データセンターは、境界線フェンス、ビデオカメラ、セキュリティ担当者、およびバイオメトリクス、スマートカード、多要素認証を使用する安全な入り口を含む多層防御セキュリティによって保護されています。 多層防御セキュリティは、施設のすべての領域および各物理サーバーユニットに対して続行されます。 [Microsoft クラウドインフラストラクチャと運用グループ](https://www.microsoft.com/en-us/cloud-platform/global-datacenters)は、クラウドサービスのコアインフラストラクチャと基本的なテクノロジを提供します。 データセンターは、物理的なセキュリティと信頼性の業界標準に準拠しており、Microsoft の運用担当者が管理、監視、管理します。
+Microsoft データセンターは、境界線フェンス、ビデオカメラ、セキュリティ担当者、およびバイオメトリクス、スマートカード、多要素認証を使用する安全な入り口を含む多層防御セキュリティによって保護されています。 多層防御セキュリティは、施設のすべての領域および各物理サーバーユニットに対して続行されます。 [Microsoft クラウドインフラストラクチャと運用グループ](https://www.microsoft.com/cloud-platform/global-datacenters)は、クラウドサービスのコアインフラストラクチャと基本的なテクノロジを提供します。 データセンターは、物理的なセキュリティと信頼性の業界標準に準拠しており、Microsoft の運用担当者が管理、監視、管理します。
 
 クラウドサービスをさらに保護するために、Microsoft は、Microsoft Azure の継続的監視およびペネトレーションテストプロセスの一部である DDoS 防御システムを提供しています。 Azure DDoS 防御システムは、外部からの攻撃に耐えられるだけでなく、他の Azure テナントからも攻撃されるように設計されています。 Azure は、SYN cookie、レート制限、接続制限などの標準的な検出と軽減の手法を使用して、DDoS 攻撃を防止します。
 
@@ -34,11 +34,11 @@ Microsoft のクラウドサービスは、複数のソースからの攻撃の�
 L3 および L4 攻撃を防止するために、Microsoft では、これらのレイヤーを保護することによって、攻撃を受けたインフラストラクチャと顧客の目標を保護することを目的としたソリューションを設計、開発、および展開しています。 インフラストラクチャを保護することで、1人のお客様の攻撃トラフィックが、その他のお客様にとっての損害やサービスの品質低下につながることがなくなります。 ソリューションは、データセンタールーターからのトラフィックサンプリングデータを使用します。 このデータは、ネットワーク監視サービスによって分析され、攻撃を検出します。 攻撃が検出されると、自動防御メカニズムが開始されます。
 
 ## <a name="application-level-defenses"></a>アプリケーションレベルの防御
-Microsoft のエンジニアリングチームは、お客様のデータを保護するために、 [Microsoft 運用セキュリティアシュアランス](https://www.microsoft.com/en-us/SDL/OperationalSecurityAssurance)が設定した厳格な基準に従っています。 Microsoft のクラウドサービスは、非常に高い負荷をサポートするように意図的に構築されており、アプリケーションレベルの DoS 攻撃を保護し、軽減します。 一部のワークロードでは、複数のグローバルデータセンターにサービスが分散され、地域の分離と調整機能を備えた、スケールアウトされたアーキテクチャを実装しています。
+Microsoft のエンジニアリングチームは、お客様のデータを保護するために、 [Microsoft 運用セキュリティアシュアランス](https://www.microsoft.com/SDL/OperationalSecurityAssurance)が設定した厳格な基準に従っています。 Microsoft のクラウドサービスは、非常に高い負荷をサポートするように意図的に構築されており、アプリケーションレベルの DoS 攻撃を保護し、軽減します。 一部のワークロードでは、複数のグローバルデータセンターにサービスが分散され、地域の分離と調整機能を備えた、スケールアウトされたアーキテクチャを実装しています。
 
 お客様の管理者がサービスの初期セットアップ中に特定するお客様の国または地域ごとに、お客様のデータのプライマリストレージの場所を決定します。 お客様のデータは、プライマリ/バックアップ戦略に従って、冗長なデータセンター間でレプリケートされます。 プライマリデータセンターは、ソフトウェアで実行されているすべての主要な顧客データと共に、アプリケーションソフトウェアをホストします。 バックアップデータセンターは自動フェールオーバーを提供します。 プライマリデータセンターが何らかの理由で機能しなくなると、要求はバックアップデータセンター内のソフトウェアおよび顧客データのコピーにリダイレクトされます。 いずれの場合も、お客様のデータは、プライマリデータセンターまたはバックアップデータセンターのいずれかで処理されます。 データを複数のデータセンターに分散すると、1つのデータセンターが攻撃を受けた場合に影響を受ける領域が減少します。 さらに、影響を受けるデータセンターのサービスは、回復メカニズムの1つとしてセカンダリデータセンターに迅速にリダイレクトすることができます。また、その逆も同様です (サービスが復元されると、プライマリデータセンターにリダイレクトされます)。
 
-個々のワークロードには、リソース使用率を管理する組み込みの機能が含まれています。 たとえば、Exchange Online と SharePoint Online の調整メカニズムは、DoS 攻撃を防御する多層的なアプローチの一部です。 Exchange Online ユーザーの調整は、エンドユーザーが消費するリソースのレベル、リソースが Active Directory、Exchange Online インフォメーションストア、またはその他の場所にあるかどうかに基づいて行います。 ユーザーが消費するリソースを制限するために、各クライアントに予算が割り当てられます。 ユーザーアクティビティおよびシステムコンポーネントの Exchange Online の調整は、[ワークロード管理](http://technet.microsoft.com/en-us/library/jj150503(v=exchg.150).aspx)に基づいています。 Exchange online のワークロードは、exchange online のシステムリソース管理の目的で明示的に定義されている Exchange Online の機能、プロトコル、またはサービスです。 Exchange Online のワークロードごとに、CPU、メールボックスデータベース操作、または Active Directory 要求などのシステムリソースを使用して、ユーザー要求やバックグラウンド作業を実行する必要があります。 Exchange Online ワークロードの例としては、web 上の Outlook、Exchange ActiveSync、メールボックスの移行、メールボックスアシスタントなどがあります。 テナント管理者は、Exchange 管理シェルを使用して、ユーザーの Exchange ワークロード管理調整設定を管理できます。 Exchange Online で実装されているさまざまな形式の調整には、PowerShell、Exchange Web サービス、POP と IMAP、Exchange ActiveSync、モバイルデバイス接続、受信者などが含まれます。 オンプレミスの Exchange 展開の管理者は調整ポリシーを構成できますが、管理者は Exchange Online の調整ポリシーを構成することはできません。
+個々のワークロードには、リソース使用率を管理する組み込みの機能が含まれています。 たとえば、Exchange Online と SharePoint Online の調整メカニズムは、DoS 攻撃を防御する多層的なアプローチの一部です。 Exchange Online ユーザーの調整は、エンドユーザーが消費するリソースのレベル、リソースが Active Directory、Exchange Online インフォメーションストア、またはその他の場所にあるかどうかに基づいて行います。 ユーザーが消費するリソースを制限するために、各クライアントに予算が割り当てられます。 ユーザーアクティビティおよびシステムコンポーネントの Exchange Online の調整は、[ワークロード管理](https://technet.microsoft.com/library/jj150503(v=exchg.150).aspx)に基づいています。 Exchange online のワークロードは、exchange online のシステムリソース管理の目的で明示的に定義されている Exchange Online の機能、プロトコル、またはサービスです。 Exchange Online のワークロードごとに、CPU、メールボックスデータベース操作、または Active Directory 要求などのシステムリソースを使用して、ユーザー要求やバックグラウンド作業を実行する必要があります。 Exchange Online ワークロードの例としては、web 上の Outlook、Exchange ActiveSync、メールボックスの移行、メールボックスアシスタントなどがあります。 テナント管理者は、Exchange 管理シェルを使用して、ユーザーの Exchange ワークロード管理調整設定を管理できます。 Exchange Online で実装されているさまざまな形式の調整には、PowerShell、Exchange Web サービス、POP と IMAP、Exchange ActiveSync、モバイルデバイス接続、受信者などが含まれます。 オンプレミスの Exchange 展開の管理者は調整ポリシーを構成できますが、管理者は Exchange Online の調整ポリシーを構成することはできません。
 
 SharePoint Online で調整するための最も一般的なトリガーは、クライアント側オブジェクトモデル (CSOM) コードで、頻度が高すぎて実行される操作が多すぎます。 CSOM では、1つの要求で多くのアクションを実行できます。これは、使用制限を超えてユーザー単位の調整が発生する可能性があります。
 
@@ -49,6 +49,6 @@ SharePoint Online で調整するための最も一般的なトリガーは、�
 問題のあるプロセスが引き続き利用制限を超えた場合、SharePoint Online は完全にそのプロセスをブロックし、HTTP 状態コード 503 ("サービスは利用できません") を返します。
 
 ## <a name="vulnerability-and-penetration-testing"></a>脆弱性およびペネトレーションテスト
-Microsoft では、多くの[セキュリティテクノロジとプラクティス](https://www.microsoft.com/en-us/trustcenter/security/threatmanagement)を使用して、クラウドインフラストラクチャとオンプレミスネットワークを、クラウドサービス用のマルウェア対策コンポーネントおよびサービスを使用することを含む、高度で高度な脅威から[保護](https://blogs.technet.microsoft.com/hybridcloud/2015/05/05/protecting-your-datacenter-and-cloud-from-emerging-threats/)しています。マシン (Vm)、その他のシステム。 高度な脅威分析。ネットワーク、システム、ユーザーの通常の使用パターンを監視し、マシン学習を使用して、通常のすべての動作と、通常の侵入テストにフラグを設定します。
+Microsoft では、クラウドサービス、仮想マシン (Vm)、その他のシステムにマルウェア対策コンポーネントやサービスを使用することを含め、高度な脅威から[クラウドインフラストラクチャ](https://blogs.technet.microsoft.com/hybridcloud/2015/05/05/protecting-your-datacenter-and-cloud-from-emerging-threats/)とオンプレミスネットワークを保護するために、多くの[セキュリティテクノロジとプラクティス](https://www.microsoft.com/trustcenter/security/threatmanagement)を使用しています。 高度な脅威分析。ネットワーク、システム、ユーザーの通常の使用パターンを監視し、マシン学習を使用して、通常のすべての動作と、通常の侵入テストにフラグを設定します。
 
-独自のペネトレーションテストを実行し、お客様に[Microsoft Cloud ユニファイドペネトレーションテストプログラム](https://technet.microsoft.com/en-us/mt784683)を提供するだけでなく、次のような一般的な脆弱性評価を実行するサードパーティのセキュリティ専門家と協力することもあります。クラウドサービスに対するペネトレーションテスト。 このようなサードパーティの脆弱性評価からのレポートは、[サービス信頼](https://aka.ms/STP)と[サービス保証](https://aka.ms/ServiceAssurance)ポータルからダウンロードできます。
+独自のペネトレーションテストを実行し、お客様に[Microsoft Cloud ユニファイドペネトレーションテストプログラム](https://technet.microsoft.com/mt784683)を提供するだけでなく、クラウドサービスに対する通常の脆弱性評価とペネトレーションテストを実行するサードパーティのセキュリティ専門家と協力しています。 このようなサードパーティの脆弱性評価からのレポートは、[サービス信頼](https://aka.ms/STP)と[サービス保証](https://aka.ms/ServiceAssurance)ポータルからダウンロードできます。

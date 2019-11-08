@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。
-ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249495"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028871"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 の展開計画チェックリスト
 
@@ -36,7 +36,7 @@ Office 365 のセットアップに関するヘルプを参照してください
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**展開タスク/イベント** <br/> |**開始日** <br/> |**終了日** <br/> |**資料** <br/> |**依存関係** <br/> |
+|**展開タスク/イベント** <br/> |**開始日** <br/> |**終了日** <br/> |**Resources** <br/> |**依存関係** <br/> |
 |**展開の目標を決定する** <br/> |||||
 | 内部および外部の関係者と:<br>  -スコープとタイムラインに同意します。 <br>  -プロジェクトの追跡メカニズムに同意する  <br>  -成功の基準と[通信](https://fasttrack.microsoft.com/office) / の開発[Office 365 の使用を開始](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)する|||||
 |**現在の環境の一覧を作成し、展開の主要な決定を行う** |||||
@@ -78,5 +78,5 @@ Office 365 のセットアップに関するヘルプを参照してください
 | 必要に応じてデータ ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)、[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)など) を移行する |||||
 |機能を検証して最終手順を完了する |||||
 | [Office 365 を指すように DNS 設定を移行する](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| [Office 365 の使用を開始](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US)できることをユーザーに通知する |||||
+| [Office 365 の使用を開始](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US)できることをユーザーに通知する |||||
 | Office 365 ( [office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[モバイルデバイス](https://go.microsoft.com/fwlink/?LinkId=534840)) に接続するようにクライアントシステムを再構成する  |||||

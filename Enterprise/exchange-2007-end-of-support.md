@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: 2017年4月11日に、Exchange Server 2007 がサポートの終了に到達しました。 Exchange 2007 から Office 365 または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
-ms.openlocfilehash: 08796407e41fcc249da709267301de94fc359f36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: df870d05c6f5139c4274c1654cd3b4304103a98e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067613"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028851"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 のサポート終了ロードマップ
 
@@ -40,7 +40,7 @@ Exchange 2007 のインストールは、この日付以降も引き続き実行
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-Exchange 2007 のサポートが終了したので、オプションを調査して移行計画を準備することを強くお勧めします。 次の操作を実行できます。
+Exchange 2007 のサポートが終了したので、オプションを調査して移行計画を準備することを強くお勧めします。 以下のことを実行できます。
   
 - Office 365 に移行するには、カットオーバー、段階的、またはハイブリッドの移行を使用します。
     
@@ -85,7 +85,7 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
 |段階的な移行  <br/> |150を超える座席  <br/> |数週間  <br/> |
 |完全なハイブリッド移行  <br/> |数百から数千の座席  <br/> |数か月以上  <br/> |
    
-次のセクションでは、これらの方法の概要について説明します。 「」を参照してください。各方法の詳細については、「[移行パスを決定](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27)する」を参照してください。 
+次のセクションでは、これらの方法の概要について説明します。 「」を参照してください。各方法の詳細については、「[移行パスを決定](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27)する」を参照してください。 
   
 #### <a name="cutover-migration"></a>一括移行
 
@@ -109,17 +109,17 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
     
 - 移行するユーザーメールボックスごとに、Exchange Online を含む Office 365 ライセンスが必要になります。
     
-- ユーザーは、それぞれのデバイスに新しい Outlook プロファイルを設定して、電子メールをもう一度ダウンロードする必要があります。 Outlook がダウンロードするメールの量は異なる場合があります。 詳細については、「[オフラインで保持するメールの量を変更する](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1)」を参照してください。
+- ユーザーは、それぞれのデバイスに新しい Outlook プロファイルを設定して、電子メールをもう一度ダウンロードする必要があります。 Outlook がダウンロードするメールの量は異なる場合があります。 詳細については、「[オフラインで保持するメールの量を変更する](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1)」を参照してください。
     
 カットオーバー移行の詳細については、以下を参照してください。
   
-- [ Office 365 への一括メール移行について知っておくべきこと ](https://support.office.com/en-us/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
+- [ Office 365 への一括メール移行について知っておくべきこと ](https://support.office.com/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
     
-- [Office 365 への電子メールの一括移行を実行する](https://support.office.com/en-us/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
+- [Office 365 への電子メールの一括移行を実行する](https://support.office.com/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
     
 #### <a name="staged-migration"></a>段階的な移行
 
-段階的な移行とは、Office 365 に移行する必要がある数百または数千のメールボックスがある場合、移行を完了するのに1週間以上かかる必要があり、共有の空き時間情報カレンダー情報などの高度なハイブリッド移行機能を必要としないものです。rm
+段階的な移行とは、Office 365 に移行する必要がある数百または数千のメールボックスがある場合、移行を完了するのに1週間以上かかることがあり、共有の空き時間情報予定表情報のような高度なハイブリッド移行機能は必要ありません。
   
 段階的な移行は、メールボックスを Office 365 に移行するのに時間がかかるようにする必要がある組織に適していますが、数週間以内に移行を完了することを計画しています。 メールボックスを "バッチ" で移行することにより、特定の時間にどのメールボックスを移行するかを制御できます。 同じ部署のユーザーのメールボックスをバッチ処理することもできます。たとえば、すべてのユーザーが同時に移動されていることを確認します。 または、最新のバッチまでエグゼクティブメールボックスを残しておくこともできます。 カットオーバー移行の場合と同様に、ユーザーは Outlook プロファイルを再作成する必要があります。
   
@@ -139,13 +139,13 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
     
 - 移行するユーザーメールボックスごとに、Exchange Online を含む Office 365 ライセンスが必要になります。
     
-- ユーザーは、それぞれのデバイスに新しい Outlook プロファイルを設定して、電子メールをもう一度ダウンロードする必要があります。 Outlook がダウンロードするメールの量は異なる場合があります。 詳細については、「[オフラインで保持するメールの量を変更する](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1)」を参照してください。
+- ユーザーは、それぞれのデバイスに新しい Outlook プロファイルを設定して、電子メールをもう一度ダウンロードする必要があります。 Outlook がダウンロードするメールの量は異なる場合があります。 詳細については、「[オフラインで保持するメールの量を変更する](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1)」を参照してください。
     
 段階的な移行の詳細については、以下を参照してください。
   
-- [Office 365 への段階的メール移行について知っておくべきこと](https://support.office.com/en-us/article/What-you-need-to-know-about-a-staged-email-migration-to-Office-365-7e2c82be-5f3d-4e36-bc6b-e5b4d411e207)
+- [Office 365 への段階的メール移行について知っておくべきこと](https://support.office.com/article/What-you-need-to-know-about-a-staged-email-migration-to-Office-365-7e2c82be-5f3d-4e36-bc6b-e5b4d411e207)
     
-- [Office 365 へのメールの段階的な移行を実行する](https://support.office.com/en-us/article/Perform-a-staged-migration-of-email-to-Office-365-83bc0b69-de47-4cc4-a57d-47e478e4894e)
+- [Office 365 へのメールの段階的な移行を実行する](https://support.office.com/article/Perform-a-staged-migration-of-email-to-Office-365-83bc0b69-de47-4cc4-a57d-47e478e4894e)
     
 #### <a name="full-hybrid"></a>完全なハイブリッド
 
@@ -187,13 +187,13 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
   
 - [Exchange 展開アシスタント](https://aka.ms/exdeploy)
     
-- [Exchange Server のハイブリッド展開](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
+- [Exchange Server のハイブリッド展開](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
     
-- [ハイブリッド構成ウィザード](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [ハイブリッド構成ウィザード](https://technet.microsoft.com/library/hh529921%28v=exchg.150%29.aspx)
     
-- [ハイブリッド構成ウィザードに関する FAQ](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [ハイブリッド構成ウィザードに関する FAQ](https://technet.microsoft.com/library/mt488940%28v=exchg.150%29.aspx)
     
-- [ハイブリッド展開の前提条件](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
+- [ハイブリッド展開の前提条件](https://technet.microsoft.com/library/hh534377%28v=exchg.150%29.aspx)
     
 ### <a name="migrate-to-a-newer-version-of-exchange-server"></a>新しいバージョンの Exchange Server に移行する
 
@@ -215,12 +215,12 @@ Office 365 に移行できない場合は、Exchange 2016 に移行すること�
 |:-----|:-----|
 |サポート終了日  <br/> | Exchange 2007 と同様に、Exchange の各バージョンのサポート終了日は次のようになります。  <br/> **Exchange 2010**年1月2020  <br/> **Exchange 2013** -2023 年4月  <br/> **Exchange 2016**年10月2025  <br/>  以前はサポート終了日よりも早く、もう一度移行を実行する必要があります。 2020年1月は、ご想像を超えるほど多くなります。  <br/> |
 |Exchange 2010 および2013への移行パス  <br/> |ここでは、Exchange 2010 または Exchange 2013 に移行するための一般的なフェーズを示します。  <br/> 既存の Exchange 2007 組織への Exchange 2010 または2013への移動サービスとその他のインフラストラクチャへの exchange 2010 への移動サービスとその他のインフラストラクチャへの移行メールボックスとパブリックフォルダーを Exchange の2013または2010に移動するその他の Exchange 2013 サーバー |
-|Exchange 2016 への移行パス  <br/> |ここでは、Exchange 2016 への移行の一般的なフェーズを示します。  <br/> 既存の exchange 2007 組織の移動サービスとその他のインフラストラクチャへの exchange 2013 のインストールを exchange 2013 に移行するメールボックスとパブリックフォルダーを exchange に移動する残りの exchange の使用停止サーバーに exchange の 2007 2013 をインストールする既存のExchange 2013 組織。 メールボックス、パブリックフォルダー、サービス、およびその他のインフラストラクチャを Exchange 2016 に移動します (順序は関係ありません)。 残りの Exchange 2013 サーバーを[!NOTE]使用停止 _GT_ > exchange 2013 から exchange 2016 へ移行することは簡単です。 両方のバージョンには、ほぼ同じハードウェア要件があります。 この点と事実は、これらのバージョンには互換性があるため、Exchange 2013 用に購入したサーバーを再構築して、Exchange 2016 をインストールすることができます。 また、オンラインメールボックスの移動を使用すると、ほとんどのユーザーはメールボックスがサーバーから移動され、Exchange 2016 を使用して再構築された後、それらのメールボックスに戻ってくることはありません。           |
-|バージョンの共存  <br/> | 移行する場合:  <br/> **Exchange 2016**Exchange 2007 サーバーを含む組織に Exchange 2016 をインストールすることはできません。 最初に Exchange 2010 または2013に移行する必要があります (Exchange 2013 を推奨)、すべての Exchange 2007 サーバーを削除して、Exchange 2016 に移行します。  <br/> **Exchange 2010 または exchange 2013**既存の Exchange 2007 組織に Exchange 2010 または Exchange 2013 をインストールすることができます。 これにより、1つ以上の Exchange 2010 または2013サーバーをインストールして、移行を実行することができます。  <br/> |
-|サーバー ハードウェア  <br/> | サーバーハードウェア要件が Exchange 2007 から変更されました。 使用しているハードウェアに互換性があることを確認する必要があります。 各バージョンのハードウェア要件の詳細については、以下を参照してください。  <br/> [Exchange 2016 のシステム要件](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 のシステム要件](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 のシステム要件](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.141%29.aspx) <br/>  Exchange のパフォーマンスが大幅に向上したこと、および新しいサーバーでのコンピューティングの電力と記憶域の容量が増加したことにより、同じ数のメールボックスをサポートするために必要なサーバーが少なくなる可能性があることがわかります。  <br/> |
-|オペレーティング システムのバージョン  <br/> | 各バージョンでサポートされているオペレーティングシステムの最小バージョンは次のとおりです。  <br/> **Exchange 2016**Windows Server 2012  <br/> **Exchange 2013**Windows Server 2008 R2 SP1  <br/> **Exchange 2010**Windows Server 2008 SP2  <br/>  オペレーティングシステムのサポートの詳細については、「 [Exchange サポートのマトリックス](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx)」を参照してください。  <br/> |
-|Active Directory フォレストの機能レベル  <br/> | 各バージョンのサポートされている最小 Active Directory フォレストの機能レベルは次のとおりです。  <br/> **Exchange 2016**Windows Server 2008 R2 SP1  <br/> **Exchange 2013**Windows Server 2003  <br/> **Exchange 2010**Windows Server 2003  <br/>  フォレストの機能レベルのサポートの詳細については、「 [Exchange サポートのマトリックス](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx)」を参照してください。  <br/> |
-|Office クライアントのバージョン  <br/> | 各バージョンでサポートされている最小 Office クライアントバージョンは次のとおりです。  <br/> **Exchange 2016**Office 2010 (最新の更新プログラム)  <br/> **Exchange 2013**Office 2007 SP3  <br/> **Exchange 2010**Office 2003  <br/>  Office クライアントサポートの詳細については、「Exchange サポートの[マトリックス](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx)」を参照してください。  <br/> |
+|Exchange 2016 への移行パス  <br/> |ここでは、Exchange 2016 への移行の一般的なフェーズを示します。  <br/> 既存の Exchange 2007 組織の移動サービスとその他のインフラストラクチャへの Exchange 2013 のインストールを Exchange 2013 に移行するメールボックスとパブリックフォルダーを exchange に移動する残りの Exchange の使用停止サーバーに exchange の 2007 2013 をインストールする既存のExchange 2013 組織。 メールボックス、パブリックフォルダー、サービス、およびその他のインフラストラクチャを Exchange 2016 に移動します (順序は関係ありません)。 残りの Exchange 2013 サーバー > [!NOTE]> exchange 2013 から exchange 2016 に移行することは簡単です。 両方のバージョンには、ほぼ同じハードウェア要件があります。 この点と事実は、これらのバージョンには互換性があるため、Exchange 2013 用に購入したサーバーを再構築して、Exchange 2016 をインストールすることができます。 また、オンラインメールボックスの移動を使用すると、ほとんどのユーザーはメールボックスがサーバーから移動され、Exchange 2016 を使用して再構築された後、それらのメールボックスに戻ってくることはありません。           |
+|バージョンの共存  <br/> | 移行する場合:  <br/> **Exchange 2016**Exchange 2007 サーバーを含む組織に exchange 2016 をインストールすることはできません。 最初に Exchange 2010 または2013に移行する必要があります (Exchange 2013 を推奨)、すべての Exchange 2007 サーバーを削除して、Exchange 2016 に移行します。  <br/> **Exchange 2010 または exchange 2013**既存の Exchange 2007 組織に Exchange 2010 または Exchange 2013 をインストールすることができます。 これにより、1つ以上の Exchange 2010 または2013サーバーをインストールして、移行を実行することができます。  <br/> |
+|サーバー ハードウェア  <br/> | サーバーハードウェア要件が Exchange 2007 から変更されました。 使用しているハードウェアに互換性があることを確認する必要があります。 各バージョンのハードウェア要件の詳細については、以下を参照してください。  <br/> [Exchange 2016 のシステム要件](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 のシステム要件](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 のシステム要件](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Exchange のパフォーマンスが大幅に向上したこと、および新しいサーバーでのコンピューティングの電力と記憶域の容量が増加したことにより、同じ数のメールボックスをサポートするために必要なサーバーが少なくなる可能性があることがわかります。  <br/> |
+|オペレーティング システムのバージョン  <br/> | 各バージョンでサポートされているオペレーティングシステムの最小バージョンは次のとおりです。  <br/> **Exchange 2016**Windows Server 2012  <br/> **Exchange 2013**Windows Server 2008 R2 SP1  <br/> **Exchange 2010**Windows Server 2008 SP2  <br/>  オペレーティングシステムのサポートの詳細については、「 [Exchange サポートのマトリックス](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)」を参照してください。  <br/> |
+|Active Directory フォレストの機能レベル  <br/> | 各バージョンのサポートされている最小 Active Directory フォレストの機能レベルは次のとおりです。  <br/> **Exchange 2016**Windows Server 2008 R2 SP1  <br/> **Exchange 2013**Windows Server 2003  <br/> **Exchange 2010**Windows Server 2003  <br/>  フォレストの機能レベルのサポートの詳細については、「 [Exchange サポートのマトリックス](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)」を参照してください。  <br/> |
+|Office クライアントのバージョン  <br/> | 各バージョンでサポートされている最小 Office クライアントバージョンは次のとおりです。  <br/> **Exchange 2016**Office 2010 (最新の更新プログラム)  <br/> **Exchange 2013**Office 2007 SP3  <br/> **Exchange 2010**Office 2003  <br/>  Office クライアントサポートの詳細については、「Exchange サポートの[マトリックス](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx)」を参照してください。  <br/> |
    
 #### <a name="how-do-i-migrate"></a>移行方法
 
@@ -228,11 +228,11 @@ Office 365 に移行できない場合は、Exchange 2016 に移行すること�
   
 - [Exchange 展開アシスタント](https://aka.ms/exdeploy)
     
-- Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx)、 [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)の Active Directory スキーマの変更
+- Exchange [2016](https://technet.microsoft.com/library/bb738144%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/library/bb738144%28v=exchg.150%29.aspx)、 [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)の Active Directory スキーマの変更
     
-- Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx)、 [2010](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.141%29.aspx)のシステム要件
+- Exchange [2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx)、 [2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx)のシステム要件
     
-- Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx)、 [2010](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.141%29.aspx)の前提条件
+- Exchange [2016](https://technet.microsoft.com/library/bb691354%28v=exchg.160%29.aspx)、 [2013](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx)、 [2010](https://technet.microsoft.com/library/bb691354%28v=exchg.141%29.aspx)の前提条件
     
 ## <a name="what-if-i-need-help"></a>サポートが必要な場合はどうすればよいですか?
 
@@ -240,9 +240,9 @@ Office 365 に移行している場合は、Microsoft FastTrack サービスを�
   
 Office 365 への移行中に FastTrack を使用していない場合や、新しいバージョンの Exchange Server に移行している場合は、この記事に記載されている説明を参照してください。 使用できるリソースを次に示します。
   
-- [テクニカル コミュニティ](https://social.technet.microsoft.com/Forums/office/en-US/home?category=exchangeserver)
+- [テクニカル コミュニティ](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
     
-- [カスタマー サポート](https://support.microsoft.com/en-us/gp/support-options-for-business)
+- [カスタマー サポート](https://support.microsoft.com/gp/support-options-for-business)
     
 ## <a name="related-topics"></a>関連項目
 

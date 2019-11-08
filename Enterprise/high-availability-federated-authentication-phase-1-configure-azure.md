@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067503"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030751"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
@@ -45,7 +45,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet アドレス空間  <br/> |仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V:クロスプレミスの仮想ネットワーク構成**
   
@@ -109,7 +109,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
 ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure PowerShell の概要](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)」を参照してください。 
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
@@ -134,7 +134,7 @@ Get-AzSubscription | Sort Name | Select Name
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Azure サブスクリプションを設定します。 引用符内のすべての文字 ( \<および > 文字を含む) を正しい名前に置き換えます。
+Azure サブスクリプションを設定します。 引用符で囲まれたすべてのもの\< (および > 文字を含む) を正しい名前に置き換えます。
   
 ```
 $subscrName="<subscription name>"

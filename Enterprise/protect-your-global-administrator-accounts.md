@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 サブスクリプションへのグローバル管理者アクセスを保護します。
-ms.openlocfilehash: 353787ccda7ab96583fe75bc423f70d339d3435b
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162400"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031612"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 グローバル管理者アカウントの保護
 
@@ -43,7 +43,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
 > [!NOTE]
 > この記事ではグローバル管理者アカウントに重点を置いていますが、電子情報開示管理者やセキュリティまたはコンプライアンス管理者など、さまざまな範囲のアクセス許可を持つ追加のアカウントがサブスクリプション内のデータにアクセスできるかどうかを考慮する必要があります。アカウントは、同じ方法で保護する必要があります。 
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. 専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
+## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1.  専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
 
 グローバル管理者特権を必要とする、ユーザーアカウントへの役割の割り当てなど、比較的少数の管理タスクがあります。 そのため、グローバル管理者の役割が割り当てられている日常のユーザーアカウントを使用する代わりに、次の手順を実行します。
   
@@ -67,7 +67,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
   - グローバル管理者ロールを削除します。
     
-  - そのユーザーのジョブ機能と責任に応じて、管理者の役割をアカウントに割り当てます。 Office 365 のさまざまな管理者ロールの詳細については、「365 office 2013 管理者の役割について」を参照してください。
+  - そのユーザーのジョブ機能と責任に応じて、管理者の役割をアカウントに割り当てます。 Office 365 のさまざまな管理者ロールの詳細については、「 [365 office 2013 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
     
 8. Office 365 からサインアウトします。
     
@@ -86,7 +86,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
 > [!NOTE]
 > これには、日常のユーザーアカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要になります。 ただし、この操作を実行する必要があるのは、全体管理者の操作の場合だけです。 グローバル管理者アカウント違反の後に Office 365 サブスクリプションを回復するには、さらに多くの手順が必要になることに注意してください。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>手順 2. 専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、最強のセカンダリ認証形式を使用する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>手順 2.  専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、最強のセカンダリ認証形式を使用する
 
 多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Office 365 では、次の認証方法がサポートされています。
   
@@ -125,7 +125,7 @@ MFA と PowerShell を使用して Office 365 サービスに接続するには�
 
 高い権限を持つタスクの実行が可能な限り安全であることを確認するには、特権アクセスワークステーション (PAW) を使用します。 PAW は、グローバル管理者アカウントを必要とする Office 365 構成など、機密性の高い構成タスクにのみ使用される専用のコンピューターです。 このコンピューターはインターネットブラウジングや電子メールで毎日使用されていないため、インターネット攻撃および脅威から保護するのが適切です。
   
-PAW をセットアップする方法については、「 [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw)」を参照してください。
+PAW をセットアップする方法については、「 [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw)」を参照してください。
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

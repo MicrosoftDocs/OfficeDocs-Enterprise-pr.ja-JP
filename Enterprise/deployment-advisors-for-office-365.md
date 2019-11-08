@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 展開アドバイザーを使用して、Office 365 または Microsoft 365 の計画と構成を促進します。
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782307"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030801"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 または Microsoft 365 サービスの展開アドバイザー
 
@@ -320,7 +320,7 @@ Microsoft StaffHub は、すべてのデバイスで動作する、クラウド�
 
 ### <a name="microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-- [管理センターの向き](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [管理センターの向き](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [管理センターでユーザーを作成する](https://aka.ms/ac-createusers)
 

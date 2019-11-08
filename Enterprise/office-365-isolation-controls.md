@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 内の分離コントロールについて説明します。'
-ms.openlocfilehash: 87317d753198b50ce360640c94f042adf27ed06e
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a53826f7f11324986f3df59d9df806ea522cb7d6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067592"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031202"
 ---
 # <a name="office-365-isolation-controls"></a>Office 365 での分離コントロール 
 
@@ -29,7 +29,7 @@ Office 365 は、重要なビジネス機能を提供し、Office 365 環境全�
 Office 365 は、次の原則に従って設計されています。
 
  - **[サービス指向アーキテクチャ](https://msdn.microsoft.com/library/aa480021.aspx):** 適切に定義されたビジネス機能を提供する、相互運用可能なサービスという形でソフトウェアを設計し、開発します。
- - **[運用セキュリティ保証](http://www.microsoft.com/download/details.aspx?id=40872):** Microsoft の[セキュリティ開発ライフサイクル](https://www.microsoft.com/sdl/default.aspx)を含む、microsoft に固有のさまざまな機能によって得られた知識を組み込むフレームワーク。 [microsoft のセキュリティ応答センター](https://technet.microsoft.com/library/dn440717.aspx)、および cybersecurity の脅威の状況を深く認識します。
+ - **運用時の[セキュリティ保証](https://www.microsoft.com/download/details.aspx?id=40872):** Microsoft の[セキュリティ開発ライフサイクル](https://www.microsoft.com/sdl/default.aspx)、 [microsoft セキュリティレスポンスセンター](https://technet.microsoft.com/library/dn440717.aspx)、cybersecurity の脅威に対する深い認識など、microsoft に固有のさまざまな機能によって得られた知識を組み込むフレームワーク。
 
 Office 365 サービス間で相互運用されていますが、相互に依存しない独立したサービスとして展開および運用できるように設計および実装されています。 Microsoft segregates の職務および Office 365 の責任範囲によって、組織の資産の改ざんまたは誤用の可能性を低減します。 Office 365 teams は、役割ベースの総合的なアクセス制御メカニズムの一部として役割を定義しています。
 

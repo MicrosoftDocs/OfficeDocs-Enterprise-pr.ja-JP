@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Office 365 用 ExpressRoute は、インターネットに送信されるすべてのトラフィックを必要とせずに、多くの Office 365 サービスにアクセスするための代替ルーティングパスを提供します。 Office 365 へのインターネット接続は依然として必要ですが、Microsoft が BGP を使用してネットワークにアドバタイズする際には、ネットワークに他の構成が存在しない限り、直接 ExpressRoute 回線を優先させる場合があります。 このルーティングを管理するために構成する共通領域には、プレフィックスのフィルター、セキュリティ、コンプライアンスがあります。
-ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067133"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027551"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
@@ -90,7 +90,7 @@ Microsoft がネットワークへの接続を開始する必要がある、い�
 
 - [SharePoint ハイブリッド BCS](https://technet.microsoft.com/library/dn197239.aspx )。
 
-- [Skype](https://technet.microsoft.com/en-us/library/jj205403.aspx) for business ハイブリッドおよび/または skype for business[フェデレーション](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)。
+- [Skype](https://technet.microsoft.com/library/jj205403.aspx) for business ハイブリッドおよび/または skype for business[フェデレーション](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)。
 
 - [Skype For Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx )。
 

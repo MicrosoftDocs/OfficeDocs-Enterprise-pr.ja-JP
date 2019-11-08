@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure ExpressRoute を使用して Office 365 へのルーティングトラフィックを適切に理解するには、コア ExpressRoute ルーティング要件と ExpressRoute 回線およびルーティングドメインをしっかりと理解している必要があります。 これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトしています。
-ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722716"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031582"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
@@ -63,7 +63,7 @@ Office 365 フロントエンドサーバーは、インターネットと Expre
 
 - [SharePoint ハイブリッド BCS](https://technet.microsoft.com/library/dn197239.aspx )。
 
-- [Skype](https://technet.microsoft.com/en-us/library/jj205403.aspx) for business ハイブリッドおよび/または skype for business[フェデレーション](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)。
+- [Skype](https://technet.microsoft.com/library/jj205403.aspx) for business ハイブリッドおよび/または skype for business[フェデレーション](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx)。
 
 - [Skype For Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx )。
 
@@ -212,7 +212,7 @@ ExpressRoute を複数の地域が回線を使用して1か所に配置してい
   
 Humongous に複数の大陸の主要なオフィスがある場合は、Skype for Business Online などの機密性の高いアプリケーションの待機時間を減らすために、少なくとも2つのアクティブ/アクティブ回路を地域ごとに使用することをお勧めします。 すべてのオフィスが1つの大陸に含まれている場合、またはリアルタイムコラボレーションを使用していない場合は、統合または分散された出口があります。 複数の回線が使用可能な場合、BGP ルーティングによって、1つの回線が利用できなくなった場合にフェールオーバーが行われます。
   
-サンプルの[ルーティング構成](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/)との詳細[https://azure.microsoft.com/en-us/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)について説明します。
+サンプルの[ルーティング構成](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/)との詳細[https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)について説明します。
   
 ## <a name="selective-routing-with-expressroute"></a>ExpressRoute での選択ルーティング
 

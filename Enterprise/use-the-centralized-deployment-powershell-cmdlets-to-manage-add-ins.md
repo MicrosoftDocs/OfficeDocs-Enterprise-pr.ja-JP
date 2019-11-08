@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 一元展開 PowerShell コマンドレットを使用すると、Office 365 組織の Office アドインを展開して管理するのに役立ちます。
-ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834237"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030862"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>一元展開 PowerShell コマンドレットを使用してアドインを管理する
 
@@ -103,7 +103,7 @@ _ProductId_パラメーターの値を指定して**取得**し、詳細を取�
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-すべてのアドインおよび割り当てられたユーザーとグループの詳細を取得するには、次の例**** に示すように、コマンドレットの出力を Format コマンドレットにパイプ処理します。
+すべてのアドインおよび割り当てられたユーザーとグループの詳細を取得するには、次の例に示すように、コマンドレットの出力を Format**コマンドレットに**パイプ処理します。
   
 ```powershell
 Get-OrganizationAddIn |Format-List
@@ -111,7 +111,7 @@ Get-OrganizationAddIn |Format-List
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>アドインをオンまたはオフにする
 
-ユーザーおよびグループに割り当てられているグループがアクセスできなくなるようにアドインを無効にするには**** 、次の例に示すように、 _ProductId_パラメーターと_Enabled_パラメーターを`$false`に設定して、このコマンドレットを実行します。.
+ユーザーおよびグループに割り当てられているグループがアクセスできなくなるようにアドインを無効にするには、次の例に示すように、 _ProductId_パラメーターと_Enabled_パラメーターを`$false`に設定して、**このコマンドレットを実行します**。
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -186,15 +186,15 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 展開されているアドインをカスタマイズする場合は、管理センターでアンインストールする必要があり、展開されている各コンピューターから削除する手順については、「[ローカルキャッシュからアドインを削除](#remove-an-add-in-from-local-cache)する」を参照してください。
 
-アドインをカスタマイズするには、パラメーターとして*ProductId*を指定して**Set –組織**の上書きコマンドレットを実行し、その後に、上書きするタグと新しい値を指定します。 *ProductId*を取得する方法については、この記事の「[アドインの詳細を取得](#get-details-of-an-add-in)する」を参照してください。 次に例を示します。
+アドインをカスタマイズするには、パラメーターとして*ProductId*を指定して**Set –組織**の上書きコマンドレットを実行し、その後に、上書きするタグと新しい値を指定します。 *ProductId*を取得する方法については、この記事の「[アドインの詳細を取得](#get-details-of-an-add-in)する」を参照してください。 例:
 
 ```powershell
- Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "http://site.com/img.jpg" 
+ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
 アドインの複数のタグをカスタマイズするには、これらのタグを commandline に追加します。
 
 ```powershell
-Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "http://site.com/img.jpg" 
+Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
@@ -219,7 +219,7 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
 ```
 <Resources>  
     <bt:Images> 
-          <bt:Image id=”img16icon” DefaultValue=”http://site.com/img.jpg” 
+          <bt:Image id=”img16icon” DefaultValue=”https://site.com/img.jpg” 
     </bt:Images> 
 </Resources> 
 ``` 

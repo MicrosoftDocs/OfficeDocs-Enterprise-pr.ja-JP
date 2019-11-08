@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: '概要: Office 365 Information Rights Management が、誤った SharePoint Online サイトコレクションに投稿された場合でも、機密ファイルを保護する方法を構成し、デモンストレーションします。'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031572"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Office 365 の開発/テスト環境での機密性の高いファイルの保護
 
@@ -32,7 +32,7 @@ Office 365 の Information Rights Management (IRM) は、SharePoint Online ラ�
 この記事の手順に従い、Office 365 試用版のサブスクリプションを使用して、機密性の高い情報を含む可能性のあるファイルに対して Office 365 で IRM を有効にしてテストします。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 次に、プライベート エグゼクティブ グループを作成し、そこに新しいエグゼクティブ アカウントを追加します。
   
-1. ブラウザーで、Office ポータルに移動[http://admin.microsoft.com](http://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
+1. ブラウザーで、Office ポータルに移動[https://admin.microsoft.com](https://admin.microsoft.com)し、全体管理者アカウントを使用して office 365 試用版サブスクリプションにサインインします。
     
   - 簡易版の Office 365 開発/テスト環境を使用している場合は、Internet Explorer か任意のブラウザーのプライベート セッションを開いて、ローカル コンピューターからサインインします。
     
@@ -130,7 +130,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. [ **SharePoint 管理センター** ] タブで、[**新しい > [プライベートサイトコレクション**] をクリックします。
     
-4. [サイトコレクションの新規作成] ウィンドウ**** の [ **** URL] ボックスに「役職」と入力し、**管理者**のグローバル管理者アカウントの名前を指定して、[ **OK]** をクリックします。
+4. [サイト**コレクションの新規**作成] ウィンドウの [URL] ボックスに「**役職」と入力し**、**管理者**のグローバル管理者アカウントの名前を指定して、[ **OK]** をクリックします。
     
 5. 新しいサイトコレクションが作成されるまで待機します。 完了したら、新しい重役サイトコレクションの URL をコピーして、ブラウザーの新しいタブに貼り付けます。
     
@@ -140,7 +140,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. SharePoint グループの一覧で、**[エグゼクティブ メンバー]** をクリックします。
     
-9. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+9. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
     
 10. [**共有 ' エグゼクティブ '**] で、「**エグゼクティブ**」と入力し、[**重役**] グループをクリックして、[**共有**] をクリックします。
     
@@ -166,7 +166,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
+2. [https://admin.microsoft.com](https://admin.microsoft.com) に移動します。
     
 3. **Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。
     
@@ -204,7 +204,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. **[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
+2. [https://admin.microsoft.com](https://admin.microsoft.com) に移動します。
     
 3. **Office 365 のサインイン** ページで、**[別のアカウントを使用する]** をクリックします。
     
@@ -224,7 +224,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
   
 1. **[Microsoft Office Home]** タブで、右上部分にある [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
+2. [https://admin.microsoft.com](https://admin.microsoft.com) に移動します。
     
 3. **Office 365 のサインイン** ページで、全体管理者のアカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。
     
@@ -280,7 +280,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
     
 5. ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-6. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
+6. [https://admin.microsoft.com](https://admin.microsoft.com) に移動します。
     
 7. **Office 365 のサインイン** ページで、CEO アカウント名をクリックし、パスワードを入力して、**[サインイン]** をクリックします。
     
@@ -306,7 +306,7 @@ Office 365 をフェーズ 3 と 4 のために準備するには、SharePoint O
   
 1. ブラウザーの **[Microsoft Office Home]** タブから、右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
+2. [https://admin.microsoft.com](https://admin.microsoft.com) に移動します。
     
 3. **Office 365 のサインイン**ページで、User5 のアカウント名をクリックし、パスワードを入力して、[**サインイン**] をクリックします。
     

@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: SharePoint Server 2007 のサポートは 2017 年 10 月 10 日に終了しました。アップグレード オプション、トラブルシューティング、ベスト プラクティス、システム要件、アップグレード手順、および Microsoft パートナーからサポートを受ける方法については、この記事をお読みください。
-ms.openlocfilehash: 5e5f697f64c520ec1be2b055be0fd42e1742a9ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 4054ca5c0b502c2008556021a80d3a939a979bb3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070723"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030912"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
@@ -72,7 +72,7 @@ Office 2007 サーバーのサポート終了の詳細については、「[Offi
 ||SharePoint ハイブリッド  <br/> |SharePoint Server 2016  <br/> |
 |||SharePoint ハイブリッド  <br/> |
    
-終了までの期間が短い (標準) オプションを選択した場合は、SharePoint Server 2007 からの移行が完了したらすぐにアップグレードの計画を立てる必要があります。(SharePoint Server 2007 のサポート終了日は 2017 年 10 月 10 日ですが、この日付は変更される可能性がありますので、[製品のライフサイクルのサイト](https://support.microsoft.com/en-us/lifecycle)を確認するようにしてください。)
+終了までの期間が短い (標準) オプションを選択した場合は、SharePoint Server 2007 からの移行が完了したらすぐにアップグレードの計画を立てる必要があります。(SharePoint Server 2007 のサポート終了日は 2017 年 10 月 10 日ですが、この日付は変更される可能性がありますので、[製品のライフサイクルのサイト](https://support.microsoft.com/lifecycle)を確認するようにしてください。)
   
 ## <a name="where-can-i-go-next"></a>次に行う操作
 

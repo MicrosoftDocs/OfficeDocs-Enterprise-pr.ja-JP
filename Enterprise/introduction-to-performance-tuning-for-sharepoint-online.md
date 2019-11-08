@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: この記事では、SharePoint Online で最適なパフォーマンスを得るためにページを設計するときに考慮する必要がある具体的な事柄について説明します。
-ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3c2c6ccc58659aceaaf831b97eb8c4c05141afce
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616680"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033403"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online のパフォーマンス チューニングの概要
 
@@ -44,9 +46,9 @@ ms.locfileid: "35616680"
     
 - カスタマイズされていないページは、非常に短時間で読み込まれます。
     
-- OneDrive for Business、チームサイト、および _layouts などのシステムページはすべてすぐに読み込むことができます。
+- OneDrive for Business、チームサイト、およびシステムページ (_layouts など) はすべてすぐに読み込むことができます。
     
-- SharePoint Online のページのうち、最低でも 1% の負荷は、5000ミリ秒を超えると読み込みが行われます。
+- SharePoint Online のページのうち、最低でも1% の負荷は、5000ミリ秒を超えると読み込みが行われます。
     
 1つの簡単なベンチマークテストを使用して、OneDrive for Business のホームページの読み込み時間と、カスタマイズされた一部の機能を使用することで、パフォーマンスを測定できます。 これは、多くの場合、ネットワークパフォーマンスの問題をトラブルシューティングするときに完了することを求める最初の手順のサポートになります。
   
@@ -68,7 +70,7 @@ ms.locfileid: "35616680"
     
 - **ブラウザー**ページが読み込まれている場所。
     
-これら3つの接続では、通常、5つの理由で、低速ページの 95% が発生します。 この記事では、これらの各理由について説明します。
+これら3つの接続では、通常、5つの理由で、低速ページの95% が発生します。 この記事では、これらの各理由について説明します。
   
 - ナビゲーションの問題
     
@@ -124,7 +126,7 @@ SharePoint Online では、いくつかの要素を考慮する必要があり�
     
 - サーバーへの物理的な距離が大きい
     
-SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテンツ配信ネットワーク) があります。 CDN は基本的に、複数のデータセンターにまたがって展開されたサーバーの分散コレクションです。 CDN を使用すると、クライアントが元の SharePoint サーバーから離れている場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストできます。 Microsoft では、カスタマイズできないページのローカルインスタンス (SharePoint Online 管理者のホームページなど) を格納するために、今後もこれを使用しています。 CDNs の詳細については、「[コンテンツ配信ネットワーク](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)」を参照してください。
+SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテンツ配信ネットワーク) があります。 CDN は基本的に、複数のデータセンターにまたがって展開されたサーバーの分散コレクションです。 CDN を使用すると、クライアントが元の SharePoint サーバーから離れている場合でも、ページ上のコンテンツをクライアントに近いサーバーでホストできます。 Microsoft では、カスタマイズできないページのローカルインスタンス (SharePoint Online 管理者のホームページなど) を格納するために、今後もこれを使用しています。 CDNs の詳細については、「[コンテンツ配信ネットワーク](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)」を参照してください。
   
 知っておく必要があるものの、多くのことを行うことができないものは、ISP の接続速度です。 簡単なスピードテストツールを使用すると、接続速度がわかります。
   
@@ -138,8 +140,7 @@ SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテ�
   
 最適なパフォーマンスを実現するのに役立つ、SharePoint Online ページのカスタマイズ方法やその他のベストプラクティスについては、次の記事を参照してください。
   
-- 
-  [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
+- [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
     
 - [SharePoint Online のページ診断ツールを使用する](page-diagnostics-for-spo.md)
     
@@ -159,6 +160,6 @@ SharePoint Online で利用できる機能の1つに、Microsoft CDN (コンテ�
     
 - [SharePoint Online でのオブジェクトキャッシュの使用](using-the-object-cache-with-sharepoint-online.md)
     
-- [方法:SharePoint Online で調整またはブロックを回避する](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [方法:SharePoint Online で調整またはブロックを回避する](https://msdn.microsoft.com/library/office/dn889829.aspx)
     
 

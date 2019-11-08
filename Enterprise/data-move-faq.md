@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782327"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028891"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -43,7 +43,7 @@ Exchange Online と SharePoint Online/OneDrive for Business の間で共有さ�
 テナント管理者として実行できるアクションは2つあります。
 
 - オプトイン。Office 365 引っ越しプログラムに登録し、お客様のサービスが主要な顧客データを新しいデータセンター geo に移行するための、コミットされた期限を受け取ります。プログラムにオプトインする方法については、「[データの移動を要求する方法](request-your-data-move.md)」ページを参照してください。
-- 何もしません。何もしないでください。 Microsoft は、サービスの管理と最適化の一環として、お客様の主要な顧客データを時間の経過と共に新しいデータセンター geo に移行できます。データは、他の geo ではなく、新しいデータセンター geo にのみ移行する可能性があります。このようなサービス管理移動が完了すると、メッセージセンター経由で通知を行います。
+- 何もしない。何もしないでください。 Microsoft は、サービスの管理と最適化の一環として、お客様の主要な顧客データを時間の経過と共に新しいデータセンター geo に移行できます。データは、他の geo ではなく、新しいデータセンター geo にのみ移行する可能性があります。このようなサービス管理移動が完了すると、メッセージセンター経由で通知を行います。
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>どのように確実に移行中の顧客データを保護し、ダウンタイムが発生しないようにするのですか?
   
@@ -155,4 +155,4 @@ A. はい。 Microsoft は、世界中の35国に130以上の場所でパブリ�
 
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure のリージョン](https://azure.microsoft.com/en-us/regions/)
+[Azure のリージョン](https://azure.microsoft.com/regions/)

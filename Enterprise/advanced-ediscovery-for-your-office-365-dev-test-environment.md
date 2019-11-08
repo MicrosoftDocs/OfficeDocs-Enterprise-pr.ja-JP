@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: '概要: Office 365 の開発/テスト環境で、サンプル データを使用して Office 365 アドバンスト eDiscovery を構成し、デモンストレーションします。'
-ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: dbd03c1a75b63f4fdaff49db47c8d415f267aaf3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726233"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030671"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Office 365 の開発/テスト環境の Advanced eDiscovery
 
@@ -30,13 +30,13 @@ Office 365 Advanced 電子情報開示を使用すると、電子メールやド
 この記事の手順では、架空の契約問題に関するデータの小さなセットを作成し、そのデータをアドバンスト eDiscovery で分析します。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 の開発/テスト環境を作成する
 
 最小限の要件で高度な電子情報開示をテストする場合は、「フェーズ2」と「フェーズ 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md)」の手順に従ってください。
   
-シミュレートされたエンタープライズで高度な電子情報開示をテストする場合は、「365 Office のディレクトリ同期の開発/テスト環境」の手順に従ってください。
+シミュレートされたエンタープライズで高度な電子情報開示をテストする場合は、「 [365 Office のディレクトリ同期の開発/テスト環境](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従ってください。
   
 > [!NOTE]
 > 高度な電子情報開示のテストでは、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期を含む、シミュレートされたエンタープライズ環境を必要としません。 この記事は、一般的な組織を表す環境でテストと実験を実行できるようにするためのオプションとして提供されています。 
@@ -53,7 +53,7 @@ Office 365 Advanced 電子情報開示を使用すると、電子メールやド
     
 2. **[Outlook メール]** タブで、**[新規作成]** をクリックします。
     
-3. [**宛先**] に、試用版サブスクリプションの User6 アカウントの電子メールアドレスを入力し**ます (User6 @。**<organization name> **. onmicrosoft.com**)。
+3. [**宛先**] に、試用版サブスクリプションの User6 アカウントの電子メールアドレス (user6@ を入力し**ます。**<organization name> **. onmicrosoft.com**)。
     
 4. 件名に、「**Test email 1**」と入力します。
     

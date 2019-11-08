@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: この記事は、Microsoft Lync 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068613"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030601"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>アクセス可能な図 - Microsoft Lync 2013 プラットフォーム オプション
 
-**概要:** この記事は、Microsoft Lync 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
+**概要:** この記事は、Microsoft Lync 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
   
 このポスターは、ビジネスの意思決定者 (BDM) と設計者が Lync Online (Office 365) および Lync Server の展開に関して知る必要のある情報を説明しており、内容は次のとおりです。
   

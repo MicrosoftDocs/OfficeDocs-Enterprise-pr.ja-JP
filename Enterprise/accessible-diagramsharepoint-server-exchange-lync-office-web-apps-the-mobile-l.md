@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030581"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>アクセス可能な図 - SharePoint Server、Exchange、Lync、Office Web Apps - モバイルの展望
 
-**概要:** この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
+**概要:** この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム ([技術ダイアグラム](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409)で利用できます) のアクセス可能なテキスト バージョンです。
   
 このポスターは、SharePoint Server、Lync、Exchange Server、および Office Web Apps の、アプリケーションとモバイル ブラウザ ベースの展望のレイアウトの詳細を示します。以下の情報も含まれます。 
   

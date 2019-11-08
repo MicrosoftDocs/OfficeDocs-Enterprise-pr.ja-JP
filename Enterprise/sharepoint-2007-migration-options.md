@@ -21,12 +21,12 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: SharePoint Server 2007 のサポートが終了したので、アップグレードを実行する時間を短縮しました。 この記事を使用して、計画の作成に役立てることができます。
-ms.openlocfilehash: 98151ecd32f0066f583da1142d6010d46e120a43
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070703"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031552"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>検討する SharePoint 2007 移行オプション
 
@@ -59,9 +59,9 @@ SharePoint Server 環境をアップグレードするには、複数の方法�
 > [!TIP]
 > Microsoft Office SharePoint Server 2007 にも段階的なアップグレードがありますが、ここでは説明していません。 手順固有のアップグレードに関する記事の一覧については、「 [SharePoint Server 2007 のサポート終了ロードマップ](sharepoint-2007-end-of-support.md)」を参照してください。 
   
-アップグレードする SharePoint のバージョンについて、[製品のライフサイクル](https://support.microsoft.com/en-us/lifecycle/search)およびシステム要件を必ず確認してください。 これは、次のアップグレードが必要になる場合があることに注意してください (たとえば、SharePoint Server 2010 のような従来の製品を使用してアップグレードを計画し、サポートの終了日を知っていることを確認してください)。また、プランをサポートするハードウェアがあるかどうかを確認してください。 
+アップグレードする SharePoint のバージョンについて、[製品のライフサイクル](https://support.microsoft.com/lifecycle/search)およびシステム要件を必ず確認してください。 これは、次のアップグレードが必要になる場合があることに注意してください (たとえば、SharePoint Server 2010 のような従来の製品を使用してアップグレードを計画し、サポートの終了日を知っていることを確認してください)。また、プランをサポートするハードウェアがあるかどうかを確認してください。 
   
-SharePoint サイトの一部またはすべてをクラウド内の Office 365 に移行することを計画している場合は、 [office 365 のサービスの説明](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)へのリンクをブックマークする必要があります。 SharePoint Online の機能と、それらがオンプレミスの SharePoint Server とどのように異なるかについては、サービスの説明を参照してください。 機能している Microsoft Office SharePoint Server 2007 ファームをアップグレードします。 インストールに壊れたサイトがある場合は、アップグレード前に修正してください。
+SharePoint サイトの一部またはすべてをクラウド内の Office 365 に移行することを計画している場合は、 [office 365 のサービスの説明](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)へのリンクをブックマークする必要があります。 SharePoint Online の機能と、それらがオンプレミスの SharePoint Server とどのように異なるかについては、サービスの説明を参照してください。 機能している Microsoft Office SharePoint Server 2007 ファームをアップグレードします。 インストールに壊れたサイトがある場合は、アップグレード前に修正してください。
   
 ## <a name="a-note-about-managing-risk"></a>リスク管理に関する注意事項
 
@@ -76,7 +76,7 @@ SharePoint サイトの一部またはすべてをクラウド内の Office 365 
 一括アップグレードなどの方法は、Microsoft Office SharePoint Server 2007 ファーム上で直接動作し、パスを破棄して pristine 環境で再度開始する簡単なオプションを提供します。 可能な限り、安全策をいくつか (元の環境のバックアップの実行とテストなど) に構築します。 たとえば、Microsoft Office SharePoint Server 2007 ファームが仮想で、バックアップと復元の目的で複製されている場合は、アップグレードのためにサービス時間の前に、最新のデータベースをバックアップして復元します。 データベースバックアップを復元するオプションを選択すると、フェイルセーフが提供されるだけでなく、安心感を得ることができます。
   
 > [!TIP]
-> ベストプラクティスアップグレードに関するドキュメントは、 [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/en-us/library/cc261992%28v=office.12%29.aspx)、 [sharepoint server 2010](https://technet.microsoft.com/en-us/library/cc261992%28v=office.14%29.aspx)、 [Sharepoint Server 2013](https://technet.microsoft.com/en-us/library/cc261992%28v=office.15%29.aspx)、および[sharepoint server 2016](https://technet.microsoft.com/en-us/library/cc261992%28v=office.16%29.aspx)に存在します。 また、アップグレードまたは Office 365 の移行に携わっている[Microsoft パートナー](https://partnercenter.microsoft.com/en-us/pcv/search)を検索することもできます。 
+> ベストプラクティスアップグレードに関するドキュメントは、 [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx)、 [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx)、 [Sharepoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)、および[sharepoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)に存在します。 また、アップグレードまたは Office 365 の移行に携わっている[Microsoft パートナー](https://partnercenter.microsoft.com/pcv/search)を検索することもできます。 
   
 ## <a name="make-your-plan"></a>プランを作成する
 
@@ -164,7 +164,7 @@ My ' 最も重要な行頭文字リスト:
   
 - 現時点では、SharePoint Server 2016 と SharePoint Online の間のフェデレーションハイブリッドは考慮されません。
     
-- バニティドメインを使用して新しい SPO サイトに、または最終的に OneDrive for Business ストレージに移行することができるサイトの見積もり 35% サイトを変換する他の機会を探したり、新しいサイトを SPO にルーティングしたりできます。
+- バニティドメインを使用して新しい SPO サイトに、または最終的に OneDrive for Business ストレージに移行することができるサイトの見積もり35% サイトを変換する他の機会を探したり、新しいサイトを SPO にルーティングしたりできます。
     
 - 移行の一部の一部は、OneDrive for Business の個人用サイトにドラッグアンドドロップするか、または移行 API を使用して手動で行う必要があります。
     
@@ -176,8 +176,8 @@ My ' 最も重要な行頭文字リスト:
 
 [Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース](upgrade-from-office-2007-servers-and-products.md)
   
-[Microsoft のライフサイクルポリシーとライフサイクルの検索](https://support.microsoft.com/en-us/lifecycle)
+[Microsoft のライフサイクルポリシーとライフサイクルの検索](https://support.microsoft.com/lifecycle)
   
-[アップグレードまたは移行に役立つ Microsoft パートナーを検索する](https://partnercenter.microsoft.com/en-us/pcv/search)
+[アップグレードまたは移行に役立つ Microsoft パートナーを検索する](https://partnercenter.microsoft.com/pcv/search)
   
 

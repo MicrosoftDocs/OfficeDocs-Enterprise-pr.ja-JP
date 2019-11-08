@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 のサポートが終了し、SharePoint Server 2010 が2020年10月13日に終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: a8ab4a79053badf4e07918e5e97c7d4821edd5f8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616130"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030902"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
@@ -45,7 +45,7 @@ SharePoint Server 2010 と SharePoint Foundation 2010 ソフトウェアがサ�
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-最初に、[製品ライフサイクルサイト](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010)でサポートが終了する日付を確認します。 次に、この日付に関する知識を使用して、アップグレードまたは移行の時間を計画してください。 ご使用の製品は、リストされている日付には機能しなく*なり*ますが、使用を続行できますが、インストールにはその日付以降にパッチを適用する必要がないため、次のバージョンによりスムーズに移行できるようにするための戦略が必要になります。製品の。 
+最初に、[製品ライフサイクルサイト](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)でサポートが終了する日付を確認します。 次に、この日付に関する知識を使用して、アップグレードまたは移行の時間を計画してください。 ご使用の製品は、リストされている日付には機能しなく*なり*ますが、使用を続行できますが、インストールにはその日付以降にパッチを適用する必要がないため、製品の次のバージョンによりスムーズに移行できるようにする戦略が必要になります。 
   
 このマトリックスは、製品の機能やユーザーデータを移行する際に、コースをプロットするのに役に立ちます。
   
@@ -62,7 +62,7 @@ SharePoint Server 2010 のサポート終了を回避するために実行でき
 ![SharePoint Server 2010 のアップグレードパス](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->SharePoint Server 2010 および SharePoint Foundation 2010 のサポート終了は、2020年10月13日に予定されていますが、最新の日付については常に[製品ライフサイクルサイト](https://support.microsoft.com/en-us/lifecycle)をチェックする必要があることに*注意してください*。
+>SharePoint Server 2010 および SharePoint Foundation 2010 のサポート終了は、2020年10月13日に予定されていますが、最新の日付については常に[製品ライフサイクルサイト](https://support.microsoft.com/lifecycle)をチェックする必要があることに*注意してください*。
 >
 
   
@@ -98,7 +98,7 @@ SharePoint Online では、[サービスの説明](https://docs.microsoft.com/of
   
 現時点では、SharePoint Server 2010 (または SharePoint Foundation 2010) から SharePoint Online に直接移行する方法はありません。このため、作業の多くは手動で行います。 これにより、移行の前に、不要になったデータとサイトをアーカイブし、排除する機会が得られます。 他のデータをストレージにアーカイブすることができます。 また、サポート終了時に SharePoint Server 2010 と SharePoint Foundation 2010 のどちらも停止しないことに注意してください。したがって、管理者は、ユーザーがデータの移動を忘れた場合に、SharePoint が実行中の期間を持つことができます。
   
-SharePoint Server 2013 または SharePoint Server 2016 にアップグレードし、データを SharePoint Online に配置する場合は、 [Sharepoint 移行 API](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (情報を OneDrive for business に移行するため) を使用して移動することもできます。 
+SharePoint Server 2013 または SharePoint Server 2016 にアップグレードし、データを SharePoint Online に配置する場合は、 [Sharepoint 移行 API](https://support.office.com/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (情報を OneDrive for business に移行するため) を使用して移動することもできます。 
   
 |**SharePoint Online の利点**|**SharePoint Online の短所**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ SharePoint Server 2013 または SharePoint Server 2016 にアップグレード
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>オンプレミスの SharePoint Server のアップグレード
 
-Sharepoint オンプレミス製品の最新バージョン (SharePoint Server 2019) の場合、SharePoint Server のアップグレードは*直列*になる必要があります。これは、sharepoint server 2010 から sharepoint server 2016 または sharepoint 2019 にアップグレードする方法がないことを意味します。すぐ. 
+Sharepoint オンプレミス製品の最新バージョン (SharePoint Server 2019) の場合、SharePoint Server のアップグレードは*直列*になる必要があります。これは、sharepoint server 2010 から sharepoint server 2016 または sharepoint 2019 に直接アップグレードすることはできません。 
   
 |||
 |:-----|:-----|
@@ -168,9 +168,9 @@ SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用す�
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Sharepoint Online とオンプレミスの sharepoint Server との間に SharePoint ハイブリッドソリューションを作成する
 
-別の方法として、sharepoint Server 2013 または2016または2019ファームを sharepoint Online に接続して、sharepoint ハイブリッドを作成することができます (一部の移行ニーズに対応している場合もあります)。 sharepoint ハイブリッドに[ついて説明します。ソリューション](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
+別の方法として、sharepoint Server 2013 または2016または2019ファームを sharepoint Online に接続して、sharepoint ハイブリッド[ソリューション](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)を作成することもできます (一部の移行ニーズについては、オンプレミスとオンラインの両方の環境に適している場合があります)。
   
-ハイブリッド SharePoint Server ファームが移行目標であると判断した場合は、オンラインに移行するサイトとユーザーを計画し、オンプレミスのままにしておく必要があります。 この決定には、SharePoint Server ファームのコンテンツ (企業への高、中、または低レベルの影響を与えるデータを決定する) のレビューとランク付けを行うことができます。 SharePoint Online と共有する必要があるのは、(a) ログインのユーザーアカウントであり、(b) SharePoint Server 検索インデックスを使用しているかどうかによっては、サイトの使用方法を確認するまでわかりません。 後で会社がすべてのコンテンツを SharePoint Online に移行することを決定した場合は、残りのすべてのアカウントとデータをオンラインにして、オンプレミスのファームを使用停止にすることができます。また、SharePoint ファームの管理/管理は Office 365 を通じて行われます。その時点からのコンソール。
+ハイブリッド SharePoint Server ファームが移行目標であると判断した場合は、オンラインに移行するサイトとユーザーを計画し、オンプレミスのままにしておく必要があります。 この決定には、SharePoint Server ファームのコンテンツ (企業への高、中、または低レベルの影響を与えるデータを決定する) のレビューとランク付けを行うことができます。 SharePoint Online と共有する必要があるのは、(a) ログインのユーザーアカウントであり、(b) SharePoint Server 検索インデックスを使用しているかどうかによっては、サイトの使用方法を確認するまでわかりません。 後で会社がすべてのコンテンツを SharePoint Online に移行することを決定した場合は、残りのすべてのアカウントとデータをオンラインにして、オンプレミスのファームを使用停止にすることができ、その時点から Office 365 コンソールを通じて SharePoint ファームの管理/管理が行われます。
   
 既存のハイブリッドの種類と、オンプレミスの SharePoint ファームと Office 365 サブスクリプションとの間の接続を構成する方法について理解しておいてください。
   
@@ -193,16 +193,16 @@ Office 2010 のクライアントおよびサーバーおよび Windows 7 のア
 
 [Office 2007 または2010サーバーおよびクライアントからのアップグレードに役立つリソース](upgrade-from-office-2010-servers-and-products.md)
   
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493301%28v=office.16%29.aspx)
+[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493301%28v=office.16%29.aspx)
   
-[SharePoint 2010 から SharePoint 2013 へのアップグレードのベスト プラクティス](https://technet.microsoft.com/en-us/library/mt493305%28v=office.16%29.aspx)
+[SharePoint 2010 から SharePoint 2013 へのアップグレードのベスト プラクティス](https://technet.microsoft.com/library/mt493305%28v=office.16%29.aspx)
   
 [SharePoint 2013 でのデータベース アップグレードの問題のトラブルシューティング](https://go.microsoft.com/fwlink/?linkid=843195)
   
 [Microsoft ソリューションプロバイダーを検索してアップグレードに役立てる](https://go.microsoft.com/fwlink/?linkid=841249)
   
-[更新された SharePoint 2013 製品サービス ポリシー](https://technet.microsoft.com/en-us/library/mt493253%28v=office.16%29.aspx)
+[更新された SharePoint 2013 製品サービス ポリシー](https://technet.microsoft.com/library/mt493253%28v=office.16%29.aspx)
   
-[更新された SharePoint Server 2016 製品サービス ポリシー](https://technet.microsoft.com/en-us/library/mt782882%28v=office.16%29.aspx)
+[更新された SharePoint Server 2016 製品サービス ポリシー](https://technet.microsoft.com/library/mt782882%28v=office.16%29.aspx)
   
 

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 description: この記事では、Outlook on the web でのメッセージダウンロードのパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: a9070d9aefc8e4c223667848b4af5c06518de076
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: bb9a11a27af0b66f1dd557c459d1904c2e57ae92
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616810"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030872"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>リーンポップアウトを使用してメールメッセージの読み取り時に使用されるメモリを削減する
 
 この記事では、Outlook on the web でのメッセージダウンロードのパフォーマンスを向上させる方法について説明します。 この記事は、 [Office 365 プロジェクトのネットワーク計画とパフォーマンスチューニング](https://aka.ms/tune)に含まれています。
    
-Office 365 のグローバル管理者として、Outlook on the web を構成** して、Microsoft Edge または Internet Explorer で特定の電子メールメッセージをより小さく、より小さなメモリを消費するバージョンにすることができます。 Web 上の Outlook に対してリーンポップアウトが構成されている場合、サーバー側でレンダリングされるコンポーネントはパフォーマンスを最適化するために読み込まれます。 
+Office 365 のグローバル管理者として、Outlook on the web を構成して、Microsoft Edge または Internet Explorer で特定の電子メール*メッセージをより*小さく、より小さなメモリを消費するバージョンにすることができます。 Web 上の Outlook に対してリーンポップアウトが構成されている場合、サーバー側でレンダリングされるコンポーネントはパフォーマンスを最適化するために読み込まれます。 
   
 > [!NOTE]
 > 2018年3月現在、使用権限の制限を指定するメッセージ (Information rights Management (IRM) など) に対して、リーンポップアウトは現在使用できません。 
@@ -36,9 +36,9 @@ Office 365 のグローバル管理者として、Outlook on the web を構成**
     
  **Office 365 組織内のすべてのユーザーのリーンポップアウトを構成するには**
   
-1. [リモート PowerShell を使用して Exchange Online に接続](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx )します。
+1. [リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx )します。
     
-2. LeanPopoutEnabled パラメーター [](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx)を使用して、次のようにコマンドレットを実行します。 
+2. LeanPopoutEnabled パラメーターを使用して、次のように[コマンドレットを実行します](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx)。 
     
   ```
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >

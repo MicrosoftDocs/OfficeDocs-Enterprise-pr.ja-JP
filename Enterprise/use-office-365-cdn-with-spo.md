@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: dc08ae1cc54e17e5d7f1c3c717bfd254b6cf962d
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 60016fff28ca7c71555e141ef479d32fdd6d7856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643300"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031432"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -218,7 +218,7 @@ Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-このコマンドレットの詳細については、「 [SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)」を参照してください。
+このコマンドレットの詳細については、「 [SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx)」を参照してください。
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Office 365 CDN に含めるファイルの種類のリストを変更する (オプション)
@@ -246,7 +246,7 @@ CDN で現在許可されているファイルの種類を確認するには、 
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-これらのコマンドレットの詳細については、「 [set-spotenantcdnpolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 」および「 [get-spotenantcdnpolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)」を参照してください。
+これらのコマンドレットの詳細については、「 [set-spotenantcdnpolicy](https://technet.microsoft.com/library/mt800839.aspx) 」および「 [get-spotenantcdnpolicies](https://technet.microsoft.com/library/mt800838.aspx)」を参照してください。
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Office 365 CDN から除外するサイト分類の一覧を変更する (オプション)
@@ -280,7 +280,7 @@ _ExcludeRestrictedSiteClassifications_プロパティには、CDN から除外�
 
 _Excludeifnoscriptdisabled_プロパティは、サイトレベルの_NoScript_属性の設定に基づいて CDN からコンテンツを除外します。 既定では、 _NoScript_属性は_モダン_サイトに対し**て [有効**] に設定され、_クラシック_サイトでは**無効**になっています。 これはテナントの設定によって異なります。
 
-これらのコマンドレットの詳細については、「 [set-spotenantcdnpolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) 」および「 [get-spotenantcdnpolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx)」を参照してください。
+これらのコマンドレットの詳細については、「 [set-spotenantcdnpolicy](https://technet.microsoft.com/library/mt800839.aspx) 」および「 [get-spotenantcdnpolicies](https://technet.microsoft.com/library/mt800838.aspx)」を参照してください。
 
 <a name="Office365CDNforSPOOrigin"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>アセットの送信元を追加する
@@ -327,7 +327,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)」を参照してください。
+このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/library/mt790772.aspx)」を参照してください。
 
 > [!NOTE]
 > プライベートオリジンでは、送信元から共有されるアセットは、CDN からアクセスする前に、メジャーバージョンを発行する必要があります。
@@ -351,7 +351,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)」を参照してください。
+このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/library/mt790772.aspx)」を参照してください。
 
 コマンドを実行すると、システムによってデータセンター間の構成が同期されます。 これには最大15分かかることがあります。
 
@@ -376,7 +376,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)」を参照してください。
+このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/library/mt790772.aspx)」を参照してください。
 
 コマンドを実行すると、システムによってデータセンター間の構成が同期されます。 これには最大15分かかることがあります。
 
@@ -389,7 +389,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790772.aspx)」を参照してください。
+このコマンドとその構文の詳細については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/library/mt790772.aspx)」を参照してください。
   
 コマンドを実行すると、システムによってデータセンター間の構成が同期されます。 SharePoint Online テナントが CDN サービスに接続すると予想される_構成保留_メッセージが表示される場合があります。 これには最大15分かかることがあります。
 
@@ -403,7 +403,7 @@ CDN を設定したら、このセクションで説明するように、コン�
 
 セットアップの手順を完了すると、必要に応じて、新しいアセットを追加したり、既存のアセットを更新または削除したりできます。 元として識別したフォルダーまたは SharePoint ライブラリのアセットを変更するだけです。 新しいアセットを追加すると、そのアセットは CDN ですぐに使用できるようになります。 ただし、アセットを更新する場合は、新しいコピーが伝達されて CDN で利用可能になるまで最大15分かかります。
   
-送信元の場所を取得する必要がある場合は、 **get-spotenantcdnorigins**コマンドレットを使用できます。 このコマンドレットの使用方法については、「 [get-spotenantcdnorigins](https://technet.microsoft.com/en-us/library/mt790770.aspx)」を参照してください。
+送信元の場所を取得する必要がある場合は、 **get-spotenantcdnorigins**コマンドレットを使用できます。 このコマンドレットの使用方法については、「 [get-spotenantcdnorigins](https://technet.microsoft.com/library/mt790770.aspx)」を参照してください。
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Office 365 CDN から発信元を削除する
@@ -414,7 +414,7 @@ CDN を設定したら、このセクションで説明するように、コン�
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-このコマンドレットの使用方法については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/en-us/library/mt790761.aspx)」を参照してください。
+このコマンドレットの使用方法については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/library/mt790761.aspx)」を参照してください。
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN の配信元を変更する
@@ -438,7 +438,7 @@ CDN でプライベートオリジンを使用できないようにするには�
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-このコマンドレットの詳細については、「 [SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx)」を参照してください。
+このコマンドレットの詳細については、「 [SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx)」を参照してください。
 
 </details>
 
@@ -579,7 +579,7 @@ CDN および構成されたオリジンとポリシーが有効になったの�
 + [パブリックの出所でアセットを使用する](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
 + [プライベートの出所でアセットを使用する](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-クライアント側の web パーツをホストするために CDN を使用する方法については、「 [Office 365 CDN からクライアント側の web パーツをホストする (Hello World パート 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)」を参照してください。
+クライアント側の web パーツをホストするために CDN を使用する方法については、「 [Office 365 CDN からクライアント側の web パーツをホストする (Hello World パート 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)」を参照してください。
 
 ### <a name="updating-links-to-cdn-assets"></a>CDN アセットへのリンクの更新
 
@@ -589,7 +589,7 @@ CDN および構成されたオリジンとポリシーが有効になったの�
 + 送信元のアセットへのリンクごとに、パスを CDN の配信元のファイルへのパスに置き換えます。 相対パスを使用できます。
 + ページまたはコンテンツを保存します。
 
-たとえば、ドキュメントライブラリフォルダー _/site¥_/site/SiteAssets/images/image.png にコピーしたイメージの__ について考えてみましょう。 CDN アセットを使用するには、元のパスを画像ファイルの場所に置き換え、新しい URL の _/site/CDN_origins/public/image.png_を作成します。
+たとえば、ドキュメントライブラリフォルダー _/site/CDN_origins/public/_ にコピーしたイメージ _/site/SiteAssets/images/image.png_を考えてみます。 CDN アセットを使用するには、元のパスを画像ファイルの場所へのパスで置き換えて、新しい URL _/site/CDN_origins/public/image.png_を作成します。
 
 相対パスではなく、アセットへの完全な URL を使用する場合は、次のようなリンクを作成します。
 
@@ -691,7 +691,7 @@ CDN アセットへのリンクをページに追加すると、そのページ�
 
 SharePoint Online からの参照が必要になるため、web ブラウザーで CDN Url を直接テストすることはできません。 ただし、CDN アセット URL を SharePoint ページに追加し、そのページをブラウザーで開くと、CDN アセットがページに表示されます。
 
-Microsoft Edge ブラウザーでの開発者ツールの使用の詳細については、「 [Microsoft Edge Developer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)」を参照してください。
+Microsoft Edge ブラウザーでの開発者ツールの使用の詳細については、「 [Microsoft Edge Developer tools](https://docs.microsoft.com/microsoft-edge/devtools-guide)」を参照してください。
 
 [SharePoint 開発者パターンおよびプラクティスの YouTube チャネル](https://aka.ms/sppnp-videos)でホストされている短いビデオを見て、cdn が機能していることを確認する方法については、「 [cdn の使用状況を確認する」と「ネットワーク接続を最適化](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5)する」を参照してください。
 
@@ -743,6 +743,6 @@ Office 365 CDN の操作は、 **SharePoint Online Management Shell** PowerShell
 
 [Content Delivery Network](https://aka.ms/o365cdns)
 
-[Office 365 のネットワーク計画とパフォーマンスのチューニング](https://aka.ms/tune)
+[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
 
 [SharePoint パフォーマンスシリーズ-Office 365 CDN ビデオシリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

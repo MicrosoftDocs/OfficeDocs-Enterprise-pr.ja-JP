@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 概要：Office 365 開発/テスト環境で Azure Information Protection (AIP) クライアントを使用して、データ分類とラベルの設定とデモを行います。
-ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f16fd41aaa454a3f038fd23c890bbf48be2c3e66
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067935"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028901"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境でのデータ分類とラベルの作成
 
@@ -30,7 +30,7 @@ ms.locfileid: "34067935"
 Azure Information Protection クライアントを使用すると、Office 365 の SharePoint Online フォルダーにドキュメントをアップロードする前に、ドキュメントを分類できます。 この記事の指示に従って、Azure Information Protection クライアントをインストールし、データ分類をデモします。 詳細については、「 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)」を参照してください。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>フェーズ 1: Office 365 開発/テスト環境を構成する
 
@@ -38,13 +38,13 @@ Azure Information Protection クライアントを使用すると、Office 365 �
   
 ## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>フェーズ 2:Azure Information Protection 試用版サブスクリプションを追加する
 
-このフェーズでは、Azure Information Protection を Office 365 開発/テスト環境に追加して、お使いのユーザー アカウントで有効にします。 [Office 365 and EMS dev/test environment](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx) を構成した場合、このフェーズをスキップします。 Enterprise Mobility Suite 試用版サブスクリプションには、Azure Information Protection ライセンスが含まれます。
+このフェーズでは、Azure Information Protection を Office 365 開発/テスト環境に追加して、お使いのユーザー アカウントで有効にします。 [Office 365 and EMS dev/test environment](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx) を構成した場合、このフェーズをスキップします。 Enterprise Mobility Suite 試用版サブスクリプションには、Azure Information Protection ライセンスが含まれます。
   
 最初に、Azure Information Protection 試用版サブスクリプションの新規登録を行います。
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Azure Information Protection 試用版サブスクリプションの新規登録
 
-1. Internet Explorer またはブラウザーで、に[http://admin.microsoft.com](http://admin.microsoft.com)移動して、Office 365 のグローバル管理者アカウントでサインインします。
+1. Internet Explorer またはブラウザーで、に[https://admin.microsoft.com](https://admin.microsoft.com)移動して、Office 365 のグローバル管理者アカウントでサインインします。
     
 2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
@@ -78,11 +78,11 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
   
 シミュレーション エンタープライズの Office 365 開発/テスト環境を使用する場合は、最初に CLIENT1 で Office 2016 をインストールする必要があります。
   
-1. ブラウザーを使用して、 [Azure portal](http://portal.azure.com)に移動します。
+1. ブラウザーを使用して、 [Azure portal](https://portal.azure.com)に移動します。
     
 2. **[リソース グループ] > **[リソース グループ名] > **[クライアント 1] > **[コネクト] をクリックします。
     
-3. CLIENT1 から Internet Explorer を実行し、Office ポータル[http://admin.microsoft.com](http://admin.microsoft.com)に移動して、User5 のアカウント名とパスワードを使用してサインインします。
+3. CLIENT1 から Internet Explorer を実行し、Office ポータル[https://admin.microsoft.com](https://admin.microsoft.com)に移動して、User5 のアカウント名とパスワードを使用してサインインします。
     
 4. **[Microsoft Office Home]** タブで、**[Office 2016 のインストール]** をクリックします。
     
@@ -150,7 +150,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
   
 1. **[Microsoft Office Home]** タブの右上部分の [ユーザー] アイコンをクリックし、**[サインアウト]** をクリックします。
     
-2. [http://admin.microsoft.com](http://admin.microsoft.com) に移動します。
+2. [https://admin.microsoft.com](https://admin.microsoft.com) に移動します。
     
 3. **Office 365 のサインイン**ページで、User5 のアカウント名をクリックして、サインインします。
     
@@ -164,7 +164,7 @@ Office 365 開発/テスト環境には、以下が含まれるようになり�
 
 [クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Office 365 と EMS の開発/テスト環境](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
+[Office 365 と EMS の開発/テスト環境](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782237"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032122"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
@@ -64,7 +64,7 @@ Azure ExpressRoute サブスクリプションは顧客中心です。サブス�
 
 各 Office 365 のお客様には、各場所のユーザー数、各 Office 365 アプリケーションでの使用をアクティブにする方法、オンプレミスまたはハイブリッド機器、ネットワークセキュリティ構成などの他の要因に応じて、それぞれ固有の帯域幅が必要になります。
   
-帯域幅が少なすぎると、輻輳が発生し、データが再送信され、予測不能な遅延が発生します。 帯域幅が多すぎると、不必要なコストが発生します。 既存のネットワークでは、帯域幅は多くの場合、回線上で使用可能なヘッドの量をパーセンテージとして参照します。 10% のヘッドルームの場合は輻輳が発生し、通常は 80% のヘッドルームが必要となるため、不必要なコストが発生します。 通常、ヘッドルームターゲットの割り当ては 20% ~ 50% です。
+帯域幅が少なすぎると、輻輳が発生し、データが再送信され、予測不能な遅延が発生します。 帯域幅が多すぎると、不必要なコストが発生します。 既存のネットワークでは、帯域幅は多くの場合、回線上で使用可能なヘッドの量をパーセンテージとして参照します。 10% のヘッドルームの場合は輻輳が発生し、通常は80% のヘッドルームが必要となるため、不必要なコストが発生します。 通常、ヘッドルームターゲットの割り当ては 20% ~ 50% です。
   
 適切な帯域幅を見つけるには、既存のネットワーク消費をテストするのが最善の方法です。 これは、実際の使用法を得るための唯一の方法であり、すべてのネットワーク構成とアプリケーションが固有の方法である必要があります。 測定時に、総帯域幅消費、遅延、TCP 輻輳によく注目して、ネットワークのニーズを理解する必要があります。
   
@@ -76,7 +76,7 @@ Azure ExpressRoute サブスクリプションは顧客中心です。サブス�
 
 Azure ExpressRoute 接続のセキュリティ保護は、インターネット接続のセキュリティ保護と同じ原則に従って開始されます。 多くのお客様は、オンプレミスネットワークを Office 365 およびその他の Microsoft クラウドに接続する ExpressRoute のパスに沿って、ネットワークと周辺のコントロールを展開することを選択します。 これらのコントロールには、ファイアウォール、アプリケーションプロキシ、データ漏洩防止、侵入検知、侵入防止システムなどが含まれます。 多くの場合、お客様は、オンプレミスで開始されたトラフィックに対して、microsoft によって開始されたトラフィックに対して、オンプレミスで開始されたトラフィックに対して、さまざまなレベルの制御を適用します。インターネットの宛先。
   
-ここでは、展開するために選択した[ExpressRoute 接続モデル](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models)にセキュリティを統合する例をいくつか示します。
+ここでは、展開するために選択した[ExpressRoute 接続モデル](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models)にセキュリティを統合する例をいくつか示します。
 
 |**ExpressRoute の統合オプション**|**ネットワークセキュリティ境界モデル**|
 |:-----|:-----|
@@ -102,7 +102,7 @@ Office 365 接続の ExpressRoute に使用されるネットワーク/セキュ
   
 ### <a name="example-1-securing-azure-expressroute"></a>例 1: Azure ExpressRoute のセキュリティ保護
   
-Woodgrove Bank は、Azure ExpressRoute の実装を検討しており、 [Office 365 用 ExpressRoute でのルーティング](routing-with-expressroute.md)に最適なアーキテクチャを計画した後、また、帯域幅の要件を理解するために上記のガイダンスを使用した後に、境界を保護するための最適な方法。
+Woodgrove Bank は、Azure ExpressRoute を実装することを検討しており、 [Office 365 用の ExpressRoute](routing-with-expressroute.md)に最適なアーキテクチャを計画した後、また、帯域幅の要件を理解するために上記のガイダンスを使用した後に、境界を保護するための最善の方法を決定しています。
   
 複数の大陸に拠点を持つ複数国内の組織の場合、Woodgrove では、セキュリティはすべての境界にまたがる必要があります。 Woodgrove の最適な接続オプションは、大陸内に複数のピアリング場所があり、各大陸の従業員のニーズを処理するためのマルチポイント接続です。 各大陸には、大陸内に冗長な Azure ExpressRoute の回路があり、セキュリティはこれらすべてにまたがる必要があります。
   

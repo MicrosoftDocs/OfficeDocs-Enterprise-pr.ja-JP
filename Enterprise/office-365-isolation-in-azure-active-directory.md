@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Azure Active Directory での分離とアクセス制御のしくみについて説明します。'
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067597"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035784"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory Domain Services での分離とアクセス制御
 
 Azure Active Directory は、論理的なデータの分離を通じて、高度に安全な方法で複数のテナントをホストするように設計されています。 Azure Active Directory へのアクセスは、承認層でゲートされます。 Azure Active Directory は、テナントコンテナーをセキュリティ境界として使用して顧客を分離し、ユーザーのコンテンツを保護します。これにより、共同テナントによるコンテンツへのアクセスや侵害を防ぐことができます。 Azure Active Directory の承認レイヤーによって、次の3つのチェックが実行されます。
+
 - プリンシパルは Azure Active Directory テナントへのアクセスを有効にしていますか?
 - プリンシパルはこのテナント内のデータへのアクセスを有効にしますか?
 - 要求されたデータアクセスの種類に対して、このテナントのプリンシパルの役割は承認されていますか。

@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782444"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031622"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
 
@@ -157,7 +157,7 @@ Project Server 2010 から Project Server 2013 にアップグレードするた
 
 Project Server 2013 に移行し、データが正常に移行されたことを確認した後、次の手順では、データを Project Server 2016 に移行します。
   
-Project Server 2013 から Project Server 2016 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)」を参照してください。
+Project Server 2013 から Project Server 2016 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)」を参照してください。
   
 主なリソース:
   
@@ -176,7 +176,7 @@ Project Server 2013 から Project Server 2016 にアップグレードするた
 
 Project Server 2016 に移行し、データが正常に移行されたことを確認した後、次の手順では、データを Project Server 2019 に移行します。
   
-Project Server 2016 から Project Server 2019 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016)」を参照してください。
+Project Server 2016 から Project Server 2019 にアップグレードするために必要な作業を完全に理解するには、「 [upgrade To Project server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016)」を参照してください。
   
 主なリソース:
   
@@ -189,7 +189,7 @@ Project Server 2016 から Project Server 2019 にアップグレードするた
   
 - アップグレードプロセスによって、Project Server 2016 データベースから SharePoint Server 2019 コンテンツデータベースにデータが移行されます。  Project Server 2019 は、SharePoint Server ファームに独自の Project Server データベースを作成しなくなります。
 
-- アップグレード後に、Project Web App のいくつかの変更に注意してください。  これらの詳細については、「 [Project Server 2019 の新機能](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)」を参照してください。
+- アップグレード後に、Project Web App のいくつかの変更に注意してください。  これらの詳細については、「 [Project Server 2019 の新機能](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)」を参照してください。
 
   
 その他の技術情報:
@@ -212,6 +212,6 @@ Office 2010 のクライアントおよびサーバーおよび Windows 7 のア
 
 [SharePoint 2010 からアップグレードする](upgrade-from-sharepoint-2010.md)
   
-[Office 2010 のサーバーとクライアントからのアップグレード](upgrade-from-office-2010-servers-and-products.md)
+[Office 2010 サーバー/クライアントからアップグレードする](upgrade-from-office-2010-servers-and-products.md)
   
 

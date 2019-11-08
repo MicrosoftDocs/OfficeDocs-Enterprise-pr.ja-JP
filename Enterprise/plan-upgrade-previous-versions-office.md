@@ -3,7 +3,7 @@ title: Office 2007 または2010のサーバーとクライアントからのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,24 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古く、サポートされていないアプリとサーバーで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: 444befb11fdbb3578b30f63615b2f6f1e18a3cf9
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782177"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031062"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
 
-以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービスのサポートが終了しました。 Exchange 2010 は **、2020年1月14日**のサポート終了に到達します。 その他の Office 2010 製品とサービスは、 **2020 年10月 13**日にサポートが終了します。 開始するには、このセクションのリソースを使用します。
-
-- Office 2007 製品とサービスのサポートが終了しました。 詳細については[、「Office 2007 のサーバーとクライアントからのアップグレード](upgrade-from-office-2007-servers-and-products.md)」を参照してください。
-
-- Office 2010 サーバーおよびクライアントの場合:
-
-  - Exchange 2010 は **、2020年1月14日**のサポート終了に到達します。
-
-  - Office 2010、SharePoint 2010、および Project Server 2010 は、 **2020 年10月 13**日にサポート終了に到達します。
+以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス[のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 製品とサービス (Office 2010、Exchange 2010、SharePoint 2010、および Project Server 2010 を含む) は、 **10 月 13**日にサポートが終了することになります。 開始するには、このセクションのリソースを使用します。
 
 詳細については[、「Office 2010 のサーバーとクライアントからのアップグレード](upgrade-from-office-2010-servers-and-products.md)」を参照してください。
 
@@ -47,7 +39,7 @@ ms.locfileid: "35782177"
     
     |Office 2007 の製品とサービス  |Office 2010 の製品とサービス  |
     |---------|---------|
-    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)コンピューター | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)コンピューター |
+    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (デスクトップ) | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (デスクトップ) |
     |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
     |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
     |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
@@ -72,13 +64,13 @@ ms.locfileid: "35782177"
 
 Office 2007 または Office 2010 を自宅で使用している場合は、次の更新オプションを検討してください。
 
-- **無料のブラウザーで Office を使用します。** ブラウザーで Office ファイルを作成、表示、編集し、インターネットにアクセスできるすべてのデバイスからこれらのファイルにアクセスできるようにします。 [Web 用 Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)には[、Web](http://go.microsoft.com/fwlink/p/?linkid=746664)用の Word、web 用の[Excel](http://go.microsoft.com/fwlink/p/?linkid=746665)、web 用の[PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666)、web 用の[OneNote](http://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675)、[電子メール](http://go.microsoft.com/fwlink/p/?linkid=746676)、[予定表](http://go.microsoft.com/fwlink/p/?linkid=746678)、および[OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679)が含まれています。 開始するには、 [office.com](https://office.com)にアクセスし、 [Microsoft アカウント](https://account.microsoft.com/account)を使用してサインインします。 (Microsoft アカウントをお持ちでない場合は、 [office.com](https://office.com)で1つ作成できます。)
+- **無料のブラウザーで Office を使用します。** ブラウザーで Office ファイルを作成、表示、編集し、インターネットにアクセスできるすべてのデバイスからこれらのファイルにアクセスできるようにします。 [Web 用 Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online)には[、Web](https://go.microsoft.com/fwlink/p/?linkid=746664)用の Word、web 用の[Excel](https://go.microsoft.com/fwlink/p/?linkid=746665)、web 用の[PowerPoint](https://go.microsoft.com/fwlink/p/?linkid=746666)、web 用の[OneNote](https://go.microsoft.com/fwlink/p/?linkid=746674)、 [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675)、[電子メール](https://go.microsoft.com/fwlink/p/?linkid=746676)、[予定表](https://go.microsoft.com/fwlink/p/?linkid=746678)、および[OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679)が含まれています。 開始するには、 [office.com](https://office.com)にアクセスし、 [Microsoft アカウント](https://account.microsoft.com/account)を使用してサインインします。 (Microsoft アカウントをお持ちでない場合は、 [office.com](https://office.com)で1つ作成できます。)
 
 - **家庭向け Office 365 をご利用ください。** [要件](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)を確認してから、 [office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm)または[office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)のどちらかを選択します。 試用版を開始し、Office 365 の動作を確認します。 Office 365 では、クラウドストレージを OneDrive で利用できるようになります。携帯電話と有線電話網番号の Skype 通話は60分で、他にも多くの機能が用意されています。 詳細については、「office の[大部分を office 365 で取得](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1)する」を参照してください。
 
-   [2020 年1月14日に windows 7 のサポートを終了](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)することにより、のバージョンの Word、Excel、PowerPoint、Outlook、Publisher、および windows 7 デバイス上で実行されている Office 365 Home または Office 365 Personal にはセキュリティ更新プログラムが提供されますが、機能はありません。最新. これらのアプリケーションの機能更新プログラムの受信を続行するには、 [windows 7 デバイスを windows 10 にアップグレード](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)します。
+   [2020 年1月14日に windows 7 のサポートを終了](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)すると、のバージョンの Word、Excel、PowerPoint、Outlook、Publisher、および windows 7 デバイス上で実行されている Office 365 Home または Office 365 Personal には、セキュリティ更新プログラムは提供されますが、機能の更新プログラムは受け取りません。 これらのアプリケーションの機能更新プログラムの受信を続行するには、 [windows 7 デバイスを windows 10 にアップグレード](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)します。
     
-- **Office Home &amp;の学生を購入します。** このオプションを選択する場合は、1回限りの購入を行い、Windows PC または Mac に Office をインストールします。 これはサブスクリプションではありません。1台のコンピューターに対して1回限りの永続的なライセンスを使用します。 [要件](http://office.com/systemrequirements)を確認してから、使用するバージョンを選択します。
+- **Office Home &amp;の学生を購入します。** このオプションを選択する場合は、1回限りの購入を行い、Windows PC または Mac に Office をインストールします。 これはサブスクリプションではありません。1台のコンピューターに対して1回限りの永続的なライセンスを使用します。 [要件](https://office.com/systemrequirements)を確認してから、使用するバージョンを選択します。
 
     - Windows 10 を実行している Windows PC では、 [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)を入手することを検討してください。
 
@@ -105,11 +97,11 @@ Microsoft 365 は、絶えず改善されたデバイスと生産性のエクス
 
 ## <a name="next-step"></a>次の手順
 
-[Office 2007 のサーバーとクライアントからのアップグレード](upgrade-from-office-2007-servers-and-products.md)
+[Office 2007 サーバー/クライアントからアップグレードする](upgrade-from-office-2007-servers-and-products.md)
 
 または
 
-[Office 2010 のサーバーとクライアントからのアップグレード](upgrade-from-office-2010-servers-and-products.md)
+[Office 2010 サーバー/クライアントからアップグレードする](upgrade-from-office-2010-servers-and-products.md)
    
 ## <a name="related-topics"></a>関連項目
   

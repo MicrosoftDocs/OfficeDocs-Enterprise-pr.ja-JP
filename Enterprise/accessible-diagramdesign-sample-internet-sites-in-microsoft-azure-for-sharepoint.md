@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
 description: 'この記事は、「設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。'
-ms.openlocfilehash: 28cf28739c476638b5775d170508001f2a9730ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 52ae615cbdc6a355155e54e36bc6a3d733d84869
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068800"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027631"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>アクセス可能な図 - 設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト
 
@@ -50,13 +50,13 @@ SharePoint 2013 を使って、インターネットに直接接続されてい�
 
 この設計には、4 種類のユーザー アカウントがあります。各種類のアカウントは、アクセス用のサイト、および特定の種類の認証を使用する領域と関連付けられています。 
   
-- 匿名の顧客  匿名の顧客は、http://www.contoso.com などのサイトを介してアクセスします。使用する領域は、匿名認証を使用する "Internet zone / anonymous" です。
+- 匿名の顧客  匿名の顧客は、https://www.contoso.com などのサイトを介してアクセスします。使用する領域は、匿名認証を使用する "Internet zone / anonymous" です。
     
 - 認証済みの顧客  認証済みの顧客は、https://secure.contoso.com などのサイトを介してアクセスします。使用する領域は、Azure Active Directory および SAML 認証を使用する "Extranet zone / SAML" です。
     
-- サイトの作成者と開発者  サイトの作成者と開発者は、http://authoring.contoso.com:8000 または http://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、Active Directory ドメイン サービス (AD DS) を使用する "Default zone / Windows integrated" です。
+- サイトの作成者と開発者  サイトの作成者と開発者は、https://authoring.contoso.com:8000 または https://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、Active Directory ドメイン サービス (AD DS) を使用する "Default zone / Windows integrated" です。
     
-- 検索クロール アカウント  検索クロール アカウントは、http://authoring.contoso.com:8000 または http://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、AD DS および Windows NTLM 認証を使用する "Default zone / Windows integrated" です。
+- 検索クロール アカウント  検索クロール アカウントは、https://authoring.contoso.com:8000 または https://www.contoso.com:8000 などのサイトを介してアクセスします。使用する領域は、AD DS および Windows NTLM 認証を使用する "Default zone / Windows integrated" です。
     
 ## <a name="server-farm"></a>サーバー ファーム
 
@@ -80,21 +80,21 @@ SharePoint 2013 を使って、インターネットに直接接続されてい�
     
 ## <a name="application-pools-and-web-applications"></a>アプリケーション プールと Web アプリケーション
 
-Azure の既定のグループは、Contoso Sites という名前の Web アプリケーションを含むアプリケーション プール 3 を示しています。このパスベースのサイト コレクションは http://internal:8000 にあります。
+Azure の既定のグループは、Contoso Sites という名前の Web アプリケーションを含むアプリケーション プール 3 を示しています。このパスベースのサイト コレクションは https://internal:8000 にあります。
   
 ## <a name="site-collections-and-sites"></a>サイト コレクションおよびサイト
 
 アプリケーション プールに含まれるサイト コレクションは次のとおりです。
   
-- クロール用のホスト名付きサイト コレクション 1 (場所の例: http://authoring.contoso.com:8000)
+- クロール用のホスト名付きサイト コレクション 1 (場所の例: https://authoring.contoso.com:8000)
     
-- クエリ用のホスト名付きサイト コレクション 2 (場所の例: http://www.contoso.com、https://secure.contoso.com、http://www.contoso.com:8000)
+- クエリ用のホスト名付きサイト コレクション 2 (場所の例: https://www.contoso.com、https://secure.contoso.com、https://www.contoso.com:8000)
     
-- クエリ用のホスト名付きサイト コレクション 3 (場所の例: http://assets.contoso.com、https://secureassets.contoso.com、http://assets.contoso.com:8000)
+- クエリ用のホスト名付きサイト コレクション 3 (場所の例: https://assets.contoso.com、https://secureassets.contoso.com、https://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>コンテンツ データベース
 
-例は、2 つのコンテンツ データベースを示しています。1 つは、クロール用のサイト コレクション 1 (http://authoring.contoso.com:8000) です。もう 1 つは、クエリ用の 2 つのサイト コレクション (サイト コレクション 2 および 3) (http://www.contoso.com、https://secure.contoso.com、http://www.contoso.com:8000、または http://assets.contoso.com、https://secureassets.contoso.com、http://assets.contoso.com:8000) です。
+例は、2 つのコンテンツ データベースを示しています。1 つは、クロール用のサイト コレクション 1 (https://authoring.contoso.com:8000) です。もう 1 つは、クエリ用の 2 つのサイト コレクション (サイト コレクション 2 および 3) (https://www.contoso.com、https://secure.contoso.com、https://www.contoso.com:8000、または https://assets.contoso.com、https://secureassets.contoso.com、https://assets.contoso.com:8000) です。
   
 ## <a name="zones-and-urls"></a>領域と URL
 
@@ -106,7 +106,7 @@ Azure の既定のグループは、Contoso Sites という名前の Web アプ�
     
 - 領域 - 既定
     
-- 負荷分散された URL - http://authoring.contoso.com:8000
+- 負荷分散された URL - https://authoring.contoso.com:8000
     
 2 番目の領域と URL のリストには、3 つの異なる領域に 3 種類のユーザーが含まれています。このリストはサイト コレクション 2 と関係し、次の情報が含まれています。
   
@@ -116,7 +116,7 @@ Azure の既定のグループは、Contoso Sites という名前の Web アプ�
     
 - 領域 - 既定
     
-- 負荷分散された URL - http://www.contoso.com:8000
+- 負荷分散された URL - https://www.contoso.com:8000
     
 2 番目の領域:
   
@@ -124,7 +124,7 @@ Azure の既定のグループは、Contoso Sites という名前の Web アプ�
     
 - 領域 - インターネット
     
-- 負荷分散された URL - http://www.contoso.com
+- 負荷分散された URL - https://www.contoso.com
     
 3 番目の領域:
   
@@ -142,7 +142,7 @@ Azure の既定のグループは、Contoso Sites という名前の Web アプ�
     
 - 領域 - インターネット
     
-- 負荷分散された URL - http://assets.contoso.com:8000
+- 負荷分散された URL - https://assets.contoso.com:8000
     
 2 番目の領域:
   
@@ -150,7 +150,7 @@ Azure の既定のグループは、Contoso Sites という名前の Web アプ�
     
 - 領域 - インターネット
     
-- 負荷分散された URL - http://assets.contoso.com
+- 負荷分散された URL - https://assets.contoso.com
     
 3 番目の領域:
   
@@ -158,6 +158,6 @@ Azure の既定のグループは、Contoso Sites という名前の Web アプ�
     
 - 領域 - エクストラネット
     
-- 負荷分散された URL - http://secureassets.contoso.com
+- 負荷分散された URL - https://secureassets.contoso.com
     
 

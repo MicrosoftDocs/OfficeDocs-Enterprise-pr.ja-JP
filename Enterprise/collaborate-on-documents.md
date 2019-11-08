@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint および OneDrive のドキュメントでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 1160e26c0aa23da499b8c0ef96bc5dd5d8e77004
-ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
+ms.openlocfilehash: 9ddbae276252c89ecae31a7f2bf5f1a3bf59af0f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37920150"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029151"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
@@ -23,7 +23,7 @@ SharePoint または OneDrive のドキュメントでゲストと共同作業�
 
 このビデオでは、このドキュメントで説明されている構成手順を示します。</br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE450Vt?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure の組織上の関係の設定
 

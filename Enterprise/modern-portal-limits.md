@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: SharePoint Online のモダンサイトのパフォーマンスに関する推奨事項について説明します。
-ms.openlocfilehash: 0f54520faaefcdfc66d10430c8d2a646696fc52b
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441074"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031272"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online モダンポータルサイトの制限
 
@@ -42,7 +42,7 @@ ms.locfileid: "37441074"
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>モダンポータルサイトの制限と推奨事項
 
-|**制限**|**推奨される最大値**|**注**|
+|**制限**|**推奨される最大値**|**メモ**|
 |:-----|:-----|:-----|:-----|
 |ページとニュースアイテム  <br/> |サイトごとに 5,000 件  <br/> |モダンポータルサイトのページ数とニュースアイテム数を5000以下に制限することをお勧めします。  <br/> |
 |ページ上の Web パーツ  <br/> |ページごとに20個  <br/> |標準の Microsoft web パーツとカスタム web パーツの両方を含む、ページごとに20以下の web パーツを使用することをお勧めします。 <br/> 詳細については、「 [SharePoint Online モダンサイトページで web パーツのパフォーマンスを最適化](modern-web-part-optimization.md)する」を参照してください。  <br/> |
@@ -52,10 +52,10 @@ ms.locfileid: "37441074"
 |画像の最大サイズ  <br/> |画像ごとに 300 Kb  <br/> |画像のサイズを300kb 以下に制限し、CDN を使用して画像、スタイルシート、スクリプトをホストすることをお勧めします。 <br/>詳細については、「 [Sharepoint online モダンサイトページで画像を最適化](modern-image-optimization.md)する」と「 [Sharepoint online で Office 365 コンテンツ配信ネットワーク (CDN) を使用する](use-office-365-cdn-with-spo.md)」を参照してください。  <br/> |
 |編集権限を持つユーザー  <br/> |サイトごとに200ユーザー  <br/> |SharePoint ポータルサイトは、コンテンツを表示および使用できるように最適化されています。 [編集] アクセス許可は、追加のコントロールをダウンロードするため、アクセス許可を制限するユーザーのグループに制限する必要があります。そのため、これらのユーザーに対しては実行速度が遅くなります。 このため、編集アクセス許可を持つユーザーの数が多すぎると、全体的な操作に影響します。 <br/> |
 |サードパーティの Iframe  <br/> |ページごとに2個  <br/> |iFrames は、javascript、CSS、フレームワーク要素などの関連付けられたすべてのコンテンツを含む個別の外部ページを読み込むため、予想には時間がかかります。 Iframe を使用する必要がある場合は、ページごとに2個以下に制限します。<br/> 詳細については、「 [SharePoint Online モダンおよび従来の発行サイトページで iframe を最適化](modern-iframe-optimization.md)する」を参照してください。 <br/> |
-|UPA サービスの呼び出し  <br/> |ユーザーごとに1時間ごとに1回  <br/> |UPA (User Profile Application) サービスへの_要求ごと_に電話をかけないことをお勧めします。 [Microsoft GRAPH API](https://docs.microsoft.com/en-us/graph/call-api)と[pagecontext](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)を使用して、ユーザー情報のクエリを実行できます。  <br/> UPA サービス呼び出しが必要な場合は、必要に応じて1つの呼び出しを行ってから、同じセッションで再利用するために情報をキャッシュします。 |
+|UPA サービスの呼び出し  <br/> |ユーザーごとに1時間ごとに1回  <br/> |UPA (User Profile Application) サービスへの_要求ごと_に電話をかけないことをお勧めします。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/call-api)と[pagecontext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)を使用して、ユーザー情報のクエリを実行できます。  <br/> UPA サービス呼び出しが必要な場合は、必要に応じて1つの呼び出しを行ってから、同じセッションで再利用するために情報をキャッシュします。 |
 |分類サービスの呼び出し  <br/> |1時間あたりのユーザーごとに5個  <br/> |分類サービスへの_要求ごと_に呼び出しを行うことをお勧めします。 分類サービスの呼び出しが必要な場合は、同じセッションで再利用するために情報をキャッシュします。 <br/> 詳細については、「 [SharePoint Online モダンおよび従来の発行サイトページでページ呼び出しを最適化](modern-page-call-optimization.md)する」を参照してください。 <br/> |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [正常な SharePoint ポータルを作成する](https://docs.microsoft.com/sharepoint/portal-health)
 
@@ -63,8 +63,8 @@ ms.locfileid: "37441074"
 
 [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
 
-[SharePoint Online の制限](https://docs.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online の制限](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/en-us/sharepoint/modern-experience-performance)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[SharePoint Online ポータル パフォーマンス ガイダンス](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+[SharePoint Online ポータル パフォーマンス ガイダンス](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)

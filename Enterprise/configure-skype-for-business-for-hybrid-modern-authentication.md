@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759685"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029131"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -67,7 +67,7 @@ ms.locfileid: "36759685"
   
 MA を有効にするには、4つの異なる場所が存在します。 最適なユーザー環境を実現するには、これらのすべての場所で MA をオンにすることをお勧めします。 これらのすべての場所で MA をオンにできない場合は、環境に必要な場所で MA のみを有効にするように手順を調整します。
   
-サポートされているトポロジについては、「 [Skype for business での Skype For business のサポート」を](https://technet.microsoft.com/en-us/library/mt803262.aspx)参照してください。 
+サポートされているトポロジについては、「 [Skype for business での Skype For business のサポート」を](https://technet.microsoft.com/library/mt803262.aspx)参照してください。 
   
  **重要**開始する前に、すべての前提条件を満たしていることをもう一度確認してください。 この情報について[は、こちら](hybrid-modern-auth-overview.md)を参照してください。
   
@@ -117,7 +117,7 @@ Standard Edition サーバーを使用している場合、内部 URL は空白�
   
  **メモ**サービスプリンシパル名 (Spn) は、web サービスを識別し、それをセキュリティプリンシパル (アカウント名やグループなど) に関連付けて、サービスが権限のあるユーザーの代理として機能できるようにします。 クライアントがサーバーに対して認証を行うと、Spn に含まれる情報が利用されます。 
   
-1. 最初に、[次の手順に従っ](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)て AAD に接続します。
+1. 最初に、[次の手順に従っ](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)て AAD に接続します。
     
 2. このコマンドをオンプレミスで実行して、SFB web サービス Url の一覧を取得します。
 
@@ -174,7 +174,7 @@ HMA が機能していることを確認した後で、その機能が動作し�
 
 [モダン認証の概要に戻る](hybrid-modern-auth-overview.md) 
   
-Skype for Business クライアントで先進認証 (ADAL) を使用する方法を知る必要がありますか。 [ここでは](https://technet.microsoft.com/en-us/library/mt710548.aspx)、手順を示しました。
+Skype for Business クライアントで先進認証 (ADAL) を使用する方法を知る必要がありますか。 [ここでは](https://technet.microsoft.com/library/mt710548.aspx)、手順を示しました。
   
 これらの手順は、SFB を使用せずにオンプレミスで実行されている Exchange サーバーに対して表示されます。 これらの手順はこちらで入手できます。
   

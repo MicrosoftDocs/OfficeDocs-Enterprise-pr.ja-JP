@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 のデータの不変性を定義して説明します。
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067622"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035577"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 の不変性
 
@@ -38,12 +38,12 @@ Office 365 およびそのサービスのアーカイブのインプレース保
 
 さらに、Microsoft は、サードパーティのデータキャプチャおよび管理ソリューションとの統合により、他のソースからの[データのアーカイブ](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc)を可能にするアドオン機能を開発しました。 サードパーティのデータがインポートされたら、次のような Office 365 コンプライアンス機能をデータに適用できます。
 
-- [訴訟ホールド](/microsoft365/compliance/create-a-litigation-hold.md)
-- [インプレース電子情報開示とホールド](/microsoft365/compliance/manage-legal-investigations.md)
-- [コンプライアンス検索](/microsoft365/compliance/search-for-content.md)
-- [インプレース アーカイブ](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [メールボックスの監査](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [アイテム保持ポリシー](/microsoft365/compliance/retention-policies.md)
+- [訴訟ホールド](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [インプレース電子情報開示とホールド](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [コンプライアンス検索](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [インプレース アーカイブ](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [メールボックスの監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [アイテム保持ポリシー](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 たとえば、メールボックスが訴訟ホールドの対象となっている場合、サードパーティのデータは保持されます。 インプレース電子情報開示またはコンプライアンス検索を使用して、サードパーティのデータを検索できます。 また、Microsoft データの場合と同じように、アーカイブポリシーとアイテム保持ポリシーをサードパーティデータに適用することができます。 Office 365 でサードパーティのデータをアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
