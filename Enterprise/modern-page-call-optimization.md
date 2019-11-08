@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online サービス エンドポイントへの呼び出し数を制限することにより、SharePoint Onlineで最新および従来の発行サイト ページを最適化する方法を学びます。
-ms.openlocfilehash: 1e355aee6d55e3e45238cdf09853ddebb922ae53
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 1219e1a1362264fb3cd1dc6bd4843eec39d84041
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375505"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031282"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online の最新および従来の発行サイト ページでページ呼び出しを最適化する
 
@@ -30,11 +30,11 @@ SharePoint Online の最新の発行サイトと従来の発行サイトには�
 この記事は、最新および従来の発行サイト ページから外部エンドポイントへの呼び出しの数と影響を判断する方法、およびエンドユーザーが認識する遅延への影響を制限する方法を理解するのに役立ちます。
 
 >[!NOTE]
->Sharepoint Online の最新ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/ja-JP/sharepoint/modern-experience-performance)」を参照してください。
+>Sharepoint Online の最新ポータルでのパフォーマンスの詳細については、「[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)」を参照してください。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>SharePoint 用ページ診断ツールを使用してページ呼び出しを分析する
 
-**SharePoint 用ページ診断ツール**は、Chrome と [Microsoft Edge バージョン 77 以降](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8)のブラウザー拡張機能であり、SharePoint の最新版と従来版両方の発行サイト ページの分析に利用できます。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法および詳細情報については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+**SharePoint 用ページ診断ツール**は、Chrome と [Microsoft Edge バージョン 77 以降](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)のブラウザー拡張機能であり、SharePoint の最新版と従来版両方の発行サイト ページの分析に利用できます。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法および詳細情報については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
 
 SharePoint のサイト ページを SharePoint 用ページ診断ツールを使用して分析すると、[_診断テスト_] ウィンドウの [**SharePoint へのリクエスト**] 結果に外部呼び出しに関する情報が表示されます。 サイト ページに含まれるコールの数がベースライン数より少ない場合、線は緑色で表示され、ページがベースライン数を超える場合は赤色で表示されます。 クラシック サイト ページは HTTP1.1 を使用し、モダン ページは HTTP2.0 を使用するため、ベースライン数はモダン ページとクラシック ページで異なります。
 
@@ -54,9 +54,9 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 ページに含まれる呼び出しが多すぎる場合、[**SharePoint へのリクエスト**] の結果の URL のリストを使用して、繰り返しの呼び出し、バッチ処理する必要のある呼び出し、またはキャッシュする必要のあるデータを返す呼び出しがあるかどうかを判断できます。
 
-**REST 呼び出しのバッチ処理**が、パフォーマンスのオーバーヘッド削減に役立ちます。 API 呼び出しのバッチ処理の詳細については、「[REST API によりバッチ要求を発行する](https://docs.microsoft.com/ja-JP/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)」をご覧ください。
+**REST 呼び出しのバッチ処理**が、パフォーマンスのオーバーヘッド削減に役立ちます。 API 呼び出しのバッチ処理の詳細については、「[REST API によりバッチ要求を発行する](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)」をご覧ください。
 
-**キャッシュを使用**して API 呼び出しの結果を保存すると、以降のページの読み込みごとに追加の呼び出しを行う代わりに、クライアントがキャッシュ データを使用できるようになるため、ウォーム リクエストのパフォーマンスが向上します。 ビジネス要件に応じて、このソリューションにアプローチする方法は複数あります。 通常、データがすべてのユーザーで同じ場合、ユーザーは SPO から直接ではなくキャッシュ サービスからデータを要求するため、[_Azure Redis_ キャッシュ](https://azure.microsoft.com/ja-JP/services/cache/)などの中間層キャッシュ サービスを使用することは、サイトに対する API トラフィックを大幅に削減する優れたオプションです。 必要な SPO 呼び出しは、中間層のキャッシュを更新することだけです。 データが個々のユーザーごとに変動する場合は、LocalStorage や Cookie などのクライアント側キャッシュを実装するのが最善かもしれません。 これにより、キャッシュ期間中に同じユーザーによって行われる後続のリクエストが排除されるため呼び出しの量は減少しますが、専用のキャッシュ サービスよりも効率が低下します。 PnP を使用すると、追加の開発をほとんど必要とせずに LocalStorage を使用できます。
+**キャッシュを使用**して API 呼び出しの結果を保存すると、以降のページの読み込みごとに追加の呼び出しを行う代わりに、クライアントがキャッシュ データを使用できるようになるため、ウォーム リクエストのパフォーマンスが向上します。 ビジネス要件に応じて、このソリューションにアプローチする方法は複数あります。 通常、データがすべてのユーザーで同じ場合、ユーザーは SPO から直接ではなくキャッシュ サービスからデータを要求するため、[_Azure Redis_ キャッシュ](https://azure.microsoft.com/services/cache/)などの中間層キャッシュ サービスを使用することは、サイトに対する API トラフィックを大幅に削減する優れたオプションです。 必要な SPO 呼び出しは、中間層のキャッシュを更新することだけです。 データが個々のユーザーごとに変動する場合は、LocalStorage や Cookie などのクライアント側キャッシュを実装するのが最善かもしれません。 これにより、キャッシュ期間中に同じユーザーによって行われる後続のリクエストが排除されるため呼び出しの量は減少しますが、専用のキャッシュ サービスよりも効率が低下します。 PnP を使用すると、追加の開発をほとんど必要とせずに LocalStorage を使用できます。
 
 パフォーマンスの問題を修復するためにページを修正する前に、分析結果のページ読み込み時間をメモしてください。 修正後にツールをもう一度実行して新しい結果がベースライン基準内にあるかどうかを確認し、新しいページ読み込み時間をチェックして改善されたかどうかを確認します。
 

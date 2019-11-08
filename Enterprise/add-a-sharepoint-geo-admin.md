@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 description: Office 365 Multi-Geo で地域管理者を追加または削除する方法について説明します。
-ms.openlocfilehash: 767dcf5284e93b9a2e908d4ec837f034b29cb6db
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d10340b7fe42016710ec953f5b45110e9ea8b901
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068473"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030571"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Office 365 Multi-Geo で地域管理者を追加または削除する
 
@@ -45,7 +45,7 @@ ms.locfileid: "34068473"
 
 地域管理者としてのグループを削除するには、`Remove-SPOGeoAdministrator -GroupAlias <alias>` を実行します。
 
-一部のセキュリティ グループにはグループ エイリアスがないことに注意してください。 エイリアスがないセキュリティ グループを追加する場合は、[Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) を実行して、グループの一覧を取得し、セキュリティ グループの ObjectID を検索して、次を実行します。
+一部のセキュリティ グループにはグループ エイリアスがないことに注意してください。 エイリアスがないセキュリティ グループを追加する場合は、[Get-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/get-msolgroup) を実行して、グループの一覧を取得し、セキュリティ グループの ObjectID を検索して、次を実行します。
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -59,4 +59,4 @@ ObjectID を使用してグループを削除するには、`Remove-SPOGeoAdmini
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[セキュリティ グループのエイリアス (MailNickName) を設定する](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup)

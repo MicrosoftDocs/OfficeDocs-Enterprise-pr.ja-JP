@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Multi-Geo 環境で検索を構成する方法について説明します。
-ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 50656a103fd27bfc4a61fb04d26779dd0972a2d4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643280"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029141"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 用に検索を構成する
 
@@ -85,7 +85,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo 検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
-<td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
+<td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
 </tr>
 <tr class="even">
 <td align="left">ドキュメント ID</td>
@@ -172,7 +172,7 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 **要件**
 
-地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの**読み取り**アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso**APAC**.sharepoint.com/ および contoso**EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/ja-JP/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
+地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの**読み取り**アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso**APAC**.sharepoint.com/ および contoso**EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
 ### <a name="query-parameters"></a>クエリ パラメーター
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - **EnableMultiGeoSearch** が **true** に設定さ
 </tbody>
 </table>
 
-DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](https://docs.microsoft.com/ja-JP/sharepoint/dev/solution-guidance/multigeo-discovery)。
+DataLocation または EndPoint を省略した場合や DataLocation が重複している場合、要求は失敗します。[テナントの地域の場所のエンドポイントに関する情報は、Microsoft Graph を使用することで取得できます](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery)。
 
 ### <a name="response-data"></a>応答データ
 

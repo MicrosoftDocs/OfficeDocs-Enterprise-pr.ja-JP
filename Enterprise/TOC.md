@@ -42,7 +42,7 @@
 ## Office 365 クライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
-### [MDM または Intune を選択する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/choose-between-mdm-and-intune)
+### [MDM または Intune を選択する](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
 ### [先進認証](office-365-client-support-modern-authentication.md)
 ### [シングル サインオン](office-365-client-support-single-sign-on.md)
@@ -198,7 +198,7 @@
 ### [ディレクトリ同期を無効にする](turn-off-directory-synchronization.md)
 
 ## ユーザー
-### [Office 365 Admin ヘルプ センター](https://support.office.com/ja-JP/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 Admin ヘルプ センター](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [ユーザー アカウント管理ツール](manage-office-365-accounts.md)
 ### [同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
@@ -227,7 +227,7 @@
 
 ## サービス正常性
 ### [確認方法](view-service-health.md)
-### [サポート オプション](https://support.office.com/ja-JP/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [サポート オプション](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## パフォーマンス
 ### [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)

@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: 複数地域環境における SharePoint ストレージ クォータについて説明します。
-ms.openlocfilehash: a9ccc32940293dcd11e2f3b89607950f7b6ae3f0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4049312a2da64f16d2637ffd37adf98f2282287
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070753"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033383"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>複数地域環境における SharePoint ストレージ クォータ
 
@@ -27,7 +29,7 @@ SharePoint 地域ストレージ クォータ設定では、地域の場所ご�
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>地域の場所のストレージ クォータを構成する
 
-地域の場所にストレージ クォータを割り当てるには、[Microsoft Office SharePoint Online モジュール](https://www.microsoft.com/en-us/download/details.aspx?id=35588 )を使用して、中央の場所に接続します。 
+地域の場所にストレージ クォータを割り当てるには、[Microsoft Office SharePoint Online モジュール](https://www.microsoft.com/download/details.aspx?id=35588 )を使用して、中央の場所に接続します。 
 
 場所にストレージ クォータを割り当てるには、次のコマンドレットを実行します。
 

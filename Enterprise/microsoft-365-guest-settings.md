@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 で使用できるゲストの共有設定について説明します。
-ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4cba1f087828d33fb53b084e792664ecd11d3e63
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493344"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032322"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -60,7 +60,7 @@ Microsoft 365 管理センターには、共有および Office 365 グループ
 
 |**Setting**|**Default**|**説明**|
 |:-----|:-----|:-----|
-|ユーザーが組織に新しいゲストを追加できるようにする|オン|**[はい]** に設定すると、Azure AD メンバーは Azure AD を使用してゲストを招待できます。**[いいえ]** に設定すると招待できません。 **[はい]** に設定すると、Office 365 グループのメンバーは所有者の承認を受けているゲストを招待できます。**[いいえ]** に設定すると、Office 365 グループのメンバーは所有者の承認を受けているゲストを招待できますが、所有者が承認するにはグローバル管理者でなければなりません。 <br><br>**[メンバーが招待できる]** は、(ゲストではなく) Azure AD のメンバーを参照し、Microsoft 365 のサイトまたは グループ メンバーは参照しません。 <br><br>これは、Azure Active Directory の組織の関係設定で **[メンバーが招待できる]** 設定と同じです。|
+|ユーザーが組織に新しいゲストを追加できるようにする|オン|**[はい]** に設定すると、Azure AD メンバーは Azure AD を使用してゲストを招待できます。**[いいえ]** に設定すると招待できません。 **[はい]** に設定すると、Office 365 グループのメンバーは所有者の承認を受けているゲストを招待できます。**[いいえ]** に設定すると、Office 365 グループのメンバーは所有者の承認を受けているゲストを招待できますが、所有者が承認するにはグローバル管理者でなければなりません。 <br><br>**[メンバーが招待できる]** は、(ゲストではなく) Azure AD のメンバーを参照し、Microsoft 365 のサイトまたはグループ メンバーを参照しない点に注意してください。 <br><br>これは、Azure Active Directory の組織の関係設定で **[メンバーが招待できる]** 設定と同じです。|
 
 ### <a name="office-365-groups"></a>Office 365 グループ
 

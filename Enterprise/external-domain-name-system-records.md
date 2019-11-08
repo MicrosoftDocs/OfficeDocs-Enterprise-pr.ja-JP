@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '概要: Office 365 の展開を計画するときに使用する DNS レコードのリファレンス リスト。'
-ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: ec05958eaf40fe988245eae808cc78bf60c06136
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616140"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028821"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
@@ -31,7 +31,7 @@ ms.locfileid: "37616140"
   
 |||
 |:-----|:-----|
-|![ドメイン](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/ja-JP/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。<br/> **GoDaddy や eNom などのドメインの DNS ホストでこれらのレコードを追加するための手順が必要な場合** [多くの一般的な DNS ホストでの詳しい操作手順へのリンクをご覧ください](https://go.microsoft.com/fwlink/?LinkId=286745)。 <br/>  **そのまま残って自分のカスタムの展開用のリファレンス リストを使用する場合** 以下のリストは、Office 365 のカスタム展開用のリファレンスとして使用されます。組織に適用するレコードを選択して、適切な値を入力する必要があります。 <br/> 「[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)」**に戻ります**。  <br/> |
+|![ドメイン](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Office 365 組織のカスタマイズされた DNS レコードのリストを表示するには** Office 365 のドメイン用に [Office 365 DNS レコードを作成するために必要な情報を見つける](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)ことができます。<br/> **GoDaddy や eNom などのドメインの DNS ホストでこれらのレコードを追加するための手順が必要な場合** [多くの一般的な DNS ホストでの詳しい操作手順へのリンクをご覧ください](https://go.microsoft.com/fwlink/?LinkId=286745)。 <br/>  **そのまま残って自分のカスタムの展開用のリファレンス リストを使用する場合** 以下のリストは、Office 365 のカスタム展開用のリファレンスとして使用されます。組織に適用するレコードを選択して、適切な値を入力する必要があります。 <br/> 「[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)」**に戻ります**。  <br/> |
 
 SPF と MX レコードは、見つけ出すのが最も困難です。この記事の最後にある、SPF レコードのガイダンスを更新しました。重要なのは、_ドメインに対して持つことができる SPF レコードは 1 つである_ ということです。MX レコードは複数持つことができますが、メール配信の際に問題を引き起こす場合があります。MX レコードを 1 つにし、メールを 1 つのメール システムに配信することで、多くの問題を回避できます。
   
@@ -103,7 +103,7 @@ Exchange フェデレーションを使用しているメールのお客様は�
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF はスプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。これらから保護するために、SPF をセットアップすると、Office 365 用に DKIM と DMARC も構成する必要があります。始めるには「[Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/ja-JP/library/mt695945%28v=exchg.150%29.aspx)」をご覧ください。次は、「[Use DMARC to validate email in Office 365](https://technet.microsoft.com/ja-JP/library/mt734386%28v=exchg.150%29.aspx)」を参照してください。
+> SPF はスプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。これらから保護するために、SPF をセットアップすると、Office 365 用に DKIM と DMARC も構成する必要があります。始めるには「[Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)」をご覧ください。次は、「[Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)」を参照してください。
   
 SPF レコードは、他人が自分のドメインを使用してスパムなどの悪意のある電子メールを送信するのを防ぐのに役立つ TXT レコードです。Sender policy framework (SPF) レコードは、自分のドメインからメールを送信することを許可されているサーバーを特定することによって動作します。
   
