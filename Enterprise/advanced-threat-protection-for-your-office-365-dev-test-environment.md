@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: '概要: Office 365 の開発/テスト環境で Office 365 Advanced Threat Protection を構成し、デモンストレーションします。'
-ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e3efe339550992fba85509cd07a791d916d5d6e7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162420"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030561"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Advanced Threat Protection
 
@@ -74,7 +74,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
     
 13. 本文で、「 **このサイト**」のテキストを選択して、ツールのハイパーリンク アイコンをクリックします。
     
-14. **URL** に、 **http://www.spamlink.contoso.com/** と入力して、 **[OK]**、 **[送信]** の順にクリックします。
+14. **URL** に、 **https://www.spamlink.contoso.com/** と入力して、 **[OK]**、 **[送信]** の順にクリックします。
     
 15. プライベートブラウズモードで Internet Explorer の個別のインスタンスを開き、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に移動し、全体管理者アカウントを使用して Office 365 試用版サブスクリプションにサインインします。
     
@@ -156,7 +156,7 @@ Office 365 Advanced Threat Protection (ATP) は、マルウェアから電子メ
 これで、この環境を使用して、新しいポリシーを作成し ATP を試すことができるようになりました。
   
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="see-also"></a>関連項目
 

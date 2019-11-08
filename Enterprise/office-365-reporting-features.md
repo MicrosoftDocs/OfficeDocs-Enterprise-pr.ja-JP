@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Office 365 内のレポート機能の説明。
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067571"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031862"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 のレポート作成機能 
 
@@ -78,7 +78,7 @@ MDM コンプライアンスレポートには、Office 365 データにアク�
 
 DLP ポリシーは、組織内の情報のセキュリティとフローを管理するのに役立ちます。 アプリケーション内 DLP ポリシーヒントを使用して、コンテンツへのアクセスをブロックしたり、データを暗号化したり、ポリシーおよびポリシー違反のユーザーに通知したりするためのポリシーを設定できます。 DLP レポートでは、ポリシーとルールの一致、オーバーライド、誤検知の数についての洞察が得られます。
 
-Microsoft 365 管理センターを使用して、DLP ポリシーによって検出されたメッセージ数に関する情報を表示します。 DLP レポートは、送受信されたメールのポリシーとルールの一致に関する洞察を提供します。 また、Exchange 管理センターを使用して、過去24時間以内に各ポリシーの一致、オーバーライド、誤検知の数を表示することもできます。 Excel レポートをダウンロードする場合は、どのメッセージを送信したか、いつ、どのポリシーがトリガーされたかなど、さらに詳細を確認できます。 詳細については、「 [DLP ポリシー検出に関するレポートの表示](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx)」を参照してください。
+Microsoft 365 管理センターを使用して、DLP ポリシーによって検出されたメッセージ数に関する情報を表示します。 DLP レポートは、送受信されたメールのポリシーとルールの一致に関する洞察を提供します。 また、Exchange 管理センターを使用して、過去24時間以内に各ポリシーの一致、オーバーライド、誤検知の数を表示することもできます。 Excel レポートをダウンロードする場合は、どのメッセージを送信したか、いつ、どのポリシーがトリガーされたかなど、さらに詳細を確認できます。 詳細については、「 [DLP ポリシー検出に関するレポートの表示](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx)」を参照してください。
 
 ## <a name="auditing-in-yammer-enterprise"></a>Yammer Enterprise での監査
 

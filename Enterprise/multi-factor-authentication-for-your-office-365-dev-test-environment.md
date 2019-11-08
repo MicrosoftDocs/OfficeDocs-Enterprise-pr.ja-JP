@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 概要:Office 365 の開発/テスト環境で、スマート フォンに送信されるテキスト メッセージを使用して多要素認証を構成します。
-ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6e78d826cd010230218048ef320d8f32430ac02b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069953"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032132"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境用の多要素認証
 
@@ -38,13 +38,13 @@ Office 365 サブスクリプションにサインインするための追加の
 2. User 2 アカウントに対して、多要素認証を有効にしてテストします。
     
 > [!TIP]
-> [ここ](http://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](https://aka.ms/catlgstack)をクリックして、Office 365 のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
 最小要件での軽量な方法で多要素認証をテストするだけの場合は、 [Office 365 開発/テスト環境](office-365-dev-test-environment.md)のフェーズ2とフェーズ3の手順に従ってください。
   
-シミュレートされたエンタープライズで多要素認証をテストする場合は、「365 Office のディレクトリ同期の開発/テスト環境」の手順に従ってください。
+シミュレートされたエンタープライズで多要素認証をテストする場合は、「 [365 Office のディレクトリ同期の開発/テスト環境](dirsync-for-your-office-365-dev-test-environment.md)」の手順に従ってください。
   
 > [!NOTE]
 > 多要素認証のテストでは、シミュレートされたエンタープライズ開発/テスト環境を使用する必要はありません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この指示は、一般的な組織と類似した環境で多要素認証をテストしてお試しいただけるようオプションとしてここで提供しています。 
@@ -59,7 +59,7 @@ Office 365 サブスクリプションにサインインするための追加の
     
 3. 左側のナビゲーションで、**[ユーザー] > [アクティブなユーザー]** をクリックします。
     
-4. [アクティブなユーザー] ウィンドウで、[**その他の _GT_ 多要素認証のセットアップ**] をクリックします。
+4. [アクティブなユーザー] ウィンドウで、[ **More > 多要素認証のセットアップ**] をクリックします。
     
 5. リストで、 **User 2**アカウントを選択します。
     
@@ -77,7 +77,7 @@ Office 365 サブスクリプションにサインインするための追加の
   
 1. ブラウザーの新しいインスタンスを開きます。
     
-2. Office 365 ポータル ([https://www.office.com](https://www.office.com)) に移動し、User 2 アカウント (user2 @\<organization name>) とパスワードを使用してサインインします。
+2. Office 365 ポータル ([https://www.office.com](https://www.office.com)) に移動し、User 2 アカウントでサインインします (user2@\<組織名> onmicrosoft.com) とパスワード。
     
 3. サインイン後、追加のセキュリティ検証のためにアカウントを設定するように求められます。**[今すぐセットアップ]** をクリックします。
     

@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'ワークシートまたはその他の CSV 形式のファイルのリストから、複数のユーザーを Office 365 に追加する方法について説明します。 Office 365 にアカウントを追加する方法を説明する YouTube のビデオを視聴してください。 このプロセスが完了すると、アカウントを持つ各ユーザーに Office 365 メールボックスが割り当てられます。 '
-ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198659"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030731"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同時に複数のユーザーを Office 365 に追加する - 管理者ヘルプ
 
@@ -96,7 +96,7 @@ ms.locfileid: "36198659"
 
 CSV ファイルは、コンマで区切られた値を含むファイルです。 テキスト エディターまたは Excel などのスプレッドシート プログラムを使って、このようなファイルを作成または編集することができます。
   
-出発点として、[このサンプル スプレッドシート](https://www.microsoft.com/en-us/download/details.aspx?id=45485)をダウンロードして使うことができます。Office 365 には 1 行目の列見出しが必要なので、別のテキストで置き換えないでください。 
+出発点として、[このサンプル スプレッドシート](https://www.microsoft.com/download/details.aspx?id=45485)をダウンロードして使うことができます。Office 365 には 1 行目の列見出しが必要なので、別のテキストで置き換えないでください。 
   
 新しい名前でファイルを保存し、CSV 形式を指定します。
   
@@ -147,7 +147,7 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 ## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>以前の管理センターで Office 365 に複数のユーザーを追加する
 
-1. [このサンプル スプレッドシート](https://www.microsoft.com/en-us/download/details.aspx?id=45485)をダウンロードし、Excel で開きます。 
+1. [このサンプル スプレッドシート](https://www.microsoft.com/download/details.aspx?id=45485)をダウンロードし、Excel で開きます。 
     
     スプレッドシートには、サンプルと **まったく同じ列見出し** が含まれている必要があります ("ユーザー名"、"名" など)。テンプレートを使用する場合は、1 行目のすべてのデータをそのままにして実際のデータを 2 行目以降にのみ入力することを検討してください。 
     
