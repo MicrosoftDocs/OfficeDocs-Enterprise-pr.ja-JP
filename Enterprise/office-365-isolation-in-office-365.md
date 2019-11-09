@@ -12,13 +12,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 description: '概要: Office 365 のさまざまなアプリケーションでの分離とアクセス制御について説明します。'
-ms.openlocfilehash: 541aef20e885f6d7fbd505ffe2fe32a8525999d4
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5855828faafaf12e609e93a1a4f0ec7419e0a9d6
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078166"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Office 365 での分離とアクセス制御
 
@@ -40,7 +41,7 @@ Exchange Online は、メールボックス内に顧客データを格納しま�
 - 予定表と空き時間情報
 - 連絡先
 - タスク
-- ノート
+- メモ
 - グループ
 - 推論データ
 

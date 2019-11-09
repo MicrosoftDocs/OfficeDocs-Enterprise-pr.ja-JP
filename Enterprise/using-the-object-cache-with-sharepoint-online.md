@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: この記事では、SharePoint Server 2013 オンプレミスと SharePoint Online でのオブジェクトキャッシュの使用との違いについて説明します。
-ms.openlocfilehash: 8ae2e2675444c023b69030f3f46f170b450fb390
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 4c6cd225bf0f7324dcb23c55adb87e2365d35472
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616840"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078026"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint Online でのオブジェクトキャッシュの使用
 
@@ -48,8 +50,7 @@ SharePoint Server 2013 がオンプレミスでホストされている場合、
 
 SharePoint Online ではキャッシュを使用しないようにする必要があるため、オブジェクトキャッシュを使用する SharePoint カスタマイズの代替デザイン方法を評価する必要があります。 これは、ユーザーにとって適切な結果を得るために、オブジェクトキャッシュに依存しないパフォーマンスの問題を解決する手法を使用することを意味します。 これについては、このシリーズの他の記事に記載されている内容を参照してください。
   
-- 
-  [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
+- [SharePoint Online のナビゲーション オプション](navigation-options-for-sharepoint-online.md)
     
 - [SharePoint Online での縮小とバンドル](minification-and-bundling-in-sharepoint-online.md)
     

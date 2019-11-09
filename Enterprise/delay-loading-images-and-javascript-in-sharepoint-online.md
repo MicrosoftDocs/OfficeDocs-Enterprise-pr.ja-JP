@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
-ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616790"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077670"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
@@ -28,7 +30,7 @@ SharePoint Online では、画像がページの読み込み速度に悪影響�
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用して SharePoint Online ページで画像の読み込みを遅延することで、ページの読み込み時間を短縮する
 
-JavaScript を使用して、web ブラウザーが画像を事前に取得できないようにすることができます。 これにより、ドキュメント全体のレンダリングが高速化されます。 これを行うには、 \<img\>タグから src 属性の値を削除し、次のような data 属性のファイルへのパスに置き換えます。例えば：
+JavaScript を使用して、web ブラウザーが画像を事前に取得できないようにすることができます。 これにより、ドキュメント全体のレンダリングが高速化されます。 これを行うには、 \<img\>タグから src 属性の値を削除し、次のような data 属性のファイルへのパスに置き換えます。 例:
   
 ```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

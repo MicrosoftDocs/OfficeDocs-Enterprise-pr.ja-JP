@@ -6,16 +6,16 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.collection: Strat_SP_gtc
 ms.custom: ''
 localization_priority: Priority
-ms.collection: Strat_SP_gtc
 description: Office 365 Multi-Geo の構成方法の詳細。
-ms.openlocfilehash: e1e76482e6b775a2bb1b6ea4428112af738d6a5a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8e845a7d1c3a8d83189a77c5fc7a6e8d3358a425
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070013"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076391"
 ---
 # <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 Multi-Geo テナントの構成
 

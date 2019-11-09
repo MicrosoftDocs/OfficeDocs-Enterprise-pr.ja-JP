@@ -7,16 +7,18 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: この記事では、SharePoint Online でのポータルの起動を計画する方法と、正常に起動するために必要な手順について説明します。
-ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027661"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077570"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online でポータルの起動ロールアウトプランを計画する
 ポータルとは、会社の既定の SharePoint サイトです。大規模な組織では、これらのうちのいくつかが存在する可能性があります。 組織内の 20% 以上のユーザーがそのページにアクセスすることが期待される場合、ポータル ページを検討する必要があります。 これは、チーム内でドキュメントの共同作業と共有を行うために部署で使用するチーム サイトと混同してはいけません。

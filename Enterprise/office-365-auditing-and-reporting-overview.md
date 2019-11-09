@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - M365-analytics
+- SPO_Content
 description: Office 365、Microsoft 365、およびサービスアシュアランス内の監査とレポート機能の概要について説明します。
-ms.openlocfilehash: 545c1224a5c7fc181028be555b14deeff6048ca9
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 991eb807ee297ea9dc912be53d99c80247220c1b
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035637"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076231"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft クラウドサービスでの監査とレポート
 

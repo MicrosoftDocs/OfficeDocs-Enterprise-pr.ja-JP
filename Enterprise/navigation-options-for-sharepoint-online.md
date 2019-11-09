@@ -7,17 +7,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。 ナビゲーションの選択と構成は、SharePoint Online のサイトのパフォーマンスと拡張性に大きく影響します。 この記事は、従来のチーム サイトには適用されません。
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
-ms.translationtype: HT
+ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385205"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078312"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
@@ -456,9 +458,9 @@ function addEventsToElements() {
 
 [上記のコード](#about-the-javascript-file)には次のような依存関係があります。
 
-- jQuery - http://jquery.com/
-- KnockoutJS - http://knockoutjs.com/
-- Linq.js - http://linqjs.codeplex.com/、または github.com/neuecc/linq.js
+- jQuery - https://jquery.com/
+- KnockoutJS - https://knockoutjs.com/
+- Linq.js - https://linqjs.codeplex.com/、または github.com/neuecc/linq.js
 
 LinqJS の現在のバージョンには、上記のコードで使用されている ByHierarchy メソッドが含まれておらず、ナビゲーション コードが機能しなくなります。 これを解決するには、Linq.js ファイルの `Flatten: function ()` の行の前に次のメソッドを追加します。
 

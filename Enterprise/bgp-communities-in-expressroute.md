@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782347"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077936"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
 Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
   
-- **承認された ip プレフィックスの数を管理**する-制限された数の ip プレフィックスのみをサポートする内部ネットワークインフラストラクチャまたはネットワークキャリアを備えているお客様と、プレフィックスの受け入れを請求するネットワークキャリアを所有している顧客制限された数を超えると、ネットワークに既にアドバタイズされているプレフィックスの合計数を評価して、ExpressRoute に最適な Office 365 アプリケーションを選択します。
+- 承認された**ip プレフィックスの数を管理**する-限られた数の ip プレフィックスのみをサポートする内部ネットワークインフラストラクチャまたはネットワークキャリアを備えているお客様と、制限付き番号の上にプレフィックスを受け付けるように料金を与えるネットワークキャリアを持つお客様は、365ネットワークに既にアドバタイズされているプレフィックスの合計数を評価して、
 
 - **Azure ExpressRoute 回線で必要な帯域幅の量を管理**する-お客様は、ExpressRoute のパスとインターネットパスを介して Office 365 サービスの帯域幅エンベロープを制御する必要がある場合があります。 これにより、お客様は Skype for Business などの特定のアプリケーションに対して ExpressRoute の帯域幅を予約し、残りの Office 365 アプリケーションをインターネットパスを介してルーティングすることができます。
 

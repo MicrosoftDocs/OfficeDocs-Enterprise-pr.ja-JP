@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '概要: クライアントコンピューターと Office 365 テナントデータセンターの場所に応じて、クライアントコンピューターが Office 365 テナントに接続する方法について説明します。'
-ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722696"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077680"
 ---
 # <a name="client-connectivity"></a>クライアント接続
 
