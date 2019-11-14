@@ -16,14 +16,13 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'この記事は、管理者を対象としています。 ユーザーが Outlook メールボックスからアイテムを完全に削除したかどうか。 ユーザーはそれらを回復することはできません。 削除されたアイテムがユーザーのメールボックスから完全に削除されていない場合は、それらを回復できることがあります。 '
-ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782617"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308602"
 ---
-<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ
 
 **この記事は、管理者を対象としています。自分のメールボックス内の削除済みアイテムを復元しようとしていますか?** 次のどちらかの操作を試します。 
@@ -58,7 +57,7 @@ ms.locfileid: "35782617"
     
     ![EAC の "Discovery Management/検出の管理" 役割グループに自分を追加します。](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. [**役割グループ**] の [**メンバー**] ****![で、[](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)追加] アイコンをクリックします。
+6. [**役割グループ**] の [**メンバー**] で、[](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)![追加] アイコン**をクリックし**ます。
     
 7. [**メンバーの選択**] で、名前のリストから [自分自身] を選択し、[**追加**] をクリックして、[ **OK**] をクリックします。
     
@@ -74,7 +73,7 @@ ms.locfileid: "35782617"
 > [!CAUTION]
 > Discovery Management 役割グループのメンバーは、機密メッセージ コンテンツにアクセスすることができます。 これには、組織内のすべてのメールボックスの検索、検索結果 (およびその他のメールボックスアイテム) のプレビュー、探索メールボックスへの結果のコピー、および検索結果を PST ファイルにエクスポートすることが含まれます。 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-2-search-the-users-mailbox-for-deleted-items"></a>手順 2: ユーザーのメールボックスで削除済みアイテムを検索する
 <a name="step2"> </a>
@@ -93,13 +92,13 @@ ms.locfileid: "35782617"
   
 5. [**名前と説明**] ページで、検索の名前 (電子メールを回復するユーザーの名前など) を入力し、オプションの説明を入力して、[**次へ**] をクリックします。
     
-6. [**メールボックス**] ページで、[**検索するメールボックスを指定する**] を](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)クリックし、[追加] アイコンをクリック****![します。
+6. [**メールボックス**] ページで、[**検索するメールボックスを指定する**] をクリックし、 **[追加]**![アイコン](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)をクリックします。
     
     ![[検索するメールボックスを指定する] をクリックして表面化メールボックスを検索する](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
 7. 削除されたメールを回復するユーザーの名前を検索して選択し、[**追加**] をクリックして、[ **OK]** をクリックします。
     
-8. **[次へ]** をクリックします。
+8. [**次へ**] をクリックします。
     
     [**検索クエリ**] ページが表示されます。 ここでは、ユーザーのメールボックス内の不足しているアイテムを検索するために使用できる検索条件を定義します。 
     
@@ -119,24 +118,24 @@ ms.locfileid: "35782617"
 |![ピンクの丸の番号 4](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |特定のユーザーとの間で受信または送信されたメッセージを検索します。  <br/> |
 |![ピンクの丸の5番目の数字。](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |すべてのメッセージの種類を検索するか、特定の種類を選択します。  <br/> |
    
-    > [!TIP]
-    >  Here's a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. >  If you not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. >  If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. >  If you know who sent the missing email, use the **From** box to specify this sender. >  If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
+   > [!TIP]
+   >  不足しているアイテムを検索する検索クエリを作成する方法については、以下のヒントを参照してください。 検索クエリの作成に役立つ情報をユーザーから入手して、探しているものを見つけてください。 不足しているメッセージを見つける方法がわからない場合は、[**すべてのコンテンツを含める**] オプションの使用を検討してください。 検索結果には、ユーザーによって削除されたアイテムを含む隠しフォルダー (パージフォルダーと呼ばれます) を含む、ユーザーの回復可能なアイテムフォルダー内のすべてのアイテムが含まれます。 その後、手順3に進み、結果を探索メールボックスにコピーして、非表示フォルダー内のメッセージを確認します。 ユーザーが最初に失われたメッセージを送信または受信したおおよその時期がわかっている場合は、[**開始日を指定**し、**終了日を指定**する] オプションを使用して日付範囲を指定します。 これにより、ユーザーがその日付範囲内で送受信したすべてのメッセージが返されます。 日付の範囲を指定することは、検索結果を絞り込むための最適な方法です。 不足しているメールを送信したユーザーがわかっている場合は、 **[差出人] ボックスを**使用して、この送信者を指定します。 さまざまな種類のメールボックスアイテムに対して検索結果を絞り込む場合は、[**メッセージの種類の選択**] をクリックし、**検索するメッセージ**の種類を選択してから、検索する特定のメッセージの種類を選択します。 たとえば、予定表アイテムまたは連絡先のみを検索できます。 検索できるさまざまなメッセージの種類のスクリーンショットを次に示します。既定では、すべてのメッセージの種類が検索されます。 
   
-    Click **Next** when you've completed the **Search query** page. 
+   [**検索クエリ**] ページが完了したら、[**次へ**] をクリックします。 
     
 10. [**インプレース保持の設定**] ページで、[**完了**] をクリックして検索を開始します。 削除されたメールを回復するために、ユーザーのメールボックスを保留にする理由はありません。 
     
     検索を開始すると、指定した条件に基づいて検索によって返されるアイテムの合計サイズと数の推定値が Exchange に表示されます。
     
-11. 作成したばかりの検索を選択****![し、](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) [更新の更新] をクリックして、詳細ウィンドウに表示される情報を更新します。 **推定**の状態は、検索が完了したことを示します。 また、Exchange には、手順9で指定した検索条件に基づいて、検索によって検出されたアイテムの総数 (およびそのサイズ) の推定値が表示されます。 
+11. 作成したばかりの検索を選択し、](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) [更新の更新]**をクリック**![して、詳細ウィンドウに表示される情報を更新します。 **推定**の状態は、検索が完了したことを示します。 また、Exchange には、手順9で指定した検索条件に基づいて、検索によって検出されたアイテムの総数 (およびそのサイズ) の推定値が表示されます。 
     
 12. 詳細ウィンドウで、[**検索結果のプレビュー** ] をクリックして、見つかったアイテムを表示します。 これは、探しているアイテムを特定するのに役立つことがあります。 回復しようとしているアイテムが見つかった場合は、手順4に進み、検索結果を PST ファイルにエクスポートします。 
     
     ![[検索結果のプレビュー] をクリックして、回復しようとしているアイテムを表示します。](media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
   
-13. 探している内容が見つからない場合は、検索を選択し、[ ****![編集] 編集アイコンをクリックして、](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)[**検索クエリ**] をクリックすると、検索条件を変更できます。 検索条件を変更してから、検索を再実行してください。
+13. 探している内容が見つからない場合は、検索を選択し、[編集![ **] 編集アイコンをクリックし**て、](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)[**検索クエリ**] をクリックすると、検索条件を変更できます。 検索条件を変更してから、検索を再実行してください。
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>オプション手順 3: 検索結果を探索メールボックスにコピーする
 <a name="step3"> </a>
@@ -147,7 +146,7 @@ ms.locfileid: "35782617"
     
 2. 検索の一覧で、手順2で作成した検索を選択します。
     
-3. [検索検索](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)] をクリックし、ドロップダウンリストから [**検索結果のコピー** ] をクリックします。 ****![ 
+3. [検索検索](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)]**をクリックし**、ドロップダウンリストから [**検索結果のコピー** ] をクリックします。![ 
     
     ![[検索] をクリックし、[検索結果のコピー] をクリックします。](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -166,7 +165,7 @@ ms.locfileid: "35782617"
     
     ![検索結果を探索検索メールボックスにコピーするには、[コピー] をクリックします。](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. [更新の](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)更新] をクリックして、詳細ウィンドウに表示されるコピー状態に関する情報を更新します。 ****![ 
+7. ![[更新の](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **更新] をクリックし**て、詳細ウィンドウに表示されるコピー状態に関する情報を更新します。 
     
 8. コピーが完了したら、[**開く**] をクリックして探索検索メールボックスを開き、検索結果を表示します。 
     
@@ -181,7 +180,7 @@ ms.locfileid: "35782617"
     > [!TIP]
     > 回復可能なアイテムツールを使用して削除されたアイテムをユーザーが見つけられない場合でも、そのアイテムはまだ回復可能である (メールボックスから完全に削除されていないことを意味します) ので、パージフォルダーに配置される可能性が高くなります。 そのため、ユーザーに対して回復しようとしている削除済みのアイテムの [削除] フォルダーを確認してください。 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-4-export-the-search-results-to-a-pst-file"></a>手順 4: 検索結果を PST ファイルにエクスポートする
 <a name="step4"> </a>
@@ -208,7 +207,7 @@ ms.locfileid: "35782617"
     
     **電子情報開示 PST エクスポートツール**は、エクスポート処理に関する状態情報を表示します。 エクスポートが完了すると、ファイルはダウンロードされた場所でアクセスできます。 
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-5-restore-the-recovered-items-to-the-users-mailbox"></a>手順 5: 回復されたアイテムをユーザーのメールボックスに復元する
 <a name="step5"> </a>
@@ -271,11 +270,12 @@ PST ファイルを使用して削除済みのアイテムを復元するには�
     
 ![他の種類のアイテムを移動するフォルダーを選択する](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
-    Note that calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 
+   > [!NOTE]
+   > 予定表アイテム、連絡先、およびタスクは、[削除] フォルダーに直接配置され、予定表、連絡先、または仕事のサブフォルダーには含まれません。 ただし、同じ種類のアイテムをグループ化するために、**種類**で並べ替えることができます。 
     
 8. 削除済みアイテムの復元が終了したら、左側のナビゲーションバーで PST ファイルを右クリックし、[ **pst ファイルの名前を閉じる**] を選択します。
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="more-information"></a>詳細情報
 <a name="moreinfo"> </a>
@@ -296,6 +296,6 @@ PST ファイルを使用して削除済みのアイテムを復元するには�
     
   - [Outlook.com で削除されたメールメッセージを復元する](https://go.microsoft.com/fwlink/p/?LinkID=623435)
     
-[先頭へ戻る](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 
