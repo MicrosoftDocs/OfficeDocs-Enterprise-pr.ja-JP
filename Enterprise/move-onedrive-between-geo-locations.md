@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033453"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626167"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -55,11 +55,11 @@ OneDrive 地域移動を実行するには、まず、管理者がユーザー�
 
 地域移動のコマンドレットを使用するときには、ユーザーの現在の OneDrive 地域の場所で、次の構文を使用して SPO サービスに接続します。
 
-`connect-sposervice -url https://<tenantName>-admin.sharepoint.com`
+`Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
 たとえば、ユーザー 'Matt@contosoenergy.onmicrosoft.com' の OneDrive を移動する場合は、このユーザーの OneDrive が EUR 地域の場所にあるため、次のようにして EUR の SharePoint 管理センターに接続します。
 
-`connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Connect-SPOService コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](media/move-onedrive-between-geo-locations-image1.png)
 
