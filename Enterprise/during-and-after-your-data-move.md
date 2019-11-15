@@ -3,7 +3,7 @@ title: データの移行中および移行後
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/18/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077600"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626137"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -40,7 +40,7 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |英国  <br/> |2019 年 9 月 15 日  <br/> |
 |フランス  <br/> |2020 年 9 月 15 日  <br/> |
 |アラブ首長国連邦  <br/> |2022年2月1日  <br/> |
-|南アフリカ  <br/> |Avct  <br/> |
+|南アフリカ  <br/> |2022年2月1日  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -119,7 +119,7 @@ SharePoint Online データを移行する過程で、検索インデックス�
    
 |**移行後**|
 |:-----|
-| 会議データ (アップロードされたプレゼンテーションなど) は移動されないため、再アップロードする必要があります。  <br/>  Lync 2010 クライアントや Lync for Mac 2011 クライアントなど、以前の Lync クライアントでは、サービスへの DNS 情報のキャッシュに起因するサインインの問題が発生することが確認されています。ユーザーが最新の Skype for Business Windows クライアントではない場合、DNS キャッシュのクリアが必要になる可能性があります。ユーザーに、 [トラブルシューティング ウィザード](https://support.microsoft.com/kb/2541980)を実施して、クライアント キャッシュをクリアする方法の手順に従うように依頼します。Lync for Mac クライアントのユーザーは、[このリンクの手順](https://support.microsoft.com/kb/2629861)に従う必要があります。  <br/> |
+| 会議データ (アップロードされたプレゼンテーションなど) は移動されないため、再アップロードする必要があります。  <br/>  Lync 2010 クライアントや Lync for Mac 2011 クライアントなど、以前の Lync クライアントでは、サービスへの DNS 情報のキャッシュに起因するサインインの問題が発生することが確認されています。 ユーザーが最新の Skype for Business Windows クライアントではない場合、DNS キャッシュのクリアが必要になる可能性があります。 「 [Office 365 の Skype For Business Online の DNS 構成に関する問題のトラブルシューティング」を](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)参照してください。 Lync for Mac クライアントのユーザーは、[このリンクの手順](https://support.microsoft.com/kb/2629861)に従う必要があります。  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>サードパーティの電話会議プロバイダーを含む Skype for Business の移動
 新しい geo 固有のデータセンターのユーザーは、Skype for Business 用のサードパーティの電話会議プロバイダーのアドオン サービスを使用することができません。  サードパーティの電話会議プロバイダーを使用している既存のお客様は、新しい geo 固有のデータセンターへの移動を要求する必要はありません。  新しい geo 固有のデータセンターの新規のお客様は、サードパーティの電話会議プロバイダーを使用するために、地域データセンターへの移動を要求する必要があります。

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 新しいデータセンター geo 継続的な顧客需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 コア顧客データは、Microsoft Online Services の用語で定義されている、Exchange Online のメールボックスの内容 (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容) および SharePoint Online サイトのコンテンツとファイルのサブセットを参照する用語です。そのサイト内に格納され、OneDrive for Business にアップロードされたファイル。
-ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032192"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626157"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>コア データを新しい Office 365 データ センター geo に移行する
 
 Business services 用 Office 365 の新しいデータセンター geo を引き続き開きます。 これらの新しいデータセンター geo は、継続的な顧客需要と利用状況の増加をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 
 
-コア顧客データは、 [Microsoft Online Services の用語](https://go.microsoft.com/fwlink/p/?LinkID=249048)で定義されている顧客データのサブセットを参照する用語です。 
+コア顧客データは、次のような顧客データのサブセットを参照する用語です。 
 - Exchange Online メールボックスのコンテンツ (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容)
 - SharePoint Online サイトのコンテンツと、そのサイト内に格納されているファイル
 - OneDrive for business にアップロードされたファイル 
