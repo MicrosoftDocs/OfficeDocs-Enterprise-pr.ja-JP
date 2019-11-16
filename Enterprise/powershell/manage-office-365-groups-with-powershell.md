@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell で Office 365 グループの一般的な管理タスクを実行する方法を説明します。
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017345"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38031002"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell で Office 365 グループを管理する
 
@@ -46,7 +46,7 @@ ms.locfileid: "37017345"
   
 Office 365 グループの「メールボックス所有者として送信する」を有効にする場合は、[Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) と [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) コマンドレットを使用して構成します。 この設定を有効にすると、Office 365 グループのユーザーは Outlook または Outlook on the web を使用して、Office 365 グループとしてメールを送信および返信することができます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。 
 
-([Exchange 管理センターでもこれを行うことができます](https://docs.microsoft.com/ja-JP/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
+([Exchange 管理センターでもこれを行うことができます](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
   
 次のスクリプトを使用して、*\<GroupAlias\>* を更新するグループのエイリアスに置き換え、*\<UserAlias\>* を権限を付与するユーザーのエイリアスに置き換えます。 [Exchange Online PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)、このスクリプトを実行します。
 
@@ -186,9 +186,9 @@ Outlook の Office 365 グループは、既定で非公開として作成され
 
 ## <a name="related-topics"></a>関連項目
 
-[配布リストを Office 365 グループにアップグレードする](https://docs.microsoft.com/ja-JP/office365/admin/manage/upgrade-distribution-lists)
+[配布リストを Office 365 グループにアップグレードする](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Office 365 グループを作成できるユーザーを管理する](https://docs.microsoft.com/ja-JP/office365/admin/create-groups/manage-creation-of-groups)
+[Office 365 グループを作成できるユーザーを管理する](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Office 365 グループへのゲスト アクセスを管理する](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
