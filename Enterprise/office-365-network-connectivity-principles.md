@@ -15,10 +15,10 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Office 365 のネットワーク接続の計画を開始する前に、Office 365 トラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則を理解しておくことが重要です。 この記事は、Office 365 ネットワーク接続を安全に最適化するための最新のガイダンスを理解するのに役立ちます。
 ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38031922"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 ネットワーク接続の原則
@@ -242,7 +242,7 @@ Office 365 のトラフィックを最適化するために使用する方法は
 |VPN ユーザーの直接接続を有効にする  <br/> |VPN ユーザーの場合、分割トンネリングを実装することによって、VPN トンネルを経由せずに、ユーザーのネットワークから直接接続するように Office 365 接続を有効にします。  <br/> | 遅延の最小化  <br/>  最も近い Office 365 エントリポイントへの信頼できる接続性を向上させる  <br/> |
 |従来の WAN から SD への移行-WAN  <br/> |SD-wan (ソフトウェア定義のワイドエリアネットワーク) は、従来の WAN ルーターを仮想アプライアンスと交換することで、WAN 管理を簡素化し、パフォーマンスを向上させます (仮想マシン (Vm) を使用したコンピューティングリソースの仮想化に似ています)。  <br/> | WAN トラフィックのパフォーマンスと管理性を向上させる  <br/>  ネットワークデバイスの負荷を軽減する  <br/> |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 のネットワーク接続の概要](office-365-networking-overview.md)
 

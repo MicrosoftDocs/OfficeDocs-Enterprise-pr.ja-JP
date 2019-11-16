@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'この記事は、管理者を対象としています。 ユーザーが Outlook メールボックスからアイテムを完全に削除したかどうか。 ユーザーはそれらを回復することはできません。 削除されたアイテムがユーザーのメールボックスから完全に削除されていない場合は、それらを回復できることがあります。 '
 ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38308602"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ
@@ -98,7 +98,7 @@ ms.locfileid: "38308602"
   
 7. 削除されたメールを回復するユーザーの名前を検索して選択し、[**追加**] をクリックして、[ **OK]** をクリックします。
     
-8. [**次へ**] をクリックします。
+8. **[次へ]** をクリックします。
     
     [**検索クエリ**] ページが表示されます。 ここでは、ユーザーのメールボックス内の不足しているアイテムを検索するために使用できる検索条件を定義します。 
     

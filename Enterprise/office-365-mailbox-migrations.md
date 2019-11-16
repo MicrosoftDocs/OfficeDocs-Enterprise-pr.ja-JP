@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 メールボックスの移行に使用されるコマンドレットの概要を簡単に説明します。
 ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38035547"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 のメールボックスの移行

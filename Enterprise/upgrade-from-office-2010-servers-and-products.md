@@ -3,7 +3,7 @@ title: Office 2010 サーバーおよびクライアントからのアップグ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/04/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,20 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 31735b0563194603ac391f57bbccbd84805e5f4a
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: 0c2352806d71687287ed885f5c835f61082da64b
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782424"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "36991888"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
-次の点に注意してください。
-
-- Exchange Server 2010 は **、2020年1月14日**のサポート終了に到達します。 
-
-- Office 2010、SharePoint 2010、および Project Server 2010 は、 **2020 年10月 13**日にサポート終了に到達します。 
+Office 2010、Exchange Server 2010、SharePoint 2010、および Project Server 2010 は、**年10月 2020 13**日にサポートの終了に到達します。 
 
 アップグレードを計画している間は、Office 365 または Microsoft 365 への移行を検討するのに非常に時間がかかる場合があります。 
 
@@ -55,7 +51,7 @@ Office 2010 のクライアントおよびサーバーおよび Windows 7 のア
 |**この製品の場合**|**サポート終了日**|**このリソースを表示する**|
 |:-----|:-----|:-----|
 |Office 2010 (Word 2010、Excel 2010、PowerPoint 2010、Outlook 2010 を含む)  <br/> | 2020年10月13日 |[Office 2010 サポート終了のロードマップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> | 2020年1月14日  |[Exchange 2010 のサポート終了ロードマップ](exchange-2010-end-of-support.md) <br/> |
+|Exchange Server 2010  <br/> | 2020年10月13日  |[Exchange 2010 のサポート終了ロードマップ](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 または SharePoint Server 2010  <br/> | 2020年10月13日 |[SharePoint 2010 からアップグレードする](upgrade-from-sharepoint-2010.md) <br/> |
 |Project Server 2010 <br/> | 2020年10月13日 | [Project Server 2010 サポート終了ロードマップ](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | 2021年4月13日 | [Skype for Business Server へのアップグレードを計画する](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |

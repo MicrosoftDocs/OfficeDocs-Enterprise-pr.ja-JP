@@ -16,10 +16,10 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ ネットワークの中には、一般的なインターネット上の場所へのアクセスや、強固なバックホールの導入、ネットワーク トラフィックの処理を制限しているものがあります。そのようなネットワーク上のコンピュータから Office 365 にアクセスできるようにするために、ネットワーク管理者およびプロキシ管理者は、Office 365 エンドポイントのリストを構成する FQDN、URL、および IP アドレスのリストを管理する必要があります。これらを直接ルート、プロキシ バイパス、またはファイアウォール ルールおよび PAC ファイルに追加して、ネットワーク要求が Office 365 に到達できるようにする必要があります。
 ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38030611"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する

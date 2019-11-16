@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Microsoft Office 365 のネットワーク帯域幅要件を計画するのに役立つ情報を示します。 展開後、Office 365 のパフォーマンスを微調整してトラブルシューティングを行うために、ここに戻ってください。
 ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38032142"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365 のネットワーク計画とパフォーマンス チューニング

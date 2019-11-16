@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: データの保持、削除、および破壊に関する Office 365 の Microsoft ポリシーの概要。
-ms.openlocfilehash: 08b04e4fec762249208acb626fa20562ffecb82f
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067621"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37975832"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 でのデータの保持、削除、および破棄
 
 Microsoft では、ユーザーが削除した後に顧客データを保持する期間を指定する、Office 365 のデータ処理の標準ポリシーを使用しています。 一般的に、顧客データが削除されるシナリオは2つあります。
 
-- **アクティブな削除:** テナントにアクティブなサブスクリプションがあり、ユーザーがデータを削除したか、または管理者がユーザーから提供されたデータを削除しました。
-- **パッシブ削除:** テナントサブスクリプションが終了します。
+- **アクティブな削除**: テナントにはアクティブなサブスクリプションがあり、ユーザーまたは管理者がデータを削除するか、管理者がユーザーを削除します。
+- **パッシブ削除**: テナントサブスクリプションが終了します。
 
 ## <a name="data-retention"></a>データ保持
 
@@ -34,7 +34,7 @@ Microsoft では、ユーザーが削除した後に顧客データを保持す�
 | データカテゴリ | データ分類 | 説明 | 例 | 保持期間 |
 |-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
 | 顧客データ | 顧客コンテンツ| 管理者とユーザーによって直接提供/作成されたコンテンツ <br><br> Office 365 でサービスを使用している場合に、Microsoft データセンターにすべてのテキスト、サウンド、ビデオ、画像ファイル、およびソフトウェアが作成され保存されるようにします。 | Word、Excel、PowerPoint、Outlook、OneNote など、ユーザーがデータを作成できる、最も一般的に使用される Office 365 アプリケーションの例 <br><br> お客様のコンテンツには、お客様が所有/提供する機密情報 (パスワード、証明書、暗号化キー、ストレージキー) も含まれています。 | **アクティブな削除のシナリオ:** 最大で30日 <br><br> **パッシブ削除のシナリオ:** 最大180日 |
-| 顧客データ | エンドユーザーを特定できる情報 (EUII) | Microsoft サービスのユーザーを識別または特定するために使用されるデータ。 EUII にお客様のコンテンツは含まれていません | ユーザー名または表示名 (DOMAIN\UserName) <br><br> ユーザープリンシパル名 (名前 @ ドメイン) <br><br>  ユーザー固有の IP アドレス | **アクティブな削除のシナリオ:** 最大180日 (テナント管理者のアクションのみ) <br><br> **パッシブ削除のシナリオ:** 最大180日 |
+| 顧客データ | エンドユーザーを特定できる情報 (EUII) | Microsoft サービスのユーザーを識別または特定するために使用されるデータ。 EUII にお客様のコンテンツは含まれていません | ユーザー名または表示名 (DOMAIN\UserName) <br><br> ユーザープリンシパル名 (name@domain) <br><br>  ユーザー固有の IP アドレス | **アクティブな削除のシナリオ:** 最大180日 (テナント管理者のアクションのみ) <br><br> **パッシブ削除のシナリオ:** 最大180日 |
 | 個人データ <br> (顧客データに含まれていないデータ) | エンドユーザー仮名識別子 (EUPI) | Microsoft サービスのユーザーに関連付けられた id。 マッピングテーブルなど、他の情報と組み合わせて使用する場合、EUPI はエンドユーザーを識別します。 <br><br> EUPI お客様がアップロードまたは作成した情報は含まれません。 | ユーザー Guid、PUIDs、または Sid <br><br> セッション Id | **アクティブな削除のシナリオ:** 最大で30日 <br><br> **パッシブ削除のシナリオ:** 最大180日 |
 
 ## <a name="subscription-retention"></a>サブスクリプションの保持期間
@@ -50,6 +50,7 @@ Microsoft では、ユーザーが削除した後に顧客データを保持す�
 優先除外の詳細については、「 [Office 365 の取り消し](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)」を参照してください。
 
 ## <a name="related-links"></a>関連リンク
+
 - [データの破棄](office-365-data-destruction.md)
 - [Office 365 での不変性](office-365-data-immutability.md)
 - [Exchange Online でのデータ削除](office-365-exchange-online-data-deletion.md)
