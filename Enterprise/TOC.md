@@ -71,15 +71,7 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# Office 365 をテストする
-## [Office 365 をテストする](cloud-adoption-test-lab-guides-tlgs.md)
-## [基本構成開発/テスト環境](base-configuration-dev-test-environment.md)
-## [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
-### [ディレクトリ同期](dirsync-for-your-office-365-dev-test-environment.md)
-### [多要素認証](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [フェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-## [Azure でのシミュレートされたクロスプレミスの仮想ネットワーク](simulated-cross-premises-virtual-network-in-azure.md)
+# [Office 365 をテストする](cloud-adoption-test-lab-guides-tlgs.md)
 
 # [Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
 
@@ -198,7 +190,7 @@
 ### [ディレクトリ同期を無効にする](turn-off-directory-synchronization.md)
 
 ## ユーザー
-### [Office 365 Admin ヘルプ センター](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 Admin ヘルプ センター](https://docs.microsoft.com/office365/admin/admin-home)
 ### [ユーザー アカウント管理ツール](manage-office-365-accounts.md)
 ### [同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
