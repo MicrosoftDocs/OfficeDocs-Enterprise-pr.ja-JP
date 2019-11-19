@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365 とオンプレミスの Active Directory との間のディレクトリ同期をセットアップする方法について説明します。
-ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162480"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702248"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期をセットアップする
 
@@ -83,11 +83,9 @@ Azure AD Connect をインストールするオンプレミスのサーバーで
 次の手順を実行します。
 
 1. [Microsoft 365 管理センター](https://admin.microsoft.com) https://admin.microsoft.com)にサインインし、左側のナビゲーションで [**ユーザー** \>の**アクティブなユーザー** ] を選択します。
-2. 管理センターの [**アクティブなユーザー** ] ページで、[**その他** \>の**ディレクトリ同期**] を選択します。
-
-    ![[その他] メニューで、[ディレクトリ同期] を選択します。](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+2. [**アクティブなユーザー** ] ページで、[ **More** (3 \>つのドット)**ディレクトリ同期**] を選択します。
   
-3. [ **Active directory の準備**] ページで、[ **Microsoft Azure Active directory Connect ツールのダウンロード**] リンクをクリックして開始します。 
+3. [ **Azure Active Directory の準備**] ページで、[**ダウンロードセンターに移動して azure AD Connect ツールの**リンクを取得する] を選択して、作業を開始します。 
 4. 「 [AZURE Ad connect と AZURE Ad Connect 正常性インストールのロードマップ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap)」の手順を実行します。
 
 ## <a name="3-finish-setting-up-domains"></a>3. ドメインの設定を終了する

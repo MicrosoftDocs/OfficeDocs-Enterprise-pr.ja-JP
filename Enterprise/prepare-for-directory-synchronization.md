@@ -3,6 +3,7 @@ title: Office 365 へのディレクトリ同期の準備
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Office 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
-ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
+ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35249198"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702238"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365 へのディレクトリ同期の準備
 
@@ -54,6 +55,9 @@ AD DS を Azure AD テナントと同期する前に、AD DS をクリーンア�
 AD DS で、Office 365 ライセンスが割り当てられる各ユーザーアカウントに対して次のクリーンアップタスクを実行します。
   
 1. **ProxyAddresses**属性に、有効な一意の電子メールアドレスを指定します。 
+
+  >[!Note]
+  >電子メールアドレスのチルダ (~) 文字は無視されます。 これにより、重複する proxyAddresses に関するディレクトリ同期エラーが誤検知される可能性があります。
     
 2. **ProxyAddresses**属性の重複する値を削除します。 
     
@@ -90,7 +94,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
   - この属性が user オブジェクトに存在する場合は、その値を指定する必要があります。 つまり、属性を空白にすることはできません。
   - 最大文字数: 256
     
-- **名**
+- **givenName**
     
   - 属性が user オブジェクトに存在する場合は、Office 365 と同期されますが、Office 365 では必要ないか使用されません。
   - 最大文字数:64
@@ -102,7 +106,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
     > [!NOTE]
     > 重複する値がある場合、値を持つ最初のユーザーが同期されます。 以降のユーザーは、Office 365 に表示されません。 両方のユーザーが Office 365 に表示されるようにするには、Office 365 の値を変更するか、AD DS の両方の値を変更する必要があります。 
   
-- **mailNickname**(Exchange エイリアス) 
+- **mailNickname** (Exchange エイリアス) 
     
   - 属性値はピリオド (.) で始めることはできません。
   - この属性の値は、ディレクトリ内で一意である必要があります。
@@ -128,7 +132,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
   - ユーザーの**sAMAccountName**属性が無効で、 **userPrincipalName**属性が有効な場合、Office 365 でユーザーアカウントが作成されます。 
   - **SAMAccountName**と**userPrincipalName**の両方が無効な場合は、AD DS **userPrincipalName**属性を更新する必要があります。 
     
-- **sn**姓 
+- **sn** (姓) 
     
   - 属性が user オブジェクトに存在する場合は、Office 365 と同期されますが、Office 365 では必要ないか使用されません。
     
@@ -181,7 +185,7 @@ Active Directory に代替 UPN サフィックスを追加する方法の詳細�
 また[、ディレクトリ同期にルーティング不能なドメイン (たとえば、ローカルドメイン) を準備する方法に](prepare-a-non-routable-domain-for-directory-synchronization.md)ついても説明します。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ディレクトリ同期の前に AD DS の属性のエラーを修正するに[は、IdFix ツールを使用してディレクトリ属性を準備](prepare-directory-attributes-for-synch-with-idfix.md)するを参照してください。
 
