@@ -15,17 +15,15 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
-ms.openlocfilehash: 608d26dfc4aa1be782f94aa3b1ba5f66a0378f1e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071123"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747476"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
-**概要:** Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
-  
 Office 365 のライセンスプラン (Sku または Office 365 プランとも呼ばれます) からのライセンスでは、これらのプランに対して定義されている Office 365 サービスへのアクセス権がユーザーに付与されます。 しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。 Office 365 PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。 
 
 ライセンスプラン、ライセンス、およびサービスの詳細については、「 [Office 365 PowerShell でライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。
@@ -36,13 +34,13 @@ Office 365 のライセンスプラン (Sku または Office 365 プランとも
   
 次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 各ライセンスプランで利用可能なサービスを一覧表示するには、次のコマンドを使用します。
 
-```
+```powershell
 $allSKUs=Get-AzureADSubscribedSku
 $licArray = @()
 for($i = 0; $i -lt $allSKUs.Count; $i++)
@@ -52,16 +50,16 @@ $licArray +=  Get-AzureADSubscribedSku -ObjectID $allSKUs[$i].ObjectID | Select 
 $licArray +=  ""
 }
 $licArray
-````
+```
 
 ユーザーアカウントに割り当てられているライセンスの一覧を表示するには、次のコマンドを使用します。
 
-````
+```powershell
 $userUPN="<user account UPN, such as belindan@contoso.com>"
 $licensePlanList = Get-AzureADSubscribedSku
 $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
-````
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
 
@@ -69,21 +67,21 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 次に、このコマンドを実行して、組織で使用可能なライセンスプランを一覧表示します。 
 
-```
+```powershell
 Get-MsolAccountSku
 ```
 
 次に、このコマンドを実行して、各ライセンスプランで使用可能なサービスと、それらが表示される順序 (インデックス番号) を一覧表示します。
 
-````
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
-````
+```
   
 このコマンドを使用して、ユーザーに割り当てられているライセンスと、ユーザーが表示される順序 (インデックス番号) を一覧表示します。
 
-````
+```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
-````
+```
 
 >[!Note]
 >**All** パラメーターなしで _Get-MsolUser_ コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
@@ -94,25 +92,25 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 
 ユーザーがアクセスできるすべての Office 365 サービスを表示するには、次の構文を使用します。
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
 この例では、ユーザー BelindaN@litwareinc.com がアクセスできるサービスを表示します。 これにより、このユーザーのアカウントに割り当てられているすべてのライセンスに関連付けられているサービスが表示されます。
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
 次の例では、ユーザー BelindaN@litwareinc.com が、アカウントに割り当てられている最初のライセンス (インデックス番号 0) からアクセスできるサービスが表示されます。
   
-```
+```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
 *複数のライセンス*が割り当てられているユーザーのすべてのサービスを表示するには、次の構文を使用します。
 
-```
+```powershell
 $userAccountUPN="<user account UPN>"
 $AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
 $licArray = @()

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435411"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745740"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
@@ -34,11 +34,11 @@ Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使�
 > [!NOTE]
 > Office 365 の ExpressRoute を使用するには、Microsoft の承認が必要です。 お客様の規制要件で直接的な接続が義務付けられている場合、Microsoft はお客様のすべての要求をレビューし、Office 365 の使用状況を承認します。 このような要件がある場合は、テキストの抜粋と web リンクを入力してください。これは、Microsoft レビューを開始するために、 [Office 365 の ExpressRoute の要求フォーム](https://aka.ms/O365ERReview)に直接接続する必要があることを意味します。 承認されていないサブスクリプション Office 365 のルートフィルターを作成しようとすると、[エラーメッセージ](https://support.microsoft.com/kb/3181709)が表示されます。
 
-これで、選択した Office 365 のネットワークトラフィックに対して、Office 365 への直接ネットワーク接続を追加できるようになります。 Azure ExpressRoute は直接接続で予測可能なパフォーマンスを提供し、Microsoft ネットワークコンポーネントの稼働時間の SLA を 99.95% にします。 Azure ExpressRoute でサポートされていないサービスに対しては、インターネット接続が依然として必要になります。
+これで、選択した Office 365 のネットワークトラフィックに対して、Office 365 への直接ネットワーク接続を追加できるようになります。 Azure ExpressRoute は直接接続で予測可能なパフォーマンスを提供し、Microsoft ネットワークコンポーネントの稼働時間の SLA を99.95% にします。 Azure ExpressRoute でサポートされていないサービスに対しては、インターネット接続が依然として必要になります。
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Office 用 Azure ExpressRoute の計画365
 
-インターネット接続に加えて、Office 365 ネットワークトラフィックのサブセットを、予測可能で、Microsoft ネットワークコンポーネントに対して 99.95% の稼働時間の SLA を提供する直接接続でルーティングするように選択することもできます。 Azure ExpressRoute には、Office 365 およびその他の Microsoft クラウドサービスへの専用ネットワーク接続が用意されています。
+インターネット接続に加えて、Office 365 ネットワークトラフィックのサブセットを、予測可能で、Microsoft ネットワークコンポーネントに対して99.95% の稼働時間の SLA を提供する直接接続でルーティングするように選択することもできます。 Azure ExpressRoute には、Office 365 およびその他の Microsoft クラウドサービスへの専用ネットワーク接続が用意されています。
 
 既存の MPLS WAN を使用しているかどうかに関係なく、ExpressRoute は3つの方法のいずれかでネットワークアーキテクチャに追加できます。サポートされているクラウド exchange コロケーションプロバイダー、イーサネットポイントツーポイント接続プロバイダー、または MPLS 接続プロバイダを介して。 [お客様の地域で利用可能なプロバイダーを](https://azure.microsoft.com/documentation/articles/expressroute-locations/)参照してください。 Direct ExpressRoute 接続を使用すると、 [Office 365 サービスに含まれて](azure-expressroute.md#BKMK_WhatDoIGet)いるアプリケーションへの接続を有効にすることができます。次の説明を参照してください。 他のすべてのアプリケーションおよびサービスのネットワークトラフィックは、引き続きインターネットをスキャンします。
 
@@ -70,7 +70,7 @@ Office 365 の ExpressRoute に含まれていないサービスには、Office 
 
 ## <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
-ExpressRoute を実装するには、ネットワークとアプリケーションの所有者の関与が必要であり、新しい[ネットワークルーティングアーキテクチャ](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)、帯域幅の要件、セキュリティを実装する場所、高可用性、などなど。 ExpressRoute を実装するには、次のことを行う必要があります。
+ExpressRoute を実装するには、ネットワークとアプリケーションの所有者の関与が必要であり、新しい[ネットワークルーティングアーキテクチャ](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)、帯域幅の要件、セキュリティを実装する場所、高可用性などを決定するための慎重な計画が必要です。 ExpressRoute を実装するには、次のことを行う必要があります。
 
 1. Office 365 の接続計画で ExpressRoute が満たす必要があることを完全に理解します。 インターネットまたは ExpressRoute を使用するアプリケーションについて理解し、Office 365 トラフィック用のインターネットと ExpressRoute の両方を使用して、ネットワークの容量、セキュリティ、高可用性の要件を十分に計画します。
 

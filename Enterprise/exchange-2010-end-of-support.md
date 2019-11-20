@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 は、サポート終了間近に近づいています。 この計画ロードマップは、Exchange Online またはオンプレミスの Exchange Server の新しいバージョンへのアップグレードを準備するためのガイドとして使用してください。
-ms.openlocfilehash: 28dcead19c1af1b5a641cae8f9d649b22fb36c95
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 464406cd9603a41d10f98374442167160609c060
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38028831"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745800"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了ロードマップ
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 **2020 年10月 13**日に、Exchange Server 2010 はサポート終了までに到達します。 Exchange 2010 から Office 365 または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
 
@@ -38,7 +40,7 @@ Exchange 2010 のインストールは、この日付以降も引き続き実行
 
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-Exchange 2010 がサポートの終了に到達すると、これは、オプションを調べて移行計画を準備するのに非常に時間がかかることになります。 以下のことを実行できます。
+Exchange 2010 がサポートの終了に到達すると、これは、オプションを調べて移行計画を準備するのに非常に時間がかかることになります。 次の操作を実行できます:
 
 - 完全に Office 365 に移行します。 カットオーバー、最小ハイブリッド、または完全なハイブリッド移行を使用してメールボックスを移行し、オンプレミスの Exchange サーバーと Active Directory を削除します。
 - オンプレミスサーバー上の exchange 2010 サーバーを Exchange 2016 に移行します。

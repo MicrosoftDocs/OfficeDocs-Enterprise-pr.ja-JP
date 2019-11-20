@@ -16,17 +16,15 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-ms.openlocfilehash: 18444f76f312c75bc95645d17c48c996f1a3bfc7
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 8ee2c834063ea80388662c1f36f4524715f98a58
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782037"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747456"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
-**概要:** Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-  
 Office 365 サブスクリプションは、すべて以下の要素で構成されます。
 
 - **ライセンスプラン**これらは、ライセンスプランまたは Office 365 プランとも呼ばれます。 ライセンス プランでは、ユーザーが利用可能な Office 365 サービスを定義します。 Office 365 サブスクリプションには、複数のライセンス プランが含まれる場合があります。 たとえば、Office 365 Enterprise E3 というライセンス プランがあります。
@@ -44,7 +42,7 @@ Office 365 PowerShell を使って、Office 365 組織で利用可能なライ�
   
 現在のライセンスプランおよび各プランで使用可能なライセンスに関する概要情報を表示するには、次のコマンドを実行します。
   
-```
+```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
@@ -58,40 +56,40 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
     
 すべてのライセンスプランで利用可能な Office 365 サービスの詳細を表示するには、最初にライセンスプランの一覧を表示します。
 
-````
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
-````
+```
 
 次に、ライセンスプラン情報を変数に格納します。
 
-````
+```powershell
 $licenses = Get-AzureADSubscribedSku
-````
+```
 
 次に、特定のライセンスプランでサービスを表示します。
 
-````
+```powershell
 $licenses[<index>].ServicePlans
-````
+```
 
 \<index> は、 `Get-AzureADSubscribedSku | Select SkuPartNumber`コマンドの表示からライセンスプランの行番号を指定する整数値から1を引いた値です。
 
 たとえば、 `Get-AzureADSubscribedSku | Select SkuPartNumber`コマンドの表示は次のようになります。
 
-````
+```powershell
 SkuPartNumber
 -------------
 WIN10_VDA_E5
 EMSPREMIUM
 ENTERPRISEPREMIUM
 FLOW_FREE
-````
+```
 
 次に、ENTERPRISEPREMIUM ライセンスプランのサービスを表示するコマンドは次のようになります。
 
-````
+```powershell
 $licenses[2].ServicePlans
-````
+```
 
 ENTERPRISEPREMIUM は3番目の行です。 したがって、インデックス値は (3-1) または2です。
 
@@ -107,7 +105,7 @@ ENTERPRISEPREMIUM は3番目の行です。 したがって、インデックス
     
 現在のライセンスプランおよび各プランで使用可能なライセンスに関する概要情報を表示するには、次のコマンドを実行します。
   
-```
+```powershell
 Get-MsolAccountSku
 ```
 
@@ -123,7 +121,7 @@ Get-MsolAccountSku
     
 すべてのライセンス プランで利用できる Office 365 サービスの詳細を参照するには、次のコマンドを実行します。
   
-```
+```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
@@ -137,7 +135,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |事業所  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online プラン 2  <br/> |
    
@@ -145,13 +143,13 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 特定のライセンス プランで利用可能な Office 365 サービスの詳細を確認するには、次の構文を使用します。
   
-```
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
 この例は、litwareinc: ENTERPRISEPACK (Office 365 Enterprise E3) ライセンスプランで利用可能な Office 365 サービスを示しています。
   
-```
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
@@ -161,7 +159,6 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>関連項目
-
 
 [Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

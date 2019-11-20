@@ -13,14 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古く、サポートされていないアプリとサーバーで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 2eee3efccfce79bcab7f2d179e13f46fbfc7a501
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38031062"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747060"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス[のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 製品とサービス (Office 2010、Exchange 2010、SharePoint 2010、および Project Server 2010 を含む) は、 **10 月 13**日にサポートが終了することになります。 開始するには、このセクションのリソースを使用します。
 

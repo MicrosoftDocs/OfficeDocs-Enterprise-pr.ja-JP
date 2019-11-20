@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが含まれています。
-ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428144"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747787"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
@@ -43,7 +43,7 @@ Office 365 に初めて展開するか、Office に移行する前に、これ�
 ## <a name="estimate-network-bandwidth-requirements"></a>ネットワーク帯域幅の要件を見積もる
 <a name="EstimateBandwidthRequirements"> </a>
 
-Office 365 を使用すると、組織のインターネット回線の使用率が向上する可能性があります。 Office 365 が完全に展開され、少なくとも 20% の容量を維持している間に、使用可能な帯域幅の量が増加しているかどうかを判断することが重要です。
+Office 365 を使用すると、組織のインターネット回線の使用率が向上する可能性があります。 Office 365 が完全に展開され、少なくとも20% の容量を維持している間に、使用可能な帯域幅の量が増加しているかどうかを判断することが重要です。
   
 帯域幅を推定するには、次の手順を使用します。
   

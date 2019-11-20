@@ -16,23 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: Microsoft Office 365 コンポーネントおよび Office 365 government 製品の IPv6 サポートについて説明します。'
-ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067233"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745730"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 サービスでの IPv6 サポート
 
- **概要**: Microsoft office 365 コンポーネントおよび Office 365 government 製品の IPv6 サポートについて説明します。
-  
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+
 Office 365 は IPv6 と IPv4 の両方をサポートしています。ただし、すべての Office 365 機能が IPv6 で完全に有効になっているわけではありません。 これは、Office 365 に接続するために IPv4 と IPv6 の両方を使用する必要があることを意味します。 Office 365 への送信トラフィックをフィルタリングする場合は、office 365 でサポートされる IPv6 アドレスの完全な一覧については、記事「 [office 365 url および IP アドレス範囲](urls-and-ip-address-ranges.md)」を参照してください。 ネットワークが構成され、適切な IPv6 アドレスが許可されたら、Microsoft ダウンロードセンターから[Office 365 IPv6 テスト計画](https://go.microsoft.com/fwlink/?LinkId=293447)をダウンロードすることができます。
   
-||
-|:-----|
-| この記事は[、Office 365 のネットワーク計画とパフォーマンスチューニング](https://aka.ms/tune)に含まれています。|
-
 ## <a name="ipv6-support-in-office-365-subscription-service"></a>Office 365 サブスクリプションサービスでの IPv6 サポート
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online および IPv6
@@ -59,7 +55,7 @@ Exchange Online Protection (EOP) は、転送がトランスポート層セキ�
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Office 365 government 製品の IPv6 サポート
 
-米国政府機関向けの Office 365 IPv6 サポート (OMB) Memorandum は、経営部門および省庁の最高情報責任者、およびインターネットプロトコルバージョン 6 (IPv6) の連邦政府機関による採用に準拠しています。) memorandum. [Microsoft Office 365 For government](https://go.microsoft.com/fwlink/p/?LinkId=325414)は、政府機関のデータを分離されたコミュニティクラウドに保存するマルチテナントサービスです。 他の Office 365 製品と同様に、Exchange Online、Skype for Business、SharePoint Online、Office Professional Plus など、生産性とコラボレーションのサービスを提供します。 
+米国政府機関向けの office 365 IPv6 サポート (OMB) Memorandum は、経営部門および省庁の最高情報責任者、およびインターネットプロトコルバージョン 6 (IPv6) の連邦政府機関による採用に準拠しています。) memorandum. [Microsoft Office 365 For government](https://go.microsoft.com/fwlink/p/?LinkId=325414)は、政府機関のデータを分離されたコミュニティクラウドに保存するマルチテナントサービスです。 他の Office 365 製品と同様に、Exchange Online、Skype for Business、SharePoint Online、Office Professional Plus など、生産性とコラボレーションのサービスを提供します。 
 
 Microsoft Office 365 government のサービスは2013以降にのみ適用されます。 Office 365 government 製品の詳細については、「米国政府機関[向け office 365 の発表: US Government Community Cloud](https://go.microsoft.com/fwlink/p/?LinkId=325414)」を参照してください。 国際通話のトラフィック (ITAR) とは、米国の[Munitions リスト (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)での、防衛関連の記事およびサービスのエクスポートとインポートを制御する米国政府規制のセットです。 
 

@@ -14,14 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
-ms.openlocfilehash: 69a806fc1026832492f7bab96982509a83a82329
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493314"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746220"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
   
@@ -84,9 +86,9 @@ AAD でクライアントが接続できる Url が HTTPS サービスプリン�
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-このコマンドの出力をメモしてください。このコマンドには、https:// *autodiscover.yourdomain.com*および Https:// *mail.yourdomain.com* URL が含まれている必要がありますが、ほとんどの場合は、次のように開始する spn から構成されます。00000002-0000-0ff1-ce00-000000000000/。 オンプレミスの https://Url が不足している場合は、それらのレコードをこのリストに追加する必要があります。 
+このコマンドの出力をメモします。このコマンドには、https:// *autodiscover.yourdomain.com*および Https:// *mail.yourdomain.com* URL が含まれていますが、ほとんどの場合は、00000002-0000-0ff1-ce00-000000000000/から始まる spn から構成されます。 オンプレミスの https://Url が不足している場合は、それらのレコードをこのリストに追加する必要があります。 
   
-3. 内部および外部の MAPI/HTTP、EWS、ActiveSync、OAB、および自動検出のレコードがこの一覧に表示されない場合は、次のコマンドを使用して追加`mail.corp.contoso.com`する必要が`owa.contoso.com`あります (url の例は ' ' と ' ' ですが、**サンプルの url は自分で**指定します)。: <br/>
+3. 内部および外部の MAPI/HTTP、EWS、ActiveSync、OAB、および自動検出のレコードがこの一覧に表示されない場合は、次のコマンドを使用して追加`mail.corp.contoso.com`する必要が`owa.contoso.com`あります (url の例は ' ' と ' ' ですが、この**例の url は独自のものに置き換え**ます)。 <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

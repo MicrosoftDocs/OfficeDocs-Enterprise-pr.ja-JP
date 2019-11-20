@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Office 365 と既存のディレクトリサービスを統合する方法について説明します。
-ms.openlocfilehash: f6e29207dfb1175df8af480942484ece39e249b7
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428123"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747163"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Office 365 とオンプレミス環境との統合
 

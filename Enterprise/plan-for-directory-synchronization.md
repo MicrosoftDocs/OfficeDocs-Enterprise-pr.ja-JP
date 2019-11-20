@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428118"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747087"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 のハイブリッド id とディレクトリ同期
 
@@ -105,7 +105,7 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
 
 - 重複している**proxyAddress**属性と**userPrincipalName**属性を削除します。
 - 空白および無効な**userprincipalname**属性を有効な**userprincipalname**属性で更新します。
-- **GivenName**、姓 ( **Sn** )、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**、および**userPrincipalName**の無効な文字と疑わしい文字を削除するattributes. 属性の準備の詳細については、「 [Azure Active Directory 同期ツールによって同期される属性の一覧](https://go.microsoft.com/fwlink/p/?LinkId=396719)」を参照してください。
+- **GivenName**、姓 ( **Sn** )、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**、および**userPrincipalName**の各属性の無効で問題のある文字を削除します。 属性の準備の詳細については、「 [Azure Active Directory 同期ツールによって同期される属性の一覧](https://go.microsoft.com/fwlink/p/?LinkId=396719)」を参照してください。
 
     > [!NOTE]
     > Azure AD Connect が同期するのと同じ属性です。 

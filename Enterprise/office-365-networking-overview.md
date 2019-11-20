@@ -14,14 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: SaaS サービスでネットワークの最適化が重要な理由、Office 365 ネットワークの目標、および他のワークロードとの間で SaaS が異なるネットワークを必要とする理由について説明します。
-ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031892"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747709"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 のネットワーク接続の概要
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 は、さまざまなマイクロサービスおよびアプリケーションを使用して生産性とコラボレーションのシナリオを実現する、サービスとして配布された、サービスとしてのソフトウェア (SaaS) クラウドです。 Outlook、Word、PowerPoint などの Office 365 のクライアントコンポーネントは、ユーザーのコンピューター上で実行され、Microsoft データセンターで実行される Office 365 の他のコンポーネントに接続します。 Office 365 エンドユーザー環境の品質を決定する最も重要な要素は、Office 365 クライアントと Office 365 サービスのフロントドアの間でネットワークの信頼性と遅延が少ないことです。
 

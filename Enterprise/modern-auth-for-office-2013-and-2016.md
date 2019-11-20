@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435361"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747990"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
 

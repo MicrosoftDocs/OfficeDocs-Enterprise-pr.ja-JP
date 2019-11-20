@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
-ms.openlocfilehash: 8bb877cba8bb06762ee56fa8c022be78d1c011c3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071173"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747533"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell を使用して Office 365 への段階的な移行を実行する
 
- **概要:** Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
-  
 段階的な移行を使用すると、ユーザーのメールボックスの内容を、元の電子メール システムから Office 365 に徐々に移行することができます。
   
 この記事では、Exchange Online PowerShell を使用した段階的メール移行に関するタスクを順を追って説明します。トピック「[Office 365 への段階的メール移行について知っておくべきこと](https://go.microsoft.com/fwlink/p/?LinkId=536487)」では、移行プロセスについて概説しています。記事の内容に満足いただけたら、段階的メール移行を使用して、あるメール システムから別のメール システムへのメールボックスの移行を開始してください。
@@ -63,11 +61,11 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
     
 - Exchange Online PowerShell で次のコマンドを実行します。
     
-  ```
+  ```powershell
   $Credentials = Get-Credential
   ```
 
-  ```
+  ```powershell
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
@@ -77,7 +75,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   
 - 社内組織の Active Directory の **Domain Admins** グループのメンバーであること。
     
-    or
+    または
     
 - 社内の各メールボックスに **FullAccess** のアクセス許可が割り当てられ、社内のユーザー アカウントの **TargetAddress** プロパティを変更するための **WriteProperty** のアクセス許可が割り当てられていること。
     
@@ -118,7 +116,7 @@ Office 365 に移行する社内のメールボックスのユーザーを特定
   
 CSV ファイルの最初の行、つまりヘッダー行には、後続の行で指定される属性 (つまり、フィールド) の名前が示されます。各属性名はコンマで区切られます。
   
-```
+```powershell
 EmailAddress,Password,ForceChangePassword 
 pilarp@contoso.com,Pa$$w0rd,False 
 tobyn@contoso.com,Pa$$w0rd,False 
@@ -141,11 +139,11 @@ CSV ファイルの作成には、任意のテキスト エディターや Exce
   
 Exchange Online PowerShell に "StagedEndpoint" という Outlook Anywhere 移行エンドポイントを作成するには、次のコマンドを実行します。
   
-```
+```powershell
 $Credentials = Get-Credential
 ```
 
-```
+```powershell
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
@@ -158,7 +156,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
 
 Exchange Online PowerShell で、次のコマンドを実行して "StagedEndpoint" 移行エンドポイントに関する情報を表示します。
   
-```
+```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
 ```
 
@@ -167,13 +165,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 Exchange Online PowerShell の **New-MigrationBatch** コマンドレットを使用すると、一括移行の移行バッチを作成できます。 _AutoStart_ パラメーターを含めると、移行バッチを作成して自動的に開始できます。また、別の方法として、 **Start-MigrationBatch** コマンドレットを使用することにより、移行バッチを作成して後で手動で開始できます。この例では、"StagedBatch1" という移行バッチを作成して、前の例で作成した移行エンドポイントを使用します。
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
 この例でも、"StagedBatch1" という移行バッチを作成して、前の例で作成した移行エンドポイントを使用します。 _AutoStart_ パラメーターが含まれていないため、移行バッチは移行ダッシュボードで、または **Start-MigrationBatch** コマンドレットを使用して手動で開始する必要があります。前述のように、一度に存在できる一括移行バッチは 1 つだけです。
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 ```
 
@@ -181,13 +179,13 @@ New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 
 Exchange Online PowerShell で次のコマンドを実行すると、「StagedBatch1」に関する情報が表示されます。
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
 ```
 
 また、次のコマンドを実行すると、バッチが開始されたことを確認できます。
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
@@ -215,7 +213,7 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
   
 Exchange Online PowerShell で "StagedBatch1" 移行バッチを削除するには、次のコマンドを実行します。
   
-```
+```powershell
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
@@ -225,7 +223,7 @@ Remove-MigrationBatch -Identity StagedBatch1
 
 Exchange Online PowerShell で次のコマンドを実行すると、"IMAPBatch1" に関する情報が表示されます。
   
-```
+```powershell
 Get-MigrationBatch StagedBatch1
 ```
 

@@ -23,14 +23,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ユーザーアカウントに Office 365 ライセンスを個別に、またはグループメンバーシップに基づいて割り当てる方法について説明します。
-ms.openlocfilehash: 0f258ef9240239ebdfa695e8c5b214484cfb4db1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: bc736236f9371ee1372fd36af4a707aca2ee1408
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34164602"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745710"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>ユーザーアカウントに Office 365 ライセンスを割り当てる
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 クラウド専用の id モデルでは、作成方法に応じて、ユーザーアカウントの作成時に Office 365 ライセンスをユーザーアカウントに割り当てることができます。
 
@@ -51,6 +53,7 @@ Office 365 ライセンスを個々のユーザーアカウントに割り当て
 
 ライセンスが割り当てられているユーザーアカウントの完全なセットにより、次の準備が整いました。
 
+- [セキュリティを実装する](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Office 365 ProPlus などのクライアントソフトウェアを展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 - [モバイルデバイス管理を構成する](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [サービスとアプリケーションを構成する](configure-services-and-applications.md)

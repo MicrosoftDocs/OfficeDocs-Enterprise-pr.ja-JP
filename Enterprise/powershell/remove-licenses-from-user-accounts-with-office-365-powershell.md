@@ -16,16 +16,14 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
-ms.openlocfilehash: aebb74404d2f1e40ed65580df2dc114a3645091a
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: bfd333b649df1d346a45abc3e8b9e35666f8f582
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834227"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747543"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
-
-**概要:** Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
@@ -34,7 +32,7 @@ ms.locfileid: "35834227"
 
 次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
 
-```
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
@@ -42,7 +40,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 最後に、ユーザーのサインインとライセンスプラン名を指定し、"<" と ">" の文字を削除して、次のコマンドを実行します。
 
-```
+```powershell
 $userUPN="<user sign-in name (UPN)>"
 $planName="<license plan name from the list of license plans>"
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
@@ -72,13 +70,13 @@ _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使�
 
 既存のユーザー アカウントからライセンスを削除するには、次の構文を使用します:
   
-```
+```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
 この例では`litwareinc:ENTERPRISEPACK` 、ユーザーアカウント BelindaN@litwareinc.com から (Office 365 Enterprise E3) ライセンスを削除します。
   
-```
+```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
@@ -90,14 +88,14 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
   
 - **既存のアカウント属性に基づいてアカウントをフィルターする** これを行うには、次の構文を使用します。
     
-```
+```powershell
 $x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
 この例では、米国内の販売部門のユーザーのすべてのアカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。
     
-```
+```powershell
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
 $USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
@@ -106,7 +104,7 @@ $USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
     
 1. 次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成し、保存します。
     
-  ```
+  ```powershell
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
@@ -114,26 +112,26 @@ kakers@contoso.com
 
 2. 次の構文を使用してください。
     
-  ```
+  ```powershell
   Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
   ```
 
 この例では、テキスト ファイル C:\My Documents\Accounts.txt で定義されているユーザー アカウントから `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
 既存のすべてのユーザー アカウントからライセンスを削除するには、次の構文を使用します。
   
-```
+```powershell
 $x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
 $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
 次の例では、ライセンスを付与された既存の全ユーザー アカウントから  `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) ライセンスを削除します。
   
-```
+```powershell
 $x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
 $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```

@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDNs) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 38c4af58ea7e655a5941557ea1e3b035f15b9074
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077660"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745840"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDNs)
+
+*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
 CDNs は、エンドユーザーにとって Office 365 を高速かつ信頼性の高い状態に保つことができます。 Office 365 などのクラウドサービスでは、CDNs を使用して、ダウンロードを高速化し、エンドユーザーの潜在期間を短縮するために、静的なアセットをブラウザーの近くにキャッシュします。 このトピックの情報は、コンテンツ配信ネットワーク (CDNs) と、それらが Office 365 でどのように使用されるかについて理解するのに役立ちます。
 

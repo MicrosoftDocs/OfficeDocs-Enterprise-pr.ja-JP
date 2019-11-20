@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 概要:Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ac3933b3a208f41db5c569de3455ce1244133927
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030942"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747567"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 
- **概要:** Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-  
 Skype for Business Online 管理者にとって主要なタスクの 1 つはポリシーを管理することです。 Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早く簡単に実行できます。 
 
 ## <a name="before-you-start"></a>始める前に
@@ -34,7 +32,7 @@ Skype for Business Online 管理者にとって主要なタスクの 1 つはポ
 
 1. Windows PowerShell コマンド プロンプトを開いて次のコマンドを実行します: 
     
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $userCredential = Get-Credential
   $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -48,7 +46,7 @@ Skype for Business Online 管理者にとって主要なタスクの 1 つはポ
 
 1. Windows PowerShell コマンド プロンプトを開いて次のコマンドを実行します:
 
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $sfbSession = New-CsOnlineSession
   Import-PSSession $sfbSession

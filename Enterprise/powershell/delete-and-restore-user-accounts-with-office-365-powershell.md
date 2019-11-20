@@ -15,19 +15,16 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Office 365 PowerShell を使用して Office 365 ユーザーアカウントを削除する方法について説明します。
-ms.openlocfilehash: dd7e5052f8933955267302a5d03870017702a7fb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069043"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746430"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーアカウントを削除する
 
-**概要:** Office 365 PowerShell を使用して Office 365 ユーザーアカウントを削除する方法について説明します。
-  
 Office 365 PowerShell を使用して、ユーザーアカウントを削除できます。
-
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
@@ -35,13 +32,13 @@ Office 365 PowerShell を使用して、ユーザーアカウントを削除で�
 
 接続したら、以下の構文を使用してユーザー アカウントを個別に削除します。
   
-```
+```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
 この例では、ユーザー アカウント fabricec@litwareinc.com を削除します。
   
-```
+```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
@@ -50,21 +47,21 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
   
 ユーザーの名前に基づいてアカウント名を表示するには、以下のコマンドを使用します。
   
-```
+```powershell
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 この例では、Caleb Sills という名前のユーザーのアカウント名を表示します。
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 ユーザーの表示名に基づいてアカウントを削除するには、次のコマンドを使用します。
   
-```
+```powershell
 $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
@@ -78,25 +75,25 @@ Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用
 
 ユーザー アカウントを削除するには、次の構文を使用します。
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 この例では、ユーザー アカウント BelindaN@litwareinc.com を削除します。
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
 削除されたユーザー アカウントを 30 日間の猶予期間内に復元するには、次の構文を使用します。
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 この例では、削除されたユーザー アカウント BelindaN@litwareinc.com を復元します。
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
@@ -104,7 +101,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 - 復元できる削除されたユーザーの一覧を表示するには、次のコマンドを実行します。
     
-  ```
+  ```powershell
   Get-MsolUser -All -ReturnDeletedUsers
   ```
 

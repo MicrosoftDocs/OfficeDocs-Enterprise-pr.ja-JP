@@ -15,17 +15,15 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Office 365 PowerShell を使用して、ユーザーの Office 365 サービスへのアクセスを無効にします。
-ms.openlocfilehash: 32c43a47e1547e85488cb5158bd7392d79c8a4fb
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c012d7451d022ea8cf3e3fa1a8d0a89d804e9c66
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781837"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746280"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell を使ったサービスへのアクセスを無効にする
 
-**概要:** Office 365 PowerShell を使用して、組織内のユーザーに対して Office 365 サービスへのアクセスを無効にする方法について説明します。
-  
 Office 365 アカウントにライセンスプランのライセンスが割り当てられている場合、そのライセンスから Office 365 サービスがユーザーに対して利用可能になります。 ただし、ユーザーがアクセスできる Office 365 サービスを制御することができます。 たとえば、ライセンスで SharePoint Online サービスへのアクセスが許可されている場合でも、アクセスを無効にすることができます。 PowerShell を使用して、次のような特定のライセンスプランで任意の数のサービスへのアクセスを無効にすることができます。
 
 - 個々のアカウント。
@@ -40,7 +38,7 @@ Office 365 アカウントにライセンスプランのライセンスが割り
 
 次に、このコマンドを使用して、使用可能なライセンスプラン (AccountSkuIds とも呼ばれます) を表示します。
 
-```
+```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
@@ -57,13 +55,13 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
   
 1. 次の構文を使用して、ライセンスプランで不要なサービスを特定します。
     
-  ```
+  ```powershell
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
   次の例では、という名前`litwareinc:ENTERPRISEPACK`のライセンスプラン (Office 365 Enterprise E3) で Office および SharePoint Online サービスを無効にする**licenseoptions**オブジェクトを作成します。
     
-  ```
+  ```powershell
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
@@ -71,13 +69,13 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
   - サービスが無効になっている新しいアカウントを作成するには、次の構文を使用します。
     
-  ```
+  ```powershell
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
   次の例では、ライセンスを割り当て、手順1で説明されているサービスを無効にする Allie Bellew の新しいアカウントを作成します。
     
-  ```
+  ```powershell
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
@@ -85,19 +83,19 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
   - ライセンスを付与された既存のユーザー用のサービスを無効にするには、次の構文を使用します。
     
-  ```
+  ```powershell
   Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
   ```
 
   この例では、ユーザー BelindaN@litwareinc.com に対してサービスを無効にします。
     
-  ```
+  ```powershell
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
   - 既存のライセンスを持つすべてのユーザーについて、手順1で説明されているサービスを無効にするには、 **get-msolaccountsku**コマンドレット ( **LITWAREINC: enterprisepack**など) の表示から Office 365 プランの名前を指定し、次のコマンドを実行します。
     
-  ```
+  ```powershell
   $acctSKU="<AccountSkuId>"
   $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
@@ -110,14 +108,14 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
   - **既存のアカウント属性に基づいてアカウントをフィルターする** これを行うには、次の構文を使用します。
     
-  ```
+  ```powershell
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
   次の例では、米国内の販売部門のユーザーのサービスを無効にします。
     
-  ```
+  ```powershell
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
   $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
@@ -126,7 +124,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
 1. 次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成します。
     
-  ```
+  ```powershell
   akol@contoso.com
   tjohnston@contoso.com
   kakers@contoso.com
@@ -136,7 +134,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
     
 2. 次のコマンドを実行します。
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 

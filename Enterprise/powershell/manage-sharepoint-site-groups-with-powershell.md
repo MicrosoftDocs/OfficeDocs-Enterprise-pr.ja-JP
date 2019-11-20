@@ -15,20 +15,18 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Office 365 PowerShell を使用して SharePoint Online サイトグループを管理します。'
-ms.openlocfilehash: eedbfbecea0f488b96cfe7a87a2b4851352f4fac
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077986"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748537"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイト グループを管理する
 
- **概要:** Office 365 PowerShell を使用して、SharePoint Online サイトグループを管理します。
-  
 Microsoft 365 管理センターを使用することもできますが、Office 365 PowerShell を使用して SharePoint Online サイトグループを管理することもできます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 この記事の手順では、SharePoint Online に接続する必要があります。 手順については、「[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
 
@@ -46,7 +44,7 @@ SharePoint Online 管理センターには、サイトグループを管理す�
 
 Office 365 PowerShell でグループの一覧を取得するには、次のコマンド セットを使用します。
 
-```
+```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
 $x = Get-SPOSiteGroup -Site $siteURL
 foreach ($y in $x)
@@ -62,7 +60,7 @@ foreach ($y in $x)
 - コマンドをメモ帳 (または別のテキストエディター) にコピーし、 **$siteURL**変数の値を変更し、コマンドを選択して、それらを SharePoint Online Management Shell コマンドプロンプトに貼り付けます。 実行すると、 **>>** プロンプトで PowerShell が停止します。 Enter キーを押して、**foreach** コマンドを実行します。<br/>
 - コマンドをメモ帳 (または別のテキスト エディター) にコピーし、**$siteURL** 変数の値を変更してから、このテキスト ファイルを .ps1 という拡張子の付いた名前で適切なフォルダーに保存します。 次に、そのパスとファイル名を指定して、SharePoint Online 管理シェルコマンドプロンプトからスクリプトを実行します。 コマンド例を次に示します。
 
-```
+```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
 ```
 
@@ -74,7 +72,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 もう1つの例として、すべての SharePoint Online サイトのグループとすべてのグループメンバーシップを一覧表示するコマンドセットを示します。
 
-```
+```powershell
 $x = Get-SPOSite
 foreach ($y in $x)
     {

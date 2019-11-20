@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 概要:Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。
-ms.openlocfilehash: c7b80ea444fd9e8f0324cb0bc29edf46cd1219d0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: b6c68dc611d22579f81db838b2b5d08e99f7519a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071163"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746270"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>PowerShell を使用した Office 365 への IMAP 移行の実行
 
- **概要:** Windows PowerShell を使用して Office 365 の IMAP 移行を実行する方法について説明します。
-  
 Office 365 を展開するプロセスの一部として、Internet Mail Access Protocol (IMAP) 電子メール サービスから Office 365 に、ユーザーのメールボックスの内容を移行することができます。この記事では、Exchange Online PowerShell を使用した電子メールの IMAP 移行作業を順を追って説明します。 
   
 > [!NOTE]
@@ -67,7 +65,7 @@ IMAP の移行には次の制限が適用されます。
     
 - **IMAP サーバーに接続できることを確認します**。IMAP サーバーへの接続設定をテストするには、Exchange Online PowerShell で次のコマンドを実行します。
     
-  ```
+  ```powershell
   Test-MigrationServerAvailability -IMAP -RemoteServer <FQDN of IMAP server> -Port <143 or 993> -Security <None, Ssl, or Tls>
   ```
 
@@ -88,7 +86,7 @@ IMAP 移行バッチでそのメールボックスを移行するユーザーの
     
 以下に、CSV ファイルの形式の例を示します。この例では、3 人のメールボックスが移行されます。
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams,1091990
 annb@contoso.edu,ann.beebe,2111991
@@ -101,7 +99,7 @@ paulc@contoso.edu,paul.cannon,3281986
   
 Microsoft Exchange の IMAP 実装から電子メールを移行する場合、CSV ファイルでは **UserName** 属性に **Domain/Admin_UserName/User_UserName** という形式を使用します。Terry Adams、Ann Beebe、および Paul Cannon の電子メールを Exchange から移行するとします。メールの管理者アカウントは、ユーザー名は **mailadmin** 、パスワードは **P@ssw0rd** とします。CSV ファイルは次のようになります。
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,contoso-students/mailadmin/terry.adams,P@ssw0rd
 annb@contoso.edu,contoso-students/mailadmin/ann.beebe,P@ssw0rd
@@ -112,7 +110,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
   
 Simple Authentication and Security Layer (SASL) をサポートしている IMAP サーバー (Dovecot IMAP サーバーなど) では、**User_UserName*Admin_UserName** の形式を使用します。ここで、アスタリスク (*) は、構成可能な区切り文字です。たとえば、管理者の資格情報 ( **mailadmin** と **P@ssw0rd** ) を使用して、上記の同じユーザーの電子メールを Dovecot IMAP サーバーから移行するとします。CSV ファイルは次のようになります。
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,terry.adams*mailadmin,P@ssw0rd
 annb@contoso.edu,ann.beebe*mailadmin,P@ssw0rd
@@ -123,7 +121,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
   
 Mirapoint Message Server から電子メールを移行する場合は、管理者の資格情報に **#user@domain#Admin_UserName#** の形式を使用します。管理者の資格情報である **mailadmin** と **P@ssw0rd** を使用して Mirapoint から電子メールを移行する場合、CSV ファイルは次のようになります。
   
-```
+```powershell
 EmailAddress,UserName,Password
 terrya@contoso.edu,#terry.adams@contoso-students.edu#mailadmin#,P@ssw0rd
 annb@contoso.edu,#ann.beebe@contoso-students.edu#mailadmin#,P@ssw0rd
@@ -138,7 +136,7 @@ Courier IMAP のような一部の移行元の電子メール システムでは
   
 以下に、 **UserRoot** 属性を含む CSV ファイルの例を示します。
   
-```
+```powershell
 EmailAddress,UserName,Password,UserRoot
 terrya@contoso.edu,mailadmin,P@ssw0rd,/users/terry.adams
 annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
@@ -154,14 +152,14 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
   
 Exchange Online PowerShell で "IMAPEndpoint" という IMAP 移行エンドポイントを作成するには、次のコマンドを実行します。
   
-```
+```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
 
 ```
 
 また、同時移行、増分の同時移行、および使用するポートを指定するパラメーターを追加することもできます。次の Exchange Online PowerShell コマンドは、50 の同時移行と最大 25 の同時増分同期をサポートする "IMAPEndpoint" という IMAP 移行エンドポイントを作成します。さらに、このエンドポイントを TLS 暗号化用にポート 143 を使用するように構成します。
   
-```
+```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 143 -Security Tls -MaxConcurrentMigrations
 50 -MaxConcurrentIncrementalSyncs 25
 ```
@@ -172,7 +170,7 @@ New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -P
 
 Exchange Online PowerShell で次のコマンドを実行すると、"IMAPEndpoint" に関する情報が表示されます。
   
-```
+```powershell
 Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
 ```
 
@@ -183,7 +181,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
   
 次の Exchange Online PowerShell コマンドは、"IMAPEndpoint" という IMAP エンドポイントを使用して "IMAPBatch1" という移行バッチを自動的に開始します。
   
-```
+```powershell
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
 ```
 
@@ -191,13 +189,13 @@ New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([Syst
 
 [Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441) コマンドレットを実行すると、"IMAPBatch1" に関する情報を表示できます。
   
-```
+```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List
 ```
 
 また、次のコマンドを実行すると、バッチが開始されたことを確認できます。
   
-```
+```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
@@ -221,7 +219,7 @@ MX レコードを変更して、すべての電子メールが Office 365 の�
     
 Exchange Online PowerShell から "IMAPBatch1" 移行バッチを削除するには、次のコマンドを実行します。
   
-```
+```powershell
 Remove-MigrationBatch -Identity IMAPBatch1
 ```
 
@@ -231,7 +229,7 @@ Remove-MigrationBatch -Identity IMAPBatch1
 
 Exchange Online PowerShell で次のコマンドを実行すると、"IMAPBatch1" に関する情報が表示されます。
   
-```
+```powershell
 Get-MigrationBatch IMAPBatch1"
 ```
 
@@ -240,8 +238,6 @@ Get-MigrationBatch IMAPBatch1"
 **Get-MigrationBatch** コマンドレットの詳細については、「[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
-
-#### 
 
 [IMAP の移行に関するトラブルシューティング](https://go.microsoft.com/fwlink/p/?LinkId=536482)
 

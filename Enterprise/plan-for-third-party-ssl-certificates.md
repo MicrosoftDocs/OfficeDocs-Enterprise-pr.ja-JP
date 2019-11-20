@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: '概要: Exchange の社内およびハイブリッドに必要な SSL 証明書、AD FS を使用する SSO、Exchange Online サービス、および Exchange Web サービスについて説明します。'
-ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 92425793d616f642fb78331a965b1a4a2dff071f
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428094"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747689"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Office 365 のサード パーティ SSL 証明書の計画
 
@@ -39,7 +39,7 @@ ms.locfileid: "37428094"
    
 次の Office 365 コンポーネントには、証明書が必要です。
   
-- Exchange オンプレミス
+- オンプレミスの Exchange
     
 - シングルサインオン (SSO) (Active Directory フェデレーションサービス (AD FS) フェデレーションサーバーと AD FS フェデレーションサーバープロキシの両方)
     

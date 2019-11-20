@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428084"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745670"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 identity モデルと Azure Active Directory
 

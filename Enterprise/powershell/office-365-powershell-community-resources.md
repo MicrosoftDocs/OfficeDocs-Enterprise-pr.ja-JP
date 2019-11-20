@@ -11,17 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 概要:これらのコミュニティから Office 365 PowerShell のヘルプを得られます。
-ms.openlocfilehash: 98147f9bc698184a4146580c10966a8f102bde21
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: f4bb2fe6321921b5f345630460ae7b388d40d896
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031702"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748445"
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell のコミュニティ リソース
 
- **概要:** これらのコミュニティから Office 365 PowerShell のヘルプを得られます。
-  
 これらのコミュニティフォーラムと Wiki を使用して、同僚との接続を取得し、Office 365 PowerShell に関する質問をすばやく正確に回答できるようにします。 
   
 - [Office 365 技術コミュニティにアクセスする](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
@@ -35,8 +33,6 @@ ms.locfileid: "38031702"
 - [Office 365 Wiki の管理](https://community.office365.com/w/manage/default.aspx)
     
 ## <a name="see-also"></a>関連項目
-
-#### 
 
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
   

@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '概要: Office 365 PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。'
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031682"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746260"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Windows PowerShell を使用して Office 365 でレポートを作成する
 
- **概要:** Office 365 PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。
-  
 Microsoft 365 管理者センターでは、数多くのさまざまなレポートを使用できます。 ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。 そんなときに、Office 365 PowerShell が必要になります。
   
 次に示す記事では、Office 365 PowerShell を使用して Office 365 テナントから情報を取得する方法について説明しています。
@@ -58,8 +56,6 @@ Microsoft 365 管理者センターでは、数多くのさまざまなレポー
   - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>関連項目
-
-#### 
 
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
   

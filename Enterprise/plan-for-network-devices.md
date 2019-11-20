@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '概要: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。'
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428104"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747070"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
@@ -52,7 +52,7 @@ ms.locfileid: "37428104"
   
 ほとんどの場合、インターネット接続の帯域幅はトラフィック量の制限を設定します。 ピークトラフィック時間中のパフォーマンスが低い場合は、インターネットリンクの過剰な使用が原因である可能性があります。 この状況は、ブランチオフィスのプロキシサーバーコンピューターが低速のワイドエリアネットワーク (WAN) リンクを介して支社の本社のプロキシデバイスに接続されている場合にも当てはまります。
   
-ネットワーク容量をテストするには、プロキシネットワークインターフェイスでネットワークアクティビティを監視します。 ネットワークインターフェイスの最大帯域幅が 75% を超えている場合は、ネットワークインフラストラクチャの帯域幅が不十分であることを考慮してください。 または、HTTP 圧縮などの高度な機能を使用することを検討してください。
+ネットワーク容量をテストするには、プロキシネットワークインターフェイスでネットワークアクティビティを監視します。 ネットワークインターフェイスの最大帯域幅が75% を超えている場合は、ネットワークインフラストラクチャの帯域幅が不十分であることを考慮してください。 または、HTTP 圧縮などの高度な機能を使用することを検討してください。
   
 ## <a name="wan-accelerators"></a>WAN アクセラレータ
 
@@ -68,7 +68,7 @@ Windows Server に組み込まれているソフトウェアベースの NLB ソ
   
 ## <a name="firewalls-and-proxies"></a>ファイアウォールとプロキシ
 
-Office 365 に接続するためのファイアウォールとプロキシの構成の詳細については、「 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」、「 [office 365 ネットワーク接続の評価](assessing-network-connectivity.md)」、および「 [OFFICE 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 」を参照して、デバイスと回線の詳細を確認してください。選択範囲.
+Office 365 に接続するためのファイアウォールとプロキシの構成の詳細については、「 [office 365 エンドポイントの管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)」、「 [365 office 2013 のネットワーク接続の評価](assessing-network-connectivity.md)」、および「 [OFFICE 365 エンドポイントの FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) 」を参照して、デバイスと回線の選択についてご確認ください。
   
 ## <a name="see-also"></a>関連項目
 
