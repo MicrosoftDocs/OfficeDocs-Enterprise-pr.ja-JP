@@ -12,60 +12,56 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '概要: Office 365 PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。'
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031682"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746260"
 ---
-# <a name="use-windows-powershell-to-create-reports-in-office-365"></a><span data-ttu-id="5fe03-103">Windows PowerShell を使用して Office 365 でレポートを作成する</span><span class="sxs-lookup"><span data-stu-id="5fe03-103">Use Windows PowerShell to create reports in Office 365</span></span>
+# <a name="use-windows-powershell-to-create-reports-in-office-365"></a><span data-ttu-id="97f6e-103">Windows PowerShell を使用して Office 365 でレポートを作成する</span><span class="sxs-lookup"><span data-stu-id="97f6e-103">Use Windows PowerShell to create reports in Office 365</span></span>
 
- <span data-ttu-id="5fe03-104">**概要:** Office 365 PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="5fe03-104">**Summary:** Use Office 365 PowerShell to create reports that you cannot produce in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="97f6e-104">Microsoft 365 管理者センターでは、数多くのさまざまなレポートを使用できます。</span><span class="sxs-lookup"><span data-stu-id="97f6e-104">There are many different reports available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="97f6e-105">ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="97f6e-105">However, these reports only provide so much information and sometimes you need more.</span></span> <span data-ttu-id="97f6e-106">そんなときに、Office 365 PowerShell が必要になります。</span><span class="sxs-lookup"><span data-stu-id="97f6e-106">That's when you need Office 365 PowerShell</span></span>
   
-<span data-ttu-id="5fe03-105">Microsoft 365 管理者センターでは、数多くのさまざまなレポートを使用できます。</span><span class="sxs-lookup"><span data-stu-id="5fe03-105">There are many different reports available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="5fe03-106">ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。</span><span class="sxs-lookup"><span data-stu-id="5fe03-106">However, these reports only provide so much information and sometimes you need more.</span></span> <span data-ttu-id="5fe03-107">そんなときに、Office 365 PowerShell が必要になります。</span><span class="sxs-lookup"><span data-stu-id="5fe03-107">That's when you need Office 365 PowerShell</span></span>
+<span data-ttu-id="97f6e-107">次に示す記事では、Office 365 PowerShell を使用して Office 365 テナントから情報を取得する方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="97f6e-107">These articles that describe how to use Office 365 PowerShell to obtain information from your Office 365 tenant:</span></span>
   
-<span data-ttu-id="5fe03-108">次に示す記事では、Office 365 PowerShell を使用して Office 365 テナントから情報を取得する方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="5fe03-108">These articles that describe how to use Office 365 PowerShell to obtain information from your Office 365 tenant:</span></span>
-  
-- <span data-ttu-id="5fe03-109">Office 365 PowerShell を使用したレポート作成の概要。</span><span class="sxs-lookup"><span data-stu-id="5fe03-109">Getting started with reporting using Office 365 PowerShell:</span></span>
+- <span data-ttu-id="97f6e-108">Office 365 PowerShell を使用したレポート作成の概要。</span><span class="sxs-lookup"><span data-stu-id="97f6e-108">Getting started with reporting using Office 365 PowerShell:</span></span>
     
-  - [<span data-ttu-id="5fe03-110">Office 365 PowerShell では、Office 365 管理センターに表示されない追加情報を確認できます。</span><span class="sxs-lookup"><span data-stu-id="5fe03-110">Office 365 PowerShell can reveal additional information that you cannot see with the Admin center</span></span>](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+  - [<span data-ttu-id="97f6e-109">Office 365 PowerShell では、Office 365 管理センターに表示されない追加情報を確認できます。</span><span class="sxs-lookup"><span data-stu-id="97f6e-109">Office 365 PowerShell can reveal additional information that you cannot see with the Admin center</span></span>](https://technet.microsoft.com/library/dn568034.aspx#reveal)
     
-  - [<span data-ttu-id="5fe03-111">Office 365 PowerShell はデータのフィルター処理に優れています。</span><span class="sxs-lookup"><span data-stu-id="5fe03-111">Office 365 PowerShell is great at filtering data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#filter)
+  - [<span data-ttu-id="97f6e-110">Office 365 PowerShell はデータのフィルター処理に優れています。</span><span class="sxs-lookup"><span data-stu-id="97f6e-110">Office 365 PowerShell is great at filtering data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#filter)
     
-  - [<span data-ttu-id="5fe03-112">Office 365 PowerShell を使用すると、データの印刷や保存が簡単にできます。</span><span class="sxs-lookup"><span data-stu-id="5fe03-112">Office 365 PowerShell makes it easy to print or save data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#printsave)
+  - [<span data-ttu-id="97f6e-111">Office 365 PowerShell を使用すると、データの印刷や保存が簡単にできます。</span><span class="sxs-lookup"><span data-stu-id="97f6e-111">Office 365 PowerShell makes it easy to print or save data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#printsave)
     
-- <span data-ttu-id="5fe03-113">ユーザー アカウントおよびライセンスのレポート:</span><span class="sxs-lookup"><span data-stu-id="5fe03-113">Reports for user accounts and licenses:</span></span>
+- <span data-ttu-id="97f6e-112">ユーザー アカウントおよびライセンスのレポート:</span><span class="sxs-lookup"><span data-stu-id="97f6e-112">Reports for user accounts and licenses:</span></span>
     
-  - [<span data-ttu-id="5fe03-114">Office 365 PowerShell でライセンスとサービスを確認する</span><span class="sxs-lookup"><span data-stu-id="5fe03-114">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+  - [<span data-ttu-id="97f6e-113">Office 365 PowerShell でライセンスとサービスを確認する</span><span class="sxs-lookup"><span data-stu-id="97f6e-113">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
     
-  - [<span data-ttu-id="5fe03-115">ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する</span><span class="sxs-lookup"><span data-stu-id="5fe03-115">View licensed and unlicensed users with Office 365 PowerShell</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+  - [<span data-ttu-id="97f6e-114">ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する</span><span class="sxs-lookup"><span data-stu-id="97f6e-114">View licensed and unlicensed users with Office 365 PowerShell</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
     
-  - [<span data-ttu-id="5fe03-116">Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="5fe03-116">View account license and service details with Office 365 PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
+  - [<span data-ttu-id="97f6e-115">Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="97f6e-115">View account license and service details with Office 365 PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
     
-  - [<span data-ttu-id="5fe03-117">Office 365 PowerShell でユーザー アカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="5fe03-117">View user accounts with Office 365 PowerShell</span></span>](view-user-accounts-with-office-365-powershell.md)
+  - [<span data-ttu-id="97f6e-116">Office 365 PowerShell でユーザー アカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="97f6e-116">View user accounts with Office 365 PowerShell</span></span>](view-user-accounts-with-office-365-powershell.md)
     
-- <span data-ttu-id="5fe03-118">SharePoint Online のレポート:</span><span class="sxs-lookup"><span data-stu-id="5fe03-118">Reports for SharePoint Online:</span></span>
+- <span data-ttu-id="97f6e-117">SharePoint Online のレポート:</span><span class="sxs-lookup"><span data-stu-id="97f6e-117">Reports for SharePoint Online:</span></span>
     
-  - [<span data-ttu-id="5fe03-119">Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する</span><span class="sxs-lookup"><span data-stu-id="5fe03-119">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [<span data-ttu-id="97f6e-118">Office 365 PowerShell を使用して SharePoint Online のユーザーとグループを管理する</span><span class="sxs-lookup"><span data-stu-id="97f6e-118">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
     
-  - [<span data-ttu-id="5fe03-120">Manage SharePoint Online site groups with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5fe03-120">Manage SharePoint Online site groups with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [<span data-ttu-id="97f6e-119">Manage SharePoint Online site groups with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="97f6e-119">Manage SharePoint Online site groups with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
     
-- <span data-ttu-id="5fe03-121">Exchange Online のレポート:</span><span class="sxs-lookup"><span data-stu-id="5fe03-121">Reports for Exchange Online:</span></span>
+- <span data-ttu-id="97f6e-120">Exchange Online のレポート:</span><span class="sxs-lookup"><span data-stu-id="97f6e-120">Reports for Exchange Online:</span></span>
     
-  - [<span data-ttu-id="5fe03-122">Display Exchange Online mailbox information with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5fe03-122">Display Exchange Online mailbox information with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [<span data-ttu-id="97f6e-121">Display Exchange Online mailbox information with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="97f6e-121">Display Exchange Online mailbox information with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
     
-  - [<span data-ttu-id="5fe03-123">Display Exchange Online reports with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5fe03-123">Display Exchange Online reports with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [<span data-ttu-id="97f6e-122">Display Exchange Online reports with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="97f6e-122">Display Exchange Online reports with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="5fe03-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="5fe03-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="97f6e-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="97f6e-123">See also</span></span>
 
-#### 
-
-[<span data-ttu-id="5fe03-125">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="5fe03-125">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="97f6e-124">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="97f6e-124">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="5fe03-126">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="5fe03-126">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="97f6e-125">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="97f6e-125">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
   
-[<span data-ttu-id="5fe03-127">Office 365 PowerShell を使用して SharePoint Online を管理する</span><span class="sxs-lookup"><span data-stu-id="5fe03-127">Manage SharePoint Online with Office 365 PowerShell</span></span>](manage-sharepoint-online-with-office-365-powershell.md)
+[<span data-ttu-id="97f6e-126">Office 365 PowerShell を使用して SharePoint Online を管理する</span><span class="sxs-lookup"><span data-stu-id="97f6e-126">Manage SharePoint Online with Office 365 PowerShell</span></span>](manage-sharepoint-online-with-office-365-powershell.md)
   
-[<span data-ttu-id="5fe03-128">Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。</span><span class="sxs-lookup"><span data-stu-id="5fe03-128">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="97f6e-127">Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。</span><span class="sxs-lookup"><span data-stu-id="97f6e-127">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
