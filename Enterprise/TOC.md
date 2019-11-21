@@ -64,7 +64,7 @@
 
 ## 1. ネットワークをセットアップする
 ### [ネットワークをセットアップする](set-up-network-for-office-365.md)
-### [ドメイン](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+### [ドメインの追加](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
 ### [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
 ### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
 ### [Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
@@ -103,7 +103,7 @@
 #### [ディレクトリ同期をセットアップする](set-up-directory-synchronization.md)
 ### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
 
-## [3. セキュリティ機能を実装する](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+## [3. セキュリティを実装する](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. クライアント ソフトウェアを展開する
 ### [Office 365 ProPlus を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
