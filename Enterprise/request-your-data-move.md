@@ -1,9 +1,9 @@
 ---
 title: データ移行をリクエストする方法
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031592"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756596"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -72,7 +72,7 @@ Microsoft 365 管理センターのページにアクセスするには、左側
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams では、Microsoft Teams のデータ常駐サービスが利用可能な国内のデータセンターへの、お客様のコンテンツのインプレース移行はまだサポートされていません。  そのため、Microsoft Teams がデータ常駐をサポートしている新しい地域では、新しい顧客のみが国内にデータを格納することになります。  Office 365 データ常駐の詳細については、「データの保存場所」を参照[してください。](https://products.office.com/where-is-your-data-located)   
+Microsoft Teams チャットおよびチャネルメッセージデータの移行サポートは、Office 365 ローカル移行プログラムに追加されます。  Microsoft は、Exchange Online および SharePoint Online/OneDrive for Business の移行で以前にオプトインしていたお客様を含む、対象となるすべてのお客様に対して、2020年1月にプログラム登録を開始する予定です。  マイクロソフトは、Microsoft 365 管理センターでオプトインコントロールを公開し、対象となるすべてのお客様に対してメッセージセンターで通知を送信します。   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>移行をリクエストする前に選択可能なアクション
 

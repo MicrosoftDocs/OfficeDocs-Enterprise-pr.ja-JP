@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの Skype for Business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの Skype for Business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: d3dc209a4e1cfe3e313b0a1adf2bb6b5bd3b5b37
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: add02bdb04a347c4372b479a2607f24a32f9d90b
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745690"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756566"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件
 
@@ -127,7 +127,7 @@ EvoSTS への変更により、オンプレミスのサーバーは、クライ�
   
 - **Exchange Server 固有**
     
-  - Exchange server 2013 CU19 以上と up、または Exchange server 2016 CU8 と up のどちらかを使用している。
+  - Exchange server 2013 CU19 以上および up、Exchange server 2016 CU8 および up、または Exchange Server 2019 CU1 と up のいずれかを使用している。
     
   - 環境内に Exchange server 2010 がありません。
     
@@ -149,7 +149,7 @@ EvoSTS への変更により、オンプレミスのサーバーは、クライ�
   
   - 先進認証をサポートしているクライアントは次のとおりです。
 
-  |**クライアント**|**プライマリプロトコル**|**メモ**|
+  |**クライアント**|**プライマリプロトコル**|**注**|
   |:-----|:-----|:-----|
   |Outlook 2013、Outlook 2016  <br/> |MAPI over HTTP  <br/> |これらのクライアントとの先進認証を利用するには、Exchange 内で MAPI over HTTP を有効にする必要があります (通常、Exchange 2013 Service Pack 1 以降の新規インストールでは有効または True)。詳細については[、「office 2013 および office 2016 クライアントアプリでの先進認証のしくみ](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)」を参照してください。  <br/> 最低限必要な Outlook のビルドを実行していることを確認します。[Windows インストーラー (MSI) を使用するバージョンの Outlook については、「最新の更新プログラム」を](https://docs.microsoft.com/officeupdates/outlook-updates-msi)参照してください。  <br/> |
   |Outlook 2016 for Mac  <br/> |Exchange Web サービス  <br/> |  <br/> |
