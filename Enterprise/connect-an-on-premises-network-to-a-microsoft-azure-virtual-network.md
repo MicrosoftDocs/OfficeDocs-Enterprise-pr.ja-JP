@@ -3,7 +3,7 @@ title: オンプレミス ネットワークを Microsoft Azure 仮想ネット�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
-ms.openlocfilehash: 634016a2102ef602e9963dadc7ddff36b7381661
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3506b1b4c6a88567bf216957f5e083c9e99156ba
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068083"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793339"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
- **概要:** Office サーバーのワークロードのためにクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。
-  
 クロスプレミス Azure Virtual Network をオンプレミス ネットワークに接続することで、Azure インフラストラクチャ サービスにホストされているサブネットや仮想マシンを追加してネットワークを拡張します。この接続により、オンプレミス ネットワークにあるコンピューターと Azure の仮想マシンが相互に直接アクセスできるようになります。 
 
 たとえば、Azure 仮想マシンで実行するディレクトリ同期サーバーは、アカウントの変更についてオンプレミスのドメイン コントローラーにクエリを実行して、それらの変更を Office 365 サブスクリプションと同期させる必要があります。この記事では、Azure 仮想マシンをホストできる状態のサイト間仮想プライベート ネットワーク (VPN) を使用して、クロスプレミスの Azure 仮想ネットワークをセットアップする方法について説明します。
@@ -211,46 +209,43 @@ Azure Virtual Network から組織のネットワークにサイト間 VPN 接�
 
 最初に、Azure PowerShell プロンプトを開きます。Azure PowerShell をインストールしていない場合は、「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)」を参照してください。
 
-> [!TIP]
-> この記事に掲載されているすべての PowerShell コマンドを含むテキスト ファイルを入手するには、[ここ](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)をクリックしてください。 
-  
+ 
 次に、このコマンドを使用して Azure アカウントにログインします。
   
-```
+```powershell
 Connect-AzAccount
 ```
 
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
-```
+```powershell
 Get-AzSubscription | Sort SubscriptionName | Select SubscriptionName
 ```
 
 これらのコマンドで Azure サブスクリプションを設定します。二重引用符内のすべて (< 文字と > 文字を含む) を正しいサブスクリプション名に置き換えます。
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 次に、仮想ネットワーク用の新しいリソース グループを作成します。一意のリソース グループ名を決定するには、このコマンドを使用して既存のリソース グループを一覧表示します。
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
 これらのコマンドを使用して、新しいリソース グループを作成します。
   
-```
+```powershell
 $rgName="<resource group name>"
 $locName="<Table V - Item 2 - Value column>"
 New-AzResourceGroup -Name $rgName -Location $locName
-
 ```
 
 次に、Azure Virtual Network を作成します。
   
-```
+```powershell
 # Fill in the variables from previous values and from Tables V, S, and D
 $rgName="<name of your new resource group>"
 $locName="<Azure location of your new resource group>"
@@ -280,7 +275,7 @@ $vnet | Set-AzVirtualNetwork
   
 次に、これらのコマンドを使用して、サイト間 VPN 接続のゲートウェイを作成します。
   
-```
+```powershell
 # Fill in the variables from previous values and from Tables V and L
 $vnetName="<Table V - Item 1 - Value column>"
 $localGatewayIP="<Table V - Item 3 - Value column>"

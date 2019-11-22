@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
+ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030751"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793304"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
@@ -113,37 +113,32 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 まず、Azure PowerShell プロンプトを起動して、自分のアカウントにログインします。
   
-```
+```powershell
 Connect-AzAccount
 ```
-
-<!--
-> [!TIP]
-> For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
--->
   
 次のコマンドを使用して、サブスクリプションの名前を取得します。
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
 以前のバージョンの Azure PowerShell では、代わりにこのコマンドを使用してください。
   
-```
+```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
 Azure サブスクリプションを設定します。 引用符で囲まれたすべてのもの\< (および > 文字を含む) を正しい名前に置き換えます。
   
-```
+```powershell
 $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 次に、新しいリソース グループを作成します。リソース グループ名の一意のセットを決定するために、このコマンドを使用して、既存のリソース グループを一覧表示します。
   
-```
+```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
@@ -160,7 +155,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 次に示すコマンドで、新しいリソース グループを作成します。
   
-```
+```powershell
 $locName="<an Azure location, such as West US>"
 $rgName="<Table R - Item 1 - Name column>"
 New-AzResourceGroup -Name $rgName -Location $locName
@@ -174,7 +169,7 @@ New-AzResourceGroup -Name $rgName -Location $locName
 
 次に、Azure 仮想ネットワークとそのサブネットを作成します。
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<your Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -203,7 +198,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 次に、仮想マシンを持つ各サブネットのネットワークセキュリティグループを作成します。 サブネットを分離するには、サブネットのネットワーク セキュリティ グループでの特定の種類のトラフィックを許可または拒否する規則を追加できます。
   
-```
+```powershell
 # Create network security groups
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 
@@ -223,7 +218,7 @@ $vnet | Set-AzVirtualNetwork
 
 次に、これらのコマンドを使用して、サイト間 VPN 接続のゲートウェイを作成します。
   
-```
+```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
 $locName="<Azure location>"
 $vnetName="<Table V - Item 1 - Value column>"
@@ -259,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 次に、このコマンドの表示から得られる、仮想ネットワーク用の Azure VPN ゲートウェイのパブリック IPv4 アドレスを記録します。
   
-```
+```powershell
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
@@ -287,7 +282,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 次に示す Azure PowerShell コマンドで、新しい可用性セットを作成します。
   
-```
+```powershell
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
