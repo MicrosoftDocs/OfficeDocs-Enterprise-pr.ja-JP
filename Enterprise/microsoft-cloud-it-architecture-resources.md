@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '概要: Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Office ProPlus で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。'
-ms.openlocfilehash: f22c61ee1ed8dc205b5818d46e03300c21c5f22d
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38308612"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756606"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
@@ -106,9 +106,8 @@ Microsoft クラウド サービスおよびプラットフォームのネット
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft クラウドのネットワーク モデルのサムネイル画像](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [記事](https://technet.microsoft.com/library/mt733214.aspx) <br/>[その他の言語](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | このモデルには以下のページが含まれています。 <ul><li> **クラウド接続用のネットワークの進化**: クラウド移行によって、企業ネットワークの内外でのトラフィック フローの容量と特性が変化します。また、セキュリティ リスクを軽減するためのアプローチにも影響します。</li><li> **Microsoft クラウド接続の一般的な要素**: ネットワーキングと Microsoft クラウドの統合によって、広範なサービスへの最適なアクセスが提供されます。 </li><li> **Microsoft クラウド接続用の ExpressRoute** ExpressRoute は、Microsoft のクラウドへのプライベートで専用の高スループットなネットワーク接続を提供します。 </li><li> **Microsoft SaaS (Office 365、Microsoft Intune、および Dynamics CRM Online) 用ネットワーキングの設計**: Microsoft SaaS サービス用のネットワークを最適化するには、インターネット エッジ、クライアント デバイス、および標準の IT 運用を慎重に分析する必要があります。 </li><li> **Azure PaaS 用のネットワーキングの設計**: Azure PaaS アプリ用のネットワーキングを最適化するには、適切なインターネット帯域幅が必要であり、複数のサイトまたはアプリにまたがるネットワーク トラフィックの分散が必要とされる可能性があります。 </li><li> **Azure IaaS のネットワークの設計** サブネット、アドレス空間、ルーティング、DNS、負荷分散や、オンプレミスのネットワーク、その他の VNet、インターネットなどへの接続など、サーバーベースの IT ワークロードをホストするために最適な Azure 仮想ネットワーク (VNet) を作成するには、設計プロセスを実行します。 </li></ul><br/>  <br/>|
-   
-   
+|[![Microsoft クラウドのネットワーク モデルのサムネイル画像](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | このモデルには次のものが含まれています。 <ul><li> クラウド接続のためのネットワークの進化 </li><li> Microsoft のクラウド接続の一般的な要素 </li><li> Microsoft クラウド接続のためのExpressRoute </li><li> Microsoft SaaS、Azure PaaS、および Azure IaaS のネットワークの設計 </li></ul><br/>  <br/>|
+
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft ハイブリッド クラウド
 
@@ -116,7 +115,7 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [記事](https://technet.microsoft.com/library/mt750500.aspx) <br/>[その他の言語](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | このモデルには以下のページが含まれています。 <ul><li> **ハイブリッド クラウドの概要** Microsoft のクラウド サービス (SaaS、Azure PaaS、そして Azure IaaS) とそれらの共通の要素。 </li><li> **Microsoft ハイブリッド クラウド シナリオのアーキテクチャ** Microsoft のクラウド製品のハイブリッド クラウドのアーキテクチャ ダイアグラム。オンプレミス インフラストラクチャ、ネットワーク、および ID の共通レイヤーを示します。 </li><li> **Microsoft SaaS (Office 365) のハイブリッド クラウド シナリオ** SaaS ハイブリッド シナリオ アーキテクチャと、Skype for Business、SharePoint Server、そして Exchange Server の主要なハイブリッド構成の説明。 </li><li> **Azure PaaS のハイブリッド クラウド シナリオ** Azure PaaS ハイブリッド シナリオのアーキテクチャ、および Azure PaaS ハイブリッド アプリケーションの説明とその例、および SQL Server 2016 Stretch Database の説明。 </li><li> **Azure IaaS のハイブリッド クラウド シナリオ** Azure IaaS ハイブリッド シナリオのアーキテクチャ、および Azure IaaS でホストされる基幹業務 (LOB) アプリケーションの説明。 </li></ul><br/>|
+|[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | このモデルには次のものが含まれています。 <ul><li> Microsoft のクラウド製品 (SaaS、Azure PaaS、Azure IaaS) とそれらの共通の要素。 </li><li> Microsoft のクラウド製品向けのハイブリッド クラウド アーキテクチャ </li><li> Microsoft SaaS (Office 365)、Azure PaaS、および Azure IaaS のハイブリッド クラウド シナリオ </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>一般的な攻撃と、組織を保護する Microsoft の機能
@@ -142,17 +141,8 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 |:-----|:-----|
 |[![Teams の論理的なアーキテクチャ ポスターのサムネイル](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |このモデルには次のものが含まれています。 <ul><li>アーキテクチャ手法のためのビジネス シナリオのマッピング。</li><li>設計上の考慮事項</li><li>単一イベントの移行のフロー</li><li>段階的な移行のフロー</li><li>テナント移動または分割フロー</li></ul>|
 
-<!--<a name="santa"></a>
-### The Santa cloud
-
-How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
-   
 <a name="BKMK_o365solutions"></a>
-## Microsoft 365 Enterprise ソリューション シリーズ
+## <a name="microsoft-365-enterprise-solution-series"></a>Microsoft 365 Enterprise ソリューション シリーズ
 
 Microsoft 365 Enterprise ソリューション シリーズには、Microsoft 365 の機能、特にざまざまなプラットフォームで使える機能を実装するためのガイダンスが用意されています。
 

@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL Web サービスに含まれないそ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/03/2019
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: da69876f4b189d11e46ee6a01d87fecde03480ca
-ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
+ms.openlocfilehash: dd9e91fbdf5e2cc252d0675e81132ccc506a41a5
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37388165"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707014"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -45,7 +45,7 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 |:-----|:-----|:-----|:-----|
 | **行** | **用途** | **宛先** | **型** |
 | 1  | PST やファイル取り込みのための[インポート サービス](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) | その他の要件については、「[インポート サービス](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)」をご覧ください。 | 特殊な送信シナリオ |
-| 2  | [Microsoft Office 365 サポート/回復アシスタント](https://diagnostics.office.com/#/) -シングル サインオン ユーザーの資格情報を検証します。ソース: <br> ```o365diagnosticsbasic-eus.cloudapp.net (104.211.54.99)``` <br> ```o365diagnosticworker-eus.cloudapp.net (104.211.54.134)```  | オンプレミス セキュリティ トークン サービス | 受信サーバー トラフィック |
+| 2  | [Office 365 用の Microsoft サポート/回復アシスタント](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | 送信サーバー トラフィック |
 | 3  | Azure AD Connect (SSO オプション使用) – WinRM およびリモート PowerShell | 顧客の STS 環境 (AD FS サーバーおよび AD FS プロキシ) \| TCP ポート 80 と 443 | 受信サーバー トラフィック |
 | 4  | AD FS プロキシ サーバー (フェデレーション対象顧客専用) などの STS | 顧客の STS (AD FS プロキシなど)\|ポート TCP 443 または TCP 49443 (ClientTLS使用) | 受信サーバー トラフィック |
 | 5  | [Exchange Online ユニファイド メッセージング/SBC 統合](https://technet.microsoft.com/library/jj673565.aspx) | オンプレミス セッション ボーダー コント ローラーと *. um.outlook.com 間で双方向 | 送信サーバー トラフィック |
