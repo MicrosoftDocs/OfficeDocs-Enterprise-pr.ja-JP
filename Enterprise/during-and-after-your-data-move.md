@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756576"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250503"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -54,14 +54,6 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |:-----|:-----|
 |別のメールボックスへのメールボックス フォルダー アクセス許可があるユーザー  <br/> |制限される可能性があります。  <br/> テナントの移動中にユーザー A とメールボックス B が同じ geo になく、ユーザー A が持っているアクセス許可がメールボックス B の特定のフォルダーに対してのみの場合、ユーザー A は Outlook Web Access でメールボックス B のフォルダーを開くことができません。  <br/> 共有フォルダーを追加するには、左側のナビゲーション ウィンドウでユーザー名を右クリックし、 **[共有フォルダーの追加]** を選択します。  <br/> |
 |別のメールボックスへのメールボックス フル アクセス許可があるユーザー  <br/> |完全にサポートされます。  <br/> ユーザー A がメールボックス B に "フルアクセス" アクセス許可を持っている場合、ユーザー A は Outlook Web Access の左側のナビゲーションパネルで共有フォルダーをクリックして、メールボックス B が表示されているウィンドウを開くことができます。 ユーザーは、移動中に Outlook Web Access を使用して共有メールボックスを開くことができ、悪影響を与えることはありません。 制限は、メールボックス内のフォルダー レベルの共有だけに適用されます。           |
-   
-### <a name="public-folders"></a>パブリック フォルダー
-
-パブリックフォルダーメールボックスが一時的に、ユーザーとは異なるデータセンター geo に存在している場合、ユーザーはパブリックフォルダーメールボックスにアクセスできない場合があります。 
-  
-### <a name="online-archives"></a>オンライン アーカイブ
-
-移行中は、Outlook for Mac を使用して接続しているユーザーがオンラインアーカイブメールボックスに接続できない場合があります。 Outlook および Outlook Web Access を使用して接続しているユーザーのアーカイブメールボックスへのアクセスがサポートされています。
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 

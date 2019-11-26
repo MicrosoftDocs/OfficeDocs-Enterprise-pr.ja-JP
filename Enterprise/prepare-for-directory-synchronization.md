@@ -3,7 +3,7 @@ title: Office 365 へのディレクトリ同期の準備
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 11/25/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Office 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702238"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250513"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365 へのディレクトリ同期の準備
 
@@ -110,7 +110,11 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
     
   - 属性値はピリオド (.) で始めることはできません。
   - この属性の値は、ディレクトリ内で一意である必要があります。
-    
+  
+    > [!NOTE]
+    > 同期名のアンダスコア ("_") は、この属性の元の値に無効な文字が含まれていることを示します。 元の値には、文字、数字、および!、#、$、%、&、'、 \*、+、-、/、=、?、^、_、'、{、|、}、~ ~ の文字を含めることができます。 この属性の詳細については、「 [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)」を参照してください。
+    >
+      
 - **proxyAddresses**
     
   - 複数値の属性
