@@ -158,11 +158,11 @@
 #### [オンプレミス ネットワークを Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Azure IaaS でディレクトリ同期サーバーを展開する](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [高可用性フェデレーション認証のフェーズ 1:Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [高可用性フェデレーション認証のフェーズ 2:ドメイン コントローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [高可用性フェデレーション認証のフェーズ 3:AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [高可用性フェデレーション認証のフェーズ 4:Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [高可用性フェデレーション認証のフェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [フェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [フェーズ 2: ドメイン コントローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [フェーズ 3: AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [フェーズ 5: フェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Office 365 の管理
 
