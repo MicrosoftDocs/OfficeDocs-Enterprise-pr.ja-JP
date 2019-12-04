@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: 例を示し、Office 365 IdFix トランザクションログの名前付け規則と既定のログレベルについて説明します。
-ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 22ea5af87b1bbcaa96f88e3746a50f1411a01b9a
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067263"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813425"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix トランザクションログ
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 例を示し、Office 365 IdFix トランザクションログの名前付け規則と既定のログレベルについて説明します。
   

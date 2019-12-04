@@ -16,14 +16,17 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: IdFix を使用して、Office 365 に同期する前に社内ディレクトリを準備し、クリーンアップする方法について説明します。
-ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490790"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814615"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix ツールを使用して Office 365 と同期するためにディレクトリ属性を準備する
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+
 このトピックでは、IdFix ツールの実行方法、発生する可能性のある一般的なエラー、推奨される修正、例、および多数のエラーが発生した場合の対処に関するベストプラクティスについて説明します。
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>IdFix GUI を使用してディレクトリ内のエラーを修正する
@@ -42,7 +45,7 @@ ms.locfileid: "34490790"
     
  - **[R]** アクションを**削除**することを推奨します。 この値は、メールが有効でないオブジェクト上の SMTP プロキシであり、安全に削除されている可能性があります。
     
-4. エラーを読んで理解した後、変更内容で [**更新**] 列のエントリを更新し、[**アクション**] 列で変更を実装するために idfix を実行する対象を選択します。 たとえば、2人のユーザーが重複`proxyAddress`を識別している可能性があります。 メール配信には、 `proxyAddress` 1 人のユーザーしか使用できません。 この問題を解決するには、 **** ユーザーの [**アクション**] 列の値を適切に設定し、他のユーザーに対して [**アクション**] 列の**削除**をマークします。 これにより`proxyAddress` 、これ`proxyAddress` `proxyAddress`が属していないユーザーの属性が削除され、そのユーザーに対して適切な変更を行うことはできません。
+4. エラーを読んで理解した後、変更内容で [**更新**] 列のエントリを更新し、[**アクション**] 列で変更を実装するために idfix を実行する対象を選択します。 たとえば、2人のユーザーが重複`proxyAddress`を識別している可能性があります。 メール配信には、 `proxyAddress` 1 人のユーザーしか使用できません。 この問題を解決するに**** は、**ユーザーの [アクション] 列の**値を適切に設定し、他のユーザーに対して [**アクション**] 列の**削除**をマークします。 これにより`proxyAddress` 、これ`proxyAddress` `proxyAddress`が属していないユーザーの属性が削除され、そのユーザーに対して適切な変更を行うことはできません。
     
 ## <a name="common-errors-and-fixes-detected-by-idfix"></a>IdFix によって検出された一般的なエラーと修正プログラム
 次の表では、IdFix によって検出されたエラーと、ツールから最も一般的に推奨される修正策について説明します。場合によっては、それらの修正方法の例も示します。

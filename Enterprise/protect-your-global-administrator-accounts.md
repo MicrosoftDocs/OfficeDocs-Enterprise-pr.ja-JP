@@ -3,7 +3,7 @@ title: Office 365 グローバル管理者アカウントの保護
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/16/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 サブスクリプションへのグローバル管理者アクセスを保護します。
-ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031612"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814605"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 グローバル管理者アカウントの保護
 
- **概要:** グローバル管理者アカウントの侵害に基づいて、Office 365 サブスクリプションを攻撃から保護します。 
-  
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+
 Office 365 サブスクリプションのセキュリティ侵害 (情報の収集、フィッシング攻撃など) は、通常、Office 365 全体管理者アカウントの資格情報を侵害することによって行われます。 クラウドのセキュリティは、お互いと Microsoft の間のパートナーシップです。
   
 - Microsoft クラウドサービスは、信頼とセキュリティの基礎に基づいて構築されています。 Microsoft は、データとアプリケーションを保護するためのセキュリティ制御と機能を提供しています。
@@ -67,7 +67,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
   - グローバル管理者ロールを削除します。
     
-  - そのユーザーのジョブ機能と責任に応じて、管理者の役割をアカウントに割り当てます。 Office 365 のさまざまな管理者ロールの詳細については、「 [365 office 2013 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
+  - そのユーザーのジョブ機能と責任に応じて、管理者の役割をアカウントに割り当てます。 Office 365 のさまざまな管理者ロールの詳細については、「[管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
     
 8. Office 365 からサインアウトします。
     
@@ -100,13 +100,13 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
 クラウドのみに格納されているユーザーアカウントを使用している小規模な企業 (クラウドのみの id モデル) の場合は、次の手順を使用して、電話呼び出しまたはスマートフォンに送信されたテキストメッセージの検証コードを使用して MFA を構成します。
   
-1. [MFA を有効に](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
+1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
     
 2. [Office 365 の2段階認証をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、認証方法として電話呼び出しまたはテキストメッセージの各専用のグローバル管理者アカウントを構成します。 
     
 Office 365 ハイブリッド id モデルを使用している大規模な組織の場合は、さらに多くの検証オプションがあります。 より強力なセカンダリ認証方法に対してセキュリティインフラストラクチャが既に配置されている場合は、次の手順を実行します。
   
-1. [MFA を有効に](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
+1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
     
 2. [Office 365 の2段階認証をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、適切な検証方法にそれぞれの専用のグローバル管理者アカウントを構成します。 
     
@@ -114,8 +114,12 @@ Office 365 ハイブリッド id モデルを使用している大規模な組�
   
 詳細については、「[Office 365 展開用の多要素認証の計画](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)」を参照してください。
   
-MFA と PowerShell を使用して Office 365 サービスに接続するには、[この記事](https://blogs.technet.microsoft.com/solutions_advisory_board/2017/04/27/connect-to-office-365-services-with-multifactor-authentication-mfa-and-powershell/)を参照してください。
+MFA と PowerShell を使用して Office 365 サービスに接続するには、次の記事を参照してください。
 
+- [ユーザーアカウント、グループ、ライセンスの Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
+- [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>エンタープライズ組織のための追加の保護
 
@@ -135,14 +139,14 @@ PAW をセットアップする方法については、「 [https://aka.ms/cyber
   
 PIM を使用すると、このプロセスによって、グローバル管理者アカウントが悪意のあるユーザーの攻撃および使用に対して脆弱になる時間が大幅に短縮されます。
   
-詳細については、「 [AZURE AD の特権 Id 管理を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)」を参照してください。
+詳細については、「 [AZURE AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)」を参照してください。
   
 > [!NOTE]
-> PIM は、Enterprise Mobility + Security (EMS) E5 に含まれる Azure AD Premium P2 で利用できます。また、全体管理者アカウントの個別のライセンスを購入することもできます。 
+> PIM は、Microsoft 365 Enterprise E5 または Enterprise Mobility + Security (EMS) E5 に含まれている Azure AD Premium P2 で利用できます。また、全体管理者アカウントの個別のライセンスを購入することもできます。 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Office 365 ログ用のセキュリティ情報およびイベント管理 (SIEM) ソフトウェア
 
-サーバー上での SIEM ソフトウェア実行では、アプリケーションとネットワークハードウェアによって作成されたセキュリティ通知とイベントのリアルタイム分析を実行します。 SIEM サーバーに Office 365 のセキュリティの警告とイベントを分析およびレポート機能に含めることができるようにするには、Azure AD をお客様の SEIM に統合します。 「 [Azure リソースからのログを SIEM システムに統合する」を](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)参照してください。
+サーバー上での SIEM ソフトウェア実行では、アプリケーションとネットワークハードウェアによって作成されたセキュリティ通知とイベントのリアルタイム分析を実行します。 SIEM サーバーに Office 365 のセキュリティの警告とイベントを分析およびレポート機能に含めることができるようにするには、Azure AD をお客様の SEIM に統合します。 「 [Azure ログ統合の概要」を](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)参照してください。
 
 ## <a name="next-step"></a>次の手順
 

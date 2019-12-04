@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online の最新のサイト ページでページのウエイトを最適化する方法について説明します。
-ms.openlocfilehash: 75bc6227cf77d355dcd6b3a4ce1afa9388b32c58
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 96341402cb6f1ca89e7a1602d77adf70e4a69607
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078006"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814215"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>SharePoint Online の最新のサイト ページでページのウエイトを最適化する
 
@@ -76,7 +76,7 @@ SharePoint のサイト ページを SharePoint 用ページ診断ツールを�
 
 [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
 
-[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
 

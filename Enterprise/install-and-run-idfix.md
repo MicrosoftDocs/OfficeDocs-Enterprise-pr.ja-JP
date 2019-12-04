@@ -18,21 +18,22 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Office 365 IdFix ツールをダウンロードして実行し、Active Directory ドメインサービス (AD DS) をクリーンアップしてから Office 365 に同期する方法。
-ms.openlocfilehash: 4a402cf245ebd20fbc5846908d521469ebfb90c1
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490756"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813535"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix ツールをダウンロードして実行する
 
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 IdFix Office 365 と同期する前に、Active Directory ドメインサービス (AD DS) ドメイン内の重複や書式の問題などのエラーを識別します。 
   
 このタスクを正常に完了するには、AD DS 内のユーザー、グループ、および連絡先オブジェクトに慣れている必要があります。
   
-このタスクを完了できない場合は、他にもいくつかの操作を実行できます。 これらのメソッドは簡単になる場合もありますが、時間がかかる場合や他の欠点がある場合もあります。 以下にその例を示します。
+このタスクを完了できない場合は、他にもいくつかの操作を実行できます。 これらのメソッドは簡単になる場合もありますが、時間がかかる場合や他の欠点がある場合もあります。 以下のとおりです。
   
 - **IdFix を実行せずにディレクトリ同期を実行する** 
 
@@ -77,7 +78,7 @@ IdFix を実行するために使用するユーザーアカウントには、AD
     
 3. **Idfix**ウィンドウで、[**抽出**] を選択し、[**すべて抽出**] を選択します。 既定では、IdFix はに`C:\Users\<your user name>\Documents\IdFix`展開されます。 
     
-6. [**抽出**] を選びます。
+6. [**展開**] を選択します。
 
 これらの手順は、Windows Server 2016 を実行しているサーバー上で Internet Explorer を使用して行いました。 異なるバージョンの Windows または別のブラウザーを使用している場合は、手順が異なることがあります。
     

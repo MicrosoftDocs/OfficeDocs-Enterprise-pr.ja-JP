@@ -3,7 +3,7 @@ title: Office 365 向け ExpressRoute でのルーティング
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure ExpressRoute を使用して Office 365 へのルーティングトラフィックを適切に理解するには、コア ExpressRoute ルーティング要件と ExpressRoute 回線およびルーティングドメインをしっかりと理解している必要があります。 これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトしています。
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031582"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813897"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Azure ExpressRoute を使用して Office 365 へのルーティングトラフィックを適切に理解するには、コア[expressroute ルーティング要件](https://azure.microsoft.com/documentation/articles/expressroute-routing/)と[expressroute 回線およびルーティングドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)をしっかりと理解している必要があります。 これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトしています。
   
@@ -73,15 +75,14 @@ Office 365 フロントエンドサーバーは、インターネットと Expre
 
 2) ExpressRoute 回線ごとに別々の NAT IP プールを使用し、インターネット回線とは別のものにします。
 
-3) Microsoft にアドバタイズされたすべてのルートによって、Microsoft のネットワーク内の任意のサーバーからのネットワークトラフィックが提供されることに注意してください。これには、ExpressRoute を介してネットワークにアドバタイズされているルートだけではありません。 ルーティングのシナリオが定義され、チームにとってよく理解されているサーバーにのみルートをアドバタイズします。 ネットワークからの複数の ExpressRoute 回路で、それぞれの IP アドレスルートプレフィックスをアドバタイズします。 
+3) Microsoft にアドバタイズされたすべてのルートによって、Microsoft のネットワーク内の任意のサーバーからのネットワークトラフィックが提供されることに注意してください。これには、ExpressRoute を介してネットワークにアドバタイズされているルートだけではありません。 ルーティングのシナリオが定義され、チームにとってよく理解されているサーバーにのみルートをアドバタイズします。 ネットワークからの複数の ExpressRoute 回路で、それぞれの IP アドレスルートプレフィックスをアドバタイズします。
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>ExpressRoute を経由してルーティングするアプリケーションと機能を決定する
 
 Microsoft ピアリングルーティングドメインを使用してピアリング関係を構成し、適切なアクセスに対して承認されると、ExpressRoute で利用可能なすべての PaaS および SaaS サービスを表示できるようになります。 ExpressRoute 用に設計された Office 365 サービスは、 [BGP コミュニティ](https://aka.ms/bgpexpressroute365)または[ルートフィルター](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)で管理できます。
   
 Office 365 ビデオなどのその他のアプリケーションは、Office 365 アプリケーションです。ただし、Office 365 のビデオは、ポータル、ストリーミングサービス、およびコンテンツ配信ネットワークの3つの異なるコンポーネントで構成されています。 ポータルは SharePoint Online 内に存在し、ストリーミングサービスは Azure メディアサービス内に存在し、コンテンツ配信ネットワークは Azure CDN 内に存在します。 次の表に、これらのコンポーネントの概要を示します。
-  
-| |
+
 |**コンポーネント**|**基になるアプリケーション**|**SharePoint Online BGP コミュニティに含まれていますか?**|**使用法**|
 |:-----|:-----|:-----|:-----|
 |Office 365 のビデオポータル  <br/> |SharePoint Online  <br/> |はい  <br/> |構成、アップロード  <br/> |
@@ -111,7 +112,7 @@ Microsoft ピアリングを使用して利用できる Office 365 の各機能�
 
 |**インターネット回線のみにアドバタイズされたワイルドカードドメイン**|**ExpressRoute およびインターネット回路にアドバタイズされたサブ FQDN**|
 |:-----|:-----|
-|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> 自動検出\<-\>outlook.com  <br/> |

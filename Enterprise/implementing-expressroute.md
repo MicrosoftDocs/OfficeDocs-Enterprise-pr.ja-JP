@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 用 ExpressRoute は、多くのインターネットに接続された Office 365 サービスへの代替ルーティングパスを提供します。 Office 365 用 ExpressRoute のアーキテクチャは、既にインターネット経由でインターネット経由で提供されている Office 365 サービスのアドバタイズに基づいています。これらの IP プレフィックスを以降に再配布するにはネットワーク。 ExpressRoute を使用すると、多くの Office 365 サービスで、インターネットおよび ExpressRoute を介して、いくつかの異なるルーティングパスを効果的に有効にすることができます。 ネットワーク上のルーティングの状態が、内部ネットワークトポロジの設計方法に大きな変化を表すことがあります。
-ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722726"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813485"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 用 ExpressRoute は、多くのインターネットに接続された Office 365 サービスへの代替ルーティングパスを提供します。 Office 365 用 ExpressRoute のアーキテクチャは、既にインターネット経由でインターネット経由で提供されている Office 365 サービスのアドバタイズに基づいています。これらの IP プレフィックスを以降に再配布するにはネットワーク。 ExpressRoute を使用すると、多くの Office 365 サービスで、インターネットおよび ExpressRoute を介して、いくつかの異なるルーティングパスを効果的に有効にすることができます。 ネットワーク上のルーティングの状態が、内部ネットワークトポロジの設計方法に大きな変化を表すことがあります。
   
@@ -89,7 +91,7 @@ Office 365 用 ExpressRoute は、多くのインターネットに接続され�
 
 - 受信ネットワークトラフィックフローは、Microsoft クラウドから社内ホストへの接続が開始されるすべてのシナリオです。 これらの接続は、一般に、外部で送信されるフローに対して顧客のセキュリティポリシーが必要とする、ファイアウォールやその他のセキュリティインフラストラクチャを経由する必要があります。
 
-「Office [365 の expressroute と共に expressroute をルーティング](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)する」の記事の「 **route の対称を保証**する」セクションを読んで、受信トラフィックを送信し、Office 365 で**365 expressroute**としてマークされた列を確認します。 [](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)残りの接続情報を決定するためのエンドポイントの参照記事。
+残りの接続情報を確認するには、「office [365 の expressroute と共に expressroute](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)を送信する」の記事の「 **route の対称を保証**する」セクションを参照してください。この記事では、受信トラフィックを送信し、 **365 expressroute**とマークされた列を[office 365 エンドポイント](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)の参照記事で確認します。
   
 送信接続を必要とするサービスごとに、ネットワークルーティング、プロキシ構成、パケット検査、および帯域幅ニーズを含む、サービスの計画された接続について説明します。
   
@@ -188,7 +190,7 @@ Office 365 用 ExpressRoute は、多くのインターネットに接続され�
 |場所  <br/> |人数  <br/> |インターネット経由での Microsoft ネットワークへの予期される待機時間  <br/> |ExpressRoute での Microsoft ネットワークへの予期される待機時間  <br/> |
 |Los Angeles  <br/> |10,000  <br/> |~ 15ms 秒  <br/> |~ 10ms (シリコンバレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~ 20 ミリ秒  <br/> |~ 10ms (ニューヨーク経由)  <br/> |
-|営業  <br/> |5,000  <br/> |~ 15ms 秒  <br/> |~ 40ms (ニューヨーク経由)  <br/> |
+|営業  <br/> |5,000 人  <br/> |~ 15ms 秒  <br/> |~ 40ms (ニューヨーク経由)  <br/> |
 
 Office 365 地域、ExpressRoute ネットワークサービスプロバイダーの会議の場所、および場所別のユーザーの数量を示すグローバルネットワークアーキテクチャが開発されると、最適化を行うことができるかどうかを特定するために使用できます。 また、会議の場所を取得するためにトラフィックが遠隔地にルーティングされるグローバルヘアピンネットワーク接続を示すこともあります。 グローバルネットワーク上のヘアピンが検出された場合は、続行する前に修復する必要があります。 別の会議の場所を検索するか、選択的なインターネットブレイクアウトを使用してヘアピンを回避します。
   

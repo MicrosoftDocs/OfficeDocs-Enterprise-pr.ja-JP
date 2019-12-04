@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'ワークシートまたはその他の CSV 形式のファイルのリストから、複数のユーザーを Office 365 に追加する方法について説明します。 Office 365 にアカウントを追加する方法を説明する YouTube のビデオを視聴してください。 このプロセスが完了すると、アカウントを持つ各ユーザーに Office 365 メールボックスが割り当てられます。 '
-ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702218"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813495"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同時に複数のユーザーを Office 365 に追加する - 管理者ヘルプ
 
@@ -142,3 +142,10 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 - **Office 365 で新しいユーザーがすぐに表示されない場合は、数分待機してください。** Office 365 のすべてのサービスに変更が加えられるのに少し時間がかかる場合があります。 
     
+## <a name="related-articles"></a>関連記事
+
+[Office 365 にユーザーを個別にまたは一括して追加する](https://docs.microsoft.com/office365/admin/add-users/add-users)
+
+
+
+

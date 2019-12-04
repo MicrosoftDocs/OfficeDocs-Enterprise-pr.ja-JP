@@ -3,6 +3,7 @@ title: Office 365 のディレクトリ同期をセットアップする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,14 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Office 365 とオンプレミスの Active Directory との間のディレクトリ同期をセットアップする方法について説明します。
-ms.openlocfilehash: a51abf7dcca0a9edc4ecf233ea67fdeb80070a70
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702248"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814595"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期をセットアップする
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 では、Azure Active Directory (Azure AD) テナントを使用して、クラウドベースのリソースにアクセスするための id を認証およびアクセス許可用に保存および管理します。 
 
@@ -90,8 +93,8 @@ Azure AD Connect をインストールするオンプレミスのサーバーで
 
 ## <a name="3-finish-setting-up-domains"></a>3. ドメインの設定を終了する
 
-DNS レコードを管理するときに、「 [CREATE dns records For Office 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23) 」の手順に従って、ドメインの設定を完了します。
+DNS レコードを管理するときに、「 [CREATE dns records For Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 」の手順に従って、ドメインの設定を完了します。
 
 ## <a name="next-step"></a>次の手順
 
-[ユーザーアカウントにライセンスを割り当て](assign-licenses-to-user-accounts.md)ます。
+[ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)

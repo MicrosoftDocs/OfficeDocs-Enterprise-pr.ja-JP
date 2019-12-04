@@ -14,12 +14,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。 ナビゲーションの選択と構成は、SharePoint Online のサイトのパフォーマンスと拡張性に大きく影響します。 この記事は、従来のチーム サイトには適用されません。
-ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ce6bde50d35cdddf28fed4ad6c74a9a2da8193af
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078312"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814195"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
@@ -35,19 +35,19 @@ ms.locfileid: "38078312"
 
 既成のナビゲーション プロバイダーに加えて、多くのお客様が代替のカスタム ナビゲーション実装を正常に実装しています。 カスタム ナビゲーション実装の一般的なクラスの 1 つとして、ナビゲーション ノードのローカル キャッシュを格納するクライアント レンダリングによるデザイン パターンがあります。 (この記事の「**[検索型クライアント側スクリプト ](#using-search-driven-client-side-scripting)**」を参照してください。)
 
-これらのナビゲーション プロバイダーには、いくつかの大きな利点があります。 
-- これらのナビゲーション プロバイダーは通常、応答性の高いページ デザインに適しています。
-- リソース コストをかけずにレンダリングできるため、拡張性が高く、高性能です (また、タイムアウト後にバックグラウンドでの更新が可能です)。 
-- これらのナビゲーション プロバイダーは、単純な静的構成からさまざまな動的データ プロバイダーまでを含む、さまざまな方法を使用してナビゲーション データを取得できます。 
+これらのナビゲーション プロバイダーには、いくつかの大きな利点があります。
 
-データ プロバイダーの例として、ナビゲーション ノードの列挙とセキュリティ トリミングの効率的な処理が可能な**検索型ナビゲーション**を使用する方法があります。 
+- これらのナビゲーション プロバイダーは通常、応答性の高いページ デザインに適しています。
+- リソース コストをかけずにレンダリングできるため、拡張性が高く、高性能です (また、タイムアウト後にバックグラウンドでの更新が可能です)。
+- これらのナビゲーション プロバイダーは、単純な静的構成からさまざまな動的データ プロバイダーまでを含む、さまざまな方法を使用してナビゲーション データを取得できます。
+
+データ プロバイダーの例として、ナビゲーション ノードの列挙とセキュリティ トリミングの効率的な処理が可能な**検索型ナビゲーション**を使用する方法があります。
 
 **カスタム ナビゲーション プロバイダー**を構築するための一般的なオプションは他にもあります。 カスタム ナビゲーション プロバイダーを構築する方法に関するより詳細なガイダンスついては、「[SharePoint Online ポータル用のナビゲーション ソリューション](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation)」を参照してください。
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>SharePoint Online ナビゲーション オプションの長所と短所
 
-次の表は、各オプションの長所と短所をまとめたものです。 
-
+次の表は、各オプションの長所と短所をまとめたものです。
 
 |管理ナビゲーション  |構造ナビゲーション  |検索型ナビゲーション  |カスタム ナビゲーション プロバイダー  |
 |---------|---------|---------|---------|
@@ -58,8 +58,7 @@ ms.locfileid: "38078312"
 
 管理ナビゲーション オプションは構成を介して管理でき、コードのカスタマイズ ファイルは必要ないため、構造ナビゲーションよりはるかに高速です。 セキュリ ティトリミングを必要とし、カスタム マスター ページを使用する能力があり、SharePoint Online の既定のマスター ページで発生する変更に対する管理能力が組織にある場合、検索型オプションを使用するとより優れたユーザー エクスペリエンスを構築できる可能性があります。 より複雑な要件がある場合は、カスタム ナビゲーションプロバイダーが適している可能性があります。 構造ナビゲーションは非推奨です。
 
-最後に、SharePoint では、SharePoint ハブ サイトのよりフラットなサイト階層とハブアンドスポーク モデルを活用して、モダンな SharePoint サイト アーキテクチャ用に追加のナビゲーション プロバイダーや機能を追加しています。 これにより、SharePoint 発行機能を必要としないシナリオを多数実現できるようになります。これらのナビゲーション構成は、SharePoint Online 内の拡張性と遅延に合わせて最適化されています。 これと同じ、SharePoint 発行サイトの全体的な構造をよりフラットな構造にして簡素化するという原則を適用した場合、多くの場合、全体的なパフォーマンスと拡張性の向上にも役立ちます。 これは、大量のサイト (サブ Web) を含む単一のサイト コレクションを使用するのではなく、それぞれはごく少数のサブサイト (サブ Web) しか含まないサイト コレクションを多数使用する方が優れたアプローチであることを意味します。
-
+最後に、SharePoint では、SharePoint ハブ サイトのよりフラットなサイト階層とハブアンドスポーク モデルを活用して、モダンな SharePoint サイト アーキテクチャ用に追加のナビゲーション プロバイダーや機能を追加しています。 これにより、SharePoint 発行機能を必要としないシナリオを多数実現できるようになります。これらのナビゲーション構成は、SharePoint Online 内の拡張性と遅延に合わせて最適化されています。 SharePoint 発行サイトの全体的な構造を flatter 構造に簡略化するのと同じ原則を適用することは、全体的なパフォーマンスとスケールにも役立つことに注意してください。 これは、大量のサイト (サブ Web) を含む単一のサイト コレクションを使用するのではなく、それぞれはごく少数のサブサイト (サブ Web) しか含まないサイト コレクションを多数使用する方が優れたアプローチであることを意味します。
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>SharePoint Online で管理ナビゲーションおよび管理されたメタデータを使用する
 
@@ -95,7 +94,7 @@ ms.locfileid: "38078312"
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>SharePoint Online で構造ナビゲーションのパフォーマンスを分析する
 
-SharePoint のページのパフォーマンスを分析するには、Internet Explorer の F12 開発者ツールの [**ネットワーク**] タブを使用します。 
+SharePoint のページのパフォーマンスを分析するには、Internet Explorer の F12 開発者ツールの [**ネットワーク**] タブを使用します。
   
 ![F12 開発者ツールの [ネットワーク] タブを示すスクリーンショット](media/SPONavOptionsNetworks.png)
   
@@ -114,13 +113,13 @@ SharePoint のページのパフォーマンスを分析するには、Internet 
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>例: マスター ページの既成のナビゲーション コードを置き換える
 
-1.  [サイト設定] ページに移動します。
-2.  [**マスター ページ**] をクリックして、マスター ページ ギャラリーを開きます。
-3.  ここから、ライブラリ内を移動してファイル `seattle.master` をダウンロードできます。
-4.  テキスト エディターでコードを編集し、次のスクリーン ショットにあるコード ブロックを削除します。<br/>![示されたコードブロックを削除する](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+1. [サイト設定] ページに移動します。
+2. [**マスター ページ**] をクリックして、マスター ページ ギャラリーを開きます。
+3. ここから、ライブラリ内を移動してファイル `seattle.master` をダウンロードできます。
+4. テキスト エディターでコードを編集し、次のスクリーン ショットにあるコード ブロックを削除します。<br/>![示されたコードブロックを削除する](media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. タグ `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` と `<\SharePoint:AjaxDelta>` の間のコードを削除し、次のスニペットに置き換えます。<br/>
 
-```
+```javascript
 <div id="loading">
   <!--Replace with path to loading image.-->
   <div style="background-image: url(''); height: 22px; width: 22px; ">
@@ -143,15 +142,15 @@ SharePoint のページのパフォーマンスを分析するには、Internet 
                         </span>
                     </span>
                 <!-- /ko -->
-                <!-- ko if: children.length == 0-->   
+                <!-- ko if: children.length == 0-->
                     <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
                         <span class="menu-item-text" data-bind="text: item.Title">
                         </span>
                     </span>
-                <!-- /ko -->   
+                <!-- /ko -->
                 </a>
                
-                <!-- ko if: children.length > 0-->                                                       
+                <!-- ko if: children.length > 0-->
                 <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
                     <li class="dynamic level2">
                         <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
@@ -166,8 +165,8 @@ SharePoint のページのパフォーマンスを分析するには、Internet 
           <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
            <span class="menu-item-text" data-bind="text: item.Title">
            </span>
-          </span>                 
-          <!-- /ko -->   
+          </span>
+          <!-- /ko -->
                         </a>
           <!-- ko if: children.length > 0-->
          <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
@@ -191,13 +190,13 @@ SharePoint のページのパフォーマンスを分析するには、Internet 
 6. 冒頭の読み込みイメージのアンカー タグの URL を、サイト コレクションの読み込みイメージへのリンクに置き換えます。 変更を加えたら、ファイルの名前を変更し、マスター ページ ギャラリーにアップロードします。 これにより、新しい .master ファイルが生成されます。<br/>
 7. この HTML は、JavaScript のコードから返される検索結果によって入力される基本的なマークアップです。 次のスニペットに示すとおり、var root = “site collection URL” の値を変更するためにコードを編集する必要があります。<br/>
 
-```
+```javascript
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
 8. 結果は self.nodes 配列に割り当てられ、linq.js を使用してオブジェクトから階層が構築され、出力が配列 self.hierarchy に割り当てられます。 この配列は、HTML にバインドされているオブジェクトです。 これは、toggleView() 関数でセルフ オブジェクトを ko.applyBindings() 関数に渡すことにより実行されます。<br/>続いて、階層の配列が次の HTML にバインドされます。<br/>
 
-```
+```javascript
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
@@ -209,7 +208,7 @@ var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 
 JavaScript ファイルの全体は次のとおりです。
 
-```
+```javascript
 //Models and Namespaces
 var SPOCustom = SPOCustom || {};
 SPOCustom.Models = SPOCustom.Models || {}
@@ -393,7 +392,7 @@ function NavigationViewModel() {
         }
     };
 
-    // ByHierarchy method breaks the sorting in chrome and firefix 
+    // ByHierarchy method breaks the sorting in chrome and firefox
     // we need to resort  as ascending
     self.sortObjectsInArray2 = function (a, b) {
         if (a.item.Title() > b.item.Title())
@@ -440,7 +439,7 @@ function addEventsToElements() {
     });
 } _spBodyOnLoadFunctionNames.push("InitCustomNav");
 
-``` 
+```
 
 上記の `jQuery $(document).ready` 関数のコードの概要を説明するために `viewModel object` が作成され、次にそのオブジェクトに対する `loadNavigationNodes()` 関数が呼び出されています。 この関数は、クライアント ブラウザーの HTML5 ローカル ストレージに格納されている以前に作成されたナビゲーション階層を読み込むか、`queryRemoteInterface()` 関数を呼び出します。
 
@@ -464,7 +463,7 @@ function addEventsToElements() {
 
 LinqJS の現在のバージョンには、上記のコードで使用されている ByHierarchy メソッドが含まれておらず、ナビゲーション コードが機能しなくなります。 これを解決するには、Linq.js ファイルの `Flatten: function ()` の行の前に次のメソッドを追加します。
 
-```
+```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
      ascending = ascending == undefined ? true : ascending;
      var orderMethod = ascending == true ? 'OrderBy' : 'OrderByDescending';
@@ -530,4 +529,3 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 ## <a name="related-topics"></a>関連項目
 
 [SharePoint Server の管理ナビゲーションの概要](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
-

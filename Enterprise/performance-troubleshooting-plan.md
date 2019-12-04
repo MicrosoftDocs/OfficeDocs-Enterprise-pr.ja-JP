@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: SharePoint Online、OneDrive for Business、Exchange Online、または Skype for Business Online とクライアントコンピューターの間で、遅延、ハング、および低速のパフォーマンスを識別して修正するための手順を把握しておく必要がありますか。 サポートに連絡する前に、この記事は Office 365 のパフォーマンスの問題をトラブルシューティングしたり、最も一般的な問題のいくつかを修正したりするのに役立ちます。
-ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031132"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814625"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 のパフォーマンス トラブルシューティング計画
 
@@ -139,7 +139,7 @@ HTTPWatch はブラウザープラグインなので、このツールをブラ�
 
 3. 手順を完了したら、[**レコードの停止**] をクリックします。 パフォーマンスの問題がページレンダリングの場合は、ページがレンダリングされるまで待機してから、録音を停止します。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 ![手順記録ツールまたは PSR .exe のスクリーンショット。](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   
@@ -250,7 +250,7 @@ Netmon で、ラウンドトリップの [時間オフセット] フィールド
 
 Office 365 用の帯域幅計算機は[、このネットワーク計画とパフォーマンスチューニングの office 365](network-planning-and-performance.md)ページから入手できます。  
 
-接続の速度、または ISP 接続の帯域幅を測定する必要があるかどうか。 このサイト (またはその他のサイト): [Speedtest オフィシャルサイト](https://www.speedtest.net/)および[ping test](https://www.pingtest.net/)を試してみてください。
+接続の速度、または ISP 接続の帯域幅を測定する必要があるかどうか。 このサイト (またはその他のサイト): [Speedtest オフィシャルサイト](https://www.speedtest.net/)であるか、または、好きな検索エンジンで語句**速度テスト**のためにクエリを実行します。
 
 #### <a name="tools"></a>ツール
 

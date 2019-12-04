@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
-ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032122"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814635"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
   

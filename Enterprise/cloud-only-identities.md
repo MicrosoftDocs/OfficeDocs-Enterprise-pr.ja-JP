@@ -3,6 +3,7 @@ title: Office 365 のクラウド専用の id
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Office 365 サブスクリプションがクラウド専用の id を使用している場合に、ユーザーとグループを作成する方法について説明します。
-ms.openlocfilehash: 7a2aaf7705378da3cbd91b415f07d10b6e039293
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34164612"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813415"
 ---
 # <a name="office-365-cloud-only-identities"></a>Office 365 のクラウド専用の id
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 クラウド専用の id を使用すると、すべてのユーザー、グループ、および連絡先が Office 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに格納されます。 ここでは、クラウド専用の id の基本的なコンポーネントを示します。
  

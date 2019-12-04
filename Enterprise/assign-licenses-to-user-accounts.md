@@ -3,6 +3,7 @@ title: ユーザーアカウントに Office 365 ライセンスを割り当て�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ユーザーアカウントに Office 365 ライセンスを個別に、またはグループメンバーシップに基づいて割り当てる方法について説明します。
-ms.openlocfilehash: bc736236f9371ee1372fd36af4a707aca2ee1408
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745710"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813385"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>ユーザーアカウントに Office 365 ライセンスを割り当てる
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 クラウド専用の id モデルでは、作成方法に応じて、ユーザーアカウントの作成時に Office 365 ライセンスをユーザーアカウントに割り当てることができます。
 
@@ -55,5 +56,5 @@ Office 365 ライセンスを個々のユーザーアカウントに割り当て
 
 - [セキュリティを実装する](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Office 365 ProPlus などのクライアントソフトウェアを展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-- [モバイルデバイス管理を構成する](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Office 365 でモバイルデバイス管理をセットアップする](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [サービスとアプリケーションを構成する](configure-services-and-applications.md)

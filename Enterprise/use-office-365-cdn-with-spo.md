@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: eedbbbf143890e336ae16f80a135f611b9e65f26
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077956"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813515"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -385,7 +385,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイトコレクションのプライベートオリジンを構成する
 
-**Add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 例:
+**Add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 次に例を示します。
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -447,7 +447,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 <a name="CDNSetupinCLI"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-using-the-office-365-cli"></a>Office 365 CLI を使用して Office 365 CDN をセットアップおよび構成する
 
-このセクションの手順では、 [Office 365 CLI](https://aka.ms/o365cli)がインストールされている必要があります。 次に、[spo connect](https://pnp.github.io/office365-cli/cmd/spo/connect/) コマンドを使用してご利用の SharePoint Online テナントに接続します。
+このセクションの手順では、 [Office 365 CLI](https://aka.ms/o365cli)がインストールされている必要があります。 次に、[ログイン](https://pnp.github.io/office365-cli/cmd/login/)コマンドを使用して Office 365 テナントに接続します。
 
 Office 365 CLI を使用して SharePoint Online でアセットをホストする CDN を設定および構成するには、次の手順を実行します。
 
@@ -658,7 +658,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN のプライベートオリジンにあるアセットへのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 送信元によって指定されたフォルダーまたはライブラリへのアクセス許可を持っているユーザーには、アクセス許可レベルに基づいてファイルへのアクセスをユーザーに許可するトークンが自動的に与えられます。 これらのアクセストークンは、トークンリプレイ攻撃を防ぐために生成されてから90分以内に有効になります。
 
-アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 例:
+アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 次に例を示します。
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -671,7 +671,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online では、プライベートな出所のアセットに対してアイテムレベルのアクセス許可がサポートされていないことに注意してください。 たとえば、に`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`あるファイルの場合、次の条件に該当するファイルへのアクセスが有効になります。
 
-|ユーザー  |アクセス許可  |有効なアクセス  |
+|User  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー1     |Folder1 へのアクセス権         |CDN から image1 にアクセスできる         |
 |ユーザー 2     |Folder1 へのアクセス権がありません。         |CDN から image1 にアクセスできません         |
