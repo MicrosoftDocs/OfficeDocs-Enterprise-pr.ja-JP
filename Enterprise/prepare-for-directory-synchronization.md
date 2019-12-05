@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Office 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814185"
+ms.locfileid: "39825189"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365 へのディレクトリ同期の準備
 
@@ -57,10 +57,7 @@ AD DS を Azure AD テナントと同期する前に、AD DS をクリーンア�
 AD DS で、Office 365 ライセンスが割り当てられる各ユーザーアカウントに対して次のクリーンアップタスクを実行します。
   
 1. **ProxyAddresses**属性に、有効な一意の電子メールアドレスを指定します。 
-
-  >[!Note]
-  >電子メールアドレスのチルダ (~) 文字は無視されます。 これにより、重複する proxyAddresses に関するディレクトリ同期エラーが誤検知される可能性があります。
-    
+  
 2. **ProxyAddresses**属性の重複する値を削除します。 
     
 3.  可能であれば、ユーザーの**ユーザー**オブジェクトの**userPrincipalName**属性の有効な一意の値を確認してください。 最適な同期処理を行うには、AD DS UPN が Azure AD UPN に一致していることを確認してください。 ユーザーが**userPrincipalName**属性の値を持っていない場合は、**ユーザー**オブジェクトに**sAMAccountName**属性の有効な一意の値が含まれている必要があります。 **UserPrincipalName**属性の重複する値を削除します。 
