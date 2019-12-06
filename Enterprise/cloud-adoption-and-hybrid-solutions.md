@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029181"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39857985"
 ---
 <h1>Enterprise Cloud ソリューション</h1>
 <p>Microsoft Cloud を使用してビジネス上の問題を解決します。最新のハイブリッド ソリューションとセキュリティ クラウド ソリューション、クラウドの導入などに関する情報を見つけます。</p>
@@ -123,9 +123,5 @@ ms.locfileid: "38029181"
 
 ---
 
-<h2>お問い合わせ</h2>
-<ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">どのようなクラウド導入のコンテンツが必要ですか?</a><br>複数の Microsoft クラウド プラットフォームおよびサービスにまたがるクラウド導入のコンテンツを作成しています。クラウド導入のコンテンツについてのご意見や特定のコンテンツの依頼は、cloudadopt@microsoft.com 宛に電子メールをお送りください。</li><br>
-    <li><a href="https://aka.ms/caab">クラウド導入のディスカッションに参加する</a><br>クラウドベースのソリューションに関して強い関心をお持ちの場合は、Cloud Adoption Advisory Board (CAAB) に参加して、Microsoft コンテンツの開発者、業界の専門家、世界中のお客様の大規模で活気に満ちたコミュニティにする参加することをご検討ください。参加するには、Microsoft Tech Community の CAAB (Cloud Adoption Advisory Board) スペースのメンバーに加わり、<a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a> 宛に電子メールを送信してください。CAAB <a href="https://blogs.technet.com/b/solutions_advisory_board/">ブログ</a>のコミュニティ関連のコンテンツはだれでも読むことができますが、CAAB のメンバーになると、新しいクラウド導入のリソースやソリューションについての非公開 Web セミナーへの招待が送られます。</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">記載されているアートの取得方法</a><br>この記事にあるアートの編集可能なコピーが必要な方には、喜んでお送りします。アートの URL とタイトルを記載したリクエストを電子メールで cloudadopt@microsoft.com 宛に送信してください</li>
-</ul>
+
+
