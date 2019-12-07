@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使ってユーザー アカウントとライ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/06/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,40 +13,40 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 概要:Office 365 PowerShell を使用してユーザー アカウントとライセンスを管理する方法について説明します。
-ms.openlocfilehash: 333a9501d3dfcd2f9f254a7b58e9f8589b68f9cb
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+description: '概要: Office 365 PowerShell を使用して、ユーザーアカウント、ライセンス、およびグループを管理する方法について説明します。'
+ms.openlocfilehash: ebc3038cf244c651ebbf98c10bb7992268d8f5dd
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748455"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886456"
 ---
-# <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a><span data-ttu-id="51ff1-103">Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。</span><span class="sxs-lookup"><span data-stu-id="51ff1-103">Manage user accounts and licenses with Office 365 PowerShell</span></span>
+# <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a><span data-ttu-id="f74dc-103">Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する</span><span class="sxs-lookup"><span data-stu-id="f74dc-103">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="51ff1-104">Office 365 管理者の主要なタスクの 1 つは、ユーザー アカウントとライセンスの管理です。</span><span class="sxs-lookup"><span data-stu-id="51ff1-104">One of the primary tasks of any Office 365 administrator is managing user accounts and licenses.</span></span> <span data-ttu-id="51ff1-105">Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell の方がより早く簡単に実行できます。</span><span class="sxs-lookup"><span data-stu-id="51ff1-105">Although you can accomplish some of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier with Office 365 PowerShell.</span></span> <span data-ttu-id="51ff1-106">詳細については、次のトピックをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="51ff1-106">For more information, see the following topics:</span></span>
-  
-- [<span data-ttu-id="51ff1-107">Office 365 PowerShell でライセンスとサービスを確認する</span><span class="sxs-lookup"><span data-stu-id="51ff1-107">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-108">ライセンスのあるユーザーとライセンスのないユーザーを Office 365 PowerShell で表示する</span><span class="sxs-lookup"><span data-stu-id="51ff1-108">View licensed and unlicensed users with Office 365 PowerShell</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-109">Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる</span><span class="sxs-lookup"><span data-stu-id="51ff1-109">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-110">Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="51ff1-110">View account license and service details with Office 365 PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-111">Office 365 PowerShell でロールをユーザー アカウントに割り当てる</span><span class="sxs-lookup"><span data-stu-id="51ff1-111">Assign roles to user accounts with Office 365 PowerShell</span></span>](assign-roles-to-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-112">Office 365 PowerShell を使ったサービスへのアクセスを無効にする</span><span class="sxs-lookup"><span data-stu-id="51ff1-112">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-113">Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する</span><span class="sxs-lookup"><span data-stu-id="51ff1-113">Remove licenses from user accounts with Office 365 PowerShell</span></span>](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-114">Office 365 PowerShell でユーザー アカウントをブロックする</span><span class="sxs-lookup"><span data-stu-id="51ff1-114">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-115">Office 365 PowerShell を使用したユーザー アカウントの削除と復元</span><span class="sxs-lookup"><span data-stu-id="51ff1-115">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-116">Office 365 PowerShell を使用してユーザー アカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="51ff1-116">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-117">Office 365 PowerShell でユーザー アカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="51ff1-117">View user accounts with Office 365 PowerShell</span></span>](view-user-accounts-with-office-365-powershell.md)
-    
-- [<span data-ttu-id="51ff1-118">Office 365 PowerShell でユーザー アカウント プロパティを構成する</span><span class="sxs-lookup"><span data-stu-id="51ff1-118">Configure user account properties with Office 365 PowerShell</span></span>](configure-user-account-properties-with-office-365-powershell.md)
-    
+<span data-ttu-id="f74dc-104">Office 365 管理者の主なタスクの1つは、ユーザーアカウント、ライセンス、グループを管理することです。</span><span class="sxs-lookup"><span data-stu-id="f74dc-104">One of the primary tasks of any Office 365 administrator is managing user accounts, licenses, and group.</span></span> <span data-ttu-id="f74dc-105">これらのタスクのほとんどの側面は、Microsoft 365 管理センターでも実行できますが、Office 365 PowerShell では、他のタスクがずっと速く、簡単になります。</span><span class="sxs-lookup"><span data-stu-id="f74dc-105">Although you can accomplish most aspects of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier with Office 365 PowerShell.</span></span> 
+
+<span data-ttu-id="f74dc-106">詳細については、以下のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f74dc-106">For more information, see these topics.</span></span>
+
+## <a name="user-accounts"></a><span data-ttu-id="f74dc-107">ユーザー アカウント</span><span class="sxs-lookup"><span data-stu-id="f74dc-107">User accounts</span></span>
+
+- [<span data-ttu-id="f74dc-108">ユーザー アカウントの作成</span><span class="sxs-lookup"><span data-stu-id="f74dc-108">Create user accounts</span></span>](create-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-109">ユーザー アカウントを表示する</span><span class="sxs-lookup"><span data-stu-id="f74dc-109">View user accounts</span></span>](view-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-110">ユーザー アカウントのプロパティを構成する</span><span class="sxs-lookup"><span data-stu-id="f74dc-110">Configure user account properties</span></span>](configure-user-account-properties-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-111">ユーザー アカウントにロールを割り当てる</span><span class="sxs-lookup"><span data-stu-id="f74dc-111">Assign roles to user accounts</span></span>](assign-roles-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-112">ユーザー アカウントを削除および復元する</span><span class="sxs-lookup"><span data-stu-id="f74dc-112">Delete and restore user accounts</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-113">ユーザー アカウントをブロックする</span><span class="sxs-lookup"><span data-stu-id="f74dc-113">Block user accounts</span></span>](block-user-accounts-with-office-365-powershell.md)
+
+## <a name="licenses-and-services"></a><span data-ttu-id="f74dc-114">ライセンスとサービス</span><span class="sxs-lookup"><span data-stu-id="f74dc-114">Licenses and services</span></span>
+- [<span data-ttu-id="f74dc-115">ライセンスおよびサービスを確認する</span><span class="sxs-lookup"><span data-stu-id="f74dc-115">View licenses and services</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-116">ライセンスのあるユーザーとライセンスのないユーザーを表示する</span><span class="sxs-lookup"><span data-stu-id="f74dc-116">View licensed and unlicensed users</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-117">ユーザー アカウントにライセンスを割り当てる</span><span class="sxs-lookup"><span data-stu-id="f74dc-117">Assign licenses to user accounts</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-118">アカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="f74dc-118">View account license and service details</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-119">サービスへのアクセスを無効にする</span><span class="sxs-lookup"><span data-stu-id="f74dc-119">Disable access to services</span></span>](disable-access-to-services-with-office-365-powershell.md)
+  - [<span data-ttu-id="f74dc-120">Sway へのアクセスを無効にする</span><span class="sxs-lookup"><span data-stu-id="f74dc-120">Disable access to Sway</span></span>](disable-access-to-sway-with-office-365-powershell.md)
+  - [<span data-ttu-id="f74dc-121">ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする</span><span class="sxs-lookup"><span data-stu-id="f74dc-121">Disable access to services while assigning user licenses</span></span>](disable-access-to-services-while-assigning-user-licenses.md)
+- [<span data-ttu-id="f74dc-122">ユーザー アカウントからライセンスを削除する</span><span class="sxs-lookup"><span data-stu-id="f74dc-122">Remove licenses from user accounts</span></span>](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+
+## <a name="groups"></a><span data-ttu-id="f74dc-123">グループ</span><span class="sxs-lookup"><span data-stu-id="f74dc-123">Groups</span></span>
+- [<span data-ttu-id="f74dc-124">グループメンバーシップの管理</span><span class="sxs-lookup"><span data-stu-id="f74dc-124">Maintain group membership</span></span>](maintain-group-membership-with-office-365-powershell.md)
+- [<span data-ttu-id="f74dc-125">Office 365 グループを管理する</span><span class="sxs-lookup"><span data-stu-id="f74dc-125">Manage Office 365 groups</span></span>](manage-office-365-groups-with-powershell.md)
 
