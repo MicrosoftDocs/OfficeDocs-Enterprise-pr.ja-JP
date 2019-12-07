@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: ゲストユーザーとの共同作業用に Office 365 を構成する方法について説明します。
-ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 1af8a1c810047e4f91b0bda31934742884f6645e
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076181"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886446"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -26,7 +26,7 @@ Microsoft 365 では、既定で、ゲスト共有は SharePoint と OneDrive �
 
 ## <a name="see-also"></a>関連項目
 
-[匿名ユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
+[認証されていないユーザーとファイルやフォルダーを共有するためのベストプラクティス](best-practices-anonymous-sharing.md)
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 
