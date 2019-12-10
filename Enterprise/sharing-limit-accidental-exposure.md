@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: ゲストとファイルを共有するときに情報が偶発的に公開されることを防止する方法を説明します。
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108355"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886476"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>ゲストと共有するときにファイルの偶発的な公開を制限する
 
@@ -21,13 +21,13 @@ ms.locfileid: "37108355"
 
 ## <a name="use-best-practices-for-anyone-links"></a>[すべてのユーザー] リンクのベスト プラクティスを使用する
 
-組織内のユーザーが匿名共有を行う必要があるが、認証されていないゲストがコンテンツを変更することを懸念している場合は、組織で匿名共有を行う方法のガイダンスについて、「[匿名共有のベスト プラクティス](best-practices-anonymous-sharing.md)」を参照してください。
+組織内のユーザーが認証されていない共有を行う必要があるが、認証されていないゲストがコンテンツを変更することを懸念している場合は、組織で認証されていない共有を行う方法のガイダンスについて、「[認証されていない共有のベスト プラクティス](best-practices-anonymous-sharing.md)」を参照してください。
 
 ## <a name="turn-off-anyone-links"></a>[すべてのユーザー] リンクをオフにする
 
 適切なコンテンツに対して [*すべてのユーザー*] リンクを有効にしておくことをお勧めします。これは、共有の最も簡単な方法であり、ユーザーが IT 部門の管理外にある他のソリューションを求めるリスクを軽減できるためです。 [*すべてのユーザー*] リンクを他の人に転送できますが、リンクを持っているユーザーのみファイルへアクセスできます。
 
-SharePoint、グループ、または Teams のコンテンツにアクセスするとき、ゲストに常に認証を要求する場合、[*すべてのユーザー*] 共有をオフにできます。 これにより、ユーザーは匿名でコンテンツを共有できなくなります。
+SharePoint、グループ、または Teams のコンテンツにアクセスするとき、ゲストに常に認証を要求する場合、[*すべてのユーザー*] 共有をオフにできます。 これにより、ユーザーは認証されていないコンテンツを共有することができなくなります。
 
 [*すべてのユーザー*] リンクを無効にしても、ユーザーは [*特定のユーザー*] リンクを使用してゲストと簡単に共有できます。 この場合、すべてのゲストは、共有コンテンツにアクセスする前に認証を受ける必要があります。
 

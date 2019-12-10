@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成する方法について説明します。
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077710"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886516"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -308,7 +308,7 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 12. [カスタム通知メッセージ] に「*極秘ファイル。会社のポリシーによりゲストとの共有禁止*」と入力します。
 13. **[作成]** をクリックします。
 
-重要な点として、このポリシーが削除するのは *[特定のユーザー]* リンクを使用して共有されているファイルに対するアクセスです。 匿名 (*すべてのユーザー*) リンクからのアクセスは削除されません。 また、ゲストがサイトやチーム全体のメンバーである場合も、アクセスは削除されません。 ゲスト メンバーのいるサイトやチームに極秘ドキュメントを作成する場合は、[チーム内の非公開チャネル](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)を使用して、その非公開チャネル内でお客様の組織のメンバーのみに許可することを検討してください。
+重要な点として、このポリシーが削除するのは *[特定のユーザー]* リンクを使用して共有されているファイルに対するアクセスです。 認証されていない (*すべてのユーザー*) リンクからのアクセスは削除されません。 また、ゲストがサイトやチーム全体のメンバーである場合も、アクセスは削除されません。 ゲスト メンバーのいるサイトやチームに極秘ドキュメントを作成する場合は、[チーム内の非公開チャネル](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)を使用して、その非公開チャネル内でお客様の組織のメンバーのみに許可することを検討してください。
 
 ## <a name="test-the-solution"></a>ソリューションをテストする
 
@@ -322,4 +322,4 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 
-[匿名ユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
+[認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
