@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886486"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919260"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -67,7 +67,7 @@ Office 365 グループのゲスト設定を設定するには
 
 組織レベルの設定によって、個々のサイトで使用可能な設定が決まります。 サイトの設定は、組織レベルの設定よりも制限することはできません。
 
-認証されていないファイルとフォルダーの共有を許可する場合は、[**すべてのユーザー**] を選択します。 すべてのゲストが認証を必要とするようにするには、[**新規および既存のゲスト**] を選択します。 組織内のすべてのサイトで必要とされる最も厳しい設定を選択します。
+認証されていないファイルとフォルダーの共有を許可する場合は、[**すべてのユーザー**] を選択します。 組織外のすべてのユーザーが認証を受けることができるようにするには、[**新規および既存のゲスト**] を選択します。 組織内のすべてのサイトで必要とされる最も厳しい設定を選択します。
 
 ![SharePoint 組織レベルの共有設定のスクリーンショット](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -129,7 +129,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 ## <a name="see-also"></a>関連項目
 
-[認証されていないユーザーとファイルやフォルダーを共有するためのベストプラクティス](best-practices-anonymous-sharing.md)
+[認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 

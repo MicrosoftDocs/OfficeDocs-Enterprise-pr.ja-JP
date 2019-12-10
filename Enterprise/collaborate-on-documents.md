@@ -9,16 +9,16 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: SharePoint および OneDrive のドキュメントでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: f2cecb086116e5ea3322a0fd87e5f07f5c30443c
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886496"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919351"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
-SharePoint または OneDrive のドキュメントでゲストと共同作業を行う必要がある場合は、ドキュメントへの共有リンクを送信することができます。 この記事では、組織のニーズに合わせて SharePoint と OneDrive の共有リンクを設定するために必要な、Microsoft 365 の構成手順について説明します。
+SharePoint または OneDrive のドキュメントで組織外のユーザーと共同作業を行う必要がある場合は、ドキュメントへの共有リンクを送信することができます。 この記事では、組織のニーズに合わせて SharePoint と OneDrive の共有リンクを設定するために必要な、Microsoft 365 の構成手順について説明します。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -47,11 +47,11 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織レベルの共有設定
 
-ゲストが SharePoint または OneDrive のドキュメントにアクセスできるようにするには、SharePoint および OneDrive の組織レベルの共有設定でゲストとの共有が許可されている必要があります。
+組織外のユーザーが SharePoint または OneDrive のドキュメントにアクセスできるようにするには、SharePoint および OneDrive の組織レベルでの共有設定で、組織外のユーザーとの共有が許可されている必要があります。
 
 SharePoint の組織レベルの設定により、個々の SharePoint サイトで使用できる設定が決定されます。 サイトの設定は、組織レベルの設定よりも制限することはできません。 OneDrive の組織レベルの設定により、ユーザーの OneDrive ライブラリで利用可能な共有のレベルが決定されます。
 
-SharePoint と OneDrive の場合は、認証されていないファイルとフォルダーの共有を許可する場合は、[**すべて**] を選択します。 すべてのゲストが認証を必要とするようにするには、[**新規および既存のゲスト**] を選択します。 *[すべてのユーザー]* リンクは、最も簡単な共有方法です。ゲストは認証なしでリンクを開くことができ、そのリンクを他のユーザーに自由に渡すことができます。
+SharePoint と OneDrive の場合は、認証されていないファイルとフォルダーの共有を許可する場合は、[**すべて**] を選択します。 組織外のユーザーが認証を必要とするようにするには、[**新規および既存のゲスト**] を選択します。 *すべて*のリンクが最も簡単に共有できます。組織外のユーザーは、認証なしでリンクを開くことができ、他のユーザーに渡すことができます。
 
 SharePoint の場合は、組織内のすべてのサイトで必要とされる最も寛容な設定を選択します。
 
@@ -101,10 +101,10 @@ SharePoint サイトにあるファイルや dler を共有している場合は
 
 ## <a name="invite-users"></a>ユーザーを招待する
 
-ゲスト共有の設定が構成されるようになったため、ユーザーはゲストでファイルやフォルダーを共有できるようになりました。 詳細については、「 [OneDrive ファイルとフォルダーを共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)する」および「 [SharePoint ファイルまたはフォルダーを共有](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。
+ゲスト共有の設定が構成されるようになったため、ユーザーが組織外のユーザーとファイルやフォルダーを共有できるようになりました。 詳細については、「 [OneDrive ファイルとフォルダーを共有](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)する」および「 [SharePoint ファイルまたはフォルダーを共有](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[認証されていないユーザーとファイルやフォルダーを共有するためのベストプラクティス](best-practices-anonymous-sharing.md)
+[認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
