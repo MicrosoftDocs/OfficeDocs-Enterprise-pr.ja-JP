@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 で使用できるゲストの共有設定について説明します。
-ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076401"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919381"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
-この記事では、Microsoft 365 のワークロードについて、Teams、Office 365 グループ、SharePoint、OneDrive のゲスト共有に影響を与える可能性のあるさまざまな設定について説明します。 これらの設定は、Azure Active Directory、Microsoft 365、Teams、および SharePoint 管理センターにあります。
+この記事では、Microsoft 365 のワークロードについて、Teams、Office 365 グループ、SharePoint、OneDrive の組織外のユーザーとの共有に影響を与える可能性のあるさまざまな設定について説明します。 これらの設定は、Azure Active Directory、Microsoft 365、Teams、および SharePoint 管理センターにあります。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
