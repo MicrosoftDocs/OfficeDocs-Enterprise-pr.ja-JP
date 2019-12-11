@@ -3,7 +3,7 @@ title: データの移行中および移行後
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250503"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959282"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -30,7 +30,7 @@ ms.locfileid: "39250503"
 Exchange Online、SharePoint Online、Skype for Business の移動が完了したら、Office 365 メッセージ センターを参照して確認してください。次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。移動後、テナントに問題がある場合は、「[Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)」にお問い合わせください。 
   
 
-|**請求先住所のお客様**|**完了したすべての移動**|
+|**国がサインアップしているお客様**|**完了したすべての移動**|
 |:-----|:-----|
 |オーストラリア、ニュージーランド、フィジー  <br/> |2017 年 10 月 31 日  <br/> |
 |日本  <br/> |2018 年 10 月 31 日  <br/> |
@@ -41,6 +41,8 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |フランス  <br/> |2020 年 9 月 15 日  <br/> |
 |アラブ首長国連邦  <br/> |2022年2月1日  <br/> |
 |南アフリカ  <br/> |2022年2月1日  <br/> |
+|スイス、リヒテンシュタイン  <br/> |2022年7月1日  <br/> |
+|ドイツ  <br/> |計画  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 

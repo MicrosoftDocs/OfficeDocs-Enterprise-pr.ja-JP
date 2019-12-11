@@ -3,7 +3,7 @@ title: データ移行をリクエストする方法
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756596"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962464"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -28,7 +28,7 @@ ms.locfileid: "38756596"
   
 ## <a name="when-can-i-request-a-move"></a>いつ移行をリクエストできますか?
 
-|**請求先住所のお客様**|**リクエスト期間の開始**|**リクエストの期限**|
+|**国がサインアップしているお客様**|**リクエスト期間の開始**|**リクエストの期限**|
 |:-----|:-----|:-----|
 |日本  <br/> |2016 年 8 月 1 日  <br/> |2016 年 10 月 31 日  <br/> |
 |オーストラリア、ニュージーランド、フィジー  <br/> |2016 年 8 月 1 日  <br/> |2016 年 10 月 31 日  <br/> |
@@ -38,11 +38,13 @@ ms.locfileid: "38756596"
 |韓国  <br/> |2017 年 5 月 1 日  <br/> |2017 年 10 月 31 日  <br/> |
 |フランス  <br/> |2018 年 3 月 14 日  <br/> |2018 年 9 月 15 日  <br/> |
 |アラブ首長国連邦  <br/> |2019 年 7 月 15 日  <br/> |2020年1月31日  <br/> |
-|南アフリカ  <br/> |2019年7月25日  <br/> |2020年1月31日  <br/> |
+|南アフリカ  <br/> |2019 年 7 月 25 日  <br/> |2020年1月31日  <br/> |
+|スイス、リヒテンシュタイン  <br/> |2019年12月10日  <br/> |2020年6月30日  <br/> |
+|ドイツ  <br/> |計画  <br/> |計画  <br/> |
    
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
 
-対象となるお客様には、[管理センター](https://aka.ms/365admin)にページが表示されます。これにより、自社のコア顧客データを新しいデータセンターリージョンに移行することを要求することができます。  
+対象となるお客様には、 [Microsoft 365 管理センター](https://aka.ms/365admin)にページが表示されます。これにより、お客様は自社のコア顧客データを新しいデータセンターリージョンに移動するよう要求できます。  
   
 Microsoft 365 管理センターのページにアクセスするには、左側のナビゲーションウィンドウで [**設定**] を展開し、[**組織プロファイル**] をクリックします。
   

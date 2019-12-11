@@ -3,6 +3,7 @@ title: Office 365 PowerShell のコミュニティ リソース
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/06/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -11,26 +12,20 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 概要:これらのコミュニティから Office 365 PowerShell のヘルプを得られます。
-ms.openlocfilehash: f4bb2fe6321921b5f345630460ae7b388d40d896
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: baff3cbb05999810039ff257e106c0862684c0cf
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748445"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962474"
 ---
 # <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell のコミュニティ リソース
 
-これらのコミュニティフォーラムと Wiki を使用して、同僚との接続を取得し、Office 365 PowerShell に関する質問をすばやく正確に回答できるようにします。 
+これらのコミュニティを使用して、同僚との接続を取得し、Office 365 PowerShell に関する質問をすばやく正確に回答します。 
   
-- [Office 365 技術コミュニティにアクセスする](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Office 365 Microsoft 技術コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [Office 365 technical community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
-    
-- [Exchange TechCenter コミュニティ フォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
-    
-- [Office ブログ](https://blogs.office.com/)
-    
-- [Office 365 Wiki の管理](https://community.office365.com/w/manage/default.aspx)
+- [Exchange Server TechNet コミュニティフォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>関連項目
 

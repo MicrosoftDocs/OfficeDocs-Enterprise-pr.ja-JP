@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: この記事では、SharePoint Online でのポータルの起動を計画する方法と、正常に起動するために必要な手順について説明します。
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919129"
+ms.locfileid: "39959121"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online でポータルの起動ロールアウトプランを計画する
+
 ポータルとは、サイトのコンテンツを使用する多数のサイトビューアーを持つ、イントラネット上の SharePoint サイトのことです。 大規模な組織では、次のようなものがいくつかあります。たとえば、会社のポータルや人事ポータルなどです。 通常、ポータルには、サイトとそのコンテンツを作成して作成するユーザーが比較的少数しかありません。 ポータルへのほとんどの訪問者は、コンテンツの読み取りと利用のみを行います。
 
 この記事では、SharePoint Online への展開とロールアウト計画を計画する方法について説明します。 また、SharePoint Online で従来のロードテストが許可されていない場合の対処方法についても説明します。 SharePoint Online はクラウドサービスであり、サービスの負荷の負荷と状態のバランスと全体的なバランスが Microsoft によって管理されます。
