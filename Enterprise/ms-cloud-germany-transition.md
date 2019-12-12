@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 5b339ab36ad613078bbfcd705f42ceb3703585e9
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 95edbeeb79549957ff49afa8b8a96160945b0f20
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920271"
+ms.locfileid: "39962444"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行
 
@@ -43,7 +43,7 @@ ms.locfileid: "39920271"
 
 Microsoft 主導のアプローチにオプトインした組織の場合、2020 年に移行が行われる予定です。 移行の結果、主要な顧客データおよびサブスクリプションは新しいドイツ リージョンへと移動します。 
 
-サブスクリプションの移行が完了すると、パブリック クラウドの価格を反映して価格が低下することに注意してください。 直接のお客様は新しいサブスクリプションが新規で 12 か月の期間に延長され、移行の完了日が新しい年次更新日となります。 以下のサービスは、Microsoft 主導のアプローチの一部として移行されます。
+以下のサービスは、Microsoft 主導のアプローチの一部として移行されます。
 
 - Azure Active Directory
 - Exchange Online
@@ -52,12 +52,12 @@ Microsoft 主導のアプローチにオプトインした組織の場合、2020
 - OneDrive for Business
 - Skype for Business Online
 
-  Microsoft Cloud Germany からドイツ リージョンへの移行の一環として、既存の Skype for Business Online の顧客は Microsoft Teams へと移行されます。 詳細については、「[https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home)」を参照してください。
+Microsoft Cloud Germanyからドイツのデータセンター リージョンへの移行中に、既存の Skype for Business Online の顧客は Microsoft Teams へと移行されます。 詳細情報については、「[Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)」を参照してください。
 
 - Office 365 グループ
 - Dynamics 365 / Power Platform
 
-  これらのサービスの移行に関する前提条件および影響については、「[Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn)」の記事で説明しています。
+これらのサービスの移行に関する前提条件および影響については、「[Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn)」の記事で説明しています。
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター リージョンでの Office 365 サービスへの移行を準備する方法
 
@@ -65,13 +65,13 @@ Microsoft 主導のアプローチにオプトインした組織の場合、2020
 
 - 移行するすべてのお客様は、新しいドイツのデータセンター リージョンを含む世界中の [Office 365 URL および IP アドレス](urls-and-ip-address-ranges.md)への接続を確認する必要があります。
 - Office 365 プラットフォームのサービス説明を確認して、ドイツ リージョンへの移行完了後に組織で利用できる機能とサービスを理解してください。 
-- 移行により、有料サブスクリプションが移行されます。
+- 移行により、有料サブスクリプションが移行されます。  試用版サブスクリプションを移行することはできません。
 
 テナントの移行は、最小限の顧客の操作でバックエンド サービスの操作として実行されます。  追加の顧客主導タスクおよび全体的な移行状況は、移行プロセス中にメッセージ センター経由で通知されます。  タスクの例には、顧客管理の DNS 更新や、Exchange ハイブリッドの顧客向けハイブリッド セットアップの再構成が含まれる場合があります。
 
 ## <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター リージョンの Office 365 サービスへの移行中のカスタマー エクスペリエンス
 
-テナントの移行はバックエンド サービスの操作として実行され、エンド カスタマーへの影響や管理者が必要とするアクションへの影響は最小限に抑えられます。  ただし、各ワークロードごとに考慮事項があります。  
+テナントの移行は、エンド カスタマーおよび管理者への影響を最小限に抑えるように設計されています。  ただし、各ワークロードごとに考慮事項があります。  
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -130,11 +130,9 @@ Microsoft は、Microsoft Cloud Germany から新しいドイツのデータセ�
 - 完全な機能、エンタープライズグレードのセキュリティ、および包括的な機能を提供し、顧客がコンプライアンスおよび規制要件を満たすのを支援します。 
 - 既存のオンライン サービス契約を通じてアクセスできます。
 
-#### <a name="what-is-the-service-availability"></a>サービスの可用性はどのくらいですか ?
+#### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>さまざまな Office 365 クラウド サービス間のサービス可用性はどのくらいですか?
 
-Microsoft 365 サービスは、たった 1 つの Office 365 テナントのみでサブスクリプションに利用可能です。
-
-Microsoft Cloud Germany (Microsoft Cloud Deutschland) については、これらのサービスを提供しています。 このクラウド サービスには、新しいサービスを追加していません。
+次の 15 のサービスは、Microsoft Cloud Germany (Microsoft Cloud Deutschland) クラウド サービスで利用できます。  Microsoft Cloud Germany には、新しいサービスを追加していません。
 
 1. Exchange Online
 2. カスタマー ロックボックス (Exchange Online)
@@ -152,7 +150,7 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) については、これ�
 14. Office 365 Pro Plus
 15. Outlook モバイル
 
-新しいドイツのデータセンター リージョンの Office 365 サービスについては、これらのサービスを提供しています。 このクラウド サービスには、新しいサービスを継続的に追加しています。
+現在、新しいドイツのデータセンター リージョンでの Office 365 サービスの一部として 29 のサービスを利用できます。  新しい機能とサービスは、グローバルな Office 365 サービスと一貫性を持つ形で継続的に利用可能になります。
 
 1. Exchange Online
 2. カスタマー ロックボックス (Exchange Online)
@@ -170,14 +168,14 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) については、これ�
 14. カスタマー ロックボックス (SharePoint Online)
 15. OneDrive for Business
 16. Microsoft Stream
-17. Skype for Business (Microsoft Teams へと移行します)
+17. Skype for Business (移行中に Microsoft Teams へと移行します)
 18. クラウド PBX
 19. PSTN 会議
 20. PSTN 通話
 21. Microsoft Teams
 22. 管理者レポート/利用状況レポート
-23. Word Online、Excel Online、PowerPoint、OneNote、Visio Online
-24. 24. Planner
+23. Word Online、Excel Online、PowerPoint、OneNote、およびVisio Online
+24. Planner
 25. Sway
 26. Office 365 Pro Plus
 27. Outlook モバイル
@@ -186,17 +184,17 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) については、これ�
 
 ### <a name="when-will-migration-happen"></a>移行はいつ行われますか ?
 
-- Azure 
+#### <a name="azure"></a>Azure 
 
- Azure リソースの別リージョンへの[移行](https://docs.microsoft.com/azure/germany/germany-migration-main)は、今すぐ開始できます。 Azure 上に Office 365、Dynamics 365、または Power BI がインストールされている場合は、以下の手順に従ってください。
+Azure リソースの別リージョンへの[移行](https://docs.microsoft.com/azure/germany/germany-migration-main)は、今すぐ開始できます。 Azure 上に Office 365、Dynamics 365、または Power BI がインストールされている場合は、以下の手順に従ってください。
 
-- Office 365
+#### <a name="office-365"></a>Office 365
 
-  今すぐ、Microsoft 主導の移行に[オプトイン](https://aka.ms/office365germanymoveoptin)してください。 移行を開始する準備ができたら、Microsoft 365 管理センターの[メッセージ センター](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)からお知らせします。
+今すぐ、Microsoft 主導の移行に[オプトイン](https://aka.ms/office365germanymoveoptin)してください。 移行を開始する準備ができたら、Microsoft 365 管理センターの[メッセージ センター](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)からお知らせします。
 
-- Dynamics 365 および Power BI
+#### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 および Power BI
 
-  [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) および [Power BI](https://aka.ms/pbioptin) 向けの Microsoft 主導の移行に今すぐオプトインしてください。 移行を開始する準備ができたら、Microsoft 365 管理センターの[メッセージ センター](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)からお知らせします。
+[Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) および [Power BI](https://aka.ms/pbioptin) 向けの Microsoft 主導の移行に今すぐオプトインしてください。 移行を開始する準備ができたら、Microsoft 365 管理センターの[メッセージ センター](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)からお知らせします。
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>使用する Office サービスの価格は変わりますか ?
 
@@ -212,9 +210,10 @@ Microsoft Cloud Germany (Microsoft Cloud Deutschland) については、これ�
 
 ## <a name="more-information"></a>詳細情報
 
-- [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist)での Microsoft Cloud Deutschland 移行アシスタント
-- [https://aka.ms/office365germanymoveoptin](https://aka.ms/office365germanymoveoptin)での移行のオプトイン方法
-- [https://aka.ms/D365ceOptIn](https://aka.ms/D365ceOptIn)での Dynamics 365 の移行
-- [https://aka.ms/pbioptin](https://aka.ms/pbioptin)での Power BI の移行
-- [https://aka.ms/o365endpoints](https://aka.ms/o365endpoints)での Office 365 URL および IP アドレスの範囲
-- [https://aka.ms/HybridWizard](https://aka.ms/HybridWizard)での Office 365 ハイブリッド構成ウィザード
+- [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
+- [移行のオプトイン方法](https://aka.ms/office365germanymoveoptin)
+- [Dynamics 365 移行プログラム情報](https://aka.ms/D365ceOptIn)
+- [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
+- [Office 365 の URL と IP アドレスの範囲](https://aka.ms/o365endpoints)
+- [Office 365 ハイブリッド構成ウィザード](https://aka.ms/HybridWizard)
+- [Microsoft Teams へのアップグレードを開始する](https://aka.ms/SkypeToTeams-Home)
