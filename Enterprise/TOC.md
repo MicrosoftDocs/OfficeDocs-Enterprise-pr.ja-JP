@@ -152,6 +152,8 @@
 #### [データ移行をリクエストする方法](request-your-data-move.md)
 #### [データの移行中および移行後](during-and-after-your-data-move.md)
 #### [データ移行についての一般的な FAQ](data-move-faq.md)
+#### [Microsoft Cloud Deutschland: Office 365 移行プログラム](ms-cloud-germany-transition.md)
+#### [Microsoft Cloud Deutschland: 移行のオプト イン](ms-cloud-germany-migration-opt-in.md)
 
 ### ハイブリッド ソリューション
 #### [SharePoint Server 2016 認証に Azure Active Directory を使用する](using-azure-ad-for-sharepoint-server-authentication.md)
@@ -189,7 +191,7 @@
 ##### [サイトで共同作業をする](collaborate-in-a-site.md)
 ##### [チームで共同作業をする](collaborate-as-a-team.md)
 #### ゲスト共有のセキュリティ
-##### [匿名の共有](best-practices-anonymous-sharing.md)
+##### [認証されていない共有](best-practices-anonymous-sharing.md)
 ##### [偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 ##### [ゲスト共有の環境を保護する](create-a-secure-guest-sharing-environment.md)
 
