@@ -7,22 +7,31 @@
 ### [Windows PowerShell を使用して Office 365 でレポートを作成する](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Office 365 サービスのコマンドレット リファレンス](cmdlet-references-for-office-365-services.md)
 ### [Office 365 PowerShell のコミュニティ リソース](office-365-powershell-community-resources.md)
-## [ユーザー アカウントおよびライセンスの管理](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-### [ライセンスおよびサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)
-### [ライセンスのあるユーザーとライセンスのないユーザーを表示する](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-### [アカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
-### [ユーザー アカウントにロールを割り当てる](assign-roles-to-user-accounts-with-office-365-powershell.md)
-### [サービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)
-#### [Sway へのアクセスを無効にする](disable-access-to-sway-with-office-365-powershell.md)
-#### [ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする](disable-access-to-services-while-assigning-user-licenses.md)
-### [ユーザー アカウントからライセンスを削除する](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-### [ユーザー アカウントをブロックする](block-user-accounts-with-office-365-powershell.md)
-### [ユーザー アカウントを削除および復元する](delete-and-restore-user-accounts-with-office-365-powershell.md)
-### [ユーザー アカウントの作成](create-user-accounts-with-office-365-powershell.md)
-### [ユーザー アカウントを表示する](view-user-accounts-with-office-365-powershell.md)
-### [ユーザー アカウントのプロパティを構成する](configure-user-account-properties-with-office-365-powershell.md)
-## [グループを管理する](manage-office-365-groups-with-powershell.md)
+
+## [ユーザー アカウント、ライセンス、およびグループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+
+### ユーザー アカウント
+#### [ユーザー アカウントの作成](create-user-accounts-with-office-365-powershell.md)
+#### [ユーザー アカウントを表示する](view-user-accounts-with-office-365-powershell.md)
+#### [ユーザー アカウントのプロパティを構成する](configure-user-account-properties-with-office-365-powershell.md)
+#### [ユーザー アカウントにロールを割り当てる](assign-roles-to-user-accounts-with-office-365-powershell.md)
+#### [ユーザー アカウントを削除および復元する](delete-and-restore-user-accounts-with-office-365-powershell.md)
+#### [ユーザー アカウントをブロックする](block-user-accounts-with-office-365-powershell.md)
+
+### ライセンスおよびサービス
+#### [ライセンスおよびサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)
+#### [ライセンスのあるユーザーとライセンスのないユーザーを表示する](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+#### [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+#### [アカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
+#### [サービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)
+##### [Sway へのアクセスを無効にする](disable-access-to-sway-with-office-365-powershell.md)
+##### [ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする](disable-access-to-services-while-assigning-user-licenses.md)
+#### [ユーザー アカウントからライセンスを削除する](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+
+### グループ
+#### [グループ メンバーシップを管理する](maintain-group-membership-with-office-365-powershell.md)
+#### [Office 365 グループを管理する](manage-office-365-groups-with-powershell.md)
+
 ## [SharePoint Online を管理する](manage-sharepoint-online-with-office-365-powershell.md)
 ### [SharePoint Online サイトを作成し、ユーザーを追加する](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [SharePoint Online のユーザーとグループを管理する](manage-sharepoint-users-and-groups-with-powershell.md)
