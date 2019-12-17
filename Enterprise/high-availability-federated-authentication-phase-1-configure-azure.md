@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 262a7dcdb2dc48f7890b7ef188b1d8ce506f40dd
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257582"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072139"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
@@ -39,11 +39,11 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 |**アイテム**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet アドレス空間  <br/> |仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |VPN デバイスの IP アドレス  <br/> |インターネット上の VPN デバイスのインターフェイスのパブリック IPv4 アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet アドレス空間  <br/> |仮想ネットワークのアドレス空間。このアドレス空間は、IT 部門と協議して決定してください。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |IPsec 共有キー  <br/> |32 文字のランダムな英数字文字列。サイト間 VPN 接続の両側を認証するために使用されます。このキーの値は、IT 部門またはセキュリティ部門と協議して決定してください。または、「[IPsec 事前共有キーのランダム文字列を作成する](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)」を参照してください。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 V:クロスプレミスの仮想ネットワーク構成**
   
@@ -61,25 +61,25 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 |**アイテム**|**サブネット名**|**サブネット アドレス スペース**|**用途**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Active Directory ドメインサービス (AD DS) ドメインコントローラーとディレクトリ同期サーバー仮想マシン (Vm) によって使用されるサブネット。  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ VM が使用するサブネット。  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Azure ゲートウェイ VM が使用するサブネット。  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Active Directory ドメインサービス (AD DS) ドメインコントローラーとディレクトリ同期サーバー仮想マシン (Vm) によって使用されるサブネット。  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |AD FS VM が使用するサブネット。  <br/> |
+|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ VM が使用するサブネット。  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Azure ゲートウェイ VM が使用するサブネット。  <br/> |
    
  **表 S:仮想ネットワーク内のサブネット**
   
 次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。
   
-|**アイテム**|**用途**|**サブネット上の IP アドレス**|**値**|
+|**項目**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |ディレクトリ同期サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |AD FS サーバーの内部ロード バランサーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |最初の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |2 番目の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |ディレクトリ同期サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |AD FS サーバーの内部ロード バランサーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |最初の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |2 番目の AD FS サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 2」で定義されたサブネットのアドレス空間について、6 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |最初の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |2 番目の Web アプリケーション プロキシ サーバーの静的 IP アドレス  <br/> |「表 S」の「項目 3」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 I: 仮想ネットワークの静的 IP アドレス**
   
@@ -87,8 +87,8 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 |**アイテム**|**DNS サーバーのフレンドリ名**|**DNS サーバーの IP アドレス**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 D:オンプレミスの DNS サーバー**
   
@@ -98,9 +98,9 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 |**アイテム**|**ローカル ネットワークのアドレス スペース**|
 |:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 L:ローカル ネットワークのアドレス プレフィックス**
   
@@ -147,10 +147,10 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 |**項目**|**リソース グループ名**|**用途**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |ドメイン コントローラー  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |AD FS サーバー  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ サーバー  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |インフラストラクチャの要素  <br/> |
+|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |ドメイン コントローラー  <br/> |
+|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |AD FS サーバー  <br/> |
+|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Web アプリケーション プロキシ サーバー  <br/> |
+|4.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |インフラストラクチャの要素  <br/> |
    
  **表 R: リソース グループ**
   
@@ -271,11 +271,11 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 次に、3 つの可用性セットの名前を定義します。「表 A」に必要事項を記入します。 
   
-|**項目**|**用途**|**可用性セット名**|
+|**アイテム**|**用途**|**可用性セット名**|
 |:-----|:-----|:-----|
-|1.  <br/> |ドメイン コントローラー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Web アプリケーション プロキシ サーバー  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |ドメイン コントローラー  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS サーバー  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Web アプリケーション プロキシ サーバー  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
    
  **表 A: 可用性セット**
   

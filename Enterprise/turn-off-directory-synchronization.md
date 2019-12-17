@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: PowerShell を使用して Office 365 のディレクトリ同期を無効にする方法について説明します。
-ms.openlocfilehash: 83a01d827217db141016f622a2cb417f93f88e76
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: de7cfcbc11ed281e412c68674b808613b3421041
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070363"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072399"
 ---
 # <a name="turn-off-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期を無効にする
 PowerShell を使用して、ディレクトリ同期を無効にすることができます。 ただし、トラブルシューティング手順としてディレクトリ同期を無効にすることはお勧めしません。 ディレクトリ同期のトラブルシューティングに関してサポートが必要な場合は、「 [Office 365 のディレクトリ同期の問題を解決](fix-problems-with-directory-synchronization.md)する」の記事を参照してください。 
@@ -36,6 +36,6 @@ PowerShell を使用して、ディレクトリ同期を無効にすることが
     
 2. ディレクトリ同期を無効にするには[、MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939)を使用します。 
     
-  ```
+  ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```

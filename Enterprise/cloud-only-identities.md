@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Office 365 サブスクリプションがクラウド専用の id を使用している場合に、ユーザーとグループを作成する方法について説明します。
-ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 5991ec838321187b58f913e1707efb2ede9912fb
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813415"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072279"
 ---
 # <a name="office-365-cloud-only-identities"></a>Office 365 のクラウド専用の id
 
@@ -37,7 +37,7 @@ ms.locfileid: "39813415"
 
 クラウド専用の id を使用すると、すべてのユーザー、グループ、および連絡先が Office 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに格納されます。 ここでは、クラウド専用の id の基本的なコンポーネントを示します。
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![クラウド専用の id の基本コンポーネント](./media/about-office-365-identity/cloud-only-identity.png)
 
 組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 次に例を示します。
 

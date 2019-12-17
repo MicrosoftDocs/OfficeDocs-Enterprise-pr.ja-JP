@@ -3,7 +3,7 @@ title: Office 365 PowerShell の概要
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 概要:Office 365 PowerShell の重要性を理解し、Office 365 テナントに接続し、ヘルプを取得します。
-ms.openlocfilehash: aeabc0b4ab799f542a05e5279b8ff5cb7123abd8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068953"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072179"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell の概要
 
- **概要:** Office 365 PowerShell の重要性を理解し、Office 365 テナントに接続し、ヘルプを取得します。
-  
 Office 365 PowerShell を使用すると、コマンドとスクリプトで Office 365 を管理できるようになり、日常業務が効率化されます。Office 365 PowerShell スキルが Office 365 の管理に不可欠な理由、Office 365 サブスクリプションに接続する方法、レポートを作成する方法、Office 365 コミュニティから追加情報やヘルプを取得する方法について説明します。
   
 以下から必要に合う記事を選んでください。
@@ -54,8 +52,6 @@ Office 365 PowerShell を使用すると、コマンドとスクリプトで Off
     PowerShell コミュニティの場所に接続し、Office 365 PowerShell の使用に関するヘルプまたは継続的な情報を取得するには、ここから開始してください。
     
 ## <a name="see-also"></a>関連項目
-
-#### 
 
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
 

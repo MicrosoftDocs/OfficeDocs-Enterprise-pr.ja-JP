@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745670"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071879"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 identity モデルと Azure Active Directory
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 では、Azure Active Directory (Azure AD) を使用して、office 365 サブスクリプションに含まれているクラウドベースのユーザー id と認証サービスを使用して、Office 365 の id と認証を管理します。 Id インフラストラクチャを正しく構成することは、組織の Office 365 のユーザーアクセスとアクセス許可を管理するために不可欠です。
 
@@ -59,7 +59,7 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
 
 ここでは、クラウド専用の id の基本的なコンポーネントを示します。
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![クラウド専用の id の基本的なコンポーネント](./media/about-office-365-identity/cloud-only-identity.png)
 
 オンプレミスとリモート (オンライン) の両方のユーザーは、Azure AD のユーザーアカウントとパスワードを使用して Office 365 cloud services にアクセスします。 Azure AD は、保存されたユーザーアカウントとパスワードに基づいてユーザー資格情報を認証します。
 
@@ -76,7 +76,7 @@ Azure AD Connect は、継続的なアカウント同期を提供します。 �
 
 ハイブリッド id のコンポーネントを次に示します。
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![ハイブリッド id のコンポーネント](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD テナントには、AD DS アカウントのコピーがあります。 この構成では、オンプレミスのユーザーと Microsoft 365 cloud services にアクセスするリモートユーザーの両方が Azure AD に対して認証されます。
 

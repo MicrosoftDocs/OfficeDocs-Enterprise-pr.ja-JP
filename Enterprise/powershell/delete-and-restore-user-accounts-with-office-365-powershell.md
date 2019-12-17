@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してユーザーアカウントを削除
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Office 365 PowerShell を使用して Office 365 ユーザーアカウントを削除する方法について説明します。
-ms.openlocfilehash: e62c06981a861580804dde852ad3da7bd729fdbe
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 0cdc48f9570c994ec0a55d37d013a084b495f259
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257648"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072519"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーアカウントを削除する
 
@@ -35,10 +35,6 @@ Office 365 PowerShell を使用して、ユーザーアカウントを削除で�
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
-
->[!Note]
->PowerShell Core では、Microsoft Azure Active Directory モジュール for Windows PowerShell モジュールと、名前に**Msol**を指定したコマンドレットはサポートされていません。 これらのコマンドレットを引き続き使用するには、これらのコマンドレットを Windows PowerShell から実行する必要があります。
->
 
 この例では、ユーザー アカウント fabricec@litwareinc.com を削除します。
   
@@ -76,12 +72,15 @@ Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用
 
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-
 ユーザー アカウントを削除するには、次の構文を使用します。
   
 ```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
+
+>[!Note]
+>PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。
+>
 
 この例では、ユーザー アカウント BelindaN@litwareinc.com を削除します。
   
@@ -114,9 +113,8 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使ってユーザー アカウントとライセンスを管理します。](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
-

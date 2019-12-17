@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 展開アドバイザーを使用して、Office 365 または Microsoft 365 の計画と構成を促進します。
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076151"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072369"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 または Microsoft 365 サービスの展開アドバイザー
 
@@ -37,13 +37,13 @@ Office 365 または Microsoft 365 の展開アドバイザーは、組織で Of
 
 各アドバイザーは、展開する機能とオプションを選択するためのガイドとなるウィザードです。 場合によっては、ウィザードを使用して、何かを構成したり、設定をアクティブ化したりできます。 次に例を示します。
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![展開アドバイザーの例](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 アドバイザーは、ニーズに合わせてカスタマイズを決定する手順を説明します。 このようにして、構成の変更を行うための手順、スクリプト、およびその他のリソースを取得します。
 
 最後に、ビデオと参照記事へのリンクが表示されます。 次に例を示します。
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![ビデオおよび参照記事へのリンクの例](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 Office 365 の機能とオプションの詳細については、いつでもこれらのアドバイザーを使用できます。 これには、計画中、または既にサービスをセットアップした後に含まれます。
   
@@ -254,7 +254,7 @@ Microsoft Exchange Online Protection (EOP) は、クラウドベースの電子�
 
 ### <a name="office-365-groups"></a>Office 365 グループ
 
-Office 365 グループは、電子メール、会話、ファイル、およびイベントの共有ワークスペースで、グループメンバーが一括して作業を行うことができます。 Office 365 のグループでは、共同作業を行う一連のユーザーを選択し、それらのユーザーが共有するリソースのコレクションを簡単にセットアップすることができます。 グループにメンバーを追加すると、グループが提供するツールに必要なアクセス許可が自動的に与えられるため、これらのリソースすべてに対して手動でアクセス許可を割り当てる必要はありません。
+Office 365 グループは、電子メール、会話、ファイル、およびイベントの共有ワークスペースで、グループメンバーが一括して作業を行うことができます。 Office 365 のグループでは、共同作業を行う一連のユーザーを選択し、それらのユーザーが共有するリソースのコレクションを簡単にセットアップすることができます。 グループにメンバーを追加すると、グループが提供するツールに必要なアクセス許可が自動的に付与されるため、これらすべてのリソースにアクセス許可を手動で割り当てることを心配する必要はありません。
 
 
 |||

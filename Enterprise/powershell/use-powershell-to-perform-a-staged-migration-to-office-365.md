@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747533"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072309"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell を使用して Office 365 への段階的な移行を実行する
 
@@ -57,7 +57,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   
 - 企業ネットワークの外部から Outlook を使用して社内の Exchange メールボックスに接続します。
     
-- [Microsoft Exchange リモート接続アナライザー](https://www.testexchangeconnectivity.com/)を使用して接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
+- [Microsoft リモート接続アナライザー](https://https://testconnectivity.microsoft.com/)を使用して、接続設定をテストします。 Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
     
 - Exchange Online PowerShell で次のコマンドを実行します。
     
@@ -199,12 +199,6 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 移行が完了していないため、まだすべてのユーザーが Office 365 から各自の電子メールにアクセスできる状態ではありません。両方のメールボックスを持つユーザーに対してはどのようにすれば良いでしょうか。既に移行済みの社内メールボックスをメールが有効なユーザーに変更することができます。メールボックスからメールが有効なユーザーに変更した場合、社内メールボックスに移動するのではなく、ユーザーを Office 365 から各自の電子メールにアクセスさせることができます。 
   
 社内メールボックスをメールが有効なユーザーに変換するもう 1 つの重要な理由は、プロキシ アドレスをメールが有効なユーザーにコピーすることで、Office 365 メールボックスからのプロキシ アドレスを保持するためです。これにより、Active Directory を使用して社内組織からクラウドベースのユーザーを管理できます。また、すべてのメールボックスを Office 365 に移行した後に、社内 Exchange Server 組織を停止する場合、メールが有効なユーザーにコピーされたプロキシ アドレスは、社内 Active Directory に残ります。
-  
-メールボックスをメールが有効なユーザーに変換するために実行できるスクリプトの詳細とダウンロード方法については、以下を参照してください。
-  
-- 「[Exchange 2007 メールボックスをメールが有効なユーザーに変換する](https://go.microsoft.com/fwlink/p/?LinkId=233648)」
-    
-- 「[Exchange 2003 メールボックスをメールが有効なユーザーに変換する](https://go.microsoft.com/fwlink/p/?LinkId=233647)」
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>ステップ 6:段階的な移行バッチを削除する
 <a name="BK_Endpoint"> </a>

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
-ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747087"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072539"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 のハイブリッド id とディレクトリ同期
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 を採用している企業のお客様にとっては、ビジネスニーズおよび技術的な要件に応じて、ハイブリッド id モデルとディレクトリ同期が最も一般的に選択されています。 ディレクトリ同期を使用すると、Active Directory ドメインサービス (AD DS) 内の id を管理できます。また、ユーザーアカウント、グループ、および連絡先へのすべての更新は、Office 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されます。
 
@@ -63,7 +63,7 @@ Office 365 を採用している企業のお客様にとっては、ビジネス
 
 パスワードハッシュ同期 (PHS) を使用すると、AD DS のユーザーアカウントを Office 365 と同期し、オンプレミスでユーザーを管理することができます。 ユーザーパスワードのハッシュは AD DS から Azure AD に同期されるため、ユーザーは社内とクラウドの両方で同じパスワードを使用できます。 これは、Azure AD で AD DS id の認証を有効にする最も簡単な方法です。 
 
-![](./media/plan-for-directory-synchronization/phs-authentication.png)
+![パスワードハッシュの同期 (PHS)](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 パスワードが変更されるか、オンプレミスでリセットされると、新しいパスワードハッシュが Azure AD に同期されるため、ユーザーは常にクラウドリソースとオンプレミスのリソースに対して同じパスワードを使用できます。 ユーザーパスワードが Azure AD に送信されることや、クリアテキストで Azure AD に保存されることはありません。 Id 保護などの Azure AD の一部のプレミアム機能は、どの認証方法が選択されているかに関係なく、PHS を必要とします。
   
@@ -73,7 +73,7 @@ Office 365 を採用している企業のお客様にとっては、ビジネス
 
 パススルー認証 (PTA) は、1つまたは複数のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、AD DS に直接ユーザーを検証することにより、Azure AD 認証サービスの簡単なパスワード検証を提供します。 パススルー認証 (PTA) を使用して、AD DS のユーザーアカウントを Office 365 と同期し、オンプレミスでユーザーを管理します。 
 
-![](./media/plan-for-directory-synchronization/pta-authentication.png)
+![パススルー認証 (PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
 PTA を使用すると、ユーザーはオンプレミスのアカウントとパスワードを使用して、オンプレミスと Office 365 の両方のリソースとアプリケーションの両方にサインインできます。 この構成では、Azure AD にパスワードハッシュを保存せずに、ユーザーのパスワードをオンプレミスの AD DS に対して直接検証します。 
 
