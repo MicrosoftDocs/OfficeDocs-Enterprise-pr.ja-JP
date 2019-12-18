@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077936"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085182"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
@@ -38,11 +38,11 @@ Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エ�
 > [!NOTE]
 > 他のアプリケーションに関連付けられているネットワークトラフィックは、コミュニティの値に含まれていることが予想されます。 これは、共有サービスとデータセンターを使用したサービスとしてのグローバルソフトウェアに想定される動作です。 これは、上の2つの目的で、プレフィックスの数や帯域幅を考慮することで最小化されています。
 
-|**サービス**|**BGP コミュニティの値**|**メモ**|
+|**サービス**|**BGP コミュニティの値**|**注**|
 |:-----|:-----|:-----|
-|変換\*  <br/> |12076:5010  <br/> |Exchange および EOP サービスが含まれています。\*  <br/> |
-|sharepoint\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|skype for business\*  <br/> |12076:5030  <br/> |Skype for Business Online  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Exchange および EOP サービスが含まれています。\*  <br/> |
+|SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
+|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online & Micorosoft Teams サービス  <br/> |
 |その他の Office 365 サービス\*  <br/> |12076:5100  <br/> |Azure Active Directory (認証およびディレクトリ同期のシナリオ) と Office 365 ポータルサービスが含まれています。  <br/> |
 |\*ExpressRoute に含まれるサービスシナリオの範囲については、「 [Office 365 エンドポイント](https://aka.ms/o365endpoints)」の記事に記載されています。  <br/> \*\*今後、追加サービスと BGP コミュニティの値を追加することができます。 [BGP コミュニティの現在の一覧を参照してください](https://azure.microsoft.com/documentation/articles/expressroute-routing/)。  <br/> |
 
@@ -79,7 +79,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|Exchange、Skype for Business、SharePoint、 &amp;その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp;の OneDrive for business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
+|Exchange、Skype for Business & Microsoft Teams、SharePoint、 &amp;その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp;の OneDrive for business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP コミュニティを使用するための主要な計画に関する考慮事項
 
@@ -91,7 +91,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
 
 - Azure ExpressRoute は、お客様が割り当てられた BGP コミュニティに基づく Microsoft のネットワーク上でのアクションをサポートしていません。
 
-- Office 365are 使用される IP プレフィックスは、サービス固有の BGP コミュニティ値でのみマークされています。場所固有の BGP コミュニティはサポートされていません。 Office 365 サービスはグローバルな性質を持っているため、テナントの場所または Office 365 クラウド内のデータに基づくフィルター処理プレフィックスはサポートされていません。 推奨されるアプローチは、Office 365 サービスの IP アドレスの物理的な場所に関係なく、ユーザーのネットワークの場所から Microsoft グローバルネットワークへの最短または最も優先されるネットワークパスを調整するようにネットワークを構成することです。要求しています。
+- Office 365 で使用される IP プレフィックスは、サービス固有の BGP コミュニティ値でのみマークされています。場所固有の BGP コミュニティはサポートされていません。 Office 365 サービスはグローバルな性質を持っているため、テナントの場所または Office 365 クラウド内のデータに基づくフィルター処理プレフィックスはサポートされていません。 推奨されるアプローチは、Office 365 サービスの IP アドレスの物理的な場所に関係なく、ユーザーのネットワークの場所から Microsoft グローバルネットワークへの最短または最も優先されるネットワークパスを調整するようにネットワークを構成することです。要求しています。
 
 - 各 BGP community 値に含まれる IP プレフィックスは、値に関連付けられた Office 365 アプリケーションの IP アドレスを含むサブネットを表します。 場合によっては、複数の Office 365 アプリケーションがサブネット内に複数の IP アドレスを持ち、その結果、IP プレフィックスが複数のコミュニティ値に存在することがあります。 これは、割り当ての断片化が原因であると想定されていますが、プレフィックス数や帯域幅管理の目標に影響を与えることはありません。 Office 365 の BGP コミュニティを活用して影響を最小限に抑えるには、「必要な機能を拒否する」を使用するのではなく、「必要な機能を許可する」というアプローチを使用することをお勧めします。
 

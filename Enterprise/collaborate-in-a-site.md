@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919260"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261360"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -75,7 +75,7 @@ Office 365 グループのゲスト設定を設定するには
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの [**管理センター**] の下にある [ **SharePoint**] をクリックします。
-2. SharePoint 管理センターの左側のナビゲーションで、[**共有**] をクリックします。
+2. SharePoint 管理センターの左側のナビゲーションで、**[共有]** をクリックします。
 3. SharePoint の外部共有が [**すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 4. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -85,7 +85,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 サイトを作成するには
 1. SharePoint 管理センターの [**サイト**] で、[**アクティブなサイト**] をクリックします。
-2. [**作成**] をクリックします。
+2. **[作成]** をクリックします。
 3. [**チームサイト**] をクリックします。
 4. サイト名を入力し、グループの所有者 (サイト所有者) の名前を入力します。
 5. [**詳細設定**] で、これをパブリックサイトまたはプライベートサイトにするかどうかを選択します。
@@ -121,7 +121,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 ゲストユーザーをサイトから追加することはできません。 Web 上の Outlook を使用してそれらを追加する必要があります。
 
-サイトにゲストを招待するには
+グループにゲストを招待するには
 1. Web 上の Outlook の [**グループ**] で、メンバーを追加するグループをクリックします。
 2. グループの連絡先カードを開いて、[**その他のオプション**(...)] の下にある [**メンバーの追加**] をクリックします。
 3. 招待するゲストの電子メールアドレスを入力し、[**追加**] をクリックします。
@@ -133,5 +133,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md))
+[セキュリティで保護されたゲスト共有の環境を作成する](create-a-secure-guest-sharing-environment.md)
+
+[管理対象ゲストを使用して B2B エクストラネットを作成する](b2b-extranet.md)
 

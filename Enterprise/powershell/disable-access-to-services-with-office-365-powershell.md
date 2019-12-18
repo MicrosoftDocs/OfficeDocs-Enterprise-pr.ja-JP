@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使ったサービスへのアクセスを無効
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/04/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Office 365 PowerShell を使用して、ユーザーの Office 365 サービスへのアクセスを無効にします。
-ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 7f50d3bbe08f02ee1149ca10859c9583b10f5e2d
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072199"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261420"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Office 365 PowerShell を使ったサービスへのアクセスを無効にする
 
@@ -156,17 +156,9 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
 
 ## <a name="see-also"></a>関連項目
-<a name="SeeAlso"> </a>
 
-Office 365 PowerShell でのユーザー管理に関する次の追加のトピックをご覧ください。
+[Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Office 365 PowerShell でユーザー アカウントをブロックする](block-user-accounts-with-office-365-powershell.md)
-    
-- [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Office 365 PowerShell を使用してユーザー アカウントを作成する](create-user-accounts-with-office-365-powershell.md)
-    
+[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+  
+[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)

@@ -14,18 +14,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Office 365 PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
-ms.openlocfilehash: abe8f76de07c230c0d1484ccfb57b3b9a7bf8d34
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: f15add5652af44d24e2fec678c5224b5efd7aa4f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707024"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261350"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
- **概要:** Office 365 PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。
-
-Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Office 356 管理センターでの作業よりも迅速かつ繰り返しタスクを実行することができます。 また、Office 356 管理センターでは実行できないタスクも実行できます。 
+Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Microsoft 356 管理センターで作業している場合よりも迅速かつ繰り返し実行することができます。 また、Office 356 管理センターでは実行できないタスクも実行できます。 
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -53,11 +51,11 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 2. ファイルを**SiteCollections**としてデスクトップに保存します。<br/>
 
 > [!TIP]
-> この .csv ファイルやそれ以外の .csv ファイル、または Windows PowerShell スクリプト ファイルを使用する前に、余分の文字または印刷されない文字がないか確認することをお勧めします。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
+> このまたはその他の .csv または Windows PowerShell スクリプトファイルを使用する前に、余分または印刷されない文字がないことを確認することをお勧めします。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
 
 ### <a name="run-the-windows-powershell-command"></a>Windows PowerShell コマンドの実行
 
-1. Windows PowerShell プロンプトで、次のコマンドレットを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
+1. Windows PowerShell プロンプトで、次のコマンドを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
@@ -72,24 +70,25 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. リストに新しいサイトコレクションが表示されることを確認します。 次のサイトコレクションが表示されます。 **contosotest**、 **TeamSite01**、 **Blog01**、および**Project01**
+4. リストに新しいサイトコレクションが表示されることを確認します。 この例の CSV ファイルを使用すると、次のサイトコレクションが表示されます: **TeamSite01**、 **Blog01**、 **Project01**、および**Community01**
 
-これで完了です。作成した .csv ファイルと 1 つの WindowsPowerShell コマンドレットを使用して、複数のサイト コレクションを作成しました。これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
+これで完了です。 作成した .csv ファイルと1つの Windows PowerShell コマンドを使用して複数のサイトコレクションを作成しました。 これで、ユーザーを作成してこれらのサイトに割り当てる準備ができました。
 
 ## <a name="step-2-add-users-and-groups"></a>手順 2:ユーザーおよびグループの追加
 
 ここでは、ユーザーを作成し、サイト コレクションのグループに追加します。次に、.csv ファイルを使用して、新しいグループとユーザーを一括アップロードします。
 
-次の手順では、サイト コレクションの contosotest、TeamSite01、Blog01、Project01 が正常に作成されていることが前提になっています。
+次の手順では、TeamSite01、Blog01、Project01、Community01 というサイトの例を引き続き使用します。
 
 ### <a name="create-csv-and-ps1-files"></a>.csv ファイルおよび .ps1 ファイルの作成
 
 1. メモ帳を開き、次のテキスト ブロックを貼り付けます。<br/>
+
 ```powershell
 Site,Group,PermissionLevels
-https://tenant.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
-https://tenant.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
-https://tenant.sharepoint.com/sites/contosotest,Contoso Designers,Design
+https://tenant.sharepoint.com/sites/Community01,Contoso Project Leads,Full Control
+https://tenant.sharepoint.com/sites/Community01,Contoso Auditors,View Only
+https://tenant.sharepoint.com/sites/Community01,Contoso Designers,Design
 https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
 https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
@@ -104,9 +103,9 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 
 ```powershell
 Group,LoginName,Site
-Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
-Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
-Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
+Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
 XT1000 Team Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
 XT1000 Advisors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
 Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01

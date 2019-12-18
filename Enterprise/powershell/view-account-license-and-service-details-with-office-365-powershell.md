@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してアカウントのライセンスと
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
-ms.openlocfilehash: 08e44476ea746b7e8298355e3adc5d0401261acd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: d56457f00e63d20b9d87e1f90e0e8d12587fcc1f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072289"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261430"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
 
@@ -77,7 +77,7 @@ Get-MsolAccountSku
 次に、このコマンドを実行して、各ライセンスプランで使用可能なサービスと、それらが表示される順序 (インデックス番号) を一覧表示します。
 
 ```powershell
-(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
   
 このコマンドを使用して、ユーザーに割り当てられているライセンスと、ユーザーが表示される順序 (インデックス番号) を一覧表示します。
@@ -85,11 +85,6 @@ Get-MsolAccountSku
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ```
-
->[!Note]
->**All** パラメーターなしで _Get-MsolUser_ コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
->
-   
 
 ### <a name="to-view-services-for-a-user-account"></a>ユーザーアカウントのサービスを表示するには
 
@@ -114,8 +109,8 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 *複数のライセンス*が割り当てられているユーザーのすべてのサービスを表示するには、次の構文を使用します。
 
 ```powershell
-$userAccountUPN="<user account UPN>"
-$AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
+$userUPN="<user account UPN>"
+$AllLicenses=(Get-MsolUser -UserPrincipalName $userUPN).Licenses
 $licArray = @()
 for($i = 0; $i -lt $AllLicenses.Count; $i++)
 {

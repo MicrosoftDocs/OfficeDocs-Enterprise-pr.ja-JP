@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Teams でゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886526"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085202"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -95,7 +95,7 @@ Office 365 グループのゲスト設定を設定するには
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの [**管理センター**] の下にある [ **SharePoint**] をクリックします。
-2. SharePoint 管理センターの左側のナビゲーションで、[**共有**] をクリックします。
+2. SharePoint 管理センターの左側のナビゲーションで、**[共有]** をクリックします。
 3. SharePoint の外部共有が [**すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 4. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -108,7 +108,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 ユーザーがファイルやフォルダーを共有するときに既定で選択されるリンクの種類を選択します。
 
-- [**すべてのユーザー] リンクを持つすべて**のファイルとフォルダーを、認証されていない人物と共有することが予想される場合は、このオプションを選択します。 *すべて*のリンクを許可し、偶発的な認証されていない共有について懸念している場合は、他のオプションのいずれかを既定値として検討します。 このリンクの種類は、**すべて**の共有を有効にした場合にのみ使用できます。
+- **リンクを持つすべてのユーザー** -ファイルとフォルダーの認証されていない共有を頻繁に行う場合は、このオプションを選択します。 *すべて*のリンクを許可し、偶発的な認証されていない共有について懸念している場合は、他のオプションのいずれかを既定値として検討します。 このリンクの種類は、**すべて**の共有を有効にした場合にのみ使用できます。
 - [**組織内のユーザーのみ**]-ほとんどのファイルとフォルダーの共有が組織内のユーザーと想定される場合は、このオプションを選択します。
 - **特定のユーザー** -多数のファイルとフォルダーをゲストで共有することが予想される場合は、このオプションを検討してください。 この種類のリンクはゲストと連動しており、認証を必要とします。
  
@@ -167,10 +167,10 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 ## <a name="see-also"></a>関連項目
 
-[認証されていないユーザーとファイルやフォルダーを共有するためのベストプラクティス](best-practices-anonymous-sharing.md)
+[認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 
 [セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md))
 
-
+[管理対象ゲストを使用して B2B エクストラネットを作成する](b2b-extranet.md)

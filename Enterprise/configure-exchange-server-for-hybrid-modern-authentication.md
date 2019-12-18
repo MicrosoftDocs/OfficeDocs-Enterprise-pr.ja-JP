@@ -14,16 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
-ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746220"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085172"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
   
@@ -154,10 +154,13 @@ HMA を有効にすると、クライアントの次のログインは新しい�
 また、CTRL キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイにもあります) を右クリックし、[接続の状態] をクリックします。 OAuth で使用されるベアラートークンを表す ' 認証 ' の種類 ' ベアラー\*' に対してクライアントの SMTP アドレスを検索します。
   
  **メモ**HMA を使用して Skype for Business を構成する必要がありますか? [サポートされているトポロジ](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)の一覧と、[構成方法](configure-skype-for-business-for-hybrid-modern-authentication.md)を示す2つの記事が必要になります。
+ 
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>iOS および Android 用の Outlook でのハイブリッド先進認証の使用
+
+TCP 443 で Exchange server を使用しているオンプレミスのお客様の場合は、次の IP 範囲をホワイトリストしてください。 <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
 ## <a name="related-topics"></a>関連項目
 
 [ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md) 
   
-
