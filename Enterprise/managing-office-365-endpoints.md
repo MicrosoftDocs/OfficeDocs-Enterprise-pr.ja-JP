@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ ネットワークの中には、一般的なインターネット上の場所へのアクセスや、強固なバックホールの導入、ネットワーク トラフィックの処理を制限しているものがあります。そのようなネットワーク上のコンピュータから Office 365 にアクセスできるようにするために、ネットワーク管理者およびプロキシ管理者は、Office 365 エンドポイントのリストを構成する FQDN、URL、および IP アドレスのリストを管理する必要があります。これらを直接ルート、プロキシ バイパス、またはファイアウォール ルールおよび PAC ファイルに追加して、ネットワーク要求が Office 365 に到達できるようにする必要があります。
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072489"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744511"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -133,14 +133,14 @@ Office 365 の接続についてよく寄せられる管理者の質問です。
   
 世界中に 2,500 を超える ISP ピアリング リレーションシップと 70 を超えるポイントがあるため、ユーザーのネットワークから Microsoft のネットワークへの接続はシームレスであるはずです。数分あれば、ISP のピアリング リレーションシップが最適であることを確認することができます。Microsoft ネットワークとのピアリング手順の[よい例と悪い例については、こちら](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/)を参照してください。
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>公開済みの一覧に掲載されていない IP アドレスに対してネットワーク要求を受け取ります。それらの IP アドレスに対してアクセス権を付与する必要はありますか?
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>公開済みの一覧に掲載されていない IP アドレスに対してネットワーク要求を受け取ります。それらの IP アドレスに対してアクセス権を付与する必要はありますか?
 
 Microsoft では、直接ルーティングする必要がある Office 365 サーバーの IP アドレスのみを公開しています。公開されている一覧には、ネットワーク要求が示されるすべての IP アドレスが記載されているわけではありません。ユーザーは、Microsoft とサード パーティが所有している未公開の IP アドレスに対するネットワーク要求も受け取ります。このような IP アドレスは、動的に生成または管理されているため、変更されたときに適時の通知を行うことができません。ご使用のファイアウォールで、これらのネットワーク要求の FQDN に基づいてアクセスを許可できない場合は、PAC または WPAD ファイルを使用して要求を管理してください。
   
 Office 365 と関連付けられた IP の詳細を確認するには、以下の手順を実行してください。
   
-1. [CIDR 計算ツール](https://www.ipaddressguide.com/cidr)を使用して、より広く公開されている範囲に IP アドレスが含まれているかどうかを確認します。
+1. [IPv4](https://www.ipaddressguide.com/cidr)や [IPv6]https://www.ipaddressguide.com/ipv6-cidr)などの CIDR 計算機を使用して、IP アドレスがより大きな公開範囲に含まれているかどうかを確認します。
 2. [whois クエリ](https://dnsquery.org/)を使用して、パートナーが IP を所有しているかどうかを確認します。Microsoft 所有の場合は、内部パートナーの可能性があります。
 3. 証明書を確認し、ブラウザーで *HTTPS://\<IP_ADDRESS\>* を使用して IP アドレスに接続し、証明書に表示されるドメインを確認して、IP アドレスに関連付けられているドメインを把握します。Microsoft 所有の IP アドレスで、Office 365 の IP アドレス一覧に掲載されていない場合、その IP アドレスは、*MSOCDN.NET* や IP 情報が公開されていない他の Microsoft ドメインなど、Microsoft CDN に関連付けられている可能性があります。証明書のドメインが、Microsoft が IP アドレスの登録を主張しているドメインの場合は、お知らせください。
 
@@ -159,8 +159,8 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 ハードコーディングされた構成や、間接 Office 365 FQDN に基づくホワイトリストの使用は推奨されておらず、Microsoft もサポートしていませんし、ユーザー接続の問題が生じる原因となることが分かっています。CNAME リダイレクトをブロックしたり、Office 365 DNS エントリを不適切に解決したりする DNS ソリューションは、DNS 再帰が有効な状態の DNS 条件付き転送 (直接使用される Office 365 FQDN がスコープ対象) を介して解決できます。多くのサード パーティのネットワーク境界製品では、[Office 365 IP アドレスと URL の Web サービス](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)を使用して、推奨されている Office 365 エンドポイント ホワイトリストを自社の構成にネイティブに統合しています。
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft ドメイン名に nsatc.net や akadns.net などの名前が表示されるのはなぜですか?
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft ドメイン名に nsatc.net や akadns.net などの名前が表示されるのはなぜですか?
 
 Office 365 と他の Microsoft サービスは、Akamai や MarkMonitor などのいくつかのサードパーティ サービスを使用し、Office 365 の操作性を高めています。お客様の操作性を可能な限り高めるために、将来これらのサービスを変更する可能性があります。サード パーティ ドメインは、CDN などのコンテンツをホストする場合があります。また、地理的なトラフィック管理サービスなどのサービスをホストする場合があります。現在、次のようなサービスが使用されています:
   
@@ -182,8 +182,8 @@ Office 365 と他の Microsoft サービスは、Akamai や MarkMonitor など�
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Office 365 への接続を最小限にする必要があります
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Office 365 への接続を最小限にする必要があります
 
 Office 365 はインターネット上で機能するように構築された一連のサービスですから、信頼性と可用性が保証されるかどうかは、多数の標準インターネット サービスの可用性に基づいています。 最新のインターネット サービスを使用するには DNS、CRL、CDN などの標準インターネット サービスに到達可能である必要がありますが、これとまったく同様に Office 365 を使用するにも標準インターネット サービスに到達可能である必要があります。
 
@@ -200,8 +200,8 @@ Office 365 スイートは、複数の主なサービス分野から構成され
   
 Office 365 を使用しようとして、サードパーティ サービスにアクセスできなかった場合、[この記事で必須またはオプションと記載されているすべての FQDN がプロキシとファイアウォールで許可されていることを確認します](urls-and-ip-address-ranges.md)。
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Microsoft のコンシューマー サービスへのアクセスをブロックするにはどうすればよいですか?
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Microsoft のコンシューマー サービスへのアクセスをブロックするにはどうすればよいですか?
 
 コンシューマー サービスへのアクセス制限はお客様の責任で行っていただく必要があります。 コンシューマー サービスを確実にブロックする唯一の方法は、*login.live.com* FQDN へのアクセスを制限することです。 この FQDN は、MSDN、TechNet などの非コンシューマー サービスを含む幅広いサービスに使用されます。 また、この FQDN は Microsoft サポートの Secure File Exchange プログラムによっても使用され、Microsoft 製品のトラブルシューティングに役立つファイルを転送するために必要です。  この FQDN へのアクセスを制限すると、これらのサービスに関連するネットワーク要求に関するルールの例外を含める必要が生じる場合があります。
   

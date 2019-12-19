@@ -1,7 +1,7 @@
 ---
 title: Office 365 米国政府 GCC GCC (高) エンドポイント
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: laurawi
+author: LauraWi
 manager: laurawi
 ms.date: 12/04/2019
 audience: ITPro
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 組織で Office 365 を使用していて、ネットワーク上のコンピューターがインターネットに接続できないように制限している場合は、次に示すように、送信許可一覧に含める必要のあるエンドポイント (Fqdn、ポート、Url、IPv4、IPv6 アドレスの範囲) を検索して、コンピューターは Office 365 を正常に使用できます。
 hideEdit: true
-ms.openlocfilehash: f4dfd8e76a9fc04db53fa67cbbea8b5a8bdeba4b
-ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
+ms.openlocfilehash: 8c2b324dedc79cb66d65266311d6062beaf15e87
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39858012"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744323"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府 GCC GCC (高) エンドポイント
 
