@@ -16,14 +16,16 @@ search.appverid:
 - PJU120
 - PJW120
 description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: df9e6c0e9b4e6cc737a246e43bd11a8892b5e23e
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031622"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "38747729"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
+
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Project Server 2010 は **、2020年10月 13**日にサポート終了日に到達します。 現在 Project Server 2010 を使用している場合は、これらの他の関連製品に次のサポート終了日があることに注意してください。
   
