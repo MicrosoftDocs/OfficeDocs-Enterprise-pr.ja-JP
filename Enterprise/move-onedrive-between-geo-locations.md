@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626167"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072559"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -47,7 +47,7 @@ OneDrive サイトの移動を事前にスケジュールすることができ�
 
 - 一度に最大 4,000 件の移動をスケジュールすることができます。
 - 移動開始後はスケジュールを追加でき、常時最大 4,000 件の保留中の移動をキューに置いておけます。
-- 1 か月あたり 4,000 件以上の移動をスケジュールしないことをお勧めします。
+- 移動できる OneDrive の最大サイズは 1 テラバイト (1 TB) です。
 
 ## <a name="moving-a-onedrive-site"></a>OneDrive サイトの移動
 
