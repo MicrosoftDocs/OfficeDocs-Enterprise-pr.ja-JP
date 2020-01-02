@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 新しいデータセンター geo 継続的な顧客需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 コア顧客データは、Microsoft Online Services の用語で定義されている、Exchange Online のメールボックスの内容 (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容) および SharePoint Online サイトのコンテンツとファイルのサブセットを参照する用語です。そのサイト内に格納され、OneDrive for Business にアップロードされたファイル。
-ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962454"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923869"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>コア データを新しい Office 365 データ センター geo に移行する
 
@@ -26,7 +26,8 @@ Business services 用 Office 365 の新しいデータセンター geo を引き
 コア顧客データは、次のような顧客データのサブセットを参照する用語です。 
 - Exchange Online メールボックスのコンテンツ (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容)
 - SharePoint Online サイトのコンテンツと、そのサイト内に格納されているファイル
-- OneDrive for business にアップロードされたファイル 
+- OneDrive for business にアップロードされたファイル
+- Teams のチャットメッセージ (プライベートメッセージ、チャネルメッセージ、チャットで使用される画像など)
   
 既存のデータセンター geo に保存されるコア カスタマー データを持つ既存のお客様は、新しいデータセンター geo の導入による影響を受けません。 新しいデータセンター geo では、独自機能や準拠証明書を導入していしません。 これら 2 つの任意の geo のお客様として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。 次の表に記載されている既存のお客様には、組織の主要な顧客データを新しいデータセンター geo に早期に移行するためのオプションを用意しています。
   

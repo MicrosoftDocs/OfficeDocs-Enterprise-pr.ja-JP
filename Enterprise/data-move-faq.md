@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923849"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -50,6 +50,14 @@ Exchange Online と SharePoint Online/OneDrive for Business の間で共有さ�
 データの移動は、エンドユーザーへの影響を最小限に抑えたバックエンドのサービス操作です。 影響を受ける可能性がある機能は、[データの移行中および移行後](during-and-after-your-data-move.md)に一覧に表示されます。 Microsoft は、 [Microsoft Online Services のサービスレベル契約 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)を利用できるようにしています。そのため、移行中にお客様が準備や監視を行う必要はありません。 
   
 Office 365 サービスは、どのデータセンターでもすべて同じバージョンが実行されるため、機能の一貫性が確保されます。このプロセス中、サービスは完全にサポートされます。
+
+## <a name="what-is-in-scope-for-teams-migration"></a>Teams の移行の範囲について
+
+Exchange Online、SharePoint Online、OneDrive for Business に加えてMicrosoft は、Teams データをローカルデータセンターに移行します。  
+- Teams のチャットメッセージ (プライベートメッセージやチャネルメッセージを含む)。 
+- チャットで使用される Teams 画像。 
+
+Teams ファイルは SharePoint Online に格納され、Teams チャットファイルは OneDrive for Business に保存されます。  ボイスメール、予定表、チャット履歴、および連絡先は、Exchange Online に格納されます。  多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、ローカルのデータセンター geo のお客様によって既に使用されており、対象となる顧客の国の Office 365 移行プログラムの一部でもあります。
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>異なる geo に異なるサービスがあることには、どんな影響がありますか?
 

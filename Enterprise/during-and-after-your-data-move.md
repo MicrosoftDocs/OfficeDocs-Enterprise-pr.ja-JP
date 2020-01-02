@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923859"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -32,18 +32,21 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 
 |**国がサインアップしているお客様**|**完了したすべての移動**|
 |:-----|:-----|
-|オーストラリア、ニュージーランド、フィジー  <br/> |2017 年 10 月 31 日  <br/> |
-|日本  <br/> |2018 年 10 月 31 日  <br/> |
-|インド  <br/> |2018 年 10 月 31 日  <br/> |
-|カナダ  <br/> |2019年6月30日  <br/> |
-|韓国  <br/> |2018 年 10 月 31 日  <br/> |
-|英国  <br/> |2019 年 9 月 15 日  <br/> |
-|フランス  <br/> |2020 年 9 月 15 日  <br/> |
-|アラブ首長国連邦  <br/> |2022年2月1日  <br/> |
-|南アフリカ  <br/> |2022年2月1日  <br/> |
+|オーストラリア、ニュージーランド、フィジー  <br/> |2022年7月1日  <br/> |
+|日本  <br/> |2022年7月1日  <br/> |
+|インド  <br/> |2022年7月1日  <br/> |
+|カナダ  <br/> |2022年7月1日  <br/> |
+|韓国  <br/> |2022年7月1日  <br/> |
+|英国  <br/> |2022年7月1日  <br/> |
+|フランス  <br/> |2022年7月1日  <br/> |
+|アラブ首長国連邦  <br/> |2022年7月1日  <br/> |
+|南アフリカ  <br/> |2022年7月1日  <br/> |
 |スイス、リヒテンシュタイン  <br/> |2022年7月1日  <br/> |
 |ドイツ  <br/> |計画  <br/> |
-   
+
+> [!NOTE]
+> 対象となる Office 365 国のお客様は、2020年1月1日から2020年6月30日までの Microsoft Teams chat service データ移行をオプトインすることができます。これは、その他の対象となるワークロードについても、移行を通知します。  2020より前の移行をオプトインしているお客様は、Exchange Online と SharePoint Online または OneDrive for business が元の期限までに完了することを期待できますが、Teams はすべてのお客様に対しては2022年7月1日に完了します。 
+
 ## <a name="exchange-online"></a>Exchange Online
 
 各ユーザーをシングル テナントの新しいデータセンター geo に移動するのに時間がかかるため、移動中は一部のユーザーが古いデータセンター geo のまま、他のユーザーは新しいデータセンター geo という状態になります。 これは、複数のメールボックスへのアクセスを必要とする一部の機能が、移行プロセスの間に完全には機能しない場合があることを意味します。これは、先週まで可能です。 該当する機能については、この後のセクションで取り上げます。
@@ -102,7 +105,11 @@ SharePoint Online データを移行する過程で、検索インデックス�
 - 電子情報開示:移行中に変更されたアイテムは、クロールで変更が反映されるまでは表示されません。
     
 - データ損失防止 (DLP):クロールで変更が反映されるまで、変更されたアイテムに対してポリシーは適用されません。
-    
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+対象となる Office 365 の国のお客様は、2020年1月1日に Microsoft Teams chat service データ移行をオプトインすることができます。  
+
 ## <a name="skype-for-business"></a>Skype for Business
 
 カットオーバーの際、すべてのユーザーは Skype for Business クライアント ソフトウェアからサインアウトされます。自動サインインによって、2 分以内にユーザーは再接続されます。
