@@ -89,7 +89,7 @@ Exchange フェデレーションを使用しているメールのお客様は�
 ## <a name="external-dns-records-required-for-sharepoint-online"></a>SharePoint Online に必要な外部 DNS レコード
 <a name="BKMK_ReqdCore"> </a>
 
-組織が SharePoint Online を使用して外部ユーザーにメールを送信する場合、SharePoint Online は DNS レコードのみが必要です。この場合は、メールが配信されるように [SPF に必要な外部 DNS レコード](external-domain-name-system-records.md#BKMK_SPFrecords)を設定します。
+組織が SharePoint Online を使用して外部ユーザーにメールを送信する場合にのみ、SharePoint Online は DNS レコードが必要です。この場合は、メールが配信されるように [SPF に必要な外部 DNS レコード](external-domain-name-system-records.md#BKMK_SPFrecords)を設定します。
   
 ## <a name="external-dns-records-required-for-office-365-single-sign-on"></a>Office 365 シングル サインオンに必要な外部 DNS レコード
 <a name="BKMK_ReqdCore"> </a>
