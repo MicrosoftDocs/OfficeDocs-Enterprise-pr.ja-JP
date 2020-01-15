@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
-ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085172"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122566"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -160,7 +160,9 @@ HMA を有効にすると、クライアントの次のログインは新しい�
 TCP 443 で Exchange server を使用しているオンプレミスのお客様の場合は、次の IP 範囲をホワイトリストしてください。 <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md) 
   
+Outlook ユーザーにモダン認証を強制する  
+[Office 365 専任/ITAR から vNext に移行するための先進認証構成要件](modern-authentication-configuration.md)

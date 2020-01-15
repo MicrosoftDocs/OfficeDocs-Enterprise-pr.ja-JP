@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747990"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122576"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 この記事では、office 2013 および Office 2016 クライアントアプリが、Exchange Online、SharePoint Online、Skype for Business Online の Office 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
 
@@ -73,6 +73,7 @@ Office 2016 クライアントは既定で先進認証をサポートしてお�
   
 |Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 (既定) * * * *|テナントの先進認証がオフになっている認証動作 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2016  <br/> |違います <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |はい  <br/> |Outlook 2010、2013、または2016で先進認証を強制する <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制的に実行します。<br/> |
 |Office 2016  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
@@ -107,7 +108,7 @@ Office 2016 クライアントは既定で先進認証をサポートしてお�
    
 ## <a name="see-also"></a>関連項目
 
-[Windows デバイスで Office 2013 の先進認証を有効にする](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Windows デバイスの Office 2013 の先進認証を有効にする](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Office 365 の展開で多要素認証を計画する (Office 365 管理者向け)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
