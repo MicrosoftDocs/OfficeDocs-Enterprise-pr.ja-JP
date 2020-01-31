@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 展開アドバイザーを使用して、Office 365 または Microsoft 365 の計画と構成を促進します。
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072369"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627863"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 または Microsoft 365 サービスの展開アドバイザー
 
@@ -168,7 +168,7 @@ Office を PC または Mac にインストールするための手順につい�
 | **実行** |  [Office 365 ProPlus クイックスタートガイド](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus の展開アドバイザーでは、ユーザーが office 365 ポータル online から Office 365 ProPlus を直接インストールする、または社内の場所からユーザーに Office 365 ProPlus を展開するのに役立つ手順について説明します。 System Center Configuration Manager、グループポリシースタートアップスクリプト、オペレーティングシステムディスクイメージ、またはリモートデスクトップサービス (RDS) 共有ライセンス認証を使用するための手順が含まれています。
+Office 365 ProPlus の展開アドバイザーでは、ユーザーが office 365 ポータル online から Office 365 ProPlus を直接インストールする、または社内の場所からユーザーに Office 365 ProPlus を展開するのに役立つ手順について説明します。 Microsoft エンドポイント構成マネージャー、グループポリシースタートアップスクリプト、オペレーティングシステムディスクイメージ、またはリモートデスクトップサービス (RDS) 共有ライセンス認証を使用するための手順が含まれています。
 
 |||
 |:-------|:-----|

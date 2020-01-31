@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: PowerShell を使用して Office 365 のディレクトリ同期を無効にする方法について説明します。
-ms.openlocfilehash: de7cfcbc11ed281e412c68674b808613b3421041
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: efee8b216d63f32ac64a559aca3bcb55b0a933c1
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072399"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570894"
 ---
 # <a name="turn-off-directory-synchronization-for-office-365"></a>Office 365 のディレクトリ同期を無効にする
 PowerShell を使用して、ディレクトリ同期を無効にすることができます。 ただし、トラブルシューティング手順としてディレクトリ同期を無効にすることはお勧めしません。 ディレクトリ同期のトラブルシューティングに関してサポートが必要な場合は、「 [Office 365 のディレクトリ同期の問題を解決](fix-problems-with-directory-synchronization.md)する」の記事を参照してください。 
@@ -32,7 +32,7 @@ PowerShell を使用して、ディレクトリ同期を無効にすることが
 ## <a name="turn-off-directory-synchronization"></a>ディレクトリ同期を無効にする  
 ディレクトリ同期を無効にするには、次のようにします。
   
-1. 最初に、必要なソフトウェアをインストールし、Office 365 サブスクリプションに接続します。 両方の手順については、「 [Office 365 PowerShell に接続する](https://go.microsoft.com/fwlink/p/?LinkId=821938)」を参照してください。
+1. 最初に、必要なソフトウェアをインストールし、Office 365 サブスクリプションに接続します。 手順については、「 [Windows PowerShell 用 Microsoft Azure Active Directory モジュールとの接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)」を参照してください。
     
 2. ディレクトリ同期を無効にするには[、MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939)を使用します。 
     

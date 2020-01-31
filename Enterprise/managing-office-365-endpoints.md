@@ -3,7 +3,7 @@ title: Office 365 エンドポイントを管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ ネットワークの中には、一般的なインターネット上の場所へのアクセスや、強固なバックホールの導入、ネットワーク トラフィックの処理を制限しているものがあります。そのようなネットワーク上のコンピュータから Office 365 にアクセスできるようにするために、ネットワーク管理者およびプロキシ管理者は、Office 365 エンドポイントのリストを構成する FQDN、URL、および IP アドレスのリストを管理する必要があります。これらを直接ルート、プロキシ バイパス、またはファイアウォール ルールおよび PAC ファイルに追加して、ネットワーク要求が Office 365 に到達できるようにする必要があります。
-ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744511"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570884"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -140,9 +140,10 @@ Microsoft では、直接ルーティングする必要がある Office 365 サ�
   
 Office 365 と関連付けられた IP の詳細を確認するには、以下の手順を実行してください。
   
-1. [IPv4](https://www.ipaddressguide.com/cidr)や [IPv6]https://www.ipaddressguide.com/ipv6-cidr)などの CIDR 計算機を使用して、IP アドレスがより大きな公開範囲に含まれているかどうかを確認します。
-2. [whois クエリ](https://dnsquery.org/)を使用して、パートナーが IP を所有しているかどうかを確認します。Microsoft 所有の場合は、内部パートナーの可能性があります。
-3. 証明書を確認し、ブラウザーで *HTTPS://\<IP_ADDRESS\>* を使用して IP アドレスに接続し、証明書に表示されるドメインを確認して、IP アドレスに関連付けられているドメインを把握します。Microsoft 所有の IP アドレスで、Office 365 の IP アドレス一覧に掲載されていない場合、その IP アドレスは、*MSOCDN.NET* や IP 情報が公開されていない他の Microsoft ドメインなど、Microsoft CDN に関連付けられている可能性があります。証明書のドメインが、Microsoft が IP アドレスの登録を主張しているドメインの場合は、お知らせください。
+1. IP アドレスが、 [IPv4](https://www.ipaddressguide.com/cidr)または[IPv6](https://www.ipaddressguide.com/ipv6-cidr)のような CIDR 計算機を使用して、より大きな公開範囲に含まれているかどうかを確認します。 たとえば、40.96.0.0/13 には、40.103.0.1 が40.103 に一致しないにも40.96 かかわらず、IP アドレスが含まれています。
+2. パートナーが[whois クエリ](https://dnsquery.org/)を使用して IP を所有しているかどうかを確認します。 Microsoft が所有している場合は、内部パートナーである可能性があります。 多くのパートナーネットワークエンドポイントは、_既定_のカテゴリに属しているものとして一覧表示され、IP アドレスは公開されません。
+3. IP アドレスは、Office 365 または依存関係の一部ではない場合があります。 Office 365 ネットワークエンドポイントの公開には、Microsoft ネットワークエンドポイントのすべてが含まれているわけではありません。
+4. 証明書を確認し、ブラウザーで *HTTPS://\<IP_ADDRESS\>* を使用して IP アドレスに接続し、証明書に表示されるドメインを確認して、IP アドレスに関連付けられているドメインを把握します。Microsoft 所有の IP アドレスで、Office 365 の IP アドレス一覧に掲載されていない場合、その IP アドレスは、*MSOCDN.NET* や IP 情報が公開されていない他の Microsoft ドメインなど、Microsoft CDN に関連付けられている可能性があります。証明書のドメインが、Microsoft が IP アドレスの登録を主張しているドメインの場合は、お知らせください。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>一部の Office 365 URL が、DNS 内の A レコードではなく CNAME レコードを指しています。CNAME レコードはどのように扱えばよいでしょうか?
@@ -206,7 +207,12 @@ Office 365 を使用しようとして、サードパーティ サービスに�
 コンシューマー サービスへのアクセス制限はお客様の責任で行っていただく必要があります。 コンシューマー サービスを確実にブロックする唯一の方法は、*login.live.com* FQDN へのアクセスを制限することです。 この FQDN は、MSDN、TechNet などの非コンシューマー サービスを含む幅広いサービスに使用されます。 また、この FQDN は Microsoft サポートの Secure File Exchange プログラムによっても使用され、Microsoft 製品のトラブルシューティングに役立つファイルを転送するために必要です。  この FQDN へのアクセスを制限すると、これらのサービスに関連するネットワーク要求に関するルールの例外を含める必要が生じる場合があります。
   
 ただし、Microsoft コンシューマー サービスへのアクセスをブロックするだけでは、ネットワーク上の誰かが Office 365 テナントや他のサービスを使用して情報を入手することを防ぐことはできません。
-  
+
+<a name="bkmk_IPOnlyFirewall"> </a>
+### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>ファイアウォールには IP アドレスが必要ですが、Url を処理できません。 Office 365 用に構成するにはどうすればよいですか?
+
+Office 365 は、必要なすべてのネットワークエンドポイントの IP アドレスを提供していません。 一部は Url のみとして提供され、既定として分類されます。 既定のカテゴリの Url は、プロキシサーバーを使用して許可されている必要があります。 プロキシサーバーがない場合は、web ブラウザーのアドレスバーにユーザーが入力した Url に対して web 要求を構成する方法を確認します。ユーザーは IP アドレスを提供しません。 IP アドレスを提供しない Office 365 の既定のカテゴリの Url は、同じ方法で構成する必要があります。
+
 ## <a name="related-topics"></a>関連トピック
 
 [Office 365 IP アドレスと URL の Web サービス](office-365-ip-web-service.md)

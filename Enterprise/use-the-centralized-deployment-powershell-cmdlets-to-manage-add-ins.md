@@ -1,9 +1,9 @@
 ---
 title: 一元展開 PowerShell コマンドレットを使用してアドインを管理する
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 一元展開 PowerShell コマンドレットを使用すると、Office 365 組織の Office アドインを展開して管理するのに役立ちます。
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030862"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570874"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>一元展開 PowerShell コマンドレットを使用してアドインを管理する
 
@@ -106,7 +106,7 @@ Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 すべてのアドインおよび割り当てられたユーザーとグループの詳細を取得するには、次の例に示すように、コマンドレットの出力を Format**コマンドレットに**パイプ処理します。
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>アドインをオンまたはオフにする
@@ -168,53 +168,54 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>組織の Microsoft Store アドインをカスタマイズする
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-組織に展開する前に、アドインをカスタマイズする必要があります。 バージョン1.1 より前のアドインは、この機能ではサポートされていません。 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-カスタマイズされたアドインを最初に展開して、組織全体に展開する前に予想どおりに動作するようにすることをお勧めします。
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-また、次の制限に注意してください。
-- すべての Url は、絶対 (http または https を含む) であり、有効である必要があります。
-- *DisplayName*は125文字以下にする必要があります 
-- *DisplayName*、 *Resources* 、および*AppDomains*には、次の文字を含めることはできません。 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
     -  ;
     -  =   
 
-展開されているアドインをカスタマイズする場合は、管理センターでアンインストールする必要があり、展開されている各コンピューターから削除する手順については、「[ローカルキャッシュからアドインを削除](#remove-an-add-in-from-local-cache)する」を参照してください。
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-アドインをカスタマイズするには、パラメーターとして*ProductId*を指定して**Set –組織**の上書きコマンドレットを実行し、その後に、上書きするタグと新しい値を指定します。 *ProductId*を取得する方法については、この記事の「[アドインの詳細を取得](#get-details-of-an-add-in)する」を参照してください。 例:
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-アドインの複数のタグをカスタマイズするには、これらのタグを commandline に追加します。
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> 1つのコマンドとして、1つのアドインに複数のカスタマイズされたタグを適用する必要があります。 タグを1つずつカスタマイズした場合は、最後のカスタマイズのみが適用されます。 また、誤ってタグをカスタマイズした場合は、すべてのカスタマイズを削除して最初からやり直す必要があります。
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a>カスタマイズできるタグ
+### Tags you can customize
 
-| Tag                  | 説明          |
+| Tag                  | Description          |
 | :------------------- | :------------------- |
-| \<IconURL>   </br>| アドインのアイコンとして使用されるイメージの URL (管理センター内)。 </br> |
-| \<DisplayName>| アドインのタイトル (管理センター)。|
-| \<Hosts>| アドインをサポートするアプリの一覧。|
-| \<SourceLocation> | アドインが接続する元の URL。| 
-| \<AppDomains> | アドインが接続できるドメインの一覧。 | 
-| \<SupportURL>| ユーザーがヘルプとサポートにアクセスするために使用できる URL。 | 
-| \<リソース>  | このタグには、タイトル、ツールヒント、さまざまなサイズのアイコンなど、いくつかの要素が含まれています。| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a>リソースのカスタマイズタグ
+### Customize Resources tag
 
-マニフェストの<Resources>タグ内の要素は、動的にカスタマイズできます。 最初に、マニフェストをチェックして、新しい値を割り当てる要素の id を見つける必要があります。 タグ<Resources>は次のようになります。
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,45 +224,47 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
     </bt:Images> 
 </Resources> 
 ``` 
-この例では、イメージの要素 id は "img16icon" で、それに関連付けられている値<i></i>は "http://サイトです。<i> </i>com/img. "
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-カスタマイズする要素を特定したら、Powershell で次のコマンドを使用して、要素に新しい値を割り当てます。
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-必要に応じて、コマンドを使用して複数の要素をカスタマイズできます。
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a>アドインからカスタマイズを削除する
+### Remove customization from an add-in
 
-現在、カスタマイズを削除するために使用できるオプションは、一度にすべてを削除することです。
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a>アドインのカスタマイズを表示する
+### View add-in customizations
 
-適用されているカスタマイズの一覧を表示するには、" **Get-help Addinoverrides/上書き**" コマンドレットを実行します。 **取得**した引数が*ProductId*なしで実行される場合は、オーバーライドが適用されたすべてのアドインのリストが返されます。  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-ProductId が指定されている場合、そのアドインに適用されたオーバーライドの一覧が返されます。 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a>ローカルキャッシュからアドインを削除する
+### Remove an add-in from local cache
 
-アドインが展開されている場合は、カスタマイズできるようにするために、各コンピューターのキャッシュから削除する必要があります。 アドインをキャッシュから再作成するには、次のようにします。
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. C:\ の "Users" フォルダーに移動します。 
-1. ユーザーフォルダーに移動します。
-1. AppData\Local\Microsoft\Office に移動し、Office のバージョンに関連付けられているフォルダーを選択します。
-1. *Wef*フォルダーで、[*マニフェスト*] フォルダーを削除します。
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
+
+-->
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>各コマンドレットの詳細なヘルプを取得する
 

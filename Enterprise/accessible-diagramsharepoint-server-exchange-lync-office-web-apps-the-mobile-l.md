@@ -10,12 +10,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: この記事は、Microsoft Exchange 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1440558a3c462ae71189fb42d492e0292c256c19
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030581"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627853"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>アクセス可能な図 - SharePoint Server、Exchange、Lync、Office Web Apps - モバイルの展望
 
@@ -154,7 +154,7 @@ Office Mobile を使用する以外にも、ユーザーは Windows 8 タブレ�
     
 ### <a name="device-management-and-software-distribution"></a>デバイス管理とソフトウェア配布
 
-Microsoft は、複数のデバイス ブランドにわたるデバイス管理をもたらす新製品を用意しています。Windows Intune は、モバイル デバイス用のクラウド ベース管理プラットフォームです。単独でデバイスを管理するために使用するか、または System Center 2012 R2 構成マネージャーと組み合わせてそのコンソール内で管理することができます。この共同作業には次のような利点があります。
+Microsoft は、複数のデバイス ブランドにわたるデバイス管理をもたらす新製品を用意しています。 Windows Intune は、モバイル デバイス用のクラウド ベース管理プラットフォームです。 デバイスは単独で使用することも、Microsoft エンドポイント構成マネージャーと組み合わせてそのコンソール内で管理することもできます。 この共同作業には次のような利点があります。
   
 - Windows RT、Windows 8.1、Windows Phone 8、iOS、および Android を含む複数デバイスにわたるポリシー適用と管理
     
@@ -168,15 +168,15 @@ Microsoft は、複数のデバイス ブランドにわたるデバイス管理
     
 - 使い慣れた構成マネージャー コンソールからの管理
     
-付属の図は、System Center 2012 R2 構成マネージャーと Windows Intune を使用してデバイスを管理する方法を示しています。
+付属図は、デバイスの管理に構成マネージャーと Windows Intune を使用する方法を示しています。
   
- **System Center 2012 R2 構成マネージャーと Windows Intune を使用する際の考慮事項:**
+ **構成マネージャーと Windows Intune を使用する際の考慮事項:**
   
-- System Center 2012 R2 構成マネージャーと Windows Intune の両方を使用すると、企業内のすべてのデバイスを 1 つのコンソールで管理できます。
+- 構成マネージャーと Windows Intune の両方を使用する場合は、1つのコンソールで組織内のすべてのデバイスを管理および管理できます。
     
 - 構成マネージャーを Windows Intune に接続するには、Windows Intune サブスクリプションが必要です。さらに、構成マネージャー環境のサーバーに Windows Intune コネクタ サイト サーバーの役割を展開する必要もあります。
     
-- System Center 2012 R2 構成マネージャーは、社内 PC に対して管理とソフトウェア配布を提供します。
+- Microsoft エンドポイント構成マネージャーは、オンプレミス Pc に対して管理とソフトウェアの配布を提供します。
     
 - 管理されたモダン デバイスは、Windows Intune からポリシー適用とソフトウェア配布を受信します。サポートされているデバイスの種類は次のとおりです。Windows RT、Windows 8.1、Windows Phone 8、iOS、Android。
     

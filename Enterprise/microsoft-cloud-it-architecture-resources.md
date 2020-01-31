@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: '概要: Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Office ProPlus で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。'
-ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 30f3cb17f59c3a2352b4f0be9fec92d53126e63b
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756606"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627903"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
@@ -217,7 +217,7 @@ Windows 10 での Office 365 ProPlus の更新プログラムの展開と管理�
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft の最新のセキュリティで保護されたデスクトップの展開に関するモデルのサムネイル](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | このモデルには次のものが含まれています。 <ul><li>  Microsoft Cloud から Windows 10 と Office ProPlus を展開する </li><li>  System Center Configuration Manager を使用して Windows 10 と Office ProPlus を展開する </li><li>  Microsoft Cloud から Windows 10 と Office ProPlus の更新プログラムを管理する </li><li>  System Center Configuration Manager を使用して Windows 10 と Office ProPlus の更新プログラムを管理する </li><li>  Windows 10 のすぐに使用可能な追加保護機能 </li></ul><br/> |
+|[![Microsoft の最新のセキュリティで保護されたデスクトップの展開に関するモデルのサムネイル](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | このモデルには次のものが含まれています。 <ul><li>  Microsoft Cloud から Windows 10 と Office ProPlus を展開する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Office ProPlus を展開する </li><li>  Microsoft Cloud から Windows 10 と Office ProPlus の更新プログラムを管理する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Office ProPlus の更新プログラムを管理する </li><li>  Windows 10 のすぐに使用可能な追加保護機能 </li></ul><br/> |
    
 ## <a name="see-also"></a>関連項目
 
