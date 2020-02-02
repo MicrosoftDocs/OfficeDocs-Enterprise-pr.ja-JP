@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: SharePoint Online でのデータ削除についての説明。
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078156"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658324"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365 での SharePoint Online データの削除
 
@@ -36,6 +36,8 @@ SharePoint Online では、アイテムは元の場所から削除した時点�
 - サイトまたはそのサブサイトに関連するロールおよびセキュリティ情報
 - トップレベル web サイトのサブサイト、それらのコンテンツ、およびユーザー情報
 
-サイトコレクションを誤って削除した場合は、SharePoint 管理センターを使用して、グローバルまたは SharePoint 管理者がサイトコレクションを復元できます。 
+サイトコレクションを誤って削除した場合は、SharePoint 管理センターを使用して、グローバルまたは SharePoint 管理者がサイトコレクションを復元できます。
+
+削除されたサイトコレクションは、93日間保持されます。 93日後に、サイトとそのすべてのコンテンツと設定が完全に削除されます (リスト、ライブラリ、ページ、およびその他のサブサイトを含む)。
 
 ハード削除は、ユーザーがサイトコレクションのごみ箱から削除されたアイテムを削除したとき、保持とバックアップの期間が経過したとき、または管理者が[remove-spodeletedsite コマンドレット](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)を使用してサイトコレクションを完全に削除したときに発生します。 ユーザーが SharePoint Online からコンテンツを物理的に削除 (完全に削除、またはパージ) すると、削除されたチャンクのすべての暗号化キーも削除されます。 以前に削除されたチャンクを格納していたディスク上のブロックは未使用としてマークされ、再利用できるようになります。

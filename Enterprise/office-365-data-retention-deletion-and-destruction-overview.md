@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: データの保持、削除、および破壊に関する Office 365 の Microsoft ポリシーの概要。
-ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 93093e3688d0f8ae399a4e021deaaf4b7ed5cecf
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37975832"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658334"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 でのデータの保持、削除、および破棄
 
@@ -47,7 +47,7 @@ Microsoft では、ユーザーが削除した後に顧客データを保持す�
 
 サブスクリプションの場合、サブスクライバーは Microsoft サポートに連絡して、サブスクリプションの優先プロビジョニング解除を要求できます。 このプロセスでは、管理者が Microsoft によって提供されたロックアウトコードを入力した3日後に、すべてのユーザーデータが削除されます。 これには、SharePoint Online および Exchange Online のデータが保持されるか、非アクティブなメールボックスに格納されます。
 
-優先除外の詳細については、「 [Office 365 の取り消し](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)」を参照してください。
+優先除外の詳細については、「 [Office 365 の取り消し](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription)」を参照してください。
 
 ## <a name="related-links"></a>関連リンク
 
