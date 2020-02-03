@@ -195,6 +195,7 @@
 ##### [偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 ##### [ゲスト共有の環境を保護する](create-a-secure-guest-sharing-environment.md)
 #### [B2B エクストラネットを作成する](b2b-extranet.md)
+### [共有を制限する](microsoft-365-limit-sharing.md)
 
 ## デバイス
 ### [MDM または Intune を選択する](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
