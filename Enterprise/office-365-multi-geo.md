@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e1b8bd21790eee558fdb0754b0b0e61a1a02da6d
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031932"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658344"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -74,3 +74,5 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 [OneDrive および SharePoint Online の複数地域機能](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
 [Exchange Online の複数地域機能](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)
+
+[複数地域環境での Teams エクスペリエンス](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
