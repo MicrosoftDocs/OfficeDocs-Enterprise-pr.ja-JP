@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Microsoft Office 365 のネットワーク帯域幅要件を計画するのに役立つ情報を示します。 展開後、Office 365 のパフォーマンスを微調整してトラブルシューティングを行うために、ここに戻ってください。
-ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38032142"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721948"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Office 365 のネットワーク計画とパフォーマンス チューニング
 Office 365 に初めて展開するか、Office に移行する前に、これらのトピックの情報を使用して必要な帯域幅を推定し、Office 365 に展開または移行するのに十分な帯域幅があるかどうかをテストして確認することができます。 概要については、「 [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)」を参照してください。
@@ -35,7 +35,7 @@ Office 365 に初めて展開するか、Office に移行する前に、これ�
 
 Office 365 を展開した後で、このセクションのトピックを使用してパフォーマンスを最適化することができます。 パフォーマンス低下が発生した場合は、以下のトピックを使用して問題のトラブルシューティングを行うこともできます。
   
- **[Office 365 のパフォーマンスをチューニング](tune-office-365-performance.md)** する: office 365 でのネットワークアドレス変換の使用の詳細については、「 [office 365 を使用した NAT サポート](nat-support-with-office-365.md)」を参照してください。 また、Paul Collinge で[Office 365 のネットワーク接続を最適化およびトラブルシューティングするための上位10のヒント](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx)を参照してください。 
+ **[Office 365 のパフォーマンスをチューニング](tune-office-365-performance.md)** する: office 365 でのネットワークアドレス変換の使用の詳細については、「 [office 365 を使用した NAT サポート](nat-support-with-office-365.md)」を参照してください。 また、 [Office 365 のネットワーク接続を最適化しトラブルシューティングするための上位10のヒント](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity)を参照してください。 
   
  **[Exchange online のパフォーマンスをチューニング](tune-exchange-online-performance.md)** する: exchange online のパフォーマンスを微調整するには、次の記事を使用します。 
   

@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが含まれています。
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747787"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721958"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 この記事には、ネットワークの計画とテスト、および Office 365 への移行に関する情報へのリンクが記載されています。
   
@@ -59,8 +59,6 @@ Office 365 を使用すると、組織のインターネット回線の使用率
 <a name="calculators"> </a>
 
  **ネットワークツール。** インターネット帯域幅をテストおよび検証して、ダウンロード、アップロード、および待機時間の制約を決定します。 これらのツールは、完全に展開された後と同様に、移行のためのネットワークの機能を決定するのに役立ちます。 
-  
-- [Microsoft メッセージアナライザー](https://technet.microsoft.com/library/jj649776.aspx): メッセージアナライザーは、ネットワークの問題をトラブルシューティングするための効果的なツールです。 メッセージアナライザーは、プロトコルベースのメッセージングトラフィックおよびシステムメッセージをキャプチャ、表示、および分析します。 メッセージアナライザーを使用すると、ログファイルとトレースファイルからデータをインポート、集計、および分析することもできます。
     
 - [Microsoft リモート接続アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=517243): Exchange Online 環境での接続をテストします。
     
