@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365 の展開後は、以下のツールや方法を使用して Office 365 の接続を維持することができます。公式の「サービスの正常性および継続性のガイドライン」と「低速のネットワークで Office 365 を使用するためのベスト プラクティス」を確認しておくようにしてください。また、 Office 365 管理者アプリを入手し、「Office 365 for Business - 管理者ヘルプ」をブックマークしておくことをお勧めします。
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931695"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721968"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 の接続の監視をする
 
@@ -37,7 +37,7 @@ Office 365 の展開後は、以下で説明するツールや方法を使用し
 |**AD FS を使って Azure AD Connect Health を使用する** <br/> |Office 365 のシングル サインオン用に AD FS を使用している場合、[Azure AD Connect Health を使った AD FS インフラストラクチャの監視](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)を開始することをお勧めします。  <br/> |
 |**プログラムを使って Office 365 を監視する** <br/> |[Office 365 管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) に関するマイクロソフトのガイダンスを参照してください。  <br/> |
 
-ここに戻る場合は、次のショート リンクをご利用ください: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>関連項目
 
