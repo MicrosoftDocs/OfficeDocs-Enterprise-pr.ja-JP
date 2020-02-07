@@ -20,47 +20,49 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Office 2007 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748024"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841004"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a><span data-ttu-id="4e76c-104">Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース</span><span class="sxs-lookup"><span data-stu-id="4e76c-104">Resources to help you upgrade from Office 2007 servers and clients</span></span>
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a><span data-ttu-id="7d5a1-104">Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース</span><span class="sxs-lookup"><span data-stu-id="7d5a1-104">Resources to help you upgrade from Office 2007 servers and clients</span></span>
 
-<span data-ttu-id="4e76c-105">*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="4e76c-105">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
+<span data-ttu-id="7d5a1-105">*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="7d5a1-105">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
 
-<span data-ttu-id="4e76c-106">Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了しています。</span><span class="sxs-lookup"><span data-stu-id="4e76c-106">If you're using Office 2007 products and services, support for these applications has ended.</span></span> <span data-ttu-id="4e76c-107">アップグレードを計画している間は、Office 365 以降の Microsoft Cloud への移行を検討するのに非常に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4e76c-107">While you're planning your upgrade, this is a great time to consider moving to the Microsoft Cloud, starting with Office 365.</span></span> <span data-ttu-id="4e76c-108">この記事を出発点として、オプションを確認してアップグレードを計画します。</span><span class="sxs-lookup"><span data-stu-id="4e76c-108">Use this article as a starting point to review your options and plan your upgrade.</span></span>
+<span data-ttu-id="7d5a1-106">Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了しています。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-106">If you're using Office 2007 products and services, support for these applications has ended.</span></span> <span data-ttu-id="7d5a1-107">アップグレードを計画している間は、Office 365 以降の Microsoft Cloud への移行を検討するのに非常に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-107">While you're planning your upgrade, this is a great time to consider moving to the Microsoft Cloud, starting with Office 365.</span></span> <span data-ttu-id="7d5a1-108">この記事を出発点として、オプションを確認してアップグレードを計画します。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-108">Use this article as a starting point to review your options and plan your upgrade.</span></span>
       
-## <a name="office-2007-planning-roadmaps"></a><span data-ttu-id="4e76c-109">Office 2007 の計画のロードマップ</span><span class="sxs-lookup"><span data-stu-id="4e76c-109">Office 2007 planning roadmaps</span></span>
+## <a name="office-2007-planning-roadmaps"></a><span data-ttu-id="7d5a1-109">Office 2007 の計画のロードマップ</span><span class="sxs-lookup"><span data-stu-id="7d5a1-109">Office 2007 planning roadmaps</span></span>
   
-<span data-ttu-id="4e76c-110">Office 2007 製品とサービスのサポートが終了しました。</span><span class="sxs-lookup"><span data-stu-id="4e76c-110">Support has ended for Office 2007 products and services.</span></span> <span data-ttu-id="4e76c-111">次のロードマップは、今すぐアップグレードを計画するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="4e76c-111">The following roadmaps can help you plan your upgrade now.</span></span>
+<span data-ttu-id="7d5a1-110">Office 2007 製品とサービスのサポートが終了しました。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-110">Support has ended for Office 2007 products and services.</span></span> <span data-ttu-id="7d5a1-111">次のロードマップは、今すぐアップグレードを計画するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-111">The following roadmaps can help you plan your upgrade now.</span></span>
 
-|<span data-ttu-id="4e76c-112">**コンテンツを計画する**</span><span class="sxs-lookup"><span data-stu-id="4e76c-112">**Planning Content**</span></span>|<span data-ttu-id="4e76c-113">**サポート終了日**</span><span class="sxs-lookup"><span data-stu-id="4e76c-113">**Date Support Ended**</span></span>|
+|<span data-ttu-id="7d5a1-112">**コンテンツを計画する**</span><span class="sxs-lookup"><span data-stu-id="7d5a1-112">**Planning Content**</span></span>|<span data-ttu-id="7d5a1-113">**サポート終了日**</span><span class="sxs-lookup"><span data-stu-id="7d5a1-113">**Date Support Ended**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="4e76c-114">Office 2007 サポート終了のロードマップ</span><span class="sxs-lookup"><span data-stu-id="4e76c-114">Office 2007 end of support roadmap</span></span>](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |<span data-ttu-id="4e76c-115">2017 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="4e76c-115">October 10, 2017</span></span>  <br/> |
-|[<span data-ttu-id="4e76c-116">Exchange 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="4e76c-116">Exchange 2007 end of support roadmap</span></span>](exchange-2007-end-of-support.md) <br/> |<span data-ttu-id="4e76c-117">2017 年 4 月 11 日</span><span class="sxs-lookup"><span data-stu-id="4e76c-117">April 11, 2017</span></span>  <br/> |
-|[<span data-ttu-id="4e76c-118">SharePoint Server 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="4e76c-118">SharePoint Server 2007 end of support roadmap</span></span>](sharepoint-2007-end-of-support.md) <br/> |<span data-ttu-id="4e76c-119">2017 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="4e76c-119">October 10, 2017</span></span>  <br/> |
-|[<span data-ttu-id="4e76c-120">Project Server 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="4e76c-120">Project Server 2007 end of support roadmap</span></span>](project-server-2007-end-of-support.md) <br/> |<span data-ttu-id="4e76c-121">2017 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="4e76c-121">October 10, 2017</span></span>  <br/> |
-|[<span data-ttu-id="4e76c-122">Office Communications Server からのアップグレード</span><span class="sxs-lookup"><span data-stu-id="4e76c-122">Upgrade from Office Communications Server</span></span>](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |<span data-ttu-id="4e76c-123">2018年1月8日</span><span class="sxs-lookup"><span data-stu-id="4e76c-123">January 8, 2018</span></span>  <br/> |
-|[<span data-ttu-id="4e76c-124">PerformancePoint Server 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="4e76c-124">PerformancePoint Server 2007 end of support roadmap</span></span>](pps-2007-end-of-support.md) <br/> |<span data-ttu-id="4e76c-125">2018 年 1 月 9 日</span><span class="sxs-lookup"><span data-stu-id="4e76c-125">January 9, 2018</span></span>  <br/> |
+|[<span data-ttu-id="7d5a1-114">Office 2007 サポート終了のロードマップ</span><span class="sxs-lookup"><span data-stu-id="7d5a1-114">Office 2007 end of support roadmap</span></span>](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |<span data-ttu-id="7d5a1-115">2017 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="7d5a1-115">October 10, 2017</span></span>  <br/> |
+|[<span data-ttu-id="7d5a1-116">Exchange 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="7d5a1-116">Exchange 2007 end of support roadmap</span></span>](exchange-2007-end-of-support.md) <br/> |<span data-ttu-id="7d5a1-117">2017 年 4 月 11 日</span><span class="sxs-lookup"><span data-stu-id="7d5a1-117">April 11, 2017</span></span>  <br/> |
+|[<span data-ttu-id="7d5a1-118">SharePoint Server 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="7d5a1-118">SharePoint Server 2007 end of support roadmap</span></span>](sharepoint-2007-end-of-support.md) <br/> |<span data-ttu-id="7d5a1-119">2017 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="7d5a1-119">October 10, 2017</span></span>  <br/> |
+|[<span data-ttu-id="7d5a1-120">Project Server 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="7d5a1-120">Project Server 2007 end of support roadmap</span></span>](project-server-2007-end-of-support.md) <br/> |<span data-ttu-id="7d5a1-121">2017 年 10 月 10 日</span><span class="sxs-lookup"><span data-stu-id="7d5a1-121">October 10, 2017</span></span>  <br/> |
+|[<span data-ttu-id="7d5a1-122">Office Communications Server からのアップグレード</span><span class="sxs-lookup"><span data-stu-id="7d5a1-122">Upgrade from Office Communications Server</span></span>](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |<span data-ttu-id="7d5a1-123">2018年1月8日</span><span class="sxs-lookup"><span data-stu-id="7d5a1-123">January 8, 2018</span></span>  <br/> |
+|[<span data-ttu-id="7d5a1-124">PerformancePoint Server 2007 のサポート終了ロードマップ</span><span class="sxs-lookup"><span data-stu-id="7d5a1-124">PerformancePoint Server 2007 end of support roadmap</span></span>](pps-2007-end-of-support.md) <br/> |<span data-ttu-id="7d5a1-125">2018 年 1 月 9 日</span><span class="sxs-lookup"><span data-stu-id="7d5a1-125">January 9, 2018</span></span>  <br/> |
    
-<span data-ttu-id="4e76c-126">Microsoft 製品のサポートが終了するときには、新しいセキュリティ更新プログラム、セキュリティ以外の更新プログラム、無料または有料サポートのオプション (カスタムサポート契約を含む)、またはオンライン技術コンテンツの更新はありません。エンタープライズ組織か個人のホームユーザーかにかかわらず、いくつかのオプションを検討する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4e76c-126">When support ends for a Microsoft product, there are no new security updates, non-security updates, free or paid assisted support options (including custom support agreements), or online technical content updates.Whether you're an enterprise organization or an individual home user, you have several options to consider:</span></span>
+<span data-ttu-id="7d5a1-126">Microsoft 製品のサポートが終了するときには、新しいセキュリティ更新プログラム、セキュリティ以外の更新プログラム、無料または有料サポートのオプション (カスタムサポート契約を含む)、またはオンライン技術コンテンツの更新はありません。エンタープライズ組織か個人のホームユーザーかにかかわらず、いくつかのオプションを検討する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-126">When support ends for a Microsoft product, there are no new security updates, non-security updates, free or paid assisted support options (including custom support agreements), or online technical content updates.Whether you're an enterprise organization or an individual home user, you have several options to consider:</span></span>
 
-## <a name="im-a-home-user-what-do-i-do"></a><span data-ttu-id="4e76c-127">自宅のユーザーです。</span><span class="sxs-lookup"><span data-stu-id="4e76c-127">I'm a home user.</span></span> <span data-ttu-id="4e76c-128">What do I do?</span><span class="sxs-lookup"><span data-stu-id="4e76c-128">What do I do?</span></span>
+## <a name="im-a-home-user-what-do-i-do"></a><span data-ttu-id="7d5a1-127">自宅のユーザーです。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-127">I'm a home user.</span></span> <span data-ttu-id="7d5a1-128">What do I do?</span><span class="sxs-lookup"><span data-stu-id="7d5a1-128">What do I do?</span></span>
 
-<span data-ttu-id="4e76c-129">自宅で Office 2007 製品とアプリケーションを使用している場合は、[次の情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4e76c-129">If you're using Office 2007 products and applications at home, see [this information](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).</span></span>
+<span data-ttu-id="7d5a1-129">自宅で Office 2007 製品とアプリケーションを使用している場合は、[次の情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-129">If you're using Office 2007 products and applications at home, see [this information](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).</span></span>
      
-## <a name="related-topics"></a><span data-ttu-id="4e76c-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="4e76c-130">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="7d5a1-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="7d5a1-130">Related topics</span></span>
 
-[<span data-ttu-id="4e76c-131">Office の退職グループ (Microsoft Tech Community)</span><span class="sxs-lookup"><span data-stu-id="4e76c-131">Office Retirement Group (Microsoft Tech Community)</span></span>](https://go.microsoft.com/fwlink/?linkid=842065)
+[<span data-ttu-id="7d5a1-131">Office の退職グループ (Microsoft Tech Community)</span><span class="sxs-lookup"><span data-stu-id="7d5a1-131">Office Retirement Group (Microsoft Tech Community)</span></span>](https://go.microsoft.com/fwlink/?linkid=842065)
   
-[<span data-ttu-id="4e76c-132">ビデオ: Office 365 とは何ですか。</span><span class="sxs-lookup"><span data-stu-id="4e76c-132">Video: What is Office 365?</span></span>](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[<span data-ttu-id="7d5a1-132">ビデオ: Office 365 とは何ですか。</span><span class="sxs-lookup"><span data-stu-id="7d5a1-132">Video: What is Office 365?</span></span>](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[<span data-ttu-id="4e76c-133">Microsoft のライフサイクル ポリシー</span><span class="sxs-lookup"><span data-stu-id="4e76c-133">Microsoft Lifecycle Policy</span></span>](https://go.microsoft.com/fwlink/?linkid=865200)
+[<span data-ttu-id="7d5a1-133">Microsoft のライフサイクル ポリシー</span><span class="sxs-lookup"><span data-stu-id="7d5a1-133">Microsoft Lifecycle Policy</span></span>](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[<span data-ttu-id="4e76c-134">Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する</span><span class="sxs-lookup"><span data-stu-id="4e76c-134">Plan your upgrade from Office 2007 or Office 2010 servers and clients</span></span>](plan-upgrade-previous-versions-office.md)
+[<span data-ttu-id="7d5a1-134">Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する</span><span class="sxs-lookup"><span data-stu-id="7d5a1-134">Plan your upgrade from Office 2007 or Office 2010 servers and clients</span></span>](plan-upgrade-previous-versions-office.md)
   
 
