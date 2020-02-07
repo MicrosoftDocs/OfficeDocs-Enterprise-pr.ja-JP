@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
+f1.keywords:
+- NOCSH
 description: 認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 3f26ca8ba4a4f6903439160c2e99c35cba32a44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919139"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844978"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 

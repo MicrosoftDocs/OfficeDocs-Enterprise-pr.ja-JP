@@ -10,13 +10,15 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Priority
+f1.keywords:
+- NOCSH
 description: SharePoint サイトを別のジオ位置情報に移動する方法について説明します。
-ms.openlocfilehash: 77f5adee161739d8896004988b8a4d6ba0151ef1
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 156c180841318aaee1c830ea3d9d665cbaeabe77
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626147"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843728"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 

@@ -6,16 +6,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: e1b8bd21790eee558fdb0754b0b0e61a1a02da6d
-ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
+ms.openlocfilehash: d2729eb0f3aea0adc2b9d45d660805df3bdd0c14
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41658344"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844378"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 

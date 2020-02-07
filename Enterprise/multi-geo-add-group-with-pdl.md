@@ -6,16 +6,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境で指定された優先データの場所を使用して、Office 365 グループを作成する方法について説明します。
-ms.openlocfilehash: 96870923c00cebc247609b67378fd39011077d45
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 5a6417f1758cd6c5e4eb9d4df9e7796d4309e62c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072379"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843738"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>特定 PDL で Office 365 グループを作成する
 

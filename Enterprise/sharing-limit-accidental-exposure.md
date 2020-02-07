@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
+f1.keywords:
+- NOCSH
 description: 組織外のユーザーとファイルを共有する場合、情報が偶発的に公開されることを防止する方法を説明します。
-ms.openlocfilehash: d980af0a8aa60416a32f4c2fe5d4a1c8911842f4
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: fb97ac7a0c770ab6e2d26c31e36fc227f033b70d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919250"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843998"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する
 

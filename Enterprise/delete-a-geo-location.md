@@ -6,16 +6,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo でサテライトの場所を削除する方法について説明します。
-ms.openlocfilehash: 6e9de4fe90f94cafec92b6ff48277711f4146bfb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8f6f52a42cef1aee88b590115bf54ba4e2179830
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067953"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840554"
 ---
 # <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Office 365 Multi-Geo でサテライトの場所を削除する
 

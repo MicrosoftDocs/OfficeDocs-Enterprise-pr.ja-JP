@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Office 365 の展開後は、以下のツールや方法を使用して Office 365 の接続を維持することができます。公式の「サービスの正常性および継続性のガイドライン」と「低速のネットワークで Office 365 を使用するためのベスト プラクティス」を確認しておくようにしてください。また、 Office 365 管理者アプリを入手し、「Office 365 for Business - 管理者ヘルプ」をブックマークしておくことをお勧めします。
-ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5a0a6e217d0f74f6266bffa1bd6037427f14e7bd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721968"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843708"
 ---
 # <a name="monitor-office-365-connectivity"></a>Office 365 の接続の監視をする
 

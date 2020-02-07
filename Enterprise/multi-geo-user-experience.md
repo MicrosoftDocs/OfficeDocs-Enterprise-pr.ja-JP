@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: ca6c27b29eae84a245c6fe22fd6ba928b79a975d
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 2b4fc80e3624011b65a0454b57a7a4e76829c16f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076241"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844588"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 

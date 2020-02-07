@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
+f1.keywords:
+- NOCSH
 description: Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成する方法について説明します。
-ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886516"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840624"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
