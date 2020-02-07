@@ -9,6 +9,8 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -17,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: この記事では、ネットワーク帯域幅の要件を計画する場合、または Skype for Business Online のパフォーマンスを改善する必要があるシステム管理者へのリンクを示します。
-ms.openlocfilehash: 57b326849fbb4fb1448824da1682d8f7ca66a473
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616820"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843918"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Skype for Business Online のパフォーマンスの調整
 
@@ -52,7 +54,7 @@ ms.locfileid: "35616820"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
+[Office 365 のネットワーク計画とパフォーマンスのチューニング](network-planning-and-performance.md)
   
 [Skype for Business Online 向けのネットワークの最適化](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   

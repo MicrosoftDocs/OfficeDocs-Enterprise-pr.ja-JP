@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: SaaS サービスでネットワークの最適化が重要な理由、Office 365 ネットワークの目標、および他のワークロードとの間で SaaS が異なるネットワークを必要とする理由について説明します。
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747709"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844358"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 のネットワーク接続の概要
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 は、さまざまなマイクロサービスおよびアプリケーションを使用して生産性とコラボレーションのシナリオを実現する、サービスとして配布された、サービスとしてのソフトウェア (SaaS) クラウドです。 Outlook、Word、PowerPoint などの Office 365 のクライアントコンポーネントは、ユーザーのコンピューター上で実行され、Microsoft データセンターで実行される Office 365 の他のコンポーネントに接続します。 Office 365 エンドユーザー環境の品質を決定する最も重要な要素は、Office 365 クライアントと Office 365 サービスのフロントドアの間でネットワークの信頼性と遅延が少ないことです。
 
@@ -102,7 +104,7 @@ Office 365 の最適化ネットワークパフォーマンスは、不要な障
 
 [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Exchange Online でのソフトおよびハードデータの削除の処理方法。
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067638"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843638"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 での Exchange Online データの削除
 Exchange Online では、次の2種類の削除があります。ソフト削除とハード削除です。 これは、メールボックス内のメールボックスとアイテムの両方に適用されます。
@@ -31,7 +33,7 @@ Exchange Online では、次の2種類の削除があります。ソフト削除
 
 ハード削除されたユーザーメールボックスは、次のいずれかの方法で削除されたメールボックスです。
 - ユーザーメールボックスが30日以上回復可能な削除によって削除されており、関連付けられた Azure Active Directory ユーザーが物理的に削除されている。 メール、連絡先、ファイルなど、すべてのメールボックスの内容は完全に削除されます。
-- ユーザーメールボックスに関連付けられているユーザーアカウントが、Azure Active Directory から物理的に削除されています。 これで、ユーザーメールボックスは Exchange Online でソフト削除され、回復可能な削除の状態は30日間保持されます。 30日の期間内に、新しい Azure Active Directory ユーザーが同じ**exchangeguid**または**アーカイブ guid**を持つ元の受信者アカウントから同期されている場合、その新しいアカウントに Exchange Online のライセンスが付与されます。これにより、元のユーザーのメールボックス。 メール、連絡先、ファイルなど、すべてのメールボックスの内容は完全に削除されます。
+- ユーザーメールボックスに関連付けられているユーザーアカウントが、Azure Active Directory から物理的に削除されています。 これで、ユーザーメールボックスは Exchange Online でソフト削除され、回復可能な削除の状態は30日間保持されます。 30日の期間内に、新しい Azure Active Directory ユーザーが同じ**exchangeguid**または**アーカイブ guid**を持つ元の受信者アカウントから同期されていて、その新しいアカウントが Exchange Online 用にライセンスされている場合、元のユーザーメールボックスがハード削除されることになります。 メール、連絡先、ファイルなど、すべてのメールボックスの内容は完全に削除されます。
 - 回復可能な削除によって削除されたメールボックスは、 **PermanentlyDelete**を使用して削除されます。
 
 上記の削除シナリオでは、訴訟ホールドや電子情報開示の保留など、ユーザーのメールボックスが保留状態になっていないことを前提としています。 メールボックスに何らかの種類の保留がある場合は、そのメールボックスを削除することはできません。 すべてのメールユーザーの受信者の種類について、[保留](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US)設定は無視され、ハード削除または回復的な削除には影響しません。

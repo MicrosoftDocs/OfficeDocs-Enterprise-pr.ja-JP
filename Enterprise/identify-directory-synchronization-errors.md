@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -19,12 +21,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Microsoft 365 管理センターでディレクトリ同期エラーを表示する方法について説明します。
-ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067523"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840174"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Office 365 でのディレクトリ同期エラーの表示
 

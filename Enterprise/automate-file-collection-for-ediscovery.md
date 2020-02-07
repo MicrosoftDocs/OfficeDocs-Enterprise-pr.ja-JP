@@ -10,17 +10,19 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 概要:電子情報開示用にユーザーのコンピューターのファイル収集を自動化する方法について説明します。
-ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077720"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844738"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>電子情報開示用にファイル収集を自動化する
 
@@ -272,8 +274,8 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** 変数。スクリプトがインベントリ作成と配列変数への収集を行うファイルの種類の拡張子がすべて含まれます。<br/> |省略可能  <br/> |
-|76 と 77  <br/> |**$CaseNo** 変数を構築する方法をニーズに合わせて変更します。スクリプトは、現在の日時をキャプチャし、ユーザー名をそれに追加します。<br/> |省略可能  <br/> |
+|71  <br/> |**$FileTypes** 変数。スクリプトがインベントリ作成と配列変数への収集を行うファイルの種類の拡張子がすべて含まれます。<br/> |オプション  <br/> |
+|76 と 77  <br/> |**$CaseNo** 変数を構築する方法をニーズに合わせて変更します。スクリプトは、現在の日時をキャプチャし、ユーザー名をそれに追加します。<br/> |オプション  <br/> |
 |80  <br/> |**$CaseRootLocation** 変数は、ステージング サーバー コレクション ファイル共有に設定する必要があります。例: **\\\\Staging\\Cases$** <br/> |必須  <br/> |
    
 4. ドメイン コントローラーの Netlogon ファイル共有に CollectionScript.ps1 ファイルを配置します。 
@@ -330,8 +332,8 @@ $AllFiles | ForEach-Object {
     
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
-|個  <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
-|インチ  <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
+|12   <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
+|17   <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
    
 4. Exchange Trusted Subsystem アカウントに、\\\\Staging\\Cases$ 共有に対する読み取り、書き込み、実行のアクセス許可があることを確認します。
     

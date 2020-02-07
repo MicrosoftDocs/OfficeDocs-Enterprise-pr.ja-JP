@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 概要:Office 365 PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てます。
-ms.openlocfilehash: e425c3f0bc6253550b1be2081df89e535da811f4
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072259"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844268"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
 

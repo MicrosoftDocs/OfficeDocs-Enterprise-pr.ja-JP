@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この記事では、従来のロードテストを実行せずに SharePoint Online に展開する方法について説明します。これは許可されていないためです。
-ms.openlocfilehash: 13e71343aa5ec823003791d99e227fc835117b62
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077880"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844708"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>SharePoint Online のキャパシティ プランニングとロード テスト
 この記事では、SharePoint Online でロードテストが許可されていないため、従来のロードテストを行わずに SharePoint Online に展開する方法について説明します。 SharePoint Online は、クラウドサービスであり、サービスの負荷の負荷の状態、正常性、および全体的なバランスが Microsoft によって管理されます。

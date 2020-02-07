@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Office 365 用 ExpressRoute は、インターネットに送信されるすべてのトラフィックを必要とせずに、多くの Office 365 サービスにアクセスするための代替ルーティングパスを提供します。 Office 365 へのインターネット接続は依然として必要ですが、Microsoft が BGP を使用してネットワークにアドバタイズする際には、ネットワークに他の構成が存在しない限り、直接 ExpressRoute 回線を優先させる場合があります。 このルーティングを管理するために構成する共通領域には、プレフィックスのフィルター、セキュリティ、コンプライアンスがあります。
-ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814245"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844988"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
@@ -99,7 +101,7 @@ Microsoft がネットワークへの接続を開始する必要がある、い�
 
 コンプライアンスコントロールに使用するルーティングパスに依存していません。 ExpressRoute またはインターネット回線経由で Office 365 サービスに接続するかどうかに関係なく、コンプライアンスコントロールは変更されません。 Office 365 のさまざまなコンプライアンスおよびセキュリティ証明レベルを確認して、組織のニーズを満たすための最適な選択を判断する必要があります。
   
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
 ## <a name="related-topics"></a>関連項目
 

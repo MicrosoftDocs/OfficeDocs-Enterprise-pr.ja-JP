@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
-description: 'この記事は、管理者を対象としています。 ユーザーが Outlook メールボックスからアイテムを完全に削除したかどうか。 ユーザーはそれらを回復することはできません。 削除されたアイテムがユーザーのメールボックスから完全に削除されていない場合は、それらを回復できることがあります。 '
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+f1.keywords:
+- NOCSH
+description: 'この記事は管理者向けです。 ユーザーが Outlook メールボックスからアイテムを完全に削除したかどうか。 ユーザーはそれらを回復することはできません。 削除されたアイテムがユーザーのメールボックスから完全に削除されていない場合は、それらを回復できることがあります。 '
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308602"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845128"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ
 
@@ -41,7 +43,7 @@ ms.locfileid: "38308602"
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>手順 1: 自分自身に電子情報開示のアクセス許可を割り当てる
 <a name="step1"> </a>
 
-最初の手順として、インプレース電子情報開示ツールを使用してユーザーのメールボックスを検索できるように、Exchange Online で必要なアクセス許可を自分自身に割り当てます。 これを行う必要があるのは1回だけです。 今後、別のメールボックスを検索する必要がある場合は、この手順を省略できます。
+最初の手順として、インプレース電子情報開示ツールを使用してユーザーのメールボックスを検索できるように、Exchange Online で必要なアクセス許可を自分自身に割り当てます。 これを行う必要があるのは 1 回だけです。 今後、別のメールボックスを検索する必要がある場合は、この手順を省略できます。
   
 1. 職場または学校のアカウントを使用して、[Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。 
     
@@ -98,7 +100,7 @@ ms.locfileid: "38308602"
   
 7. 削除されたメールを回復するユーザーの名前を検索して選択し、[**追加**] をクリックして、[ **OK]** をクリックします。
     
-8. **[次へ]** をクリックします。
+8. [**次へ**] をクリックします。
     
     [**検索クエリ**] ページが表示されます。 ここでは、ユーザーのメールボックス内の不足しているアイテムを検索するために使用できる検索条件を定義します。 
     

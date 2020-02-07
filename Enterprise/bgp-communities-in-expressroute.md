@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085182"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844948"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
@@ -38,7 +40,7 @@ Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エ�
 > [!NOTE]
 > 他のアプリケーションに関連付けられているネットワークトラフィックは、コミュニティの値に含まれていることが予想されます。 これは、共有サービスとデータセンターを使用したサービスとしてのグローバルソフトウェアに想定される動作です。 これは、上の2つの目的で、プレフィックスの数や帯域幅を考慮することで最小化されています。
 
-|**サービス**|**BGP コミュニティの値**|**注**|
+|**サービス**|**BGP コミュニティの値**|**メモ**|
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |Exchange および EOP サービスが含まれています。\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
@@ -105,7 +107,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

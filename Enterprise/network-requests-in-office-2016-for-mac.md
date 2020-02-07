@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Office for Mac アプリケーションは、macOS プラットフォームでネイティブのアプリ環境を提供します。 各アプリは、ネットワークアクセスが利用できない場合の状態など、さまざまなシナリオで動作するように設計されています。 コンピューターがネットワークに接続されている場合、アプリケーションは自動的に一連の web ベースのサービスに接続して、強化された機能を提供します。 このホワイトペーパーでは、アプリケーションが到達しようとしているエンドポイントと Url、および提供されるサービスについて説明します。 この情報は、ネットワーク構成の問題をトラブルシューティングしたり、ネットワークプロキシサーバーのポリシーを設定するときに役立ちます。 この記事の詳細は、「Office 365 の URL とアドレスの範囲」の記事を補完することを目的としています。
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781957"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844548"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Office for Mac でのネットワーク要求
 

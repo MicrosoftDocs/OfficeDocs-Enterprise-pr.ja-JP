@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: この記事は、「オンプレミスの電子情報開示のフロー」という名前の図のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068533"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843858"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>アクセス可能な図 - オンプレミスの電子情報開示のフロー
 

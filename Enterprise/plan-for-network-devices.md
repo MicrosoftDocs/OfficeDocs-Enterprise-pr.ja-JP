@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: '概要: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。'
-ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747070"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841728"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Office 365 サービスに接続するネットワーク デバイスの計画
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
   
 **概要**: Office 365 への接続に使用されるネットワーク容量、WAN アクセラレータ、および負荷分散デバイスに関する考慮事項について説明します。
 

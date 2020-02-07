@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: 組織外のユーザーとのグループ作業用に Office 365 を構成する方法について説明します。
-ms.openlocfilehash: d343594319f40a3fa3ab2bb619c91f9a3a03ca62
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919321"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840774"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -28,6 +30,6 @@ Microsoft 365 では、既定では、組織外のユーザーとの共有は Sh
 
 [認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス](best-practices-anonymous-sharing.md)
 
-[組織外のユーザーと共有するときに、ファイルへの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
+[組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](sharing-limit-accidental-exposure.md)
 
 [セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md))

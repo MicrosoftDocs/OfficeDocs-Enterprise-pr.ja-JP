@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: SharePoint Online、OneDrive for Business、Exchange Online、または Skype for Business Online とクライアントコンピューターの間で、遅延、ハング、および低速のパフォーマンスを識別して修正するための手順を把握しておく必要がありますか。 サポートに連絡する前に、この記事は Office 365 のパフォーマンスの問題をトラブルシューティングしたり、最も一般的な問題のいくつかを修正したりするのに役立ちます。
-ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814625"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841814"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 のパフォーマンス トラブルシューティング計画
 
@@ -139,7 +141,8 @@ HTTPWatch はブラウザープラグインなので、このツールをブラ�
 
 3. 手順を完了したら、[**レコードの停止**] をクリックします。 パフォーマンスの問題がページレンダリングの場合は、ページがレンダリングされるまで待機してから、録音を停止します。
 
-4. [**保存**] をクリックします。
+4. 
+            **[保存]** をクリックします。
 
 ![手順記録ツールまたは PSR .exe のスクリーンショット。](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   

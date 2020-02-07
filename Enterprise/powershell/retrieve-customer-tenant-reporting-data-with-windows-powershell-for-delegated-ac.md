@@ -8,15 +8,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 概要:Microsoft Exchange Online のリモートの Windows PowerShell を使用して、個々の顧客のテナントからレポートを取得します。
-ms.openlocfilehash: c1c5ca880d73cf226a5ae7dae79df89351b537f1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: eea97a32b2f595a633a618146fc02fd9c1b8936a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071193"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841304"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell を使用して顧客のテナント レポート データを取得する
 

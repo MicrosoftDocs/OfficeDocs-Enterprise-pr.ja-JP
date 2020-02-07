@@ -16,13 +16,15 @@ search.appverid:
 - MEW150
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
+f1.keywords:
+- NOCSH
 description: インターネット接続が常に高速でダウンしていない場合は、よいでしょうか。 その日が来るかもしれません。 しかし、それまでの間に、低機能のネットワークを回避して日常の作業を行うことができる実用的な事柄があります。
-ms.openlocfilehash: 69fde7ab60fecba4cc43d555d2988f75b7148dba
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616760"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844958"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>低速のネットワークで Office 365 を使用するためのベストプラクティス
 
@@ -176,11 +178,11 @@ Web ページをカスタマイズするとき、ページのパフォーマン�
   
 ## <a name="whats-the-best-way-to-report-problems"></a>問題を報告する最善の方法は何ですか。
 
-Microsoft では、ネットワークを監視し、帯域幅と待機時間を測定し、ページの読み込み時間を短縮し、ディスク i/o を減らし、最小限のダウンロード戦略を使用するようにページを再設計し、データセンターにハードウェアを追加することで、Office 365 の全体的なパフォーマンスが絶えず向上しています。データセンターを追加する。 現在の状態とレポートの問題を確認する方法の詳細については、「 [Office 365 サービスの正常性を確認する方法](https://docs.microsoft.com/office365/enterprise/view-service-health)」を参照してください。
+Microsoft では、ネットワークの監視、帯域幅と待機時間の測定、ページの読み込み時間の短縮、ディスク i/o の削減、最小限のダウンロード戦略を使用するためのページの再設計、データセンターへのハードウェアの追加、データセンターの追加などによって、Office 365 の全体的なパフォーマンスが絶えず向上しています。 現在の状態とレポートの問題を確認する方法の詳細については、「 [Office 365 サービスの正常性を確認する方法](https://docs.microsoft.com/office365/enterprise/view-service-health)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
+[Office 365 のネットワーク計画とパフォーマンスのチューニング](network-planning-and-performance.md)
   
 [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
   

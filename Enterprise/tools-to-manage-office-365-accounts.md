@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 ユーザーを管理するためにどのようなツールを使用するか、およびどのように使用できるかについては、ユーザー id の管理方法によって異なります。 '
-ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490770"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843948"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するためのツール
 
@@ -39,7 +41,7 @@ Office 365 を購入するとすぐに、管理センターと Windows PowerShel
 
 - [Office 365 Identity](about-office-365-identity.md) -管理センターでユーザーを作成および管理します。また、Windows PowerShell または Azure Active Directory を使用してユーザーを管理することもできます。
 - [シームレスなシングルサインオンを使用したパスワードハッシュ同期](about-office-365-identity.md)Azure AD でオンプレミスのディレクトリオブジェクトの認証を有効にする最も簡単な方法です。 パスワードハッシュ同期 (PHS) を使用して、オンプレミスの Active Directory ユーザーアカウントオブジェクトを Office 365 と同期し、オンプレミスでユーザーを管理します。 
-- [シームレスなシングルサインオンを使用したパススルー認証](about-office-365-identity.md)-1 つまたは複数のオンプレミスサーバーで実行されているソフトウェアエージェントを使用して Azure AD 認証サービスのパスワード検証を行い、ユーザーの直接の確認をオンプレミスの Active Directory。 
+- [シームレスなシングルサインオンを使用したパススルー認証](about-office-365-identity.md)-1 つ以上のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、オンプレミスの Active Directory と直接ユーザーを検証することで、Azure AD 認証サービスの簡単なパスワード検証を提供します。 
 
 ### <a name="federated-authentication"></a>フェデレーション認証
 

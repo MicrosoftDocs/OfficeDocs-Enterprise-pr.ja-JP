@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDNs) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745840"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840634"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDNs)
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 CDNs は、エンドユーザーにとって Office 365 を高速かつ信頼性の高い状態に保つことができます。 Office 365 などのクラウドサービスでは、CDNs を使用して、ダウンロードを高速化し、エンドユーザーの潜在期間を短縮するために、静的なアセットをブラウザーの近くにキャッシュします。 このトピックの情報は、コンテンツ配信ネットワーク (CDNs) と、それらが Office 365 でどのように使用されるかについて理解するのに役立ちます。
 
@@ -104,9 +106,9 @@ Office 365 テナントに対して構成する CDN に関係なく、基本的�
 
 2. Office 365 は、クライアントにデータを直接返すか、またはデータが CDN によってホストされるコンテンツセットの一部である場合、クライアントを CDN URL にリダイレクトします。
 
-    a.  データが_パブリック_の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    a. データが_パブリック_の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
 
-    b.  データが既に_プライベート_の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム URL を動的に生成し、クライアントにカスタム URL を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    b. データが既に_プライベート_の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム URL を動的に生成し、クライアントにカスタム URL を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
 
 3. CDN でデータがキャッシュされていない場合、CDN ノードは Office 365 のデータを要求し、クライアントがデータをダウンロードした後、しばらくの間データをキャッシュします。
 
@@ -185,13 +187,13 @@ Office 365 CDN の一部ではありませんが、 **AZURE cdn**を使用して
 
 CDNs の使用は SharePoint Online のコンテキストでのみ有効であり、SharePoint Server で回避する必要があります。 これは、サーバーが社内に設置されている場合や、地理的に閉じている場合は、地理的な場所に関するすべての利点が true を保持しないためです。 また、ホストされているサーバーへのネットワーク接続がある場合は、インターネット接続を使用せずにサイトが使用される可能性があるため、CDN ファイルを取得することはできません。 それ以外の場合は、使用可能で、サイトに必要なライブラリおよびファイルに対して安定したものがある場合は、CDN を使用する必要があります。
   
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
 ## <a name="see-also"></a>関連項目
 
 [Office 365 ネットワーク接続の原則](https://aka.ms/o365networkingprinciples)
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 エンドポイントの管理](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 

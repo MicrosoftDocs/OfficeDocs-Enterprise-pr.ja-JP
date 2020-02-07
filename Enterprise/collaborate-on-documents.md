@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: SharePoint および OneDrive のドキュメントでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: f2cecb086116e5ea3322a0fd87e5f07f5c30443c
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: d4c7a62fbf4ca94e0f6dd61018f723801a3966a7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919351"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845088"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>ゲストと共同でドキュメントの作業をする
 
@@ -61,7 +63,7 @@ SharePoint の場合は、組織内のすべてのサイトで必要とされる
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの [**管理センター**] の下にある [ **SharePoint**] をクリックします。
-2. SharePoint 管理センターの左側のナビゲーションで、[**共有**] をクリックします。
+2. SharePoint 管理センターの左側のナビゲーションで、**[共有]** をクリックします。
 3. SharePoint または OneDrive の外部共有が [すべての**ユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。 (OneDrive の設定は、SharePoint の設定よりも制限がないことに注意してください)。
 4. 変更を加えた場合は、[**保存**] をクリックします。
 

@@ -10,17 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
+f1.keywords:
+- NOCSH
 description: 2017年4月11日に、Exchange Server 2007 がサポートの終了に到達しました。 Exchange 2007 から Office 365 または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
-ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746230"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840354"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 のサポート終了ロードマップ
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 **2017 年4月 11**日に、Exchange Server 2007 がサポートの終了に到達しました。 Exchange 2007 から Office 365 または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。 
   
@@ -42,7 +44,7 @@ Exchange 2007 のインストールは、この日付以降も引き続き実行
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-Exchange 2007 のサポートが終了したので、オプションを調査して移行計画を準備することを強くお勧めします。 次の操作を実行できます:
+Exchange 2007 のサポートが終了したので、オプションを調査して移行計画を準備することを強くお勧めします。 以下のことを実行できます。
   
 - Office 365 に移行するには、カットオーバー、段階的、またはハイブリッドの移行を使用します。
     

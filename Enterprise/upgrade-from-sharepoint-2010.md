@@ -16,17 +16,19 @@ search.appverid:
 - WSU140
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
+f1.keywords:
+- NOCSH
 description: SharePoint 2010 のサポートが終了し、SharePoint Server 2010 が2020年10月13日に終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 95feda3f05f3ecfabb473b6331962de811690770
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 51c372bf2d96c245223a1ea3776f889e60bf4491
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747299"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841053"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2010 と SharePoint Server 2010 は **、2020年10月 13**日にサポートの終了に到達します。 この記事では、既存の SharePoint Server 2010 データを Office 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースについて説明します。
   

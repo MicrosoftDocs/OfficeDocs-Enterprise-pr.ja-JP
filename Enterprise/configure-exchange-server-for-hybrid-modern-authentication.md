@@ -13,13 +13,15 @@ search.appverid:
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
-ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 6c4b57454b415b3af799d82e1c3655daa1fd5ef8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122566"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840744"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -160,7 +162,7 @@ HMA を有効にすると、クライアントの次のログインは新しい�
 TCP 443 で Exchange server を使用しているオンプレミスのお客様の場合は、次の IP 範囲をホワイトリストしてください。 <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md) 
   

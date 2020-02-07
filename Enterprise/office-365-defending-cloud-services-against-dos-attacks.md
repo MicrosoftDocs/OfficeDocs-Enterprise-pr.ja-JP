@@ -12,17 +12,19 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: サービス拒否 (DoS) 攻撃に対する Microsoft のクラウドサービスの防御方法。
-ms.openlocfilehash: ba4688d965d6cce232f771507df941540acc8e4e
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035774"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843618"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する Microsoft クラウドサービスの防御
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 Microsoft データセンターは、境界線フェンス、ビデオカメラ、セキュリティ担当者、およびバイオメトリクス、スマートカード、多要素認証を使用する安全な入り口を含む多層防御セキュリティによって保護されています。 多層防御セキュリティは、施設のすべての領域および各物理サーバーユニットに対して続行されます。 [Microsoft クラウドインフラストラクチャと運用グループ](https://www.microsoft.com/cloud-platform/global-datacenters)は、クラウドサービスのコアインフラストラクチャと基本的なテクノロジを提供します。 データセンターは、物理的なセキュリティと信頼性の業界標準に準拠しており、Microsoft の運用担当者が管理、監視、管理します。
 
 クラウドサービスをさらに保護するために、Microsoft は、Microsoft Azure の継続的監視およびペネトレーションテストプロセスの一部である DDoS 防御システムを提供しています。 Azure DDoS 防御システムは、外部からの攻撃に耐えられるだけでなく、他の Azure テナントからも攻撃されるように設計されています。 Azure は、SYN cookie、レート制限、接続制限などの標準的な検出と軽減の手法を使用して、DDoS 攻撃を防止します。

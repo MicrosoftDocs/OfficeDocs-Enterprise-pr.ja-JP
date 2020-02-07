@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
-f1_keywords:
-- ms.lync.lac.ProviderManagedFeature
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- ms.lync.lac.ProviderManagedFeature
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Skype for business の管理者向けヘルプを取得します。 Skype for business、ネットワーク、会議、IM、および外部アクセスをユーザーに対して設定します。 利用状況レポートの設定、トラブルシューティング、および表示を構成します。
-ms.openlocfilehash: daf425625d6162ec3d480d290056ae2e3a8ff16a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070379"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841114"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 の Skype for Business Online - 管理ヘルプ
 
@@ -72,7 +74,7 @@ Skype for Business を使用しているユーザーが、組織外部のユー�
     
 - [Skype for Business 会議に参加する](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
-- [Skype for Business のアンインストール](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
+- [Skype for Business をアンインストールする](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
     
 ## <a name="help-your-users-get-started-quickly"></a>ユーザーに基本的な使用方法を説明する
 

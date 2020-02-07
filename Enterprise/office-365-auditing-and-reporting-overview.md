@@ -14,17 +14,19 @@ ms.collection:
 - M365-security-compliance
 - M365-analytics
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: Office 365、Microsoft 365、およびサービスアシュアランス内の監査とレポート機能の概要について説明します。
-ms.openlocfilehash: 991eb807ee297ea9dc912be53d99c80247220c1b
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 05c16b201cecb742ab2c74e8938893222d04d59f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076231"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843698"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft クラウドサービスでの監査とレポート
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 Microsoft クラウドサービスには、テナント内でユーザーおよび管理アクティビティを追跡するために使用できるいくつかの監査およびレポート機能が含まれています。例には、Exchange Online および SharePoint Online テナントの構成設定に対する変更が含まれています。ドキュメントやその他のアイテムに対してユーザーが行った変更。 Microsoft クラウドサービスで利用可能な監査情報とレポートを使用して、ユーザーの利便性をさらに向上させることができます。また、リスクを軽減し、法令遵守の義務を満たすことができます。
 

@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '概要: ネットワーク アドレス変換 (NAT) を使用して、組織内で IP アドレスごとに使用できるクライアントの正しい数を見積もる方法の詳細について説明します。'
-ms.openlocfilehash: 5d252b059661fdd3bad1f86bf552f44b8a747d24
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747901"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844568"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 の NAT サポート
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 ガイダンスでは以前、Office 365 に接続するために IP アドレスごとに使用する必要がある Exchange クライアントの最大数は、ネットワーク ポート 1 つあたり約 2,000 と推奨していました。
   

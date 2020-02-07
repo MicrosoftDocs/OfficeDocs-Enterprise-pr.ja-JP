@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 11/25/2019
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365p_AddUsersWithDirSync
 - O365M_AddUsersWithDirSync
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -24,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Office 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
-ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
+ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39825189"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841174"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365 へのディレクトリ同期の準備
 

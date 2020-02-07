@@ -13,13 +13,15 @@ search.appverid:
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
-ms.openlocfilehash: fbbf7c9188d7c0a1d9d4b936b066c0a1fa4e83e9
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813435"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840724"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 

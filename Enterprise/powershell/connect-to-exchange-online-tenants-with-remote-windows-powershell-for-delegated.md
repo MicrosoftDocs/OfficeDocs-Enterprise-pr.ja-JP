@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: '概要: リモート Windows PowerShell で DelegatedOrg 値を使用して、Exchange Online に接続します。'
-ms.openlocfilehash: 4dfe54088a1b60b0bcf7e7563362c0b2a413f3ad
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a26e5390783d5d30a8cfb43eb9557074bb658d38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069153"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841524"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
 
@@ -33,7 +35,7 @@ DAP パートナーは、Exchange Online PowerShell を使用して、コマン�
 > [!NOTE]
 > DAP パートナーは、「[多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)」の手順を使用して Exchange Online PowerShell に接続することはできません。MFA と Exchange Online リモート PowerShell モジュールは、委任された認証では機能しません。
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - 予想所要時間 : 5 分
 

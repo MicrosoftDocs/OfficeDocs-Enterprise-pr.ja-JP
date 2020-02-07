@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Microsoft が Office 365 のテナント分離を強制する方法の概要。
-ms.openlocfilehash: 37d695635a5b7145b8384f1bf69fc357875ac38f
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 5b9db878fce46e02815a06b16271289d199105a0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035627"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844298"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365 でのテナントの分離
 

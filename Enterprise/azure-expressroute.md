@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745740"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844928"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。 多くの場合、Azure で実行されるインフラストラクチャおよびプラットフォームサービスは、ネットワークアーキテクチャとパフォーマンスに関する考慮事項に対処することでメリットを得られます。 このような場合は、Azure に ExpressRoute をお勧めします。 Office 365 や Dynamics 365 などのサービスとしてのソフトウェアは、インターネットを介して安全かつ確実にアクセスできるように構築されています。 「 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)」の記事では、インターネットのパフォーマンスとセキュリティについて説明し、「office 365 用の Azure ExpressRoute」を検討することができます。
 
@@ -94,13 +96,13 @@ ExpressRoute を実装するには、ネットワークとアプリケーショ�
 
 Office 365 の ExpressRoute を購入するには、1つまたは複数の[承認](https://azure.microsoft.com/documentation/articles/expressroute-locations/)されたプロバイダーと連携して、必要な数とサイズの回路を ExpressRoute Premium サブスクリプションでプロビジョニングする必要があります。 Office 365 から購入する追加のライセンスはありません。
 
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 [Office 365 の ExpressRoute](https://aka.ms/ert)にサインアップする準備ができましたか?
 
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 向け ExpressRoute の管理](managing-expressroute-for-connectivity.md)
 

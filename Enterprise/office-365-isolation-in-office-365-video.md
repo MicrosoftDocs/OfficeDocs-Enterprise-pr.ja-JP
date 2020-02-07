@@ -12,20 +12,22 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: '概要: Office 365 Video でのテナントの分離について説明します。'
-ms.openlocfilehash: c9be942e10debeb729cda87a88131c17d736d4a2
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035587"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843658"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 ビデオ でのテナントの分離
 
 > [!NOTE]
 > Office 365 のビデオは、Microsoft Stream に置き換えられます。 ビデオコラボレーションにインテリジェンスを追加する新しいエンタープライズビデオサービスの詳細と、現在の Office 365 ビデオのお客様の移行計画については、「 [office 365 からストリームへの移行](https://docs.microsoft.com/stream/)」を参照してください。
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 Azure Storage は、Office 365 ビデオおよび Sway を含む複数の Office 365 サービスのデータを格納するために使用されます。 Azure ストレージには、構造化されていないデータを格納するために使用される拡張性の高い REST ベースのクラウドオブジェクトストアである Blob ストレージが含まれています。 Azure ストレージは、シンプルなアクセス制御モデルを使用します。各 Azure サブスクリプションは、1つ以上のストレージアカウントを作成できます。 各ストレージアカウントには、そのストレージアカウントのすべてのデータへのアクセスを制御するために使用される単一のシークレットキーがあります。 これは、ストレージがアプリケーションに関連付けられており、それらのアプリケーションが関連するデータを完全に制御する一般的なシナリオをサポートします。たとえば、Sway は Azure ストレージにコンテンツを格納します。 Sway のすべての顧客コンテンツは、共有の Azure ストレージアカウントに保存されます。 各ユーザーのコンテンツは、Azure ストレージ内の blob の独立したディレクトリツリーにあります。
 

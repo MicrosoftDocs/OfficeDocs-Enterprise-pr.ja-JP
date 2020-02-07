@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: SharePoint サイトでゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261360"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845068"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -133,7 +135,7 @@ SharePoint 組織レベルの共有設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有の環境を作成する](create-a-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md)
 
 [管理対象ゲストを使用して B2B エクストラネットを作成する](b2b-extranet.md)
 

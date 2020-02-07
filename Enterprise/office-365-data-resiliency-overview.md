@@ -12,17 +12,19 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Microsoft Office 365 のデータ復元性について理解します。
-ms.openlocfilehash: 4bdd46689ca0dd9caa3da10fc57951bee3513b85
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035794"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843678"
 ---
 # <a name="data-resiliency-in-office-365"></a>Office 365 でのデータの回復
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 クラウドコンピューティングの複雑な性質を考慮した場合、Microsoft は、問題が発生した場合には発生しないことに注意してください。 クラウドサービスを設計することで、信頼性を最大化し、問題が発生した場合にお客様に悪影響を最小限に抑えることができます。 複雑な物理インフラストラクチャに依存する従来の戦略にとどまらないようになり、クラウドサービスに直接冗長性が組み込まれています。 より複雑な物理インフラストラクチャと、データの復元をサービスに提供し、お客様に高可用性を提供する、よりインテリジェントなソフトウェアを組み合わせて使用しています。 
 

@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Teams でゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 61d45829071bf19bfbda4bbb80fc7b0af7472d7f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122596"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845048"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 

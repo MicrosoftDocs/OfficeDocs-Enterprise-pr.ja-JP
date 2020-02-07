@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: IdFix を使用して、Office 365 に同期する前に社内ディレクトリを準備し、クリーンアップする方法について説明します。
-ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 97c13a2fd49cea0af63439d6fe6106e8d8996d97
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814615"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844088"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>IdFix ツールを使用して Office 365 と同期するためにディレクトリ属性を準備する
 

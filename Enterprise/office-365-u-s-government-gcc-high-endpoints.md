@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 組織で Office 365 を使用していて、ネットワーク上のコンピューターがインターネットに接続できないように制限している場合は、次に示すように、送信許可一覧に含める必要のあるエンドポイント (Fqdn、ポート、Url、IPv4、IPv6 アドレスの範囲) を検索して、コンピューターは Office 365 を正常に使用できます。
 hideEdit: true
-ms.openlocfilehash: 3fba372269886d5314724c8bf25f829bbb540447
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: 76579b9c6b567394e12f655a9edaf620a219b8d7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677882"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844328"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府 GCC GCC (高) エンドポイント
 
@@ -36,7 +38,7 @@ ms.locfileid: "41677882"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 01/28/2020 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[変更ログサブスクリプション](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
+|**最終更新日:** 2020 年 1 月 28 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
    
  [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用したネットワーク接続の管理に関する推奨事項を理解してください。 エンドポイントのデータは、各月の最初に、アクティブになる前に30日間公開された新しい IP アドレスと Url で更新されます。 これにより、自動更新を行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。 サポートのエスカレーション、セキュリティインシデント、またはその他の即時運用要件に対処する必要がある場合は、その月にエンドポイントを更新することもできます。 このページに表示されるデータはすべて、REST ベースの web サービスから生成されます。 このデータにアクセスするためにスクリプトまたはネットワークデバイスを使用している場合は、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
 

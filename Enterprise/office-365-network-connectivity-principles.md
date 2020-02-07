@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
+f1.keywords:
+- NOCSH
 description: Office 365 のネットワーク接続の計画を開始する前に、Office 365 トラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則を理解しておくことが重要です。 この記事は、Office 365 ネットワーク接続を安全に最適化するための最新のガイダンスを理解するのに役立ちます。
-ms.openlocfilehash: 5e590df37aa1660e4787ac86e556e2cb93feb1e4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 63ae147174cd40ae86a060832468097e5533b837
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747097"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842644"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Office 365 ネットワーク接続の原則
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Office 365 のネットワーク接続の計画を開始する前に、Office 365 トラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則を理解しておくことが重要です。 この記事は、Office 365 ネットワーク接続を安全に最適化するための最新のガイダンスを理解するのに役立ちます。
   
@@ -254,7 +256,7 @@ Office 365 のトラフィックを最適化するために使用する方法は
 
 [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 

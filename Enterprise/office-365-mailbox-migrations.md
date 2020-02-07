@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Office 365 メールボックスの移行に使用されるコマンドレットの概要を簡単に説明します。
-ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38035547"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843608"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 のメールボックスの移行
 

@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: '概要: Microsoft Azure で Office 365 の高可用性フェデレーション認証のために、ドメインコントローラーおよびディレクトリ同期サーバーを構成します。'
-ms.openlocfilehash: bf5ee3a63d12d369a6d318f5fc23fa4577730768
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: e43787817287779330e28236700f1a710c37dceb
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072389"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840314"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性フェデレーション認証のフェーズ 2: ドメイン コントローラーを構成する
 
@@ -34,13 +36,13 @@ Azure インフラストラクチャサービスで Office 365 フェデレー�
   
 |**アイテム**|**仮想マシン名**|**ギャラリー イメージ**|**ストレージの種類**|**最小サイズ**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  (最初のドメイン コントローラー。例: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png) (ディレクトリ同期サーバー、例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![line](./media/Common-Images/TableLine.png) (最初の AD FS サーバー、例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![line](./media/Common-Images/TableLine.png) (2 番目の AD FS サーバー、例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![line](./media/Common-Images/TableLine.png) (最初の web アプリケーションプロキシサーバー。例: WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![line](./media/Common-Images/TableLine.png) (2 番目の web アプリケーションプロキシサーバー。例: WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![線](./media/Common-Images/TableLine.png)  (最初のドメイン コントローラー。例: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![線](./media/Common-Images/TableLine.png)  (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![線](./media/Common-Images/TableLine.png) (ディレクトリ同期サーバー、例 DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![線](./media/Common-Images/TableLine.png) (最初の AD FS サーバー、例 ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![線](./media/Common-Images/TableLine.png) (2 番目の AD FS サーバー、例 ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![線](./media/Common-Images/TableLine.png) (最初の web アプリケーションプロキシサーバー。例: WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![線](./media/Common-Images/TableLine.png) (2 番目の web アプリケーションプロキシサーバー。例: WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **表 M-Azure での Office 365 の高可用性フェデレーション認証用の仮想マシン**
   

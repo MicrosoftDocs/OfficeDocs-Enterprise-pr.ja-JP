@@ -12,17 +12,19 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
+f1.keywords:
+- NOCSH
 description: Office 365 内のレポート機能の説明。
-ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031862"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842034"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 のレポート作成機能 
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 「Office 365 のレポート機能」では、Azure Active Directory (AD)、Exchange Online、デバイス管理、監督レビュー、およびデータ損失防止 (DLP) について、さまざまな監査レポートを提供しています。 これらのレポートは、Office 365 アクティビティレポートとは異なります。
 

@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 用 ExpressRoute は、多くのインターネットに接続された Office 365 サービスへの代替ルーティングパスを提供します。 Office 365 用 ExpressRoute のアーキテクチャは、既にインターネット経由でインターネット経由で提供されている Office 365 サービスのアドバタイズに基づいています。これらの IP プレフィックスを以降に再配布するにはネットワーク。 ExpressRoute を使用すると、多くの Office 365 サービスで、インターネットおよび ExpressRoute を介して、いくつかの異なるルーティングパスを効果的に有効にすることができます。 ネットワーク上のルーティングの状態が、内部ネットワークトポロジの設計方法に大きな変化を表すことがあります。
-ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813485"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840184"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -190,7 +192,7 @@ Office 365 用 ExpressRoute は、多くのインターネットに接続され�
 |場所  <br/> |人数  <br/> |インターネット経由での Microsoft ネットワークへの予期される待機時間  <br/> |ExpressRoute での Microsoft ネットワークへの予期される待機時間  <br/> |
 |Los Angeles  <br/> |10,000  <br/> |~ 15ms 秒  <br/> |~ 10ms (シリコンバレー経由)  <br/> |
 |ワシントン DC  <br/> |15,000  <br/> |~ 20 ミリ秒  <br/> |~ 10ms (ニューヨーク経由)  <br/> |
-|営業  <br/> |5,000 人  <br/> |~ 15ms 秒  <br/> |~ 40ms (ニューヨーク経由)  <br/> |
+|営業  <br/> |5,000  <br/> |~ 15ms 秒  <br/> |~ 40ms (ニューヨーク経由)  <br/> |
 
 Office 365 地域、ExpressRoute ネットワークサービスプロバイダーの会議の場所、および場所別のユーザーの数量を示すグローバルネットワークアーキテクチャが開発されると、最適化を行うことができるかどうかを特定するために使用できます。 また、会議の場所を取得するためにトラフィックが遠隔地にルーティングされるグローバルヘアピンネットワーク接続を示すこともあります。 グローバルネットワーク上のヘアピンが検出された場合は、続行する前に修復する必要があります。 別の会議の場所を検索するか、選択的なインターネットブレイクアウトを使用してヘアピンを回避します。
   
@@ -566,11 +568,11 @@ Skype for Business Online の音声と会議の特典を取得するには、QoS
   
 ExpressRoute 接続を使用して Office 365 を展開する場合は、ExpressRoute のネットワーク構成が最適に設計されていること、およびクライアントコンピューターなどのネットワーク上の他のコンポーネントも最適化されていることを確認する必要があることに注意してください。 この計画ガイドを使用して、失われた可能性のある手順をトラブルシューティングすることに加えて、 [Office 365 のパフォーマンストラブルシューティング計画](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c)も作成しました。
   
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   

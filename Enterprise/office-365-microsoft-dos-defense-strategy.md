@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: サービス拒否 (DoS) 攻撃に対する Microsoft の防御戦略の概要について説明します。
-ms.openlocfilehash: eacfd9d908eb8408d592fc70cd1a888c7c44aff2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: c30e8e5c91ead81ceda9cfaeb4ef6b17c9addc9f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067578"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844388"
 ---
 # <a name="office-365-denial-of-service-defense-strategy"></a>Office 365 のサービス拒否防御戦略
 

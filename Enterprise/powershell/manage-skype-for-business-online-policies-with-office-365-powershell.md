@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 概要:Office 365 PowerShell を使用して、ポリシーが割り当てられている Skype for Business Online ユーザー アカウントのプロパティを管理します。
-ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748527"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841334"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 

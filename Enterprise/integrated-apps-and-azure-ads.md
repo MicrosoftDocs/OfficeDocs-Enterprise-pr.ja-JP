@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection: M365-subscription-management
 search.appverid:
@@ -15,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure AD で O365 統合アプリを登録および管理する方法について説明します。
-ms.openlocfilehash: 3179a2168847a59be3937550015645d055bd71e1
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: fdeb3e3f35a795851b253f9b68d755404851ba07
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375515"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845078"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 管理者の統合アプリおよび Azure AD
 

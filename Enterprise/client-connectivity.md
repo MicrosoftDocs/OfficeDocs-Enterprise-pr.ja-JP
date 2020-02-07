@@ -12,6 +12,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: '概要: クライアントコンピューターと Office 365 テナントデータセンターの場所に応じて、クライアントコンピューターが Office 365 テナントに接続する方法について説明します。'
-ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 0a5a7351b3d756763f05a8136e7ce6bc16f8f881
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077680"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843828"
 ---
 # <a name="client-connectivity"></a>クライアント接続
 
@@ -125,7 +127,7 @@ Exchange Online は、さらに一歩進んでいきます。 クライアント
 
 ![VPN データセンターの接続](media/b5f4c06c-65a3-462d-aae8-9a4602dd8d9e.png)
   
-ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/o365clientconnectivity](https://aka.ms/o365clientconnectivity)
+ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/o365clientconnectivity](https://aka.ms/o365clientconnectivity)
   
 ## <a name="see-also"></a>関連項目
 

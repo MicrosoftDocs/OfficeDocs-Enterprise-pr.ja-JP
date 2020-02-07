@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 ユーザーを管理するためにどのようなツールを使用するか、およびどのように使用できるかについては、ユーザー id の管理方法によって異なります。 '
-ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490740"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843718"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するためのツール
 
@@ -74,7 +76,7 @@ ms.locfileid: "34490740"
     > [!IMPORTANT]
     > Office 365 で、ライセンスを割り当てずにアカウントを作成する (SharePoint Online の場合) とは、アカウント所有者が Office 365 ポータルを表示できるが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Office 365 とオンプレミス環境との統合](office-365-integration.md)
   

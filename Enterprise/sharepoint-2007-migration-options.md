@@ -22,17 +22,19 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
+f1.keywords:
+- NOCSH
 description: SharePoint Server 2007 のサポートが終了したので、アップグレードを実行する時間を短縮しました。 この記事を使用して、計画の作成に役立てることができます。
-ms.openlocfilehash: 6315c06f034464cf12224582c9dcd0257bf43961
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748034"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841154"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>検討する SharePoint 2007 移行オプション
 
-*この記事は、Office 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2007 と SharePoint Server 2007 のサポートが終了しました。 アップグレード時間 この記事では、移行オプションに関する情報を提供します。
   

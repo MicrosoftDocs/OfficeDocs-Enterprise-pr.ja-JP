@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: この記事では、コンテンツクエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えることによって、パフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: e2a3a1dd5a0010fcf1bbf61a039ca1d23292f70d
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 16d8e976a96487752a78b91a783041448621a275
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38077946"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843928"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>SharePoint Online のパフォーマンスを向上させるために、コンテンツのクエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用する
 

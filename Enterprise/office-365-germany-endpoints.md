@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: 組織で Office 365 を使用していて、ネットワーク上のコンピューターがインターネットに接続できないように制限している場合は、次のように、送信許可一覧に含める必要があるエンドポイント (Fqdn、ポート、Url、および IPv4 および IPv6 アドレスの範囲) を確認します。コンピューターは Office 365 を正常に使用できます。
 hideEdit: true
-ms.openlocfilehash: 13579546eceb33add9eda867cc5515ccb9e5ff13
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: fa9e4c9e29aa440a4d45fc2ad90987dd5f482f2c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677872"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843668"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany のエンドポイント
 
@@ -36,7 +38,7 @@ ms.locfileid: "41677872"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 01/28/2020 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[変更ログサブスクリプション](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> |
+|**最終更新日:** 2020 年 1 月 28 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> |
 
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用したネットワーク接続の管理に関する推奨事項を理解してください。 エンドポイントのデータは、各月の最初に、アクティブになる前に30日間公開された新しい IP アドレスと Url で更新されます。 これにより、自動更新を行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。 サポートのエスカレーション、セキュリティインシデント、またはその他の即時運用要件に対処する必要がある場合は、その月にエンドポイントを更新することもできます。 [変更ログサブスクリプション](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)は、いつでも参照できます。
 

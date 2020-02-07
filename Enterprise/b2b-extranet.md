@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: パートナー組織から管理されたゲストユーザーを使用して、B2B エクストラネットのサイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: b314949e97789141bc510554da40409e8bf3b6df
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 930c11489921fa5c32d1ba1ab16161f201006c91
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085420"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844998"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理対象ゲストを使用して B2B エクストラネットを作成する
 

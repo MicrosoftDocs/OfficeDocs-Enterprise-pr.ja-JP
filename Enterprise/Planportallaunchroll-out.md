@@ -10,19 +10,21 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: この記事では、SharePoint Online でのポータルの起動を計画する方法と、正常に起動するために必要な手順について説明します。
-ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: fca8b4f116510589b83748435f64ccbb3790d7c2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959121"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843768"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online でポータルの起動ロールアウトプランを計画する
 
-ポータルとは、サイトのコンテンツを使用する多数のサイトビューアーを持つ、イントラネット上の SharePoint サイトのことです。 大規模な組織では、次のようなものがいくつかあります。たとえば、会社のポータルや人事ポータルなどです。 通常、ポータルには、サイトとそのコンテンツを作成して作成するユーザーが比較的少数しかありません。 ポータルへのほとんどの訪問者は、コンテンツの読み取りと利用のみを行います。
+ポータルは、イントラネット上の SharePoint サイトであり、サイト上のコンテンツを使用する多数のサイト ビューアーがいます。 大規模な組織では、会社ポータルと人事ポータルなど、これらのいくつかが存在する場合があります。 通常、ポータルには、サイトとそのコンテンツの作成および作成者は比較的少ないです。 ポータルへのほとんどの訪問者は、コンテンツの読み取りと使用のみを行います。
 
 この記事では、SharePoint Online への展開とロールアウト計画を計画する方法について説明します。 また、SharePoint Online で従来のロードテストが許可されていない場合の対処方法についても説明します。 SharePoint Online はクラウドサービスであり、サービスの負荷の負荷と状態のバランスと全体的なバランスが Microsoft によって管理されます。
 

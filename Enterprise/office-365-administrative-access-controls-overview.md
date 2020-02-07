@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 の管理アクセス制御とデータ分類の概要について説明します。'
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067634"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844538"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 での管理アクセス制御 
 
@@ -29,7 +31,7 @@ Microsoft は、Microsoft によってお客様のコンテンツへのアクセ
 Microsoft では、複数の形式のクラウド配信を使用したオンラインサービスを提供しています。
 
 - **パブリッククラウド:** Office 365、Azure、および北アメリカ、南米、ヨーロッパ、アジア、オーストラリアなどでホストされているその他のサービスのマルチテナントバージョンが含まれています。
-- **国立雲:**(中国で運用されている) Office 365、ドイツの Office 365 (Microsoft が運用しているが、ドイツ語のデータトラスティを含むモデル) など、米国外のすべての独立およびサードパーティ製のクラウドを含みます (前述のものを除く)。ドイツの受付 Kom は、顧客データを含む Microsoft の顧客データやシステムへのアクセスを制御し、監視します。
+- **国立雲:** 米国外のすべての独立およびサードパーティ製のクラウド (前述のものを除く) (中国で運用されている 365)、ドイツの office 365 (Microsoft が運用している、ドイツのデータを含むモデルの下で、ドイツのデータが含まれるお客様のデータとシステムに対する Microsoft のアクセスを制御し、監視します)。
 - **行政機関向けクラウド:** 米国政府機関のお客様が利用できる Office 365 および Azure サービスが含まれています。
 
 この記事の目的として、Office 365 サービスには次のものがあります。
@@ -54,7 +56,7 @@ Microsoft では、複数の形式のクラウド配信を使用したオンラ�
 - SharePoint Online のコンテンツ
 - インスタントメッセージ
 - 予定表アイテム
-- Documents
+- ドキュメント
 - 連絡先
 - エンドユーザー識別情報 (EUII) (ユーザーに固有のデータ、または個別のユーザーに linkable されていても、顧客コンテンツは含まれません)。
 

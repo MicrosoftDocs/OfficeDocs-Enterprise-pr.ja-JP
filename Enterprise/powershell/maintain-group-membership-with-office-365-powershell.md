@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Office 365 PowerShell を使用して Office 365 のグループのメンバーシップを管理する方法について説明します。
-ms.openlocfilehash: e7cd4cb76f28bfbe2e1bc538df6727ac403c29df
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 397f8d93df5e9abef0779e4eb56df7bab9ef2344
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072499"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841484"
 ---
 # <a name="maintain-group-membership-with-office-365-powershell"></a>Office 365 PowerShell を使用してグループメンバーシップを管理する
 

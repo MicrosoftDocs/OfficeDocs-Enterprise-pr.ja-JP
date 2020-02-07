@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
+f1.keywords:
+- NOCSH
 description: 新しいデータセンター geo 継続的な顧客需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo は、中核となる顧客データのために geo データ常駐サービスを提供しています。 コア顧客データは、Microsoft Online Services の用語で定義されている、Exchange Online のメールボックスの内容 (電子メール本文、予定表のエントリ、電子メールの添付ファイルの内容) および SharePoint Online サイトのコンテンツとファイルのサブセットを参照する用語です。そのサイト内に格納され、OneDrive for Business にアップロードされたファイル。
-ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923869"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844768"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>コア データを新しい Office 365 データ センター geo に移行する
 

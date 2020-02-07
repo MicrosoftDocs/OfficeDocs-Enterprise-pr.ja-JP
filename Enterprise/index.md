@@ -13,13 +13,15 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
+f1.keywords:
+- NOCSH
 ms.author: robmazz
-ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: f4dd985efa512de8300acc7a02c9c505acb47c38
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030661"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845058"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365 には、コラボレーション、セキュリティとコンプライアンス、モビリティ、およびインテリジェンスと分析を可能にするパワフルなオンラインクラウドサービスが用意されています。 このページでは、エンタープライズ組織で Office&nbsp;365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスへのリンクを提供します。</p>
@@ -256,7 +258,7 @@ ms.locfileid: "38030661"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 Tech Community</h3>
+                        <h3>Office 365 の技術コミュニティ</h3>
                         <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Office&nbsp;365 に関するベストプラクティス、ニュース、および最新の傾向とトピックについて説明します。</a></p>
                     </div>
                 </div>

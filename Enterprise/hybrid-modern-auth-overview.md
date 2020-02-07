@@ -12,13 +12,15 @@ localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの Skype for Business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの Skype for Business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 5852a4a59e4826cb57295452f9996e5c4f91ab29
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721918"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840124"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件
 
@@ -146,7 +148,7 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、「 [ge
   
   - 先進認証をサポートしているクライアントは次のとおりです。
 
-  |**クライアント**|**プライマリプロトコル**|**注**|
+  |**クライアント**|**プライマリプロトコル**|**メモ**|
   |:-----|:-----|:-----|
   |Outlook 2013、Outlook 2016  <br/> |MAPI over HTTP  <br/> |これらのクライアントとの先進認証を利用するには、Exchange 内で MAPI over HTTP を有効にする必要があります (通常、Exchange 2013 Service Pack 1 以降の新規インストールでは有効または True)。詳細については[、「office 2013 および office 2016 クライアントアプリでの先進認証のしくみ](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)」を参照してください。  <br/> 最低限必要な Outlook のビルドを実行していることを確認します。[Windows インストーラー (MSI) を使用するバージョンの Outlook については、「最新の更新プログラム」を](https://docs.microsoft.com/officeupdates/outlook-updates-msi)参照してください。  <br/> |
   |Outlook 2016 for Mac  <br/> |Exchange Web サービス  <br/> |  <br/> |

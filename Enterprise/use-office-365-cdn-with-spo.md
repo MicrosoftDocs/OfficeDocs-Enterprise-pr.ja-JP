@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721938"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841074"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -386,7 +388,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイトコレクションのプライベートオリジンを構成する
 
-**Add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 例:
+**Add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 次に例を示します。
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -669,7 +671,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイトコレクションのプライベートオリジンを構成する
 
-**PnPTenantCdnOrigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 例:
+**PnPTenantCdnOrigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 次に例を示します。
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -942,7 +944,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN のプライベートオリジンにあるアセットへのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 送信元によって指定されたフォルダーまたはライブラリへのアクセス許可を持っているユーザーには、アクセス許可レベルに基づいてファイルへのアクセスをユーザーに許可するトークンが自動的に与えられます。 これらのアクセストークンは、トークンリプレイ攻撃を防ぐために生成されてから90分以内に有効になります。
 
-アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 例:
+アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 次に例を示します。
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -994,10 +996,10 @@ Microsoft Edge ブラウザーでの開発者ツールの使用の詳細につ�
 
 */Clientsideassets の送信元が見つからない場合、SharePoint Framework ソリューションは失敗し、警告やエラーメッセージは生成されません。 このオリジンは、 _-nodefaultorigins_パラメーターが **$true**に設定されているか、または送信元が手動で削除されたために、CDN が有効になっていない可能性があります。
 
-*/Clientsideassets の送信元が存在するかどうかは、次の PowerShell コマンドを使用して確認できます。
+次の PowerShell コマンドを使用して、どの出所が表示されているかを確認できます。
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 または、Office 365 CLI を使用して確認することもできます。
@@ -1029,6 +1031,6 @@ Office 365 CDN の操作は、 **SharePoint Online Management Shell** PowerShell
 
 [Content Delivery Network](https://aka.ms/o365cdns)
 
-[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
+[Office 365 のネットワーク計画とパフォーマンスのチューニング](https://aka.ms/tune)
 
 [SharePoint パフォーマンスシリーズ-Office 365 CDN ビデオシリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

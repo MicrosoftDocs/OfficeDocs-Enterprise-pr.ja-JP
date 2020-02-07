@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: Office 365 のビデオリポジトリおよびストリーミングサービスを使用すると、組織内のビデオを簡単に保存およびストリーミングすることができます。 Office 365 ビデオについて多くの重要な情報があります。このネットワーク FAQ は、帯域幅の計画、暗号化、およびサービスがコンテンツ配信ネットワーク (CDNs) を活用する方法に関してよく寄せられる質問に回答するように設計されています。
-ms.openlocfilehash: 93f55e0c1e4d065e02a9cc41e5aaaab89b459a0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21c7327878bc76bc3bbe92d004a26a4704ef8c3d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069473"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841974"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 のビデオネットワークについてよく寄せられる質問
 
@@ -116,8 +118,7 @@ Office 365 ビデオを正常に展開して使用するために役立つその
   
 [Office 365 でチャネルを作成および管理するビデオ](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
   
-
-  [Office 365 ビデオ ポータルを管理する](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
+[Office 365 ビデオ ポータルを管理する](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
   
 [Office 365 のビデオで使用できるビデオ形式](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   

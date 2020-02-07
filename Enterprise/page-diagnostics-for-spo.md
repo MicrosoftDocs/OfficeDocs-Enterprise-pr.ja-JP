@@ -16,13 +16,15 @@ search.appverid:
 - SPO160
 - MOE150
 - BSA160
+f1.keywords:
+- NOCSH
 description: Sharepoint Online のページ診断ツールを使用して、事前に定義されたパフォーマンス条件のセットに対して SharePoint Online モダンポータルと従来の発行ページを分析します。
-ms.openlocfilehash: 0f22c84599f227bd6efcf315a546b39aad77b1c1
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078146"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841784"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 用ページ診断ツールを使用する
 

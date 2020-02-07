@@ -12,17 +12,19 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Exchange Online および Office 365 内のデータの復元のさまざまな側面について説明します。
-ms.openlocfilehash: ad10e70ab6d03e2bbc37f6cc7885406c33df2239
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067637"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844478"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 の Exchange Online データの復元
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 Exchange データベースに影響を与える可能性がある破損には、次の2種類があります。物理的な破損は、通常、ハードウェア (特にストレージハードウェア) の問題、およびその他の要因によって発生する論理的な破損に起因します。 通常、Exchange データベース内で発生する可能性がある論理的な破損には、次の2種類があります。 
 - **データベースの論理破損**-データベースページのチェックサムは一致しますが、ページ上のデータが論理的に間違っています。 これは、データベースエンジン (拡張記憶エンジン (ESE)) がデータベースページを作成しようとしたときに、オペレーティングシステムが成功メッセージを返した場合、データがディスクに書き込まれていないか、または正しくない場所に書き込まれている場合に発生する可能性があります。 これは、*ロスト フラッシュ*と呼ばれます。 ESE には、データベースやその他のデータ損失シナリオの物理的な破損を防止するために設計されたさまざまな機能と安全対策が用意されています。 失われたデータを失わないようにするため、ESE にはデータベース内の失われたフラッシュ検出メカニズムと機能 (単一ページ復元) が含まれています。 
 - **ストレージの論理破損**-ユーザーが期待できない方法でデータが追加、削除、または操作されます。 これらの場合は通常、サード パーティ製のアプリケーションによって引き起こされます。 これは通常、ユーザーの観点から見た意味での破損にすぎません。 Exchange ストアは、論理的破損を引き起こすトランザクションを一連の有効な MAPI 操作として見なします。 Exchange Online の[インプレース保持](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)機能により、ストアの論理的破損を防止できます (ユーザーまたはアプリケーションによってコンテンツが完全に削除されることはないため)。 

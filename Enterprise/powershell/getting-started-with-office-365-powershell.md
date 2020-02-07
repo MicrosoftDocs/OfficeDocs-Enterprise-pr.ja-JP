@@ -9,17 +9,19 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 概要:Office 365 PowerShell の重要性を理解し、Office 365 テナントに接続し、ヘルプを取得します。
-ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 6942f44569ce5b21abc9bd1cc12a6266ad23038c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072179"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844238"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Office 365 PowerShell の概要
 

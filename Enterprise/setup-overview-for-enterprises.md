@@ -14,15 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: これらの概要手順は、ネットワークのセットアップ、id の作成、Office 365 ProPlus の展開、データの移行、組織内のユーザーが Office 365 の使用を開始する際に役立つように設計されています。
-ms.openlocfilehash: e9af8d1ad617d617450946966967ab797eeffa07
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748068"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844018"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Office 365 Enterprise を組織で展開する
 

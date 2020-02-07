@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: ディレクトリ同期を非アクティブ化する方法について説明します。 その状態を表示することもできます。
-ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 74e2eee0086e4f8098221f4aaa30d408091a6a0f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070413"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840984"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Office 365 でディレクトリの同期状態を表示する
 
@@ -31,7 +33,7 @@ ms.locfileid: "34070413"
 ## <a name="view-directory-synchronization-status"></a>ディレクトリ同期の状態を表示する
 
 - [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインし、ホームページの [ **DirSync Status** ] を選択します。
-- または、[**アクティブ**な**** \>ユーザー] ページに移動し、 **[アクティブなユーザー** ] ページで、[**ディレクトリ同期**の**追加** \> ] を選択します。 [**ディレクトリ同期**] ウィンドウで、[ **DirSync management に移動] を**選択します。
+- または、[**アクティブ**なユーザー]**ページに移動** \>し、[**アクティブなユーザー** ] ページで、[**ディレクトリ同期**の**追加** \> ] を選択します。 [**ディレクトリ同期**] ウィンドウで、[ **DirSync management に移動] を**選択します。
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>[ディレクトリ同期の管理] ページの情報
 
@@ -39,7 +41,7 @@ ms.locfileid: "34070413"
   
 ディレクトリ同期に問題がある場合は、このページにもエラーが表示されます。 発生する可能性のあるさまざまなエラーの詳細については、「 [Office 365 でのディレクトリ同期エラーの識別](identify-directory-synchronization-errors.md)」を参照してください。
   
-|**アイテム**|**目的**|
+|**Item**|**目的**|
 |:-----|:-----|
 |**確認されたドメイン** | 自分が所有していることが確認された Office 365 テナント内のドメインの数。 |
 |**確認されていないドメイン** | 追加されたが確認されていないドメイン。 |

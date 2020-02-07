@@ -9,13 +9,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
+f1.keywords:
+- NOCSH
 description: この記事は、Microsoft Lync 2013 プラットフォーム オプションという名前のダイアグラム (技術ダイアグラム で利用できます) のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ff03899a57ff7fbd902cd3cacfc2005d27595c55
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030601"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844638"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>アクセス可能な図 - Microsoft Lync 2013 プラットフォーム オプション
 

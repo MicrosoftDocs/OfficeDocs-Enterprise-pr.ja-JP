@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
+f1.keywords:
+- NOCSH
 description: この資料は、「SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト」という名前の図のアクセス可能なテキスト バージョンです。
-ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a68c5f8a0e92c45e3c33caaca77be0d841aa6003
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028061"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843898"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>アクセス可能な図 - SharePoint 2013 のための Microsoft Azure のインターネット サイト
 

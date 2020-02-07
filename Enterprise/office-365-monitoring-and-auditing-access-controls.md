@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: '概要: Office 365 で利用できるさまざまな監視および監査アクセス制御の概要について説明します。'
-ms.openlocfilehash: f42fd642985d64a3e50daa401f438327a0cbae3a
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 300d5efa2b448e8e5219eb88f3d736eeba66f2d6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031972"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842609"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Office 365 でのアクセス制御の監視と監査
 

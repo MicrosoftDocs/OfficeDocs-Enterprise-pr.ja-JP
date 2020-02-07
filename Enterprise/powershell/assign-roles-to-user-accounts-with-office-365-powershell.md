@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: '概要: Office 365 PowerShell を使用して、ロールをユーザー アカウントに割り当てます。'
-ms.openlocfilehash: 999b44f56e2652c0d6d2d746a3ed204be9d1f69c
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 3b57862d78d8699da033ed016338a449650e7140
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072529"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841674"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
 

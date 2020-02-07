@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
-ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 86efb767e80927f7d3f5d8055676e6d99da4d667
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813475"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840564"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 

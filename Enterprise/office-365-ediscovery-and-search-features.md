@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: 監査機能の概要、および Office 365 の他の検索機能を使用して監査の使用と透明性を実現します。
-ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 16cb8ac4703142b73d4f56bce9390743495d3fc2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076211"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843649"
 ---
 # <a name="ediscovery-and-search-features"></a>電子情報開示と検索機能 
 
@@ -42,12 +44,12 @@ SharePoint Online と OneDrive for business からのイベントは、発生す
 | プロパティ | 説明 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日付 | イベントの日付と時刻 |
-| ユーザー | アクションを実行したユーザー |
+| User | アクションを実行したユーザー |
 | ClientIP | アクティビティがログに記録されたときに使用されたデバイスの IPv4 または IPv6 アドレス。 |
 | CreationTime | ユーザーがアクティビティを実行したときの協定世界時 (UTC) の日付と時刻。 |
 | EventSource | イベントが発生したことを示します。 可能な値は、SharePoint と ObjectModel です。 |
 | ID | レポートエントリの ID。 ID はレポートエントリを一意に識別します。 |
-| 操作 | [このユーザーアクティビティの結果を表示] で選択された値に対応するユーザーまたはアクティビティの名前。 |
+| Operation | [このユーザーアクティビティの結果を表示] で選択された値に対応するユーザーまたはアクティビティの名前。 |
 | OrganizationId | イベントが発生した組織の Office 365 サービスの GUID。 |
 | UserAgent | ブラウザーによって提供される、ユーザーのブラウザーに関する情報。 |
 | UserId | レコードが記録されるようになった (Operation プロパティで指定された) アクションを実行したユーザー。 |
@@ -55,7 +57,7 @@ SharePoint Online と OneDrive for business からのイベントは、発生す
 |  | 0は、通常のユーザーを示します。 |
 |  | 2は、Office 365 組織の管理者を示します。 |
 |  | 3 Microsoft データセンターの管理者またはデータセンターのシステムアカウントを示します。 |
-| Workload | アクティビティが発生した Office 365 サービス。 このプロパティに指定できる値は次のとおりです。 |
+| ワークロード | アクティビティが発生した Office 365 サービス。 このプロパティに指定できる値は次のとおりです。 |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |

@@ -13,14 +13,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+f1.keywords:
+- NOCSH
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: 一元展開 PowerShell コマンドレットを使用すると、Office 365 組織の Office アドインを展開して管理するのに役立ちます。
-ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 586b66ac3632a5d86a63014a50f3c605b1c005e7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782587"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844158"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>一元展開 PowerShell コマンドレットを使用してアドインを管理する
 
