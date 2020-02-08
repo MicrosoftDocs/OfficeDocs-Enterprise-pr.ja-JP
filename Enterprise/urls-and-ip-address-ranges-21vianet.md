@@ -16,14 +16,16 @@ search.appverid:
 - GPA150
 - GEA150
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
+f1.keywords:
+- NOCSH
 description: この記事は、中国の 21 vianet が運営する Office 365 に適用されます。この記事では、21Vianet が運営する Office 365 で使用される URL と IP アドレス範囲の一覧が表示されます。
 hideEdit: true
-ms.openlocfilehash: de2333dcfbd932bf4b8286de15a12c0081807301
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: 5be41a4dd7e1bfc61641ef2403f0495a8ee60813
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677862"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843958"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
