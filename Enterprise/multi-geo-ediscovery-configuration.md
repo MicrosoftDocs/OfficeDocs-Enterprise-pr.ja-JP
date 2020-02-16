@@ -1,5 +1,6 @@
 ---
 title: Office 365 Multi-Geo 電子情報開示を構成する
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Office 365 Multi-Geoで電子情報開示を構成する方法を表示する。
-ms.openlocfilehash: 01796000353bcc20d9e0ed63be088beeb9b3680e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a7591a1920d2fb2c61d3829f52097692b67fafa1
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844598"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974246"
 ---
 # <a name="office-365-multi-geo-ediscovery-configuration"></a>Office 365 Multi-Geo 電子情報開示の構成
 

@@ -1,5 +1,6 @@
 ---
 title: 特定 PDL で Office 365 グループを作成する
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: 複数地域環境で指定された優先データの場所を使用して、Office 365 グループを作成する方法について説明します。
-ms.openlocfilehash: 5a6417f1758cd6c5e4eb9d4df9e7796d4309e62c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96c2e5513879dff291c0119ddad38a78ab91ec1a
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843738"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974089"
 ---
 # <a name="create-an-office-365-group-with-a-specific-pdl"></a>特定 PDL で Office 365 グループを作成する
 

@@ -1,5 +1,6 @@
 ---
 title: 複数地域環境でのユーザー エクスペリエンス
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: 複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: 2b4fc80e3624011b65a0454b57a7a4e76829c16f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844588"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974219"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 

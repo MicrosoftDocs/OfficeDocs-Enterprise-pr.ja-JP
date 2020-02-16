@@ -1,5 +1,6 @@
 ---
 title: Office 365 Multi-Geo
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: d2729eb0f3aea0adc2b9d45d660805df3bdd0c14
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 62aa890bb3bb8bfcabd13285814b72c7000047dc
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844378"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974060"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
