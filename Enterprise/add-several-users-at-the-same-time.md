@@ -105,9 +105,9 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 - **各ユーザーに必要な情報が揃っていない場合はどのようになりますか?** ユーザー名と表示名は必須で、この情報がないと新しいユーザーは追加できません。FAX 番号などの他の情報が一部欠けている場合は、フィールドが空白であることを示すために、スペースに加えてコンマを使用することができます。 
     
-- ** How small or large can the spreadsheet be? ** The spreadsheet must have at least two rows. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet. 
+- **スプレッドシートの最小サイズ、最大サイズはどのくらいですか?** スプレッドシートには少なくとも 2 行含まれている必要があります。1 つは列見出し (ユーザー データの列ラベル) で、もう 1 つはユーザー用です。251 行を超えることはできません。251 名以上のユーザーをインポートする必要がある場合は、複数のスプレッドシートを作成できます。 
     
-- ** What languages can I use? ** When you create your spreadsheet, you can enter user data column labels in any language or characters, but you must not change the order of the labels, as shown in the sample. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format. 
+- **どの言語を使用できますか?** スプレッドシートを作成する場合、任意の言語または文字でユーザー データの列のラベルを入力できますが、サンプルに記載されているラベルの順序は変更しないでください。任意の言語または文字でフィールドに入力し、Unicode または UTF-8 形式でファイルを保存します。 
     
 - **異なる国や地域のユーザーを追加する場合はどうですか?** 領域ごとに別のスプレッドシートを作成します。 スプレッドシートごとにユーザーの一括追加ウィザードの手順を実行し、処理中のファイルに含まれるすべてのユーザーを 1 つの場所にまとめるようにします。 
     
