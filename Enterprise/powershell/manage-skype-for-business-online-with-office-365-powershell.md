@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 概要:Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: 699f799e823df6192a65147210130ae6493f52eb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844228"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106208"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
 
@@ -44,7 +44,7 @@ Skype for Business Online 管理者にとって主要なタスクの 1 つはポ
 2. [ **Windows PowerShell 資格情報の要求**] ダイアログボックスで、Skype For business Online 管理者のアカウント名とパスワードを入力し、[ **OK**] をクリックします。
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>多要素認証を使用して Skype for Business Online 管理者アカウントを使用して接続する
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>多要素認証を使用して Skype for Business Online 管理者アカウントを使用して接続する
 
 1. Windows PowerShell コマンド プロンプトを開いて次のコマンドを実行します:
 

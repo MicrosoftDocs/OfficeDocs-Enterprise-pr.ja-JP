@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: 既存の Office 365 のお客様は、Office 365 サービスに参加しているお客様のデータを新しい geo へ移行するために、お住まいの国の期限より前にリクエストを送信する必要があります。
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844108"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106228"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -48,13 +48,8 @@ ms.locfileid: "41844108"
 
 対象となるお客様には、 [Microsoft 365 管理センター](https://aka.ms/365admin)にページが表示されます。これにより、お客様は自社のコア顧客データを新しいデータセンターリージョンに移動するよう要求できます。  
   
-Microsoft 365 管理センターのページにアクセスするには、左側のナビゲーションウィンドウで [**設定**] を展開し、[**組織プロファイル**] をクリックします。
-  
-![組織プロファイルが強調表示されている [設定] メニュー](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-**[Organization Profile]** ページで **[データ所在地のオプション]** セクションまで下方向にスクロールします。 
-  
-![データ常駐のカード](media/dataresidencyae.jpg)
+Microsoft 365 管理センターのページにアクセスするには、左側のナビゲーションウィンドウで [**設定**] を展開し、[**設定**] をクリックします。
+[] タブ [**組織] プロファイル**を選択し、[ **Data レジデンシー**] オプションを選択します。
   
 **次のいずれかに該当する場合は、このセクションは表示されません**。
 - テナントは Office 365 Move プログラムの対象外です。  資格は、テナントのサインアップ国によって決まります。
@@ -108,7 +103,7 @@ Exchange Server が**m.outlook.com**または**podxxxxx.outlook.com**に設定�
 
 ## <a name="related-topics"></a>関連項目
 
-[コアデータを新しい Office 365 データセンター geo に移行する](moving-data-to-new-datacenter-geos.md)
+[コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
 
 [データ移行についての一般的な FAQ](data-move-faq.md)
 
