@@ -81,6 +81,7 @@
 #### [Office for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 #### [Web サービスに含まれていないその他のエンドポイント](additional-office365-ip-addresses-and-urls.md)
+### [中国ユーザー向けの Office 365 パフォーマンスの最適化](office-365-networking-china.md)
 ### [コンテンツ配信ネットワーク](content-delivery-networks.md)
 ### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
 ### [Office 365 の NAT サポート](nat-support-with-office-365.md)
@@ -154,6 +155,7 @@
 #### [データ移行についての一般的な FAQ](data-move-faq.md)
 #### [Microsoft Cloud Deutschland: Office 365 移行プログラム](ms-cloud-germany-transition.md)
 #### [Microsoft Cloud Deutschland: 移行のオプト イン](ms-cloud-germany-migration-opt-in.md)
+#### [Office 365 データセンター内の顧客データ](o365-data-locations.md)
 
 ### ハイブリッド ソリューション
 #### [SharePoint Server 2016 認証に Azure Active Directory を使用する](using-azure-ad-for-sharepoint-server-authentication.md)
