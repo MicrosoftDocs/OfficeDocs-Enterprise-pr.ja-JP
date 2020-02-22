@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成する方法について説明します。
-ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840624"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155576"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -319,6 +318,14 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 ゲストがそのドキュメントにアクセスできるようになったら、そのドキュメントに「*Project Saturn*」と入力して保存します。 Cloud App Security がドキュメントをスキャンすると、*[極秘]* ラベルが適用され、そのゲスト ユーザーはドキュメントにアクセスできなくなります。
 
 この記事で説明されているツールをさまざまな組み合わせで使用することにより、組織にとって生産的でありながら安全なゲスト共有環境を作成できます。
+
+## <a name="additional-options"></a>追加オプション
+
+Microsoft 365 および Azure Active Directory には、ゲスト共有環境のセキュリティ保護に役立つ追加オプションがいくつかあります。
+
+- 許可または拒否された共有ドメインの一覧を作成して、ユーザーが共有できるユーザーを制限できます。 詳細については、「[Restrict sharing of SharePoint and OneDrive content by domain (ドメインによる SharePoint および OneDrive コンテンツの共有の制限)](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)」および「[B2B ユーザーに対する特定組織からの招待を許可またはブロックする](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)」を参照してください。
+- ユーザーが接続できる他の Azure Active Directory テナントを制限できます。 詳細については、「[テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)」を参照してください。
+- パートナーがゲスト アカウントの管理を支援できる、管理された環境を作成できます。 詳細については、「[Create a B2B extranet with managed guests (管理されたゲストで B2B エクストラネットを作成する)](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
