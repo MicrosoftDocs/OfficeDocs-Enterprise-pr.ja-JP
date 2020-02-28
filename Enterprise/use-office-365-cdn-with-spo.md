@@ -3,7 +3,7 @@ title: SharePoint Online での Office 365 コンテンツ配信ネットワー�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 2/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841074"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316026"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -131,7 +131,7 @@ Office 365 CDN 内部の出所は、SharePoint Online のドキュメントラ�
 + パブリックの配信元から資産を削除した場合、その資産は最大 30 日間はキャッシュから引き続き使用できます。ただし、CDN 内の資産へのリンクは 15 分以内に無効になります。
 + パブリックの配信元にスタイル シート (CSS ファイル) をホストする場合は、コード内で相対パスと URI を使用できます。 つまり、背景画像と他のオブジェクトの場所を、呼び出し元の資産の場所からの相対位置で参照することができます。
 + パブリックの配信元の URL をハード コーディングすることはできますが、お勧めできません。 CDN にアクセスできなくなった場合、SharePoint Online でその URL は自動的に組織に対して解決されず、結果としてリンクが壊れて他のエラーが発生する可能性があるためです。
-+ パブリックの配信元用に含まれている既定のファイルの種類は、css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf、.woff です。 その他のファイルの種類を指定することもできます。
++ パブリックの出所に含まれている既定のファイルの種類は .css、eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.css、woff2、および.. woff および. です。 その他のファイルの種類を指定することもできます。
 + 指定したサイト分類で識別されたアセットを除外するようにポリシーを構成できます。 たとえば、許可されているファイルの種類のもので、パブリックの配信元にある資産であっても、"社外秘" または "制限付き" としてマークされている資産はすべて除外する、といったことができます。
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>プライベートな出所でアセットをホスティングするための属性と利点
@@ -171,7 +171,7 @@ Office 365 CDN、一般的な CDN 概念、および Office 365 テナントで�
 SharePoint online 管理シェルを使用して SharePoint Online でアセットをホストする CDN を設定および構成するには、次の手順を実行します。
 
 <details>
-  <summary>クリックして展開します。</summary>
+  <summary>クリックして展開</summary>
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>組織で Office 365 CDN を使用できるようにする
 
@@ -287,7 +287,7 @@ _Excludeifnoscriptdisabled_プロパティは、サイトレベルの_NoScript_�
 
 これらのコマンドレットの詳細については、「 [set-spotenantcdnpolicy](https://technet.microsoft.com/library/mt800839.aspx) 」および「 [get-spotenantcdnpolicies](https://technet.microsoft.com/library/mt800838.aspx)」を参照してください。
 
-<a name="Office365CDNforSPOOrigin"> </a>
+<a name="Office365CDNforSPOOriginPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>アセットの送信元を追加する
 
 **Add-spotenantcdnorigin**コマンドレットを使用して、発信元を定義します。 複数の配信元を定義できます。 配信元は、CDN でホストする資産が含まれる SharePoint ライブラリまたはフォルダーを指す URL です。
@@ -410,7 +410,7 @@ CDN を設定したら、このセクションで説明するように、コン�
   
 送信元の場所を取得する必要がある場合は、 **get-spotenantcdnorigins**コマンドレットを使用できます。 このコマンドレットの使用方法については、「 [get-spotenantcdnorigins](https://technet.microsoft.com/library/mt790770.aspx)」を参照してください。
 
-<a name="Office365CDNforSPORemoveOrigin"> </a>
+<a name="Office365CDNforSPORemoveOriginPosh"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Office 365 CDN から発信元を削除する
 
 送信元として指定したフォルダーまたは SharePoint ライブラリへのアクセスを削除することができます。 これを行うには、 **add-spotenantcdnorigin**コマンドレットを使用します。
@@ -421,10 +421,10 @@ Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 
 このコマンドレットの使用方法については、「 [add-spotenantcdnorigin](https://technet.microsoft.com/library/mt790761.aspx)」を参照してください。
 
-<a name="Office365CDNforSPORemoveOrigin"> </a>
+<a name="Office365CDNforSPOModifyOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN の配信元を変更する
 
-作成した元を変更することはできません。 代わりに、元を削除してから、新しいものを追加します。 詳細については、「 [Office 365 CDN から発信元を削除する](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOrigin)」および「[アセットの送信元を追加](use-office-365-cdn-with-spo.md#Office365CDNforSPOOrigin)するには」を参照してください。
+作成した元を変更することはできません。 代わりに、元を削除してから、新しいものを追加します。 詳細については、「 [Office 365 CDN から発信元を削除する](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPosh)」および「[アセットの送信元を追加](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPosh)するには」を参照してください。
 
 <a name="Office365CDNforSPODisable"> </a>
 #### <a name="disable-the-office-365-cdn"></a>Office 365 CDN を無効にする
@@ -455,7 +455,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 PnP PowerShell を使用して SharePoint Online でアセットをホストする CDN を設定および構成するには、次の手順を実行します。
 
 <details>
-  <summary>クリックして展開します。</summary>
+  <summary>クリックして展開</summary>
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>組織で Office 365 CDN を使用できるようにする
 
@@ -570,7 +570,7 @@ _Excludeifnoscriptdisabled_プロパティは、サイトレベルの_NoScript_�
 
 これらのコマンドレットの詳細については、「 [PnPTenantCdnPolicy](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) 」および「 [PnPTenantCdnPolicies](https://docs.microsoft.com/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies)」を参照してください。
 
-<a name="Office365CDNforPnPPoshOrigin"> </a>
+<a name="Office365CDNforSPOOriginPnPPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>アセットの送信元を追加する
 
 **PnPTenantCdnOrigin**コマンドレットを使用して、発信元を定義します。 複数の配信元を定義できます。 配信元は、CDN でホストする資産が含まれる SharePoint ライブラリまたはフォルダーを指す URL です。
@@ -704,7 +704,7 @@ Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 
 このコマンドレットの使用方法については、「 [PnPTenantCdnOrigin](https://docs.microsoft.com/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin)」を参照してください。
 
-<a name="Office365CDNforSPORemoveOriginPnPPosh"> </a>
+<a name="Office365CDNforSPOModifyOriginPnPPosh"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Office 365 CDN の配信元を変更する
 
 作成した元を変更することはできません。 代わりに、元を削除してから、新しいものを追加します。 詳細については、「 [Office 365 CDN から発信元を削除する](use-office-365-cdn-with-spo.md#Office365CDNforSPORemoveOriginPnPPosh)」および「[アセットの送信元を追加](use-office-365-cdn-with-spo.md#Office365CDNforSPOOriginPnPPosh)するには」を参照してください。
@@ -738,7 +738,7 @@ Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
 Office 365 CLI を使用して SharePoint Online でアセットをホストする CDN を設定および構成するには、次の手順を実行します。
 
 <details>
-  <summary>クリックして展開します。</summary>
+  <summary>クリックして展開</summary>
 
 ### <a name="enable-the-office-365-cdn"></a>Office 365 CDN を有効にする
 
@@ -823,7 +823,7 @@ spo cdn origin remove --type Public --origin */masterpage
 
 ### <a name="change-the-types-of-files-to-include-in-the-office-365-cdn"></a>Office 365 CDN に含めるファイルの種類を変更する
 
-既定で CND に含まれるファイルの種類は、_.css、.eot、.gif、.ico、.jpeg、.jpg、.js、.map、.png、.svg、.ttf、.woff_ です。 CDN に他の種類のファイルを含める必要がある場合、[spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) コマンドを使用して CDN 構成を変更できます。
+既定では、次の種類のファイルが CDN: _.css,. eot,. .gif_,.............. woff2, .png, .css,. woff および.,. CDN に他の種類のファイルを含める必要がある場合、[spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) コマンドを使用して CDN 構成を変更できます。
 
 > [!NOTE]
 > ファイルの種類のリストを変更する場合、現在定義されているリストを上書きします。 他のファイルの種類を追加する場合は、[spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) コマンドを最初に使用して現在構成されているファイルの種類を確認します。
@@ -868,6 +868,9 @@ CDN および構成されたオリジンとポリシーが有効になったの�
 + [プライベートの出所でアセットを使用する](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
 クライアント側の web パーツをホストするために CDN を使用する方法については、「 [Office 365 CDN からクライアント側の web パーツをホストする (Hello World パート 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn)」を参照してください。
+
+> [!NOTE]
+> [**プライベート**CDN の提供元] リストに_clientsideassets_フォルダーを追加した場合、cdn ホスト型のカスタム web パーツは表示されません。 SPFX web パーツで使用されるファイルは、パブリック CDN のみを利用でき、ClientSideAssets フォルダーはパブリック CDN の既定の配信元です。 
 
 ### <a name="updating-links-to-cdn-assets"></a>CDN アセットへのリンクの更新
 
@@ -957,7 +960,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 SharePoint Online では、プライベートな出所のアセットに対してアイテムレベルのアクセス許可がサポートされていないことに注意してください。 たとえば、に`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`あるファイルの場合、次の条件に該当するファイルへのアクセスが有効になります。
 
-|User  |アクセス許可  |有効なアクセス  |
+|ユーザー  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
 |ユーザー1     |Folder1 へのアクセス権         |CDN から image1 にアクセスできる         |
 |ユーザー 2     |Folder1 へのアクセス権がありません。         |CDN から image1 にアクセスできません         |
@@ -1031,6 +1034,6 @@ Office 365 CDN の操作は、 **SharePoint Online Management Shell** PowerShell
 
 [Content Delivery Network](https://aka.ms/o365cdns)
 
-[Office 365 のネットワーク計画とパフォーマンスのチューニング](https://aka.ms/tune)
+[Office 365 のネットワーク計画とパフォーマンス チューニング](https://aka.ms/tune)
 
 [SharePoint パフォーマンスシリーズ-Office 365 CDN ビデオシリーズ](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

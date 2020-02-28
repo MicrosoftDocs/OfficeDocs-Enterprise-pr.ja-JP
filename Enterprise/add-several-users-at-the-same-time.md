@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'スプレッドシート内またはその他の CSV 形式ファイル内の一覧から複数のユーザーを 一般法人向け Office 365 に追加する方法を説明します。 Office 365 にアカウントを追加する方法に関する YouTube 上のビデオをご覧ください。 このプロセスが終了すると、アカウントを持つそれぞれのユーザーに Office 365 メールボックスが付与されます。 '
-ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844648"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316016"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同時に複数のユーザーを Office 365 に追加する - 管理者ヘルプ
 
@@ -115,7 +115,7 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 |**ユーザー データの 列 ラベル**|**最大文字数**|
 |:-----|:-----|
-|ユーザー名 (必須)  <br/> |name@domain.\<extension\> という形式で、@ 記号を含めて 79 文字です。 ユーザーの別名は 30 文字を超えることはできず、ドメイン名は 48 文字を超えることはできません。  <br/> |
+|ユーザー名 (必須)  <br/> |79 name@domain の形式で、アットマーク (@) を含みます。\<拡張子\>。ユーザーのエイリアスは、50文字を超えることはできず、ドメイン名は48文字を超えることはできません。  <br/> |
 |名  <br/> |64  <br/> |
 |姓  <br/> |64  <br/> |
 |表示名 (必須)  <br/> |256  <br/> |
