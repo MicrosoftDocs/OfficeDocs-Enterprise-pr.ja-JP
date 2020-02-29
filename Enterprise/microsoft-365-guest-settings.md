@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 で使用できるゲストの共有設定について説明します。
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844968"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316046"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -238,6 +237,9 @@ SharePoint の各サイトにゲストの共有のアクセス許可を設定で
 |グループに接続されたサイト (チームを含む)|Office 365 グループの設定の、**[グループ所有者が組織外のユーザーをグループに追加できるようにする]** が **[オン]** の場合、**[新規および既存のゲスト]** になり、オフの場合は **[既存のゲストのみ]** になります。|
 |通信|**組織内のユーザーのみ**|
 |グループのないモダン サイト (#STS3 TeamSite)|**組織内のユーザーのみ**|
+
+> [!NOTE]
+> ルート通信サイト (tenant-name.sharepoint.com) には、**すべてのユーザー**の既定の共有設定があります。
 
 ## <a name="see-also"></a>関連項目
 
