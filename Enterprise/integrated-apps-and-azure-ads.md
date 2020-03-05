@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Azure AD で O365 統合アプリを登録および管理する方法について説明します。
-ms.openlocfilehash: fdeb3e3f35a795851b253f9b68d755404851ba07
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6846b57256bd81ae8d2054d69bd8f980d91d6ce9
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845078"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417062"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Office 365 管理者の統合アプリおよび Azure AD
 
@@ -44,7 +44,7 @@ Office 365 アプリを管理するには、Azure AD のアプリに関する知
 |[Office 365 アプリ起動ツールに会う](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a) <br/> |アプリ起動ツールを初めて使用する場合は、その機能とその使用方法について疑問があるかもしれません。 アプリ起動ツールは、Office 365 のどこからでもアプリを利用できるように設計されています。  <br/> |
 |[Office 365 管理 API の概要](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) <br/> |Office 365 Api を使用すると、多くのお客様の Office 365 データに、メール、予定表、連絡先、ユーザーとグループ、ファイル、およびフォルダーなどの情報を提供することができます。 この記事では、Office 365 アプリ、Azure AD、およびアプリがアクセスするデータ間の関係を示す図があります。  <br/> |
 |[Azure Active Directory でのアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Azure Active Directory と統合されているアプリケーションについて、およびアプリケーションの登録方法、登録済みアプリケーションの概念を理解する方法、マルチテナントアプリケーションのブランド化ガイドラインについて説明します。  <br/> |
-|[カスタムタイルをアプリ起動ツールに追加](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)します。  <br/> |Office 365 のアプリ起動ツールを使用すると、ユーザーが自分のアプリを見つけてアクセスすることが容易になります。 この記事では、アプリを開発者がユーザーのアプリ起動ツールに表示する方法と、Office 365 資格情報を使用してシングルサインオン (SSO) の機能を提供する方法について説明します。  <br/> |
+|[カスタムタイルをアプリ起動ツールに追加する](https://docs.microsoft.com/office365/admin/manage/customize-the-app-launcher)  <br/> |Office 365 のアプリ起動ツールを使用すると、ユーザーが自分のアプリを見つけてアクセスすることが容易になります。 この記事では、アプリを開発者がユーザーのアプリ起動ツールに表示する方法と、Office 365 資格情報を使用してシングルサインオン (SSO) の機能を提供する方法について説明します。  <br/> |
 |[Azure Active Directory 統合のチュートリアル](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |これらのチュートリアルの目的は、サードパーティの SaaS アプリケーション用に Azure AD SSO を構成する方法を示すことです。  <br/> |
 |[Azure AD の認証シナリオ](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |Azure AD では、アイデンティティをサービスとして提供することにより、OAuth 2.0 や OpenID Connect などの業界標準のプロトコルをサポートし、また、コーディングをすばやく開始できるようにさまざまなプラットフォーム用のオープンソースライブラリをサポートすることで、開発者のための認証を簡略化しています。 このドキュメントでは、Azure AD がサポートするさまざまなシナリオについて理解し、使用を開始する方法を示します。  <br/> |
 |[アプリケーションアクセス](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |Azure AD を使用すると、今日の人気のあるソフトウェアの多くがサービス (SaaS) アプリケーションとして簡単に統合されます。これにより、id とアクセス管理が提供され、ユーザーはアクセスパネルを使用して、どのアプリケーションにアクセスするか、どのアプリケーションに SSO を使用してアプリケーションにアクセスできるかを検出できます。 この記事では、Azure AD のアプリケーションアクセスの拡張機能と、それらに投稿する方法について詳しく知ることができる関連リソースへのリンクを提供します。  <br/> |

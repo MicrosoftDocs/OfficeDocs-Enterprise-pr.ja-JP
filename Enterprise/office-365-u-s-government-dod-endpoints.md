@@ -3,7 +3,7 @@ title: Office 365 米国政府の DoD エンドポイント
 ms.author: laurawi
 author: LauraWi
 manager: laurawi
-ms.date: 01/28/2020
+ms.date: 03/04/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: '概要: Office 365 には、インターネットへの接続が必要です。 以下のエンドポイントには、Office 365 米国政府の DoD プランのみを使用しているお客様には到達可能である必要があります。'
 hideEdit: true
-ms.openlocfilehash: fac5107df0a9551a85b47d648d1962867d49eaa9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8464605b9a9437cc3ad5e87a3e01434e590f616f
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841984"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417032"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 米国政府の DoD エンドポイント
 
@@ -41,7 +41,7 @@ ms.locfileid: "41841984"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 2020 年 1 月 28 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
+|**最終更新日:** 02/28/2020 ![-](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) RSS[変更ログサブスクリプション](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
    
  [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用したネットワーク接続の管理に関する推奨事項を理解してください。 エンドポイントのデータは、各月の最初に、アクティブになる前に30日間公開された新しい IP アドレスと Url で更新されます。 これにより、自動更新を行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。 サポートのエスカレーション、セキュリティインシデント、またはその他の即時運用要件に対処する必要がある場合は、その月にエンドポイントを更新することもできます。 このページに表示されるデータはすべて、REST ベースの web サービスから生成されます。 このデータにアクセスするためにスクリプトまたはネットワークデバイスを使用している場合は、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
 
