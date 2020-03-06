@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Office 365 Multi-Geo を使用して、複数の地域に Office 365 のプレゼンスを展開します。
-ms.openlocfilehash: 62aa890bb3bb8bfcabd13285814b72c7000047dc
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ca0fac66549b91fe25cc5d86f9dd0be310fb38b5
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974060"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417002"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -34,7 +34,7 @@ Multi-Geo 環境では、Office 365 テナントは中央の場所 (Office 365 �
 
 ![SharePoint 管理センター メニューの複数地域マップのスクリーンショット](media/multi-geo-world-map.png)
 
-Office 365 Multi-Geo は、パフォーマンスの最適化を主要目的とした設計ではなく、データの常駐に関する要件を満たすように設計されていることに注意してください。 Office 365 のパフォーマンスを最適化する方法については、「[Office 365 のネットワーク計画とパフォーマンス チューニング](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848)」を参照するか、サポート グループにお問い合わせください。
+Office 365 Multi-Geo は、パフォーマンスの最適化を目的とした設計ではなく、データの常駐に関する要件を満たすように設計されていることに注意してください。 Office 365 のパフォーマンスを最適化する方法については、「[Office 365 のネットワーク計画とパフォーマンス チューニング](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848)」を参照するか、サポート グループにお問い合わせください。
 
 ## <a name="terminology"></a>用語
 
@@ -58,7 +58,7 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 
 以下の手順に従って複数地域を開始しましょう。
 
-1. アカウント チームと協力して、_複数地域機能をOffice 365 の_サービス プランに追加します。 必要なライセンス数の追加方法を説明いたします。 Multi-Geo 機能は、500 以上の Office 365 サブスクリプションを使用しているお客様が利用できます。
+1. アカウント チームと協力して、_複数地域機能をOffice 365 の_サービス プランに追加します。 必要なライセンス数の追加方法を説明いたします。 Multi-Geo 機能は、500 以上の Office 365 サブスクリプションを使用している EA お客様が利用できます。
 
    Office 365 Multi-Geo の使用を開始するには、事前に Microsoft が複数地域サポート用に Exchange Online テナントを構成する必要があります。 この 1 回限りの構成プロセスは、*Office 365 の複数地域機能*サービス プランを注文し、ライセンスがテナントに表示された後に開始されます。 Multi-Geo ライセンスが適用されると、[Office 365 メッセージ センター](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)に通知が送信され、その後、Office 365 Multi-Geo 機能の設定と使用を開始できます。
 
