@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Teams でゲストと共同作業する方法について説明します。
-ms.openlocfilehash: 61d45829071bf19bfbda4bbb80fc7b0af7472d7f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 87635d6fd2196fd706d27fb68cbe24e51b723220
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845048"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549136"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -173,6 +172,6 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](sharing-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有環境を作成する](create-a-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有の環境を作成する](create-a-secure-guest-sharing-environment.md)
 
-[管理対象ゲストを使用して B2B エクストラネットを作成する](b2b-extranet.md)
+[管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)

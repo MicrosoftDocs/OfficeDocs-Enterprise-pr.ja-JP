@@ -1,5 +1,5 @@
 ---
-title: 管理対象ゲストを使用して B2B エクストラネットを作成する
+title: 管理されたゲストで B2B エクストラネットを作成する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: パートナー組織から管理されたゲストユーザーを使用して、B2B エクストラネットのサイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: 930c11489921fa5c32d1ba1ab16161f201006c91
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cdf4470920a307d569fcfd650f40c77f4a5423a4
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844998"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549066"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>管理対象ゲストを使用して B2B エクストラネットを作成する
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
 Azure active [Directory 受給管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)を使用して、Azure active directory を使用するパートナー組織と共同作業する B2B エクストラネットを作成できます。 これにより、ユーザーは、エクストラネットサイトまたはチームで自分を登録し、承認ワークフローを使用してアクセスを受信することができます。
 
