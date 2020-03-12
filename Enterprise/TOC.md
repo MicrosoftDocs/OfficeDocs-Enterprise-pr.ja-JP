@@ -187,7 +187,7 @@
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
 ### ゲストと共同で作業する
 #### [ゲストで共有するリファレンス](microsoft-365-guest-settings.md)
-#### ゲストで共有するソリューション
+#### ゲストで共有するシナリオ
 ##### [ゲストの共同作業の概要](collaborating-with-people-outside-your-organization.md)
 ##### [ドキュメントでの共同作業](collaborate-on-documents.md)
 ##### [サイトで共同作業をする](collaborate-in-a-site.md)
