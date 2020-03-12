@@ -3,7 +3,7 @@ title: SharePoint Online のページ診断ツールを使用する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Sharepoint Online のページ診断ツールを使用して、事前に定義されたパフォーマンス条件のセットに対して SharePoint Online モダンポータルと従来の発行ページを分析します。
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155599"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603736"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 用ページ診断ツールを使用する
 
 この記事では、 **sharepoint 用ページ診断ツール**を使用して、事前に定義されたパフォーマンス基準のセットに対して sharepoint Online モダンおよび従来のサイトページを分析する方法について説明します。  
 
 >[!TIP]
->**ツールのバージョン2.0.2 がリリースされました**。 バージョン**2.0.0**以降では、従来のサイトページに加えて、モダンページのサポートが含まれています。 使用しているツールのバージョンがわからない場合は、バージョン**情報**のリンクまたは省略記号 (...) を選択して、バージョンを確認できます。 ツールを使用するときは、常に最新バージョンに更新してください。
+>バージョン**2.0.0**以降では、従来のサイトページに加えて、モダンページのサポートが含まれています。 使用しているツールのバージョンがわからない場合は、バージョン**情報**のリンクまたは省略記号 (...) を選択して、バージョンを確認できます。 ツールを使用するとき**は、常に最新バージョンに更新**してください。
 
 SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge)および sharepoint Online モダンポータルと従来の発行サイトページの両方を分析する Chrome ブラウザー) 用のブラウザー拡張機能です。 このツールは、SharePoint Online に対してのみ機能し、SharePoint システムページでは使用できません。
 
@@ -161,4 +161,8 @@ Sharepoint のモダンポータルページまたは従来の発行サイトペ
 
 [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
 
+[SharePoint のモダン エクスペリエンスにおけるパフォーマンス](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [コンテンツ配信ネットワーク](content-delivery-networks.md)
+
+[SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用](use-office-365-cdn-with-spo.md)

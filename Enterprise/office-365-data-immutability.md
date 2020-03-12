@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 のデータの不変性を定義して説明します。
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315996"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605632"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 の不変性
 
@@ -58,4 +58,4 @@ Office 365 のアーカイブでは、有価証券取引委員会 (SEC) ルー�
 - Office 365 のアーカイブを使用すると、ユーザーはさまざまなアイテム保持ポリシーを組み合わせ、アクションを保持して詳細なアイテム保持ポリシーを作成できます。 これらのポリシーは、保持されるアイテムの種類または場所、および保持期間を定義します。
 - 保持ロック機能を使用すると、ポリシーを制限されたポリシーにするかどうかをユーザーが選択できるようになります。 制限付きポリシーを使用すると、すべてのユーザーがアイテム保持ポリシーを削除、無効化、または変更することができなくなります。 これは、保持ロックが有効になっている場合、無効にすることはできず、アイテム保持ポリシーによって収集された既存の保管担当者からのデータは、その中で上書き、変更、消去、削除される可能性があることを意味します。保持期間。 さらに、保持ロックで設定された保持期間を短縮または縮小することはできません。 しかし、前述したように、保存されたデータの保存期間を維持するために法的な要件がある場合は、延長される可能性があります。 保持ロックによって、管理者や特定のコントロールアクセス権を持つユーザー以外は、設定を変更したり、2003 365 保存されているデータを上書きまたは消去したりすることができます。ルール 17a-4-4。
 
-Office 365 によって規制上の義務にどのように役立つかを理解するために、特にルール17a-4 の要件については、「Exchange Online のアーカイブ、SharePoint Online、OneDrive for Business、Skype for Business に関する[ホワイトペーパー](https://go.microsoft.com/fwlink/?linkid=830440) 」を参照してください。 ホワイトペーパーでは、SEC Rule 17a-4 の各要件に対して Office 365 アーカイブの機能と機能の詳細な分析を行い、Office 365 のアーカイブによってこれらの機能を満たすことができるようにすることについても説明します。要件.
+Office 365 が規制上の義務を満たすのにどのように役立つかについて理解するために、特にルール17a-4 の要件については、「Exchange Online のアーカイブ、SharePoint Online、OneDrive for Business、Skype for Business に関する[ホワイトペーパー](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) 」を参照してください。 ホワイトペーパーでは、SEC Rule 17a-4 の各要件に対して Office 365 アーカイブの機能と機能の詳細な分析を行い、Office 365 のアーカイブによってこれらの機能を満たすことができるようにすることについても説明します。要件.
