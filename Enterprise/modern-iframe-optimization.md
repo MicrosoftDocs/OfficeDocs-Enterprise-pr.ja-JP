@@ -3,7 +3,7 @@ title: SharePoint Online 最新版と従来版の発行サイト ページで iF
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/17/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online 最新版と従来版の発行サイト ページで iFrame のパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: e7a66492e18272525d854e376db49f20233d6820
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0ca49355b079e212fa394ddb3a4c2b9bd62d0207
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844868"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603776"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online 最新版と従来版の発行サイト ページで iFrame を最適化する
 
@@ -35,7 +35,10 @@ iFrame は、動画やその他のメディアなどのリッチ コンテンツ
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>SharePoint 用ページ診断ツールを使用して iFrame を使用する Web パーツを分析する
 
-**SharePoint 用ページ診断ツール**は、Chrome と [Microsoft Edge バージョン 77 以降](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)のブラウザー拡張機能であり、SharePoint の最新版と従来版両方の発行サイト ページを使用できます。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge)) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+
+>[!NOTE]
+>ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
 SharePoint のサイト ページを SharePoint 用ページ診断ツールを使用して分析すると、[_診断テスト_] ウィンドウに iFrame を含む Web パーツに関する情報が表示されます。 ベースライン メトリックは、最新版ページと従来版ページで同じです。
 

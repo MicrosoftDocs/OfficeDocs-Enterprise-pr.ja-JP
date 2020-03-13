@@ -3,7 +3,7 @@ title: SharePoint Online のモダン サイト ページで画像を最適化�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online のモダン サイト ページで画像を最適化する方法について説明します。
-ms.openlocfilehash: b1bb8bab7ee9d5f0972a476e37c35e8c14748bfb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 592839c68f790ffa35887cd1ff95e5354218d9e8
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843748"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603756"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで画像を最適化する
 
@@ -37,7 +37,10 @@ ms.locfileid: "41843748"
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>SharePoint 用ページ診断ツールを使用して画像の最適化を分析する
 
-**SharePoint 用ページ診断ツール**は、Chrome および [バージョン 77 以降の Microsoft Edge](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) 用のブラウザー拡張機能で、これを使用して SharePoint のモダン発行サイト ページおよびクラシック発行サイト ページの両方を分析できます。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法および詳細情報については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge)) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+
+>[!NOTE]
+>ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
 SharePoint のモダン サイトを SharePoint 用ページ診断ツールを使用して分析すると、サイズの大きな画像に関する情報が [_診断テスト_] ウィンドウに表示されます。
 

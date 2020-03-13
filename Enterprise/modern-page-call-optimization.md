@@ -3,7 +3,7 @@ title: SharePoint Online の最新および従来の発行サイト ページで
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online サービス エンドポイントへの呼び出し数を制限することにより、SharePoint Onlineで最新および従来の発行サイト ページを最適化する方法を学びます。
-ms.openlocfilehash: 13c403e03c0d2aa2cb73d626c92596d12a8b1ee4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: b339e6888e9434b6df26b0a29450bfcbbce84e66
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844835"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603726"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>SharePoint Online の最新および従来の発行サイト ページでページ呼び出しを最適化する
 
@@ -37,7 +37,10 @@ SharePoint Online の最新の発行サイトと従来の発行サイトには�
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>SharePoint 用ページ診断ツールを使用してページ呼び出しを分析する
 
-**SharePoint 用ページ診断ツール**は、Chrome と [Microsoft Edge バージョン 77 以降](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)のブラウザー拡張機能であり、SharePoint の最新版と従来版両方の発行サイト ページの分析に利用できます。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法および詳細情報については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge)) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+
+>[!NOTE]
+>ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
 SharePoint のサイト ページを SharePoint 用ページ診断ツールを使用して分析すると、[_診断テスト_] ウィンドウの [**SharePoint へのリクエスト**] 結果に外部呼び出しに関する情報が表示されます。 サイト ページに含まれるコールの数がベースライン数より少ない場合、線は緑色で表示され、ページがベースライン数を超える場合は赤色で表示されます。 クラシック サイト ページは HTTP1.1 を使用し、モダン ページは HTTP2.0 を使用するため、ベースライン数はモダン ページとクラシック ページで異なります。
 
