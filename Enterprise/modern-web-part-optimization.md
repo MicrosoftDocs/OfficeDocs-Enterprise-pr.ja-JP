@@ -3,7 +3,7 @@ title: SharePoint Online のモダン サイト ページで Web パーツのパ
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: SharePoint Online のモダン サイト ページで Web パーツのパフォーマンスを最適化する方法について説明します。
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844834"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603746"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>SharePoint Online のモダン サイト ページで Web パーツのパフォーマンスを最適化する
 
@@ -35,14 +35,17 @@ SharePoint Online のモダン サイト ページには、ページの読み込
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>SharePoint 用ページ診断ツールを使用して Web パーツを分析する
 
-**SharePoint 用ページ診断ツール**は、Chrome と [Microsoft Edge バージョン 77 以降](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8)のブラウザー拡張機能で、SharePoint の最新版と従来版両方の発行サイト ページの分析に利用できます。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法および詳細情報については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールでは、定義されている一連のパフォーマンス条件に対するページのパフォーマンスを示す分析済みの各ページのレポートが作成されます。 SharePoint 用ページ診断ツールのインストール方法と詳細については、「[SharePoint Online 用ページ診断ツールを使用する](page-diagnostics-for-spo.md)」を参照してください。
+
+>[!NOTE]
+>ページ診断ツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
 SharePoint のサイト ページを SharePoint 用ページ診断ツールを使用して分析すると、ベースライン メトリックを超えている Web パーツに関する情報が [_診断テスト_] ウィンドウ内の [**Web parts are impacting page load time**] (Web パーツがページの読み込み時間に影響を与えています) という結果に表示されます。
 
-表示される可能性のある結果は次のとおりです。
+考えられる結果は次のとおりです。
 
-- [**Attention required**] (注意が必要です) (赤): 読み込みに **2** 秒以上かかる_カスタム_ Web パーツです。 合計読み込み時間がテスト結果に表示される際は、モジュールの負荷、遅延読み込み、初期化、およびレンダリングに分けて表示されます。
-- [**Improvement opportunities**] (改善の余地あり) (黄): このセクションには、ページの読み込み時間に影響を与えている可能性があるアイテムが表示されます。これらのアイテムは、レビューと監視を行う必要があります。 これには、"すぐに使用可能な" (OOTB) Microsoft Web パーツが含まれている場合があります。 このセクションに表示される Microsoft Web パーツの結果は Microsoft に自動的に報告されるため、**必要な操作はありません**。 調査のためのサポート チケットを記録する必要があるのは、パフォーマンスの著しい低下がページで発生しており、ページの**すべての Microsoft Web パーツ**が結果の [**Improvement opportunities**] (改善の余地あり) セクションに表示される場合のみです。 今後のページ診断ツールの更新プログラムでは、Microsoft Web パーツの特定の構成に基づいて、結果がさらに細分化されます。
+- **要注意** (赤): ビューポート (最初に読み込まれるページの画面表示部分) に表示される_ユーザー設定の_ Web パーツで、読み込み時間が **2** 秒を超えるもの。 ビューポートの外にある_ユーザー設定の_ Web パーツで、読み込み時間が **4** 秒を超えるもの。 合計読み込み時間がテスト結果に表示される際は、モジュールの読み込み、遅延読み込み、初期化、レンダリングに分けて表示されます。
+- [**Improvement opportunities**] (改善の余地あり) (黄): このセクションには、ページの読み込み時間に影響を与えている可能性があるアイテムが表示されます。これらのアイテムは、レビューと監視を行う必要があります。 これには、"すぐに使用可能な" (OOTB) Microsoft Web パーツが含まれている場合があります。 このセクションに表示される Microsoft Web パーツの結果は Microsoft に自動的に報告されるため、**必要な操作はありません**。 調査のためのサポート チケットを記録する必要があるのは、パフォーマンスの著しい低下がページで発生しており、ページの**すべての Microsoft Web パーツ**が結果の [**Improvement opportunities**] (改善の余地あり) セクションに表示される場合のみです。 今後の SharePoint 用ページ診断ツールの更新プログラムでは、Microsoft Web パーツの特定の構成に基づいて、結果がさらに細分化されます。
 - [**No action required**] (必要な操作はありません) (緑): データを返すのに **2** 秒以上かかっている Web パーツは 1 つもありません。
 
 [**Web parts are impacting page load time**] (Web パーツがページの読み込み時間に影響を与えています) という結果が [**Attention required**] (注意が必要です) セクションまたは [**Improvement opportunities**] (改善の余地あり) セクションに表示された場合、結果をクリックすると読み込みが遅いページに関する詳細が表示されます。 今後の SharePoint 用ページ診断ツールの更新プログラムでは分析ルールが更新される可能性があるため、常に最新バージョンのツールを使用するようにしてください。
