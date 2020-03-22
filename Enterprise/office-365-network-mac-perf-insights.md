@@ -1,9 +1,9 @@
 ---
-title: Office 365 network performance insights (プレビュー)
+title: Office 365 ネットワークインサイト (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/20/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,72 +13,133 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 network performance insights (プレビュー)
-ms.openlocfilehash: 2e57ffabec5b2172cb36f10135406ddda95bc1c5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Office 365 ネットワークインサイト (プレビュー)
+ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106380"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890621"
 ---
-# <a name="office-365-network-performance-insights-preview"></a>Office 365 network performance insights (プレビュー)
+# <a name="office-365-network-insights-preview"></a>Office 365 ネットワークインサイト (プレビュー)
 
-Microsoft 365 管理センターのネットワークパフォーマンスページには、office の場所のネットワーク境界を設計するのに役立つ Office 365 ネットワークの洞察が表示されます。 各オフィスの場所に対して表示される可能性のある特定のネットワーク洞察が5つあります。
+**Network insights**は、Office 365 テナントから収集されたライブパフォーマンス指標で、テナントの管理ユーザーのみが閲覧できます。 Insights は、Microsoft 365 管理センターのに表示<https://portal.microsoft.com/adminportal/home#/networkperformance>されます。
+
+Insights は、オフィスの場所のネットワーク境界を設計するのに役立ちます。 各洞察では、ユーザーがテナントにアクセスする地理的な場所ごとに、特定の一般的な問題のパフォーマンス特性に関するライブ詳細が提供されます。
+
+各オフィスの場所には、次の5つの特定のネットワーク洞察が表示されることがあります。
+
+- [Backhauled ネットワークの出口](#backhauled-network-egress)
+- [近距離のお客様のためのパフォーマンスの向上](#better-performance-detected-for-customers-near-you)
+- [Exchange Online サービスのフロントドアの非最適な使用](#use-of-a-non-optimal-exchange-online-service-front-door)
+- [最適ではない SharePoint Online サービスのフロントドアの使用](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [SharePoint フロントドアからのダウンロード速度が低い](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Microsoft 365 管理センターでのネットワークパフォーマンスの推奨事項、洞察、評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Office 365 テナントに対してのみ使用できます。
+>Network insights、Microsoft 365 管理センターでのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Office 365 テナントに対してのみ使用できます。
 
 ## <a name="backhauled-network-egress"></a>Backhauled ネットワークの出口
 
-ユーザーの場所からネットワーク出口への距離は500マイル (800 km) を超えるため、パフォーマンスに影響を与えることが予想されます。 ユーザーに近いローカル出口をお勧めします。
-
-これは、オフィスの場所とネットワーク出口との間の距離が500マイルを超えていることを示しています。 Office の場所は難読化されたクライアントコンピューターの場所で識別され、ネットワークの出口の場所は、逆引き IP アドレスを使用して場所データベースに識別されます。 Windows ロケーションサービスがコンピューターで無効になっている場合は、office の場所が不正確になることがあります。 逆引き IP アドレスデータベースの情報が正確でない場合は、ネットワークの出口の場所が不正確になることがあります。
-
-この洞察の詳細には、オフィスの場所、ネットワークの出口の場所、およびそれらの間の距離が含まれます。
-
-この情報については、office の場所へのネットワーク出口をお勧めします。これにより、インターネット上の Microsoft ネットワークと Office 365 service のフロントドアに、接続が最適に Microsoft のネットワークにルーティングされます。 また、ユーザーのオフィスの場所にネットワークを閉じることにより、将来的に、ネットワークポイントのプレゼンスと Office 365 サービスのフロントドアの両方が将来的に展開されるため、パフォーマンスが向上します。
+Network insights service が、特定のユーザーの場所からネットワークの出口までの距離が500マイル (800 km) を超えていることを検出すると、この洞察が表示されます。これは、Office 365 トラフィックが共通のインターネットエッジに backhauled されていることを示します。デバイスまたはプロキシ。
 
 この洞察は、一部の要約ビューで "出口" として短縮されています。
 
+![Backhauled ネットワークの出口](Media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+
+### <a name="what-does-this-mean"></a>シナリオ
+
+これは、オフィスの場所とネットワーク出口との間の距離が500マイル (800 km) を超えていることを示しています。 Office の場所は難読化されたクライアントコンピューターの場所で識別され、ネットワークの出口の場所は、逆引き IP アドレスを使用して場所データベースに識別されます。 Windows ロケーションサービスがコンピューターで無効になっている場合は、office の場所が不正確になることがあります。 逆引き IP アドレスデータベースの情報が正確でない場合は、ネットワークの出口の場所が不正確になることがあります。
+
+この洞察の詳細には、オフィスの場所、現在のネットワーク出口位置、出口位置の関連性、および位置と現在の出口ポイントとの間の距離、および場所と現在の出口の間の距離、最初に条件が検出され、条件が解決された日付。
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+この情報については、office の場所へのネットワーク出口をお勧めします。これにより、接続が Microsoft のグローバルネットワークと最も近い Office 365 サービスのフロントドアに最適にルーティングされるようになります。 また、ユーザーのオフィスの場所にネットワークを閉じることにより、将来的に、ネットワークポイントのプレゼンスと Office 365 サービスのフロントドアの両方が将来的に展開されるため、パフォーマンスが向上します。
+
+この問題を解決する方法の詳細については、「 [Office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」の「[ネットワーク接続をローカル](office-365-network-connectivity-principles.md#egress-network-connections-locally)に出力する」を参照してください。
+
 ## <a name="better-performance-detected-for-customers-near-you"></a>近距離のお客様のためのパフォーマンスの向上
 
-このオフィスの場所では、組織内のユーザーに比べて、メトロエリア内の顧客数が多いため、パフォーマンスが向上します。
-
-これは、このオフィスの場所と同じ都市にある Office 365 の顧客の総合的なパフォーマンスを見ます。
-
-![ネットワークの相対パフォーマンス](Media/m365-mac-perf/m365-mac-perf-relative-perf.png)
-
-同じ都市にある Office 365 のお客様の割合を、パフォーマンスのバケットが向上するように計算します。 この数値が10% を超える場合は、ネットワークの洞察が表示されます。
+この洞察は、このオフィスの場所にある組織のユーザーに比べて、メトロエリア内の多数の顧客の方がパフォーマンスが優れていることを network insights service が検出した場合に表示されます。
 
 この洞察は、一部の概要ビューでは "ピア" として短縮されています。
 
+![ネットワークの相対パフォーマンス](Media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+
+### <a name="what-does-this-mean"></a>シナリオ
+
+この洞察は、このオフィスの場所と同じ都市にある Office 365 の顧客の総合的なパフォーマンスを調査します。 この洞察は、ユーザーの平均待機時間が近隣テナントの平均待機時間を10% 上回る場合に表示されます。
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+この条件には、企業ネットワークまたは ISP の待機時間、ボトルネック、アーキテクチャ設計上の問題など、さまざまな理由が考えられます。 Office ネットワークと現在の Office 365 フロントドア間のルートで、各ホップ間の待機時間を調べます。 詳細については、「 [Office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
+
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Exchange Online サービスのフロントドアの非最適な使用
 
-ユーザーが Office 365 の最適なフロントドアに接続しておらず、パフォーマンスに影響を与えることが予想されます。
-
-適切なパフォーマンスを備えた、office の場所の都市からの使用に適した Exchange Online サービスのフロントドアをリストしています。 現在のテストで、この一覧にない Exchange Online サービスのフロントドアの使用が示されている場合は、この推奨事項を呼び出します。
-
-Exchange Online サービスのフロントドアを使用していない場合は、企業ネットワークの出口の前にネットワークのバックアウトが原因で、ローカルと直接のネットワーク出口が推奨されることがあります。 また、リモート DNS の再帰リゾルバーサーバーを使用して、DNS の再帰リゾルバーサーバーをネットワークの出口に配置することが推奨される場合もあります。
+ネットワークインサイト内のユーザーが、最適な Exchange Online サービスのフロントドアに接続されていないことを検出した場合、この洞察が表示されます。
 
 この洞察は、一部の概要ビューに "ルーティング" として短縮されています。
 
-## <a name="use-of-non-optimal-sharepoint-online-service-front-door"></a>最適でない SharePoint Online サービスのフロントドアの使用
+![非最適なフロントドア](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-ユーザーが最も近い SharePoint Online サービスのフロントドアに接続していません。 これはパフォーマンスに影響を与えることが予想されます。
+### <a name="what-does-this-mean"></a>シナリオ
 
-テストクライアントが接続している SharePoint Online サービスのフロントドアを特定します。 次に、オフィスの所在地の市区町村に対して、その都市に対して予想される SharePoint Online サービスのフロントドアと比較します。 一致しない場合は、この推奨事項を行います。
+適切なパフォーマンスを備えた、office の場所の都市からの使用に適した Exchange Online サービスのフロントドアをリストしています。 現在のテストで、この一覧にない Exchange Online サービスのフロントドアの使用が示されている場合は、この推奨事項を呼び出します。
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+Exchange Online サービスのフロントドアを使用していない場合は、企業ネットワークの出口の前にネットワークのバックアウトが原因で、ローカルと直接のネットワーク出口が推奨されることがあります。 また、リモート DNS の再帰リゾルバーサーバーを使用して、DNS の再帰リゾルバーサーバーをネットワークの出口に配置することが推奨される場合もあります。
+
+## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>最適ではない SharePoint Online サービスのフロントドアの使用
+
+ネットワーク insights サービスが、特定の場所にいるユーザーが最も近い SharePoint Online サービスのフロントドアに接続していないことを検出した場合、この洞察が表示されます。
 
 この洞察は、一部の要約ビューでは "Afd" と略記されています。
 
+![非最適なフロントドア](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+
+### <a name="what-does-this-mean"></a>シナリオ
+
+テストクライアントが接続している SharePoint Online サービスのフロントドアを特定します。 次に、オフィスの所在地の市区町村に対して、その都市に対して予想される SharePoint Online サービスのフロントドアと比較します。 一致しない場合は、この推奨事項を行います。
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+最適でない SharePoint Online サービスのフロントドアの使用は、企業ネットワークの出口の前にネットワークバックが発生した場合に発生することがあります。これは、ローカルおよび直接ネットワークを出口にすることをお勧めします。 また、リモート DNS の再帰リゾルバーサーバーを使用して、DNS の再帰リゾルバーサーバーをネットワークの出口に配置することが推奨される場合もあります。
+
 ## <a name="low-download-speed-from-sharepoint-front-door"></a>SharePoint フロントドアからのダウンロード速度が低い
 
-Sub 最適なネットワークダウンロード速度が検出され、OneDrive for Business からドキュメントを読み込むのにかかる時間に影響します。
+Network insights service が、特定のオフィスの場所と SharePoint Online の間の帯域幅が 1 MBps 未満であることを検出すると、この洞察が表示されます。
+
+この洞察は、一部の要約ビューで "スループット" と短縮されています。
+
+### <a name="what-does-this-mean"></a>シナリオ
 
 ユーザーが SharePoint Online と OneDrive for business サービスのフロントドアから取得できるダウンロード速度は、1秒あたりのメガバイト数 (MBps) で測定されます。 この値が 1 Mb 未満の場合は、この洞察を提供します。
 
-ユーザーが帯域幅を取得することができるダウンロード速度を向上させるには、帯域幅を増やす必要がある場合があります。 または、オフィスの場所と SharePoint Online サービスのフロントドアで、ユーザーのコンピューター間にネットワークの輻輳が発生する可能性があります。 これは、congestive 損失とも呼ばれ、十分な帯域幅が利用可能な場合でも、ユーザーが使用できるダウンロード速度を制限します。
+### <a name="what-should-i-do"></a>どうすればよいですか?
 
-この洞察は、一部の要約ビューで "スループット" と短縮されています。
+ダウンロード速度を向上させるには、帯域幅を増やす必要がある場合があります。 または、オフィスの場所と SharePoint Online サービスのフロントドアで、ユーザーのコンピューター間にネットワークの輻輳が発生する可能性があります。 これは、congestive 損失とも呼ばれ、十分な帯域幅が利用可能な場合でも、ユーザーが使用できるダウンロード速度を制限します。
+
+## <a name="china-user-optimal-network-egress"></a>中国ユーザーにとって最適なネットワークの出口
+
+この洞察は、組織で、中国のユーザーが他の地理的な場所にある Office 365 テナントに接続している場合に表示されます。 
+
+### <a name="what-does-this-mean"></a>シナリオ
+
+組織のプライベート WAN 接続がある場合は、次のいずれかの場所でインターネットへのネットワーク出口を備えた中国のオフィスの場所からネットワーク WAN 回線を構成することをお勧めします。
+
+- 香港特別行政区
+- 日本
+- 台湾
+- 韓国
+- シンガポール
+- マレーシア
+
+このような場所を超えるユーザーからのインターネット出口はパフォーマンスを低下させ、中国での出口によって、クロスボーダー輻輳が発生して遅延と接続の問題が発生する可能性があります。
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+この洞察に関連するパフォーマンスの問題を軽減する方法の詳細については、「 [Office 365 グローバルテナントパフォーマンスの最適化 (中国ユーザー向け](https://docs.microsoft.com/office365/enterprise/office-365-networking-china))」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

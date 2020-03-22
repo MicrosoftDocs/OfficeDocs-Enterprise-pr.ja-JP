@@ -1,0 +1,68 @@
+### YamlMime:Landing
+title: Office 365 Enterprise ドキュメント
+summary: このページでは、エンタープライズ組織で Office 365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスを提供します。
+metadata:
+  title: Office 365 Enterprise ドキュメント
+  description: このページでは、エンタープライズ組織で Office 365 サービスを展開、構成、および管理する管理者および IT 担当者向けのガイダンスを提供します。
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/12/2020
+  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
+  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "42891499"
+landingContent:
+- title: Office 365 Enterprise について
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: FastTrack を使用して Office 365 を導入する
+      url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
+    - text: 組織のデータを Office 365 Enterprise に移行する
+      url: migrate-data-to-office-365.md
+    - text: Office 365 ProPlus の展開ガイド
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: Office 365 Enterprise を組織で展開する
+      url: setup-overview-for-enterprises.md
+    - text: ハイブリッド展開
+      url: microsoft-cloud-it-architecture-resources.md
+  - linkListType: learn
+    links:
+    - text: Microsoft 365 の使用を開始する
+      url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
+- title: Office 365 ワークロードの展開
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Exchange Online
+      url: https://docs.microsoft.com/Exchange/exchange-online
+    - text: SharePoint Online
+      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: Skype for Business Online
+      url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+    - text: Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Power BI
+      url: https://docs.microsoft.com/power-bi
+    - text: Yammer
+      url: https://support.office.com/yammer
+- title: その他の技術情報
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Office 365 の技術コミュニティ
+      url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
+    - text: サポートを受ける
+      url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+  - linkListType: learn
+    links:
+    - text: Microsoft 365 の詳細情報
+      url: https://docs.microsoft.com/microsoft-365
+    - text: Microsoft 365 コンプライアンスの詳細情報
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+    - text: Microsoft 365 セキュリティの詳細情報
+      url: https://docs.microsoft.com/microsoft-365/security/

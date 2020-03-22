@@ -3,7 +3,7 @@ title: M365 管理センターの Office 365 ネットワークオンボード�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106375"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890400"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)
 
@@ -30,7 +30,7 @@ Microsoft 365 管理センターのネットワーク insights は、Office 365 
 Microsoft 365 管理センターの各オフィスの場所についてネットワーク品質の状態を評価し、Office 365 ネットワークオンボードツールを使用してテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
 
 >[!IMPORTANT]
->Microsoft 365 管理センターでのネットワークパフォーマンスの推奨事項、洞察、評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Office 365 テナントに対してのみ使用できます。
+>Network insights、Microsoft 365 管理センターでのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Office 365 テナントに対してのみ使用できます。
 
 ## <a name="the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーション
 
