@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '概要: Office 365 の展開を計画するときに使用する DNS レコードのリファレンス リスト。'
-ms.openlocfilehash: 00f4181b08a7af4435b06aa143d3741c220023d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840364"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890346"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
@@ -79,6 +79,9 @@ Exchange フェデレーションを使用しているメールのお客様は�
 <a name="BKMK_ReqdCore"> </a>
 
 「[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO)」を使用して、ネットワークが正しく構成されていることを確認する場合、特定の手順を実行する必要があります。
+
+> [!NOTE]
+> これらの DNS レコードは、特に特定のフェデレーションの問題が発生する可能性のあるハイブリッド Teams と Skype for Business Online シナリオの Teams にも適用されます。
   
 ||||
 |:-----|:-----|:-----|

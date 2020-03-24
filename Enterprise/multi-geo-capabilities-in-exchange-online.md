@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Exchange Online の Multi-Geo 機能について説明します。
-ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974839"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890549"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 
@@ -53,8 +53,10 @@ Exchange online は、** PreferredDataLocation** プロパティを、Azure AD �
 
 - Outlook for Mac を使用している場合は、メールボックスを新しい地理的位置に移動する際、オンラインアーカイブ フォルダーに一時的にアクセスできなくなることがあります。 この状態は、ユーザーのプライマリメールボックスとアーカイブメールボックスが異なる地理的位置にある場合に発生します。これは、複数地域のメールボックスの移動が異なる時刻に完了する可能性があるためです。
 
-- ユーザーは、Outlook on the web (旧 Outlook web App または OWA) の地理的位置を跨いで*メールボックスフォルダー*を共有できません。 たとえば、欧州連合のユーザーが Outlook on the web を使用して、米国にあるメールボックス内の共有フォルダーを開くことはできません。 ただし、Outlook on the web では、 *「Outlook Web App の別のブラウザーウィンドウで他のユーザーのメールボックスを開く」* の説明に従って、別のブラウザーウィンドウを使って異なる地理的位置にある[他のメールボックス](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)を開くことができます。
+- ユーザーは、Outlook on the web (旧 Outlook web App または OWA) の地理的位置を跨いで*メールボックスフォルダー*を共有できません。 たとえば、欧州連合のユーザーが Outlook on the web を使用して、米国にあるメールボックス内の共有フォルダーを開くことはできません。 ただし、Outlook on the Web では、 「[Outlook Web App の別のブラウザー ウィンドウで他のユーザーのメールボックスを開く](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)」の説明に従って、別のブラウザー ウィンドウを使って異なる地理的位置にある*他のメールボックス*を開くことができます。
 
   **注**: 地域間のメールボックスフォルダーの共有は、Outlook on the Windows でサポートされています。
 
 - 複数地域にある組織では、パブリックフォルダーがサポートされています。 ただし、パブリックフォルダーは中央の地理的位置に設定する必要があります。 パブリックフォルダーをサテライトの地理的位置に移動することはできません。
+
+- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 詳細については、「[メールボックスの監査を管理する](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)」を参照してください。
