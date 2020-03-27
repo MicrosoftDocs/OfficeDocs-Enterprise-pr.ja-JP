@@ -1,7 +1,7 @@
 ---
 title: エンタープライズ組織および Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/8/2017
 audience: ITPro
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: エンタープライズ組織の Office 365 を計画および管理するためのリソース。
-ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840404"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979549"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>エンタープライズ組織および Office 365
 
@@ -112,7 +112,7 @@ Office 365 IT 担当者向けの自習用オンライン学習エクスペリエ
   
 [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
   
- **エンドユーザー向けのトレーニング**
+ **エンド ユーザー向けのトレーニング**
   
 [Office 365 の生産性トレーニング](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
   
