@@ -81,7 +81,10 @@
 #### [Office for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 #### [Web サービスに含まれていないその他のエンドポイント](additional-office365-ip-addresses-and-urls.md)
-### [中国ユーザー向けの Office 365 パフォーマンスの最適化](office-365-networking-china.md)
+### リモートユーザーの Office 365 の接続を最適化する
+#### [概要: VPN 分割トンネリング](office-365-vpn-split-tunnel.md)
+#### [VPN の分割トンネリングを実装する](office-365-vpn-implement-split-tunnel.md)
+#### [中国ユーザー向け Office 365 の最適化](office-365-networking-china.md)
 ### [コンテンツ配信ネットワーク](content-delivery-networks.md)
 ### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
 ### [Office 365 の NAT サポート](nat-support-with-office-365.md)
