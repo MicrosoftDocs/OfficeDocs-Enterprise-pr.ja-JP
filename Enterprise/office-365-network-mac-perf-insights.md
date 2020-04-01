@@ -3,7 +3,7 @@ title: Office 365 ネットワークインサイト (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 ネットワークインサイト (プレビュー)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890621"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081709"
 ---
 # <a name="office-365-network-insights-preview"></a>Office 365 ネットワークインサイト (プレビュー)
 
@@ -40,7 +40,7 @@ Insights は、オフィスの場所のネットワーク境界を設計する�
 
 ## <a name="backhauled-network-egress"></a>Backhauled ネットワークの出口
 
-Network insights service が、特定のユーザーの場所からネットワークの出口までの距離が500マイル (800 km) を超えていることを検出すると、この洞察が表示されます。これは、Office 365 トラフィックが共通のインターネットエッジに backhauled されていることを示します。デバイスまたはプロキシ。
+Network insights service が、特定のユーザーの場所からネットワークの出口までの距離が500マイル (800 km) よりも大きいことを検出した場合に、この洞察が表示されます。これは、Office 365 トラフィックが共通のインターネットエッジデバイスまたはプロキシに backhauled されていることを示します。
 
 この洞察は、一部の要約ビューで "出口" として短縮されています。
 
@@ -50,7 +50,7 @@ Network insights service が、特定のユーザーの場所からネットワ�
 
 これは、オフィスの場所とネットワーク出口との間の距離が500マイル (800 km) を超えていることを示しています。 Office の場所は難読化されたクライアントコンピューターの場所で識別され、ネットワークの出口の場所は、逆引き IP アドレスを使用して場所データベースに識別されます。 Windows ロケーションサービスがコンピューターで無効になっている場合は、office の場所が不正確になることがあります。 逆引き IP アドレスデータベースの情報が正確でない場合は、ネットワークの出口の場所が不正確になることがあります。
 
-この洞察の詳細には、オフィスの場所、現在のネットワーク出口位置、出口位置の関連性、および位置と現在の出口ポイントとの間の距離、および場所と現在の出口の間の距離、最初に条件が検出され、条件が解決された日付。
+この洞察の詳細には、オフィスの場所、現在のネットワーク出口の位置、出口位置の関連性、位置と現在の出口ポイント間の距離、条件が最初に検出された日付、および条件が解決された日付が含まれます。
 
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
@@ -148,3 +148,5 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 [Office 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
 [M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Office 365 のネットワーク接続場所サービス (プレビュー)](office-365-network-mac-location-services.md)

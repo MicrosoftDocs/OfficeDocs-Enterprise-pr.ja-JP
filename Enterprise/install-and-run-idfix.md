@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Office 365 IdFix ツールをダウンロードして実行し、Active Directory ドメインサービス (AD DS) をクリーンアップしてから Office 365 に同期する方法。
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844618"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068779"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix ツールをダウンロードして実行する
 
@@ -74,15 +74,15 @@ IdFix を実行するために使用するユーザーアカウントには、AD
   
 1. IdFix ツールを実行するコンピューターにサインインします。
     
-2. [Idfix DirSync エラー修復ツール](https://go.microsoft.com/fwlink/?linkid=867219)の Microsoft ダウンロードサイトに移動します。
+2. [Idfix DirSync Error 修復ツール](https://github.com/microsoft/idfix)サイトに移動します。
     
-3. Zip ファイルをダウンロードして開きます。
+3. **ClickOnce 起動**セクションの [**起動**] をクリックして、zip ファイルをダウンロードします。 Zip ファイルを開きます。
     
-3. **Idfix**ウィンドウで、[**抽出**] を選択し、[**すべて抽出**] を選択します。 既定では、IdFix はに`C:\Users\<your user name>\Documents\IdFix`展開されます。 
+4. **Idfix**ウィンドウで、[**抽出**] を選択し、[**すべて抽出**] を選択します。 既定では、IdFix はに`C:\Users\<your user name>\Documents\IdFix`展開されます。 
     
-6. [**展開**] を選択します。
+5. [**展開**] を選択します。
 
-これらの手順は、Windows Server 2016 を実行しているサーバー上で Internet Explorer を使用して行いました。 異なるバージョンの Windows または別のブラウザーを使用している場合は、手順が異なることがあります。
+手順は、使用している Windows およびインターネットブラウザーのバージョンによって異なる場合があります。
     
 ## <a name="run-the-idfix-tool"></a>IdFix ツールを実行する
 
