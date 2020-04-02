@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Office 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841174"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093441"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Office 365 へのディレクトリ同期の準備
 
@@ -76,7 +76,7 @@ AD DS で、Office 365 ライセンスが割り当てられる各ユーザーア
   - 携帯電話番号
   - FAX 番号
   - 番地
-  - 市区町村
+  - 都市
   - 都道府県
   - 郵便番号
   - 国または地域
@@ -113,7 +113,7 @@ AD DS と Office 365 との間のディレクトリ同期を正常に行うに�
   - この属性の値は、ディレクトリ内で一意である必要があります。
   
     > [!NOTE]
-    > 同期名のアンダスコア ("_") は、この属性の元の値に無効な文字が含まれていることを示します。 元の値には、文字、数字、および!、#、$、%、&、'、 \*、+、-、/、=、?、^、_、'、{、|、}、~ ~ の文字を含めることができます。 この属性の詳細については、「 [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)」を参照してください。
+    > 同期名のアンダスコア ("_") は、この属性の元の値に無効な文字が含まれていることを示します。 この属性の詳細については、「 [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)」を参照してください。
     >
       
 - **proxyAddresses**
