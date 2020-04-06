@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 概要:Office 365 PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てます。
-ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
+ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844268"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43146812"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
 
@@ -107,6 +107,39 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 このコマンドでは、Alex に割り当てられた外部アクセス ポリシーの名前を Null 値 ($Null) に設定します。Null は "何もない" という意味です。言い換えれば、どの外部アクセス ポリシーも Alex に割り当てられていないということになります。どの外部アクセス ポリシーもユーザーに割り当てられていなければ、そのユーザーはグローバル ポリシーによって管理されます。
   
 Windows PowerShell を使用してユーザー アカウントを削除するには、Azure Active Directory コマンドレットを使用して Alex の Skype for Business Online ライセンスを削除します。詳しくは、「[Office 365 PowerShell を使ったサービスへのアクセスを無効にする](assign-licenses-to-user-accounts-with-office-365-powershell.md)」をご覧ください。
+
+## <a name="managing-large-numbers-of-users"></a>多数のユーザーを管理する
+
+多数のユーザー (1000 以上) を管理するには、[コマンド](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)レットを使用してスクリプトブロックでコマンドをバッチ処理する必要があります。  前の例では、コマンドレットが実行されるたびに、呼び出しを設定し、その結果が返されるまで待機してから、再度送信する必要があります。  スクリプトブロックを使用すると、コマンドレットをリモートで実行し、完了したらデータを返送できます。 
+
+```powershell
+Import-Module LyncOnlineConnector
+$sfbSession = New-CsOnlineSession
+$users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
+
+$batch = 50
+$filter = ''
+$total = $users.Count
+$count = 0
+    $users | ForEach-Object {
+    $upn = $_.UserPrincipalName
+    $filter += "(UserPrincipalName -eq '$upn')"
+    $batch--
+    $count++
+    if (($batch -eq 0) -or ($count -eq $total)) {
+        $filterSB=[ScriptBlock]::Create($filter)
+        Invoke-Command -Session $s -ScriptBlock {param($f) Get-CsOnlineUser -filter $f | Grant-CsClientPolicy -PolicyName "ClientPolicyNoIMURL" -Passthru | Grant-CsExternalAccessPolicy -PolicyName "FederationAndPICDefault"} -ArgumentList $filterSB
+
+        # Reset
+        $batch = 50
+        $filter = ''
+    } else {
+        $filter += " -or "
+    }
+}
+```
+
+これにより、クライアントポリシーを持たない時間に500ユーザーが検索されます。 これにより、クライアントポリシー "ClientPolicyNoIMURL" と "FederationAndPicDefault" という外部アクセスポリシーが付与されます。 結果は50のグループにバッチ処理され、50の各バッチがリモートコンピューターに送信されます。
   
 ## <a name="see-also"></a>関連項目
 
@@ -115,4 +148,3 @@ Windows PowerShell を使用してユーザー アカウントを削除するに
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
   
 [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
-
