@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから管理センター タスクを実行します。
-ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
-ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
+ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
+ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068759"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170615"
 ---
 # <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
 
@@ -163,9 +163,8 @@ MFA を使用している場合は、追加のダイアログ ボックスの手
     
 - **「Get-Item: パスが見つかりません」エラーが表示された場合は、次のコマンドを使用してください:** 
 
-  ```powershell
+```powershell
   (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
- 
 ```
 
 ## <a name="see-also"></a>関連項目
