@@ -1,5 +1,5 @@
 ---
-title: Office 365 ネットワークインサイト (プレビュー)
+title: Microsoft 365 Network Insights (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 ネットワークインサイト (プレビュー)
-ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 Network Insights (プレビュー)
+ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081709"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185758"
 ---
-# <a name="office-365-network-insights-preview"></a>Office 365 ネットワークインサイト (プレビュー)
+# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (プレビュー)
 
-**Network insights**は、Office 365 テナントから収集されたライブパフォーマンス指標で、テナントの管理ユーザーのみが閲覧できます。 Insights は、Microsoft 365 管理センターのに表示<https://portal.microsoft.com/adminportal/home#/networkperformance>されます。
+**Network insights**は、Microsoft 365 テナントから収集され、テナントの管理ユーザーのみが表示できるライブパフォーマンス指標です。 Insights は、Microsoft 365 管理センターのに表示<https://portal.microsoft.com/adminportal/home#/networkperformance>されます。
 
 Insights は、オフィスの場所のネットワーク境界を設計するのに役立ちます。 各洞察では、ユーザーがテナントにアクセスする地理的な場所ごとに、特定の一般的な問題のパフォーマンス特性に関するライブ詳細が提供されます。
 
@@ -36,11 +36,11 @@ Insights は、オフィスの場所のネットワーク境界を設計する�
 - [SharePoint フロントドアからのダウンロード速度が低い](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Network insights、Microsoft 365 管理センターでのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Office 365 テナントに対してのみ使用できます。
+>Network insights、Microsoft 365 Admin Center でのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Microsoft 365 テナントに対してのみ使用できます。
 
 ## <a name="backhauled-network-egress"></a>Backhauled ネットワークの出口
 
-Network insights service が、特定のユーザーの場所からネットワークの出口までの距離が500マイル (800 km) よりも大きいことを検出した場合に、この洞察が表示されます。これは、Office 365 トラフィックが共通のインターネットエッジデバイスまたはプロキシに backhauled されていることを示します。
+Network insights service が、特定のユーザーの場所からネットワークの出口までの距離が500マイル (800 km) よりも大きいことを検出した場合に、この洞察が表示されます。これは、Microsoft 365 トラフィックが共通のインターネットエッジデバイスまたはプロキシに backhauled されていることを示します。
 
 この洞察は、一部の要約ビューで "出口" として短縮されています。
 
@@ -54,7 +54,7 @@ Network insights service が、特定のユーザーの場所からネットワ�
 
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
-この情報については、office の場所へのネットワーク出口をお勧めします。これにより、接続が Microsoft のグローバルネットワークと最も近い Office 365 サービスのフロントドアに最適にルーティングされるようになります。 また、ユーザーのオフィスの場所にネットワークを閉じることにより、将来的に、ネットワークポイントのプレゼンスと Office 365 サービスのフロントドアの両方が将来的に展開されるため、パフォーマンスが向上します。
+この情報については、office の場所へのネットワーク出口をお勧めします。これにより、接続が Microsoft のグローバルネットワークおよび最寄りの Microsoft 365 service フロントドアに最適にルーティングされるようになります。 また、ユーザーのオフィスの場所に対してネットワークを閉じることにより、将来的に、Microsoft がネットワークポイントプレゼンスと Microsoft 365 サービスのフロントドアの両方を展開した場合にもパフォーマンスが向上します。
 
 この問題を解決する方法の詳細については、「 [Office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」の「[ネットワーク接続をローカル](office-365-network-connectivity-principles.md#egress-network-connections-locally)に出力する」を参照してください。
 
@@ -68,11 +68,11 @@ Network insights service が、特定のユーザーの場所からネットワ�
 
 ### <a name="what-does-this-mean"></a>シナリオ
 
-この洞察は、このオフィスの場所と同じ都市にある Office 365 の顧客の総合的なパフォーマンスを調査します。 この洞察は、ユーザーの平均待機時間が近隣テナントの平均待機時間を10% 上回る場合に表示されます。
+この洞察は、このオフィスの場所と同じ都市にある Microsoft 365 の顧客の総合的なパフォーマンスを調査します。 この洞察は、ユーザーの平均待機時間が近隣テナントの平均待機時間を10% 上回る場合に表示されます。
 
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
-この条件には、企業ネットワークまたは ISP の待機時間、ボトルネック、アーキテクチャ設計上の問題など、さまざまな理由が考えられます。 Office ネットワークと現在の Office 365 フロントドア間のルートで、各ホップ間の待機時間を調べます。 詳細については、「 [Office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
+この条件には、企業ネットワークまたは ISP の待機時間、ボトルネック、アーキテクチャ設計上の問題など、さまざまな理由が考えられます。 Office ネットワークと現在の Microsoft 365 フロントドア間のルートで、各ホップ間の待機時間を調べます。 詳細については、「 [Office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Exchange Online サービスのフロントドアの非最適な使用
 
@@ -122,7 +122,7 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 
 ## <a name="china-user-optimal-network-egress"></a>中国ユーザーにとって最適なネットワークの出口
 
-この洞察は、組織で、中国のユーザーが他の地理的な場所にある Office 365 テナントに接続している場合に表示されます。 
+この洞察は、中国のユーザーが他の地理的な場所にある Microsoft 365 テナントに接続している場合に表示されます。 
 
 ### <a name="what-does-this-mean"></a>シナリオ
 
@@ -145,8 +145,8 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 
 [Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項](office-365-network-mac-perf-overview.md)
 
-[Office 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
+[Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
-[M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 のネットワーク接続場所サービス (プレビュー)](office-365-network-mac-location-services.md)
+[Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)
