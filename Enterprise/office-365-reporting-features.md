@@ -15,22 +15,22 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 内のレポート機能の説明。
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842034"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206554"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 のレポート作成機能 
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 
 「Office 365 のレポート機能」では、Azure Active Directory (AD)、Exchange Online、デバイス管理、監督レビュー、およびデータ損失防止 (DLP) について、さまざまな監査レポートを提供しています。 これらのレポートは、Office 365 アクティビティレポートとは異なります。
 
 ## <a name="office-365-reports-dashboard"></a>Office 365 レポートダッシュボード
 
-Microsoft 365 管理センタープレビューの [レポート] ダッシュボードには、Office 365 全体の使用状況のアクティビティが表示されます。 Office 365 の全体管理者、または Exchange Online、SharePoint Online、または Skype for Business の管理者は、そのサービスの使用状況について詳細な洞察を得ることができます。 たとえば、特定の Office 365 サービスのユーザー数、Office Professional Plus をアクティブ化したユーザーの数、組織を通過するメールの量などです。 レポートは、過去7日、30日、90日、および180日に使用できます。
+Microsoft 365 管理センタープレビューの [レポート] ダッシュボードには、Office 365 全体の使用状況のアクティビティが表示されます。 Office 365 の全体管理者、または Exchange Online、SharePoint Online、または Skype for Business の管理者は、そのサービスの使用状況について詳細な洞察を得ることができます。 たとえば、特定の Office 365 サービスのユーザー数、Office 365 ProPlus をアクティブ化したユーザーの数、組織を通過するメールの量などです。 レポートは、過去7日、30日、90日、および180日に使用できます。
 
 次のレポートを使用できます。
 
