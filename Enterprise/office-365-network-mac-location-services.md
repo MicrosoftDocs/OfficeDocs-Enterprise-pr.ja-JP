@@ -1,5 +1,5 @@
 ---
-title: Office 365 のネットワーク接続場所サービス (プレビュー)
+title: Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 のネットワーク接続場所サービス (プレビュー)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081812"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185728"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Office 365 のネットワーク接続場所サービス (プレビュー)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)
 
-Microsoft 365 管理センターには、**ネットワークの洞察とパフォーマンスに関する推奨事項**が表示されるようになりました。これは、Office 365 テナントから収集し、テナントの管理ユーザーのみが表示できるライブパフォーマンス指標です。 組織のネットワーク接続は、ネットワークの出口からインターネットへの場所によって、オフィスの場所ごとに設計されています。 Office 365 クライアント接続は、そのルートを使用して、インターネットを介して Microsoft サービスのフロントドアサーバーに接続します。 Office の場所を特定することは、これらのネットワーク洞察を表示できることを示す鍵となります。
+Microsoft 365 管理センターには、Microsoft 365 テナントから収集され、テナントの管理ユーザーのみが閲覧できるライブパフォーマンス指標である、**ネットワークの洞察とパフォーマンスに関する推奨事項**が表示されます。 組織のネットワーク接続は、ネットワークの出口からインターネットへの場所によって、オフィスの場所ごとに設計されています。 Microsoft 365 クライアント接続は、そのルートを使用して、インターネットを介して Microsoft サービスのフロントドアサーバーに接続します。 Office の場所を特定することは、これらのネットワーク洞察を表示できることを示す鍵となります。
 
 ## <a name="location-in-network-measurements"></a>ネットワーク測定の場所
 

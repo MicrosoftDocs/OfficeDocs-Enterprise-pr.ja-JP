@@ -1,9 +1,9 @@
 ---
-title: M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)
+title: M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/08/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)
-ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)
+ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081699"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185738"
 ---
-# <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理センターの Office 365 ネットワークオンボードツール (プレビュー)
+# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)
 
-Office 365 ネットワークオンボードツールは、に<https://connectivity.office.com>あります。 このツールは、Microsoft 365 管理センターで利用可能なネットワーク insights およびネットワークスコア情報に対する adjunct ツールであり、正常性の下にあります。 **[ネットワークパフォーマンス**] メニュー
+Microsoft 365 ネットワークオンボードツールは、に<https://connectivity.office.com>あります。 このツールは、Microsoft 365 管理センターで利用可能なネットワーク insights およびネットワークスコア情報に対する adjunct ツールであり、正常性の下にあります。 **[ネットワークパフォーマンス**] メニュー
 
-Microsoft 365 管理センターのネットワーク insights は、Office 365 テナントの製品内の測定値に基づいています。 比較すると、Office 365 ネットワークオンボードツールのネットワーク洞察は、ツールでローカルに実行されます。 製品内で実行できるテストは制限されており、ユーザーに対してローカルにテストを実行することにより、より深い洞察を得られるように収集できます。 次に、Microsoft 365 管理センターの network insights は、特定のオフィスの場所で Office 365 を使用するためのネットワークの問題があることを示しています。 Office 365 ネットワークオンボードツールは、その問題の根本原因を特定するのに役立ち、推奨されるネットワークパフォーマンスの改善アクションにつながることができます。
+Microsoft 365 管理センターのネットワーク insights は、Microsoft 365 テナントの製品内の測定値に基づいています。 これに比べて、Microsoft 365 ネットワークオンボードツールからのネットワーク洞察は、ツールでローカルに実行されます。 製品内で実行できるテストは制限されており、ユーザーに対してローカルにテストを実行することにより、より深い洞察を得られるように収集できます。 次に、Microsoft 365 管理センターの network insights は、特定のオフィスの場所で Microsoft 365 を使用するためのネットワークの問題があることを示しています。 Microsoft 365 ネットワークオンボードツールは、この問題の根本的な原因を特定するのに役立ち、推奨されるネットワークパフォーマンスの向上アクションを導きます。
 
-Microsoft 365 管理センターの各オフィスの場所についてネットワーク品質の状態を評価し、Office 365 ネットワークオンボードツールを使用してテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
+Microsoft 365 管理センターの各オフィスの場所でネットワーク品質の状態を評価し、Microsoft 365 ネットワークオンボードツールを使用してテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
 
 >[!IMPORTANT]
->Network insights、Microsoft 365 管理センターでのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Office 365 テナントに対してのみ使用できます。
+>Network insights、Microsoft 365 Admin Center でのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Microsoft 365 テナントに対してのみ使用できます。
 
 ## <a name="the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーション
 
-Office 365 ネットワークオンボードツールは2つの部分で構成されています。 Web サイト<https://connectivity.office.com>があり、ダウンロード可能な Windows クライアントアプリケーションがあります。 ダウンロード可能なクライアントは、高度なネットワーク接続テストを実行し、ほとんどのテストでこれを実行する必要があります。
+Microsoft 365 ネットワークオンボードツールは2つの部分で構成されています。 Web サイト<https://connectivity.office.com>があり、ダウンロード可能な Windows クライアントアプリケーションがあります。 ダウンロード可能なクライアントは、高度なネットワーク接続テストを実行し、ほとんどのテストでこれを実行する必要があります。
 
 Web サイトからアドバンストクライアントテストを実行すると、実行時に結果が web ページに再び読み込まれます。
 
@@ -54,7 +54,7 @@ Web サイトからアドバンストクライアントテストを実行する�
 
 ネットワーク出力 IP アドレスから検索された場所が正確でない可能性があるため、このテストからの結果が false になることがあります。 特定の IP アドレスに対してこのエラーが発生しているかどうかを検証するには、パブリックにアクセス可能なネットワーク IP アドレスの場所 web サイトを使用できます。
 
-Office 365 のネットワーク接続には、ユーザーのオフィスの場所からインターネットへのローカルおよび直接ネットワーク出口を実装することをお勧めします。 このネットワークの洞察に対処するための最善の方法は、ローカルおよび直接出口に対する機能強化です。
+Microsoft 365 のネットワーク接続には、ユーザーのオフィスの場所からインターネットへのローカルおよび直接ネットワーク出口を実装することをお勧めします。 このネットワークの洞察に対処するための最善の方法は、ローカルおよび直接出口に対する機能強化です。
 
 ## <a name="exchange-online-service-front-door"></a>Exchange Online サービスのフロントドア
 
@@ -66,7 +66,7 @@ Exchange Online サービスのフロントドアに対する TCP 遅延の向�
 
 ## <a name="comparison-of-performance-of-customers-in-the-area"></a>エリア内の顧客の業績の比較
 
-Exchange Online サービスのフロントドアに対するユーザーのオフィスの場所のネットワーク TCP 遅延は、同じメトロエリアにある他の Office 365 ユーザーと比較されます。 同じメトロエリア内の10% 以上のお客様がパフォーマンスが優れている場合は、ネットワークの洞察が表示されます。
+Exchange Online サービスのフロントドアに対するユーザーのオフィスの場所のネットワーク TCP 遅延が、同じメトロエリアにある他の Microsoft 365 ユーザーと比較されます。 同じメトロエリア内の10% 以上のお客様がパフォーマンスが優れている場合は、ネットワークの洞察が表示されます。
 
 このネットワークの洞察は、1つの都市内のすべてのユーザーが同じ通信インフラストラクチャにアクセスできることと、インターネット回線および Microsoft のネットワークとの距離に応じて生成されます。
 
@@ -92,11 +92,11 @@ Exchange Online サービスのフロントドアに対するユーザーのオ�
 
 ## <a name="dns-lookup-of-exchange-online-front-end-server-and-sharepoint-online-front-end-server"></a>Exchange Online のフロントエンドサーバーと SharePoint Online のフロントエンドサーバーの DNS 参照
 
-これらの2つの Office 365 ワークロードのサービスフロントドアの DNS レコードを示します。 これらは情報のみに提供され、関連するネットワークの洞察はありません。
+これらの2つの Microsoft 365 ワークロードのサービスフロントドアの DNS レコードを示します。 これらは情報のみに提供され、関連するネットワークの洞察はありません。
 
 ## <a name="proxy-server-identification"></a>プロキシサーバーの識別
 
-ローカルコンピューターで構成されているプロキシサーバーを識別します。 [最適化] カテゴリ Office 365 ネットワークトラフィックで、これらのいずれかが構成されているかどうかを確認します。 ユーザーのオフィスの場所からプロキシサーバーへの距離を特定します。 この距離は、最初に ICMP ping によってテストされ、失敗した場合は TCP ping を使用してテストを実行して失敗した場合は、IP アドレスの場所データベースでプロキシサーバーの IP アドレスを検索します。 プロキシサーバーが、ユーザーのオフィスの場所から500マイル (800 km) を超える場合は、ネットワークの洞察を示しています。
+ローカルコンピューターで構成されているプロキシサーバーを識別します。 最適化カテゴリの Microsoft 365 ネットワークトラフィックで、これらのいずれかが構成されているかどうかを確認します。 ユーザーのオフィスの場所からプロキシサーバーへの距離を特定します。 この距離は、最初に ICMP ping によってテストされ、失敗した場合は TCP ping を使用してテストを実行して失敗した場合は、IP アドレスの場所データベースでプロキシサーバーの IP アドレスを検索します。 プロキシサーバーが、ユーザーのオフィスの場所から500マイル (800 km) を超える場合は、ネットワークの洞察を示しています。
 
 ## <a name="media-quality-checks"></a>メディア品質チェック
 
@@ -106,13 +106,13 @@ Exchange Online サービスのフロントドアに対するユーザーのオ�
 
 ## <a name="tcp-connectivity-tests"></a>TCP 接続テスト
 
-ユーザーのオフィスの場所から、必要なすべての Office 365 ネットワークエンドポイントへの HTTP 接続をテストします。 これらは、で[https://aka.ms/o365ip](https://aka.ms/o365ip)公開されます。 に接続できない必要なネットワークエンドポイントに対して、ネットワークの洞察が表示されます。
+ユーザーのオフィスの場所から、必要なすべての Microsoft 365 ネットワークエンドポイントへの HTTP 接続をテストします。 これらは、で[https://aka.ms/o365ip](https://aka.ms/o365ip)公開されます。 に接続できない必要なネットワークエンドポイントに対して、ネットワークの洞察が表示されます。
 
 接続 ay は、プロキシサーバー、ファイアウォール、またはエンタープライズネットワーク境界またはクラウドプロキシとして使用されている別のネットワークセキュリティデバイスによってブロックされます。
 
 ## <a name="ssl-interception-tests"></a>SSL 傍受テスト
 
-「」で定義されている、「optimize or allow category」に記載されている必要な[https://aka.ms/o365ip](https://aka.ms/o365ip)Office 365 ネットワークエンドポイントごとに、SSL 証明書をテストします。 いずれかのテストで Microsoft SSL 証明書が見つからない場合は、暗号化されたネットワークが仲介ネットワークデバイスによって傍受されている必要があります。 ネットワークの洞察は、傍受されたネットワークエンドポイントに表示されます。
+「」で定義されている、「optimize or allow category」に記載されている必要な[https://aka.ms/o365ip](https://aka.ms/o365ip)各 Microsoft 365 ネットワークエンドポイントで、SSL 証明書をテストします。 いずれかのテストで Microsoft SSL 証明書が見つからない場合は、暗号化されたネットワークが仲介ネットワークデバイスによって傍受されている必要があります。 ネットワークの洞察は、傍受されたネットワークエンドポイントに表示されます。
 
 Microsoft によって提供されていない SSL 証明書が見つかった場合は、テストの FQDN と使用中の SSL 証明書の所有者が表示されます。 この SSL 証明書の所有者は、プロキシサーバーのベンダーである場合もあれば、エンタープライズ自己署名証明書の場合もあります。
 
@@ -120,12 +120,34 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 このセクションでは、Exchange Online サービスのフロントドア、SharePoint Online サービスのフロントドア、Microsoft Teams サービスのフロントドアに対する ICMP traceroute の結果を示します。 これは情報のみを対象として提供されており、関連するネットワークの洞察がありません。
 
+## <a name="faq"></a>FAQ
+
+ここでは、よく寄せられる質問の一部に対する回答を示します。
+
+### <a name="is-this-tool-released-and-supported-by-microsoft"></a>このツールは、Microsoft によってリリースされ、サポートされていますか?
+
+現時点では概念実証になっており、Microsoft がサポートする一般的な可用性リリース状態に達するまで定期的に更新プログラムを提供することを計画しています。 品質向上のためにフィードバックを提供してください。 このツールの一部として、より詳細な Office 365 ネットワークオンボードガイドを発行することを計画しています。このツールは、テスト結果によって組織用にカスタマイズされています。
+
+### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 サービスのフロントドアとは
+
+Microsoft 365 service のフロントドアは、Office クライアントとサービスがネットワーク接続を終了する Microsoft のグローバルネットワークにおけるエントリポイントです。 Microsoft 365 への最適なネットワーク接続のために、ネットワーク接続を都市またはメトロの最も近い Microsoft 365 フロントドアに終端することをお勧めします。
+
+注: Microsoft 365 service のフロントドアは、Azure marketplace で利用可能な "Azure Front ドアサービス" 製品と直接関係していません。
+
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>最適な Microsoft 365 サービスのフロントドアとは何ですか。
+
+最適な Microsoft 365 サービスのフロントドアは、一般に都市またはメトロエリアでのネットワーク出口に最も近いものです。 Microsoft 365 ネットワークパフォーマンスツールを使用して、使用中の Microsoft 365 サービスのフロントドアと最適なサービスフロントドアの場所を特定します。 使用中のフロントドアが最適であると判断した場合は、Microsoft のグローバルネットワークに最適な接続を行います。
+
+### <a name="what-is-an-internet-egress-location"></a>インターネット出口の場所とは
+
+インターネット出口の場所は、ネットワークトラフィックがエンタープライズネットワークから出てインターネットに接続する場所です。 これは、ネットワークアドレス変換 (NAT) デバイスがあり、通常はインターネットサービスプロバイダー (ISP) を使用して接続する場所としても識別されます。 場所とインターネット出口の場所の間に長距離の距離がある場合は、WAN のバックアウトが非常に重要であることがわかります。
+
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項](office-365-network-mac-perf-overview.md)
 
-[Office 365 network performance insights (プレビュー)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights (プレビュー)](office-365-network-mac-perf-insights.md)
 
-[Office 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
+[Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
-[Office 365 のネットワーク接続場所サービス (プレビュー)](office-365-network-mac-location-services.md)
+[Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)
