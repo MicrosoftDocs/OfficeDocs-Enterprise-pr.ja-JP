@@ -3,7 +3,7 @@ title: Project Server 2010 サポート終了のロードマップ
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 08/21/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,19 +17,19 @@ search.appverid:
 - ZPJ120
 - PJU120
 - PJW120
-description: Project Server 2010 のサポート終了は、2020年10月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 158cf7476a8d80d0024cf4093d0d20fc884811e0
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Project Server 2010 のサポートは、2021年4月13日に終了します。 この記事は、Project Online またはオンプレミスの Project Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
+ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
+ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979519"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240527"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 サポート終了ロードマップ
 
 *この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
-Project Server 2010 は **、2020年10月 13**日にサポート終了日に到達します。 現在 Project Server 2010 を使用している場合は、これらの他の関連製品に次のサポート終了日があることに注意してください。
+Project Server 2010 は **、2021年4月 13**日のサポート終了に到達します。 この日付は、2020年10月13日の以前のサポート終了日から延長されました。 現在 Project Server 2010 を使用している場合は、これらの他の関連製品に次のサポート終了日があることに注意してください。
   
 |**Product**|**サポート終了日**|
 |:-----|:-----|
@@ -66,12 +66,37 @@ Project Server 2010 のサポート終了を回避するために取ることが
 ![Project Server 2010 のアップグレードパス](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
 
     
-|**Project Online への移行を希望するのはなぜですか?**|**Project Server 2019 への移行を希望するのはなぜですか?**|
+
+
+|**Project Server 2019 への移行を希望するのはなぜですか?**|**Project Online への移行を希望するのはなぜですか?**|
 |:-----|:-----|
-| モバイルまたはリモートのユーザーがいます。  <br/>  オンプレミスサーバーを移行するためのコストとしては、大きな懸念があります (ハードウェア、ソフトウェア、時間および実装の労力など)。  <br/>  移行後に、環境を維持するためのコストは大きな懸念事項です (たとえば、自動更新、稼働状態の保証など)。  <br/> | ビジネスルールは、クラウドでのビジネスの運営から制限されています。  <br/>  環境に対して更新プログラムを制御する必要がある。  <br/> |
+|ビジネスルールは、クラウドでのビジネスの運営から制限されています。  <br/>  環境に対して更新プログラムを制御する必要がある。  <br/> | モバイルまたはリモートのユーザーがいます。  <br/>  オンプレミスサーバーを移行するためのコストとしては、大きな懸念があります (ハードウェア、ソフトウェア、時間および実装の労力など)。  <br/>  移行後に、環境を維持するためのコストは大きな懸念事項です (たとえば、自動更新、稼働状態の保証など)。  <br/>  |
+
    
 > [!NOTE]
 > Office 2010 サーバーから移行するためのオプションの詳細については、「 [office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)」を参照してください。 Project server と Project Online は同じリソース共有元を共有できないため、Project Server はハイブリッド構成をサポートしていないことに注意してください。 
+
+### <a name="what-are-my-options-for-project-client"></a>Project クライアントのオプションとは
+Project Professional 2010 または Project Standard 2010 を使用していて、移行オプションを調査する場合は、次の選択肢があります。
+- Project Professional または Project Standard の新しいバージョンに移行する。
+- Project Online や Project などのオンラインソリューションに web 用に移行します。
+ 
+#### <a name="moving-to-a-newer-version-of-project-client"></a>新しいバージョンの Project クライアントに移行する
+
+Project Standard 2010 から移行する場合は、project standard の新しいバージョン (Project Standard 2016 または Project Standard 2019) に移行できます。  最新の機能を利用するには、最新のバージョンに移行することをお勧めします。 また、現在のバージョンよりも古いバージョンに移行する (Project Standard 2016) ことは、サポートの終了日が近づくにつれて、このバージョンから移行する必要があることを意味します。
+
+同様に、Project Professional 2010 から移行する場合は、新しいバージョンに移行することを選択できます (Project Professional 2019 または Project Professional 2016)。 可能であれば、最新バージョンに移行することをお勧めします。  Project Professional を使用して Project Server に接続している場合は、使用している Project Server のバージョンとの接続がサポートされているバージョンの Project Professional に移行するようにしてください。
+
+Project Professional 2010 ユーザーは、Project Online デスクトップクライアントへの移行を選択することもできます。 Project Professional 2019 のサブスクリプションベースのバージョンであり、プロジェクト計画3およびプロジェクト計画5のサブスクリプションに含まれています。 
+
+#### <a name="moving-to-an-online-solution"></a>オンラインソリューションへの移行
+
+Project Professional 2010 または Project Standard 2010 からプロジェクトのサブスクリプションベースのオンラインソリューションへの移行を選択することもできます。 プロジェクトプラン3とプラン5の両方に、Project Online と、 [web 用の](https://support.office.com/article/what-can-you-do-with-project-for-the-web-b30f5442-be5f-43d2-9072-c95bff778ea1)最新のクラウドサービスが含まれています。 どちらにも、探索価値のある新機能とメリットが多数提供されています。
+
+両方に含まれている機能の詳細、およびプロジェクト計画のライセンスに含まれる機能については、 [Microsoft project サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/project-online-service-description/project-online-service-description)を参照してください。
+
+
+
   
 ## <a name="important-considerations-you-need-to-make-when-planning-to-migrate-from-project-server-2010"></a>Project Server 2010 からの移行を計画する際に必要となる重要な考慮事項
 
@@ -81,7 +106,7 @@ Project Server 2010 からの移行を計画する場合は、次の点を考慮
     
 - **カスタマイズを計画**する-project server 2019 または project Online に移行する場合、project server 2010 環境で作業しているカスタマイズの多くが機能しない可能性があることに注意してください。 バージョン間の Project Server アーキテクチャには大きな違いがあります。また、必要なオペレーティングシステム、データベースサーバー、および新しいバージョンとの連携がサポートされているクライアント web ブラウザーもあります。 新しい環境で必要に応じてカスタマイズをテストまたは再構築する方法について、計画を立ててください。 アップグレードを計画することも、前方に移動するときに特定のカスタマイズが本当に必要かどうかを確認するのに十分な機会となります。 「 [2013 SharePoint へのアップグレード時に現在のカスタマイズの計画を作成]( https://docs.microsoft.com/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013)する」には、アップグレード時に現在のカスタマイズの評価と計画に関する重要な情報が含まれています。 
     
-- **時間および**アップグレードの計画、実行、およびテストは、特に Project Server 2019 にアップグレードする場合には、多くの時間と労力を必要とします。 たとえば、Project Server 2010 から Project Server 2019 に移行する場合は、まず Project Server 2010 から project Server 2013 に移行してから、データを確認してから、各バージョンに移行するときに同じ操作を実行する必要があります (プロジェクトに対して)。サーバー2016、次に Project Server 2019)。 Microsoft ソリューションプロバイダーに確認して、見積もりコストと、それが実現するのにかかる時間とコストを比較することができます。 
+- **時間および**アップグレードの計画、実行、およびテストは、特に Project Server 2019 にアップグレードする場合には、多くの時間と労力を必要とします。 たとえば、Project Server 2010 から Project Server 2019 に移行する場合は、まず Project Server 2010 から project Server 2013 に移行してから、データを確認してから、以降の各バージョンに移行するときに同じ操作を実行する必要があります (Project Server の場合は、次に、project 2016 Server の場合)。 Microsoft ソリューションプロバイダーに確認して、見積もりコストと、それが実現するのにかかる時間とコストを比較することができます。 
     
 ## <a name="migrate-to-project-online"></a>Project Online への移行
 
@@ -206,7 +231,7 @@ Project Server 2016 から Project Server 2019 にアップグレードするた
 
 Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
-[![Office 2010 のクライアントとサーバー、および Windows 7 のサポート終了ポスターの画像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 この1ページのポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために実行できるさまざまなパスを簡単に理解する方法です。 Microsoft 365 Enterprise では、優先パスとオプションのサポートが強調表示されています。
 
