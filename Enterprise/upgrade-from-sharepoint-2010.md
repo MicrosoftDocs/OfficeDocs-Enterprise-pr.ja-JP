@@ -3,7 +3,7 @@ title: SharePoint 2010 からアップグレードする
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -18,23 +18,23 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: SharePoint 2010 のサポートが終了し、SharePoint Server 2010 が2020年10月13日に終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: 2021年4月13日に SharePoint 2010 および SharePoint Server 2010 のサポートが終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
+ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979489"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503845"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
 *この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
-Microsoft SharePoint 2010 と SharePoint Server 2010 は **、2020年10月 13**日にサポートの終了に到達します。 この記事では、既存の SharePoint Server 2010 データを Office 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースについて説明します。
+Microsoft SharePoint 2010 と SharePoint Server 2010 は **、2021年4月 13**日にサポート終了になります。 この記事では、既存の SharePoint Server 2010 データを Office 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースについて説明します。
   
 ## <a name="what-is-end-of-support"></a>サポート終了とは
 
-SharePoint Server 2010 と SharePoint Foundation 2010 ソフトウェアがサポートライフサイクルの最終段階 (Microsoft が新機能を提供している期間、バグ修正プログラム、セキュリティ修正プログラムなど) に到達すると、これはソフトウェアの「サポートの終了」と呼ばれます。' 定年 ' のような場合があります。 製品のサポート終了 (または EOS) によって、実際には機能しなくなります。ただし、ソフトウェアのサポートが終了すると、Microsoft は次の機能を提供しなくなります。
+SharePoint Server 2010 と SharePoint Foundation 2010 ソフトウェアがサポートライフサイクルの最後に達すると (Microsoft が新機能、バグ修正プログラム、セキュリティ修正プログラムを提供する時間)、これはソフトウェアの "サポート終了" と呼ばれるか、場合によっては ' 定年 "と呼ばれます。 製品のサポート終了 (または EOS) によって、実際には機能しなくなります。ただし、ソフトウェアのサポートが終了すると、Microsoft は次の機能を提供しなくなります。
   
 - 発生する可能性のある問題のテクニカル サポート。
     
@@ -109,7 +109,7 @@ SharePoint Server 2013 または SharePoint Server 2016 にアップグレード
 |**SharePoint Online の利点**|**SharePoint Online の短所**|
 |:-----|:-----|
 |Microsoft が SPO ハードウェアおよびすべてのハードウェアの管理を行う。  <br/> |オンプレミスの SharePoint Server で利用できる機能と、SPO で利用できる機能が異なる。  <br/> |
-|サブスクリプションの全体管理者であり、管理者を SPO サイトに割り当てることができます。  <br/> |オンプレミスの sharepoint Server でファーム管理者が使用できる一部のアクションが、Office 365 の SharePoint 管理者ロールに存在しない (または必要ない) 場合。ただし、SharePoint 管理、サイトコレクションの管理、サイト所有権は、次のようにローカルになります。組織。  <br/> |
+|サブスクリプションの全体管理者であり、管理者を SPO サイトに割り当てることができます。  <br/> |オンプレミスの sharepoint Server でファーム管理者が使用できる一部のアクションは、Office 365 の SharePoint 管理者ロールに存在しない (または必要ではありません)。ただし、SharePoint 管理、サイトコレクションの管理、サイト所有権は、組織にとってローカルになります。  <br/> |
 |Microsoft は、基礎となるハードウェアおよびソフトウェア (SharePoint Online が実行されている SQL server を含む) に対するパッチ、修正、更新を適用します。  <br/> |サービスの基となるファイル システムへのアクセスがないため、一部のカスタマイズが制限される。  <br/> |
 |Microsoft が[サービス レベル契約](https://go.microsoft.com/fwlink/?linkid=843153)を発行し、サービス レベルの問題に迅速に対応する。  <br/> |バックアップと復元、その他の回復オプションは、SharePoint Online のサービスによって自動化される。バックアップは、使用されていない場合に上書きされる。  <br/> |
 |セキュリティ テストとサーバーのパフォーマンス チューニングは、Microsoft によって、継続的なサービスとして実施される。  <br/> |ユーザー インターフェイスとその他の SharePoint 機能の変更はサービスによってインストールされ、オン/オフの切り替えが必要な場合がある。  <br/> |
@@ -133,7 +133,7 @@ Sharepoint オンプレミス製品の最新バージョン (SharePoint Server 2
 SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用することを選択した場合、これには時間と計画が必要になります。 アップグレードには、アップグレードされたハードウェア (SQL server もアップグレードする必要があることに注意してください)、ソフトウェア、および管理に関するコストが関係しています。 また、カスタマイズをアップグレードしたり、破棄したりする必要がある場合もあります。 SharePoint Server ファームをアップグレードする前に、すべての重要なカスタマイズに関するメモを収集してください。
   
 > [!NOTE]
-> サポートされている SharePoint 2010 ファームの終了を維持し、新しいハードウェアに SharePoint Server 2016 ファームをインストールする (個別のファームを並行して実行する) ことができます。コンテンツをダウンロードして再アップロードするために、コンテンツの手動による移行を計画して実行します。例)。 これらの手動による移動 (2010 からのドキュメント、手動移動を実行しているアカウントのエイリアスを使用して、現在最後に変更されたアカウントを含む) には、このような手動による移動には、事前に行う必要のある落とし穴があります (サイト、サブサイト、アクセス許可を再作成することもできます)。リスト構造)。 ストレージに移動できるデータや、不要になったデータについては、十分に検討してください。 これにより、移行の影響が軽減されます。 どちらの方法でも、アップグレード前に環境をクリーンにします。 アップグレードする前に、既存のファームが機能していることを確認してください。 
+> SharePoint 2010 ファームのサポート終了を維持し、新しいハードウェアに SharePoint Server 2016 ファームをインストールする (個別のファームを並行して実行する) ことができます。その後、コンテンツをダウンロードして再アップロードするために、コンテンツの手動による移行を計画して実行することができます (例:)。 これらの手動による移動 (2010 からのドキュメント、手動による移動を実行しているアカウントのエイリアスを使用して、現在最後に変更されたアカウントを含む) には、このような手動による移動には潜在的な落とし穴があります (サイト、サブサイト、アクセス許可、およびリスト構造を再作成します)。 ストレージに移動できるデータや、不要になったデータについては、十分に検討してください。 これにより、移行の影響が軽減されます。 どちらの方法でも、アップグレード前に環境をクリーンにします。 アップグレードする前に、既存のファームが機能していることを確認してください。 
   
 以下の、**サポートされるアップグレード パスとサポート外のアップグレード パス**を確認してください。 
   
@@ -180,7 +180,7 @@ SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用す�
   
 既存のハイブリッドの種類と、オンプレミスの SharePoint ファームと Office 365 サブスクリプションとの間の接続を構成する方法について理解しておいてください。
   
-ハイブリッド SharePoint ファームがどのように機能するかを確認するための適切な方法の1つは、 [Office 365 開発/テスト環境](https://go.microsoft.com/fwlink/?linkid=843152)を作成することです。 試用版または購入済みの Office 365 サブスクリプションを取得したら、SharePoint Online にサイトコレクション、web、およびドキュメントライブラリを作成して、データを移行できるようにします (手動、移行 API を使用する、または My を移行する場合)。OneDrive for business に対するサイトコンテンツ-ハイブリッドウィザード)。
+ハイブリッド SharePoint ファームがどのように機能するかを確認するための適切な方法の1つは、 [Office 365 開発/テスト環境](https://go.microsoft.com/fwlink/?linkid=843152)を作成することです。 試用版または購入済みの Office 365 サブスクリプションを取得したら、SharePoint Online にサイトコレクション、web、およびドキュメントライブラリを作成して、データを移行できるようにします (手動で移行 API を使用するか、または個人用サイトのコンテンツを OneDrive for Business に移行する場合は-ハイブリッドウィザードを使用)。
   
 > [!NOTE]
 > ハイブリッドオプションを使用するには、SharePoint Server 2010 ファームをまず、オンプレミスの SharePoint Server 2013 または SharePoint Server 2016 にアップグレードする必要があることに注意してください。 Sharepoint Foundation 2010 および SharePoint Foundation 2013 は、SharePoint Online とのハイブリッド接続を作成できません。 
@@ -189,7 +189,7 @@ SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用す�
 
 Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
-[![Office 2010 のクライアントとサーバー、および Windows 7 のサポート終了ポスターの画像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 この1ページのポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために実行できるさまざまなパスを簡単に理解する方法です。 Microsoft 365 Enterprise では、優先パスとオプションのサポートが強調表示されています。
 

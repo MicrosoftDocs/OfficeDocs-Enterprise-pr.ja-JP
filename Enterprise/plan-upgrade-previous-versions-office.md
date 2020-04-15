@@ -3,7 +3,7 @@ title: Office 2007 または2010のサーバーとクライアントからのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古く、サポートされていないアプリとサーバーで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605620"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503805"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
 
 *この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
-以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス[のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 製品とサービス (Office 2010、Exchange 2010、SharePoint 2010、および Project Server 2010 を含む) は、 **10 月 13**日にサポートが終了することになります。 開始するには、このセクションのリソースを使用します。
+以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス[のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 と Exchange 2010 は、 **2020 年10月 13**日にサポートの最後に到達します。 SharePoint 2010 および Project Server 2010 は、 **2021 年4月 13**日にサポートの終了に到達します。 開始するには、このセクションのリソースを使用します。
 
 詳細については[、「Office 2010 のサーバーとクライアントからのアップグレード](upgrade-from-office-2010-servers-and-products.md)」を参照してください。
 
@@ -88,7 +88,7 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)は、Office 365、Windows 10、Enterprise Mobility + SECURITY (EMS) の組み合わせにより、すべてのユーザーがクリエイティブで共同作業し、安全に共同作業を行えるようにする完全なインテリジェントソリューションを提供します。 
   
-Office 2007 または Office 2010 サーバーおよびクライアントは、Office 365 に移行できますが、Microsoft 365 には、組織が最新の Windows オペレーティングシステムで動作していること、およびお客様のデバイス (を含む) を確実に使用できるようにするためのライセンスと機能が含まれています。Windows、iOS、および Android は、認証とデータ保護を必要とするポリシーでセキュリティ保護された状態で保持されます。 さらに、Windows 10 と Office 365 ProPlus クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されます。
+Office 2007 または Office 2010 サーバーおよびクライアントは Office 365 に移行できますが、Microsoft 365 には、組織が最新の Windows オペレーティングシステムでの動作を保証するためのライセンスと機能が含まれていますが、お客様のデバイス (Windows、iOS、Android を含む) が登録され、認証とデータ保護を必要とするポリシーでセキュリティ保護 さらに、Windows 10 と Office 365 ProPlus クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されます。
   
 Microsoft 365 は、絶えず改善されたデバイスと生産性のエクスペリエンスを使用して、Microsoft クラウドで有効にし、セキュリティで保護されたビジネスをデジタルに変換する方法です。
   
