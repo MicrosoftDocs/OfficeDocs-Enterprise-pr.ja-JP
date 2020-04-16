@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840374"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516448"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -29,7 +29,7 @@ ms.locfileid: "41840374"
 > [!NOTE]
 > 移動はサービスごとに、異なる時間に行われます。結果として、サービスごとに異なる時間に、説明されているような機能制限がかかります。 
   
-Exchange Online、SharePoint Online、Skype for Business の移動が完了したら、Office 365 メッセージ センターを参照して確認してください。次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。移動後、テナントに問題がある場合は、「[Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)」にお問い合わせください。 
+Exchange Online、SharePoint Online、Teams、および Skype for Business の各移行が完了したら、Microsoft 365 メッセージセンターで確認を行います。 次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。 移動後、テナントに問題がある場合は、「[Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)」にお問い合わせください。 
   
 
 |**国がサインアップしているお客様**|**完了したすべての移動**|
@@ -45,9 +45,7 @@ Exchange Online、SharePoint Online、Skype for Business の移動が完了し�
 |南アフリカ  <br/> |2022年7月1日  <br/> |
 |スイス、リヒテンシュタイン  <br/> |2022年7月1日  <br/> |
 |ドイツ  <br/> |計画  <br/> |
-
-> [!NOTE]
-> 対象となる Office 365 国のお客様は、2020年1月1日から2020年6月30日までの Microsoft Teams chat service データ移行をオプトインすることができます。これは、その他の対象となるワークロードについても、移行を通知します。  2020より前の移行をオプトインしているお客様は、Exchange Online と SharePoint Online または OneDrive for business が元の期限までに完了することを期待できますが、Teams はすべてのお客様に対しては2022年7月1日に完了します。 
+|ノルウェー  <br/> |2022年11月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -110,9 +108,16 @@ SharePoint Online データを移行する過程で、検索インデックス�
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-対象となる Office 365 の国のお客様は、2020年1月1日に Microsoft Teams chat service データ移行をオプトインすることができます。  
+Microsoft は、Exchange Online、SharePoint Online、OneDrive for Business に加えて、Teams データをローカルデータセンターに移行します。
+
+- Teams のチャットメッセージ (プライベートメッセージやチャネルメッセージを含む)。
+- チャットで使用される Teams 画像。
+
+Teams ファイルは SharePoint Online に格納され、Teams チャットファイルは OneDrive for Business に保存されます。 ボイスメール、予定表、チャット履歴、および連絡先は、Exchange Online に格納されます。 多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、ローカルのデータセンター geo のお客様によって既に使用されており、資格のあるお客様の国の Microsoft 365 移行プログラムの一部でもあります。
 
 ## <a name="skype-for-business"></a>Skype for Business
+
+Skype for Business の移動は、オーストラリア、日本、インド、カナダ、英国、および南韓国で利用できます。
 
 カットオーバーの際、すべてのユーザーは Skype for Business クライアント ソフトウェアからサインアウトされます。自動サインインによって、2 分以内にユーザーは再接続されます。
   
@@ -129,11 +134,10 @@ SharePoint Online データを移行する過程で、検索インデックス�
   
 ## <a name="related-topics"></a>関連項目 
  
-[データ移行をリクエストする方法](request-your-data-move.md)
+[データ移行を申請する方法](request-your-data-move.md)
     
 [データ移行についての一般的な FAQ](data-move-faq.md)
   
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Azure のリージョン](https://azure.microsoft.com/regions/)
-

@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 04/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの Skype for Business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの Skype for Business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: 5852a4a59e4826cb57295452f9996e5c4f91ab29
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 325c34ec636ce9661b25f7b8be83ce8cbf61a291
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840124"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516458"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件
 
@@ -37,7 +37,7 @@ _モダン認証_は、よりセキュリティで保護されたユーザー認
 ## <a name="what-is-modern-authentication"></a>先進認証とは
 <a name="BKMK_WhatisModAuth"> </a>
 
-モダン認証は、クライアント (たとえば、ラップトップまたは電話) とサーバーの間の認証と承認の方法、および既に存在する可能性があるアクセスポリシーに依存するいくつかのセキュリティ対策の組み合わせを表す包括的な用語です。に精通していること。 内容は以下のとおりです。
+モダン認証は、クライアント (たとえば、ラップトップまたは電話) とサーバーの間の認証と承認の方法、および既に熟知しているアクセスポリシーに依存するいくつかのセキュリティ対策の組み合わせを表す包括的な用語です。 内容は以下のとおりです。
   
 - **認証方法**: 多要素認証 (MFA)、スマートカード認証。クライアント証明書ベースの認証
 - **認証方法**: Microsoft のオープン認証の実装 (OAuth)
@@ -61,7 +61,7 @@ EvoSTS への変更により、オンプレミスのサーバーは、クライ�
   
 たとえば、Skype for Business クライアントが、ユーザーの代わりに予定表情報を取得するために Exchange サーバーにアクセスする必要がある場合、Active Directory 認証ライブラリ (ADAL) を使用してそのようにします。 ADAL は、OAuth セキュリティトークンを使用して、クライアントアプリケーションがディレクトリ内のセキュリティで保護されたリソースを使用できるようにするためのコードライブラリです。 ADAL は OAuth と連携して、クレームを検証し、パスワードではなく exchange トークンを使用して、ユーザーがリソースにアクセスできるようにします。 以前は、このようなトランザクションの権限は、ユーザーの要求を検証し、必要なトークンを発行する方法を知っているサーバーであり、オンプレミスのセキュリティトークンサービス、または Active Directory フェデレーションサービスであった可能性があります。 ただし、モダン認証は、Azure Active Directory (AAD) を使用してこの権限を集中化します。
   
-これは、Exchange サーバーと Skype for Business 環境が完全にオンプレミスになっている場合でも、認証サーバーがオンラインになり、オンプレミスの環境で Office への接続を作成して管理できるようにする必要があることを意味します。クラウド内の365サブスクリプション (およびサブスクリプションがディレクトリとして使用する Azure Active Directory インスタンス)。
+これは、Exchange server と Skype for Business の環境が完全にオンプレミスになっている場合でも、認証サーバーがオンラインになり、クラウド (およびサブスクリプションがディレクトリとして使用する Azure Active Directory インスタンス) 365 への接続を作成して管理する機能を備えている必要があることを意味します。
   
 変更されないのはなぜですか? 分割ドメインハイブリッドにいるか、オンプレミスの Skype for Business と Exchange server を使用しているかにかかわらず、すべてのユーザーは最初*にオンプレミスで*認証する必要があります。 先進認証のハイブリッド実装では、 _Lyncdiscovery_と_Autodiscovery_の両方がオンプレミスサーバーを指しています。
   
@@ -142,7 +142,7 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、「 [ge
   - Exchange Server 2013 を使用している場合は、少なくとも1つのサーバーにメールボックスとクライアントアクセスサーバーの役割がインストールされている必要があります。 メールボックスとクライアントアクセスの役割を別々のサーバーにインストールすることもできますが、信頼性を高め、パフォーマンスを向上させるために、両方の役割を同じサーバーにインストールすることを強くお勧めします。
   - Exchange server 2016 以降のバージョンを使用している場合は、少なくとも1つのサーバーにメールボックスサーバーの役割がインストールされている必要があります。
   - ハイブリッド環境では、Exchange server 2007 または2010はありません。
-  - すべての Exchange サーバーに最新の cummulative 更新プログラムがインストールされている必要があります。すべての利用可能な更新を検索して管理するには、「 [exchange を最新の累積更新プログラムにアップグレード](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019)する」を参照
+  - すべての Exchange サーバーに最新の累積更新プログラムがインストールされている必要があります。すべての利用可能な更新を検索して管理するには、「 [Exchange を最新の累積更新プログラムにアップグレード](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019)する」を参照
 
 - **Exchange クライアントとプロトコルの要件**
   
@@ -163,13 +163,13 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、「 [ge
     > [!NOTE]
     > ハイブリッドの先進認証は、[ハイブリッドエージェント](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)ではサポートされていません。
 
-  - オンプレミスのテストユーザーと、Office 365 に所属するハイブリッドテストユーザーの両方が Skype for Business デスクトップクライアント (Skype で先進認証を使用する場合) と Microsoft Outlook (との間で先進認証を使用する場合) の両方にログインできることを確認してください。Exchange)。
+  - オンプレミステストユーザーと Office 365 に所属するハイブリッドテストユーザーの両方が、Skype for Business デスクトップクライアント (Skype で先進認証を使用する場合) と Microsoft Outlook (Exchange で先進認証を使用する場合) にログインできることを確認してください。
 
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>開始する前に知っておくべきその他の情報
 <a name="BKMK_Whatelse"> </a>
 
-- オンプレミスサーバーのすべてのシナリオには、オンプレミスの先進認証のセットアップが含まれています (実際には、サポートされるトポロジのリストがあります)。これにより、認証と承認を担当するサーバーが Microsoft Cloud (AAD のセキュリティトークンサービスを ' evoSTS ' と呼びます)、Skype for Business または Exchange のオンプレミスインストールで使用される Url または名前空間に関する Azure Active Directory (AAD) を更新します。 そのため、オンプレミスサーバーは Microsoft クラウドの依存関係を利用します。 この操作を実行すると、' hybrid auth ' を構成することになります。
-- この記事では、サポートされている先進認証トポロジ (Skype for Business にのみ必要) を選択するのに役立つ他のユーザーや、セットアップ手順の概要または先進認証を無効にするための手順について説明する、Exchange オンプレミスの操作方法に関する記事にリンクしています。およびオンプレミスの Skype for Business。 サーバー環境で先進認証を使用するために、ホームベースが必要になる場合は、このページをブラウザーでお気に入りにします。
+- オンプレミスサーバーのすべてのシナリオには、オンプレミスでの先進認証のセットアップが含まれます (実際には、Skype for Business の場合は、サポートされているトポロジの一覧があります)。認証と承認を担当するサーバーが Microsoft クラウド (AAD のセキュリティトークンサービス) に含まれるようにして、Skype for Business または Exchange のオンプレミスインストールで使用される Url または名前空間に関する Azure Active Directory (AAD) を更新します。 そのため、オンプレミスサーバーは Microsoft クラウドの依存関係を利用します。 この操作を実行すると、' hybrid auth ' を構成することになります。
+- この記事では、サポートされている先進認証トポロジ (Skype for Business にのみ必要) を選択するのに役立つ他のユーザーには、Exchange オンプレミスおよび Skype for Business オンプレミスの場合に、セットアップ手順の概要または先進認証を無効にする手順について説明するトピックについて説明します。 サーバー環境で先進認証を使用するために、ホームベースが必要になる場合は、このページをブラウザーでお気に入りにします。
 
 ## <a name="related-topics"></a>関連項目
 <a name="BKMK_URLListforMA"> </a>
