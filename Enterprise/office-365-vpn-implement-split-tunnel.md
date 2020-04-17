@@ -3,7 +3,7 @@ title: Office 365 向け VPN スプリット トンネリングの実装
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/9/2020
+ms.date: 4/14/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 3ac4d1243e28e8081439c98baf181ba9fb5fb2b3
-ms.sourcegitcommit: f12f95866df3a7bbf866e1d21a839be7fbdf9470
+ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43203851"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516488"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -273,6 +273,7 @@ Teams が音声や _Session Traversal Utilities for NAT (STUN)_ 増幅攻撃な�
 - **Palo Alto GlobalProtect**: [VPN スプリット トンネリングで、 Office 365 のトラフィックを最適化する。アクセスルートは除外](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 ネットワーク BIG-IP APM**: [BIG IP APM を使用している場合に、VPN を介したリモートアクセスで Office 365 のトラフィックを最適化する](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Citrix Gateway**: [Office365 向けのCitrix Gateway VPN スプリット トンネルの最適化](https://docs.citrix.com/ja-JP/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure**: [VPN トンネリング: 分割トンネリングを構成して Office365 アプリケーションを除外する方法](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 
 ## <a name="faq"></a>FAQ
 

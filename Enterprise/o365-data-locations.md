@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Office 365 のデータの場所'
-ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206604"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516538"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -120,6 +120,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | インド | チェンナイ、ムンバイ、プネ |
 | 日本 | 大阪、東京、埼玉 |
 | 韓国 | 釜山、ソウルl |
+| ノルウェー | オスロ、スタヴァンゲル |
 | 南アフリカ | ケープタウン、ヨハネスブルグ |
 | スイス | ジュネーブ、ズリック |
 | アラブ首長国連邦 | ドバイ、アブダビ |
@@ -3928,18 +3929,18 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 
 | サービス | 場所 |
 | --- | --- |
-| Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Exchange Online | ノルウェー |
+| OneDrive for Business | ノルウェー |
+| SharePoint Online | ノルウェー |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | ノルウェー |
+| Office Online &amp; Mobile | ノルウェー |
+| EOP | ノルウェー |
+| MyAnalytics | ノルウェー |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| OneNote サービス | ノルウェー |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
 | Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
