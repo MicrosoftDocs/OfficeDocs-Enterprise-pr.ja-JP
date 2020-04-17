@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: 2021年4月13日に SharePoint 2010 および SharePoint Server 2010 のサポートが終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503845"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532298"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
@@ -68,7 +68,7 @@ SharePoint Server 2010 のサポート終了を回避するために実行でき
 ![SharePoint Server 2010 のアップグレードパス](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->SharePoint Server 2010 および SharePoint Foundation 2010 のサポート終了は、2020年10月13日に予定されていますが、最新の日付については常に[製品ライフサイクルサイト](https://support.microsoft.com/lifecycle)をチェックする必要があることに*注意してください*。
+>SharePoint Server 2010 および SharePoint Foundation 2010 のサポート終了が2021年4月13日に予定されていますが、最新の日付については常に[製品ライフサイクルサイト](https://support.microsoft.com/lifecycle)をチェックする必要があることに*注意してください*。
 >
 
   
