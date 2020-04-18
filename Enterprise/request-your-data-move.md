@@ -1,7 +1,7 @@
 ---
 title: データ移行をリクエストする方法
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: 既存の Office 365 のお客様は、参加している Microsoft 365 サービスのお客様のデータを新しい geo に移動するために、お住まいの国の期日前に要求を提出する必要があります。
-ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516568"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547745"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -43,7 +43,7 @@ ms.locfileid: "43516568"
 |南アフリカ  <br/> |2019 年 7 月 25 日  <br/> |2020年6月30日  <br/> |
 |スイス、リヒテンシュタイン  <br/> |2019 年 12 月 10 日  <br/> |2020年6月30日  <br/> |
 |ドイツ  <br/> |計画  <br/> |計画  <br/> |
-|ノルウェー  <br/> |2020年4月15日  <br/> |2020年10月31日  <br/> |
+|ノルウェー  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
    
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
 

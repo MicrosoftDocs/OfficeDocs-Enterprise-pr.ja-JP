@@ -1,7 +1,7 @@
 ---
 title: 新しい Microsoft 365 datacenter geo へのコアデータの移動
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 新しいデータセンター geo により、現在続いているお客様の需要と使用量の拡大をサポートするための容量と計算リソースが増加されます。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。 コア カスタマー データとは、Microsoft Online Services の使用条件で定義されているカスタマー データのサブセットを表す用語であり、Exchange Online メールボックスのコンテンツ (メール本文、予定表のエントリ、およびメール添付ファイルのコンテンツ)、SharePoint Online サイトのコンテンツとそのサイト内に格納されたファイル、および OneDrive for Business にアップロードされたファイルのことです。
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516548"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547725"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>新しい Microsoft 365 datacenter geo へのコアデータの移動
 
