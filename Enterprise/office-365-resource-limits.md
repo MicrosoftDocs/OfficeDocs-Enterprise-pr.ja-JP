@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '概要: Office 365 内のさまざまなアプリケーションのリソース制限についての情報。'
-ms.openlocfilehash: 112d910ae724ad01629aaef5a8e2e1756ceb8ecf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 55fa8d90c6f83c84a1e43f32cf7cd0eeafbf1274
+ms.sourcegitcommit: ed4482ad35274b79d44d0f9a17be3e52d5ad0492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844318"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43666328"
 ---
 # <a name="resource-limits"></a>リソースの制限
 
 リソースの制限は、クォータ (制限) と調整を使用して適用されます。 Azure Active Directory と個別の Office 365 サービスは両方を使用します。 新しい機能が追加されると、制限はサービスに依存し、時間の経過と共に変化します。 さまざまなサービスの現在の制限の詳細については、以下のトピックを参照してください。
 
-- [Azure Active Directory サービスの制限と制限事項](https://msdn.microsoft.com/library/azure/dn764971.aspx)
+- [Azure Active Directory サービスの制限と制限事項](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Exchange Online の制限](https://technet.microsoft.com/library/exchange-online-limits.aspx)
 - [Exchange Online Protection の制限](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)
 - [SharePoint Online ソフトウェアの境界と制限](https://support.office.com/article/SharePoint-Online-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)
