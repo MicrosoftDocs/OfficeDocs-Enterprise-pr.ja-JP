@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Office 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841764"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580934"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 のハイブリッド id とディレクトリ同期
 
@@ -69,7 +69,7 @@ Office 365 を採用している企業のお客様にとっては、ビジネス
 
 パスワードが変更されるか、オンプレミスでリセットされると、新しいパスワードハッシュが Azure AD に同期されるため、ユーザーは常にクラウドリソースとオンプレミスのリソースに対して同じパスワードを使用できます。 ユーザーパスワードが Azure AD に送信されることや、クリアテキストで Azure AD に保存されることはありません。 Id 保護などの Azure AD の一部のプレミアム機能は、どの認証方法が選択されているかに関係なく、PHS を必要とします。
   
-詳細については、「 [PHS の選択](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)」を参照してください。
+詳細については、「 [PHS の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
   
 #### <a name="pass-through-authentication"></a>パススルー認証
 
@@ -81,15 +81,15 @@ PTA を使用すると、ユーザーはオンプレミスのアカウントと�
 
 PTA は、組織に対して、オンプレミスのユーザーアカウントの状態、パスワードポリシー、およびログオン時間を即時に適用するセキュリティ要件を持つ組織のためにも使用されます。 
   
-詳細については、「 [PTA の選択](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)」を参照してください。
+詳細については、「 [PTA の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
   
 ### <a name="federated-authentication"></a>フェデレーション認証
 
 フェデレーション認証は、主に、より複雑な認証要件を持つ大規模なエンタープライズ組織に適しています。 AD DS id は Office 365 と同期され、ユーザーアカウントは社内で管理されます。 フェデレーション認証では、ユーザーは社内とクラウドの両方で同じパスワードを使用しており、Office 365 を使用するために再度サインインする必要はありません。 
 
-フェデレーション認証は、スマートカードベースの認証、またはサードパーティの多要素認証などの追加の認証要件をサポートでき、組織が認証要件を持たない場合に通常は必要です。Azure AD でネイティブにサポートされています。
+フェデレーション認証は、スマートカードベースの認証、またはサードパーティの多要素認証などの追加の認証要件をサポートしており、一般に、組織が Azure AD でネイティブにサポートされていない認証要件を使用する場合に必要です。
  
-詳細については、「[フェデレーション認証の選択](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)」を参照してください。
+詳細については、「[フェデレーション認証の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
   
 #### <a name="third-party-authentication-and-identity-providers"></a>サードパーティの認証および id プロバイダー
 

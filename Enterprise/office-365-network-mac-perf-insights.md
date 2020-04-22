@@ -3,7 +3,7 @@ title: Microsoft 365 Network Insights (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (プレビュー)
-ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 0146019d1424cda696104d68eeda32ce28a26391
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185758"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612907"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (プレビュー)
 
@@ -147,6 +147,6 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 
 [Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
-[M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)

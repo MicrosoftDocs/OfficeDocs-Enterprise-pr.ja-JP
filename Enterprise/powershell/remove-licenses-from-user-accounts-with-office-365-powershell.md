@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してユーザー アカウントから�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 04/20/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
-ms.openlocfilehash: ce529221c18e5f094b9d45037e95b859eeaea5a0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ea762e992056ac3265336055eabb860f67482093
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844188"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580924"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
 
@@ -126,18 +126,16 @@ kakers@contoso.com
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
-既存のすべてのユーザー アカウントからライセンスを削除するには、次の構文を使用します。
+すべての既存のユーザーアカウントからすべてのライセンスを削除するには、次の構文を使用します。
   
 ```powershell
-$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
-$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
-```
-
-この例では、既存のライセンスされたすべてのユーザーアカウントから**litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスを削除します。
-  
-```powershell
-$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
-$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$users = Get-MsolUser -All | where {$_.isLicensed -eq $true}
+ForEach($user in $users)
+{
+$licenses = $user.Licenses.AccountSkuId
+ForEach ($lic in $licenses)
+{ Set-MsolUserLicense -UserPrincipalName $user.UserPrincipalName -RemoveLicenses $lic }
+}
 ```
 
 別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。詳細については、「[Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)」を参照してください。

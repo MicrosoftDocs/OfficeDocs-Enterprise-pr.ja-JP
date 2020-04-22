@@ -1,5 +1,5 @@
 ---
-title: Office 365 ネットワーク接続の評価
+title: Office 365 のネットワーク接続の評価
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 は、世界中のお客様がインターネット接続を使用してサービスに接続できるように設計されています。 サービスの進化に伴って、Office 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立するお客様によって改善されています。
-ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c818cc959910e57f25f20ef6d1c4d3992a2330a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844698"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612867"
 ---
-# <a name="assessing-office-365-network-connectivity"></a>Office 365 ネットワーク接続の評価
+# <a name="assessing-office-365-network-connectivity"></a>Office 365 のネットワーク接続の評価
 
 *この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
@@ -44,7 +44,7 @@ Office 365 の使用を計画しているお客様は、展開プロジェクト
 - Office 365 ネットワークの概念については、「 [office 365 のネットワーク接続の概要](office-365-networking-overview.md)」を参照してください。
 - Office 365 のトラフィックを安全に管理し、最適なパフォーマンスを得るための接続の原則については、「 [office 365 のネットワーク接続の原則](https://aka.ms/o365networkingprinciples)」を参照してください。
 - Office 365 の計画、設計、展開に関する[Microsoft FastTrack](https://www.microsoft.com/fasttrack)のガイド付きサポートにサインアップします。 
-- 特定のユーザーの場所と Office 365 の間で、ネットワーク接続の機能向上に関する具体的なガイダンスを提供する基本的な接続テストを実行するには、以下の「 [Office 365 ネットワークオンボードツール](assessing-network-connectivity.md#the-office-365-network-onboarding-tool)」セクションを参照してください。
+- 特定のユーザーの場所と Office 365 の間で、ネットワーク接続の機能向上に関する具体的なガイダンスを提供する基本的な接続テストを実行するには、以下の「 [Microsoft 365 connectivity test](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) 」セクションを参照してください。
 
 > [!NOTE]
 > Office 365 の ExpressRoute を使用するには、Microsoft の承認が必要です。 Microsoft は、お客様の規制要件で直接的な接続が義務付けられている場合に限り、お客様のすべての要求を見直し、Office 365 の ExpressRoute の使用を承認します。 このような要件がある場合は、テキストの抜粋と web リンクを入力してください。これは、Microsoft レビューを開始するために、 [Office 365 の ExpressRoute の要求フォーム](https://aka.ms/O365ERReview)に直接接続する必要があることを意味します。 承認されていないサブスクリプション Office 365 のルートフィルターを作成しようとすると、[エラーメッセージ](https://support.microsoft.com/kb/3181709)が表示されます。
@@ -59,9 +59,9 @@ Office 365 のネットワーク評価を計画する際に考慮すべき重要
 
 Office 365 を評価していて、ネットワーク評価の開始位置がわからない場合や、解決のためにサポートが必要なネットワーク設計の課題が見つかった場合は、Microsoft アカウントチームと協力してください。
 
-## <a name="the-office-365-network-onboarding-tool"></a>Office 365 ネットワークオンボードツール
+## <a name="the-microsoft-365-connectivity-test"></a>Microsoft 365 接続テスト
 
-[Office 365 ネットワークオンボードツール](https://aka.ms/netonboard)は、office 365 テナントに対して基本的な接続テストを実行し、最適な office 365 パフォーマンスを得るための特定のネットワーク設計の推奨事項を実行する概念実証 (POC) ネットワーク評価ツールです。 このツールは、インターネット web ブラウジングに便利で、Office 365 などの大規模な SaaS アプリケーションのパフォーマンスに影響を与える大規模なエンタープライズネットワーク境界の一般的な設計上の選択項目を強調表示します。
+[Microsoft 365 connectivity test](https://aka.ms/netonboard)は、office 365 テナントに対して基本的な接続テストを実行し、最適な office 365 パフォーマンスを実現するための特定のネットワーク設計の推奨事項を実行する概念実証 (POC) ネットワーク評価ツールです。 このツールは、インターネット web ブラウジングに便利で、Office 365 などの大規模な SaaS アプリケーションのパフォーマンスに影響を与える大規模なエンタープライズネットワーク境界の一般的な設計上の選択項目を強調表示します。
 
 ネットワークオンボードツールは、次の処理を行います。
 
@@ -103,7 +103,7 @@ Office 365 を評価していて、ネットワーク評価の開始位置がわ
 - 複数の機能固有のエンドポイントへの接続テスト
 - Exchange Online、SharePoint Online、Teams サービスの tracert および待機時間データを含むネットワークパス診断
 
-Office 365 ネットワークオンボードツールに関する情報を参照して、[新しいネットワーク設計の推奨事項に関するブログ投稿を使用して、更新された office 365 ネットワークオンボードツールの POC](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130)にフィードバックを提供することができます。 このツールおよびその他の Office 365 ネットワーク更新プログラムに関する今後の更新プログラムについては、「 [office 365 のネットワーク](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)ブログ」に掲載されています。
+Microsoft の365接続テストに関する情報を参照して、[新しいネットワーク設計に関する推奨事項のブログ投稿を使用して、更新された microsoft 365 接続テスト POC](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130)にフィードバックを提供することができます。 このツールおよびその他の Office 365 ネットワーク更新プログラムに関する今後の更新プログラムについては、「 [office 365 のネットワーク](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)ブログ」に掲載されています。
   
 次の短いリンクを使用して、に戻ることができ[ https://aka.ms/o365networkconnectivityます。](https://aka.ms/o365networkconnectivity)
   

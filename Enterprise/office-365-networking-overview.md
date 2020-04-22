@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: SaaS サービスでネットワークの最適化が重要な理由、Office 365 ネットワークの目標、および他のワークロードとの間で SaaS が異なるネットワークを必要とする理由について説明します。
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844358"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612887"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 のネットワーク接続の概要
 
@@ -33,9 +33,9 @@ Office 365 は、さまざまなマイクロサービスおよびアプリケー
 
 ## <a name="office-365-networking-goals"></a>Office 365 のネットワークの目標
 
-Office 365 ネットワークの最終目標は、クライアントと最も近い Office 365 エンドポイントとの間で最も制限の少ないアクセスを有効にすることによって、エンドユーザーの環境を最適化することです。 エンドユーザーの環境の品質は、ユーザーが使用しているアプリケーションのパフォーマンスと応答性に直接関係しています。 たとえば、Microsoft Teams は遅延を低くして、ユーザーの電話、会議、および共有の画面コラボレーションが故障しないようにします。また、Outlook は、サーバー側のインデックス作成と AI を活用するクイック検索機能に対して強力なネットワーク接続に依存しています。能力.
+Office 365 ネットワークの最終目標は、クライアントと最も近い Office 365 エンドポイントとの間で最も制限の少ないアクセスを有効にすることによって、エンドユーザーの環境を最適化することです。 エンドユーザーの環境の品質は、ユーザーが使用しているアプリケーションのパフォーマンスと応答性に直接関係しています。 たとえば、Microsoft Teams では、ユーザーの電話会議、会議、および共有の画面コラボレーションが故障しないように、低遅延を使用しています。 Outlook は、サーバー側のインデックス作成と AI 機能を活用するクイック検索機能に対する強力なネットワーク接続に依存しています。
 
-ネットワーク設計の主な目標は、クライアントマシンからのラウンドトリップ時間 (RTT) を microsoft のグローバルネットワークにまで減らして、microsoft のパブリックネットワークバックボーンによって、Microsoft のすべてのデータセンターを低遅延の状態で相互接続することによって、遅延を最小限に抑えることです。高可用性クラウドアプリケーションのエントリポイントが世界中に散在しています。 Microsoft グローバルネットワークの詳細については、 [microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を参照してください。
+ネットワーク設計の主な目標は、クライアントコンピューターからのラウンドトリップ時間 (RTT) を Microsoft のグローバルネットワークにまで減らして、microsoft のパブリックネットワークバックボーンである microsoft のパブリックネットワークバックボーン (世界中に分散している Microsoft のすべてのデータセンターを低遅延、高可用性クラウドアプリケーションのエントリポイント) に相互接続することです。 Microsoft グローバルネットワークの詳細については、 [microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を参照してください。
 
 Office 365 の最適化ネットワークのパフォーマンスを複雑にする必要はありません。 いくつかの重要な原則に従って、パフォーマンスを最大限に向上させることができます。
 
@@ -49,7 +49,7 @@ Office 365 のネットワーク接続の原則の詳細については、「 [o
 
 クライアント/サーバーワークロードの従来のネットワークアーキテクチャの原則は、クライアントとエンドポイント間のトラフィックが企業ネットワーク境界の外側に拡張されないという前提に基づいて設計されています。 また、多くのエンタープライズネットワークでは、すべての送信インターネット接続が企業ネットワークを通過し、1つの場所から出口を出します。
 
-従来のネットワークアーキテクチャでは、ネットワーク境界セキュリティを維持するために、一般的なインターネットトラフィックの待機時間が長くなり、インターネットトラフィックのパフォーマンスを最適化するには、通常、ネットワークの出口ポイントにある機器。 ただし、このアプローチでは、Office 365 などの SaaS サービスの最適なネットワークパフォーマンスの要件は解決されません。
+従来のネットワークアーキテクチャでは、ネットワーク境界のセキュリティを維持するために、一般的なインターネットトラフィックの待機時間が必要となり、インターネットトラフィックのパフォーマンスを最適化するには、通常、ネットワークの出口ポイントで機器をアップグレードまたはスケールアウトする必要があります。 ただし、このアプローチでは、Office 365 などの SaaS サービスの最適なネットワークパフォーマンスの要件は解決されません。
 
 ## <a name="identifying-office-365-network-traffic"></a>Office 365 のネットワークトラフィックを識別する
 
@@ -90,7 +90,7 @@ Office 365 トラフィックがパケット検査および集中型出口の対
 
 Office 365 のネットワーク接続の原則を理解し、適用する方法の詳細については、「 [office 365 のネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
 
-## <a name="conclusion"></a>終わりに
+## <a name="conclusion"></a>まとめ
 
 Office 365 の最適化ネットワークパフォーマンスは、不要な障害を排除することになります。 Office 365 接続を信頼されたトラフィックとして扱うことにより、パケット検査およびプロキシ帯域幅の競合によって遅延が発生するのを防ぐことができます。 クライアントコンピューターと Office 365 エンドポイント間のローカル接続を許可することで、トラフィックを Microsoft グローバルネットワーク経由で動的にルーティングできるようになります。
 
@@ -104,7 +104,7 @@ Office 365 の最適化ネットワークパフォーマンスは、不要な障
 
 [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 
-[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 
@@ -116,7 +116,7 @@ Office 365 の最適化ネットワークパフォーマンスは、不要な障
 
 [Content Delivery Network](content-delivery-networks.md)
 
-[Office 365 ネットワークオンボードツール](https://aka.ms/netonboard)
+[Microsoft 365 接続テスト](https://aka.ms/netonboard)
 
 [Microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

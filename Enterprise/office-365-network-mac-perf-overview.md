@@ -3,7 +3,7 @@ title: Microsoft 365 管理センター (プレビュー) でのネットワー�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項の概要
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185778"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612937"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項
 
@@ -131,7 +131,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>最適な Microsoft 365 サービスのフロントドアとは何ですか。
 
-最適な Microsoft 365 サービスのフロントドアは、一般に都市またはメトロエリアでのネットワーク出口に最も近いものです。 [Microsoft 365 ネットワークオンボードツール](office-365-network-mac-perf-onboarding-tool.md)を使用して、使用中の microsoft 365 サービスのフロントドアと最適なサービスフロントドアの場所を特定します。 使用中のフロントドアが最適であると判断した場合は、Microsoft のグローバルネットワークに最適な接続を行います。
+最適な Microsoft 365 サービスのフロントドアは、一般に都市またはメトロエリアでのネットワーク出口に最も近いものです。 [Microsoft 365 connectivity test](office-365-network-mac-perf-onboarding-tool.md)を使用して、使用中の microsoft 365 サービスのフロントドアと最適なサービスフロントドアの場所を特定します。 使用中のフロントドアが最適であると判断した場合は、Microsoft のグローバルネットワークに最適な接続を行います。
 
 ### <a name="what-is-an-internet-egress-location"></a>インターネット出口の場所とは
 
@@ -143,6 +143,6 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 [Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
-[M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)

@@ -1,9 +1,9 @@
 ---
-title: M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)
+title: M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225700"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612877"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>M365 管理センターの Microsoft 365 ネットワークオンボードツール (プレビュー)
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)
 
-Microsoft 365 ネットワークオンボードツールは、に<https://connectivity.office.com>あります。 このツールは、Microsoft 365 管理センターで利用可能なネットワーク insights およびネットワークスコア情報に対する adjunct ツールであり、正常性の下にあります。 **[ネットワークパフォーマンス**] メニュー
+Microsoft 365 の接続テストは、に<https://connectivity.office.com>あります。 このツールは、Microsoft 365 管理センターで利用可能なネットワーク insights およびネットワークスコア情報に対する adjunct ツールであり、正常性の下にあります。 **[ネットワークパフォーマンス**] メニュー
 
 >[!NOTE]
 >オンボードツールは、世界各地の商用および GCC ではサポートされていますが、GCC High、DoD、ドイツ、中国のテナントはサポートしていません。
 
-Microsoft 365 管理センターのネットワーク insights は、Microsoft 365 テナントの製品内の測定値に基づいています。 これに比べて、Microsoft 365 ネットワークオンボードツールからのネットワーク洞察は、ツールでローカルに実行されます。 製品内で実行できるテストは制限されており、ユーザーに対してローカルにテストを実行することにより、より深い洞察を得られるように収集できます。 次に、Microsoft 365 管理センターの network insights は、特定のオフィスの場所で Microsoft 365 を使用するためのネットワークの問題があることを示しています。 Microsoft 365 ネットワークオンボードツールは、この問題の根本的な原因を特定するのに役立ち、推奨されるネットワークパフォーマンスの向上アクションを導きます。
+Microsoft 365 管理センターのネットワーク insights は、Microsoft 365 テナントの製品内の測定値に基づいています。 これに比べて、Microsoft 365 接続テストのネットワーク洞察は、ツールでローカルに実行されます。 製品内で実行できるテストは制限されており、ユーザーに対してローカルにテストを実行することにより、より深い洞察を得られるように収集できます。 次に、Microsoft 365 管理センターの network insights は、特定のオフィスの場所で Microsoft 365 を使用するためのネットワークの問題があることを示しています。 Microsoft 365 connectivity test は、この問題の根本的な原因を特定するのに役立ち、推奨されるネットワークパフォーマンスの向上アクションを導きます。
 
-Microsoft 365 管理センターの各オフィスの場所でネットワーク品質の状態を評価し、Microsoft 365 ネットワークオンボードツールを使用してテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
+Microsoft 365 管理センターの各オフィスの場所についてネットワーク品質の状態を評価し、Microsoft 365 の接続テストに基づいてテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
 
 >[!IMPORTANT]
 >Network insights、Microsoft 365 Admin Center でのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Microsoft 365 テナントに対してのみ使用できます。
 
 ## <a name="the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーション
 
-Microsoft 365 ネットワークオンボードツールは2つの部分で構成されています。 Web サイト<https://connectivity.office.com>があり、ダウンロード可能な Windows クライアントアプリケーションがあります。 ダウンロード可能なクライアントは、高度なネットワーク接続テストを実行し、ほとんどのテストでこれを実行する必要があります。
+Microsoft 365 の接続テストには2つの部分があります。 Web サイト<https://connectivity.office.com>があり、ダウンロード可能な Windows クライアントアプリケーションがあります。 ダウンロード可能なクライアントは、高度なネットワーク接続テストを実行し、ほとんどのテストでこれを実行する必要があります。
 
 Web サイトからアドバンストクライアントテストを実行すると、実行時に結果が web ページに再び読み込まれます。
 
