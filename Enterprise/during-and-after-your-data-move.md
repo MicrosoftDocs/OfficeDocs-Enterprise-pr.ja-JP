@@ -1,7 +1,7 @@
 ---
 title: データの移行中および移行後
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
+ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516448"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772108"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
