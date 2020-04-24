@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 次に示すテスト ラボ ガイド (TLG) を使用して、Office 365 のデモンストレーション、概念実証、または開発/テスト環境をセットアップします。'
-ms.openlocfilehash: 133f31dd46555ac7d80c2fcc5f3756da967cb331
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845028"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793690"
 ---
 # <a name="test-office-365-with-test-lab-guides-tlgs"></a>テスト ラボ ガイド (TLG) を使用して Office 365 をテストする
 
@@ -52,6 +52,6 @@ Office 365 と Microsoft 365 の両方に適用される追加の TLG につい�
     
 ## <a name="see-also"></a>関連項目
 
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
   
 [ハイブリッド ソリューション](hybrid-solutions.md)
