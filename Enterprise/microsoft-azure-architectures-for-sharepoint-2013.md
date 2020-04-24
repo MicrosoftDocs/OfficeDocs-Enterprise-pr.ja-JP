@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: '概要: SharePoint 2013 ソリューションは、Microsoft Azure 仮想マシンでホストできます。適切なソリューションの種類と、ソリューションをホストするように Microsoft Azure を設定する方法について説明します。'
-ms.openlocfilehash: ff5837030384a7f10dc36bb9c436394a19521254
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844908"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793740"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>SharePoint 2013 用の Microsoft Azure アーキテクチャ
 
@@ -219,7 +219,7 @@ SharePoint ファームの各層に可用性セットを追加すると、実装
   
 ## <a name="see-also"></a>関連項目
 
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
   
 [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

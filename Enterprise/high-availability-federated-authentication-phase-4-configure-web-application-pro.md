@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: '概要: Microsoft Azure で Office 365 の高可用性フェデレーション認証用に web アプリケーションプロキシサーバーを構成します。'
-ms.openlocfilehash: 9dedf8197cc24f82d516b75ecf29caca6d1f09b4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac7b43daea832d4283404605fbb8ccb46e6cc76c
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840164"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793810"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性フェデレーション認証のフェーズ 4: Web アプリケーション プロキシを構成する
 
@@ -168,5 +168,5 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 [Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 

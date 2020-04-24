@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: '概要: Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。'
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840804"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793720"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Office 365 開発/テスト環境の Cloud App Security
 
  **概要:** Office 365 開発/テスト環境で Office 365 Cloud App Security を構成し、デモンストレーションします。
   
-Office 365 Cloud App Security (以前の Office 365 Advanced Security Management) を使用すると、Office 365 サブスクリプションでの不審なアクティビティを監視し、通知するポリシーを作成できます。これにより、問題を調査して修復できるようになります。action. 詳細については、「 [Office 365 の Cloud App Security の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
+Office 365 Cloud App Security (以前の Office 365 Advanced Security Management) を使用すると、Office 365 サブスクリプションで疑わしいアクティビティを監視して通知するポリシーを作成し、可能な修復アクションを調査して実行することができます。 詳細については、「 [Office 365 の Cloud App Security の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)」を参照してください。
   
 この記事の手順を使用して、Office 365 の試用版サブスクリプションで Cloud App Security を有効にし、テストできます。
   
@@ -165,7 +165,7 @@ Office 365 Cloud App Security (以前の Office 365 Advanced Security Management
   
 [Office 365 開発/テスト環境](office-365-dev-test-environment.md)
   
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 
 [Office 365 の Advanced Security Management の概要](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840344"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793830"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
@@ -39,7 +39,7 @@ Azure は、次の基本コンポーネントを使用してプロビジョニ�
 
 Azure のコンポーネントの構成を開始する前に、次に示す表に必要事項を記入します。 Azure の構成の手順で役立つように、このセクションを印刷して、必要な情報を書き込むか、このセクションをドキュメントにコピーして必要事項を記入してください。 VNet の設定は、「表 V」に記入します。
   
-|**Item**|**構成設定**|**説明**|**値**|
+|**アイテム**|**構成設定**|**説明**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet 名  <br/> |VNet に割り当てる名前 (例 FedAuthNet)。  <br/> |![線](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet の場所  <br/> |仮想ネットワークが含まれる地域の Azure データセンター。  <br/> |![線](./media/Common-Images/TableLine.png)  <br/> |
@@ -72,7 +72,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
   
 次に、仮想マシンとロード バランサーのインスタンスに割り当てる静的 IP について、「表 I」に必要事項を記入します。
   
-|**Item**|**用途**|**サブネット上の IP アドレス**|**値**|
+|**アイテム**|**用途**|**サブネット上の IP アドレス**|**値**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |最初のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、4 番目に考えられる IP アドレス。  <br/> |![線](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |2 番目のドメイン コントローラーの静的 IP アドレス  <br/> |「表 S」の「項目 1」で定義されたサブネットのアドレス空間について、5 番目に考えられる IP アドレス。  <br/> |![線](./media/Common-Images/TableLine.png)  <br/> |
@@ -94,7 +94,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
    
  **表 D:オンプレミスの DNS サーバー**
   
-クロスプレミスネットワークから組織のネットワークへのパケットをサイト間 VPN 接続を介してルーティングするには、すべての到達可能なアドレススペース (CIDR 表記) のリストを持つローカルネットワークを使用して仮想ネットワークを構成する必要があります。組織のオンプレミスネットワーク上の場所。 このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。
+クロスプレミスネットワークから組織のネットワークへのパケットをサイト間 VPN 接続を介してルーティングするには、組織のオンプレミスネットワーク上のすべての到達可能な場所に対するアドレススペース (CIDR 表記) のリストを持つローカルネットワークを使用して仮想ネットワークを構成する必要があります。 このローカル ネットワークを定義するアドレス空間の一覧は、一意であることが必要であり、別の仮想ネットワークや別のローカル ネットワークとの重複がないことが必要になります。
   
 一連のローカル ネットワークのアドレス スペースに関しては表 L に記入します。3 つの空白のエントリが記載されていますが、通常はさらに必要となります。IT 部門に尋ねてこのアドレス スペースの一覧を特定してください。
   
@@ -314,7 +314,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 [Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 
 [Office 365 ID と Azure Active Directory について](about-office-365-identity.md)
 

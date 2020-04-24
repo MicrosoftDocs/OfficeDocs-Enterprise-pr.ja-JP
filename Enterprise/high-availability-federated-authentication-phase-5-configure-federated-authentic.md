@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 概要:Microsoft Azure で Office 365 の高可用性フェデレーション認証用の Azure AD Connect を構成します。
-ms.openlocfilehash: 8a65ee9af994d46cdc53266a92851e0684e06121
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac5536ac66412825b245851a7f225acad5e9895a
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840244"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793800"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>高可用性フェデレーション認証のフェーズ 5:Office 365 のフェデレーション認証を構成する
 
-Azure インフラストラクチャサービスで Office 365 用の高可用性フェデレーション認証を展開するための最終フェーズでは、パブリック証明機関によって発行された証明書を取得してインストールし、構成を確認してから、Azure AD をインストールして実行します。ディレクトリ同期サーバーに接続します。 Azure AD Connect は、フェデレーション認証用に Office 365 サブスクリプション、Active Directory フェデレーション サービス (AD FS)、Web アプリケーション プロキシ サーバーを構成します。
+Azure インフラストラクチャサービスに Office 365 用の高可用性フェデレーション認証を展開するための最終フェーズでは、パブリック証明機関によって発行された証明書を取得してインストールし、構成を確認した後、ディレクトリ同期サーバーに Azure AD Connect をインストールして実行します。 Azure AD Connect は、フェデレーション認証用に Office 365 サブスクリプション、Active Directory フェデレーション サービス (AD FS)、Web アプリケーション プロキシ サーバーを構成します。
   
 すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。
   
@@ -145,7 +145,7 @@ Azure の Office 365 用の高可用性フェデレーション認証インフ�
   
 [Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 
 [Office 365 のフェデレーション ID](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 

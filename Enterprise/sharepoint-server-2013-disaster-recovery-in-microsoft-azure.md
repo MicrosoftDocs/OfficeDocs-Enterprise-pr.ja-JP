@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: '概要: Azure を使用すると、オンプレミス SharePoint ファーム用の障害復旧環境を作成できます。この記事では、このソリューションの設計と実装の方法を取り上げます。'
-ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d448ae31c31238f1cf5ef97ff79e6ec97fda60a1
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841184"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793710"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure での SharePoint Server 2013 の障害復旧
 
@@ -112,7 +112,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **表: ソリューションによる復旧対象**
 
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |サイトおよびコンテンツ  <br/> |復旧環境で、サイトとコンテンツを利用できます。  <br/> |
 |検索の新しいインスタンス  <br/> |このウォーム スタンバイ ソリューションの場合、検索は検索データベースから復元されません。復旧ファームにある検索コンポーネントは、可能な限り運用ファームと同様に構成されます。サイトとコンテンツが復元された後、フル クロールが開始され、検索インデックスが再作成されます。クロールが完了するまで待たなくても、サイトとコンテンツは利用できます。  <br/> |
@@ -122,7 +122,7 @@ Azure インフラストラクチャ サービス を使用する利点には、
   
 **表: MCS またはパートナーが対応できるその他のアイテム**
 
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |カスタム ファーム ソリューションの同期  <br/> |復旧ファーム構成と運用ファームが同じであることが理想的です。コンサルタントやパートナーと共に作業し、カスタム ファーム ソリューションのレプリケートを行うかどうか、2 つの環境を同期された状態に保つためのプロセスが適切かどうかを評価できます。  <br/> |
 |オンプレミスのデータ ソースへの接続  <br/> |バックアップ ドメイン コントローラー (BDC) 接続などのバックエンド データ システムへの接続のレプリケート、およびコンテンツ ソースの検索は実際的ではない場合があります。  <br/> |
@@ -646,7 +646,7 @@ Ipconfig /flushdns
   
 ## <a name="see-also"></a>関連項目
 
-[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.md)
+[クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 
 
 
