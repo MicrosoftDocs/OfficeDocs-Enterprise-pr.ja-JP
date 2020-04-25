@@ -3,7 +3,7 @@ title: ユーザー ライセンスを割り当てる間、サービスへのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Office 365 PowerShell を使い、ユーザー アカウントへのライセンスの割り当てと、特定のサービス プランの無効化を同時に行う方法を説明します。
-ms.openlocfilehash: 668c801983f76ec9da93d023ebe1f74e7a6c5a6c
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 15a3e7d848d4e952e75a96108b87f59ee5bc9974
+ms.sourcegitcommit: 038ea34214149773bc53668f75d06d4d00a6a7c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206564"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43813240"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
 
@@ -124,12 +124,9 @@ $userUPN="<the user's account name in email format>"
 $accountSkuId="<the AccountSkuId from the Get-MsolAccountSku command>"
 $planList=@( <comma-separated, double-quote enclosed list of the service plans to disable> )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
-$user=Get-MsolUser -UserPrincipalName $userUPN
-$usageLocation=$user.Usagelocation
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 ```
 
 コマンド ブロックの例を以下に示します。アカウント名は belindan@contoso.com で、ライセンスは contoso:ENTERPRISEPACK であり、RMS_S_ENTERPRISE、SWAY、INTUNE_O365、YAMMER_ENTERPRISE の各サービス プランを無効にします。
@@ -139,12 +136,9 @@ $userUPN="belindan@contoso.com"
 $accountSkuId="contoso:ENTERPRISEPACK"
 $planList=@( "RMS_S_ENTERPRISE","SWAY","INTUNE_O365","YAMMER_ENTERPRISE" )
 $licenseOptions=New-MsolLicenseOptions -AccountSkuId $accountSkuId -DisabledPlans $planList
-$user=Get-MsolUser -UserPrincipalName $userUPN
-$usageLocation=$user.Usagelocation
 Set-MsolUserLicense -UserPrincipalName $userUpn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 ```
 
 ### <a name="for-multiple-users"></a>複数ユーザーの場合
@@ -171,11 +165,9 @@ ForEach ($user in $users)
 {
 $user.Userprincipalname
 $upn=$user.UserPrincipalName
-$usageLocation=$user.UsageLocation
 Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $upn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
-Set-MsolUser -UserPrincipalName $upn -UsageLocation $usageLocation
 $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Export-Csv $outFileName
 }
 ```
@@ -197,4 +189,3 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 [Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
-
