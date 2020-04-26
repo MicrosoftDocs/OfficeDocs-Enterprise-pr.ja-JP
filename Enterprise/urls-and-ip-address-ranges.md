@@ -24,19 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: ac69ea79c86cf9ae7ca110ef644ed30bcf639235
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: acccd4dbb1d9d7107542b711c5a7dd34d2f33c71
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516468"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547765"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 の URL と IP アドレスの範囲 
 
  **概要**: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。
   
 > [!NOTE]
-> COVID-19 への対応の一環として、Microsoft は、計画されている URL および IP アドレスの変更を一時的に停止しています。 これは、お客様の IT チームが、在宅勤務での Office 365 シナリオに推奨されるネットワーク最適化を安心して簡単に実装できるようにするための措置です。 2020 年 3 月 24 日から 2020 年 6 月 30 日まで、この一時停止により、主要な Office 365 サービス (Exchange Online、SharePoint Online、Microsoft Teams) の最適化のカテゴリに含まれる IP 範囲と URL の変更が中止されます。 他のエンドポイント カテゴリの変更は、通常どおりに行われます。 この期間中、お客様は Office 365 最適化カテゴリのサービス エンドポイント定義を静的に使用して、クラウド側のネットワーク変更による Office 365 接続へのリスクを最小限に抑えながら、ターゲット ネットワークの最適化 (帯域幅予約や分割トンネル VPN の構成など) を行うことができます。 期間終了時にサービスの中断が発生しないようにするため、「[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)」でのガイダンスに従って、Office 365 サービス エンドポイントの変更管理や自動化プロセスを実装することを強くお勧めします。
+> COVID-19 危機への対応の一環として、Microsoft は、計画されている URL および IP アドレスの変更を一時的に停止しています。 これは、お客様の IT チームが、在宅勤務での Office 365 シナリオに推奨されるネットワーク最適化を安心して簡単に実装できるようにするための措置です。 2020 年 3 月 24 日から 2020 年 6 月 30 日まで、この一時停止により、主要な Office 365 サービス (Exchange Online、SharePoint Online、Microsoft Teams) の最適化のカテゴリに含まれる IP 範囲と URL の変更が中止されます。 他のエンドポイント カテゴリの変更は、通常どおりに行われます。 この期間中、お客様は Office 365 最適化カテゴリのサービス エンドポイント定義を静的に使用して、クラウド側のネットワーク変更による Office 365 接続へのリスクを最小限に抑えながら、ターゲット ネットワークの最適化 (帯域幅予約や分割トンネル VPN の構成など) を行うことができます。 期間終了時にサービスの中断が発生しないようにするため、「[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)」でのガイダンスに従って、Office 365 サービス エンドポイントの変更管理や自動化プロセスを実装することを強くお勧めします。
 
 > [!NOTE]
 > Microsoft は、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開始しました。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、このページからリンクされている XML ドキュメント (2018 年 10 月 2 日に廃止済み) に代わるものです。この新しいサービスを試すには、[[Web サービス]](office-365-ip-web-service.md) にアクセスします。
@@ -70,7 +70,6 @@ ms.locfileid: "43516468"
 >[!Note]
 >Yammer IP アドレスと URL に関する推奨事項は、[このブログの投稿](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)を参照してください。
 >
-
 
 ## <a name="related-topics"></a>関連項目
 
