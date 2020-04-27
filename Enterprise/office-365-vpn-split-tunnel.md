@@ -17,24 +17,24 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 で VPN スプリット トンネリングを使用して、リモート ユーザーの Office 365 の接続を最適化する方法のガイダンスです。
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131436"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803989"
 ---
-# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する
+# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する
 <!---
 >[!NOTE]
 >This topic is part of a set of topics that address Office 365 optimization for remote users.
->- For VPN split tunnel implementation guidance, see [Implementing VPN split tunnelling for Office 365](office-365-vpn-implement-split-tunnel.md).
+>- For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-リモート ワーカー デバイスを社内ネットワークまたはクラウド インフラストラクチャに接続しているお客様の場合、主要な Office 365 (**Microsoft Teams**、**SharePoint Online**、**Exchange Online**) で _VPN スプリット トンネリング_構成を介してルーティングすることをお勧めします。 これは特に、新型コロナウイルス感染症パンデミックなど、大規模な在宅勤務において従業員の生産性を維持するための第 1 線の戦略として特に重要になります。
+リモート ワーカー デバイスを社内ネットワークまたはクラウド インフラストラクチャに接続しているお客様の場合、主要な Office 365 (**Microsoft Teams**、**SharePoint Online**、**Exchange Online**) で _VPN スプリット トンネリング_構成を介してルーティングすることをお勧めします。 これは特に、COVID-19 禍など、大多数の従業員に対して在宅勤務が要求される状況で、従業員の生産性を維持するための最前線の戦略として特に重要になっています。
 
-![スプリット トンネル VPN 構成](media/vpn-split-tunnelling/vpn-model-2.png)
+![スプリット トンネル VPN 構成](media/vpn-split-tunneling/vpn-model-2.png)
 
 _図 1: サービスに直接送信された、定義済み Office 365 例外を使用している VPN スプリット トンネル ソリューション。他のすべてのトラフィックは、接続先に関係なく VPN トンネルを通過します。_
 
@@ -46,7 +46,7 @@ _図 1: サービスに直接送信された、定義済み Office 365 例外を
 
 - インフラストラクチャやアプリケーションの要件を追加することなく、お客様が迅速に構成、テスト、実装することができる
 
-  VPN プラットフォームやネットワーク アーキテクチャによっては、実装に数時間かかる場合があります。 詳細については、「[VPN スプリット トンネリングの実装](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunnelling)」を参照してください。
+  VPN プラットフォームやネットワーク アーキテクチャによっては、実装に数時間かかる場合があります。 詳細については、「[VPN スプリット トンネリングの実装](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)」を参照してください。
 
 - インターネットへのトラフィックを含む他の接続のルーティング方法を変更しないことで、お客様の VPN 実装のセキュリティ体制を維持する
 
@@ -65,7 +65,7 @@ _図 1: サービスに直接送信された、定義済み Office 365 例外を
 
 従来の社内ネットワークは、大多数のユーザーがそうであるように、ほとんどの重要なデータ、サービス、アプリケーションが構内でホストされ、内部の社内ネットワークに直接接続するという、クラウド以前の環境で安全に動作するように設計されていることが多いです。 したがって、支社は_マルチプロトコル ラベル スイッチング (MPLS)_ ネットワークを介して本社に接続し、オンプレミスのエンドポイントとインターネットの両方にアクセスするリモート ユーザーは、VPN 経由で社内ネットワークに接続する必要があるという要素を中心に、ネットワーク インフラストラクチャが構築されます。 このモデルでは、リモート ユーザーからのすべてのトラフィックが社内ネットワークを通過し、共通の出口ポイントを通ってクラウド サービスにルーティングされます。
 
-![強制 VPN 構成](media/vpn-split-tunnelling/vpn-model-1.png)
+![強制 VPN 構成](media/vpn-split-tunneling/vpn-model-1.png)
 
 _図 2: 接続先に関係なく、すべてのトラフィックを社内ネットワークに強制的に戻すリモート ユーザー用の一般 VPN ソリューション_
 
@@ -88,11 +88,11 @@ Office 365 では、Office 365 に必要なエンドポイントは 3 つのカ�
 
 DLP、AV 保護、認証、アクセス制御などのセキュリティ要素は、これらのエンドポイントに対して、サービス内のさまざまなレイヤーでより効率的に提供されます。 また、トラフィック量の大部分を VPN ソリューションから迂回させることで、VPN に依存しているビジネス クリティカルなトラフィックのために VPN の容量を解放します。 この新しい動作方法に対処するための、多くの場合長期にわたり費用のかかるアップグレード プログラムを実行する必要もなくなります。
 
-![スプリット トンネル VPN 構成](media/vpn-split-tunnelling/vpn-model-2.png)
+![スプリット トンネル VPN 構成](media/vpn-split-tunneling/vpn-model-2.png)
 
 _図 3: サービスに直接送信された、定義済み Office 365 例外を使用している VPN スプリット トンネル ソリューション。他のすべてのトラフィックは、接続先に関係なく社内ネットワークに強制的に戻されます。_
 
-セキュリティの観点では、Microsoft には、オンプレミスのセキュリティ スタックによるインライン検査で提供されるセキュリティと同様の、またはより強化されたセキュリティを提供する機能が豊富に用意されています。 Microsoft セキュリティ チームのブログ投稿「[セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)」には、利用可能な機能が明確にまとめられていますので、より詳細なガイダンスを確認できます。 また、Microsoft による VPN スプリット トンネリングの実装については、「[VPN で実行: Microsoft がリモート ワークの従業員をどのように接続させているか](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)」を参照してください。
+セキュリティの観点では、Microsoft には、オンプレミスのセキュリティ スタックによるインライン検査で提供されるセキュリティと同様の、またはより強化されたセキュリティを提供する機能が豊富に用意されています。 Microsoft セキュリティ チームのブログ投稿「[セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)」には、利用可能な機能が明確にまとめられていますので、より詳細なガイダンスを確認できます。 また、Microsoft による VPN スプリット トンネリングの実装については、「[VPN で実行: Microsoft がリモート ワークの従業員の接続を維持している方法](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)」を参照してください。
 
 多くの場合、この実装は数時間のうちに実現できます。本格的なリモート ワークへの移行を急速に進めるにつれ、組織が直面している最も差し迫った問題の 1 つを迅速に解決することができます。 VPN スプリット トンネルの実装については、「[Office 365 向け VPN スプリット トンネリングの実装](office-365-vpn-implement-split-tunnel.md)」を参照してください。
 
@@ -115,4 +115,4 @@ _図 3: サービスに直接送信された、定義済み Office 365 例外を
 
 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
-[Office 365 ネットワーク オンボーディング ツール](https://aka.ms/netonboard)
+[Microsoft 365 の接続テスト](https://aka.ms/netonboard)
