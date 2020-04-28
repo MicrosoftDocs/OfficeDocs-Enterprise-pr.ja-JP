@@ -1,4 +1,5 @@
 # [クラウド アーキテクチャ モデル](microsoft-cloud-it-architecture-resources.md)
+# [Enterprise Cloud ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 ## [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 # [Office 365 の計画](get-your-organization-ready-for-office-365.md)
