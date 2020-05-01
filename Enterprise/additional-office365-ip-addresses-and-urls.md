@@ -3,7 +3,7 @@ title: Office 365 IP アドレスと URL Web サービスに含まれないそ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 2/27/2020
+ms.date: 04/28/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイントの Web サービスでは、特定のシナリオ用の一部のエンドポイントは含まれません。'
 hideEdit: true
-ms.openlocfilehash: 5e763b00f8b43b652809df994e933228dd7e1dfb
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: 303b3bb57ab3b29a9ad825a525793af6f476e784
+ms.sourcegitcommit: eca49563fd99f08b7ee0bba01d122b0b96de07cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315966"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930218"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL Web サービスに含まれないその他のエンドポイント
 
@@ -64,9 +64,10 @@ DNS に関するものを除き、記載された特定のシナリオを必要�
 | 16  |  **Sharepoint Online と OneDrive for Business FQDN** <br> “\<tenant>” が入ったすべての FQDN (“.sharepoint.com”) を機能させるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加えて、これらのエンドポイントも追加する必要があります。 |  | 信頼済みサイト |
 | 17  | **Yammer**  <br> Yammer はブラウザーでのみ利用でき、認証されたユーザーはプロキシを経由する必要があります。Yammer のすべての FQDN をさせるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。 |  | 信頼済みサイト |
 | 18  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。 | 詳細については、「[ハイブリッド ID で必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)」、「[Azure AD の接続のトラブルシューティング](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)」、および「[Azure AD Connect Health エージェントのインストール](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)」を参照してください。 | 送信サーバーのみのトラフィック |
-| 19  | Microsoft Stream (Azure AD ユーザー トークンが必要)。 <BR> Office 365 ワールドワイド (GCC を含む) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP ポート 443  | 受信サーバー トラフィック |
-| 20  | サーバーの新規インストールと Active Directory ドメイン サービス (AD DS) でのセットアップの両方の、多要素認証要求に MFA サーバーを使用します。 | 「[Azure Multi-Factor Authentication Server の概要](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)」を参照してください。  | 送信サーバー トラフィック |
-| 21  | Microsoft Graph の変更通知 | 開発者は、Microsoft Graph のイベントを購読するために、[変更の通知](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)を利用できます。 | *.cloudapp.net<BR> 104.43.130.21、137.116.169.230、13.79.38.63, 104.214.39.228、パブリック クラウド: 168.63.250.205, 52.161.9.202、40.68.103.62, 13.89.60.223、23.100.95.104, 40.113.95.219、104.214.32.10, 168.63.237.145、52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173、52.238.76.151, 52.244.250.211、52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136、51.5.243.223、51.4.226.154, 51.5.244.215 <BR> 21Vianet によって運営されているMicrosoft Cloud China: 139.219.15.33、42.159.154.223、42.159.88.79、42.159.155.77<BR> TCP ポート 443 <BR> 注: 開発者は、サブスクリプションの作成時にさまざまなポートを指定できます。  | 受信サーバー トラフィック |
+| 19  | 中国の 21 ViaNet の [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。 | \*.digicert.com:80 <BR> \*.verisign.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>「[Azure AD の接続に関する問題のトラブルシューティング](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)」も参照してください。 | 送信サーバーのみのトラフィック |
+| 20  | Microsoft Stream (Azure AD ユーザー トークンが必要)。 <BR> Office 365 ワールドワイド (GCC を含む) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP ポート 443  | 受信サーバー トラフィック |
+| 21  | サーバーの新規インストールと Active Directory ドメイン サービス (AD DS) でのセットアップの両方の、多要素認証要求に MFA サーバーを使用します。 | 「[Azure Multi-Factor Authentication Server の概要](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)」を参照してください。  | 送信サーバーのみのトラフィック |
+| 22  | Microsoft Graph の変更通知 | 開発者は、Microsoft Graph のイベントを購読するために、[変更の通知](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)を利用できます。 | *.cloudapp.net<BR> 104.43.130.21、137.116.169.230、13.79.38.63, 104.214.39.228、パブリック クラウド: 168.63.250.205, 52.161.9.202、40.68.103.62, 13.89.60.223、23.100.95.104, 40.113.95.219、104.214.32.10, 168.63.237.145、52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173、52.238.76.151, 52.244.250.211、52.238.78.108 <BR> Microsoft Cloud Germany: 51.4.231.136、51.5.243.223、51.4.226.154, 51.5.244.215 <BR> 21Vianet によって運営されているMicrosoft Cloud China: 139.219.15.33、42.159.154.223、42.159.88.79、42.159.155.77<BR> TCP ポート 443 <BR> 注: 開発者は、サブスクリプションの作成時にさまざまなポートを指定できます。  | 受信サーバー トラフィック |
 |||||
 
 ## <a name="related-topics"></a>関連項目
