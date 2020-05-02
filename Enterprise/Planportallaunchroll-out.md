@@ -13,14 +13,16 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 description: この記事では、SharePoint Online でのポータルの起動を計画する方法と、正常に起動するために必要な手順について説明します。
-ms.openlocfilehash: fca8b4f116510589b83748435f64ccbb3790d7c2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843768"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004110"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online でポータルの起動ロールアウトプランを計画する
 

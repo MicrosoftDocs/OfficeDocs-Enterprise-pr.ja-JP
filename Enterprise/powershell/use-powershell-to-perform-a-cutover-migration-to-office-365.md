@@ -7,18 +7,20 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 概要:Windows PowerShell を使用して Office 365 の一括移行を実行する方法について説明します。
-ms.openlocfilehash: 6f82dc8501d5dfbca7c980b025e6da7a4deb00d5
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 159ebe7d279713168993c51529b9935c6e5d681a
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844718"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004530"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>PowerShell を使用して Office 365 へのカットオーバーの移行を実行する
 

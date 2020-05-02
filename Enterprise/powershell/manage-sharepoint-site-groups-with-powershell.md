@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Office 365 PowerShell を使用して SharePoint Online サイトグループを管理します。'
-ms.openlocfilehash: c9ae4927e3c423db5ac9da4c0e7c44fcbe091e0f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3a1b999470746cbe02ec52fe888ea26b59cd423b
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841364"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004200"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイト グループを管理する
 

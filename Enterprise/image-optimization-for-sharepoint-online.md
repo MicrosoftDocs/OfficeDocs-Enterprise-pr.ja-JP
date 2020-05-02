@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: SharePoint Online の従来の発行サイトで、レンディションとスプライトを使用してイメージのパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 4fb6d2b6b553bcc938c660d9aed35bc575a31389
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 240c8240f8dec8ca24f9d231e319d35abc175c7f
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840194"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004580"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>SharePoint Online の従来の発行サイトのイメージの最適化
 

@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: この記事では、従来のロードテストを実行せずに SharePoint Online に展開する方法について説明します。これは許可されていないためです。
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844708"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004610"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>SharePoint Online のキャパシティ プランニングとロード テスト
 この記事では、SharePoint Online でロードテストが許可されていないため、従来のロードテストを行わずに SharePoint Online に展開する方法について説明します。 SharePoint Online は、クラウドサービスであり、サービスの負荷の負荷の状態、正常性、および全体的なバランスが Microsoft によって管理されます。
@@ -41,6 +43,6 @@ ms.locfileid: "41844708"
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>テスト SharePoint Online を読み込むことができない理由
 オンプレミス環境では、負荷テストを使用してスケールの仮定を検証し、最終的にはファームの限界点を見つけます。負荷で飽和状態にします。 
 
-SharePoint Online では、スケールが相対的に流動的で、一定のヒューリスティックに基づいて負荷を調整、調整し、制御するため、異なる操作を行う必要があります。 このような大規模なマルチテナント環境の場合は、同じファーム内のすべてのテナントを保護する必要があるため、すべてのロードテストが自動的に調整されます。 ただし、ロードテストを試行している場合は、現在テストしているファームでは、テスト後にテスト時間中にスケール変更が発生している可能性があるため、disappointing と、誤解を招く可能性のある結果が得られます。スケールとファームのバランス操作は、継続的に実行されます。
+SharePoint Online では、スケールが相対的に流動的で、一定のヒューリスティックに基づいて負荷を調整、調整し、制御するため、異なる操作を行う必要があります。 このような大規模なマルチテナント環境の場合は、同じファーム内のすべてのテナントを保護する必要があるため、すべてのロードテストが自動的に調整されます。 ただし、調整を試みるのではなく、テストをロードしようとすると、disappointing となる可能性がある結果を得ることができます。これは、今日テストしたファームにはテスト期間中にスケール変更があり、テスト後は規模の変更が行われている可能性があるためです。
 
 テスト SharePoint をサービスとして読み込もうとするのではなく、推奨されている手順に従うようにして、[正常なポータルガイダンスを作成、起動、および維持](https://go.microsoft.com/fwlink/?linkid=2105838)する方法について説明します。

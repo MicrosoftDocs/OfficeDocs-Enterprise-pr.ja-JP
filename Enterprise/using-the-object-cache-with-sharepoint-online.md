@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: この記事では、SharePoint Server 2013 オンプレミスと SharePoint Online でのオブジェクトキャッシュの使用との違いについて説明します。
-ms.openlocfilehash: 24d58b692667c897d2f25d41d4216a74382a5390
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e489a5f5c9438a773b7aa790ccb25d9c558729d3
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841049"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004190"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>SharePoint Online でのオブジェクトキャッシュの使用
 
