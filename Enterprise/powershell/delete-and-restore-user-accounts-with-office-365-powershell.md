@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Office 365 PowerShell を使用して Office 365 ユーザーアカウントを削除する方法について説明します。
-ms.openlocfilehash: ea803d82bb54e5430ceb9a59e8c04a0f72b200fc
-ms.sourcegitcommit: 069f56455252d6f4001ec0ecee792b83b585e692
+ms.openlocfilehash: ca9224c58bda9a0d3e226db17efeb9af8de076f0
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237808"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004680"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーアカウントを削除する
 
