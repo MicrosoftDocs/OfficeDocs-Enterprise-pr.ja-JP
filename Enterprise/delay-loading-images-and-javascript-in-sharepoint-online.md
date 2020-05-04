@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004600"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009352"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
 この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
   
-SharePoint Online では、画像がページの読み込み速度に悪影響を及ぼす可能性があります。 既定では、ほとんどのモダンインターネットブラウザーは、HTML ページの読み込み時に画像を事前に取得します。 このため、ユーザーが下にスクロールするまで画像が画面に表示されない場合は、ページが不必要に読み込まれることがあります。 画像は、ページの可視部分を読み込むことをブラウザーにブロックできます。 この問題を回避するには、まず、JavaScript を使用して画像の読み込みをスキップします。 また、必須ではない JavaScript を読み込むと、SharePoint ページの読み込み時間が遅くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript を使用してページの読み込み時間を向上させる方法について説明します。
+SharePoint Online では、画像がページの読み込み速度に悪影響を及ぼす可能性があります。 既定では、ほとんどのモダンインターネットブラウザーは、HTML ページの読み込み時に画像を事前に取得します。 このため、ユーザーが下にスクロールするまで画像が画面に表示されない場合は、ページが不必要に読み込まれることがあります。 画像は、ページの可視部分を読み込むことをブラウザーにブロックできます。 この問題を回避するには、まず、JavaScript を使用して画像の読み込みをスキップします。 また、必須ではない JavaScript を読み込むと、SharePoint ページでダウンロード時間が長くなる可能性があります。 このトピックでは、SharePoint Online の JavaScript を使用してページの読み込み時間を向上させる方法について説明します。
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用して SharePoint Online ページで画像の読み込みを遅延することで、ページの読み込み時間を短縮する
 
@@ -109,7 +109,7 @@ $('#s4-workspace').on("scroll", function () {
   
 ![ページ上に読み込まれる 1 つのイメージが表示されたスクリーンショット](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-次のスクリーンショットは、スクロール後にダウンロードされた残りの画像を表示します。
+次のスクリーンショットは、スクロール後にダウンロードされた残りの画像を示しています。
   
 ![ページ上に読み込まれる複数のイメージが表示されたスクリーンショット](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
@@ -121,7 +121,7 @@ GitHub で提供されている[JavaScript インジェクション](https://go.
   
 ## <a name="see-also"></a>関連項目
 
-[Office 2013 および Office 365 ProPlus でサポートされているブラウザー](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 でサポートされているブラウザーおよびエンタープライズ向け Microsoft 365 アプリ](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

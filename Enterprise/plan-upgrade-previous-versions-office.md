@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古く、サポートされていないアプリとサーバーで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 407f3d9570916ab4373dbb4e34f4cb6e57ebc7f7
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503805"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009482"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
 
@@ -84,11 +84,11 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 
 この時点では、アップグレードしないことを選択することもできます。 Office アプリは引き続き実行されます。 Office サポート日付のタイムラインは[こちらで](https://go.microsoft.com/fwlink/p/?linkid=2085724)入手できます。 ただし、アップグレードでは、セキュリティ更新プログラムまたは新機能と強化された機能が提供されます。
    
-## <a name="what-is-microsoft-365"></a>Microsoft 365とは何ですか？
+## <a name="what-is-microsoft-365"></a>Microsoft 365 とは
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365)は、Office 365、Windows 10、Enterprise Mobility + SECURITY (EMS) の組み合わせにより、すべてのユーザーがクリエイティブで共同作業し、安全に共同作業を行えるようにする完全なインテリジェントソリューションを提供します。 
   
-Office 2007 または Office 2010 サーバーおよびクライアントは Office 365 に移行できますが、Microsoft 365 には、組織が最新の Windows オペレーティングシステムでの動作を保証するためのライセンスと機能が含まれていますが、お客様のデバイス (Windows、iOS、Android を含む) が登録され、認証とデータ保護を必要とするポリシーでセキュリティ保護 さらに、Windows 10 と Office 365 ProPlus クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されます。
+Office 2007 または Office 2010 サーバーおよびクライアントは Office 365 に移行できますが、Microsoft 365 には、組織が最新の Windows オペレーティングシステムでの動作を保証するためのライセンスと機能が含まれていますが、お客様のデバイス (Windows、iOS、Android を含む) が登録され、認証とデータ保護を必要とするポリシーでセキュリティ保護 さらに、Windows 10 と Microsoft 365 Apps for enterprise (旧称 Office 365 ProPlus) クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されています。
   
 Microsoft 365 は、絶えず改善されたデバイスと生産性のエクスペリエンスを使用して、Microsoft クラウドで有効にし、セキュリティで保護されたビジネスをデジタルに変換する方法です。
   

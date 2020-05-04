@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844928"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009362"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
@@ -68,7 +68,7 @@ Office 365、Windows Update、TechNet などのすべての Microsoft アプリ�
 
 <sup>1</sup>これらの各アプリケーションには、ExpressRoute でサポートされていないインターネット接続要件があります。詳細については、「 [Office 365 endpoints](https://aka.ms/o365endpoints) 」の記事を参照してください。
 
-Office 365 の ExpressRoute に含まれていないサービスには、Office 365 ProPlus クライアントダウンロード、社内 Id プロバイダーのサインイン、および中国での Office 365 (21 Vianet) サービスがあります。
+Office 365 用の ExpressRoute に含まれていないサービスは、エンタープライズクライアントのダウンロード用の Microsoft 365 アプリ、オンプレミスの Id プロバイダーのサインイン、および中国での Office 365 (21 Vianet) サービスを対象としています。
 
 ## <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -96,13 +96,13 @@ ExpressRoute を実装するには、ネットワークとアプリケーショ�
 
 Office 365 の ExpressRoute を購入するには、1つまたは複数の[承認](https://azure.microsoft.com/documentation/articles/expressroute-locations/)されたプロバイダーと連携して、必要な数とサイズの回路を ExpressRoute Premium サブスクリプションでプロビジョニングする必要があります。 Office 365 から購入する追加のライセンスはありません。
 
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 [Office 365 の ExpressRoute](https://aka.ms/ert)にサインアップする準備ができましたか?
 
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
 
 [Office 365 向け ExpressRoute の管理](managing-expressroute-for-connectivity.md)
 

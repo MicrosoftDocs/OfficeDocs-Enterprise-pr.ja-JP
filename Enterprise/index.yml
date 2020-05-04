@@ -9,12 +9,12 @@ metadata:
   author: wingtofree
   ms.author: v-qingao
   ms.date: 03/12/2020
-  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
-  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.openlocfilehash: 8397c93d6632710a036b2de7ef604451c5c42e70
+  ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/21/2020
-  ms.locfileid: "42891499"
+  ms.lasthandoff: 05/03/2020
+  ms.locfileid: "44009292"
 landingContent:
 - title: Office 365 Enterprise について
   linkLists:
@@ -24,8 +24,8 @@ landingContent:
       url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
     - text: 組織のデータを Office 365 Enterprise に移行する
       url: migrate-data-to-office-365.md
-    - text: Office 365 ProPlus の展開ガイド
-      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: Microsoft 365 Apps for enterprise の展開ガイド
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps
     - text: Office 365 Enterprise を組織で展開する
       url: setup-overview-for-enterprises.md
     - text: ハイブリッド展開

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 展開アドバイザーを使用して、Office 365 または Microsoft 365 の計画と構成を促進します。
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840534"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009393"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Office 365 または Microsoft 365 サービスの展開アドバイザー
 
@@ -159,23 +159,23 @@ Gmail がある場合は、Gmail の連絡先と Google の予定表アイテム
 
 ## <a name="file-creation-storage-and-sharing"></a>ファイルの作成、保存、共有
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
-Office 365 ProPlus は、最新バージョンの Office でユーザーを取得して実行し、それらを更新したままにします。
+Microsoft 365 enterprise (旧称 Office 365 ProPlus) では、ユーザーを最新バージョンの Office で実行し、更新した状態を維持します。
 
 Office を PC または Mac にインストールするための手順については、このガイドを参照してください。
 
 |||
 |:-------|:-----|
-| **実行** |  [Office 365 ProPlus クイックスタートガイド](https://aka.ms/OPPquickstartguide) <BR> |
+| **実行** |  [Microsoft 365 Apps for enterprise クイックスタートガイド](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Office 365 ProPlus の展開アドバイザーでは、ユーザーが office 365 ポータル online から Office 365 ProPlus を直接インストールする、または社内の場所からユーザーに Office 365 ProPlus を展開するのに役立つ手順について説明します。 Microsoft エンドポイント構成マネージャー、グループポリシースタートアップスクリプト、オペレーティングシステムディスクイメージ、またはリモートデスクトップサービス (RDS) 共有ライセンス認証を使用するための手順が含まれています。
+Office 展開アドバイザーでは、ユーザーが Office 365 ポータル online からエンタープライズ向けの Microsoft 365 アプリを直接インストールする、または社内の場所からユーザーに Microsoft 365 アプリを展開する際に役立つ手順について説明します。 Microsoft エンドポイント構成マネージャー、グループポリシースタートアップスクリプト、オペレーティングシステムディスクイメージ、またはリモートデスクトップサービス (RDS) 共有ライセンス認証を使用するための手順が含まれています。
 
 |||
 |:-------|:-----|
-| **実行** | [Office 365 ProPlus 展開アドバイザー](https://aka.ms/o365proplusdeploy) | 
-| **注目** | [サブスクリプションサービスとしての Office の利便性](https://aka.ms/qo45jf) <BR> [Office 365 ProPlus の概要](https://aka.ms/r359zr) | 
+| **実行** | [Office 展開アドバイザー](https://aka.ms/o365proplusdeploy) | 
+| **注目** | [サブスクリプションサービスとしての Office の利便性](https://aka.ms/qo45jf) <BR> [エンタープライズ向け Microsoft 365 アプリの概要](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ OneDrive for Business でファイルの保存、共有、同期をすばやく�
 
 |||
 |:-------|:-----|
-| **実行** | [Office 365 ProPlus 展開アドバイザー](https://aka.ms/o365proplusdeploy) | 
+| **実行** | [Office 展開アドバイザー](https://aka.ms/o365proplusdeploy) | 
 | **注目** | [OneDrive for Business の統合された利点](https://aka.ms/f66hqa) <BR> [OneDrive へようこそ: 別のクラウドストレージプロバイダーから送られる](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -236,7 +236,7 @@ Active Directory フェデレーションサービス (AD FS) を使用してフ
 | **実行** |  [Azure AD 基本セットアップガイド](https://aka.ms/azureadbasic) |
 |||
 
-多要素認証、シングルサインオン (SSO)、device registration、セルフサービスパスワードとグループ管理、セキュリティ監視などの id 管理機能を提供する Azure AD Premium の多くの機能を有効にするには、このガイドを使用します。.
+多要素認証、シングルサインオン (SSO)、device registration、セルフサービスパスワードとグループ管理、セキュリティ監視などの id 管理機能を提供する Azure AD Premium の多くの機能を有効にするには、このガイドを使用します。
   
 |||
 |:-------|:-----|

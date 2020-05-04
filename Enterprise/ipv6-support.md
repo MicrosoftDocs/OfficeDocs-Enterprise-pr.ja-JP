@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: Microsoft Office 365 コンポーネントおよび Office 365 government 製品の IPv6 サポートについて説明します。'
-ms.openlocfilehash: 13fd1cfef26f5e69c87f650c46f71071b72f2d15
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 939b5653981cb78dfa316e0baf1c498a3db97904
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206544"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009312"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 サービスでの IPv6 サポート
 
@@ -57,7 +57,7 @@ Exchange Online Protection (EOP) は、転送がトランスポート層セキ�
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Office 365 government 製品の IPv6 サポート
 
-Office 365 の IPv6 サポートは、経営部門および省庁の最高情報責任者、およびインターネットプロトコルバージョン 6 (IPv6) Memorandum の連邦政府機関による管理と予算 (OMB) Memorandum のオフィスに準拠しています。 [Microsoft Office 365 For government](https://go.microsoft.com/fwlink/p/?LinkId=325414)は、政府機関のデータを分離されたコミュニティクラウドに保存するマルチテナントサービスです。 他の Office 365 製品と同様に、Exchange Online、Skype for Business、SharePoint Online、Office 365 ProPlus を含む、生産性とコラボレーションのサービスを提供します。 
+Office 365 の IPv6 サポートは、経営部門および省庁の最高情報責任者、およびインターネットプロトコルバージョン 6 (IPv6) Memorandum の連邦政府機関による管理と予算 (OMB) Memorandum のオフィスに準拠しています。 [Microsoft Office 365 For government](https://go.microsoft.com/fwlink/p/?LinkId=325414)は、政府機関のデータを分離されたコミュニティクラウドに保存するマルチテナントサービスです。 他の Office 365 製品と同様に、Exchange Online、Skype for Business、SharePoint Online、Microsoft 365 Apps for enterprise を含む、生産性とコラボレーションのサービスを提供します。 
 
 Microsoft Office 365 government のサービスは2013以降にのみ適用されます。 Office 365 government 製品の詳細については、「米国政府機関[向け office 365 の発表: US Government Community Cloud](https://go.microsoft.com/fwlink/p/?LinkId=325414)」を参照してください。 国際通話のトラフィック (ITAR) とは、米国の[Munitions リスト (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)での、防衛関連の記事およびサービスのエクスポートとインポートを制御する米国政府規制のセットです。 
 

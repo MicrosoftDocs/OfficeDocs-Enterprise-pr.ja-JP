@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772108"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009302"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -74,7 +74,7 @@ SharePoint Online を移行すると、以下のサービスのデータも移�
     
 - S ブラウザーの Office
     
-- Office 365 ProPlus
+- Microsoft 365 Apps for enterprise
     
 - Visio Pro for Office 365
     

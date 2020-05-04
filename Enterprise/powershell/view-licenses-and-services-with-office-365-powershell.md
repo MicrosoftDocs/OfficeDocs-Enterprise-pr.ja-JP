@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Office 365 PowerShell を使ってライセンス プラン、サービス、Office 365 組織で利用可能なライセンスについての情報を確認する方法について説明します。
-ms.openlocfilehash: a130faef640e875bde864ff26e46863e82f6df7a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004140"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009532"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Office 365 PowerShell でライセンスとサービスを確認する
 
@@ -33,7 +33,7 @@ Office 365 サブスクリプションは、すべて以下の要素で構成さ
 
 - **ライセンスプラン**これらは、ライセンスプランまたは Office 365 プランとも呼ばれます。 ライセンス プランでは、ユーザーが利用可能な Office 365 サービスを定義します。 Office 365 サブスクリプションには、複数のライセンス プランが含まれる場合があります。 たとえば、Office 365 Enterprise E3 というライセンス プランがあります。
     
-- **サービス**これらはサービスプランとも呼ばれます。 サービスは、Exchange Online や Office 365 ProPlus など、各ライセンスプランで利用可能な Office 365 製品、機能、および機能です。 ユーザーは、さまざまなサービスへのアクセスを許可するさまざまなライセンス プランから割り当てられた複数のライセンスを持つことができます。
+- **サービス**これらはサービスプランとも呼ばれます。 サービスは、各ライセンスプランで利用可能な Office 365 製品、機能、および機能 (以前の Office 365 ProPlus) など、各ライセンス365プランで利用できる機能です。 ユーザーは、さまざまなサービスへのアクセスを許可するさまざまなライセンス プランから割り当てられた複数のライセンスを持つことができます。
     
 - **ライセンス** すべてのライセンス プランには、購入した数のライセンスが含まれています。ライセンスをユーザーに割り当てると、ライセンス プランで定義した Office 365 サービスが使えるようになります。それぞれのユーザー アカウントに、少なくとも 1 つのライセンス プランからの 1 つのライセンスが必要です。これにより、ユーザーが Office 365 にログオンして、サービスを利用することができます。
     
@@ -141,7 +141,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 enterprise 用アプリ *(旧称 Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |

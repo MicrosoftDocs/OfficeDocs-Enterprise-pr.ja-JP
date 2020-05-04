@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 76f61942a4b3f832b75f4a098452748898d2e8c5
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503820"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009522"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
@@ -42,7 +42,7 @@ SharePoint 2010 および Project Server 2010 は、 **2021 年4月 13**日に�
 
 - Office 365 には、Exchange Server、SharePoint Server、Teams や OneDrive for business などのサービスといった Office 2010 サーバー製品用のクラウドベースのサービスがあります。 
 
-- Office 365 ProPlus には、Office 365 E3 および E5 と Microsoft 365 Enterprise に含まれていますが、ローカルデバイスにインストールする Office クライアントアプリのセットです。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
+- Office 365 E3 および E5 および Microsoft 365 Enterprise に含まれている Microsoft 365 enterprise for enterprise (旧称 Office 365 ProPlus) は、ローカルデバイスにインストールする Office クライアントアプリのセットです。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
 
 Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
