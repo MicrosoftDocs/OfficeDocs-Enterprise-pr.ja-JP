@@ -111,7 +111,7 @@
 ## [3. セキュリティを実装する](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. クライアント ソフトウェアを展開する
-### [Office 365 ProPlus を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Microsoft 365 Apps for enterprise を展開する](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [Skype for Business クライアントを展開する](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [モバイル アプリの展開と管理](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 

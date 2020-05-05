@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 で VPN スプリット トンネリングを使用して、リモート ユーザーの Office 365 の接続を最適化する方法のガイダンスです。
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803989"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901220"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する
 <!---
@@ -78,6 +78,7 @@ Office 365 サービスについては、Microsoft はこの問題を念頭に�
 Office 365 では、Office 365 に必要なエンドポイントは 3 つのカテゴリ (**最適化**、**許可**、**既定**) に分類されています。 **最適化** のエンドポイントはここでの焦点であり、次の特徴があります。
 
 - Microsoft インフラストラクチャにホストされている Microsoft が所有および管理するエンドポイントである
+- Exchange Online、SharePoint Online、Skype for Business Online、Microsoft Teams など、Office 365 のコア ワークロード専用
 - IP が提供されている
 - 変化率が低く、数も少ないと予想される (現在 20 の IP サブネット)
 - 大量のトラフィックや遅延の影響を受けやすい

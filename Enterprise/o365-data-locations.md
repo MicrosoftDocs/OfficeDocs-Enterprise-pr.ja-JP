@@ -1,7 +1,7 @@
 ---
 title: Office 365 のデータの場所
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 03/09/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Office 365 のデータの場所'
-ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516538"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798818"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 次の表は、Microsoft のすべてのグローバル クラウドの場所で、Office 365 サービスの顧客データが保存されている場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
 
-顧客は、**[設定] | [組織プロファイル] | [データ場所のカード]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧できます。
+顧客は、**[設定] | [組織プロファイル] | [データ場所のカード]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧します。
 
 新しいOffice 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて既定で Geo に設定されます。
 
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
 
 
-COVID-19 を取り巻く未曾有の状況により、および欧州のオンライン サービスの需要を管理する必要から、お客様の組織が教育機関の場合は、欧州連合 (EU)、欧州自由貿易連合 (EFTA)、英国 (UK)、米国 (US)、またはカナダ (CA) に Office 365 テナントをプロビジョニングするか、またはお客様のデータを EU、EFTA、英国、米国、またはカナダの任意のデータ センターに移動する場合があります。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
+COVID-19 危機とそれを取り巻く未曾有の状況により、および欧州のオンライン サービスの需要を管理する必要から、お客様の組織が教育機関の場合は、欧州連合 (EU)、欧州自由貿易連合 (EFTA)、英国 (UK)、米国 (US)、またはカナダ (CA) に Office 365 テナントをプロビジョニングするか、またはお客様のデータを EU、EFTA、英国、米国、またはカナダの任意のデータ センターに移動する場合があります。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
 
 
 
@@ -230,7 +230,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
 | Skype for Business | グローバル地域 2 – アジア太平洋 |
-| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
+| Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
@@ -391,7 +391,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -483,7 +483,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -874,7 +874,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
 | Skype for Business | グローバル地域 2 – アジア太平洋 |
-| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
@@ -1771,7 +1771,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 3 - アメリカ |
 | SharePoint Online | グローバル地域 3 - アメリカ |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
 | MyAnalytics | グローバル地域 3 - アメリカ |
@@ -1828,29 +1828,6 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
-| Workplace Analytics | 米国 |
-</p></details>
-
-## <a name="federated-states-of-micronesia"></a>ミクロネシア連邦
-<details><summary>クリックして展開</summary><p>
-
-| サービス | 場所 |
-| --- | --- |
-| Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Sway | 米国 |
-| Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2047,7 +2024,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2162,7 +2139,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | MyAnalytics | 米国 |
@@ -2806,7 +2783,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -2944,7 +2921,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3979,7 +3956,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4025,7 +4002,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 2 – アジア太平洋 |
 | SharePoint Online | グローバル地域 2 – アジア太平洋 |
 | Skype for Business | グローバル地域 2 – アジア太平洋 |
-| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
@@ -4278,7 +4255,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4462,7 +4439,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | MyAnalytics | 米国 |
@@ -4485,7 +4462,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | MyAnalytics | 米国 |
@@ -4761,7 +4738,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | MyAnalytics | 米国 |
@@ -4899,7 +4876,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | 米国 |
 | SharePoint Online | 米国 |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
+| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
 | MyAnalytics | 米国 |
@@ -5106,7 +5083,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5336,7 +5313,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5589,7 +5566,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Skype for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
