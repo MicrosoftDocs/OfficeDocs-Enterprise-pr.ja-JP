@@ -3,7 +3,7 @@ title: Office 365 グローバル管理者アカウントの保護
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 05/04/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,17 +19,14 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 サブスクリプションへのグローバル管理者アクセスを保護します。
-ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979369"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013410"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 グローバル管理者アカウントの保護
-
-> [!NOTE]
-> グローバル管理者アカウントは、ライセンスを追加することなく作成できます。
 
 *この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
@@ -45,8 +42,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
 2. 専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、最強のセカンダリ認証形式を使用します。
     
-> [!NOTE]
-> この記事ではグローバル管理者アカウントに重点を置いていますが、電子情報開示管理者やセキュリティまたはコンプライアンス管理者など、さまざまな範囲のアクセス許可を持つ追加のアカウントがサブスクリプション内のデータにアクセスできるかどうかを考慮する必要があります。アカウントは、同じ方法で保護する必要があります。 
+> [!注] この記事ではグローバル管理者アカウントに重点を置いていますが、サブスクリプション内のデータにアクセスするための広範な権限を持つ追加のアカウント (電子情報開示管理者やセキュリティまたはコンプライアンス管理者アカウントなど) を同じ方法で保護する必要があるかどうかを検討する必要があります。 <br > グローバル管理者アカウントは、ライセンスを追加することなく作成できます。
   
 ## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1.  専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
 
@@ -60,7 +56,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
 
 2. グローバル管理者の役割が割り当てられているユーザーアカウントを使用して、Office 365 サブスクリプションにサインインします。
     
-3. 少なくとも1つの専用のグローバル管理者ユーザーアカウントを作成します。 **少なくとも12文字の強力なパスワードを使用してください。** 詳細について[は、「強力なパスワードを作成する](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password)」を参照してください。 新しいアカウントのパスワードを安全な場所に格納します。 
+3. 最大4つの専用のグローバル管理者ユーザーアカウントを作成します。 **少なくとも12文字の強力なパスワードを使用してください。** 詳細について[は、「強力なパスワードを作成する](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password)」を参照してください。 新しいアカウントのパスワードを安全な場所に格納します。 
     
 4. 新しい専用のグローバル管理者ユーザーアカウントに、グローバル管理者の役割を割り当てます。
     
@@ -91,13 +87,15 @@ Microsoft は、組織を保護するための機能を提供していますが�
 > [!NOTE]
 > これには、日常のユーザーアカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要になります。 ただし、この操作を実行する必要があるのは、全体管理者の操作の場合だけです。 グローバル管理者アカウント違反の後に Office 365 サブスクリプションを回復するには、さらに多くの手順が必要になることに注意してください。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>手順 2.  専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、最強のセカンダリ認証形式を使用する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>手順 2.  専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、強力な検証方法を使用する
 
-多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Office 365 では、次の認証方法がサポートされています。
+多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Office 365 では、次の追加の検証方法がサポートされています。
   
+- Microsoft Authenticator アプリ
+
 - 電話
     
-- ランダムに生成されるパス コード
+- テキストメッセージを使用して送信された、ランダムに生成された検証コード
     
 - スマート カード (仮想または物理)
     
@@ -107,15 +105,15 @@ Microsoft は、組織を保護するための機能を提供していますが�
   
 1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
     
-2. [Office 365 の2段階認証をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、認証方法として電話呼び出しまたはテキストメッセージの各専用のグローバル管理者アカウントを構成します。 
+2. [Office 365 の MFA をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、認証方法として電話番号またはテキストメッセージのそれぞれの専用のグローバル管理者アカウントを構成します。 
     
 Office 365 ハイブリッド id モデルを使用している大規模な組織の場合は、さらに多くの検証オプションがあります。 より強力なセカンダリ認証方法に対してセキュリティインフラストラクチャが既に配置されている場合は、次の手順を実行します。
   
 1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
     
-2. [Office 365 の2段階認証をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、適切な検証方法にそれぞれの専用のグローバル管理者アカウントを構成します。 
+2. [Office 365 の MFA をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、適切な検証方法にそれぞれの専用のグローバル管理者アカウントを構成します。 
     
-目的の強力な検証方法のセキュリティインフラストラクチャが、Office 365 MFA に適していない場合は、電話呼び出しまたはテキストメッセージを使用して MFA で専用のグローバル管理者アカウントを構成することを強くお勧めします。中間のセキュリティ対策として、グローバル管理者アカウントのスマートフォンに送信される検証コード。 MFA で提供される追加の保護を行わずに、専用のグローバル管理者アカウントを残さないようにします。
+目的の強力な検証方法のセキュリティインフラストラクチャが、Office 365 MFA に適していない場合は、一時的なセキュリティ対策として、グローバル管理者アカウントのスマートフォンに送信されるテキストメッセージ検証コードを使用して、専用のグローバル管理者アカウントを MFA で構成することを強くお勧めします。 MFA で提供される追加の保護を行わずに、専用のグローバル管理者アカウントを残さないようにします。
   
 詳細については、「[Office 365 展開用の多要素認証の計画](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)」を参照してください。
   
@@ -138,16 +136,15 @@ PAW をセットアップする方法については、「 [https://aka.ms/cyber
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-グローバル管理者アカウントにグローバル管理者の役割を永続的に割り当てるのではなく、Azure AD 特権 Id 管理 (PIM) を使用して、オンデマンドで、グローバル管理者の役割が設定されている場合にそのまま一度に割り当てることができます。に.
+グローバル管理者アカウントにグローバル管理者の役割を永続的に割り当てるのではなく、Azure AD Privileged Identity Management (PIM) を使用して、必要に応じて、グローバル管理者の役割をオンデマンドで一度だけ割り当てられるようにすることができます。
   
 全体管理者アカウントを永続的な管理者として使用するのではなく、管理者となります。 グローバル管理者の役割は、ユーザーが必要とするまで非アクティブです。 次に、アクティブ化プロセスを完了して、グローバル管理者の役割を、あらかじめ決められた時間だけグローバル管理者アカウントに追加します。 時間が経過すると、PIM はグローバル管理者アカウントから全体管理者の役割を削除します。
   
 PIM を使用すると、このプロセスによって、グローバル管理者アカウントが悪意のあるユーザーの攻撃および使用に対して脆弱になる時間が大幅に短縮されます。
+
+PIM は、Microsoft 365 Enterprise E5 または Enterprise Mobility + Security (EMS) E5 に含まれている Azure AD Premium P2 で利用できます。また、全体管理者アカウントの個別のライセンスを購入することもできます。
   
 詳細については、「 [AZURE AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)」を参照してください。
-  
-> [!NOTE]
-> PIM は、Microsoft 365 Enterprise E5 または Enterprise Mobility + Security (EMS) E5 に含まれている Azure AD Premium P2 で利用できます。また、全体管理者アカウントの個別のライセンスを購入することもできます。 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Office 365 ログ用のセキュリティ情報およびイベント管理 (SIEM) ソフトウェア
 
