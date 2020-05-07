@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: '概要: Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Office ProPlus で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。'
-ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
-ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
+description: '概要: Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Microsoft 365 Apps for enterprise で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。'
+ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43037804"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009372"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
- **概要:** Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Office ProPlus で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。
+ **概要:** Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Microsoft 365 Apps for enterprise で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。
   
 これらのアーキテクチャ ツールおよびポスターでは、Office 365、Windows 10、Azure Active Directory, Microsoft Intune、Microsoft Dynamics 365、および プライベート クラウドのデータ センター、オンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードに最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。 
   
@@ -224,11 +224,11 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Microsoft の最新のセキュリティで保護されたデスクトップの展開
 
-Windows 10 での Office 365 ProPlus の更新プログラムの展開と管理について IT アーキテクトが知る必要のある事柄。
+Windows 10 での Microsoft 365 Apps for enterprise (旧称 Office 365 ProPlus) の更新プログラムの展開と管理について IT アーキテクトが知る必要のある事柄。
   
-|**アイテム**|**説明**|
+|**項目**|**説明**|
 |:-----|:-----|
-|[![Microsoft の最新のセキュリティで保護されたデスクトップの展開に関するモデルのサムネイル](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | このモデルには次のものが含まれています。 <ul><li>  Microsoft Cloud から Windows 10 と Office ProPlus を展開する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Office ProPlus を展開する </li><li>  Microsoft Cloud から Windows 10 と Office ProPlus の更新プログラムを管理する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Office ProPlus の更新プログラムを管理する </li><li>  Windows 10 のすぐに使用可能な追加保護機能 </li></ul><br/> |
+|[![Microsoft の最新のセキュリティで保護されたデスクトップの展開に関するモデルのサムネイル](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | このモデルには次のものが含まれています。 <ul><li>  Microsoft クラウドから Windows 10 および Microsoft 365 Apps for enterprise を展開する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Microsoft 365 Apps for enterprise を展開する </li><li>  Microsoft クラウドから Windows 10 および Microsoft 365 Apps for enterprise の更新プログラムを管理する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Microsoft 365 Apps for enterprise の更新プログラムを管理する </li><li>  Windows 10 のすぐに使用可能な追加保護機能 </li></ul><br/> |
    
 ## <a name="see-also"></a>関連項目
 
