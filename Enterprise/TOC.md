@@ -132,7 +132,7 @@
 
 ## 高度な展開
 
-### [Office 365 Multi-Geo](office-365-multi-geo.md)
+### [Microsoft 365 Multi-Geo](office-365-multi-geo.md)
 #### [OneDrive と SharePoint の複数地域機能](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
 #### [Exchange Multi-Geo](multi-geo-capabilities-in-exchange-online.md)
 #### [複数地域機能の計画](plan-for-multi-geo.md)
@@ -147,7 +147,7 @@
 ##### [SharePoint サイトの移動](move-sharepoint-between-geo-locations.md)
 ##### [地域管理者を追加または削除する](add-a-sharepoint-geo-admin.md)
 ##### [地理的位置にコンテンツを制限する](restrict-content-to-geo-location.md)
-##### [Office 365 Multi-Geo eDiscovery の構成](multi-geo-ediscovery-configuration.md)
+##### [Microsoft 365 Multi-Geo eDiscovery の構成](multi-geo-ediscovery-configuration.md)
 ##### [特定 PDL でのグループの作成](multi-geo-add-group-with-pdl.md)
 ##### [地理的位置の削除](delete-a-geo-location.md)
 ##### [あなたの衛星位置情報で、SharePoint Multi-Geo を有効に](enabling-SP-multigeo-satellite-geolocation.md)
@@ -189,20 +189,6 @@
 ### [ユーザー アカウント管理ツール](manage-office-365-accounts.md)
 ### [同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
-
-### ゲストと共同で作業する
-#### [ゲストで共有するリファレンス](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### ゲストで共有するシナリオ
-##### [ゲストの共同作業の概要](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [ドキュメントでの共同作業](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [サイトで共同作業をする](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [チームで共同作業をする](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### ゲスト共有のセキュリティ
-##### [認証されていない共有](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [偶発的な公開を制限する](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [ゲスト共有の環境を保護する](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [B2B エクストラネットを作成する](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-### [共有を制限する](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## デバイス
 ### [MDM または Intune を選択する](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
