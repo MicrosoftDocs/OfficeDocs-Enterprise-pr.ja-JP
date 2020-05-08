@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: '概要: Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Microsoft 365 Apps for enterprise で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。'
-ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: '概要: Microsoft ID、セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する際の、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。'
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009372"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013430"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
- **概要:** Microsoft ID, セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。Microsoft のクラウドを使用する場合は、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。Windows 10 および Microsoft 365 Apps for enterprise で最新のセキュリティで保護されたデスクトップを展開する方法について説明します。
+ **概要:** Microsoft ID、セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。 Microsoft のクラウドを使用する際の、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。
   
 これらのアーキテクチャ ツールおよびポスターでは、Office 365、Windows 10、Azure Active Directory, Microsoft Intune、Microsoft Dynamics 365、および プライベート クラウドのデータ センター、オンプレミスとクラウドのハイブリッド ソリューションを含む Microsoft クラウド サービスについての情報を提供します。IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードに最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。 
   
@@ -52,7 +52,6 @@ ms.locfileid: "44009372"
     - [GDPR のための Office 365 の情報保護](#office-365-information-protection-for-gdpr)
     - [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Microsoft テレフォニー ソリューション](#microsoft-telephony-solutions) 
-    - [Microsoft の最新のセキュリティで保護されたデスクトップの展開](microsoft-cloud-it-architecture-resources.md#msd)
     
 ご意見を電子メールで [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com) 宛てにお送りください。 
 
@@ -221,15 +220,6 @@ Microsoft では、Microsoft クラウド内の Teams の使用を開始する�
 
 詳細については、このポスターの記事を参照してください: [Microsoft テレフォニー ソリューション](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)。
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Microsoft の最新のセキュリティで保護されたデスクトップの展開
-
-Windows 10 での Microsoft 365 Apps for enterprise (旧称 Office 365 ProPlus) の更新プログラムの展開と管理について IT アーキテクトが知る必要のある事柄。
-  
-|**項目**|**説明**|
-|:-----|:-----|
-|[![Microsoft の最新のセキュリティで保護されたデスクトップの展開に関するモデルのサムネイル](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | このモデルには次のものが含まれています。 <ul><li>  Microsoft クラウドから Windows 10 および Microsoft 365 Apps for enterprise を展開する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Microsoft 365 Apps for enterprise を展開する </li><li>  Microsoft クラウドから Windows 10 および Microsoft 365 Apps for enterprise の更新プログラムを管理する </li><li>  Microsoft Endpoint Configuration Manager を使用して Windows 10 と Microsoft 365 Apps for enterprise の更新プログラムを管理する </li><li>  Windows 10 のすぐに使用可能な追加保護機能 </li></ul><br/> |
-   
 ## <a name="see-also"></a>関連項目
 
 [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
