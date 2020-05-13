@@ -22,23 +22,23 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミス ユーザーに非ルーティング ドメインが関連付けられている場合、Office 365 との同期前に実行する手順について説明します。
-ms.openlocfilehash: 10ec92ff19bd5e74363bced9a2f29c356c7fa4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 056ff528e0ba03795fecb76543db021f9a89b87e
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841224"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208768"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
-Office 365 とオンプレミス ディレクトリとの同期時には、Azure Active Directory 内に確認済みのドメインを用意する必要があります。オンプレミス ドメインに関連付けられたユーザー プリンシパル名 (UPN) のみが同期されます。ただし、.local などの非ルーティング ドメインが含まれている UPN (例: billa@contoso.local) は、.onmicrosoft.com ドメイン (例: billa@contoso.onmicrosoft.com) と同期されるようになります。 
+オンプレミスのディレクトリを Office 365 と同期する場合は、Azure Active Directory (Azure AD) で確認済みのドメインを用意する必要があります。 オンプレミスのドメインに関連付けられているユーザープリンシパル名 (UPN) のみが同期されます。 ただし、ルーティング可能ではないドメイン (たとえば billa@contoso ローカル) を含む任意の UPN は、onmicrosoft.com ドメイン (billa@contoso.onmicrosoft.com など) に同期されます。 
 
-現在、Active Directory 内のユーザー アカウントに .local ドメインを使用している場合は、Office 365 ドメインとの正しい同期のために、確認済みのドメイン (例: billa@contoso.com) を使用するようにユーザー アカウントを変更することをお勧めします。
+現在、Active Directory ドメインサービス (AD DS) のユーザーアカウントにローカルドメインを使用している場合は、Office 365 ドメインと正しく同期するために、確認済みドメイン (billa@contoso.com など) を使用するように変更することをお勧めします。
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>オンプレミス ドメインが .local のみの場合について
 
-Active Directory と Azure Active Directory の同期には、Azure AD Connect という最新のツールを使用できます。詳細については、「[オンプレミスの ID と Azure Active Directory を統合する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)」を参照してください。
+AD DS を Azure AD に同期するために使用できる最新のツールは、Azure AD Connect という名前です。 詳細については、「[オンプレミス id と AZURE AD を統合する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)」を参照してください。
   
-Azure AD Connect では、ユーザーがオンプレミスで使用している資格情報と同じものを使用してサインイン可能になるように、ユーザーの UPN とパスワードを同期します。ただし、Azure AD Connect によるユーザーの同期は、Office 365 で確認済みのドメインのみを対象としています。Office 365 の ID は Azure Active Directory によって管理されるため、ドメインも Azure Active Directory によって確認されていることになります。つまり、ドメインは有効なインターネット ドメイン (com、.org、.net、.us など) であることが必要になります。内部の Active Directory が非ルーティング ドメイン (例: .local) のみを使用している場合は、そのドメインが Office 365 の確認済みドメインと一致する可能性はありません。この問題は、オンプレミスの Active Directory のプライマリ ドメインを変更するか、1 つ以上の UPN サフィックスを追加することで解決できます。
+Azure AD Connect は、ユーザーの UPN とパスワードを同期して、ユーザーがオンプレミスで使用したものと同じ資格情報でサインインできるようにします。 ただし、Azure AD Connect は、Office 365 によって検証されるドメインに対してのみユーザーを同期します。 これは、Office 365 id が Azure AD によって管理されているため、ドメインも Azure AD によって検証されることを意味します。 言い換えると、ドメインは有効なインターネットドメインである必要があります (例: .com、.org、.net、. us など)。 内部 AD DS がルーティング可能ではないドメイン (たとえば、...) を使用している場合、これは Office 365 上の確認済みドメインと一致しない可能性があります。 この問題を解決するには、オンプレミスの AD DS でプライマリドメインを変更するか、1つ以上の UPN サフィックスを追加します。
   
 ### <a name="change-your-primary-domain"></a>**プライマリ ドメインを変更する**
 
@@ -46,13 +46,13 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN サフィックスを追加してユーザーを更新する**
 
-.local の問題は、Office 365 で確認したドメインと一致する新しい UPN サフィックスを Active Directory に登録することで解決できます。新しいサフィックスの登録後に、ユーザー アカウントが billa@contoso.com のようになるように、.local を置換することでユーザー UPN を更新します。
+ローカルの問題を解決するには、Office 365 で確認したドメイン (またはドメイン) に一致するように、AD DS に新しい UPN サフィックスまたはサフィックスを登録します。 新しいサフィックスを登録した後、ユーザーの Upn を更新して、を新しいドメイン名に置き換えます。たとえば、ユーザーアカウントが billa@contoso.com のように見えるようにします。
   
-確認済みのドメインを使用するように UPN を更新すると、オンプレミスの Active Directory を Office 365 と同期するための準備が整います。
+認証済みドメインを使用するように Upn を更新すると、オンプレミスの AD DS を Office 365 と同期することができます。
   
  **手順 1: 新しい UPN サフィックスを追加する**
   
-1. Active Directory ドメイン サービス (AD DS) を実行しているサーバーで、サーバー マネージャの **[ツール]** \> **[Active Directory ドメインと信頼関係]** を選択します。
+1. AD DS ドメインコントローラーのサーバーマネージャーで、[**ツール**] [ \> **Active Directory ドメインと信頼関係**] の順に選択します。
     
     **または (Windows Server 2012 を所有していない場合)**
     
@@ -62,7 +62,7 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
   
 2. **[Active Directory ドメインと信頼関係]** ウィンドウで、**[Active Directory ドメインと信頼関係]** を右クリックして **[プロパティ]** を選択します。
     
-    ![[Active Directory ドメインと信頼関係] を右クリックして [プロパティ] を選択します](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![[Active Directory ドメインと信頼関係] を右クリックし、[プロパティ] を選択します。](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
 3. **[UPN サフィックス]** タブの **[代替の UPN サフィックス]** ボックスに、新しいサフィックスを入力して **[追加]** \> **[適用]** を選択します。
     
@@ -72,7 +72,7 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
     
  **手順 2: 既存のユーザーの UPN サフィックスを変更する**
   
-1. Active Directory ドメイン サービス (AD DS) を実行しているサーバーで、サーバー マネージャの **[ツール]** \> **[Active Directory ユーザーとコンピューター]** を選択します。
+1. AD DS ドメインコントローラーで、サーバーマネージャーの [**ツール**] [ \> **Active Directory ユーザーとコンピューター**] を選択します。
     
     **または (Windows Server 2012 を所有していない場合)**
     
@@ -91,12 +91,12 @@ Azure AD Connect では、ユーザーがオンプレミスで使用している
 
 更新するユーザー数が大量になる場合は、Windows PowerShell を使用すると作業が簡単になります。次の例では、コマンドレット [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) と [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) を使用して、すべての contoso.local サフィックスを contoso.com に変更します。 
 
-次の Windows PowerShell コマンドを実行すると、すべての contoso.local サフィックスが contoso.com に更新されます。
+用の例では、次の Windows PowerShell コマンドを実行して、すべての contoso. ローカルサフィックスを contoso.com に更新することができます。
     
   ```powershell
-  $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
-  $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
+  $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null
+  $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-Active Directory の Windows PowerShell を使用する方法の詳細については、「[Active Directory Windows PowerShell モジュール](https://go.microsoft.com/fwlink/p/?LinkId=624314)」を参照してください。 
+AD DS での Windows PowerShell の使用の詳細については、「 [Active Directory Windows powershell モジュール](https://go.microsoft.com/fwlink/p/?LinkId=624314)」を参照してください。 
 

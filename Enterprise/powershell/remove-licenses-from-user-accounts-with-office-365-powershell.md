@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してユーザー アカウントから�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/20/2020
+ms.date: 05/12/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
-ms.openlocfilehash: fe25f07d222f05b938a980781a86ab16bf8dd03b
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4a99fb115b7c3241beb2cb3b0dd83666622747d5
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004660"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208758"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
 
@@ -60,7 +60,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 
 まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
    
-組織のライセンスプラン (**AccountSkuID** ) 情報を表示するには、以下のトピックを参照してください。
+組織のライセンス プラン (**AccountSkuID**) 情報を表示する方法については、以下のトピックをご覧ください。
     
   - [Office 365 PowerShell でライセンスとサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -87,26 +87,32 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 ```
 
 >[!Note]
->コマンドレットを使用`Set-MsolUserLicense`して、*取り消さ*れたライセンスからユーザーを割り当て解除することはできません。 この操作は、Microsoft 365 管理センターのユーザーアカウントごとに個別に行う必要があります。
+>コマンドレットを使用して、 `Set-MsolUserLicense` *取り消さ*れたライセンスからユーザーを割り当て解除することはできません。 この操作は、Microsoft 365 管理センターのユーザーアカウントごとに個別に行う必要があります。
 >
 
-ライセンス付与済みの既存のユーザーのグループからライセンスを削除するには、次のいずれかの方法を使用します。
+既存のライセンスを持つユーザーのグループからすべてのライセンスを削除するには、次のいずれかの方法を使用します。
   
 - **既存のアカウント属性に基づいてアカウントをフィルターする** これを行うには、次の構文を使用します。
     
 ```powershell
-$x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
+$userArray = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
+for ($i=0; $i -lt $userArray.Count; $i++)
+{
+Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+}
 ```
 
-この例では、米国内の販売部門のユーザーのすべてのアカウントから**litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスを削除します。
+この例では、米国内の販売部門のすべてのユーザーアカウントからすべてのライセンスを削除します。
     
 ```powershell
-$USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
-$USSales | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
+for ($i=0; $i -lt $userArray.Count; $i++)
+{
+Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
+}
 ```
 
-- **特定のアカウントの一覧を使用する** これを行うには、次の手順を実行します。
+- **特定のライセンスに対して特定のアカウントの一覧を使用**するこれを行うには、次の手順を実行します。
     
 1. 次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成し、保存します。
     
@@ -119,7 +125,7 @@ kakers@contoso.com
 2. 次の構文を使用してください。
     
   ```powershell
-  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
+  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId>" }
   ```
 
 この例では、テキストファイル C:\My Documents\accounts.txt で定義されているユーザーアカウントから**litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスを削除します。
@@ -131,12 +137,10 @@ kakers@contoso.com
 すべての既存のユーザーアカウントからすべてのライセンスを削除するには、次の構文を使用します。
   
 ```powershell
-$users = Get-MsolUser -All | where {$_.isLicensed -eq $true}
-ForEach($user in $users)
+$userArray = Get-MsolUser -All | where {$_.isLicensed -eq $true}
+for ($i=0; $i -lt $userArray.Count; $i++)
 {
-$licenses = $user.Licenses.AccountSkuId
-ForEach ($lic in $licenses)
-{ Set-MsolUserLicense -UserPrincipalName $user.UserPrincipalName -RemoveLicenses $lic }
+Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveLicenses $userArray[$i].licenses.accountskuid
 }
 ```
 

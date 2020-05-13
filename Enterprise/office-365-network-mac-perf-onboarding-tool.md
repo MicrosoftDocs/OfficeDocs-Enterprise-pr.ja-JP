@@ -1,5 +1,5 @@
 ---
-title: M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)
+title: Microsoft 365 の接続テスト (プレビュー) (Microsoft 365 管理センター)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612877"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208798"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 の接続テスト (Microsoft 365 管理センター) (プレビュー)
 
-Microsoft 365 の接続テストは、に<https://connectivity.office.com>あります。 このツールは、Microsoft 365 管理センターで利用可能なネットワーク insights およびネットワークスコア情報に対する adjunct ツールであり、正常性の下にあります。 **[ネットワークパフォーマンス**] メニュー
+Microsoft 365 の接続テストは、にあり <https://connectivity.office.com> ます。 このツールは、Microsoft 365 管理センターで利用可能なネットワーク insights およびネットワークスコア情報に対する adjunct ツールであり、正常性の下にあります。 **[ネットワークパフォーマンス**] メニュー
 
 >[!NOTE]
 >オンボードツールは、世界各地の商用および GCC ではサポートされていますが、GCC High、DoD、ドイツ、中国のテナントはサポートしていません。
@@ -37,7 +37,7 @@ Microsoft 365 管理センターの各オフィスの場所についてネット
 
 ## <a name="the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーション
 
-Microsoft 365 の接続テストには2つの部分があります。 Web サイト<https://connectivity.office.com>があり、ダウンロード可能な Windows クライアントアプリケーションがあります。 ダウンロード可能なクライアントは、高度なネットワーク接続テストを実行し、ほとんどのテストでこれを実行する必要があります。
+Microsoft 365 の接続テストには2つの部分があります。 Web サイトがあり、 <https://connectivity.office.com> ダウンロード可能な Windows クライアントアプリケーションがあります。 ダウンロード可能なクライアントは、高度なネットワーク接続テストを実行し、ほとんどのテストでこれを実行する必要があります。
 
 Web サイトからアドバンストクライアントテストを実行すると、実行時に結果が web ページに再び読み込まれます。
 
@@ -103,19 +103,19 @@ Exchange Online サービスのフロントドアに対するユーザーのオ�
 
 ## <a name="media-quality-checks"></a>メディア品質チェック
 
-このテストでは、Skype for Business ネットワーク評価ツールをインストールして実行し、結果を解釈します。 このツールは、で[https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885)見つけることができます。
+このテストでは、Skype for Business ネットワーク評価ツールをインストールして実行し、結果を解釈します。 このツールは、で見つけることができ [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) ます。
 
 これらは、Microsoft Teams の音声およびビデオ通話および会議機能で使用される UDP プロトコルテストです。 Udp パケット損失、udp ネットワーク遅延、UDP ジッタ、および UDP パケットの再オーダーをテストします。 これらのいずれかが許容範囲を超えている場合は、ネットワークの洞察が表示されます。
 
 ## <a name="tcp-connectivity-tests"></a>TCP 接続テスト
 
-ユーザーのオフィスの場所から、必要なすべての Microsoft 365 ネットワークエンドポイントへの HTTP 接続をテストします。 これらは、で[https://aka.ms/o365ip](https://aka.ms/o365ip)公開されます。 に接続できない必要なネットワークエンドポイントに対して、ネットワークの洞察が表示されます。
+ユーザーのオフィスの場所から、必要なすべての Microsoft 365 ネットワークエンドポイントへの HTTP 接続をテストします。 これらは、で公開され [https://aka.ms/o365ip](https://aka.ms/o365ip) ます。 に接続できない必要なネットワークエンドポイントに対して、ネットワークの洞察が表示されます。
 
 接続 ay は、プロキシサーバー、ファイアウォール、またはエンタープライズネットワーク境界またはクラウドプロキシとして使用されている別のネットワークセキュリティデバイスによってブロックされます。
 
 ## <a name="ssl-interception-tests"></a>SSL 傍受テスト
 
-「」で定義されている、「optimize or allow category」に記載されている必要な[https://aka.ms/o365ip](https://aka.ms/o365ip)各 Microsoft 365 ネットワークエンドポイントで、SSL 証明書をテストします。 いずれかのテストで Microsoft SSL 証明書が見つからない場合は、暗号化されたネットワークが仲介ネットワークデバイスによって傍受されている必要があります。 ネットワークの洞察は、傍受されたネットワークエンドポイントに表示されます。
+「」で定義されている、「optimize or allow category」に記載されている必要な各 Microsoft 365 ネットワークエンドポイントで、SSL 証明書をテストし [https://aka.ms/o365ip](https://aka.ms/o365ip) ます。 いずれかのテストで Microsoft SSL 証明書が見つからない場合は、暗号化されたネットワークが仲介ネットワークデバイスによって傍受されている必要があります。 ネットワークの洞察は、傍受されたネットワークエンドポイントに表示されます。
 
 Microsoft によって提供されていない SSL 証明書が見つかった場合は、テストの FQDN と使用中の SSL 証明書の所有者が表示されます。 この SSL 証明書の所有者は、プロキシサーバーのベンダーである場合もあれば、エンタープライズ自己署名証明書の場合もあります。
 
