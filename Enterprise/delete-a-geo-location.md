@@ -12,20 +12,20 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Office 365 Multi-Geo でサテライトの場所を削除する方法について説明します。
-ms.openlocfilehash: 702f42eb9211d6c3c4f59812c6894855b169f587
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Office 365 Multi-Geo でサテライトの場所を削除する方法を説明します。
+ms.openlocfilehash: 840c1bf494ddcd7e6558b134655b5cb708bf6e7b
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974866"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057643"
 ---
-# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Office 365 Multi-Geo でサテライトの場所を削除する
+# <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Office 365 Multi-Geo でサテライトの場所を削除する
 
 サテライトの場所が不要になった場合は、SharePoint 管理センターのテナントから削除できます。
 
 > [!WARNING]
-> すべてのサテライトの場所のユーザー データは永久に削除されます。 これには、OneDrive for Business のすべてのコンテンツ、SharePoint サイト、および Office 365 グループ メール ボックスを含む Exchangeメール ボックスが含まれます。 サテライトの場所を削除する前に、データを別のサテライトの場所または集中管理する場所に移行する必要があります。 この操作は元に戻せません。
+> すべてのサテライトの場所のユーザー データは永久に削除されます。 これには、すべての OneDrive for Business コンテンツ、SharePoint サイトと Exchange メールボックス (Microsoft 365 グループ メールボックスを含む) が含まれます。 サテライトの場所を削除する前に、データを別のサテライトの場所または集中管理する場所に移行する必要があります。 この操作は元に戻せません。
 
 サテライトの場所はグローバル管理者のみが削除できます。
 
