@@ -3,7 +3,7 @@ title: Office 365 グローバル管理者アカウントの保護
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Office 365 サブスクリプションへのグローバル管理者アクセスを保護します。
-ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
+ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
+ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013410"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44253294"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 グローバル管理者アカウントの保護
 
@@ -44,7 +44,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
 > [!注] この記事ではグローバル管理者アカウントに重点を置いていますが、サブスクリプション内のデータにアクセスするための広範な権限を持つ追加のアカウント (電子情報開示管理者やセキュリティまたはコンプライアンス管理者アカウントなど) を同じ方法で保護する必要があるかどうかを検討する必要があります。 <br > グローバル管理者アカウントは、ライセンスを追加することなく作成できます。
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1.  専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
+## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. 専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
 
 グローバル管理者特権を必要とする、ユーザーアカウントへの役割の割り当てなど、比較的少数の管理タスクがあります。 そのため、グローバル管理者の役割が割り当てられている日常のユーザーアカウントを使用する代わりに、次の手順を実行します。
   
@@ -101,6 +101,10 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
 - 生体認証デバイス
     
+>[!Note]
+>米国標準規格とテクノロジ (NIST) 標準に準拠する必要がある組織では、電話またはテキストメッセージベースの追加の検証方法を使用することは制限されています。 詳細については、[ここ](https://pages.nist.gov/800-63-FAQ/#q-b01)をクリックしてください。
+>
+
 クラウドのみに格納されているユーザーアカウントを使用している小規模な企業 (クラウドのみの id モデル) の場合は、次の手順を使用して、電話呼び出しまたはスマートフォンに送信されたテキストメッセージの検証コードを使用して MFA を構成します。
   
 1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
@@ -132,7 +136,7 @@ MFA と PowerShell を使用して Office 365 サービスに接続するには�
 
 高い権限を持つタスクの実行が可能な限り安全であることを確認するには、特権アクセスワークステーション (PAW) を使用します。 PAW は、グローバル管理者アカウントを必要とする Office 365 構成など、機密性の高い構成タスクにのみ使用される専用のコンピューターです。 このコンピューターはインターネットブラウジングや電子メールで毎日使用されていないため、インターネット攻撃および脅威から保護するのが適切です。
   
-PAW をセットアップする方法については、「 [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw)」を参照してください。
+PAW をセットアップする方法については、「」を参照してください [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) 。
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
