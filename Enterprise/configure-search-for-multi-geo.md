@@ -1,5 +1,5 @@
 ---
-title: Office 365 Multi-Geo 用に検索を構成する
+title: Office 365 Multi-Geo ために検索を構成する
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Multi-Geo 環境で検索を構成する方法について説明します。
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974009"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057673"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Office 365 Multi-Geo 用に検索を構成する
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
 Multi-Geo 環境では、それぞれの地域の場所にはその場所固有の検索インデックスと検索センターがあります。 ユーザーが検索すると、クエリはすべてのインデックスに対して展開され、返された結果は結合されます。
 
@@ -102,7 +102,7 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 </tr>
 <tr class="even">
 <td align="left">ハイブリッド検索</td>
-<td align="left"><a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">クラウド ハイブリッド検索</a>を使用するハイブリッド SharePoint 環境では、オンプレミス コンテンツは中央の場所の Office 365 インデックスに追加されます。</td>
+<td align="left"><a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">クラウド ハイブリッド検索</a>を使用するハイブリッド SharePoint 環境では、オンプレミス コンテンツが中央の場所の Office 365 インデックスに追加されます。</td>
 <td align="left"></td>
 </tr>
 </tbody>
