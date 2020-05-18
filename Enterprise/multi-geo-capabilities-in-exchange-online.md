@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Exchange Online の Multi-Geo 機能について説明します。
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890549"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057977"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online の Multi-Geo 機能
 
@@ -45,11 +45,11 @@ Exchange online は、** PreferredDataLocation** プロパティを、Azure AD �
 
 - **PreferredDataLocation**コードが誤っている場合 (たとえば、NAMでなくNANと入力した場合)、メールボックスは中央の 地理的位置にプロビジョニングされます。
 
-**注**: 複数地域の機能と Skype for Business Online が地域的にホストする会議のいずれの場合も、ユーザーオブジェクトの **PreferredDataLocation** プロパティがサービスを見つけます。 地域的に管理されている会議用のユーザーオブジェクトに** PreferredDataLocation** の値を構成すると、そのユーザーのメールボックスは、Office 365 テナントで複数地域が有効になった後、指定した地理的位置に自動的に移動します。
+**注**: 複数地域の機能と Skype for Business Online が地域的にホストする会議のいずれの場合も、ユーザーオブジェクトの **PreferredDataLocation** プロパティがサービスを見つけます。 地域でホストされる会議用のユーザー オブジェクトに** PreferredDataLocation** の値を構成すると、そのユーザーのメールボックスは、Microsoft 365 テナントで複数地域が有効になった後、指定した地理的位置に自動的に移動します。
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Exchange Online における複数地域の機能に関する制限
 
-- Exchange 管理センター (EAC) で利用できるセキュリティ機能およびコンプライアンス機能（たとえば、監査や電子情報開示）は、複数地域の組織では利用できません。 セキュリティとコンプライアンスの機能を構成するには、[Office 365 セキュリティ/コンプライアンス センター](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)を使用する必要があります。
+- Exchange 管理センター (EAC) で利用できるセキュリティ機能およびコンプライアンス機能（たとえば、監査や電子情報開示）は、複数地域の組織では利用できません。 セキュリティとコンプライアンスの機能を構成するには、[Microsoft 365 セキュリティ/コンプライアンス センター](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8)を使用する必要があります。
 
 - Outlook for Mac を使用している場合は、メールボックスを新しい地理的位置に移動する際、オンラインアーカイブ フォルダーに一時的にアクセスできなくなることがあります。 この状態は、ユーザーのプライマリメールボックスとアーカイブメールボックスが異なる地理的位置にある場合に発生します。これは、複数地域のメールボックスの移動が異なる時刻に完了する可能性があるためです。
 
