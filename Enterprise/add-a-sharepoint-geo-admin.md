@@ -11,15 +11,15 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords:
 - NOCSH
-description: Office 365 Multi-Geo で地域管理者を追加または削除する方法について説明します。
-ms.openlocfilehash: 4225cd73aa243fadde21e5bd2d248fe54f738e33
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Microsoft 365 Multi-Geo で地域管理者を追加または削除する方法について説明します。
+ms.openlocfilehash: f2cb71f26216d859c00cefb10661608178e19315
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974199"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057703"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Office 365 Multi-Geo で地域管理者を追加または削除する
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo で地域管理者を追加または削除する
 
 テナント内にある地域の場所ごとに個別の管理者を構成することができます。 これらの管理者は、各自の地域の場所に固有の SharePoint Online と OneDrive の設定にアクセスすることができます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "41974199"
 
 ### <a name="adding-a-group-as-a-geo-admin"></a>地域管理者としてのグループの追加
 
-地域管理者として、セキュリティ グループまたはメールが有効なセキュリティ グループを追加できます。(配布グループと Office 365 グループはサポートされていません。)
+地域管理者として、セキュリティ グループまたはメールが有効なセキュリティ グループを追加できます。(配布グループと Microsoft 365 グループはサポートされていません。)
 
 地域管理者としてグループを追加するには、`Add-SPOGeoAdministrator -GroupAlias <alias>` を実行します。
 

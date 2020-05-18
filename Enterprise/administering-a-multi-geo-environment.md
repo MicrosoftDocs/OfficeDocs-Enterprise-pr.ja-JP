@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974029"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057663"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
-ここでは、複数地域環境で Office 365 のサービスが動作するしくみについて説明します。
+ここでは、複数地域環境で Microsoft 365 のサービスが動作するしくみについて説明します。
 
 ## <a name="audit-log-search"></a>監査ログ検索
 
-すべてのサテライト地域に対して統合された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Office 365 監査ログの検索ページから利用できます。 すべての地域からの監査ログのエントリを参照できます。たとえば、NAM ユーザーと EUR ユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。
+すべてのサテライト地域に対して統合された[監査ログ](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)は、Microsoft 365 監査ログの検索ページから利用できます。 すべての地域からの監査ログのエントリを参照できます。たとえば、NAM ユーザーと EUR ユーザーのアクティビティが、1 つの組織ビューに表示され、既存のフィルターを適用することで特定のユーザーのアクティビティを確認できます。
 
 ## <a name="bcs-secure-store-apps"></a>BCS、Secure Store、Apps
 
@@ -36,7 +36,7 @@ BCS、Secure Store、およびすべての App は、各サテライトの場所
 
 ## <a name="ediscovery"></a>電子情報開示 
 
-デフォルトでは、複数地域のテナントの eDiscovery Manager またはeDiscovery Administrator が、そのテナントの中心地でのみ電子情報の開示ができるようになります。 Office 365 全体管理者は、別のユーザーが電子情報開示を実行できるように電子情報開示マネージャーのアクセス許可を割り当てる必要があります。また、サテライトの場所として電子情報開示を実施する地域を指定するために該当するコンプライアンス セキュリティ フィルターで "Region" パラメーターを割り当てる必要があります。それ以外の場合は、サテライトの場所で電子情報開示は実施されません。 地域のコンプライアンス セキュリティ フィルター を構成するには、[Office 365 Multi-Geo eDiscovery の構成](multi-geo-ediscovery-configuration.md)を参照してください。
+デフォルトでは、複数地域のテナントの eDiscovery Manager またはeDiscovery Administrator が、そのテナントの中心地でのみ電子情報の開示ができるようになります。 Microsoft 365 全体管理者は、別のユーザーが電子情報開示を実行できるように電子情報開示マネージャーのアクセス許可を割り当てる必要があります。また、サテライトの場所として電子情報開示を実施する地域を指定するために該当するコンプライアンス セキュリティ フィルターで "Region" パラメーターを割り当てる必要があります。それ以外の場合は、サテライトの場所で電子情報開示は実施されません。 地域のコンプライアンス セキュリティ フィルター を構成するには、「[Microsoft 365 Multi-Geo eDiscovery の構成](multi-geo-ediscovery-configuration.md)」を参照してください。
 
 ## <a name="exchange-mailboxes"></a>Exchange メールボックス
 
@@ -64,7 +64,7 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 
 ## <a name="security-and-compliance-admin-center"></a>セキュリティ/コンプライアンス管理センター
 
-複数地域テナントには、[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com/?rfr=AdminCenter\#/homepage)という 1 つの中心的なコンプライアンス センターがあります。
+複数地域テナントには、[Microsoft 365 セキュリティ/コンプライアンス センター](https://protection.office.com/?rfr=AdminCenter\#/homepage)という 1 つの中心的なコンプライアンス センターがあります。
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint のストレージ クォータ
 
@@ -98,7 +98,7 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 - ヨーロッパ
 - アジア太平洋
 
-ただし Stream は、現在 Office 365 ビデオ向けにサポートされている次の地域ではまだ使用できません。そのため、これらのローカル インスタンスには、サポートされている最も近い地域にある RMS を使用します。
+ただし Stream は、現在 Microsoft 365 ビデオ向けにサポートされている次の地域ではまだ使用できません。そのため、これらのローカル インスタンスには、サポートされている最も近い地域にある RMS を使用します。
 
 - オーストラリア
 - カナダ
