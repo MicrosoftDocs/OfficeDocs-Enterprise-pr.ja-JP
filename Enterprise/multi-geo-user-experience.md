@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: 複数地域環境での SharePoint、OneDrive、および Exchange のユーザー エクスペリエンスについて説明します。
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974219"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057753"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>複数地域環境でのユーザー エクスペリエンス
 
@@ -32,7 +32,7 @@ ms.locfileid: "41974219"
 
 SharePoint ハブ サイトは、プロジェクト、部門、または地域の完全で一貫した表現を作成しながら、従業員のためのコンテンツの発見とエンゲージメントを強化します。 複数地域の環境では、ハブ サイトの地理的な場所に関係なく、サテライトの場所のサイトをハブ サイトに簡単に関連付けることができます。 ユーザーは、サイトの地理的な場所に関係なく、単一の検索エクスペリエンスを通じてハブ全体で検索して結果を得ることができます。
 
-## <a name="office-365-app-launcher"></a>Office 365 アプリ起動ツール
+## <a name="microsoft-365-app-launcher"></a>Microsoft 365 アプリ起動ツール
 
 アプリ起動ツールは、Multi-Geo に対応していて、各タイルをワークロードの適切な地域の場所に差し向けます。 SharePoint と OneDrive のタイルは、ユーザーにプロビジョニングされた地理的な場所に対応する場所をポイントします。 つまり、ユーザーは中央の場所に OneDrive を持っており、その SharePoint タイルは中央の場所にある SP Home をポイントしますが、グループ サイトは PDL に対応する場所にプロビジョニングされます。 
 
