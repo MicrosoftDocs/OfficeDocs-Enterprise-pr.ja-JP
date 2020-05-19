@@ -23,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844858"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280216"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
 
@@ -54,7 +54,14 @@ Office 365 サービスの場合、モダン認証の既定の状態は次のと
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Office クライアントアプリのサインイン動作
 
-Office 2013 クライアントアプリは、既定で従来の認証をサポートしています。 従来の場合は、Microsoft Online サインインアシスタントまたは基本認証のいずれかをサポートしています。 これらのクライアントが先進認証機能を使用するためには、Windows クライアントにレジストリキーが設定されています。 手順については、「 [Windows デバイスで Office 2013 の先進認証を有効にする](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)」を参照してください。
+Office 2013 クライアントアプリは、既定で従来の認証をサポートしています。 従来の場合は、Microsoft Online サインインアシスタントまたは基本認証のいずれかをサポートしています。 これらのクライアントが先進認証機能を使用するためには、Windows クライアントにレジストリキーが設定されている必要があります。 手順については、「 [Windows デバイスで Office 2013 の先進認証を有効にする](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)」を参照してください。
+
+Microsoft Office 2013 がインストールされている Windows を実行しているデバイス (たとえばノート PC やタブレット) で先進認証を有効にするには、次のレジストリ キーを設定する必要があります。先進認証を有効にするデバイスごとに、次のキーを設定する必要があります。
+  
+|**レジストリ キー**|**型**|**値** |
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 Skype for business での[先進認証 (ADAL) の使用](https://go.microsoft.com/fwlink/p/?LinkId=785431)方法については、「方法」を参照してください。 
   

@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974019"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058007"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
-OneDrive 地域移動により、ユーザーの OneDrive を別の地域に移動できます。OneDrive 地域移動は、SharePoint Online 管理者または Office 365 全体管理者が実行します。OneDrive 地域移動を開始する前に、移動する OneDrive の所有ユーザーに通知して、移動中はすべてのファイルを閉じておくように勧告してください (移動中に、ユーザーが Office クライアントを使用してドキュメントを開いている場合は、移動の完了時にドキュメントを新しい場所に保存する必要があります)。移動は、将来に実行するように必要に応じてスケジュールできます。
+OneDrive 地域の移動を利用すると、ユーザーの OneDrive を別の地域に移動できます。OneDrive 地域の移動は、SharePoint Online 管理者または Microsoft 365 全体管理者によって実行されます。OneDrive 地域の移動を開始する前に、移動する OneDrive の所有ユーザーに通知して、移動中はすべてのファイルを閉じておくようにお勧めします。 (移動中に、ユーザーが Office クライアントを使用してドキュメントを開く場合は、移動の完了時にドキュメントが新しい場所に保存される必要があります)。移動は、将来の日付で実行するように必要に応じてスケジュールできます。
 
 OneDrive サービスでは、コンテンツの保存に Azure Blob Storage が使用されます。ユーザーの OneDrive に関連付けられた Storage Blob は、ユーザーが移動先の OneDrive を利用できるようになってから 40 日以内に移動元から移動先の地域の場所に移動されます。ユーザーの OneDrive へのアクセスは、移動先の OneDrive が利用できるようになった直後に復元されます。
 
-OneDrive 地域移動の期間中 (約 2 ～ 6 時間)、ユーザーの OneDrive は読み取り専用に設定されます。その間、ユーザーは OneDrive 同期クライアントまたは SharePoint Online の OneDrive サイトからファイルにアクセスできます。OneDrive 地域移動の完了後に、ユーザーが Office 365 アプリ起動ツールで OneDrive に移動すると、移動先の地域の場所にある OneDrive に自動的に接続されます。同期クライアントは、新しい場所からの同期を自動的に開始します。
+OneDrive 地域の移動の期間中 (約 2 ～ 6 時間)、ユーザーの OneDrive は読み取り専用に設定されます。ユーザーは今まで通り OneDrive 同期クライアントまたは SharePoint Online の OneDrive サイトからファイルにアクセスできます。OneDrive 地域の移動の完了後に、ユーザーが Microsoft 365 アプリ起動ツールで OneDrive に移動すると、移動先の地域の場所にある OneDrive に自動的に接続されます。同期クライアントは、新しい場所からの同期を自動的に開始します。
 
 この記事の手順には、[Microsoft Office SharePoint Online の PowerShell モジュール](https://www.microsoft.com/download/details.aspx?id=35588)が必要になります。
 
@@ -163,7 +163,7 @@ OneDrive 地域移動の状態は、Get-SPOUserAndContentMoveState コマンド�
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-移動が進行中のときには、ユーザーの OneDrive が読み取り専用に設定されます。移動の完了後に、ユーザーが Office 365 アプリ起動ツールまたは Web ブラウザーで OneDrive に移動すると、ユーザーは新しい地域の場所の OneDrive に転送されます。
+移動が進行している間、ユーザーの OneDrive が読み取り専用に設定されます。移動の完了すると、ユーザーが Microsoft 365 アプリ起動ツールまたは Web ブラウザーを OneDrive に移動すると、ユーザーは新しい地域の場所で OneDrive に転送されます。
 
 ### <a name="permissions-on-onedrive-content"></a>OneDrive コンテンツに対するアクセス許可
 

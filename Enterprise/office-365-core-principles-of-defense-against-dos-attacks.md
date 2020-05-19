@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft は、サービス拒否 (DoS) 攻撃に対する防御において、吸収、検出、軽減の中心となる原則を活用する方法について説明します。
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844528"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278080"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する防御の主要な原則
 
@@ -36,7 +36,7 @@ DoS 攻撃に対して適切に防御するには、早期の検出が不可欠�
 
 次の式を使用すると、DoS 攻撃の影響に近い時間を見積もることができます。
 
-   **最大容量 (バイト/秒)/増加率 (バイト/秒) = 影響時間 (バイト/秒)**
+   **最大容量 (バイト/秒)/増加率 (バイト/秒) = 影響時間 (秒)**
 
 影響が発生した後に検出時間が経過すると、DoS 攻撃が成功する可能性が高くなります。 問題が発生するまでの時間が非常に大きくなった場合、攻撃対象のサービスは、軽減戦略が使用されていれば、オンライン状態のままにしてアクセスできます。 そのため、DoS 攻撃に対して防御するには、次の2つのことを行うことができます。
 
