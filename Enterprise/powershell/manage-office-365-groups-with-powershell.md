@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell で Office 365 グループの一般的な管理タスクを実行する方法を説明します。
-ms.openlocfilehash: bab98ac641b03bd30ea8acbc8d4dacd55073f62f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a9b481d7448c65a8860ef44d6d7f8980c3dd91d8
+ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841444"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352957"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell で Office 365 グループを管理する
 
@@ -46,7 +46,7 @@ ms.locfileid: "41841444"
 ## <a name="allow-users-to-send-as-the-office-365-group"></a>ユーザーが Office 365 グループとして送信することを許可する
 <a name="BK_LinkToGuideLines"> </a>
   
-Office 365 グループの「メールボックス所有者として送信する」を有効にする場合は、[Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) と [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) コマンドレットを使用して構成します。 この設定を有効にすると、Office 365 グループのユーザーは Outlook または Outlook on the web を使用して、Office 365 グループとしてメールを送信および返信することができます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。 
+Office 365 グループの「メールボックス所有者として送信する」を有効にする場合は、[Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) と [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) コマンドレットを使用して構成します。 この設定を有効にすると、Office 365 グループのユーザーは Outlook または Outlook on the web を使用して、Office 365 グループとしてメールを送信および返信することができます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。 
 
 ([Exchange 管理センターでもこれを行うことができます](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
   
@@ -89,7 +89,7 @@ $setting["ClassificationDescriptions"] ="Classification:Description,Classificati
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-上の Azure Active Directory コマンドレットを実行して分類を設定した後、特定のグループに分類を設定する場合は、[Set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) コマンドレットを実行します。 
+上の Azure Active Directory コマンドレットを実行して分類を設定した後、特定のグループに分類を設定する場合は、[Set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/Set-UnifiedGroup) コマンドレットを実行します。 
   
 ```
 Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact> 
@@ -167,7 +167,7 @@ Outlook の Office 365 グループは、既定で非公開として作成され
   
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
   
-詳細については、「[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig)」および「[Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig)」を参照してください。
+詳細については、「[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)」および「[Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)」を参照してください。
   
 ## <a name="office-365-groups-cmdlets"></a>Office 365 グループのコマンドレット
 

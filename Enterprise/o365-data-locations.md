@@ -1,7 +1,7 @@
 ---
 title: Office 365 のデータの場所
-ms.author: andyber
-author: andybergen
+ms.author: deanw
+author: dmwmsft
 manager: laurawi
 ms.date: 03/09/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Office 365 のデータの場所'
-ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+ms.openlocfilehash: dbf38ef682ba9a7fcbb98139a9923406d1249264
+ms.sourcegitcommit: ecfa4e6538f9a30cd8c53e3bc446e057aa5097f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798818"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256382"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -54,7 +54,7 @@ Microsoft セキュリティ センターで[さまざまな種類のデータ�
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>データ センターの正確な所在地はどこですか?
 
-Microsoft は、データ センターの正確な所在地を開示しません。 このポリシーは、データ センター施設のセキュリティを強化するために確立されました。
+Microsoft は、データ センターの正確な所在地を開示しません。 このポリシーは、データ センター施設のセキュリティを強化するために確立されました。  ただし、都市の場所は記載しています。 詳細については、「[データ センターの場所](https://docs.microsoft.com/office365/enterprise/o365-data-locations#data-center-locations)」を参照してください。
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>顧客データの場所は、エンドユーザーのエクスペリエンスに直接影響を与えますか?
 
@@ -84,7 +84,7 @@ Office 365 は、保存中および転送中の顧客データを暗号化する
 
 Microsoft Azure のデータ常駐情報については、[地域別に利用可能な製品](https://go.microsoft.com/fwlink/p/?linkid=2093451)ページを確認してください。
 
-### <a name="what-are-multi-geo-capabilities-in-office-365"></a>Office 365 の複数地域機能とは何ですか?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 の複数地域機能とは何ですか?
 
 [複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)機能とは、1 つの Office 365 テナントで複数の地域の Office 365 データ センターを利用するための機能です。Office 365 のコア カスタマー データをどの地域に保管するかを、ユーザーごとに選択できるようになります。
 
@@ -727,7 +727,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Workplace Analytics | 米国 |
 </p></details>
 
-## <a name="boliva"></a>ボリビア
+## <a name="bolivia"></a>ボリビア
 <details><summary>クリックして展開</summary><p>
 
 | サービス | 場所 |
@@ -4039,7 +4039,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Workplace Analytics | 米国 |
 </p></details>
 
-## <a name="papaua-new-guinea"></a>パプアニューギニア
+## <a name="papua-new-guinea"></a>パプアニューギニア
 <details><summary>クリックして展開</summary><p>
 
 | サービス | 場所 |
