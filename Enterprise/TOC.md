@@ -86,6 +86,13 @@
 #### [概要: VPN 分割トンネリング](office-365-vpn-split-tunnel.md)
 #### [VPN の分割トンネリングを実装する](office-365-vpn-implement-split-tunnel.md)
 #### [中国ユーザー向け Office 365 の最適化](office-365-networking-china.md)
+### GCC High および DOD テナントのネットワーク
+#### [GCC High および DoD の追加ネットワークのセキュリティ要件](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
+#### [Office 365 DoD の DNS レコード](dns-records-for-office-365-dod.md)
+#### [Office 365 GCC High の DNS レコード](dns-records-for-office-365-gcc-high.md)
+#### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
+#### [米国政府の GCC High エンドポイント](office-365-u-s-government-gcc-high-endpoints.md)
+#### [Office 365 暗号化チェーン - DOD および GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
 ### [コンテンツ配信ネットワーク](content-delivery-networks.md)
 ### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
 ### [Office 365 の NAT サポート](nat-support-with-office-365.md)
