@@ -30,7 +30,6 @@
 ## Office 365 クライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
-### [MDM または Intune を選択する](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
 ### [先進認証](office-365-client-support-modern-authentication.md)
 ### [シングル サインオン](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
 
 ## デバイス
-### [MDM または Intune を選択する](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [デバイス アクセスの設定を管理する](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## ワークロード
