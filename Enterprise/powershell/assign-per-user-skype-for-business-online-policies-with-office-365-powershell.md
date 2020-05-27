@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 概要:Office 365 PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てます。
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146812"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374446"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
 
@@ -110,7 +110,7 @@ Windows PowerShell を使用してユーザー アカウントを削除するに
 
 ## <a name="managing-large-numbers-of-users"></a>多数のユーザーを管理する
 
-多数のユーザー (1000 以上) を管理するには、[コマンド](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)レットを使用してスクリプトブロックでコマンドをバッチ処理する必要があります。  前の例では、コマンドレットが実行されるたびに、呼び出しを設定し、その結果が返されるまで待機してから、再度送信する必要があります。  スクリプトブロックを使用すると、コマンドレットをリモートで実行し、完了したらデータを返送できます。 
+多数のユーザー (1000 以上) を管理するには、[コマンド](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)レットを使用してスクリプトブロックでコマンドをバッチ処理する必要があります。  前の例では、コマンドレットが実行されるたびに、呼び出しを設定し、その結果が返されるまで待機してから、再度送信する必要があります。  スクリプトブロックを使用すると、コマンドレットをリモートで実行し、完了したらデータを返送できます。 
 
 ```powershell
 Import-Module LyncOnlineConnector
