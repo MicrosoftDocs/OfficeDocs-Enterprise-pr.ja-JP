@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。
-ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840514"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419366"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Office 365 の展開計画チェックリスト
 
 エンタープライズ組織を Office 365 に移行する際には、実行する手順、それらを実行するタイミング、およびそれらを実行するユーザーを正確に計画することが重要です。 このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。 チェックリストのフェーズと手順は、[オンボードセンター](https://go.microsoft.com/fwlink/?LinkId=517115)で提供されるガイダンスに沿っています。 このチェックリストは、組織のニーズに合わせて自由にご利用いただけます。
 
 ## <a name="need-help-with-your-deployment"></a>展開のサポートが必要な場合
-Office 365 のセットアップに関するヘルプを参照してください。 [Office 365 サービスに](deployment-advisors-for-office-365.md) [Fasttrack](https://fasttrack.microsoft.com/office)または Deployment アドバイザーを使用することを検討してください。
+Office 365 のセットアップに関するヘルプを参照してください。 [Office 365 サービスの](setup-guides-for-office-365.md) [Fasttrack](https://fasttrack.microsoft.com/office)またはセットアップガイドを使用することを検討してください。
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 Enterprise 展開のサンプルチェックリスト
 
@@ -40,7 +40,7 @@ Office 365 のセットアップに関するヘルプを参照してください
 |:-----|:-----|:-----|:-----|:-----|
 |**展開タスク/イベント** <br/> |**開始日** <br/> |**終了日** <br/> |**リソース** <br/> |**依存関係** <br/> |
 |**展開の目標を決定する** <br/> |||||
-| 内部および外部の関係者と:<br>  -スコープとタイムラインに同意します。 <br>  -プロジェクトの追跡メカニズムに同意する  <br>  -成功の基準と[通信](https://fasttrack.microsoft.com/office) / の開発[Office 365 の使用を開始](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)する|||||
+| 内部および外部の関係者と:<br>  -スコープとタイムラインに同意します。 <br>  -プロジェクトの追跡メカニズムに同意する  <br>  -成功の基準と[通信](https://fasttrack.microsoft.com/office)の開発  /  [Office 365 の使用を開始](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)する|||||
 |**現在の環境の一覧を作成し、展開の主要な決定を行う** |||||
 |現在の環境のインベントリを作成する |||||
 | ユーザーアカウントの数 (ログイン名、電子メールアドレス) を収集します。 |||||

@@ -18,12 +18,12 @@ ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
 description: Office 365 Enterprise のサービスおよびアプリケーションを構成する
-ms.openlocfilehash: 45fb283894e68e40d38bc42667f5ac9e5d45b579
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: e0b0be9b4b99f5a652145e9f2991181769a9df19
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009322"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419325"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Office 365 Enterprise のサービスおよびアプリケーションを構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "44009322"
 
 [基本的なセットアップ手順](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)は、できるだけ短時間でユーザーが Office 365 のサービスとアプリケーションを利用開始できるようにするためのご案内をいたします。多くの場合、ユーザーが使用を開始する前に構成を行うことをお勧めします。たとえば、メールのルーティング、ファイル ストレージ、共有ポリシーなどの構成が行えます。 
   
-Office 365 の設定でヘルプが必要な場合、**[FastTrack](https://fasttrack.microsoft.com/office)** または [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)をご利用ください。
+Office 365 をセットアップする方法については、 **[Fasttrack](https://fasttrack.microsoft.com/office)** または「 [office 365 サービスのセットアップガイド](setup-guides-for-office-365.md)」を参照してください。
   
 |**サービスおよびアプリケーション**|**リソース**|
 |:-----|:-----|

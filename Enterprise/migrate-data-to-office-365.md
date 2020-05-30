@@ -16,12 +16,12 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 description: FastTrack による展開は行わず、データを Office 365 に移行する準備が整った場合は、こちらの案内に沿って移行を開始してください。
-ms.openlocfilehash: 4389d5531b21b892408ba7941900ee7aceb55474
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844888"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419345"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>組織のデータを Office 365 Enterprise に移行する
 
@@ -29,7 +29,7 @@ ms.locfileid: "41844888"
 
 [基本的なセットアップ手順](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)では、できるだけ短時間でユーザーが Office 365 のサービスとアプリケーションを使用できるようにするためのご案内をいたします。ハイブリッド シナリオや Office 365 へのより高度な移行方法は省略されます。 
   
-Office 365 セットアップでヘルプが必要な場合は、[FastTrack](https://fasttrack.microsoft.com/office) を使用すると Office 365 の展開を一番簡単に行えます。また、サインインして、[Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)もご利用いただけます。
+Office 365 のセットアップについてサポートが必要な場合、 [Fasttrack](https://fasttrack.microsoft.com/office)は office 365 を展開する最も簡単な方法です。サインインして[office 365 サービスのセットアップガイド](setup-guides-for-office-365.md)を使用することもできます。
 
 ## <a name="migrate-email-to-office-365"></a>メールを Office 365 へ移行する
 - [Exchange 展開アシスタントを使って Exchange ハイブリッド](https://technet.microsoft.com/exdeploy2013)の移行をする。(管理者)
