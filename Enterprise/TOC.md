@@ -17,7 +17,7 @@
 #### [ハイブリッド ID](plan-for-directory-synchronization.md)
 
 ### [Office 365 のサード パーティ SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
-### [Office 365 サービスの展開アドバイザー](deployment-advisors-for-office-365.md)
+### [Office 365 および Microsoft 365 サービスのセットアップ ガイド](setup-guides-for-office-365.md)
 ### [統合アプリおよび Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Office 365 の統合
@@ -181,7 +181,6 @@
 # Office 365 の管理
 
 ## ネットワーク
-### [クライアント接続](client-connectivity.md)
 ### [接続性を監視する](monitor-connectivity.md)
 
 ## ディレクトリ同期
