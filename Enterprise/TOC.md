@@ -81,6 +81,11 @@
 #### [Office for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 IP アドレスと URL の Web サービス ](office-365-ip-web-service.md)
 #### [Web サービスに含まれていないその他のエンドポイント](additional-office365-ip-addresses-and-urls.md)
+### [中国ユーザー向けの Office 365 パフォーマンスの最適化](office-365-networking-china.md)
+### コンテンツ配信ネットワーク (CDNs)
+#### [Office 365 CDN クイックスタート](office-365-cdn-quickstart.md)
+#### [SharePoint Online での Office 365 CDN の使用](use-office-365-cdn-with-spo.md)
+#### [コンテンツ配信ネットワーク](content-delivery-networks.md)
 ### リモートユーザーの Office 365 の接続を最適化する
 #### [概要: VPN 分割トンネリング](office-365-vpn-split-tunnel.md)
 #### [VPN の分割トンネリングを実装する](office-365-vpn-implement-split-tunnel.md)
@@ -92,7 +97,6 @@
 #### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
 #### [米国政府の GCC High エンドポイント](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 暗号化チェーン - DOD および GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [コンテンツ配信ネットワーク](content-delivery-networks.md)
 ### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
 ### [Office 365 の NAT サポート](nat-support-with-office-365.md)
 ### Office 365 向け ExpressRoute の使用
