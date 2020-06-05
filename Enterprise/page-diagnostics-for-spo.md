@@ -3,7 +3,7 @@ title: SharePoint Online のページ診断ツールを使用する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Sharepoint Online のページ診断ツールを使用して、事前に定義されたパフォーマンス条件のセットに対して SharePoint Online モダンポータルと従来の発行ページを分析します。
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603736"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561813"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>SharePoint 用ページ診断ツールを使用する
 
-この記事では、 **sharepoint 用ページ診断ツール**を使用して、事前に定義されたパフォーマンス基準のセットに対して sharepoint Online モダンおよび従来のサイトページを分析する方法について説明します。  
+この記事では、 **sharepoint 用ページ診断ツール**を使用して、事前に定義されたパフォーマンス基準のセットに対して sharepoint Online モダンおよび従来のサイトページを分析する方法について説明します。
+
+SharePoint 用のページ診断ツールをインストールするには、次の方法があります。
+
+- **Microsoft Edge** [(エッジ内線番号)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **クロム** [(クロム拡張機能)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >バージョン**2.0.0**以降では、従来のサイトページに加えて、モダンページのサポートが含まれています。 使用しているツールのバージョンがわからない場合は、バージョン**情報**のリンクまたは省略記号 (...) を選択して、バージョンを確認できます。 ツールを使用するとき**は、常に最新バージョンに更新**してください。
 
-SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge)および sharepoint Online モダンポータルと従来の発行サイトページの両方を分析する Chrome ブラウザー) 用のブラウザー拡張機能です。 このツールは、SharePoint Online に対してのみ機能し、SharePoint システムページでは使用できません。
+SharePoint 用ページ診断ツールは、新しい Microsoft Edge (https://www.microsoft.com/edge) と Chrome のブラウザー拡張機能であり、SharePoint Online の最新ポータルと従来の発行サイト ページの両方を分析します。 このツールは、SharePoint Online に対してのみ機能し、SharePoint システムページでは使用できません。
 
 解析された各ページに対して、定義済みのルールセットに対してページがどのように表示されるかを示すレポートを生成し、テストの結果が基準値の範囲外にある場合に詳細情報を表示します。 SharePoint Online 管理者と設計者は、このツールを使用して、パフォーマンスの問題のトラブルシューティングを行ったり、発行前に新しいページを最適化することができます。
 
@@ -126,7 +131,7 @@ Sharepoint のモダンポータルページまたは従来の発行サイトペ
 
     ![ネットワークトレース](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    上記の図では、赤の項目が既定のページに関連しています。 ページが1000ミリ秒 (1 秒未満) \<で読み込まれない限り、常に赤で表示されます。
+    上記の図では、赤の項目が既定のページに関連しています。 ページが \< 1000 ミリ秒 (1 秒未満) で読み込まれない限り、常に赤で表示されます。
 
 2. **テストアイテムの読み込み時間**。 アイテムはブラウザーによって既にキャッシュされているため、時間やカラーインジケーターが表示されない場合があります。 この問題を正しくテストするには、ページを開き、ブラウザーのキャッシュをクリアしてから [**開始**] をクリックします。これにより、ページの読み込みが強制的に "コールド" され、最初のページ読み込みが実際に反映されるようになります。 これは、ページ上でキャッシュされているアイテムを特定するのに役立つように、"ウォーム" ページ読み込みと比較する必要があります。
 
