@@ -30,7 +30,6 @@
 ## Office 365 クライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
-### [モバイル アプリケーション管理](office-365-client-support-mobile-application-management.md)
 ### [先進認証](office-365-client-support-modern-authentication.md)
 ### [シングル サインオン](office-365-client-support-single-sign-on.md)
 
