@@ -1,11 +1,11 @@
 ---
-title: Office 365 のハイブリッド id とディレクトリ同期
+title: Microsoft 365 のハイブリッド id とディレクトリ同期
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 04/20/2010
+ms.date: 06/09/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Office 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
-ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
-ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
+description: Microsoft 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
+ms.openlocfilehash: ef7af68a65e4799e7bffbe6edba4f2b237a4d8b4
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43580934"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698964"
 ---
-# <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Office 365 のハイブリッド id とディレクトリ同期
+# <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のハイブリッド id とディレクトリ同期
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-Office 365 を採用している企業のお客様にとっては、ビジネスニーズおよび技術的な要件に応じて、ハイブリッド id モデルとディレクトリ同期が最も一般的に選択されています。 ディレクトリ同期を使用すると、Active Directory ドメインサービス (AD DS) 内の id を管理できます。また、ユーザーアカウント、グループ、および連絡先へのすべての更新は、Office 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されます。
+ビジネスニーズおよび技術的な要件に応じて、ハイブリッド id モデルおよびディレクトリ同期は、Microsoft 365 を採用しているエンタープライズのお客様にとって最も一般的な選択です。 ディレクトリ同期を使用すると、Active Directory ドメインサービス (AD DS) 内の id を管理でき、ユーザーアカウント、グループ、および連絡先へのすべての更新は、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されます。
 
 >[!Note]
->AD DS ユーザーアカウントが初めて同期されると、Office 365 ライセンスが自動的に割り当てられることはなく、電子メールなどの Office 365 サービスにアクセスすることもできません。 これらのユーザーアカウントには、グループメンバーシップを使用して個別に、または動的にライセンスを割り当てる必要があります。
+>AD DS ユーザーアカウントが初めて同期されると、Microsoft 365 ライセンスが自動的に割り当てられることはなく、電子メールなどの Microsoft 365 サービスにアクセスすることもできません。 最初に利用状況の場所を割り当てる必要があります。 次に、グループメンバーシップを使用して、個別または動的にライセンスをこれらのユーザーアカウントに割り当てます。
 >
 
 ## <a name="authentication-for-hybrid-identity"></a>ハイブリッド id の認証
@@ -42,11 +42,11 @@ Office 365 を採用している企業のお客様にとっては、ビジネス
 
 - 管理された認証
 
-  Azure AD は、ローカルに保存されているハッシュバージョンのパスワードを使用して認証プロセスを処理するか、社内の AD DS によって認証されるように社内ソフトウェアエージェントに資格情報を送信します。
+  Azure AD は、ローカルに保存されたハッシュバージョンのパスワードを使用して認証プロセスを処理するか、社内の AD DS によって認証されるように社内ソフトウェアエージェントに資格情報を送信します。
 
 - フェデレーション認証
 
-  Azure AD は、別の id プロバイダーに接続するための認証を要求しているクライアントコンピューターをリダイレクトします。
+  Azure AD は、認証を要求しているクライアントコンピューターを別の id プロバイダーにリダイレクトします。
 
 ### <a name="managed-authentication"></a>管理された認証
 
@@ -61,47 +61,47 @@ Office 365 を採用している企業のお客様にとっては、ビジネス
   Azure AD は、AD DS で認証を実行しています。
 
 
-#### <a name="password-hash-synchronization"></a>パスワード ハッシュ同期
+#### <a name="password-hash-synchronization-phs"></a>パスワードハッシュの同期 (PHS)
 
-パスワードハッシュ同期 (PHS) を使用すると、AD DS のユーザーアカウントを Office 365 と同期し、オンプレミスでユーザーを管理することができます。 ユーザーパスワードのハッシュは AD DS から Azure AD に同期されるため、ユーザーは社内とクラウドの両方で同じパスワードを使用できます。 これは、Azure AD で AD DS id の認証を有効にする最も簡単な方法です。 
+PHS では、AD DS のユーザーアカウントを Microsoft 365 と同期し、オンプレミスでユーザーを管理します。 ユーザーパスワードのハッシュは AD DS から Azure AD に同期されるため、ユーザーは社内とクラウドの両方で同じパスワードを使用できます。 これは、Azure AD で AD DS id の認証を有効にする最も簡単な方法です。 
 
 ![パスワードハッシュの同期 (PHS)](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 パスワードが変更されるか、オンプレミスでリセットされると、新しいパスワードハッシュが Azure AD に同期されるため、ユーザーは常にクラウドリソースとオンプレミスのリソースに対して同じパスワードを使用できます。 ユーザーパスワードが Azure AD に送信されることや、クリアテキストで Azure AD に保存されることはありません。 Id 保護などの Azure AD の一部のプレミアム機能は、どの認証方法が選択されているかに関係なく、PHS を必要とします。
   
-詳細については、「 [PHS の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
+詳細について[は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)する」を参照してください。
   
-#### <a name="pass-through-authentication"></a>パススルー認証
+#### <a name="pass-through-authentication-pta"></a>パススルー認証 (PTA)
 
-パススルー認証 (PTA) は、1つまたは複数のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、AD DS に直接ユーザーを検証することにより、Azure AD 認証サービスの簡単なパスワード検証を提供します。 パススルー認証 (PTA) を使用して、AD DS のユーザーアカウントを Office 365 と同期し、オンプレミスでユーザーを管理します。 
+PTA は、1つまたは複数のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、AD DS に直接ユーザーを検証することにより、Azure AD 認証サービスの簡単なパスワード検証を提供します。 PTA を使用すると、AD DS のユーザーアカウントを Microsoft 365 と同期し、オンプレミスでユーザーを管理することができます。 
 
 ![パススルー認証 (PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
-PTA を使用すると、ユーザーはオンプレミスのアカウントとパスワードを使用して、オンプレミスと Office 365 の両方のリソースとアプリケーションの両方にサインインできます。 この構成では、Azure AD にパスワードハッシュを保存せずに、ユーザーのパスワードをオンプレミスの AD DS に対して直接検証します。 
+PTA を使用すると、ユーザーはオンプレミスのアカウントとパスワードを使用して、オンプレミスと Microsoft 365 の両方のリソースとアプリケーションの両方にサインインできるようになります。 この構成では、Azure AD にパスワードハッシュを保存せずに、ユーザーのパスワードをオンプレミスの AD DS に対して直接検証します。 
 
 PTA は、組織に対して、オンプレミスのユーザーアカウントの状態、パスワードポリシー、およびログオン時間を即時に適用するセキュリティ要件を持つ組織のためにも使用されます。 
   
-詳細については、「 [PTA の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
+詳細について[は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)する」を参照してください。
   
 ### <a name="federated-authentication"></a>フェデレーション認証
 
-フェデレーション認証は、主に、より複雑な認証要件を持つ大規模なエンタープライズ組織に適しています。 AD DS id は Office 365 と同期され、ユーザーアカウントは社内で管理されます。 フェデレーション認証では、ユーザーは社内とクラウドの両方で同じパスワードを使用しており、Office 365 を使用するために再度サインインする必要はありません。 
+フェデレーション認証は、主に、より複雑な認証要件を持つ大規模なエンタープライズ組織に適しています。 AD DS id は Microsoft 365 と同期され、ユーザーアカウントは社内で管理されます。 フェデレーション認証では、ユーザーは社内とクラウドの両方で同じパスワードを使用しており、Microsoft 365 を使用するために再度サインインする必要はありません。 
 
 フェデレーション認証は、スマートカードベースの認証、またはサードパーティの多要素認証などの追加の認証要件をサポートしており、一般に、組織が Azure AD でネイティブにサポートされていない認証要件を使用する場合に必要です。
  
-詳細については、「[フェデレーション認証の選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
+詳細について[は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)する」を参照してください。
   
 #### <a name="third-party-authentication-and-identity-providers"></a>サードパーティの認証および id プロバイダー
 
-オンプレミスのディレクトリオブジェクトは Office 365 に同期され、クラウドリソースアクセスは主にサードパーティの id プロバイダー (IdP) によって管理されます。 組織でサードパーティのフェデレーションソリューションを使用している場合は、サードパーティ製のフェデレーションソリューションが Azure AD と互換性があることを前提として、Office 365 でそのソリューションを使用してサインオンを構成できます。
+オンプレミスのディレクトリオブジェクトは、Microsoft 365 に同期することができ、クラウドリソースアクセスは主にサードパーティの id プロバイダー (IdP) によって管理されます。 組織でサードパーティのフェデレーションソリューションを使用している場合は、Microsoft 365 でそのソリューションを使用してサインオンを構成することができます。これにより、サードパーティ製のフェデレーションソリューションが Azure AD と互換性があることが提供されます。
   
-詳細については、「 [AZURE AD フェデレーション互換性](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)」を参照してください。
+詳細については、「 [AZURE AD フェデレーション互換性リスト](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)」を参照してください。
   
 ## <a name="ad-ds-cleanup"></a>AD DS のクリーンアップ
 
-同期を使用して Office 365 をシームレスに移行できるようにするには、Office 365 ディレクトリ同期の展開を開始する前に、AD DS フォレストを準備する必要があります。
+同期を使用して Microsoft 365 にシームレスに移行できるようにするには、Microsoft 365 ディレクトリ同期の展開を開始する前に、AD DS フォレストを準備する必要があります。
   
-[Office 365 でディレクトリ同期](set-up-directory-synchronization.md)をセットアップする場合の手順の1つとして、 [idfix ツールをダウンロードして実行](install-and-run-idfix.md)する方法があります。 IdFix ツールを使用して、ディレクトリの[クリーンアップ](prepare-directory-attributes-for-synch-with-idfix.md)に役立てることができます。
+[ディレクトリ同期](set-up-directory-synchronization.md)をセットアップする場合の手順の1つは、 [idfix ツールをダウンロードして実行](install-and-run-idfix.md)することです。 IdFix ツールを使用して、ディレクトリの[クリーンアップ](prepare-directory-attributes-for-synch-with-idfix.md)に役立てることができます。
   
 ディレクトリのクリーンアップでは、次のタスクに焦点を当てる必要があります。
 
@@ -114,16 +114,16 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
   
 ## <a name="multi-forest-deployment-considerations"></a>複数フォレストの展開に関する考慮事項
 
-複数のフォレストおよび SSO オプションでは、 [AZURE AD Connect のカスタムインストール](https://go.microsoft.com/fwlink/p/?LinkId=698430)を使用します。
+複数のフォレストおよび SSO オプションの場合は、 [AZURE AD Connect のカスタムインストール](https://go.microsoft.com/fwlink/p/?LinkId=698430)を使用します。
   
 組織に認証用に複数のフォレストがある場合 (ログオンフォレスト)、次のことを強くお勧めします。
   
 - **フォレストを統合することを検討してください。** 一般に、複数のフォレストを維持するには、より多くのオーバーヘッドが必要になります。 個別のフォレストの必要性を判断するセキュリティ上の制約が組織にない限り、オンプレミスの環境を簡素化することを検討してください。
-- **プライマリのログオンフォレストでのみ使用します。** Office 365 を最初に展開する場合は、プライマリのログオンフォレストにのみ Office 365 を展開することを検討してください。 
+- **プライマリのログオンフォレストでのみ使用します。** Microsoft 365 の展開は、Microsoft 365 の初期の展開にプライマリのログオンフォレストでのみ行うことをお勧めします。 
 
 複数フォレストの AD DS 展開を統合できない場合や、他のディレクトリサービスを使用して id を管理している場合は、Microsoft またはパートナーのヘルプと同期することができます。
   
-詳細については、「[シングルサインオンシナリオでのマルチフォレストディレクトリ同期](https://go.microsoft.com/fwlink/p/?LinkId=525321)」を参照してください。
+詳細については、「 [AZURE AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)」を参照してください。
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>ディレクトリ同期に依存する機能
   
@@ -132,13 +132,13 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
 - Azure AD のシームレスなシングルサインオン (SSO)
 - Skype の共存
 - Exchange ハイブリッド展開 (次のものが含まれる)
-  - オンプレミスの Exchange 環境と Office 365 間の完全に共有されたグローバルアドレス一覧 (GAL)。
+  - オンプレミスの Exchange 環境と Microsoft 365 間の完全に共有されたグローバルアドレス一覧 (GAL)。
   - 別のメールシステムから GAL 情報を同期します。
-  - Office 365 サービスオファーリングにユーザーを追加したり、ユーザーを削除したりする機能。 これには、次のものが必要です。
+  - Microsoft 365 サービスオファーリングにユーザーを追加したり、ユーザーを削除したりする機能。 これには、次のものが必要です。
   - ディレクトリ同期のセットアップ中に、双ウェイの同期を構成する必要があります。 既定では、ディレクトリ同期ツールは、ディレクトリ情報をクラウドにのみ書き込みます。 双ウェイの同期を構成する場合は、制限された数のオブジェクト属性がクラウドからコピーされるように書き戻し機能を有効にしてから、ローカルの AD DS に書き戻します。 書き戻しは、Exchange ハイブリッドモードとも呼ばれます。 
   - オンプレミスの Exchange ハイブリッド展開
-  - 他のユーザーのメールボックスをオンプレミスに保持したまま、一部のユーザーメールボックスを Office 365 に移動する機能。
-  - 社内の信頼できる差出人と受信拒否リストは、Office 365 に複製されます。
+  - 他のユーザーのメールボックスをオンプレミスに保持したまま、一部のユーザーメールボックスを Microsoft 365 に移動する機能。
+  - オンプレミスの信頼できる差出人と受信拒否リストは、Microsoft 365 に複製されます。
   - 基本的な委任および代理送信電子メール機能。
   - オンプレミスのスマートカードまたは多要素認証ソリューションが統合されている。
 - 写真、サムネイル、会議室、セキュリティグループの同期

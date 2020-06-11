@@ -1,10 +1,10 @@
 ---
-title: Office 365 identity モデルと Azure Active Directory
+title: Microsoft 365 identity モデルと Azure Active Directory
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 05/20/2019
+ms.date: 06/09/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,27 +20,27 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Office 365 でユーザー id を管理する方法について説明します。
-ms.openlocfilehash: a44f3073895ef1c8172a6ab5637f50cd9c6ac186
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: ユーザー id が Microsoft 365 でどのように管理されるかについて説明します。
+ms.openlocfilehash: 44777f206b61b01dc8a66817f549120af827bbc3
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843808"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698954"
 ---
-# <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 identity モデルと Azure Active Directory
+# <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 identity モデルと Azure Active Directory
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-Office 365 では、Azure Active Directory (Azure AD) を使用して、office 365 サブスクリプションに含まれているクラウドベースのユーザー id と認証サービスを使用して、Office 365 の id と認証を管理します。 Id インフラストラクチャを正しく構成することは、組織の Office 365 のユーザーアクセスとアクセス許可を管理するために不可欠です。
+Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、microsoft 365 サブスクリプションに含まれているクラウドベースのユーザー id と認証サービスを使用して、Microsoft 365 の id と認証を管理しています。 Id インフラストラクチャを正しく構成することは、組織の Microsoft 365 のユーザーアクセスとアクセス許可を管理するために不可欠です。
 
-開始する前に、Office 365 と Microsoft 365 の id モデルと認証の概要に関するビデオをご覧ください。
+開始する前に、Microsoft 365 の ID モデルと認証の概要についてこのビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-最初の計画の選択は、Office 365 id モデルです。
+最初の計画の選択は、Microsoft 365 の id モデルです。
 
-## <a name="office-365-identity-models"></a>Office 365 の id モデル
+## <a name="microsoft-365-identity-models"></a>Microsoft 365 id モデル
 
 ユーザーアカウントを計画するには、まず、Microsoft 365 で2つの id モデルを理解する必要があります。 組織の id は、クラウド内でのみ管理できます。または、オンプレミスの Active Directory ドメインサービス (AD DS) の id を維持して、ユーザーが Microsoft 365 cloud services にアクセスするときの認証に使用することができます。  
 
@@ -49,7 +49,7 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
 |||
 |:-------|:-----|:-----|
 |  | **クラウド専用の id** | **ハイブリッド ID** |
-| **定義** | ユーザーアカウントは、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントにのみ存在します。 | ユーザーアカウントが AD DS に存在し、Microsoft 365 サブスクリプションの Azure AD テナントにもコピーがあります。 Azure AD のユーザーアカウントには、ユーザーアカウントのパスワードのハッシュ化されたバージョンも含まれる場合があります。 |
+| **定義** | ユーザーアカウントは、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントにのみ存在します。 | ユーザーアカウントが AD DS に存在し、Microsoft 365 サブスクリプションの Azure AD テナントにもコピーがあります。 Azure AD のユーザーアカウントには、既にハッシュされた AD DS ユーザーアカウントのパスワードが含まれている場合もあります。 |
 | **Microsoft 365 でユーザー資格情報を認証する方法** | Microsoft 365 サブスクリプションの Azure AD テナントは、クラウド id アカウントを使用して認証を実行します。 | Microsoft 365 サブスクリプションの Azure AD テナントは、認証プロセスを処理するか、またはユーザーを別の id プロバイダーにリダイレクトします。 |
 | **最適シナリオ** | 社内の AD DS を必要としない、または必要としない組織。 | AD DS または別の id プロバイダーを使用している組織。 |
 | **最大のメリット** | 簡単に使用できます。 その他のディレクトリツールやサーバーは必要ありません。 | ユーザーは、オンプレミスまたはクラウドベースのリソースにアクセスするときに同じ資格情報を使用できます。 |
@@ -63,10 +63,10 @@ Office 365 では、Azure Active Directory (Azure AD) を使用して、office 3
  
 ![クラウド専用の id の基本的なコンポーネント](./media/about-office-365-identity/cloud-only-identity.png)
 
-オンプレミスとリモート (オンライン) の両方のユーザーは、Azure AD のユーザーアカウントとパスワードを使用して Office 365 cloud services にアクセスします。 Azure AD は、保存されたユーザーアカウントとパスワードに基づいてユーザー資格情報を認証します。
+オンプレミスとリモート (オンライン) の両方のユーザーは、Azure AD のユーザーアカウントとパスワードを使用して、Microsoft 365 クラウドサービスにアクセスします。 Azure AD は、保存されたユーザーアカウントとパスワードに基づいてユーザー資格情報を認証します。
 
 ### <a name="administration"></a>管理
-ユーザーアカウントは Azure AD のみに格納されているため、クラウド id は、 [Microsoft 365 管理センター](https://admin.microsoft.com)と Windows PowerShell のツールを使用して、graph モジュール用 Azure Active Directory PowerShell を使用して管理します。 
+ユーザーアカウントは Azure AD にのみ格納されるので、 [Microsoft 365 管理センター](https://admin.microsoft.com)や[Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell)などのツールを使用してクラウド id を管理します。 
 
 ## <a name="hybrid-identity"></a>ハイブリッド ID
 
@@ -90,18 +90,14 @@ Azure AD テナントには、AD DS アカウントのコピーがあります�
 
 元のユーザーアカウントと権限のあるユーザーアカウントは、オンプレミスの AD DS に格納されるので、Active Directory ユーザーおよびコンピューターツールなどの AD DS と同じツールを使用して id を管理します。 
 
-Microsoft 365 管理センターまたは Windows PowerShell を使用して、Azure AD で同期されたユーザーアカウントを管理することはありません。
+Microsoft 365 管理センターまたは Office 365 PowerShell を使用して、Azure AD で同期されたユーザーアカウントを管理することはありません。
 
 ## <a name="next-step"></a>次の手順
 
-クラウド専用の id モデルが必要な場合は、「[クラウド専用](cloud-only-identities.md)の id」を参照してください。
+クラウド専用の id モデルが必要な場合は、「 [cloud only identity](cloud-only-identities.md)」を参照してください。
 
-ハイブリッド id モデルが必要な場合は、「[ディレクトリ同期](plan-for-directory-synchronization.md)」を参照してください。
-  
+ハイブリッド id モデルが必要な場合は、「[ハイブリッド id](plan-for-directory-synchronization.md)」を参照してください。
 
-## <a name="video-training"></a>ビデオ トレーニング
-
-「 [Office 365: AZURE AD Connect を使用して id を管理](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx)する」を参照して、LinkedIn Learning に連絡してください。
 
 ## <a name="see-also"></a>関連項目
 

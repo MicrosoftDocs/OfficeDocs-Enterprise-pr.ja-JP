@@ -1,5 +1,5 @@
 ---
-title: 同時に複数のユーザーを Office 365 に追加する - 管理者ヘルプ
+title: Microsoft 365 に同時に複数のユーザーを追加する-管理者ヘルプ
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,24 +24,24 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'スプレッドシート内またはその他の CSV 形式ファイル内の一覧から複数のユーザーを 一般法人向け Office 365 に追加する方法を説明します。 Office 365 にアカウントを追加する方法に関する YouTube 上のビデオをご覧ください。 このプロセスが終了すると、アカウントを持つそれぞれのユーザーに Office 365 メールボックスが付与されます。 '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: 'ワークシートまたはその他の CSV 形式のファイルのリストから、複数のユーザーを Microsoft 365 に追加する方法について説明します。 アカウントを Microsoft 365 に追加する方法を説明する YouTube のビデオをご覧ください。 このプロセスの最後に、アカウントを持つ各ユーザーには、Microsoft 365 メールボックスがあります。 '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901210"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699244"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>同時に複数のユーザーを Office 365 に追加する - 管理者ヘルプ
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Microsoft 365 に同時に複数のユーザーを追加する-管理者ヘルプ
 
-メールや Office などの Office 365 サービスにサインインしてアクセスするには、チームの各メンバーにユーザー アカウントが必要です。 ユーザー数が多い場合、Excel のスプレッドシートまたは CSV 形式で保存された他のファイルから、ユーザー アカウントを一括で追加することができます。 [CSV 書式の定義](add-several-users-at-the-same-time.md#__toc316652088)
+チームの各ユーザーは、サインインして Microsoft 365 サービス (電子メールや Office など) にアクセスできるようにするために、ユーザーアカウントを必要とします。多数のユーザーがいる場合は、Excel ワークシートまたは CSV 形式で保存されたその他のファイルから、すべてのアカウントを一度に追加できます。[CSV 形式がわからない](add-several-users-at-the-same-time.md#__toc316652088)場合
   
 > [!NOTE] 
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで Office 365 に複数のユーザーを追加する
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで複数のユーザーを追加する
 
-1. 職場または学校のアカウントを使用して Office 365 にサインインします。 
+1. 職場または学校のアカウントを使用して、Microsoft 365 にサインインします。 
     
 2. 管理センターで、[**ユーザー**] \> [**アクティブなユーザー**] の順に選択します。
 
@@ -74,13 +74,13 @@ ms.locfileid: "43901210"
 ## <a name="next-steps"></a>次の手順
 <a name="bk_preview"> </a>
 
-- これで、これらのユーザーにアカウントが付与されました。次に、これらのユーザーは [Office 365 または Office 2016 を PC または Mac にダウンロードしてインストールまたは再インストールする](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)必要があります。 チームの各ユーザーは、最大 5 台の PC または Mac に Office 365 をインストールできます。 
+- これらのユーザーはアカウントを所有しているので、 [Microsoft 365 または Office 2016 を PC または Mac にダウンロードしてインストールまたは再](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)インストールする必要があります。 チームの各ユーザーは、最大5台の Pc または Mac に Microsoft 365 をインストールできます。 
     
 - 各ユーザーは、iPhone、iPad、Android のスマートフォンやタブレットなどの[モバイル デバイスで Office アプリとメールをセットアップ](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f)でき、最大 5 台のタブレットと 5 台の スマートフォンでセットアップを行えます。 こうすることで、ユーザーはどこからでも Office ファイルを編集できるようになります。 
     
-    詳細なセットアップ手順については、「[一般法人向け Office 365 のセットアップ](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)」を参照してください。 
+    セットアップ手順のエンドツーエンドのリストについては、「 [Microsoft 365 for business を](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa)セットアップする」を参照してください。 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Office 365 にユーザーを追加する方法に関するその他の情報
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Microsoft 365 へのユーザーの追加方法に関する詳細情報
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>CSV 形式とは。
@@ -88,7 +88,7 @@ ms.locfileid: "43901210"
 
 CSV ファイルは、コンマで区切られた値を含むファイルです。 テキスト エディターまたは Excel などのスプレッドシート プログラムを使って、このようなファイルを作成または編集することができます。
   
-出発点として、[このサンプル スプレッドシート](https://www.microsoft.com/download/details.aspx?id=45485)をダウンロードして使うことができます。Office 365 には 1 行目の列見出しが必要なので、別のテキストで置き換えないでください。 
+[このサンプルスプレッドシート](https://www.microsoft.com/download/details.aspx?id=45485)は、開始点としてダウンロードできます。Microsoft 365 では、最初の行に列見出しが必要なので、他の項目には置き換えないでください。 
   
 新しい名前でファイルを保存し、CSV 形式を指定します。
   
@@ -101,7 +101,7 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
 ### <a name="tips-for-formatting-your-spreadsheet"></a>スプレッドシートの書式設定のヒント
 <a name="__toc314595848"> </a>
 
-- **サンプル スプレッドシートと同じ列見出しにする必要はありますか?** はい。サンプル スプレッドシートの 1 行目には列見出しが含まれています。列見出しは必須です。見出しの下に、Office 365 に追加するユーザーごとに 1 行を作成します。列見出しのいずれかを追加、変更、または削除すると、Office 365 でファイル内の情報からユーザーを作成できなくなる可能性があります。 
+- **サンプルのスプレッドシートと同じ列見出しが必要な場合**うん。サンプルのスプレッドシートには、最初の行の列見出しが含まれています。これらの見出しは必須です。Microsoft 365 に追加するユーザーごとに、見出しの下に行を作成します。列見出しのいずれかを追加、変更、または削除すると、Microsoft 365 はファイル内の情報からユーザーを作成できなくなることがあります。 
     
 - **各ユーザーに必要な情報が揃っていない場合はどのようになりますか?** ユーザー名と表示名は必須で、この情報がないと新しいユーザーは追加できません。FAX 番号などの他の情報が一部欠けている場合は、フィールドが空白であることを示すために、スペースに加えてコンマを使用することができます。 
     
@@ -115,7 +115,7 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
     
 |**ユーザー データの 列 ラベル**|**最大文字数**|
 |:-----|:-----|
-|ユーザー名 (必須)  <br/> |79 name@domain の形式で、アットマーク (@) を含みます。\<拡張子\>。ユーザーのエイリアスは、50文字を超えることはできず、ドメイン名は48文字を超えることはできません。  <br/> |
+|ユーザー名 (必須)  <br/> |79 name@domain の形式で、アットマーク (@) を \<extension\> 含みます。ユーザーのエイリアスは、50文字を超えることはできず、ドメイン名は48文字を超えることはできません。<br/> |
 |名  <br/> |64  <br/> |
 |姓  <br/> |64  <br/> |
 |表示名 (必須)  <br/> |256  <br/> |
@@ -131,15 +131,15 @@ CSV ファイルは、コンマで区切られた値を含むファイルです�
 |郵便番号  <br/> |40  <br/> |
 |国または地域  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>Office 365 にユーザーを追加するときの問題がまだ解決しない場合
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>引き続き Microsoft 365 にユーザーを追加するときに問題が発生しますか?
 
 - **スプレッドシートの形式が正しいかどうか慎重にチェックしてください。** サンプル ファイル内の見出しと一致しているか、列見出しをチェックします。文字数の制限に従い、各フィールドがカンマで区切られるようにします。 
     
-- **新しいユーザーが Office 365 にすぐに表示されない場合は、数分間お待ちください。** Office 365 のすべてのサービスに変更が行き渡るまでに少し時間がかかる場合があります。 
+- **Microsoft 365 で新しいユーザーがすぐに表示されない場合は、数分待機してください。** Microsoft 365 のすべてのサービスに変更が加えられるのに少し時間がかかる場合があります。 
     
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 にユーザーを個別に、またはまとめて追加する](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Microsoft 365 にユーザーを個別にまたは一括して追加する](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 
