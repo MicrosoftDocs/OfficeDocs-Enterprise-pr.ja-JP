@@ -30,6 +30,7 @@
 ## Office 365 クライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
+### [モバイル アプリケーション管理](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
 ### [先進認証](office-365-client-support-modern-authentication.md)
 ### [シングル サインオン](office-365-client-support-single-sign-on.md)
 
@@ -106,7 +107,7 @@
 
 ## 2. ID をセットアップする
 ### [グローバル管理者アカウントを保護する](protect-your-global-administrator-accounts.md)
-### [クラウド専用の ID](cloud-only-identities.md)
+### [クラウド専用 ID](cloud-only-identities.md)
 ### ハイブリッド ID
 #### [ディレクトリ同期を準備する](prepare-for-directory-synchronization.md)
 #### IdFix ツールを使用する
