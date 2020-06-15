@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。'
-ms.openlocfilehash: 5106a509cd5be05b9988f6d4b27c1947deede588
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793790"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711567"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -29,15 +29,15 @@ ms.locfileid: "43793790"
   
 Microsoft Azure を使用すれば、通常ならオンプレミスで展開されていた一部の Office Server ワークロードを Azure インフラストラクチャ サービスで展開できるようになります。
   
-以下は Azure の Office 365 ID インフラストラクチャ向けです。
+Azure の Microsoft 365 id インフラストラクチャの場合:
 
 - [Azure AD for SharePoint サーバー認証の使用](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Microsoft Azure での Office 365 ディレクトリ同期の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Microsoft Azure での Microsoft 365 ディレクトリ同期の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Azure で Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 以下は Azure の SharePoint Server 2013 ワークロード向けです。
   
@@ -54,8 +54,6 @@ Microsoft Azure を使用すれば、通常ならオンプレミスで展開さ�
   
 [Microsoft クラウド IT アーキテクチャのリソース](microsoft-cloud-it-architecture-resources.md)
   
-[クラウド導入のテスト ラボ ガイド (TLG)](cloud-adoption-test-lab-guides-tlgs.md)
+[Microsoft 365 for enterprise のテストラボガイド (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-
-

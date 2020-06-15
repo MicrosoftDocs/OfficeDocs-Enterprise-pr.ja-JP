@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 概要:Office 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。
-ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: '概要: microsoft 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。'
+ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793830"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711950"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
-このフェーズでは、フェーズ2、3、4で仮想マシンをホストする Azure で、リソースグループ、仮想ネットワーク (VNet)、および可用性セットを作成します。 このフェーズは、「[Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」に進む前に完了しておく必要があります。 すべてのフェーズについては、「[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)」を参照してください。
+このフェーズでは、フェーズ2、3、4で仮想マシンをホストする Azure で、リソースグループ、仮想ネットワーク (VNet)、および可用性セットを作成します。 このフェーズは、「[Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)」に進む前に完了しておく必要があります。 すべてのフェーズについては、「 [Microsoft 365 の高可用性フェデレーション認証を Azure に展開](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)する」を参照してください。
   
 Azure は、次の基本コンポーネントを使用してプロビジョニングする必要があります。
   
@@ -106,7 +106,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
    
  **表 L:ローカル ネットワークのアドレス プレフィックス**
   
-ここからは、Office 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始します。
+では、Microsoft 365 のフェデレーション認証をホストするための Azure インフラストラクチャの構築を開始しましょう。
   
 > [!NOTE]
 > 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「 [Azure PowerShell の概要」を](https://docs.microsoft.com/powershell/azure/get-started-azureps)参照してください。 
@@ -132,7 +132,7 @@ Get-AzSubscription | Sort Name | Select Name
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Azure サブスクリプションを設定します。 引用符で囲まれたすべてのもの\< (および > 文字を含む) を正しい名前に置き換えます。
+Azure サブスクリプションを設定します。 引用符で囲まれたすべての内容 (文字を含む) を \< and > 正しい名前に置き換えます。
   
 ```powershell
 $subscrName="<subscription name>"
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 次に、このフェーズが正常に完了した結果の構成を示します。
   
-**フェーズ 1:Office 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**
+**フェーズ 1: Microsoft 365 の高可用性フェデレーション認証用の Azure インフラストラクチャ**
 
-![Azure インフラストラクチャによる Azure での高可用性 Office 365 フェデレーション認証のフェーズ1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Azure インフラストラクチャを使用した Azure における高可用性 Microsoft 365 フェデレーション認証のフェーズ1](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>次の手順
 
@@ -310,12 +310,12 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 ## <a name="see-also"></a>関連項目
 
-[Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Azure で Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)
+[Microsoft 365 開発/テスト環境のフェデレーション id](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [クラウド導入およびハイブリッド ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 
-[Office 365 ID と Azure Active Directory について](about-office-365-identity.md)
+[Microsoft 365 id と Azure Active Directory について](about-office-365-identity.md)
 
 

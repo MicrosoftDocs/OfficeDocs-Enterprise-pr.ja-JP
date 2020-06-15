@@ -1,5 +1,5 @@
 ---
-title: Office 365 IdFix ツールをダウンロードして実行する
+title: Microsoft 365 IdFix ツールをダウンロードして実行する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
-description: Office 365 IdFix ツールをダウンロードして実行し、Active Directory ドメインサービス (AD DS) をクリーンアップしてから Office 365 に同期する方法。
-ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
-ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
+description: Microsoft 365 IdFix ツールをダウンロードして実行し、Active Directory ドメインサービス (AD DS) をクリーンアップしてから、Microsoft 365 に同期させる方法。
+ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068779"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711597"
 ---
-# <a name="download-and-run-the-office-365-idfix-tool"></a>Office 365 IdFix ツールをダウンロードして実行する
+# <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Microsoft 365 IdFix ツールをダウンロードして実行する
 
 *この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
 
-IdFix Office 365 と同期する前に、Active Directory ドメインサービス (AD DS) ドメイン内の重複や書式の問題などのエラーを識別します。 
+IdFix は、Microsoft 365 に同期する前に Active Directory ドメインサービス (AD DS) ドメイン内の重複や書式設定の問題などのエラーを識別します。 
   
 このタスクを正常に完了するには、AD DS 内のユーザー、グループ、および連絡先オブジェクトに慣れている必要があります。
   
@@ -58,7 +58,7 @@ IdFix をダウンロードするコンピューターは、以下の最小ハ�
    
 ### <a name="idfix-software-requirements"></a>IdFix ソフトウェアの要件
 
-IdFix をダウンロードしたコンピューターは、ユーザーを Office 365 に同期するのと同じ AD DS ドメインに参加させる必要があります。 
+IdFix をダウンロードしたコンピューターは、ユーザーを Microsoft 365 に同期するのと同じ AD DS ドメインに参加させる必要があります。 
 
 また、コンピューターには .NET Framework 4.0 がインストールされている必要があります。 Windows Server 2008 以降を実行している場合は、.NET Framework が既にインストールされている可能性があります。 それ以外の場合は、ダウンロードセンターまたは Windows Update[から .net 4.0 をダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=400475)することができます。 
   
@@ -78,7 +78,7 @@ IdFix を実行するために使用するユーザーアカウントには、AD
     
 3. **ClickOnce 起動**セクションの [**起動**] をクリックして、zip ファイルをダウンロードします。 Zip ファイルを開きます。
     
-4. **Idfix**ウィンドウで、[**抽出**] を選択し、[**すべて抽出**] を選択します。 既定では、IdFix はに`C:\Users\<your user name>\Documents\IdFix`展開されます。 
+4. **Idfix**ウィンドウで、[**抽出**] を選択し、[**すべて抽出**] を選択します。 既定では、IdFix はに展開され `C:\Users\<your user name>\Documents\IdFix` ます。 
     
 5. [**展開**] を選択します。
 
@@ -90,11 +90,11 @@ IdFix をダウンロードして抽出した後、それを実行して AD DS �
   
 1. AD DS ドメインに対する読み取り/書き込みアクセス権を持つアカウントを使用して、IdFix をダウンロードしたコンピューターにサインインします。
     
-2. エクスプローラーで、IdFix を抽出した場所に移動します。 抽出中に既定のフォルダーを選択した場合`C:\Users\<your user name>\Documents\IdFix`は、に移動します。 
+2. エクスプローラーで、IdFix を抽出した場所に移動します。 抽出中に既定のフォルダーを選択した場合は、に移動 `C:\Users\<your user name>\Documents\IdFix` します。 
     
-3. [ **Idfix**] をダブルクリックします。 
+3. [ **IdFix.exe**] をダブルクリックします。 
   
-4. 既定では、IdFix はマルチテナントルールセットを使用して、ディレクトリ内のエントリをテストします。 これは、ほとんどの Office 365 お客様のための適切なルールセットです。 ただし、事務規制 (ITAR) のお客様のために、Office 365 の専用または国際トラフィックの場合、IdFix を構成して、代わりに専用のルールセットを使用することができます。 お客様の種類がわからない場合は、この手順を省略しても問題ありません。 ルールセットを専用に設定するには、メニューバーの歯車アイコンをクリックして、[**専用**] を選択します。
+4. 既定では、IdFix はマルチテナントルールセットを使用して、ディレクトリ内のエントリをテストします。 これは、ほとんどの Microsoft 365 お客様のための適切なルールセットです。 ただし、Microsoft 365 の専用または国際トラフィック (ITAR) のお客様の場合は、IdFix を構成して、代わりに専用のルールセットを使用することができます。 お客様の種類がわからない場合は、この手順を省略しても問題ありません。 ルールセットを専用に設定するには、メニューバーの歯車アイコンをクリックして、[**専用**] を選択します。
     
 5. [**クエリ**] を選択します。
     
@@ -104,7 +104,7 @@ IdFix をダウンロードして抽出した後、それを実行して AD DS �
     
     ディレクトリのサイズによっては、クエリの実行に時間がかかることがあります。 ツールのメインウィンドウの下部にある進捗状況を確認できます。 [**キャンセル**] をクリックした場合は、最初から再起動する必要があります。
   
-7. IdFix がクエリを完了した後、エラーがない場合はディレクトリを同期することができます。 ディレクトリにエラーがある場合は、同期する前にそれらを修正することをお勧めします。 詳細については、「 [Office 365 と同期するディレクトリ属性の準備](prepare-directory-attributes-for-synch-with-idfix.md)」を参照してください。
+7. IdFix がクエリを完了した後、エラーがない場合はディレクトリを同期することができます。 ディレクトリにエラーがある場合は、同期する前にそれらを修正することをお勧めします。 詳細については、「 [Microsoft 365 と同期するためのディレクトリ属性の準備](prepare-directory-attributes-for-synch-with-idfix.md)」を参照してください。
     
     同期する前にエラーを修正することは必須ではありませんが、IdFix から返されたすべてのエラーを少なくとも確認することを強くお勧めします。
     
@@ -114,7 +114,7 @@ IdFix をダウンロードして抽出した後、それを実行して AD DS �
     
     更新のたびに [**適用**] をクリックする必要はありません。 その代わりに、[**適用**] をクリックする前にいくつかのエラーを修正し、idfix によってすべて同時に変更することができます。 エラーの種類を一覧表示する列の上部にある [**エラー** ] をクリックすると、エラーの種類別にエラーを並べ替えることができます。 
     
-    1つの方法は、同じ種類のすべてのエラーを修正することです。たとえば、最初にすべての重複を修正して適用します。 次に、文字書式エラーなどを修正します。 変更を適用するたびに、IdFix ツールによって別のログファイルが作成されます。このファイルを使用すると、誤った変更を行った場合に、変更を元に戻すことができます。 [トランザクションログ](idfix-transaction-log.md)は、idfix を抽出したフォルダーに格納されます。これは、既定で_ユーザー名> \documents\idfix を C:\Users\<_ ます。 
+    1つの方法は、同じ種類のすべてのエラーを修正することです。たとえば、最初にすべての重複を修正して適用します。 次に、文字書式エラーなどを修正します。 変更を適用するたびに、IdFix ツールによって別のログファイルが作成されます。このファイルを使用すると、誤った変更を行った場合に、変更を元に戻すことができます。 [トランザクションログ](idfix-transaction-log.md)は、idfix を抽出したフォルダーに格納されます。これは、既定では_C:\Users \<your user name> \Documents\IdFix_です。 
     
     ![IdFix で修復エラーが発生しました。](media/5f051070-652c-4be7-98bf-312295e32371.png)
   
@@ -123,7 +123,7 @@ IdFix をダウンロードして抽出した後、それを実行して AD DS �
 ## <a name="additional-resources-on-idfix"></a>IdFix に関するその他の技術情報 
 
 - [IdFix で除外されるオブジェクトと属性、およびサポートされるオブジェクトと属性](idfix-excluded-and-supported-objects-and-attributes.md)  
-- [Office 365 IdFix トランザクションログ](idfix-transaction-log.md)
+- [Microsoft 365 IdFix トランザクションログ](idfix-transaction-log.md)
     
 ## <a name="video-training"></a>ビデオ トレーニング
 

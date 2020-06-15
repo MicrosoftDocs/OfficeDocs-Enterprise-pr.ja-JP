@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'ワークシートまたはその他の CSV 形式のファイルのリストから、複数のユーザーを Microsoft 365 に追加する方法について説明します。 アカウントを Microsoft 365 に追加する方法を説明する YouTube のビデオをご覧ください。 このプロセスの最後に、アカウントを持つ各ユーザーには、Microsoft 365 メールボックスがあります。 '
-ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 5f328185b56d1c5436f763d811d85dd55f912919
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44699244"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711810"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Microsoft 365 に同時に複数のユーザーを追加する-管理者ヘルプ
 

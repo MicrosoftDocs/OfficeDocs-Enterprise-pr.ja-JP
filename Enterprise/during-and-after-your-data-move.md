@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009302"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711920"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -29,7 +29,7 @@ ms.locfileid: "44009302"
 > [!NOTE]
 > 移動はサービスごとに、異なる時間に行われます。結果として、サービスごとに異なる時間に、説明されているような機能制限がかかります。 
   
-Exchange Online、SharePoint Online、Teams、および Skype for Business の各移行が完了したら、Microsoft 365 メッセージセンターで確認を行います。 次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。 移動後、テナントに問題がある場合は、「[Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)」にお問い合わせください。 
+Exchange Online、SharePoint Online、Teams、および Skype for Business の各移行が完了したら、Microsoft 365 メッセージセンターで確認を行います。 次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。 移行後にテナントに問題がある場合は、サポートに連絡して[サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)を受けてください。 
   
 
 |**国がサインアップしているお客様**|**完了したすべての移動**|

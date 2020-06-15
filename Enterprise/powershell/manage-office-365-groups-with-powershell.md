@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Microsoft PowerShell で Office 365 グループの一般的な管理タスクを実行する方法について説明します。
-ms.openlocfilehash: 7ebb3cfdfc6375cbc340c1fc3be37d59bcd9d4c8
-ms.sourcegitcommit: c758588cf2b68de9291a362fd73ec9dc721d04d3
+ms.openlocfilehash: 5868c875645685b10197ab05fd233940b73b0e88
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411064"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711840"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>PowerShell で Office 365 グループを管理する
  
@@ -112,7 +112,7 @@ Exchange Online PowerShell の使用の詳細については、「[Exchange Onli
 ## <a name="hide-office-365-groups-from-gal"></a>GAL から Office 365 グループを非表示にする
 <a name="BKMK_CreateClassification"> </a>
 
-Office 365 グループを組織内のグローバル アドレス一覧 (GAL) や他のリストに表示するかどうかを指定することができます。 たとえば、アドレス一覧に表示したくない法務部グループがある場合は、GAL にそのグループを表示しないようにすることができます。 アドレス一覧からグループを非表示にするには、次のように Set-UnifiedGroup コマンドレットを実行します。
+組織内のグローバルアドレス一覧 (GAL) およびその他のリストに Office 365 グループを表示するかどうかを指定できます。 たとえば、アドレス一覧に表示したくない法務部グループがある場合は、GAL にそのグループを表示しないようにすることができます。 アドレス一覧からグループを非表示にするには、次のように Set-UnifiedGroup コマンドレットを実行します。
   
 ```
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -121,7 +121,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 ## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>Office 365 グループへのメッセージの送信を内部ユーザーにのみ許可する
 <a name="BKMK_CreateClassification"> </a>
 
-他の組織のユーザーに Office 365 グループへのメールを送信してほしくない場合は、そのグループの設定を変更できます。 これにより、内部のユーザーのみがグループにメールを送信できるようになります。 外部ユーザーがそのグループにメッセージを送信しようとしても、拒否されます。
+他の組織のユーザーが Office 365 グループに電子メールを送信できないようにするには、そのグループの設定を変更します。 これにより、内部のユーザーのみがグループにメールを送信できるようになります。 外部ユーザーがそのグループにメッセージを送信しようとしても、拒否されます。
   
 この設定を更新するには、次のように Set-UnifiedGroup コマンドレットを実行します。
 

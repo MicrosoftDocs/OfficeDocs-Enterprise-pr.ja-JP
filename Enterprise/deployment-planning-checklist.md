@@ -1,5 +1,5 @@
 ---
-title: Office 365 の展開計画チェックリスト
+title: Microsoft 365 の展開計画チェックリスト
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,28 +19,28 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。
-ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: このチェックリストは、Microsoft 365 への移行を計画および準備する際に、組織に役立ちます。
+ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419366"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711901"
 ---
-# <a name="deployment-planning-checklist-for-office-365"></a>Office 365 の展開計画チェックリスト
+# <a name="deployment-planning-checklist-for-microsoft-365"></a>Microsoft 365 の展開計画チェックリスト
 
-エンタープライズ組織を Office 365 に移行する際には、実行する手順、それらを実行するタイミング、およびそれらを実行するユーザーを正確に計画することが重要です。 このチェックリストは、Office 365 への移行を計画および準備する際に、組織に役立ちます。 チェックリストのフェーズと手順は、[オンボードセンター](https://go.microsoft.com/fwlink/?LinkId=517115)で提供されるガイダンスに沿っています。 このチェックリストは、組織のニーズに合わせて自由にご利用いただけます。
+エンタープライズ組織を Microsoft 365 に移行する際には、実行する手順、それらを実行するタイミング、およびそれらを実行するユーザーを正確に計画することが重要です。 このチェックリストは、Microsoft 365 への移行を計画および準備する際に、組織に役立ちます。 このチェックリストは、組織のニーズに合わせて自由にご利用いただけます。
 
 ## <a name="need-help-with-your-deployment"></a>展開のサポートが必要な場合
-Office 365 のセットアップに関するヘルプを参照してください。 [Office 365 サービスの](setup-guides-for-office-365.md) [Fasttrack](https://fasttrack.microsoft.com/office)またはセットアップガイドを使用することを検討してください。
+Microsoft 365 のセットアップについてのヘルプが必要ですか。 [Microsoft 365 サービスの](setup-guides-for-office-365.md) [Fasttrack](https://fasttrack.microsoft.com/microsoft-365)またはセットアップガイドを使用することを検討してください。
 
-## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Office 365 Enterprise 展開のサンプルチェックリスト
+## <a name="sample-checklist-for-a-microsoft-365-enterprise-deployment"></a>Microsoft 365 Enterprise 展開のサンプルチェックリスト
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**展開タスク/イベント** <br/> |**開始日** <br/> |**終了日** <br/> |**リソース** <br/> |**依存関係** <br/> |
 |**展開の目標を決定する** <br/> |||||
-| 内部および外部の関係者と:<br>  -スコープとタイムラインに同意します。 <br>  -プロジェクトの追跡メカニズムに同意する  <br>  -成功の基準と[通信](https://fasttrack.microsoft.com/office)の開発  /  [Office 365 の使用を開始](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)する|||||
+| 内部および外部の関係者と:<br>  -スコープとタイムラインに同意します。 <br>  -プロジェクトの追跡メカニズムに同意する  <br>  -成功のための基準と[通信](https://fasttrack.microsoft.com/microsoft-365)の開発  /  [365 の使用を開始](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)する|||||
 |**現在の環境の一覧を作成し、展開の主要な決定を行う** |||||
 |現在の環境のインベントリを作成する |||||
 | ユーザーアカウントの数 (ログイン名、電子メールアドレス) を収集します。 |||||
@@ -64,8 +64,8 @@ Office 365 のセットアップに関するヘルプを参照してください
 | ネットワークの準備 ([ガイダンスとツール](https://aka.ms/tune)) |||||
 | クライアントソフトウェアのバージョンを更新する ([ガイダンス](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
 | Active Directory Rights Management サービスがインストールされている場合: 環境を準備する ([ガイダンス](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
-|**組織で使用する Office 365 サービスをセットアップする** |||||
-|Office 365 サブスクリプションを構成する |||||
+|**組織で Microsoft 365 サービスを使用するように設定する** |||||
+|Microsoft 365 サブスクリプションを構成する |||||
 |[サブスクリプションで使用するドメインを確認する](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
 | [アプリケーション設定](https://go.microsoft.com/fwlink/?LinkId=534829)(電子メール、インスタントメッセージング、オンライン会議、web グループ作業、ファイル記憶域、Yammer) を構成する |||||
 | 必要[に応じてディレクトリ同期の準備をする](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
@@ -76,9 +76,9 @@ Office 365 のセットアップに関するヘルプを参照してください
 | 今後の変更について、[およびそれがどのように影響するかを](https://fasttrack.microsoft.com/office)ユーザーに知らせる |||||
 |**ユーザーへのロールアウト** |||||
 |アカウントとメールボックスをセットアップする |||||
-| 一般[法人向け Office 365 でユーザーを追加し、ライセンスをユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
+| [Microsoft 365 for business でユーザーを追加してライセンスをユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | 必要に応じてデータ ([電子メール](https://go.microsoft.com/fwlink/?LinkId=534823)、[ファイル](https://go.microsoft.com/fwlink/?LinkId=534824)など) を移行する |||||
 |機能を検証して最終手順を完了する |||||
-| [Office 365 を指すように DNS 設定を移行する](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| [Office 365 の使用を開始](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US)できることをユーザーに通知する |||||
-| Office 365 ( [office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[モバイルデバイス](https://go.microsoft.com/fwlink/?LinkId=534840)) に接続するようにクライアントシステムを再構成する  |||||
+| [Microsoft 365 を指すように DNS 設定を移行する](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
+| [Microsoft 365 の使用を開始](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US)できることをユーザーに通知する |||||
+| Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836)、 [outlook](https://go.microsoft.com/fwlink/?LinkId=534837)、 [Outlook for Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)、[モバイルデバイス](https://go.microsoft.com/fwlink/?LinkId=534840)) に接続するようにクライアントシステムを再構成する  |||||
