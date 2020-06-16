@@ -2,32 +2,32 @@
 # [Enterprise Cloud ソリューション](cloud-adoption-and-hybrid-solutions.yml)
 ## [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# [Office 365 の計画](get-your-organization-ready-for-office-365.md)
+# [Microsoft 365 の計画](get-your-organization-ready-for-office-365.md)
 
-## Office 365 テナント
+## Microsoft 365 テナント
 ### [サブスクリプション、ライセンス、およびテナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### ネットワークの計画
-#### [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
-#### [Office 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
-#### [Office 365 のネットワークと移行の計画](network-and-migration-planning.md)
+#### [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+#### [Microsoft 365 サービスに接続するネットワーク デバイスの計画](plan-for-network-devices.md)
+#### [Microsoft 365 のネットワークと移行の計画](network-and-migration-planning.md)
 
 ### ID の計画
 #### [ID モデル](about-office-365-identity.md)
 #### [ハイブリッド ID](plan-for-directory-synchronization.md)
 
-### [Office 365 のサード パーティ SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
-### [Office 365 および Microsoft 365 サービスのセットアップ ガイド](setup-guides-for-office-365.md)
+### [Microsoft 365 のサードパーティの SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
+### [Microsoft 365 および Office 365 サービスのセットアップ ガイド](setup-guides-for-office-365.md)
 ### [統合アプリおよび Azure AD](integrated-apps-and-azure-ads.md)
 
-### Office 365 の統合
+### Microsoft 365 の統合
 #### [オンプレミスとの統合](office-365-integration.md)
 #### [Azure との統合](azure-integration.md)
 #### [Azure ExpressRoute](azure-expressroute.md)
 #### [Office 2013 および Office 2016 のクライアント アプリの先進認証のしくみ](modern-auth-for-office-2013-and-2016.md)
 #### [テナント間コラボレーション](office-365-inter-tenant-collaboration.md)
 
-## Office 365 クライアント サポート
+## Microsoft 365 のクライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
 ### [モバイル アプリケーション管理](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
@@ -58,17 +58,17 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# [Office 365 をテストする](cloud-adoption-test-lab-guides-tlgs.md)
+# [Test Microsoft 365](cloud-adoption-test-lab-guides-tlgs.md)
 
-# [Office 365 Enterprise を展開する](setup-overview-for-enterprises.md)
+# [Microsoft 365 Enterprise を展開する](setup-overview-for-enterprises.md)
 
 ## 1. ネットワークをセットアップする
 ### [ネットワークをセットアップする](set-up-network-for-office-365.md)
 ### [ドメインの追加](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
-### [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
-### [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
-### [Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
-### [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+### [Microsoft 365 ネットワーク接続の概要](office-365-networking-overview.md)
+### [Microsoft 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
+### [Microsoft 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
+### [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 ### [Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)
 ### Office 365 の IP アドレスおよび URL
 #### [Office 365 エンドポイント](office-365-endpoints.md)
@@ -86,10 +86,10 @@
 #### [Office 365 CDN クイックスタート](office-365-cdn-quickstart.md)
 #### [SharePoint Online での Office 365 CDN の使用](use-office-365-cdn-with-spo.md)
 #### [コンテンツ配信ネットワーク](content-delivery-networks.md)
-### リモートユーザーの Office 365 の接続を最適化する
+### リモートユーザーの Microsoft 365 の接続を最適化する
 #### [概要: VPN 分割トンネリング](office-365-vpn-split-tunnel.md)
 #### [VPN の分割トンネリングを実装する](office-365-vpn-implement-split-tunnel.md)
-#### [中国ユーザー向け Office 365 の最適化](office-365-networking-china.md)
+#### [中国ユーザー向け Microsoft 365 の最適化](office-365-networking-china.md)
 ### GCC High および DOD テナントのネットワーク
 #### [GCC High および DoD の追加ネットワークのセキュリティ要件](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
 #### [Office 365 DoD の DNS レコード](dns-records-for-office-365-dod.md)
@@ -97,13 +97,13 @@
 #### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
 #### [米国政府の GCC High エンドポイント](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 暗号化チェーン - DOD および GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
-### [Office 365 の NAT サポート](nat-support-with-office-365.md)
-### Office 365 向け ExpressRoute の使用
-#### [Office 365 用 ExpressRoute](azure-expressroute.md)
-#### [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
-#### [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
-#### [Office 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
+### [Microsoft 365 サービスの IPv6 サポート](ipv6-support.md)
+### [Microsoft 365 の NAT サポート](nat-support-with-office-365.md)
+### Microsoft 365 向け ExpressRoute の使用
+#### [Microsoft 365 向け ExpressRoute](azure-expressroute.md)
+#### [Microsoft 365 向け ExpressRoute の実装](implementing-expressroute.md)
+#### [Microsoft 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
+#### [Microsoft 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
 
 ## 2. ID をセットアップする
 ### [グローバル管理者アカウントを保護する](protect-your-global-administrator-accounts.md)
@@ -129,7 +129,7 @@
 
 ## 6. サービスとアプリケーションを構成する
 ### [準備する](configure-services-and-applications.md)
-### [Office 365 へのデータの移行](migrate-data-to-office-365.md)
+### [Microsoft 365 へのデータの移行](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 ### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -163,7 +163,7 @@
 ##### [あなたの衛星位置情報で、SharePoint Multi-Geo を有効に](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Exchange Multi-Geo の管理](administering-exchange-online-multi-geo.md)
 
-### [新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
+### [新しい Microsoft 365 データセンター geo に移行する](moving-data-to-new-datacenter-geos.md)
 #### [データ移行をリクエストする方法](request-your-data-move.md)
 #### [データの移行中および移行後](during-and-after-your-data-move.md)
 #### [データ移行についての一般的な FAQ](data-move-faq.md)
@@ -175,14 +175,14 @@
 #### [SharePoint Server 2016 認証に Azure Active Directory を使用する](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [オンプレミス ネットワークを Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Azure IaaS でディレクトリ同期サーバーを展開する](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-#### [Azure に Office 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+#### [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 ##### [フェーズ 1: Azure を構成する](high-availability-federated-authentication-phase-1-configure-azure.md)
 ##### [フェーズ 2: ドメイン コントローラーを構成する](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
 ##### [フェーズ 3: AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [フェーズ 5: フェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
-# Office 365 の管理
+# Microsoft 365 の管理
 
 ## ネットワーク
 ### [接続性を監視する](monitor-connectivity.md)
@@ -194,7 +194,7 @@
 ### [ディレクトリ同期を無効にする](turn-off-directory-synchronization.md)
 
 ## ユーザー
-### [Office 365 Admin ヘルプ センター](https://docs.microsoft.com/office365/admin/admin-home)
+### [Microsoft 365 管理センターのヘルプ](https://docs.microsoft.com/office365/admin/admin-home)
 ### [ユーザー アカウント管理ツール](manage-office-365-accounts.md)
 ### [同時に複数のユーザーを追加する](add-several-users-at-the-same-time.md)
 ### [ユーザーのメールボックスで削除されたアイテムを復元する](recover-deleted-items-in-a-mailbox.md)
@@ -214,7 +214,7 @@
 ### [サポート オプション](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## パフォーマンス
-### [Office 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
+### [Microsoft 365 のパフォーマンスをチューニングする](tune-office-365-performance.md)
 ### [ベースラインとパフォーマンス履歴を使用した、パフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
 ### [Exchange Online のパフォーマンスをチューニングする](tune-exchange-online-performance.md)
 ### [SharePoint Online のパフォーマンスをチューニングする](tune-sharepoint-online-performance.md)
@@ -226,8 +226,8 @@
 ### [ExpressRoute の管理](managing-expressroute-for-connectivity.md)
 
 # サービス アシュアランス
-## [Office 365 セキュリティ/コンプライアンス センターのサービス アシュアランス](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
-## [Office 365 での管理アクセス制御](office-365-administrative-access-controls-overview.md)
+## [Microsoft 365 セキュリティ/コンプライアンス センターのサービス アシュアランス](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
+## [Microsoft 365 での管理アクセス制御](office-365-administrative-access-controls-overview.md)
 ### [アクセス制御の監視と監査](office-365-monitoring-and-auditing-access-controls.md)
 ### [Office 365 での分離コントロール](office-365-isolation-controls.md)
 ### [Office 365 での担当者の制御](office-365-personnel-controls.md)
@@ -254,7 +254,7 @@
 ### [サービス拒否攻撃に対する Microsoft の防御戦略](office-365-microsoft-dos-defense-strategy.md)
 ### [サービス拒否攻撃に対する防御の主要な原則](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Microsoft Cloud での暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
-### [Office 365 でのサービスの暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
+### [Microsoft 365 でのサービスの暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
 ### [転送中データの暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit)
 ### [顧客により管理される暗号化機能](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
 ### [暗号化のリスクと保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
@@ -273,5 +273,5 @@
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Microsoft 365 コンプライアンス](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 セキュリティ](https://docs.microsoft.com/microsoft-365/security/)
-# [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
+# [一般法人向け Microsoft 365](https://www.microsoft.com/microsoft-365/business)
 # [Microsoft 365](https://docs.microsoft.com/microsoft-365)
