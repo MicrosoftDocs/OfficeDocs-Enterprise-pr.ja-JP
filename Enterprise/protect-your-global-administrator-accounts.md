@@ -1,9 +1,9 @@
 ---
-title: Office 365 グローバル管理者アカウントの保護
+title: Microsoft 365 のグローバル管理者アカウントを保護する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/15/2020
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Office 365 サブスクリプションへのグローバル管理者アクセスを保護します。
-ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
-ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
+description: Microsoft 365 サブスクリプションへのグローバル管理者アクセスを保護します。
+ms.openlocfilehash: 6378a7c7b6e8479e25cf6465006f422cdc2137b0
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44253294"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735725"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Office 365 グローバル管理者アカウントの保護
+# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Microsoft 365 のグローバル管理者アカウントを保護する
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-Office 365 サブスクリプションのセキュリティ侵害 (情報の収集、フィッシング攻撃など) は、通常、Office 365 全体管理者アカウントの資格情報を侵害することによって行われます。 クラウドのセキュリティは、お互いと Microsoft の間のパートナーシップです。
+Microsoft 365 サブスクリプションのセキュリティ侵害 (情報の収集、フィッシング攻撃を含む) は、通常、Microsoft 365 のグローバル管理者アカウントの資格情報を侵害することによって行われます。 クラウドのセキュリティは、お互いと Microsoft の間のパートナーシップです。
   
 - Microsoft クラウドサービスは、信頼とセキュリティの基礎に基づいて構築されています。 Microsoft は、データとアプリケーションを保護するためのセキュリティ制御と機能を提供しています。
     
@@ -38,13 +38,13 @@ Office 365 サブスクリプションのセキュリティ侵害 (情報の収�
     
 Microsoft は、組織を保護するための機能を提供していますが、使用する場合にのみ有効です。 これらを使用しないと、攻撃にさらされる可能性があります。 全体管理者アカウントを保護するために、Microsoft は次のことを行うための詳細な指示にお役立てください。
   
-1. 専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用します。
+1. 専用の Microsoft 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用します。
     
-2. 専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、最強のセカンダリ認証形式を使用します。
+2. 専用の Microsoft 365 グローバル管理者アカウントに対して多要素認証を構成し、最強のセカンダリ認証形式を使用します。
     
 > [!注] この記事ではグローバル管理者アカウントに重点を置いていますが、サブスクリプション内のデータにアクセスするための広範な権限を持つ追加のアカウント (電子情報開示管理者やセキュリティまたはコンプライアンス管理者アカウントなど) を同じ方法で保護する必要があるかどうかを検討する必要があります。 <br > グローバル管理者アカウントは、ライセンスを追加することなく作成できます。
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. 専任の Office 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. 専用の Microsoft 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
 
 グローバル管理者特権を必要とする、ユーザーアカウントへの役割の割り当てなど、比較的少数の管理タスクがあります。 そのため、グローバル管理者の役割が割り当てられている日常のユーザーアカウントを使用する代わりに、次の手順を実行します。
   
@@ -54,13 +54,13 @@ Microsoft は、組織を保護するための機能を提供していますが�
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. グローバル管理者の役割が割り当てられているユーザーアカウントを使用して、Office 365 サブスクリプションにサインインします。
+2. グローバル管理者の役割が割り当てられているユーザーアカウントを使用して、Microsoft 365 サブスクリプションにサインインします。
     
 3. 最大4つの専用のグローバル管理者ユーザーアカウントを作成します。 **少なくとも12文字の強力なパスワードを使用してください。** 詳細について[は、「強力なパスワードを作成する](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password)」を参照してください。 新しいアカウントのパスワードを安全な場所に格納します。 
     
 4. 新しい専用のグローバル管理者ユーザーアカウントに、グローバル管理者の役割を割り当てます。
     
-5. Office 365 からサインアウトします。
+5. Microsoft 365 からサインアウトします。
     
 6. 新しい専用のグローバル管理者ユーザーアカウントのいずれかを使用してサインインします。
     
@@ -68,9 +68,9 @@ Microsoft は、組織を保護するための機能を提供していますが�
     
   - グローバル管理者ロールを削除します。
     
-  - そのユーザーのジョブ機能と責任に応じて、管理者の役割をアカウントに割り当てます。 Office 365 のさまざまな管理者ロールの詳細については、「[管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
+  - そのユーザーのジョブ機能と責任に応じて、管理者の役割をアカウントに割り当てます。 Microsoft 365 のさまざまな管理者ロールの詳細については、「[管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
     
-8. Office 365 からサインアウトします。
+8. Microsoft 365 からサインアウトします。
     
 結果は次のようになります。
   
@@ -82,14 +82,14 @@ Microsoft は、組織を保護するための機能を提供していますが�
 
 - サブスクリプションを管理するその他の通常のユーザー アカウントには、各自の職務に関連する管理ロールが割り当てられています。
     
-この時点から、グローバル管理者特権を必要とするタスクに対してのみ、専用のグローバル管理者アカウントを使用してサインインします。 他のすべての Office 365 管理は、他の管理役割をユーザーアカウントに割り当てることによって実行する必要があります。
+この時点から、グローバル管理者特権を必要とするタスクに対してのみ、専用のグローバル管理者アカウントを使用してサインインします。 他のすべての Microsoft 365 管理は、他の管理役割をユーザーアカウントに割り当てることによって実行する必要があります。
   
 > [!NOTE]
-> これには、日常のユーザーアカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要になります。 ただし、この操作を実行する必要があるのは、全体管理者の操作の場合だけです。 グローバル管理者アカウント違反の後に Office 365 サブスクリプションを回復するには、さらに多くの手順が必要になることに注意してください。
+> これには、日常のユーザーアカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要になります。 ただし、この操作を実行する必要があるのは、全体管理者の操作の場合だけです。 グローバル管理者アカウント違反がある場合は、さらに多くの手順を実行する必要があるため、Microsoft 365 サブスクリプションを復元することを検討してください。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>手順 2.  専用の Office 365 のグローバル管理者アカウントに対して多要素認証を構成し、強力な検証方法を使用する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>手順 2.  専用の Microsoft 365 グローバル管理者アカウントに多要素認証を構成し、強力な検証方法を使用する
 
-多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Office 365 では、次の追加の検証方法がサポートされています。
+多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365 では、次の追加の検証方法がサポートされています。
   
 - Microsoft Authenticator アプリ
 
@@ -109,24 +109,25 @@ Microsoft は、組織を保護するための機能を提供していますが�
   
 1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
     
-2. [Office 365 の MFA をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、認証方法として電話番号またはテキストメッセージのそれぞれの専用のグローバル管理者アカウントを構成します。 
+2. [Microsoft 365 の MFA をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、認証方法として電話呼び出しまたはテキストメッセージの各専用のグローバル管理者アカウントを構成します。 
     
-Office 365 ハイブリッド id モデルを使用している大規模な組織の場合は、さらに多くの検証オプションがあります。 より強力なセカンダリ認証方法に対してセキュリティインフラストラクチャが既に配置されている場合は、次の手順を実行します。
+Microsoft 365 ハイブリッド id モデルを使用している大規模な組織の場合は、さらに多くの検証オプションがあります。 より強力なセカンダリ認証方法に対してセキュリティインフラストラクチャが既に配置されている場合は、次の手順を実行します。
   
 1. [MFA を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)します。
     
-2. [Office 365 の MFA をセットアップ](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14)して、適切な検証方法にそれぞれの専用のグローバル管理者アカウントを構成します。 
+2. [新しいグローバル管理者アカウントの MFA を設定](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14)して、適切な検証方法にそれぞれの専用のグローバル管理者アカウントを構成します。 
     
-目的の強力な検証方法のセキュリティインフラストラクチャが、Office 365 MFA に適していない場合は、一時的なセキュリティ対策として、グローバル管理者アカウントのスマートフォンに送信されるテキストメッセージ検証コードを使用して、専用のグローバル管理者アカウントを MFA で構成することを強くお勧めします。 MFA で提供される追加の保護を行わずに、専用のグローバル管理者アカウントを残さないようにします。
+目的の強力な検証方法のセキュリティインフラストラクチャが、Microsoft 365 MFA 用に設置されておらず、機能していない場合は、一時的なセキュリティ対策として、Microsoft Authenticator アプリ、電話、または全体管理者アカウントのスマートフォンに送信されるテキストメッセージ検証コードを使用して、専用のグローバル管理者アカウントを MFA で構成することを MFA で提供される追加の保護を行わずに、専用のグローバル管理者アカウントを残さないようにします。
   
-詳細については、「[Office 365 展開用の多要素認証の計画](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)」を参照してください。
+詳細については、「 [Microsoft 365 展開用の多要素認証を計画する](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)」を参照してください。
   
-MFA と PowerShell を使用して Office 365 サービスに接続するには、次の記事を参照してください。
+MFA と PowerShell を使用して Microsoft 365 サービスに接続するには、次の記事を参照してください。
 
 - [ユーザーアカウント、グループ、ライセンスの Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-by-using-mfa)
+- [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/powershell/manage-microsoft-teams-with-office-365-powershell#sign-in-with-multi-factor-authentication-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication)
+- [Skype for Business Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>エンタープライズ組織のための追加の保護
 
@@ -134,7 +135,7 @@ MFA と PowerShell を使用して Office 365 サービスに接続するには�
   
 ### <a name="privileged-access-workstation"></a>特権アクセスワークステーション
 
-高い権限を持つタスクの実行が可能な限り安全であることを確認するには、特権アクセスワークステーション (PAW) を使用します。 PAW は、グローバル管理者アカウントを必要とする Office 365 構成など、機密性の高い構成タスクにのみ使用される専用のコンピューターです。 このコンピューターはインターネットブラウジングや電子メールで毎日使用されていないため、インターネット攻撃および脅威から保護するのが適切です。
+高い権限を持つタスクの実行が可能な限り安全であることを確認するには、特権アクセスワークステーション (PAW) を使用します。 PAW は、グローバル管理者アカウントを必要とする Microsoft 365 構成などの機密性の高い構成タスクにのみ使用される専用のコンピューターです。 このコンピューターはインターネットブラウジングや電子メールで毎日使用されていないため、インターネット攻撃および脅威から保護するのが適切です。
   
 PAW をセットアップする方法については、「」を参照してください [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) 。
   
@@ -150,13 +151,13 @@ PIM は、Microsoft 365 Enterprise E5 または Enterprise Mobility + Security (
   
 詳細については、「 [AZURE AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)」を参照してください。
   
-### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Office 365 ログ用のセキュリティ情報およびイベント管理 (SIEM) ソフトウェア
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Microsoft 365 ログのセキュリティ情報およびイベント管理 (SIEM) ソフトウェア
 
-サーバー上での SIEM ソフトウェア実行では、アプリケーションとネットワークハードウェアによって作成されたセキュリティ通知とイベントのリアルタイム分析を実行します。 SIEM サーバーに Office 365 のセキュリティの警告とイベントを分析およびレポート機能に含めることができるようにするには、Azure AD をお客様の SEIM に統合します。 「 [Azure ログ統合の概要」を](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)参照してください。
+サーバー上での SIEM ソフトウェア実行では、アプリケーションとネットワークハードウェアによって作成されたセキュリティ通知とイベントのリアルタイム分析を実行します。 SIEM サーバーに Microsoft 365 のセキュリティの警告とイベントを分析およびレポート機能に含めることができるようにするには、Azure AD をお客様の SEIM に統合します。 「 [Azure ログ統合の概要」を](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)参照してください。
 
 ## <a name="next-step"></a>次の手順
 
-Office 365 サブスクリプションの id を設定している場合は、次を参照してください。
+Microsoft 365 サブスクリプションの id を設定している場合は、次を参照してください。
 
 - クラウドのみの id を使用している場合は、[クラウドのみの id](cloud-only-identities.md)
 - ハイブリッド id を使用している場合[にディレクトリ同期を準備](prepare-for-directory-synchronization.md)する
@@ -164,4 +165,4 @@ Office 365 サブスクリプションの id を設定している場合は、�
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 のセキュリティロードマップ](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)。
+[Microsoft 365 セキュリティロードマップ](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)。

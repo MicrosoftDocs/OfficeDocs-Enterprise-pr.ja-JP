@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516558"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735845"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -72,7 +72,7 @@ Teams ファイルは SharePoint Online に格納され、Teams チャットフ�
   
 ## <a name="how-can-i-request-to-be-moved"></a>どのように移行をリクエストしますか?
   
-対象となるお客様には、[Office 365 管理ポータル](https://portal.office.com/)のページが表示されます。 移行をリクエストする手順については「[データ移行をリクエストする方法](request-your-data-move.md)」をご覧ください。 
+対象となるお客様には、 [Microsoft 365 管理センター](https://admin.microsoft.com/)にページが表示されます。 移行をリクエストする手順については「[データ移行をリクエストする方法](request-your-data-move.md)」をご覧ください。 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>移行をリクエストした後で自分の決定を変更できますか?
   
@@ -122,11 +122,11 @@ Microsoft が移行の具体的な日付や期間を共有することもでき�
   
 だたし、プロセスは Microsoft がデータ移行を実行するときと同じようにシームレスではありません。
   
-新しいデータセンター geo が利用可能になった後に新しいテナントを作成すると、新しいテナントは新しい geo でホストされます。この新しいテナントは以前のテナントとは完全に別個のものであり、すべてのユーザー メールボックス、サイトのコンテンツ、ドメイン名、その他のデータの移行をお客様自身の責任で実行していただくことになります。なお、テナント名は 1 つのテナントから別のテナントへ移行できないことに注意してください。Microsoft によって提供される移行プログラムをお待ちいただくことをお勧めします。すべての設定、データ、ユーザーのサブスクリプションの移行は、弊社にお任せください。
+If you create a new tenant after the new datacenter geo is available, the new tenant will be hosted in the new geo. This new tenant is completely separate from your previous tenant and you would be responsible for moving all user mailboxes, site content, domain names, and any other data. Note that you can't move the tenant name from one tenant to another. We recommend that you wait for the move program provided by Microsoft as we'll take care of moving all settings, data, and subscriptions for your users.
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>私の顧客データは新しいデータセンター geo に既に移行しました。 戻すことはできますか?
  
-いいえ、これはできません。 新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。 任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。  [Office 365 の複数地域](https://aka.ms/multi-geo)は、一部のお客様がアドオンとして利用でき、1つのテナントで複数のサテライト geo を作成し、データ常駐責任を持つ geo にユーザーデータを移動することができます。
+いいえ、できません。 新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。 任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。  [Office 365 の複数地域](https://aka.ms/multi-geo)は、一部のお客様がアドオンとして利用でき、1つのテナントで複数のサテライト geo を作成し、データ常駐責任を持つ geo にユーザーデータを移動することができます。
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>新しいデータセンターでホストされている Microsoft 365 テナントは、国外のユーザーが使用できるようになりますか。
   

@@ -21,34 +21,34 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: オンプレミス ユーザーに非ルーティング ドメインが関連付けられている場合、Office 365 との同期前に実行する手順について説明します。
-ms.openlocfilehash: 056ff528e0ba03795fecb76543db021f9a89b87e
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: Microsoft 365 と同期する前に、オンプレミスのユーザーに関連付けられた非ルーティングドメインがある場合の対処方法について説明します。
+ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208768"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736015"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
-オンプレミスのディレクトリを Office 365 と同期する場合は、Azure Active Directory (Azure AD) で確認済みのドメインを用意する必要があります。 オンプレミスのドメインに関連付けられているユーザープリンシパル名 (UPN) のみが同期されます。 ただし、ルーティング可能ではないドメイン (たとえば billa@contoso ローカル) を含む任意の UPN は、onmicrosoft.com ドメイン (billa@contoso.onmicrosoft.com など) に同期されます。 
+オンプレミスのディレクトリを Microsoft 365 と同期する場合は、Azure Active Directory (Azure AD) で確認済みのドメインを用意する必要があります。 オンプレミスのドメインに関連付けられているユーザープリンシパル名 (UPN) のみが同期されます。 ただし、ルーティング可能ではないドメイン (たとえば billa@contoso ローカル) を含む任意の UPN は、onmicrosoft.com ドメイン (billa@contoso.onmicrosoft.com など) に同期されます。 
 
-現在、Active Directory ドメインサービス (AD DS) のユーザーアカウントにローカルドメインを使用している場合は、Office 365 ドメインと正しく同期するために、確認済みドメイン (billa@contoso.com など) を使用するように変更することをお勧めします。
+現在、Active Directory ドメインサービス (AD DS) のユーザーアカウントにローカルドメインを使用している場合は、Microsoft 365 ドメインと適切に同期するために、確認済みのドメイン (billa@contoso.com など) を使用するように変更することをお勧めします。
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>オンプレミス ドメインが .local のみの場合について
 
 AD DS を Azure AD に同期するために使用できる最新のツールは、Azure AD Connect という名前です。 詳細については、「[オンプレミス id と AZURE AD を統合する](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad)」を参照してください。
   
-Azure AD Connect は、ユーザーの UPN とパスワードを同期して、ユーザーがオンプレミスで使用したものと同じ資格情報でサインインできるようにします。 ただし、Azure AD Connect は、Office 365 によって検証されるドメインに対してのみユーザーを同期します。 これは、Office 365 id が Azure AD によって管理されているため、ドメインも Azure AD によって検証されることを意味します。 言い換えると、ドメインは有効なインターネットドメインである必要があります (例: .com、.org、.net、. us など)。 内部 AD DS がルーティング可能ではないドメイン (たとえば、...) を使用している場合、これは Office 365 上の確認済みドメインと一致しない可能性があります。 この問題を解決するには、オンプレミスの AD DS でプライマリドメインを変更するか、1つ以上の UPN サフィックスを追加します。
+Azure AD Connect は、ユーザーの UPN とパスワードを同期して、ユーザーがオンプレミスで使用したものと同じ資格情報でサインインできるようにします。 ただし、Azure AD Connect は、Microsoft 365 によって検証されるドメインに対してのみユーザーを同期します。 これは、Microsoft 365 の id が Azure AD によって管理されているため、ドメインも Azure AD によって検証されることを意味します。 言い換えると、ドメインは有効なインターネットドメインである必要があります (例: .com、.org、.net、. us など)。 内部 AD DS がルーティング可能ではないドメイン (たとえば、...) のみを使用している場合、これは Microsoft 365 の確認済みドメインと一致しない可能性があります。 この問題を解決するには、オンプレミスの AD DS でプライマリドメインを変更するか、1つ以上の UPN サフィックスを追加します。
   
 ### <a name="change-your-primary-domain"></a>**プライマリ ドメインを変更する**
 
-プライマリドメインを Office 365 で確認したドメイン (contoso.com など) に変更します。 ドメイン contoso. local を持つすべてのユーザーが contoso.com に更新されます。 手順については、「[ドメイン名の変更のしくみ](https://go.microsoft.com/fwlink/p/?LinkId=624174)」を参照してください。 ただし、これは非常に複雑なプロセスであり、次のセクションではより簡単な解決方法について説明します。
+プライマリドメインを Microsoft 365 で確認したドメインに変更します。たとえば、contoso.com のようにします。 ドメイン contoso. local を持つすべてのユーザーが contoso.com に更新されます。 手順については、「[ドメイン名の変更のしくみ](https://go.microsoft.com/fwlink/p/?LinkId=624174)」を参照してください。 ただし、これは非常に複雑なプロセスであり、次のセクションではより簡単な解決方法について説明します。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN サフィックスを追加してユーザーを更新する**
 
-ローカルの問題を解決するには、Office 365 で確認したドメイン (またはドメイン) に一致するように、AD DS に新しい UPN サフィックスまたはサフィックスを登録します。 新しいサフィックスを登録した後、ユーザーの Upn を更新して、を新しいドメイン名に置き換えます。たとえば、ユーザーアカウントが billa@contoso.com のように見えるようにします。
+ローカルの問題を解決するには、Microsoft 365 で検証したドメイン (またはドメイン) に一致するように、AD DS に新しい UPN サフィックスまたはサフィックスを登録します。 新しいサフィックスを登録した後、ユーザーの Upn を更新して、を新しいドメイン名に置き換えます。たとえば、ユーザーアカウントが billa@contoso.com のように見えるようにします。
   
-認証済みドメインを使用するように Upn を更新すると、オンプレミスの AD DS を Office 365 と同期することができます。
+認証済みドメインを使用するように Upn を更新すると、オンプレミスの AD DS を Microsoft 365 と同期することができます。
   
  **手順 1: 新しい UPN サフィックスを追加する**
   
@@ -89,7 +89,7 @@ Azure AD Connect は、ユーザーの UPN とパスワードを同期して、�
    
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**すべてのユーザーの UPN サフィックスを変更するために Windows PowerShell を使用する**
 
-更新するユーザー数が大量になる場合は、Windows PowerShell を使用すると作業が簡単になります。次の例では、コマンドレット [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) と [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) を使用して、すべての contoso.local サフィックスを contoso.com に変更します。 
+If you have a lot of users to update, it is easier to use Windows PowerShell. The following example uses the cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) and [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) to change all contoso.local suffixes to contoso.com. 
 
 用の例では、次の Windows PowerShell コマンドを実行して、すべての contoso. ローカルサフィックスを contoso.com に更新することができます。
     

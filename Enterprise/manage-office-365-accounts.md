@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Office 365 ユーザーを管理するためにどのようなツールを使用するか、およびどのように使用できるかについては、ユーザー id の管理方法によって異なります。 '
-ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 90e79eaf9cd90a539cf1c454509bff7d659b8b35
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843718"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735785"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Office 365 アカウントを管理するためのツール
 
-構成に応じて、さまざまな方法で Office 365 ユーザーを管理することができます。 [Microsoft 365 管理センター](https://admin.microsoft.com)、Windows PowerShell、社内ディレクトリ、または Azure Active directory 管理ポータルでユーザーを管理できます。 Office 365 を購入するとすぐに、管理センターと Windows PowerShell を使用してアカウントを管理できるようになります。 クラウド id を管理する際には、組織内のすべてのユーザーが Office 365 に対して個別のユーザー ID とパスワードを使用します。 オンプレミスのインフラストラクチャと統合して、ユーザーアカウントを Office 365 と同期させる場合は、Azure Active Directory Connect を使用して id の同期を提供し、必要に応じてパスワード同期を提供できます。または、完全シングルサインオン機能。
+構成に応じて、さまざまな方法で Office 365 ユーザーを管理することができます。 [Microsoft 365 管理センター](https://admin.microsoft.com)、Windows PowerShell、社内ディレクトリ、または Azure Active directory 管理ポータルでユーザーを管理できます。 Office 365 を購入するとすぐに、管理センターと Windows PowerShell を使用してアカウントを管理できるようになります。 クラウド id を管理する際には、組織内のすべてのユーザーが Office 365 に対して個別のユーザー ID とパスワードを使用します。 オンプレミスのインフラストラクチャと統合し、ユーザーアカウントを Office 365 と同期させる場合は、Azure Active Directory Connect を使用して id の同期を提供し、必要に応じてパスワード同期または完全なシングルサインオン機能を提供することができます。
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>ユーザーアカウントを管理する場所と方法を計画します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "41843718"
     
 - シームレスなシングルサインオンを使用したパスワードハッシュ同期 Azure AD でオンプレミスのディレクトリオブジェクトの認証を有効にする最も簡単な方法です。 パスワードハッシュ同期 (PHS) を使用して、オンプレミスの Active Directory ユーザーアカウントオブジェクトを Office 365 と同期し、オンプレミスでユーザーを管理します。 
     
-- シームレスなシングルサインオンを使用したパススルー認証-1 つまたは複数のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、オンプレミスの Active Directory を使用してユーザーを直接検証することにより、Azure AD 認証サービスの簡単なパスワード検証を提供します。名簿. 
+- シームレスなシングルサインオンを使用したパススルー認証-1 つ以上のオンプレミスサーバー上で実行されているソフトウェアエージェントを使用して、オンプレミスの Active Directory と直接ユーザーを検証することで、Azure AD 認証サービスの簡単なパスワード検証を提供します。 
     
 ### <a name="federated-authentication"></a>フェデレーション認証
 
@@ -74,7 +74,7 @@ ms.locfileid: "41843718"
     管理センターを使用してすべてのユーザーの追加と管理を選択する場合は、Office 365 アカウントを作成するときと同時に、場所を指定してライセンスを割り当てます。 そのため、計画はあまり必要ありません。
     
     > [!IMPORTANT]
-    > Office 365 で、ライセンスを割り当てずにアカウントを作成する (SharePoint Online の場合) とは、アカウント所有者が Office 365 ポータルを表示できるが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
+    > Office 365 で、ライセンスを割り当てずにアカウントを作成する (SharePoint Online の場合) とは、アカウント所有者が Microsoft 365 管理センターを表示することはできますが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
   
 ## <a name="next-steps"></a>次の手順
 

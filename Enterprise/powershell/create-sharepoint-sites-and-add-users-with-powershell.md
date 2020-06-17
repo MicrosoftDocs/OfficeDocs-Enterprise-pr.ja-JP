@@ -18,18 +18,18 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Office 365 PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
-ms.openlocfilehash: 1fc9192ed27bfd097ac770b53837fb8ba2eb062d
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004700"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735705"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
-Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Microsoft 356 管理センターで作業している場合よりも迅速かつ繰り返し実行することができます。 また、Office 356 管理センターでは実行できないタスクも実行できます。 
+Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Microsoft 365 管理センターで作業している場合よりも迅速かつ繰り返し実行することができます。 Office 365 管理センターでは実行できないタスクを実行することもできます。 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 このトピックの手順では、SharePoint Online に接続する必要があります。 手順については、「 [SharePoint Online PowerShell への接続](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
 
@@ -37,7 +37,7 @@ Office 365 PowerShell を使用して SharePoint Online サイトを作成し、
 
 Office 365 PowerShell を使用して複数のサイトを作成し、指定されたコード例およびメモ帳を使用して作成した .csv ファイルを作成します。 この手順では、角かっこに示されているプレースホルダー情報を、独自のサイトとテナント固有の情報に置き換えます。 このプロセスにより、1つのファイルを作成し、そのファイルを使用する1つの Office 365 PowerShell コマンドを実行することができます。 これにより、アクションが繰り返し可能で持ち運び可能になるため、SharePoint Online 管理シェルに長いコマンドを入力することによって発生する可能性のある多くのエラーが発生しなくなります。 この手順には2つの部分があります。 最初に .csv ファイルを作成してから、Office 365 PowerShell を使用してその .csv ファイルを参照します。これにより、そのコンテンツを使用してサイトが作成されます。
 
-Office 365 PowerShell コマンドレットは、その .csv ファイルをインポートし、ファイルの最初の行を列見出しとして読み取る、中かっこ内のループにパイプします。次に、Office 365 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新規のサイト コレクションを作成し、列見出しに従ってサイト コレクションのプロパティを割り当てます。
+The Office 365 PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the first line of the file as column headers. The Office 365 PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
 
 ### <a name="create-a-csv-file"></a>.csv ファイルの作成
 
@@ -52,7 +52,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 <br/>ここで、 *tenant*はテナントの名前で、 *owner*は、サイトコレクションの管理者の役割を付与するテナントのユーザー名です。<br/>メモ帳を使用して一括置換をすばやく実行するには、Ctrl + H キーを押します。<br/>
 
-2. ファイルを**SiteCollections**としてデスクトップに保存します。<br/>
+2. ファイルを**SiteCollections.csv**としてデスクトップに保存します。<br/>
 
 > [!TIP]
 > このまたはその他の .csv または Windows PowerShell スクリプトファイルを使用する前に、余分または印刷されない文字がないことを確認することをお勧めします。 Word でファイルを開き、リボンで [段落] アイコンをクリックすると、印刷されない文字が表示されます。 印刷されない余分の文字がないようにしてください。 たとえば、ファイルの末尾の最後の文字の後ろに段落記号があってはなりません。
@@ -65,7 +65,7 @@ Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SP
 ```
 <br/>*Myalias*はユーザーエイリアスと同じです。<br/>
 
-2. WindowsPowerShell プロンプトが再度表示されるまで待機します。これには 1 - 2 分かかる場合があります。<br/>
+2. Wait for the Windows PowerShell prompt to reappear. It might take a minute or two.<br/>
 
 3. Windows PowerShell プロンプトで、次のコマンドレットを入力するか、コピーして貼り付け、Enter キーを押します。<br/>
 
@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>手順 2:ユーザーおよびグループの追加
 
-ここでは、ユーザーを作成し、サイト コレクションのグループに追加します。次に、.csv ファイルを使用して、新しいグループとユーザーを一括アップロードします。
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 次の手順では、TeamSite01、Blog01、Project01、Community01 というサイトの例を引き続き使用します。
 
@@ -101,7 +101,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 ```
 <br/>*テナント*はテナント名と同じです。<br/>
 
-2. ファイルをグループ名、**アクセス許可 .csv**としてデスクトップに保存します。<br/>
+2. ファイルを**GroupsAndPermissions.csv**としてデスクトップに保存します。<br/>
 
 3. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
 
@@ -118,7 +118,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 ```
 <br/>*テナント*はテナント名と同じで、 *username*は既存のユーザーのユーザー名と同じです。<br/>
 
-4. ファイルを**ユーザー .csv**としてデスクトップに保存します。<br/>
+4. ファイルを**Users.csv**としてデスクトップに保存します。<br/>
 
 5. メモ帳の新しいインスタンスを開き、次のテキストのブロックを貼り付けます。<br/>
 
@@ -128,7 +128,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>MyAlias は、現在ログオンしているユーザーのユーザー名と同じです。<br/>
 
-6. ファイルを**usersandgroups.ps1**としてデスクトップに保存します。 これは、単純な Windows PowerShell スクリプトです。
+6. ファイルを**UsersAndGroups.ps1**としてデスクトップに保存します。 これは、単純な Windows PowerShell スクリプトです。
 
 これで、UsersAndGroup.ps1 スクリプトを実行して複数のサイト コレクションにユーザーとグループを追加する準備ができました。
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>*Myalias*は、ユーザー名と同じです。<br/>
 
-5. プロンプトが戻るまで待機してから、次に進みます。最初に、作成したとおりにグループが表示されます。次に、ユーザーを追加するたびに、グループの一覧が繰り返し表示されます。
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>関連項目
 
