@@ -30,7 +30,7 @@
 ## Microsoft 365 のクライアント サポート
 ### [証明書ベースの認証](office-365-client-support-certificate-based-authentication.md)
 ### [条件付きアクセス](office-365-client-support-conditional-access.md)
-### [モバイル アプリケーション管理](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
+### [モバイル アプリケーション管理](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)
 ### [先進認証](office-365-client-support-modern-authentication.md)
 ### [シングル サインオン](office-365-client-support-single-sign-on.md)
 
