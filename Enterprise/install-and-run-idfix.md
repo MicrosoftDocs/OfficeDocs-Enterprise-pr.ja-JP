@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Microsoft 365 IdFix ツールをダウンロードして実行し、Active Directory ドメインサービス (AD DS) をクリーンアップしてから、Microsoft 365 に同期させる方法。
-ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711597"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774862"
 ---
 # <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Microsoft 365 IdFix ツールをダウンロードして実行する
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 IdFix は、Microsoft 365 に同期する前に Active Directory ドメインサービス (AD DS) ドメイン内の重複や書式設定の問題などのエラーを識別します。 
   
@@ -125,8 +125,3 @@ IdFix をダウンロードして抽出した後、それを実行して AD DS �
 - [IdFix で除外されるオブジェクトと属性、およびサポートされるオブジェクトと属性](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Microsoft 365 IdFix トランザクションログ](idfix-transaction-log.md)
     
-## <a name="video-training"></a>ビデオ トレーニング
-
-詳細については、レッスン「[インストールと使用](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US)」を参照してください。このツールは、LinkedIn Learning によって提供されています。
-  
-

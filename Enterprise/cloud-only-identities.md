@@ -26,22 +26,22 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 サブスクリプションがクラウド専用の id を使用しているときに、ユーザーとグループを作成する方法について説明します。
-ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698924"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774832"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 クラウドのみの id
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 クラウド専用の id を使用すると、すべてのユーザー、グループ、および連絡先が、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに格納されます。 ここでは、クラウド専用の id の基本的なコンポーネントを示します。
  
 ![クラウド専用の id の基本コンポーネント](./media/about-office-365-identity/cloud-only-identity.png)
 
-組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 以下に例を示します。
+組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 たとえば、次のようにします。
 
 - テナント アカウントは、組織内でクラウド サービスのライセンスを付与したユーザーを表します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "44698924"
 
 組織内のユーザーの種類の株価を取得します。 グループ化とは たとえば、組織に対して、レベルの高い機能または目的によってユーザーをグループ化することができます。
 
-また、一部のクラウド サービスを、ユーザー アカウントを持たない組織外のユーザーと共有できます。この場合、このような外部ユーザーのグループも指定する必要があります。
+Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
 Azure AD のグループは、クラウド環境の管理を簡素化するいくつかの目的に使用できます。 たとえば、Azure AD グループでは、次のことを行うことができます。
 

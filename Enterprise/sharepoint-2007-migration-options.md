@@ -25,16 +25,16 @@ ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
 description: SharePoint Server 2007 のサポートが終了したので、アップグレードを実行する時間を短縮しました。 この記事を使用して、計画の作成に役立てることができます。
-ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841154"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774992"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>検討する SharePoint 2007 移行オプション
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2007 と SharePoint Server 2007 のサポートが終了しました。 アップグレード時間 この記事では、移行オプションに関する情報を提供します。
   
@@ -54,9 +54,9 @@ SharePoint Server 環境をアップグレードするには、複数の方法�
     
 - サイトコレクションまたはライブラリ間でデータを手動で移動する
     
-- FastTrack ウィザードを Office 365 にアップグレードする ([SharePoint Online 展開アドバイザー](https://aka.ms/spoguidance))
+- FastTrack ウィザードを Microsoft 365 にアップグレードする ([SharePoint Online 展開アドバイザー](https://aka.ms/spoguidance))
     
-- Office 365 の移行 API から SharePoint Online (SPO) へ
+- Microsoft 365 での SharePoint Online (SPO) への移行 API
     
 最適な機能
   
@@ -67,7 +67,7 @@ SharePoint Server 環境をアップグレードするには、複数の方法�
   
 アップグレードする SharePoint のバージョンについて、[製品のライフサイクル](https://support.microsoft.com/lifecycle/search)およびシステム要件を必ず確認してください。 これは、次のアップグレードが必要になる場合があることに注意してください (たとえば、SharePoint Server 2010 のような従来の製品を使用してアップグレードを計画し、サポートの終了日を知っていることを確認してください)。また、プランをサポートするハードウェアがあるかどうかを確認してください。 
   
-SharePoint サイトの一部またはすべてをクラウド内の Office 365 に移行することを計画している場合は、 [office 365 のサービスの説明](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)へのリンクをブックマークする必要があります。 SharePoint Online の機能と、それらがオンプレミスの SharePoint Server とどのように異なるかについては、サービスの説明を参照してください。 機能している Microsoft Office SharePoint Server 2007 ファームをアップグレードします。 インストールに壊れたサイトがある場合は、アップグレード前に修正してください。
+クラウド内の一部の SharePoint サイトを Microsoft 365 に移行することを計画している場合は、 [microsoft 365 および Office 365 サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)へのリンクをブックマークにする必要があります。 SharePoint Online の機能と、それらがオンプレミスの SharePoint Server とどのように異なるかについては、サービスの説明を参照してください。 機能している Microsoft Office SharePoint Server 2007 ファームをアップグレードします。 インストールに壊れたサイトがある場合は、アップグレード前に修正してください。
   
 ## <a name="a-note-about-managing-risk"></a>リスク管理に関する注意事項
 
@@ -75,18 +75,18 @@ SharePoint サイトの一部またはすべてをクラウド内の Office 365 
   
 1. データベース接続を使用して、Microsoft Office SharePoint Server 2007 データベースのバックアップを作成し、それらを個別にアップグレードする場所があります。
     
-2. Microsoft Office SharePoint Server 2007 ファームで使用されている重要なドキュメントライブラリとその他の情報が少数しかないことがわかっている場合は、Microsoft Office SharePoint Server 2007 から SharePoint Server 2010 にデータを手動で移動することを選択できます。または、特定のサイトと web のみを次のバージョンに適用します (ジョブをより簡単に実行できます)。
+2. Microsoft Office SharePoint Server 2007 ファームで使用されている重要なドキュメントライブラリとその他の情報が少数しかないことがわかった場合は、Microsoft Office SharePoint Server 2007 から SharePoint Server 2010 にデータを手動で移動するか、または特定のサイトと web のみを次のバージョンに移動することを選択できます
     
 3. Microsoft Office SharePoint Server 2007 のサーバーファームの方が、アップグレードの間にファームに格納されているデータをより安全なものにすることができます。
     
 一括アップグレードなどの方法は、Microsoft Office SharePoint Server 2007 ファーム上で直接動作し、パスを破棄して pristine 環境で再度開始する簡単なオプションを提供します。 可能な限り、安全策をいくつか (元の環境のバックアップの実行とテストなど) に構築します。 たとえば、Microsoft Office SharePoint Server 2007 ファームが仮想で、バックアップと復元の目的で複製されている場合は、アップグレードのためにサービス時間の前に、最新のデータベースをバックアップして復元します。 データベースバックアップを復元するオプションを選択すると、フェイルセーフが提供されるだけでなく、安心感を得ることができます。
   
 > [!TIP]
-> ベストプラクティスアップグレードに関するドキュメントは、 [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx)、 [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx)、 [Sharepoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)、および[sharepoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)に存在します。 また、アップグレードまたは Office 365 の移行に携わっている[Microsoft パートナー](https://partnercenter.microsoft.com/pcv/search)を検索することもできます。 
+> ベストプラクティスアップグレードに関するドキュメントは、 [Microsoft Office SharePoint server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx)、 [sharepoint server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx)、 [Sharepoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)、および[sharepoint server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)に存在します。 また、アップグレードまたは Microsoft 365 移行に携わっている[Microsoft パートナー](https://partnercenter.microsoft.com/pcv/search)を検索することもできます。 
   
 ## <a name="make-your-plan"></a>プランを作成する
 
-アップグレードが必要な場合は、プランが必要であり、これらの場合に1つのサイズが調整されません。 プランは、「SharePoint Online を使用して Office 365 サブスクリプションを作成する」、「ドメインを登録する」、および「ユーザーにファイルを保存するようにリダイレクトする」という簡単なものにすることができます。 になっていない可能性があります。 その決定は自分とユーザーが実際に必要とするものになります。
+アップグレードが必要な場合は、プランが必要であり、これらの場合に1つのサイズが調整されません。 プランは、「SharePoint Online を使用して Microsoft 365 サブスクリプションを作成する」、「ドメインを登録して、自分のファイルを保存するようにユーザーをリダイレクトする」という簡単なものにすることができます。 になっていない可能性があります。 その決定は自分とユーザーが実際に必要とするものになります。
   
 > [!NOTE]
 > ライフサイクルが終了したソフトウェアで実行するのは危険です。 サポートされていない製品は、問題が見つかったときにパッチが適用されなくなりました。 これは、新しいセキュリティの脅威が発生した場合に、ライフサイクル終了製品がサポートされなくなるため、セキュリティ更新プログラムや修正プログラムが適用されないことも意味します。 このような状況は避けてください。 
@@ -101,7 +101,7 @@ SharePoint サイトの一部またはすべてをクラウド内の Office 365 
     
 - 大規模データコーパス (ファイルのアーカイブなど)
     
-- Availability
+- 可用性
     
 - ファーム内の重要なアプリ、web パーツ、またはドキュメント (ミッションクリティカルなファーム)
     
@@ -109,15 +109,15 @@ SharePoint サイトの一部またはすべてをクラウド内の Office 365 
     
 - カスタマイズ
     
-SharePoint ファームからビジネスに不可欠なものを実行している場合は、クライアントサービス要件に関する重要なデータの大規模カタログとして機能すると仮定すると、「重要なアプリ」の横にマークを置くことができます。しばらくの間 SharePoint を使用できなかった場合に影響を受けます。 同様に、ファームが提供する重要なサービスは、カスタムコード、サイト定義、または共同作業する多数のカスタマイズに基づいているため、[カスタマイズ] をチェックすることもできます。
+SharePoint ファームからビジネスに不可欠なものを実行する場合、クライアントサービス要件に関する重要なデータの大規模なカタログのように動作すると、「重要なアプリ」の横にチェックマークを置くことができます。また、「可用性」にもかかわらず、SharePoint をしばらく使用していない場合は、ビジネスに影響を与えます。 同様に、ファームが提供する重要なサービスは、カスタムコード、サイト定義、または共同作業する多数のカスタマイズに基づいているため、[カスタマイズ] をチェックすることもできます。
   
-ソフトウェアに組み込まれている機能を使用せずに SharePoint の要件を満たす必要があり、通常はそれを更新し、通常の管理とメンテナンスを実行する必要がある場合は、「組み込みの SharePoint」が選択されている可能性があります。以前のバージョンの SharePoint を使用する理由。 つまり、必要なものは既に存在しており、現時点では、Microsoft Office SharePoint Server 2007 のサポート終了時までアップグレードする必要はありません。
+ソフトウェアに組み込まれている機能を使用せずに SharePoint の要件を満たしていて、通常の管理と保守を行う必要がある場合は、「組み込みの SharePoint」が選択されている可能性があります。これは、以前のバージョンの SharePoint を使用していた可能性もあります。 つまり、必要なものは既に存在しており、現時点では、Microsoft Office SharePoint Server 2007 のサポート終了時までアップグレードする必要はありません。
   
 これらの項目を行頭文字に使用する場合は、アップグレードの基準を作成します。 言い換えると、アップグレードではこのバーを考慮する必要があります。 これにより、現在のニーズに合わない方法を除外することができます。
   
 ### <a name="a-simple-sample-plan"></a>簡単なサンプルプラン
 
-リーダーやその他の管理者との間で、SharePoint のアップグレードにかかる可能性があるため、より多くの合意が必要になることがあります。 SharePoint Server 管理者は、多くの場合、Microsoft SQL Server 管理者と協力して、ネットワークおよびセキュリティチームなどを共同作業します。 関係者が多い場合は、アップグレードと移行の計画を作成するか、調整する必要があります。 たとえば、会社の一部が Office 365 で SharePoint Online を使用するようにデータを移行する場合、ネットワーク内でパフォーマンスを調整またはテストする必要がある可能性があります。 影響を受ける teams について事前に通知する必要があります。
+リーダーやその他の管理者との間で、SharePoint のアップグレードにかかる可能性があるため、より多くの合意が必要になることがあります。 SharePoint Server 管理者は、多くの場合、Microsoft SQL Server 管理者と協力して、ネットワークおよびセキュリティチームなどを共同作業します。 関係者が多い場合は、アップグレードと移行の計画を作成するか、調整する必要があります。 たとえば、データを移行して、会社の一部が Microsoft 365 の SharePoint Online を使用するようにした場合、ネットワーク内でパフォーマンスを調整またはテストする必要が生じる可能性があります。 影響を受ける teams について事前に通知する必要があります。
   
 この簡単なサンプルでは、SharePoint 管理者の提案を示し、関係者全員が同意した計画を示します。 わかりやすくするために、契約と決定事項を文書化します。
   
@@ -146,8 +146,8 @@ My ' 最も重要な行頭文字リスト:
 |**はい** <br/> |**いいえ** <br/> |
 |データベース接続を使用してデータベースをアップグレードする  <br/> |一括アップグレード  <br/> |
 |ファームを並行してアップグレードする  <br/> |ハイブリッドアップグレード  <br/> |
-|Office 365 の SPO への移行 API (個人用サイトデータの場合)  <br/> |SharePoint ハイブリッド (まだ必要ではありません)  <br/> |
-|重要なデータを SharePoint Online に手動で移行することがある  <br/> |FastTrack ウィザードの Office 365 へのアップグレード  <br/> |
+|Microsoft 365 での SPO への移行 API (個人用サイトデータの場合)  <br/> |SharePoint ハイブリッド (まだ必要ではありません)  <br/> |
+|重要なデータを SharePoint Online に手動で移行することがある  <br/> |FastTrack ウィザードの Microsoft 365 へのアップグレード  <br/> |
    
  **提案されているプラン:**
   
@@ -157,7 +157,7 @@ My ' 最も重要な行頭文字リスト:
     
 - ここから SharePoint Online にアップグレードする場合は、 [Fasttrack アシスタンス](https://fasttrack.microsoft.com)をご検討ください。 
     
-- Office 365 サブスクリプションにオフロードできるサイトコレクションがあるかどうかを判断します。 (Office 365 は、多くの[コンプライアンス基準](https://technet.microsoft.com/library/office-365-compliance.aspx)を満たしています。 Office 365 は、[電子情報開示](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)を行い、コンプライアンスセンターを通じて[保持](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E)することができます。) 
+- Microsoft 365 サブスクリプションにオフロードできるサイトコレクションがあるかどうかを判断します。 (Microsoft 365 は、多くの[コンプライアンス基準](https://technet.microsoft.com/library/office-365-compliance.aspx)を満たしています。 Microsoft 365 は、[電子情報開示](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)を行い、コンプライアンスセンターを通じて[保持](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E)することができます。) 
     
 それ以外の場合は、SharePoint Server 2016 への並行アップグレードを続行します。
   

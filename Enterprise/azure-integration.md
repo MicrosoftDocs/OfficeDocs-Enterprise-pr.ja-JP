@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Microsoft 365 サブスクリプションには、Azure AD へのサブスクリプションが含まれています。 オンプレミス環境でのパスワード同期またはシングルサインオンを行う場合は、Microsoft 365 を Azure AD と統合します。
-ms.openlocfilehash: ca38a7a8d5878c6efad228595cf2929650a5c869
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698894"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774842"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Microsoft 365 との Azure の統合
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、バックグラウンドでユーザー id を管理しています。 Microsoft 365 サブスクリプションには、Azure AD への無料サブスクリプションが含まれているため、Microsoft 365 を Azure ad に統合できます。これにより、パスワードを同期したり、シングルサインオンをオンプレミス環境でセットアップしたりすることができます。 また、高度な機能を購入してアカウントをより適切に管理することもできます。
   

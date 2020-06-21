@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: 2021年4月13日に SharePoint 2010 および SharePoint Server 2010 のサポートが終了します。 この記事は、SharePoint Online またはオンプレミスの SharePoint Server の新しいバージョンにアップグレードするためのガイドとして使用してください。
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532298"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774452"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からアップグレードする
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2010 と SharePoint Server 2010 は **、2021年4月 13**日にサポート終了になります。 この記事では、既存の SharePoint Server 2010 データを Office 365 の SharePoint Online に移行したり、オンプレミスの SharePoint Server 2010 環境をアップグレードしたりするのに役立つリソースについて説明します。
   
@@ -128,7 +128,7 @@ Sharepoint オンプレミス製品の最新バージョン (SharePoint Server 2
   
 |||
 |:-----|:-----|
-||シリアルアップグレードパス * * * *: SharePoint server 2010 **\>** sharepoint server 2013 **\>** sharepoint server 2016 |
+||シリアルアップグレードパス * * * *: SharePoint server 2010 sharepoint server 2013 sharepoint server **\>** **\>** 2016 |
    
 SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用することを選択した場合、これには時間と計画が必要になります。 アップグレードには、アップグレードされたハードウェア (SQL server もアップグレードする必要があることに注意してください)、ソフトウェア、および管理に関するコストが関係しています。 また、カスタマイズをアップグレードしたり、破棄したりする必要がある場合もあります。 SharePoint Server ファームをアップグレードする前に、すべての重要なカスタマイズに関するメモを収集してください。
   
@@ -162,15 +162,15 @@ SharePoint 2010 から SharePoint Server 2016 への完全なパスを使用す�
   
 - **ハードウェア/ソフトウェア要件**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | Sharepoint server 2010 sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **ソフトウェアの境界と制限**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | Sharepoint server 2010 sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **アップグレード プロセスの概要**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | Sharepoint server 2010 sharepoint server[2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Sharepoint Online とオンプレミスの sharepoint Server との間に SharePoint ハイブリッドソリューションを作成する
 

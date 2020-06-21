@@ -3,7 +3,7 @@ title: データ移行についての一般的な FAQ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: ここでは、コア データを新しいデータセンター geo に移行することについての一般的な質問に対する回答を示します。
-ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735845"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781042"
 ---
 # <a name="data-move-general-faq"></a>データ移行についての一般的な FAQ
 
@@ -52,7 +52,7 @@ Exchange Online、SharePoint Online、OneDrive for Business に加えてMicrosof
 - Teams のチャットメッセージ (プライベートメッセージやチャネルメッセージを含む)。 
 - チャットで使用される Teams 画像。 
 
-Teams ファイルは SharePoint Online に格納され、Teams チャットファイルは OneDrive for Business に保存されます。  ボイスメール、予定表、チャット履歴、および連絡先は、Exchange Online に格納されます。  多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、ローカルのデータセンター geo のお客様によって既に使用されており、対象となる顧客の国の Office 365 移行プログラムの一部でもあります。
+Teams ファイルは SharePoint Online に格納され、Teams チャットファイルは OneDrive for Business に保存されます。  ボイスメール、予定表、チャット履歴、および連絡先は、Exchange Online に格納されます。  多くの場合、Exchange Online、SharePoint Online、OneDrive for Business は、ローカルのデータセンター geo のお客様によって既に使用されており、資格のあるお客様の国の Microsoft 365 移行プログラムの一部でもあります。
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>異なる geo に異なるサービスがあることには、どんな影響がありますか?
 
@@ -80,11 +80,11 @@ Teams ファイルは SharePoint Online に格納され、Teams チャットフ�
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>期限までに移行をリクエストしないと、どうなりますか?
   
-例外ベースで要求を受け入れ、移行を完了するためにテナントにコミット期限を付与することができます。   [Office 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)に連絡して、要求を行ってください。
+例外ベースで要求を受け入れ、移行を完了するためにテナントにコミット期限を付与することができます。   [Microsoft 365 サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)に連絡して、要求を行ってください。
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>ネットワークのパフォーマンスを向上するために、データを移動したらどうなりますか?
   
-Microsoft 365 データセンターへの物理的な類似性は、ネットワークのパフォーマンスが向上することを保証するものではありません。 エンドユーザーと Microsoft 365 サービスとの間のネットワークパフォーマンスに影響を与えるさまざまな要素とコンポーネントがあります。 このおよびパフォーマンスのチューニングの詳細については、「 [Office 365 のネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)」を参照してください。
+Microsoft 365 データセンターへの物理的な類似性は、ネットワークのパフォーマンスが向上することを保証するものではありません。 エンドユーザーと Microsoft 365 サービスとの間のネットワークパフォーマンスに影響を与えるさまざまな要素とコンポーネントがあります。 このおよびパフォーマンスチューニングの詳細については、「 [Microsoft 365 のネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)」を参照してください。
   
  ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a>すべてのサービスは同じ日にデータを移行しますか?
  
@@ -104,11 +104,11 @@ Microsoft が移行の具体的な日付や期間を共有することもでき�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>移行が完了したことはどのようにわかりますか?
   
-各サービスのデータの移行が完了したことを確認するために、Office 365 メッセージセンターを見てください。 各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange Online、SharePoint Online、Skype for Business Online の3つの完了通知です。  また、Microsoft 365 管理センターの組織プロファイルの下の [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。  
+各サービスのデータの移行が完了したことを確認するために、Microsoft 365 メッセージセンターをご覧ください。 各サービスのデータが移動されると、完了通知が送信されます。1つは、Exchange Online、SharePoint Online、Skype for Business Online の3つの完了通知です。  また、Microsoft 365 管理センターの組織プロファイルの下の [データの場所] セクションを使用して、お客様のデータの場所を確認することもできます。  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>新しいデータセンター geo の1つでマイクロソフトの365ユーザーとして登録されていますが、サインアップするときに別の国を選択しました。 新しいデータセンター geo に移行するにはどうすればよいですか?
 
-テナントに関連付けられているサインアップ国を変更することはできません。 代わりに、新しいサブスクリプションで新しい Office 365 テナントを作成し、ユーザーとデータを手動で新しいテナントに移行する必要があります。
+テナントに関連付けられているサインアップ国を変更することはできません。 代わりに、新しいサブスクリプションで新しい Microsoft 365 テナントを作成し、ユーザーとデータを新しいテナントに手動で移動する必要があります。
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Exchange Online の移動中に Microsoft 365 への電子メールデータの移行を行っている場合はどうなりますか。
 
@@ -126,7 +126,7 @@ If you create a new tenant after the new datacenter geo is available, the new te
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>私の顧客データは新しいデータセンター geo に既に移行しました。 戻すことはできますか?
  
-いいえ、できません。 新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。 任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。  [Office 365 の複数地域](https://aka.ms/multi-geo)は、一部のお客様がアドオンとして利用でき、1つのテナントで複数のサテライト geo を作成し、データ常駐責任を持つ geo にユーザーデータを移動することができます。
+いいえ、できません。 新しい geo のデータセンターに移行したお客様は、元の geo に戻ることはできません。 任意の geo の顧客として、サービスの品質、パフォーマンス、およびセキュリティ コントロールに関して、これまでと同様のエクスペリエンスを得ることができます。  [Microsoft 365 の複数地域](https://aka.ms/multi-geo)は、一部のお客様がアドオンとして利用でき、1つのテナントで複数のサテライト geo を作成し、データ常駐のコミットメントを使用してそれらの geo にユーザーデータを移動させることができます。
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>新しいデータセンターでホストされている Microsoft 365 テナントは、国外のユーザーが使用できるようになりますか。
   
@@ -137,14 +137,14 @@ If you create a new tenant after the new datacenter geo is available, the new te
 はい。テナントは登録する資格があります。 現在の既定の地域から新しいローカルデータセンター geo にすべての EXO メールボックスを移動します。  複数地域のサテライト地域で構成されている EXO メールボックスは、意図したとおりに、衛星地域のデータ常駐を引き続き尊重するように移行されません。  
 
 SharePoint Online と OneDrive for business は、移動プログラムの一部として新しいデータセンター geo に移行できませんが、OneDrive for Business 共有を構成して、複数地域プログラムで任意の場所に移動することができます。
-  
+
 ## <a name="related-topics"></a>関連項目
 
 [新しい Microsoft 365 datacenter geo へのコアデータの移動](moving-data-to-new-datacenter-geos.md)
 
 [データ移行をリクエストする方法](request-your-data-move.md)
 
-[Office 365 複数地域](https://aka.ms/multi-geo)
+[Microsoft 365 複数地域](https://aka.ms/multi-geo)
 
 [Microsoft 365 interactive datacenter map](https://office.com/datamaps)
 

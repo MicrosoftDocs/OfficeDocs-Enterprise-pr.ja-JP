@@ -3,7 +3,7 @@ title: Exchange Server をオンプレミスで構成して、ハイブリッド
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: 06/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
-ms.openlocfilehash: c52eecbe57567276de94aac913b7b82db8c5e404
-ms.sourcegitcommit: 72a4938f1372e7f3693b53bcabac0c5d18305a1d
+ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326444"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774522"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
@@ -34,34 +34,34 @@ ms.locfileid: "44326444"
 開始する前に、次のように呼び出します。
   
 - ハイブリッド先進認証の \> HMA
-    
+
 - Exchange オンプレミスの \> EXCH
-    
+
 - Exchange Online \> exo
-    
-また、*この記事のグラフィックに ' グレイアウト ' または ' 淡色 ' のオブジェクトが含まれている場合、灰色の要素が HMA 固有の構成に含まれていない*ことを意味します。 
+
+また、*この記事のグラフィックに ' グレイアウト ' または ' 淡色 ' のオブジェクトが含まれている場合、灰色の要素が HMA 固有の構成に含まれていない*ことを意味します。
   
 ## <a name="enabling-hybrid-modern-authentication"></a>ハイブリッド先進認証を有効にする
 
 HMA を有効にするには、次のようにします。
   
 1. 開始する前に、前提条件を満たしていることを確認してください。
-    
+
 1. 多くの**前提条件**は、Skype for Business と exchange の両方に共通であるため、[ハイブリッド先進認証の概要と、オンプレミスの Skype For business および exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md)です。 この手順を実行する前に、この記事の手順を開始する必要があります。
-    
-2. Azure AD のサービスプリンシパル名 (Spn) として、オンプレミスの web サービス Url を追加します。
-    
-3. すべての仮想ディレクトリで HMA が有効になっていることを確認する
-    
-4. EvoSTS 認証サーバーオブジェクトの確認
-    
-5. EXCH で HMA を有効にします。
-    
+
+1. Azure AD の**サービスプリンシパル名 (spn)** として、オンプレミスの Web サービス url を追加します。
+
+1. すべての仮想ディレクトリで HMA が有効になっていることを確認する
+
+1. EvoSTS 認証サーバーオブジェクトの確認
+
+1. EXCH で HMA を有効にします。
+
  **メモ**お使いのバージョンの Office は MA をサポートしていますか? 「 [Office 2013 および office 2016 クライアントアプリでの先進認証のしくみ」を](modern-auth-for-office-2013-and-2016.md)参照してください。
   
-## <a name="make-sure-you-meet-all-the-pre-reqs"></a>前提条件がすべて満たされていることを確認する
+## <a name="make-sure-you-meet-all-the-prerequisites"></a>すべての前提条件を満たしていることを確認する
 
-Skype for Business と Exchange の両方に共通の前提条件が多数存在するため、[ハイブリッド先進認証の概要と、オンプレミスの Skype For business および exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md)を確認してください。 この手順を実行する*前*に、この記事の手順を開始する必要があります。 
+Skype for Business と Exchange の両方に共通の前提条件が多数存在するため、[ハイブリッド先進認証の概要と、オンプレミスの Skype For business および exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md)を確認してください。 この手順を実行する*前*に、この記事の手順を開始する必要があります。
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>オンプレミスの web サービス Url を Spn として Azure AD に追加する
 
@@ -78,26 +78,26 @@ Get-OABVirtualDirectory | FL server,*url*
     
 AAD でクライアントが接続できる Url が HTTPS サービスプリンシパル名としてリストされていることを確認します。
   
-1. 最初に、[次の手順に従っ](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)て AAD に接続します。 
+1. 最初に、[次の手順に従っ](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)て AAD に接続します。
 
- **メモ**このページの Connect-msolservice オプションを使用して、以下のコマンドを使用できるようにする必要があります。 
-    
+ **メモ**このページの_connect-msolservice_オプションを使用して、以下のコマンドを使用できるようにする必要があります。
+
 2. Exchange 関連の Url の場合は、次のコマンドを入力します。
-    
+
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-このコマンドの出力をメモします。このコマンドには、https:// *autodiscover.yourdomain.com*および Https:// *mail.yourdomain.com* URL が含まれていますが、ほとんどの場合は、00000002-0000-0ff1-ce00-000000000000/から始まる spn から構成されます。 オンプレミスの https://Url が不足している場合は、それらのレコードをこのリストに追加する必要があります。 
+このコマンドの出力をメモします。このコマンドには、https:// *autodiscover.yourdomain.com*および Https:// *mail.yourdomain.com* URL が含まれていますが、ほとんどの場合は、00000002-0000-0ff1-ce00-000000000000/から始まる spn から構成されます。 オンプレミスの https://Url が不足している場合は、それらのレコードをこのリストに追加する必要があります。
   
 3. 内部および外部の MAPI/HTTP、EWS、ActiveSync、OAB、および自動検出のレコードがこの一覧に表示されない場合は、次のコマンドを使用して追加する必要があります (Url の例は ' `mail.corp.contoso.com` ' と ' ' ですが、この `owa.contoso.com` **例の url は独自のものに置き換え**ます)。 <br/>
 ```powershell
-$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
 $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
- 
+
 4. 手順2で New-msolserviceprincipal コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい Spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい Url が一覧に表示されます。 この例では、Spn の一覧に特定の Url とが含まれるようになりました `https://mail.corp.contoso.com` `https://owa.contoso.com` 。 
   
 ## <a name="verify-virtual-directories-are-properly-configured"></a>仮想ディレクトリが正しく構成されていることを確認する
@@ -111,13 +111,11 @@ Get-OABVirtualDirectory | FL server,*url*,*oauth*
 Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
-出力をチェックして、これらの各 VDirs で**OAuth**が有効になっていることを確認します。次のようになります (そして、主に ' OAuth ' であることを確認してください)。 
+出力をチェックして、これらの各 VDirs で**OAuth**が有効になっていることを確認してください。次のようになります (そして、ここで重要な点は ' OAuth ' です)。
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
-```
 
-```
 Server                        : EX1
 InternalUrl                   : https://mail.contoso.com/mapi
 ExternalUrl                   : https://mail.contoso.com/mapi
@@ -148,7 +146,7 @@ Exchange 管理シェルで、オンプレミスの次のコマンドを実行�
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
-    
+
 ## <a name="verify"></a>ことを確認
 
 HMA を有効にすると、クライアントの次のログインは新しい認証フローを使用します。 HMA を有効にしても、クライアントに対しては再認証はトリガーされませんので注意してください。 クライアントは、認証トークンまたは証明書の有効期間に基づいて再認証を行います。
@@ -159,12 +157,8 @@ HMA を有効にすると、クライアントの次のログインは新しい�
  
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>iOS および Android 用の Outlook でのハイブリッド先進認証の使用
 
-TCP 443 で Exchange server を使用しているオンプレミスのお客様の場合は、次の IP 範囲をホワイトリストしてください。 <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
-  
+TCP 443 で Exchange server を使用しているオンプレミスのお客様の場合は、次の IP 範囲をホワイトリストしてください。 <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR>
 
 ## <a name="related-topics"></a>関連項目
 
-[ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件](hybrid-modern-auth-overview.md) 
-  
-Outlook ユーザーにモダン認証を強制する  
-[Office 365 専任/ITAR から vNext に移行するための先進認証構成要件](modern-authentication-configuration.md)
+[Office 365 専任/ITAR から vNext に移行するための先進認証構成要件](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

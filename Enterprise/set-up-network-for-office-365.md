@@ -1,5 +1,5 @@
 ---
-title: Office 365 のネットワークをセットアップする
+title: Microsoft 365 用にネットワークをセットアップする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,45 +18,45 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
-description: '概要: Office 365 のネットワークを理解するには、このページに記載されている記事を参照してください。'
-ms.openlocfilehash: c1976a6b1ae5bff0b5f6f909ee9ab8495f371653
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: '概要: Microsoft 365 のネットワークについて理解するには、次の記事を参照してください。'
+ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844028"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735661"
 ---
-# <a name="set-up-your-network-for-office-365"></a>Office 365 のネットワークをセットアップする
+# <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365 用にネットワークをセットアップする
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-Office 365 のオンボーディングで重要な部分は、必ず、ネットワークとインターネット接続が最適化されたアクセスとなるように設定することです。グローバルに分散されたサービスとしてのソフトウェア (SaaS) のクラウドにアクセスするためにオンプレミス ネットワークを構成することは、オンプレミスのデータセンターおよび中央インターネット接続のトラフィック用に最適化された従来のネットワークを構成する場合とは異なります。 
+An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
 
 以下の記事を活用して主な違いを理解し、エッジ デバイス、クライアント コンピューター、オンプレミス ネットワークを変更して、オンプレミス ユーザーの最高のパフォーマンスを引き出します。
 
-## <a name="how-office-365-networking-works"></a>Office 365 ネットワークのしくみ
+## <a name="how-microsoft-365-networking-works"></a>Microsoft 365 ネットワークのしくみ
 
-Office 365 の接続の概要については、次の記事を参照してください。
+Microsoft 365 の接続の概要については、次の記事を参照してください。
 
-- [Office 365 ネットワーク接続の概要](office-365-networking-overview.md)
-- [Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
-- [Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+- [Microsoft 365 ネットワーク接続の概要](office-365-networking-overview.md)
+- [Microsoft 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)
+- [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
-パフォーマンスの向上に関するアドバイスについては、「[Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)」を参照してください。
+パフォーマンスの向上に関するアドバイスについては、「 [Microsoft 365 のネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)」を参照してください。
 
-## <a name="support-office-365-networking-as-a-network-equipment-vendor"></a>ネットワーク機器業者として Office 365 ネットワークをサポートする
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>ネットワーク機器ベンダーとしての Microsoft 365 ネットワークのサポート
 
-ネットワーク機器業者のお客様は、[Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)にぜひご参加ください。ご参加いただくと、Office 365 のネットワーク接続の基本原則をお客様の会社の製品とソリューションに組み込んでいただけます。 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## <a name="office-365-endpoints"></a>Office 365 エンドポイント
 
 エンドポイントとは、インターネット上の Office 365 トラフィックの宛先 IP アドレス、DNS ドメイン名、URL のセットのことです。 
 
-Office 365 のクラウドベース サービスのパフォーマンスを最適化するには、クライアント ブラウザーと境界ネットワーク内のデバイスを使用し、一部のエンドポイントに対して特別な処理を行う必要があります。これらのデバイスには、ファイアウォール、SSL 中断/検査とパケット検査デバイス、およびデータ損失防止システムが含まれます。
+To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
 
 詳細については、「[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)」を参照してください。
 
-現在、5 つの異なる Office 365 クラウドがあります。この表からそれぞれのクラウドのエンドポイント一覧へ移動できます。
+There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
 
 |||
 |:-------|:-----|
@@ -75,15 +75,15 @@ Office 365 クラウドのエンドポイントの最新の一覧を自動的に
 - [Office 2016 for Mac でのネットワーク要求](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-office-365-networking"></a>Office 365 ネットワークに関するその他のトピック
+## <a name="additional-topics-for-microsoft-365-networking"></a>Microsoft 365 ネットワークに関するその他のトピック
 
-Office 365 ネットワークの専門的なトピックについては、次の記事を参照してください。
+Microsoft 365 ネットワークの専門的なトピックについては、以下の記事を参照してください。
 
 - [コンテンツ配信ネットワーク](content-delivery-networks.md)
 - [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
 - [Office 365 の NAT サポート](nat-support-with-office-365.md)
 
-## <a name="expressroute-for-office-365"></a>Office 365 向け ExpressRoute
+## <a name="expressroute-for-microsoft-365"></a>Microsoft 365 向け ExpressRoute
 
 Office 365 トラフィック向け ExpressRoute の使用についての詳細は、次の記事を参照してください。
 

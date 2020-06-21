@@ -1,7 +1,7 @@
 ---
-title: Office 365 での管理アクセス制御
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 の管理アクセス制御
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: '概要: Office 365 の管理アクセス制御とデータ分類の概要について説明します。'
-ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '概要: Microsoft 365 の管理アクセス制御とデータ分類の概要について説明します。'
+ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844538"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774972"
 ---
-# <a name="administrative-access-controls-in-office-365"></a>Office 365 での管理アクセス制御 
+# <a name="administrative-access-controls-in-microsoft-365"></a>Microsoft 365 の管理アクセス制御 
 
-Microsoft は、Microsoft によってお客様のコンテンツへのアクセスを意図的に制限する一方で、ほとんどの Office 365 操作を自動化するシステムと管理に多大な投資を行ってきました。 人間がサービスを制御し、ソフトウェアがサービスを運用します。 これにより、Microsoft は Office 365 をスケールで管理し、お客様のコンテンツに対する内部の脅威のリスクを管理することができます。
+Microsoft は、microsoft によってお客様のコンテンツへのアクセスを意図的に制限する一方で、Microsoft の365の大部分を自動化するシステムと管理に多大な投資を行っています。 人間がサービスを制御し、ソフトウェアがサービスを運用します。 これにより、Microsoft は Microsoft 365 をスケールで管理し、お客様のコンテンツに対する内部の脅威のリスクを管理することができます。
 
-既定では、Microsoft のエンジニアには継続的な管理者権限も、Office 365 の顧客コンテンツへのアクセス権もありません。 Microsoft のエンジニアは、限られた期間、お客様のコンテンツへのアクセスを制限、監査、およびセキュリティで保護することができます。 アクセスは、サービス操作に必要な場合と、Microsoft シニアマネージメントのメンバーによって承認された場合にのみ使用できます。 お客様がライセンスを供与されたお客様の場合、お客様は Office 365 でホストされているコンテンツへのアクセスを承認します。
+既定では、Microsoft のエンジニアは、Microsoft 365 ではゼロの管理者権限と、お客様のコンテンツへのアクセスがゼロになります。 Microsoft のエンジニアは、限られた期間、お客様のコンテンツへのアクセスを制限、監査、およびセキュリティで保護することができます。 アクセスは、サービス操作に必要な場合と、Microsoft シニアマネージメントのメンバーによって承認された場合にのみ使用できます。 お客様にライセンスを供与されたお客様のために、お客様は Microsoft 365 でホストされているコンテンツへのアクセスを承認します。
 
 Microsoft では、複数の形式のクラウド配信を使用したオンラインサービスを提供しています。
 
-- **パブリッククラウド:** Office 365、Azure、および北アメリカ、南米、ヨーロッパ、アジア、オーストラリアなどでホストされているその他のサービスのマルチテナントバージョンが含まれています。
-- **国立雲:** 米国外のすべての独立およびサードパーティ製のクラウド (前述のものを除く) (中国で運用されている 365)、ドイツの office 365 (Microsoft が運用している、ドイツのデータを含むモデルの下で、ドイツのデータが含まれるお客様のデータとシステムに対する Microsoft のアクセスを制御し、監視します)。
-- **行政機関向けクラウド:** 米国政府機関のお客様が利用できる Office 365 および Azure サービスが含まれています。
+- **パブリッククラウド:** Microsoft 365、Azure、および北アメリカ、南米、ヨーロッパ、アジア、オーストラリアなどでホストされているその他のサービスのマルチテナントバージョンが含まれています。
+- **国立雲:** 米国外にあるすべての独立およびサードパーティ製の雲 (前述したものを除く) (中国で運用されている 365)、ドイツの microsoft 365 (ドイツのデータを使用している場合はドイツの場合がありますが、ドイツのテレの場合があります) により、顧客データおよびお客様のデータを含むシステムへのアクセス
+- **行政機関向けクラウド:** 米国政府機関のお客様が利用できる Microsoft 365 および Azure サービスが含まれています。
 
-この記事の目的として、Office 365 サービスには次のものがあります。
+この記事の目的として、Microsoft 365 サービスには次のものが含まれます。
 
 - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 - [Exchange Online Protection](https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview)
@@ -44,21 +44,21 @@ Microsoft では、複数の形式のクラウド配信を使用したオンラ�
 - [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
 - [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page)
 
-## <a name="office-365-access-controls"></a>Office 365 のアクセス制御
+## <a name="microsoft-365-access-controls"></a>Microsoft 365 のアクセス制御
 
-アクセス制御を目的として、Microsoft では Office 365 データを顧客データまたはその他の種類のデータとして分類しています。
+アクセス制御を目的として、microsoft は Microsoft 365 データを顧客データまたはその他の種類のデータとして分類しています。
 
 ### <a name="customer-data"></a>顧客データ
 
-顧客データとは、Office 365 サービスを使用している場合に、お客様によって提供される、または代理となるデータのことです。 これは、次のような Office 365 ユーザーによって直接作成またはアップロードされるお客様向けコンテンツです。
+お客様のデータは、Microsoft 365 サービスを使用している場合に、お客様によって提供されるすべてのデータです。 これは、Microsoft 365 ユーザーによって直接作成またはアップロードされる、次のようなお客様向けコンテンツです。
 
 - メール
 - SharePoint Online のコンテンツ
 - インスタントメッセージ
 - 予定表アイテム
 - ドキュメント
-- 連絡先
-- エンドユーザー識別情報 (EUII) (ユーザーに固有のデータ、または個別のユーザーに linkable されていても、顧客コンテンツは含まれません)。
+- Contacts
+- エンドユーザー識別情報 (EUII) (ユーザーに固有のデータ、または個別のユーザーに linkable されていても、顧客コンテンツは含まれません)
 
 ### <a name="other-types-of-data"></a>その他の種類のデータ
 
@@ -68,17 +68,17 @@ Microsoft では、複数の形式のクラウド配信を使用したオンラ�
 - **組織的に識別できる情報:** テナントを識別するために使用されるデータ、使用状況データ、個々のユーザーに linkable していないこと、または顧客コンテンツに含まれているデータを含みます。
 - **システムのメタデータ:** 構成設定、システム状態、Microsoft IP アドレス、およびサブスクリプションとテナントに関する技術情報を含むサービスログが含まれています。
 
-Microsoft は、お客様のデータまたはアクセスコントロールのデータへのアクセスが許可されていないことを確認するためのアクセス制御メカニズムを確立しています。 Access control データは、お客様のコンテンツや EUII、Microsoft のパスワード、セキュリティ証明書、およびその他の認証関連データへのアクセスを含む、環境内の他の種類のデータまたは機能へのアクセスを管理します。 アクセス制御メカニズムは、Office 365 運用環境への許可されていない物理、論理、またはリモートアクセスに対する保護も行います。
+Microsoft は、お客様のデータまたはアクセスコントロールのデータへのアクセスが許可されていないことを確認するためのアクセス制御メカニズムを確立しています。 Access control データは、お客様のコンテンツや EUII、Microsoft のパスワード、セキュリティ証明書、およびその他の認証関連データへのアクセスを含む、環境内の他の種類のデータまたは機能へのアクセスを管理します。 アクセス制御メカニズムは、Microsoft 365 運用環境への許可されていない物理、論理、またはリモートアクセスに対する保護も行います。
 
-Microsoft では、次の3つのカテゴリのアクセス制御を Office 365 用に使用しています。
+Microsoft が microsoft 365 を実行するために使用するアクセス制御には、次の3つのカテゴリがあります。
 
 - 分離コントロール
 - 人事管理
 - テクノロジコントロール
 
-これらのコントロールを組み合わせると、Office 365 の悪意のあるアクションを防ぎ、検出することができます。 Microsoft によって使用される分離、人物、およびテクノロジの各コントロールに加えて、ユーザーによって実装されるコントロールには、次の4つのカテゴリがあります。
+これらのコントロールを組み合わせると、Microsoft 365 で悪意のあるアクションを防ぎ、検出することができます。 Microsoft によって使用される分離、人物、およびテクノロジの各コントロールに加えて、ユーザーによって実装されるコントロールには、次の4つのカテゴリがあります。
 
-Office 365 では、オンプレミス環境でのデータ管理と同じ方法でデータを管理できます。 Office 365 の組織をサインアップするユーザーは、自動的にグローバル管理者になります。 グローバル管理者は、管理ポータルのすべての機能にアクセスでき、次のことができます。
+Microsoft 365 では、オンプレミス環境でのデータ管理と同じ方法でデータを管理できます。 Microsoft 365 の組織にサインアップするユーザーは、自動的にグローバル管理者になります。 グローバル管理者は、管理ポータルのすべての機能にアクセスでき、次のことができます。
 
 - ユーザーを作成または編集する
 - 他のユーザーに管理者ロールを割り当てる
@@ -89,7 +89,7 @@ Office 365 では、オンプレミス環境でのデータ管理と同じ方法
 
 各組織で少なくとも2人の管理者アカウントを構成することをお勧めします。 大規模な企業組織の場合、さまざまな機能を提供する特別な管理者アカウントをお勧めします。
 
-管理者の役割とアクセス許可の割り当てについては、「 [office 365 での管理者ロールの割り当て](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「 [office 365 管理者ロールについ](https://support.office.com/article/Permissions-in-Office-365-DA585EEA-F576-4F55-A1E0-87090B6AAA9D)て」を参照してください。
+管理者の役割とアクセス許可の割り当ての詳細については、「[管理者の役割の割り当て](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)」および「[管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)て」を参照
 
 ## <a name="related-links"></a>関連リンク
 

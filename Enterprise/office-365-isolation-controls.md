@@ -1,7 +1,7 @@
 ---
-title: Office 365 での分離コントロール
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 分離コントロール
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,29 +14,29 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: Office 365 内の分離コントロールについて説明します。'
-ms.openlocfilehash: e5ce9f2b581c49f3c08803034bc526b2fdb91a9a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '概要: Microsoft 365 内の分離コントロールについて説明します。'
+ms.openlocfilehash: da26bb6a41c97a16865bfdd5bdf6aada2069f7fe
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844448"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774912"
 ---
-# <a name="office-365-isolation-controls"></a>Office 365 での分離コントロール 
+# <a name="microsoft-365-isolation-controls"></a>Microsoft 365 分離コントロール 
 
-Microsoft は、Office 365 のマルチテナントアーキテクチャが、エンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、ローカル、国際、および可用性の[標準](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)をサポートしていることを継続的に実現しています。 Microsoft によって提供されるサービスの規模と範囲によって、Office 365 を多大な人的介入で管理することが困難で、経済的ではありません。 Office 365 サービスは、グローバルに分散された複数のデータセンターを通じて提供され、それぞれ、ユーザーの介入を必要とする操作やお客様のコンテンツへのアクセスを必要とする操作の数が多くなります。 マイクロソフトのスタッフは、自動化ツールおよび高度なセキュリティで保護されたリモートアクセスを使用して、これらのサービスとデータセンターをサポートします。 大規模サービスが Office 365 でどのように動作するかに関する詳細については、「 [office 365 FOR IT 担当者向けの背景](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC202)」を参照してください。
+Microsoft 365 のマルチテナントアーキテクチャが、エンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、ローカル、国際、および可用性の[標準](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)をサポートしていることを確認するために、継続的に作業を行います。 Microsoft によって提供されるサービスの規模と範囲によって、Microsoft 365 を多大な人的介入で管理することは困難で、経済的ではありません。 Microsoft 365 サービスは、グローバルに分散された複数のデータセンターを介して提供され、それぞれ、ユーザーの介入を必要とする操作やお客様のコンテンツへのアクセスを必要とする運用の数が多くなります。 マイクロソフトのスタッフは、自動化ツールおよび高度なセキュリティで保護されたリモートアクセスを使用して、これらのサービスとデータセンターをサポートします。 
 
-Office 365 は、重要なビジネス機能を提供し、Office 365 環境全体に貢献する複数のサービスで構成されています。 これらのサービスはそれぞれ独立しており、互いに統合されるように設計されています。
+Microsoft 365 は、重要なビジネス機能を提供し、Microsoft の365環境全体に貢献する複数のサービスで構成されています。 これらのサービスはそれぞれ独立しており、互いに統合されるように設計されています。
 
-Office 365 は、次の原則に従って設計されています。
+Microsoft 365 は、次の原則を使用して設計されています。
 
- - **[サービス指向アーキテクチャ](https://msdn.microsoft.com/library/aa480021.aspx):** 適切に定義されたビジネス機能を提供する、相互運用可能なサービスという形でソフトウェアを設計し、開発します。
+ - **[サービス指向アーキテクチャ](https://docs.microsoft.com/previous-versions/aa480021(v=msdn.10)):** 適切に定義されたビジネス機能を提供する、相互運用可能なサービスという形でソフトウェアを設計し、開発します。
  - **運用時の[セキュリティ保証](https://www.microsoft.com/download/details.aspx?id=40872):** Microsoft の[セキュリティ開発ライフサイクル](https://www.microsoft.com/sdl/default.aspx)、 [microsoft セキュリティレスポンスセンター](https://technet.microsoft.com/library/dn440717.aspx)、cybersecurity の脅威に対する深い認識など、microsoft に固有のさまざまな機能によって得られた知識を組み込むフレームワーク。
 
-Office 365 サービス間で相互運用されていますが、相互に依存しない独立したサービスとして展開および運用できるように設計および実装されています。 Microsoft segregates の職務および Office 365 の責任範囲によって、組織の資産の改ざんまたは誤用の可能性を低減します。 Office 365 teams は、役割ベースの総合的なアクセス制御メカニズムの一部として役割を定義しています。
+Microsoft 365 サービスは相互に連携していますが、相互に依存しない独立したサービスとして展開および運用できるように設計および実装されています。 Microsoft segregates の職務および Microsoft 365 の責任範囲。組織の資産の改ざんまたは誤用の可能性を低減します。 Microsoft 365 teams では、役割ベースの総合的なアクセス制御メカニズムの一部として役割が定義されています。
 
 ## <a name="customer-content-isolation"></a>顧客コンテンツの分離
 
-テナント内のすべてのお客様のコンテンツは、他のテナントから分離されています。また、Office 365 の管理で使用されている運用およびシステムデータから分離されています。 Office 365 には複数の形式の保護が実装されており、Office 365 サービスまたはアプリケーションの侵害のリスクを最小限に抑えることができます。 複数の形式の保護では、テナントまたは Office 365 システム自体の情報に対する権限のないアクセスも防止できます。
+テナント内のすべてのお客様のコンテンツは、他のテナントから分離されています。また、Microsoft 365 の管理で使用されている運用およびシステムデータからは分離されています Microsoft 365 には複数の形式の保護が実装されており、Microsoft 365 のサービスまたはアプリケーションの侵害のリスクを最小限に抑えることができます。 複数の形式の保護では、テナントまたは Microsoft 365 システム自体の情報に対する権限のないアクセスも防止できます。
 
-Microsoft が Office 365 内のテナントデータの論理的分離を実装する方法については、「 [office 365 のテナント分離](office-365-tenant-isolation-overview.md)」を参照してください。
+Microsoft 365 内のテナントデータの論理的分離を実装する方法については、「 [microsoft 365 のテナント分離](office-365-tenant-isolation-overview.md)」を参照してください。

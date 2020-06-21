@@ -1,7 +1,7 @@
 ---
-title: Office 365 のメールボックスの移行
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 メールボックスの移行
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Office 365 メールボックスの移行に使用されるコマンドレットの概要を簡単に説明します。
-ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft 365 メールボックスの移行に使用されるコマンドレットの簡単な概要。
+ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843608"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774902"
 ---
-# <a name="office-365-mailbox-migrations"></a>Office 365 のメールボックスの移行
+# <a name="microsoft-365-mailbox-migrations"></a>Microsoft 365 メールボックスの移行
 
 Exchange ベースのハイブリッド展開では、オンプレミスの Exchange メールボックスを[Exchange online](https://docs.microsoft.com/Exchange/exchange-online)組織に移動するか、exchange online メールボックスを exchange[のオンプレミス](https://docs.microsoft.com/Exchange/exchange-server)の組織に移動するかを選択できます。 移行バッチは、オンプレミスの組織と Exchange Online 組織間でメールボックスを移動するときに使用されます。
 

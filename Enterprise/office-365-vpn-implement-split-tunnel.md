@@ -3,7 +3,7 @@ title: Office 365 向け VPN スプリット トンネリングの実装
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/11/2020
+ms.date: 6/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 87d7e86f59a97bf11c053a57aa9acc6d33c03e63
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
-ms.translationtype: HT
+ms.openlocfilehash: c2b0b94a80cadc47f5236cc38e29c12d2a152062
+ms.sourcegitcommit: 5345785dd0c85b28b68752faa7e37a71c270b9b0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208778"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44742242"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -123,8 +123,8 @@ Office 365 エンドポイント、およびその分類と管理方法の詳細
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | これは、Outlook が Exchange Online サーバーへの接続に使用する主要なURL の 1 つであり、帯域幅の使用数と接続数が大量になります。 クイック検索、その他のメールボックス 予定表、空き時間の検索、ルールと通知の管理、Exchange オンラインのアーカイブ、送信トレイからのメール送信などといったオンライン上の機能では、ネットワークの遅延を少なくしておく必要があります。 |
 | <https://outlook.office.com> | TCP 443 | このURLは Outlook Online Web Access が Exchange Online のサーバーに接続するために使用され、ネットワーク遅延の影響を受けやすくなっています。 SharePoint Online での大きなファイルのアップロードとダウンロードには、特に接続性が必要です。 |
-| https://\<tenant\>.sharepoint.com | TCP 443 | これは SharePoint Online の主要な URL で、帯域幅の使用率が高くなっています。 |
-| https://\<tenant\>-my.sharepoint.com | TCP 443 | これは OneDrive for Business の標準 URL で、帯域幅の使用率が高く、OneDrive for Business Sync ツールからの接続数が多くなることがあります。 |
+| https:// \<tenant\> sharepoint.com | TCP 443 | これは SharePoint Online の主要な URL で、帯域幅の使用率が高くなっています。 |
+| https:// \<tenant\> -my.sharepoint.com | TCP 443 | これは OneDrive for Business の標準 URL で、帯域幅の使用率が高く、OneDrive for Business Sync ツールからの接続数が多くなることがあります。 |
 | Teams のメディア IP (URL なし) | UDP 3478、3479、3480、および3481 | リレー検出の割り当てとリアルタイムトラフィック (3478)、オーディオ (3479)、ビデオ (3480)、ビデオ画面共有 (3481)。 これらは、Skype for Business および Microsoft Teams メディアのトラフィック (通話、会議など) に使用されるエンドポイントです。 ほとんどのエンドポイントは、Microsoft Teams クライアントが発信を確立するときに提供されます(サービスのリストにある必要な IP 内に含まれています)。 メディアの品質を最適化するには、UDP プロトコルを使用する必要があります。   |
 
 上記の例では、**テナント**をお使いの Office 365 のテナント名に置き換える必要があります。  たとえば、**contoso.onmicrosoft.com** では、_contoso.sharepoint.com_ および_constoso-my.sharepoint.com_ を使用します。
@@ -226,13 +226,8 @@ VPN クライアントの設定を行い、**最適化** IP へのトラフィ�
 
 特定の状況では、Teams クライアントの設定とは関係なく、メディア トラフィックは正しいルートが設定されていても VPN トンネルを通過します。 この状況下では、ファイアウォール規則を用い、Teams IP サブネットまたはポートが VPN を使用するのをブロックすればいいでしょう。
 
->[!NOTE]
->現状、どのシナリオでもこの機能を対応できるようにするためには、IP アドレスの範囲に「**13.107.60.1/32**」も追加します。 これは、**2020 年 6月**にリリース予定でチームクライアントの更新により、すぐに必要にはなりません。 さらに詳しい情報が届き次第、ビルドの詳細を記載した記事を更新します。
-
-<!--
 >[!IMPORTANT]
->To ensure Teams media traffic is routed via the desired method in all VPN scenarios please ensure you are running at least the following client version number or greater, as these versions have improvements in how the client detects available network paths.<br>Windows version number:  **1.3.00.9267**<br>Mac version number: **1.3.00.9221**
--->
+>すべての VPN シナリオの目的の方法で Teams のメディアトラフィックがルーティングされるようにするには、ユーザーが Microsoft Teams クライアントバージョン**1.3.00.13565**またはそれ以上を実行していることを確認してください。 このバージョンには、クライアントが利用可能なネットワークパスを検出する方法が改善されています。
 
 出力トラフィックは HTTPS を介して実行され、メディア トラフィックよりも遅延の影響を受けにくく、URL/IP データで「**許可**」とマークされているため、必要に応じて VPN クライアントを介して安全にルーティングできます。
 
@@ -278,8 +273,9 @@ Teams が音声や _Session Traversal Utilities for NAT (STUN)_ 増幅攻撃な�
 - **Cisco Anyconnect**：[ Anyconnect スプリット トンネリングを Office365 向けに最適化する](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [VPN スプリット トンネリングで、 Office 365 のトラフィックを最適化する。アクセスルートは除外](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 ネットワーク BIG-IP APM**: [BIG IP APM を使用している場合に、VPN を介したリモートアクセスで Office 365 のトラフィックを最適化する](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix Gateway**: [Office365 向けのCitrix Gateway VPN スプリット トンネルの最適化](https://docs.citrix.com/ja-JP/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Citrix Gateway**: [Office365 向けのCitrix Gateway VPN スプリット トンネルの最適化](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure**: [VPN トンネリング: 分割トンネリングを構成して Office365 アプリケーションを除外する方法](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **チェックポイント VPN**: [Office 365 およびその他の SaaS アプリケーションの分割トンネルを構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>FAQ
 

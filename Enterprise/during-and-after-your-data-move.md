@@ -15,19 +15,19 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
-ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711920"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774492"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
 データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンドの操作です。 Microsoft が各サービスとお客様のテナントの関連データを新しいデータセンター geo に移動する際には、何も行う必要はありません。 データの転送および検証は事前にバックグラウンドで行われ、ユーザーへの影響は最小限に抑えられます。
   
 > [!NOTE]
-> 移動はサービスごとに、異なる時間に行われます。結果として、サービスごとに異なる時間に、説明されているような機能制限がかかります。 
+> Moves occur at different times for each service. As a result, you'll see the described reduced functionality for each service at a different time. 
   
 Exchange Online、SharePoint Online、Teams、および Skype for Business の各移行が完了したら、Microsoft 365 メッセージセンターで確認を行います。 次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。 移行後にテナントに問題がある場合は、サポートに連絡して[サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459)を受けてください。 
   
@@ -53,7 +53,7 @@ Exchange Online、SharePoint Online、Teams、および Skype for Business の�
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Outlook Web Access で "共有フォルダー" を開く
 
-一部のユーザーは、Outlook Web Access で "共有フォルダー" 機能を使用して、別のメールボックスから共有メール フォルダー (ユーザーが読み取りまたは書き込みアクセス許可を持つフォルダー) を開きます。次の表に、メールボックスの移動中に、共有フォルダーへのアクセス権がどのように動作するかを取り上げます。共有メールボックスへのフル アクセス許可があるユーザーは、移動中に Outlook Web Access を使用してメールボックスを開くことができます。 
+Some users open a shared mail folder from another mailbox (that the user has read or write permissions to) in Outlook Web Access using the "Shared Folder" feature. The following table describes how access to shared folders works during a mailbox move. Please note that users with full permissions to a shared mailbox can open the mailbox by using Outlook Web Access during the move. 
   
 |**構成**|**説明**|
 |:-----|:-----|
@@ -68,19 +68,19 @@ SharePoint Online を移行すると、以下のサービスのデータも移�
     
 - Project Online
     
-- Project for Office 365
+- Microsoft 365 のプロジェクト
     
-- Office 365 ビデオ サービス
+- Microsoft 365 Video services
     
 - S ブラウザーの Office
     
 - Microsoft 365 Apps for enterprise
     
-- Visio Pro for Office 365
+- Visio Pro for Microsoft 365
     
 SharePoint Online データの移行が完了すると、次に示す影響が現れる可能性があります。
   
-### <a name="office-365-video-services"></a>Office 365 ビデオ サービス
+### <a name="microsoft-365-video-services"></a>Microsoft 365 Video Services
 
 - ビデオのデータの移動は、SharePoint Online にある残りのコンテンツの移動より時間がかかります。
     
@@ -88,9 +88,9 @@ SharePoint Online データの移行が完了すると、次に示す影響が�
     
 - 以前のデータセンターからコード変換されたコピーを削除し、新しいデータセンターでコードを再変換しています。
     
-### <a name="search"></a>検索
+### <a name="search"></a>Search
 
-SharePoint Online データを移行する過程で、検索インデックスと検索設定を新しい場所に移行します。SharePoint Onlineデータの移行が **完了** するまで、ユーザーは引き続き元の場所でインデックスを利用できます。SharePoint Online データの移行が完了すると、新しい場所で、検索機能によってコンテンツのクロールが自動的に再開されます。これより以降、ユーザーは移行したインデックスを利用できます。移行後に生じたコンテンツの変更は、クロールで反映されるまで移行したインデックスに組み込まれません。SharePoint Online データの移行が完了した直後に結果の鮮度が低いと感じる顧客はほとんどいませんが、その後の 24 時間から 48 時間には一部の顧客が鮮度の低下に気付く可能性があります。 
+In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours 
   
 次の検索機能が影響を受けます。
   
@@ -98,7 +98,7 @@ SharePoint Online データを移行する過程で、検索インデックス�
     
 - Delve:移行後に生じた変更は、クロールで反映されるまで Delve に含まれません。
     
-- サイトの人気と検索に関するレポート: 新しい場所での Excel レポートのカウントには、移行した数、および SharePoint Online データの移行完了後に実行された利用状況レポートの数のみが含まれます。中間の期間の数はすべて失われ、回復することはできません。この期間は、通常、2、3 日です。顧客によっては情報が失われている期間が増減することもあります。
+- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
     
 - ビデオ ポータル:ビデオ ポータルの表示回数と統計情報は Excel レポートの統計情報に基づいているため、ビデオ ポータルの表示回数と統計情報は、Excel レポートと同じ期間失われます。
     
@@ -119,11 +119,11 @@ Teams ファイルは SharePoint Online に格納され、Teams チャットフ�
 
 Skype for Business の移動は、オーストラリア、日本、インド、カナダ、英国、および南韓国で利用できます。
 
-カットオーバーの際、すべてのユーザーは Skype for Business クライアント ソフトウェアからサインアウトされます。自動サインインによって、2 分以内にユーザーは再接続されます。
+All users will be signed out from the Skype for Business client software during cut-over. The automatic sign-in will reconnect users within two minutes.
   
 |**全体の移動中に利用できる機能**|**移動中は機能が制限される場合があります**|
 |:-----|:-----|
-| インスタント メッセージングおよび音声呼び出し  <br/>  ユーザーは、連絡先の追加、連絡先グループの追加、会議の追加、自分の場所の設定、[今日はどんなことがありますか] の変更を実行できます。  <br/>  電話会議プロバイダー (ACP) の設定は、対象のデータセンター geo にコピーされます。ACP プロバイダーが対象データセンター内に存在する場合は動作しますが、対象データセンター内に存在しない場合は動作しません。  <br/> | 管理者は、テナント管理者 TRPS (テナントのリモート PowerShell) を使用してセッションを作成できません。  <br/>  管理者は、テナント管理者 LAC を使用してサインインおよびユーザー設定の変更は行えません。  <br/> |
+| インスタント メッセージングおよび音声呼び出し  <br/>  ユーザーは、連絡先の追加、連絡先グループの追加、会議の追加、自分の場所の設定、[今日はどんなことがありますか] の変更を実行できます。  <br/>  Audio Conferencing Provider (ACP) settings are copied to the target datacenter geo. If the ACP provider is present in the target datacenter, it will work. Otherwise, it will not.  <br/> | 管理者は、テナント管理者 TRPS (テナントのリモート PowerShell) を使用してセッションを作成できません。  <br/>  管理者は、テナント管理者 LAC を使用してサインインおよびユーザー設定の変更は行えません。  <br/> |
    
 |**移行後**|
 |:-----|

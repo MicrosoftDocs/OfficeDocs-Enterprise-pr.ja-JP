@@ -1,9 +1,9 @@
 ---
-title: Office 365 のデータの場所
+title: Microsoft 365 データの場所
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 03/09/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,32 +16,32 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: '概要: Office 365 のデータの場所'
-ms.openlocfilehash: 7d66669ddab78a6f84703fb350d0a5cd2707b8af
-ms.sourcegitcommit: 4643a0eb2c65f5e9aba0477e948120ea91bf74d6
+description: '概要: Microsoft 365 のデータの場所'
+ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44507245"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781062"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-office-365-customer-data-is-stored"></a>Office 365 の顧客データが保存されている場所
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データが保存されている場所
 
-次の表は、Microsoft のすべてのグローバル クラウドの場所で、Office 365 サービスの顧客データが保存されている場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
+次の表は、Microsoft のすべてのグローバルクラウドの場所において、Microsoft 365 サービスのお客様のデータが保存される場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
 
 顧客は、**[設定] | [組織プロファイル] | [データ場所のカード]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧します。
 
-新しいOffice 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて既定で Geo に設定されます。
+新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて Geo に既定で割り当てられています。
 
 保管中の顧客データの保管場所に関する契約上のコミットメントに関する情報は、[Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) に記載されています。
 
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
 
 
-COVID-19 危機とそれを取り巻く未曾有の状況により、および欧州のオンライン サービスの需要を管理する必要から、お客様の組織が教育機関の場合は、欧州連合 (EU)、欧州自由貿易連合 (EFTA)、英国 (UK)、米国 (US)、またはカナダ (CA) に Office 365 テナントをプロビジョニングするか、またはお客様のデータを EU、EFTA、英国、米国、またはカナダの任意のデータ センターに移動する場合があります。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
+COVID の危機に関するかつてない状況において、欧州でオンラインサービスの需要を管理する必要があるため、組織が教育機関の場合は、欧州連合 (EU)、ヨーロッパフリー売買協会 (EFTA)、英国 (UK)、米国 (米国)、またはカナダ (CA) に Microsoft 365 テナントをプロビジョニングするか、または EU 内のデータセンターにデータを転送することができます。、EFTA、英国、US、または CA。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
 
 
 
@@ -58,11 +58,11 @@ Microsoft は、データ センターの正確な所在地を開示しません
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>顧客データの場所は、エンドユーザーのエクスペリエンスに直接影響を与えますか?
 
-Office 365 のパフォーマンスは、データ センターの場所までのユーザーの距離に単純に比例するわけではありません。 Microsoft は、グローバル クラウド ネットワーク、グローバル クラウド インフラストラクチャ、Office 365 サービス アーキテクチャにおいて継続的な投資を行っており、顧客データがどこに保存されているかに関係なく、単一で一貫性のあるエクスペリエンスをユーザーに提供します。 ユーザーにパフォーマンスの問題が発生している場合は、それらを詳細にトラブルシューティングする必要があります。 Microsoft は、[Office サポート Web サイト](https://go.microsoft.com/fwlink/p/?linkid=862645)で、エンドユーザーのパフォーマンスを計画および最適化するためのガイダンスを Office 365 の顧客向けに公開しています。
+Microsoft 365 のパフォーマンスは、単にデータセンターの場所に対するユーザーの距離に比例するわけではありません。 Microsoft の継続的な投資は、グローバルクラウドネットワーク、グローバルクラウドインフラストラクチャ、および Microsoft 365 services のアーキテクチャにより、顧客データが保存されている場所に関係なく、一貫性のある単一の機能をユーザーに提供することができます。 ユーザーにパフォーマンスの問題が発生している場合は、それらを詳細にトラブルシューティングする必要があります。 Microsoft では、Microsoft 365 のお客様向けのガイダンスを公開し、 [Office サポート web サイト](https://go.microsoft.com/fwlink/p/?linkid=862645)でエンドユーザーのパフォーマンスを計画し、最適化しています。
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft は、国、地域、業界固有の規制にどのように準拠していますか?
 
-個人のデータの収集と使用を管理する国、地域、業界固有の要件への準拠を支援するために、Office 365 は、あらゆるグローバル クラウド生産性プロバイダーの最も包括的なコンプライアンス製品を提供します。 Microsoft センター センターの[Office 365 コンプライアンス](https://go.microsoft.com/fwlink/p/?linkid=862317)セクションで、[コンプライアンスの提供](https://go.microsoft.com/fwlink/p/?linkid=864391)とその詳細を確認してください。 また、特定の Office 365プラン では、データの管理、法的要件および規制要件への準拠、データに対して実行される操作ンの監視に役立つ追加のコンプライアンス ソリューションが提供されます。
+個人データの収集と使用を管理する国、地域、および業界固有の要件に準拠するために役立つ、Microsoft 365 では、グローバルクラウドプロダクティビティプロバイダーのコンプライアンスに関する最も包括的な一連のサービスを提供しています。 「Microsoft セキュリティセンター」の「 [microsoft 365 コンプライアンス](https://go.microsoft.com/fwlink/p/?linkid=862317)」セクションで、[コンプライアンスの提供](https://go.microsoft.com/fwlink/p/?linkid=864391)と詳細を確認してください。 また、一部の Microsoft 365 プランでは、データの管理、法律および規制の要件への準拠、データに対して行われたアクションの監視に役立つ、その他のコンプライアンスソリューションが提供されています。
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>誰がどの規則に従ってデータにアクセスできますか?
 
@@ -70,15 +70,15 @@ Office 365 のパフォーマンスは、データ センターの場所まで�
 
 ### <a name="does-microsoft-access-your-data"></a>Microsoft は、お客様のデータにアクセスしますか?
 
-Microsoft は、顧客データへの自社アクセスを意図的に制限しながら、ほとんどの Office 365 操作を自動化します。 これにより、Office 365 を規模に応じて管理し、顧客データに対する内部脅威のリスクに対処できます。 既定では、Microsoft のエンジニアには継続的な管理者権限も、Office 365 の顧客データへのアクセス権もありません。 Microsoft のエンジニアは、限られた期間、顧客データに制限され記録された状態でアクセスできます。ただし、通常のサービス運用に必要な場合、Microsoft 上級管理職のメンバー (カスタマー ロックボックス機能のライセンスを取得しているお客様の場合はお客様) によって承認された場合のみです。
+Microsoft は、お客様のデータへの独自のアクセスを意図的に制限することで、ほとんどの Microsoft 365 操作を自動化しています。 これにより、Microsoft 365 をスケールで管理し、顧客データに対する内部の脅威のリスクを解決することができます。 既定では、Microsoft のエンジニアには、Microsoft 365 の顧客データに対する管理者権限がありません。 Microsoft のエンジニアは、限られた期間、顧客データに制限され記録された状態でアクセスできます。ただし、通常のサービス運用に必要な場合、Microsoft 上級管理職のメンバー (カスタマー ロックボックス機能のライセンスを取得しているお客様の場合はお客様) によって承認された場合のみです。
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Microsoft は、お客様のデータをどのように保護していますか?
 
-Microsoft は、お客様の情報を安全な状態で保護できるように、信頼性の高いポリシー、コントロールとシステムを Office 365 に組み込んでいます。 詳細については、Microsoft セキュリティ センターの[「Office 365 セキュリティ」のセクション](https://go.microsoft.com/fwlink/p/?linkid=864393)を確認してください。
+Microsoft は、情報の安全性を確保するために Microsoft 365 に組み込まれている堅牢なポリシー、制御、およびシステムを備えています。 詳細については、microsoft Trust Center の[「microsoft 365 security」セクション](https://go.microsoft.com/fwlink/p/?linkid=864393)を参照してください。
 
-### <a name="does-office-365-encrypt-your-data"></a>Office 365 はお客様のデータを暗号化しますか?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 はデータを暗号化していますか?
 
-Office 365 は、保存中および転送中の顧客データを暗号化するサービス側テクノロジを使用します。 保存中の顧客データの場合、Office 365 はボリューム レベルおよびファイル レベルの暗号化を使用します。 転送中の顧客データの場合、Office 365 は、トランスポート レイヤー セキュリティ (TLS) やインターネット プロトコル セキュリティ (IPsec) など、データ センター間およびクライアントとサーバー間の通信に複数の暗号化テクノロジを使用します。 Office 365 には、顧客により管理される暗号化機能も含まれています。
+Microsoft 365 は、お客様のデータを保存し、転送中に暗号化するサービス側のテクノロジを使用しています。 保存されているお客様データについては、Microsoft 365 はボリュームレベルおよびファイルレベルの暗号化を使用します。 転送中の顧客データについては、Microsoft 365 は、データセンター間、およびクライアントとサーバー間の通信に、トランスポート層セキュリティ (TLS) やインターネットプロトコルセキュリティ (IPsec) などの複数の暗号化テクノロジを使用します。 Microsoft 365 には、お客様が管理する暗号化機能も含まれています。
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Microsoft Azure のデータ常駐情報はどこで入手できますか?
 
@@ -86,11 +86,26 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 の複数地域機能とは何ですか?
 
-[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)機能とは、1 つの Office 365 テナントで複数の地域の Office 365 データ センターを利用するための機能です。Office 365 のコア カスタマー データをどの地域に保管するかを、ユーザーごとに選択できるようになります。
+[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)を使用することにより、お客様は、Microsoft 365 cloud の利用可能な場所に、お客様に主要な顧客データを割り当てることができます。   
 
 ### <a name="what-services-support-multi-geo"></a>複数地域機能をサポートするサービスは何ですか?
 
-[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)機能 は、Exchange Online、OneDrive、SharePoint Online で利用できます。 Microsoft は、他の Office 365 サービスを対象として複数地域機能を調査しています。
+[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)機能 は、Exchange Online、OneDrive、SharePoint Online で利用できます。 Microsoft は、他の Microsoft 365 サービスについて複数地域の調査を行っています。
+
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune データの場所の例外
+
+Microsoft は、指定された Geo の外側に Intune のお客様データを保存しません。 次の場合を除く:
+
+- Microsoft は、カスタマーサポートの提供、サービスのトラブルシューティング、または法的要件への準拠を行う必要があります。
+- お客様は、以下の用途を含めて、顧客データのストレージを有効にするようにアカウントを構成します。
+
+  - グローバルなキャッシュサービスを提供し、世界中のエッジの場所に顧客データを格納するコンテンツ配信ネットワーク (CDN) など、グローバルに動作するように設計された機能。
+
+  - Azure Active Directory (Azure AD) (ディレクトリデータをグローバルに格納する場合があります)。 これは、米国の Azure AD の展開には適用されません (Azure AD データは米国のみに格納されます)。または、ヨーロッパ (Azure AD データは欧州または米国に格納されている) の場合があります。
+   
+  - プレビュー、ベータ、またはその他のプレリリースサービス。通常、顧客データは米国に保存されますが、グローバルに保存することができます。
+
+いずれにしても、Microsoft はお客様またはエンドユーザーが顧客データにアクセスすることができる Geo を制御または制限しません。 
 
 ## <a name="data-center-locations"></a>データ センターの場所
 
@@ -112,9 +127,9 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 
 | 国 | 都市 |
 | --- | --- |
-| オーストラリア | ニュー サウスウェールズ、ビクトリア州 |
+| オーストラリア | シドニー、メルボルン |
 | カナダ | ケベックシティ、トロント |
-| 欧州連合 | オーストリア、フィンランド、フランス、アイルランド、オランダ |
+| 欧州連合 | オーストリア (ウィーン)、フィンランド (ヘルシンキ)、フランス (パリ、Marseille)、アイルランド (ダブリン)、オランダ (アムステルダム) |
 | フランス | パリ、マルセイユ |
 | ドイツ | フランクフルト、ベルリン |
 | インド | チェンナイ、ムンバイ、プネ |
@@ -127,7 +142,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | 英国 | ダーラム、ロンドン、カーディフ |
 | 米国 |  ボイドトン、シャイアン、シカゴ、デモイン、クインシー、サンアントニオ、サンタクララ、サンノゼ |
 
-新しい Office 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられた請求先住所の国に基づいて既定で Geo に設定されます。 既存の Office 365 サービスの顧客データの保存場所を確認する場所は、Office 365 管理センターの [設定] | [組織プロファイル] | [データ場所のカード] で、テナント固有データの場所情報を閲覧してください。 または、ビジネスの拠点となる国を下のリストから展開して、今すぐ Office 365 サービスの使用を開始する場合に顧客データが保存される場所を検索してください。
+新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられた請求先住所の国に基づいて Geo に既定で割り当てられています。 既存の Office 365 サービスの顧客データの保存場所を確認する場所は、Office 365 管理センターの [設定] | [組織プロファイル] | [データ場所のカード] で、テナント固有データの場所情報を閲覧してください。 または、Microsoft 365 サービスの使用を開始する場合に、次のリストからお客様のビジネスの基盤となる国を展開し、顧客データが格納される場所を確認します。
 
 ## <a name="afghanistan"></a>アフガニスタン
 <details><summary>クリックして展開</summary><p>
@@ -141,6 +156,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -164,6 +180,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -187,6 +204,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -210,6 +228,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -233,6 +252,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -256,6 +276,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -279,6 +300,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -302,6 +324,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -325,6 +348,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -348,6 +372,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -371,6 +396,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -394,6 +420,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -417,6 +444,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -440,6 +468,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | オーストラリア |
 | Office Online &amp; Mobile | オーストラリア |
 | EOP | オーストラリア |
+| Intune | オーストラリア |
 | MyAnalytics | オーストラリア |
 | Planner | オーストラリア |
 | Sway | 米国 |
@@ -447,7 +476,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | オーストラリア |
 | Stream | オーストラリア |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -463,6 +492,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -486,6 +516,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner |  グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -493,7 +524,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -509,6 +540,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -532,6 +564,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -555,6 +588,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -578,6 +612,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -601,6 +636,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -624,6 +660,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -647,6 +684,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -654,7 +692,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -670,6 +708,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -677,7 +716,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -693,6 +732,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -716,6 +756,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -739,6 +780,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -762,6 +804,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -785,6 +828,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner |  グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -808,6 +852,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -831,6 +876,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -854,6 +900,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -877,6 +924,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -900,6 +948,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -923,6 +972,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -930,7 +980,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -946,6 +996,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -969,6 +1020,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -976,7 +1028,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -992,6 +1044,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1015,6 +1068,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1038,6 +1092,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1061,6 +1116,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | カナダ |
 | Office Online &amp; Mobile | カナダ |
 | EOP | カナダ |
+| Intune | 米国 |
 | MyAnalytics | カナダ |
 | Planner | カナダ |
 | Sway | 米国 |
@@ -1084,6 +1140,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1107,6 +1164,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1130,6 +1188,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1153,6 +1212,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1176,6 +1236,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1199,6 +1260,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1222,6 +1284,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1245,6 +1308,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1268,6 +1332,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1291,6 +1356,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1314,6 +1380,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1337,6 +1404,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1360,6 +1428,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1383,6 +1452,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1406,6 +1476,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1413,7 +1484,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1429,6 +1500,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1452,6 +1524,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1459,7 +1532,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 3 - アメリカ |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1475,6 +1548,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1498,6 +1572,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1521,6 +1596,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1544,6 +1620,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1567,6 +1644,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1590,6 +1668,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1613,6 +1692,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1636,6 +1716,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1659,6 +1740,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1682,6 +1764,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1705,6 +1788,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1712,7 +1796,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1728,6 +1812,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1751,6 +1836,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner |  米国 |
 | Sway | 米国 |
@@ -1758,7 +1844,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1774,6 +1860,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1797,6 +1884,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -1820,6 +1908,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1843,6 +1932,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | オーストラリア |
 | Office Online &amp; Mobile | オーストラリア |
 | EOP | オーストラリア |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | オーストラリア |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1850,7 +1940,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | オーストラリア |
 | Stream | オーストラリア |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1866,6 +1956,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1889,6 +1980,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | フランス |
 | Office Online &amp; Mobile | フランス |
 | EOP | フランス |
+| Intune | 欧州連合 |
 | MyAnalytics | フランス |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -1912,6 +2004,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1919,7 +2012,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 3 - アメリカ |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1935,6 +2028,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -1942,7 +2036,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1958,6 +2052,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -1981,6 +2076,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2004,6 +2100,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2027,6 +2124,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2034,7 +2132,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2050,6 +2148,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | ドイツ |
 | Office Online &amp; Mobile | ドイツ |
 | EOP | ドイツ |
+| Intune | 欧州連合 |
 | MyAnalytics | ドイツ |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -2073,6 +2172,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2080,7 +2180,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2096,6 +2196,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2103,7 +2204,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2119,6 +2220,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -2142,6 +2244,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2165,6 +2268,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2188,6 +2292,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2211,6 +2316,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2234,6 +2340,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2257,6 +2364,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2280,6 +2388,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2303,6 +2412,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2326,6 +2436,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2349,6 +2460,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2372,6 +2484,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2395,6 +2508,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2418,6 +2532,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2441,6 +2556,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2448,7 +2564,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2464,6 +2580,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2471,7 +2588,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2487,6 +2604,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -2510,6 +2628,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2533,6 +2652,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | インド |
 | Office Online &amp; Mobile | インド |
 | EOP | インド |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | インド |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2556,6 +2676,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2563,7 +2684,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2579,6 +2700,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2586,7 +2708,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2602,6 +2724,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -2625,6 +2748,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2632,7 +2756,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2648,6 +2772,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2655,7 +2780,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2671,6 +2796,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -2694,6 +2820,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2717,6 +2844,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 日本 |
 | Office Online &amp; Mobile | 日本 |
 | EOP | 日本 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | 日本 |
 | Planner | 日本 |
 | Sway | 米国 |
@@ -2740,6 +2868,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2763,6 +2892,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2786,6 +2916,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2809,6 +2940,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -2832,6 +2964,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2843,7 +2976,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Workplace Analytics | 米国 |
 </p></details>
 
-## <a name="korea"></a>韓国
+## <a name="south-korea"></a>韓国
 <details><summary>クリックして展開</summary><p>
 
 | サービス | 場所 |
@@ -2855,6 +2988,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 韓国 |
 | Office Online &amp; Mobile | 韓国 |
 | EOP | 韓国 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | 韓国 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2878,6 +3012,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2901,6 +3036,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2924,6 +3060,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -2931,7 +3068,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2947,6 +3084,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -2954,7 +3092,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2970,6 +3108,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -2993,6 +3132,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3016,6 +3156,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3039,6 +3180,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3062,6 +3204,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3085,6 +3228,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | スイス |
 | Office Online &amp; Mobile | スイス |
 | EOP | スイス |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | スイス |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3108,6 +3252,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -3131,6 +3276,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -3154,6 +3300,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3161,7 +3308,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3177,6 +3324,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3200,6 +3348,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3223,6 +3372,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3230,7 +3380,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3246,6 +3396,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3253,7 +3404,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3269,6 +3420,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -3292,6 +3444,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3315,6 +3468,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3338,6 +3492,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3361,6 +3516,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3384,6 +3540,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3407,6 +3564,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3430,6 +3588,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3453,6 +3612,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3476,6 +3636,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3499,6 +3660,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3522,6 +3684,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3545,6 +3708,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3568,6 +3732,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3591,6 +3756,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3614,6 +3780,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3637,6 +3804,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3660,6 +3828,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3667,7 +3836,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3683,6 +3852,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -3706,6 +3876,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3729,6 +3900,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3752,6 +3924,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | オーストラリア |
 | Office Online &amp; Mobile | オーストラリア |
 | EOP | オーストラリア |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | オーストラリア |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3775,6 +3948,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3798,6 +3972,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3821,6 +3996,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -3844,6 +4020,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3867,6 +4044,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3890,6 +4068,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -3913,6 +4092,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | ノルウェー |
 | Office Online &amp; Mobile | ノルウェー |
 | EOP | ノルウェー |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | ノルウェー |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3936,6 +4116,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3959,6 +4140,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -3982,6 +4164,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4005,6 +4188,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4028,6 +4212,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4051,6 +4236,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4074,6 +4260,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4097,6 +4284,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4120,6 +4308,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4143,6 +4332,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4150,7 +4340,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4166,6 +4356,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -4189,6 +4380,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -4212,6 +4404,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4219,7 +4412,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4235,6 +4428,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4242,7 +4436,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4258,6 +4452,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4265,7 +4460,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4281,6 +4476,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4288,7 +4484,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4304,6 +4500,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -4327,6 +4524,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4350,6 +4548,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4373,6 +4572,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4396,6 +4596,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4419,6 +4620,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4442,6 +4644,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4465,6 +4668,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4488,6 +4692,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4511,6 +4716,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4534,6 +4740,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4557,6 +4764,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4580,6 +4788,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4603,6 +4812,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4626,6 +4836,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4649,6 +4860,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4672,6 +4884,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4695,6 +4908,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4718,6 +4932,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4741,6 +4956,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4748,7 +4964,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4764,6 +4980,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -4787,6 +5004,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -4810,6 +5028,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4833,6 +5052,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4856,6 +5076,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 南アフリカ |
 | Office Online &amp; Mobile | 南アフリカ |
 | EOP | 南アフリカ |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | 南アフリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4863,7 +5084,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 南アフリカ |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4879,6 +5100,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4886,7 +5108,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4902,6 +5124,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -4925,6 +5148,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -4948,6 +5172,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -4971,6 +5196,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -4994,6 +5220,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5001,7 +5228,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5017,6 +5244,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 欧州連合 |
 | Office Online &amp; Mobile | 欧州連合 |
 | EOP | 欧州連合 |
+| Intune | 欧州連合 |
 | MyAnalytics | 欧州連合 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -5040,6 +5268,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | スイス |
 | Office Online &amp; Mobile | スイス |
 | EOP | スイス |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | スイス |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5063,6 +5292,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5086,6 +5316,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5109,6 +5340,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5132,6 +5364,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5155,6 +5388,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5178,6 +5412,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5201,6 +5436,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5224,6 +5460,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5247,6 +5484,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5270,6 +5508,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5293,6 +5532,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5316,6 +5556,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5339,6 +5580,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5362,6 +5604,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5385,6 +5628,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5408,6 +5652,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5431,6 +5676,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5454,6 +5700,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | アラブ首長国連邦 |
 | Office Online &amp; Mobile | アラブ首長国連邦 |
 | EOP | アラブ首長国連邦 |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | アラブ首長国連邦 |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5477,6 +5724,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 英国 |
 | Office Online &amp; Mobile | 英国 |
 | EOP | 英国 |
+| Intune | 欧州連合 |
 | MyAnalytics | 英国 |
 | Planner | 欧州連合 |
 | Sway | 米国 |
@@ -5500,6 +5748,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5507,7 +5756,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| Forms | 米国 |
+| フォーム | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5523,6 +5772,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
 | EOP | グローバル地域 3 - アメリカ |
+| Intune | 米国 |
 | MyAnalytics | グローバル地域 3 - アメリカ |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5546,6 +5796,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5569,6 +5820,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5592,6 +5844,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5615,6 +5868,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | 米国 |
 | Office Online &amp; Mobile | 米国 |
 | EOP | 米国 |
+| Intune | 米国 |
 | MyAnalytics | 米国 |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5638,6 +5892,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5661,6 +5916,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 2 – アジア太平洋 |
 | Office Online &amp; Mobile | グローバル地域 2 – アジア太平洋 |
 | EOP | グローバル地域 2 – アジア太平洋 |
+| Intune | グローバル地域 2 – アジア太平洋 |
 | MyAnalytics | グローバル地域 2 – アジア太平洋 |
 | Planner | グローバル地域 2 – アジア太平洋 |
 | Sway | 米国 |
@@ -5684,6 +5940,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5707,6 +5964,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Sway | 米国 |
@@ -5730,6 +5988,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
@@ -5753,6 +6012,7 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 | Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | MyAnalytics | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Planner | 米国 |
 | Sway | 米国 |
