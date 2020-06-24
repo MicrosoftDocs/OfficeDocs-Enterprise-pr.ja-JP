@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Microsoft 365 サブスクリプションには、Azure AD へのサブスクリプションが含まれています。 オンプレミス環境でのパスワード同期またはシングルサインオンを行う場合は、Microsoft 365 を Azure AD と統合します。
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774842"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842059"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Microsoft 365 との Azure の統合
 
@@ -40,7 +40,7 @@ Azure では、Microsoft 365 サブスクリプションの拡張とカスタマ
 
  - [Azure AD Connect advisor](https://aka.ms/aadconnectpwsync)
  - [AD FS 展開アドバイザー](https://aka.ms/adfsguidance)
- - [Azure AD Premium セットアップガイド](https://aka.ms/aadpguidance)
+ - [Azure AD セットアップガイド](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Azure AD エディションと Microsoft 365 id 管理
 
