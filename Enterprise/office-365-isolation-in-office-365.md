@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '概要: Office 365 のさまざまなアプリケーションでの分離とアクセス制御について説明します。'
-ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
+ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844408"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892126"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Office 365 での分離とアクセス制御
 
@@ -41,7 +41,7 @@ Exchange Online は、メールボックス内に顧客データを格納しま�
 
 - メールと電子メールの添付ファイル
 - 予定表と空き時間情報
-- 連絡先
+- Contacts
 - タスク
 - メモ
 - グループ
@@ -70,3 +70,33 @@ Acl に加えて、認証プロバイダ (テナント固有の Azure Active Dir
 SharePoint Online は、SQL Server と、コンテンツメタデータストレージ用の Azure ストレージを使用します。 コンテンツストアのパーティションキーは SQL での*SiteId*です。 SQL クエリを実行している場合、SharePoint Online はテナントレベルの*SubscriptionId*チェックの一部として確認された*SiteId*を使用します。
 
 SharePoint Online は、暗号化されたファイルコンテンツを Microsoft Azure blob に格納します。 各 SharePoint Online ファームには独自の Microsoft Azure アカウントがあり、Azure に保存されているすべての blob は、SQL コンテンツストアに格納されているキーを使用して個別に暗号化されます。 認証層によってコードで保護されており、エンドユーザーに直接公開されていない暗号化キー。 SharePoint Online はリアルタイム監視を使用して、HTTP 要求が複数のテナントに対してデータを読み書きするタイミングを検出します。 要求 id *subscriptionid*は、アクセスされるリソースの*subscriptionid*に対して追跡されます。 複数のテナントのリソースにアクセスする要求は、エンドユーザーによって発生することはありません。 マルチテナント環境のサービス要求だけが例外です。 たとえば、検索クローラーは、データベース全体に対するコンテンツの変更を一度に1つずつ取得します。 通常、1つのサービス要求で複数のテナントのサイトに対してクエリを実行する必要があります。これは、効率性上の理由によります。
+
+## <a name="teams"></a>Teams
+
+Teams のデータは、コンテンツの種類に応じて異なる方法で格納されます。 
+
+詳細な説明については、 [Microsoft Teams アーキテクチャの Ignite ブレイクアウトセッション](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071)をご覧ください。
+
+### <a name="core-teams-customer-data"></a>中心的なチームの顧客データ
+
+テナントがオーストラリア、カナダ、欧州連合、フランス、ドイツ、インド、日本、南アフリカ、南韓国、スイス (リヒテンシュタインを含む)、アラブ首長国連邦、英国、または米国でプロビジョニングされている場合、Microsoft は次の顧客データをその場所にのみ保存します。
+
+- Teams チャット、チームおよびチャネルの会話、画像、ボイスメールメッセージ、および連絡先。
+- SharePoint Online サイトのコンテンツと、そのサイト内に格納されているファイル。
+- OneDrive for Business または学校にアップロードされたファイル。
+
+#### <a name="chat-channel-messages-team-structure"></a>チャット、チャネルメッセージ、チーム構造
+
+Teams のすべてのチームは、Microsoft 365 グループとその SharePoint サイトおよび Exchange メールボックスによって支えられています。 プライベートチャット (グループチャットを含む)、チャネルでの会話の一部として送信されるメッセージ、およびチームとチャネルの構造は、Azure で実行されるチャットサービスに格納されます。 データは、情報保護機能を有効にするために、ユーザーおよびグループメールボックスの隠しフォルダーにも格納されます。
+
+#### <a name="voicemail-and-contacts"></a>ボイスメールと連絡先
+
+Voicemails は Exchange に保存されます。 連絡先は、Exchange ベースのクラウドデータストアに格納されます。 Exchange と Exchange ベースのクラウドストアは、既に各世界規模のデータセンター geo にデータ常駐を提供しています。 すべてのチームにとって、ボイスメールと連絡先は、オーストラリア、カナダ、フランス、ドイツ、インド、日本、アラブ首長国連邦、英国、南アフリカ、南韓国、スイス (リヒテンシュタインを含む)、および米国の国内に保存されています。 その他すべての国では、ファイルはテナントアフィニティに基づいて米国、ヨーロッパ、またはアジア太平洋地域に格納されます。
+
+#### <a name="images-and-media"></a>画像とメディア
+
+チャットで使用されるメディア (ただし、保存されていないが、元の Giphy サービス URL への参照リンクであるのに対して) は、チャットサービスと同じ場所に展開されている Azure ベースのメディアサービスに格納されます。
+
+#### <a name="files"></a>ファイル
+
+チャネル内で共有されているファイル (OneNote や Wiki を含む) は、チームの SharePoint サイトに保存されます。 会議または通話中にプライベートチャットまたはチャットで共有されているファイルは、ファイルを共有しているユーザーの OneDrive for Business または学校のアカウントにアップロードされて保存されます。 Exchange、SharePoint、OneDrive は、世界規模のデータセンター geo のそれぞれで、既にデータ常駐を提供しています。 そのため、既存のお客様については、すべてのファイル、OneNote ノートブック、Teams wiki コンテンツ、および Teams の経験の一部であるメールボックスは、テナントアフィニティに基づいて既に場所に保存されています。 ファイルは、オーストラリア、カナダ、フランス、ドイツ、インド、日本、アラブ首長国連邦、英国、南アフリカ、南韓国、スイス (リヒテンシュタインを含む) の国内に保存されます。 その他すべての国では、ファイルはテナントアフィニティに基づいて米国、ヨーロッパ、またはアジア太平洋地域に格納されます。
