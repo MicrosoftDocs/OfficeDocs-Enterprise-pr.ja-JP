@@ -3,7 +3,7 @@ title: マイクロソフトのクラウド プランのサブスクリプショ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/08/2019
+ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -19,25 +19,20 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: '概要: Microsoft のクラウド プラン全体に渡る組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解します。'
-ms.openlocfilehash: ad4307b2725fa37f6b28540b92895fc78f097c6c
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735965"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906278"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
- **概要:** Microsoft のクラウド プラン全体に渡る組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解します。
-  
 Microsoft は、クラウド プラン全体で ID の使用と課金の一貫性を維持するために、組織、サブスクリプション、ライセンス、ユーザー アカウントなどの階層を提供しています。
   
-- Microsoft Office 365
+- Microsoft 365 および Microsoft Office 365
 - Microsoft Azure
-- Microsoft Intune および Enterprise Mobility + Security (EMS)
 - Microsoft Dynamics 365
-
-[Microsoft 365](https://docs.microsoft.com/microsoft-365/) Office 365、EMS、および Windows 10 Enterprise が 1 つのサブスクリプションと統合型サービスセットに結合されます。
 
 ## <a name="elements-of-the-hierarchy"></a>階層の要素
 
@@ -51,21 +46,20 @@ An organization represents a business entity that is using Microsoft cloud offer
 
 サブスクリプションとは、1 つ以上の Microsoft クラウドのプラットフォームやサービスを使用するための Microsoft との契約のことです。この契約では、ユーザー単位のライセンス料またはクラウドベースのリソース消費量に基づいて請求されます。 
 
-- Microsoft のサービスとしてのソフトウェア (SaaS) ベースのクラウド商品 (Office 365、Intune/EMS、および Dynamics 365) では、ユーザーごとのライセンス料金が請求されます。 
+- Microsoft のサービスとしてのソフトウェア (SaaS) ベースのクラウド製品 (Microsoft 365 および Dynamics 365) は、ユーザーごとのライセンス料金を請求します。 
 - Microsoft のサービスとしてのプラットフォーム (PaaS) およびサービスとしてのインフラストラクチャ (IaaS) のクラウド サービス (Azure) では、クラウド リソースの消費量に基づいて請求されます。
  
 You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
   
-組織は、Microsoft のクラウド商品の複数のサブスクリプションを所有できます。 図 1 は、複数の Office 365 サブスクリプション、1 つの Intune サブスクリプション、1 つの Dynamics 365 サブスクリプション、複数の Azure サブスクリプションを持つ 1 つの組織を示しています。
+組織は、Microsoft のクラウド商品の複数のサブスクリプションを所有できます。 図1は、複数の Microsoft 365 サブスクリプション、Dynamics 365 サブスクリプション、および複数の Azure サブスクリプションを持つ単一の組織を示しています。
 
 **図 1: 1 つの組織に複数のサブスクリプションの例**
 
 ![Microsoft のクラウド プランの複数のサブスクリプションのある組織の例。](media/Subscriptions/Subscriptions-Fig1.png)
-
   
 ### <a name="licenses"></a>ライセンス
 
-Microsoft の SaaS クラウド商品の場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド商品のサービスを使用できるようになります。 サブスクリプションの一環として、月間の固定料金が課金されます。 管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。 図 2 の例では、Contoso Corporation は 100 ライセンスの Office 365 Enterprise E5 サブスクリプションを所有しています。このサブスクリプションにより、最大 100 件の個別のユーザー アカウントが Office 365 Enterprise E5 の機能とサービスを使用できるようになります。
+Microsoft の SaaS クラウド商品の場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド商品のサービスを使用できるようになります。 サブスクリプションの一環として、月間の固定料金が課金されます。 管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。 図2の例では、Contoso Corporation に100ライセンスを適用した Microsoft 365 E5 サブスクリプションがあります。これにより、最大で100の個々のユーザーアカウントを使用して Microsoft の 365 E5 の機能とサービスを使用できます。
   
 **図 2:1 つの組織の SaaS ベースのサブスクリプションに含まれるライセンス**
 
@@ -89,11 +83,11 @@ Some virtual machine images have trial versions of applications installed and ne
   
 ### <a name="tenants"></a>テナント
 
-For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Office 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
+SaaS クラウド商品の場合、テナントとはクラウド サービスを提供しているサーバーが収容された地域の場所のことです。 たとえば、Contoso 社では、Microsoft 365、EMS、および Dynamics 365 テナントをパリ本社の15000ワーカーに対してホストする地域を選択しました。
   
 Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Office 365, Dynamics 365, or Intune/EMS include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
+Azure AD テナントは、アカウントおよびグループを含む Azure AD の特定のインスタンスです。 Microsoft 365 または Dynamics 365 の有料または試用版サブスクリプションには、無料の Azure AD テナントが含まれています。 この Azure AD テナントには、他の Azure サービスは含まれていません。 Azure の試用版または有料版のサブスクリプションと同じではありません。
   
 ### <a name="summary-of-the-hierarchy"></a>階層の概要
 
@@ -111,11 +105,9 @@ An Azure AD tenant is a specific instance of Azure AD containing accounts and gr
   
 - パブリック ドメイン名によって識別される組織。
     
-  - ユーザー ライセンスがある Office 365 Enterprise E3 サブスクリプション。
+  - ユーザーライセンスを持つ Microsoft 365 E3 サブスクリプション。
     
-    ユーザー ライセンスがある Office 365 Enterprise E5 サブスクリプション。
-    
-    ユーザー ライセンスがある EMS サブスクリプション。
+    ユーザーライセンスを持つ Microsoft 365 E5 サブスクリプション。
     
     ユーザー ライセンスがある Dynamics 365 サブスクリプション。
     
@@ -135,12 +127,11 @@ Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud of
 
 次の表では、既に所有している 1 つの種類のクラウド商品のサブスクリプション (最初の列に列挙したラベル) と、追加する別の種類のクラウド商品のサブスクリプション (列間を横切る) に基づいた、複数の Microsoft クラウド商品の可能な組み合わせ方法について説明しています。
   
-||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
+||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |該当なし  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Microsoft 365 管理センターから Intune/EMS のサブスクリプションを組織に追加します。  <br/> |Microsoft 365 管理センターから Dynamics 365 のサブスクリプションを組織に追加します。  <br/> |
-|**Azure** <br/> |Office 365 のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |Intune/EMS サブスクリプションを組織に追加します。  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
-|**Intune/EMS** <br/> |Office 365 のサブスクリプションを組織に追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
-|**Dynamics 365** <br/> |Office 365 のサブスクリプションを組織に追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Intune/EMS サブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |
+|**Microsoft 365** <br/> |該当なし  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Microsoft 365 管理センターから Dynamics 365 のサブスクリプションを組織に追加します。  <br/> |
+|**Azure** <br/> |組織に Microsoft 365 サブスクリプションを追加します。  <br/> |該当なし  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
+|**Dynamics 365** <br/> |組織に Microsoft 365 サブスクリプションを追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |
    
 Microsoft SaaS ベース サービスの場合は、管理センターを使用すると、組織にサブスクリプションを簡単に追加できます。
   
@@ -150,17 +141,17 @@ Microsoft SaaS ベース サービスの場合は、管理センターを使用�
     
 3. **[サービスを購入する]** ページで、新しいサブスクリプションを購入します。
     
-管理センターは、Office 365 サブスクリプションの組織と Azure AD テナントを SaaS ベースのクラウド製品の新しいサブスクリプションに割り当てます。
+管理センターは、Microsoft 365 サブスクリプションの組織と Azure AD テナントを、SaaS ベースのクラウド製品の新しいサブスクリプションに割り当てます。
   
-Office 365 サブスクリプションと同じ組織および Azure AD テナントに Azure サブスクリプションを追加するには
+Microsoft 365 サブスクリプションと同じ組織と Azure AD テナントを使用して Azure サブスクリプションを追加するには、次のようにします。
   
-1. Office 365 全体管理者アカウントを使用して、Azure portal ([https://portal.azure.com](https://portal.azure.com)) にサインインします。
+1. Microsoft 365 グローバル管理者アカウントを使用して、Azure portal () にサインインし [https://portal.azure.com](https://portal.azure.com) ます。
     
 2. 左側のナビゲーションで、**[サブスクリプション]**、**[追加]** の順にクリックします。
     
 3. **[サブスクリプションの追加]** ページでプランを選択し、支払情報を記入して契約します。
     
-Azure と Office 365 のサブスクリプションを個別に購入済みで、Azure サブスクリプションから Office 365 の Azure AD テナントへのアクセスを希望する場合は、「[既存の Azure サブスクリプションを Azure Active Directory テナントに追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)」の説明を参照してください。
+Azure と Microsoft 365 サブスクリプションを別々に購入しており、Azure サブスクリプションから Microsoft 365 Azure AD テナントにアクセスする場合は、「azure [Active Directory テナントに既存の azure サブスクリプションを追加](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)する」の手順を参照してください。
  
 ## <a name="see-also"></a>関連項目
 
@@ -172,5 +163,5 @@ Azure と Office 365 のサブスクリプションを個別に購入済みで�
 
 ## <a name="next-step"></a>次の手順
 
-[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
+[Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
   

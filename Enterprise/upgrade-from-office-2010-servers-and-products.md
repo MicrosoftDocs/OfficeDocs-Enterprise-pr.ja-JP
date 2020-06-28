@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Office 2010 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775106"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906240"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース
 
@@ -38,11 +38,11 @@ Office 2010 と Exchange 2010 は、 **2020 年10月 13**日にサポートの�
 
 SharePoint 2010 および Project Server 2010 は、 **2021 年4月 13**日にサポートの終了に到達します。
 
-アップグレードを計画している間は、Office 365 または Microsoft 365 への移行を検討するのに非常に時間がかかる場合があります。 
+アップグレードを計画している間は、Microsoft 365 への移行を検討するのに非常に時間がかかる場合があります。 
 
-- Office 365 には、Exchange Server、SharePoint Server、Teams や OneDrive for business などのサービスといった Office 2010 サーバー製品用のクラウドベースのサービスがあります。 
+- Microsoft 365 には、Exchange Server、SharePoint Server、Teams や OneDrive for business などのサービスといった Office 2010 サーバー製品用のクラウドベースのサービスがあります。 
 
-- Office 365 E3 および E5 および Microsoft 365 Enterprise に含まれている Microsoft 365 enterprise for enterprise (旧称 Office 365 ProPlus) は、ローカルデバイスにインストールする Office クライアントアプリのセットです。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
+- Microsoft 365 Apps (以前の Office 365 ProPlus) には、Microsoft 365 E3 および E5 と共に、ローカルデバイスにインストールする Office クライアントアプリのセットが含まれています。 これらの機能は、Microsoft cloud から継続的に新しい生産性およびセキュリティ機能で更新されています。
 
 Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
@@ -68,7 +68,7 @@ Office 2010 のクライアントおよびサーバーおよび Windows 7 のア
 
 ## <a name="related-topics"></a>関連項目
 
-[ビデオ: Office 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[ビデオ: Microsoft 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)
 

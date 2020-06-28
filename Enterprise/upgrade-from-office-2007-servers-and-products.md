@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2007 サーバーおよびクライアントアプリケーションのサポートは間もなく終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 8da5cd95b683be40c4efa3137ecfca4d31e11aae
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Office 2007 サーバーおよびクライアントアプリケーションのサポートは終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
+ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774562"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906230"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース
 
 *この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了しています。 アップグレードを計画している間は、Office 365 以降の Microsoft Cloud への移行を検討するのに非常に役立ちます。 この記事を出発点として、オプションを確認してアップグレードを計画します。
+Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了しています。 アップグレードを計画している間は、microsoft 365 以降の Microsoft Cloud への移行を検討するのに非常に時間がかかる場合があります。 この記事を出発点として、オプションを確認してアップグレードを計画します。
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 の計画のロードマップ
   
@@ -57,7 +57,7 @@ Microsoft 製品のサポートが終了するときには、新しいセキュ�
      
 ## <a name="related-topics"></a>関連項目
 
-[ビデオ: Office 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[ビデオ: Microsoft 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)
 
