@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 7e9ba9135d024be5c12d6ca19b55ec68588d9ab4
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772148"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998562"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行
 
@@ -128,7 +128,7 @@ Microsoft は、Microsoft Cloud Germany から新しいドイツのデータセ�
 - [Azure](https://azure.microsoft.com/pricing/calculator/)、[Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)、[Dynamics 365 Customer Engagement](https://dynamics.microsoft.com/pricing/)、および [Power BI](https://powerbi.microsoft.com/pricing/) について、市場競争力のある価格を提供します。 
 - Microsoft のグローバル ネットワークに接続されており、数百のネットワーク エッジ サイト、ピアリング ロケーション、およびエグレス ポイントを提供し、世界中のどこでも堅牢なユーザー エクスペリエンスを提供します。 
 - ドイツ国内での顧客データの常駐要件を満たすのに役立ちます。 
-- 最新バージョンのサービスおよび Microsoft Teams や Office 365 の Multi-Geo などの新機能を含む、フル機能のグローバル クラウド サービスを提供します。 [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central)、[Office 365](https://products.office.com/ja-JP/where-is-your-data-located)、[Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) について、地域ごとに製品を比較します。
+- 最新バージョンのサービスおよび Microsoft Teams や Office 365 の Multi-Geo などの新機能を含む、フル機能のグローバル クラウド サービスを提供します。 [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central)、[Office 365](https://docs.microsoft.com/office365/enterprise/o365-data-locations)、[Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) について、地域ごとに製品を比較します。
 - 完全な機能、エンタープライズグレードのセキュリティ、および包括的な機能を提供し、顧客がコンプライアンスおよび規制要件を満たすのを支援します。 
 - 既存のオンライン サービス契約を通じてアクセスできます。
 
