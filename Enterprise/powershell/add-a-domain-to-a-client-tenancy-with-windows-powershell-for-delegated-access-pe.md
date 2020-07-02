@@ -1,7 +1,7 @@
 ---
 title: 委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
-ms.author: chrfox
-author: chrfox
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,65 +16,63 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 概要:Office 365 の Windows PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。
-ms.openlocfilehash: 693dbc22fea27c24fb6b578e22d0d2b150a8dfd5
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: '概要: Microsoft 365 で Windows PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。'
+ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004750"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997363"
 ---
-# <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a><span data-ttu-id="76551-103">委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する</span><span class="sxs-lookup"><span data-stu-id="76551-103">Add a domain to a client tenancy with Windows PowerShell for Delegated Access Permission (DAP) partners</span></span>
+# <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a><span data-ttu-id="31168-103">委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する</span><span class="sxs-lookup"><span data-stu-id="31168-103">Add a domain to a client tenancy with Windows PowerShell for Delegated Access Permission (DAP) partners</span></span>
 
- <span data-ttu-id="76551-104">**概要:** Office 365 の Windows PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。</span><span class="sxs-lookup"><span data-stu-id="76551-104">**Summary:** Use Windows PowerShell for Office 365 to add an alternate domain name to an existing customer tenant.</span></span>
+<span data-ttu-id="31168-104">Microsoft 365 管理センターを使用するよりも、Microsoft 365 用の Windows PowerShell を使用して、新しいドメインを作成して、お客様のテナントと関連付けることができます。</span><span class="sxs-lookup"><span data-stu-id="31168-104">You can create and associate new domains with your customer's tenancy with Windows PowerShell for Microsoft 365 faster than using the Microsoft 365 admin center.</span></span>
   
-<span data-ttu-id="76551-105">Microsoft 365 管理センターよりも、Office 365用 Windows PowerShellを使用して、新しいドメインを作成して顧客のテナントに関連付けたほうが迅速に作業が行えます。</span><span class="sxs-lookup"><span data-stu-id="76551-105">You can create and associate new domains with your customer's tenancy with Windows PowerShell for Office 365 faster than using the Microsoft 365 admin center.</span></span>
-  
-<span data-ttu-id="76551-106">委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。</span><span class="sxs-lookup"><span data-stu-id="76551-106">Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners.</span></span> <span data-ttu-id="76551-107">他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。</span><span class="sxs-lookup"><span data-stu-id="76551-107">They are frequently network or telecom providers to other companies.</span></span> <span data-ttu-id="76551-108">それらの企業は、顧客に提供するサービスに Office 365 サブスクリプションをバンドルします。</span><span class="sxs-lookup"><span data-stu-id="76551-108">They bundle Office 365 subscriptions into their service offerings to their customers.</span></span> <span data-ttu-id="76551-109">Office 365のサブスクリプションを販売する際に、顧客テナンシーに対する「代理で管理」(AOBO) 権限が自動的に付与されるため、顧客テナンシーを管理し、顧客テナンシーに関するレポートを作成できます。</span><span class="sxs-lookup"><span data-stu-id="76551-109">When they sell an Office 365 subscription, they are automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.</span></span>
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="76551-110">始める前に把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="76551-110">What do you need to know before you begin?</span></span>
+<span data-ttu-id="31168-105">委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。</span><span class="sxs-lookup"><span data-stu-id="31168-105">Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners.</span></span> <span data-ttu-id="31168-106">他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。</span><span class="sxs-lookup"><span data-stu-id="31168-106">They are frequently network or telecom providers to other companies.</span></span> <span data-ttu-id="31168-107">これらのサブスクリプションは、お客様に対して Microsoft 365 のサブスクリプションをサービス提供にバンドルしています。</span><span class="sxs-lookup"><span data-stu-id="31168-107">They bundle Microsoft 365 subscriptions into their service offerings to their customers.</span></span> <span data-ttu-id="31168-108">Microsoft 365 サブスクリプションを販売する際には、顧客のテナンシーに対して管理およびレポートできるように、顧客テナンシーへの (AOBO) アクセス許可が自動的に付与されます。</span><span class="sxs-lookup"><span data-stu-id="31168-108">When they sell a Microsoft 365 subscription, they are automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="31168-109">始める前に把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="31168-109">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="76551-p102">このトピックの手順では、Office 365 のために Windows PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="76551-p102">The procedures in this topic require you to connect to Windows PowerShell for Office 365. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
+<span data-ttu-id="31168-110">The procedures in this topic require you to connect to Windows PowerShell for Office 365.</span><span class="sxs-lookup"><span data-stu-id="31168-110">The procedures in this topic require you to connect to Windows PowerShell for Office 365.</span></span> <span data-ttu-id="31168-111">For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="31168-111">For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
   
-<span data-ttu-id="76551-113">また、パートナーのテナント管理者の資格情報も必要です。</span><span class="sxs-lookup"><span data-stu-id="76551-113">You also need your partner tenant administrator credentials.</span></span>
+<span data-ttu-id="31168-112">また、パートナーのテナント管理者の資格情報も必要です。</span><span class="sxs-lookup"><span data-stu-id="31168-112">You also need your partner tenant administrator credentials.</span></span>
   
-<span data-ttu-id="76551-114">また、以下の情報も必要になります。</span><span class="sxs-lookup"><span data-stu-id="76551-114">You also need the following information:</span></span>
+<span data-ttu-id="31168-113">また、以下の情報も必要になります。</span><span class="sxs-lookup"><span data-stu-id="31168-113">You also need the following information:</span></span>
   
-- <span data-ttu-id="76551-115">顧客が望む完全修飾ドメイン名 (FQDN) が必要です。</span><span class="sxs-lookup"><span data-stu-id="76551-115">You need the fully qualified domain name (FQDN) that your customer wants.</span></span>
+- <span data-ttu-id="31168-114">顧客が望む完全修飾ドメイン名 (FQDN) が必要です。</span><span class="sxs-lookup"><span data-stu-id="31168-114">You need the fully qualified domain name (FQDN) that your customer wants.</span></span>
     
-- <span data-ttu-id="76551-116">顧客の **テナント ID** も必要です。</span><span class="sxs-lookup"><span data-stu-id="76551-116">You need the customer's **TenantId**.</span></span>
+- <span data-ttu-id="31168-115">顧客の **テナント ID** も必要です。</span><span class="sxs-lookup"><span data-stu-id="31168-115">You need the customer's **TenantId**.</span></span>
     
-- <span data-ttu-id="76551-p103">FQDN は、GoDaddy などのインターネット ドメイン名サービス (DNS) 登録業者に登録されている必要があります。公的にドメイン名を登録する方法について詳しくは、「[ドメイン名の購入方法](https://go.microsoft.com/fwlink/p/?LinkId=532541)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="76551-p103">The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).</span></span>
+- <span data-ttu-id="31168-116">The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy.</span><span class="sxs-lookup"><span data-stu-id="31168-116">The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy.</span></span> <span data-ttu-id="31168-117">For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).</span><span class="sxs-lookup"><span data-stu-id="31168-117">For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).</span></span>
     
-- <span data-ttu-id="76551-p104">DNS 登録業者の登録済み DNS ゾーンに TXT レコードを追加する方法を理解する必要があります。TXT レコードを追加する方法について詳しくは、「[任意の DNS ホスティング プロバイダーで DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=532542)」をご覧ください。これらの手順がうまくいかない場合は、使っている DNS 登録業者用の手順を検索する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76551-p104">You need to know how to add a TXT record to the registered DNS zone for your DNS registrar. For more information on how to add a TXT record, see [Create DNS records at any DNS hosting provider for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532542). If those procedures don't work for you, you will need to find the procedures for your DNS registrar.</span></span>
+- <span data-ttu-id="31168-118">DNS 登録業者の登録済み DNS ゾーンに TXT レコードを追加する方法を理解する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31168-118">You need to know how to add a TXT record to the registered DNS zone for your DNS registrar.</span></span> <span data-ttu-id="31168-119">TXT レコードを追加する方法の詳細については、「[ドメインを接続するための DNS レコードを追加](https://go.microsoft.com/fwlink/p/?LinkId=532542)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31168-119">For more information on how to add a TXT record, see [Add DNS records to connect your domain](https://go.microsoft.com/fwlink/p/?LinkId=532542).</span></span> <span data-ttu-id="31168-120">これらの手順がうまくいかない場合は、使っている DNS 登録業者用の手順を検索する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31168-120">If those procedures don't work for you, you will need to find the procedures for your DNS registrar.</span></span>
     
-## <a name="create-domains"></a><span data-ttu-id="76551-122">ドメインを作成する</span><span class="sxs-lookup"><span data-stu-id="76551-122">Create domains</span></span>
+## <a name="create-domains"></a><span data-ttu-id="31168-121">ドメインを作成する</span><span class="sxs-lookup"><span data-stu-id="31168-121">Create domains</span></span>
 
- <span data-ttu-id="76551-p105">顧客から、既定の<domain>.onmicrosoft.comドメインを世界に対して自企業を表す主ドメインにしたくないため、追加のドメインを作成して顧客のテナンシーに関連付けるよう依頼される可能性があります。この手順では、ドメインを新規作成して顧客のテナンシーに関連付ける方法を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="76551-p105">Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.</span></span>
+ <span data-ttu-id="31168-122">Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world.</span><span class="sxs-lookup"><span data-stu-id="31168-122">Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world.</span></span> <span data-ttu-id="31168-123">This procedure walks you through creating a new domain associated with your customer's tenancy.</span><span class="sxs-lookup"><span data-stu-id="31168-123">This procedure walks you through creating a new domain associated with your customer's tenancy.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="76551-125">これらの操作の一部を実行するには、Microsoft 365 管理センターの管理者アカウントの詳細にある [サポートされている**企業への管理アクセス権を割り当てる**] の設定を [**完全管理**] に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76551-125">To perform some of these operations, the partner administrator account you sign in with must be set to **Full administration** for the **Assign administrative access to companies you support** setting found in the details of the admin account in the Microsoft 365 admin center.</span></span> <span data-ttu-id="76551-126">パートナー管理者の役割の管理について詳しくは、「[パートナー: 代理管理を提供する](https://go.microsoft.com/fwlink/p/?LinkId=532435)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="76551-126">For more information on managing partner administrator roles, see[Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435).</span></span> 
+> <span data-ttu-id="31168-124">これらの操作の一部を実行するには、Microsoft 365 管理センターの管理者アカウントの詳細にある [サポートされている**企業への管理アクセス権を割り当てる**] の設定を [**完全管理**] に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31168-124">To perform some of these operations, the partner administrator account you sign in with must be set to **Full administration** for the **Assign administrative access to companies you support** setting found in the details of the admin account in the Microsoft 365 admin center.</span></span> <span data-ttu-id="31168-125">パートナー管理者の役割の管理の詳細については、「[パートナー: 代理管理を提案](https://go.microsoft.com/fwlink/p/?LinkId=532435)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="31168-125">For more information on managing partner administrator roles, see [Partners: Offer delegated administration](https://go.microsoft.com/fwlink/p/?LinkId=532435).</span></span> 
   
-### <a name="create-the-domain-in-azure-active-directory"></a><span data-ttu-id="76551-127">Azure Active Directory でドメインを作成する</span><span class="sxs-lookup"><span data-stu-id="76551-127">Create the domain in Azure Active Directory</span></span>
+### <a name="create-the-domain-in-azure-active-directory"></a><span data-ttu-id="31168-126">Azure Active Directory でドメインを作成する</span><span class="sxs-lookup"><span data-stu-id="31168-126">Create the domain in Azure Active Directory</span></span>
 
-<span data-ttu-id="76551-128">このコマンドは、Azure Active Directory にドメインを作成しますが、公的に登録されたドメインとは関連付けられません。</span><span class="sxs-lookup"><span data-stu-id="76551-128">This command creates the domain in Azure Active Directory but does not associate it with the publicly registered domain.</span></span> <span data-ttu-id="76551-129">関連付けのためには、企業向けのMicrosoft Office 365に対し、公に登録されたドメインを所有していることを証明していただく必要があります。</span><span class="sxs-lookup"><span data-stu-id="76551-129">That comes when you prove that you own the publicly registered domain to Microsoft Office 365 for enterprises.</span></span>
+<span data-ttu-id="31168-127">このコマンドは、Azure Active Directory にドメインを作成しますが、公的に登録されたドメインとは関連付けられません。</span><span class="sxs-lookup"><span data-stu-id="31168-127">This command creates the domain in Azure Active Directory but does not associate it with the publicly registered domain.</span></span> <span data-ttu-id="31168-128">公開されているドメインを企業向け Microsoft Microsoft 365 に所有していることを証明すると、これが提供されます。</span><span class="sxs-lookup"><span data-stu-id="31168-128">That comes when you prove that you own the publicly registered domain to Microsoft Microsoft 365 for enterprises.</span></span>
   
 ```
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
 >[!Note]
-><span data-ttu-id="76551-130">PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="76551-130">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="76551-131">これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76551-131">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="31168-129">PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="31168-129">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="31168-130">これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31168-130">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-### <a name="get-the-data-for-the-dns-txt-verification-record"></a><span data-ttu-id="76551-132">DNS の TXT 検証レコードのデータを取得する</span><span class="sxs-lookup"><span data-stu-id="76551-132">Get the data for the DNS TXT verification record</span></span>
+### <a name="get-the-data-for-the-dns-txt-verification-record"></a><span data-ttu-id="31168-131">DNS の TXT 検証レコードのデータを取得する</span><span class="sxs-lookup"><span data-stu-id="31168-131">Get the data for the DNS TXT verification record</span></span>
 
- <span data-ttu-id="76551-p109">Office 365 は、DNS の TXT 検証レコードに配置する必要がある特定のデータを形成します。データを取得するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="76551-p109">Office 365 will generate the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.</span></span>
+ <span data-ttu-id="31168-132">Microsoft 365 は、DNS TXT 検証レコードに格納する必要がある特定のデータを生成します。</span><span class="sxs-lookup"><span data-stu-id="31168-132">Microsoft 365 will generate the specific data that you need to place into the DNS TXT verification record.</span></span> <span data-ttu-id="31168-133">データを取得するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="31168-133">To get the data, run this command.</span></span>
   
 ```
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
-<span data-ttu-id="76551-135">これにより、次のような出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="76551-135">This will give you output like:</span></span>
+<span data-ttu-id="31168-134">これにより、次のような出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="31168-134">This will give you output like:</span></span>
   
  `Label: domainname.com`
   
@@ -83,19 +81,19 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
  `Ttl: 3600`
   
 > [!NOTE]
-> <span data-ttu-id="76551-136">公的に登録された DNS ゾーンに TXT レコードを作成するには、このテキストが必要です。</span><span class="sxs-lookup"><span data-stu-id="76551-136">You will need this text to create the TXT record in the publicly registered DNS zone.</span></span> <span data-ttu-id="76551-137">必ずコピーし、保存してください。</span><span class="sxs-lookup"><span data-stu-id="76551-137">Be sure to copy and save it.</span></span> 
+> <span data-ttu-id="31168-135">公的に登録された DNS ゾーンに TXT レコードを作成するには、このテキストが必要です。</span><span class="sxs-lookup"><span data-stu-id="31168-135">You will need this text to create the TXT record in the publicly registered DNS zone.</span></span> <span data-ttu-id="31168-136">必ずコピーし、保存してください。</span><span class="sxs-lookup"><span data-stu-id="31168-136">Be sure to copy and save it.</span></span> 
   
-### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a><span data-ttu-id="76551-138">公的に登録された DNS ゾーンに TXT レコードを追加する</span><span class="sxs-lookup"><span data-stu-id="76551-138">Add a TXT record to the publically registered DNS zone</span></span>
+### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a><span data-ttu-id="31168-137">公的に登録された DNS ゾーンに TXT レコードを追加する</span><span class="sxs-lookup"><span data-stu-id="31168-137">Add a TXT record to the publically registered DNS zone</span></span>
 
-<span data-ttu-id="76551-139">Office 365 が公的に登録されたドメイン名に向けられたトラフィックの受け入れを開始する前に、そのドメインの所有者であることと、ドメインに対する管理者のアクセス許可を保有していることを証明する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76551-139">Before Office 365 will start accepting traffic that is directed to the publicly registered domain name, you must prove that you own and have administrator permissions to the domain.</span></span> <span data-ttu-id="76551-140">ドメインを保有していることを証明するには、ドメインに TXT レコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="76551-140">You prove you own the domain by creating a TXT record in the domain.</span></span> <span data-ttu-id="76551-141">TXT レコードは、ドメインでは何も行わず、ドメインの所有権が確立した後に削除することができます。</span><span class="sxs-lookup"><span data-stu-id="76551-141">A TXT record doesn't do anything in your domain, and it can be deleted after your ownership of the domain is established.</span></span> <span data-ttu-id="76551-142">TXT レコードを作成するには、「[任意の DNS ホスティング プロバイダーで DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=532542)」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="76551-142">To create the TXT records, follow the procedures at [Create DNS records at any DNS hosting provider for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532542).</span></span> <span data-ttu-id="76551-143">これらの手順がうまくいかない場合は、使っている DNS 登録業者用の手順を検索する必要があります。</span><span class="sxs-lookup"><span data-stu-id="76551-143">If those procedures don't work for you , you need to find the procedures for your DNS registrar.</span></span>
+<span data-ttu-id="31168-138">公開されているドメイン名宛てのトラフィックの受信を開始する前に、Microsoft 365 は、ドメインに対する管理者アクセス許可を所有していることを証明する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31168-138">Before Microsoft 365 will start accepting traffic that is directed to the publicly registered domain name, you must prove that you own and have administrator permissions to the domain.</span></span> <span data-ttu-id="31168-139">ドメインを保有していることを証明するには、ドメインに TXT レコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="31168-139">You prove you own the domain by creating a TXT record in the domain.</span></span> <span data-ttu-id="31168-140">TXT レコードは、ドメインでは何も行わず、ドメインの所有権が確立した後に削除することができます。</span><span class="sxs-lookup"><span data-stu-id="31168-140">A TXT record doesn't do anything in your domain, and it can be deleted after your ownership of the domain is established.</span></span> <span data-ttu-id="31168-141">TXT レコードを作成するには、「 [DNS レコードを追加する](https://go.microsoft.com/fwlink/p/?LinkId=532542)」の手順に従ってドメインを接続します。</span><span class="sxs-lookup"><span data-stu-id="31168-141">To create the TXT records, follow the procedures at [Add DNS records to connect your domain](https://go.microsoft.com/fwlink/p/?LinkId=532542).</span></span> <span data-ttu-id="31168-142">これらの手順がうまくいかない場合は、使っている DNS 登録業者用の手順を検索する必要があります。</span><span class="sxs-lookup"><span data-stu-id="31168-142">If those procedures don't work for you , you need to find the procedures for your DNS registrar.</span></span>
   
-<span data-ttu-id="76551-p112">TXT レコードが正常に作成されたことを、nslookup 経由で確認します。次の構文に従います。</span><span class="sxs-lookup"><span data-stu-id="76551-p112">Confirm the successful creation of the TXT record via nslookup. Follow this syntax.</span></span>
+<span data-ttu-id="31168-143">Confirm the successful creation of the TXT record via nslookup.</span><span class="sxs-lookup"><span data-stu-id="31168-143">Confirm the successful creation of the TXT record via nslookup.</span></span> <span data-ttu-id="31168-144">Follow this syntax.</span><span class="sxs-lookup"><span data-stu-id="31168-144">Follow this syntax.</span></span>
   
 ```
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
-<span data-ttu-id="76551-146">これにより、次のような出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="76551-146">This will give you output like:</span></span>
+<span data-ttu-id="31168-145">これにより、次のような出力が得られます。</span><span class="sxs-lookup"><span data-stu-id="31168-145">This will give you output like:</span></span>
   
  `Non-authoritative answer:`
   
@@ -103,30 +101,30 @@ nslookup -type=TXT <FQDN of registered domain>
   
  `text=MS=ms########`
   
-### <a name="validate-domain-ownership-in-office-365"></a><span data-ttu-id="76551-147">Office 365 でドメインの所有権を検証する</span><span class="sxs-lookup"><span data-stu-id="76551-147">Validate domain ownership in Office 365</span></span>
+### <a name="validate-domain-ownership-in-microsoft-365"></a><span data-ttu-id="31168-146">Microsoft 365 でドメインの所有権を検証する</span><span class="sxs-lookup"><span data-stu-id="31168-146">Validate domain ownership in Microsoft 365</span></span>
 
-<span data-ttu-id="76551-p113">この最後の手順では、公的に登録されたドメインを保有していることを Office 365 に検証します。この手順の完了後、Office 365 は新しいドメイン名にルーティングされるトラフィックの受け入れを開始します。ドメインの作成と登録のプロセスを完了するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="76551-p113">In this last step, you validate to Office 365 that you own the publically registered domain. After this step, Office 365 will begin accepting traffic routed to the new domain name. To complete the domain creation and registration process, run this command.</span></span> 
+<span data-ttu-id="31168-147">この最後の手順では、公的登録済みドメインを所有していることを Microsoft 365 に検証します。</span><span class="sxs-lookup"><span data-stu-id="31168-147">In this last step, you validate to Microsoft 365 that you own the publically registered domain.</span></span> <span data-ttu-id="31168-148">この手順の後、Microsoft 365 は新しいドメイン名にルーティングされたトラフィックの受け入れを開始します。</span><span class="sxs-lookup"><span data-stu-id="31168-148">After this step, Microsoft 365 will begin accepting traffic routed to the new domain name.</span></span> <span data-ttu-id="31168-149">ドメインの作成と登録のプロセスを完了するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="31168-149">To complete the domain creation and registration process, run this command.</span></span> 
   
 ```
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-<span data-ttu-id="76551-151">このコマンドは出力を返しません。そのため、機能したことを確認するために、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="76551-151">This command won't return any output, so to confirm that this worked, run this command.</span></span>
+<span data-ttu-id="31168-150">このコマンドは出力を返しません。そのため、機能したことを確認するために、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="31168-150">This command won't return any output, so to confirm that this worked, run this command.</span></span>
   
 ```
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-<span data-ttu-id="76551-152">コマンドを実行すると、次のようなものが返されます。</span><span class="sxs-lookup"><span data-stu-id="76551-152">This will return something like this</span></span>
+<span data-ttu-id="31168-151">コマンドを実行すると、次のようなものが返されます。</span><span class="sxs-lookup"><span data-stu-id="31168-151">This will return something like this</span></span>
   
 ||||
 |:-----|:-----|:-----|
 | `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
 | `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="76551-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="76551-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="31168-152">関連項目</span><span class="sxs-lookup"><span data-stu-id="31168-152">See also</span></span>
 
 #### 
 
-[<span data-ttu-id="76551-154">パートナーのヘルプ</span><span class="sxs-lookup"><span data-stu-id="76551-154">Help for partners</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=533477)
+[<span data-ttu-id="31168-153">パートナーのヘルプ</span><span class="sxs-lookup"><span data-stu-id="31168-153">Help for partners</span></span>](https://go.microsoft.com/fwlink/p/?LinkID=533477)
 
