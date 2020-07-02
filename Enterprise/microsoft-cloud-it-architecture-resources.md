@@ -18,18 +18,16 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Summary: Learn core cloud architecture concepts for Microsoft identity, security, networking, and hybrid. Review prescriptive recommendations for protecting files, identities, and devices when using Microsoft's cloud."
-ms.openlocfilehash: b868394d12f65d9169203da275cef5fbb2f619e4
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c1d41fa4ca098a913c7fea039765f916614c7f9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736045"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997904"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Microsoft クラウド IT アーキテクチャのリソース
 
- **概要:** Microsoft ID、セキュリティ、ネットワーク、およびハイブリッドにおけるコア クラウド アーキテクチャの概念について説明します。 Microsoft のクラウドを使用する際の、ファイル、ID、およびデバイスを保護するための推奨事項を確認してください。
-  
-These architecture tools and posters give you information about Microsoft cloud services, including Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security. 
+これらのアーキテクチャツールおよびポスターには、microsoft 365、Windows 10、Azure Active Directory、Microsoft Intune、Microsoft Dynamics 365、ハイブリッドオンプレミスおよびクラウドソリューションなどの Microsoft クラウドサービスに関する情報が提供されています。 IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードの最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
@@ -69,7 +67,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 <a name="cloudarch"></a>
 ## エンタープライズ アーキテクト シリーズ向けの Microsoft クラウド
 
-These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.
+これらのクラウドアーキテクチャのポスターには、microsoft 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online、ハイブリッドオンプレミスおよびクラウドソリューションなどの Microsoft クラウドサービスに関する情報が記載されています。 IT 意思決定者と設計者はこれらのリソースを使用して、ワークロードの最適なソリューションを決定し、ID やセキュリティなどのコア インフラストラクチャ コンポーネントについて決定することができます。
 
 <!--  
 <a name="platformoptions"></a>
@@ -79,7 +77,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
+|[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Microsoft 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
 -->
 
    
@@ -117,7 +115,7 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
   
 |**アイテム**|**説明**|
 |:-----|:-----|
-|[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | このモデルには次のものが含まれています。 <ul><li> Microsoft のクラウド製品 (SaaS、Azure PaaS、Azure IaaS) とそれらの共通の要素。 </li><li> Microsoft のクラウド製品向けのハイブリッド クラウド アーキテクチャ </li><li> Microsoft SaaS (Office 365)、Azure PaaS、および Azure IaaS のハイブリッド クラウド シナリオ </li></ul><br/>|
+|[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | このモデルには次のものが含まれています。 <ul><li> Microsoft のクラウド製品 (SaaS、Azure PaaS、Azure IaaS) とそれらの共通の要素。 </li><li> Microsoft のクラウド製品向けのハイブリッド クラウド アーキテクチャ </li><li> Microsoft SaaS (Microsoft 365)、Azure PaaS、および Azure IaaS のハイブリッドクラウドシナリオ </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>一般的な攻撃と、組織を保護する Microsoft の機能
@@ -132,7 +130,7 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 
 展開を開始するための Microsoft 365 Enterprise の[基盤インフラストラクチャ](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure)をひとめで確認できます。
   
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |[![Microsoft 365 Enterprise の基盤インフラストラクチャ ポスターのサムネイル画像](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [オンライン表示](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | このポスターでは、目標、機能とツール、設計上の決定、構成結果、オンボード、および継続的な監視と更新の観点から、基盤インフラストラクチャの各フェーズについて要約します。 <br/>| 
 
@@ -195,7 +193,7 @@ Office 365 のファイル保護のために推奨される機能は、3 段階�
 
 Prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.
 
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |![GDPR のための Office 365 の情報保護のサムネイル](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |このコンテンツを記事形式で表示するには、「[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/Office365/SecurityCompliance/office-365-information-protection-for-gdpr)」を参照してください。      |
 

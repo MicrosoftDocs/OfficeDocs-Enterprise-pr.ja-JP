@@ -3,7 +3,7 @@ title: Office 365 PowerShell を使用してユーザー アカウントから�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/26/2020
+ms.date: 06/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
-ms.openlocfilehash: f5b1dc18dfd53548d1e49a3193315acc0343f816
-ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
+ms.openlocfilehash: 0b21415b5acbd2c332d9bc171a5ab80cb7954b95
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374456"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997413"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
 
@@ -46,14 +46,9 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
 $planName="<license plan name from the list of license plans>"
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$Licenses.AddLicenses = @()
-$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $planName -EQ).SkuID
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
 特定のユーザーアカウントのすべてのライセンスを削除するには、ユーザーのサインイン名を指定し、"<" と ">" の文字を削除して、次のコマンドを実行します。
@@ -161,7 +156,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-この例では、テキストファイル C:\My Documents\accounts.txt で定義されているユーザーアカウントから**litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスを削除します。
+この例では、テキストファイル C:\My Documents\Accounts.txt で定義されているユーザーアカウントから、 **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンスを削除します。
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"
@@ -181,7 +176,7 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。詳細については、「[Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)」を参照してください。
+Another way to free up a license is by deleting the user account. For more information, see [Delete and restore user accounts with Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>関連項目
 

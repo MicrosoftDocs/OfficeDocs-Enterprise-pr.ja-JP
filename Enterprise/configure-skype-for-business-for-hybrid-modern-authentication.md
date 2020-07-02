@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
-ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840724"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997433"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 先進認証は、ユーザーの認証と承認をさらに強力に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
   
@@ -33,15 +33,15 @@ ms.locfileid: "41840724"
   
  **開始する前に**、次のように呼び出します。
   
-- モダン認証\> MA
+- モダン認証 \> MA
 
-- ハイブリッド先進認証\>の HMA
+- ハイブリッド先進認証の \> HMA
 
-- Exchange オンプレミス\>の EXCH
+- Exchange オンプレミスの \> EXCH
 
 - Exchange Online \> exo
 
-- Skype for Business オンプレミス\>の sfb
+- Skype for Business オンプレミスの \> sfb
 
 - と Skype for Business Online \> sfbo
 
@@ -125,15 +125,15 @@ Standard Edition サーバーを使用している場合、内部 URL は空白�
 
 2. このコマンドをオンプレミスで実行して、SFB web サービス Url の一覧を取得します。
 
-   AppPrincipalId はから始まることに`00000004`注意してください。 これは、Skype for Business Online に対応しています。
+   AppPrincipalId はから始まることに注意して `00000004` ください。 これは、Skype for Business Online に対応しています。
 
-   このコマンドの出力では、SE と WS の URL が含まれていますが、ほとんどは、で`00000004-0000-0ff1-ce00-000000000000/`始まる spn から構成されていますのでメモを取ります。
+   このコマンドの出力では、SE と WS の URL が含まれていますが、ほとんどは、で始まる Spn から構成されていますのでメモを取り `00000004-0000-0ff1-ce00-000000000000/` ます。
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
 ```
 
-3. オンプレミスの内部**または**外部の Sfb url が欠落してhttps://lyncwebint01.contoso.com https://lyncwebext01.contoso.com)いる場合 (たとえば、である場合)、それらのレコードをこのリストに追加する必要があります。
+3. オンプレミスの内部**または**外部の Sfb url が欠落している場合 (たとえば、である場合)、 https://lyncwebint01.contoso.com それらのレコードを https://lyncwebext01.contoso.com) このリストに追加する必要があります。
 
     次の Url の*例は*、Add コマンドで実際の url に置き換えてください。
   
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. 手順2で**new-msolserviceprincipal**コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい Spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい Url が一覧に表示されます。 この例では、Spn の一覧に特定の Url https://lyncwebint01.contoso.comとhttps://lyncwebext01.contoso.com/が含まれるようになりました。
+4. 手順2で**new-msolserviceprincipal**コマンドを再度実行し、出力を調べて、新しいレコードが追加されたことを確認します。 リスト/スクリーンショットを以前から新しい Spn のリストに比較します (レコードの新しいリストのスクリーンショットを表示することもできます)。 成功した場合は、2つの新しい Url が一覧に表示されます。 この例では、Spn の一覧に特定の Url とが含まれるようになりました https://lyncwebint01.contoso.com https://lyncwebext01.contoso.com/ 。
 
 ### <a name="create-the-evosts-auth-server-object"></a>EvoSTS 認証サーバーオブジェクトを作成する
 
@@ -170,9 +170,9 @@ HMA が機能していることを確認した後で、その機能が動作し�
   
 「OAuth Authority」については、「Skype for Business クライアント」の「構成情報」も確認してください。 クライアントコンピューターでこれを行うには、CTRL キーを押しながら、Windows 通知トレイの [Skype for Business] アイコンを右クリックします。 表示されるメニューの [**構成情報**] をクリックします。 デスクトップに表示される [Skype for Business の構成情報] ウィンドウで、次のものを探します。
   
-![モダン認証を使用した Skype for Business クライアントの構成情報は、のhttps://login.windows.net/common/oauth2/authorizeLYNC および EWS OAUTH AUTHORITY の URL を示しています。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![モダン認証を使用した Skype for Business クライアントの構成情報は、の Lync および EWS OAUTH Authority の URL を示して https://login.windows.net/common/oauth2/authorize います。](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-また、CTRL キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイにもあります) を右クリックし、[接続の状態] をクリックします。 OAuth で使用されるベアラートークンを表す、認証の種類 '\*ベアラー ' に対してクライアントの SMTP アドレスを検索します。
+また、CTRL キーを押しながら Outlook クライアントのアイコン (Windows 通知トレイにもあります) を右クリックし、[接続の状態] をクリックします。 OAuth で使用されるベアラートークンを表す、認証の種類 ' ベアラー ' に対してクライアントの SMTP アドレスを検索し \* ます。
   
 ## <a name="related-articles"></a>関連記事
 

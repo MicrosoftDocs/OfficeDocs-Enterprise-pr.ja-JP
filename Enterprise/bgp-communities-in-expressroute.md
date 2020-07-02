@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844948"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997874"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
@@ -44,7 +44,7 @@ Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エ�
 |:-----|:-----|:-----|
 |Exchange Online\*  <br/> |12076:5010  <br/> |Exchange および EOP サービスが含まれています。\*  <br/> |
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online & Micorosoft Teams サービス  <br/> |
+|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online & Microsoft Teams サービス  <br/> |
 |その他の Office 365 サービス\*  <br/> |12076:5100  <br/> |Azure Active Directory (認証およびディレクトリ同期のシナリオ) と Office 365 ポータルサービスが含まれています。  <br/> |
 |\*ExpressRoute に含まれるサービスシナリオの範囲については、「 [Office 365 エンドポイント](https://aka.ms/o365endpoints)」の記事に記載されています。  <br/> \*\*今後、追加サービスと BGP コミュニティの値を追加することができます。 [BGP コミュニティの現在の一覧を参照してください](https://azure.microsoft.com/documentation/articles/expressroute-routing/)。  <br/> |
 
@@ -58,7 +58,7 @@ Contoso Corporation は、現在 Office 365 を使用して Exchange Online と 
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp;の OneDrive for business  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; の OneDrive For business  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
 
 > [!NOTE]
 > 各サービスに対してより低いプレフィックス数を実現するために、サービス間で最小限の重複が保持されます。 これは予想どおりの動作です。
@@ -71,17 +71,17 @@ Contoso Corporation は、現在 Office 365 を使用して Exchange Online と 
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/>  Skype for Business テレメトリ、Skype クライアントのクイックヒント、パブリック IM 接続  <br/>  Exchange Online、Exchange Online Protection、および SharePoint Online  <br/> |
+|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/>  Skype for Business テレメトリ、Skype クライアントのクイックヒント、パブリック IM 接続  <br/>  Exchange Online、Exchange Online Protection、および SharePoint Online  <br/> |
 
 ### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>シナリオ 3: Office 365 サービス用にのみ Azure ExpressRoute のスコープを限定する
 
 Woodgrove Bank は、Office 365 を含むいくつかの Microsoft クラウドサービスのお客様です。 ネットワーク容量と消費を評価した後、Woodgrove Bank は、サポートされている Office 365 サービスの優先パスとして Azure ExpressRoute を展開することを決定します。 ルーティングテーブルは、すべての Office 365 IP プレフィックスと、プロビジョニングされた Azure ExpressRoute のすべてのセットをサポートできます。すべての予測される帯域幅と待機時間のニーズがサポートされます。
   
-Office 365 以外の Microsoft cloud services に関連付けられているネットワークトラフィックを確実にするために、Woodgrove Bank は、office 365 の ExpressRoute を office 365 固有の BGP community 値、12076:5010、12076:5020、12076:5030、12076:5100
+Office 365 以外の Microsoft cloud services に関連付けられているネットワークトラフィックを確実にするために、Woodgrove Bank は office 365 の ExpressRoute を office 365 固有の BGP community 値、12076:5010、12076:5020、12076:5030、12076:5100 にタグ付けされたすべての IP プレフィックスに適用します。
 
 |**使用される BGP コミュニティタグ**|**Azure ExpressRoute 経由でルーティング可能な機能**|**必要なインターネットルート**|
 |:-----|:-----|:-----|
-|Exchange、Skype for Business & Microsoft Teams、SharePoint、 &amp;その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange online Protection  <br/> SharePoint Online &amp;の OneDrive for business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp;ブラウザーの office  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
+|Exchange、Skype for Business & Microsoft Teams、SharePoint、 &amp; その他のサービス  <br/> (12076:5010、12076:5020、12076:5030、12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; の OneDrive For business  <br/> Skype SIP 信号、ダウンロード、音声、ビデオ、デスクトップ共有  <br/> Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>BGP コミュニティを使用するための主要な計画に関する考慮事項
 
@@ -93,7 +93,7 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
 
 - Azure ExpressRoute は、お客様が割り当てられた BGP コミュニティに基づく Microsoft のネットワーク上でのアクションをサポートしていません。
 
-- Office 365 で使用される IP プレフィックスは、サービス固有の BGP コミュニティ値でのみマークされています。場所固有の BGP コミュニティはサポートされていません。 Office 365 サービスはグローバルな性質を持っているため、テナントの場所または Office 365 クラウド内のデータに基づくフィルター処理プレフィックスはサポートされていません。 推奨されるアプローチは、Office 365 サービスの IP アドレスの物理的な場所に関係なく、ユーザーのネットワークの場所から Microsoft グローバルネットワークへの最短または最も優先されるネットワークパスを調整するようにネットワークを構成することです。要求しています。
+- Office 365 で使用される IP プレフィックスは、サービス固有の BGP コミュニティ値でのみマークされています。場所固有の BGP コミュニティはサポートされていません。 Office 365 サービスはグローバルな性質を持っているため、テナントの場所または Office 365 クラウド内のデータに基づくフィルター処理プレフィックスはサポートされていません。 推奨される方法は、要求している Office 365 サービスの物理的な場所に関係なく、ユーザーのネットワーク上の場所から Microsoft グローバルネットワークへの最短または最も優先されるネットワークパスを調整するようにネットワークを構成することです。
 
 - 各 BGP community 値に含まれる IP プレフィックスは、値に関連付けられた Office 365 アプリケーションの IP アドレスを含むサブネットを表します。 場合によっては、複数の Office 365 アプリケーションがサブネット内に複数の IP アドレスを持ち、その結果、IP プレフィックスが複数のコミュニティ値に存在することがあります。 これは、割り当ての断片化が原因であると想定されていますが、プレフィックス数や帯域幅管理の目標に影響を与えることはありません。 Office 365 の BGP コミュニティを活用して影響を最小限に抑えるには、「必要な機能を拒否する」を使用するのではなく、「必要な機能を許可する」というアプローチを使用することをお勧めします。
 
@@ -101,13 +101,13 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
 
 - BGP コミュニティによる Azure ExpressRoute の範囲指定は、内部ネットワークが Microsoft ピアリング関係を介して参照できるルートにのみ影響します。 スコープルーティングと共に、PAC または WPAD 構成の使用など、追加のアプリケーションレベルの構成を行う必要がある場合があります。
 
-- Microsoft によって割り当てられた BGP コミュニティを使用することに加えて、お客様は、内部ルーティングに影響を与えるために Azure ExpressRoute で学んだ Office 365 の IP プレフィックスに独自の BGP コミュニティを割り当てることもできます。 よく使用されるユースケースとして、特定の ExpressRoute ピアの場所で学習したすべてのルートに位置ベースの BGP コミュニティを割り当て、顧客ネットワークの下流の情報を使用して、最も短いまたは最も優先されるネットワークパスを次のように調整します。Microsoft のネットワーク。 Office 365 シナリオで ExpressRoute を使用して、顧客が割り当てられている BGP コミュニティを使用することは、Microsoft control または visibility の範囲外です。
+- Microsoft によって割り当てられた BGP コミュニティを使用することに加えて、お客様は、内部ルーティングに影響を与えるために Azure ExpressRoute で学んだ Office 365 の IP プレフィックスに独自の BGP コミュニティを割り当てることもできます。 一般的なユースケースとしては、特定の ExpressRoute ピアの場所で学習したすべてのルートに、場所ベースの BGP コミュニティを割り当て、顧客ネットワークの下流の情報を使用して、Microsoft のネットワークで最短または最も優先されるネットワークパスを調整します。 Office 365 シナリオで ExpressRoute を使用して、顧客が割り当てられている BGP コミュニティを使用することは、Microsoft control または visibility の範囲外です。
 
-次[https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365)の短いリンクを使用して、に戻ることができます。
+次の短いリンクを使用して、に戻ることができ [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365) ます。
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   
@@ -119,9 +119,9 @@ Office 365 以外の Microsoft cloud services に関連付けられているネ�
   
 [Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Skype for Business Online の ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute を使用したコールフロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
   

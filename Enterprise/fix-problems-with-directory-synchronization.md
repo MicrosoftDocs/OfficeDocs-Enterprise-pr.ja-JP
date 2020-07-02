@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期に関する問題の一般的な原因について説明し、トラブルシューティングと解決に役立ついくつかの方法について説明します。
-ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d9e390a7230499f724ebbdae592264a850dd9418
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711910"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998035"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のディレクトリ同期に関する問題の解決
 
@@ -42,9 +42,9 @@ ms.locfileid: "44711910"
   
 ウィザードの[指示](set-up-directory-synchronization.md)に従って、Azure AD Connect をダウンロードします。 
   
-まだ Azure Active Directory 同期 (DirSync) を使用している場合は、「 [Microsoft 365 での Azure Active Directory 同期ツールのインストールと構成ウィザードのエラーメッセージ](https://go.microsoft.com/fwlink/p/?LinkId=396717)」を参照してください。 dirsync をインストールするためのシステム要件、必要なアクセス許可、および一般的なエラーのトラブルシューティング方法について説明します。 
+まだ Azure Active Directory (Azure AD) Sync (DirSync) を使用している場合は、「 [Microsoft 365 の Azure Active Directory 同期ツールのインストールと構成ウィザードのエラーメッセージ](https://go.microsoft.com/fwlink/p/?LinkId=396717)」を参照してください。 dirsync をインストールするためのシステム要件、必要なアクセス許可、および一般的なエラーのトラブルシューティング方法について説明します。 
   
-Azure Active Directory 同期から Azure AD Connect に更新するには、[アップグレード手順](https://go.microsoft.com/fwlink/p/?LinkId=733240)を参照してください。
+Azure AD Sync から Azure AD Connect に更新するには、[アップグレード手順](https://go.microsoft.com/fwlink/p/?LinkId=733240)を参照してください。
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Microsoft 365 でのディレクトリ同期に関する問題の一般的な原因の解決
 

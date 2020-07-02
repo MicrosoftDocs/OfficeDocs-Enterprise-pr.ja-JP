@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009362"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997951"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。 多くの場合、Azure で実行されるインフラストラクチャおよびプラットフォームサービスは、ネットワークアーキテクチャとパフォーマンスに関する考慮事項に対処することでメリットを得られます。 このような場合は、Azure に ExpressRoute をお勧めします。 Office 365 や Dynamics 365 などのサービスとしてのソフトウェアは、インターネットを介して安全かつ確実にアクセスできるように構築されています。 「 [Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)」の記事では、インターネットのパフォーマンスとセキュリティについて説明し、「office 365 用の Azure ExpressRoute」を検討することができます。
 
@@ -120,7 +120,7 @@ Office 365 の ExpressRoute を購入するには、1つまたは複数の[承�
 
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
 
-[Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[Office 365 の URL および IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 

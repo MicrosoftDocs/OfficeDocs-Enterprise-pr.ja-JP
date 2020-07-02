@@ -14,17 +14,15 @@ f1.keywords:
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: '概要: Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online、セキュリティ & コンプライアンスに関する Office 365 PowerShell コマンドレットリファレンストピックを示します。'
-ms.openlocfilehash: 0fe0f87bdb2110630706e276092012af86ff5044
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a3e24025149adef61120e245115a1b0f9877e3da
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841644"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997393"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Office 365 サービスのコマンドレット リファレンス
 
- **概要:** Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online、セキュリティ & コンプライアンスに関する Office 365 PowerShell コマンドレットリファレンストピックを検索します。
-  
 各 Office 365 サービスのコマンドレットリファレンストピックには、各コマンドレットの使用方法に関する詳細な情報と手順が記載されています。 さらに、PowerShell がサポートされている各 Office 365 サービスには、異なる接続手順が必要です。
   
 > [!NOTE]
@@ -45,7 +43,7 @@ Exchange Online のコマンドレットリファレンストピックは、 [Ex
 Exchange Online PowerShell の接続手順については、「 [Exchange Online powershell に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)」をクリックしてください。
   
 > [!NOTE]
-> SharePoint Online、Skype for Business Online、Office 365 ユーザー アクティビティなどの他のサービスに関するレポート作成コマンドレットは、Exchange Online の PowerShell で利用できます。詳しくは、「[Exchange Online のレポート作成のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=691595)」をご覧ください。 
+> Reporting cmdlets for other services, for example, SharePoint Online, Skype for Business Online, and Office 365 user activity are available in Exchange Online PowerShell. For more information, see [Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>SharePoint Online の PowerShell コマンドレット
 
@@ -61,9 +59,9 @@ Skype for business Online PowerShell の接続手順については、「 [Offic
 
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>セキュリティ センターとコンプライアンス センターの PowerShell コマンドレット
 
-Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレットリファレンストピックは、 [Exchange Online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)の「 **reference** 」セクションにあります。
+Office 365 セキュリティ &amp; コンプライアンスセンターのコマンドレットリファレンストピックは、 [Exchange Online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)の「 **reference** 」セクションにあります。
   
-セキュリティ&amp;コンプライアンスセンター powershell の接続手順については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターの powershell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)」をクリックします。
+セキュリティコンプライアンスセンター PowerShell の接続手順については &amp; 、「 [Office 365 セキュリティ &amp; コンプライアンスセンターの powershell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)」をクリックします。
 
 
   

@@ -1,7 +1,7 @@
 ---
-title: Office 365 のテナント分離 (Office 365)
-ms.author: robmazz
-author: robmazz
+title: Office 365 ビデオ でのテナントの分離
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '概要: Office 365 Video でのテナントの分離について説明します。'
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843658"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998700"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Office 365 ビデオ でのテナントの分離
 
 > [!NOTE]
-> Office 365 のビデオは、Microsoft Stream に置き換えられます。 ビデオコラボレーションにインテリジェンスを追加する新しいエンタープライズビデオサービスの詳細と、現在の Office 365 ビデオのお客様の移行計画については、「 [office 365 からストリームへの移行](https://docs.microsoft.com/stream/)」を参照してください。
+> Office 365 のビデオは、Microsoft Stream に置き換えられます。 ビデオコラボレーションにインテリジェンスを追加する新しいエンタープライズビデオサービスの詳細と、現在の Microsoft 365 ビデオのお客様の移行計画については、「 [Office 365 video transition To Microsoft Stream」](https://docs.microsoft.com/stream/migrate-from-office-365)を参照してください。
 
 ## <a name="introduction"></a>概要
 

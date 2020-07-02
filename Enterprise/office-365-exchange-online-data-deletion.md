@@ -1,7 +1,7 @@
 ---
-title: Office 365 Exchange Online データの削除
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 Exchange Online データの削除
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Exchange Online でのソフトおよびハードデータの削除の処理方法。
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843638"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998321"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 での Exchange Online データの削除
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Microsoft 365 での Exchange Online データの削除
+
 Exchange Online では、次の2種類の削除があります。ソフト削除とハード削除です。 これは、メールボックス内のメールボックスとアイテムの両方に適用されます。
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>回復可能な削除と削除によって削除されたメールボックス

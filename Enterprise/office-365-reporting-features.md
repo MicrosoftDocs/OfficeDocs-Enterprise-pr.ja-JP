@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 レポート機能
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 内のレポート機能の説明。
-ms.openlocfilehash: 1b8a75504712a46faa8b6fff8dfe20f3f3c6cf79
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774462"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997787"
 ---
 # <a name="microsoft-365-reporting-features"></a>Microsoft 365 レポート機能 
 
@@ -57,7 +57,7 @@ Exchange Online 監査レポートには、メールボックスアクセスの�
 > [!NOTE]
 > 監査対象のイベントがそのメールボックスの監査ログに保存されるように、各メールボックスのメールボックス監査ログを有効にする必要があります。 メールボックスのメールボックス監査ログが有効になっていない場合、そのメールボックスのイベントは監査ログに保存されず、メールボックス監査レポートに表示されません。 詳細については、「[メールボックスの監査を有効にする](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)」を参照してください。
 
-| Task | 説明 |
+| タスク | 説明 |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [所有者以外のメールボックス アクセスのレポートを実行する](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | メールボックスの所有者以外のユーザーがアクセスしたメールボックスの一覧を表示します。 このレポートには、メールボックスにアクセスしたユーザー、メールボックスで行われた操作、および操作が成功したかどうかに関する情報が含まれています。 |
 | [メールボックス監査ログのエクスポート](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | メールボックス監査ログには、メールボックスの所有者以外のユーザーが実行したメールボックス内のアクセスおよびアクションに関する情報が含まれています。 管理者は、レポートを生成するための日付範囲と共にメールボックスを指定できます。 ログは、メッセージに添付され、管理者によって決定された特定のユーザーに送信されます。 |

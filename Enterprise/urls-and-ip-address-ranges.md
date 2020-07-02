@@ -3,7 +3,7 @@ title: 'Office 365 の URL と IP アドレスの範囲 '
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,16 +24,16 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Summary: Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 58453be147fec41bb35b7d6d758ce3d5df5a4148
-ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.openlocfilehash: d75fa6d88255ff5df785fa335a9976c4bcca309d
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44747373"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997445"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 の URL と IP アドレスの範囲 
 
- **Summary:** Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
+Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
   
 > [!NOTE]
 > COVID-19 危機への対応の一環として、Microsoft は、計画されている URL および IP アドレスの変更を一時的に停止しています。 これは、お客様の IT チームが、在宅勤務での Office 365 シナリオに推奨されるネットワーク最適化を安心して簡単に実装できるようにするための措置です。 2020 年 3 月 24 日から 2020 年 6 月 30 日まで、この一時停止により、主要な Office 365 サービス (Exchange Online、SharePoint Online、Microsoft Teams) の最適化のカテゴリに含まれる IP 範囲と URL の変更が中止されます。 他のエンドポイント カテゴリの変更は、通常どおりに行われます。 この期間中、お客様は Office 365 最適化カテゴリのサービス エンドポイント定義を静的に使用して、クラウド側のネットワーク変更による Office 365 接続へのリスクを最小限に抑えながら、ターゲット ネットワークの最適化 (帯域幅予約や分割トンネル VPN の構成など) を行うことができます。 期間終了時にサービスの中断が発生しないようにするため、「[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)」でのガイダンスに従って、Office 365 サービス エンドポイントの変更管理や自動化プロセスを実装することを強くお勧めします。
@@ -45,7 +45,7 @@ ms.locfileid: "44747373"
   
 ||||
 |:-----|:-----|:-----|
-|**最終更新日:** 06/16/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログサブスクリプション](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> | **使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles) <br/> |
+|**最終更新日:** 06/29/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログサブスクリプション](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> | **使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles) <br/> |
 
  Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This allows for customers who do not yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you are using a script or a network device to access this data, you should go to the [Web service](office-365-ip-web-service.md) directly.
 

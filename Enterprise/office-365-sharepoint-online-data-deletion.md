@@ -1,7 +1,7 @@
 ---
-title: Office 365 SharePoint Online データの削除
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 SharePoint Online のデータ削除
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: SharePoint Online でのデータ削除についての説明。
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842044"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997817"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Office 365 での SharePoint Online データの削除
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365 での SharePoint Online データの削除
 
 SharePoint Online は、オブジェクトをアプリケーションデータベース内に抽象化されたコードとして格納します。 ユーザーがファイルを SharePoint Online にアップロードすると、そのファイルは逆アセンブルされ、複数のデータベースにわたって複数のテーブルに格納されて、アプリケーションコードに変換されます。 SharePoint Online では、お客様がアップロードしたすべてのコンテンツがチャンクに分割され、暗号化 (複数の AES 256 ビットキーを使用している可能性があります) され、データセンター全体に分散されます。 チャンク処理と暗号化プロセスの詳細については、「 [Microsoft Cloud での暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)」を参照してください。 
 
@@ -40,6 +40,6 @@ SharePoint Online では、アイテムは元の場所から削除した時点�
 
 サイトコレクションを誤って削除した場合は、SharePoint 管理センターを使用して、グローバルまたは SharePoint 管理者がサイトコレクションを復元できます。
 
-削除されたサイトコレクションは、93日間保持されます。 93日後に、サイトとそのすべてのコンテンツと設定が完全に削除されます (リスト、ライブラリ、ページ、およびその他のサブサイトを含む)。
+削除されたサイトコレクションは、93日間保持されます。 93 日を過ぎると、リスト、ライブラリ、ページ、サブサイトなど、サイトおよびサイトのすべてのコンテンツと設定が完全に削除されます。
 
 ハード削除は、ユーザーがサイトコレクションのごみ箱から削除されたアイテムを削除したとき、保持とバックアップの期間が経過したとき、または管理者が[remove-spodeletedsite コマンドレット](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)を使用してサイトコレクションを完全に削除したときに発生します。 ユーザーが SharePoint Online からコンテンツを物理的に削除 (完全に削除、またはパージ) すると、削除されたチャンクのすべての暗号化キーも削除されます。 以前に削除されたチャンクを格納していたディスク上のブロックは未使用としてマークされ、再利用できるようになります。

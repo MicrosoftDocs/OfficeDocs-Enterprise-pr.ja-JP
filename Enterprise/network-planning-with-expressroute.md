@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
-ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844558"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998532"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
   
@@ -72,13 +72,13 @@ Azure ExpressRoute サブスクリプションは顧客中心です。サブス�
   
 適切な帯域幅を見つけるには、既存のネットワーク消費をテストするのが最善の方法です。 これは、実際の使用法を得るための唯一の方法であり、すべてのネットワーク構成とアプリケーションが固有の方法である必要があります。 測定時に、総帯域幅消費、遅延、TCP 輻輳によく注目して、ネットワークのニーズを理解する必要があります。
   
-すべてのネットワークアプリケーションを含む見積もり基準を取得したら、組織内のさまざまなユーザープロファイルを構成する小規模なグループを使用して Office 365 を試験運用し、実際の使用状況を確認し、2つの測定値を使用して各オフィスの場所に必要な帯域幅。 テストで待機時間または TCP 輻輳の問題が検出された場合は、Office 365 を使用しているユーザーに近い場所に移動したり、SSL の解読/検査などの集中的なネットワークスキャンを削除したりする必要がある場合があります。
+すべてのネットワークアプリケーションを含む予測基準を取得したら、組織内のさまざまなユーザープロファイルを構成する小規模なグループを使用して Office 365 を試験運用し、実際の使用状況を確認し、2つの測定値を使用して、各オフィスの場所に必要な帯域幅の量を予測します。 テストで待機時間または TCP 輻輳の問題が検出された場合は、Office 365 を使用しているユーザーに近い場所に移動したり、SSL の解読/検査などの集中的なネットワークスキャンを削除したりする必要がある場合があります。
   
 推奨されるネットワーク処理の種類に関するすべての推奨事項は、ExpressRoute とインターネット回線の両方に適用されます。 [パフォーマンスチューニングサイト](https://aka.ms/tune)に関するその他のガイダンスについても同じことが言えます。
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Office 365 のシナリオでの Azure ExpressRoute へのセキュリティ制御の適用
 
-Azure ExpressRoute 接続のセキュリティ保護は、インターネット接続のセキュリティ保護と同じ原則に従って開始されます。 多くのお客様は、オンプレミスネットワークを Office 365 およびその他の Microsoft クラウドに接続する ExpressRoute のパスに沿って、ネットワークと周辺のコントロールを展開することを選択します。 これらのコントロールには、ファイアウォール、アプリケーションプロキシ、データ漏洩防止、侵入検知、侵入防止システムなどが含まれます。 多くの場合、お客様は、オンプレミスで開始されたトラフィックに対して、microsoft によって開始されたトラフィックに対して、オンプレミスで開始されたトラフィックに対して、さまざまなレベルの制御を適用します。インターネットの宛先。
+Azure ExpressRoute 接続のセキュリティ保護は、インターネット接続のセキュリティ保護と同じ原則に従って開始されます。 多くのお客様は、オンプレミスネットワークを Office 365 およびその他の Microsoft クラウドに接続する ExpressRoute のパスに沿って、ネットワークと周辺のコントロールを展開することを選択します。 これらのコントロールには、ファイアウォール、アプリケーションプロキシ、データ漏洩防止、侵入検知、侵入防止システムなどが含まれます。 多くの場合、お客様は、オンプレミスの Microsoft から開始されたトラフィックに対して、microsoft によって開始されたトラフィックに対して、オンプレミスからのトラフィックに対するさまざまなレベルの制御を適用します。
   
 ここでは、展開するために選択した[ExpressRoute 接続モデル](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models)にセキュリティを統合する例をいくつか示します。
 
@@ -94,7 +94,7 @@ Office 365 接続の ExpressRoute に使用されるネットワーク/セキュ
   
 - 深さと種類のネットワーク/セキュリティコントロールは、Office 365 ユーザー環境のパフォーマンスとスケーラビリティに影響を与える可能性があります。
 
-- 送信 (社内-\>microsoft) および着信 (microsoft\>オンプレミス) [有効] のフローでは、要件が異なる場合があります。 一般的なインターネットの宛先への送信とは異なる可能性があります。
+- 送信 (社内- \> microsoft) および着信 (microsoft \> オンプレミス) [有効] のフローでは、要件が異なる場合があります。 一般的なインターネットの宛先への送信とは異なる可能性があります。
 
 - Office 365 のポート、プロトコル、および必要な IP サブネットの要件は、トラフィックを Office 365 またはインターネット経由で ExpressRoute を経由してルーティングする場合と同じです。
 
@@ -148,7 +148,7 @@ Office 365 のエンドツーエンドの接続シナリオで、高可用性と
 接続のシナリオには、Office 365 への独立した複数のネットワークパスに対して最適化されたネットワークトポロジを含める必要があります。 これにより、個々のデバイスまたは装置レベルで冗長性を得るために最適化されたトポロジよりも優れたエンドツーエンドの可用性が得られます。
   
 > [!TIP]
-> ユーザーが複数の大陸または地域に分散されており、それらの各場所が冗長 WAN 回路を1つの ExpressRoute サーキットが配置されている単一のオンプレミスの場所に接続している場合、ユーザーの操作は少なくなります。ネットワークトポロジ設計と比較して、異なる地域を最も近いピアリング場所に接続する独立した ExpressRoute 回路を含む、エンドツーエンドのサービスの可用性。
+> ユーザーが複数の大陸または地理的な地域に分散していて、それぞれの場所が冗長 WAN 回線を使用して、1つの ExpressRoute 回線が配置されている単一のオンプレミスの場所に接続されている場合、ユーザーは、異なる地域を最も近いピアの場所に接続する独立した ExpressRoute 回路を含むネットワークトポロジ設計より
   
 各回路を異なる地理的なピアリングの場所に接続して、少なくとも2つの ExpressRoute 回路をプロビジョニングすることをお勧めします。 ユーザーが Office 365 サービスの ExpressRoute 接続を使用するすべての地域に対して、このアクティブ-アクティブな回線のペアをプロビジョニングする必要があります。 これにより、データセンターやピアリングの場所などの主要な場所に影響を与える障害が発生しても、各地域を接続したままにすることができます。 をアクティブ/アクティブとして構成することにより、エンドユーザーのトラフィックを複数のネットワークパスに分散させることができます。 これにより、デバイスやネットワーク機器の停止中に影響を受けるユーザーの範囲を減らすことができます。
   
@@ -176,7 +176,7 @@ Woodgrove Bank のネットワーク構成は、いくつかの重要な原則�
 
 この構成では、物理レベルおよび仮想レベルで冗長性を備えており、Woodgrove Bank は、信頼できる方法で、ローカルの復元、地域の復元、および全体的な復元を提供できます。 Woodgrove は、地域ごとに1つの Azure ExpressRoute 回路を評価した後、インターネットにフェールオーバーする可能性を示しています。
   
-Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つことができない場合は、アジア太平洋地域の Azure ExpressRoute サーキットに北米で送信されるトラフィックをルーティングすることにより、許容できないレベルの遅延と必要な DNS フォワーダー構成が追加されます。複雑さが増します。
+Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つことができなかった場合、北アメリカでは、アジア太平洋地域の Azure ExpressRoute サーキットへのトラフィックのルーティングによって許容範囲外の待機時間が追加され、必要な DNS フォワーダー構成によって複雑さが増します。
   
 バックアップ構成としてインターネットを活用することは推奨されません。 これにより、Woodgrove の信頼性の原則が失われ、接続を使用した一貫性のない動作が発生します。 さらに、構成されている BGP アドバタイズ、NAT 構成、DNS 構成、およびプロキシ構成を考慮してフェールオーバーするには、手動による構成が必要になります。 このようなフェールオーバーの複雑さによって、必要な手順の診断とトラブルシューティングを行うための時間が短縮されます。
   
@@ -189,12 +189,12 @@ Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つこと�
   
 プロバイダーまたはプロバイダーと協力して、最適な接続オプション、ポイントツーポイント、マルチポイント、またはホストされているものを選択します。 帯域幅やその他の冗長コンポーネントがルーティングと高可用性の設計をサポートする限り、接続オプションを混在させることができます。
   
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>関連項目
 <a name="BKMK_high-availability"> </a>
 
-[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   
@@ -210,15 +210,15 @@ Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つこと�
   
 [Skype for Business Online 向けのネットワークの最適化](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[Skype for Business Online の ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute を使用したコールフロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](performance-tuning-using-baselines-and-history.md)
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
   

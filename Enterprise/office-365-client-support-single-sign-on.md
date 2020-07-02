@@ -1,7 +1,7 @@
 ---
-title: Office 365 クライアントアプリケーションのサポート-シングルサインオン
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 クライアントアプリケーションのサポート-シングルサインオン
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: シングルサインオンの Office 365 クライアントアプリサポート。
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: シングルサインオンの Microsoft 365 クライアントアプリサポート。
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619333"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998515"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Office 365 クライアントアプリケーションのサポート-シングルサインオン
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 クライアントアプリケーションのサポート-シングルサインオン
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 シングルサインオン (SSO) を使用すると、ユーザーが Azure Active Directory (Azure AD) のアプリケーションにサインオンするときに、セキュリティと利便性が向上します。 シングルサインオンを使用すると、ユーザーは1つのアカウントでサインインし、ドメインに参加しているデバイス、会社のリソース、サービス (SaaS) アプリケーション、および web アプリケーションにアクセスできます。
 
@@ -39,7 +39,7 @@ ms.locfileid: "44619333"
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Office 365 のプラットフォームサポートの詳細については、「 [office 365 のシステム要件](https://products.office.com/office-system-requirements)」を参照してください。
+Microsoft 365 でのプラットフォームサポートの詳細については、「 [microsoft 365 のシステム要件](https://products.office.com/office-system-requirements)」を参照してください。
 
 ## <a name="supported-clients"></a>サポートされるクライアント
 

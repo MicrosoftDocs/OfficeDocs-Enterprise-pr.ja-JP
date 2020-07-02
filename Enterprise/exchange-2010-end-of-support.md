@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 は、サポート終了間近に近づいています。 この計画ロードマップは、Exchange Online またはオンプレミスの Exchange Server の新しいバージョンへのアップグレードを準備するためのガイドとして使用してください。
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979346"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998045"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了ロードマップ
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 **2020 年10月 13**日に、Exchange Server 2010 はサポート終了までに到達します。 Exchange 2010 から Office 365 または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
 
@@ -82,7 +82,7 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
 
 ### <a name="how-should-i-migrate-to-office-365"></a>Office 365 に移行する方法
 
-組織によっては、Office 365 にアクセスするために役立ついくつかのオプションがあります。 移行オプションを選択する際には、移動する必要のある座席やメールボックスの数、移行を最後に実行する時間、オンプレミスのインストールと Office 365 との間でシームレスに統合する必要があるかどうかを考慮する必要があります。移行。 次の表に、移行オプションと、使用する方法を決定する最も重要な要素を示します。
+組織によっては、Office 365 にアクセスするために役立ついくつかのオプションがあります。 移行オプションを選択する場合は、移動する必要のある座席数やメールボックスの数、移行する時間の長さ、および移行中にオンプレミスのインストールと Office 365 との間でシームレスに統合する必要があるかどうかを考慮する必要があります。 次の表に、移行オプションと、使用する方法を決定する最も重要な要素を示します。
 
 | **移行オプション**     | **組織の規模** | **Duration**        |
 |--------------------------|-----------------------|---------------------|
@@ -146,8 +146,8 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
 完全なハイブリッド移行の実行を検討している場合は、次の点を考慮する必要があります。
 
 - 完全なハイブリッド移行は、すべての種類の組織には適していません。 完全なハイブリッド移行は複雑であるため、数百のメールボックスを使用している組織では、通常、1つの設定に必要な労力とコストを正当化する利点は得られません。 これが組織のように聞こえる場合は、代わりに一括移行を一括して、または最小限に抑えることをお勧めします。
-- オンプレミスの Active Directory サーバーと Office 365 の間に、Azure Active Directory Connect (AADConnect) を使用してディレクトリ同期をセットアップする必要があります。
-- ユーザーは、ローカルネットワークにログインするときに使用したのと同じユーザー名とパスワードを使用して Office 365 メールボックスにログインできます (パスワード同期または Active Directory フェデレーションサービスによる Azure Active Directory 接続が必要です)。
+- オンプレミスの Active Directory サーバーと Office 365 との間の Azure Active Directory (Azure AD) 接続を使用してディレクトリ同期をセットアップする必要があります。
+- ユーザーは、ローカルネットワークにログインするときに使用したのと同じユーザー名とパスワードを使用して Office 365 メールボックスにログインできます (パスワード同期や Active Directory フェデレーションサービスによる Azure AD Connect が必要です)。
 - 移行するユーザーメールボックスごとに、Exchange Online を含む Office 365 ライセンスが必要になります。
 - ユーザーは、多くのデバイスで新しい Outlook プロファイルを設定する必要はありません (一部の古い Android 電話機では新しいプロファイルが必要になることがあります)、メールを再ダウンロードする必要はありません。
 
@@ -164,7 +164,7 @@ Office 365 では、最初に新機能とエクスペリエンスを取得し、
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>オンプレミスの Exchange Server の新しいバージョンにアップグレードする
 
-完全に Office 365 に移行することによって、最高の価値とユーザーの利便性を実現できるということは強く信じられませんが、一部の組織では、一部の Exchange サーバーをオンプレミスのままにしておく必要があることも理解しています。 これは、規制要件により、データが別の国にあるデータセンターに格納されていない、またはクラウドでは対応できない固有の設定または要件がある、または単に Exchange が必要なものである可能性があるためです。クラウドメールボックスを管理するには、オンプレミスの Active Directory を引き続き使用する必要があります。 Exchange のオンプレミスを選択または保持する必要がある場合は、exchange 2010 環境が少なくとも Exchange 2013 または Exchange 2016 にアップグレードされており、サポートの終了日前に Exchange 2010 が削除されていることを確認する必要があります。
+完全に Office 365 に移行することによって、最高の価値とユーザーの利便性を実現できるということは強く信じられませんが、一部の組織では、一部の Exchange サーバーをオンプレミスのままにしておく必要があることも理解しています。 これは、規制要件によって、データが別の国にあるデータセンターに格納されていないこと、またはクラウドでは対応できない固有の設定や要件があること、または、オンプレミスの Active Directory を引き続き使用しているために Exchange がクラウドメールボックスを管理する必要がある場合があるためです。 Exchange のオンプレミスを選択または保持する必要がある場合は、exchange 2010 環境が少なくとも Exchange 2013 または Exchange 2016 にアップグレードされており、サポートの終了日前に Exchange 2010 が削除されていることを確認する必要があります。
 
 最良の結果を得るために、残りのオンプレミス環境を Exchange 2016 にアップグレードすることをお勧めします。 Exchange server 2010 から Exchange Server 2016 に直接移動する場合は、Exchange Server 2013 をインストールする必要はありません。
 
@@ -218,7 +218,7 @@ Exchange 2016 には、Exchange の以前のリリースに含まれていたす
 
 Office 2010 のクライアントおよびサーバーおよび Windows 7 のアップグレード、移行、およびクラウドの移行オプションの視覚的な概要については、「[サポートの終了」ポスター](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)を参照してください。
 
-[![Office 2010 のクライアントとサーバー、および Windows 7 のサポート終了ポスターの画像](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 クライアントおよびサーバー サポート終了についての画像、 Windows 7 のポスター](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 この1ページのポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポートが終了しないようにするために実行できるさまざまなパスを簡単に理解する方法です。 Microsoft 365 Enterprise では、優先パスとオプションのサポートが強調表示されています。
 
@@ -233,6 +233,6 @@ Office 365 への移行中に FastTrack を使用していない場合や、新�
 - [テクニカル コミュニティ](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [カスタマー サポート](https://support.microsoft.com/gp/support-options-for-business)
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 2010 サーバーおよびクライアントからのアップグレードに役立つリソース](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)

@@ -22,26 +22,26 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Office 365 モダン認証の動作が Office 2013 および2016クライアントアプリによって異なる方法について説明します。
-ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
-ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
+description: Office 2013 と2016クライアントアプリで Microsoft 365 モダン認証が異なるしくみについて説明します。
+ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280216"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997844"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-この記事では、office 2013 および Office 2016 クライアントアプリが、Exchange Online、SharePoint Online、Skype for Business Online の Office 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
+この記事では、Office 2013 および Office 2016 クライアントアプリが、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
 
 > [!NOTE]
 > Office 2010 や Office for Mac 2011 などのレガシクライアントアプリは先進認証をサポートしておらず、基本認証でのみ使用できます。
 
-## <a name="availability-of-modern-authentication-for-office-365-services"></a>Office 365 サービスの先進認証の利用可能性
+## <a name="availability-of-modern-authentication-for-microsoft-365-services"></a>Microsoft 365 サービスの先進認証の利用可能性
 
-Office 365 サービスの場合、モダン認証の既定の状態は次のとおりです。
+Microsoft 365 サービスの場合、モダン認証の既定の状態は次のとおりです。
   
 - 既定では、Exchange Online に対してオン**に**なっています。 オフまたはオンにするには、「 [Exchange Online で先進認証を有効または無効](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662)にする」を参照してください。 
     
@@ -56,7 +56,7 @@ Office 365 サービスの場合、モダン認証の既定の状態は次のと
 
 Office 2013 クライアントアプリは、既定で従来の認証をサポートしています。 従来の場合は、Microsoft Online サインインアシスタントまたは基本認証のいずれかをサポートしています。 これらのクライアントが先進認証機能を使用するためには、Windows クライアントにレジストリキーが設定されている必要があります。 手順については、「 [Windows デバイスで Office 2013 の先進認証を有効にする](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910)」を参照してください。
 
-Microsoft Office 2013 がインストールされている Windows を実行しているデバイス (たとえばノート PC やタブレット) で先進認証を有効にするには、次のレジストリ キーを設定する必要があります。先進認証を有効にするデバイスごとに、次のキーを設定する必要があります。
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**レジストリ キー**|**型**|**値** |
 |:-------|:------:|--------:|
@@ -67,7 +67,7 @@ Skype for business での[先進認証 (ADAL) の使用](https://go.microsoft.co
   
 Office 2016 クライアントは既定で先進認証をサポートしており、クライアントがこれらの新しいフローを使用するために必要な操作はありません。 ただし、従来の認証を使用するには、明示的なアクションが必要です。
   
-次のリンクをクリックすると、モダン認証が有効になっているかどうかに応じて、office 2013 と office 2016 クライアント認証が Office 365 サービスでどのように動作するかを確認できます。
+次のリンクをクリックすると、モダン認証が有効になっているかどうかに応じて、Office 2013 と Office 2016 クライアント認証が Microsoft 365 サービスでどのように機能するかを確認できます。
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -117,10 +117,10 @@ Office 2016 クライアントは既定で先進認証をサポートしてお�
    
 ## <a name="see-also"></a>関連項目
 
-[Windows デバイスの Office 2013 の先進認証を有効にする](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Windows デバイスの Office 2013 の先進認証を有効にする](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 
-[Office 365 の展開で多要素認証を計画する (Office 365 管理者向け)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Microsoft 365 の多要素認証](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 
-[2段階認証を使用して Office 365 にサインインします (エンドユーザー向け)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+[多要素認証を使用した Microsoft 365 へのサインイン](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 
 [Microsoft 365 Enterprise の概要](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

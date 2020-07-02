@@ -1,7 +1,7 @@
 ---
-title: Office 365 でのデータの回復
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 でのデータの復元
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft Office 365 のデータ復元性について理解します。
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft Microsoft 365 のデータ復元性について理解します。
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843678"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998471"
 ---
-# <a name="data-resiliency-in-office-365"></a>Office 365 でのデータの回復
+# <a name="data-resiliency-in-microsoft-365"></a>Microsoft 365 でのデータの復元
 
 ## <a name="introduction"></a>概要
 
@@ -39,9 +39,9 @@ ms.locfileid: "41843678"
 
 現在、お客様は品質を損なうことなく、Microsoft の革新的な革新性を期待しています。これは、Microsoft のサービスとソフトウェアが復元性と復元性を考慮して構築されている理由の1つです。 
 
-## <a name="office-365-data-resiliency-principles"></a>Office 365 データの復元の原則
+## <a name="microsoft-365-data-resiliency-principles"></a>Microsoft 365 データ復元の原則
 
-復元性とは、クラウドベースのサービスが特定の種類の障害に耐えることができ、さらに顧客の視点から完全に機能していることを意味します。 データの復元とは、Office 365 で発生したエラーに関係なく、重要な顧客データはそのまま変わらず影響を受けません。 そのために、Office 365 サービスは、次の5つの復元の原則を中心に設計されています。
+復元性とは、クラウドベースのサービスが特定の種類の障害に耐えることができ、さらに顧客の視点から完全に機能していることを意味します。 データの復元とは、Microsoft 365 で発生したエラーに関係なく、重要な顧客データはそのまま変わらず影響を受けないことを意味します。 そのために、Microsoft 365 サービスは、次の5つの復元の原則を中心に設計されています。
 
 - 重要で重要ではないデータがあります。 重要でないデータ (メッセージが開封されたかどうかなど) は、まれな障害のシナリオで削除できます。 重要なデータ (たとえば、電子メールメッセージなどの顧客データ) は、コストがかかるために保護する必要があります。 設計上の目的として、配信されるメールメッセージは常に重要であり、メッセージが開封されたかどうかは重要ではありません。 
 - 顧客データのコピーは、障害が発生しないようにするために、可能な限り多くの障害領域または障害ドメイン (データセンター、単一の資格情報 (プロセス、サーバー、またはオペレーター) によってアクセス可能) に分けて行う必要があります。 
@@ -49,7 +49,7 @@ ms.locfileid: "41843678"
 - お客様のデータを破損から保護する必要があります。 これは、積極的にスキャンまたは監視、修復、および回復可能である必要があります。 
 - お客様のアクションによってデータが失われる可能性があるため、お客様は、誤って削除されたアイテムの復元を可能にする GUI を使用して、自分で復元できるようにします。 
  
-Office 365 は、これらの原則にクラウドサービスを構築して、堅牢なテストと検証を行いましたが、継続的な革新と改善のためのプラットフォームを確保する一方で、お客様の要件を満たすことと、それを上回ることができます。 
+Microsoft 365 は、これらの原則にクラウドサービスを構築することによって、信頼性の高いテストと検証を行いながら、お客様の要件を満たすことができるようにし、継続的な革新性と改善のためのプラットフォームを確保することができます。 
 
 ## <a name="related-links"></a>関連リンク
 

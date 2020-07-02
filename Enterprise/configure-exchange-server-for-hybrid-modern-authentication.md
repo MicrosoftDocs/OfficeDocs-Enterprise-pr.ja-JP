@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
-ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774522"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997383"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Exchange Server をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 ハイブリッド先進認証 (HMA) は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法で、Exchange server のオンプレミスハイブリッド展開で使用できます。
   
@@ -65,7 +65,7 @@ Skype for Business と Exchange の両方に共通の前提条件が多数存在
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>オンプレミスの web サービス Url を Spn として Azure AD に追加する
 
-オンプレミスの web サービス Url を Azure AD Spn として割り当てるコマンドを実行します。 Spn は、認証と承認の際にクライアントコンピューターとデバイスによって使用されます。 オンプレミスから Azure Active Directory (AAD) への接続に使用される可能性のあるすべての Url は、AAD に登録する必要があります (これには、内部と外部の両方の名前空間が含まれます)。
+オンプレミスの web サービス Url を Azure AD Spn として割り当てるコマンドを実行します。 Spn は、認証と承認の際にクライアントコンピューターとデバイスによって使用されます。 オンプレミスから Azure Active Directory (Azure AD) への接続に使用される可能性があるすべての Url は、Azure AD に登録する必要があります (内部と外部の両方の名前空間が含まれます)。
   
 最初に、AAD で追加する必要があるすべての Url を収集します。 オンプレミスで次のコマンドを実行します。
   
@@ -159,6 +159,6 @@ HMA を有効にすると、クライアントの次のログインは新しい�
 
 TCP 443 で Exchange server を使用しているオンプレミスのお客様の場合は、次の IP 範囲をホワイトリストしてください。 <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR>
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 専任/ITAR から vNext に移行するための先進認証構成要件](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

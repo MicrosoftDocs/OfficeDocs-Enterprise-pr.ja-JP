@@ -1,7 +1,7 @@
 ---
-title: Office 365 でのサービス拒否攻撃に対する防御
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 でのサービス拒否攻撃に対する防御
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: サービス拒否 (DoS) 攻撃の概要。
-ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 2cbe5eb86402fd7b7888f39440a58935604c90eb
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843590"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998421"
 ---
-# <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Office 365 でのサービス拒否攻撃に対する防御
+# <a name="defend-against-denial-of-service-attacks-in-microsoft-365"></a>Microsoft 365 でのサービス拒否攻撃に対する防御
 
 ## <a name="introduction"></a>概要
 
-Microsoft は、100を超えるデータセンターのグローバルクラウドインフラストラクチャでホストされている200を超えるクラウドサービスのための信頼できるインフラストラクチャを提供しています。 これには、次のものが含まれます。
+Microsoft は、100を超えるデータセンターのグローバルクラウドインフラストラクチャでホストされている200を超えるクラウドサービスのための信頼できるインフラストラクチャを提供しています。 これには次のものが含まれます。
 
 - Microsoft Azure
 - Microsoft Bing
 - Microsoft Dynamics 365
-- Microsoft Office 365
+- Microsoft 365 および Office 365
 - Microsoft OneDrive
 - Skype
 - Xbox Live

@@ -1,7 +1,7 @@
 ---
-title: Office Graph および Delve での office 365 テナントの分離
-ms.author: robmazz
-author: robmazz
+title: Microsoft Graph および Delve での microsoft 365 テナントの分離
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,23 +14,23 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: Office Graph および Delve のテナント分離について説明します。'
-ms.openlocfilehash: c9e054494e6d71d84a19350bc38e0d3981fede45
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '概要: microsoft Graph および Delve の Microsoft 365 テナント分離について説明します。'
+ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844438"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998267"
 ---
-# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Office Graph と Delve でのテナントの分離
+# <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft Graph および Delve での microsoft 365 テナントの分離
 
-## <a name="tenant-isolation-in-the-office-graph"></a>Office Graph でのテナントの分離
+## <a name="tenant-isolation-in-the-microsoft-graph"></a>Microsoft Graph でのテナントの分離
 
-Office [Graph](https://developer.microsoft.com)では、office 365 services のアクティビティ (Exchange Online、SharePoint Online、Yammer、Skype for Business、Azure Active Directory など)、および外部サービス (他の Microsoft サービスやサードパーティ製のサービスなど) についてモデル化されています。 Office Graph コンポーネントは Office 365 全体で使用されます。 Office Graph は、コンテンツとアクティビティのコレクション、およびそれらの間の関係を表します。これは、Office スイート全体で行われます。 洗練されたマシン学習技術を使用して、ユーザーを関連するコンテンツ、会話、ユーザーに接続します。 たとえば、SharePoint Online のテナントインデックスには、Delve クエリを処理するために使用される Office Graph インデックスがあり、SharePoint Online の分析処理エンジンを使用してシグナルを格納し、insights を計算します。 Exchange Online は各ユーザーの計算を行います。テナント分析への入力としての受信者キャッシュ。
+Microsoft [Graph](https://developer.microsoft.com/graph)では、microsoft 365 Services (Exchange Online、SharePoint Online、Yammer、Skype for Business、Azure Active Directory など)、および外部サービス (他の microsoft サービスやサードパーティのサービスなど) でのアクティビティについて解説しています。 Microsoft Graph のコンポーネントは、Microsoft 365 全体で使用されます。 Microsoft Graph は、コンテンツとアクティビティのコレクション、およびそれらの間の関係を表しています。これらは、Office スイート全体で行われます。 洗練されたマシン学習技術を使用して、ユーザーを関連するコンテンツ、会話、ユーザーに接続します。 たとえば、SharePoint Online のテナントインデックスには、Delve クエリを処理するために使用される Microsoft Graph インデックスがあり、SharePoint Online の分析処理エンジンを使用してシグナルを格納し、insights を計算します。 Exchange Online は、各ユーザーの受信者キャッシュをテナント分析への入力として計算します。
 
-Office Graph には、人、ドキュメントなどのエンタープライズ オブジェクト、およびこれらのオブジェクト間の関係およびやり取りに関する情報が含まれています。 関係とやり取りは、*エッジ*で表現されます。 Office Graph は、同じテナント内の*ノード*間でのみエッジが存在できるように、テナントでセグメント化されます。 *ノード*は、URI (Uniform resource Identifier)、ノードの種類、アクセス制御リスト、および*メタデータ*とエッジを含む一連のファセットを持つエンティティです。 各ノードにはメタデータとエッジが関連付けられており、共通のナレッジモデルと同じように*ファセット*に配置されています。 *メタデータ*とは、office graph 内での検索、フィルター処理、分析に使用できるノードに格納される名前付きプロパティのことです。 *ファセット*は、ノード上のメタデータとエッジの論理的なコレクションです。 各ファセットは、ノードの1つの側面について記述します。 
+Microsoft Graph には、ユーザーやドキュメントなどのエンタープライズオブジェクト、およびこれらのオブジェクト間の関係と相互作用に関する情報が含まれています。 関係とやり取りは、*エッジ*で表現されます。 Microsoft Graph は、同じテナント内の*ノード*間でのみエッジが存在できるように、テナントでセグメント化されます。 *ノード*は、URI (Uniform resource Identifier)、ノードの種類、アクセス制御リスト、および*メタデータ*とエッジを含む一連のファセットを持つエンティティです。 各ノードにはメタデータとエッジが関連付けられており、共通のナレッジモデルと同じように*ファセット*に配置されています。 *メタデータ*には、Microsoft Graph での検索、フィルター処理、分析に使用できるノードに格納されているプロパティという名前が付けられています。 *ファセット*は、ノード上のメタデータとエッジの論理的なコレクションです。 各ファセットは、ノードの1つの側面について記述します。 
 
-Office Graph では、すべてのデータが単一のリポジトリに格納されるわけではありません。代わりに、他の場所に存在するデータに関するメタデータと関係が保存されます。 Office Graph は、いくつかのデータストアと処理コンポーネントで構成されています。
+Microsoft Graph では、すべてのデータが単一のリポジトリに格納されるわけではありません。代わりに、他の場所に存在するデータに関するメタデータと関係が保存されます。 Microsoft Graph は、いくつかのデータストアと処理コンポーネントで構成されています。
 
 - テナントグラフストアは、効率的な分析のために最適化されたバルクストレージを提供します。
 - アクティブなコンテンツキャッシュを使用すると、ユーザーエクスペリエンスを促進するためにアクティブなノードとエッジにすばやくランダムにアクセスできます。
@@ -40,5 +40,5 @@ Office Graph では、すべてのデータが単一のリポジトリに格納�
 
 ## <a name="tenant-isolation-in-delve"></a>Delve でのテナントの分離
 
-前述したように、Office Graph では、ユーザーが企業内の現在のアクティビティを見つけて共同作業する際に役立つエクスペリエンスを向上させることができます。また、ワークロード全体にわたるコンテンツとアクティビティを分析するためのエンティティ中心のプラットフォームを提供しています。Office 365 を超えています。 Delve は、Office Graph が提供する最初の作業です。
-Delve は、office Graph を使用して、office の365および Yammer エンタープライズから Office 365 ユーザーにコンテンツを表示する Office 365 web experience です。 Web *experience は、* データをさまざまなボードとして表示し、*それぞれに特定*のトピックを表示します。 各ボードは、ドキュメントの概要テキストと画像を表示する複数のドキュメントカードで構成されます。 カードを使用すると、ドキュメントまたは Yammer ページを開くなど、ユーザーがドキュメントを開くことができます。 Office 365 テナントの各ユーザーには、このユーザーに最も関連のあるドキュメントを表示するページと、Exchange Online または Skype for Business を起動してその人物と対話するためのアイコンがあります。 Delve は、Office Graph API に基づいているため、API のテナントベースの分離によってバインドされています。
+前述したように、Microsoft Graph では、ユーザーが企業内の現在のアクティビティを見つけて共同作業する際に役立つエクスペリエンスを向上させることができます。また、ワークロードと Microsoft 365 を越えたコンテンツとアクティビティに関する分析のための、エンティティ中心のプラットフォームを提供します。 Delve は、Microsoft Graph が提供する最初の作業です。
+Delve は microsoft 365 の web experience で、microsoft Graph を介して microsoft の365および Yammer Enterprise から Microsoft 365 ユーザーにコンテンツを表示します。 Web *experience は、* データをさまざまなボードとして表示し、*それぞれに特定*のトピックを表示します。 各ボードは、ドキュメントの概要テキストと画像を表示する複数のドキュメントカードで構成されます。 カードを使用すると、ドキュメントまたは Yammer ページを開くなど、ユーザーがドキュメントを開くことができます。 Microsoft 365 テナントの各ユーザーには、このユーザーに最も関連のあるドキュメントを表示するページと、その人物と対話するために Exchange Online または Skype for Business を起動できるアイコンがあります。 Delve は Microsoft Graph API に基づいているため、その API のテナントベースの分離によってバインドされます。

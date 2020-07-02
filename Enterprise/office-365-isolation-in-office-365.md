@@ -1,7 +1,7 @@
 ---
-title: Office 365 の分離とアクセス制御 (Office 365)
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 での分離とアクセス制御
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: '概要: Office 365 のさまざまなアプリケーションでの分離とアクセス制御について説明します。'
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: '概要: Microsoft 365 のさまざまなアプリケーションでの分離とアクセス制御について説明します。'
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892126"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998791"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Office 365 での分離とアクセス制御
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365 での分離とアクセス制御
 
-Azure Active Directory と Office 365 では、非常に複雑なデータモデルが使用されています。これには、数百のエンティティ、数千件の関係、および数万の属性が含まれています。 高レベルでは、Azure Active Directory とサービスディレクトリは、状態ベースのレプリケーションプロトコルを使用して同期されたテナントと受信者のコンテナーです。 Azure Active Directory 内に保持されているディレクトリ情報に加えて、各サービスワークロードには独自のディレクトリサービスインフラストラクチャがあります。
+Azure Active Directory (Azure AD) と Microsoft 365 では、数十台のサービス、数百種類のエンティティ、数千件の関係、および数万の属性を含む、非常に複雑なデータモデルを使用しています。 高レベルでは、Azure AD とサービスディレクトリは、状態ベースのレプリケーションプロトコルを使用して同期されたテナントと受信者のコンテナーです。 Azure AD 内に保持されているディレクトリ情報に加えて、各サービスワークロードには独自のディレクトリサービスインフラストラクチャがあります。
  
-![Office 365 テナントデータ同期](media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 テナントデータ同期](media/office-365-isolation-tenant-data-sync.png)
 
-このモデルでは、ディレクトリデータの単一のソースはありません。 特定のシステムは個別のデータを所有していますが、すべてのデータを保持する単一のシステムはありません。 Office 365 サービスは、このデータモデルの Azure Active Directory と連携します。 Azure Active Directory は共有データの "真実のシステム" です。これは、通常、すべてのサービスで使用される小さなデータおよび静的データです。 Office 365 および Azure Active Directory 内で使用されているフェデレーションモデルは、データの共有ビューを提供します。
+このモデルでは、ディレクトリデータの単一のソースはありません。 特定のシステムは個別のデータを所有していますが、すべてのデータを保持する単一のシステムはありません。 Microsoft 365 services は、このデータモデルの Azure AD と連携します。 Azure AD は共有データの "真実のシステム" です。これは、通常、すべてのサービスで使用される小さなデータおよび静的データです。 Microsoft 365 および Azure AD 内で使用されるフェデレーションモデルは、データの共有ビューを提供します。
 
-Office 365 は、物理ストレージと Azure クラウドストレージの両方を使用します。 Exchange Online (Exchange Online Protection を含む) および Skype for Business は、お客様のデータに独自のストレージを使用します。 SharePoint Online は、SQL Server ストレージと Azure ストレージの両方を使用するため、ストレージレベルで顧客データをさらに分離する必要があります。
+Microsoft 365 では、物理ストレージと Azure クラウドストレージの両方を使用しています。 Exchange Online (Exchange Online Protection を含む) および Skype for Business は、お客様のデータに独自のストレージを使用します。 SharePoint Online は、SQL Server ストレージと Azure ストレージの両方を使用するため、ストレージレベルで顧客データをさらに分離する必要があります。
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -43,11 +43,11 @@ Exchange Online は、メールボックス内に顧客データを格納しま�
 - 予定表と空き時間情報
 - Contacts
 - タスク
-- メモ
+- Notes
 - グループ
 - 推論データ
 
-Exchange Online 内の各メールボックスデータベースには、複数のテナントからのメールボックスが含まれています。 認証コードは、テナント内などの各メールボックスをセキュリティで保護します。 既定では、割り当てられたユーザーのみがメールボックスにアクセスできます。 メールボックスをセキュリティで保護するアクセス制御リスト (ACL) には、テナントレベルで Azure Active Directory によって認証された id が含まれています。 各テナントのメールボックスは、テナントの認証プロバイダーに対して認証された id に制限されます。これには、そのテナントのユーザーのみが含まれます。 テナント a で明示的に承認されていない限り、テナント内のコンテンツは、テナント B のユーザーによって取得されることはできません。
+Exchange Online 内の各メールボックスデータベースには、複数のテナントからのメールボックスが含まれています。 認証コードは、テナント内などの各メールボックスをセキュリティで保護します。 既定では、割り当てられたユーザーのみがメールボックスにアクセスできます。 メールボックスをセキュリティで保護するアクセス制御リスト (ACL) には、テナントレベルで Azure AD によって認証された id が含まれています。 各テナントのメールボックスは、テナントの認証プロバイダーに対して認証された id に制限されます。これには、そのテナントのユーザーのみが含まれます。 テナント a で明示的に承認されていない限り、テナント内のコンテンツは、テナント B のユーザーによって取得されることはできません。
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -63,7 +63,7 @@ SharePoint Online には、データの分離を提供する独立したメカ�
 
 ユーザーがデータが格納されているストレージに直接アクセスできた場合、そのコンテンツは、手動または SharePoint Online 以外のシステムによって解釈されることはありません。 これらのメカニズムには、セキュリティアクセス制御およびプロパティが含まれます。 すべての SharePoint Online リソースは、認証コードと、テナントの内部を含む RBAC ポリシーによって保護されます。 リソースを保護するアクセス制御リスト (ACL) には、テナントレベルで認証された id が含まれています。 テナントの SharePoint Online データは、テナントの認証プロバイダによって認証された id に限定されます。
 
-Acl に加えて、認証プロバイダ (テナント固有の Azure Active Directory) を指定するテナントレベルのプロパティは一度書き込まれます。一度設定すると、設定後に変更することはできません。 テナントに対して認証プロバイダのテナントプロパティを設定すると、テナントに公開されている Api を使用して変更することはできません。
+Acl に加えて、認証プロバイダ (テナント固有の Azure AD) を指定するテナントレベルのプロパティは一度書き込まれます。一度設定すると、設定後に変更することはできません。 テナントに対して認証プロバイダのテナントプロパティを設定すると、テナントに公開されている Api を使用して変更することはできません。
 
 一意の*SubscriptionId*が各テナントに使用されます。 すべての顧客サイトはテナントによって所有され、テナントに固有の*SubscriptionId*が割り当てられます。 サイトの*SubscriptionId*プロパティは、一度だけ書き込まれ、永続的なものになります。 テナントに割り当てられた後は、サイトを別のテナントに移動することはできません。 *SubscriptionId*は、認証プロバイダーのセキュリティスコープを作成するために使用されるキーで、テナントに関連付けられています。
 

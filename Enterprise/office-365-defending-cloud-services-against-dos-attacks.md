@@ -1,7 +1,7 @@
 ---
-title: Office 365 がサービス拒否攻撃に対してクラウドサービスを防御する
-ms.author: robmazz
-author: robmazz
+title: サービス拒否攻撃に対する Microsoft 365 クラウドサービスの防御
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: サービス拒否 (DoS) 攻撃に対する Microsoft のクラウドサービスの防御方法。
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843618"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998331"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する Microsoft クラウドサービスの防御
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する Microsoft 365 クラウドサービスの防御
 
 ## <a name="introduction"></a>概要
 Microsoft データセンターは、境界線フェンス、ビデオカメラ、セキュリティ担当者、およびバイオメトリクス、スマートカード、多要素認証を使用する安全な入り口を含む多層防御セキュリティによって保護されています。 多層防御セキュリティは、施設のすべての領域および各物理サーバーユニットに対して続行されます。 [Microsoft クラウドインフラストラクチャと運用グループ](https://www.microsoft.com/cloud-platform/global-datacenters)は、クラウドサービスのコアインフラストラクチャと基本的なテクノロジを提供します。 データセンターは、物理的なセキュリティと信頼性の業界標準に準拠しており、Microsoft の運用担当者が管理、監視、管理します。
 
 クラウドサービスをさらに保護するために、Microsoft は、Microsoft Azure の継続的監視およびペネトレーションテストプロセスの一部である DDoS 防御システムを提供しています。 Azure DDoS 防御システムは、外部からの攻撃に耐えられるだけでなく、他の Azure テナントからも攻撃されるように設計されています。 Azure は、SYN cookie、レート制限、接続制限などの標準的な検出と軽減の手法を使用して、DDoS 攻撃を防止します。
 
-Microsoft のクラウドサービスは、複数のソースからの攻撃の脅威の対象となります。 さまざまな DoS の脅威を軽減および保護するために、高度に拡張可能な Azure ベースの脅威検出と軽減システムが開発され、DoS から基盤を保護する主要な目的で実装されています。クラウドサービスのお客様に対するサービスの中断を防止する攻撃および支援。 Azure DoS 緩和システムは、受信、送信、および地域間トラフィックを保護します。
+Microsoft のクラウドサービスは、複数のソースからの攻撃の脅威の対象となります。 さまざまな DoS 脅威を緩和して保護するために、高度に拡張可能な Azure ベースの脅威検出とリスク軽減システムが、DoS 攻撃から基盤となるインフラストラクチャを保護し、クラウドサービスのユーザーのサービス中断を防止するための主な目的で開発および実装されています。 Azure DoS 緩和システムは、受信、送信、および地域間トラフィックを保護します。
 
 通常、[オープンシステム相互](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model)接続 (OSI) モデルのネットワーク (L3) 層とトランスポート (L4) 層のターゲットに対して起動された DoS 攻撃。 L3 および L4 レイヤーに対する攻撃は、ネットワークインターフェイスまたはサービスを大量のリソースへの攻撃トラフィックであふれ、正当なトラフィックへの対応を拒否することを目的としています。 具体的には、L3 および L4 攻撃は、ネットワークリンク、デバイス、またはサービスの容量を飽和させたり、アプリケーションをサポートするサーバーまたは仮想マシンの Cpu を過負荷にしたりします。
 

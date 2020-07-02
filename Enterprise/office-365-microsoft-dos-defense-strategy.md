@@ -1,7 +1,7 @@
 ---
-title: Office 365 DoS 防御戦略
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 DoS 防衛戦略
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: サービス拒否 (DoS) 攻撃に対する Microsoft の防御戦略の概要について説明します。
-ms.openlocfilehash: c30e8e5c91ead81ceda9cfaeb4ef6b17c9addc9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844388"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998754"
 ---
-# <a name="office-365-denial-of-service-defense-strategy"></a>Office 365 のサービス拒否防御戦略
+# <a name="microsoft-365-denial-of-service-defense-strategy"></a>Microsoft 365 のサービス拒否防御戦略
 
 ネットワークベースのサービス拒否 (DoS) 攻撃に対する Microsoft の戦略は、規模およびグローバルな設置面積によって固有です。 このスケールにより、Microsoft は、組織、プロバイダー、または顧客組織が一致できる戦略や手法を利用できるようになります。 DoS 戦略の基礎となるのは、グローバルなプレゼンスです。 Microsoft は、世界中のインターネットプロバイダー、ピアリングプロバイダー (パブリックおよびプライベート)、および民間企業と連携しています。 これにより、Microsoft が重要なインターネットプレゼンスを提供し、広範囲にわたる攻撃を Microsoft が吸収できるようになります。
 

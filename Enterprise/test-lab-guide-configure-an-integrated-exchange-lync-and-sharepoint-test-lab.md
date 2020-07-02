@@ -15,16 +15,16 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 f1.keywords:
 - NOCSH
 description: '概要: Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、および SharePoint Server 2013 を実行するサーバーを持つ、統合テスト ラボの作成方法について説明します。'
-ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bfb2e1be3b9bb401514e736d38a6f1a2944940f0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841104"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996521"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>テスト ラボ ガイド: Exchange、Lync、および SharePoint 統合テスト ラボの構成
 
- **概要:** Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、および SharePoint Server 2013 を実行するサーバーを持つ、統合テスト ラボの作成方法について説明します。
+ Exchange Server 2013 を実行するサーバー、Lync Server 2013 を実行するサーバー、および SharePoint Server 2013 を実行するサーバーを持つ、統合テスト ラボの作成方法について説明します。
  
 **Exchange、Lync、および SharePoint の統合テスト ラボのガイドの概要ビデオを見る**
 

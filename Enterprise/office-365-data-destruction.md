@@ -1,7 +1,7 @@
 ---
-title: Office 365 データ破壊
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 データ破壊
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Office 365 データセンターディスクドライブおよびサーバーのリサイクル、廃棄、破壊に関する Microsoft ポリシーの概要。
-ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Microsoft 365 データセンターディスクドライブおよびサーバーのリサイクル、廃棄、破壊に関する Microsoft ポリシーの概要。
+ms.openlocfilehash: 8e0725f449dd999c0f892543883a775695969dc9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843688"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998441"
 ---
-# <a name="office-365-data-destruction"></a>Office 365 データ破壊
+# <a name="microsoft-365-data-destruction"></a>Microsoft 365 データ破壊
 
 ## <a name="physical-data-destruction"></a>物理的なデータの破壊
 
-Microsoft では、ディスクドライブのリサイクルと破棄に対処し、障害を発生させるか、サーバーを撤去する標準的なポリシーをデータ処理しています。 Office 365 ディスクドライブを再利用する前に、Microsoft は米国標準規格に準拠した物理的なサニタイズプロセス、技術専門文書 800-88 ([メディアのサニタイズのための NIST SP 800-88 ガイドライン](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)) を実行します。 Office 365 のすべてのディスクドライブは BitLocker ボリュームレベル暗号化を使用して暗号化されているため、NIST SP 800-88 に準拠した消去は技術的には必要ありません。 しかし、Microsoft はこのプロセスを実行します。
+Microsoft では、ディスクドライブのリサイクルと破棄に対処し、障害を発生させるか、サーバーを撤去する標準的なポリシーをデータ処理しています。 Microsoft 365 ディスクドライブを再利用する前に、Microsoft は米国標準規格に準拠した物理的なサニタイズプロセス、技術専門文書 800-88 ([メディアのサニタイズのための NIST SP 800-88 ガイドライン](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)) を実行します。 Microsoft 365 のすべてのディスクドライブは BitLocker ボリュームレベル暗号化を使用して暗号化されているため、NIST SP 800-88 に準拠した消去は技術的には必要ありません。 しかし、Microsoft はこのプロセスを実行します。
 
-Office 365 データセンター内で使用されている障害が発生したディスクは、ISO プロセスによって物理的に破棄および監査されます。 アセットの種類によって、適切な廃棄方法が決まります。 ワイプできないハードドライブの場合、Microsoft は廃棄プロセスを使用してメディアを破棄し、不可能な情報の回復を行います。 たとえば、ディスクは物理的に破棄され、incinerated、またはその他のものです。 Microsoft は、破棄の記録をすべて保持しており、Office 365 内で再利用されたサーバーで同様のサニタイズプロセスを実行します。 これらのガイドラインには、電子情報と物理的な校正の両方が含まれます。
+Microsoft 365 データセンター内で使用されている障害が発生したディスクは、ISO プロセスによって物理的に破棄および監査されます。 アセットの種類によって、適切な廃棄方法が決まります。 ワイプできないハードドライブの場合、Microsoft は廃棄プロセスを使用してメディアを破棄し、不可能な情報の回復を行います。 たとえば、ディスクは物理的に破棄され、incinerated、またはその他のものです。 Microsoft は、破棄の記録をすべて保持しており、Microsoft 365 内で再利用されたサーバーで同様のサニタイズプロセスを実行します。 これらのガイドラインには、電子情報と物理的な校正の両方が含まれます。
 
 各データセンターは、オンサイトの物理的な破壊プロセスを使用して、ディスクを破棄します。 ディスクを廃棄するために指定されたストレージメディア用の安全なビンは、データセンターの各領域にあります。 各セキュリティで保護された bin ステーションには、監視用のビデオ監視があります。 廃棄ビンが約50% の容量に達すると、サイトサービスチームは物理的なセキュリティチームに連絡して、削除を調整します。 サイトサービス担当者とセキュリティ事務所は、セキュリティで保護された廃棄ビンを削除し、指定されたセキュリティで保護されたストレージ領域に配置します。 廃棄時のデータの処理を管理するポリシーと手順は、定期的にテストされています。これには、機械が破壊されることが承認されていることを確認するための手順が含まれます。
 

@@ -1,7 +1,7 @@
 ---
-title: Office 365 のテナント分離 (Office 365 Search)
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 検索でのテナントの分離
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: Office 365 検索でのテナントの分離について説明します。'
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '概要: Microsoft 365 検索でのテナントの分離について説明します。'
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844418"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998257"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Office 365 検索でのテナントの分離
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 検索でのテナントの分離
 
 SharePoint Online の検索では、テナント間の情報リークに対する保護と、共有データ構造の効率のバランスを実現するテナント分離モデルが使用されます。 このモデルを使用すると、次のような検索機能を使用できなくなります。
 
@@ -56,7 +56,7 @@ SharePoint Online の検索では、テナント間の情報リークに対す�
 
 検索では、検索インデックスに保存されている Acl 経由でドキュメントへのアクセスを制御します。 各アイテムには、特殊な ACL フィールド内の一連の用語がインデックス化されています。 ACL フィールドには、ドキュメントを表示できる1つまたは複数のグループまたはユーザーごとの用語が含まれています。 すべてのクエリは、認証されたユーザーが属するグループごとに1つずつ、アクセス制御エントリ (ACE) 用語のリストによって補強されます。
 
-たとえば、"<*guid*> などのクエリがあります。*FOO と tenantID*: <*guid*> "は、<*guid*> になります。*foo と tenantID*: <*guid*> *と*(*docacl:*<*ace1*> *または docacl*: <*ace2*> *または docacl*: <*ace3*> *...*) "
+たとえば、"<*guid*> などのクエリがあります。*FOO と tenantID*: <*guid*> "は、<*guid*> になります。*foo と tenantID*: <*guid* >  *と*(*docacl:* < *ace1* >  *または docacl*: <*ace2* >  *または docacl*: <*ace3* >  *...*) "
 
 ユーザー id とグループ識別子、および Ace が一意であるため、一部のユーザーにのみ表示されるドキュメントのテナント間では、これによってセキュリティレベルが強化されます。 これは、テナント内の通常のユーザーにアクセスを許可する "外部ユーザー以外のすべてのユーザー" ACE の場合と同じです。 しかし、"Everyone" の Ace はすべてのテナントで同じであるため、パブリックドキュメントのテナントの分離はテナント ID フィルターに依存します。 拒否 Ace もサポートされています。 クエリの拡張によって、拒否 ACE と一致する場合に結果からドキュメントを削除する句が追加されます。
 

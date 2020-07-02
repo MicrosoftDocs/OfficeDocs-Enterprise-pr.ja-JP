@@ -1,7 +1,7 @@
 ---
 title: Office 365 Skype for Business データ削除
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Skype for Business でのデータ削除についての説明。
-ms.openlocfilehash: 33fbb91d2fbfd0e3133bfa2cca2118643b702d95
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844308"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997797"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 での Skype for Business データの削除
 
-Skype for Business は、ピアツーピアのインスタント メッセージ、マルチパーティのインスタント メッセージ、および会議中にアップロードされたコンテンツのアーカイブを提供します。アーカイブ機能には Exchange が必要で、ユーザーの Exchange メールボックスのインプレース ホールド属性によって制御されます。この属性は、電子メールと Skype for Business のコンテンツの両方をアーカイブします。
+Skype for Business provides archiving of peer-to-peer instant messages, multiparty instant messages, and content upload activities in meetings. The archiving capability requires Exchange and is controlled by the user's Exchange mailbox In-Place Hold attribute, which archives both email and Skype for Business contents.
 
-ユーザーレベルのアーカイブ ポリシーを作成、構成、適用することで、特定のユーザーまたはユーザー グループに対するアーカイブ処理を有効または無効にするため、Skype for Business のアーカイブはすべて「ユーザーレベル アーカイブ」と見なされます。Skype for Business 管理センター内部からはアーカイブ設定を直接管理できません。
+All archiving in Skype for Business is considered "user-level archiving" because you enable or disable it for one or more specific users or groups of users by creating, configuring, and applying a user-level archiving policy for those users. There is no direct control of archiving settings from within the Skype for Business admin center.
 
 Skype for Business では、次の種類のコンテンツはアーカイブされません。
 

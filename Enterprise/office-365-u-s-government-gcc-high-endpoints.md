@@ -3,7 +3,7 @@ title: Office 365 米国政府 GCC GCC (高) エンドポイント
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,18 +18,18 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: 組織で Office 365 を使用していて、ネットワーク上のコンピューターがインターネットに接続できないように制限している場合は、次に示すように、送信許可一覧に含める必要があるエンドポイント (Fqdn、ポート、Url、IPv4、IPv6 アドレスの範囲) を検索して、コンピューターが正常に Office 365 を使用できるようにします。
 hideEdit: true
-ms.openlocfilehash: 288e7140701b698979fa7e054d367d36fddb887d
-ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.openlocfilehash: 995fb0265b3e2854b85291a8152469c3034e75a2
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44747392"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997552"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 米国政府 GCC GCC (高) エンドポイント
 
  *適用対象: Office 365 Admin*
 
-**概要:** Office 365 には、インターネットへの接続が必要です。 次のエンドポイントには、Office 365 を使用しているお客様が利用できるようにする必要があります。米国政府機関 GCC の高プランのみ
+Office 365 には、インターネットへの接続が必要です。 次のエンドポイントには、Office 365 を使用しているお客様が利用できるようにする必要があります。米国政府機関 GCC の高プランのみ
   
 > [!NOTE]
 > Microsoft has released a REST-based web service for the IP address and FQDN entries on this page. This new service will help you configure and update network perimeter devices such as firewalls and proxy servers. You can download the list of endpoints, the current version of the list, or specific changes. This service replaces the XML document linked from this page, which was deprecated on October 2, 2018. To try out this new service, go to [Web service](office-365-ip-web-service.md).
@@ -38,7 +38,7 @@ ms.locfileid: "44747392"
   
 |||
 |:-----|:-----|
-|**最終更新日:** 06/16/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログサブスクリプション](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
+|**最終更新日:** 06/29/2020- ![ RSS ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログサブスクリプション](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全なリスト <br/> |
 
  [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用したネットワーク接続の管理に関する推奨事項を理解してください。 エンドポイントのデータは、各月の最初に、アクティブになる前に30日間公開された新しい IP アドレスと Url で更新されます。 これにより、自動更新を行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。 サポートのエスカレーション、セキュリティインシデント、またはその他の即時運用要件に対処する必要がある場合は、その月にエンドポイントを更新することもできます。 このページに表示されるデータはすべて、REST ベースの web サービスから生成されます。 このデータにアクセスするためにスクリプトまたはネットワークデバイスを使用している場合は、 [Web サービス](office-365-ip-web-service.md)に直接移動する必要があります。
 

@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Azure ExpressRoute を使用して Office 365 へのルーティングトラフィックを適切に理解するには、コア ExpressRoute ルーティング要件と ExpressRoute 回線およびルーティングドメインをしっかりと理解している必要があります。 これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトしています。
-ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844058"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998196"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute でのルーティング
 
-*この記事は、Office 365 Enterprise および Microsoft 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 Azure ExpressRoute を使用して Office 365 へのルーティングトラフィックを適切に理解するには、コア[expressroute ルーティング要件](https://azure.microsoft.com/documentation/articles/expressroute-routing/)と[expressroute 回線およびルーティングドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)をしっかりと理解している必要があります。 これらは、Office 365 のお客様が依存している ExpressRoute を使用するための基礎をレイアウトしています。
   
@@ -117,7 +117,7 @@ Microsoft ピアリングを使用して利用できる Office 365 の各機能�
 |\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> 自動検出\<-\>outlook.com  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> 自動検出- \<tenant\> outlook.com  <br/> |
 |\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>インターネットおよび ExpressRoute で Office 365 のトラフィックをルーティングする
@@ -156,11 +156,11 @@ Exchange Online、SharePoint Online、Skype for Business Online の最大ボリ�
   
 - outlook.office365.com、outlook.office.com
 
-- \<\> \<sharepoint.com、\>my.sharepoint.com、、 \<\>-\<テナント名\>。 sharepoint.com の名前を指定します。
+- \<tenant-name\>. sharepoint.com、 \<tenant-name\> -my.sharepoint.com、 \<tenant-name\> - \<app\> sharepoint.com
 
 - \*.TCP 以外のトラフィックの IP 範囲と共に Lync.com
 
-- \*broadcast.officeapps.live.com、 \*excel.officeapps.live.com、 \*onenote.officeapps.live.com、 \*powerpoint.officeapps.live.com、 \*view.officeapps.live.com、 \*visio.officeapps.live.com、 \*word-edit.officeapps.live.com、 \*word-view.officeapps.live.com、office.live.com
+- \*broadcast.officeapps.live.com、 \* excel.officeapps.live.com、 \* onenote.officeapps.live.com、 \* powerpoint.officeapps.live.com、 \* view.officeapps.live.com、 \* visio.officeapps.live.com、 \* word-edit.officeapps.live.com、 \* word-view.officeapps.live.com、office.live.com
 
 [Windows 8 でプロキシ設定を展開および管理する](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx)方法と、 [Office 365 がプロキシによって制限](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx)されないようにする方法について説明します。
   
@@ -197,25 +197,25 @@ Exchange Online、SharePoint Online、Skype for Business Online の最大ボリ�
   
 Humongous の保険は、世界中のオフィスと地理的に分散しています。 Office 365 用の Azure ExpressRoute を実装して、大部分の Office 365 トラフィックを直接ネットワーク接続に保持したいとします。 Humongous の保険には、2つの大陸に事務所もあります。 ExpressRoute が実現できないリモートオフィスの従業員は、ExpressRoute 接続を使用するためにプライマリ機能の1つまたは両方にもう一度ルーティングする必要があります。
   
-指針として、Office 365 で送信されたトラフィックを可能な限り迅速に Microsoft データセンターに取得することがあります。 この例では、Humongous 保険を使用して、遠隔地のオフィスがインターネットを経由して、可能な限り迅速に Microsoft データセンターに接続するかどうか、またはリモートオフィスが内部ネットワークを経由して Microsoft に到達できるようにするかどうかを決定する必要があります。可能な限り迅速に、ExpressRoute 接続上のデータセンター。
+指針として、Office 365 で送信されたトラフィックを可能な限り迅速に Microsoft データセンターに取得することがあります。 この例では、Humongous の保険を使用して、遠隔地のオフィスがインターネットを介して接続されているかどうかを判断し、可能な限り迅速に Microsoft データセンターに接続するか、またはリモートオフィスが内部ネットワークを経由して、ExpressRoute 接続を介して Microsoft データセンターにすばやく到達できるようにする必要があります。
   
 Microsoft のデータセンター、ネットワーク、およびアプリケーションアーキテクチャは、世界的に異なる方法で通信し、それらを最も効率的な方法で処理するように設計されています。 これは、世界最大規模のネットワークの1つです。 必要以上に長期間お客様のネットワーク上に残っている Office 365 宛ての要求では、このアーキテクチャを利用することはできません。
   
-Humongous 保険の状況では、ExpressRoute で使用する予定のアプリケーションに応じて、これらの手順を続行する必要があります。 たとえば、Skype for business Online のお客様、または外部の Skype for Business Online 会議に接続する際に ExpressRoute 接続を活用することを計画している場合は、Skype for Business Online のメディア品質とネットワークで推奨される設計接続ガイドは、3番目の場所に対して、追加の ExpressRoute 回路を準備することです。 これは、ネットワークの観点から見ると、より高価になることがあります。ただし、Microsoft データセンターへの配信前に、ある大陸から別の大陸への要求をルーティングすると、Skype for Business Online の会議やコミュニケーション時に、低品質または使用不能な状態になる可能性があります。
+Humongous 保険の状況では、ExpressRoute で使用する予定のアプリケーションに応じて、これらの手順を続行する必要があります。 たとえば、Skype for business Online のお客様、または外部の Skype for Business Online 会議に接続する際に ExpressRoute 接続を活用することを計画している場合、Skype for Business Online メディア品質およびネットワーク接続ガイドで推奨される設計は、3番目の場所に対して追加の ExpressRoute 回路をプロビジョニングすることです。 これは、ネットワークの観点から見ると、より高価になることがあります。ただし、Microsoft データセンターへの配信前に、ある大陸から別の大陸への要求をルーティングすると、Skype for Business Online の会議やコミュニケーション時に、低品質または使用不能な状態になる可能性があります。
   
-Humongous の保険を使用していないか、Skype for Business Online の利用を計画していない場合は、ExpressRoute 接続を使用している大陸に対して Office 365 の送信ネットワークトラフィックを戻すことができる場合がありますが、不要な遅延または TCP が発生する可能性があります。大きな. どちらの場合も、Office 365 が依存しているコンテンツ配信ネットワークを利用するには、ローカルサイトでインターネットへのインターネット宛てのトラフィックをルーティングすることをお勧めします。
+Humongous 保険を使用していないか、または Skype for Business Online の利用を計画していない場合は、ExpressRoute 接続を使用している大陸に対して Office 365 の送信ネットワークトラフィックを戻すことができる場合があります。これにより、不要な遅延や TCP 輻輳が発生する可能性があります。 どちらの場合も、Office 365 が依存しているコンテンツ配信ネットワークを利用するには、ローカルサイトでインターネットへのインターネット宛てのトラフィックをルーティングすることをお勧めします。
   
 ![ExpressRoute 複数地域](media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Humongous 保険で複数地域戦略を計画している場合は、サーキットのサイズ、回線数、フェールオーバーなどについて考慮する必要がある事項がいくつかあります。
   
-ExpressRoute を複数の地域が回線を使用して1か所に配置している場合、Humongous 保険は、リモートオフィスからの Office 365 への接続が、本社にある Office 365 データセンターに送信され、本社の所在地。 そのためには、Humongous 保険は DNS 転送を実装して、本社のインターネット出口ポイントに最も近い Office 365 環境との適切な接続を確立するために必要なラウンドトリップと DNS 参照の数を減らします。 これにより、クライアントがローカルフロントエンドサーバーを解決しないようにし、ユーザーが接続するフロントエンドサーバーが、Humongous 保険が Microsoft とピアリングされている本社の近くにあるようにします。 [ドメイン名に条件付きフォワーダーを割り当てる](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx)方法についても学習できます。
+ExpressRoute を複数の地域が回線を使用して1か所に配置している場合、Humongous 保険は、リモートオフィスからの Office 365 への接続が、本社と本社のオフィスの365データセンターに送信されるようにしたいと考えています。 そのためには、Humongous 保険は DNS 転送を実装して、本社のインターネット出口ポイントに最も近い Office 365 環境との適切な接続を確立するために必要なラウンドトリップと DNS 参照の数を減らします。 これにより、クライアントがローカルフロントエンドサーバーを解決しないようにし、ユーザーが接続するフロントエンドサーバーが、Humongous 保険が Microsoft とピアリングされている本社の近くにあるようにします。 [ドメイン名に条件付きフォワーダーを割り当てる](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx)方法についても学習できます。
   
 このシナリオでは、リモートオフィスからのトラフィックは、北アメリカの Office 365 フロントエンドインフラストラクチャを解決し、office 365 を利用して、office 365 アプリケーションのアーキテクチャに従ってバックエンドサーバーに接続します。 たとえば、Exchange Online は北米で接続を終了し、そのフロントエンドサーバーは、テナントが存在する場所でバックエンドメールボックスサーバーに接続します。 すべてのサービスには、ユニキャストとエニーキャストの宛先で構成される、広く分散されたフロントドアサービスがあります。
   
 Humongous に複数の大陸の主要なオフィスがある場合は、Skype for Business Online などの機密性の高いアプリケーションの待機時間を減らすために、少なくとも2つのアクティブ/アクティブ回路を地域ごとに使用することをお勧めします。 すべてのオフィスが1つの大陸に含まれている場合、またはリアルタイムコラボレーションを使用していない場合は、統合または分散された出口があります。 複数の回線が使用可能な場合、BGP ルーティングによって、1つの回線が利用できなくなった場合にフェールオーバーが行われます。
   
-サンプルの[ルーティング構成](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/)との詳細[https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/)について説明します。
+サンプルの[ルーティング構成](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/)との詳細について説明し [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) ます。
   
 ## <a name="selective-routing-with-expressroute"></a>ExpressRoute での選択ルーティング
 
@@ -225,15 +225,15 @@ Humongous に複数の大陸の主要なオフィスがある場合は、Skype f
 
 2. **PAC ファイル/url** -特定の fqdn が特定のパスでルーティングされるように、Office 365 に指定されたネットワークトラフィックを指示します。 これは、 [PAC ファイルの展開](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies)によって識別されるクライアントコンピューターで選択的にルーティングされます。
 
-3. **ルートフィルター** - [ルートフィルター](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)は、Microsoft ピア経由でサポートされているサービスのサブセットを使用する方法です。
+3. **ルートフィルター**  - [ルートフィルター](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)は、Microsoft ピア経由でサポートされているサービスのサブセットを使用する方法です。
 
 4. **Bgp コミュニティ**- [bgp community タグ](https://aka.ms/bgpexpressroute365)に基づくフィルタリングを使用すると、ExpressRoute をスキャンする Office 365 アプリケーションを特定し、それをインターネットでスキャンすることができます。
 
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/erorouting](https://aka.ms/erorouting)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 ネットワーク接続の評価](assessing-network-connectivity.md)
+[Office 365 のネットワーク接続の評価](assessing-network-connectivity.md)
   
 [Office 365 向け Azure ExpressRoute](azure-expressroute.md)
   
@@ -247,9 +247,9 @@ Humongous に複数の大陸の主要なオフィスがある場合は、Skype f
   
 [Skype for Business Online 向けのネットワークの最適化](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[Skype for Business Online の ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Skype for Business Online での ExpressRoute および QoS](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[ExpressRoute を使用したコールフロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[ExpressRoute を使用したコール フロー](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する](bgp-communities-in-expressroute.md)
   
@@ -257,6 +257,6 @@ Humongous に複数の大陸の主要なオフィスがある場合は、Skype f
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)

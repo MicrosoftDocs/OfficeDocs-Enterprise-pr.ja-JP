@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。'
-ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711567"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998015"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
- **概要:** これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。
-  
 Microsoft Azure を使用すれば、通常ならオンプレミスで展開されていた一部の Office Server ワークロードを Azure インフラストラクチャ サービスで展開できるようになります。
   
 Azure の Microsoft 365 id インフラストラクチャの場合:
@@ -37,7 +35,7 @@ Azure の Microsoft 365 id インフラストラクチャの場合:
   
 - [オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Azure で Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 以下は Azure の SharePoint Server 2013 ワークロード向けです。
   
