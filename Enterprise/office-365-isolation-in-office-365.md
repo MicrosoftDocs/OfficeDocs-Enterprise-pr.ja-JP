@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '概要: Microsoft 365 のさまざまなアプリケーションでの分離とアクセス制御について説明します。'
-ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: fc0aa37025936a1a60cfbb8914b079eba5ba2e7f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998791"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052590"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365 での分離とアクセス制御
 
-Azure Active Directory (Azure AD) と Microsoft 365 では、数十台のサービス、数百種類のエンティティ、数千件の関係、および数万の属性を含む、非常に複雑なデータモデルを使用しています。 高レベルでは、Azure AD とサービスディレクトリは、状態ベースのレプリケーションプロトコルを使用して同期されたテナントと受信者のコンテナーです。 Azure AD 内に保持されているディレクトリ情報に加えて、各サービスワークロードには独自のディレクトリサービスインフラストラクチャがあります。
+Azure Active Directory (Azure AD) と Microsoft 365 では、非常に複雑なデータモデルが使用されています。このモデルには、数十台のサービス、数十万の関係、および数万の属性が含まれています。 高レベルでは、Azure AD とサービスディレクトリは、状態ベースのレプリケーションプロトコルを使用して同期されたテナントと受信者のコンテナーです。 Azure AD 内に保持されているディレクトリ情報に加えて、各サービスワークロードには独自のディレクトリサービスインフラストラクチャがあります。
  
 ![Microsoft 365 テナントデータ同期](media/office-365-isolation-tenant-data-sync.png)
 
@@ -43,7 +43,7 @@ Exchange Online は、メールボックス内に顧客データを格納しま�
 - 予定表と空き時間情報
 - Contacts
 - タスク
-- Notes
+- メモ
 - グループ
 - 推論データ
 

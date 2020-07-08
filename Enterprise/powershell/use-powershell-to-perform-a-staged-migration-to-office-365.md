@@ -16,29 +16,29 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
-ms.openlocfilehash: 846704ff32a8f6e4012e93b67ec2a921d4c9ac51
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: ca50edd079e17808c46ff5a956ed2efad34eb322
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004520"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052560"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell を使用して Office 365 への段階的な移行を実行する
 
 段階的な移行を使用すると、ユーザーのメールボックスの内容を、元の電子メール システムから Office 365 に徐々に移行することができます。
   
-この記事では、Exchange Online PowerShell を使用した段階的メール移行に関するタスクを順を追って説明します。トピック「[Office 365 への段階的メール移行について知っておくべきこと](https://go.microsoft.com/fwlink/p/?LinkId=536487)」では、移行プロセスについて概説しています。記事の内容に満足いただけたら、段階的メール移行を使用して、あるメール システムから別のメール システムへのメールボックスの移行を開始してください。
+This article walks you through the tasks involved with for a staged email migration using Exchange Online PowerShell. The topic, [What you need to know about a staged email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487), gives you an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
   
 > [!NOTE]
-> また、段階的な移行を実行するには、Exchange 管理センターを使用することもできます。「[Office 365 へのメールの段階的な移行を実行する](https://go.microsoft.com/fwlink/p/?LinkId=536687)」を参照してください。 
+> You can also use the Exchange admin center to perform staged migration. See [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536687). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-このタスクの予想所要時間:移行バッチの作成に 2 ～ 5 分。移行バッチ開始後の移行時間は、バッチ内のメールボックスの数、各メールボックスのサイズ、および使用可能なネットワーク容量によって異なります。Office 365 にメールボックスの移行時間を決定するその他の要因の詳細については、「[移行のパフォーマンス](https://go.microsoft.com/fwlink/p/?LinkId=275079)」を参照してください。
+Estimated time to complete this task: 2-5 minutes to create a migration batch. After the migration batch is started, the duration of the migration will vary based on the number of mailboxes in the batch, the size of each mailbox, and your available network capacity. For information about other factors that affect how long it takes to migrate mailboxes to Office 365, see [Migration Performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
-この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、トピック「[受信者のアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=534105)」の中の「移行」エントリを参照してください。
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in the [Recipients Permissions](https://go.microsoft.com/fwlink/p/?LinkId=534105) topic.
   
-Exchange Online PowerShell コマンドレットを使用するには、サインインしてコマンドレットをローカルの Windows PowerShell セッションにインポートする必要があります。手順については、「[リモート PowerShell による Exchange への接続](https://go.microsoft.com/fwlink/p/?LinkId=534121)」を参照してください。
+To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534121) for instructions.
   
 移行コマンドの完全な一覧については、「[移動と移行のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=534750)」を参照してください。
   
@@ -48,14 +48,14 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
 
 段階的な移行を使用してメールボックスを Office 365 に移行する前に、Exchange 環境に対していくつかの変更を加える必要があります。
   
- **社内の Exchange Server** に Outlook Anywhere を構成する: メール移行サービスは、Outlook Anywhere (RPC over HTTP としても知られる) を使用して社内の Exchange Server に接続します。Exchange Server 2007 と Exchange 2003 における Outlook Anywhere の設定方法の詳細については、以下を参照してください。
+ **Configure Outlook Anywhere on your on-premises Exchange Server** The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. For information about how to set up Outlook Anywhere for Exchange Server 2007, and Exchange 2003, see the following:
   
 - 「[Exchange 2007:Outlook Anywhere を有効にする方法](https://go.microsoft.com/fwlink/?LinkID=167210)」
     
 - 「[Exchange 2003 での Outlook Anywhere を構成する方法](https://go.microsoft.com/fwlink/?LinkID=167209)」
     
 > [!IMPORTANT]
-> Outlook Anywhere の構成には、信頼された証明機関 (CA) によって発行された証明書を使用する必要があります。Outlook Anywhere は、自己署名入りの証明書で構成することはできません。詳細については、「[Outlook Anywhere のために SSL を構成する方法](https://go.microsoft.com/fwlink/?LinkID=80875)」を参照してください。 
+> You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration. Outlook Anywhere can't be configured with a self-signed certificate. For more information, see [How to configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875). 
   
  **オプション:Outlook Anywhere**を使用して Exchange 組織に接続できることを確認する: 接続設定をテストするには、次のいずれかの方法を試します。
   
@@ -73,7 +73,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **アクセス許可を設定する**: 社内 Exchange 組織に接続するために使用する社内ユーザー アカウント (移行管理者ともいう) には、Office 365 に移行する社内メールボックスにアクセスするためのアクセス許可が必要です。このユーザー アカウントは、この手順の後半に記載する移行エンドポイント ([ステップ 3:移行エンドポイントを作成する](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint)) を作成して電子メール システムに接続するときに使用します。
+ **Set permissions** The on-premises user account that you use to connect to your on-premises Exchange organization (also called the migration administrator) must have the necessary permissions to access the on-premises mailboxes that you want to migrate to Office 365. This user account is used when you connect to your email system by creating a migration endpoint later in this procedure ([Step 3: Create a migration endpoint](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint) ).
   
 メールボックスを移行するために、管理者には次のアクセス許可セットのいずれかが必要です。
   
@@ -89,36 +89,36 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
     
 これらのアクセス許可を設定する方法については、「[Exchange Online にメールボックスを移行するためのアクセス許可の割り当て](https://go.microsoft.com/fwlink/?LinkId=521656)」を参照してください。
   
- **ユニファイド メッセージング (UM) を無効にする**: 移行する社内のメールボックスで UM がオンになっている場合は、移行前に UM をオフにします。移行の完了後に、メールボックスの UM をオンにします。操作手順については、「[ユーザーのユニファイド メッセージングを無効にする方法](https://go.microsoft.com/fwlink/?LinkId=521891)」を参照してください。
+ **Disable Unified Messaging (UM)** If UM is turned on for the on-premises mailboxes you're migrating, turn off UM before migration. Turn on UM for the mailboxes after migration is complete. For how-to steps, see[disable unified messaging](https://go.microsoft.com/fwlink/?LinkId=521891).
   
- **ディレクトリ同期を使用して Office 365 でユーザーを新規作成します。** ディレクトリ同期を使用すると、Office 365 組織のすべての社内ユーザーを作成できます。
+ **Use directory synchronization to create new users in Office 365.** You use directory synchronization to create all the on-premises users in your Office 365 organization.
   
-ユーザーの作成後にライセンスを付与する必要があります。ユーザーの作成後、ライセンスを追加するまでに 30 日間があります。ライセンスを追加する手順については、「[ステップ 8:移行後のタスクを完了する](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration)」を参照してください。
+You need to license the users after they're created. You have 30 days to add licenses after the users are created. For steps to add licenses, see [Step 8: Complete post-migration tasks](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration).
   
- Microsoft Azure Active Directory 同期ツール、または、Microsoft Azure Active Directory 同期サービス (AAD Sync) のいずれかを使用すると、Office 365 と同期して社内ユーザーを作成できます。メールボックスが Office 365 に移行されたら、社内組織内のユーザー アカウントを管理します。これにより、ユーザー アカウントは Office 365 組織と同期されます。詳細については、「[ディレクトリ統合](https://go.microsoft.com/fwlink/?LinkId=521788)」を参照してください。
+ Microsoft Azure Active Directory (Azure AD) 同期ツールまたは Microsoft Azure AD 同期サービスのいずれかを使用して、Office 365 でオンプレミスユーザーを同期および作成できます。 メールボックスを Office 365 に移行した後、社内組織のユーザーアカウントを管理し、Office 365 組織と同期します。 詳細については、「[ディレクトリ統合](https://go.microsoft.com/fwlink/?LinkId=521788)」を参照してください。
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>ステップ 2:段階的な移行バッチ用の CSV ファイルを作成する
 
-Office 365 に移行する社内のメールボックスのユーザーを特定したら、コンマ区切りの値 (CSV) ファイルを使用して移行バッチを作成します。Office 365 が移行の実行に使用する CSV ファイルの各行には、社内メールボックスに関する情報が含まれています。 
+After you identify the users whose on-premises mailboxes you want to migrate to Office 365, you use a comma separated value (CSV ) file to create a migration batch. Each row in the CSV file—used by Office 365 to run the migration—contains information about an on-premises mailbox. 
   
 > [!NOTE]
-> 段階的移行により Office 365 に移行する場合、移行可能なメールボックスの数に制限はありません。移行バッチ用の CSV ファイルに含めることができる行数は、最大 2,000 行までです。2,000 を超えるメールボックスを移行するには、追加の CSV ファイルを作成し、各ファイルを使用して新しい移行バッチを作成します。 
+> There isn't a limit for the number of mailboxes that you can migrate to Office 365 using a staged migration. The CSV file for a migration batch can contain a maximum of 2,000 rows. To migrate more than 2,000 mailboxes, create additional CSV files and use each file to create a new migration batch. 
   
  **サポートされている属性**
   
-段階的な移行用の CSV ファイルは、次の 3 つの属性をサポートします。CSV ファイルの各行はメールボックスに対応し、各属性の値を含める必要があります。
+The CSV file for a staged migration supports the following three attributes. Each row in the CSV file corresponds to a mailbox and must contain a value for each of these attributes.
   
 |**属性**|**説明**|**必須**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |プライマリ SMTP 電子メール アドレス (たとえば、社内メールボックスの場合は pilarp@contoso.com など) を指定します。  <br/> 社内メールボックスには、プライマリ SMTP アドレスを使用し、Office 365 のユーザー ID は使用しないでください。たとえば、社内ドメインが contoso.com という名前で、Office 365 の電子メール ドメインが service.contoso.com という名前の場合、CSV ファイル内の電子メール アドレスにはドメイン名 contoso.com を使用します。  <br/> |必須  <br/> |
-|Password  <br/> |新しい Office 365 メールボックスに設定されるパスワード。Office 365 の組織に適用されるパスワードの制約はすべて、CSV ファイル内のパスワードにも適用されます。  <br/> |省略可能  <br/> |
-|ForceChangePassword  <br/> |ユーザーが新しい Office 365 メールボックスに初めてサインインする場合に、パスワードを変更する必要があるかどうかを指定します。このパラメーターの値には **True** または **False** を使用してください。<br/> > [!NOTE]> Active Directory フェデレーション サービス (AD FS) 以上を社内組織に展開してシングル サインオン (SSO) ソリューションを実装した場合、 **ForceChangePassword** 属性の値には **False** を使用する必要があります。          |省略可能  <br/> |
+|EmailAddress  <br/> |プライマリ SMTP 電子メール アドレス (たとえば、社内メールボックスの場合は pilarp@contoso.com など) を指定します。  <br/> Use the primary SMTP address for on-premises mailboxes and not user IDs from the Office 365. For example, if the on-premises domain is named contoso.com but the Office 365 email domain is named service.contoso.com, you would use the contoso.com domain name for email addresses in the CSV file.  <br/> |必須  <br/> |
+|Password  <br/> |The password to be set for the new Office 365 mailbox. Any password restrictions that are applied to your Office 365 organization also apply to the passwords included in the CSV file.  <br/> |省略可能  <br/> |
+|ForceChangePassword  <br/> |Specifies whether a user must change the password the first time they sign in to their new Office 365 mailbox. Use **True** or **False** for the value of this parameter. <br/> > [!NOTE]> Active Directory フェデレーション サービス (AD FS) 以上を社内組織に展開してシングル サインオン (SSO) ソリューションを実装した場合、 **ForceChangePassword** 属性の値には **False** を使用する必要があります。          |省略可能  <br/> |
    
  **CSV ファイル形式**
   
-以下に、CSV ファイルの形式の例を示します。この例では、3 つの社内メールボックスが Office 365 に移行されます。
+Here's an example of the format for the CSV file. In this example, three on-premises mailboxes are migrated to Office 365.
   
-CSV ファイルの最初の行、つまりヘッダー行には、後続の行で指定される属性 (つまり、フィールド) の名前が示されます。各属性名はコンマで区切られます。
+The first row, or header row, of the CSV file lists the names of the attributes, or fields, specified in the rows that follow. Each attribute name is separated by a comma.
   
 ```powershell
 EmailAddress,Password,ForceChangePassword 
@@ -127,17 +127,17 @@ tobyn@contoso.com,Pa$$w0rd,False
 briant@contoso.com,Pa$$w0rd,False 
 ```
 
-ヘッダー行の下の各行は個々のユーザーを表します。これらの行には、そのユーザーのメールボックスを移行するための情報が含まれます。各行の属性値は、ヘッダー行の属性名と同じ順序で並んでいる必要があります。 
+Each row under the header row represents one user and supplies the information that will be used to migrate the user's mailbox. The attribute values in each row must be in the same order as the attribute names in the header row. 
   
-CSV ファイルの作成には、任意のテキスト エディターや Excel などのアプリケーションを使用します。ファイルは .csv ファイルまたは .txt ファイルとして保存します。
+Use any text editor, or an application like Excel , to create the CSV file. Save the file as a .csv or .txt file.
   
 > [!NOTE]
-> CSV ファイルに非 ASCII 文字や特殊文字が含まれている場合は、UTF-8 などの Unicode エンコードで CSV ファイルを保存してください。アプリケーションによっては、コンピューターのシステム ロケールが CSV ファイルで使用されている言語と一致するときに、CSV ファイルを UTF-8 などの Unicode エンコードで保存した方が簡単な場合があります。 
+> If the CSV file contains non-ASCII or special characters, save the CSV file with UTF-8 or other Unicode encoding. Depending on the application, saving the CSV file with UTF-8 or other Unicode encoding can be easier when the system locale of the computer matches the language used in the CSV file. 
   
 ### <a name="step-3-create-a-migration-endpoint"></a>ステップ 3:移行エンドポイントを作成する
 <a name="BK_Endpoint"> </a>
 
-電子メールを正常に移行するためには、Office 365 は移行元の電子メール システムと接続して通信する必要があります。これを実行するため、Office 365 では移行エンドポイントを使用します。PowerShell を使用して Outlook Anywhere 移行エンドポイントを作成するには、段階的な移行で、最初に[リモート PowerShell による Exchange への接続](https://go.microsoft.com/fwlink/p/?LinkId=534121)を行います。 
+To migrate email successfully, Office 365 needs to connect and communicate with the source email system. To do this, Office 365 uses a migration endpoint. To create an Outlook Anywhere migration endpoint by using PowerShell, for staged migration, first [connect to Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 移行コマンドの完全な一覧については、「[移動と移行のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=534750)」を参照してください。
   
@@ -154,7 +154,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscove
 **New-MigrationEndpoint** コマンドレットの詳細については、「[New-MigrationEndpoint](https://go.microsoft.com/fwlink/p/?LinkId=536437)」を参照してください。
   
 > [!NOTE]
-> **New-MigrationEndpoint** コマンドレットで **-TargetDatabase** オプションを使用することによって、使用するサービスに対してデータベースを指定することができます。それ以外の場合、データベースは、管理メールボックスが配置されている Active Directory フェデレーション サービス (AD FS) 2.0 サイトからランダムに割り当てられます。
+> The **New-MigrationEndpoint** cmdlet can be used to specify a database for the service to use by using the **-TargetDatabase** option. Otherwise a database is randomly assigned from the Active Directory Federation Services (AD FS) 2.0 site where the management mailbox is located.
   
 #### <a name="verify-it-worked"></a>機能していることを確認する
 
@@ -167,13 +167,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 ### <a name="step-4-create-and-start-a-stage-migration-batch"></a>ステップ 4:段階的な移行のバッチを作成および開始する
 <a name="BK_Endpoint"> </a>
 
-Exchange Online PowerShell の **New-MigrationBatch** コマンドレットを使用すると、一括移行の移行バッチを作成できます。 _AutoStart_ パラメーターを含めると、移行バッチを作成して自動的に開始できます。また、別の方法として、 **Start-MigrationBatch** コマンドレットを使用することにより、移行バッチを作成して後で手動で開始できます。この例では、"StagedBatch1" という移行バッチを作成して、前の例で作成した移行エンドポイントを使用します。
+You can use the **New-MigrationBatch** cmdlet in Exchange Online PowerShell to create a migration batch for a cutover migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then manually start it afterwards by using the **Start-MigrationBatch** cmdlet. This example creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step.
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
-この例でも、"StagedBatch1" という移行バッチを作成して、前の例で作成した移行エンドポイントを使用します。 _AutoStart_ パラメーターが含まれていないため、移行バッチは移行ダッシュボードで、または **Start-MigrationBatch** コマンドレットを使用して手動で開始する必要があります。前述のように、一度に存在できる一括移行バッチは 1 つだけです。
+This example also creates a migration batch called "StagedBatch1" and uses the migration endpoint that was created in the previous step. Because the  _AutoStart_ parameter isn't included, the migration batch has to be manually started on the migration dashboard or by using **Start-MigrationBatch** cmdlet. As previously stated, only one cutover migration batch can exist at a time.
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
@@ -198,16 +198,16 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>ステップ 5:社内メールボックスをメールが有効なユーザーに変換する
 <a name="BK_Endpoint"> </a>
 
-メールボックスのバッチが正常に移行されたら、何らかの方法でユーザーが各自のメールにアクセスできるようにする必要があります。メールボックスが移行されたユーザーには、社内のメールボックスと Office 365 のメールボックスの両方があります。Office 365 のメールボックスを持つユーザーは、社内のメールボックスで新着メールの受信が停止します。 
+After you have successfully migrated a batch of mailboxes, you need some way to let users get to their mail. A user whose mailbox has been migrated now has both a mailbox on-premises and one in Office 365. Users who have a mailbox in Office 365 will stop receiving new mail in their on-premises mailbox. 
   
-移行が完了していないため、まだすべてのユーザーが Office 365 から各自の電子メールにアクセスできる状態ではありません。両方のメールボックスを持つユーザーに対してはどのようにすれば良いでしょうか。既に移行済みの社内メールボックスをメールが有効なユーザーに変更することができます。メールボックスからメールが有効なユーザーに変更した場合、社内メールボックスに移動するのではなく、ユーザーを Office 365 から各自の電子メールにアクセスさせることができます。 
+Because you are not done with your migrations, you are not yet ready to direct all users to Office 365 for their email. So what do you do for those people who have both? What you can do is change the on-premises mailboxes that you've already migrated to mail-enabled users. When you change from a mailbox to a mail-enabled user, you can direct the user to Office 365 for their email instead of going to their on-premises mailbox. 
   
-社内メールボックスをメールが有効なユーザーに変換するもう 1 つの重要な理由は、プロキシ アドレスをメールが有効なユーザーにコピーすることで、Office 365 メールボックスからのプロキシ アドレスを保持するためです。これにより、Active Directory を使用して社内組織からクラウドベースのユーザーを管理できます。また、すべてのメールボックスを Office 365 に移行した後に、社内 Exchange Server 組織を停止する場合、メールが有効なユーザーにコピーされたプロキシ アドレスは、社内 Active Directory に残ります。
+Another important reason to convert on-premises mailboxes to mail-enabled users is to retain proxy addresses from the Office 365 mailboxes by copying proxy addresses to the mail-enabled users. This lets you manage cloud-based users from your on-premises organization by using Active Directory. Also, if you decide to decommission your on-premises Exchange Server organization after all mailboxes are migrated to Office 365, the proxy addresses you've copied to the mail-enabled users will remain in your on-premises Active Directory.
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>ステップ 6:段階的な移行バッチを削除する
 <a name="BK_Endpoint"> </a>
 
- 移行バッチ内のすべてのメールボックスが正常に移行された場合、バッチ内の社内メールボックスをメールが有効なユーザーに変換した後に、段階的な移行バッチを削除する準備が整います。メールが移行バッチ内の Office 365 メールボックスに転送されていることを確認してください。段階的な移行バッチを削除すると、移行サービスによって、移行バッチに関連するすべてのレコードがクリーンアップされて移行バッチが削除されます。
+ After all mailboxes in a migration batch have been successfully migrated, and you've converted the on-premises mailboxes in the batch to mail-enabled users, you're ready to delete a staged migration batch. Be sure to verify that mail is being forwarded to the Office 365 mailboxes in the migration batch. When you delete a staged migration batch, the migration service cleans up any records related to the migration batch and deletes the migration batch.
   
 Exchange Online PowerShell で "StagedBatch1" 移行バッチを削除するには、次のコマンドを実行します。
   
@@ -237,9 +237,9 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step-8-complete-post-migration-tasks"></a>ステップ 8:移行後のタスクを完了する
 <a name="BK_Postmigration"> </a>
 
-- **ユーザーが各自のメールボックスに簡単にアクセスできるように、自動検出 DNS レコードを作成します。** すべての社内メールボックスが Office 365 に移行されたら、Office 365 組織に自動検出レコードを構成して、Outlook クライアントとモバイル クライアントを持つ新しい Office 365 メールボックスにユーザーが簡単に接続できるようにします。この新しい自動検出 DNS レコードは、Office 365 組織に使用しているのと同じ名前空間を使用する必要があります。たとえば、クラウドベースの名前空間が cloud.contoso.com の場合、作成する必要のある自動検出 DNS レコードは autodiscover.cloud.contoso.com となります。
+- **Create an Autodiscover DNS record so users can easily get to their mailboxes.** After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
     
-    Office 365 は CNAME レコードを使用して、Outlook クライアントとモバイル クライアントのための自動検出サービスを実装します。自動検出 CNAME レコードには以下の情報が含まれている必要があります。
+    Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
     
   - **エイリアス:** autodiscover
     
@@ -247,7 +247,7 @@ Get-MigrationBatch StagedBatch1
     
     詳細については、「[DNS レコードを管理するときに Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=535028)」を参照してください。
     
-- **社内の Exchange サーバーの使用を停止します。** すべての電子メールが Office 365 メールボックスに直接ルーティングされていることを確認した後、社内の電子メール組織を維持する必要がもはやないか、SSO ソリューションを実装する予定がない場合は、Exchange をサーバーからアンインストールするとともに、社内の Exchange 組織を削除することができます。
+- **Decommission on-premises Exchange servers.** After you've verified that all email is being routed directly to the Office 365 mailboxes, and you no longer need to maintain your on-premises email organization or don't plan on implementing an SSO solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
     
     詳細については、以下を参照してください。
     

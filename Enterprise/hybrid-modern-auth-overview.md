@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: モダン認証は、よりセキュリティで保護されたユーザー認証と承認を提供する id 管理の方法です。 このサービスは、オンプレミスの Skype for Business server とオンプレミスの Exchange server のハイブリッド展開、およびスプリットドメインの Skype for Business ハイブリッドで利用できます。 この記事では、前提条件に関する関連ドキュメント、先進認証のセットアップ/無効化、および関連するクライアントのいくつか (例) へのリンクを示します。 Outlook および Skype クライアント) 情報。
-ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 056262ade67b8ffd452f68cc0c5e3882326b2e44
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998025"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052420"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件
 
@@ -157,8 +157,8 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、「 [ge
 
 - **一般的な前提条件**
   - ADFS を使用する場合は、フェデレーションに Windows 2012 R2 ADFS 3.0 以降が必要です。
-  - Id 構成は、AAD Connect (パスワードハッシュ同期、パススルー認証、Office 365 でサポートされているオンプレミス STS、et cetera など) でサポートされている任意の種類のいずれかです。
-  - ユーザーのレプリケーションと同期のために、AAD Connect が構成され、機能している。
+  - Id 構成は、Azure AD Connect でサポートされている任意の種類です (パスワードハッシュ同期、パススルー認証、Office 365 でサポートされているオンプレミス STS、et cetera など)。
+  - ユーザーのレプリケーションと同期用に Azure AD Connect が構成され、機能している。
   - オンプレミスの環境と Office 365 環境の間で、Exchange の従来のハイブリッドトポロジモードを使用してハイブリッドが構成されていることを確認していること。 Exchange ハイブリッドの公式サポートステートメントは、現在の CU または現在の CU-1 のいずれかが必要であることを示しています。
     > [!NOTE]
     > ハイブリッドの先進認証は、[ハイブリッドエージェント](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)ではサポートされていません。
@@ -168,7 +168,7 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、「 [ge
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>開始する前に知っておくべきその他の情報
 <a name="BKMK_Whatelse"> </a>
 
-- オンプレミスサーバーのすべてのシナリオには、オンプレミスでの先進認証のセットアップが含まれます (実際には、Skype for Business の場合は、サポートされているトポロジの一覧があります)。認証と承認を担当するサーバーが Microsoft クラウド (AAD のセキュリティトークンサービス) に含まれるようにして、Skype for Business または Exchange のオンプレミスインストールで使用される Url または名前空間に関する Azure AD を更新します。 そのため、オンプレミスサーバーは Microsoft クラウドの依存関係を利用します。 この操作を実行すると、' hybrid auth ' を構成することになります。
+- オンプレミスサーバーのすべてのシナリオには、オンプレミスでの先進認証のセットアップが含まれます (実際には、Skype for business の場合は、サポートされているトポロジのリストがあります)。これにより、認証と承認を担当するサーバーが Microsoft Cloud (Azure AD のセキュリティトークンサービスである ' evoSTS ') に含まれるようになり、Skype for Business または Exchange のオンプレミスインストールで使用される Url または名前空間に関する Azure AD の そのため、オンプレミスサーバーは Microsoft クラウドの依存関係を利用します。 この操作を実行すると、' hybrid auth ' を構成することになります。
 - この記事では、サポートされている先進認証トポロジ (Skype for Business にのみ必要) を選択するのに役立つ他のユーザーには、Exchange オンプレミスおよび Skype for Business オンプレミスの場合に、セットアップ手順の概要または先進認証を無効にする手順について説明するトピックについて説明します。 サーバー環境で先進認証を使用するために、ホームベースが必要になる場合は、このページをブラウザーでお気に入りにします。
 
 ## <a name="related-topics"></a>関連項目
