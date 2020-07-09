@@ -97,13 +97,13 @@
 #### [米国政府の DoD エンドポイント](office-365-u-s-government-dod-endpoints.md)
 #### [米国政府の GCC High エンドポイント](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 暗号化チェーン - DOD および GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Microsoft 365 サービスの IPv6 サポート](ipv6-support.md)
-### [Microsoft 365 の NAT サポート](nat-support-with-office-365.md)
+### [Office 365 サービスでの IPv6 サポート](ipv6-support.md)
+### [Office 365 の NAT サポート](nat-support-with-office-365.md)
 ### Microsoft 365 向け ExpressRoute の使用
-#### [Microsoft 365 向け ExpressRoute](azure-expressroute.md)
-#### [Microsoft 365 向け ExpressRoute の実装](implementing-expressroute.md)
-#### [Microsoft 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
-#### [Microsoft 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
+#### [Office 365 用 ExpressRoute](azure-expressroute.md)
+#### [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
+#### [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
+#### [Office 365 向け ExpressRoute でのルーティング](routing-with-expressroute.md)
 
 ## 2. ID をセットアップする
 ### [グローバル管理者アカウントを保護する](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Microsoft 365 コンプライアンス](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 セキュリティ](https://docs.microsoft.com/microsoft-365/security/)
 # [一般法人向け Microsoft 365](https://www.microsoft.com/microsoft-365/business)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Microsoft 365 ヘルプセンター](https://docs.microsoft.com/microsoft-365)
