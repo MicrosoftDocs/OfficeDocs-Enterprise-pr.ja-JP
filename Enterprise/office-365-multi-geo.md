@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Microsoft 365 Multi-Geo を使用して、複数の地域に Microsoft 365 のプレゼンスを展開します。
-ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052580"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117279"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -47,6 +47,15 @@ Office 365 Multi-Geo の説明に使用される重要な用語を以下に示�
 - **優先されるデータの場所 (PDL)** - 管理者が設定したユーザー プロパティであり、ユーザーの Exchange メールボックスと OneDrive がプロビジョニングされる地域の場所を示します。 PDL では、ユーザーによって作成された SharePoint サイトのプロビジョニング場所も決定されます。
 - **サテライトの場所** - 地理機能に対応している Microsoft 365 ワークロード (SharePoint、OneDrive、Exchange) が複数地域テナントで有効になっている地域の場所。
 - **テナント** - Microsoft 365 における組織の表現。通常、1 つ以上のドメインが関連付けられています (例: contoso.com)。
+
+## <a name="licensing"></a>ライセンス
+
+Microsoft 365 Multi-Geo は、テナント内に 250 以上の Microsoft 365 シートがあり、そのうち 5% 以上が複数地域を使用している EA 顧客向けに、次の Microsoft 365 サブスクリプション プランのアドオンとして利用可能できます。 詳細については、Microsoft アカウント チームにお問い合わせください。
+
+- Microsoft 365 F1、E1、E3、または E5
+- Exchange Online プラン 1 またはプラン 2
+- OneDrive for Business プラン 1 またはプラン 2
+- SharePoint Online プラン 1 またはプラン 2
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Microsoft 365 Multi-Geo の利用可能地域
 
