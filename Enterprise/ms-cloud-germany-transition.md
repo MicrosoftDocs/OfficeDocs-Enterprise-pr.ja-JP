@@ -3,7 +3,7 @@ title: Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいド�
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
+ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998562"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092886"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行
 
@@ -60,6 +60,8 @@ Microsoft Cloud Germanyからドイツのデータセンター リージョン�
 - Dynamics 365 / Power Platform
 
 これらのサービスの移行に関する前提条件および影響については、「[Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn)」の記事で説明しています。
+
+Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 テナントを新しいドイツのデータセンター リージョンに移行することを選択した場合、SharePoint Online の移行が完了した後、Office 365 ビデオはサポートされません。 [詳細情報](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター リージョンでの Office 365 サービスへの移行を準備する方法
 
@@ -102,6 +104,11 @@ Exchange Online ハイブリッドのお客様は、移行前にハイブリッ�
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 
 既存の Skype for Business Online の顧客は Microsoft Teams へと移行されます。 詳細については、「[https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home)」を参照してください。
+
+### <a name="office-365-video"></a>Office 365 ビデオ
+Office 365 ビデオのコンテンツは、SharePoint Online の移行の一環として移行されます。 ただし、Office 365 ビデオは廃止されており、新しいドイツのデータセンター リージョンへの SharePoint Online の移行が完了した後は、Office 365 ビデオはサポートされません。 SharePoint 移行後、Office 365 ビデオのビデオは Office 365 ビデオ UI で再生されません。
+
+Microsoft Stream は Microsoft Deutschland に展開される予定はありません。現在、新しいドイツのデータセンター リージョンに Microsoft Stream を展開するスケジュールはありません。 その結果、Office 365 ビデオから Microsoft Stream への移行ツールはこのリージョンで提供されなくなります。 コンテンツを保持するには、2021 年 3 月 1 日までにコンテンツを手動でダウンロードまたは移動する必要があります。 [詳細情報](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 
 ## <a name="key-differences-between-microsoft-cloud-germany-microsoft-cloud-deutschland-and-office-365-services-in-the-new-german-datacenter-regions"></a>新しいドイツのデータセンター リージョンでの Microsoft Cloud Germany (Microsoft Cloud Deutschland) と Office 365 サービスの主な相違点
