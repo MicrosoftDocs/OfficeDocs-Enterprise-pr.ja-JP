@@ -1,5 +1,5 @@
 ---
-title: PowerShell で Office 365 グループを管理する
+title: PowerShell を使用して Microsoft 365 グループを管理する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -17,33 +17,33 @@ search.appverid:
 - BSA160
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
-description: Microsoft PowerShell で Office 365 グループの一般的な管理タスクを実行する方法について説明します。
-ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: Microsoft PowerShell で Microsoft 365 グループの一般的な管理タスクを実行する方法について説明します。
+ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052480"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117259"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>PowerShell で Office 365 グループを管理する
+# <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell を使用して Microsoft 365 グループを管理する
  
 この記事では、Microsoft PowerShell でグループの一般的な管理タスクを行うための手順について説明します。 また、グループの PowerShell コマンドレットを示します。 SharePoint サイトを管理する方法の詳細については、「[PowerShell を使用して SharePoint Online サイトを管理する](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)」を参照してください。
 
-## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Office 365 グループの使用に関するガイドラインへのリンク
+## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Microsoft 365 グループの使用ガイドラインへのリンク
 <a name="BK_LinkToGuideLines"> </a>
 
 ユーザーが [Outlook でグループを作成または編集](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)するときに、組織での使用に関するガイドラインへのリンクをそのユーザーに表示することができます。 たとえば、グループ名に特定のプレフィックスまたはサフィックスを追加する必要がある場合があります。
   
-Azure Active Directory (Azure AD) PowerShell を使用して、Office 365 グループの組織の使用ガイドラインをユーザーに示します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?LinkID=827484)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 Azure AD コマンドレットを実行すると、Outlook でグループを作成または編集するときに、ユーザーにはガイドラインへのリンクが表示されます。 
+Azure Active Directory (Azure AD) PowerShell を使用して、Microsoft 365 グループの組織の使用ガイドラインをユーザーに示します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?LinkID=827484)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーが Outlook でグループを作成または編集するときに、ガイドラインへのリンクが表示されます。 
   
 ![使用ガイドラインのリンクがある新しいグループを作成する](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
 ![グループ使用ガイドラインをクリックして、組織の Office 365 グループのガイドラインを参照する](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
   
-## <a name="allow-users-to-send-as-the-office-365-group"></a>ユーザーが Office 365 グループとして送信することを許可する
+## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>ユーザーが Microsoft 365 グループとして送信できるようにする
 <a name="BK_LinkToGuideLines"> </a>
   
-Office 365 グループの「メールボックス所有者として送信する」を有効にする場合は、[Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) と [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) コマンドレットを使用して構成します。 この設定を有効にすると、Office 365 グループのユーザーは Outlook または Outlook on the web を使用して、Office 365 グループとしてメールを送信および返信することができます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。 
+Microsoft 365 グループを [送信者として送信] にできるようにする場合は、この機能を構成するために、[アドインのアクセス許可](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission)と対象ユーザーの[アクセス許可](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient)のコマンドレットを使用します。 この設定を有効にすると、Microsoft 365 グループのユーザーは、Outlook または web 上の Outlook を使用して、Microsoft 365 グループとして電子メールを送信および返信できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。 
 
 ([Exchange 管理センターでもこれを行うことができます](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
   
