@@ -3,7 +3,7 @@ title: コンテンツ配信ネットワーク
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: この情報を使用して、Office 365 がコンテンツ配信ネットワーク (CDNs) を使用してパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d63d784804640b1dda3394d129f905b01fa4b972
+ms.sourcegitcommit: f12be5137553cc41d8bd43e9e6cfbce84215a763
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997473"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146515"
 ---
 # <a name="content-delivery-networks-cdns"></a>コンテンツ配信ネットワーク (CDNs)
 
@@ -78,6 +78,9 @@ Office 365 CDN の一部ではありませんが、これらの CDNs を Office 
 
 ### <a name="azure-cdn"></a>Azure CDN
 
+>[!NOTE]
+>2020年第3四半期から、SharePoint Online は、向上したビデオの再生と信頼性をサポートするために Azure CDN のビデオのキャッシュを開始します。 一般的なビデオは、ユーザーに最も近い CDN エンドポイントからストリーミングされます。 このデータは、Microsoft 365 コンプライアンスの境界内に残ります。 これは、すべてのテナントにとって無料のサービスであり、お客様が構成するアクションを必要としません。
+
 **AZURE CDN**を使用すると、カスタム web パーツ、ライブラリ、およびその他のリソースアセットをホストするための独自の cdn インスタンスを展開できます。これにより、アクセスキーを cdn ストレージに適用し、cdn 構成をより細かく制御することができます。 Azure CDN の使用は無料であり、Azure サブスクリプションが必要です。
 
 Azure CDN インスタンスを構成する方法の詳細については、「[クイックスタート: azure storage アカウントと AZURE cdn を統合](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn)する」を参照してください。
@@ -106,9 +109,9 @@ Office 365 テナントに対して構成する CDN に関係なく、基本的�
 
 2. Office 365 は、クライアントにデータを直接返すか、またはデータが CDN によってホストされるコンテンツセットの一部である場合、クライアントを CDN URL にリダイレクトします。
 
-    a. データが_パブリック_の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    a.  データが_パブリック_の配信元で既にキャッシュされている場合、クライアントは、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
 
-    b. データが既に_プライベート_の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム URL を動的に生成し、クライアントにカスタム URL を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
+    b.  データが既に_プライベート_の配信元でキャッシュされている場合、CDN サービスは、元の Office 365 ユーザーアカウントのアクセス許可を確認します。 アクセス許可がある場合、SharePoint Online は CDN および2つのアクセストークン内のアセットへのパスで構成されるカスタム URL を動的に生成し、クライアントにカスタム URL を返します。 その後、クライアントは、カスタム URL を使用して、最も近い CDN の場所からクライアントにデータを直接ダウンロードします。
 
 3. CDN でデータがキャッシュされていない場合、CDN ノードは Office 365 のデータを要求し、クライアントがデータをダウンロードした後、しばらくの間データをキャッシュします。
 
@@ -197,7 +200,7 @@ CDNs の使用は SharePoint Online のコンテキストでのみ有効であ�
 
 [Office 365 エンドポイントの管理](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
-[Office 365 の URL および IP アドレスの範囲](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[Office 365 の URL と IP アドレスの範囲](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [SharePoint Online での Office 365 コンテンツ配信ネットワークの使用](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)
 
