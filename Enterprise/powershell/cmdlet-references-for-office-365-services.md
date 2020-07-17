@@ -43,7 +43,7 @@ Exchange Online のコマンドレットリファレンストピックは、 [Ex
 Exchange Online PowerShell の接続手順については、「 [Exchange Online powershell に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)」をクリックしてください。
   
 > [!NOTE]
-> Reporting cmdlets for other services, for example, SharePoint Online, Skype for Business Online, and Office 365 user activity are available in Exchange Online PowerShell. For more information, see [Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> SharePoint Online、Skype for Business Online、Office 365 ユーザー アクティビティなどの他のサービスに関するレポート作成コマンドレットは、Exchange Online の PowerShell で利用できます。詳しくは、「[Exchange Online のレポート作成のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=691595)」をご覧ください。 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>SharePoint Online の PowerShell コマンドレット
 

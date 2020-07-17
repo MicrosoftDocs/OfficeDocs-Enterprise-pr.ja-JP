@@ -35,7 +35,7 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: On October 10, 2017, support ended for SharePoint Server 2007. Read this article to learn about your upgrade options, troubleshooting, best practices, system requirements, upgrade steps, and how to get assistance from Microsoft Partners.
+description: SharePoint Server 2007 のサポートは 2017 年 10 月 10 日に終了しました。アップグレード オプション、トラブルシューティング、ベスト プラクティス、システム要件、アップグレード手順、および Microsoft パートナーからサポートを受ける方法については、この記事をお読みください。
 ms.openlocfilehash: 561619559fd43131518a0032d3b28dc556f2d8b0
 ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
@@ -51,7 +51,7 @@ ms.locfileid: "44996531"
   
 ## <a name="what-does-end-of-support-mean"></a>サポートが終了するとどうなるのか
 
-SharePoint Server, like almost all Microsoft products, has a support lifecycle during which Microsoft provides new features, bug fixes, security fixes, and so on. This lifecycle typically lasts for 10 years from the date of the product's initial release, and the end of this lifecycle is known as the product's end of support. At end of support, Microsoft no longer provides:
+ほとんどの Microsoft 製品と同様に、SharePoint Server にはサポート ライフサイクルがあり、該当期間内に Micosoft は新しい機能、バグ修正プログラム、セキュリティ修正プログラムなどを提供しています。このライフサイクルは通常、製品の最初のリリース日から 10 年間続きます。このライフサイクルが終わると、製品のサポートも終了となります。サポートが終了すると、以下のものが提供されなくなります。
   
 - 発生する可能性のある問題のテクニカル サポート。
     
@@ -61,7 +61,7 @@ SharePoint Server, like almost all Microsoft products, has a support lifecycle d
     
 - タイム ゾーンの更新。
     
-Though your SharePoint Server 2007 farm will still be operational after October 10, 2017, no further updates, patches, or fixes will be shipped for the product (including security patches/fixes), and Microsoft Support will have fully shifted its support efforts to more recent versions of the product. Because your installation will no longer supported or patched, as end of support approaches you should upgrade the product, or migrate important data.
+2017 年 10 月 10 日以降も、SharePoint Server 2007 ファームは引き続き稼働しますが、製品の更新プログラム、パッチ、修正プログラム (セキュリティのパッチや修正プログラムも含む) のサポートは行われません。Microsoft サポートによるサポート対象も製品の最新バージョンに切り替わります。製品のサポートが終了すると、パッチなどのサポートの対象外となるため、製品をアップグレードするか、重要なデータを移行する必要があります。
   
 > [!TIP]
 > アップグレードまたは移行を計画していない場合は、「 [SharePoint 2007 移行オプション](sharepoint-2007-migration-options.md)」を参照してください。その例については、以下を参照してください。 また、アップグレードまたは Microsoft 365 の移行 (またはその両方) を支援する[Microsoft パートナー](https://go.microsoft.com/fwlink/?linkid=841249)を検索することもできます。 
@@ -70,7 +70,7 @@ Office 2007 サーバーのサポート終了の詳細については、「[Offi
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-Your first stop should be the [Product Lifecycle site](https://go.microsoft.com/fwlink/?linkid=843148). If you have an on-premises Microsoft product that is aging, you should check for its end of support date so that, a year or so out - or as long as your migrations generally require - you can schedule upgrade or migrations. When choosing the next step, it might help to think in terms of what would be good enough, better, and best when it comes to product features. Here's an example:
+まず、[製品のライフサイクルのサイト](https://go.microsoft.com/fwlink/?linkid=843148)にアクセスします。オンプレミスの古い Microsoft 製品を使用している場合は、サポート終了日を確認する必要があります。そうすれば、1 年ほどでサポートが終わる、あるいは、一般的に移行が必要とされる限度などを考慮に入れて、アップグレードまたは移行のスケジュールを立てることができます。次の手順を選ぶときには、製品機能に関して段階的 (標準、良い、最良の 3 段階) に検討すると良いでしょう。以下に例を示します。
   
 |**標準**|**良い**|**最良**|
 |:-----|:-----|:-----|
@@ -78,7 +78,7 @@ Your first stop should be the [Product Lifecycle site](https://go.microsoft.com/
 ||SharePoint ハイブリッド  <br/> |SharePoint Server 2016  <br/> |
 |||SharePoint ハイブリッド  <br/> |
    
-If you choose options on the low end of the scale (good enough), remember you will need to begin planning for upgrade very soon after migration from SharePoint Server 2007 is complete. (end of support for SharePoint Server 2007 is October 10, 2017. Please note that these dates are subject to change and check the [Product Lifecycle site](https://support.microsoft.com/lifecycle).)
+終了までの期間が短い (標準) オプションを選択した場合は、SharePoint Server 2007 からの移行が完了したらすぐにアップグレードの計画を立てる必要があります。(SharePoint Server 2007 のサポート終了日は 2017 年 10 月 10 日ですが、この日付は変更される可能性がありますので、[製品のライフサイクルのサイト](https://support.microsoft.com/lifecycle)を確認するようにしてください。)
   
 ## <a name="where-can-i-go-next"></a>次に行う操作
 
@@ -92,7 +92,7 @@ SharePoint Server は、社内のサーバーにインストールできます�
     
 - [SharePoint ハイブリッド](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) ソリューションの実装 
     
-Be aware of hidden costs associated with maintaining a server farm going forward, maintaining or migrating customizations, and upgrading the hardware upon which SharePoint Server depends. Having an on-premises SharePoint Server farm is rewarding if it is a necessity; otherwise, if you run your farm on legacy SharePoint Servers, without heavy customization, you can benefit from a planned migration to SharePoint Online.
+サーバー ファームの管理、カスタマイズの保守や移行、および SharePoint Server が依存するハードウェアのアップグレードには、関連する潜在的コストが発生しますので、ご注意ください。オンプレミスの SharePoint Server ファームが必要な場合、このファームを使用することには価値があります。一方、大幅なカスタマイズをせずに、従来の SharePoint Server でファームを実行している場合は、SharePoint Online への計画的な移行から益を得ることができます。
   
 > [!IMPORTANT]
 > SharePoint 2007 のコンテンツがあまり使用されない場合は、もう1つのオプションがあります。 一部の SharePoint 管理者は、Microsoft 365 サブスクリプションを作成し、新しい SharePoint Online サイトをセットアップした後、SharePoint 2007 から削除して、最新の SharePoint Online サイトに対して最も重要なドキュメントのみを削除することができます。 そのため、SharePoint 2007 サイトからアーカイブにデータをドレインすることができます。 ユーザーが SharePoint 2007 インストールのデータを操作する方法について検討します。 この問題を解決するには、クリエイティブな方法があります。 
@@ -110,7 +110,7 @@ Microsoft 365 に移行する場合、データを整理し、クラウドに何
 
 関連するサービスの説明を確認して、SharePoint Online に必要なすべての機能が含まれていることを確認してください。 「 [Microsoft 365 および Office 365 サービスの説明」を](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)参照してください。
   
-There is no direct way to migrate from SharePoint 2007 to SharePoint Online; your move to SharePoint Online would be done manually. If you upgrade to SharePoint Server 2013 or SharePoint Server 2016, your move might also involve using the SharePoint Migration API (to migrate information into OneDrive for Business, for example).
+SharePoint 2007 から SharePoint Online に直接移行する方法はありません。SharePoint Online への移行は手動で行います。SharePoint Server 2013 または SharePoint Server 2016 にアップグレードする際には、SharePoint 移行 API の使用が必要になる場合があります (OneDrive for Business への情報の移行などのため)。
   
 |**オンラインの利点**|**オンラインの欠点**|
 |:-----|:-----|
@@ -128,18 +128,18 @@ There is no direct way to migrate from SharePoint 2007 to SharePoint Online; you
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>オンプレミスの SharePoint Server のアップグレード
 
-There is historically no way to skip versions in SharePoint Upgrades, at least not as of the release of SharePoint Server 2016. That means upgrades go serially:
+SharePoint のバージョンをスキップしてアップグレードする方法はありません。SharePoint Server 2016 のリリースの場合も同様です。アップグレードは以下のように順次に行われます。
   
 |||
 |:-----|:-----|
 ||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
    
-To take the entire path from SharePoint 2007 to SharePoint Server 2016 will mean a significant investment of time and will involve a cost in terms of upgraded hardware (be aware that SQL servers must also be upgraded), software, and administration. Customizations will need to be upgraded or abandoned, according to the criticality of the feature.
+SharePoint 2007 から SharePoint Server 2016 へのパス全体を取得するには、多くの時間を要します。また、アップグレードされたハードウェア (SQL サーバーもアップグレードする必要があります)、ソフトウェア、管理に関するコストも発生します。機能の重要度に応じて、カスタマイズをアップグレードしたり、カスタマイズした内容を破棄したりする必要があります。
   
 > [!NOTE]
-> It's possible to maintain your end-of-life SharePoint 2007 farm, install a SharePoint Server 2016 farm on new hardware (so the separate farms run side-by-side), and then plan and execute a manual migration of content (for downloading and re-uploading content, for example). Be aware of some of the gotchas of manual moves (such as moves of documents replacing the last modified account with the alias of the account doing the manual move), and the work that must be done ahead of time (such as recreating sites, sub-sites, permissions and list structures). Again, this is the time to consider what data you can move into storage, or no longer need, an action that can reduce the impact of migration.
+> サポートが終了した SharePoint 2007 ファームの使用を継続し、新しいハードウェアに SharePoint Server 2016 ファームをインストールして (ファームが共存している状態で別々に実行)、コンテンツの手動による移行 (コンテンツのダウンロードや再アップロードなど) を計画したり実行したりすることは可能です。ただし、手動による移動 (最後に変更されたアカウントを、手動で移動するアカウントのエイリアスに置き換えたドキュメントの移動など) に関する問題には注意を払う必要があり、サイト、サブサイト、アクセス許可、リスト構造の再構成などの作業は早めに行う必要があります。ストレージに移行するデータと、必要ないデータを区別し、どういった操作が移行による負担を軽減できるのかを今検討することが非常に重要です。
   
-Either way, clean your environment prior to upgrade. Be certain your existing farm is functional before you upgrade, and (for sure) before you decommission! 
+いずれにしても、アップグレードする前に環境を整えることが重要です。アップグレードする前に既存のファームが機能していることを確認してください。使用を停止するものについても、念のため確認してください。 
   
 以下の、**サポートされるアップグレード パスとサポート外のアップグレード パス**を確認してください。 
   
@@ -184,7 +184,7 @@ Either way, clean your environment prior to upgrade. Be certain your existing fa
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>SharePoint Online とオンプレミスの間で、SharePoint ハイブリッド ソリューションを作成する
 
-If the answer to your migration needs is somewhere between the self-control offered by on-premises, and the lower cost of ownership offered by SharePoint Online, you can connect SharePoint Server 2013 or 2016 farms to SharePoint Online, through hybrids. [Learn about SharePoint hybrid solutions](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+オンプレミスでの完全コントロールでの移行か、SharePoint Online の低コストの所有権による移行かを検討している場合、SharePoint Server 2013 のファームあるいは 2016 のファームをハイブリッドとして、SharePoint Online に接続できます。[SharePoint ハイブリッド ソリューションの詳細情報](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
 ハイブリッド SharePoint Server ファームにメリットがあると判断した場合は、既存のハイブリッドの種類と、オンプレミスの SharePoint ファームと Microsoft 365 サブスクリプションとの間の接続を構成する方法について理解しておく必要があります。
   
@@ -194,18 +194,18 @@ If the answer to your migration needs is somewhere between the self-control offe
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>オンプレミスの SharePoint Server のアップグレード
 
-There is historically no way to skip versions in SharePoint Upgrades, at least not as of the release of SharePoint Server 2016. That means upgrades go serially:
+SharePoint のバージョンをスキップしてアップグレードする方法はありません。SharePoint Server 2016 のリリースの場合も同様です。アップグレードは以下のように順次に行われます。
   
 |||
 |:-----|:-----|
 ||SharePoint 2007 | SharePoint Server 2010 | SharePoint Server 2013 | SharePoint Server 2016 |
    
-To take the entire path from SharePoint 2007 to SharePoint Server 2016 will mean a significant investment of time and will involve a cost in terms of upgraded hardware (be aware that SQL servers must also be upgraded), software, and administration. Customizations will need to be upgraded or abandoned, according to the criticality of the feature.
+SharePoint 2007 から SharePoint Server 2016 へのパス全体を取得するには、多くの時間を要します。また、アップグレードされたハードウェア (SQL サーバーもアップグレードする必要があります)、ソフトウェア、管理に関するコストも発生します。機能の重要度に応じて、カスタマイズをアップグレードしたり、カスタマイズした内容を破棄したりする必要があります。
   
 > [!NOTE]
-> It's possible to maintain your end-of-life SharePoint 2007 farm, install a SharePoint Server 2016 farm on new hardware (so the separate farms run side-by-side), and then plan and execute a manual migration of content (for downloading and re-uploading content, for example). Be aware of some of the gotchas of manual moves (such as moves of documents replacing the last modified account with the alias of the account doing the manual move), and the work that must be done ahead of time (such as recreating sites, sub-sites, permissions and list structures). Again, this is the time to consider what data you can move into storage, or no longer need, an action that can reduce the impact of migration.
+> サポートが終了した SharePoint 2007 ファームの使用を継続し、新しいハードウェアに SharePoint Server 2016 ファームをインストールして (ファームが共存している状態で別々に実行)、コンテンツの手動による移行 (コンテンツのダウンロードや再アップロードなど) を計画したり実行したりすることは可能です。ただし、手動による移動 (最後に変更されたアカウントを、手動で移動するアカウントのエイリアスに置き換えたドキュメントの移動など) に関する問題には注意を払う必要があり、サイト、サブサイト、アクセス許可、リスト構造の再構成などの作業は早めに行う必要があります。ストレージに移行するデータと、必要ないデータを区別し、どういった操作が移行による負担を軽減できるのかを今検討することが非常に重要です。
   
-Either way, clean your environment prior to upgrade. Be certain your existing farm is functional before you upgrade, and (for sure) before you decommission! 
+いずれにしても、アップグレードする前に環境を整えることが重要です。アップグレードする前に既存のファームが機能していることを確認してください。使用を停止するものについても、念のため確認してください。 
   
 以下の、**サポートされるアップグレード パスとサポート外のアップグレード パス**を確認してください。 
   
@@ -250,7 +250,7 @@ Either way, clean your environment prior to upgrade. Be certain your existing fa
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>SharePoint Online とオンプレミスの間で、SharePoint ハイブリッド ソリューションを作成する
 
-If the answer to your migration needs is somewhere between the self-control offered by on-premises, and the lower cost of ownership offered by SharePoint Online, you can connect SharePoint Server 2013 or 2016 farms to SharePoint Online, through hybrids. [Learn about SharePoint hybrid solutions](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+オンプレミスでの完全コントロールでの移行か、SharePoint Online の低コストの所有権による移行かを検討している場合、SharePoint Server 2013 のファームあるいは 2016 のファームをハイブリッドとして、SharePoint Online に接続できます。[SharePoint ハイブリッド ソリューションの詳細情報](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
 ハイブリッド SharePoint Server ファームにメリットがあると判断した場合は、既存のハイブリッドの種類と、オンプレミスの SharePoint ファームと Microsoft 365 サブスクリプションとの間の接続を構成する方法について理解しておく必要があります。
   

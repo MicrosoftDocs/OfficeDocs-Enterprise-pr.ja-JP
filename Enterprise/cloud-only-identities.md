@@ -49,7 +49,7 @@ ms.locfileid: "44774832"
 
 組織内のユーザーの種類の株価を取得します。 グループ化とは たとえば、組織に対して、レベルの高い機能または目的によってユーザーをグループ化することができます。
 
-Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
+また、一部のクラウド サービスを、ユーザー アカウントを持たない組織外のユーザーと共有できます。この場合、このような外部ユーザーのグループも指定する必要があります。
 
 Azure AD のグループは、クラウド環境の管理を簡素化するいくつかの目的に使用できます。 たとえば、Azure AD グループでは、次のことを行うことができます。
 

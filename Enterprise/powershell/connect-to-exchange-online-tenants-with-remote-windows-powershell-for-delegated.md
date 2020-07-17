@@ -26,14 +26,14 @@ ms.locfileid: "44997373"
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
 
 > [!IMPORTANT]
-> The procedures in this topic are only for Delegated Access Permission (DAP) partners. If you aren't a DAP partner, don't use the procedures in this topic. 
+> このトピックの手順は、委任アクセス許可 (DAP) パートナー専用です。DAP パートナーでない場合は、このトピックの手順を使用しないでください。 
   
 DAP パートナーとは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 それらのパートナーは、顧客に提供するサービスにサブスクリプションをバンドルします。 お客様は、Microsoft 365 カスタマーテナンシーに対して (AOBO) アクセス許可を自動的に付与されたパートナーテナントを所有しており、すべての顧客テナンシーの管理とレポートを行うことができます。
 
 DAP パートナーは、Exchange Online PowerShell を使用して、ユーザーの Exchange Online の設定を管理したり、Microsoft 365 レポートをコマンドラインから取得したりできます。 ローカル コンピューター上で Windows PowerShell を使用して Exchange Online に対するリモート PowerShell セッションを作成します。 これは、資格情報を入力し、必要な接続設定を指定してから、Exchange Online コマンドレットをローカルの Windows PowerShell セッションにインポートして使用できるようにする、簡単な3段階のプロセスです。
 
 > [!NOTE]
-> DAP partners can't use the procedures in [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell) to connect to their customer tenant organizations in Exchange Online PowerShell. MFA and the Exchange Online Remote PowerShell Module don't work with delegated authentication.
+> DAP パートナーは、「[多要素認証を使用して Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)」の手順を使用して Exchange Online PowerShell に接続することはできません。MFA と Exchange Online リモート PowerShell モジュールは、委任された認証では機能しません。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -53,9 +53,9 @@ DAP パートナーは、Exchange Online PowerShell を使用して、ユーザ�
 
   - Windows Server 2008 R2 SP1<sup>*</sup>
 
-    <sup>*</sup> For older versions of Windows, you need to install the Microsoft.NET Framework 4.5 or later and then an updated version of the Windows Management Framework: 3.0, 4.0, or 5.1 (only one). For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868), [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757), [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344), and [Windows Management Framework 5.1](https://aka.ms/wmf5download).
+    <sup>*</sup> 以前のバージョンの Windows の場合は、Microsoft.NET Framework 4.5 以降をインストールしてから、更新バージョンの Windows Management Framework (3.0、4.0、5.1 のいずれか 1 つ) をインストールする必要があります。詳細については、「[.NET Framework のインストール](https://go.microsoft.com/fwlink/p/?LinkId=257868)」、「[Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757)」、「[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)」、「[Windows Management Framework 5.1](https://aka.ms/wmf5download)」を参照してください。
 
-- Windows PowerShell needs to be configured to run scripts, and by default, it isn't. You'll get the following error when you try to connect:
+- スクリプトを実行するように Windows PowerShell を構成する必要があります。既定では、そのように構成されていないため、接続を試行すると、次に示すエラーが発生します。
 
   `Files cannot be loaded because running scripts is disabled on this system. Provide a valid certificate with which to sign the files.`
 
@@ -94,7 +94,7 @@ DAP パートナーは、Exchange Online PowerShell を使用して、ユーザ�
     ```
 
 > [!NOTE]
-> There's a limit of three simultaneous sessions that can run under one account. Be sure to disconnect the remote PowerShell session when you're finished. If you close the Windows PowerShell window without disconnecting the session, you can use up all the remote PowerShell sessions available to you, and you'll need to wait for the sessions to expire. To disconnect the remote PowerShell session, run the following command:
+> 1 つのアカウントで同時に実行できるセッションは 3 つに制限されています。完了した時点でリモート PowerShell セッションを切断してください。セッションを切断せずに Windows PowerShell ウィンドウを閉じると、使用可能なリモート PowerShell セッションがすべて消費される可能性があるため、セッションの有効期限が切れるまで待つ必要があります。リモート PowerShell セッションを切断するには、次のコマンドを実行します。
 
 ```
 Remove-PSSession $Session
@@ -102,19 +102,19 @@ Remove-PSSession $Session
   
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-After Step 3, the Exchange Online cmdlets are imported into your local Windows PowerShell session as tracked by a progress bar. If you don't receive any errors, you connected successfully. A quick test is to run an Exchange Online cmdlet (for example, **Get-Mailbox**) and see the results.
+手順 3 の後に、Exchange Online コマンドレットがローカル Windows PowerShell セッションにインポートされます。その様子が進行状況バーに表示されます。何もエラーが表示されなければ、正常に接続されています。簡単に確かめるには、Exchange Online コマンドレット (**Get-Mailbox** など) を実行して結果を確認します。
   
 エラーが表示された場合は、次の要件を確認します。
   
-- A common problem is an incorrect password. Run the three steps again and pay close attention to the user name and password you enter in Step 1.
+- よく起きる問題がパスワードの入力ミスです。もう一度 3 つのステップを実行します。特に、ステップ 1 ではユーザー名とパスワードを慎重に入力します。
     
-- The account you use to connect to Exchange Online must be enabled for remote PowerShell. For more information, see [Enable or disable access to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534018).
+- Exchange Online への接続に使うアカウントは、リモート PowerShell に対して有効になっている必要があります。詳しくは、「[Exchange Online でリモート PowerShell アクセスを管理する](https://go.microsoft.com/fwlink/p/?LinkId=534018)」をご覧ください。
     
-- TCP port 80 traffic needs to be open between your local computer and Exchange Online. It's probably open, but it's something to consider if your organization has a restrictive Internet access policy.
+- ローカル コンピューターと Exchange Online の間に TCP ポート 80 トラフィックを開く必要があります。組織で厳格なインターネット アクセス ポリシーが使用されている場合は、開いている可能性がありますが、確認する必要があります。
     
 ## <a name="call-the-cmdlet-directly-with-invoke-command"></a>Invoke-Command で直接コマンドレットを呼び出す
 
-Importing a remote PowerShell session (Step 3) can be a lengthy process because it brings in _all_ Exchange Online cmdlets. This can be an issue in batch processing (for example, when you're running reports or making bulk changes for different tenants). As an alternative to using **Import-PSSession**, you can call cmdlets you want to use directly with **Invoke-Command**. For example, to call the **Get-Milbox** cmdlet, substitute this syntax for the `Import-PSSession $Session` command in Step 3:
+PowerShell リモート セッション (手順 3) のインポートは、_すべての_ Exchange Online コマンドレットを取り入れるため、時間がかかる処理になります。これは、(たとえば、さまざまなテナントに対してレポートを実行したり一括変更したりするような) バッチ処理の際に問題になります。**Import-PSSession** を使用する代わりに、**Invoke-Command** で直接使用するコマンドレットを呼び出すことができます。たとえば、**Get-Milbox** コマンドレットを呼び出すには、手順 3 の `Import-PSSession $Session` コマンドの次の構文を置き換えます。
   
 ```
 Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}
@@ -122,7 +122,7 @@ Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}
 
 ## <a name="more-reporting-cmdlets"></a>その他のレポート コマンドレット
 
-The cmdlets that you used in this topic are Windows PowerShell cmdlets. For more information about these cmdlets, see the following topics:
+このトピックで使用したコマンドレットは Windows PowerShell コマンドレットです。これらのコマンドレットの詳細については、以下のトピックを参照してください。
   
 - [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
     

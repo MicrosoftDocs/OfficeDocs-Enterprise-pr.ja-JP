@@ -26,18 +26,18 @@ ms.locfileid: "44997978"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>電子情報開示用にファイル収集を自動化する
 
-All companies face the potential of lawsuits or other types of legal action. While legal departments work to reduce that exposure, litigation is a fact of business life. When a company faces legal action, they are required, through the process of legal discovery, to provide all relevant documentary materials to the court and to opposing counsel. 
+すべての企業は、訴訟やその他の法的措置の可能性に直面しています。法務部門はリスクの軽減に努める一方で、訴訟はビジネス ライフの 1 つの現実です。企業は、必要とする法的措置に直面すると、法的証拠開示のプロセスを通じて、裁判所および相手方の弁護士にすべての関連資料を提供します。 
   
-eDiscovery is the process by which companies inventory, search, identify, preserve, filter, and make available the relevant documentary materials that exist in electronic form. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online, and Exchange Online can hold large amounts of documentary content. Depending on the version, these products may support eDiscovery and in place holds (Lync via Exchange Server), making it easier for the legal teams to index, identify, hold, and filter the most relevant content for a given case.
+電子情報開示は、電子的な形式の関連資料を企業がインベントリ作成、検索、識別、保持、フィルター処理、使用可能化するプロセスです。 SharePoint 2013、Exchange Server 2013、Lync Server 2013、SharePoint Online、Exchange Online は、大量の文書コンテンツを保持できます。 これらの製品のバージョンによっては、eDiscovery とインプレース保持がサポートされています (Lync は Exchange Server 経由)。これにより、法務チームは、訴訟に最も関係のある内容のインデックスの作成、特定、保持、フィルター処理を行いやすくなります。
   
-Many documents are stored on users' (Custodians) local computers, not in a centralized location. This makes it essentially impossible for SharePoint 2013 to search, and if it can't be searched, it can't be included in eDiscovery. This solution shows you how to use logon scripts, System Center Orchestrator 2012 R2 and Windows PowerShell for Exchange Server to automate the identification and collection of documentary materials from users' computers.
+多くのドキュメントは一元的に 1 つの場所にまとめられておらず、ユーザー (保管担当者) のローカル コンピューターに保存されています。このため、SharePoint 2013 は基本的に検索ができなくなり、検索ができないと eDiscovery に含めることができません。このソリューションでは、ログオン スクリプト、Exchange Server の System Center Orchestrator 2012 R2 および Windows PowerShell を使用して、ユーザーのコンピューターから資料の特定と収集を自動で行う方法を示します。
   
 ## <a name="what-this-solution-does"></a>このソリューションで行うこと
 
-This solution uses a global security group, Group Policy, and a Windows PowerShell script to locate, inventory, and collect content and Outlook personal store (PST) files from users local computers to a hidden file share. From there, the PST files can be imported into either Exchange Server 2013 or Exchange Online. All files are then moved using a System Center Orchestrator 2012 R2 runbook to another file share in Microsoft Azure for long-term storage and indexing by SharePoint 2013. You then use eDiscovery centers in your on-premises SharePoint 2013 deployment or in SharePoint Online as you regularly would to perform eDiscovery. 
+このソリューションでは、グローバル セキュリティ グループ、グループ ポリシー、Windows PowerShell スクリプトを使用して、ユーザーのローカル コンピューターから非表示のファイル共有に対してコンテンツと Outlook の個人用ストア (PST) ファイルの特定、インベントリ作成、収集を行います。PST ファイルは、ここから Exchange Server 2013 または Exchange Online のいずれかにインポートできます。すべてのファイルは、長期保存および SharePoint 2013 によるインデックス作成用に、System Center Orchestrator 2012 R2 Runbook を使用して Microsoft Azure の別のファイル共有に移動されます。次に、通常 eDiscovery を行うのと同じように、オンプレミスの SharePoint 2013 展開や SharePoint Online で eDiscovery センターを使用します。 
   
 > [!IMPORTANT]
-> This solution uses robocopy to copy files from custodian's computers to a centralized file share. Because robocopy does not copy files that are open or locked, any files, including PST files, that the custodian has open will not be collected. You will have to collect them manually. This solution does provide you with a list that explicitly identifies the files it cannot copy and the full path to each file. 
+> このソリューションでは、robocopy を使用して、保管担当者のコンピューターから一元管理されたファイル共有にファイルをコピーします。robocopy では開いているまたはロックされているファイルはコピーされないため、PST ファイルを含め、保管担当者が開いているファイルは収集されません。そのようなものは手動で収集する必要があります。このソリューションでは、コピーできないファイルと各ファイルへの完全パスを明示的に識別する一覧が作成されます。 
   
 次の図は、ソリューションのすべての手順と要素を順を追って説明しています。
   
@@ -59,7 +59,7 @@ This solution uses a global security group, Group Policy, and a Windows PowerShe
    
 ## <a name="prerequisites"></a>前提条件
 
-The configuration of this solution requires many elements, most of which you likely have in place and configured if you're thinking about eDiscovery. For the elements that you may not have or ones that require a specific configuration, we'll provide you with the links you need build out your base configuration. You must have the base configuration in place before you configure the solution itself.
+このソリューションの構成には、多くの 要素が 必要になります。eDiscovery を検討している場合、それらの要素の多くは既に配置され、構成されている可能性があります。ないかもしれない要素や、特定の構成を必要とする要素については、基本構成の構築に必要なリンクが用意されます。ソリューション自体を構成する前に、基本構成を整えておく必要があります。
   
 ### <a name="base-configuration"></a>基本構成
 
@@ -86,7 +86,7 @@ The configuration of this solution requires many elements, most of which you lik
 
 1. オンプレミス ドメインで、Custodians という名前のグローバル セキュリティ グループを作成します。
     
-2. Create a hidden file share for the files that are collected from Custodians computers. This should be on an on-premises server. For example, on a server called Staging, create a file share called Cases$. The **$** is required to make this a hidden share.
+2. 保管担当者のコンピューターから収集されるファイルのために非表示のファイル共有を作成します。これはオンプレミス サーバー上に作成する必要があります。たとえば、Staging というサーバーに、Cases$ というファイル共有を作成します。非表示の共有にするには、 **$** が必要です。
     
 3. 次の共有アクセス許可を設定します。
     
@@ -96,7 +96,7 @@ The configuration of this solution requires many elements, most of which you lik
     
   - Exchange Trusted Subsystem:変更、読み取り
     
-4. Open the **Security** tab, add the Custodians group, and click **Advanced**. Set the following permissions for the Custodians group:
+4. **[セキュリティ]** タブを開き、[保管担当者] グループを追加して、 **[詳細設定]** をクリックします。[保管担当者] グループに対して、次のアクセス許可を設定します。
     
   - **種類:拒否**
     
@@ -116,11 +116,11 @@ The configuration of this solution requires many elements, most of which you lik
     
 2. Cases$ フォルダーにファイルを配置します。
     
-3. As the user, browse to the staging server, for example browse to the \\\\Staging share to see what shares are available. You shouldn't see the **Cases$** share listed.
+3. ユーザーとして、ステージング サーバーを参照します。たとえば、\\\\Staging 共有を参照して、使用可能な共有を表示します。 **Cases$** 共有は一覧表示されないはずです。
     
-4. Manually type the full path to the Cases$ share into Explorer. This should open the Cases$ share.
+4. Cases$ 共有への完全パスを手動で Explorer に入力します。これにより、Cases$ 共有が開きます。
     
-5. Try to open the file you previously placed in the share. This should fail.
+5. 以前共有に配置したファイルを開いてみます。これは失敗するはずです。
     
 ### <a name="logon-script"></a>ログオン スクリプト
 
@@ -268,12 +268,12 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. 上記のスクリプトを、CollectionScript.ps1 として、C:\\AFCScripts などの見つけやすい場所に保存します。
     
-3. Use the Go To feature in Notepad. Make the following changes, as needed:
+3. メモ帳の移動機能を使用して、必要に応じて次の変更を行います。
     
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** variable. Include all the file type extensions that you want the script to inventory and collect in the array variable. <br/> |オプション  <br/> |
-|76 と 77  <br/> |Change the way the **$CaseNo** variable is built to suit your needs. The script captures the current date and time and appends the user name to it. <br/> |オプション  <br/> |
+|71  <br/> |**$FileTypes** 変数。スクリプトがインベントリ作成と配列変数への収集を行うファイルの種類の拡張子がすべて含まれます。<br/> |オプション  <br/> |
+|76 と 77  <br/> |**$CaseNo** 変数を構築する方法をニーズに合わせて変更します。スクリプトは、現在の日時をキャプチャし、ユーザー名をそれに追加します。<br/> |オプション  <br/> |
 |80  <br/> |**$CaseRootLocation** 変数は、ステージング サーバー コレクション ファイル共有に設定する必要があります。例: **\\\\Staging\\Cases$** <br/> |必須  <br/> |
    
 4. ドメイン コントローラーの Netlogon ファイル共有に CollectionScript.ps1 ファイルを配置します。 
@@ -324,14 +324,14 @@ $AllFiles | ForEach-Object {
 }
   ```
 
-2. Save the script as PSTImportScript.ps1 in a location that's easy for you to find. For example and ease of use, create a folder on your staging server called \\\\Staging\\AFCScripts, and save it there.
+2. スクリプトを、PSTImportScript.ps1 という名前を付けて見つけやすい場所に保存します。例として、使いやすくするため、ステージング サーバーに \\\\Staging\\AFCScripts というフォルダーを作成して、そこに保存します。
     
 3. メモ帳の移動機能を使用して、必要に応じて次の変更を行います。
     
 |**行番号**|**変更するために必要な事柄**|**必須かどうか**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** tags the mailbox folders that PSTs are imported into. Change this if necessary. <br/> |省略可能  <br/> |
-|17   <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> Make sure your **$ConnectionUri** points to a http location, not https. It won't work with https:.          |必須  <br/> |
+|12   <br/> |**$FolderIdentifier** は、PST がインポートされるメールボックス フォルダーにタグを付けます。必要な場合は変更します。<br/> |省略可能  <br/> |
+|17   <br/> |**$ConnectionUri** は独自のサーバーに設定する必要があります。 <br/> > [!IMPORTANT]> **$ConnectionUri** が https:// の場所ではなく http:// の場所を指し示していることをご確認ください。https:// では機能しません。          |必須  <br/> |
    
 4. Exchange Trusted Subsystem アカウントに、\\\\Staging\\Cases$ 共有に対する読み取り、書き込み、実行のアクセス許可があることを確認します。
     
@@ -345,13 +345,13 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST インポートのオプション B (Exchange Online の場合)
 
--  Create the mailbox structure to place the imported PST files into. For more information on how to create a user mailbox in Exchange Online, see[Create User Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  インポートした PST ファイルを配置するメールボックス構造を作成します。Exchange Online にユーザーのメールボックスを作成する方法の詳細については、「[Exchange Online でユーザー メールボックスを作成する](https://go.microsoft.com/fwlink/p/?LinkId=615118)」をご覧ください。
     
 ### <a name="cold-storage"></a>コールド ストレージ
 
 1. Azure Virtual Machine にファイル共有を作成します。ここに収集したすべてのファイルを配置します。例: \\\\AZFile1\\ContentColdStorage
     
-2. Grant the default content access account at least Read permissions to the share and all subfolders and files. For more information about configuring SharePoint 2013 Search, see [Create and configure a Search service application in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
+2. 既定のコンテンツ アクセス アカウントに対して、少なくとも共有およびすべてのサブフォルダーとファイルへの読み取りのアクセス許可を付与します。SharePoint 2013 検索の構成の詳細については、「[SharePoint Server 2013 で Search Service アプリケーションを作成および構成する](https://go.microsoft.com/fwlink/p/?LinkId=614940)」をご覧ください。
     
 3. PST ファイルを \\\\AZFile1\\ContentColdStorage からインポートすることを見込んでいる場合は、Exchange Trusted Subsystem に対して共有への読み取り、書き込み、実行のアクセス許可を付与します。
     
@@ -359,17 +359,17 @@ $AllFiles | ForEach-Object {
 
 1. Microsoft ダウンロード センターから、[ MoveToColdStorage runbook](https://go.microsoft.com/fwlink/?LinkId=616095) をダウンロードします。
     
-2. Open the **Runbook Designer**, in the **Connections** pane, click the folder that you want to import the runbook into. Click the **Actions** menu, and the click **Import**. The **Import** dialog box appears.
+2. **Runbook Designer** を開き、 **[接続]** ウィンドウで、Runbook のインポート先のフォルダーをクリックします。 **[アクション]** メニューをクリックしてから、 **[インポート]** をクリックします。 **[インポート]** ダイアログ ボックスが表示されます。
     
 3. **[ファイルの場所]** ボックスで、インポートする Runbook のパスとファイル名を入力するか、省略記号 ( **...**) をクリックしてインポートするファイルを参照します。 
     
-4. Select **Import runbooks** and **Import Orchestrator encrypted data**. Clear **Counters**, **Schedules**, **Variables**, **Computer Groups**, **Import global configurations**, and **Overwrite existing global configurations**.
+4. **[Runbook のインポート]** と **[Orchestrator で暗号化されたデータのインポート]** を選びます。 **[カウンター]**、 **[スケジュール]**、 **[変数]**、 **[コンピューター グループ]**、 **[グローバル構成のインポート]**、 **[既存のグローバル設定の上書き]** をクリアします。
     
 5. [ **完了**] をクリックします。
     
 6. **MoveFilesToColdStorage** Runbook を次のように編集します。
     
-1. **Move File** activity - set the **Source File** path to the collection file share, for example \\\\Staging\\cases$. Set the **Destination Folder** to the cold storage file share in Azure, for example \\\\AZFile1\\ContentColdStorage. Select **Create a file with a unique name**.
+1. **[ファイルの移動]** アクティビティ - **[ソース ファイル]** のパスを、コレクション ファイル共有 (例: \\\\Staging\\cases$) に設定します。 **[移動先フォルダー]** を、Azure のコールド ストレージ ファイル共有 (例: \\\\AZFile1\\ContentColdStorage) に設定します。 **[一意の名前でファイルを作成する]** を選びます。
     
 2. **[フォルダーの削除]** アクティビティ - **[パス]** をコレクション ファイル共有 (例: \\\\Staging\\cases$\\*) に設定し、 **[すべてのファイルとサブフォルダーを削除する]** を選びます。 
     
@@ -377,17 +377,17 @@ $AllFiles | ForEach-Object {
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>コールド ストレージ用 SharePoint オンプレミス検索
 
-1. Create an new content source in your SharePoint 2013 farm for the cold storage share in Azure, for example \\\\AZFile1\\ContentColdStorage. For more information about managing content sources, see [Add, edit, or delete a content source in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. Azure のコールド ストレージ共有の SharePoint 2013 ファームに新しいコンテンツ ソースを作成します (例: \\\\AZFile1\\ContentColdStorage)。コンテンツ ソースの管理の詳細については、「[SharePoint Server 2013 でコンテンツ ソースを追加、編集、または削除する](https://go.microsoft.com/fwlink/p/?LinkId=615004)」をご覧ください。
     
-2. Start a full crawl. For more information see, [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+2. フル クロールを開始します。詳細については、「[SharePoint Server 2013 でクロールを開始、一時停止、再開、または停止する](https://go.microsoft.com/fwlink/p/?LinkId=615005)」をご覧ください。
     
 ## <a name="using-the-solution"></a>ソリューションの使用
 
-There are five major steps in using this solution, assuming you don't want to import the PST files into both Exchange Server 2013 and Exchange Online. This section provides you with the procedures for all of them. Your primary interaction with the solution will be in doing the following:
+Exchange Server 2013 と Exchange Online の両方に PST ファイルをインポートしないことを前提として、このソリューションの使用には主に 5 つのステップがあります。このセクションでは、このすべてのステップの手順について記載します。ソリューションでの主な操作は次のとおりです。
   
 1. 保管担当者グループのユーザー メンバーシップを管理する。
     
-2. Review the log files generated by the logon script. The FileCopyErrors.log lists all the files that were not successfully copied. You need to decide what you want to do with them
+2. エラー
     
 3. PST のインポート プロセスを管理する。
     
@@ -409,32 +409,32 @@ There are five major steps in using this solution, assuming you don't want to im
     
 ### <a name="custodian-management"></a>保管担当者管理
 
-- To start the automated file collection process for an individual user, add them to the Custodians group. The next time that the user logs on, the logon script assigned to the Custodians group through Group Policy will run. 
+- 個々のユーザーに対して自動ファイル収集プロセスを開始するには、このユーザーを Custodian グループに追加します。 次回ユーザーがログオンすると、グループ ポリシーを介して Custodian グループに割り当てられているログオン スクリプトが実行されます。 
     
 ### <a name="monitor-collected-files-and-review-log-files"></a>収集ファイルの監視とログ ファイルの確認
 
-1. Watch the collection file share, for example \\\\Staging\\cases$\\*, for the collection folder from the user. The name of the folder will be formatted like this:  *yyyyMMddHHmm_UserName*  .
+1. ユーザーのコレクション フォルダーのコレクション ファイル共有 (例: \\\\Staging\\cases$\\*) を監視します。フォルダーの名前は  *yyyyMMddHHmm_UserName*  のような形式になります。
     
-2. When the collection is completed, open the collection folder, and browse to the _Log folder. In the _Log folder, you will see the following:
+2. 収集が完了したら、コレクション フォルダーを開き、_Log フォルダーを参照します。_Log フォルダーに以下が表示されます。
     
-  - One XML file for every local drive on the user's computer, for example **A.xml**, **C.xml**. These files contain the inventory drives that they are named after, and they are used for the robocopy operation.
+  - ユーザーのコンピューターのローカル ドライブごとに 1 つの XML ファイル (例: **A.xml** 、 **C.xml** )。これらのファイルに含まれるインベントリ ドライブは、robocopy の操作にちなんだ名前が付けられ、その操作に使用されます。
     
     > [!NOTE]
-    > The collection script will only create an entry in the inventory file for the file types that you defined in the script itself. It will not create an inventory entry for every file on the user's computer. 
+    > コレクション スクリプトは、スクリプト自体で定義したファイルの種類のインベントリ ファイルだけにエントリを作成します。ユーザーのコンピューター上のすべてのファイルにインベントリのエントリが作成されるわけではありません。 
   
-  - One log file named FileCopyErrors.log for each collection run. This file contains a listing of the files that robocopy could not copy to the file collection share, for example, \\\\Staging\\cases$\\*. You will need to review this and decide what actions to take for these missed files. Usually, you either need to collect them manually if you want them, or you may decide that they are not required and can therefore be omitted from the collection.
+  - コレクションごとに FileCopyErrors.log という名前の 1 つのログ ファイルが実行されます。このファイルには、robocopy がファイル コレクション共有にコピーできなかったファイルの一覧が含まれています (例: \\\\Staging\\cases$\\*)。これを確認し、これらの不足しているファイルに対して実行するアクションを決定する必要があります。通常、ファイルが必要な場合は手動で収集するか、ファイルは不要であるためコレクションから省略してもよいと決定することができます。
     
 ### <a name="pst-import-option-a-for-exchange-server-2013"></a>PST インポートのオプション A (Exchange Server 2013 の場合)
 
-1. Log on to the server that hosts the collection file share, for example **Staging**, and open Windows PowerShell. For more information about starting Windows PowerShell, see[Starting Windows PowerShell on Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
+1. コレクション ファイル共有をホストするサーバーにログオンしてから (例: **ステージング** )、Windows PowerShell を開きます。Windows PowerShell の開始の詳細については、「[Windows サーバー上で Windows PowerShell を開始する](https://go.microsoft.com/fwlink/p/?LinkId=615115)」をご覧ください。
     
-2. Set the Execution policy to Unrestricted . Type  `Set-ExecutionPolicy Unrestricted -Scope Process` into Windows PowerShell, and press Enter.
+2. 実行ポリシーを無制限に設定します。Windows PowerShell に  `Set-ExecutionPolicy Unrestricted -Scope Process` と入力し、Enter キーを押します。
     
-3. Run the PSTImportScript.ps1 file, and provide the **$SourcePath** and **$MailboxAlias** parameters. For more information about running Windows PowerShell scripts, see[Running Scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
+3. PSTImportScript.ps1 ファイルを実行し、 **$SourcePath** パラメーターと **$MailboxAlias** パラメーターを指定します。Windows PowerShell スクリプトの実行の詳細については、「[スクリプトの実行](https://go.microsoft.com/fwlink/p/?LinkID=615117)」をご覧ください。
     
 4. エラーの出力を確認します。
     
-5. Before you attempt to import an identically named PST file into the same mailbox, you have to remove the mailbox import request. Run the following command to do that:  `Get-MailboxImportRequest | Remove-MailboxImportRequest`. You will be prompted to remove each individual request from the queue. Respond as needed.
+5. 同じメールボックスに同じ名前の PST ファイルをインポートしようとする前に、メールボックスのインポート要求を削除する必要があります。これを行うには、次のコマンドを実行します。 `Get-MailboxImportRequest | Remove-MailboxImportRequest`個々の要求をキューから削除するようにメッセージが表示されます。必要に応じて対処します。
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST インポートのオプション B (Exchange Online の場合)
 
@@ -444,11 +444,11 @@ There are five major steps in using this solution, assuming you don't want to im
 
 1. [Runbook の実行](https://go.microsoft.com/fwlink/p/?LinkId=615123)に関する手順を使用して、 **Movetocoldstorage** runbook を実行します。
     
-2. Watch the Azure file share you are using for long term storage, for example \\\\AZFile1\\ContentColdStorage and the on-premises collection file share, for example \\\\Staging\\cases$. You should see the files and folders appear in the cold storage file share and disappear from the collection file share.
+2. 長期保存用の Azure ファイル共有 (例: \\\\AZFile1\\ContentColdStorage) とオンプレミス コレクション ファイル共有 (例: \\\\Staging\\cases$) を監視します。ファイルとフォルダーがコールド ストレージのファイル共有に表示され、コレクション ファイル共有からは非表示になります。
     
 ### <a name="ediscovery"></a>電子情報開示
 
-1. Either allow the full crawl of the cold storage file share to run as schedules, or initiate a crawl. For more information on starting full or incremental crawls, see [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+1. コールド ストレージ ファイル共有のフル クロールをスケジュールとして実行できるようにするか、クロールを開始できるようにします。フル クロールまたは増分クロールの開始の詳細については、「[SharePoint Server 2013 でクロールを開始、一時停止、再開、または停止する](https://go.microsoft.com/fwlink/p/?LinkId=615005)」をご覧ください。
     
 2. PST ファイルのインポートにオプション A を使用した場合は、SharePoint 2013 に eDiscovery ケースを作成します。オプション B を使用した場合は、SharePoint Online に eDiscovery ケースを作成します。
     

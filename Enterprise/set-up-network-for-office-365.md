@@ -30,7 +30,7 @@ ms.locfileid: "44735661"
 
 *この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
+Microsoft 365 オンボードの重要な部分は、ネットワークとインターネット接続が最適なアクセスのためにセットアップされていることを確認することです。グローバルに分散されたソフトウェア (SaaS) クラウドにアクセスするようにオンプレミスネットワークを構成することは、社内データセンターへのトラフィック用に最適化された従来のネットワークや中央のインターネット接続とは異なります。 
 
 以下の記事を活用して主な違いを理解し、エッジ デバイス、クライアント コンピューター、オンプレミス ネットワークを変更して、オンプレミス ユーザーの最高のパフォーマンスを引き出します。
 
@@ -46,17 +46,17 @@ Microsoft 365 の接続の概要については、次の記事を参照してく
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>ネットワーク機器ベンダーとしての Microsoft 365 ネットワークのサポート
 
-If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
+ネットワーク機器業者のお客様は、[Office 365 ネットワーク パートナー プログラム](office-365-networking-partner-program.md)にぜひご参加ください。ご参加いただくと、Office 365 のネットワーク接続の基本原則をお客様の会社の製品とソリューションに組み込んでいただけます。 
 
 ## <a name="office-365-endpoints"></a>Office 365 エンドポイント
 
 エンドポイントとは、インターネット上の Office 365 トラフィックの宛先 IP アドレス、DNS ドメイン名、URL のセットのことです。 
 
-To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
+Office 365 のクラウドベース サービスのパフォーマンスを最適化するには、クライアント ブラウザーと境界ネットワーク内のデバイスを使用し、一部のエンドポイントに対して特別な処理を行う必要があります。これらのデバイスには、ファイアウォール、SSL 中断/検査とパケット検査デバイス、およびデータ損失防止システムが含まれます。
 
 詳細については、「[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)」を参照してください。
 
-There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
+現在、5 つの異なる Office 365 クラウドがあります。この表からそれぞれのクラウドのエンドポイント一覧へ移動できます。
 
 |||
 |:-------|:-----|
