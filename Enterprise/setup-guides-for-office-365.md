@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: セットアップガイドを使用して、Microsoft 365 または Office 365 の計画と構成を促進します。
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735975"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201631"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -103,6 +103,15 @@ Gmail ユーザーのメールボックスを Microsoft 365 に移行すると�
 | **実行** | [リモート作業セットアップガイド](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Windows 仮想デスクトップセットアップガイド
+
+Windows 仮想デスクトップは、クラウドで実行される包括的なデスクトップおよびアプリケーション仮想化サービスです。 これは、簡略化された管理、マルチセッション Windows 10、Microsoft 365 アプリの最適化、およびリモートデスクトップサービス (RDS) 環境のサポートを提供する唯一の仮想デスクトップインフラストラクチャ (VDI) です。 Windows デスクトップとアプリを数分で Azure に展開して拡張し、組み込みのセキュリティ機能とコンプライアンス機能を利用できます。 **Windows 仮想デスクトップセットアップガイド**は、管理者に、リソースの計画と、展開、セットアップのガイダンス、およびその他のリソースに関する前提条件を提供します。 
+
+|||
+|:-------|:-----|
+| **実行** | [Windows 仮想デスクトップセットアップガイド](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>セキュリティガイド
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD セットアップガイド
@@ -112,6 +121,15 @@ Gmail ユーザーのメールボックスを Microsoft 365 に移行すると�
 |||
 |:-------|:-----|
 | **実行** | [Azure AD セットアップガイド](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>パスワードの展開を計画する
+
+ユーザーがデバイスに安全にアクセスできるようにするための代替サインイン方法にアップグレードします。 Windows Hello for Business、Microsoft Authenticator アプリ、セキュリティキーのいずれかのパスワードを使用します。 このウィザードを使用すると、適切な passwordless 認証方法を使用して、それらの展開方法に関するガイダンスを受信することができます。
+
+|||
+|:-------|:-----|
+| **実行** | [パスワードの展開を計画する](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender Advanced Threat Protection (ATP) advisor

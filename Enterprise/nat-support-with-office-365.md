@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: '概要: ネットワーク アドレス変換 (NAT) を使用して、組織内で IP アドレスごとに使用できるクライアントの正しい数を見積もる方法の詳細について説明します。'
-ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998542"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201611"
 ---
 # <a name="nat-support-with-office-365"></a>Office 365 の NAT サポート
 
@@ -40,7 +40,7 @@ NAT の使用により、企業ネットワークの何千人ものユーザー�
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Office 365 に対して多数の接続を同時に開く必要があるのはなぜですか。
 
-Outlook は、(アドイン、共有の予定表、メールボックスなどが存在する状況で) 8 つ以上の接続を開くことができます。Windows ベースの NAT デバイス上では最大 64,000 ポートが利用可能なので、ポートを使い切るまでに 1 つの IP アドレスに最大 8,000 のユーザーを持つことができます。顧客が NAT に Windows OS ベース以外のデバイスを使用している場合、利用可能な合計ポート数は使用している NAT デバイスまたはソフトウェアに依存することに注意してください。このシナリオでは、ポートの最大数は 64,000 未満にすることができます。ポートの可用性は、Windows 自身が使用する 4,000 ポートを制限するなどの他の要因によっても影響を受け、これによって利用可能なポートの総数は 60,000 に減ります。Internet Explorer などのアプリケーションは同時接続が可能であり、さらにポートを必要とします。
+Outlook では、8つ以上の接続を開くことができます (アドイン、共有の予定表、メールボックスなどがある場合)。Windows ベースの NAT デバイスで使用できる最大64000ポートがあるため、IP アドレスの後ろには最大で8000のユーザーがいて、そのポートを使い切ることはできません。お客様が Windows 以外の OS ベースのデバイスを NAT 用に使用している場合は、使用可能なポートの合計数は、どの NAT デバイスまたはソフトウェアが使用されているかによって決まります。このシナリオでは、ポートの最大数は64000未満になる可能性があります。ポートの可用性も、Windows が独自に使用するために4000ポートを制限するなど、他の要因によって影響を受けます。これにより、使用可能なポートの合計数が6万に減少します。Internet Explorer などの他のアプリケーションが同時に接続することができ、追加のポートが必要になることがあります。
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Office 365 で単一のパブリック IP アドレスにサポートされるデバイスの最大数の計算
 
