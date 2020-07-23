@@ -3,7 +3,7 @@ title: ハイブリッド ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,42 +16,42 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。'
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998015"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229953"
 ---
-# <a name="hybrid-solutions"></a><span data-ttu-id="5054b-103">ハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="5054b-103">Hybrid solutions</span></span>
+# <a name="hybrid-solutions"></a><span data-ttu-id="79353-103">ハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="79353-103">Hybrid solutions</span></span>
 
-<span data-ttu-id="5054b-104">Microsoft Azure を使用すれば、通常ならオンプレミスで展開されていた一部の Office Server ワークロードを Azure インフラストラクチャ サービスで展開できるようになります。</span><span class="sxs-lookup"><span data-stu-id="5054b-104">With Microsoft Azure, you can now deploy some Office Server workloads that were typically deployed on-premises in Azure infrastructure services.</span></span>
+<span data-ttu-id="79353-104">Microsoft Azure を使用すると、通常は Azure インフラストラクチャサービスで展開された Office Server ワークロードを展開できます。</span><span class="sxs-lookup"><span data-stu-id="79353-104">With Microsoft Azure, you can deploy some Office Server workloads that were typically deployed on-premises in Azure infrastructure services.</span></span>
   
-<span data-ttu-id="5054b-105">Azure の Microsoft 365 id インフラストラクチャの場合:</span><span class="sxs-lookup"><span data-stu-id="5054b-105">For Microsoft 365 identity infrastructure in Azure:</span></span>
+<span data-ttu-id="79353-105">Azure の Microsoft 365 id インフラストラクチャの場合:</span><span class="sxs-lookup"><span data-stu-id="79353-105">For Microsoft 365 identity infrastructure in Azure:</span></span>
 
-- [<span data-ttu-id="5054b-106">Azure AD for SharePoint サーバー認証の使用</span><span class="sxs-lookup"><span data-stu-id="5054b-106">Using Azure AD for SharePoint Server Authentication</span></span>](using-azure-ad-for-sharepoint-server-authentication.md)
+- [<span data-ttu-id="79353-106">Azure AD for SharePoint サーバー認証の使用</span><span class="sxs-lookup"><span data-stu-id="79353-106">Using Azure AD for SharePoint Server Authentication</span></span>](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [<span data-ttu-id="5054b-107">Microsoft Azure での Microsoft 365 ディレクトリ同期の展開</span><span class="sxs-lookup"><span data-stu-id="5054b-107">Deploy Microsoft 365 Directory Synchronization in Microsoft Azure</span></span>](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [<span data-ttu-id="79353-107">Microsoft Azure での Microsoft 365 ディレクトリ同期の展開</span><span class="sxs-lookup"><span data-stu-id="79353-107">Deploy Microsoft 365 Directory Synchronization in Microsoft Azure</span></span>](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
-- [<span data-ttu-id="5054b-108">オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する</span><span class="sxs-lookup"><span data-stu-id="5054b-108">Connect an on-premises network to a Microsoft Azure virtual network</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+- [<span data-ttu-id="79353-108">オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する</span><span class="sxs-lookup"><span data-stu-id="79353-108">Connect an on-premises network to a Microsoft Azure virtual network</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [<span data-ttu-id="5054b-109">Azure に Microsoft 365 の高可用性フェデレーション認証を展開する</span><span class="sxs-lookup"><span data-stu-id="5054b-109">Deploy high availability federated authentication for Microsoft 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [<span data-ttu-id="79353-109">Azure に Microsoft 365 の高可用性フェデレーション認証を展開する</span><span class="sxs-lookup"><span data-stu-id="79353-109">Deploy high availability federated authentication for Microsoft 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
-<span data-ttu-id="5054b-110">以下は Azure の SharePoint Server 2013 ワークロード向けです。</span><span class="sxs-lookup"><span data-stu-id="5054b-110">For SharePoint Server 2013 workloads in Azure:</span></span>
+<span data-ttu-id="79353-110">以下は Azure の SharePoint Server 2013 ワークロード向けです。</span><span class="sxs-lookup"><span data-stu-id="79353-110">For SharePoint Server 2013 workloads in Azure:</span></span>
   
-- [<span data-ttu-id="5054b-111">SharePoint 2013 用の Microsoft Azure アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="5054b-111">Microsoft Azure Architectures for SharePoint 2013</span></span>](microsoft-azure-architectures-for-sharepoint-2013.md)
+- [<span data-ttu-id="79353-111">SharePoint 2013 用の Microsoft Azure アーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="79353-111">Microsoft Azure Architectures for SharePoint 2013</span></span>](microsoft-azure-architectures-for-sharepoint-2013.md)
     
-- [<span data-ttu-id="5054b-112">Microsoft Azure での SharePoint Server 2013 の障害復旧</span><span class="sxs-lookup"><span data-stu-id="5054b-112">SharePoint Server 2013 Disaster Recovery in Microsoft Azure</span></span>](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+- [<span data-ttu-id="79353-112">Microsoft Azure での SharePoint Server 2013 の障害復旧</span><span class="sxs-lookup"><span data-stu-id="79353-112">SharePoint Server 2013 Disaster Recovery in Microsoft Azure</span></span>](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [<span data-ttu-id="5054b-113">SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト</span><span class="sxs-lookup"><span data-stu-id="5054b-113">Internet Sites in Microsoft Azure using SharePoint Server 2013</span></span>](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [<span data-ttu-id="79353-113">SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト</span><span class="sxs-lookup"><span data-stu-id="79353-113">Internet Sites in Microsoft Azure using SharePoint Server 2013</span></span>](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="see-also"></a><span data-ttu-id="5054b-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="5054b-114">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="79353-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="79353-114">See Also</span></span>
 
-[<span data-ttu-id="5054b-115">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="5054b-115">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.yml)
+[<span data-ttu-id="79353-115">クラウド導入およびハイブリッド ソリューション</span><span class="sxs-lookup"><span data-stu-id="79353-115">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.yml)
   
-[<span data-ttu-id="5054b-116">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="5054b-116">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="79353-116">Microsoft クラウド IT アーキテクチャのリソース</span><span class="sxs-lookup"><span data-stu-id="79353-116">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[<span data-ttu-id="5054b-117">Microsoft 365 for enterprise のテストラボガイド (TLGs)</span><span class="sxs-lookup"><span data-stu-id="5054b-117">Microsoft 365 for enterprise Test Lab Guides (TLGs)</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
+[<span data-ttu-id="79353-117">Microsoft 365 for enterprise のテストラボガイド (TLGs)</span><span class="sxs-lookup"><span data-stu-id="79353-117">Microsoft 365 for enterprise Test Lab Guides (TLGs)</span></span>](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
-[<span data-ttu-id="5054b-118">SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル</span><span class="sxs-lookup"><span data-stu-id="5054b-118">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[<span data-ttu-id="79353-118">SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル</span><span class="sxs-lookup"><span data-stu-id="79353-118">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

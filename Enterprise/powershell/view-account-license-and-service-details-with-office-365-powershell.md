@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
+title: PowerShell を使用して Microsoft 365 アカウントのライセンスとサービスの詳細を表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,31 +18,33 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
-ms.openlocfilehash: 603470be87aea2d58f343511026fb2860e58b688
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: PowerShell を使用して、ユーザーに割り当てられている Microsoft 365 サービスを確認する方法について説明します。
+ms.openlocfilehash: 73af2fd40df8b36507250edcef48359e9d555a7f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004490"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230243"
 ---
-# <a name="view-account-license-and-service-details-with-office-365-powershell"></a><span data-ttu-id="b8ebf-103">Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="b8ebf-103">View account license and service details with Office 365 PowerShell</span></span>
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a><span data-ttu-id="9231a-103">PowerShell を使用して Microsoft 365 アカウントのライセンスとサービスの詳細を表示する</span><span class="sxs-lookup"><span data-stu-id="9231a-103">View Microsoft 365 account license and service details with PowerShell</span></span>
 
-<span data-ttu-id="b8ebf-104">Office 365 のライセンスプラン (Sku または Office 365 プランとも呼ばれます) からのライセンスでは、これらのプランに対して定義されている Office 365 サービスへのアクセス権がユーザーに付与されます。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-104">In Office 365, licenses from licensing plans (also called SKUs or Office 365 plans) give users access to the Office 365 services that are defined for those plans.</span></span> <span data-ttu-id="b8ebf-105">しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-105">However, a user might not have access to all the services that are available in a license that's currently assigned to them.</span></span> <span data-ttu-id="b8ebf-106">Office 365 PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-106">You can use Office 365 PowerShell to view the status of services on user accounts.</span></span> 
+<span data-ttu-id="9231a-104">*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*</span><span class="sxs-lookup"><span data-stu-id="9231a-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="b8ebf-107">ライセンスプラン、ライセンス、およびサービスの詳細については、「 [Office 365 PowerShell でライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-107">For more information about licensing plans, license, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="9231a-105">Microsoft 365 では、ライセンスプラン (Sku または Microsoft 365 プランとも呼ばれます) からのライセンスで、これらのプランに対して定義されている Microsoft 365 サービスへのアクセス権をユーザーに付与します。</span><span class="sxs-lookup"><span data-stu-id="9231a-105">In Microsoft 365, licenses from licensing plans (also called SKUs or Microsoft 365 plans) give users access to the Microsoft 365 services that are defined for those plans.</span></span> <span data-ttu-id="9231a-106">しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。</span><span class="sxs-lookup"><span data-stu-id="9231a-106">However, a user might not have access to all the services that are available in a license that's currently assigned to them.</span></span> <span data-ttu-id="9231a-107">Microsoft 365 の PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。</span><span class="sxs-lookup"><span data-stu-id="9231a-107">You can use PowerShell for Microsoft 365 to view the status of services on user accounts.</span></span> 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="b8ebf-108">Graph モジュールの Azure Active Directory PowerShell を使用する</span><span class="sxs-lookup"><span data-stu-id="b8ebf-108">Use the Azure Active Directory PowerShell for Graph module</span></span>
+<span data-ttu-id="9231a-108">ライセンスプラン、ライセンス、およびサービスの詳細については、「 [PowerShell を使用してライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9231a-108">For more information about licensing plans, license, and services, see [View licenses and services with PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
 
-<span data-ttu-id="b8ebf-109">まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-109">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="9231a-109">Graph 用 Azure Active Directory PowerShell モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="9231a-109">Use the Azure Active Directory PowerShell for Graph module</span></span>
+
+<span data-ttu-id="9231a-110">最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。</span><span class="sxs-lookup"><span data-stu-id="9231a-110">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
-<span data-ttu-id="b8ebf-110">次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-110">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="9231a-111">次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9231a-111">Next, list the license plans for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="b8ebf-111">各ライセンスプランで利用可能なサービスを一覧表示するには、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-111">Use these commands to list the services that are available in each licensing plan.</span></span>
+<span data-ttu-id="9231a-112">各ライセンスプランで利用可能なサービスを一覧表示するには、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="9231a-112">Use these commands to list the services that are available in each licensing plan.</span></span>
 
 ```powershell
 $allSKUs=Get-AzureADSubscribedSku
@@ -56,7 +58,7 @@ $licArray +=  ""
 $licArray
 ```
 
-<span data-ttu-id="b8ebf-112">ユーザーアカウントに割り当てられているライセンスの一覧を表示するには、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-112">Use these commands to list the licenses that are assigned to a user account.</span></span>
+<span data-ttu-id="9231a-113">ユーザーアカウントに割り当てられているライセンスの一覧を表示するには、次のコマンドを使用します。</span><span class="sxs-lookup"><span data-stu-id="9231a-113">Use these commands to list the licenses that are assigned to a user account.</span></span>
 
 ```powershell
 $userUPN="<user account UPN, such as belindan@contoso.com>"
@@ -65,52 +67,52 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="b8ebf-113">Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="b8ebf-113">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="9231a-114">Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する</span><span class="sxs-lookup"><span data-stu-id="9231a-114">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="b8ebf-114">まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-114">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="9231a-115">最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。</span><span class="sxs-lookup"><span data-stu-id="9231a-115">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="b8ebf-115">次に、このコマンドを実行して、組織で使用可能なライセンスプランを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-115">Next, run this command to list the licensing plans that are available in your organization.</span></span> 
+<span data-ttu-id="9231a-116">次に、このコマンドを実行して、組織で使用可能なライセンスプランを一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9231a-116">Next, run this command to list the licensing plans that are available in your organization.</span></span> 
 
 ```powershell
 Get-MsolAccountSku
 ```
 >[!Note]
-><span data-ttu-id="b8ebf-116">PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-116">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="b8ebf-117">これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-117">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="9231a-117">PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="9231a-117">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="9231a-118">これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9231a-118">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="b8ebf-118">次に、このコマンドを実行して、各ライセンスプランで使用可能なサービスと、それらが表示される順序 (インデックス番号) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-118">Next, run this command to list the services that are available in each licensing plan, and the order in which they are listed (the index number).</span></span>
+<span data-ttu-id="9231a-119">次に、このコマンドを実行して、各ライセンスプランで使用可能なサービスと、それらが表示される順序 (インデックス番号) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9231a-119">Next, run this command to list the services that are available in each licensing plan, and the order in which they are listed (the index number).</span></span>
 
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
   
-<span data-ttu-id="b8ebf-119">このコマンドを使用して、ユーザーに割り当てられているライセンスと、ユーザーが表示される順序 (インデックス番号) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-119">Use this command to list the licenses that are assigned to a user, and the order in which they are listed (the index number).</span></span>
+<span data-ttu-id="9231a-120">このコマンドを使用して、ユーザーに割り当てられているライセンスと、ユーザーが表示される順序 (インデックス番号) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="9231a-120">Use this command to list the licenses that are assigned to a user, and the order in which they are listed (the index number).</span></span>
 
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ```
 
-### <a name="to-view-services-for-a-user-account"></a><span data-ttu-id="b8ebf-120">ユーザーアカウントのサービスを表示するには</span><span class="sxs-lookup"><span data-stu-id="b8ebf-120">To view services for a user account</span></span>
+### <a name="to-view-services-for-a-user-account"></a><span data-ttu-id="9231a-121">ユーザーアカウントのサービスを表示するには</span><span class="sxs-lookup"><span data-stu-id="9231a-121">To view services for a user account</span></span>
 
-<span data-ttu-id="b8ebf-121">ユーザーがアクセスできるすべての Office 365 サービスを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-121">To view all the Office 365 services that a user has access to, use the following syntax:</span></span>
+<span data-ttu-id="9231a-122">ユーザーがアクセスできるすべての Microsoft 365 サービスを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="9231a-122">To view all the Microsoft 365 services that a user has access to, use the following syntax:</span></span>
   
 ```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
 ```
 
-<span data-ttu-id="b8ebf-122">この例では、ユーザー BelindaN@litwareinc.com がアクセスできるサービスを表示します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-122">This example shows the services to which the user BelindaN@litwareinc.com has access.</span></span> <span data-ttu-id="b8ebf-123">これにより、このユーザーのアカウントに割り当てられているすべてのライセンスに関連付けられているサービスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-123">This shows the services that are associated with all licenses that are assigned to her account.</span></span>
+<span data-ttu-id="9231a-123">この例では、ユーザー BelindaN@litwareinc.com がアクセスできるサービスを表示します。</span><span class="sxs-lookup"><span data-stu-id="9231a-123">This example shows the services to which the user BelindaN@litwareinc.com has access.</span></span> <span data-ttu-id="9231a-124">これにより、このユーザーのアカウントに割り当てられているすべてのライセンスに関連付けられているサービスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9231a-124">This shows the services that are associated with all licenses that are assigned to her account.</span></span>
   
 ```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses.ServiceStatus
 ```
 
-<span data-ttu-id="b8ebf-124">次の例では、ユーザー BelindaN@litwareinc.com が、アカウントに割り当てられている最初のライセンス (インデックス番号 0) からアクセスできるサービスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-124">This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).</span></span>
+<span data-ttu-id="9231a-125">次の例では、ユーザー BelindaN@litwareinc.com が、アカウントに割り当てられている最初のライセンス (インデックス番号 0) からアクセスできるサービスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9231a-125">This example shows the services that user BelindaN@litwareinc.com has access to from the first license that's assigned to her account (the index number is 0).</span></span>
   
 ```powershell
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
 ```
 
-<span data-ttu-id="b8ebf-125">*複数のライセンス*が割り当てられているユーザーのすべてのサービスを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="b8ebf-125">To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:</span></span>
+<span data-ttu-id="9231a-126">*複数のライセンス*が割り当てられているユーザーのすべてのサービスを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="9231a-126">To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:</span></span>
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -125,10 +127,10 @@ $licArray +=  ""
 $licArray
 ```
  
-## <a name="see-also"></a><span data-ttu-id="b8ebf-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="b8ebf-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9231a-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="9231a-127">See also</span></span>
 
-[<span data-ttu-id="b8ebf-127">Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する</span><span class="sxs-lookup"><span data-stu-id="b8ebf-127">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="9231a-128">PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する</span><span class="sxs-lookup"><span data-stu-id="9231a-128">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="b8ebf-128">Office 365 PowerShell による Office 365 の管理</span><span class="sxs-lookup"><span data-stu-id="b8ebf-128">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="9231a-129">PowerShell を使用して Microsoft 365 を管理する</span><span class="sxs-lookup"><span data-stu-id="9231a-129">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="b8ebf-129">Office 365 PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="b8ebf-129">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="9231a-130">Microsoft 365 の PowerShell の概要</span><span class="sxs-lookup"><span data-stu-id="9231a-130">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
