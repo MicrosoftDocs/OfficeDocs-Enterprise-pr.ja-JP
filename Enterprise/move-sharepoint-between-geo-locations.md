@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: SharePoint サイトを別のジオ位置情報に移動する方法について説明します。
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057997"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201621"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -27,7 +27,7 @@ SharePoint サイトの地域移動を使って、SharePoint サイトを複数�
 次のサイトの種類は地域のジオ位置情報間を移動することができます。
 
 - Microsoft 365 グループに接続されているサイト
-- Microsoft 365 グループに関連付けられていない最新のサイト
+- Microsoft 365 グループと関連付けのないモダン サイト
 - 従来の SharePoint サイト
 - コミュニケーション サイト
 
@@ -112,9 +112,9 @@ https://Contoso.sharepoint.com/sites/projectx から https://ContosoEUR.sharepoi
 
 ![Start-SPOSiteContentMove コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Microsoft 365 グループが接続されているサイトへ SharePoint サイトの地域の移動を開始する
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Microsoft 365 グループが接続されているサイトへ SharePoint サイトの地域の移動を開始する
 
-Microsoft 365 グループが接続されているサイトへ移動するには、全体管理者は、優先されるデータの場所 (PDL) を Microsoft 365 グループの属性に最初に変更する必要があります。
+Office 365 グループ接続のサイトへ移動するには、グローバル管理者または SharePoint 管理者がまず、優先されるデータの場所 (PDL) を Office 365 グループの属性に最初に変更しなければなりません。
 
 Microsoft 365 グループの PDL を設定するには:
 
