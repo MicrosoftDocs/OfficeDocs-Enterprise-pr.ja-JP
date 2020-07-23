@@ -15,6 +15,7 @@
 ### ID の計画
 #### [ID モデル](about-office-365-identity.md)
 #### [ハイブリッド ID](plan-for-directory-synchronization.md)
+#### [Microsoft 365 アカウントを管理するためのツール](tools-to-manage-office-365-accounts.md)
 
 ### [Microsoft 365 のサードパーティの SSL 証明書の計画](plan-for-third-party-ssl-certificates.md)
 ### [Microsoft 365 および Office 365 サービスのセットアップ ガイド](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [クラウド専用 ID](cloud-only-identities.md)
 ### ハイブリッド ID
 #### [ディレクトリ同期を準備する](prepare-for-directory-synchronization.md)
+#### [ディレクトリ同期のために非ルーティング ドメインの準備を整える](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### IdFix ツールを使用する
 ##### [IdFix ツールを使用してディレクトリ属性を準備する](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [IdFix ツールのダウンロードと実行](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Office 365 データセンター内の顧客データ](o365-data-locations.md)
 
 ### ハイブリッド ソリューション
+#### [概要](hybrid-solutions.md)
 #### [SharePoint Server 2016 認証に Azure Active Directory を使用する](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [オンプレミス ネットワークを Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Azure IaaS でディレクトリ同期サーバーを展開する](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Microsoft 365 ビデオでのテナントの分離](office-365-isolation-in-office-365-video.md)
 ### [Microsoft Graph と Delve でのテナントの分離](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell for Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Microsoft 365 コンプライアンス](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 セキュリティ](https://docs.microsoft.com/microsoft-365/security/)
 # [一般法人向け Microsoft 365](https://www.microsoft.com/microsoft-365/business)
