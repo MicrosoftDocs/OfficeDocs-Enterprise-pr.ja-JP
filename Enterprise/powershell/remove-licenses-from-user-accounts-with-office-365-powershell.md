@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
+title: PowerShell を使用してユーザーアカウントから Microsoft 365 ライセンスを削除する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/30/2020
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,21 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 ライセンスを削除する方法について説明します。
-ms.openlocfilehash: 0b21415b5acbd2c332d9bc171a5ab80cb7954b95
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: PowerShell を使用して、ユーザーに割り当てられていた Microsoft 365 ライセンスを削除する方法について説明します。
+ms.openlocfilehash: 5f46cfeb075d83504e3562e60e3dfd70a53dd136
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997413"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230393"
 ---
-# <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントからライセンスを削除する
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>PowerShell を使用してユーザーアカウントから Microsoft 365 ライセンスを削除する
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
+
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
 
 次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
 
@@ -81,15 +83,15 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 }}
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
    
 組織のライセンス プラン (**AccountSkuID**) 情報を表示する方法については、以下のトピックをご覧ください。
     
-  - [Office 365 PowerShell でライセンスとサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)
+  - [PowerShell を使用してライセンスとサービスを表示する](view-licenses-and-services-with-office-365-powershell.md)
     
-  - [Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
+  - [PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する](view-account-license-and-service-details-with-office-365-powershell.md)
     
 _-All_ パラメーターなしで **Get-MsolUser** コマンドレットを使用する場合、最初の 500 個のアカウントだけが返されます。
     
@@ -176,13 +178,13 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。詳細については、「[Office 365 PowerShell を使用したユーザー アカウントの削除と復元](delete-and-restore-user-accounts-with-office-365-powershell.md)」を参照してください。
+別の方法として、ユーザー アカウントを削除してライセンスを解放することもできます。 詳細については、「 [PowerShell を使用してユーザーアカウントを削除および復元](delete-and-restore-user-accounts-with-office-365-powershell.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 

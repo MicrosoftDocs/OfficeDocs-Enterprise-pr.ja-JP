@@ -1,5 +1,5 @@
 ---
-title: Azure に Office 365 の高可用性フェデレーション認証を展開する
+title: Azure に Microsoft 365 の高可用性フェデレーション認証を展開する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150s
 ms.collection:
@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 概要:Microsoft Azure で Office 365 サブスクリプションの高可用性フェデレーション認証を構成します。
-ms.openlocfilehash: af73f75b7ac1e3151ddb5c55acdf49a48f784e95
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: '概要: Microsoft Azure の Microsoft 365 サブスクリプションの高可用性フェデレーション認証を構成します。'
+ms.openlocfilehash: 98b8bdff708d02f866a3e2f2d2521bec5b011bb7
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840524"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230053"
 ---
-# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Azure に Office 365 の高可用性フェデレーション認証を展開する
+# <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>Azure に Microsoft 365 の高可用性フェデレーション認証を展開する
 
-この記事には、次に示す仮想マシンを装備した Azure インフラストラクチャ サービスに Microsoft Office 365 の高可用性フェデレーション認証を展開するための詳細な手順へのリンクが含まれています。
+この記事では、次の仮想マシンを使用した Azure インフラストラクチャサービスに Microsoft Microsoft 365 の高可用性フェデレーション認証を展開するための詳細な手順へのリンクを示します。
   
 - 2 つの Web アプリケーション プロキシ サーバー
     
@@ -40,9 +40,9 @@ ms.locfileid: "41840524"
     
 各サーバーのプレース ホルダー名を使用した構成がこちらです。
   
-**Azure での Office 365 インフラストラクチャの高可用性フェデレーション認証**
+**Azure での Microsoft 365 インフラストラクチャの高可用性フェデレーション認証**
 
-![Azure での高可用性 Office 365 フェデレーション認証インフラストラクチャの最終構成](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Azure での高可用性 Microsoft 365 フェデレーション認証インフラストラクチャの最終構成](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 すべての仮想マシンが単一のクロスプレミス Azure 仮想ネットワーク (VNet) に入っています。 
   
@@ -54,7 +54,7 @@ ms.locfileid: "41840524"
 > [!NOTE]
 > この VNet はオンプレミスのネットワークに接続されているため、この構成に管理サブネット上の jumpbox や仮想マシンの監視は含まれません。詳細については、「[N 層のアーキテクチャで Windows VM を実行する](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)」を参照してください。 
   
-この構成の結果として、すべての Office 365 ユーザーがフェデレーション認証を使用できるようになります。この認証では、Office 365 アカウントではなく、AD DS の資格情報を使用してサインインすることができます。 フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
+この構成の結果として、microsoft 365 のすべてのユーザーに対してフェデレーション認証を受けることができます。これにより、自分の AD DS の資格情報を使用して、Microsoft 365 アカウントではなくサインインすることができます。 フェデレーション認証インフラストラクチャでは、オンプレミスの境界ネットワークよりも Azure インフラストラクチャ サービスでより簡単に展開できるサーバーの冗長セットが使用されます。
   
 ## <a name="bill-of-materials"></a>部品表
 
@@ -96,15 +96,15 @@ ms.locfileid: "41840524"
     
 - [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。2 つの Web アプリケーション プロキシ サーバーを作成して構成します。
     
-- [フェーズ 5: Office 365 のフェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。Office 365 サブスクリプションのフェデレーション認証を構成します。
+- [フェーズ 5: Microsoft 365 のフェデレーション認証を構成](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)します。Microsoft 365 サブスクリプションのフェデレーション認証を構成します。
     
-この記事では、定義済みのアーキテクチャを使用して、Azure インフラストラクチャ サービスに Office 365 の機能的な高可用性フェデレーション認証を作成するためのフェーズごとの規範となるガイドを提供します。以下の点にご注意ください。
+これらの記事では、Azure インフラストラクチャサービスで Microsoft 365 の機能的な高可用性フェデレーション認証を作成するための、事前定義されたアーキテクチャに関する規範的なフェーズごとのガイドを提供します。次の点に注意してください。
   
 - 経験豊富な AD FS の実行者である場合、フェーズ 3 と 4 の手順を自由に適応させて、自分のニーズに最適なサーバーのセットを構築できます。
     
 - 既存のクロスプレミスの仮想ネットワークを使用した既存の Azure ハイブリッド クラウド展開がある場合は、フェーズ 1 と 2 の手順を自由に適応させるかスキップして、AD FS と Web アプリケーション プロキシ サーバーを適切なサブネットに配置できます。
     
-開発/テスト環境、またはこの構成の概念実証を構築するには、「[Office 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-office-365-dev-test-environment.md)」を参照してください。
+開発/テスト環境、またはこの構成の概念実証を構築するには、「 [Microsoft 365 開発/テスト環境のフェデレーション id](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)」を参照してください。
   
 ## <a name="next-step"></a>次の手順
 

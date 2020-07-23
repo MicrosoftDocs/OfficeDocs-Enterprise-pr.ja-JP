@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
+title: Microsoft 365 の PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 概要:Office 365 PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てます。
-ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
-ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
+description: '概要: Microsoft 365 の PowerShell を使用して、ユーザーごとに Skype for Business Online のポリシーを使用して通信の設定を割り当てます。'
+ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44719968"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229844"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Microsoft 365 の PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる
 
-Office 365 PowerShell を使用することで、効率的にユーザーごとに Skype for Business Online のポリシーを適用した通信の設定を割り当てることができます。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+Microsoft 365 に PowerShell を使用することで、効率的にユーザーごとに Skype for Business Online のポリシーを使用して通信の設定を割り当てることができます。
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -56,7 +58,7 @@ Alex を割り当てる外部アクセスポリシーを決定するには、ど
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Microsoft.rtc.management.writableconfig.policy.externalaccess.externalaccesspolicy のカスタムインスタンスを作成していない場合、このコマンドは条件 (FederationOnly) に一致する1つのポリシーを返します。 次に例を示します。
+Microsoft.rtc.management.writableconfig.policy.externalaccess.externalaccesspolicy のカスタムインスタンスを作成していない場合、このコマンドは条件 (FederationOnly) に一致する1つのポリシーを返します。 次に例を示します：
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -136,8 +138,8 @@ $count = 0
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-with-office-365-powershell.md)
+[PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)

@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用して Skype for Business Online を管理する
+title: PowerShell を使用して Skype for Business Online を管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 概要:Office 365 PowerShell を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: '概要: Microsoft 365 の PowerShell を使用して、Skype for Business Online ポリシー、ユーザーごとのポリシー、会議の設定を管理します。'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415939"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230443"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
+# <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
-Skype for Business Online 管理者にとって主要なタスクの 1 つはポリシーを管理することです。 Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、Office 365 PowerShell のほうがより早く簡単に実行できます。 
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+Skype for Business Online 管理者にとって主要なタスクの 1 つはポリシーを管理することです。 これらのタスクの一部は Microsoft 365 管理センターで実行できますが、PowerShell では、他のタスクがより速く、簡単になります。 
 
 ## <a name="before-you-start"></a>始める前に
 
@@ -60,17 +62,17 @@ Skype for Business Online 管理者にとって主要なタスクの 1 つはポ
 
 4. [**アカウントにサインイン**する] ダイアログボックスの指示に従って、検証コードなどの追加の認証情報を入力し、[**確認**] をクリックします。
 
-詳細については、以下のトピックをご覧ください。
+詳細については、次のトピックをご覧ください。
   
-- [Office 365 PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [PowerShell を使用して Skype for Business Online のポリシーを管理する](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Office 365 PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [PowerShell を使用してユーザーごとに Skype for Business Online のポリシーを割り当てる](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 
 [Skype for Business PowerShell コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

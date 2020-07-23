@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用してユーザー アカウントを作成する
+title: PowerShell を使用して Microsoft 365 ユーザーアカウントを作成する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,32 +18,34 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Office 365 PowerShell を使用して Office 365 でユーザー アカウントを作成する方法について学習します。
-ms.openlocfilehash: 95cbefc2caeb61376ed77fe5023cb1c050a8fa07
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Microsoft 365 の PowerShell を使用してユーザーアカウントを作成する方法について説明します。
+ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004690"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230793"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell を使用してユーザー アカウントを作成する
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントを作成する
 
-Office 365 PowerShell を使用すると、特に複数のユーザー アカウントを効率的に作成できます。Office 365 PowerShell でユーザー アカウントを作成する場合、特定のプロパティは常に必須です。他のプロパティはアカウントを作成する際に必須ではありませんが、別の面で重要となります。次の表で、これらのプロパティを説明します。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+Microsoft 365 の PowerShell を使用すると、ユーザーアカウント、特に複数のユーザーアカウントを効率的に作成できます。 PowerShell でユーザーアカウントを作成する場合、特定のアカウントのプロパティが常に必要です。 他のプロパティはアカウントを作成する際に必須ではありませんが、別の面で重要となります。 次の表では、これらのプロパティについて説明します。
   
 |**プロパティ名**|**必須**|**説明**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |はい  <br/> |これは、Office 365 サービスで使用される表示名です。たとえば、Caleb Sills。  <br/> |
-|**UserPrincipalName** <br/> |はい  <br/> |これは、Office 365 サービスにサインインするために使用されるアカウント名です。たとえば、CalebS@contoso.onmicrosoft.com。  <br/> |
+|**DisplayName** <br/> |はい  <br/> |これは、Microsoft 365 サービスで使用される表示名です。 たとえば、Caleb Sills。  <br/> |
+|**UserPrincipalName** <br/> |はい  <br/> |これは、Microsoft 365 サービスへのサインインに使用されるアカウント名です。 たとえば、CalebS@contoso.onmicrosoft.com。  <br/> |
 |**FirstName** <br/> |いいえ  <br/> ||
 |**LastName** <br/> |いいえ  <br/> ||
-|**LicenseAssignment** <br/> |いいえ  <br/> |これはライセンシング プラン (ライセンス プラン、Office 365 プラン、SKU とも呼ばれる) で、ここから使用可能なライセンスがユーザー アカウントに割り当てられます。ライセンスによって、アカウントに利用できる Office 365 サービスが定義されます。アカウントを作成するときにユーザーにライセンスを割り当てる必要はありませんが、アカウントは Office 365 サービスにアクセスするためのライセンスを必要とします。ユーザー アカウントにライセンスを割り当てる期間は作成後 30 日です。 |
+|**LicenseAssignment** <br/> |いいえ  <br/> |これは、使用可能なライセンスがユーザーアカウントに割り当てられているライセンスプラン (ライセンスプランまたは SKU とも呼ばれます) です。 ライセンスでは、アカウントで利用可能な Microsoft 365 サービスが定義されています。 アカウントの作成時にライセンスをユーザーに割り当てる必要はありませんが、そのアカウントには Microsoft 365 サービスにアクセスするためのライセンスが必要です。 ユーザー アカウントにライセンスを割り当てる期間は作成後 30 日です。 |
 |**Password** <br/> |いいえ  <br/> | パスワードを指定しない場合、ランダムなパスワードがユーザー アカウントに割り当てられ、パスワードはコマンドの結果に表示されます。パスワードを指定する場合、小文字、大文字、数字、記号のうちの 3 つの種類の文字を使った 8 から 16 文字の ASCII テキスト文字にする必要があります。 <br/> |
-|**UsageLocation** <br/> |いいえ  <br/> |これは、有効な ISO 3166-1 alpha-2 の国別コードです。たとえば、米国は US、フランスは FR です。いくつかの Office 365 サービスは特定の国では使用できないため、この値を提供することは重要です。アカウントにこの値を設定しない限り、ユーザー アカウントにライセンスを割り当てることはできません。詳細については、「[ライセンスによる使用制限について](https://go.microsoft.com/fwlink/p/?LinkId=691730)」を参照してください。<br/> |
+|**UsageLocation** <br/> |いいえ  <br/> |これは有効な ISO 3166-1 alpha 国コードです。 たとえば、米国は US、フランスは FR です。 一部の Microsoft 365 サービスは特定の国では利用できないため、この値を指定することは重要です。そのため、アカウントにこの値が設定されていない限り、ユーザーアカウントにライセンスを割り当てることはできません。 詳細については、「[ライセンス制限につい](https://go.microsoft.com/fwlink/p/?LinkId=691730)て」を参照してください。  <br/> |
    
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
 
 接続したら、以下の構文を使用して個別のアカウントを作成します。
   
@@ -63,7 +65,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
 
 ### <a name="create-an-individual-user-account"></a>個別のユーザー アカウントの作成
 
@@ -101,7 +103,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
->CSV ファイルの最初の行の列名と順序は任意ですが、ファイルの残りの部分のデータが列名の順序と一致するかどうかを確認し、Office 365 PowerShell コマンドのパラメーター値に列名を使用します。
+>CSV ファイルの最初の行の列名とその順序は任意ですが、ファイルの残りの部分のデータが列名の順序と一致していることを確認し、Microsoft 365 コマンドの PowerShell のパラメーター値として列名を使用します。
     
 2. 次の構文を使用してください。
     
@@ -115,12 +117,12 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. 出力ファイルで結果を確認します。パスワードを指定しなかったため、Office 365 により生成されたランダムなパスワードが出力ファイルに表示されます。
+3. 出力ファイルで結果を確認します。 パスワードを指定していないため、Microsoft 365 によって生成されたランダムなパスワードが出力ファイルに表示されます。
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)

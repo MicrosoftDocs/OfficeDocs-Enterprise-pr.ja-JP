@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
+title: PowerShell を使用して Microsoft 365 アカウントのライセンスとサービスの詳細を表示する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,23 +18,25 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: Office 365 PowerShell を使用して、ユーザーに割り当てられている Office 365 サービスを確認する方法について説明します。
-ms.openlocfilehash: 603470be87aea2d58f343511026fb2860e58b688
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: PowerShell を使用して、ユーザーに割り当てられている Microsoft 365 サービスを確認する方法について説明します。
+ms.openlocfilehash: 73af2fd40df8b36507250edcef48359e9d555a7f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004490"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230243"
 ---
-# <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Office 365 PowerShell を使用してアカウントのライセンスとサービスの詳細を表示する
+# <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>PowerShell を使用して Microsoft 365 アカウントのライセンスとサービスの詳細を表示する
 
-Office 365 のライセンスプラン (Sku または Office 365 プランとも呼ばれます) からのライセンスでは、これらのプランに対して定義されている Office 365 サービスへのアクセス権がユーザーに付与されます。 しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。 Office 365 PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。 
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-ライセンスプラン、ライセンス、およびサービスの詳細については、「 [Office 365 PowerShell でライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。
+Microsoft 365 では、ライセンスプラン (Sku または Microsoft 365 プランとも呼ばれます) からのライセンスで、これらのプランに対して定義されている Microsoft 365 サービスへのアクセス権をユーザーに付与します。 しかし、ユーザーは、現在割り当てられているライセンスで使用可能なすべてのサービスにアクセスできるとは限りません。 Microsoft 365 の PowerShell を使用して、ユーザーアカウントのサービスの状態を表示できます。 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
+ライセンスプラン、ライセンス、およびサービスの詳細については、「 [PowerShell を使用してライセンスとサービスを表示](view-licenses-and-services-with-office-365-powershell.md)する」を参照してください。
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
+
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
   
 次に、このコマンドを使用して、テナントのライセンスプランを一覧表示します。
 
@@ -65,9 +67,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
 
 次に、このコマンドを実行して、組織で使用可能なライセンスプランを一覧表示します。 
 
@@ -92,7 +94,7 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 
 ### <a name="to-view-services-for-a-user-account"></a>ユーザーアカウントのサービスを表示するには
 
-ユーザーがアクセスできるすべての Office 365 サービスを表示するには、次の構文を使用します。
+ユーザーがアクセスできるすべての Microsoft 365 サービスを表示するには、次の構文を使用します。
   
 ```powershell
 (Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus
@@ -127,8 +129,8 @@ $licArray
  
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)

@@ -1,5 +1,5 @@
 ---
-title: Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
+title: PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,27 +17,29 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '概要: Office 365 PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
-ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: '概要: PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
+ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735705"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230803"
 ---
-# <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
+# <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
-Office 365 PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加すると、Microsoft 365 管理センターで作業している場合よりも迅速かつ繰り返し実行することができます。 Office 365 管理センターでは実行できないタスクを実行することもできます。 
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-## <a name="before-you-begin"></a>開始する前に
+Microsoft 365 に対して PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する場合、Microsoft 365 管理センターでの作業よりも迅速かつ繰り返し実行することができます。 また、Microsoft 365 管理センターでは実行できないタスクを実行することもできます。 
+
+## <a name="before-you-begin"></a>はじめに
 
 このトピックの手順では、SharePoint Online に接続する必要があります。 手順については、「 [SharePoint Online PowerShell への接続](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)」を参照してください。
 
-## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>手順 1: Office 365 PowerShell を使って新しいサイト コレクションを作成する
+## <a name="step-1-create-new-site-collections-using-powershell"></a>手順 1: PowerShell を使用して新しいサイトコレクションを作成する
 
-Office 365 PowerShell を使用して複数のサイトを作成し、指定されたコード例およびメモ帳を使用して作成した .csv ファイルを作成します。 この手順では、角かっこに示されているプレースホルダー情報を、独自のサイトとテナント固有の情報に置き換えます。 このプロセスにより、1つのファイルを作成し、そのファイルを使用する1つの Office 365 PowerShell コマンドを実行することができます。 これにより、アクションが繰り返し可能で持ち運び可能になるため、SharePoint Online 管理シェルに長いコマンドを入力することによって発生する可能性のある多くのエラーが発生しなくなります。 この手順には2つの部分があります。 最初に .csv ファイルを作成してから、Office 365 PowerShell を使用してその .csv ファイルを参照します。これにより、そのコンテンツを使用してサイトが作成されます。
+PowerShell を使用して複数のサイトを作成し、指定されたコード例およびメモ帳を使用して作成した .csv ファイルを作成します。 この手順では、角かっこに示されているプレースホルダー情報を、独自のサイトとテナント固有の情報に置き換えます。 このプロセスを使用すると、1つのファイルを作成し、そのファイルを使用する1つの PowerShell コマンドを実行することができます。 これにより、アクションが繰り返し可能で持ち運び可能になるため、SharePoint Online 管理シェルに長いコマンドを入力することによって発生する可能性のある多くのエラーが発生しなくなります。 この手順には2つの部分があります。 最初に .csv ファイルを作成してから、PowerShell を使用してその .csv ファイルを参照します。これにより、コンテンツを使用してサイトが作成されます。
 
-Office 365 PowerShell コマンドレットは、その .csv ファイルをインポートし、ファイルの最初の行を列見出しとして読み取る、中かっこ内のループにパイプします。次に、Office 365 PowerShell コマンドレットは、残りのレコードを反復処理し、レコードごとに新規のサイト コレクションを作成し、列見出しに従ってサイト コレクションのプロパティを割り当てます。
+PowerShell コマンドレットは .csv ファイルをインポートして、ファイルの最初の行を列の見出しとして読み取る波かっこ内のループにパイプ処理します。 PowerShell コマンドレットは、残りのレコードを反復処理し、各レコードに対して新しいサイトコレクションを作成し、列ヘッダーに従ってサイトコレクションのプロパティを割り当てます。
 
 ### <a name="create-a-csv-file"></a>.csv ファイルの作成
 
@@ -156,9 +158,9 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [SharePoint Online PowerShell に接続する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[SharePoint Online サイトグループの管理 Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[PowerShell を使用して SharePoint Online サイト グループを管理する](manage-sharepoint-site-groups-with-powershell.md)
 
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 

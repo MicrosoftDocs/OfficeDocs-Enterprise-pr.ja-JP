@@ -1,37 +1,35 @@
 ---
-title: 管理センターでの Rights Management に関する情報へのポインター
+title: 管理センターで Rights Management をアクティブ化する
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/11/2016
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom: ''
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
-description: Microsoft 365 で Rights Management サービスをアクティブ化して使用する方法について説明するトピックへのリンクを示します。
-ms.openlocfilehash: 2f2b72645ab8272ba5a6b1d39bced55264df3e00
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+description: Microsoft 365 で Rights Management サービスをアクティブ化して使用する方法について説明します。
+ms.openlocfilehash: ffb6444cb11114d2982ccba71b1540c347297c96
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698904"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229993"
 ---
-# <a name="pointers-to-information-about-rights-management-in-the-admin-center"></a>管理センターでの Rights Management に関する情報へのポインター
+# <a name="activate-rights-management-in-the-admin-center"></a>管理センターで Rights Management をアクティブ化する
 
-このトピックでは、Microsoft 365 で RMS を有効にし、使用する方法について説明するトピックを示します。
-  
 Microsoft 365 のアプリケーションとサービスの Information Rights Management (IRM) 機能を使用する前に、Rights Management service (RMS) をアクティブ化する必要があります。 RMS をアクティブ化すると、組織は Azure RMS を使用して重要なドキュメントや電子メールを保護することができます。 この情報保護ソリューションでは、すべてのファイルの種類を保護し、Excel、Microsoft Word、その他のクライアントアプリケーション (Exchange Online や SharePoint Online など)、Microsoft Exchange や Microsoft SharePoint などのサーバーを統合することができます。
   
 > [!TIP]
-> 権限管理が必要かどうかがわからない場合は、組織に[これらのビジネス上の問題または要件](https://docs.microsoft.com/rights-management/understand-explore/azure-rms-problems-it-solves)が1つ以上存在するかどうかを確認し、 [rights Management の動作に](https://docs.microsoft.com/rights-management/understand-explore/what-admins-users-see)関するいくつかの例を参照してください。 
+> 権限管理が必要かどうかがわからない場合は、組織に[これらのビジネス上の問題または要件](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management)があるかどうかを確認します。 
   
 RMS の詳細については、次のリンクを参照してください。
   
@@ -41,6 +39,4 @@ RMS の詳細については、次のリンクを参照してください。
 
 - 展開の手順の概要については、「 [Azure Rights Management 展開のロードマップ](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap)」を参照してください。
 
-- Microsoft 365 の RMS をアクティブ化する方法については、「 [Azure Rights Management をアクティブ](https://technet.microsoft.com/library/jj658941.aspx)化する」を参照してください。
-
-- Office での Azure RMS と IRM の違いについては、混乱していますか? 他の権限管理条件についてのヘルプが必要ですか? 「 [Rights Management の用語」を](https://technet.microsoft.com/library/dn595132.aspx)参照してください。
+- Microsoft 365 の RMS のライセンス認証の手順については、「 [Azure Information protection からの保護サービスのアクティブ化](https://docs.microsoft.com/azure/information-protection/activate-service)」を参照してください。

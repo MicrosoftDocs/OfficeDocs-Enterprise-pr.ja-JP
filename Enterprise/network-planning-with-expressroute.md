@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
-ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターとの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
+ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998532"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230883"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
 *この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
+Office 365 用 ExpressRoute は、ネットワークと Microsoft のデータセンターとの間にレイヤー3接続を提供します。 回線は、Office 365 のフロントエンドサーバーの境界ゲートウェイプロトコル (BGP) ルートアドバタイズを使用します。 オンプレミスデバイスの観点から、Office 365 への正しい TCP/IP パスを選択する必要がある場合、Azure ExpressRoute はインターネットの代わりとして認識されます。
   
 Azure ExpressRoute は、Microsoft のデータセンター内の Office 365 サーバーによって提供される、サポートされている機能とサービスの特定のセットへの直接パスを追加します。 Azure ExpressRoute は、インターネット接続を Microsoft データセンターまたはドメイン名解決などの基本的なインターネットサービスに置き換わるものではありません。 Azure ExpressRoute とインターネット回線はセキュリティで保護され、冗長である必要があります。
   
@@ -37,7 +37,7 @@ Azure ExpressRoute は、Microsoft のデータセンター内の Office 365 サ
 
 |**ネットワーク計画の相違点**|**インターネットネットワーク接続**|**ExpressRoute ネットワーク接続**|
 |:-----|:-----|:-----|
-| 必要なインターネットサービスへのアクセス (を含む)  <br/>  DNS 名前解決  <br/>  証明書失効の検証  <br/>  コンテンツ配信ネットワーク  <br/> |はい  <br/> |Microsoft が所有する DNS または CDN インフラストラクチャへの要求は、ExpressRoute ネットワークを使用する場合があります。  <br/> |
+| 必要なインターネットサービスへのアクセス (を含む)  <br/>  DNS 名前解決  <br/>  証明書失効の検証  <br/>  コンテンツ配信ネットワーク (CDNs)  <br/> |はい  <br/> |Microsoft が所有する DNS または CDN インフラストラクチャへの要求は、ExpressRoute ネットワークを使用する場合があります。  <br/> |
 | Office 365 サービスへのアクセス (以下を含む)  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  ブラウザー内の Office  <br/>  Office 365 ポータルと認証  <br/> |○ (すべてのアプリケーションと機能)  <br/> |はい、[特定のアプリケーションおよび機能](https://aka.ms/o365endpoints) <br/> |
 |境界でのオンプレミスのセキュリティ。  <br/> |はい  <br/> |はい  <br/> |
 |高可用性の計画。  <br/> |代替のインターネットネットワーク接続へのフェールオーバー  <br/> |代替 ExpressRoute 接続へのフェールオーバー  <br/> |
@@ -52,7 +52,7 @@ Azure ExpressRoute は、Microsoft のデータセンター内の Office 365 サ
   
 既存の Azure ExpressRoute 回路で Office 365 へのアクセスを有効にするには、Office 365 サービスがアクセス可能になるように[ルートフィルターを構成](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)します。
   
-Azure ExpressRoute サブスクリプションは顧客中心です。サブスクリプションは顧客によって関連付けられます。 お客様は、複数の Azure ExpressRoute 回路を持ち、それらの回線を介して多くの Microsoft クラウドリソースにアクセスできます。 たとえば、Azure でホストされている仮想マシン、Office 365 テストテナント、および1組の冗長 Azure ExpressRoute 回路の Office 365 運用テナントにアクセスすることを選択できます。
+Azure ExpressRoute サブスクリプションは顧客中心で、サブスクリプションは顧客に結び付けられています。 お客様は、複数の Azure ExpressRoute 回路を持ち、それらの回線を介して多くの Microsoft クラウドリソースにアクセスできます。 たとえば、Azure でホストされている仮想マシン、Office 365 テストテナント、および1組の冗長 Azure ExpressRoute 回路の Office 365 運用テナントにアクセスすることを選択できます。
   
 次の表に、回線で実装するために選択できる2種類のピアリング関係を示します。
 
@@ -204,7 +204,7 @@ Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つこと�
   
 [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
   
-[Office 365 シナリオ用の ExpressRoute での BGP コミュニティの使用 (プレビュー)](bgp-communities-in-expressroute.md)
+[Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する](bgp-communities-in-expressroute.md)
   
 [Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
@@ -218,7 +218,7 @@ Woodgrove が地域ごとに複数の Azure ExpressRoute 回路を持つこと�
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
   

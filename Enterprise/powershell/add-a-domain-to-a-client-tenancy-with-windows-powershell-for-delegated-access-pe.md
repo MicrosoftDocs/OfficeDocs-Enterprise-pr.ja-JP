@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: '概要: Microsoft 365 で Windows PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。'
-ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: '概要: Microsoft 365 の PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。'
+ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997363"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229783"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
-Microsoft 365 管理センターを使用するよりも、Microsoft 365 用の Windows PowerShell を使用して、新しいドメインを作成して、お客様のテナントと関連付けることができます。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+Microsoft 365 の PowerShell を使用して、Microsoft 365 管理センターより高速に、新しいドメインを作成して、顧客のテナントと関連付けることができます。
   
 委任アクセス許可 (DAP) パートナー とは、シンジケート パートナーとクラウド ソリューション プロバイダー (CSP) パートナーです。 他の会社のネットワーク プロバイダーまたは通信プロバイダーであることもよくあります。 これらのサブスクリプションは、お客様に対して Microsoft 365 のサブスクリプションをサービス提供にバンドルしています。 Microsoft 365 サブスクリプションを販売する際には、顧客のテナンシーに対して管理およびレポートできるように、顧客テナンシーへの (AOBO) アクセス許可が自動的に付与されます。
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-このトピックの手順では、Office 365 のために Windows PowerShell に接続する必要があります。手順については、「[Office 365 PowerShell への接続](connect-to-office-365-powershell.md)」を参照してください。
+このトピックの手順では、 [PowerShell を使用して Microsoft 365 に](connect-to-office-365-powershell.md)接続するために接続する必要があります。
   
 また、パートナーのテナント管理者の資格情報も必要です。
   

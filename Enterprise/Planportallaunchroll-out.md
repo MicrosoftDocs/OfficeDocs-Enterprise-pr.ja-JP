@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、SharePoint Online でのポータルの起動を計画する方法と、正常に起動するために必要な手順について説明します。
-ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4edd1bc9c2001912a8ebb77e467f9663474ecb66
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004110"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230173"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online でポータルの起動ロールアウトプランを計画する
 
@@ -35,14 +35,14 @@ ms.locfileid: "44004110"
 展開方法については、以下で強調表示されています。
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint Online での容量計画の概要
-キャパシティを効率的に使用し、予期しない成長を処理するために、どのファームでも、特定の使用シナリオを追跡する自動化があります。 1つのファーム内の1つのテナントに正確な成長は予測できませんが、集約された要求の合計は予測可能です。 SharePoint Online の拡張傾向を特定することで、今後の拡張を計画できます。 容量計画の詳細[と SharePoint Online のロードテスト](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)の詳細については、を参照してください。
+キャパシティを効率的に使用し、予期しない成長を処理するために、どのファームでも、特定の使用シナリオを追跡する自動化があります。 1つのファーム内の1つのテナントに正確な成長は予測できませんが、集約された要求の合計は予測可能です。 SharePoint Online の拡張傾向を特定することで、今後の拡張を計画できます。 容量計画の詳細[と SharePoint Online のロードテスト](capacity-planning-and-load-testing-sharepoint-online.md)の詳細については、を参照してください。
 
 正常な起動の重要な部分は、以下に説明する「ウェーブ」または「段階的なロールアウト」アプローチです。 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>テスト SharePoint Online を読み込むことはできますか?
 SharePoint Online は、共有された複数のテナント環境で、複数のファーム間でバランスが取れており、継続的に調整されます。 負荷テスト SharePoint Online などの環境では、拡張の変更によって予期しない結果が得られるだけでなく、許可されません。 
 
-詳細につい[ては、「容量計画と負荷テスト (SharePoint Online)」を参照して](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)ください。
+詳細につい[ては、「容量計画と負荷テスト (SharePoint Online)」を参照して](capacity-planning-and-load-testing-sharepoint-online.md)ください。
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>推奨ガイドラインに従ってページを最適化する
 オンプレミス展開からのページは、sharepoint online の推奨ガイドラインに対して確認することなく、SharePoint Online に移動するだけではありません。 最善の方法は、組織内のほとんどのユーザーがサイトの開始点としてアクセスできるように、SharePoint のサイトまたはポータルのすべてのホームページを常に最適化することです。

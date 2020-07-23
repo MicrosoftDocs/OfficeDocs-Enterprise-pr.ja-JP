@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840654"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230073"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
 クロスプレミス Azure Virtual Network をオンプレミス ネットワークに接続することで、Azure インフラストラクチャ サービスにホストされているサブネットや仮想マシンを追加してネットワークを拡張します。この接続により、オンプレミス ネットワークにあるコンピューターと Azure の仮想マシンが相互に直接アクセスできるようになります。 
 
-たとえば、Azure 仮想マシンで実行するディレクトリ同期サーバーは、アカウントの変更についてオンプレミスのドメイン コントローラーにクエリを実行して、それらの変更を Office 365 サブスクリプションと同期させる必要があります。この記事では、Azure 仮想マシンをホストできる状態のサイト間仮想プライベート ネットワーク (VPN) を使用して、クロスプレミスの Azure 仮想ネットワークをセットアップする方法について説明します。
+たとえば、Azure 仮想マシン上で実行されているディレクトリ同期サーバーは、アカウントの変更についてオンプレミスのドメインコントローラーに対してクエリを実行し、それらの変更を Microsoft 365 サブスクリプションと同期する必要があります。この記事では、Azure 仮想マシンをホストする準備ができているサイト間仮想プライベートネットワーク (VPN) 接続を使用して、クロスプレミスの Azure 仮想ネットワークをセットアップする方法について説明します。
 
 ## <a name="overview"></a>概要
 
@@ -335,4 +335,4 @@ Azure で必要な仮想マシンを作成します。詳細については、�
   
 ## <a name="next-step"></a>次の手順
   
-[Microsoft Azure での Office 365 ディレクトリ同期の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Microsoft Azure での Microsoft 365 ディレクトリ同期の展開](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

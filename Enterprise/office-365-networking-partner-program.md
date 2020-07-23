@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ネットワークパートナープログラム
+title: Office 365 ネットワーク パートナー プログラム
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Microsoft 365 ネットワークパートナープログラムにより、お客様のデバイスは Microsoft 365 の動作として認定されるようになります。
 hideEdit: true
-ms.openlocfilehash: 64e04bb1f9e4ebb5d39c34c128b544f65ef5147e
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: c43f110883cfb5ca150a702253a41e84f9e1ab0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052500"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230193"
 ---
-# <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 ネットワークパートナープログラム
+# <a name="microsoft-365-networking-partner-program"></a>Office 365 ネットワーク パートナー プログラム
 
 ネットワーク接続は、ユーザーが迅速に作業し、効果的に共同作業し、Microsoft 365 を使用してビジネスプロセスを合理化できるように、ユーザーの能力に直接的な影響を与えます。 デジタル変換のあらゆる段階にあるお客様にとって、ネットワーク設計は、問題がユーザーの経験に悪影響を及ぼす前に予防的に対処する必要がある重要な側面です。
 

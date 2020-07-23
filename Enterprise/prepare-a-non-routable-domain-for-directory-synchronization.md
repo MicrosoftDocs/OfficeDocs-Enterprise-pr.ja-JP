@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Microsoft 365 と同期する前に、オンプレミスのユーザーに関連付けられた非ルーティングドメインがある場合の対処方法について説明します。
-ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a9fe6f21dd1e2d9ade6288a083f700fccac4e6e4
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736015"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263599"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 オンプレミスのディレクトリを Microsoft 365 と同期する場合は、Azure Active Directory (Azure AD) で確認済みのドメインを用意する必要があります。 オンプレミスのドメインに関連付けられているユーザープリンシパル名 (UPN) のみが同期されます。 ただし、ルーティング可能ではないドメイン (たとえば billa@contoso ローカル) を含む任意の UPN は、onmicrosoft.com ドメイン (billa@contoso.onmicrosoft.com など) に同期されます。 

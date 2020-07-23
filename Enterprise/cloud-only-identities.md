@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 サブスクリプションがクラウド専用の id を使用しているときに、ユーザーとグループを作成する方法について説明します。
-ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 0c2568d7be3f7a7b476d4cf918f00baf238da5ad
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774832"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230023"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 クラウドのみの id
 
@@ -41,7 +41,7 @@ ms.locfileid: "44774832"
  
 ![クラウド専用の id の基本コンポーネント](./media/about-office-365-identity/cloud-only-identity.png)
 
-組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 たとえば、次のようにします。
+組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 次に、例を示します。
 
 - テナント アカウントは、組織内でクラウド サービスのライセンスを付与したユーザーを表します。
 
@@ -61,12 +61,12 @@ Azure AD のグループは、クラウド環境の管理を簡素化するい�
 次の方法で新しい***ユーザー***を作成します。
 
 - [Microsoft 365 管理センター](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
+- [PowerShell for Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 次のものを使用して、新しい***グループ***を作成します。
 
 - [Microsoft 365 管理センター](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+- [PowerShell for Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
 ## <a name="next-step-for-cloud-only-identity"></a>クラウド専用の id の次の手順

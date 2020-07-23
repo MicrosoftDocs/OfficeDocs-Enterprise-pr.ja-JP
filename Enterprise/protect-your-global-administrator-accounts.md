@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Microsoft 365 サブスクリプションへのグローバル管理者アクセスを保護します。
-ms.openlocfilehash: 6378a7c7b6e8479e25cf6465006f422cdc2137b0
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: fdab22944902b554bc7fa295d189cfd2899933ef
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735725"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229763"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Microsoft 365 のグローバル管理者アカウントを保護する
 
@@ -87,7 +87,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
 > [!NOTE]
 > これには、日常のユーザーアカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要になります。 ただし、この操作を実行する必要があるのは、全体管理者の操作の場合だけです。 グローバル管理者アカウント違反がある場合は、さらに多くの手順を実行する必要があるため、Microsoft 365 サブスクリプションを復元することを検討してください。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>手順 2.  専用の Microsoft 365 グローバル管理者アカウントに多要素認証を構成し、強力な検証方法を使用する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>手順 2。 専用の Microsoft 365 グローバル管理者アカウントに多要素認証を構成し、強力な検証方法を使用する
 
 多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365 では、次の追加の検証方法がサポートされています。
   
@@ -123,7 +123,7 @@ Microsoft 365 ハイブリッド id モデルを使用している大規模な�
   
 MFA と PowerShell を使用して Microsoft 365 サービスに接続するには、次の記事を参照してください。
 
-- [ユーザーアカウント、グループ、ライセンスの Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+- [ユーザーアカウント、グループ、ライセンスのための Microsoft 365 の PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
 - [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/powershell/manage-microsoft-teams-with-office-365-powershell#sign-in-with-multi-factor-authentication-mfa)
 - [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)

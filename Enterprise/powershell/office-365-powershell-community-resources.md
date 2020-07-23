@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell のコミュニティ リソース
+title: Microsoft 365 の PowerShell コミュニティリソース
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/06/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -11,27 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Office_Other
+ms.custom: ''
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: 概要:これらのコミュニティから Office 365 PowerShell のヘルプを得られます。
-ms.openlocfilehash: fdf35bfb98f027090a79bac97bbd69e0b7c9bb96
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '概要: これらのコミュニティ得られから、Microsoft 365 の PowerShell に関するヘルプを取得します。'
+ms.openlocfilehash: 8f07fa685f6abe4edb5d7a54a0f9584eecd0f3f7
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844198"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230403"
 ---
-# <a name="office-365-powershell-community-resources"></a>Office 365 PowerShell のコミュニティ リソース
+# <a name="microsoft-365-community-resources-for-powershell"></a>Microsoft 365 の PowerShell コミュニティリソース
 
-これらのコミュニティを使用して、同僚との接続を取得し、Office 365 PowerShell に関する質問をすばやく正確に回答します。 
+これらのコミュニティを使用して、ピアに接続し、Microsoft 365 に関する質問の回答を迅速かつ正確に取得します。 
   
-- [Office 365 Microsoft 技術コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
 - [Exchange Server TechNet コミュニティフォーラム](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 

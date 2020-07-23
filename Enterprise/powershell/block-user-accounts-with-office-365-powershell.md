@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell でユーザー アカウントをブロックする
+title: Microsoft 365 のユーザーアカウントに PowerShell を使用することを禁止する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,21 +17,23 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Office 365 PowerShell を使用して Office 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
-ms.openlocfilehash: 5633c35feee67ede65c4fffa8bc55276c3b979b8
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: PowerShell を使用して、Microsoft 365 アカウントへのアクセスをブロックおよびブロック解除する方法について説明します。
+ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004730"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230893"
 ---
-# <a name="block-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でユーザー アカウントをブロックする
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Microsoft 365 のユーザーアカウントに PowerShell を使用することを禁止する
 
-Office 365 アカウントへのアクセスをブロックすると、ユーザーがアカウントを使用して Office 365 組織のサービスとデータにサインインしてアクセスするのを防ぐことができます。 Office 365 PowerShell を使用して、個別および複数のユーザーアカウントへのアクセスをブロックすることができます。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
+Microsoft 365 アカウントへのアクセスをブロックすると、ユーザーがアカウントを使用して Microsoft 365 組織のサービスとデータにサインインしてアクセスするのを防ぐことができます。 PowerShell を使用して、個々のユーザーアカウントと複数のユーザーアカウントへのアクセスをブロックすることができます。
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
+
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
  
 ### <a name="block-access-to-individual-user-accounts"></a>個別のユーザーアカウントへのアクセスをブロックする
 
@@ -95,7 +97,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-次のコマンドでは、サンプルテキストファイルは C:\My Documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
+次のコマンドでは、サンプルテキストファイルは C:\My Documents\Accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
   
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     
@@ -109,9 +111,9 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell の Microsoft Azure Active Directory モジュールを使用する
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-まず、[Office 365 テナントに接続します](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+最初に、 [Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
     
 ### <a name="block-access-to-individual-user-accounts"></a>個別のユーザーアカウントへのアクセスをブロックする
 
@@ -153,7 +155,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-次のコマンドでは、サンプルテキストファイルは C:\My Documents\accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
+次のコマンドでは、サンプルテキストファイルは C:\My Documents\Accounts.txt です。 これをテキストファイルのパスとファイル名に置き換えます。
     
 テキスト ファイルに記載されているアカウントへのアクセスをブロックするには、次のコマンドを実行します。
     
@@ -168,8 +170,8 @@ kakers@contoso.com
 
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)

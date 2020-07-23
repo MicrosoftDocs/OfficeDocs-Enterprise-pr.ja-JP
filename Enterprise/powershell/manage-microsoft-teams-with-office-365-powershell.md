@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用して Microsoft Teams を管理する
+title: PowerShell を使用して Microsoft Teams を管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: '概要: Office 365 PowerShell を使用して Microsoft Teams を管理します。'
-ms.openlocfilehash: 0f15d71558ddb5166090b067da06e0a6321a2b99
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: '概要: PowerShell を使用して Microsoft Teams を管理します。'
+ms.openlocfilehash: 8958c6ec6f0c17c21461cbee4cb1a6441ceed8d6
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209123"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230613"
 ---
-# <a name="manage-microsoft-teams-with-office-365-powershell"></a>Office 365 PowerShell を使用して Microsoft Teams を管理する
+# <a name="manage-microsoft-teams-with-powershell"></a>PowerShell を使用して Microsoft Teams を管理する
 
-Office 365 PowerShell を使用して Microsoft Teams を管理することができます。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+PowerShell を使用して Microsoft Teams を管理することができます。
   
 最初に、 [Microsoft Teams モジュール](https://www.powershellgallery.com/packages/MicrosoftTeams/)をインストールします。
     
@@ -83,7 +85,7 @@ Disconnect-MicrosoftTeams
 
 [Teams PowerShell の概要](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 

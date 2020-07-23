@@ -3,7 +3,7 @@ title: ハイブリッド ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: '概要: これらの資料を使用して、Microsoft Azure に Office Server ワークロードを展開します。'
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998015"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229953"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
-Microsoft Azure を使用すれば、通常ならオンプレミスで展開されていた一部の Office Server ワークロードを Azure インフラストラクチャ サービスで展開できるようになります。
+Microsoft Azure を使用すると、通常は Azure インフラストラクチャサービスで展開された Office Server ワークロードを展開できます。
   
 Azure の Microsoft 365 id インフラストラクチャの場合:
 

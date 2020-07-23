@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: ユーザー id が Microsoft 365 でどのように管理されるかについて説明します。
-ms.openlocfilehash: ba4638fa4d02900e3e85ef1c4cb7719baf12d1f6
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998075"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230063"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 identity モデルと Azure Active Directory
 
@@ -90,7 +90,7 @@ Azure AD テナントには、AD DS アカウントのコピーがあります�
 
 元のユーザーアカウントと権限のあるユーザーアカウントは、オンプレミスの AD DS に格納されるので、Active Directory ユーザーおよびコンピューターツールなどの AD DS と同じツールを使用して id を管理します。 
 
-Microsoft 365 管理センターまたは Office 365 PowerShell を使用して、Azure AD で同期されたユーザーアカウントを管理することはありません。
+Microsoft 365 管理センターまたは Microsoft 365 の PowerShell を使用して、Azure AD で同期されたユーザーアカウントを管理することはありません。
 
 ## <a name="next-step"></a>次の手順
 

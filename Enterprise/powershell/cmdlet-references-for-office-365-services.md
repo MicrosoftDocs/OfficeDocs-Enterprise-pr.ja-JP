@@ -1,9 +1,9 @@
 ---
-title: Office 365 サービスのコマンドレット リファレンス
+title: Microsoft 365 サービスのコマンドレットリファレンス
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/17/2018
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -11,22 +11,24 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Office_Other
+ms.custom: ''
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: '概要: Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online、セキュリティ & コンプライアンスに関する Office 365 PowerShell コマンドレットリファレンストピックを示します。'
-ms.openlocfilehash: a3e24025149adef61120e245115a1b0f9877e3da
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: '概要: Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online、およびセキュリティ & コンプライアンスのための Microsoft 365 for PowerShell コマンドレットリファレンストピックをご覧ください。'
+ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997393"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230863"
 ---
-# <a name="cmdlet-references-for-office-365-services"></a>Office 365 サービスのコマンドレット リファレンス
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 
-各 Office 365 サービスのコマンドレットリファレンストピックには、各コマンドレットの使用方法に関する詳細な情報と手順が記載されています。 さらに、PowerShell がサポートされている各 Office 365 サービスには、異なる接続手順が必要です。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+各コマンドレットの使用方法に関する詳細情報と手順については、さまざまな Microsoft 365 サービスのコマンドレットリファレンストピックを参照してください。 さらに、PowerShell がサポートされている各 Microsoft 365 サービスには、異なる接続手順が必要です。
   
 > [!NOTE]
-> 一度にすべてのサービスに接続する場合、「[単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)」を参照してください。 
+> 一度にすべてのサービスに接続するには、「[単一の Windows PowerShell ウィンドウですべての Microsoft 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)」を参照してください。 
   
 ## <a name="azure-active-directory-powershell-cmdlets"></a>Azure Active Directory PowerShell コマンドレット
 
@@ -34,7 +36,7 @@ Graph の Azure Active Directory PowerShell コマンドレットリファレン
 
 Windows PowerShell の Azure Active Directory モジュールのコマンドレットリファレンスのトピックは、 [Azure Active directory (MSOnline) ドキュメント](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)の「 **reference** 」セクションにあります。
 
-Office 365 PowerShell の接続手順については、「 [Connect To office 365 powershell](connect-to-office-365-powershell.md)」を参照してください。
+Microsoft 365 PowerShell の接続手順については、「 [Connect To microsoft 365 With PowerShell](connect-to-office-365-powershell.md)」を参照してください。
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online の PowerShell コマンドレット
 
@@ -43,7 +45,7 @@ Exchange Online のコマンドレットリファレンストピックは、 [Ex
 Exchange Online PowerShell の接続手順については、「 [Exchange Online powershell に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)」をクリックしてください。
   
 > [!NOTE]
-> SharePoint Online、Skype for Business Online、Office 365 ユーザー アクティビティなどの他のサービスに関するレポート作成コマンドレットは、Exchange Online の PowerShell で利用できます。詳しくは、「[Exchange Online のレポート作成のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=691595)」をご覧ください。 
+> Exchange Online PowerShell では、SharePoint Online、Skype for Business Online、Microsoft 365 のユーザーアクティビティなど、他のサービスのレポートコマンドレットを使用できます。 詳しくは、「[Exchange Online のレポート作成のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=691595)」をご覧ください。 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>SharePoint Online の PowerShell コマンドレット
 
@@ -55,19 +57,19 @@ SharePoint Online の PowerShell の接続手順については、「[SharePoint
 
 Skype for business Online のコマンドレットリファレンストピックについては、[ [skype For Business online のコマンドレット](https://technet.microsoft.com/library/mt228132.aspx)] をクリックします。
   
-Skype for business Online PowerShell の接続手順については、「 [Office 365 powershell で skype For Business online を管理](manage-skype-for-business-online-with-office-365-powershell.md)する」をクリックしてください。
+Skype for business Online の PowerShell の接続手順については、「 [powershell を使用して skype For Business online を管理](manage-skype-for-business-online-with-office-365-powershell.md)する」をクリックしてください。
 
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>セキュリティ センターとコンプライアンス センターの PowerShell コマンドレット
 
-Office 365 セキュリティ &amp; コンプライアンスセンターのコマンドレットリファレンストピックは、 [Exchange Online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)の「 **reference** 」セクションにあります。
+Microsoft 365 セキュリティ &amp; コンプライアンスセンターのコマンドレットリファレンストピックは、 [Exchange Online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)の「 **reference** 」セクションにあります。
   
-セキュリティコンプライアンスセンター PowerShell の接続手順については &amp; 、「 [Office 365 セキュリティ &amp; コンプライアンスセンターの powershell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)」をクリックします。
+セキュリティコンプライアンスセンター PowerShell の接続手順については &amp; 、「 [Security &amp; コンプライアンスセンター powershell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)」をクリックします。
 
 
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365 で Azure ExpressRoute を使用する方法と、Office 365 で使用するために Azure ExpressRoute を展開する場合に必要となるネットワーク実装プロジェクトを計画する方法について説明します。
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997951"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230033"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
@@ -64,9 +64,9 @@ Office 365、Windows Update、TechNet などのすべての Microsoft アプリ�
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|ポータルと共有<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|ポータルと共有<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup>これらの各アプリケーションには、ExpressRoute でサポートされていないインターネット接続要件があります。詳細については、「 [Office 365 endpoints](https://aka.ms/o365endpoints) 」の記事を参照してください。
+<sup>1</sup>これらのアプリケーションには、ExpressRoute ではサポートされていないインターネット接続要件があります。詳細については、「 [Office 365 endpoints](https://aka.ms/o365endpoints) 」の記事を参照してください。
 
 Office 365 用の ExpressRoute に含まれていないサービスは、エンタープライズクライアントのダウンロード用の Microsoft 365 アプリ、オンプレミスの Id プロバイダーのサインイン、および中国での Office 365 (21 Vianet) サービスを対象としています。
 
@@ -90,7 +90,7 @@ ExpressRoute を実装するには、ネットワークとアプリケーショ�
 
 8. 必要に応じて[QoS を実装](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d)し、地域の拡張を評価します。
 
-<sup>1</sup>パフォーマンスに関する重要な考慮事項。 ここでの決定は、Skype for Business などのアプリケーションにとって重要な待機時間に大きな影響を与える可能性があります。
+<sup>1</sup>重要なパフォーマンスの考慮事項。 ここでの決定は、Skype for Business などのアプリケーションにとって重要な待機時間に大きな影響を与える可能性があります。
 
 その他の参照については、 [ExpressRoute のドキュメント](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)に加えて、[ルーティングガイド](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)を使用してください。
 
@@ -112,7 +112,7 @@ Office 365 の ExpressRoute を購入するには、1つまたは複数の[承�
 
 [Office 365 向け ExpressRoute の実装](implementing-expressroute.md)
 
-[Office 365 シナリオ用の ExpressRoute での BGP コミュニティの使用 (プレビュー)](bgp-communities-in-expressroute.md)
+[Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する](bgp-communities-in-expressroute.md)
 
 [Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
@@ -120,7 +120,7 @@ Office 365 の ExpressRoute を購入するには、1つまたは複数の[承�
 
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
 
-[Office 365 の URL および IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 

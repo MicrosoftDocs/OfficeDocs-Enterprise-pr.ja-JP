@@ -1,5 +1,5 @@
 ---
-title: テスト ラボ ガイド (TLG) を使用して Office 365 をテストする
+title: テストラボガイド (TLGs) を使用した Microsoft 365 のテスト
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: '概要: 次に示すテスト ラボ ガイド (TLG) を使用して、Office 365 のデモンストレーション、概念実証、または開発/テスト環境をセットアップします。'
-ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
-ms.translationtype: HT
+description: '概要: これらのテストラボガイド (TLGs) を使用して、Microsoft 365 のデモ、概念実証、または開発/テスト環境を設定します。'
+ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793690"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230013"
 ---
-# <a name="test-office-365-with-test-lab-guides-tlgs"></a>テスト ラボ ガイド (TLG) を使用して Office 365 をテストする
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>テストラボガイド (TLGs) を使用した Microsoft 365 のテスト
 
 TLG では短時間で Microsoft 製品について学習できます。あるテクノロジや構成について、それが特定の状況に適しているかどうかを決定し、デザイン、プランニングを行いテクノロジをユーザーにロールアウトするさいに、事前に評価が必要な場合に最適です。この実地体験型ガイドにより、新しい製品やソリューションの展開要件を理解し、運用環境でホストする計画を立てやすくなります。
   
@@ -34,17 +34,17 @@ TLG では短時間で Microsoft 製品について学習できます。ある�
   
 ![Microsoft Cloud のテスト ラボ ガイド](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="office-365-devtest-environment"></a>Office 365 開発/テスト環境
+## <a name="microsoft-365-devtest-environment"></a>Microsoft 365 開発/テスト環境
 
-Office 365 の開発/テスト環境を構築するのに、次の記事を使用します。
+Microsoft 365 開発/テスト環境を構築するには、次の記事を使用します。
   
 - [軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
     
-    Office 365 Enterprise E5 試用版サブスクリプションを作成します。
+    Microsoft 365 Enterprise E5 試用版サブスクリプションを作成します。
 
 - [シミュレートされたエンタープライズ基本構成](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
     
-    Microsoft Azure インフラストラクチャ サービスと Office 365 Enterprise E5 試用版サブスクリプションで実行される簡易型イントラネットを作成します。 
+    Microsoft Azure インフラストラクチャサービスおよび Microsoft 365 Enterprise E5 試用版サブスクリプションで実行される簡略化されたイントラネットを作成します。 
 
     これはオプションであり、ハイブリッド ID のシミュレートされたエンタープライズ構成を構築する場合に必要です。
     

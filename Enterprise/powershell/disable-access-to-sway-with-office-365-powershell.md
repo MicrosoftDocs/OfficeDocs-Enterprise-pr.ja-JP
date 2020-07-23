@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使った Sway へのアクセスを無効にする
+title: Microsoft 365 の PowerShell で Sway へのアクセスを無効にする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,21 +17,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: Office 365 組織における Sway へのアクセスを無効化するための ManageSway.ps1 PowerShell スクリプトをどこからダウンロードするか説明します。
-ms.openlocfilehash: a9434c3285075c45048526df755c8f1d06e0de0b
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: ManageSway.ps1 PowerShell スクリプトをダウンロードする場所について説明します。これにより、Microsoft 365 組織の Sway へのアクセスを無効にすることができます。
+ms.openlocfilehash: d02a197e2767a1883abcc8fcb4074f3ac92de88a
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004640"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230703"
 ---
-# <a name="disable-access-to-sway-with-office-365-powershell"></a>Office 365 PowerShell を使った Sway へのアクセスを無効にする
+# <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>Microsoft 365 の PowerShell で Sway へのアクセスを無効にする
 
-ManageSway.ps1 PowerShell スクリプトにより、Office 365 組織のサービス (Sway を含む) を表示し、無効化できます。このスクリプトは、次のトピックで説明されている手順を自動化します。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+ManageSway.ps1 PowerShell スクリプトを使用すると、Sway を含む Microsoft 365 組織のサービスを表示したり、無効にしたりできます。 このスクリプトは、以下のトピックで説明する手順を自動化します。
   
-- [Office 365 PowerShell でライセンスとサービスを確認する](view-licenses-and-services-with-office-365-powershell.md)
+- [PowerShell を使用してライセンスとサービスを表示する](view-licenses-and-services-with-office-365-powershell.md)
     
-- [Office 365 PowerShell を使ったサービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)
+- [PowerShell を使用してサービスへのアクセスを無効にする](disable-access-to-services-with-office-365-powershell.md)
     
 スクリプトに関連付けられている 2 つのファイルをダウンロードする必要があります。
   

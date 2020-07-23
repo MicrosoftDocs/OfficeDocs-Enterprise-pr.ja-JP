@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell を使用して Skype for Business Online を管理する
+title: PowerShell を使用して Skype for Business Online のポリシーを管理する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 概要:Office 365 PowerShell を使用して、ポリシーが割り当てられている Skype for Business Online ユーザー アカウントのプロパティを管理します。
-ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: '概要: PowerShell を使用して、ポリシーを使用して Skype for Business Online のユーザーアカウントのプロパティを管理します。'
+ms.openlocfilehash: 4310de23d47025468ea78a597f6379b51deaaa96
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841334"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230433"
 ---
-# <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Office 365 PowerShell を使用して Skype for Business Online を管理する
+# <a name="manage-skype-for-business-online-policies-with-powershell"></a>PowerShell を使用して Skype for Business Online のポリシーを管理する
 
-Skype for Business Online のユーザー アカウントの多数のプロパティを管理するには、Office 365 PowerShell を使用してポリシーのプロパティとして指定する必要があります。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+Skype for Business Online のユーザーアカウントの多数のプロパティを管理するには、Microsoft 365 の PowerShell を使用してポリシーのプロパティとして指定する必要があります。
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -62,7 +64,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-このポリシー内の値は、ユーザーがフェデレーション ユーザーとの通信に関して実際にできることとできないことを示しています。 たとえば、組織外部のユーザーと通信できるようにするためには、EnableOutsideAccess プロパティを True に設定する必要があります。 このプロパティは、Microsoft 365 管理センターには表示されないことに注意してください。 代わりに、このプロパティはその他の選択内容に基づいて自動的に True または False に設定されます。 関心のある他の 2 つのプロパティについては、次のようになります。
+この例では、このポリシー内の値によって、フェデレーションユーザーとの通信に使用できる、またはできない処理を決定します。たとえば、ユーザーが組織外のユーザーと通信できるようにするには、EnableOutsideAccess プロパティを True に設定する必要があります。このプロパティは、Microsoft 365 管理センターには表示されないことに注意してください。代わりに、その他の選択に基づいて、プロパティは自動的に True または False に設定されます。その他の重要なプロパティは次の2つです。
   
 - **EnableFederationAccess** は、ユーザーがフェデレーション ドメインからのユーザーと通信できるかどうかを示します。
     
@@ -112,7 +114,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 ApplicableTo パラメーターは、返すデータを、指定されたユーザー (Alex Darrow など) に割り当てることが可能なポリシーに限定します。ライセンスと利用場所の制限によっては、使用可能なすべてのポリシーの一部しか表示しない場合があります。 
   
-Office 365 ではポリシーのプロパティを使用しない場合もあり、また、Microsoft のサポート担当者のみが管理可能なプロパティもあります。 
+場合によっては、ポリシーのプロパティは Microsoft 365 では使用されず、Microsoft サポート担当者のみが管理できるものがあります。 
   
 Skype for Business Online を使用している場合は、何らかのポリシーによってユーザーを管理する必要があります。有効なポリシーに関連するプロパティが空白の場合、当該ユーザーには、ユーザーごとのポリシーが割り当てられていない場合に自動的に適用されるグローバル ポリシーによって管理されていることを意味します。ユーザー アカウントではクライアント ポリシーが表示されていないため、グローバル ポリシーによって管理されています。グローバル クライアント ポリシーを設定するには次のコマンドを使用します。
   
@@ -122,9 +124,9 @@ Get-CsClientPolicy -Identity "Global"
 
 ## <a name="see-also"></a>関連項目
 
-[Office 365 PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-with-office-365-powershell.md)
+[PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
+[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
 

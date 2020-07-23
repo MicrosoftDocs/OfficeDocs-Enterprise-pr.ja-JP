@@ -1,9 +1,9 @@
 ---
-title: PowerShell を使用して Office 365 への段階的な移行を実行する
+title: PowerShell を使用して Microsoft 365 への段階的な移行を実行する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,26 +15,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: 概要:Windows PowerShell を使用して Office 365 への段階的な移行を実行する方法について説明します。
-ms.openlocfilehash: ca50edd079e17808c46ff5a956ed2efad34eb322
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: '概要: Windows PowerShell を使用して、Microsoft 365 への段階的な移行を実行する方法について説明します。'
+ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052560"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229793"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>PowerShell を使用して Office 365 への段階的な移行を実行する
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>PowerShell を使用して Microsoft 365 への段階的な移行を実行する
 
-段階的な移行を使用すると、ユーザーのメールボックスの内容を、元の電子メール システムから Office 365 に徐々に移行することができます。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+段階的な移行を使用して、ユーザーメールボックスのコンテンツをソースメールシステムから Microsoft 365 に移行することができます。
   
-この記事では、Exchange Online PowerShell を使用した段階的メール移行に関するタスクを順を追って説明します。トピック「[Office 365 への段階的メール移行について知っておくべきこと](https://go.microsoft.com/fwlink/p/?LinkId=536487)」では、移行プロセスについて概説しています。記事の内容に満足いただけたら、段階的メール移行を使用して、あるメール システムから別のメール システムへのメールボックスの移行を開始してください。
+この記事では、Exchange Online PowerShell を使用した段階的なメール移行に関連するタスクについて説明します。このトピックでは、[段階的なメールの移行について理解しておく必要がある](https://go.microsoft.com/fwlink/p/?LinkId=536487)ことを、移行プロセスの概要を示します。この記事の内容に慣れてきたら、この記事を使用してメールボックスを1つのメールシステムから別のメールシステムに移行する作業を開始します。
   
 > [!NOTE]
-> また、段階的な移行を実行するには、Exchange 管理センターを使用することもできます。「[Office 365 へのメールの段階的な移行を実行する](https://go.microsoft.com/fwlink/p/?LinkId=536687)」を参照してください。 
+> Exchange 管理センターを使用して、段階的な移行を実行することもできます。「 [Microsoft 365 へのメールの段階的な移行を実行する」を](https://go.microsoft.com/fwlink/p/?LinkId=536687)参照してください。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-このタスクの予想所要時間:移行バッチの作成に 2 ～ 5 分。移行バッチ開始後の移行時間は、バッチ内のメールボックスの数、各メールボックスのサイズ、および使用可能なネットワーク容量によって異なります。Office 365 にメールボックスの移行時間を決定するその他の要因の詳細については、「[移行のパフォーマンス](https://go.microsoft.com/fwlink/p/?LinkId=275079)」を参照してください。
+このタスクの予想所要時間: 2-5 分、移行バッチを作成します。移行バッチの開始後、移行の期間は、バッチ内のメールボックスの数、各メールボックスのサイズ、および使用可能なネットワーク容量によって異なります。メールボックスを Microsoft 365 に移行するのにかかる時間に影響を与えるその他の要因の詳細については、「 [Migration Performance](https://go.microsoft.com/fwlink/p/?LinkId=275079)」を参照してください。
   
 この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、トピック「[受信者のアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=534105)」の中の「移行」エントリを参照してください。
   
@@ -46,7 +48,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
 
 ### <a name="step-1-prepare-for-a-staged-migration"></a>ステップ 1:段階的な移行を準備する
 
-段階的な移行を使用してメールボックスを Office 365 に移行する前に、Exchange 環境に対していくつかの変更を加える必要があります。
+段階的な移行を使用してメールボックスを Microsoft 365 に移行する前に、Exchange 環境にいくつかの変更を加える必要があります。
   
  **社内の Exchange Server** に Outlook Anywhere を構成する: メール移行サービスは、Outlook Anywhere (RPC over HTTP としても知られる) を使用して社内の Exchange Server に接続します。Exchange Server 2007 と Exchange 2003 における Outlook Anywhere の設定方法の詳細については、以下を参照してください。
   
@@ -61,7 +63,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   
 - 企業ネットワークの外部から Outlook を使用して社内の Exchange メールボックスに接続します。
     
-- [Microsoft リモート接続アナライザー](https://https://testconnectivity.microsoft.com/)を使用して、接続設定をテストします。 Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
+- [Microsoft リモート接続アナライザー](https://https://testconnectivity.microsoft.com/)を使用して、接続設定をテストします。Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
     
 - Exchange Online PowerShell で次のコマンドを実行します。
     
@@ -73,13 +75,13 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **アクセス許可を設定する**: 社内 Exchange 組織に接続するために使用する社内ユーザー アカウント (移行管理者ともいう) には、Office 365 に移行する社内メールボックスにアクセスするためのアクセス許可が必要です。このユーザー アカウントは、この手順の後半に記載する移行エンドポイント ([ステップ 3:移行エンドポイントを作成する](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint)) を作成して電子メール システムに接続するときに使用します。
+ **アクセス許可を設定**するオンプレミスの Exchange 組織 (移行管理者とも呼ばれます) に接続するために使用するオンプレミスのユーザーアカウントは、Microsoft 365 に移行する必要があるオンプレミスのメールボックスにアクセスするために必要なアクセス許可を持っている必要があります。このユーザーアカウントは、この手順の後半で移行エンドポイントを作成することによってメールシステムに接続するときに使用されます ([手順 3: 移行エンドポイントを作成](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Endpoint)します)。
   
 メールボックスを移行するために、管理者には次のアクセス許可セットのいずれかが必要です。
   
 - 社内組織の Active Directory の **Domain Admins** グループのメンバーであること。
     
-    または
+    or
     
 - 社内の各メールボックスに **FullAccess** のアクセス許可が割り当てられ、社内のユーザー アカウントの **TargetAddress** プロパティを変更するための **WriteProperty** のアクセス許可が割り当てられていること。
     
@@ -87,22 +89,22 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
     
 - ユーザー メールボックスを格納する社内のメールボックス データベースに **受信者** のアクセス許可が割り当てられ、社内のユーザー アカウントの **TargetAddress** プロパティを変更するための **WriteProperty** のアクセス許可が割り当てられていること。
     
-これらのアクセス許可を設定する方法については、「[Exchange Online にメールボックスを移行するためのアクセス許可の割り当て](https://go.microsoft.com/fwlink/?LinkId=521656)」を参照してください。
+これらのアクセス許可を設定する方法については、「[メールボックスを Microsoft 365 に移行するためのアクセス許可を割り当てる](https://go.microsoft.com/fwlink/?LinkId=521656)」を参照してください。
   
  **ユニファイド メッセージング (UM) を無効にする**: 移行する社内のメールボックスで UM がオンになっている場合は、移行前に UM をオフにします。移行の完了後に、メールボックスの UM をオンにします。操作手順については、「[ユーザーのユニファイド メッセージングを無効にする方法](https://go.microsoft.com/fwlink/?LinkId=521891)」を参照してください。
   
- **ディレクトリ同期を使用して Office 365 でユーザーを新規作成します。** ディレクトリ同期を使用すると、Office 365 組織のすべての社内ユーザーを作成できます。
+ **ディレクトリ同期を使用して、Microsoft 365 で新しいユーザーを作成します。** ディレクトリ同期を使用して、Microsoft 365 組織のすべてのオンプレミスユーザーを作成します。
   
 ユーザーの作成後にライセンスを付与する必要があります。ユーザーの作成後、ライセンスを追加するまでに 30 日間があります。ライセンスを追加する手順については、「[ステップ 8:移行後のタスクを完了する](use-powershell-to-perform-a-staged-migration-to-office-365.md#BK_Postmigration)」を参照してください。
   
- Microsoft Azure Active Directory (Azure AD) 同期ツールまたは Microsoft Azure AD 同期サービスのいずれかを使用して、Office 365 でオンプレミスユーザーを同期および作成できます。 メールボックスを Office 365 に移行した後、社内組織のユーザーアカウントを管理し、Office 365 組織と同期します。 詳細については、「[ディレクトリ統合](https://go.microsoft.com/fwlink/?LinkId=521788)」を参照してください。
+ Microsoft Azure Active Directory (Azure AD) 同期ツールまたは Microsoft Azure AD 同期サービスのいずれかを使用して、Microsoft 365 でオンプレミスユーザーを同期および作成できます。メールボックスを Microsoft 365 に移行した後は、社内組織のユーザーアカウントを管理し、Microsoft 365 組織と同期されます。詳細については、「[ディレクトリ統合](https://go.microsoft.com/fwlink/?LinkId=521788)」を参照してください。
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>ステップ 2:段階的な移行バッチ用の CSV ファイルを作成する
 
-Office 365 に移行する社内のメールボックスのユーザーを特定したら、コンマ区切りの値 (CSV) ファイルを使用して移行バッチを作成します。Office 365 が移行の実行に使用する CSV ファイルの各行には、社内メールボックスに関する情報が含まれています。 
+Microsoft 365 に移行する社内メールボックスのユーザーを特定した後、コンマ区切り値 (CSV) ファイルを使用して移行バッチを作成します。CSV ファイルの各行 (Microsoft 365 で移行を実行するために使用されます) には、社内メールボックスに関する情報が含まれています。 
   
 > [!NOTE]
-> 段階的移行により Office 365 に移行する場合、移行可能なメールボックスの数に制限はありません。移行バッチ用の CSV ファイルに含めることができる行数は、最大 2,000 行までです。2,000 を超えるメールボックスを移行するには、追加の CSV ファイルを作成し、各ファイルを使用して新しい移行バッチを作成します。 
+> 段階的な移行を使用して Microsoft 365 に移行できるメールボックスの数に制限はありません。移行バッチの CSV ファイルには、最大2000行を含めることができます。2000を超えるメールボックスを移行するには、追加の CSV ファイルを作成し、各ファイルを使用して新しい移行バッチを作成します。 
   
  **サポートされている属性**
   
@@ -110,13 +112,13 @@ Office 365 に移行する社内のメールボックスのユーザーを特定
   
 |**属性**|**説明**|**必須**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |プライマリ SMTP 電子メール アドレス (たとえば、社内メールボックスの場合は pilarp@contoso.com など) を指定します。  <br/> 社内メールボックスには、プライマリ SMTP アドレスを使用し、Office 365 のユーザー ID は使用しないでください。たとえば、社内ドメインが contoso.com という名前で、Office 365 の電子メール ドメインが service.contoso.com という名前の場合、CSV ファイル内の電子メール アドレスにはドメイン名 contoso.com を使用します。  <br/> |必須  <br/> |
-|Password  <br/> |新しい Office 365 メールボックスに設定されるパスワード。Office 365 の組織に適用されるパスワードの制約はすべて、CSV ファイル内のパスワードにも適用されます。  <br/> |省略可能  <br/> |
-|ForceChangePassword  <br/> |ユーザーが新しい Office 365 メールボックスに初めてサインインする場合に、パスワードを変更する必要があるかどうかを指定します。このパラメーターの値には **True** または **False** を使用してください。<br/> > [!NOTE]> Active Directory フェデレーション サービス (AD FS) 以上を社内組織に展開してシングル サインオン (SSO) ソリューションを実装した場合、 **ForceChangePassword** 属性の値には **False** を使用する必要があります。          |省略可能  <br/> |
+|EmailAddress  <br/> |プライマリ SMTP 電子メール アドレス (たとえば、社内メールボックスの場合は pilarp@contoso.com など) を指定します。  <br/> Microsoft 365 のユーザー Id ではなく、オンプレミスのメールボックスのプライマリ SMTP アドレスを使用します。たとえば、オンプレミスのドメインが contoso.com という名前で、Microsoft 365 の電子メールドメインが service.contoso.com という名前の場合は、CSV ファイルの電子メールアドレスに contoso.com ドメイン名を使用します。  <br/> |必須  <br/> |
+|Password  <br/> |新しい Microsoft 365 メールボックスに設定するパスワードを指定します。Microsoft 365 組織に適用されるパスワード制限は、CSV ファイルに含まれるパスワードにも適用されます。  <br/> |省略可能  <br/> |
+|ForceChangePassword  <br/> |ユーザーが新しい Microsoft 365 メールボックスに初めてサインインするときにパスワードを変更する必要があるかどうかを指定します。このパラメーターの値には、 **True**または**False**を使用します。<br/> > [!NOTE]> Active Directory フェデレーション サービス (AD FS) 以上を社内組織に展開してシングル サインオン (SSO) ソリューションを実装した場合、 **ForceChangePassword** 属性の値には **False** を使用する必要があります。          |省略可能  <br/> |
    
  **CSV ファイル形式**
   
-以下に、CSV ファイルの形式の例を示します。この例では、3 つの社内メールボックスが Office 365 に移行されます。
+CSV ファイルの形式の例を次に示します。この例では、3つのオンプレミスメールボックスが Microsoft 365 に移行されます。
   
 CSV ファイルの最初の行、つまりヘッダー行には、後続の行で指定される属性 (つまり、フィールド) の名前が示されます。各属性名はコンマで区切られます。
   
@@ -137,7 +139,7 @@ CSV ファイルの作成には、任意のテキスト エディターや Exce
 ### <a name="step-3-create-a-migration-endpoint"></a>ステップ 3:移行エンドポイントを作成する
 <a name="BK_Endpoint"> </a>
 
-電子メールを正常に移行するためには、Office 365 は移行元の電子メール システムと接続して通信する必要があります。これを実行するため、Office 365 では移行エンドポイントを使用します。PowerShell を使用して Outlook Anywhere 移行エンドポイントを作成するには、段階的な移行で、最初に[リモート PowerShell による Exchange への接続](https://go.microsoft.com/fwlink/p/?LinkId=534121)を行います。 
+電子メールを正常に移行するには、Microsoft 365 が接続して、ソースメールシステムと通信する必要があります。これを行うために、Microsoft 365 では移行エンドポイントを使用しています。PowerShell を使用して Outlook Anywhere 移行エンドポイントを作成するには、段階的な移行では、最初[に Exchange Online に接続](https://go.microsoft.com/fwlink/p/?LinkId=534121)します。 
   
 移行コマンドの完全な一覧については、「[移動と移行のコマンドレット](https://go.microsoft.com/fwlink/p/?LinkId=534750)」を参照してください。
   
@@ -198,16 +200,16 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>ステップ 5:社内メールボックスをメールが有効なユーザーに変換する
 <a name="BK_Endpoint"> </a>
 
-メールボックスのバッチが正常に移行されたら、何らかの方法でユーザーが各自のメールにアクセスできるようにする必要があります。メールボックスが移行されたユーザーには、社内のメールボックスと Office 365 のメールボックスの両方があります。Office 365 のメールボックスを持つユーザーは、社内のメールボックスで新着メールの受信が停止します。 
+メールボックスのバッチを正常に移行したら、ユーザーがメールにアクセスできるようにする何らかの方法が必要になります。メールボックスが移行されたユーザーには、オンプレミスのメールボックスと Microsoft 365 の両方があります。Microsoft 365 のメールボックスを持つユーザーは、オンプレミスのメールボックスで新着メールの受信を停止します。 
   
-移行が完了していないため、まだすべてのユーザーが Office 365 から各自の電子メールにアクセスできる状態ではありません。両方のメールボックスを持つユーザーに対してはどのようにすれば良いでしょうか。既に移行済みの社内メールボックスをメールが有効なユーザーに変更することができます。メールボックスからメールが有効なユーザーに変更した場合、社内メールボックスに移動するのではなく、ユーザーを Office 365 から各自の電子メールにアクセスさせることができます。 
+移行が完了していないため、すべてのユーザーに電子メールの Microsoft 365 を送信する準備ができていません。そのため、両方を持つユーザーに対して何を行うのでしょうか。メールが有効なユーザーに移行済みの社内メールボックスを変更することができます。メールボックスをメールが有効なユーザーに変更する場合は、オンプレミスのメールボックスに移動するのではなく、電子メールに対して Microsoft 365 をユーザーに指示することができます。 
   
-社内メールボックスをメールが有効なユーザーに変換するもう 1 つの重要な理由は、プロキシ アドレスをメールが有効なユーザーにコピーすることで、Office 365 メールボックスからのプロキシ アドレスを保持するためです。これにより、Active Directory を使用して社内組織からクラウドベースのユーザーを管理できます。また、すべてのメールボックスを Office 365 に移行した後に、社内 Exchange Server 組織を停止する場合、メールが有効なユーザーにコピーされたプロキシ アドレスは、社内 Active Directory に残ります。
+オンプレミスのメールボックスをメールが有効なユーザーに変換するもう1つの重要な理由は、プロキシアドレスをメールが有効なユーザーにコピーすることによって、Microsoft 365 メールボックスからのプロキシアドレスを保持することです。これにより、Active Directory を使用してオンプレミスの組織からクラウドベースのユーザーを管理することができます。また、すべてのメールボックスを Microsoft 365 に移行した後に、オンプレミスの Exchange Server 組織を使用停止にした場合、メールが有効なユーザーにコピーしたプロキシアドレスは、オンプレミスの Active Directory に残ります。
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>ステップ 6:段階的な移行バッチを削除する
 <a name="BK_Endpoint"> </a>
 
- 移行バッチ内のすべてのメールボックスが正常に移行された場合、バッチ内の社内メールボックスをメールが有効なユーザーに変換した後に、段階的な移行バッチを削除する準備が整います。メールが移行バッチ内の Office 365 メールボックスに転送されていることを確認してください。段階的な移行バッチを削除すると、移行サービスによって、移行バッチに関連するすべてのレコードがクリーンアップされて移行バッチが削除されます。
+ 移行バッチ内のすべてのメールボックスが正常に移行された場合、バッチ内の社内メールボックスをメールが有効なユーザーに変換した後に、段階的な移行バッチを削除する準備が整います。 メールが移行バッチ内の Microsoft 365 メールボックスに転送されていることを確認してください。 段階的な移行バッチを削除すると、移行サービスによって、移行バッチに関連するすべてのレコードがクリーンアップされて移行バッチが削除されます。
   
 Exchange Online PowerShell で "StagedBatch1" 移行バッチを削除するには、次のコマンドを実行します。
   
@@ -229,25 +231,25 @@ Get-MigrationBatch StagedBatch1
   
 **Get-MigrationBatch** コマンドレットの詳細については、「[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)」を参照してください。
   
-### <a name="step7-assign-licenses-to-office-365-users"></a>ステップ 7:Office 365 ユーザーにライセンスを割り当てる
+### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Step7: Microsoft 365 ユーザーにライセンスを割り当てる
 <a name="BK_Endpoint"> </a>
 
-ライセンスを割り当てて、移行されたアカウントの Office 365 のユーザー アカウントをアクティブ化します。 ライセンスを割り当てないと、猶予期間 (30 日) が終了したときにメールボックスが無効になります。 Microsoft 365 管理センターでライセンスを割り当てるには、「[一般法人向け Office 365 ライセンスの割り当てまたは割り当て解除を行う](https://go.microsoft.com/fwlink/?LinkId=536681)」を参照してください。
+ライセンスを割り当てることにより、移行されたアカウントの Microsoft 365 ユーザーアカウントをアクティブ化します。 ライセンスを割り当てないと、猶予期間 (30 日) が終了したときにメールボックスが無効になります。 Microsoft 365 管理センターでライセンスを割り当てるには、「[ライセンスの割り当てまたは割り当て解除](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)」を参照してください。
   
 ### <a name="step-8-complete-post-migration-tasks"></a>ステップ 8:移行後のタスクを完了する
 <a name="BK_Postmigration"> </a>
 
-- **ユーザーが各自のメールボックスに簡単にアクセスできるように、自動検出 DNS レコードを作成します。** すべての社内メールボックスが Office 365 に移行されたら、Office 365 組織に自動検出レコードを構成して、Outlook クライアントとモバイル クライアントを持つ新しい Office 365 メールボックスにユーザーが簡単に接続できるようにします。この新しい自動検出 DNS レコードは、Office 365 組織に使用しているのと同じ名前空間を使用する必要があります。たとえば、クラウドベースの名前空間が cloud.contoso.com の場合、作成する必要のある自動検出 DNS レコードは autodiscover.cloud.contoso.com となります。
+- **ユーザーが各自のメールボックスに簡単にアクセスできるように、自動検出 DNS レコードを作成します。** すべてのオンプレミスメールボックスが Microsoft 365 に移行された後、Microsoft 365 組織の自動検出 DNS レコードを構成して、ユーザーが Outlook およびモバイルクライアントを使用して新しい Microsoft 365 メールボックスに簡単に接続できるようにすることができます。 この新しい自動検出 DNS レコードは、Microsoft 365 組織に使用しているのと同じ名前空間を使用する必要があります。 たとえば、クラウドベースの名前空間が cloud.contoso.com の場合、作成する必要のある自動検出 DNS レコードは autodiscover.cloud.contoso.com となります。
     
-    Office 365 は CNAME レコードを使用して、Outlook クライアントとモバイル クライアントのための自動検出サービスを実装します。自動検出 CNAME レコードには以下の情報が含まれている必要があります。
+    Microsoft 365 では CNAME レコードを使用して、Outlook およびモバイルクライアントの自動検出サービスを実装しています。 自動検出 CNAME レコードには以下の情報が含まれている必要があります。
     
   - **エイリアス:** autodiscover
     
   - **ターゲット:** autodiscover.outlook.com
     
-    詳細については、「[DNS レコードを管理するときに Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=535028)」を参照してください。
+    詳細については、「[ドメインを接続するための DNS レコードを追加する](https://go.microsoft.com/fwlink/p/?LinkId=535028)」を参照してください。
     
-- **社内の Exchange サーバーの使用を停止します。** すべての電子メールが Office 365 メールボックスに直接ルーティングされていることを確認した後、社内の電子メール組織を維持する必要がもはやないか、SSO ソリューションを実装する予定がない場合は、Exchange をサーバーからアンインストールするとともに、社内の Exchange 組織を削除することができます。
+- **社内の Exchange サーバーの使用を停止します。** すべての電子メールが Microsoft 365 メールボックスに直接ルーティングされていることを確認し、オンプレミスの電子メール組織を管理する必要がなくなったか、SSO ソリューションの実装を計画していない場合は、サーバーから Exchange をアンインストールし、オンプレミスの Exchange 組織を削除することができます。
     
     詳細については、以下を参照してください。
     

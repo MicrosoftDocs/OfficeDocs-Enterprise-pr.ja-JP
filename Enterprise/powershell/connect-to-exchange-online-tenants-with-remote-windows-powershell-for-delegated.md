@@ -16,14 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: '概要: リモート Windows PowerShell で DelegatedOrg 値を使用して、Exchange Online に接続します。'
-ms.openlocfilehash: 4a9f08325fc56308b27467423b047375985562c5
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997373"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230833"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>委任アクセス許可 (DAP) パートナー用リモート Windows PowerShell で Exchange Online テナントに接続する
+
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
 
 > [!IMPORTANT]
 > このトピックの手順は、委任アクセス許可 (DAP) パートナー専用です。DAP パートナーでない場合は、このトピックの手順を使用しないでください。 

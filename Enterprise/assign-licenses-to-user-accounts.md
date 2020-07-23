@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 ライセンスを個別に、またはグループメンバーシップに基づいてユーザーアカウントに割り当てる方法について説明します。
-ms.openlocfilehash: f28b9a6367cec2f67b664db2d43ba55b9cf19638
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 3a51f4966cdcfede57ad8a69546face160ae1750
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735935"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230003"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>ユーザーアカウントに Microsoft 365 ライセンスを割り当てる
 
@@ -48,7 +48,7 @@ ms.locfileid: "44735935"
 Microsoft 365 ライセンスを個々のユーザーアカウントに割り当てるには、次のものを使用できます。
 
 - [Microsoft 365 管理センター](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
+- [PowerShell for Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
 
 自動ライセンス割り当ての場合は、「 [AZURE AD でのグループベースのライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)」を参照してください。
 

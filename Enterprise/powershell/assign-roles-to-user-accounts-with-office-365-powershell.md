@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell でロールをユーザー アカウントに割り当てる
+title: PowerShell を使用して Microsoft 365 ユーザーアカウントに役割を割り当てる
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: '概要: Office 365 PowerShell を使用して、ロールをユーザー アカウントに割り当てます。'
-ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+description: '概要: Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役割を割り当てます。'
+ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698914"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230873"
 ---
-# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Office 365 PowerShell でロールをユーザー アカウントに割り当てる
+# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントに役割を割り当てる
 
-Office 365 PowerShell を使用すると、ロールをユーザー アカウントに迅速かつ簡単に割り当てることができます。
+*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+
+Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役割をすばやく簡単に割り当てることができます。
 
 >[!Note]
 >Microsoft 365 管理センターを使用してユーザーアカウントに役割を割り当てるには、[次の手順](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)を参照してください。
@@ -36,7 +38,7 @@ Office 365 PowerShell を使用すると、ロールをユーザー アカウン
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-最初に、全体管理者アカウントを使用して [Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+最初に、全体管理者アカウントを使用して[Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
   
 次に、ロールに追加するユーザー アカウントのサインイン名を判別します (例: fredsm@contoso.com)。サインイン名はユーザー プリンシパル名 (UPN) とも呼ばれます。
 
@@ -83,7 +85,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する
 
-最初に、全体管理者アカウントを使用して [Office 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+最初に、全体管理者アカウントを使用して[Microsoft 365 テナントに接続](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
   
 ### <a name="for-a-single-role-change"></a>単一ロールの変更の場合
 
@@ -235,6 +237,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>関連項目
 
-- [Office 365 PowerShell を使用してユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
-- [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
+- [PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
+- [Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)

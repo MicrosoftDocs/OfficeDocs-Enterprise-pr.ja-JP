@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Office 365 用 ExpressRoute は、多くのインターネットに接続された Office 365 サービスへの代替ルーティングパスを提供します。 Office 365 の ExpressRoute のアーキテクチャは、インターネットを介して既にアクセス可能な Office 365 サービスのアドバタイズに基づいています。これらの IP プレフィックスをネットワークに再配布するには、プロビジョニングされた ExpressRoute サーキットを使用します。 ExpressRoute を使用すると、多くの Office 365 サービスで、インターネットおよび ExpressRoute を介して、いくつかの異なるルーティングパスを効果的に有効にすることができます。 ネットワーク上のルーティングの状態が、内部ネットワークトポロジの設計方法に大きな変化を表すことがあります。
-ms.openlocfilehash: ab40a346ca1b19fcd100f17b934b766b21741010
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998129"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230303"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Office 365 向け ExpressRoute の実装
 
@@ -582,7 +582,7 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 [Office 365 向け ExpressRoute でのネットワーク計画](network-planning-with-expressroute.md)
   
-[Office 365 シナリオ用の ExpressRoute での BGP コミュニティの使用 (プレビュー)](bgp-communities-in-expressroute.md)
+[Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する](bgp-communities-in-expressroute.md)
   
 [Skype for Business Online でのメディア品質とネットワーク接続のパフォーマンス](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
@@ -596,6 +596,6 @@ ExpressRoute 接続を使用して Office 365 を展開する場合は、Express
   
 [Office 365 のパフォーマンスに関するトラブルシューティングの計画](performance-troubleshooting-plan.md)
   
-[Office 365 の URL および IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365 のネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
