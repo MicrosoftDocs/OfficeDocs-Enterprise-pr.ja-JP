@@ -3,9 +3,9 @@ title: Microsoft 365 データの場所
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 06/17/2020
+ms.date: 07/22/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 search.appverid:
@@ -17,31 +17,31 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft 365 のデータの場所'
-ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
-ms.translationtype: MT
+ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781062"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263696"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データが保存されている場所
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
-次の表は、Microsoft のすべてのグローバルクラウドの場所において、Microsoft 365 サービスのお客様のデータが保存される場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
+次の表は、Microsoft のすべてのグローバル クラウドの場所で、Microsoft 365 サービスの顧客データが保存されている場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
 
 顧客は、**[設定] | [組織プロファイル] | [データ場所のカード]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧します。
 
-新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて Geo に既定で割り当てられています。
+新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて既定で Geo に設定されます。
 
 保管中の顧客データの保管場所に関する契約上のコミットメントに関する情報は、[Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) に記載されています。
 
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
 
 
-COVID の危機に関するかつてない状況において、欧州でオンラインサービスの需要を管理する必要があるため、組織が教育機関の場合は、欧州連合 (EU)、ヨーロッパフリー売買協会 (EFTA)、英国 (UK)、米国 (米国)、またはカナダ (CA) に Microsoft 365 テナントをプロビジョニングするか、または EU 内のデータセンターにデータを転送することができます。、EFTA、英国、US、または CA。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
+COVID-19 危機とそれを取り巻く未曾有の状況により、および欧州のオンライン サービスの需要を管理する必要から、お客様の組織が教育機関の場合は、欧州連合 (EU)、欧州自由貿易連合 (EFTA)、英国 (UK)、米国 (US)、またはカナダ (CA) に Microsoft 365 テナントをプロビジョニングするか、またはお客様のデータを EU、EFTA、英国、米国、またはカナダの任意のデータ センターに移動する場合があります。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
 
 
 
@@ -58,11 +58,11 @@ Microsoft は、データ センターの正確な所在地を開示しません
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>顧客データの場所は、エンドユーザーのエクスペリエンスに直接影響を与えますか?
 
-Microsoft 365 のパフォーマンスは、単にデータセンターの場所に対するユーザーの距離に比例するわけではありません。 Microsoft の継続的な投資は、グローバルクラウドネットワーク、グローバルクラウドインフラストラクチャ、および Microsoft 365 services のアーキテクチャにより、顧客データが保存されている場所に関係なく、一貫性のある単一の機能をユーザーに提供することができます。 ユーザーにパフォーマンスの問題が発生している場合は、それらを詳細にトラブルシューティングする必要があります。 Microsoft では、Microsoft 365 のお客様向けのガイダンスを公開し、 [Office サポート web サイト](https://go.microsoft.com/fwlink/p/?linkid=862645)でエンドユーザーのパフォーマンスを計画し、最適化しています。
+Microsoft 365 のパフォーマンスは、データ センターの場所までのユーザーの距離に単純に比例するわけではありません。 Microsoft は、グローバル クラウド ネットワーク、グローバル クラウド インフラストラクチャ、Microsoft 365 サービス アーキテクチャにおいて継続的な投資を行っており、顧客データがどこに保存されているかに関係なく、単一で一貫性のあるエクスペリエンスをユーザーに提供します。 ユーザーにパフォーマンスの問題が発生している場合は、それらを詳細にトラブルシューティングする必要があります。 Microsoft は、[Office サポート Web サイト](https://go.microsoft.com/fwlink/p/?linkid=862645)で、エンドユーザーのパフォーマンスを計画および最適化するためのガイダンスを Microsoft 365 の顧客向けに公開しています。
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft は、国、地域、業界固有の規制にどのように準拠していますか?
 
-個人データの収集と使用を管理する国、地域、および業界固有の要件に準拠するために役立つ、Microsoft 365 では、グローバルクラウドプロダクティビティプロバイダーのコンプライアンスに関する最も包括的な一連のサービスを提供しています。 「Microsoft セキュリティセンター」の「 [microsoft 365 コンプライアンス](https://go.microsoft.com/fwlink/p/?linkid=862317)」セクションで、[コンプライアンスの提供](https://go.microsoft.com/fwlink/p/?linkid=864391)と詳細を確認してください。 また、一部の Microsoft 365 プランでは、データの管理、法律および規制の要件への準拠、データに対して行われたアクションの監視に役立つ、その他のコンプライアンスソリューションが提供されています。
+個人のデータの収集と使用を管理する国、地域、業界固有の要件への準拠を支援するために、Microsoft 365 は、あらゆるグローバル クラウド生産性プロバイダーの最も包括的なコンプライアンス製品を提供します。 Microsoft センター センターの[Microsoft 365 コンプライアンス](https://go.microsoft.com/fwlink/p/?linkid=862317)セクションで、[コンプライアンスの提供](https://go.microsoft.com/fwlink/p/?linkid=864391)とその詳細を確認してください。 また、特定の Microsoft 365プラン では、データの管理、法的要件および規制要件への準拠、データに対して実行される操作ンの監視に役立つ追加のコンプライアンス ソリューションが提供されます。
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>誰がどの規則に従ってデータにアクセスできますか?
 
@@ -70,15 +70,15 @@ Microsoft 365 のパフォーマンスは、単にデータセンターの場所
 
 ### <a name="does-microsoft-access-your-data"></a>Microsoft は、お客様のデータにアクセスしますか?
 
-Microsoft は、お客様のデータへの独自のアクセスを意図的に制限することで、ほとんどの Microsoft 365 操作を自動化しています。 これにより、Microsoft 365 をスケールで管理し、顧客データに対する内部の脅威のリスクを解決することができます。 既定では、Microsoft のエンジニアには、Microsoft 365 の顧客データに対する管理者権限がありません。 Microsoft のエンジニアは、限られた期間、顧客データに制限され記録された状態でアクセスできます。ただし、通常のサービス運用に必要な場合、Microsoft 上級管理職のメンバー (カスタマー ロックボックス機能のライセンスを取得しているお客様の場合はお客様) によって承認された場合のみです。
+Microsoft は、顧客データへの自社アクセスを意図的に制限しながら、ほとんどの Microsoft 365 操作を自動化します。 これにより、Microsoft 365 を規模に応じて管理し、顧客データに対する内部脅威のリスクに対処できます。 既定では、Microsoft のエンジニアには継続的な管理者権限も、Microsoft 365 の顧客データへのアクセス権もありません。 Microsoft のエンジニアは、限られた期間、顧客データに制限され記録された状態でアクセスできます。ただし、通常のサービス運用に必要な場合、Microsoft 上級管理職のメンバー (カスタマー ロックボックス機能のライセンスを取得しているお客様の場合はお客様) によって承認された場合のみです。
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Microsoft は、お客様のデータをどのように保護していますか?
 
-Microsoft は、情報の安全性を確保するために Microsoft 365 に組み込まれている堅牢なポリシー、制御、およびシステムを備えています。 詳細については、microsoft Trust Center の[「microsoft 365 security」セクション](https://go.microsoft.com/fwlink/p/?linkid=864393)を参照してください。
+Microsoft は、お客様の情報を安全な状態で保護できるように、信頼性の高いポリシー、コントロールとシステムを Microsoft 365 に組み込んでいます。 詳細については、Microsoft セキュリティ センターの[「Microsoft 365 セキュリティ」のセクション](https://go.microsoft.com/fwlink/p/?linkid=864393)を確認してください。
 
-### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 はデータを暗号化していますか?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 では、データは暗号化されるのですか?
 
-Microsoft 365 は、お客様のデータを保存し、転送中に暗号化するサービス側のテクノロジを使用しています。 保存されているお客様データについては、Microsoft 365 はボリュームレベルおよびファイルレベルの暗号化を使用します。 転送中の顧客データについては、Microsoft 365 は、データセンター間、およびクライアントとサーバー間の通信に、トランスポート層セキュリティ (TLS) やインターネットプロトコルセキュリティ (IPsec) などの複数の暗号化テクノロジを使用します。 Microsoft 365 には、お客様が管理する暗号化機能も含まれています。
+Microsoft 365 は、保存中および転送中の顧客データを暗号化するサービス側テクノロジを使用します。 保存中の顧客データの場合、Microsoft 365 はボリューム レベルおよびファイル レベルの暗号化を使用します。 転送中の顧客データの場合、Microsoft 365 は、トランスポート レイヤー セキュリティ (TLS) やインターネット プロトコル セキュリティ (IPsec) など、データ センター間およびクライアントとサーバー間の通信に複数の暗号化テクノロジを使用します。 Microsoft 365 には、顧客により管理される暗号化機能も含まれています。
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Microsoft Azure のデータ常駐情報はどこで入手できますか?
 
@@ -86,26 +86,26 @@ Microsoft Azure のデータ常駐情報については、[地域別に利用可
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 の複数地域機能とは何ですか?
 
-[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)を使用することにより、お客様は、Microsoft 365 cloud の利用可能な場所に、お客様に主要な顧客データを割り当てることができます。   
+[複数地域機能](https://go.microsoft.com/fwlink/p/?linkid=872033) を使用すると、ユーザーは主要な顧客データを Microsoft 365 クラウドの利用可能な場所に保存しておくことができます。   
 
 ### <a name="what-services-support-multi-geo"></a>複数地域機能をサポートするサービスは何ですか?
 
-[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)機能 は、Exchange Online、OneDrive、SharePoint Online で利用できます。 Microsoft は、他の Microsoft 365 サービスについて複数地域の調査を行っています。
+[複数地域](https://go.microsoft.com/fwlink/p/?linkid=872033)機能 は、Exchange Online、OneDrive、SharePoint Online で利用できます。 Microsoft は、他の Microsoft 365 サービスを対象として複数地域機能を調査しています。
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune データの場所の例外
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune データの保存場所については、どのような例外がありますか?
 
-Microsoft は、指定された Geo の外側に Intune のお客様データを保存しません。 次の場合を除く:
+Microsoft は、指定された地域外に Intune の顧客データを保存しません。 次の場合を除きます。
 
-- Microsoft は、カスタマーサポートの提供、サービスのトラブルシューティング、または法的要件への準拠を行う必要があります。
-- お客様は、以下の用途を含めて、顧客データのストレージを有効にするようにアカウントを構成します。
+- Microsoft は、顧客サポートを提供したり、サービスのトラブルシューティングを行ったり、法的要件に準拠したりする必要があります。
+- ユーザーは、次のような用途を含む顧客データの保存を可能にするアカウントを構成します。
 
-  - グローバルなキャッシュサービスを提供し、世界中のエッジの場所に顧客データを格納するコンテンツ配信ネットワーク (CDN) など、グローバルに動作するように設計された機能。
+  - 地球規模のキャッシュ サービスを提供し、世界中に顧客データを保存する、コンテンツ配信ネットワーク (CDN) など、グローバルに動作するように設計された機能。
 
-  - Azure Active Directory (Azure AD) (ディレクトリデータをグローバルに格納する場合があります)。 これは、米国の Azure AD の展開には適用されません (Azure AD データは米国のみに格納されます)。または、ヨーロッパ (Azure AD データは欧州または米国に格納されている) の場合があります。
+  - ディレクトリ データをグローバルに保存できる、Azure Active Directory (Azure AD)。 この内容は、米国 (Azure AD データは米国のみに保存されます)、または欧州 (Azure AD データは欧州または米国に保存されています) の Azure AD の展開には適用されません。
    
-  - プレビュー、ベータ、またはその他のプレリリースサービス。通常、顧客データは米国に保存されますが、グローバルに保存することができます。
+  - 通常、顧客データは米国に保存されますが、プレビュー、ベータ、およびその他のプレリリース サービスについては、グローバルに保存することができます。
 
-いずれにしても、Microsoft はお客様またはエンドユーザーが顧客データにアクセスすることができる Geo を制御または制限しません。 
+いずれにしても、Microsoft は、顧客やそのエンドユーザーが顧客データにアクセスできるような地域機能を制御したり制限したりすることはありません。 
 
 ## <a name="data-center-locations"></a>データ センターの場所
 
@@ -129,7 +129,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | --- | --- |
 | オーストラリア | シドニー、メルボルン |
 | カナダ | ケベックシティ、トロント |
-| 欧州連合 | オーストリア (ウィーン)、フィンランド (ヘルシンキ)、フランス (パリ、Marseille)、アイルランド (ダブリン)、オランダ (アムステルダム) |
+| 欧州連合 | オーストリア (ウィーン)、フィンランド (ヘルシンキ)、フランス (パリ、マルセイユ)、アイルランド (ダブリン)、オランダ (アムステルダム) |
 | フランス | パリ、マルセイユ |
 | ドイツ | フランクフルト、ベルリン |
 | インド | チェンナイ、ムンバイ、プネ |
@@ -142,7 +142,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | 英国 | ダーラム、ロンドン、カーディフ |
 | 米国 |  ボイドトン、シャイアン、シカゴ、デモイン、クインシー、サンアントニオ、サンタクララ、サンノゼ |
 
-新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられた請求先住所の国に基づいて Geo に既定で割り当てられています。 既存の Office 365 サービスの顧客データの保存場所を確認する場所は、Office 365 管理センターの [設定] | [組織プロファイル] | [データ場所のカード] で、テナント固有データの場所情報を閲覧してください。 または、Microsoft 365 サービスの使用を開始する場合に、次のリストからお客様のビジネスの基盤となる国を展開し、顧客データが格納される場所を確認します。
+新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられた請求先住所の国に基づいて既定で地域機能に設定されます。 既存の Office 365 サービスの顧客データの保存場所を確認する場所は、Office 365 管理センターの [設定] | [組織プロファイル] | [データ場所のカード] で、テナント固有データの場所情報を閲覧してください。 または、ビジネスの拠点となる国を下のリストから展開して、今すぐ Microsoft 365 サービスの使用を開始する場合に顧客データが保存される場所を検索してください。
 
 ## <a name="afghanistan"></a>アフガニスタン
 <details><summary>クリックして展開</summary><p>
@@ -476,7 +476,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | オーストラリア |
 | Stream | オーストラリア |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -524,7 +524,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -692,7 +692,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -716,7 +716,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -980,7 +980,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1028,7 +1028,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1484,7 +1484,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1532,7 +1532,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 3 - アメリカ |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1796,7 +1796,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1844,7 +1844,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -1940,7 +1940,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | オーストラリア |
 | Stream | オーストラリア |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2012,7 +2012,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 3 - アメリカ |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2036,7 +2036,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2132,7 +2132,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2180,7 +2180,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2204,7 +2204,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2564,7 +2564,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2588,7 +2588,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2684,7 +2684,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2708,7 +2708,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2756,7 +2756,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -2780,7 +2780,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3068,7 +3068,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3092,7 +3092,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3308,7 +3308,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3380,7 +3380,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3404,7 +3404,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -3836,7 +3836,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4340,7 +4340,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 2 – アジア太平洋 |
 | Stream | グローバル地域 2 – アジア太平洋 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4412,7 +4412,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4436,7 +4436,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4460,7 +4460,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4484,7 +4484,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4964,7 +4964,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5084,7 +5084,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 南アフリカ |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5108,7 +5108,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5228,7 +5228,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5275,8 +5275,8 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | スイス |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Whiteboard | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| ホワイトボード | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -5756,7 +5756,7 @@ Microsoft は、指定された Geo の外側に Intune のお客様データを
 | OneNote サービス | 米国 |
 | Stream | 米国 |
 | Whiteboard | 米国 |
-| フォーム | 米国 |
+| Forms | 米国 |
 | Workplace Analytics | 米国 |
 </p></details>
 
