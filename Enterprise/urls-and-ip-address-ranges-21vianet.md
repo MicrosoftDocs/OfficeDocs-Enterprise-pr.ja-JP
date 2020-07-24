@@ -20,21 +20,18 @@ f1.keywords:
 - NOCSH
 description: この記事は、中国の 21 vianet が運営する Office 365 に適用されます。この記事では、21Vianet が運営する Office 365 で使用される URL と IP アドレス範囲の一覧が表示されます。
 hideEdit: true
-ms.openlocfilehash: 157f80b6d3bb12f0e3c3aa7f6d2d82a1d24965e1
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: fe0015bcda70cace8247fdbcfb6a2d4424b28349
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091164"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387720"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
  *適用先: 21Vianet が運営する Office 365 の中小企業管理者、21Vianet が運営する Office 365 の管理者*
 
 **概要**: 次のエンドポイント (FQDN、ポート、URL、IPv4、および IPv6 プレフィックス) は 21Vianet が運営する Office 365 に適用され、これらのプランだけを活用して生産性サービスを組織へ提供できるように設計されています。
-  
-> [!NOTE]
-> Microsoft は、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開始しました。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、このページからリンクされている XML ドキュメント (2018 年 10 月 2 日に廃止済み) に代わるものです。この新しいサービスを試すには、[[Web サービス]](office-365-ip-web-service.md) にアクセスします。
   
  **Office 365 エンドポイント:** [(GCC を含む) 世界](urls-and-ip-address-ranges.md)  | *21Vianet が運営する Office 365* | [Office 365 ドイツ](office-365-germany-endpoints.md) |  [Office 365 米国政府機関向け DoD](office-365-u-s-government-dod-endpoints.md) | [Office 365 米国政府 GCC 高](office-365-u-s-government-gcc-high-endpoints.md) |
   

@@ -24,25 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: '概要: Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。'
 hideEdit: true
-ms.openlocfilehash: 175359f998c4dd695c301540f94e7d7527377ffc
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: 1df2420812cd6ba0fbec619a4a280874c3d9fc9b
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091210"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387700"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL および IP アドレス範囲
 
 Office 365 には、インターネットへの接続が必要です。Office 365 のプランを利用する予定のお客様は (政府機関コミュニティ クラウド (GCC) を含む)、次のエンドポイントに到達できる必要があります。
   
-> [!NOTE]
-> COVID-19 危機への対応の一環として、Microsoft は、計画されている URL および IP アドレスの変更を一時的に停止しています。 これは、お客様の IT チームが、在宅勤務での Office 365 シナリオに推奨されるネットワーク最適化を安心して簡単に実装できるようにするための措置です。 2020 年 3 月 24 日から 2020 年 6 月 30 日まで、この一時停止により、主要な Office 365 サービス (Exchange Online、SharePoint Online、Microsoft Teams) の最適化のカテゴリに含まれる IP 範囲と URL の変更が中止されます。 他のエンドポイント カテゴリの変更は、通常どおりに行われます。 この期間中、お客様は Office 365 最適化カテゴリのサービス エンドポイント定義を静的に使用して、クラウド側のネットワーク変更による Office 365 接続へのリスクを最小限に抑えながら、ターゲット ネットワークの最適化 (帯域幅予約や分割トンネル VPN の構成など) を行うことができます。 期間終了時にサービスの中断が発生しないようにするため、「[Office 365 エンドポイントの管理](managing-office-365-endpoints.md)」でのガイダンスに従って、Office 365 サービス エンドポイントの変更管理や自動化プロセスを実装することを強くお勧めします。
-
-> [!NOTE]
-> Microsoft は、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開始しました。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、このページからリンクされている XML ドキュメント (2018 年 10 月 2 日に廃止済み) に代わるものです。この新しいサービスを試すには、[[Web サービス]](office-365-ip-web-service.md) にアクセスします。
-  
 *Office 365 世界 (+ GCC)* | [21Vianet が運営する Office 365](urls-and-ip-address-ranges-21vianet.md) | [Office 365 ドイツ](office-365-germany-endpoints.md) | [Office 365 米国政府機関向け DoD](office-365-u-s-government-dod-endpoints.md)  | [Office 365 米国政府 GCC 高](office-365-u-s-government-gcc-high-endpoints.md) |
-  
+
 ||||
 |:-----|:-----|:-----|
 |**最終更新日:** 2020 年 7 月 9 日 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。  <br/> | **使用:** プロキシ [PAC ファイル](managing-office-365-endpoints.md#pacfiles) <br/> |
