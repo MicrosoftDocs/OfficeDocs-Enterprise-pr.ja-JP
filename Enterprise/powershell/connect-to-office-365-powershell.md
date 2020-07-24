@@ -1,9 +1,9 @@
 ---
-title: Office 365 PowerShell への接続
+title: PowerShell を使用して Microsoft 365 に接続する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/30/2020
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,26 +16,28 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: Office 365 PowerShell を使用して Office 365 組織に接続し、コマンド ラインから管理センター タスクを実行します。
-ms.openlocfilehash: 0906da2b8773973236bc8cb6ef273d1a14528bfd
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+description: Microsoft 365 テナントに接続するには、Microsoft 365用PowerShellを使用して、コマンドラインから管理センターのタスクを実行します。
+ms.openlocfilehash: 117d8d983d1baffa1ee5b85b7451c5fd2b0e30e7
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997423"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230813"
 ---
-# <a name="connect-to-office-365-powershell"></a>Office 365 PowerShell への接続
+# <a name="connect-to-microsoft-365-with-powershell"></a>PowerShell を使用して Microsoft 365 に接続する
 
-Office 365 PowerShell を使用すると、コマンド ラインから Office 365 の設定を管理できます。Office 365 PowerShell への接続は、必要なソフトウェアをインストールしてから Office 365 組織に接続するというシンプルなプロセスです。 
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 365 および管理者のユーザー アカウント、グループ、ライセンスへの接続に使用する PowerShell モジュールには、次の 2 つのバージョンがあります。
+Microsoft 365用 PowerShell では、コマンドラインから Microsoft 365 の設定を管理できます。 PowerShell への接続は、必要なソフトウェアのインストール、必要なソフトウェアの実行、Microsoft 365 の組織への接続という、シンプルなプロセスです。 
+
+Microsoft 365 および管理者のユーザー アカウント、グループ、ライセンスへの接続に使用する PowerShell モジュールには、次の 2 つのバージョンがあります。
 
 - Graph 用 Azure Active Directory PowerShell (コマンドレット名に **AzureAD** が含まれる)
 - Windows PowerShell 用 Microsoft Azure Active Directory モジュール (コマンドレット名に **MSol** が含まれる) 
 
-この記事の日付の時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールのコマンドレットの機能に完全に置き換わるものではありません。多くの場合、両方のバージョンを使用する必要があります。同じコンピューターに両方のバージョンを安全にインストールできます。
+この記事の日付の時点で、Graph 用 Azure Active Directory PowerShell モジュールは、ユーザー、グループ、およびライセンスの管理について Windows PowerShell 用 Microsoft Azure Active Directory モジュールのコマンドレットの機能に完全に置き換わるものではありません。 場合によっては、両方のバージョンを使用する必要があります。 両バージョンを同じコンピューターに安全にインストールすることができます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 次の Windows のバージョンを使用できます。
     
@@ -49,14 +51,14 @@ Office 365 および管理者のユーザー アカウント、グループ、�
     > [!NOTE]
     > 64 ビット バージョンの Windows を使用してください。Microsoft PowerShell の Microsoft Azure Active Directory モジュールの 32 ビット バージョンのサポートは 2014 年 10 月に終了しました。
     
-これらの手順は、Office 365 管理者の役割のメンバーであるユーザーを対象としています。詳細については、「[Office 365 の管理者ロールについて](https://go.microsoft.com/fwlink/p/?LinkId=532367)」を参照してください。
+これらの手順は、Microsoft 365 の管理者の役割を持つユーザーを対象としています。 詳細については、[「管理者の役割について」](https://go.microsoft.com/fwlink/p/?LinkId=532367) を参照してください。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールに接続する
 
 Graph 用 Azure Active Directory PowerShell モジュールのコマンドには、コマンドレット名に **AzureAD** が含まれます。 [Graph 用 Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) モジュールか [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-3.6.1) をインストールできます。
 
-Graph 用 Azure Active Directory PowerShell モジュールにおいて新しいコマンドレットを必要とするプロシージャについては、以下の手順を実行して、モジュールをインストールし、Office 365 サブスクリプションに接続します。
+Graph 用 Azure Active Directory PowerShell モジュールにおいて新しいコマンドレットを必要とするプロシージャについては、以下の手順を実行して、モジュールをインストールし、Microsoft 365 サブスクリプションに接続します。
 
 >[!Note]
 >Microsoft Windows のさまざまなバージョンに対するサポート情報については、[Graph 用 Azure Active Directory PowerShell モジュール](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)に関するページを参照してください。
@@ -76,9 +78,9 @@ Graph 用 Azure Active Directory PowerShell モジュールにおいて新しい
 
 信頼されていないリポジトリからモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、Enter を押します。
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプション用の Azure AD に接続する
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
-アカウント名とパスワードまたは多要素認証 (MFA) を使用して Office 365 サブスクリプション用の Azure AD に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。
+アカウント名とパスワードまたは多要素認証 (MFA) を使用して Microsoft 365 サブスクリプション用の Azure AD に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。
 
 |||
 |:-------|:-----|
@@ -89,7 +91,7 @@ Graph 用 Azure Active Directory PowerShell モジュールにおいて新しい
 | Office 365 U.S. Government DoD と Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-[**アカウントにサインイン**] ダイアログ ボックスで、Office 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[**OK**] をクリックします。
+[**アカウントにサインイン**] ダイアログ ボックスで、Microsoft 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[**OK**] をクリックします。
 
 MFA を使用している場合は、追加のダイアログ ボックスの手順に従って、確認コードなどのその他の認証情報を入力します。
 
@@ -108,7 +110,7 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
 
 これらの手順は、お使いのコンピューターで 1 度だけ必要となり、接続する度に実行する必要はありません。しかし、定期的にソフトウェアの新しいバージョンをインストールする必要があります。
   
-1.  Windows 10 を実行していない場合は、Microsoft Online Services サインインアシスタントの64ビットバージョンをインストールします: [IT プロフェッショナル用 Microsoft Online Services サインインアシスタント RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
+1.  Windows 10を実行中でない場合は、Microsoft Online Services サインイン アシスタントの 64 ビット バージョンをインストールします: [IT プロフェッショナル用 Microsoft Online Services サインイン アシスタント RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
     
 2. 以下の手順に従って、Windows PowerShell の Microsoft Azure Active Directory モジュールをインストールします。
     
@@ -117,9 +119,9 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
   - NuGet プロバイダーをインストールするようにメッセージが表示されたら、「**Y**」と入力し、ENTER を押します。
   - PSGallery からモジュールをインストールするようにメッセージが表示されたら、「**Y**」と入力し、Enter を押します。
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>手順 2: Office 365 サブスクリプション用の Azure AD に接続する
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>手順 2: Microsoft 365 サブスクリプション用の Azure AD に接続する
 
-アカウント名とパスワードまたは多要素認証 (MFA) を使用して Office 365 サブスクリプション用の Azure AD に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。
+アカウント名とパスワードまたは多要素認証 (MFA) を使用して Microsoft 365 サブスクリプション用の Azure AD に接続するには、Windows PowerShell コマンド プロンプトから次のいずれかのコマンドを実行します (昇格する必要はありません)。
 
 |||
 |:-------|:-----|
@@ -130,13 +132,13 @@ PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory �
 | Office 365 U.S. Government DoD と Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-[**アカウントにサインイン**] ダイアログ ボックスで、Office 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[**OK**] をクリックします。
+[**アカウントにサインイン**] ダイアログ ボックスで、Microsoft 365 の職場または学校のアカウントのユーザー名とパスワードを入力し、[**OK**] をクリックします。
 
 MFA を使用している場合は、追加のダイアログ ボックスの手順に従って、確認コードなどのその他の認証情報を入力します。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-何もエラーが表示されなければ、正常に接続されています。簡単に確かめるには、Office 365 コマンドレット ( **Get-MsolUser** など) を実行して結果を確認します。
+何もエラーが表示されなければ、正常に接続されています。 簡単に確かめるには、Microsoft 365 コマンドレット—例えば、**Get-MsolUser** —を実行して結果を確認します。
   
 エラーが表示された場合は、次の要件を確認します。
   
@@ -151,13 +153,13 @@ MFA を使用している場合は、追加のダイアログ ボックスの手
   - Windows 10、Windows 8.1、および Windows 8 の場合は、「[Windows 8、Windows 8.1、および Windows 10 への .NET Framework 3.5 のインストール](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)」を参照してください
 
   
-- **お使いの Microsoft PowerShell の Microsoft Azure Active Directory モジュール のバージョンは期限切れの可能性があります。** Office 365 PowerShell または Microsoft PowerShell の Microsoft Azure Active Directory モジュール で、次のコマンドを実行して確認します。
+- **お使いの Windows PowerShell 用 Microsoft Azure Active Directory モジュールのバージョンは期限切れの可能性があります。** Microsoft 365用または PowerShell または Windows PowerShell 用 Microsoft Azure Active Directory モジュールで、次のコマンドを実行して確認します。
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    返されたバージョン番号が1.0.8070.2 の値より小さい場合は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールをアンインストールし、上記の手順1からインストールします。
+    返されたバージョン番号が 1.0.8070.2 の値より小さい場合は、Windows PowerShell の Microsoft Azure Active Directory モジュール をアンインストールして、上の手順 1 からインストールします。
 
 - **接続エラーが発生した場合は、**["Connect-MsolService: 例外がスローされました" というエラー](https://go.microsoft.com/fwlink/p/?LinkId=532377)に関するトピックをご覧ください。
     
@@ -169,6 +171,6 @@ MFA を使用している場合は、追加のダイアログ ボックスの手
 
 ## <a name="see-also"></a>関連項目
 
-- [Office 365 PowerShell による Office 365 の管理](manage-office-365-with-office-365-powershell.md)
-- [Office 365 PowerShell の概要](getting-started-with-office-365-powershell.md)
-- [単一の Windows PowerShell ウィンドウですべての Office 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
+- [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)
+- [単一の Windows PowerShell ウィンドウですべての Microsoft 365 サービスに接続する](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
