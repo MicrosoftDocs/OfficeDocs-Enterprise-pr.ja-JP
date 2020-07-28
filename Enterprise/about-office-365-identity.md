@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: ユーザー id が Microsoft 365 でどのように管理されるかについて説明します。
-ms.openlocfilehash: e473a6397cb0b2fc7a2b81ab7a959a4ccdda400b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230063"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433618"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 identity モデルと Azure Active Directory
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、microsoft 365 サブスクリプションに含まれているクラウドベースのユーザー id と認証サービスを使用して、Microsoft 365 の id と認証を管理しています。 Id インフラストラクチャを正しく構成することは、組織の Microsoft 365 のユーザーアクセスとアクセス許可を管理するために不可欠です。
 
@@ -46,9 +46,8 @@ Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、micro
 
 ここでは、2種類の id と、それらのユーザーにとって最適なものと利点を示します。
 
-|||
+| | クラウド専用 ID | ハイブリッド ID |
 |:-------|:-----|:-----|
-|  | **クラウド専用 ID** | **ハイブリッド ID** |
 | **定義** | ユーザーアカウントは、Microsoft 365 サブスクリプションの Azure AD テナントにのみ存在します。 | ユーザーアカウントが AD DS に存在し、Microsoft 365 サブスクリプションの Azure AD テナントにもコピーがあります。 Azure AD のユーザーアカウントには、既にハッシュされた AD DS ユーザーアカウントのパスワードが含まれている場合もあります。 |
 | **Microsoft 365 でユーザー資格情報を認証する方法** | Microsoft 365 サブスクリプションの Azure AD テナントは、クラウド id アカウントを使用して認証を実行します。 | Microsoft 365 サブスクリプションの Azure AD テナントは、認証プロセスを処理するか、またはユーザーを別の id プロバイダーにリダイレクトします。 |
 | **最適シナリオ** | 社内の AD DS を必要としない、または必要としない組織。 | AD DS または別の id プロバイダーを使用している組織。 |

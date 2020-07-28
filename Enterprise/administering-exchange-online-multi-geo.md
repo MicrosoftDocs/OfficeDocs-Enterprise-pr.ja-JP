@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Microsoft PowerShell を使用した Exchange Online 複数地域設定の管理方法を説明します。
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352947"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433508"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>複数地域環境での Exchange Online メールボックスの管理
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **注:** データベース名の地域の場所コードが **MailboxRegion** 値と一致しない場合、メールボックスは自動的に再配置キューに入れられ、**MailboxRegion** 値で指定された地域の場所に移動されます (Exchange Online ではこれらのプロパティ値の間の不一致が検索されます)。
+> [!NOTE]
+> データベース名の地理的位置コードが**MailboxRegion**値と一致しない場合、メールボックスは自動的に再配置キューに配置され、 **MailboxRegion**値で指定された地理的位置に移動します (Exchange Online は、これらのプロパティ値の不一致を検出します)。
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>既存のクラウド専用メールボックスを特定の地域の場所に移動する
 
@@ -133,17 +134,16 @@ Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoL
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**注**:
-
-- 前述したように、オンプレミスの Active Directory から同期されたユーザー オブジェクトにはこの手順は使用できません。 Active Directory で **PreferredDataLocation** 値を変更し、それを AAD Connect を使用して同期させる必要があります。 詳細については、「[Azure Active Directory Connect 同期: Microsoft 365 リソースの優先されるデータの場所を構成する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)」を参照してください。
-
-- メールボックスを新しい地域の場所に再配置するための所要時間は次のいくつかの要素によって決まります。
-
-  - メールボックスのサイズと種類。
-
-  - 移行されるメールボックスの数。
-
-  - リソース移動の可用性。
+> [!NOTE]
+> - 前述したように、オンプレミスの Active Directory から同期されたユーザーオブジェクトに対して、この手順を使用することはできません。 Active Directory で **PreferredDataLocation** 値を変更し、それを AAD Connect を使用して同期させる必要があります。 詳細については、「[Azure Active Directory Connect 同期: Microsoft 365 リソースの優先されるデータの場所を構成する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)」を参照してください。
+> 
+> - メールボックスを新しい地域の場所に再配置するための所要時間は次のいくつかの要素によって決まります。
+> 
+>   - メールボックスのサイズと種類。
+> 
+>   - 移行されるメールボックスの数。
+> 
+>   - リソース移動の可用性。
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>訴訟ホールド中の無効のメールボックスを移動する
 

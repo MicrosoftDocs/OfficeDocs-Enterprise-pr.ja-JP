@@ -17,16 +17,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: '概要: Microsoft 365 の PowerShell を使用して、既存の顧客テナントに代替ドメイン名を追加します。'
-ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229783"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433768"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>委任アクセス許可 (DAP) パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 の PowerShell を使用して、Microsoft 365 管理センターより高速に、新しいドメインを作成して、顧客のテナントと関連付けることができます。
   
@@ -58,7 +58,7 @@ Microsoft 365 の PowerShell を使用して、Microsoft 365 管理センター�
 
 このコマンドは、Azure Active Directory にドメインを作成しますが、公的に登録されたドメインとは関連付けられません。 公開されているドメインを企業向け Microsoft Microsoft 365 に所有していることを証明すると、これが提供されます。
   
-```
+```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
@@ -70,7 +70,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
  Microsoft 365 は、DNS TXT 検証レコードに格納する必要がある特定のデータを生成します。 データを取得するには、次のコマンドを実行します。
   
-```
+```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
@@ -91,7 +91,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
   
 TXT レコードが正常に作成されたことを、nslookup 経由で確認します。次の構文に従います。
   
-```
+```console
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
@@ -107,22 +107,24 @@ nslookup -type=TXT <FQDN of registered domain>
 
 この最後の手順では、公的登録済みドメインを所有していることを Microsoft 365 に検証します。 この手順の後、Microsoft 365 は新しいドメイン名にルーティングされたトラフィックの受け入れを開始します。 ドメインの作成と登録のプロセスを完了するには、次のコマンドを実行します。 
   
-```
+```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 このコマンドは出力を返しません。そのため、機能したことを確認するために、次のコマンドを実行します。
   
-```
+```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 コマンドを実行すると、次のようなものが返されます。
-  
-||||
-|:-----|:-----|:-----|
-| `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
-| `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
+
+```console
+Name                   Status      Authentication
+--------------------   ---------   --------------
+FQDN of new domain     Verified    Managed
+```
+
    
 ## <a name="see-also"></a>関連項目
 

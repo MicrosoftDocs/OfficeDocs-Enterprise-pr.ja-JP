@@ -1,5 +1,5 @@
 ---
-title: 特定の PDL で Microsoft 365 グループを作成する
+title: 特定の PDL を使用して Microsoft 365 グループを作成する
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
-description: 複数地域環境で、指定された優先データの場所を使用して Microsoft 365 グループを作成する方法について説明します。
-ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+localization_priority: Normal
+description: 複数地域環境で指定された優先するデータの場所を使用して、Microsoft 365 グループを作成する方法について説明します。
+ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057987"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433858"
 ---
-# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>特定の PDL で Microsoft 365 グループを作成する
+# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>特定の PDL を使用して Microsoft 365 グループを作成する
 
-複数地域環境のユーザーが Microsoft 365 グループを作成すると、グループの優先データの場所は自動的にそのユーザーの場所に設定されます。 グローバル管理者、SharePoint 管理者、Exchange 管理者は、選択した任意の地域にグループを作成できます。 
+複数地域環境のユーザーが Microsoft 365 グループを作成すると、グループの優先データの場所が自動的にユーザーのグループに設定されます。 グローバル管理者、SharePoint 管理者、Exchange 管理者は、選択した任意の地域にグループを作成できます。 
 
 特定の PDL でグループを作成する必要がある場合は、SharePoint 管理センターから、または Exchange Online New-unifiedgroup Microsoft PowerShell コマンドレットを使用して作成できます。 これを実行すると、グループ メールボックスとグループに関連付けられている SharePoint サイトは両方とも、指定した PDL でプロビジョニングされます。
 
-指定した PDL を使用して Microsoft 365 グループを作成するには、グループ サイトを作成する地域の場所にある SharePoint 管理センターに移動します。
+指定した PDL を使用して Microsoft 365 グループを作成するには、グループサイトを作成する地理的な場所の SharePoint 管理センターに移動します。
 
 例:
 

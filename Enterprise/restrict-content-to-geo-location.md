@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: 複数地域環境で SharePoint サイトを指定の地域の場所に制限する方法について説明します。
-ms.openlocfilehash: ca63f46ba45d1b3ddfdf4f676b678d62387b801f
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
-ms.translationtype: HT
+ms.openlocfilehash: 1b1b072709ee54b2a18255798995650fc9f9942e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973959"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433478"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>SharePoint サイトのコンテンツを地域の場所に制限する
 

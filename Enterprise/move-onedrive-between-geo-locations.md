@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058007"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433878"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
@@ -199,4 +199,8 @@ OneDrive 地域移動の完了時に、ユーザーは、新しい OneDrive の�
 
 ### <a name="existing-followed-groups-and-sites"></a>既存のフォロー対象グループおよびサイト
 
-フォロー対象サイトおよびグループは、地域の場所に関係なく、ユーザーの OneDrive for Business に表示されます。別の地域の場所でホストされているサイトとグループは、個別のタブで開かれます。
+フォロー対象のサイトとグループは、地域の場所に関係なく、ユーザーの OneDrive に表示されます。別の地域の場所にホストされているサイトとグループは、別のタブに表示されます。
+
+### <a name="delve-geo-url-updates"></a>Delve 地域 URL の更新
+
+ユーザーは、OneDrive が新しい geo に移動された後にのみ、PDL に対応する Delve geo に送信されます。

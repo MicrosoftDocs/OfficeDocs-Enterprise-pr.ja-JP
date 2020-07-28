@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Multi-Geo 環境で検索を構成する方法について説明します。
-ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057673"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433568"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -258,11 +258,11 @@ GET 要求の場合は、URL でクエリ パラメーターを指定します�
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる GET 要求の例
 
-https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https:// \<tenant\> / \_ api/search/query? querytext = ' sharepoint ' &Properties = ' EnableMultiGeoSearch: true ' &ClientType = ' my \_ client \_ id '
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトする GET 要求の例
 
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' my_client_id ' &Properties = ' EnableMultiGeoSearch: true, multigeosearchconfiguration: [{DataLocation \\ : "名" \\ , Endpoint: "https:": "contosoNAM.sharepoint.com" \\ \\ \\ \\ } \\ , {B81EAB55-3140-4312-B0F4-9459D1B4FFEE \\ : "CAN" \\ , エンドポイント \\ : "https: \\ /DataLocation"}] '
 
 > [!NOTE]
 > MultiGeoSearchConfiguration プロパティの地域の場所の一覧内のコンマとコロンの前に **バックスラッシュ** 記号が先行します。 これは、GET 要求では複数のプロパティの区切りにはコロンが、複数のプロパティの引数の区切りにはコンマが使用されるためです。 エスケープ文字としてバックスラッシュ記号を使わない場合、MultiGeoSearchConfiguration プロパティは正確に解釈されません。

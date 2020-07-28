@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Microsoft 365 Multi-Geo を使用して、複数の地域に Microsoft 365 のプレゼンスを展開します。
-ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
-ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
-ms.translationtype: HT
+ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117279"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433808"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

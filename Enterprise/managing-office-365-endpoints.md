@@ -17,16 +17,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ ネットワークの中には、一般的なインターネット上の場所へのアクセスや、強固なバックホールの導入、ネットワーク トラフィックの処理を制限しているものがあります。そのようなネットワーク上のコンピュータから Office 365 にアクセスできるようにするために、ネットワーク管理者およびプロキシ管理者は、Office 365 エンドポイントのリストを構成する FQDN、URL、および IP アドレスのリストを管理する必要があります。これらを直接ルート、プロキシ バイパス、またはファイアウォール ルールおよび PAC ファイルに追加して、ネットワーク要求が Office 365 に到達できるようにする必要があります。
-ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: MT
+ms.openlocfilehash: 335cfd3f27762c249cc9af88b169a9f0bb59bda7
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845038"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433558"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
-複数の異なる場所にオフィスを構えて WAN 接続を使用しているエンタープライズ組織のほとんどでは、Office 365 ネットワーク接続用の構成が必要です。 信頼できるすべての Office 365 ネットワーク要求をファイアウォール経由で直接送信し、追加的なパケット レベルの検査や処理をすべてバイパスすることで、ご使用のネットワークを最適化できます。 これにより、待機時間と境界の容量要件が削減されます。 Office 365 ネットワーク トラフィックを識別することは、ユーザーに最適なパフォーマンスを提供するための第一歩です。 Office 365 ネットワーク接続の詳細については、「[Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
+複数のオフィスの場所を持ち、WAN に接続しているほとんどのエンタープライズ組織では、Office 365 ネットワーク接続の構成が必要になります。 信頼できるすべての Office 365 ネットワーク要求をファイアウォール経由で直接送信し、追加的なパケット レベルの検査や処理をすべてバイパスすることで、ご使用のネットワークを最適化できます。 これにより、待機時間と境界の容量要件が削減されます。 Office 365 ネットワーク トラフィックを識別することは、ユーザーに最適なパフォーマンスを提供するための第一歩です。 Office 365 ネットワーク接続の詳細については、「[Office 365 ネットワーク接続の原則](office-365-network-connectivity-principles.md)」を参照してください。
 
 [Office 365 IP アドレスと URL の Web サービス](office-365-ip-web-service.md)を使用して、Office 365 ネットワーク エンドポイントおよびそれらに対する変更にアクセスすることを Microsoft ではお勧めします。
 
@@ -145,7 +145,7 @@ Office 365 と関連付けられた IP の詳細を確認するには、以下�
 1. IP アドレスが、 [IPv4](https://www.ipaddressguide.com/cidr)または[IPv6](https://www.ipaddressguide.com/ipv6-cidr)のような CIDR 計算機を使用して、より大きな公開範囲に含まれているかどうかを確認します。 たとえば、40.96.0.0/13 には、40.103.0.1 が40.103 に一致しないにも40.96 かかわらず、IP アドレスが含まれています。
 2. パートナーが[whois クエリ](https://dnsquery.org/)を使用して IP を所有しているかどうかを確認します。 Microsoft が所有している場合は、内部パートナーである可能性があります。 多くのパートナーネットワークエンドポイントは、_既定_のカテゴリに属しているものとして一覧表示され、IP アドレスは公開されません。
 3. IP アドレスは、Office 365 または依存関係の一部ではない場合があります。 Office 365 ネットワークエンドポイントの公開には、Microsoft ネットワークエンドポイントのすべてが含まれているわけではありません。
-4. 証明書を確認し、ブラウザーで *HTTPS://\<IP_ADDRESS\>* を使用して IP アドレスに接続し、証明書に表示されるドメインを確認して、IP アドレスに関連付けられているドメインを把握します。Microsoft 所有の IP アドレスで、Office 365 の IP アドレス一覧に掲載されていない場合、その IP アドレスは、*MSOCDN.NET* や IP 情報が公開されていない他の Microsoft ドメインなど、Microsoft CDN に関連付けられている可能性があります。証明書のドメインが、Microsoft が IP アドレスの登録を主張しているドメインの場合は、お知らせください。
+4. 証明書を確認するブラウザーで*HTTPS:// \<IP_ADDRESS\> *を使用して ip アドレスに接続するには、証明書の一覧にあるドメインを調べて、ip アドレスに関連付けられているドメインを理解します。 Office 365 の IP アドレスの一覧ではなく、Microsoft が所有する IP アドレスである場合は、IP アドレスが*MSOCDN.NET*などの microsoft CDN または公開された ip 情報を持たない別の microsoft ドメインに関連付けられている可能性があります。 証明書に記載されているドメインが、IP アドレスの一覧を取得することを要求している場合は、お知らせください。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>一部の Office 365 URL が、DNS 内の A レコードではなく CNAME レコードを指しています。CNAME レコードはどのように扱えばよいでしょうか?
