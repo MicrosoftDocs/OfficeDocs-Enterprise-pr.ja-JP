@@ -3,7 +3,7 @@ title: PowerShell を使用して Microsoft 365 サービスへのアクセス�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: PowerShell を使用して、ユーザーの Microsoft 365 サービスへのアクセスを無効にします。
-ms.openlocfilehash: 4e7c59447dae027dffa7fd5ea24d1818d5d64a9a
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230683"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502642"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用して Microsoft 365 サービスへのアクセスを無効にする
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 アカウントにライセンスプランのライセンスが割り当てられている場合、Microsoft 365 サービスはそのライセンスからユーザーが利用できるようになります。 ただし、ユーザーがアクセスできる Microsoft 365 サービスを制御することができます。 たとえば、ライセンスで SharePoint Online サービスへのアクセスが許可されている場合でも、アクセスを無効にすることができます。 PowerShell を使用して、次のような特定のライセンスプランで任意の数のサービスへのアクセスを無効にすることができます。
 
@@ -139,19 +139,19 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
     
 1. 次のように各行に 1 つのアカウントが含まれるテキスト ファイルを作成します。
     
-  ```powershell
-  akol@contoso.com
-  tjohnston@contoso.com
-  kakers@contoso.com
-  ```
+   ```powershell
+   akol@contoso.com
+   tjohnston@contoso.com
+   kakers@contoso.com
+   ```
 
-  この例では、テキストファイルは C: \\ My Documents \\Accounts.txt です。
+   この例では、テキストファイルは C: \\ My Documents \\Accounts.txt です。
     
 2. 次のコマンドを実行します。
     
-  ```powershell
-  Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
-  ```
+   ```powershell
+   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
+   ```
 
 複数のライセンスプランのサービスへのアクセスを無効にする場合は、ライセンスプランごとに上記の手順を繰り返し、以下のことを確認してください。
 
@@ -160,11 +160,21 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
 ユーザーがライセンスプランに割り当てている間に Microsoft 365 サービスを無効にするには、「[ユーザーのライセンスの割り当て中にサービスへのアクセスを無効](disable-access-to-services-while-assigning-user-licenses.md)にする」を参照してください。
 
+### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>ライセンスプランのすべてのサービスをユーザーアカウントに割り当てる
+
+サービスが無効になっているユーザーアカウントの場合は、次のコマンドを使用して、特定のライセンスプランのすべてのサービスを有効にすることができます。
+
+```powershell
+$userUPN="<user account UPN>"
+$acctSKU="<AccountSkuId>"
+$LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
+Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
+```
 
 ## <a name="see-also"></a>関連項目
 
 [PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
+[PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)
