@@ -184,6 +184,7 @@
 ##### [フェーズ 3: AD FS サーバーを構成する](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [フェーズ 4: Web アプリケーション プロキシを構成する](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [フェーズ 5: フェデレーション認証を構成する](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+#### [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 
 # Microsoft 365 の管理
 
@@ -253,7 +254,7 @@
 ### [Exchange Online でのデータ削除](office-365-exchange-online-data-deletion.md)
 ### [SharePoint Online でのデータ削除](office-365-sharepoint-online-data-deletion.md)
 ### [Skype for Business でのデータ削除](office-365-skype-data-deletion.md)
-## [Microsoft 365 でのサービス拒否攻撃からの保護](office-365-defending-against-denial-of-service-attacks-overview.md)
+## [Microsoft 365 でのサービス拒否攻撃からの保護](office-365-defending-cloud-services-against-dos-attacks.md)
 ### [サービス拒否攻撃に対する Microsoft の防御戦略](office-365-microsoft-dos-defense-strategy.md)
 ### [サービス拒否攻撃に対する防御の主要な原則](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Microsoft Cloud での暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
