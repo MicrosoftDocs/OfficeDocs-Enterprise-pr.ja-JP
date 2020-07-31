@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: '概要: Office 365 の展開を計画するときに使用する DNS レコードのリファレンス リスト。'
-ms.openlocfilehash: d0804cec4ce2c15345a9c4ddc83525d1961f8db4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996541"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502672"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 の外部ドメイン ネーム システムのレコード
 
@@ -45,7 +45,7 @@ SPF と MX レコードは、見つけ出すのが最も困難です。この記
 ||||
 |:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
-|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。   |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **(スイート)** <br/> |正しい ID プラットフォームへの認証を指示するために Office 365 で使用されます。[詳細情報](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注:** この CNAME は、21Vianet が運営する Office 365 にのみ適用されます。 [詳細情報](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**エイリアス:** msoid  <br/> **対象:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(ドメインの確認)** <br/> |このレコードは、ドメインを所有していることを確認するためだけに Office 365 で使用されます。他のものには影響しません。  <br/> |**ホスト:** @ (または、一部の DNS ホスティング プロバイダーでは自分のドメイン名)  <br/> **TXT 値:** Office 365 "_から提供されるテキスト文字列_"  <br/> このレコードを作成するために使用する値は、Office 365 の **ドメイン セットアップ ウィザード** で指定されます。  <br/> |
 
 
@@ -67,7 +67,7 @@ Exchange フェデレーションを使用しているメールのお客様は�
 |:-----|:-----|:-----|
 |**DNS レコード** <br/> |**用途** <br/> |**使用する値** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |このレコードを使用すると、Outlook クライアントが自動検出サービスを使用して Exchange Online サービスに簡単に接続できます。自動検出は、正しい Exchange Server ホストを自動的に検出し、ユーザーの Outlook を構成します。  <br/> |**エイリアス:** Autodiscover  <br/> **リンク先:** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |ドメインへの受信メールを Office 365 の Exchange Online サービスへ送信します。  <br/> [!NOTE] 電子メールが Exchange Online に流れたら、古いシステムを指定している MX レコードを削除する必要があります。   |**ドメイン:** 例: contoso.com  <br/> **対象の電子メールサーバー:** \<MX token\> 。mail.protection.outlook.com  <br/> **優先度:** その他すべての MX レコードより下 (これにより、メールが Exchange Online に確実に配信されます) - 例: 1 または "low"  <br/>  次の \<MX token\> 手順を実行して、を検索します。  <br/>  Office 365 にサインインし、[Office 365 管理] \> [ドメイン] に移動します。  <br/>  ドメインの [アクション] 列で [問題の修正] を選択します。  <br/>  [MX レコード] セクションで、[何を修正しますか?] を選択します。  <br/>  MX レコードを更新するには、このページに表示される指示に従います。  <br/> [MX 優先度とは何ですか。](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |ドメインへの受信メールを Office 365 の Exchange Online サービスへ送信します。  <br/> [!NOTE] 電子メールが Exchange Online に流れたら、古いシステムを指定している MX レコードを削除する必要があります。   |**ドメイン:** 例: contoso.com  <br/> **対象メール サーバー:**\<MX token\>.mail.protection.outlook.com  <br/> **優先度:** その他すべての MX レコードより下 (これにより、メールが Exchange Online に確実に配信されます) - 例: 1 または "low"  <br/>  次の手順に従って \<MX token\> を検索します:  <br/>  Office 365 にサインインし、[Office 365 管理] \> [ドメイン] に移動します。  <br/>  ドメインの [アクション] 列で [問題の修正] を選択します。  <br/>  [MX レコード] セクションで、[何を修正しますか?] を選択します。  <br/>  MX レコードを更新するには、このページに表示される指示に従います。  <br/> [MX 優先度とは何ですか。](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |これは、自分のドメインを他人が使用してスパムなどの悪意のある電子メールを送信するのを防ぐのに役立ちます。Sender policy framework (SPF) レコードは、自分のドメインからメールを送信することを許可されているサーバーを特定することによって動作します。  <br/> |[SPF に必要な外部 DNS レコード](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Exchange フェデレーション)** <br/> |ハイブリッド展開のために Exchange フェデレーションに使用します。  <br/> |**TXT レコード 1:** たとえば、contoso.com および関連するカスタム生成されたもの、ドメイン証明ハッシュ テキスト (たとえば、Y96nu89138789315669824)  <br/> **TXT レコード 2:** たとえば、exchangedelegation.contoso.com および関連するカスタム生成されたもの、ドメイン証明ハッシュ テキスト (たとえば、Y3259071352452626169)  <br/> |
 |**CNAME** <br/> **(Exchange フェデレーション)** <br/> |Exchange フェデレーションを使用している場合、自動検出サービスを使用して Exchange Online サービスに簡単に接続するために Outlook クライアントを支援します。自動検出は、自動的に正しい Exchange Server ホストを見つけ、Outlook を構成します。  <br/> |**エイリアス:** 例: Autodiscover.service.contoso.com  <br/> **リンク先:** autodiscover.outlook.com  <br/> |
@@ -79,7 +79,7 @@ Exchange フェデレーションを使用しているメールのお客様は�
 「[Office 365 の URL と IP アドレスの範囲](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO)」を使用して、ネットワークが正しく構成されていることを確認する場合、特定の手順を実行する必要があります。
 
 > [!NOTE]
-> これらの DNS レコードは、特に特定のフェデレーションの問題が発生する可能性のあるハイブリッド Teams と Skype for Business Online シナリオの Teams にも適用されます。
+> これらの DNS レコードは、特に特定のフェデレーションの問題が発生する可能性のあるハイブリッド Teams と Skype for Business シナリオの Teams にも適用されます。
   
 ||||
 |:-----|:-----|:-----|
@@ -128,11 +128,11 @@ Office 365 に対して Exchange Online メールだけを使用するのでは�
 |||||
 |:-----|:-----|:-----|:-----|
 ||使用対象  <br/> |用途  <br/> |以下を追加します。  <br/> |
-|1   <br/> |すべてのメール システム (必須)  <br/> |この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
-|2   <br/> |Exchange Online (一般的)  <br/> |Exchange Online だけで使用します  <br/> |include:spf.protection.outlook.com  <br/> |
-|3   <br/> |サード パーティのメール システム (あまり一般的でない)  <br/> ||\<email system like mail.contoso.com\> の内容を含めます。  <br/> |
-|4   <br/> |オンプレミスのメール システム (あまり一般的でない)  <br/> |Exchange Online Protection または Exchange Online と別のメール システムを使用している場合に使用します  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> \<mail.contoso.com\> の内容を含めます。  <br/> 山かっこ (\<\>) 内の値は、自分のドメインにメールを送信する他のメール システムにする必要があります。  <br/> |
-|5   <br/> |すべてのメール システム (必須)  <br/> ||-all  <br/> |
+|1  <br/> |すべてのメール システム (必須)  <br/> |この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
+|2  <br/> |Exchange Online (一般的)  <br/> |Exchange Online だけで使用します  <br/> |include:spf.protection.outlook.com  <br/> |
+|3  <br/> |サード パーティのメール システム (あまり一般的でない)  <br/> ||\<email system like mail.contoso.com\> の内容を含める  <br/> |
+|4  <br/> |オンプレミスのメール システム (あまり一般的でない)  <br/> |Exchange Online Protection または Exchange Online と別のメール システムを使用している場合に使用します  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> \<mail.contoso.com\> の内容を含めます。  <br/> 山かっこ (\<\>) 内の値は、自分のドメインにメールを送信する他のメール システムにする必要があります。  <br/> |
+|5  <br/> |すべてのメール システム (必須)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>例: 既存の SPF レコードへの追加
 <a name="bkmk_addtospf"> </a>
@@ -144,7 +144,7 @@ TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:smtp.adatum.com -all
 ```
 
-これで、Office 365 用の SPF レコードを更新しています。 必要な値を含む SPF レコードがあるように、現在のレコードを編集します。 Office 365 の場合は、"spf.protection.outlook.com"。
+Office 365 の SPF レコードを更新します。 現在のレコードを編集して、SPF レコードに必要な値が含まれるようにします。 Office 365 の場合、「spf.protection.outlook.com」。
   
 正しい:
   
@@ -166,7 +166,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### <a name="more-examples-of-common-spf-values"></a>一般的な SPF 値の他の例
 <a name="bkmk_addtospf"> </a>
 
-Office 365 スイート全体を使用していて、ユーザーの代わりに MailChimp を使用してマーケティング電子メールを送信する場合、contoso.com の SPF レコードは次のようになります。これは、上記の表の行1、3、5を使用します。 行1と5が必要であることに注意してください。
+マーケティング メールの代理送信に Office 365 スイートの完全版および MailChimp を使用している場合には、contoso.com の SPF レコードは、次のような形式になります (上の表の 1、3、5 行を使用)。 1、5 行は必須です。
   
 ``` dns
 TXT Name @
