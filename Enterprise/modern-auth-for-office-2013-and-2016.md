@@ -23,18 +23,18 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Office 2013 と2016クライアントアプリで Microsoft 365 モダン認証が異なるしくみについて説明します。
-ms.openlocfilehash: 22f9bf521fc5da367cb8f8d6f02a004baf42a866
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.openlocfilehash: 469dd665a3f427db3e2ae3731945e53b900f05e9
+ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102605"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533492"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Office 2013、Office 2016、および Office 2019 クライアントアプリでの先進認証のしくみ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-この記事では、Office 2013 および Office 2016 クライアントアプリが、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
+この記事では、Office 2013、Office 2016、および Office 2019 クライアントアプリが、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 テナントの認証構成に基づいて先進認証機能を使用する方法について説明します。
 
 > [!NOTE]
 > Office 2010 や Office for Mac 2011 などのレガシクライアントアプリは先進認証をサポートしておらず、基本認証でのみ使用できます。
@@ -60,14 +60,14 @@ Microsoft Office 2013 がインストールされている Windows を実行し�
   
 |**レジストリ キー**|**型**|**値** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
   
 Skype for business での[先進認証 (ADAL) の使用](https://go.microsoft.com/fwlink/p/?LinkId=785431)方法については、「方法」を参照してください。 
   
 Office 2016 および Office 2019 クライアントは、既定で先進認証をサポートしており、クライアントがこれらの新しいフローを使用するために必要な操作はありません。 ただし、従来の認証を使用するには、明示的なアクションが必要です。
   
-次のリンクをクリックすると、モダン認証が有効になっているかどうかに応じて、Office 2013 と Office 2016 クライアント認証が Microsoft 365 サービスでどのように機能するかを確認できます。
+次のリンクをクリックすると、モダン認証が有効になっているかどうかに応じて、Office 2013、Office 2016、および Office 2019 クライアント認証が Microsoft の365サービスでどのように機能するかを確認できます。
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -78,52 +78,52 @@ Office 2016 および Office 2019 クライアントは、既定で先進認証�
 <a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
-次の表は、モダン認証を使用して、または使用しない状態で Exchange Online に接続した場合の Office 2013 または Office 2016 クライアントアプリの認証動作を示しています。
+次の表に、モダン認証を使用して、または使用せずに Exchange Online に接続する場合の Office 2013、Office 2016、および Office 2019 クライアントアプリの認証動作を示します。
   
 |Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 (既定) * * * *|テナントの先進認証がオフになっている認証動作 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |違います <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |はい  <br/> |Outlook 2010、2013、または2019で先進認証を強制する <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制的に実行します。<br/> |
-|Office 2019  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
-|Office 2019  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2019  <br/> |違います <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |必要  <br/> |Outlook 2013、2016、または2019で先進認証を強制します。 <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制的に実行します。<br/> |
+|Office 2019  <br/> |No、または EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2019  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
 |Office 2019  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
-|Office 2016  <br/> |違います <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |はい  <br/> |Outlook 2010、2013、または2016で先進認証を強制する <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制的に実行します。<br/> |
-|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |違います <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |必要  <br/> |2013、2016、または2019で先進認証を強制します。 <br/> [詳細情報](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Outlook クライアント内で先進認証を強制的に実行します。<br/> |
+|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
 |Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |基本認証  <br/> |基本認証  <br/> |
-|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、基本認証が使用されます。 テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
    
 <a name="BK_SharePointOnline"> </a>
 ### <a name="sharepoint-online"></a>SharePoint Online
 
-次の表に、モダン認証を使用して、または使用しない状態で SharePoint Online に接続した場合の Office 2013 または Office 2016 クライアントアプリの認証動作を示します。
+次の表に、モダン認証を使用して、または使用しない状態で SharePoint Online に接続した場合の Office 2013、Office 2016、および Office 2019 クライアントアプリの認証動作を示します。
   
 |Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 (既定) * * * *|テナントの先進認証がオフになっている認証動作 * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
-|Office 2019  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2019  <br/> |No、または EnableADAL = 1  <br/> |必要  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2019  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
 |Office 2019  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
-|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |必要  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
 |Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
-|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
+|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |モダン認証のみ。  <br/> |接続の失敗。  <br/> |
    
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 <a name="BK_SFBO"> </a>
 
-次の表に、Office 2013 または Office 2016 クライアントアプリが先進認証を使用して、または使用していない Skype for Business Online に接続する場合の認証動作を示します。
+次の表では、先進認証を使用しているか、または使用していない Skype for Business Online に接続する場合の Office 2013、Office 2016、および Office 2019 クライアントアプリの認証の動作について説明します。
   
 |Office クライアントアプリのバージョン * * * *|レジストリキーが存在するかどうか * * * *|モダン認証は? * * * *|テナントで先進認証がオンになっている認証動作 * * * *|テナントの先進認証がオフになっている認証動作 (既定) * * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
-|Office 2019  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2019  <br/> |No、または EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2019  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
 |Office 2019  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
-|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
-|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |No、または EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
+|Office 2016  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |
 |Office 2016  <br/> |はい、EnableADAL = 0  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
 |Office 2013  <br/> |いいえ  <br/> |いいえ  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
-|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |はい  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
+|Office 2013  <br/> |はい、EnableADAL = 1  <br/> |必要  <br/> |最初にモダン認証が試行されます。 サーバーが最新の認証接続を拒否した場合は、Microsoft Online サインインアシスタントが使用されます。 Skype for Business Online テナントが有効になっていない場合、サーバーはモダン認証を拒否します。  <br/> |Microsoft Online サインインアシスタントのみ。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
