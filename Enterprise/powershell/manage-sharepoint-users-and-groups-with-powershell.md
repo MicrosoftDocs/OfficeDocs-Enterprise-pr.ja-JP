@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: Microsoft 365 の PowerShell を使用して、SharePoint Online ユーザー、グループ、およびサイトを管理します。'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230473"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542818"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>PowerShell を使用して SharePoint Online のユーザーとグループを管理する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 ユーザーアカウントまたはグループの大規模なリストで作業を行う SharePoint Online 管理者は、Microsoft 365 の PowerShell を使用することができます。 
 
@@ -67,9 +67,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-これらのコマンドを使用するには、を置き換えます。置換するには、< と > の文字を含めて、引用符内のすべてを正しい名前で置き換えます。
+これらのコマンドを使用するには、引用符で囲まれたすべての内容 (< と > の文字を含む) を正しい名前に置き換えます。
 
-たとえば、次のコマンドを使用すると、Opal Castillo (user name opalc) が contoso テナント内の ContosoTest サイトコレクションのサイトコレクション管理者の一覧に追加されます。
+たとえば、次のコマンドを使用すると、Opal Castillo (user name opalc) が Contoso テナント内の ContosoTest サイトコレクションのサイトコレクション管理者の一覧に追加されます。
 
 ```powershell
 $tenant = "contoso"
@@ -281,7 +281,6 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [PowerShell を使用して SharePoint Online を管理する](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
+[PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
-
+[Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)
