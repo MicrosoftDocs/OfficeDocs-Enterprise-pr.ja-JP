@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 複数地域環境での SharePoint サービスおよび OneDrive サービスの管理について説明します。
-ms.openlocfilehash: a4e467edebbcfbb0288b698f3e7d5bcf589cdd69
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433528"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548899"
 ---
 # <a name="administering-a-multi-geo-environment"></a>複数地域環境の管理
 
@@ -104,3 +104,7 @@ DLP ポリシーは、そのポリシーの適用性に基づいて各地域の�
 - カナダ
 - インド
 - 英国
+
+## <a name="yammer"></a>Yammer
+
+Yammer は複数地域のワークロードではありません。 Yammer に格納されている yammer スレッドは、テナントの中央の場所に配置されます。 Yammer は、SharePoint 内で Yammer ファイルを保存するファイルストレージの変更をロールアウトしています。 SharePoint に格納されている yammer ファイルは、Yammer グループに関連付けられた SharePoint サイトに配置されます。 SharePoint グループサイトは、「 [Sharepoint サイトとグループ](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365#sharepoint-sites-and-groups)」に説明されている PDL ロジックに基づいています。
