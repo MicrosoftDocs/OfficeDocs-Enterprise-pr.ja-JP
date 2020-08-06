@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Microsoft 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711870"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571160"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のハイブリッド id とディレクトリ同期
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 ビジネスニーズおよび技術的な要件に応じて、ハイブリッド id モデルおよびディレクトリ同期は、Microsoft 365 を採用しているエンタープライズのお客様にとって最も一般的な選択です。 ディレクトリ同期を使用すると、Active Directory ドメインサービス (AD DS) 内の id を管理でき、ユーザーアカウント、グループ、および連絡先へのすべての更新は、Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されます。
 
@@ -97,13 +97,11 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
   
 詳細については、「 [AZURE AD フェデレーション互換性リスト](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)」を参照してください。
   
-## <a name="ad-ds-cleanup"></a>AD DS のクリーンアップ
+## <a name="ad-ds-preparation"></a>AD DS の準備
 
 同期を使用して Microsoft 365 にシームレスに移行できるようにするには、Microsoft 365 ディレクトリ同期の展開を開始する前に、AD DS フォレストを準備する必要があります。
   
-[ディレクトリ同期](set-up-directory-synchronization.md)をセットアップする場合の手順の1つは、 [idfix ツールをダウンロードして実行](install-and-run-idfix.md)することです。 IdFix ツールを使用して、ディレクトリの[クリーンアップ](prepare-directory-attributes-for-synch-with-idfix.md)に役立てることができます。
-  
-ディレクトリのクリーンアップでは、次のタスクに焦点を当てる必要があります。
+ディレクトリの準備では、次のタスクに焦点を当てる必要があります。
 
 - 重複している**proxyAddress**属性と**userPrincipalName**属性を削除します。
 - 空白および無効な**userprincipalname**属性を有効な**userprincipalname**属性で更新します。

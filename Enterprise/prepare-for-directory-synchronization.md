@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 へのディレクトリ同期の準備
+title: Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Microsoft 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735695"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571000"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Microsoft 365 へのディレクトリ同期の準備
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
 *この記事は、Microsoft 365 Enterprise と Microsoft 365 Enterprise の両方に適用されます。*
 
@@ -76,7 +76,7 @@ AD DS で、Microsoft 365 ライセンスが割り当てられる各ユーザー
   - 携帯電話番号
   - FAX 番号
   - 番地
-  - City
+  - 都市
   - 都道府県
   - 郵便番号
   - 国または地域
@@ -166,8 +166,6 @@ AD DS と Microsoft 365 の間のディレクトリ同期を正常に行うに�
   - ルーティング可能なドメインを使用する必要があります。たとえば、ローカルまたは内部のドメインを使用することはできません。
   - Unicode は、アンダースコア文字に変換されます。
   - **userPrincipalName**には、ディレクトリ内に重複する値を含めることはできません。 
-
-IdFIx ツールを使用して AD DS の属性のエラーを識別するには[、IdFix ツール](prepare-directory-attributes-for-synch-with-idfix.md)を使用して directory 属性を準備するを参照してください。
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. userPrincipalName 属性を準備する
 
@@ -189,9 +187,6 @@ Active Directory に代替 UPN サフィックスを追加する方法の詳細�
   
 また[、ディレクトリ同期にルーティング不能なドメイン (たとえば、ローカルドメイン) を準備する方法に](prepare-a-non-routable-domain-for-directory-synchronization.md)ついても説明します。
 
-
 ## <a name="next-steps"></a>次の手順
 
-ディレクトリ同期の前に AD DS の属性のエラーを修正するに[は、IdFix ツールを使用してディレクトリ属性を準備](prepare-directory-attributes-for-synch-with-idfix.md)するを参照してください。
-
-IdFix ツールで識別されたすべての属性エラーを修正し、上記の手順1から5を完了した場合は、「[ディレクトリ同期をセットアップ](set-up-directory-synchronization.md)する」を参照してください。
+上記の手順 1 ~ 5 を実行した場合は、「[ディレクトリ同期をセットアップ](set-up-directory-synchronization.md)する」を参照してください。

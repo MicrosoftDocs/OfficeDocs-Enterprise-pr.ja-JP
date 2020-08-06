@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Microsoft 365 と既存のディレクトリサービスを統合する方法について説明します。
-ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736035"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571060"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365 とオンプレミス環境との統合
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 と既存のディレクトリサービス、および Exchange Server、Skype for Business Server 2015、または SharePoint Server のオンプレミスインストールを統合することができます。
   
@@ -43,14 +43,14 @@ Microsoft 365 と既存のディレクトリサービス、および Exchange Se
 - [AD FS 展開アドバイザー](https://aka.ms/adfsguidance)
 - [Azure AD セットアップガイド](https://aka.ms/aadpguidance)
    
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 とオンプレミス環境を統合する前に、[ネットワーク計画とパフォーマンスチューニング](network-planning-and-performance.md)にも参加する必要があります。 利用可能な[id モデル](about-office-365-identity.md)についても理解しておく必要があります。 
 
 365 Microsoft 365 アカウントを管理するために使用できるツールの一覧については、「 [microsoft アカウントの管理](manage-office-365-accounts.md)」を参照してください。 
   
 ## <a name="integrate-microsoft-365-with-directory-services"></a>Microsoft 365 とディレクトリサービスの統合
-オンプレミスのディレクトリに既存のユーザーアカウントがある場合は、それらのアカウントを Microsoft 365 で再作成したり、環境間の相違点やエラーを発生させたりする必要はありません。 ディレクトリ同期は、オンライン環境とオンプレミス環境との間でアカウントをミラーリングするのに便利です。 ディレクトリ同期を使用すると、ユーザーは環境ごとに新しい情報を記憶する必要がなくなります。また、アカウントを2回作成または更新する必要はありません。 ディレクトリ同期のために[オンプレミスのディレクトリを準備](prepare-for-directory-synchronization.md)する必要があります。これは手動で行うか、 [idfix](install-and-run-idfix.md)ツール (Active DIRECTORY ドメインサービス [AD DS] でのみ機能します) を使用して行うことができます。 
+オンプレミスのディレクトリに既存のユーザーアカウントがある場合は、それらのアカウントを Microsoft 365 で再作成したり、環境間の相違点やエラーを発生させたりする必要はありません。 ディレクトリ同期は、オンライン環境とオンプレミス環境との間でアカウントをミラーリングするのに便利です。 ディレクトリ同期を使用すると、ユーザーは環境ごとに新しい情報を記憶する必要がなくなります。また、アカウントを2回作成または更新する必要はありません。 ディレクトリ同期のために[、オンプレミスのディレクトリを準備](prepare-for-directory-synchronization.md)する必要があります。
   
 ![ディレクトリ同期を使用してオンプレミスとオンラインのユーザーアカウント情報を同期された状態に保つ](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   

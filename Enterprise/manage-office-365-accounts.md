@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Microsoft 365 ユーザーを管理するために使用するツールについて説明します。 '
-ms.openlocfilehash: 324a95e111812180cefffe98f2d7ec3c64e956b1
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ba73d899dee002fa08f373faaed4d772da546b13
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230233"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571030"
 ---
 # <a name="tools-to-manage-microsoft-365-accounts"></a>Microsoft 365 アカウントを管理するためのツール
 
@@ -57,13 +57,13 @@ Microsoft 365 を購入すると、管理センターと Windows PowerShell を�
   
 - Microsoft 365 と AD DS 間で id を接続するには、ディレクトリ同期ソフトウェアを社内環境内のサーバーにインストールする必要があります。
     
-- SSO オプションを含むディレクトリ同期オプションでは、AD DS の属性が標準に適合している必要があります。 ディレクトリ同期を使用して、「 [Microsoft 365 へのディレクトリ同期によってユーザーをプロビジョニングする](prepare-for-directory-synchronization.md)」で説明されている、ディレクトリで使用されている属性と、必要に応じてクリーンアップを行う方法について説明します。 Id 修正を使用してディレクトリのクリーンアップを自動化する方法について[は、「Microsoft 365 Id 修正ツールをダウンロードして実行](install-and-run-idfix.md)する」を参照してください。 
+- SSO オプションを含むディレクトリ同期オプションでは、AD DS の属性が標準に適合している必要があります。 ディレクトリ同期を使用して、「 [Microsoft 365 へのディレクトリ同期によってユーザーをプロビジョニングする](prepare-for-directory-synchronization.md)」で説明されている、ディレクトリで使用されている属性と、必要に応じてクリーンアップを行う方法について説明します。 
     
 - Microsoft 365 アカウントを作成する方法を計画します。
     
     次の表に、さまざまなアカウント管理ツールを示します。
     
-|**オプション**|**注**|
+|**オプション**|**メモ**|
 |:-----|:-----|
 |管理センター  <br/> |[ユーザーを個別にまたは一括して追加する](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) <br/>  ユーザーアカウントを追加および変更するための簡単な web インターフェイスを提供します。  <br/>  ディレクトリ同期が有効になっている場合、ユーザーの変更には使用できません (場所およびライセンスの割り当てを設定できます)。  <br/>  SSO オプションを使用することはできません。  <br/> |
 |Windows PowerShell  <br/> |[Windows PowerShell を使用して Microsoft 365 を管理する](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Windows PowerShell スクリプトを使用して、ユーザーを一括ユーザーで追加できるようにします。  <br/>  アカウントの作成方法に関係なく、アカウントに場所とライセンスを割り当てるために使用できます。  <br/> |
@@ -76,7 +76,7 @@ Microsoft 365 を購入すると、管理センターと Windows PowerShell を�
     管理センターを使用してすべてのユーザーの追加と管理を選択する場合は、Microsoft 365 アカウントを作成するときと同時に、場所を指定してライセンスを割り当てます。 そのため、計画はあまり必要ありません。
     
     > [!IMPORTANT]
-    > Microsoft 365 で、ライセンスを割り当てずに (たとえば SharePoint Online に) アカウントを作成することは、アカウント所有者が Microsoft 365 管理センターを表示することはできますが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
+    > Microsoft 365 で、ライセンスを割り当てずに (たとえば SharePoint Online に) アカウントを作成することは、アカウント所有者が Microsoft 365 center を表示できるが、会社のサブスクリプション内のサービスにアクセスできないことを意味します。 場所とライセンスを割り当てた後、割り当てたサービスにアカウントがレプリケートされます。 ユーザーは、自分のアカウントにサインインして、自分に割り当てられているサービスを使用することができます。 
   
 ## <a name="next-steps"></a>次の手順
 

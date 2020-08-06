@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: ディレクトリ同期を非アクティブ化する方法について説明します。 その状態を表示することもできます。
-ms.openlocfilehash: d6f3a9f1f4e069716501f58e188daedacbf7e597
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906200"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571040"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Microsoft 365 でのディレクトリ同期状態の表示
 
@@ -41,7 +41,7 @@ ms.locfileid: "44906200"
   
 ディレクトリ同期に問題がある場合は、このページにもエラーが表示されます。 発生する可能性のあるさまざまなエラーの詳細については、「 [Microsoft 365 でのディレクトリ同期エラーの識別](identify-directory-synchronization-errors.md)」を参照してください。
   
-|**アイテム**|**目的**|
+|**項目**|**目的**|
 |:-----|:-----|
 |**確認されたドメイン** | 自分が所有していることを確認した Microsoft 365 テナント内のドメインの数。 |
 |**確認されていないドメイン** | 追加されたが確認されていないドメイン。 |
@@ -50,5 +50,4 @@ ms.locfileid: "44906200"
 |**パスワード同期の有効化** | True または False。 オンプレミスと Microsoft 365 テナント間でパスワードハッシュを同期するかどうかを指定します。 |
 |**前回のパスワード同期** | 前回のパスワードハッシュ同期を実行した時刻。 前回の同期が3日以上前の場合は、警告とトラブルシューティングツールへのリンクが表示されます。 |
 |**ディレクトリ同期クライアントバージョン** | Azure AD Connect の新しいバージョンがリリースされた場合のダウンロードリンクが含まれています。 |
-|**IDFix ツール** | ローカルの Active Directory を確認するためのツールである[Idfix](install-and-run-idfix.md)へのリンクをダウンロードします。 |
 |**ディレクトリ同期サービスアカウント** | Microsoft 365 ディレクトリ同期サービスアカウントの名前を表示します。 |

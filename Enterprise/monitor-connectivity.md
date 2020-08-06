@@ -1,13 +1,13 @@
 ---
-title: Office 365 の接続の監視をする
+title: Microsoft 365 の接続を監視する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 7/6/2017
+ms.date: 8/4/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,38 +17,38 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: Office 365 の展開後は、以下のツールや方法を使用して Office 365 の接続を維持することができます。公式の「サービスの正常性および継続性のガイドライン」と「低速のネットワークで Office 365 を使用するためのベスト プラクティス」を確認しておくようにしてください。また、 Office 365 管理者アプリを入手し、「Office 365 for Business - 管理者ヘルプ」をブックマークしておくことをお勧めします。
-ms.openlocfilehash: 5a0a6e217d0f74f6266bffa1bd6037427f14e7bd
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: Microsoft 365 を展開した後は、次に示すツールと方法を使用して、Microsoft 365 の接続を維持できます。この記事では、サービスの正常性と継続性に関するオフィシャルガイドライン、および低速ネットワーク上で Microsoft 365 を使用するためのベストプラクティスについて説明します。
+ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843708"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571010"
 ---
-# <a name="monitor-office-365-connectivity"></a>Office 365 の接続の監視をする
+# <a name="monitor-microsoft-365-connectivity"></a>Microsoft 365 の接続を監視する
 
-Office 365 の展開後は、以下で説明するツールや方法を使用して、Office 365 の接続を維持することができます。公式の「[サービスの正常性および継続性のガイドライン](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」と「[低速のネットワークで Office 365 を使用するためのベスト プラクティス](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)」を確認しておくようにしてください。また、 [Office 365 管理者アプリ](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)を入手し、「[Office 365 for Business - 管理者ヘルプ](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)」をブックマークしておくことをお勧めします。
+Microsoft 365 を展開した後は、次に示すツールと方法を使用して、Microsoft 365 の接続を維持できます。 この記事では、サービスの[正常性と継続性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)に関するオフィシャルガイドライン、および[低速ネットワーク上で Microsoft 365 を使用するためのベストプラクティス](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)について説明します。 また、 [microsoft 365 admin アプリ](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/)を入手して、 [microsoft 365 For Business-管理者向けヘルプ](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)にブックマークを追加することもできます。
   
-## <a name="monitoring-office-365-connectivity"></a>Office 365 の接続の監視
+## <a name="monitoring-microsoft-365-connectivity"></a>Microsoft 365 接続の監視
 
 |||
 |:-----|:-----|
-|**新しい Office 365 エンドポイントについて通知を受信する** <br/> |[Office 365 エンドポイントを管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)する場合、新しいエンドポイントが公開されたときに通知を受信できると便利なので、お使いの RSS リーダーを使用して Microsoft の RSS フィードを登録することをお勧めします。「[Outlook 経由で登録](https://go.microsoft.com/fwlink/p/?LinkId=532416)」する手順と、「[RSS フィードの更新をメールで通知](https://go.microsoft.com/fwlink/p/?LinkId=532417)」する手順をご覧ください。<br/> |
-|**System Center を使って Office 365 を監視する** <br/> |Microsoft System Center を使っている場合、[Office 365 用 System Center 管理パック](https://www.microsoft.com/download/details.aspx?id=43708)をダウンロードして、今すぐ Office 365 の監視を開始できます。 ガイダンスの詳細については、管理パックの操作ガイド、または [System Centre Operations Manager を使った Office 365 の監視](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx)に関するブログ投稿を参照してください。 <br/> |
-|**Azure ExpressRoute の正常性の監視** <br/> |Azure ExpressRoute for Office 365 を使って Office 365 に接続している場合、Office 365 サービス正常性ダッシュボードと Azure の両方を使用していることを確認することをお勧めします。[Azure リソースの正常性を使ったトラブルシューティング時間の短縮](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
-|**AD FS を使って Azure AD Connect Health を使用する** <br/> |Office 365 のシングル サインオン用に AD FS を使用している場合、[Azure AD Connect Health を使った AD FS インフラストラクチャの監視](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)を開始することをお勧めします。  <br/> |
-|**プログラムを使って Office 365 を監視する** <br/> |[Office 365 管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) に関するマイクロソフトのガイダンスを参照してください。  <br/> |
+|**新しい Microsoft 365 エンドポイントの通知を取得する** <br/> |[Microsoft 365 エンドポイントを管理](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)している場合は、新しいエンドポイントを公開したときに通知を受信する必要があります。お気に入りの rss リーダーを使用して、rss フィードを購読することができます。 [Outlook を使用](https://go.microsoft.com/fwlink/p/?LinkId=532416)して購読する方法、または[RSS フィードの更新をメール](https://go.microsoft.com/fwlink/p/?LinkId=532417)で受信する方法を説明します。  <br/> |
+|**System Center を使用して Microsoft 365 を監視する** <br/> |Microsoft System Center を使用している場合は、 [Office 365 用の System Center 管理パック](https://www.microsoft.com/download/details.aspx?id=43708)をダウンロードして、microsoft 365 の監視を開始することができます。 詳細については、「 [System Centre Operations Manager を使用して 365](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx)の管理パック操作ガイドまたはこのブログを投稿する」を参照してください。 <br/> |
+|**Azure ExpressRoute の正常性の監視** <br/> |Microsoft 365 に microsoft 365 用の Azure ExpressRoute を使用して接続している場合は、microsoft 365 Service 正常性ダッシュボードと azure[リソース正常性によるトラブルシューティング時間](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/)の両方を使用していることを確認する必要があります。 <br/> |
+|**AD FS を使って Azure AD Connect Health を使用する** <br/> |Microsoft 365 でシングルサインオン用に AD FS を使用している場合は、 [AZURE Ad Connect Health を使用して AD fs インフラストラクチャを監視](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)することをお勧めします。  <br/> |
+|**Microsoft 365 をプログラムで監視する** <br/> |[Microsoft 365 MANAGEMENT API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)のガイダンスを参照してください。  <br/> |
 
 ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>関連項目
 
-[Office 365 Enterprise のサービスとアプリケーションを構成する](configure-services-and-applications.md)
+[Microsoft 365 Enterprise サービスおよびアプリケーションを構成する](configure-services-and-applications.md)
   
-[組織で Office 365 Enterprise を使えるようにする](get-your-organization-ready-for-office-365.md)
+[Microsoft 365 Enterprise の準備が整っている組織を取得する](get-your-organization-ready-for-office-365.md)
   
-[Office 365 のネットワーク計画とパフォーマンスのチューニング](network-planning-and-performance.md)
+[Microsoft 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
   
-[Office 365 とオンプレミス環境との統合](office-365-integration.md)
+[Microsoft 365 とオンプレミス環境との統合](office-365-integration.md)
   
-[Office 365 エンドポイントを管理する](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Microsoft 365 エンドポイントの管理](managing-office-365-endpoints.md)

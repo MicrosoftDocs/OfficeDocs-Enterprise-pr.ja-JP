@@ -8,19 +8,19 @@ ms.date: 04/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
 description: '先進認証は、より安全なユーザー認証と承認を提供する ID 管理の方法です。 これは、オンプレミスの Skype for Business サーバーとオンプレミスの Exchange サーバーのハイブリッド展開、および分割ドメインの Skype for Business ハイブリッドにも利用できます。 この記事は、前提条件についての関連ドキュメント、先進認証の設定/無効化にリンクし、関連するクライアント (例: Outlook および Skype クライアント) 情報にリンクします。'
-ms.openlocfilehash: 8b5fcbd20ed0a4f630cda7a05eb068008296d694
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: df755c8af161609c1c18dbe066662aaf1d410429
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502602"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571050"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要とオンプレミスの Skype for Business および Exchange サーバーで使用する前提条件
 
