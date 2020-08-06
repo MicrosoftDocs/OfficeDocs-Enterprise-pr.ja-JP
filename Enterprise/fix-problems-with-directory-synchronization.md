@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Office 365 のディレクトリ同期の問題の一般的な原因を示し、問題のトラブルシューティングと解決に役立ついくつかの方法を紹介します。
-ms.openlocfilehash: fac0c477f3c68271a2f0f8c4e2a09fc051fe1ce4
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: faf0f061b8f2798054e63f3338b8076c0ec88f73
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502652"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570970"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のディレクトリ同期に関する問題の修正
 
@@ -89,8 +89,3 @@ Azure AD Sync から Azure AD Connect に更新するには、「[アップグ�
     
 - [PowerShell を使ってメール アドレスの重複を修正する](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
-## <a name="diagnostic-tools"></a>診断ツール
-
-[IDFix ツール](prepare-directory-attributes-for-synch-with-idfix.md) を使用すると、Microsoft 365 への移行の準備段階で、オンプレミスの Active Directory 環境内の ID オブジェクトとその属性の検出と修復を実行することもできます。 IDFix は、Microsoft 365 サービスを使用した DirSync を担当している Active Directory 管理者専用です。 
-
-Microsoft ダウンロード センターから [IDFix toolをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=396718) します。
