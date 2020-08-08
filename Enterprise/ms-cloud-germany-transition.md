@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: 新しいドイツのデータセンター リージョンで、Microsoft Cloud Germany (Microsoft Cloud Deutschland) から Office 365 サービスへの移行について理解します。'
-ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
-ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
-ms.translationtype: HT
+ms.openlocfilehash: f63a9228b8669ce0b7a1d49c7b0045a2065f9ec4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092886"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592141"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行
 
@@ -59,7 +59,7 @@ Microsoft Cloud Germanyからドイツのデータセンター リージョン�
 - Office 365 グループ
 - Dynamics 365 / Power Platform
 
-これらのサービスの移行に関する前提条件および影響については、「[Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn)」の記事で説明しています。
+これらのサービスの移行に関する前提条件および影響については、「[Dynamics 365 Customer engagement](https://aka.ms/d365ceoptin)」の記事で説明しています。
 
 Office 365 ビデオは 2021 年 3 月 1 日に廃止されます。 Office 365 テナントを新しいドイツのデータセンター リージョンに移行することを選択した場合、SharePoint Online の移行が完了した後、Office 365 ビデオはサポートされません。 [詳細情報](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -203,7 +203,7 @@ Azure リソースの別リージョンへの[移行](https://docs.microsoft.com
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 および Power BI
 
-[Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) および [Power BI](https://aka.ms/pbioptin) 向けの Microsoft 主導の移行に今すぐオプトインしてください。 移行を開始する準備ができたら、Microsoft 365 管理センターの[メッセージ センター](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)からお知らせします。
+[Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) および [Power BI](https://aka.ms/PBIOptIn) 向けの Microsoft 主導の移行に今すぐオプトインしてください。 移行を開始する準備ができたら、Microsoft 365 管理センターの[メッセージ センター](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)からお知らせします。
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>使用する Office サービスの価格は変わりますか ?
 
@@ -221,7 +221,7 @@ Azure リソースの別リージョンへの[移行](https://docs.microsoft.com
 
 - [Microsoft Cloud Deutschland 移行アシスタント](https://aka.ms/germanymigrateassist)
 - [移行のオプトイン方法](https://aka.ms/office365germanymoveoptin)
-- [Dynamics 365 移行プログラム情報](https://aka.ms/D365ceOptIn)
+- [Dynamics 365 移行プログラム情報](https://aka.ms/d365ceoptin)
 - [Power BI 移行プログラム情報](https://aka.ms/pbioptin)
 - [Office 365 の URL と IP アドレスの範囲](https://aka.ms/o365endpoints)
 - [Office 365 ハイブリッド構成ウィザード](https://aka.ms/HybridWizard)
