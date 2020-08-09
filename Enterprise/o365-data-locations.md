@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft 365 のデータの場所'
-ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 9d69b51a257978c557944951eabb099f76b9011e
+ms.sourcegitcommit: c779ded7647cb84f8daafc25565d3edac2917e83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263696"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587999"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,12 +41,12 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
 
 
-COVID-19 危機とそれを取り巻く未曾有の状況により、および欧州のオンライン サービスの需要を管理する必要から、お客様の組織が教育機関の場合は、欧州連合 (EU)、欧州自由貿易連合 (EFTA)、英国 (UK)、米国 (US)、またはカナダ (CA) に Microsoft 365 テナントをプロビジョニングするか、またはお客様のデータを EU、EFTA、英国、米国、またはカナダの任意のデータ センターに移動する場合があります。つまり、EU、EFTA、英国、米国、またはカナダでお客様のデータが保存される可能性があります。サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。  データ転送に関する、該当するすべての法律に準拠いたします。
+新型コロナウイルス感染症 (COVID-19) に関する前例のない状況とオンライン サービスの需要管理の必要性から、お客様の組織がヨーロッパの教育機関である場合、お客様の Office 365 テナントを欧州連合内でプロビジョニングし、データを転送し、保存することができます。  お客様の組織がインドの教育機関である場合、お客様の Office 365 テナントをインド、ヨーロッパ、または米国内でプロビジョニングし、データを転送して保管することができます。  お客様の組織が南アフリカの教育機関である場合、お客様の Office 365 テナントを南アフリカ、またはヨーロッパ内でプロビジョニングし、データを転送して保管することができます。 サービスの可用性を維持するために必要な対策を慎重に実施する際にも、Microsoft のコンプライアンス、プライバシー、セキュリティへの取り組みは変更されません。 データ転送に関する、該当するすべての法律に準拠いたします。
 
 
 
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問 (FAQ)
 
 ### <a name="how-does-microsoft-define-data"></a>Microsoft はどのようにデータを定義するのですか?
 
