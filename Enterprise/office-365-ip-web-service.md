@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Office 365 IP アドレスと URL の Web サービスを利用することにより、Office 365 のネットワーク トラフィックの識別と区別がより効率的になり、変更の評価、構成、および最新情報の取得が容易になります。
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843600"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605629"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 
@@ -61,7 +63,7 @@ Office 365 IP アドレスと URL の Web サービスを利用することに�
 これらのパラメーターは、すべての Web サービス メソッドで共通です。
 
 - **format=<JSON | CSV>** — 既定では、返されるデータ形式は JSON です。 コンマ区切り値 (CSV) 形式でデータを返すには、このオプションのパラメーターを使用します。
-- **ClientRequestId=\<guid>** — クライアントの関連付けのために必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_で、x は 16 進数を表します。
+- **ClientRequestId=\<guid>**— クライアントの関連付けのためにユーザーが作成することが必要な GUID です。 Web サービスを呼び出すコンピューターごとに一意の GUID を生成します (このページに含まれるスクリプトでは、GUID が自動的に生成されます)。 次の例に示す GUID は、今後この Web サービスによってブロックされる可能性があるため使用しないでください。 GUID 形式は _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_で、x は 16 進数を表します。
 
   GUID を作成するには、[New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) PowerShell コマンドを使用することも、[Online GUID Generator
 ](https://www.guidgenerator.com/) などのオンライン サービスを利用することもできます。
@@ -248,7 +250,7 @@ Worldwide,2018063000
 
 変更 Web メソッドのパラメーターは次のとおりです。
 
-- **Version=\<YYYYMMDDNN>** — 必要な URL ルート パラメーターです。 この値は、現在実装しているバージョンです。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_ で、_NN_ は 1 日に発行する必要がある複数のバージョンがある場合に増加する自然数で、_00_ は特定日における最初の更新を表します。 Web サービスでは、この_バージョン_のパラメーターが正確に 10 桁であることが要求されます。
+- **Version=\<YYYYMMDDNN>**— 必要な URL ルート パラメーター。 この値は、現在実装しているバージョンです。 この web サービスはそのバージョン以降の変更を返します。 形式は _YYYYMMDDNN_ で、_NN_ は 1 日に発行する必要がある複数のバージョンがある場合に増加する自然数で、_00_ は特定日における最初の更新を表します。 Web サービスでは、この_バージョン_のパラメーターが正確に 10 桁であることが要求されます。
 
 エンドポイント Web メソッドと同様に、変更 Web メソッドはレート制限されています。 429 HTTP の応答コードを受け取った場合、リクエストを再度行うまでに 1 時間待つか、リクエスト用に新しい GUID を生成します。
 

@@ -15,16 +15,17 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom:
-- Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: '概要: Microsoft のクラウド プラン全体に渡る組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解します。'
-ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
-ms.translationtype: MT
+ms.custom:
+- seo-marvel-apr2020
+- Ent_Architecture
+description: Microsoft のクラウドプランの組織、サブスクリプション、ライセンス、ユーザー アカウント、およびテナントの関係について理解する。
+ms.openlocfilehash: 7546d4b24c66946e287aa51deb2d1f1896045322
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906278"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603669"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>マイクロソフトのクラウド プランのサブスクリプション、ライセンス、アカウント、およびテナント
 
@@ -46,12 +47,12 @@ Microsoft は、クラウド プラン全体で ID の使用と課金の一貫�
 
 サブスクリプションとは、1 つ以上の Microsoft クラウドのプラットフォームやサービスを使用するための Microsoft との契約のことです。この契約では、ユーザー単位のライセンス料またはクラウドベースのリソース消費量に基づいて請求されます。 
 
-- Microsoft のサービスとしてのソフトウェア (SaaS) ベースのクラウド製品 (Microsoft 365 および Dynamics 365) は、ユーザーごとのライセンス料金を請求します。 
+- サービス (SaaS) ベースのクラウドプラン (Office 365および Dynamics 365)としてのMicrosoft ソフトウェアは、ユーザーごとにライセンス料金を請求します。 
 - Microsoft のサービスとしてのプラットフォーム (PaaS) およびサービスとしてのインフラストラクチャ (IaaS) のクラウド サービス (Azure) では、クラウド リソースの消費量に基づいて請求されます。
  
 試用版サブスクリプションを使用することもできます。ただし、このサブスクリプションは、特定の期間を過ぎるか、特定の消費料金を超えると失効します。試用版サブスクリプションは、有料サブスクリプションに変更できます。
   
-組織は、Microsoft のクラウド商品の複数のサブスクリプションを所有できます。 図1は、複数の Microsoft 365 サブスクリプション、Dynamics 365 サブスクリプション、および複数の Azure サブスクリプションを持つ単一の組織を示しています。
+組織は、Microsoft のクラウド商品の複数のサブスクリプションを所有できます。 図 1 は、複数の Microsoft 365 サブスクリプション、1 つの Dynamics 365 サブスクリプション、複数の Azure サブスクリプションを持つ 1 つの組織を示しています。
 
 **図 1: 1 つの組織に複数のサブスクリプションの例**
 
@@ -59,7 +60,7 @@ Microsoft は、クラウド プラン全体で ID の使用と課金の一貫�
   
 ### <a name="licenses"></a>ライセンス
 
-Microsoft の SaaS クラウド商品の場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド商品のサービスを使用できるようになります。 サブスクリプションの一環として、月間の固定料金が課金されます。 管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。 図2の例では、Contoso Corporation に100ライセンスを適用した Microsoft 365 E5 サブスクリプションがあります。これにより、最大で100の個々のユーザーアカウントを使用して Microsoft の 365 E5 の機能とサービスを使用できます。
+Microsoft の SaaS クラウド商品の場合、1 つのライセンスで、1 つの特定のユーザー アカウントがクラウド商品のサービスを使用できるようになります。 サブスクリプションの一環として、月間の固定料金が課金されます。 管理者は、サブスクリプション内で個別のユーザー アカウントにライセンスを割り当てます。 図 2 の例では、Contoso Corporation が 100 ライセンスの Microsoft 365 E5 サブスクリプションを所有しています。このサブスクリプションにより、最大 100 件の個別のユーザー アカウントが Microsoft 365 E5 の機能とサービスを使用できるようになります。
   
 **図 2:1 つの組織の SaaS ベースのサブスクリプションに含まれるライセンス**
 
@@ -83,11 +84,11 @@ Azure IaaS ベースの仮想マシン場合、仮想マシン イメージに�
   
 ### <a name="tenants"></a>テナント
 
-SaaS クラウド商品の場合、テナントとはクラウド サービスを提供しているサーバーが収容された地域の場所のことです。 たとえば、Contoso 社では、Microsoft 365、EMS、および Dynamics 365 テナントをパリ本社の15000ワーカーに対してホストする地域を選択しました。
+SaaS クラウド商品の場合、テナントとはクラウド サービスを提供しているサーバーが収容された地域の場所のことです。 たとえば、Contoso Corporation は、パリ本社の 15,000 人の従業員用の Office 365、EMS、および Dynamics 365 テナントのホストに欧州地域を選択しています。
   
 Azure PaaS サービスと、Azure IaaS でホストされる仮想マシン ベースのワークロードは、世界中の Azure データセンターのテナントを持つことができます。場所と呼ばれる Azure データセンターは、Azure PaaS のアプリやサービスまたは IaaS ワークロードの要素を作成するときに、ユーザーが指定します。
   
-Azure AD テナントは、アカウントおよびグループを含む Azure AD の特定のインスタンスです。 Microsoft 365 または Dynamics 365 の有料または試用版サブスクリプションには、無料の Azure AD テナントが含まれています。 この Azure AD テナントには、他の Azure サービスは含まれていません。 Azure の試用版または有料版のサブスクリプションと同じではありません。
+Azure AD テナントは、アカウントおよびグループを含む Azure AD の特定のインスタンスです。 Microsoft 365 または Dynamics 365 の有料または試用版サブスクリプションには、無料の Azure AD テナントが含まれます。 この Azure AD テナントには、その他の Azure サービスは含まれていません。これは、Azure の試用版または有料のサブスクリプションと同じものではありません。
   
 ### <a name="summary-of-the-hierarchy"></a>階層の概要
 
@@ -105,9 +106,9 @@ Azure AD テナントは、アカウントおよびグループを含む Azure A
   
 - パブリック ドメイン名によって識別される組織。
     
-  - ユーザーライセンスを持つ Microsoft 365 E3 サブスクリプション。
+  - ユーザーライセンスのある Microsoft 365 E3 サブスクリプション。
     
-    ユーザーライセンスを持つ Microsoft 365 E5 サブスクリプション。
+    ユーザーライセンスのある Microsoft 365 E5 サブスクリプション。
     
     ユーザー ライセンスがある Dynamics 365 サブスクリプション。
     
@@ -130,8 +131,8 @@ Azure AD テナントは、アカウントおよびグループを含む Azure A
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Microsoft 365** <br/> |該当なし  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |Microsoft 365 管理センターから Dynamics 365 のサブスクリプションを組織に追加します。  <br/> |
-|**Azure** <br/> |組織に Microsoft 365 サブスクリプションを追加します。  <br/> |該当なし  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
-|**Dynamics 365** <br/> |組織に Microsoft 365 サブスクリプションを追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |
+|**Azure** <br/> |Microsoft 365 サブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |Dynamics 365 サブスクリプションを組織に追加します。  <br/> |
+|**Dynamics 365** <br/> |Microsoft 365 サブスクリプションを組織に追加します。  <br/> |Azure ポータルから Azure のサブスクリプションを組織に追加します。  <br/> |該当なし  <br/> |
    
 Microsoft SaaS ベース サービスの場合は、管理センターを使用すると、組織にサブスクリプションを簡単に追加できます。
   
@@ -141,17 +142,17 @@ Microsoft SaaS ベース サービスの場合は、管理センターを使用�
     
 3. **[サービスを購入する]** ページで、新しいサブスクリプションを購入します。
     
-管理センターは、Microsoft 365 サブスクリプションの組織と Azure AD テナントを、SaaS ベースのクラウド製品の新しいサブスクリプションに割り当てます。
+管理センターは、Microsoft 365 サブスクリプションの組織と Azure AD テナントを SaaS ベースのクラウドプランの新しいサブスクリプションに割り当てます。
   
-Microsoft 365 サブスクリプションと同じ組織と Azure AD テナントを使用して Azure サブスクリプションを追加するには、次のようにします。
+Microsoft 365 サブスクリプションと同じ組織および Azure AD テナントの Azure サブスクリプションを追加する方法
   
-1. Microsoft 365 グローバル管理者アカウントを使用して、Azure portal () にサインインし [https://portal.azure.com](https://portal.azure.com) ます。
+1. Microsoft 365 全体管理者アカウントを使用して、Azureポータル ([https://portal.azure.com](https://portal.azure.com)) にサインインします。
     
 2. 左側のナビゲーションで、**[サブスクリプション]**、**[追加]** の順にクリックします。
     
 3. **[サブスクリプションの追加]** ページでプランを選択し、支払情報を記入して契約します。
     
-Azure と Microsoft 365 サブスクリプションを別々に購入しており、Azure サブスクリプションから Microsoft 365 Azure AD テナントにアクセスする場合は、「azure [Active Directory テナントに既存の azure サブスクリプションを追加](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)する」の手順を参照してください。
+Azure と Microsoft 365 のサブスクリプションを個別に購入済みで、Azure サブスクリプションから Microsoft 365 の Azure AD テナントへのアクセスを希望する場合は、「[既存の Azure サブスクリプションを Azure Active Directory テナントに追加する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)」の説明を参照してください。
  
 ## <a name="see-also"></a>関連項目
 

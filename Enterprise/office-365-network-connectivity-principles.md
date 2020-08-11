@@ -15,13 +15,14 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
-description: Office 365 のネットワーク接続の計画を開始する前に、Office 365 のトラフィックを安全に管理して最善のパフォーマンスを実現するための接続の原則を理解することが重要です。 この記事では、Office 365 ネットワーク接続をセキュリティで保護するための最新のガイドについて説明します。
-ms.openlocfilehash: 399f00412bfd5c26a5910b9dcaa141a4fababd93
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: この記事では、Office 365 ネットワーク接続を安全に最適化するための最新のガイドについて説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: be8877ca651e29763b16996670b294cb23bea960
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502702"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605499"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 ネットワーク接続の原則
 
