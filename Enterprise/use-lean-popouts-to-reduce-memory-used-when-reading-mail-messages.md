@@ -13,46 +13,47 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: この記事では、Outlook on the web でのメッセージダウンロードのパフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 49b570da9092ce4fc857757a7da72b2a81fd0090
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: この記事では、リーンポップアウトを使用して Outlook on the web でメッセージダウンロードのパフォーマンスを向上させる方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9ca2f90c8798c144f2763106c4c9ca9f57e9df1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843908"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603609"
 ---
-# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a><span data-ttu-id="7efe9-103">リーンポップアウトを使用してメールメッセージの読み取り時に使用されるメモリを削減する</span><span class="sxs-lookup"><span data-stu-id="7efe9-103">Use lean popouts to reduce memory used when reading mail messages</span></span>
+# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a><span data-ttu-id="cec54-103">リーンポップアウトを使用してメールメッセージの読み取り時に使用されるメモリを削減する</span><span class="sxs-lookup"><span data-stu-id="cec54-103">Use lean popouts to reduce memory used when reading mail messages</span></span>
 
-<span data-ttu-id="7efe9-104">この記事では、Outlook on the web でのメッセージダウンロードのパフォーマンスを向上させる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="7efe9-104">This article contains information for improving message download performance in Outlook on the web.</span></span> <span data-ttu-id="7efe9-105">この記事は、 [Office 365 プロジェクトのネットワーク計画とパフォーマンスチューニング](https://aka.ms/tune)に含まれています。</span><span class="sxs-lookup"><span data-stu-id="7efe9-105">This article is part of the [Network planning and performance tuning for Office 365](https://aka.ms/tune) project.</span></span>
+<span data-ttu-id="cec54-104">この記事では、Outlook on the web でのメッセージダウンロードのパフォーマンスを向上させる方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="cec54-104">This article contains information for improving message download performance in Outlook on the web.</span></span> <span data-ttu-id="cec54-105">この記事は、 [Office 365 プロジェクトのネットワーク計画とパフォーマンスチューニング](https://aka.ms/tune)に含まれています。</span><span class="sxs-lookup"><span data-stu-id="cec54-105">This article is part of the [Network planning and performance tuning for Office 365](https://aka.ms/tune) project.</span></span>
   
-<span data-ttu-id="7efe9-106">Office 365 のグローバル管理者として、Outlook on the web を構成して、Microsoft Edge または Internet Explorer で特定の電子メール_メッセージをより_小さく、より小さなメモリを消費するバージョンにすることができます。</span><span class="sxs-lookup"><span data-stu-id="7efe9-106">As an Office 365 global administrator, you can configure Outlook on the web to deliver _lean popouts_, a smaller, less memory-intensive version of certain email messages in Microsoft Edge or Internet Explorer.</span></span> <span data-ttu-id="7efe9-107">Web 上の Outlook に対してリーンポップアウトが構成されている場合、サーバー側でレンダリングされるコンポーネントはパフォーマンスを最適化するために読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="7efe9-107">When lean popouts are configured for Outlook on the web, server-side rendered components are loaded that optimize performance.</span></span>
+<span data-ttu-id="cec54-106">Office 365 のグローバル管理者として、Outlook on the web を構成して、Microsoft Edge または Internet Explorer で特定の電子メール_メッセージをより_小さく、より小さなメモリを消費するバージョンにすることができます。</span><span class="sxs-lookup"><span data-stu-id="cec54-106">As an Office 365 global administrator, you can configure Outlook on the web to deliver _lean popouts_, a smaller, less memory-intensive version of certain email messages in Microsoft Edge or Internet Explorer.</span></span> <span data-ttu-id="cec54-107">Web 上の Outlook に対してリーンポップアウトが構成されている場合、サーバー側でレンダリングされるコンポーネントはパフォーマンスを最適化するために読み込まれます。</span><span class="sxs-lookup"><span data-stu-id="cec54-107">When lean popouts are configured for Outlook on the web, server-side rendered components are loaded that optimize performance.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="7efe9-108">2018年3月の間、Information rights Management (IRM) などの使用権限の制限を指定するメッセージでは、リーンポップアウトは使用できません。</span><span class="sxs-lookup"><span data-stu-id="7efe9-108">As of March 2018, lean popouts are not available for messages that specify usage rights restrictions, such as Information Rights Management (IRM).</span></span>
+> <span data-ttu-id="cec54-108">2018年3月の間、Information rights Management (IRM) などの使用権限の制限を指定するメッセージでは、リーンポップアウトは使用できません。</span><span class="sxs-lookup"><span data-stu-id="cec54-108">As of March 2018, lean popouts are not available for messages that specify usage rights restrictions, such as Information Rights Management (IRM).</span></span>
   
-<span data-ttu-id="7efe9-109">これらの機能は、メインウィンドウでは引き続き動作しますが、リーン popouts では使用できません。</span><span class="sxs-lookup"><span data-stu-id="7efe9-109">These features will continue to work in the main window but are not available in lean popouts:</span></span>
+<span data-ttu-id="cec54-109">これらの機能は、メインウィンドウでは引き続き動作しますが、リーン popouts では使用できません。</span><span class="sxs-lookup"><span data-stu-id="cec54-109">These features will continue to work in the main window but are not available in lean popouts:</span></span>
   
-- <span data-ttu-id="7efe9-110">Outlook アドイン</span><span class="sxs-lookup"><span data-stu-id="7efe9-110">Outlook add-ins</span></span>
+- <span data-ttu-id="cec54-110">Outlook アドイン</span><span class="sxs-lookup"><span data-stu-id="cec54-110">Outlook add-ins</span></span>
   
-- <span data-ttu-id="7efe9-111">Skype for Business のプレゼンス</span><span class="sxs-lookup"><span data-stu-id="7efe9-111">Skype for Business presence</span></span>
+- <span data-ttu-id="cec54-111">Skype for Business のプレゼンス</span><span class="sxs-lookup"><span data-stu-id="cec54-111">Skype for Business presence</span></span>
   
-## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a><span data-ttu-id="7efe9-112">Office 365 組織内のすべてのユーザーのリーンポップアウトを構成するには</span><span class="sxs-lookup"><span data-stu-id="7efe9-112">To configure lean popouts for all users within your Office 365 organization</span></span>
+## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a><span data-ttu-id="cec54-112">Office 365 組織内のすべてのユーザーのリーンポップアウトを構成するには</span><span class="sxs-lookup"><span data-stu-id="cec54-112">To configure lean popouts for all users within your Office 365 organization</span></span>
   
-1. <span data-ttu-id="7efe9-113">[リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx )します。</span><span class="sxs-lookup"><span data-stu-id="7efe9-113">[Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).</span></span>
+1. <span data-ttu-id="cec54-113">[リモート PowerShell を使用して Exchange Online に接続](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx )します。</span><span class="sxs-lookup"><span data-stu-id="cec54-113">[Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).</span></span>
   
-2. <span data-ttu-id="7efe9-114">LeanPopoutEnabled パラメーターを使用して、次のように[コマンドレットを実行します](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx)。</span><span class="sxs-lookup"><span data-stu-id="7efe9-114">Run the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) cmdlet with the LeanPopoutEnabled parameter as follows:</span></span>
+2. <span data-ttu-id="cec54-114">LeanPopoutEnabled パラメーターを使用して、次のように[コマンドレットを実行します](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx)。</span><span class="sxs-lookup"><span data-stu-id="cec54-114">Run the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) cmdlet with the LeanPopoutEnabled parameter as follows:</span></span>
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >
   ```
 
-  <span data-ttu-id="7efe9-115">たとえば、組織内のすべてのユーザーのリーンポップアウトを有効にするには、次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="7efe9-115">For example, to enable lean popouts for all users in your organization:</span></span>
+  <span data-ttu-id="cec54-115">たとえば、組織内のすべてのユーザーのリーンポップアウトを有効にするには、次のように入力します。</span><span class="sxs-lookup"><span data-stu-id="cec54-115">For example, to enable lean popouts for all users in your organization:</span></span>
   
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled $true
   ```
 
-  <span data-ttu-id="7efe9-116">組織内のすべてのユーザーのリーンポップアウトを無効にするには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="7efe9-116">To disable lean popouts for all users in your organization:</span></span>
+  <span data-ttu-id="cec54-116">組織内のすべてのユーザーのリーンポップアウトを無効にするには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="cec54-116">To disable lean popouts for all users in your organization:</span></span>
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled $false
