@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Microsoft 365 Multi-Geo の構成方法について説明します。
-ms.openlocfilehash: 518bc6dc5bf72e5196a46df8ee7b2e80b7b1838a
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
+ms.openlocfilehash: 53a339c9bc709920adb55992d44be2f6280fffcd
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433818"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606793"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -74,7 +76,7 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Azure AD Connect を使用してユーザーの優先されるデータの場所を同期する 
 
-会社のユーザーがオンプレミスの Active Directory システムから Azure AD に同期されている場合、それらの PreferredDataLocation を AD に入力し、Azure AD に同期する必要があります。
+会社のユーザーがオンプレミスの Active Directory システムから Azure AD に同期されている場合、彼らの PreferredDataLocation を AD に入力し、Azure AD に同期させる必要があります。
 
 「[Azure Active Directory Connect 同期: Microsoft 365 リソースの優先されるデータの場所を構成する](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation)」のプロセスに従って、オンプレミス Active Directory ドメイン サービス (AD DS) から Azure AD への優先されるデータの場所の同期を構成します。
 
