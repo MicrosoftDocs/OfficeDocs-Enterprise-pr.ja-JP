@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
-description: Microsoft 365 のネットワーク帯域幅要件を計画するのに役立つ情報を示します。 展開後、Microsoft 365 のパフォーマンスを微調整およびトラブルシューティングするために、ここに戻ってください。
-ms.openlocfilehash: 2754bdfe427a87f0cbed538703877b089c3fcc38
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+- Adm_O365
+description: この記事では、Microsoft 365 のネットワーク帯域幅要件を計画し、パフォーマンスを微調整およびトラブルシューティングする方法について説明します。
+ms.openlocfilehash: 4942d2d9d36123465dd15aecf6e72988c9952037
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998582"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606743"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Microsoft 365 のネットワーク計画とパフォーマンス チューニング
 最初にを展開するか、Microsoft 365 に移行する前に、これらのトピックの情報を使用して必要な帯域幅を推定し、Microsoft 365 に展開または移行するのに十分な帯域幅があることをテストして確認することができます。 概要については、「 [Microsoft 365 のネットワークと移行の計画](network-and-migration-planning.md)」を参照してください。

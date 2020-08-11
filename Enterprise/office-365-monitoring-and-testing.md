@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: microsoft 365 のテナント境界を監視およびテストする方法について説明します。'
-ms.openlocfilehash: 4511b7cce47cdad76cdcce89dcd6f9d14a7f0a4b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、microsoft 365 のテナントの境界を継続的に監視およびテストする方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d289310ed4d6d1bf142a8a4bb8fc6c2b83c167d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998656"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605519"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>テナント境界の監視とテスト
 

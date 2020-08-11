@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Microsoft 365 およびサービスアシュアランスの監査およびレポート機能の概要について説明します。
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Office 365、Microsoft 365、およびサービスアシュアランス内の監査とレポート機能の概要について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774962"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606683"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft クラウドサービスでの監査とレポート
 
@@ -57,7 +58,7 @@ Microsoft OneDrive 管理センターを使用すると、組織の OneDrive for
 ## <a name="related-links"></a>関連リンク
 
 - [電子情報開示と検索機能](office-365-ediscovery-and-search-features.md)
-- [Microsoft 365 レポート機能](office-365-reporting-features.md)
-- [Microsoft 365 Management Activity API](office-365-management-activity-api.md)
-- [Microsoft 365 メールボックスの移行](office-365-mailbox-migrations.md)
-- [Microsoft 365 エンジニアリングの内部ログ](office-365-internal-logging.md)
+- [Microsoft 365 のレポート作成機能](office-365-reporting-features.md)
+- [Microsoft 365 マネージメント アクティビティ API](office-365-management-activity-api.md)
+- [Microsoft 365 のメールボックスの移行](office-365-mailbox-migrations.md)
+- [Microsoft 365 のエンジニアリングのための内部ログ記録](office-365-internal-logging.md)

@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
-description: ディレクトリ同期を非アクティブ化する方法について説明します。 その状態を表示することもできます。
-ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: この記事では、Office 365 でディレクトリ同期の状態を確認する方法について説明します。
+ms.openlocfilehash: 9aaad085854326ebb6542f03256ae851b27f0980
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571040"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605863"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Microsoft 365 でのディレクトリ同期状態の表示
 

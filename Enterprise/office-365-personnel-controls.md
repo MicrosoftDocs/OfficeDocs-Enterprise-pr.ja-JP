@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: microsoft 365 の Microsoft 担当者による審査方法の概要について説明します。'
-ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: この記事では、microsoft 365 の Microsoft 要員の審査方法の概要について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52b872d9b8b49b0ed72cdfb0d879712a6e129a33
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775096"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605489"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Microsoft 365 の人事管理
 
@@ -49,7 +50,7 @@ Microsoft のグローバルセキュリティ部門は、Microsoft との雇用
 
 - 米国、ヨーロッパ、中東、およびアジアの政府機関によって発行されたドキュメントからの、米国内での SSN 追跡または id の確認。
 - 犯罪履歴では、州と軽犯罪 offenses の州、市区郡、およびローカルレベル、および米国で該当する場合は連邦レベルで、最大7年間チェックします。 国際犯罪履歴の確認 (地域の法律に依存) は米国外の地域に適用されます。
-- 最高レベルのアカデミックアチーブメントの確認
+- 最終学歴の確認
 - 5年間の雇用履歴
 - グローバルや制裁および強制チェック (対外資産管理 (OFAC) のリスト、事務所とセキュリティ (BIS) の一覧、および国防貿易統制の事務局を含む) (DDTC) リストのチェック。
 
@@ -65,8 +66,8 @@ Microsoft では、microsoft が所有またはリースした設備へのアク
 
 - 米国、ヨーロッパ、中東、およびアジアの政府機関によって発行されたドキュメントからの、米国内での SSN 追跡または id の確認。
 - 犯罪履歴では、州と軽犯罪 offenses の州、市区郡、およびローカルレベル、および米国で該当する場合は連邦レベルで、最大7年間チェックします。 国際犯罪履歴の確認 (地域の法律に依存) は米国外の地域に適用されます。
-- 最高レベルのアカデミックアチーブメントの確認
-- グローバルや制裁および強制チェック
+- 最終学歴の確認
+- 世界的な制裁及び執行の確認
 
 米国では、各サプライヤースタッフメンバーが Microsoft に対して実行する各部門 (地方の法律によって許容される範囲) の前に、サプライヤーは事前に配置を行い、microsoft が推奨するバックグラウンドチェックの審査サービスプロバイダーを使用して、microsoft の標準に準拠していることを確認することをお客様に通知します。 
 

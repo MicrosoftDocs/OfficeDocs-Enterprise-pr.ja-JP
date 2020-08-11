@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: '概要: microsoft 365 の PowerShell を使用して、Microsoft 365 管理センターでは作成できないレポートを作成します。'
-ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: d2d03d6ac170fef95352a2aabf6cd27176202a1e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229803"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605319"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>PowerShell を使用して Microsoft 365 のレポートを作成する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 管理者センターでは、数多くのさまざまなレポートを使用できます。 ただし、これらのレポートは大量の情報を提供するだけで、さらに詳細が必要になる場合もあります。 これは、Microsoft 365 に PowerShell が必要な場合です。
   
@@ -59,13 +61,13 @@ Microsoft 365 管理者センターでは、数多くのさまざまなレポー
     
   - [PowerShell で Exchange Online レポートを表示する](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
+[PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)
   
 [PowerShell を使用して SharePoint Online を管理する](manage-sharepoint-online-with-office-365-powershell.md)
   
-[PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

@@ -11,14 +11,16 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-f1.keywords: NOCSH
-description: SharePoint サイトを別のジオ位置情報に移動する方法について説明します。
-ms.openlocfilehash: 88c739e69f27df72cba3757f224ccd1a916d3148
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: SharePoint サイトを複数地域環境内の別の地理的な場所に移動し、変更の予測をユーザーに伝達する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8fdf6e3ec181ac5c4303579871c6f83112df1e3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433868"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606843"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -82,8 +84,8 @@ SharePoint サイトの地域移動は　サイトがあるジオ位置情報で
 サイトの移動をスケジュールする前に、サイトが移動できるか検証することをお勧めします。
 
 サイトの移動はサポートしていません:
--   Business Connectivity Services
--   InfoPath フォーム 
+-    Business Connectivity Services
+-    InfoPath フォーム 
 - Information Rights Management (IRM) テンプレートの適用
 
 すべてのジオ位置情報に互換性があることを確認するために、 `Get-SPOGeoMoveCrossCompatibilityStatus`を実行します。 すべてのジオ位置情報と、その環境が移動先のジオ位置情報と互換性があるかどうかを表示します。

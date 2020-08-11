@@ -15,13 +15,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: SharePoint Online でのデータ削除についての説明。
-ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: SharePoint Online でのデータ削除の動作について説明します。たとえば、削除されたコンテンツが保存される場所や、期間について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 424cfcc1bcad53ff3e12278367614d048043e4bb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997817"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606293"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365 での SharePoint Online データの削除
 

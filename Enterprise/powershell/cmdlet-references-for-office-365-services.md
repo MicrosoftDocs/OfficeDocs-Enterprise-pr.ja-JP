@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: '概要: Azure Active Directory、Exchange Online、SharePoint Online、Skype for Business Online、およびセキュリティ & コンプライアンスのための Microsoft 365 for PowerShell コマンドレットリファレンストピックをご覧ください。'
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Azure AD、Exchange Online、SharePoint Online、Skype for Business Online、セキュリティ & コンプライアンスに関する Microsoft 365 PowerShell コマンドレットリファレンストピックを検索します。
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230863"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606023"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 各コマンドレットの使用方法に関する詳細情報と手順については、さまざまな Microsoft 365 サービスのコマンドレットリファレンストピックを参照してください。 さらに、PowerShell がサポートされている各 Microsoft 365 サービスには、異なる接続手順が必要です。
   
@@ -69,7 +71,7 @@ Microsoft 365 セキュリティ &amp; コンプライアンスセンターの�
   
 ## <a name="see-also"></a>関連項目
 
-[PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
+[PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
   
-[Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
+[Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)
 

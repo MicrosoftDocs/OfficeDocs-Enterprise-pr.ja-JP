@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 のデータ不変性を定義して説明します。
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Microsoft 365 が検出可能な形式でデータを保持して、法令遵守、内部ガバナンスの要件、および訴訟のリスクに対処する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998461"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605639"
 ---
 # <a name="immutability-in-microsoft-365"></a>Microsoft 365 での不変性
 
@@ -28,20 +29,20 @@ ms.locfileid: "44998461"
 
 従来の不変処理方法では、電子メールメッセージを別の読み取り専用の保存場所に移動することによって動作します。 このようなシステムは、証拠開示のためにメールボックスアイテムを保持することを目的としていますが、通常は日常のワークフローから保持されているアイテムを削除することによって、ユーザーの作業感に影響 IT 担当者にとって、この不変手法を使用するには、個別のサーバーとストレージインフラストラクチャを展開し、継続的に保守する必要があります。 検出は、メールシステムの外部にあるツールを使用して実行され、関連する展開とメンテナンスのコストを含みます。
 
-Microsoft 365 とそのサービスのアーカイブのインプレース保持ポリシー機能と保持ポリシー機能により、受信、内部、送信データの多くのクラスを保持して保持することができます。 次のようなシナリオが考えられます。
+Microsoft 365 とそのサービスのアーカイブのインプレース保持ポリシー機能と保持ポリシー機能により、受信、内部、送信データの多くのクラスを保持して保持することができます。 保持されるデータには以下が含まれます。
 
-- 受信および送信電子メール通信
-- メールフォームまたは共有オンラインドキュメントに含まれるブックとレコード
+- 受信メールと送信メールの通信データ
+- メール フォームまたはオンラインド共有キュメントに含まれている帳簿や記録
 - 会議出席依頼
-- Fax
-- インスタントメッセージ
-- オンライン会議中に共有するドキュメント
-- Voicemails
+- FAX
+- インスタント メッセージ
+- オンライン会議中に共有されたドキュメント
+- ボイスメール
 
 さらに、Microsoft は、サードパーティのデータキャプチャおよび管理ソリューションとの統合により、他のソースからの[データのアーカイブ](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc)を可能にするアドオン機能を開発しました。 サードパーティのデータがインポートされた後、Microsoft 365 のコンプライアンス機能をデータに適用することができます。次のようなものがあります。
 
 - [訴訟ホールド](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
-- [インプレース電子情報開示とホールド](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [インプレースの電子情報開示と保持](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
 - [コンプライアンス検索](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
 - [インプレース アーカイブ](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
 - [メールボックスの監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)

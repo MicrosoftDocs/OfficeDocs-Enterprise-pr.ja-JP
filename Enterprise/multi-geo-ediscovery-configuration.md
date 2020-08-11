@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: Microsoft 365 Multi-Geo で電子情報開示を構成する方法について説明します。
-ms.openlocfilehash: 7257e5e9a5a7154d574743e3e515e49e9dc714b2
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 地域パラメーターを使用して、Microsoft 365 複数地域でサテライトの場所で使用する電子情報開示を構成する方法について説明します。
+ms.openlocfilehash: dec73aef93951bd86f2b84c4eba637bac725603a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433828"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606803"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo 電子情報開示の構成
 

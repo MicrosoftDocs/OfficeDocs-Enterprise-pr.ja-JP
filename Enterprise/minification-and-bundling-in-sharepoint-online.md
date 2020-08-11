@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: この記事では、Web Essentials での縮小とバンドルの手法を使用して、HTTP 要求の数を減らし、SharePoint Online でページを読み込むのにかかる時間を短縮する方法について説明します。
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Web Essentials での縮小とバンドルの手法を使用して、HTTP 要求を減らし、SharePoint Online でページを読み込むのにかかる時間を短縮する方法について説明します。
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004772"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605659"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online での縮小とバンドル
 
@@ -39,7 +41,7 @@ JavaScript ファイルと CSS ファイルでは、必要のないスペース�
 Web Essentials などのサードパーティ製ソフトウェアを使用して、CSS ファイルと JavaScript ファイルをバンドルできます。
   
 > [!IMPORTANT]
-> Web エッセンシャルは、サードパーティのオープンソースのコミュニティベースのプロジェクトです。 このソフトウェアは、Visual Studio 2012 と Visual Studio 2013 の拡張機能であり、Microsoft ではサポートされていません。 Web Essentials をダウンロードするには、の[https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)web サイトにアクセスしてください。 
+> Web エッセンシャルは、サードパーティのオープンソースのコミュニティベースのプロジェクトです。 このソフトウェアは、Visual Studio 2012 と Visual Studio 2013 の拡張機能であり、Microsoft ではサポートされていません。 Web Essentials をダウンロードするには、の web サイトにアクセス [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) してください。 
   
 Web Essentials には、次の2つのバンドル形式が用意されています。
   

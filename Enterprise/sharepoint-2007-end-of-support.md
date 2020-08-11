@@ -15,6 +15,7 @@ ms.custom:
 - globalemailconfig
 - configssc
 - AppDefToBDC
+- seo-marvel-apr2020
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
@@ -35,17 +36,17 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: SharePoint Server 2007 のサポートは 2017 年 10 月 10 日に終了しました。アップグレード オプション、トラブルシューティング、ベスト プラクティス、システム要件、アップグレード手順、および Microsoft パートナーからサポートを受ける方法については、この記事をお読みください。
-ms.openlocfilehash: 561619559fd43131518a0032d3b28dc556f2d8b0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 2017年10月10日に、SharePoint Server 2007 のサポートが終了しました。 この記事では、アップグレード、移行、およびサポートのオプションについて説明します。
+ms.openlocfilehash: f1473e101d33b0e58ffd300d61ed92cc19c0a9f4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996531"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603719"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 **2017 年10月 10**日に、Microsoft Office SharePoint Server 2007 はサポート終了になりました。 SharePoint Server 2007 から Microsoft 365 またはオンプレミスの SharePoint Server の新しいバージョンへの移行を開始していない場合は、計画を開始する時期になります。 この記事では、ユーザーがデータを SharePoint Online に移行したり、オンプレミスの SharePoint Server をアップグレードしたりするのに役立つリソースについて説明します。 
   

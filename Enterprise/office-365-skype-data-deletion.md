@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Skype for Business でのデータ削除についての説明。
-ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、保存されていないコンテンツの種類など、Skype for Business でのデータ削除についての説明を確認できます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40ce2ca16367b0ca4b86ed839ca3ac9c6ddc04e4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997797"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606283"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 での Skype for Business データの削除
 

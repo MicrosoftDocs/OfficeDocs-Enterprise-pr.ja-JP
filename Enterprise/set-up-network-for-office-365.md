@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: '概要: Microsoft 365 のネットワークについて理解するには、次の記事を参照してください。'
-ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: ネットワーク接続の概要やエンドポイントの一覧など、Microsoft 365 のネットワークのセットアップに役立つ情報が記載された記事へのリンクがあります。
+ms.openlocfilehash: 2c5966dc169a189a4f5040d4b5673859a38e6640
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592151"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605209"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Microsoft 365 用にネットワークをセットアップする
 

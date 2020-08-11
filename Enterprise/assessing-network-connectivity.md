@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 は、世界中のお客様がインターネット接続を使用してサービスに接続できるように設計されています。 サービスの進化に伴って、Microsoft 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立するお客様によって改善されました。
-ms.openlocfilehash: 0ccf729dc8eddfd99ffc0b70c8ab56e31451be88
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: eae7e56c13ab0d0799226c834dd7d9092c8f9551
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997961"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605803"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Microsoft 365 ネットワーク接続の評価
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 は、世界中のお客様がインターネット接続を使用してサービスに接続できるように設計されています。 サービスの進化に伴って、Microsoft 365 のセキュリティ、パフォーマンス、および信頼性は、インターネットを使用してサービスへの接続を確立するお客様によって改善されました。
   
@@ -107,9 +109,9 @@ Microsoft の365接続テストに関する情報を参照して、[新しいネ
   
 次の短いリンクを使用して、に戻ることができ[ https://aka.ms/o365networkconnectivity ます。](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 のネットワーク接続の概要](office-365-networking-overview.md)
+[Microsoft 365 ネットワーク接続の概要](office-365-networking-overview.md)
 
 [Microsoft 365 ネットワーク接続の原則](https://aka.ms/o365networkingprinciples)
 

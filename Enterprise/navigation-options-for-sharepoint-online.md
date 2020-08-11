@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。 ナビゲーションの選択と構成は、SharePoint Online のサイトのパフォーマンスと拡張性に大きく影響します。 この記事は、従来のチーム サイトには適用されません。
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004762"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606763"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
@@ -33,7 +35,7 @@ ms.locfileid: "44004762"
 >[!NOTE]
 >メガメニュー、カスケードナビゲーション、ハブナビゲーションなどのモダン SharePoint ナビゲーションオプションを使用している場合、この記事はサイトに適用されません。 モダンな SharePoint サイトアーキテクチャは、よりフラット化されたサイト階層とハブアンドスポークモデルを活用します。 これにより、SharePoint 発行機能の使用を必要としない多くのシナリオを実現できます。
 
-## <a name="overview"></a>概要
+## <a name="overview-of-navigation-options"></a>ナビゲーションオプションの概要
 
 ナビゲーション プロバイダーの構成はサイト全体のパフォーマンスに大きな影響を与える可能性があるため、SharePoint サイトの要件を満たすように効果的に対応できるナビゲーション プロバイダーと構成を慎重に選択する必要があります。 2 つの既成のナビゲーション プロバイダーの他、ナビゲーションのカスタム実装が提供されています。
 
@@ -71,15 +73,15 @@ ms.locfileid: "44004762"
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>構造ナビゲーションキャッシュを実装する方法
 
-[**サイト設定** > の**ルックアンドフィール** > **ナビゲーション**] で、グローバルナビゲーションまたは現在のナビゲーションのいずれかで構造ナビゲーションが選択されているかどうかを検証できます。 [**ページの表示]** を選択すると、パフォーマンスに悪影響を与えます。
+[**サイト設定**  >  の**ルックアンドフィール**  >  **ナビゲーション**] で、グローバルナビゲーションまたは現在のナビゲーションのいずれかで構造ナビゲーションが選択されているかどうかを検証できます。 [**ページの表示]** を選択すると、パフォーマンスに悪影響を与えます。
 
 ![[サブサイトを表示する] が選択されている構造ナビゲーション](media/SPONavOptionsStructuredShowSubsites.png)
 
-キャッシュは、サイトコレクションレベルおよびサイトレベルで有効または無効にできます。既定では、両方に対して有効になっています。 サイトコレクションレベルで有効にするには、サイト**設定** > **サイトコレクション管理** > **サイトコレクションナビゲーション**で、[**キャッシュを有効にする**] のチェックボックスをオンにします。
+キャッシュは、サイトコレクションレベルおよびサイトレベルで有効または無効にできます。既定では、両方に対して有効になっています。 サイトコレクションレベルで有効にするには、サイト**設定**  >  **サイトコレクション管理**  >  **サイトコレクションナビゲーション**で、[**キャッシュを有効にする**] のチェックボックスをオンにします。
 
 ![サイトレベルでキャッシュを有効にする](media/structural-nav/structural-nav-caching-site-coll.png)
 
-サイトレベルで有効にするには、[**サイトの設定** > ]**ナビゲーション**で、[**キャッシュを有効**にする] のチェックボックスをオンにします。
+サイトレベルで有効にするには、[**サイトの設定**] ナビゲーションで、[キャッシュを有効にする  >  **Navigation**] のチェックボックスをオンにし**Enable caching**ます。
 
 ![サイトレベルでキャッシュを有効にする](media/structural-nav/structural-nav-caching-site.png)
 

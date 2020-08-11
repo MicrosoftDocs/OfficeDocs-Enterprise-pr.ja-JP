@@ -24,17 +24,19 @@ search.appverid:
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
-description: SharePoint Server 2007 のサポートが終了したので、アップグレードを実行する時間を短縮しました。 この記事を使用して、計画の作成に役立てることができます。
-ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: この記事には、SharePoint Server 2007 を使用してアップグレードを計画するユーザー向けの情報が記載されています。
+ms.openlocfilehash: 9dd659936bd15e0052ce9f6ba6830238aa2c5180
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774992"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603689"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>検討する SharePoint 2007 移行オプション
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft SharePoint 2007 と SharePoint Server 2007 のサポートが終了しました。 アップグレード時間 この記事では、移行オプションに関する情報を提供します。
   
@@ -151,7 +153,7 @@ My ' 最も重要な行頭文字リスト:
    
  **提案されているプラン:**
   
-最初にデータベースをアップグレードできるように、オンプレミスのバージョンの SharePoint と共存して、いくつかの仮想化を行います。 SharePoint 2007 から SharePoint 2010 に移動します。 管理者と開発結果のファームをテストします。 ユーザーが結果のファームをテストします。 この間に発生するすべての停止の問題を修正します。 再び並行して、SharePoint 2010 データベースを SharePoint 2013 にアップグレードします。 調べる. ユーザーテスト/パイロット。 この間に発生するすべての停止の問題を修正します。
+最初にデータベースをアップグレードできるように、オンプレミスのバージョンの SharePoint と共存して、いくつかの仮想化を行います。 SharePoint 2007 から SharePoint 2010 に移動します。 管理者と開発結果のファームをテストします。 ユーザーが結果のファームをテストします。 この間に発生するすべての停止の問題を修正します。 再び並行して、SharePoint 2010 データベースを SharePoint 2013 にアップグレードします。 テストします。 ユーザーテスト/パイロット。 この間に発生するすべての停止の問題を修正します。
   
 - SPO とのフェデレーションハイブリッド検索がニーズを満たしているかどうかを検討します。
     

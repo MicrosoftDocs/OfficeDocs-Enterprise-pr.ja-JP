@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: '概要: さまざまな Microsoft 365 クラウドのインターネットエンドポイントに関する以下の記事を参照してください。'
-ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Microsoft 365 のトラフィックの宛先 IP アドレスおよび Url については、Microsoft 365 クラウドごとのインターネットエンドポイントに関する記事の一覧を使用します。
+ms.openlocfilehash: 1ef9d3a97beb14a1d51827d145f6fdc644c49f3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592201"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606623"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 エンドポイント
 

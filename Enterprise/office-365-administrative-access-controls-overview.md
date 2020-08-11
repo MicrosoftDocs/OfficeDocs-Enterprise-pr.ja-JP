@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: '概要: Microsoft 365 の管理アクセス制御とデータ分類の概要について説明します。'
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: この記事では、Microsoft 365 の管理アクセス制御とデータ分類の概要について説明します。
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774972"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606713"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Microsoft 365 の管理アクセス制御 
 
@@ -54,10 +55,10 @@ Microsoft では、複数の形式のクラウド配信を使用したオンラ�
 
 - メール
 - SharePoint Online のコンテンツ
-- インスタントメッセージ
+- インスタント メッセージ
 - 予定表アイテム
 - ドキュメント
-- Contacts
+- 連絡先
 - エンドユーザー識別情報 (EUII) (ユーザーに固有のデータ、または個別のユーザーに linkable されていても、顧客コンテンツは含まれません)
 
 ### <a name="other-types-of-data"></a>その他の種類のデータ
@@ -72,9 +73,9 @@ Microsoft は、お客様のデータまたはアクセスコントロールの�
 
 Microsoft が microsoft 365 を実行するために使用するアクセス制御には、次の3つのカテゴリがあります。
 
-- 分離コントロール
-- 人事管理
-- テクノロジコントロール
+- 分離の制御
+- 担当者の制御
+- テクノロジの制御
 
 これらのコントロールを組み合わせると、Microsoft 365 で悪意のあるアクションを防ぎ、検出することができます。 Microsoft によって使用される分離、人物、およびテクノロジの各コントロールに加えて、ユーザーによって実装されるコントロールには、次の4つのカテゴリがあります。
 

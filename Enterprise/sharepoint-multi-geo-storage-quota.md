@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 複数地域環境における SharePoint ストレージ クォータについて説明します。
-ms.openlocfilehash: f0463797dd3471f349e60d8f029b7ae2fa4b65a6
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: 複数地域環境での SharePoint のストレージクォータと、SharePoint Online 管理者がクォータを管理する方法について説明します。
+ms.openlocfilehash: 6198b5c6c22b2eefcf65224bdfbd92bccd3f966d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433738"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606143"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>複数地域環境における SharePoint ストレージ クォータ
 

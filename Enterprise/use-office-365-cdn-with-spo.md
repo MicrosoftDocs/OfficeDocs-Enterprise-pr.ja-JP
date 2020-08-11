@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
+title: SharePoint Online で Office 365 コンテンツ配信ネットワーク (CDN) を使用する
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、自分の場所やコンテンツへのアクセス方法に関係なく、すべてのユーザーに対して SharePoint Online アセットの配信を高速化する方法について説明します。
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: Office 365 コンテンツ配信ネットワーク (CDN) を使用して、SharePoint Online アセットの配信を高速化する方法について説明します。
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316026"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606123"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>SharePoint Online での Office 365 コンテンツ配信ネットワーク (CDN) の使用
 
@@ -305,7 +307,7 @@ _Path_の値は、アセットが格納されているライブラリまたは�
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ ワイルドカード修飾子は**/** 、パスの先頭にのみ使用でき、指定した url の下にあるすべての url セグメントに一致します。
++ ワイルドカード修飾子は、 **/** パスの先頭にのみ使用でき、指定した url の下にあるすべての url セグメントに一致します。
 + パスは、ドキュメントライブラリ、フォルダー、またはサイトを指すことができます。 たとえば、パス _*/site1_は、サイトのすべてのドキュメントライブラリに一致します。
 
 特定の相対パスを持つ発信元を追加できます。 完全なパスを使用して発信元を追加することはできません。
@@ -388,7 +390,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイトコレクションのプライベートオリジンを構成する
 
-**Add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 次に例を示します。
+**Add-spotenantcdnorigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 例:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -588,7 +590,7 @@ _Path_の値は、アセットが格納されているライブラリまたは�
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ ワイルドカード修飾子は**/** 、パスの先頭にのみ使用でき、指定した url の下にあるすべての url セグメントに一致します。
++ ワイルドカード修飾子は、 **/** パスの先頭にのみ使用でき、指定した url の下にあるすべての url セグメントに一致します。
 + パスは、ドキュメントライブラリ、フォルダー、またはサイトを指すことができます。 たとえば、パス _*/site1_は、サイトのすべてのドキュメントライブラリに一致します。
 
 特定の相対パスを持つ発信元を追加できます。 完全なパスを使用して発信元を追加することはできません。
@@ -671,7 +673,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>例: SharePoint Online のサイトコレクションのプライベートオリジンを構成する
 
-**PnPTenantCdnOrigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 次に例を示します。
+**PnPTenantCdnOrigin**コマンドレットを使用して、サイトコレクションをプライベートの配信元として定義します。 例:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -787,7 +789,7 @@ Office 365 CDN を有効にしたときに既定でプロビジョニングさ�
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-ここ`path`で、はアセットを含むフォルダーへの相対パスです。 相対パスに加え、ワイルドカードも使用できます。
+ここ `path` で、はアセットを含むフォルダーへの相対パスです。 相対パスに加え、ワイルドカードも使用できます。
 
 すべてのサイトの**マスターページギャラリー**内のすべてのアセットをパブリックの配信元として含めるには、次のように実行します。
 
@@ -880,7 +882,7 @@ CDN および構成されたオリジンとポリシーが有効になったの�
 + 送信元のアセットへのリンクごとに、パスを CDN の配信元のファイルへのパスに置き換えます。 相対パスを使用できます。
 + ページまたはコンテンツを保存します。
 
-たとえば、ドキュメントライブラリフォルダー _/site/CDN_origins/public/_ にコピーしたイメージ _/site/SiteAssets/images/image.png_を考えてみます。 CDN アセットを使用するには、元のパスを画像ファイルの場所へのパスで置き換えて、新しい URL _/site/CDN_origins/public/image.png_を作成します。
+たとえば、ドキュメントライブラリフォルダー/ _site/CDN_origins/public/_ にコピーした _/site/SiteAssets/images/image.png_のイメージを考えてみます。 CDN アセットを使用するには、元のパスを画像ファイルの場所へのパスで置き換え、新しい URL、 _site/CDN_origins/public/image.png_を作成します。
 
 相対パスではなく、アセットへの完全な URL を使用する場合は、次のようなリンクを作成します。
 
@@ -895,7 +897,7 @@ CDN からアセットが提供されているかどうかを確認する方法�
 
 SharePoint Online の**発行機能**によって、パブリックの配信元に格納されているアセットの url が自動的に cdn に書き換えられ、アセットが SharePoint ではなく cdn サービスから提供されるようになります。
 
-発行機能が有効になっているサイトに送信元があり、CDN にオフロードするアセットが次のいずれかのカテゴリに含まれている場合、SharePoint はそのアセットが CDN によって除外されていないことを前提として、送信元のアセットの Url を自動的にリライトします。 原則.
+発行機能が有効になっているサイトに送信元があり、CDN にオフロードするアセットが次のいずれかのカテゴリに含まれている場合、SharePoint は、そのアセットが CDN ポリシーによって除外されていないことを前提として、送信元のアセットの Url を自動的にリライトします。
 
 SharePoint 発行機能によって自動的に書き換えられるのは次のようなリンクです。
 
@@ -947,7 +949,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Office 365 CDN のプライベートオリジンにあるアセットへのアクセスは、SharePoint Online によって生成されたトークンによって付与されます。 送信元によって指定されたフォルダーまたはライブラリへのアクセス許可を持っているユーザーには、アクセス許可レベルに基づいてファイルへのアクセスをユーザーに許可するトークンが自動的に与えられます。 これらのアクセストークンは、トークンリプレイ攻撃を防ぐために生成されてから90分以内に有効になります。
 
-アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 次に例を示します。
+アクセストークンが生成されると、SharePoint Online は、2つの_承認パラメーター (_ エッジ認証トークン) と_oat_ (元の認証トークン) を含むクライアントにカスタム URI を返します。 各トークンの構造は、「 _>__< ' secure signature ' >」の「< の有効期限 (エポック時間形式_)」です。 例:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -958,14 +960,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>アイテムレベルのアクセス許可は、プライベートな出所のアセットではサポートされていません。
 
-SharePoint Online では、プライベートな出所のアセットに対してアイテムレベルのアクセス許可がサポートされていないことに注意してください。 たとえば、に`https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`あるファイルの場合、次の条件に該当するファイルへのアクセスが有効になります。
+SharePoint Online では、プライベートな出所のアセットに対してアイテムレベルのアクセス許可がサポートされていないことに注意してください。 たとえば、にあるファイルの場合、 `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` 次の条件に該当するファイルへのアクセスが有効になります。
 
 |ユーザー  |アクセス許可  |有効なアクセス  |
 |---------|---------|---------|
-|ユーザー1     |Folder1 へのアクセス権         |CDN から image1 にアクセスできる         |
-|ユーザー 2     |Folder1 へのアクセス権がありません。         |CDN から image1 にアクセスできません         |
-|ユーザー 3     |Folder1 にはアクセスできませんが、SharePoint Online で image1 にアクセスするための明示的なアクセス許可が付与されます。         |SharePoint Online から直接アセット image1 にアクセスできますが、CDN からはアクセスできません。         |
-|ユーザー 4     |Folder1 にはアクセスできますが、SharePoint Online で image1 へのアクセスを明示的に拒否されています。         |SharePoint Online からアセットにアクセスすることはできませんが、SharePoint Online でのファイルへのアクセスが拒否されているにもかかわらず、CDN からアセットにアクセスできます。         |
+|ユーザー1     |Folder1 へのアクセス権         |CDN から image1.jpg にアクセスできます。         |
+|ユーザー 2     |Folder1 へのアクセス権がありません。         |CDN から image1.jpg にアクセスできません         |
+|ユーザー 3     |Folder1 にはアクセスできませんが、SharePoint Online の image1.jpg にアクセスするための明示的なアクセス許可が付与されます。         |SharePoint Online から直接アセット image1.jpg にアクセスできますが、CDN からはアクセスできません。         |
+|ユーザー 4     |Folder1 にアクセスできるが、SharePoint Online で image1.jpg へのアクセスを明示的に拒否されている         |SharePoint Online からアセットにアクセスすることはできませんが、SharePoint Online でのファイルへのアクセスが拒否されているにもかかわらず、CDN からアセットにアクセスできます。         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Office 365 CDN のトラブルシューティング
@@ -978,7 +980,7 @@ CDN アセットへのリンクをページに追加すると、そのページ�
 また、ブラウザーの開発者ツールを使用して、ページ上の各アセットの URL を表示したり、サードパーティのネットワークトレースツールを使用したりすることもできます。
 
 > [!NOTE]
-> Fiddler などのネットワークツールを使用して、SharePoint ページからアセットをレンダリングするのではない状態でアセットをテストする場合は、URL が SharePoint `https://yourdomain.sharepoint.com`Online テナントのルート url である GET 要求に、referer ヘッダー "referer:" を手動で追加する必要があります。
+> Fiddler などのネットワークツールを使用して、SharePoint ページからアセットをレンダリングするのではない状態でアセットをテストする場合は、 `https://yourdomain.sharepoint.com` URL が Sharepoint Online テナントのルート url である GET 要求に、referer ヘッダー "referer:" を手動で追加する必要があります。
 
 SharePoint Online からの referer が必要になるため、web ブラウザーで CDN Url を直接テストすることはできません。 ただし、CDN アセット URL を SharePoint ページに追加し、そのページをブラウザーで開くと、CDN アセットがページに表示されます。
 

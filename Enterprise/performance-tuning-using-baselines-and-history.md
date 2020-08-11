@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 - SPO_Content
-description: Office 365 と企業間の接続のパフォーマンスを確認する簡単な方法がいくつかあります。これにより、接続の大まかなベースラインを確立することができます。 クライアントコンピューター接続のパフォーマンス履歴を把握しておくと、問題を早期に発見し、問題を特定して予測するのに役立ちます。
-ms.openlocfilehash: ffccd9f5763d7d47dbb3aa02d3063582d1fa83cc
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: クライアントコンピューター接続の履歴をチェックして、早期に新しい問題を検出できるようにする方法について説明します。
+ms.openlocfilehash: 31849e14b5dec7cba3878a85219ef2b8994f0fb9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774552"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605469"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>ベースラインとパフォーマンス履歴を使用して、Office 365 のパフォーマンスをチューニングする
 
@@ -160,7 +162,7 @@ Unlucky の場合、誰も知りません。 何も番号を持っていませ�
   
 ![パフォーマンス データをフォルダーに整理する方法を提示している図。](media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
   
-また、ファイルの名前付け規則を選択する必要があります。 次に例を示します。
+また、ファイルの名前付け規則を選択する必要があります。 次に、いくつかの例を示します:
   
 - Feb_09_2015_9amPST_PerfBaseline_Netmon_ClientToEgress_Normal
     

@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: Azure Active Directory での分離とアクセス制御のしくみについて説明します。'
-ms.openlocfilehash: fe242acb5d14f5c90d6e646140b50f5f96c7a331
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、分離とアクセス制御が、Azure Active Directory 内で分離された複数のテナントのデータを保持するしくみについて説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 98b18e57374132530e8b4c70a6becde01983dc2b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998717"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605609"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory での Microsoft 365 の分離とアクセス制御
 

@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: 運用環境での Yammer エンタープライズアクセス制御についての簡単な概要。'
-ms.openlocfilehash: 0da479eb36359ec6b795a8e4323441edc4678f1a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: この記事には、運用環境での Yammer エンタープライズアクセス制御についての簡単な概要が記載されています。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a6157715836b046fa98fbdaf8427f7708b771081
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775116"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606493"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Yammer エンタープライズアクセスコントロール 
 

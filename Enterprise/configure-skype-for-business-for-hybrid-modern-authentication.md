@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 先進認証は、ユーザーの認証と承認をより安全に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
-ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: ハイブリッド先進認証 (HMA) を使用するように Skype for Business を構成する方法について説明します。これにより、ユーザーの認証と承認をより安全に提供できます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e82325281341d35454161f03873acc30898ad536
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052510"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605763"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Skype for Business をオンプレミスで構成して、ハイブリッド先進認証を使用するには
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 先進認証は、ユーザーの認証と承認をより安全に提供する id 管理の方法であり、オンプレミスの Skype for Business server とオンプレミスの Exchange server、およびスプリットドメイン Skype for Business ハイブリッドで利用できます。
   
@@ -73,7 +74,7 @@ MA を有効にするには、4つの異なる場所が存在します。 最適
   
 サポートされているトポロジについては、「 [Skype for business での Skype For business のサポート」を](https://technet.microsoft.com/library/mt803262.aspx)参照してください。
   
- **重要**開始する前に、すべての前提条件を満たしていることをもう一度確認してください。 この情報について[は、こちら](hybrid-modern-auth-overview.md)を参照してください。
+ **重要**開始する前に、すべての前提条件を満たしていることをもう一度確認してください。 [ハイブリッド先進認証の概要と前提条件](hybrid-modern-auth-overview.md)に関する情報がわかります。
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>必要なすべての HMA 固有の情報を収集する
 

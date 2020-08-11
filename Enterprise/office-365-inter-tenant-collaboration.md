@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Microsoft 365 コラボレーションがテナントと組織でどのように動作するかについて説明します。
-ms.openlocfilehash: 197f12f7c102da30582eb2c4f4447d895ca2768d
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Microsoft 365 コラボレーションがテナントと組織の間でどのように動作するかについて説明します。これにより、さまざまな組織が安全に共同作業できる
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e68df7c7b4d3574951957f576ffe7c896c0d13da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998727"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606563"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 テナント間のコラボレーション
 

@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Skype for business の管理者向けヘルプを取得します。 Skype for business、ネットワーク、会議、IM、および外部アクセスをユーザーに対して設定します。 利用状況レポートの設定、トラブルシューティング、および表示を構成します。
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 管理者として、ネットワーク、会議、IM、外部アクセスなど、Skype for Business Online の各部をセットアップするためのヘルプを参照してください。
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841114"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603659"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Office 365 の Skype for Business Online - 管理ヘルプ
 

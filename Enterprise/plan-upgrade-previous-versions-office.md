@@ -14,22 +14,24 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2007 または Office 2010 を使用している場合は、ここでアップグレードを計画します。 古く、サポートされていないアプリとサーバーで行き詰まってはなりません。 これらのリソースを使用して、計画を開始します。
-ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.custom:
+- seo-marvel-apr2020
+description: この記事には、Office 2007 または Office 2010 を使用してアップグレードを計画するユーザー向けのリソースが含まれています。
+ms.openlocfilehash: 8ea43c708c84ae81f61bb2acedd8bf60027070d4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735735"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606253"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス[のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 
 
-- Office 2010 と Exchange 2010 は、 **2020 年10月 13**日にサポートの最後に到達します。 
-- SharePoint 2010 および Project Server 2010 は、 **2021 年4月 13**日にサポートの終了に到達します。 
+- Office 2010 および Exchange 2010 は、**2020年10月13日** にサポートが終了します。 
+- SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。 
 
 開始するには、この記事のリソースを使用します。
 
@@ -84,7 +86,7 @@ Microsoft 365 は、絶えず改善されたデバイスと生産性のエクス
 
 - 小規模な組織の一部である場合、または組織の Office アップグレードを自分で処理する場合は、「 [Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)」を参照してください。 
   
-## <a name="im-a-home-user-what-do-i-do"></a>自宅のユーザーです。 What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
 Office 2007 または Office 2010 を自宅で使用している場合は、次の更新オプションを検討してください。
 
@@ -112,6 +114,6 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 
 [Office 2010 サーバー/クライアントからアップグレードする](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
   
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)

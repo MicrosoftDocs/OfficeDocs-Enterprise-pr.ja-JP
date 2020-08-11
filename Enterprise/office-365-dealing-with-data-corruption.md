@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 でのデータ破損の説明と、Microsoft による防止と復旧の取り組み。
-ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom: seo-marvel-apr2020
+description: この記事では、Microsoft 365 のデータ破損と、データの防止と回復のために Microsoft によって行われた作業について説明します。
+ms.openlocfilehash: dc8e865a69e110fa0a68e6cd9d9f4d6b45d43d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998451"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606633"
 ---
-# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Microsoft 365 でのデータ破損の処理
+# <a name="dealing-with-data-corruption-in-microsoft-365"></a>Microsoft 365 でのデータの破損への対処
 
 大規模なクラウドサービスを実行するための困難な側面の1つは、大量のデータと独立したシステムがある場合に、データの破損を処理する方法です。 データの破損は、次のような場合に発生することがあります。
 

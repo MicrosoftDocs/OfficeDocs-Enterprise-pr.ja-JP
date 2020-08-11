@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: シングルサインオンの Microsoft 365 クライアントアプリサポート。
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、Microsoft 365 のシングルサインオンをサポートするプラットフォーム、クライアント、および Powershell モジュールについて説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998515"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605649"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 クライアントアプリケーションのサポート-シングルサインオン
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 シングルサインオン (SSO) を使用すると、ユーザーが Azure Active Directory (Azure AD) のアプリケーションにサインオンするときに、セキュリティと利便性が向上します。 シングルサインオンを使用すると、ユーザーは1つのアカウントでサインインし、ドメインに参加しているデバイス、会社のリソース、サービス (SaaS) アプリケーション、および web アプリケーションにアクセスできます。
 

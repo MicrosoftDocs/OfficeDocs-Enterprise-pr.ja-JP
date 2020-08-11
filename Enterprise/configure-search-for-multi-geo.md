@@ -7,18 +7,18 @@ manager: arnek
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Multi-Geo 環境で検索を構成する方法について説明します。
-ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: 複数地域環境で検索を構成する方法について説明します。 複数地域環境では、OneDrive for Business などの一部のクライアントのみが結果を返すことができます。
+ms.openlocfilehash: 94d8b9de0fc7eeb6b7fda20275686de62eaa9346
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433568"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605773"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -88,12 +88,12 @@ Multi-Geo 環境では、従来の検索機能の一部の動作が異なりま�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Multi-Geo 検索では、数値の絞り込み条件の動的バケットはサポートされません。</td>
-<td align="left">数値の絞り込み条件には、<a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用してください。</td>
+<td align="left">数値の絞り込み条件には<a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">"Discretize" パラメーター</a>を使用します。</td>
 </tr>
 <tr class="even">
 <td align="left">ドキュメント ID</td>
 <td align="left">ドキュメント ID に依存する検索型アプリケーションを開発する場合、Multi-Geo 環境のドキュメント ID は地域の場所ごとに一意ですが、複数の地域の場所にわたって一意でない点に注意してください。</td>
-<td align="left">地域の場所を示す列が追加されました。 この列を使用して、一意性を確保してください。 この列の名前は、"GeoLocationSource" です。</td>
+<td align="left">地域の場所を示す列が追加されました。 この列を使用して、一意性を確保してください。 この列には、"GeoLocationSource" という名前が付けられます。</td>
 </tr>
 <tr class="odd">
 <td align="left">結果の数</td>

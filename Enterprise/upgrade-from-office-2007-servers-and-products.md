@@ -22,17 +22,18 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2007 サーバーおよびクライアントアプリケーションのサポートは終了し、カスタムサポート契約は利用できません。 今すぐアップグレードの計画を開始するには、この記事をご利用ください。
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: この記事では、office 2007 のサーバーおよびクライアントからのアップグレードに役立つリソースを提供します。これは、Office 2007 のサポートが終了したためです。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906230"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605873"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Office 2007 のサーバーとクライアントからのアップグレードに役立つリソース
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Office 2007 製品とサービスを使用している場合は、これらのアプリケーションのサポートが終了しています。 アップグレードを計画している間は、microsoft 365 以降の Microsoft Cloud への移行を検討するのに非常に時間がかかる場合があります。 この記事を出発点として、オプションを確認してアップグレードを計画します。
       
@@ -51,16 +52,16 @@ Office 2007 製品とサービスのサポートが終了しました。 次の�
    
 Microsoft 製品のサポートが終了するときには、新しいセキュリティ更新プログラム、セキュリティ以外の更新プログラム、無料または有料サポートのオプション (カスタムサポート契約を含む)、またはオンライン技術コンテンツの更新はありません。エンタープライズ組織か個人のホームユーザーかにかかわらず、いくつかのオプションを検討する必要があります。
 
-## <a name="im-a-home-user-what-do-i-do"></a>自宅のユーザーです。 What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
 自宅で Office 2007 製品とアプリケーションを使用している場合は、[次の情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)を参照してください。
      
 ## <a name="related-topics"></a>関連項目
 
-[ビデオ: Microsoft 365 とは何ですか。](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[ビデオ: Microsoft 365とは?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Office 2007 または Office 2010 のサーバーとクライアントからのアップグレードを計画する](plan-upgrade-previous-versions-office.md)
+[Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる](plan-upgrade-previous-versions-office.md)
   
 

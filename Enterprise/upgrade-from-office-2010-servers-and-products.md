@@ -7,7 +7,7 @@ ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -22,13 +22,14 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Office 2010 サーバー/クライアント アプリケーションのサポートは間もなく終了し、カスタム サポート契約は利用できなくなります。 今すぐアップグレードの計画を開始するには、この記事をお読みください。
-ms.openlocfilehash: 50273a76873df8315c898ad622c82d44eea3972e
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+description: Office 2010 サーバーおよびクライアントアプリケーションのアップグレードの計画を開始します。サポートは間もなく終了し、カスタムサポート契約は利用できません。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47e3239ee68e80cb03f8942fd9ef23645128da04
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502622"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603629"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 

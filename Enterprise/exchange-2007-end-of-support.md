@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
-description: 2017年4月11日に、Exchange Server 2007 がサポートの終了に到達しました。 Exchange 2007 から Microsoft 365、Office 365、または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
-ms.openlocfilehash: 7228d123a8f4fe21c3d92753fe3f60a7d2e4f67b
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.custom: seo-marvel-apr2020
+description: Exchange Server 2007 のサポート終了後のオプションについて説明し、「Microsoft 365、Office 365、または Exchange 2016 への移行の計画」を開始します。
+ms.openlocfilehash: c77d3de47ea917730874253c286565971d80ea48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052439"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606403"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Exchange 2007 のサポート終了ロードマップ
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 **2017 年4月 11**日に、Exchange Server 2007 がサポートの終了に到達しました。 Exchange 2007 から Microsoft 365、Office 365、または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。 
   
@@ -52,7 +53,7 @@ Exchange 2007 のサポートが終了したので、オプションを調査し
     
 次のセクションでは、それぞれのオプションについて詳しく説明します。
   
-### <a name="migrate-to-microsoft-365"></a>Microsoft 365 への移行
+### <a name="migrate-to-microsoft-365"></a>Microsoft 365 に移行する
 
 メールを Microsoft 365 に移行することは、Exchange 2007 の展開を廃止するのに役立つ最良かつ最も簡単なオプションです。 Microsoft 365 への移行により、次のように、10年以上のテクノロジから、次のような最先端の機能に単一のホップを作成することができます。
   

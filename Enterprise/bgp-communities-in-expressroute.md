@@ -13,19 +13,21 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: Azure ExpressRoute を使用した Office 365 への接続は、Office 365 エンドポイントが展開されているネットワークを表す特定の IP サブネットの BGP 広告に基づいています。 Office 365 のグローバルな性質と、Office 365 を構成するサービスの数により、多くの場合、お客様はネットワークで受け入れる広告を管理する必要があります。 IP サブネットの数を減らす。この記事の残りの部分では IP プレフィックスと呼ばれ、BGP ネットワーク管理の用語と整合するために、次のようなお客様の目標を達成しています。
-ms.openlocfilehash: 13d2404182eb18b7c72a9aaefdb96464fd665a03
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Azure ExpressRoute で BGP コミュニティを使用して、Office 365 シナリオの IP プレフィックスと必要な帯域幅の数を管理する方法について説明します。
+ms.openlocfilehash: ce83b95de0b1032ebd23f0262f814aeac4ed2d0a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997874"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606093"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Office 365 シナリオで ExpressRoute の BGP コミュニティを使用する
 
@@ -61,7 +63,7 @@ Contoso Corporation は、現在 Office 365 を使用して Exchange Online と 
 |SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; の OneDrive For business  <br/> | DNS、CRL、 &amp; CDN 要求  <br/>  Azure ExpressRoute で特にサポートされていないその他のすべての Office 365 サービス  <br/>  その他のすべての Microsoft クラウドサービス  <br/>  Office 365 ポータル、Office 365 認証、 &amp; ブラウザーの office  <br/>  Exchange Online、Exchange Online Protection、および Skype for Business Online  <br/> |
 
 > [!NOTE]
-> 各サービスに対してより低いプレフィックス数を実現するために、サービス間で最小限の重複が保持されます。 これは予想どおりの動作です。
+> 各サービスに対してより低いプレフィックス数を実現するために、サービス間で最小限の重複が保持されます。 この動作は仕様です。
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>シナリオ 2: 特定の Office 365 サービスに対して ExpressRoute および内部帯域幅を使用する場合
 

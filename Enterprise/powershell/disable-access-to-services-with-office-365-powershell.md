@@ -17,14 +17,15 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 - LIL_Placement
+- seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: PowerShell を使用して、ユーザーの Microsoft 365 サービスへのアクセスを無効にします。
-ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: この記事では、PowerShell を使用してユーザーの Microsoft 365 サービスへのアクセスを無効にする方法について説明します。
+ms.openlocfilehash: f546014b83e0910e38817e0b7ef84d67f1b88614
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502642"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605973"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>PowerShell を使用して Microsoft 365 サービスへのアクセスを無効にする
 
@@ -171,9 +172,9 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topic"></a>関連トピック
 
-[PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
   

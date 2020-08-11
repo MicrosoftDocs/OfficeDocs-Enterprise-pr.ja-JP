@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: この記事では、JavaScript を使用して画像の読み込みを遅延させることにより、SharePoint Online ページの読み込み時間を短縮する方法と、ページが読み込まれるまで重要でない JavaScript の読み込みを待機する方法について説明します。
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: JavaScript を使用して、画像および重要でない JavaScript の読み込みを遅延させることで、SharePoint Online ページの読み込み時間を短縮する方法について説明します。
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009352"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605753"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
@@ -34,7 +36,7 @@ SharePoint Online では、画像がページの読み込み速度に悪影響�
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用して SharePoint Online ページで画像の読み込みを遅延することで、ページの読み込み時間を短縮する
 
-JavaScript を使用して、web ブラウザーが画像を事前に取得できないようにすることができます。 これにより、ドキュメント全体のレンダリングが高速化されます。 これを行うには、 \<img\>タグから src 属性の値を削除し、次のような data 属性のファイルへのパスに置き換えます。 例:
+JavaScript を使用して、web ブラウザーが画像を事前に取得できないようにすることができます。 これにより、ドキュメント全体のレンダリングが高速化されます。 これを行うには、タグから src 属性の値を削除し、次のよう \<img\> な data 属性のファイルへのパスに置き換えます。 例:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-SharePoint Online では、#s4 workspace \<div\>タグの scroll イベントに次の関数をアタッチする必要があります。 これは、リボンがページの上部に常に接続されていることを確認するために、ウィンドウイベントがオーバーライドされるためです。
+SharePoint Online では、#s4 workspace タグの scroll イベントに次の関数を関連付ける必要があり \<div\> ます。 これは、リボンがページの上部に常に接続されていることを確認するために、ウィンドウイベントがオーバーライドされるためです。
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-テキストファイルを拡張子 .js の JavaScript ファイルとして保存します。たとえば、: Delayloadimages.js) のようにします。
+テキストファイルを拡張子 .js の JavaScript ファイルとして保存します (例: delayLoadImages.js)。
   
-: Delayloadimages.js) の記述が終了したら、ファイルの内容を SharePoint Online のマスターページに追加できます。 これを行うには、マスターページのヘッダーにスクリプトリンクを追加します。 マスターページでは、そのマスターページレイアウトを使用する SharePoint Online サイトのすべてのページに JavaScript が適用されます。 または、サイトの1つのページでのみこれを使用する場合は、スクリプトエディター Web パーツを使用して JavaScript をページに埋め込みます。 詳細については、以下のトピックを参照してください。
+delayLoadImages.js の記述が終了したら、ファイルの内容を SharePoint Online のマスターページに追加できます。 これを行うには、マスターページのヘッダーにスクリプトリンクを追加します。 マスターページでは、そのマスターページレイアウトを使用する SharePoint Online サイトのすべてのページに JavaScript が適用されます。 または、サイトの1つのページでのみこれを使用する場合は、スクリプトエディター Web パーツを使用して JavaScript をページに埋め込みます。 詳細については、以下のトピックを参照してください。
   
 - [[方法]: SharePoint Server 2013 のサイトにマスター ページを適用する](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [[方法]: SharePoint 2013 でページ レイアウトを作成する方法](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>例: SharePoint Online でマスターページから JavaScript の: Delayloadimages.js) ファイルを参照する
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>例: SharePoint Online のマスターページから JavaScript delayLoadImages.js ファイルを参照する
   
 これを動作させるには、マスターページで jQuery を参照する必要もあります。 次の例では、最初のページの読み込みで、読み込まれたイメージは1つだけですが、ページ上にはさらにいくつかのページがあることがわかります。
   

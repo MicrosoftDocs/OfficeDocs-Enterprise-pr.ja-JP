@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: Microsoft 365 を展開した後は、次に示すツールと方法を使用して、Microsoft 365 の接続を維持できます。この記事では、サービスの正常性と継続性に関するオフィシャルガイドライン、および低速ネットワーク上で Microsoft 365 を使用するためのベストプラクティスについて説明します。
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: この記事では、Microsoft 365 の接続を監視および管理するために使用できるツールと手法について説明します。
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571010"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606863"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Microsoft 365 の接続を監視する
 
@@ -39,9 +41,9 @@ Microsoft 365 を展開した後は、次に示すツールと方法を使用し
 |**AD FS を使って Azure AD Connect Health を使用する** <br/> |Microsoft 365 でシングルサインオン用に AD FS を使用している場合は、 [AZURE Ad Connect Health を使用して AD fs インフラストラクチャを監視](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/)することをお勧めします。  <br/> |
 |**Microsoft 365 をプログラムで監視する** <br/> |[Microsoft 365 MANAGEMENT API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)のガイダンスを参照してください。  <br/> |
 
-ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+ここに戻る場合は、次の短いリンクをご利用ください: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 Enterprise サービスおよびアプリケーションを構成する](configure-services-and-applications.md)
   

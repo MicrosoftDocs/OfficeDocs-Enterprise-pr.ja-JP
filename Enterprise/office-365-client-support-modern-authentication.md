@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Microsoft 365 クライアントアプリの先進認証のサポート。
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、Microsoft 365 の先進認証をサポートするプラットフォーム、クライアント、および Powershell モジュールについて説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998495"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606663"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Microsoft 365 クライアントアプリのサポート-モダン認証
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 モダン認証を使用すると、さまざまなプラットフォーム間で Office クライアントアプリの Active Directory 認証ライブラリ (ADAL) ベースのサインインが有効になります。 これにより、多要素認証 (MFA)、スマートカード、証明書ベースの認証などのサインイン機能が有効になります。
 

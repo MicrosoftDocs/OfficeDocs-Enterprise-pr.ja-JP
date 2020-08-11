@@ -13,16 +13,18 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
-description: SharePoint Online のモダンサイトのパフォーマンスに関する推奨事項について説明します。
-ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Sharepoint Online のモダンサイトのパフォーマンスに関する推奨事項について説明します。たとえば、Sharepoint と外部エンドポイントの呼び出しを制限することができます。
+ms.openlocfilehash: 1ec6dfb4b32a8915528adce168badf3645c26e48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844788"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606883"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online モダンポータルサイトの制限
 
@@ -59,7 +61,7 @@ ms.locfileid: "41844788"
 |UPA サービスの呼び出し  <br/> |ユーザーごとに1時間ごとに1回  <br/> |UPA (User Profile Application) サービスへの_要求ごと_に電話をかけないことをお勧めします。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/call-api)と[pagecontext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest)を使用して、ユーザー情報のクエリを実行できます。  <br/> UPA サービス呼び出しが必要な場合は、必要に応じて1つの呼び出しを行ってから、同じセッションで再利用するために情報をキャッシュします。 |
 |分類サービスの呼び出し  <br/> |1時間あたりのユーザーごとに5個  <br/> |分類サービスへの_要求ごと_に呼び出しを行うことをお勧めします。 分類サービスの呼び出しが必要な場合は、同じセッションで再利用するために情報をキャッシュします。 <br/> 詳細については、「 [SharePoint Online モダンおよび従来の発行サイトページでページ呼び出しを最適化](modern-page-call-optimization.md)する」を参照してください。 <br/> |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [正常な SharePoint ポータルを作成する](https://docs.microsoft.com/sharepoint/portal-health)
 

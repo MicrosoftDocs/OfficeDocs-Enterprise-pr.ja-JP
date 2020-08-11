@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でのデータの復元
+title: Microsoft 365 でのデータの回復性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,17 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft Microsoft 365 のデータ復元性について理解します。
-ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、Microsoft 365 におけるデータの復元と回復の設計と原則について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7f70b464cf6fe9bd6cb9a236320878fd6adb9db4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998471"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606653"
 ---
-# <a name="data-resiliency-in-microsoft-365"></a>Microsoft 365 でのデータの復元
-
-## <a name="introduction"></a>概要
+# <a name="data-resiliency-in-microsoft-365"></a>Microsoft 365 でのデータの回復性
 
 クラウドコンピューティングの複雑な性質を考慮した場合、Microsoft は、問題が発生した場合には発生しないことに注意してください。 クラウドサービスを設計することで、信頼性を最大化し、問題が発生した場合にお客様に悪影響を最小限に抑えることができます。 複雑な物理インフラストラクチャに依存する従来の戦略にとどまらないようになり、クラウドサービスに直接冗長性が組み込まれています。 より複雑な物理インフラストラクチャと、データの復元をサービスに提供し、お客様に高可用性を提供する、よりインテリジェントなソフトウェアを組み合わせて使用しています。 
 

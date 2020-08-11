@@ -17,20 +17,21 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: '概要: Microsoft 365 の PowerShell を使用して、SharePoint Online ユーザー、グループ、およびサイトグループを管理します。'
-ms.openlocfilehash: a12150d3e427b0d4e574ca6bf7eec96e9baea4de
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: この記事では、Microsoft 365 の PowerShell を使用して SharePoint Online ユーザー、グループ、およびサイトグループを管理する方法について説明します。
+ms.openlocfilehash: 270c31ebbdeb5c29ce0e67a89dbee25101e467df
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230463"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605913"
 ---
 # <a name="manage-sharepoint-online-with-powershell"></a>PowerShell を使用して SharePoint Online を管理する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-SharePoint Online 管理者の主要なタスクの 1 つは、サイト、サイト グループ、ユーザーを管理することです。 これらのタスクの一部は Microsoft 365 管理センターで実行できますが、PowerShell では、他のタスクがより速く、簡単になります。 詳細については、以下のトピックを参照してください。
+SharePoint Online 管理者の主要なタスクの 1 つは、サイト、サイト グループ、ユーザーを管理することです。 Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、PowerShell のほうがより早く簡単に実行できます。 詳細については、以下のトピックを参照してください。
 
 - [SharePoint Online PowerShell に接続する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
@@ -42,6 +43,6 @@ SharePoint Online 管理者の主要なタスクの 1 つは、サイト、サ�
     
 ## <a name="see-also"></a>関連項目
 
-- [PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
+- [PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
 
-- [Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
+- [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)

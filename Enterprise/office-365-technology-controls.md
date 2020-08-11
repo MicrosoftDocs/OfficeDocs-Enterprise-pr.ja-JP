@@ -14,13 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: microsoft 365 の Microsoft のテクノロジ制御プラクティスの概要について説明します。'
-ms.openlocfilehash: ef17d00cdeac4a5c7fa9dd1b2d5b5a644bb62ddb
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、microsoft 365 において Microsoft がテクノロジを制御するために使用するツールとテクノロジの概要について説明します。
+ms.openlocfilehash: 4944fcdac1142344178d289be1e5699b80b47683
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774852"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606273"
 ---
 # <a name="microsoft-365-technology-controls"></a>Microsoft 365 テクノロジコントロール 
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の監視および自己復旧
+title: Microsoft 365 の監視と自動修復
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 の監視および自動修復機能に関する情報。
-ms.openlocfilehash: 88338f722e8563c3db6573ac6ab64252cb98c450
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: この記事では、Microsoft 365 の監視および自動修復機能について説明します。
+ms.openlocfilehash: 1fa42e5e4ac20462b0d32db28f59c1c51b8a1f35
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998764"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605529"
 ---
-# <a name="microsoft-365-monitoring-and-self-healing"></a>Microsoft 365 の監視および自己復旧
+# <a name="microsoft-365-monitoring-and-self-healing"></a>Microsoft 365 の監視と自動修復
 
 Microsoft 365 の規模により、お客様のデータを復元してマルウェアから安全な状態に保つことはできず、包括的な監視、インテリジェントな警告、および高速で信頼性の高い自己復旧が行われていません。 Microsoft 365 のスケールでサービスのセットを監視することは非常に困難です。 接続されたグローバル環境でサービスを運用および管理するために必要な新しい mindsets と方法論を導入する必要がありました。 データ収集とフィルター処理の従来の監視アプローチから、データ分析に基づくアプローチに対する通知を作成しました。そのデータの信号を受け取り、信頼性を構築した後、自動化を使用して問題を回復または解決します。 この方法を使用すると、復旧式から人間を取得することができます。これにより、操作の費用がかからない高速で、エラーが発生しやすくなります。 
 

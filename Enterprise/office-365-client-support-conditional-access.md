@@ -14,13 +14,14 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: 条件付きアクセスに対する Microsoft 365 クライアントアプリケーションのサポートを理解する
-ms.openlocfilehash: 6081af2ad3bca69978a10baabeae0a13d783f0ae
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、Microsoft 365 の条件付きアクセスをサポートするプラットフォーム、クライアント、および Powershell モジュールについて説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 77fe8411109bf77287674d8c6fa1607a0689f46f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998505"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606700"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Microsoft 365 クライアントアプリケーションのサポート-条件付きアクセス
 

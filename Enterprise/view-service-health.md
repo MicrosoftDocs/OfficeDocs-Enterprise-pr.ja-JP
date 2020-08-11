@@ -15,6 +15,7 @@ ms.custom:
 - O365M_ServiceHealthModern
 - O365E_ViewStatusServices
 - O365E_ServiceHealthModern
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -25,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: サポートを呼び出す前に Microsoft 365 サービスの正常性の状態を表示して、アクティブなサービスが中断していないかどうかを確認します。
-ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: c6995d96df46b4f83014a7ccf6d549dea421a97a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433888"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605843"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
@@ -146,7 +147,7 @@ Microsoft 365 サービスで問題が発生し、[**サービス正常性**] �
   
 稼働時間に対するコミットメントの詳細については、「 [Microsoft 365 からの透過的な運用](https://go.microsoft.com/fwlink/?linkid=848695)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 管理センター](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
  のアクティビティレポート[メッセージセンターの設定](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

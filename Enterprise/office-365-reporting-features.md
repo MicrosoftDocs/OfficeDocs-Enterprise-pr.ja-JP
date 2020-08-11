@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Microsoft 365 内のレポート機能の説明。
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Azure Active Directory と Exchange Online を含む、Microsoft 365 のさまざまなレポート機能について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997787"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606313"
 ---
-# <a name="microsoft-365-reporting-features"></a>Microsoft 365 レポート機能 
+# <a name="microsoft-365-reporting-features"></a>Microsoft 365 レポート機能
 
 Microsoft 365 のレポート機能 Azure Active Directory (Azure AD)、Exchange Online、デバイス管理、監督レビュー、およびデータ損失防止 (DLP) に関するさまざまな監査レポートが用意されています。 これらのレポートは、Microsoft 365 アクティビティレポートとは別のものです。
 

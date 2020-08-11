@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: '概要: Office サーバーのワークロードのためにサイト間 VPN 接続を使用してクロスプレミスの Azure 仮想ネットワークを構成する方法について説明します。'
-ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 939ba28b1fc2b21a93e22ce019879fef73d58c1c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230073"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606053"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する
 
@@ -32,7 +33,7 @@ ms.locfileid: "45230073"
 
 たとえば、Azure 仮想マシン上で実行されているディレクトリ同期サーバーは、アカウントの変更についてオンプレミスのドメインコントローラーに対してクエリを実行し、それらの変更を Microsoft 365 サブスクリプションと同期する必要があります。この記事では、Azure 仮想マシンをホストする準備ができているサイト間仮想プライベートネットワーク (VPN) 接続を使用して、クロスプレミスの Azure 仮想ネットワークをセットアップする方法について説明します。
 
-## <a name="overview"></a>概要
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>クロスプレミスの Azure 仮想ネットワークを構成する
 
 Azure の仮想マシンをオンプレミス環境から分離する必要はありません。Azure の仮想マシンをオンプレミスのネットワークリソースに接続するには、クロスプレミス Azure 仮想ネットワークを構成する必要があります。次の図は、Azure において仮想マシンが含まれるクロスプレミスの Azure 仮想ネットワークを展開するために必要なコンポーネントを示しています。
   

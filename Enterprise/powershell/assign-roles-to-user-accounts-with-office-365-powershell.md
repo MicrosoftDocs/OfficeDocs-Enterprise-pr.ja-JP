@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: '概要: Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役割を割り当てます。'
-ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: この記事では、Microsoft 365 の PowerShell を使用してユーザーアカウントに役割を割り当てる方法について説明します。
+ms.openlocfilehash: a3e1936dfa685c78f88e4f4333192f9a07de3cec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230873"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606443"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントに役割を割り当てる
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役割をすばやく簡単に割り当てることができます。
 
@@ -237,6 +238,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>関連項目
 
-- [PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [PowerShell を使用して Microsoft 365 を管理する](manage-office-365-with-office-365-powershell.md)
-- [Microsoft 365 の PowerShell の概要](getting-started-with-office-365-powershell.md)
+- [Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [PowerShell で Microsoft 365を管理する](manage-office-365-with-office-365-powershell.md)
+- [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-office-365-powershell.md)

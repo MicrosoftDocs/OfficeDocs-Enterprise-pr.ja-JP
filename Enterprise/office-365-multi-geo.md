@@ -7,18 +7,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Microsoft 365 Multi-Geo を使用して、複数の地域に Microsoft 365 のプレゼンスを展開します。
-ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: この記事では、microsoft 365 複数地域を使用して、複数の地域に Microsoft 365 プレゼンスを展開する方法について説明します。
+ms.openlocfilehash: 74fdf77ed28ea443cdb14bd37c2735b3a221e14d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433808"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605509"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

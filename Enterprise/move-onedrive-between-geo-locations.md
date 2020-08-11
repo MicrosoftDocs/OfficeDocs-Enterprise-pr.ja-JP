@@ -9,24 +9,24 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 別の地域の場所に OneDrive サイトを移動する方法について説明します。
-ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: サイト移動のスケジュール方法や、ユーザーへの期待の伝達方法など、OneDrive サイトを別の地域の場所に移動する方法についての情報を紹介します。
+ms.openlocfilehash: f893102c7460498a56487dc382c58636caea31a8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433878"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606853"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>別の地域の場所に OneDrive サイトを移動する 
 
-OneDrive 地域の移動を利用すると、ユーザーの OneDrive を別の地域に移動できます。OneDrive 地域の移動は、SharePoint Online 管理者または Microsoft 365 全体管理者によって実行されます。OneDrive 地域の移動を開始する前に、移動する OneDrive の所有ユーザーに通知して、移動中はすべてのファイルを閉じておくようにお勧めします。 (移動中に、ユーザーが Office クライアントを使用してドキュメントを開く場合は、移動の完了時にドキュメントが新しい場所に保存される必要があります)。移動は、将来の日付で実行するように必要に応じてスケジュールできます。
+OneDrive 地域移動を使用すると、ユーザーの OneDrive を別の地域の場所に移動することができます。OneDrive 地域移動は、SharePoint Online 管理者または Microsoft 365 グローバル管理者によって実行されます。OneDrive の地域移動を開始する前に、OneDrive が移動されていることをユーザーに通知して、移動中にすべてのファイルを閉じることをお勧めします。(移動時に Office クライアントを使用してドキュメントが開かれている場合は、移動の完了時にドキュメントを新しい場所に保存する必要があります)。必要に応じて、移行を将来の時間にスケジュールすることができます。
 
-OneDrive サービスでは、コンテンツの保存に Azure Blob Storage が使用されます。ユーザーの OneDrive に関連付けられた Storage Blob は、ユーザーが移動先の OneDrive を利用できるようになってから 40 日以内に移動元から移動先の地域の場所に移動されます。ユーザーの OneDrive へのアクセスは、移動先の OneDrive が利用できるようになった直後に復元されます。
+OneDrive サービスは、Azure Blob ストレージを使用してコンテンツを格納します。ユーザーの OneDrive に関連付けられている記憶域 blob は、ユーザーが使用可能な宛先の OneDrive から40日以内に、移行元から移行先の地域の場所に移動されます。ユーザーの OneDrive へのアクセスは、移行先の OneDrive が使用可能になるとすぐに復元されます。
 
 OneDrive 地域の移動の期間中 (約 2 ～ 6 時間)、ユーザーの OneDrive は読み取り専用に設定されます。ユーザーは今まで通り OneDrive 同期クライアントまたは SharePoint Online の OneDrive サイトからファイルにアクセスできます。OneDrive 地域の移動の完了後に、ユーザーが Microsoft 365 アプリ起動ツールで OneDrive に移動すると、移動先の地域の場所にある OneDrive に自動的に接続されます。同期クライアントは、新しい場所からの同期を自動的に開始します。
 
@@ -54,13 +54,13 @@ OneDrive サイトの移動を事前にスケジュールすることができ�
 
 ## <a name="moving-a-onedrive-site"></a>OneDrive サイトの移動
 
-OneDrive 地域移動を実行するには、まず、管理者がユーザーの優先されるデータの場所 (PDL) を適切な地域の場所に設定しておく必要があります。PDL の設定後、PDL の更新内容が地域の場所全体に同期されるまで少なくとも 24 時間待機してから、OneDrive 地域移動を開始します。
+OneDrive の地域移動を実行するには、テナント管理者は、まずユーザーの優先データの場所 (PDL) を適切な地域の場所に設定する必要があります。PDL が設定されたら、OneDrive 地域移動を開始する前に、各 geo の場所間で PDL の更新が同期されるまで、少なくとも24時間待機します。
 
-地域移動のコマンドレットを使用するときには、ユーザーの現在の OneDrive 地域の場所で、次の構文を使用して SPO サービスに接続します。
+Geo move コマンドレットを使用する場合は、次の構文を使用して、ユーザーの現在の OneDrive 地域の場所にある SPO サービスに接続します。
 
 `Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
-たとえば、ユーザー 'Matt@contosoenergy.onmicrosoft.com' の OneDrive を移動する場合は、このユーザーの OneDrive が EUR 地域の場所にあるため、次のようにして EUR の SharePoint 管理センターに接続します。
+例: ユーザー ' Matt@contosoenergy.onmicrosoft.com ' の OneDrive を移動するには、ユーザーの OneDrive が EUR 地域の場所にあるので、[EUR] SharePoint 管理センターに接続します。
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
@@ -92,7 +92,7 @@ OneDrive の移動が可能な状態になっている場合は Success が返�
 
 -   _UserPrincipalName_: 移動する OneDrive を所有するユーザーの UPN です。
 
--   _DestinationDataLocation_: OneDrive の移動先にする必要がある地域の場所です。これは、ユーザーの優先されるデータの場所と同じにする必要があります。
+-   _DestinationDataLocation_ –地域-OneDrive を移動する必要がある場所。これは、ユーザーの優先されるデータの場所と同じである必要があります。
 
 たとえば、matt@contosoenergy.onmicrosoft.com の OneDrive を EUR から AUS に移動するには、次のコマンドレットを実行します。
 
@@ -108,7 +108,7 @@ OneDrive の移動が可能な状態になっている場合は Success が返�
 
 ## <a name="cancel-a-onedrive-geo-move"></a>OneDrive 地域移動のキャンセル 
 
-ユーザーの OneDrive の地域移動は、その移動が進行中または完了済みでない場合、次のコマンドレットを使用して停止できます。
+コマンドレットを使用して移動が進行中または完了していない場合は、ユーザーの OneDrive の地域の移動を停止することができます。
 
 `Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>`
 
@@ -116,7 +116,7 @@ _UserPrincipalName_ は、移動を停止する OneDrive の所有ユーザー�
 
 ## <a name="determining-current-status"></a>現在の状態の確認
 
-OneDrive 地域移動の状態は、Get-SPOUserAndContentMoveState コマンドレットを使用することで、現在接続している地域の内外で確認できます。
+Get-SPOUserAndContentMoveState コマンドレットを使用して、接続している geo の OneDrive 地域移動の状態を確認できます。
 
 移動の状態については、次に示す表で説明します。
 
@@ -147,11 +147,11 @@ OneDrive 地域移動の状態は、Get-SPOUserAndContentMoveState コマンド�
 </tbody>
 </table>
 
-特定のユーザーの移動の状態を調べるには、UserPrincipalName パラメーターを使用します。
+特定のユーザーの移動の状態を検索するには、UserPrincipalName パラメーターを使用します。
 
 `Get-SPOUserAndContentMoveState -UserPrincipalName <UPN>`
 
-現在接続している地域の場所の内外で、すべての移動の状態を調べるには、MoveState パラメーターに NotStarted、InProgress、Success、Failed、All のいずれかの値を使用します。
+接続している地理的位置にあるすべての移動の状態を検索するには、MoveState パラメーターを次のいずれかの値で指定します。 NotStarted、InProgress、Success、Failed、All。
 
 `Get-SPOUserAndContentMoveState -MoveState <value>`
 
@@ -163,11 +163,11 @@ OneDrive 地域移動の状態は、Get-SPOUserAndContentMoveState コマンド�
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-移動が進行している間、ユーザーの OneDrive が読み取り専用に設定されます。移動の完了すると、ユーザーが Microsoft 365 アプリ起動ツールまたは Web ブラウザーを OneDrive に移動すると、ユーザーは新しい地域の場所で OneDrive に転送されます。
+移動が進行中に、ユーザーの OneDrive は読み取り専用に設定されます。移動が完了すると、ユーザーは OneDrive (Microsoft 365 アプリ起動ツールまたは web ブラウザー) に移動すると、新しい地理的位置にある OneDrive にリダイレクトされます。
 
 ### <a name="permissions-on-onedrive-content"></a>OneDrive コンテンツに対するアクセス許可
 
-OneDrive コンテンツへのアクセス許可を持つユーザーは、移動中および移動完了後のコンテンツに引き続きアクセスできます。
+OneDrive コンテンツへのアクセス許可を持つユーザーは、移動中および完了後にコンテンツへのアクセスを続けられます。
 
 ### <a name="onedrive-sync-client"></a>OneDrive 同期クライアント 
 

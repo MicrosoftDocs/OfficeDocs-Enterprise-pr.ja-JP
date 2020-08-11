@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
-description: Office 365 のビデオリポジトリおよびストリーミングサービスを使用すると、組織内のビデオを簡単に保存およびストリーミングすることができます。 Office 365 ビデオについて多くの重要な情報があります。このネットワーク FAQ は、帯域幅の計画、暗号化、およびサービスがコンテンツ配信ネットワーク (CDNs) を活用する方法に関してよく寄せられる質問に回答するように設計されています。
-ms.openlocfilehash: 21c7327878bc76bc3bbe92d004a26a4704ef8c3d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
+description: 帯域幅の計画、暗号化、およびサービスがコンテンツ配信ネットワーク (CDNs) をどのように活用するか & に関してよく寄せられる質問の回答を参照してください。
+ms.openlocfilehash: 938876075bf849a94f52de9285e83cd442fe2006
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841974"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605479"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Office 365 のビデオネットワークについてよく寄せられる質問
 

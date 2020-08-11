@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 への段階的な移行を実行する
+title: Microsoft 365 への段階的な移行に PowerShell を使用する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: '概要: Windows PowerShell を使用して、Microsoft 365 への段階的な移行を実行する方法について説明します。'
-ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: PowerShell を使用して、Microsoft 365 への段階的な移行を使用して、時間の経過と共にソース電子メールシステムからコンテンツを移動する方法について説明します。
+ms.openlocfilehash: a50966f65bbec5e4b453c4caf02e4b89fa7d04b5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229793"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606213"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>PowerShell を使用して Microsoft 365 への段階的な移行を実行する
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Microsoft 365 への段階的な移行に PowerShell を使用する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 段階的な移行を使用して、ユーザーメールボックスのコンテンツをソースメールシステムから Microsoft 365 に移行することができます。
   

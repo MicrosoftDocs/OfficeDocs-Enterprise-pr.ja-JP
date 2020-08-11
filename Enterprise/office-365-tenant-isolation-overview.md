@@ -14,24 +14,25 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Microsoft 365 でテナントの分離を適用する方法の概要について説明します。
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事には、microsoft 365 などのクラウドサービスでのテナントの分離の適用方法の概要が記載されています。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998646"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606543"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365 でのテナントの分離
 
-クラウドコンピューティングの主な利点の1つは、同時に多数のお客様に共通する共有インフラストラクチャの概念で、スケールの経済につながることです。 この概念を*マルチテナント*と呼びます。 Microsoft は、クラウドサービスのマルチテナントアーキテクチャがエンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、および可用性の標準をサポートするように継続的に取り組みます。
+クラウドコンピューティングの主な利点の1つは、同時に多数のお客様に共通する共有インフラストラクチャの概念で、スケールの経済につながることです。 この概念を*マルチテナント*と呼びます。 Microsoft は、クラウド サービスのマルチテナント アーキテクチャによって、エンタープライズレベルのセキュリティ、機密性、プライバシー、完全性、可用性の基準をサポートするため、継続的に取り組んでいます。
 
 [信頼できるコンピューティング](https://www.microsoft.com/trust-center)および[セキュリティ開発ライフサイクル](https://www.microsoft.com/securityengineering/sdl/)から得られる重要な投資と経験に基づいて、Microsoft cloud services は、すべてのテナントが他のすべてのテナントに悪影響を与える可能性があることを前提として設計されており、1つのテナントのアクションが別のテナントのセキュリティまたはサービスに影響を与えたり、別のテナントのコンテンツ
 
 マルチテナント環境でテナントの分離を維持するための主な目標は次の2つです。
 
-1.  テナント間での顧客コンテンツの漏洩、または不正アクセスを防止する。そして
-2.  あるテナントのアクションが別のテナントのサービスに悪影響を及ぼすことを防ぐ
+1.    テナント間での顧客コンテンツの漏洩、または不正アクセスを防止する。そして
+2.    あるテナントのアクションが別のテナントのサービスに悪影響を及ぼすことを防ぐ
 
 Microsoft 365 には複数の形式の保護が実装されており、お客様が Microsoft 365 のサービスまたはアプリケーションを侵害したり、他のテナントまたは Microsoft 365 システム自体の情報に無許可でアクセスしたりすることを防ぐことができます。
 
@@ -46,7 +47,7 @@ Microsoft 365 には複数の形式の保護が実装されており、お客様
 
 - [Azure Active Directory での分離とアクセス制御](office-365-isolation-in-azure-active-directory.md)
 - [Office Graph と Delve でのテナントの分離](office-365-isolation-in-graph-and-delve.md)
-- [Microsoft 365 検索でのテナントの分離](office-365-isolation-in-office-365-search.md)
+- [Microsoft 365 の検索でのテナントの分離](office-365-isolation-in-office-365-search.md)
 - [Office 365 でのテナントの分離のビデオ](office-365-isolation-in-office-365-video.md)
 - [リソースの制限](office-365-resource-limits.md)
 - [テナント境界の監視とテスト](office-365-monitoring-and-testing.md)

@@ -11,20 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: この記事では、ネットワーク帯域幅の要件を計画する場合、または Skype for Business Online のパフォーマンスを改善する必要があるシステム管理者へのリンクを示します。
-ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: この記事では、システム管理者がネットワーク帯域幅要件を計画し、Skype for Business Online のパフォーマンスを向上させるためのリンクを提供します。
+ms.openlocfilehash: 1ca9d969f4552cf260d44099becd41f5868286d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843918"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606423"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Skype for Business Online のパフォーマンスの調整
 
@@ -54,11 +56,11 @@ ms.locfileid: "41843918"
     
 ## <a name="see-also"></a>関連項目
 
-[Office 365 のネットワーク計画とパフォーマンスのチューニング](network-planning-and-performance.md)
+[Office 365 のネットワーク計画とパフォーマンス チューニング](network-planning-and-performance.md)
   
 [Skype for Business Online 向けのネットワークの最適化](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/optimizing-your-network)
   
-[Skype for Business Online の ExpressRoute および QoS](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
+[Skype for Business Online での ExpressRoute および QoS](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[ExpressRoute を使用したコールフロー](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[ExpressRoute を使用したコール フロー](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

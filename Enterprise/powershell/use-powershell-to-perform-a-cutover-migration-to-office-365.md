@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して、Microsoft 365 への一括移行を実行する
+title: Microsoft 365 への一括移行に PowerShell を使用する
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -12,19 +12,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: '概要: Windows PowerShell を使用して、Microsoft 365 への一括移行を実行する方法について説明します。'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: PowerShell を使用して、Microsoft 365 への一括移行を実行することによって、ソースメールシステムから一度にコンテンツを移動する方法について説明します。
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229853"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606223"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>PowerShell を使用して、Microsoft 365 への一括移行を実行する
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Microsoft 365 への一括移行に PowerShell を使用する
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 一括移行を使用して、ユーザーメールボックスのコンテンツをソースメールシステムから Microsoft 365 に一括して移行することができます。 この記事では、Exchange Online PowerShell を使用した電子メールの一括移行の作業を順を追って説明します。 
   

@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 証明書ベースの認証のための Microsoft 365 クライアントアプリサポート。
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、Microsoft 365 クライアントアプリによる証明書ベースの認証のサポートに関する詳細を確認します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998599"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606673"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Microsoft 365 クライアントアプリケーションのサポート-証明書ベースの認証
 
-*この記事は、Microsoft 365 Enterprise と Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 証明書ベースの認証を使用すると、Windows、Android、または iOS デバイス上のクライアント証明書を使用して Azure Active Directory に認証できます。 この機能を構成すると、ユーザー名とパスワードの組み合わせを、モバイルデバイス上の特定のメールおよび Microsoft Office アプリケーションに入力する必要がなくなります。
 

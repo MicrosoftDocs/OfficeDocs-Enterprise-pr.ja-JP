@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: Microsoft 365 内の分離コントロールについて説明します。'
-ms.openlocfilehash: da26bb6a41c97a16865bfdd5bdf6aada2069f7fe
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Microsoft 365 で分離コントロールが動作する方法について説明します。これにより、必要に応じてサービス間での相互運用を行うことができます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: da49d19371c0b7f704bf7cb1c4c83205b9cc9cb0
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774912"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605619"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365 分離コントロール 
 
@@ -37,6 +38,6 @@ Microsoft 365 サービスは相互に連携していますが、相互に依存
 
 ## <a name="customer-content-isolation"></a>顧客コンテンツの分離
 
-テナント内のすべてのお客様のコンテンツは、他のテナントから分離されています。また、Microsoft 365 の管理で使用されている運用およびシステムデータからは分離されています Microsoft 365 には複数の形式の保護が実装されており、Microsoft 365 のサービスまたはアプリケーションの侵害のリスクを最小限に抑えることができます。 複数の形式の保護では、テナントまたは Microsoft 365 システム自体の情報に対する権限のないアクセスも防止できます。
+テナント内のすべてのお客様のコンテンツは、他のテナントから分離されています。また、Microsoft 365 の管理で使用されている運用およびシステムデータからは分離されています Microsoft 365 には複数の保護形態が実装されており、Microsoft 365 のサービスやアプリケーションが侵害される危険を最小限に抑えることができます。 複数の形式の保護では、テナントまたは Microsoft 365 システム自体の情報に対する権限のないアクセスも防止できます。
 
 Microsoft 365 内のテナントデータの論理的分離を実装する方法については、「 [microsoft 365 のテナント分離](office-365-tenant-isolation-overview.md)」を参照してください。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 検索でのテナントの分離
+title: Microsoft 365 の検索でのテナントの分離
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: '概要: Microsoft 365 検索でのテナントの分離について説明します。'
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: この記事では、テナントの分離が Microsoft 365 検索でテナントデータを分離する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998257"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605589"
 ---
-# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 検索でのテナントの分離
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 の検索でのテナントの分離
 
 SharePoint Online の検索では、テナント間の情報リークに対する保護と、共有データ構造の効率のバランスを実現するテナント分離モデルが使用されます。 このモデルを使用すると、次のような検索機能を使用できなくなります。
 

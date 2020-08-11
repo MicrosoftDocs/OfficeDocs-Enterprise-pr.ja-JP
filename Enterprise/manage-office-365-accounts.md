@@ -9,7 +9,9 @@ ms.prod: office-online-server
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-mar2020
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -19,13 +21,13 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: 'Microsoft 365 ユーザーを管理するために使用するツールについて説明します。 '
-ms.openlocfilehash: ba73d899dee002fa08f373faaed4d772da546b13
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: 使用するツールと、Microsoft 365 アカウントを管理する方法について説明します。
+ms.openlocfilehash: ffaedb2997a342a4194471c496b41eca054aa301
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571030"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606343"
 ---
 # <a name="tools-to-manage-microsoft-365-accounts"></a>Microsoft 365 アカウントを管理するためのツール
 
@@ -86,4 +88,3 @@ Microsoft 365 を購入すると、管理センターと Windows PowerShell を�
 
 [Microsoft 365 でユーザーとグループを管理する](https://docs.microsoft.com/microsoft-365/admin/add-users)
   
-

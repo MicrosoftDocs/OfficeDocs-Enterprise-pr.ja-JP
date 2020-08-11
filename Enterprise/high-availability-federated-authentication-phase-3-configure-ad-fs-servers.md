@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: '概要: Microsoft Azure の Microsoft 365 の高可用性フェデレーション認証用に、Active Directory フェデレーションサービス (AD FS) サーバーを作成して構成します。'
-ms.openlocfilehash: e4fa1ac49d9c9a60567d587416347093ff0784c9
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: Microsoft Azure で Microsoft 365 の高可用性フェデレーション認証用に AD FS サーバーを作成して構成する方法について説明します。
+ms.openlocfilehash: 3b4805dd29eb62b337cb455530615fd9c13c0f5c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102515"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606373"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性フェデレーション認証のフェーズ 3: AD FS サーバーを構成する
 
