@@ -69,7 +69,7 @@ PHS では、AD DS のユーザーアカウントを Microsoft 365 と同期し�
 
 パスワードが変更されるか、オンプレミスでリセットされると、新しいパスワードハッシュが Azure AD に同期されるため、ユーザーは常にクラウドリソースとオンプレミスのリソースに対して同じパスワードを使用できます。 ユーザーパスワードが Azure AD に送信されることや、クリアテキストで Azure AD に保存されることはありません。 Id 保護などの Azure AD の一部のプレミアム機能は、どの認証方法が選択されているかに関係なく、PHS を必要とします。
   
-詳細について[は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)する」を参照してください。
+詳細について [は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) する」を参照してください。
   
 #### <a name="pass-through-authentication-pta"></a>パススルー認証 (PTA)
 
@@ -81,7 +81,7 @@ PTA を使用すると、ユーザーはオンプレミスのアカウントと�
 
 PTA は、組織に対して、オンプレミスのユーザーアカウントの状態、パスワードポリシー、およびログオン時間を即時に適用するセキュリティ要件を持つ組織のためにも使用されます。 
   
-詳細について[は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)する」を参照してください。
+詳細について [は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) する」を参照してください。
   
 ### <a name="federated-authentication"></a>フェデレーション認証
 
@@ -89,13 +89,13 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
 
 フェデレーション認証は、スマートカードベースの認証、またはサードパーティの多要素認証などの追加の認証要件をサポートしており、一般に、組織が Azure AD でネイティブにサポートされていない認証要件を使用する場合に必要です。
  
-詳細について[は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)する」を参照してください。
+詳細について [は、「適切な認証方法を選択](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) する」を参照してください。
   
 #### <a name="third-party-authentication-and-identity-providers"></a>サードパーティの認証および id プロバイダー
 
 オンプレミスのディレクトリオブジェクトは、Microsoft 365 に同期することができ、クラウドリソースアクセスは主にサードパーティの id プロバイダー (IdP) によって管理されます。 組織でサードパーティのフェデレーションソリューションを使用している場合は、Microsoft 365 でそのソリューションを使用してサインオンを構成することができます。これにより、サードパーティ製のフェデレーションソリューションが Azure AD と互換性があることが提供されます。
   
-詳細については、「 [AZURE AD フェデレーション互換性リスト](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility)」を参照してください。
+詳細については、「 [AZURE AD フェデレーション互換性リスト](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) 」を参照してください。
   
 ## <a name="ad-ds-preparation"></a>AD DS の準備
 
@@ -103,8 +103,8 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
   
 ディレクトリの準備では、次のタスクに焦点を当てる必要があります。
 
-- 重複している**proxyAddress**属性と**userPrincipalName**属性を削除します。
-- 空白および無効な**userprincipalname**属性を有効な**userprincipalname**属性で更新します。
+- 重複している **proxyAddress** 属性と **userPrincipalName** 属性を削除します。
+- 空白および無効な **userprincipalname** 属性を有効な **userprincipalname** 属性で更新します。
 - **GivenName**、姓 ( **Sn** )、 **sAMAccountName**、 **displayName**、 **mail**、 **proxyAddresses**、 **mailNickname**、および**userPrincipalName**の各属性の無効で問題のある文字を削除します。 属性の準備の詳細については、「 [Azure Active Directory 同期ツールによって同期される属性の一覧](https://go.microsoft.com/fwlink/p/?LinkId=396719)」を参照してください。
 
     > [!NOTE]
@@ -121,7 +121,7 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
 
 複数フォレストの AD DS 展開を統合できない場合や、他のディレクトリサービスを使用して id を管理している場合は、Microsoft またはパートナーのヘルプと同期することができます。
   
-詳細については、「 [AZURE AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)」を参照してください。
+詳細については、「 [AZURE AD Connect のトポロジ](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies) 」を参照してください。
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>ディレクトリ同期に依存する機能
   
@@ -143,7 +143,7 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
 
 ## <a name="next-step"></a>次の手順
 
-ハイブリッド id を展開する準備ができたら、「[ユーザーをプロビジョニングするための準備](prepare-for-directory-synchronization.md)」を参照してください。
+ハイブリッド id を展開する準備ができたら、「 [ユーザーをプロビジョニングするための準備](prepare-for-directory-synchronization.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
